@@ -144,7 +144,7 @@ function sliders () {
 function menuSliding () {
   $('.dropdown').on('show.bs.dropdown', function () {
     if ($(window).width() > 750) {
-      $(this).find('.dropdown-menu').first().stop(true, true).slideDown()
+      $(this).find('.dropdown-menu').first().stop(true, true)./*slideDown*/show()
     } else {
       $(this).find('.dropdown-menu').first().stop(true, true).show()
     }
@@ -152,7 +152,7 @@ function menuSliding () {
 
   $('.dropdown').on('hide.bs.dropdown', function () {
     if ($(window).width() > 750) {
-      $(this).find('.dropdown-menu').first().stop(true, true).slideUp()
+      $(this).find('.dropdown-menu').first().stop(true, true).hide()
     } else {
       $(this).find('.dropdown-menu').first().stop(true, true).hide()
     }
