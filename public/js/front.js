@@ -80,7 +80,7 @@ jQuery(document).ready(function ($) {
 
 	$('.dropdown-toggle').click(function(e) {
 		// 要素で親メニューリンクとドロップダウンメニュー表示を切り分ける
-		if ($(e.target).hasClass('link-menu')) {
+		if ($(e.target).hasClass('linkmenu')) {
 			var location = $(this).attr('href');
 			window.location.href = location;
 			return false;
@@ -89,13 +89,9 @@ jQuery(document).ready(function ($) {
 	});
 
 });
-/*
-$('.dropdown-toggle').click(function() {
-    var location = $(this).attr('href');
-    window.location.href = location;
-    return false;
-});
-*/
+
+
+
 
 /* slider homepage */
 function sliderHomepage () {
