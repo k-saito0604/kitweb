@@ -49,15 +49,24 @@
   transform: translate3d(0, 0, 0);
 }
 /* general styles */
+
+.link-menu{
+  cursor : pointer;
+}
+
 a,
 button {
-  -webkit-transition: all 1.2s ease-out;
-  -moz-transition: all 1.2s ease-out;
-  transition: all 1.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
+
 a i[class^="fa"],
 button i[class^="fa"] {
   margin: 0 5px;
+}
+.dropdown:hover > .dropdown-menu{
+  display: block;
 }
 .clickable {
   cursor: pointer !important;
@@ -306,10 +315,13 @@ ul.list-style-none {
 .navbar {
   border: none;
 }
+
+
 /*メニューの書式*/
 .navbar ul.nav > li > a {
   text-transform: uppercase;
   text-decoration: underline;
+  text-align: center;
   font-weight: bold;
   font-size: 15px;
   letter-spacing: 0.08em;
@@ -373,7 +385,6 @@ ul.list-style-none {
   color: #467fbf;
   text-decoration: none;
   background: block;
-  display: block;
   left: 2px;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -2669,7 +2680,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 /* nav */
 .nav > li > a {
-  padding: 10px 15px;
+  padding: 10px 10px;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -2742,6 +2753,7 @@ fieldset[disabled] .btn-template-primary.active {
   .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #467fbf;
     border-radius: 0 0 0 0;
+    width: content;
   }
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
@@ -3015,6 +3027,8 @@ fieldset[disabled] .btn-template-primary.active {
     margin-bottom: 5px;
   }
 }
+
+/* 修正 */
 @media (min-width: 768px) {
   .navbar-form {
     width: auto;
@@ -3184,7 +3198,7 @@ a:focus {
 }
 a:focus {
   outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: 5px 10px -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 .img-rounded {

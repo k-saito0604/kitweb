@@ -76,6 +76,27 @@ function demo () {
   })
 }
 
+jQuery(document).ready(function ($) {
+
+	$('.dropdown-toggle').click(function(e) {
+		// 要素で親メニューリンクとドロップダウンメニュー表示を切り分ける
+		if ($(e.target).hasClass('link-menu')) {
+			var location = $(this).attr('href');
+			window.location.href = location;
+			return false;
+		}
+		return true;
+	});
+
+});
+/*
+$('.dropdown-toggle').click(function() {
+    var location = $(this).attr('href');
+    window.location.href = location;
+    return false;
+});
+*/
+
 /* slider homepage */
 function sliderHomepage () {
   if ($('#slider').length) {
@@ -143,18 +164,16 @@ function sliders () {
 /* menu sliding */
 function menuSliding () {
   $('.dropdown').on('show.bs.dropdown', function () {
-    if ($(window).width() > 750) {
-      $(this).find('.dropdown-menu').first().stop(true, true).slideDown()
-    } else {
+    if ($(window).width() < 750) {
       $(this).find('.dropdown-menu').first().stop(true, true).show()
-    }
+    } else {
+      }
   })
 
   $('.dropdown').on('hide.bs.dropdown', function () {
-    if ($(window).width() > 750) {
-      $(this).find('.dropdown-menu').first().stop(true, true).slideUp()
-    } else {
+    if ($(window).width() < 750) {
       $(this).find('.dropdown-menu').first().stop(true, true).hide()
+    } else {
     }
   })
 }
