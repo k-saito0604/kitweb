@@ -34,8 +34,5 @@ iOS,Android,chromebook(ver.6以降)に対応しております。
 弊社販売代理店までお問い合わせください。
 ### 年間サポートの契約は必要ですか？
 1年目は必須ですが2年目以降は任意になります。ただしサポートに加入しない場合は弊社よりサポートができないのでご了承ください。
-
-
----
-
-> In case you haven't found the answer for your question please feel free to contact us, our customer support will be happy to help you.
+<br>
+<br>
