@@ -1,0 +1,143 @@
+<div class="container" id="contact">
+
+
+            <section>
+
+                {{ .Content }}
+
+                {{ if isset .Site.Params "email" }}
+                <div class="general-content-wrapper max-width support-schedule">
+                    <h1>サポートスケジュール</h1>
+                    <div class="general-content">
+                        <p>GO-Global for Windows開発元GraphOn社により提示されたサポート・スケジュールです。日本国内では、株式会社きっとエイエスピーが独自に品質評価を行い、一定の品質水準に達するビルドが出荷されるまで日本国内での出荷をお待ち頂くこともありますので、日本国内での出荷日程が下表の保守開始日より遅れることがございます。</p>
+                        <p>このような理由から、開発元GraphOn社が国際市場でご提供しているビルドと、株式会社きっとエイエスピーが日本国内市場でご提供するビルドは異なる場合が少なからずございます。そのため、開発元GraphOn社のウェブサイトから直接ダウンロードされたビルドについては、弊社の品質基準を満たさないものが混在するため、日本国内でのサポートのご提供をお断りしております。</p>
+                        <p>評価用のバイナリーおよびライセンスをお求めの際は、是非、弊社まで直接お声掛けくださるようお願い致します。</p>
+
+                        <h2>GO-Global for Windows</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">製品バージョン</th>
+                                    <th scope="col">ライセンス新規購入</th>
+                                    <th scope="col">追加購入</th>
+                                    <th scope="col">リホスト</th>
+                                    <th scope="col">Ver UP</th>
+                                    <th scope="col">互換アップデート情報</th>
+                                    <th scope="col">bug fix</th>
+                                    <th scope="col">問い合わせ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" data-label="製品バージョン">6.0※4</th>
+                                    <td data-label="ライセンス新規購入">〇</th>
+                                    <td data-label="追加購入">〇</th>
+                                    <td data-label="リホスト">〇</th>
+                                    <td data-label="Ver UP">〇</th>
+                                    <td data-label="互換アップデート情報">〇</th>
+                                    <td data-label="bug fix">〇</th>
+                                    <td data-label="問い合わせ">〇</th>
+                                </tr>
+                                <tr>
+                                    <td scope="row" data-label="製品バージョン">5.0</th>
+                                    <td data-label="ライセンス新規購入">〇</th>
+                                    <td data-label="追加購入">〇</th>
+                                    <td data-label="リホスト">〇</th>
+                                    <td data-label="Ver UP">〇</th>
+                                    <td data-label="互換アップデート情報">〇</th>
+                                    <td data-label="bug fix">〇</th>
+                                    <td data-label="問い合わせ">〇</th>
+                                </tr>
+                                <tr>
+                                    <td scope="row" data-label="製品バージョン">4.8</th>
+                                    <td data-label="ライセンス新規購入">2019/5/31まで</th>
+                                    <td data-label="追加購入">2019/5/31まで</th>
+                                    <td data-label="リホスト">〇※1</th>
+                                    <td data-label="Ver UP">〇※2</th>
+                                    <td data-label="互換アップデート情報">2019/5/31まで</th>
+                                    <td data-label="bug fix">2019/5/31まで</th>
+                                    <td data-label="問い合わせ">〇※3</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                        ※1　当面は可能です。但し、GraphOn社の判断により期限が限られる場合もございます。<br />
+                        ※2　Ver 5.0以降へのバージョンアップのみとなります。<br />
+                        ※3　問い合わせ対応はきっとエイエスピーによる既知情報のみのご提供となります。<br />
+                        ※4　Ver 6.0については現在先行リリース版をご案内しています。<br />
+                        </p>
+
+                        <h2>Windows Server</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">製品バージョン</th>
+                                    <th scope="col">保守開始日</th>
+                                    <th scope="col">延長保守開始日</th>
+                                    <th scope="col">保守終了日</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="製品バージョン">Windows Server 2019</td>
+                                    <td data-label="保守開始日">2018年10月2日</td>
+                                    <td data-label="延長保守開始日">2023年10月10日</td>
+                                    <td data-label="保守終了日">2028年10月10日</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" data-label="製品バージョン">Windows Server 2016</td>
+                                    <td data-label="保守開始日">2016年10月15日</td>
+                                    <td data-label="延長保守開始日">2022年1月11日</td>
+                                    <td data-label="保守終了日">2027年1月11日</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" data-label="製品バージョン">Windows Server 2012R2</td>
+                                    <td data-label="保守開始日">2013年11月25日</td>
+                                    <td rowspan="2" data-label="延長保守開始日">2018年10月9日</td>
+                                    <td rowspan="2" data-label="保守終了日">2023年10月10日</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" data-label="製品バージョン">Windows Server 2012</td>
+                                    <td data-label="保守開始日">2012年10月30日</td>
+                                    <td class="mobile" data-label="延長保守開始日">2018年10月9日</td>
+                                    <td class="mobile" data-label="保守終了日">2023年10月10日</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" data-label="製品バージョン">Windows Server 2008R2SP1</td>
+                                    <td data-label="保守開始日">2011年2月22日</td>
+                                    <td rowspan="2" data-label="延長保守開始日">2015年1月13日</td>
+                                    <td rowspan="2" data-label="保守終了日">2020年1月14日</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" data-label="製品バージョン">Windows Server 2008SP2</td>
+                                    <td data-label="保守開始日">2009年4月29日</td>
+                                    <td class="mobile" data-label="延長保守開始日">2015年1月13日</td>
+                                    <td class="mobile" data-label="保守終了日">2020年1月14日</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+
+                {{ end }}
+
+            </section>
+
+
+
+        <div class="col-md-4">
+
+            {{ if isset .Site.Params "address" }}
+            <section>
+
+
+
+            </section>
+
+            {{ end }}
+
+        </div>
+
+    <!-- /.row -->
+</div>
