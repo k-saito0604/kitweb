@@ -1,3 +1,4 @@
+
 /* global $this: true */
 /* eslint no-unused-vars: ["error", { "varsIgnorePattern": "animationsSlider" }] */
 
@@ -76,7 +77,16 @@ function demo () {
   })
 }
 
-jQuery(document).ready(function ($) {
+$(function(){
+  $('a[href^=#]').click(function(){
+    var speed = 1000;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});
 
 	$('.dropdown-toggle').click(function(e) {
 		// 要素で親メニューリンクとドロップダウンメニュー表示を切り分ける
@@ -302,7 +312,7 @@ function utils () {
 
     $('html, body').animate({
       scrollTop: targetTop
-    }, 1000)
+    }, 2000)
   }
 }
 
