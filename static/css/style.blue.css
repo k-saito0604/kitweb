@@ -26,16 +26,141 @@ height: auto;
     height: 15px;
     margin: 3px
 }
+@media (max-width: 968px)
+.work-style-reform .general-content > .block3 {
+    flex-direction: column;
+    align-items: center;
+}
+.work-style-reform .general-content > .block3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0px -15px;
+    min-height: 1px;
+}
+.work-style-reform .general-content > .block3 > .block1 > .block2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0px -15px;
+    height: 290px;
+}
+.work-style-reform .general-content > .block3 > .block1 > .block1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 25px;
+    border: 1px solid #e60012;
+    min-height: 150px;
+    width: 100%;
+}
+.web-separation p {
+    margin-bottom: 20px;
+    line-height: 1.7em;
+}
+.work-style-reform .general-content h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 54px;
+    vertical-align: middle;
+    color: #ffffff;
+    text-align: center;
+    /* height: 54px; */
+    background-color: #467fbf;
+    padding: 0px 10px;
+}
+.work-style-reform .general-content > .block2 .block1 {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 0 calc(33%);
+}
+.work-style-reform .general-content > .block2 .block1 .content {
+    margin-top: 45px;
+    line-height: 1.7em;
+    font-size: 18px;
+    font-weight: 700;
+    word-break: break-all;
+    display: initial;
+}
+.work-style-reform .general-content > .block2 .block1 .title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #467fbf;
+    margin-top: 40px;
+}
+.work-style-reform .general-content > .block2 .block1.plus {
+    flex: 0 1 auto;
+    max-width: 60px;
+}
+.work-style-reform .general-content > .block3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0px -15px;
+    min-height: 1px;
+}
+.work-style-reform .general-content > .block3 > .block1 {
+    flex: 1 1 50%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    min-height: 1px;
+}
+.work-style-reform .general-content .arrow {
+    width: fit-content;
+    margin: 0px auto;
+    margin-top: 100px;
+    margin-bottom: 75px;
+    max-width: 60px;
+}
+.work-style-reform .general-content > .block3 > .block1 > .block1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 25px;
+    border: 1px solid #467fbf;
+    min-height: 150px;
+    width: 100%;
+}
+.general-content img {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.work-style-reform .general-content > .block2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 115px;
+    padding-top: 95px;
+}
+.work-style-reform > image{
+  filter: hue-rotate(200deg);
+}
+.work-style-reform .general-content > .block3 > .block1 > .block2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0px -15px;
+    height: 290px;
+}
+.work-style-reform .general-content > .block3 > .block1 > .block2 > .block1 .content {
+    display: block;
+    padding: 15px;
+    line-height: 1.7em;
+}
 .max-width {
   max-width: 1200px
   margin-top: 0px;
   margin-right: auto;
   margin-bottom: 0px;
   margin-left: auto
-}
-.web-separation p {
-    margin-bottom: 20px;
-    line-height: 1.7em;
 }
 .center-block {
   display: block;
@@ -152,15 +277,24 @@ div.section {
     margin: auto;
     margin-bottom: 20px;
   }
+.list{
+  font-size:20px;
+   color:black;
+   background-color:#d5e9ed;
+  padding: 15px;
+}
+html {
+  scroll-padding-top: 70px; /* 固定ヘッダの高さ分 */
+}
 .heading h1,
 .heading h2,
 .heading h3,
 .heading h4,
 .heading h5 {
-/*  display: inline-block;*/
-/*  border-bottom: solid 5px #467fbf; */
+  display: inline-block;
+  border-bottom: solid 5px #467fbf;
   line-height: 1.1;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   padding-bottom: 10px;
   vertical-align: middle;
   text-transform: uppercase;
@@ -589,7 +723,7 @@ body.boxed .navbar-affixed-top.affix {
 /* buttons  */
 .btn {
   font-weight: 700;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans JP", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   padding: 6px 12px;
@@ -814,7 +948,7 @@ fieldset[disabled] .btn-template-primary.active {
   background-size: cover;
 }
 #intro .item {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans JP", Helvetica, Arial, sans-serif;
   height: 100%;
 }
 #intro .item h1 {
@@ -1013,7 +1147,7 @@ fieldset[disabled] .btn-template-primary.active {
   letter-spacing: 0.08em;
 }
 .panel.sidebar-menu ul.nav.category-menu li a {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans JP", Helvetica, Arial, sans-serif;
 }
 .panel.sidebar-menu ul.nav ul {
   list-style: none;
@@ -1156,7 +1290,7 @@ fieldset[disabled] .btn-template-primary.active {
   margin: 30px 10px 10px -71px;
   color: #fff;
   background-color: #467fbf;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans JP", Helvetica, Arial, sans-serif;
 }
 .ribbon .theribbon:before,
 .ribbon .theribbon:after {
@@ -2277,7 +2411,7 @@ fieldset[disabled] .btn-template-primary.active {
   font-size: 12px;
 }
 #blog-post .comment .reply {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans JP", Helvetica, Arial, sans-serif;
 }
 #blog-post .comment.last {
   margin-bottom: 0;
@@ -2429,7 +2563,7 @@ fieldset[disabled] .btn-template-primary.active {
   color: #555555;
   text-align: center;
   text-decoration: none;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans JP", Helvetica, Arial, sans-serif;
 }
 #productMain .sizes a.active,
 #productMain .sizes a:hover {
@@ -2735,7 +2869,7 @@ fieldset[disabled] .btn-template-primary.active {
 /* Original Boostrap template overwrite */
 /* breadcrumbs */
 .breadcrumb {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans JP", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   background-color: none;
   letter-spacing: 0.08em;
@@ -3244,7 +3378,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 /* scaffolding */
 body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans JP", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
@@ -3323,7 +3457,7 @@ hr {
 }
 /* labels */
 .label {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans JP", Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -3353,7 +3487,7 @@ label {
   padding-top: 20px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans JP", Helvetica, Arial, sans-serif;
 }
 .pager li {
   display: inline;
@@ -3381,7 +3515,7 @@ label {
 /* pagination */
 .pagination {
   margin: 20px 0;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans JP", Helvetica, Arial, sans-serif;
   border-radius: 0;
 }
 .pagination > li > a,
@@ -3456,7 +3590,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans JP", Helvetica, Arial, sans-serif;
   font-weight: 900;
   line-height: 1.1;
   color: #333333;

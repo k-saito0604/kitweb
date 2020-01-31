@@ -78,6 +78,18 @@ function demo () {
 
 jQuery(document).ready(function ($) {
 
+  $(function () {
+  var headerHight = 180; //ヘッダの高さ
+  $('a[href^=#]').click(function(){
+      var href= $(this).attr("href")
+        var target = $(href == "#" || href == "" ? 'html' : href)
+         var position = target.offset().top-headerHight //ヘッダの高さ分位置をずらす
+      $("html, body").animate({scrollTop:position}, 550, "swing")　//この数値は移動スピード
+         return false
+    })
+  })
+
+
 	$('.dropdown-toggle').click(function(e) {
 		// 要素で親メニューリンクとドロップダウンメニュー表示を切り分ける
 		if ($(e.target).hasClass('linkmenu')) {
