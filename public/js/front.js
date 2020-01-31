@@ -1,3 +1,4 @@
+
 /* global $this: true */
 /* eslint no-unused-vars: ["error", { "varsIgnorePattern": "animationsSlider" }] */
 
@@ -76,19 +77,17 @@ function demo () {
   })
 }
 
-jQuery(document).ready(function ($) {
-
-  $(function () {
-  var headerHight = 180; //ヘッダの高さ
-  $('a[href^=#]').click(function(){
-      var href= $(this).attr("href")
-        var target = $(href == "#" || href == "" ? 'html' : href)
-         var position = target.offset().top-headerHight //ヘッダの高さ分位置をずらす
-      $("html, body").animate({scrollTop:position}, 550, "swing")　//この数値は移動スピード
-         return false
-    })
-  })
-
+$('a[href^=#]').click(function(){
+      //デフォルトのイベントをキャンセル
+      event.preventDefault();
+      // 移動先となる要素を取得します。
+      var target = $(this.hash);
+      if (!target.length) return;
+    // 移動先の位置を取得します
+      var targetY = target.offset().top;
+      // animateで移動します
+      $('body').animate({scrollTop: targetY}, 10000, 'swing');
+});
 
 	$('.dropdown-toggle').click(function(e) {
 		// 要素で親メニューリンクとドロップダウンメニュー表示を切り分ける
@@ -314,7 +313,7 @@ function utils () {
 
     $('html, body').animate({
       scrollTop: targetTop
-    }, 1000)
+    }, 2000)
   }
 }
 
