@@ -77,16 +77,15 @@ function demo () {
   })
 }
 
-$('a[href^=#]').click(function(){
-      //デフォルトのイベントをキャンセル
-      event.preventDefault();
-      // 移動先となる要素を取得します。
-      var target = $(this.hash);
-      if (!target.length) return;
-    // 移動先の位置を取得します
-      var targetY = target.offset().top;
-      // animateで移動します
-      $('body').animate({scrollTop: targetY}, 10000, 'swing');
+$(function(){
+  $('a[href^=#]').click(function(){
+    var speed = 1000;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
 });
 
 	$('.dropdown-toggle').click(function(e) {
