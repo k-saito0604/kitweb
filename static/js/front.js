@@ -98,10 +98,6 @@ $(function(){
 		return true;
 	});
 
-});
-
-
-
 
 /* slider homepage */
 function sliderHomepage () {
