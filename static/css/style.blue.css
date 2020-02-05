@@ -19,11 +19,27 @@ display: block;
 max-width: 100%;
 height: auto;
 }
+.fadein {
+    opacity : 0;
+    transform : translate(0, 50px);
+    transition:all 0.5s;
+  display:block;
+  margin:100px auto;
+  text-align:center;
+}
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+}
 .cimage{
   width: 100%;
 }
+.col-xs-12,.col-sm-6,.col-md-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
 .column{
-  font-size: 12px;
+  font-size: 18px;
   border: 3px #467fbf solid;
   border-radius: 10px;
 }

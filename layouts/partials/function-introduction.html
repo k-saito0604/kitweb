@@ -34,7 +34,9 @@
                         <br>
                         <div id = '1'>
                           <h3>1.GO-Globalとは</h3>
+                          <div class="fadein">
                           <img class="img2" src="/img/goglobal01.jpg">
+                          </div>
                           <p>
                             GO-Globalとはプレゼンテーション層（およびセッション層）の仮想化技術で、一般に「シンクライアント」として分類される技術製品です。
                             サーバ側でアプリケーションを実行し、クライアント端末側で操作を行う。シンプルな概念のミドルウェアです。そのシンプルな構造から多くの、ユーザからの高い支持を得ております。
@@ -50,8 +52,10 @@
                             しかし、アプリケーション配信サービスでは、
                             クライアント側にインストールせずに利用者がサーバにアクセスし認証を行うことで、サーバに登録されているアプリケーションを利用することができます
                             <br>
-                            <img class="img2" src="/img/goglobal02.png">
-                          </p>
+                            </p>
+                            <div class="fadein">
+                              <img class="img2" src="/img/goglobal02.png">
+                            </div>
                         </div>
                         <div id = '2'>
                           <h3>2.GO-Globalの歴史</h3>
@@ -66,23 +70,25 @@
                         <div id = '3'>
                           <h3>3.GO-Globalが注目される理由</h3>
                           <br>
+                          <div class="fadein">
                           <div class="block2">
                             <div class="col-xs-12 col-sm-6 col-md-3">
                               <img class="cimage" src="/img/remote.png">
-                              <p class="column">働き方改革を促進<br>「リモートワーク」ができる</p>
+                              <p class="column">働き方改革を促進<br><b>リモートワーク</b>ができる</p>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-3">
                             <img class="cimage" src="/img/old-app.png">
-                            <p class="column">「古いアプリケーション」<br>を活用できる</p>
+                            <p class="column"><b>古いアプリケーション</b>を活用できる</p>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-3">
                             <img class="cimage" src="/img/security.png">
-                            <p class="column">「セキュリティを強化」<br>できる</p>
+                            <p class="column"><b>セキュリティを強化</b>できる</p>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-3">
                             <img class="cimage" src="/img/cloud.png">
-                            <p class="column">スタンドアローンのソフト<br>を「クラウド化」できる</p>
+                            <p class="column">スダンドアローンのソフトを<b>クラウド化</b>できる</p>
                             </div>
+                          </div>
                           </div>
                           <p>
                             などその他にも沢山の活用事例があります。
@@ -242,43 +248,30 @@
                               </tr>
                             </tbody>
                           </table>
-<style>
-  table {
-    width:100%;
-  }
+                          <style>
+                            table {
+                              width:100%;
+                            }
 
-  table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    vertical-align:top;
-    padding: 8px;}
-  </style>
-
-</div>
-</div>
-</main><!-- main -->
-
-
-              </div>
-
+                            table, th, td {
+                              border: 1px solid black;
+                              border-collapse: collapse;
+                              vertical-align:top;
+                              padding: 8px;}
+                            </style>
+                          </div>
+                        </div>
+                      </main><!-- main -->
+                    </div>
                 {{ end }}
-
             </section>
-
-
 
         <div class="col-md-4">
 
             {{ if isset .Site.Params "address" }}
             <section>
-
-
-
             </section>
-
             {{ end }}
-
         </div>
-
     <!-- /.row -->
 </div>
