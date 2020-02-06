@@ -67,9 +67,7 @@ function demo () {
 
       $('body').removeClass('wide')
       $('body').removeClass('boxed')
-
       $('body').addClass(themeLayout)
-
       $.cookie('themeLayout', themeLayout, {expires: 365, path: '/'})
     }
 
@@ -77,6 +75,7 @@ function demo () {
   })
 }
 
+//画像をフェードインさせる処理
 jQuery(function(){
    jQuery(window).scroll(function (){
        jQuery('.fadein').each(function(){
@@ -89,7 +88,26 @@ jQuery(function(){
        });
    });
  });
-//clickするとふっとぶ
+//clickするとトップに飛ぶ
+jQuery(function() {
+    var pagetop = $('#page_top');
+    pagetop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {  //100pxスクロールしたら表示
+            pagetop.fadeIn();
+        }
+        else {
+            pagetop.fadeOut();
+        }
+    });
+    pagetop.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500); //0.5秒かけてトップへ移動
+        return false;
+    });
+});
+//clickすると飛ぶ
 $(function(){
   $('a[href^="#"]').click(function(){
     var adjust = -67;
