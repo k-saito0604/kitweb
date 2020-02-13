@@ -14,16 +14,41 @@
 .navbar-header:after {
   clear: both;
 }
-.adapta {
+.adaptb {
   position: relative;
+  width: 1000px;
+  margin: auto;
 }
-.heading .adapta h1{
+.adaptb p{
   position: absolute;/*絶対配置*/
-  top: 380px;
-  left: 100px;
-  border-bottom: hidden;
+  top: 355px;
+  font-size: 40px;
+  font-weight: bold;
 }
-
+@media (max-width: 1199px) {
+  .adaptb {
+    position: relative;
+    width: 700px;
+    margin: auto;
+  }
+  .adaptb p{
+    position: absolute;/*絶対配置*/
+    top: 250px;    
+    font-size: 28px;
+  } 
+}
+@media (max-width: 771px) {
+  .adaptb {
+    position: relative;
+    width: 300px;
+    margin: auto;
+  }
+  .adaptb p{
+    position: absolute;/*絶対配置*/
+    top: 105px;    
+    font-size: 12px;
+  } 
+}
 .general-content .adapta h3 {
   padding: 0.25em 0.5em;/*上下 左右の余白*/
   color: #494949;/*文字色*/
@@ -134,11 +159,13 @@
     height: 15px;
     margin: 3px
 }
+
 @media (max-width: 968px)
 .work-style-reform .general-content > .block3 {
     flex-direction: column;
     align-items: center;
 }
+
 .work-style-reform .general-content > .block3 {
     display: flex;
     align-items: flex-start;
@@ -525,7 +552,7 @@ ul.list-style-none {
     text-align: left;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   body.boxed {
     background: url(https://www.toptal.com/designers/subtlepatterns/patterns/subtle_zebra_3d.png);
   }
