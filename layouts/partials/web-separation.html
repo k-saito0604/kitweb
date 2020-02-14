@@ -1,142 +1,133 @@
 <div class="container" id="contact">
 
-            <section>
+  <section>
 
-                {{ .Content }}
+    {{ .Content }}
 
-                {{ if isset .Site.Params "email" }}
+    {{ if isset .Site.Params "email" }}
 
-                <div class="heading">
-                  <main>
-                    <img class="img2" src="/img/web-separation1.jpg">
-                    <div class="general-content-wrapper max-width web-separation">
-                    <div class="general-content">
-                        <h2>総務省セキュリティ対策で注目のWEB分離（インターネット分離）について詳しく解説します。</h2>
-                        <br>
-                        <p>
-                          コンピューターウィルスは「メール開封で感染」といった事例から「インターネット閲覧だけで感染」「感染したことに気づかないでいた」など、悪質で巧妙なものが年々増えているのが実情です。
-                        </p>
-                        <p>
-                          感染した事に気が付かない場合、その様々な攻撃は企業にとって大きなリスクになります。そういったマルウェア対策として、Web（インターネット）通信へのセキュリティ対応はどんな業態でも今後必須といえるでしょう。
-                        </p>
-                        <p>
-                          現状の対策だと、ウィルスソフトやフィルタリングなどをベースとしたソリューションを組み合わせた対策が一般的です。しかし、攻撃と防御のイタチごっこで、中小企業などでは対策が追い付かないのが悩みでしょう。<br>
-                          <u>そこでセキュリティ強化策として、Webコンテンツの実行環境を業務環境から分離することで、情報漏洩や外部からの攻撃のリスクを抑止する「Web分離（インターネット分離）」が注目されています。</u><br>
-                          （経済産業省が2016年12月に発表した「サイバーセキュリティ経営ガイドライン」にも推奨されています。）
-                        </p>
-                        <p>WEB分離の一般的な仕組みなどを以下でご紹介します。</p>
+    <div class="heading">
+      <main>
+      <img class="img2" src="/img/web-separation1.jpg">
+      <div class="general-content-wrapper max-width web-separation">
+        <div class="general-content">
+          <h2>総務省セキュリティ対策で注目のWEB分離（インターネット分離）について詳しく解説します。</h2>
+          <br>
+          <p>
+            コンピューターウィルスは「メール開封で感染」といった事例から「インターネット閲覧だけで感染」
+            「感染したことに気づかないでいた」など、悪質で巧妙なものが年々増えているのが実情です。
+          </p>
+          <p>
+            感染した事に気が付かない場合、その様々な攻撃は企業にとって大きなリスクになります。
+            そういったマルウェア対策として、Web（インターネット）
+            通信へのセキュリティ対応はどんな業態でも今後必須といえるでしょう。
+          </p>
+          <p>
+            現状の対策だと、ウィルスソフトやフィルタリングなどをベースとしたソリューションを組み合わせた対策が一般的です。しかし、攻撃と防御のイタチごっこで、中小企業などでは対策が追い付かないのが悩みでしょう。<br>
+            <u>そこでセキュリティ強化策として、Webコンテンツの実行環境を業務環境から分離することで、情報漏洩や外部からの攻撃のリスクを抑止する「Web分離（インターネット分離）」が注目されています。</u><br>
+            （経済産業省が2016年12月に発表した「サイバーセキュリティ経営ガイドライン」にも推奨されています。）
+          </p>
+          <p>
+            WEB分離の一般的な仕組みなどを以下でご紹介します。
+          </p>
+          <p class="list">
+            もくじ<br>
+             <a href="#1-1" style="color:black;">1-1　<u>WEB分離（インターネット分離）とは</u></a><br>
+             <a href="#1-2" style="color:black;">&emsp;1-2　<u>WEB分離（インターネット分離）の特徴と手法</u></a><br>
+             <a href="#1-3" style="color:black;">&emsp;1-3　<u>WEB分離にかかる一般的な導入費用や仕組み</u></a><br>
+             <a href="#2-1" style="color:black;">2-1　<u>WEB分離（インターネット分離）導入を検討する際の3つのポイント</u></a><br>
+             <a href="#3-1" style="color:black;">3-1　<u>WEB分離（インターネット分離）に最適なGO-Global</u></a><br>
+          </p>
+          <br>
+          <div class = "websep" id = '1-1'>
+            <h3>1-1.WEB分離（インターネット分離）とは</h3>
+            <p>
+              インターネットからの攻撃や不正アクセス対策として、 業務用ネットワークからウェブ閲覧を、分離することを「インターネット分離」といいます。Webコンテンツを閲覧する環境と、業務を行っている環境を分離することで、マルウェアの侵入や、サイバー攻撃のリスクを抑えます。
+            </p>
+            <h4>WEB分離（インターネット分離）</h4>
+            <br>
+            <div class="col-md-6">
+              <a href="/img/web-separation.a1.jpg" data-lightbox="group1"><img src="/img/web-separation.a1.jpg" width="100%"></a>
+            </div>
+            <div class="col-md-6">
+              <a href="/img/web-separation.a2.jpg" data-lightbox="group1"><img src="/img/web-separation.a2.jpg" width="100%"></a>
+            </div>
+            <p>
+              ネットワーク間のアクセス制御（分離）を行う考えは、特に新しい考えではなく20年ほど前から存在していました。しかし、Web分離（インターネット分離）は低コストで、
+              導入の手間がかからず管理も最小限で済む。と言った理由から近年また注目されている手法の一つとなっています。
+            </p>
+          </div>
+          <br>
+          <div id = '1-2'>
+            <h3>1-2.WEB分離（インターネット分離）の特徴とその手法</h3>
+            <p>大まかにわけてWEB分離（インターネット分離）には以下の方法があります。</p>
+            <b style="display:block; border:1px solid black; background-color:#d5e9ed; padding: 8px">物理分離</b>
+            <div style="border:1px solid black; padding: 8px">
+              業務用端末とインターネット接続端末を2台用意し物理的に使い分けます。
+              <br>
+              <br>
+              <font color="blue"><b>メリット：</b></font>
+              端末を分けているので、インターネットから重要なシステムにアクセスすることができない。物理的に分かれているのでインターネット経由からの攻撃やデータ漏洩が無い。
+              <br>
+              <br>
+              <font color="red"><b>デメリット：</b></font>
+               一人２台パソコンを持つことになり機器が代金が２台分必要になる。
+               複数台用意しても、インターネットに接続できる別端末に移動するため利便性が悪い。台数が少ないと端末を使用するための渋滞がおきてしまう。
+                USBメモリなどからのコピーや漏洩といった感染リスクは避けられない。
+            </div>
+          </div>
+        <br>
+        <br>
+        <div>
+          <b style="display:block; border:1px solid darkblue; background-color:#d5e9ed; padding: 8px">論理分離（仮想的なネットワーク分離）</b>
+          <div style="border:1px solid black; padding: 8px">仮想PCの画面データの転送や、実行環境を分離する方法などがあります。
+            <br>
+            <br>
+            <font color="blue"><b>メリット：</b></font>
+            画面を転送している状態だが、ブラウザの操作感に違和感がない。一台の端末でインターネットと業務システムに接続できるので、コスト削減と管理の軽減が期待できる。
+            <br>
+            <br>
+            <font color="red"><b>デメリット：</b></font>
+            倫理分離の手法も様々なので、その手法によっては高額な費用が掛かる場合もあります。
+          </div>
+        </div>
+        <div id = '1-3'>
+          <h3>1-3　WEB分離にかかる一般的な導入費用や仕組み</h3>
+          <p>論理分離には主に以下の手法があります。</p>
+          <style>
+            table {
+              width:100%;
+            }
 
-                        <p class="list">
-                            もくじ<br>
-                            <a href="#1-1" style="color:black;">1-1　<u>WEB分離（インターネット分離）とは</u></a><br>
-                            <a href="#1-2" style="color:black;">&emsp;1-2　<u>WEB分離（インターネット分離）の特徴と手法</u></a><br>
-                            <a href="#1-3" style="color:black;">&emsp;1-3　<u>WEB分離にかかる一般的な導入費用や仕組み</u></a><br>
-                            <a href="#2-1" style="color:black;">2-1　<u>WEB分離（インターネット分離）導入を検討する際の3つのポイント</u></a><br>
-                            <a href="#3-1" style="color:black;">3-1　<u>WEB分離（インターネット分離）に最適なGO-Global</u></a><br>
-                          </p>
-                        <br>
-                        <div class = "websep"id = '1-1'>
-                          <h3>1-1.WEB分離（インターネット分離）とは</h3>
-                          <p>
-                            インターネットからの攻撃や不正アクセス対策として、 業務用ネットワークからウェブ閲覧を、分離することを「インターネット分離」といいます。Webコンテンツを閲覧する環境と、業務を行っている環境を分離することで、マルウェアの侵入や、サイバー攻撃のリスクを抑えます。
-                          </p>
-                          <h4>WEB分離（インターネット分離）</h4>
-                            <br>
-                            <div class="col-md-6">
-                              <a href="/img/web-separation.a1.jpg" data-lightbox="group1"><img src="/img/web-separation.a1.jpg" width="100%"></a>
-                            </div>
-                            <div class="col-md-6">
-                              <a href="/img/web-separation.a2.jpg" data-lightbox="group1"><img src="/img/web-separation.a2.jpg" width="100%"></a>
-                            </div>
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+              vertical-align:top;
+              padding: 8px;}
+           </style>
 
-                            <p>
-                              ネットワーク間のアクセス制御（分離）を行う考えは、特に新しい考えではなく20年ほど前から存在していました。しかし、Web分離（インターネット分離）は低コストで、
-                              導入の手間がかからず管理も最小限で済む。と言った理由から近年また注目されている手法の一つとなっています。
-                            </p>
-                          </div>
-
-                          <br>
-                          <div id = '1-2'>
-                            <h3>1-2.WEB分離（インターネット分離）の特徴とその手法</h3>
-                            <p>大まかにわけてWEB分離（インターネット分離）には以下の方法があります。</p>
-
-                            <div>
-                              <b style="display:block; border:1px solid black; background-color:#d5e9ed; padding: 8px">物理分離</b>
-                              <div style="border:1px solid black; padding: 8px">
-                                業務用端末とインターネット接続端末を2台用意し物理的に使い分けます。
-                                <br>
-                                <br>
-                                <font color="blue"><b>メリット：</b></font>
-                                端末を分けているので、インターネットから重要なシステムにアクセスすることができない。物理的に分かれているのでインターネット経由からの攻撃やデータ漏洩が無い。
-                                <br>
-                                <br>
-                                <font color="red"><b>デメリット：</b></font>
-                                一人２台パソコンを持つことになり機器が代金が２台分必要になる。
-                                複数台用意しても、インターネットに接続できる別端末に移動するため利便性が悪い。台数が少ないと端末を使用するための渋滞がおきてしまう。
-                                USBメモリなどからのコピーや漏洩といった感染リスクは避けられない。
-                              </div>
-                            </div>
-
-                            <br>
-                            <br>
-
-                            <div>
-                              <b style="display:block; border:1px solid darkblue; background-color:#d5e9ed; padding: 8px">論理分離（仮想的なネットワーク分離）</b>
-                              <div style="border:1px solid black; padding: 8px">仮想PCの画面データの転送や、実行環境を分離する方法などがあります。
-                                <br>
-                                <br>
-                                <font color="blue"><b>メリット：</b></font>
-                                画面を転送している状態だが、ブラウザの操作感に違和感がない。一台の端末でインターネットと業務システムに接続できるので、コスト削減と管理の軽減が期待できる。
-                                <br>
-                                <br>
-                                <font color="red"><b>デメリット：</b></font>
-                                倫理分離の手法も様々なので、その手法によっては高額な費用が掛かる場合もあります。
-                              </div>
-                            </div>
-
-                            <br>
-                            <br>
-                            <br>
-
-                            <div id = '1-3'>
-                              <h3>1-3　WEB分離にかかる一般的な導入費用や仕組み</h3>
-                              <p>論理分離には主に以下の手法があります。</p>
-
-                              <style>
-                                table {
-                                  width:100%;
-                                }
-
-                                table, th, td {
-                                  border: 1px solid black;
-                                  border-collapse: collapse;
-                                  vertical-align:top;
-                                  padding: 8px;}
-                                </style>
-
-                                <table>
-                                  <thead style="text-align:center; background-color:#d5e9ed">
-                                    <tr style="text-align:center">
-                                      <th width="150"></th>
-                                      <th width="200">方式</th>
-                                      <th width="200">メリット</th>
-                                      <th width="200">デメリット</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <th>VDI式　画面転送</th>
-                                      <td>分離した仮想デスクトップサーバー上で表示した個々のデスクトップ画面を端末側に転送する</td>
-                                      <td>
-                                        ・一台でインターネットと社内システムに接続可能<br>
-          ・ブラウザの操作に違和感がない<br>
-          ・ブラウザ以外の製品利用できる<br></td>
-          <td>
-            ・VDAが必要（コストが高い）<br>
-            ・利用する際にVDIにログインする必要がある<br></td>
-          </tr>
-
-          <tr>
+          <table>
+           <thead style="text-align:center; background-color:#d5e9ed">
+            <tr style="text-align:center">
+            <th width="150"></th>
+            <th width="200">方式</th>
+            <th width="200">メリット</th>
+            <th width="200">デメリット</th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+            <th>VDI式　画面転送</th>
+            <td>分離した仮想デスクトップサーバー上で表示した個々のデスクトップ画面を端末側に転送する</td>
+            <td>
+              ・一台でインターネットと社内システムに接続可能<br>
+              ・ブラウザの操作に違和感がない<br>
+              ・ブラウザ以外の製品利用できる<br></td>
+            <td>
+              ・VDAが必要（コストが高い）<br>
+              ・利用する際にVDIにログインする必要がある<br></td>
+            </tr>
+            <tr>
             <th>仮想ブラウザの画面転送</th>
             <td>分離した環境のブラウザ画面を端末側に転送する</td>
             <td>
@@ -145,19 +136,19 @@
               ・1つのサーバーで多くのセッションを実行ができる<br></td>
               <td>サーバーOS側がマルウェア感染すると、全体に影響が及ぶ</td>
             </tr>
-          </tbody>
-        </table>
+            </tbody>
+           </table>
 
-        <p>環境や社内の利用状況によって、WEB分離（インターネット分離）の方式を検討するのがよいでしょう。</p>
-
-        <p>その他に「Docker型のセキュアブラウザ」「HTML5型のセキュアブラウザ」も存在します。どちらも低価格なセキュリティブラウザとして利用されています。
+           <p>環境や社内の利用状況によって、
+             WEB分離（インターネット分離）の方式を検討するのがよいでしょう。
+          </p>
+          <p>その他に「Docker型のセキュアブラウザ」「HTML5型のセキュアブラウザ」も存在します。
+            どちらも低価格なセキュリティブラウザとして利用されています。<br>
+            しかし、「Docker型のセキュアブラウザ」はIE専用のサイトの閲覧ができない、HTML5型のセキュアブラウザは印刷がうまくいかないなどの制限事項があります。
+          </p>
           <br>
-          しかし、「Docker型のセキュアブラウザ」はIE専用のサイトの閲覧ができない、HTML5型のセキュアブラウザは印刷がうまくいかないなどの制限事項があります。
-        </p>
-        <br>
-
-        <h3 style="color:black">WEB分離の導入費用</h3>
-        <hr>
+          <h3 style="color:black">WEB分離の導入費用</h3>
+          <hr>
 
         <p>
           <b class="squareMark tealMark"></b><b>物理分離の場合</b><br>
@@ -173,9 +164,7 @@
           提供しているインターネット分離のサービス内容をしっかり確認してランニングコストを含め検討が必要となります。
         </p>
       </div>
-
       <br>
-
       <div id = '2-1'>
         <h3>2-1.WEB分離（インターネット分離）導入を検討する際の3つのポイント</h3>
         <p style="background-color:#d5e9ed; width:280px; padding:8px">
@@ -183,86 +172,85 @@
           <b>② 短期間で導入可能</b><br>
           <b>③ セキュリティが高い</b><br>
         </p>
-
         それでは上記のポイントをひとつひとつみていきましょう<br>
-
         <br>
-
-  <div>
-    <b style="display:block; border:1px solid black; background-color:#d5e9ed; padding: 8px">①　ユーザーの使用感に違和感がない</b>
-    <div style="border:1px solid black; padding:6px; line-height:25px">
-  WEB分離化を導入し、セキュリティが守られるようになっても、<br>
-  作業環境やアクセス環境に弊害があっては、業務に支障がでてしまいます。<br>
-  WEB分離後も快適な環境で作業できるかどうかもしっかり確認する必要があります。
-  </div>
-
-<br>
-
-    <div>
+      <div>
+      <b style="display:block; border:1px solid black; background-color:#d5e9ed; padding: 8px">①　ユーザーの使用感に違和感がない</b>
+      <div style="border:1px solid black; padding:6px; line-height:25px">
+        WEB分離化を導入し、セキュリティが守られるようになっても、<br>
+        作業環境やアクセス環境に弊害があっては、業務に支障がでてしまいます。<br>
+        WEB分離後も快適な環境で作業できるかどうかもしっかり確認する必要があります。
+      </div>
+      <br>
+      <div>
         <b style="display:block; border:1px solid black; background-color:#d5e9ed; padding: 8px">②　短期間で導入可能</b>
         <div style="border:1px solid black; padding:6px; line-height:25px">
-        導入期間は製品によってもまちまちです。<br>
-        早くて30日、規模にもよりますが長いものだと、3カ月かかるということもあります。<br>
-        導入期間が長くなれば、その間のセキュリティはウィルスの脅威にさらされている状態です。
+          導入期間は製品によってもまちまちです。<br>
+          早くて30日、規模にもよりますが長いものだと、3カ月かかるということもあります。<br>
+          導入期間が長くなれば、その間のセキュリティはウィルスの脅威にさらされている状態です。
         </div>
-    </div>
-    <br>
-    <div>
+       </div>
+       <br>
+       <div>
         <b style="display:block; border:1px solid black; background-color:#d5e9ed; padding: 8px">③　セキュリティが十分か</b>
         <div style="border:1px solid black; padding:6px; line-height:25px">
           分離化してもセキュリティに不備があっては元も子もありません。<br>
           必要なセキュリティ状況をしっかり見極めて、導入を検討しましょう。
         </div>
-    </div>
-    <br>
-    <br>
-    <div class = "websep" id = '3-1'>
-      <h3>3-1　WEB分離（インターネット分離）に最適なGO-GLOBAL</h3>
-      <p>
-        上記のポイントを抑え中小企業向けにお勧めできるのがGO-GLOBAL（ゴーグローバル）です。２０年前から、シンクライアント技術に着目しており、その歴史から得た実務経験と技術ノウハウが蓄積しています。
-      <br>
-        しかも、GO-Globalはあらゆる場所、プラットフォーム、OSからWindows、UNIX、Linuxアプリケーションへの即時アクセスを提供できるのが最大の特徴です。
-      </p>
-      <h4>GO-GLOBALを利用したWEB分離環境</h4>
-      <br>
-      <div class ="col-md-12">
-        <div class="col-md-6">
-          <a href="/img/web-separation.b.gif" data-lightbox="group2"><img src="/img/web-separation.b.gif" width="300"></a>
-          <br>
-          <p>
-            WEBサイト閲覧用のPCと、業務用PCが物理的に離れているため、インターネット経由で重要システムにアクセスすることはできません。しかし、使用者がインターネットにアクセスする際は、実際に移動しなければならない。USBメモリなどを使って、パソコン間のデータをやり取りした場合は、ウィルスの感染などをしてしまうので、使用者のリテラシーなどの教育は必要。
-          </p>
+       </div>
+       <br>
+       <br>
+       <div class = "websep" id = '3-1'>
+        <h3>3-1　WEB分離（インターネット分離）に最適なGO-Global</h3>
+        <p>
+          上記のポイントを抑え中小企業向けにお勧めできるのがGO-Global（ゴーグローバル）です。
+          ２０年前から、シンクライアント技術に着目しており、
+          その歴史から得た実務経験と技術ノウハウが蓄積しています。<br>
+          しかも、GO-Globalはあらゆる場所、プラットフォーム、OSからWindows、UNIX、Linuxアプリケーションへの
+          即時アクセスを提供できるのが最大の特徴です。
+        </p>
+        <h4>GO-Globalを利用したWEB分離環境</h4>
+        <br>
+        <div class ="col-md-12">
+          <div class="col-md-6">
+           <a href="/img/web-separation.b.gif" data-lightbox="group2"><img src="/img/web-separation.b.gif" width="300"></a>
+           <br>
+           <p>
+             WEBサイト閲覧用のPCと、業務用PCが物理的に離れているため、インターネット経由で重要システムにアクセスすることはできません。しかし、使用者がインターネットにアクセスする際は、実際に移動しなければならない。USBメモリなどを使って、パソコン間のデータをやり取りした場合は、ウィルスの感染などをしてしまうので、使用者のリテラシーなどの教育は必要。
+           </p>
+          </div>
+          <div class="col-md-6">
+            <a href="/img/web-separation.c.png" data-lightbox="group2"><img src="/img/web-separation.c.png" width="300"></a>
+            <p>
+              WEB用サーバーは感染するリスクはある。切り替えて使えるので、
+              移動する手間もパソコンを２台用意する必要もない。構築に時間がかかる場合がある。
+            </p>
+          </div>
         </div>
-        <div class="col-md-6">
-          <a href="/img/web-separation.c.png" data-lightbox="group2"><img src="/img/web-separation.c.png" width="300"></a>
-          <p>WEB用サーバーは感染するリスクはある。切り替えて使えるので、移動する手間もパソコンを２台用意する必要もない。構築に時間がかかる場合がある。
-          </p>
-        </div>
-      </div>
-      <div id = "picup">
-        <h3>GO-GLOBALの特徴</h3>
-        <table>
-          <thead>
-            <tr style="text-align:center; background-color:#d5e9ed">
-              <th width="180">項目</th>
-              <th width="200">GO-GLOBAL</th>
-              <th width="200">他社C社</th>
-              <th width="200">他社V社</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>WorkGroup環境</th>
-              <td>〇</td>
-              <td>×</td>
-              <td>×</td>
-            </tr>
-            <tr>
-              <td>同時接続ライセンス</th>
-              <td>〇(ログオフ後即リリース)</td>
-              <td>△(90日間縛り、リリースするには別途操作が必要)</td>
-              <td>△(90日間縛り、リリースするには別途操作が必要)</td>
-            </tr>
+        <div id = "picup">
+          <h3>GO-GLOBALの特徴</h3>
+          <table>
+            <thead>
+              <tr style="text-align:center; background-color:#d5e9ed">
+                <th width="180">項目</th>
+                <th width="200">GO-GLOBAL</th>
+                <th width="200">他社C社</th>
+                <th width="200">他社V社</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>WorkGroup環境</th>
+                <td>〇</td>
+                <td>×</td>
+               <td>×</td>
+              </tr>
+              <tr>
+                <td>同時接続ライセンス</th>
+                <td>〇(ログオフ後即リリース)</td>
+                <td>△(90日間縛り、リリースするには別途操作が必要)</td>
+                <td>△(90日間縛り、リリースするには別途操作が必要)</td>
+               </tr>
             <tr>
               <td>WorkGroup環境</th>
               <td>〇</td>
