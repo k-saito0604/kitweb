@@ -1,0 +1,118 @@
+<div class="container" id="contact">
+
+
+    <section>
+
+        {{ .Content }}
+
+        {{ if isset .Site.Params "email" }}
+
+        <div class="heading">
+          <main>
+            <div class ="adaptb">
+              <img class="img2" src="/img/adapt5/top.jpg">
+              <p>災害に備えBCP（事業継続計画）対策をGO-GLOBALで実装</p>
+            </div>
+            <div class="general-content-wrapper max-width web-separation">
+                <div class="general-content">
+                <h2>某中堅企業様の事例　：　万が一の災害が起きても事業を続けるためにGO-GLOBALを導入</h2>
+                <div class ="adapta">
+                <h3>BCP対策を検討するきっかけとなった東日本大震災</h3>
+                </div>
+                <div class = "col-md-12">
+                    <div class="col-md-6">
+                    <div class="fadein">
+                        <a href="/img/bcp/01.png" data-lightbox="group1">
+                        <img class="img2" src="/img/bcp/01.png"width="300"></a>
+                    </div>
+                    </div>
+                    <p>
+                        東日本大震災後に、どの企業も事業を続けるためのBCP対策に乗り出していました。
+                        資金も潤沢にある大企業はBCP対策をすんなりと移行していたようです。
+                        中小企業である弊社も必要であると分かっていたのですが、基幹システムの分散場所の確保や、ランニングコストなどを考えると、
+                        なかなかBCP対策に着手することはできませんでした。                        
+                    </p>
+                    <div class ="adapta">
+                        <h3>中小企業向けBCPソリューションにより事業継続を推進</h3>
+                        </div>
+                    <div class = "col-md-12">
+                        <div class="col-md-6 col-md-push-6">
+                            <div class="fadein">
+                                <a href="/img/bcp/02.jpg" data-lightbox="group1">
+                                <img class="img2" src="/img/bcp/02.jpg"width="300"></a>
+                            </div>
+                            </div>
+                        <div class = "col-md-6 col-md-pull-6">
+                        <p>
+                            教育現場の改革を行うため、アプリケーションをリモートからセキュアに利用する目的で仮想化ソリューションを検討される教育現場も増えています。しかし、
+                            以下の理由から検討の段階であきらめてしまう教育現場が多いのも実情です。
+                        </p>
+                        <p>①システムが複雑で導入検討まで時間がかかる</p>
+                        <p>②高コストなソリューションが多い</p>
+                        <p>③リモートワークを行うのに適切なセキュリティソリューションがない</p>
+                        
+                    </div>
+                    </div>
+                    <p>
+                        BCP対策は幅広く事業の継続性を検討しないといけないのですが、
+                        小規模向けのクラウド基盤を利用してBCP対策の一環であるDR対策が行えました。
+                        会計ソフトなどもGO-Globalでは問題なく動作し懸念された印刷制御も問題ありませんでした。
+                    </p>
+                    <div class = "col-md-12">
+                        <p>導入イメージ</p>
+                        <div class="col-md-6">
+                        <div class="fadein">
+                            <a href="/img/bcp/03.png" data-lightbox="group1">
+                            <img class="img2" src="/img/bcp/03.png"width="300"></a>
+                        </div>
+                        </div>
+                        <p>
+                            クラウドが用意しているアプリケーションに乗り換え可能なものは乗り換え、
+                            独自のアプリケーションはクラウド上に構築してGO-Globalで公開しました                      
+                        </p>
+                        <div class ="adapta">
+                            <img class="img2" src="/img/bcp/05.png">
+                        </div>
+                        <p>
+                            導入の際、東日本で環境を構築し、西日本へのミラーリング処理を行う構成にしました。
+                            実際災害を想定した切り替え試験も実施し、特に問題がありませんでした。
+                        </p>
+                        <p>
+                            導入から試験実施までは2週間で実施。このスピード感で導入が行えたのはGO-Globalというソフトウェアがシンプルな構成だからなんでしょうね。
+                        </p>
+                <div class="boxmatome">
+                <div class="box-title">まとめ</div>
+                <p><img class="icon1" src="/img/check.png" width="20" height="20">コストを大幅に抑えて、シンクライアント化</p>
+                <p><img class="icon1" src="/img/check.png" width="20" height="20">導入までのスピードが早い</p>
+                <p><img class="icon1" src="/img/check.png" width="20" height="20">中小企業向けのBCP対策にピッタリのアプリケーション</p>
+               </div>
+              </div>
+              
+            </div>
+          </div>
+         </main><!-- main -->
+
+
+      </div>
+
+      {{ end }}
+
+    </section>
+
+
+
+<div class="col-md-4">
+
+    {{ if isset .Site.Params "address" }}
+    <section>
+
+
+
+    </section>
+
+    {{ end }}
+
+</div>
+
+  <!-- /.row -->
+</div>
