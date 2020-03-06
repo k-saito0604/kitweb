@@ -3,11 +3,13 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-5">
-        {{ .Site.Params.topbar.text | safeHTML }}
-      </div>
+<!--        {{ .Site.Params.topbar.text | safeHTML }}
+-->      </div>
       <div class="col-xs-7">
-        <div data-netlify-identity-button>roguin</div>
-
+        <div class = "topbotton">
+        <a href="contact" class="btn-square-shadow-ora">問い合わせ</a>
+        <a href="#" class="btn-square-shadow">技術サイト</a>
+      </div>
         <div class="social">
           {{ range .Site.Menus.topbar.ByWeight }}
 <!--          <a href="{{ .URL }}" target="_blank" style="opacity: 1;">{{ .Pre }}</a>-->
