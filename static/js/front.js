@@ -22,6 +22,19 @@ $(function () {
   demo()
   contactFormAjax()
 })
+jQuery(".q-and-a dt").on("click", function() {
+  jQuery(this)
+    .next("dd")
+    .slideToggle();
+});
+$(document).ready(function(){
+  $(".qhead a").on("click", function(e){
+    e.preventDefault()
+    var href = $(this).attr("href")
+     
+    $(href).fadeToggle(450);
+  })
+})
 
 // Ajax contact
 function contactFormAjax () {

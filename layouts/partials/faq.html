@@ -1,0 +1,109 @@
+<div class="container" id="contact">
+
+
+    <section>
+
+        {{ .Content }}
+
+        {{ if isset .Site.Params "email" }}
+
+        <div class="heading">
+            <main>
+                <div class="general-content-wrapper max-width faq">
+                    <div class="general-content">
+                        <h1>GO-Globalよくある質問</h1>
+                        <div class ="adapta">
+                            <h3>GO-Globalについて</h3>
+                        </div>
+                            
+                        <div class="faq-item">
+                            <div class="faq-q">
+                                <dl class="q-and-a">
+                                    <dt>GO-Globalとはどんなものですか</dt>
+                                    <dd>既存Windowsで利用するアプリケーションをサーバから配信するミドルウェアになります。</dd>
+                                </dl>
+                                <dl class = "q-and-a">
+                                    <dt>GO-Globalのメリットとは何ですか？</dt>
+                                    <dd>高速起動、素早いデプロイ、同時接続によるライセンス費用の圧縮、シンプルな構成により運用負荷の軽減などが挙げられます。</dd>
+                                </dl>
+                                <dl class="q-and-a">
+                                    <dt>主にどんな用途に使われていますか？</dt>
+                                    <dd>一般的なアプリケーションのホスティング、レガシーアプリケーションの延命、セキュリティ対策としてのシンクライアント化、リモートワーク、Web分離、働き方改革様々な用途に利用されています。</div>
+                                    </dd>
+                                </dl>
+                                <div class ="adapta">
+                                <h3>シンクライアントの管理、製品仕様について</h3>
+                                </div>
+                                <dl class="q-and-a">
+                                    <dt>モバイル環境でも使えますか？</dt>
+                                    <dd>iOS,Android,chromebook(ver.6以降)に対応しております。</dd>
+                                </dl>
+                                <dl class = "q-and-a">
+                                    <dt>クライアントからGO-Globalで利用しているアプリケーションの印刷はできますか？</dt>
+                                    <dd>可能です。プリンタドライバによっては充分な性能が出ない可能性もございますので事前の検証をお願いいたします。</dd>
+                                </dl>
+                                <dl class="q-and-a">
+                                    <dt>SSL通信には対応していますか？</dt>
+                                    <dd>対応しています。GO-GlobalのSSL通信機能は56bit-DESの暗号化が標準機能になっております、それ以上の暗号強度を利用を考えている場合はお問い合わせください。</dd>
+                                </dl>
+                                <dl class = "q-and-a">
+                                    <dt>GO-Globalを使って動画を見ることはできますか？</dt>
+                                    <dd>動画は描画の情報量が多いため一部の動画では十分な性能が出ないことがございますので事前の検証をお願いいたします。</dd>
+                                </dl>
+                                <dl class="q-and-a">
+                                    <dt>Windowsのデスクトップ画面を見ることはできますか？</dt>
+                                    <dd>残念ながらデスクトップ機能はございません。あくまでGO-Globalはアプリケーション配信のミドルウェアになります。</dd>
+                                </dl>
+                                <dl class = "q-and-a">
+                                    <dt>ライセンス費用の圧縮とは具体的にはどのようなことか？</dt>
+                                    <dd>社員数や利用者の最大数のライセンスが必要なのではなく同時接続ユーザー数のライセンスを購入いただけます。つまり、利用者が１００名いたとしても同時に利用するユーザーが１０名であれば１０ユーザーのライセンスの購入でGO-Globalをご利用いただけます。</dd>
+                                </dl>
+                                <div class ="adapta">
+                                <h3>導入事例、導入方法、貸し出しについて</h3>
+                                </div>
+                                <dl class="q-and-a">
+                                    <dt>製品の評価を行いたいのですが、体験版はありますか？</dt>
+                                    <dd>30日間の評価ライセンスを発行を致しますのでお気軽にお問い合わせください、また検証サーバも貸出可能です。</dd>
+                                </dl>
+                                <dl class = "q-and-a">
+                                    <dt>製品のデモを見てみたいのですがお願いできますか？</dt>
+                                    <dd>可能ですのでお気軽にお問い合わせください。</dd>
+                                </dl>
+                                <dl class="q-and-a">
+                                    <dt>製品の見積が欲しい場合はどうすればよいですか？</dt>
+                                    <dd>弊社販売代理店までお問い合わせください。</dd>
+                                </dl>
+                                <dl class = "q-and-a">
+                                    <dt>年間サポートの契約は必要ですか？</dt>
+                                    <dd>1年目は必須ですが2年目以降は任意になります。ただしサポートに加入しない場合は弊社よりサポートができないのでご了承ください。</dd>
+                                </dl>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </main><!-- main -->
+
+
+      </div>
+
+      {{ end }}
+
+    </section>
+
+
+
+<div class="col-md-4">
+
+    {{ if isset .Site.Params "address" }}
+    <section>
+
+
+
+    </section>
+
+    {{ end }}
+
+</div>
+
+  <!-- /.row -->
+</div>
