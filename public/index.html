@@ -90,7 +90,19 @@
   
   <meta name="twitter:description" content="きっとエイエスピーのホームページ">
   
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  
+  <script type="text/javascript">
+          $(document).ready(function(){
+              $('.slider').bxSlider({
+                  auto: true,
+                  pause: 5000,
+              });
+          });
+  </script>
+  
 </head>
 
   <body>
@@ -273,53 +285,15 @@
 
           <hr class=headline>
         </header>
-
         
 
-
-<section>
-    <div class="home-carousel">
-        <div class="dark-mask"></div>
-        <div class="container">
-            <div class="homepage owl-carousel">
-                
-                <div class="item">
-                    <div class="row">
-
-                        <div class="col-sm-12">
-                            <img class="img-responsive" src="img/carousel/0003.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="item">
-                    <div class="row">
-
-                        <div class="col-sm-12">
-                            <img class="img-responsive" src="img/carousel/0002.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="item">
-                    <div class="row">
-
-                        <div class="col-sm-12">
-                            <img class="img-responsive" src="img/carousel/0001.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            
-        </div>
-    </div>
-</section>
-
-
-
-
-
+<div class="slider">
+    <img src="/img/carousel/goglobal.jpg" width="" height="" alt="">
+    <img src="/img/carousel/tele.jpg" width="" height="" alt="">
+    <img src="/img/carousel/case.jpg" width="" height="" alt="">
+    <img src="/img/carousel/websep.jpg" width="" height="" alt="">
+</div>
+        
 
         
 

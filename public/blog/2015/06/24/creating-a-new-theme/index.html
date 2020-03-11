@@ -100,7 +100,19 @@
   
   <meta name="twitter:description" content="This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content.">
   
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  
+  <script type="text/javascript">
+          $(document).ready(function(){
+              $('.slider').bxSlider({
+                  auto: true,
+                  pause: 5000,
+              });
+          });
+  </script>
+  
 </head>
 
 

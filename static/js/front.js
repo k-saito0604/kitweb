@@ -22,6 +22,8 @@ $(function () {
   demo()
   contactFormAjax()
 })
+
+
 jQuery(".q-and-a dt").on("click", function() {
   jQuery(this)
     .next("dd")

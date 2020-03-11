@@ -9,11 +9,11 @@
                 {{ range sort .Site.Data.carousel "weight" }}
                 <div class="item">
                     <div class="row">
-<!--                        <div class="col-sm-5 right">
-                            <h1>{{ .title }}</h1>
-                            {{ .description | safeHTML }}
-                        </div> -->
                         <div class="col-sm-12">
+                            <p>{{ .title }}</p>
+                            <p>    
+                            {{ .description | safeHTML }}
+                            </p>
                             <img class="img-responsive" src="{{ .image }}" alt="">
                         </div>
                     </div>
@@ -21,6 +21,7 @@
                 {{ end }}
             </div>
             <!-- /.project owl-slider -->
+
         </div>
     </div>
 </section>
