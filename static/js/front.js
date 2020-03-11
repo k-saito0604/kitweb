@@ -26,8 +26,8 @@ $(function () {
 
 $(function () {
   $('.slidepic').slick({
-    autoplay:true,
-    autoplaySpeed:5000,
+    autoplay:false,
+    autoplaySpeed:0,
     dots:true,
   })
 });
