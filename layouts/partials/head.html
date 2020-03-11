@@ -37,6 +37,11 @@
   <!-- Custom stylesheet - for your changes -->
   <link href="{{ "css/custom.css" | relURL}}" rel="stylesheet">
 
+
+  <!-- slide -->
+  <link href="{{ "js/slick.css" | relURL}}" rel="stylesheet">
+  <link href="{{ "js/slick-theme.css" | relURL}}" rel="stylesheet">
+
   <!-- Responsivity for older IE -->
   {{ `
     <!--[if lt IE 9]>
@@ -99,17 +104,5 @@
   {{ end }}
   <meta name="twitter:description" content="{{ $description_plain | truncate 200 }}">
   {{ with .Param "twitter_author" }}<meta name="twitter:creator" content="@{{ . }}">{{ end }}
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  
-  <script type="text/javascript">
-          $(document).ready(function(){
-              $('.slider').bxSlider({
-                  auto: true,
-                  pause: 5000,
-              });
-          });
-  </script>
-  
+
 </head>

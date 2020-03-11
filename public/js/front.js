@@ -24,6 +24,15 @@ $(function () {
 })
 
 
+$(function () {
+  $('.slidepic').slick({
+    autoplay:true,
+    autoplaySpeed:5000,
+    dots:true,
+  })
+});
+
+
 jQuery(".q-and-a dt").on("click", function() {
   jQuery(this)
     .next("dd")

@@ -37,6 +37,11 @@
   
   <link href="/css/custom.css" rel="stylesheet">
 
+
+  
+  <link href="/js/slick.css" rel="stylesheet">
+  <link href="/js/slick-theme.css" rel="stylesheet">
+
   
   
     <!--[if lt IE 9]>
@@ -90,19 +95,7 @@
   
   <meta name="twitter:description" content="きっとエイエスピーのホームページ">
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  
-  <script type="text/javascript">
-          $(document).ready(function(){
-              $('.slider').bxSlider({
-                  auto: true,
-                  pause: 5000,
-              });
-          });
-  </script>
-  
+
 </head>
 
   <body>
@@ -287,12 +280,43 @@
         </header>
         
 
-<div class="slider">
-    <img src="/img/carousel/goglobal.jpg" width="" height="" alt="">
-    <img src="/img/carousel/tele.jpg" width="" height="" alt="">
-    <img src="/img/carousel/case.jpg" width="" height="" alt="">
-    <img src="/img/carousel/websep.jpg" width="" height="" alt="">
-</div>
+<section>
+    <div class="home-carousel">
+        <div class="dark-mask"></div>
+        <div class="container">
+                <div class="item">
+                    <div class="row">                        
+                        <div class="col-sm-12">
+                            <div class='slidepic'>
+                                <div class="goglobal">
+                                <img src="/img/carousel/goglobal.jpg" width="" height="" alt="">
+                                <a class="btn-square-shadow">GO-Globalについて詳しく見る</a>
+                                </div>
+                                <div class="tele">
+                                <img src="/img/carousel/tele.jpg" width="" height="" alt="">
+                                <a class="teletext">柔軟な働き方を目指す<br>中小企業やテレワークや<br>リモートワークの<br>導入支援をいたします。</a>
+                                <a class="btn-square-shadow">テレワークについて詳しく見る</a>
+                                </div>
+                                <div class="casepic">
+                                <img src="/img/carousel/case.jpg" width="" height="" alt=""> 
+                                <p>導入事例</p>
+                                <a>病院、学校、ソフトウエアのクラウド化、中小企業</a>
+                                </div>
+                                <div class="websep">
+                                <img src="/img/carousel/websep.jpg" width="" height="" alt="">
+                                <p>情報セキュリティを対策を強化<br>情報漏洩や外部攻撃を</p>
+                                <a class="btn-square-shadow">インターネット分離について詳しくみる</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+
+        </div>
+    </div>
+</section>
         
 
         
@@ -348,6 +372,9 @@
 
 <script src="/js/owl.carousel.min.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
+<script src="/js/slick.min.js"></script>
+
 
 
   </body>
