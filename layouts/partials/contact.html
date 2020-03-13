@@ -13,7 +13,10 @@
 
                 <div id="contact-message"></div>
 
-                <form {{ with .Site.Params.contact_form_ajax }}class="contact-form-ajax"{{ else }}{{ end }} method="post" action="https://formspree.io/keisuke.saito@kitasp.co.jp">
+<!--                <form {{ with .Site.Params.contact_form_ajax }}class="contact-form-ajax"{{ else }}{{ end }} method="post" action="https://formspree.io/sainemesis.ksk@gmail.com">
+-->        
+<form name="contact" method="post" action="" data-netlify="true" data-netlify-honeypot="bot-field">
+
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
@@ -36,7 +39,7 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="email">{{ i18n "contactMail" }}</label>
-                                <input type="text" class="form-control" name="email" id="email" required>
+                                <input type="text" class="form-control" name="_ replyto" id="email" required>
                             </div>
                         </div>
                         <div class="col-sm-12">
