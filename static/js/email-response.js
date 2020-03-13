@@ -4,8 +4,8 @@ const nodemailer = require("nodemailer");
 const createHtmlMail = require("./modules/mail-template"); // this function returns html email code
 
 exports.handler = function(event, context, callback) {
-  const user = process.env.sainemesis.ksk@gmail.com;       // some@mail.com
-  const pass = process.env.Neme1059;   // 42isthecoolestnumber
+  const user = sainemesis.ksk@gmail.com;       // some@mail.com
+  const pass = Neme1059;   // 42isthecoolestnumber
 
   let transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
