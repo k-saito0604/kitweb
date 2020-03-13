@@ -4,19 +4,19 @@ const nodemailer = require("nodemailer");
 const createHtmlMail = require("./modules/mail-template"); // this function returns html email code
 
 exports.handler = function(event, context, callback) {
-  const user = process.env.MAIL_USER;       // some@mail.com
-  const pass = process.env.MAIL_PASSWORD;   // 42isthecoolestnumber
-  
+  const user = process.env.sainemesis.ksk@gmail.com;       // some@mail.com
+  const pass = process.env.Neme1059;   // 42isthecoolestnumber
+
   let transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 587,
     secure: false,
     auth: { user, pass }
   });
-  
+
   // Parse data sent in form hook (email, name etc)
   const { data } = JSON.parse(event.body);
-  
+
   // make sure we have data and email
   if (!data || !data.email) {
     return callback(null, {
@@ -24,7 +24,7 @@ exports.handler = function(event, context, callback) {
       body: 'Mailing details not provided'
     })
   }
-  
+
   let mailOptions = {
     from: `"Maciej 🥝 Smoothielicious" <${user}>`,
     to: data.email, // send to email from contact form
