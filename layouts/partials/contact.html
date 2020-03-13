@@ -15,7 +15,8 @@
 
 <!--                <form {{ with .Site.Params.contact_form_ajax }}class="contact-form-ajax"{{ else }}{{ end }} method="post" action="https://formspree.io/sainemesis.ksk@gmail.com">
 -->        
-<form name="contact" method="post" action="" data-netlify="true" data-netlify-honeypot="bot-field">
+<form name="contact" method="post" action="" data-netlify="true">
+  <div data-netlify-recaptcha="true"></div>
 
                     <div class="row">
                         <div class="col-sm-6">
