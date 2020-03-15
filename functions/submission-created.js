@@ -6,10 +6,8 @@ const createHtmlMail = require("./modules/mail-template"); // this function retu
 exports.handler = function(event, context, callback) {
   //const user = process.env.MAIL_USER;       // some@mail.com
   //const pass = process.env.MAIL_PASSWORD;   // 42isthecoolestnumber
-  const user = sainemesis.ksk@SpeechGrammarList.com;
-  const pass = Neme1059;   // 42isthecoolestnumber
-  
-
+  const user = sainemesis.ksk@gmail.com;
+  const pass = Neme1059;
   let transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 587,
