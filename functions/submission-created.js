@@ -1,50 +1,43 @@
-require("dotenv").config(); // read .env file if present.
+require('dotenv').config();
 
-const nodemailer = require("nodemailer");
-//const createHtmlMail = require("./modules/mail-template"); // this function returns html email code
+const nodemailer = require('nodemailer');
+
+const headers = {
+  'Access-Control-Allow-Origin': 'http://localhost:3000',
+  'Access-Control-Allow-Headers': 'Content-Type',
+  'Access-Control-Allow-Credentials': true,
+};
 
 exports.handler = function(event, context, callback) {
-  const user = process.env.MAIL_USER;       // some@mail.com
-  const pass = process.env.MAIL_PASSWORD;   // 42isthecoolestnumber
+  const user = process.env.MAIL_USER;
+  const pass = process.env.MAIL_PASSWORD;
+
+  console.log(user);
 
   let transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
+    host: 'smtp.gmail.com',
     port: 587,
     secure: false,
-    auth: { user, pass }
+    auth: {user, pass},
   });
 
-  // Parse data sent in form hook (email, name etc)
-  const { data } = JSON.parse(event.body);
-
-  // make sure we have data and email
-  if (!data || !data.email) {
-    return callback(null, {
-      statusCode: 400,
-      body: 'Mailing details not provided'
-    })
-  }
+  console.log(event.body);
 
   let mailOptions = {
     from: `"Maciej 🥝 Smoothielicious" <${user}>`,
-    to: data.email, // send to email from contact form
-    subject: "🍇 Contact submission received! 🍌",
-    html: createHtmlMail({ name: data.name }) // returns html code with interpolated variables
+    to: event.body.email,
+    subject: '🍇 Contact submission received! 🍌',
+    html: '<p></p>',
   };
 
-  transporter.sendMail(mailOptions, (error, info) => {
-    // handle errors
+  transporter.sendMail(mailOptions, function(error, info) {
     if (error) {
-      return callback(null, {
-        statusCode: 500,
-        body: JSON.stringify(error)
+      callback(error);
+    } else {
+      callback(null, {
+        statusCode: 200,
+        body: 'Ok',
       });
     }
-
-    // success!
-    callback(null, {
-      statusCode: 200,
-      body: "mail sent"
-    });
   });
 };
