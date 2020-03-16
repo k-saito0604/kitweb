@@ -25,7 +25,8 @@ exports.handler = function(event, context, callback) {
 
   let mailOptions = {
     from: `"Maciej 🥝 Smoothielicious" <${user}>`,
-    to: event.body.email,
+//    to: event.body.email,
+    to: email,
     subject: '🍇 Contact submission received! 🍌',
     html: '<p></p>',
   };
