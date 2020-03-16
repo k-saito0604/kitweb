@@ -27,7 +27,7 @@ exports.handler = function(event, context, callback) {
     from: `"Maciej 🥝 Smoothielicious" <${user}>`,
     to:data.email,
     subject: '🍇 Contact submission received! 🍌',
-    html: '<p></p>',
+    html: '<p>メッセージを送信しました。</p>',
   };
 
   transporter.sendMail(mailOptions, function(error, info) {
