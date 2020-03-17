@@ -249,3 +249,149 @@ cursor: pointer;
     top:70%;
   }
 }
+
+.adaptb {
+  position: relative;
+  width: 1000px;
+  margin: auto;
+}
+.adaptb p{
+  position: absolute;/*絶対配置*/
+  top: 330px;
+  font-size: 35px;
+  font-weight: bold;
+}
+@media (max-width: 1199px) {
+  .adaptb {
+    position: relative;
+    width: 700px;
+    margin: auto;
+  }
+  .adaptb p{
+    position: absolute;/*絶対配置*/
+    top: 230px;    
+    font-size: 26px;
+  } 
+}
+@media (max-width: 771px) {
+  .adaptb {
+    position: relative;
+    width: 300px;
+    margin: auto;
+  }
+  .adaptb p{
+    position: absolute;/*絶対配置*/
+    top: 100px;    
+    font-size: 12px;
+  } 
+}
+.badreason{
+  display: inline-block;
+    border-bottom: solid 5px #ca574f;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+    letter-spacing: 0.06em;
+}
+
+.boxmatome {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 3px #62c1ce;
+}
+
+
+.boxmatome .box-title {
+  position: absolute;
+  display: inline-block;
+  top: -27px;
+  left: -3px;
+  padding: 0 9px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 17px;
+  background: #3d80cc;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+.boxmatome p {
+  margin: 0; 
+  padding: 0;
+}
+.boxmatome p{
+  margin-bottom: 5px;
+  }
+  .boxmatome2 {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #ca574f;
+  }
+  
+  
+  .boxmatome2 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 17px;
+    background: #ee3414;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+  }
+  .boxmatome2 p {
+    margin: 0; 
+    padding: 0;
+  }
+  .boxmatome2 p{
+    margin-bottom: 5px;
+    }
+  /*ドロップダウンのマウスオーバ*/
+.icon1 {
+  width: 20px;
+  height: 20px;
+  vertical-align:bottom;
+}
+
+.general-content .adapta h3 {
+  padding: 0.25em 0.5em;/*上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #7db4e6;/*左線*/
+    border-bottom: hidden;
+  }
+  .general-content .adapta-bad h3 {
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    color: #494949;/*文字色*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px #c23927;/*左線*/
+      border-bottom: hidden;
+  }
+  
+  @media (max-width: 1270px){
+  .side-fixed-bar {
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      height: 50px;
+      
+  }
+}
+  
+  .side-fixed-bar {
+      position: fixed;
+      height: 70px;
+      width: 100%;
+      left: 0px;
+      bottom: 0px;
+      filter:alpha(opacity=80);
+      -moz-opacity: 0.8;
+      opacity: 0.8;
+  }
