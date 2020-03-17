@@ -11,6 +11,7 @@ const headers = {
 exports.handler = function(event, context, callback) {
   const user = process.env.MAIL_USER;
   const pass = process.env.MAIL_PASSWORD;
+  const { name, email, message } = JSON.parse(event.body).payload.data
 
   console.log(user);
 
@@ -24,7 +25,7 @@ exports.handler = function(event, context, callback) {
   console.log(event.body);
 
   let mailOptions = {
-    from: `"斉藤" <${user}>`,
+    from: `"test" <${user}>`,
     to: '${email}',
     subject: 'Contact submission received!',
     html: '<p>メッセージを送信しました。</p>',
