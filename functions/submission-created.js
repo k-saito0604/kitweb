@@ -27,7 +27,7 @@ exports.handler = function(event, context, callback) {
     from: `"斉藤" <${user}>`,
     to: 'sigsig_eden1998@hotmail.co.jp',
     subject: 'Contact submission received!',
-    messeage: 'test'
+    messeage: 'test',
     html: '<p>メッセージを送信しました。</p>',
   };
 
