@@ -25,8 +25,9 @@ exports.handler = function(event, context, callback) {
 
   let mailOptions = {
     from: `"斉藤" <${user}>`,
-    to: `${email}`,
+    to: `sigsig_eden1998@hotmail.co.jp`,
     subject: 'Contact submission received!',
+    messeage: 'test'
     html: '<p>メッセージを送信しました。</p>',
   };
 
