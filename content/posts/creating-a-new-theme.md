@@ -1,7 +1,7 @@
 +++
 title = "Creating a new theme"
 date = "2015-06-24T13:50:46+02:00"
-tags = ["NEWS"]
+tags = ["news"]
 categories = ["news"]
 
 description = "This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content."

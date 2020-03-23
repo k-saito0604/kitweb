@@ -20,6 +20,7 @@
                 <div class="row">
                     <!-- *** LEFT COLUMN *** -->
 
+                    {{ partial "terems.html" . }}
                     <div class="col-md-9" id="blog-listing-medium">
 
                         {{ $paginator := .Paginate (where .Data.Pages "Type" "posts" ) }}
@@ -80,21 +81,6 @@
                             {{ end }}
                         </ul>
                     </div>
-                    {{ if and (.Params.categories) }}
-                    {{ $c := index .Params.categories 0 }}
-                    <div class="same-category-posts-area">
-                      <h2>Posts in "{{ $c }}" category</h2>
-                      {{ $cposts := index .Site.Taxonomies.categories (lower $c) }}
-                      {{ range $cposts }}
-                        {{ .Render "li" }}
-                      {{ end }}
-                      {{ if gt (len $cposts) 5 }}
-                        <a class="more-btn" href="/categories/{{ lower $c }}/">more ...</a>
-                      {{ else }}
-                        <a class="more-btn" href="/categories/">other categories</a>
-                      {{ end }}
-                    </div>
-                  {{ end }}
                     <!-- /.col-md-9 -->
 
                     <!-- *** LEFT COLUMN END *** -->
@@ -121,7 +107,6 @@
             <!-- /.container -->
         </div>
         <!-- /#content -->
-
         {{ partial "footer.html" . }}
 
     </div>
