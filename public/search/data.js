@@ -117,6 +117,12 @@ var data = [
     body: "liftshift"
   },
   {
+    url: "/privacy-policy/",
+    title: "Privacy Policy",
+    date: "0001-01-01T00:00:00Z",
+    body: "Privacy Policy"
+  },
+  {
     url: "/search/",
     title: "Searches",
     date: "0001-01-01T00:00:00Z",
