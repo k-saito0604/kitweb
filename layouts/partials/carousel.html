@@ -1,30 +1,54 @@
-{{ if isset .Site.Params "carousel" }}
-{{ if .Site.Params.carousel.enable }}
-{{ if gt (len .Site.Data.carousel) 0 }}
+
 <section>
     <div class="home-carousel">
         <div class="dark-mask"></div>
         <div class="container">
             <div class="homepage owl-carousel">
-                {{ range sort .Site.Data.carousel "weight" }}
                 <div class="item">
                     <div class="row">
                         <div class="col-sm-12">
-                            <p>{{ .title }}</p>
-                            <p>    
-                            {{ .description | safeHTML }}
-                            </p>
-                            <img class="img-responsive" src="{{ .image }}" alt="">
+                            <div class="goglobal">
+                            <img class="img-responsive" src="/img/carousel/goglobal.jpg" alt=""> 
+                            <a href="./function-introduction/" class="btn-square-shadow">GO-Globalについて詳しく見る</a>
+                        </div>
                         </div>
                     </div>
                 </div>
-                {{ end }}
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="tele">
+                            <img class="img-responsive" src="/img/carousel/tele.jpg" alt="">
+                            <a href="./case-study" class="teletext">柔軟な働き方を目指す<br>中小企業やテレワークや<br>リモートワークの<br>導入支援をいたします。</a>
+                            <a href="./case-study" class="btn-square-shadow">テレワークについて詳しく見る</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="casepic">
+                            <img class="img-responsive" src="/img/carousel/case.jpg" alt="">
+                            <a href="./adaptation-facility-5/">導入事例<br>病院、学校、ソフトウエアのクラウド化、中小企業</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="websepa">
+                            <img class="img-responsive" src="/img/carousel/websep.jpg" alt="">
+                            <a href ="./web-separation" class="btn-square-shadow">インターネット分離について詳しくみる</a>
+                            <p href ="./web-separation">情報セキュリティを対策を強化<br>情報漏洩や外部攻撃を</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
             <!-- /.project owl-slider -->
 
         </div>
     </div>
 </section>
-{{ end }}
-{{ end }}
-{{ end }}

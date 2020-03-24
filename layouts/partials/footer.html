@@ -30,7 +30,7 @@
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+                        <h5>{{  .Date.Format .Site.Params.date_format }} <a href="{{ .Permalink }}">{{ .Title }}</a></h5>
                     </div>
                 </div>
                 {{ end }}
