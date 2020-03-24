@@ -306,15 +306,19 @@
                                 <input  type="text" class="form-control" name="name" id="name" required>
                             </div>
                             <div class="form-group">
-                              <label for="name">フリガナ</label>
+                              <label for="furi">フリガナ</label>
                                 <input  type="text" class="form-control" name="フリガナ" id="フリガナ">
+                            </div>
+                            <div class="form-group">
+                              <label for="company">会社名</label>
+                                <input  type="text" class="form-control" name="会社名" id="会社名">
                             </div>
                             <div class="form-group">
                                 <label for="email">メールアドレス</label>
                                 <input type="text" class="form-control" name="email" id="email" required>
                             </div>
                             <div class="form-group">
-                              <label for="email">電話番号</label>
+                              <label for="tel">電話番号</label>
                               <input type="text" class="form-control" name="tel" id="tel" required>
                           </div>
                         <div class="form-group">
@@ -327,20 +331,14 @@
                           </select> 
                         </div>
                             <div class="form-group">
-                              <label for="message">お問い合わせ内容</label>
+                              <label for="message">お問い合わせ内容<br>(製品サポートのお問い合わせはこの欄にKitLIDも記載ください)</label>
                                 <textarea id="message" class="form-control" name="message" required></textarea>
                             </div>
                         </div>
                         <span class="form-error" id="form-type_error"></span><br />
                         <center><div data-netlify-recaptcha="true"></div></center>
-                        <div class="col-sm-12 text-center">
-                          <button type="submit" class="btn btn-template-main"><i class="far fa-envelope"></i>送信</button>
-                        </div>
-                    </div>
-                    
-                </form>
-                <div class="col-sm-8">
-                <h3 id="お問い合わせフォームにおける個人情報のbr取り扱いについて">お問い合わせフォームにおける個人情報の<!-- raw HTML omitted -->取り扱いについて</h3>
+                        <div class="col-sm-12">
+                          <h3 id="お問い合わせフォームにおける個人情報のbr取り扱いについて">お問い合わせフォームにおける個人情報の<!-- raw HTML omitted -->取り扱いについて</h3>
 <ol>
 <li>
 <p>組織の名称又は氏名
@@ -369,18 +367,30 @@
 </li>
 </ol>
 
-                </div>
-                <br>
-                <div class="col-sm-4">
-                  <h4>株式会社きっとエイエスピー<br>個人情報問合せ窓口</h4>
-                  〒102-0083 東京都千代田区麹町5-3-3<br>
-                  麹町ＫＳスクエア6階<br>
-                  TEL：03-3350-9300<br>
-                  FAX：03-3263-3088<br>
-                  privacy@kitasp.com<br>
-                  9:00～18:00<br>
-                  土・日曜日、祝日、年末年始<br>
-                </div>
+                          </div> 
+                            <div class="col-sm-12">
+                            <h4>株式会社きっとエイエスピー<br>個人情報問合せ窓口</h4>
+                            〒102-0083 東京都千代田区麹町5-3-3<br>
+                            麹町ＫＳスクエア6階<br>
+                            TEL：03-3350-9300<br>
+                            FAX：03-3263-3088<br>
+                            privacy@kitasp.com<br>
+                            9:00～18:00<br>
+                            土・日曜日、祝日、年末年始<br>
+                          </div>
+                          
+                        <div class="col-sm-12 text-center">
+                          <div class="form-group">
+                            <br>
+                            <p>
+                             <input type="checkbox" name="check" id="check" required>個人情報の取り扱いについて了承する
+                             </p>
+                           </div>
+                          <button type="submit" class="btn btn-template-main"><i class="far fa-envelope"></i>送信</button>
+                        </div>
+                    </div>
+                    
+                </form>
                 
 
             </section>
