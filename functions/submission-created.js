@@ -9,8 +9,7 @@ const headers = {
 };
 
 exports.handler = function(event, context, callback) {
-  const user = process.env.MAIL_USER;
-  const pass = process.env.MAIL_PASSWORD;
+
   const { name, email, message } = JSON.parse(event.body).payload.data
 
   console.log(user);
@@ -19,13 +18,18 @@ exports.handler = function(event, context, callback) {
     host: 'smtp.gmail.com',
     port: 465,
     secure: true,
-    auth: {user, pass},
+    auth: {
+      type: 'OAuth2',
+      user: process.env.MAIL_LOGIN,
+      clientId: process.env.CLIENT_ID,
+      clientSecret: process.env.CLIENT_SECRET
+    },
   });
 
   console.log(event.body);
 
   let mailOptions = {
-    from: `"test" <${user}>`,
+    from: `"" <${user}>`,
     to: `${email}`,
     subject: 'フォームを送信いたしました',
     html: '<p>メッセージを送信しました。</p>',
