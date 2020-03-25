@@ -24,11 +24,11 @@ exports.handler = function(event, context, callback) {
     secure: true,
     auth: {
       type: 'OAuth2',
-      user,
-      clientId,
-      clientSecret,
-      refreshToken,
-      accessToken
+      user: user,
+      clientId: clientId,
+      clientSecret: clientSecret,
+      refreshToken: refreshToken,
+      accessToken: accessToken
     },
   });
 
