@@ -1,7 +1,6 @@
 require('dotenv').config();
 
 const nodemailer = require('nodemailer');
-const {OAuth2} = google.auth; 
 const OAUTH_PLAYGROUND = ' https://developers.google.com/oauthplayground' ; 
 
 
