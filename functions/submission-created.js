@@ -1,6 +1,8 @@
 require('dotenv').config();
 
 const nodemailer = require('nodemailer');
+const {OAuth2} = google.auth; 
+const OAUTH_PLAYGROUND = ' https://developers.google.com/oauthplayground' ; 
 
 
 exports.handler = function(event, context, callback) {
@@ -24,7 +26,8 @@ exports.handler = function(event, context, callback) {
       clientId,
       clientSecret,
       refreshToken,
-      accessToken
+      accessToken,
+      OAUTH_PLAYGROUND
     },
   });
 
