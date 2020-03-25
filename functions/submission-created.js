@@ -1,9 +1,9 @@
 require('dotenv').config();
 
   const nodemailer = require('nodemailer');
-  const { name, email, message } = JSON.parse(event.body).payload.data
 
 exports.handler = function(event, context, callback) {
+  const { name, email, message } = JSON.parse(event.body).payload.data
     let transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
         port: 465,
