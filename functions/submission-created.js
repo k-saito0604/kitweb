@@ -9,7 +9,11 @@ const headers = {
 };
 
 exports.handler = function(event, context, callback) {
-
+  const user = process.env.MAIL_LOGIN;
+  const clientId = process.env.CLIENT_ID;
+  const clientSecret = process.env.CLIENT_SECRET;
+  const refreshToken = process.env.REFRESH_TOKEN;
+  const accessToken = process.env.ACCESS_TOKEN;
   const { name, email, message } = JSON.parse(event.body).payload.data
 
   console.log(user);
@@ -20,18 +24,18 @@ exports.handler = function(event, context, callback) {
     secure: true,
     auth: {
       type: 'OAuth2',
-      user: process.env.MAIL_LOGIN,
-      clientId: process.env.CLIENT_ID,
-      clientSecret: process.env.CLIENT_SECRET,
-      refreshToken: process.env.REFRESH_TOKEN,
-      accessToken: process.env.ACCESS_TOKEN
+      user,
+      clientId,
+      clientSecret,
+      refreshToken,
+      accessToken
     },
   });
 
   console.log(event.body);
 
   let mailOptions = {
-    from: `"" <keisuke.saito@kitasp.jp>`,
+    from: keisuke.saito@kitasp.jp,
     to: `${email}`,
     subject: 'フォームを送信いたしました',
     html: '<p>メッセージを送信しました。</p>',
