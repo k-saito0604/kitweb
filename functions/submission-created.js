@@ -22,14 +22,16 @@ exports.handler = function(event, context, callback) {
       type: 'OAuth2',
       user: process.env.MAIL_LOGIN,
       clientId: process.env.CLIENT_ID,
-      clientSecret: process.env.CLIENT_SECRET
+      clientSecret: process.env.CLIENT_SECRET,
+      refreshToken: process.env.REFRESH_TOKEN,
+      accessToken: process.env.ACCESS_TOKEN
     },
   });
 
   console.log(event.body);
 
   let mailOptions = {
-    from: `"斉藤圭佑" <keisuke.saito@kitasp.com>`,
+    from: `"" <${user}>`,
     to: `${email}`,
     subject: 'フォームを送信いたしました',
     html: '<p>メッセージを送信しました。</p>',
