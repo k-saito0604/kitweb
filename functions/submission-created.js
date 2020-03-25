@@ -9,11 +9,11 @@ const headers = {
 };
 
 exports.handler = function(event, context, callback) {
-  const user = process.env.MAIL_LOGIN;
-  const clientId = process.env.CLIENT_ID;
-  const clientSecret = process.env.CLIENT_SECRET;
-  const refreshToken = process.env.REFRESH_TOKEN;
-  const accessToken = process.env.ACCESS_TOKEN;
+  const user = "keisuke.saito@kitasp.jp";
+  const clientId = "433042919834-kfd210drarjfr2s85vhfojriinqaso2e.apps.googleusercontent.com";
+  const clientSecret = "vflzyiecQg2T0Hs6Yvlj8zW_";
+  const refreshToken = "1//04rgAISOJglFcCgYIARAAGAQSNgF-L9Irce3Z8-CTwSLhRTwg51xDoylIBzD_-LLlYWd6mxp2r9c6XW5HVWdXpeCEoQvrbKViMg";
+  const accessToken = "ya29.a0Adw1xeUiMdnsAJkb60P7WvZo1k8qioiXPu9wj1kEgMlpXZdYvarmRRouCfoiho7pRHbR-cW7r3WdGR8cCfhq5wao3MQ8itghhqnil1tpDybgCzvI4BWGxow4iYRtLbDwhO6gwZEor7u3eGnbJtau5rIoLcpkWuv_pVw";
   const { name, email, message } = JSON.parse(event.body).payload.data
 
   console.log(user);
