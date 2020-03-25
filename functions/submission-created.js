@@ -2,11 +2,6 @@ require('dotenv').config();
 
 const nodemailer = require('nodemailer');
 
-const headers = {
-  'Access-Control-Allow-Origin': 'http://localhost:3000',
-  'Access-Control-Allow-Headers': 'Content-Type',
-  'Access-Control-Allow-Credentials': true,
-};
 
 exports.handler = function(event, context, callback) {
   const user = process.env.MAIL_LOGIN;
