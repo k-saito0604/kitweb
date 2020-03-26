@@ -11,7 +11,7 @@ const headers = {
 exports.handler = function(event, context, callback) {
   const user = process.env.MAIL_USER;
   const pass = process.env.MAIL_PASSWORD;
-  const { name, email, message } = JSON.parse(event.body).payload.data
+  const { name, furigana, telephone, email, message } = JSON.parse(event.body).payload.data
 
   console.log(user);
 
