@@ -22,7 +22,8 @@ exports.handler = function(event, context, callback) {
       user,
       clientId,
       clientSecret,
-      refreshToken
+      refreshToken,
+      accessToken
     },
   });
 
