@@ -25,7 +25,7 @@ exports.handler = function(event, context, callback) {
   console.log(event.body);
 
   let mailOptions = {
-    from: `"keisuke saito" <keisuke.saito@kitasp.com>`,
+    from: `"きっと問い合わせ窓口" <kit-madoguchi@kitasp.jp>`,
     to: `${email}`,
     subject: 'フォームを送信いたしました',
     html: '<p>メッセージを送信しました。</p>',
