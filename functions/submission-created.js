@@ -1,10 +1,11 @@
 require('dotenv').config();
 
 const nodemailer = require('nodemailer');
+const OAuth2 = google.auth.OAuth2;
 
 
 exports.handler = function(event, context, callback) {
-  const type = 'OAuth2';
+  const type = OAuth2;
   const user = process.env.MAIL_LOGIN;
   const clientId = process.env.CLIENT_ID;
   const clientSecret = process.env.CLIENT_SECRET;
@@ -19,6 +20,7 @@ exports.handler = function(event, context, callback) {
     port: 465,
     secure: true,
     auth: {
+
       type,
       user,
       clientId,
