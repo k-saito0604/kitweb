@@ -2,16 +2,15 @@ require('dotenv').config();
 
 const nodemailer = require('nodemailer');
 
-const headers = {
-  'Access-Control-Allow-Origin': 'http://localhost:3000',
-  'Access-Control-Allow-Headers': 'Content-Type',
-  'Access-Control-Allow-Credentials': true,
-};
 
 exports.handler = function(event, context, callback) {
-  const user = process.env.MAIL_USER;
-  const pass = process.env.MAIL_PASSWORD;
-  const { name, furigana, telephone, email, message } = JSON.parse(event.body).payload.data
+  const type = 'OAuth2';
+  const user = process.env.MAIL_LOGIN;
+  const clientId = process.env.CLIENT_ID;
+  const clientSecret = process.env.CLIENT_SECRET;
+  const refreshToken = process.env.REFRESH_TOKEN;
+  const accessToken = process.env.ACCESS_TOKEN;
+  const { name, email, message } = JSON.parse(event.body).payload.data
 
   console.log(user);
 
@@ -19,13 +18,20 @@ exports.handler = function(event, context, callback) {
     host: 'smtp.gmail.com',
     port: 465,
     secure: true,
-    auth: {user, pass},
+    auth: {
+      type,
+      user,
+      clientId,
+      clientSecret,
+      refreshToken,
+      accessToken
+    },
   });
 
   console.log(event.body);
 
   let mailOptions = {
-    from: `"きっとASP問い合わせ窓口" <kit-madoguchi@kitasp.com>`,
+    from: `"さいとう"<${user}>`,
     to: `${email}`,
     subject: 'フォームを送信いたしました',
     html: '<p>メッセージを送信しました。</p>',
