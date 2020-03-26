@@ -19,8 +19,10 @@ exports.handler = function(event, context, callback) {
     secure: true,
     auth: {
       type,
+      user,
       clientId,
-      clientSecret
+      clientSecret,
+      refreshToken
     },
   });
 
