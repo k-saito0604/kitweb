@@ -37,10 +37,10 @@ exports.handler = function(event, context, callback) {
   console.log(event.body);
 
   let mailOptions = {
-    from: `"さいとう"<kit-madoguchi@kitasp.com>`,
+    from: `"kit-madoguch@kitasp.com"<kit-madoguchi@kitasp.com>`,
     to: `${email}`,
-    subject: 'フォームを送信いたしました',
-    html: '<p>${name}様　メッセージを送信しました。</p>',
+    subject: 'ありがとうございます。フォームを送信いたしました',
+    html: `${name}様　メッセージを送信しました。`,
   };
 
   transporter.sendMail(mailOptions, function(error, info) {
