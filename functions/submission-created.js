@@ -19,11 +19,11 @@ exports.handler = function(event, context, callback) {
     secure: true,
     auth: {
       type:"OAuth2",
-      user: user,
-      clientId: clientId,
-      clientSecret: clientSecret,
-      refreshToken: refreshToken,
-      accessToken: accessToken  
+      user:"keisuke.saito@kitasp.jp",
+      clientId:"187284571430-r4qo7dpgooplqiifrk9ue0lss69kh3l9.apps.googleusercontent.com",
+      clientSecret:"HzXluk1wG9J17JupRBHZgczB",
+      refreshToken:"1//04NpwTbGKPTFnCgYIARAAGAQSNgF-L9Irr760UeHO4ezZyu50Ron1UyNBhLMy_Jau_DvUwkW6Njt479pdpicV0PjdMTwuRIPe7A",
+      accessToken: "ya29.a0Adw1xeX0QDvj9dRA92JvWvOaYL5bxSv7R-WWnBhJgfXIQll5Vnquf5O3p_-XA-9XaxLHsVC-ght-AV-TEBk7JwiKzf3F3mSJSFIEEnD2xlBCuCvNjxJdVmikrvYH2c4SpNBolQs-qVVslV5epkhRrZXfarKBXf7V5T8"   
     },
   });
 /*
