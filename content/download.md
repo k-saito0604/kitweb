@@ -1,4 +1,4 @@
 +++
-title = "沿革"
-id = "history"
+title = "Download"
+id = "download"
 +++
