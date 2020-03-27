@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>docs portal</title>
+    <script defer src="/__/firebase/5.3.1/firebase-app.js"></script>
+    <script defer src="/__/firebase/5.3.1/firebase-storage.js"></script>
+    <script defer src="/__/firebase/5.3.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+
+
+
+  </head>
+  <body>
+
+    <h1>Download</h1>
+    <a href="sine-in.html">Sine in</a>
+    <button onclick="location.href='done.html'">signOUT</button>
+
+   <div id="imageFirestore" class="image"></div>
+    <div id="imageFirebaseAuthentication" class="image"></div>
+    <progress value="0" max="100" id="uploader">0%</progress>
+    <input type="file" value="upload" id="fileButton" />
+
+    <script>
+    var config = {
+    apiKey: "AIzaSyA-wTbdlpBYtSH3R5wKxo60XqA9NvqyhCg",
+    authDomain: "kitdocs-9ad43.firebaseapp.com",
+    databaseURL: "https://kitdocs-9ad43.firebaseio.com",
+    projectId: "kitdocs-9ad43",
+    storageBucket: "kitdocs-9ad43.appspot.com",
+    messagingSenderId: "481073023298",
+    appId: "1:481073023298:web:9b165929547c49e8afa0db"
+  };
+  //  firebase.initializeApp(config);
+
+    var uploader = document.getElementById('uploader');
+    var fileButton = document.getElementById('fileButton');
+
+      fileButton.addEventListener('change',function(e){
+        //get file
+      var file = e.target.files[0];
+      var storageRef = firebase.storage().ref('test/'+ file.name);
+      var task = storageRef.put(file);
+
+      task.on('state_changed',
+        function progress(snapshot) {
+          var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          uploader.value = percentage;
+        },
+        function error(err){
+          alert('エラーが発生しました');
+        },
+        function complete(){
+          alert('アップロードしました');
+        },
+      );
+    });
+    </script>
+<!--    <ul>
+        <li id="filename1">お客様</li>
+        <li id="filename2">FirebaseAuthentication</li>
+    </ul>
+-->
+    <div class="general-content-wrapper max-width downloads">
+        <div class="general-content">
+<!--        <center><h2> 【代理店専用】<h2> -->
+<!--		<h3>ダウンロードしてコンテンツを利用するには、<a href="https://www.kitasp.com/login" style="color:red">ログイン</a> をして下さい </h3></center>-->
+          <h2>Windows Update</h2>
+           <ul>
+            <li>
+              <a class="download-link"rel="nofollow">
+              2020年1月のWindows Update互換性情報
+            </a><a id=filename1> </a>
+              </li>
+
+            <li id="filename2">2019年12月のWindows Update互換性情報
+                </li>
+            <li id="filename3">2019年11月のWindows Update互換性情報</li>
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                2019年10月のWindows Update互換性情報
+                </a>
+                (2019/10/25)
+            </li>
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                2019年9月のWindows Update互換性情報
+                </a>
+                (2019/09/27)
+            </li>
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                2019年8月のWindows Update互換性情報
+                </a>
+                (2019/08/25)
+            </li>
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                2019年7月のWindows Update互換性情報
+                </a>
+                (2019/07/25)
+            </li>
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                2019年6月のWindows Update互換性情報
+                </a>
+                (2019/06/26)
+            </li>
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                2019年5月のWindows Update互換性情報
+                </a>
+                (2019/05/29)
+            </li>
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                2019年4月のWindows Update互換性情報
+                </a>
+                (2019/04/24)
+            </li>
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                2019年3月のWindows Update互換性情報
+                </a>
+                (2019/03/29)
+            </li>
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                2019年2月のWindows Update互換性情報
+                </a>
+                (2019/02/22)
+            </li>
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                2019年1月のWindows Update互換性情報
+                </a>
+                (2019/01/25)
+            </li>
+        </ul>
+        <h2>セミナー資料</h2>
+        <ul class="dlm-downloads">
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                1)GO-Global for Windows セミナー
+                </a>
+                (2019/10/08)
+            </li>
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                2)GO-Global for Windows_V6_201905
+                </a>
+                (2019/10/08)
+            </li>
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                3)GO-Global for Windows サーバサイジングに伴うヒアリング項目についてのおさらい
+                </a>
+                (2019/10/08)
+            </li>
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                4)GO-Global for Windows_ログ収集ツール_GGezSRW
+                </a>
+                (2019/10/08)
+            </li>
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                5)きっとエイエスピーの新ホームページのご案内
+                </a>
+                (2019/10/08)</li>
+                <li>
+                    <a class="download-link" title="" href="#" rel="nofollow">
+                6)GO-Global for Windows_アカデミックパックについて
+                </a>
+                (2019/10/08)
+            </li>
+        </ul>
+        <h2>ソフトウェア</h2>
+        <ul class="dlm-downloads">
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                GGEasyLogon_6.2.3
+                    </a>
+                (2019/04/11)
+            </li>
+        </ul>
+            <h2>ドキュメント</h2>
+            <ul class="dlm-downloads">
+                <li>
+                    <a class="download-link" title="" href="#" rel="nofollow">
+                    GO-Global for Windows_印刷処理について
+                    </a>
+                    (2019/10/01)
+                </li>
+                <li>
+                    <a class="download-link" title="" href="#" rel="nofollow">
+                    GO-Global for Windows_IMEの仕様について
+                    </a>
+                    (2019/09/05)
+                </li>
+                <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                    GO-Global for Windows_ライセンスガイド
+                    </a>
+                    (2019/04/22)
+                </li>
+                <li>
+                    <a class="download-link" title="" href="#" rel="nofollow">
+                    GO-Global製品バージョン別機能マトリックス
+                    </a>
+                    (2019/04/22)
+                </li>
+                <li>
+                    <a class="download-link" title="" href="#" rel="nofollow">
+                    GGEasyMonitor(拡張パック)_構築ガイド
+                    </a>
+                    (2019/04/22)
+                </li>
+                <li>
+                    <a class="download-link" title="" href="#" rel="nofollow">
+                    GO-Global_構築ガイド
+                    </a>
+                    (2019/04/18)
+                </li>
+            </ul>
+        <h2>代理店向け発行書類</h2>
+        <ul class="dlm-downloads">
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                ライセンス・キー発行依頼書
+                </a>
+                (2019/09/25)
+            </li>
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                保守申込書
+                </a>
+                (2019/09/25)
+            </li>
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                バージョンアップ・ライセンスキー発行依頼書
+                </a>
+                (2019/09/25)
+            </li>
+            <li>
+                <a class="download-link" title="" href="#" rel="nofollow">
+                GO-Global 評価版ライセンス申請書
+                </a>
+                (2019/09/25)
+            </li>
+        </ul>
+		        </div>
+    </div>
+-->
+<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        try {
+          var app = firebase.app();
+          var storage = firebase.storage();
+          var storageRef = storage.ref();
+        //document.getElementById('bucket').innerHTML = 'Bucket: ' + storageRef.bucket;
+          var imagesRef = storageRef.child('user');
+          var imgFirestoreRef1 = imagesRef.child('2020年1月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef2 = imagesRef.child('2019年12月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef3 = imagesRef.child('2019年11月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef4 = imagesRef.child('2019年10月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef5 = imagesRef.child('2019年9月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef6 = imagesRef.child('2019年8月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef7 = imagesRef.child('2019年7月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef8 = imagesRef.child('2019年6月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef9 = imagesRef.child('2019年5月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef10 = imagesRef.child('2019年4月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef11 = imagesRef.child('2019年3月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef12 = imagesRef.child('2019年2月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef13 = imagesRef.child('2019年1月のWindows-Update互換性情報についてのお知らせ.pdf');
+
+          var imgFirebaseAuthRef = imagesRef.child('clustermisc.png');
+
+          // ファイルのURLを取得する
+          imgFirestoreRef1.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename1').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef2.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename2').innerHTML = '<a href="' + url + '">' + imgFirestoreRef2.name + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef3.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename3').innerHTML = '<a href="' + url + '">' + imgFirestoreRef.name + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef4.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename4').innerHTML = '<a href="' + url + '">' + imgFirestoreRef.name + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef5.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename5').innerHTML = '<a href="' + url + '">' + imgFirestoreRef.name + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef6.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename6').innerHTML = '<a href="' + url + '">' + imgFirestoreRef.name + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef7.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename8').innerHTML = '<a href="' + url + '">' + imgFirestoreRef.name + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef8.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename8').innerHTML = '<a href="' + url + '">' + imgFirestoreRef.name + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef9.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename9').innerHTML = '<a href="' + url + '">' + imgFirestoreRef.name + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef10.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename10').innerHTML = '<a href="' + url + '">' + imgFirestoreRef.name + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef11.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename12').innerHTML = '<a href="' + url + '">' + imgFirestoreRef.name + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef13.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename13').innerHTML = '<a href="' + url + '">' + imgFirestoreRef.name + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+
+          // ファイルのURLを取得する
+          imgFirebaseAuthRef.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirebaseAuthentication");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename100').innerHTML = '<a href="' + url + '">' + imgFirebaseAuthRef.name + '</a>';
+          }).catch(function(error) {
+            document.getElementById('filename100').innerHTML = error.message;
+            console.log(error);
+          });
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>

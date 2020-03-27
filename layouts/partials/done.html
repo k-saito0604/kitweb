@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hello Firebase Auth (ログアウト)</title>
+  <style type="text/css">
+    .hide{ display:none; }
+  </style>
+</head>
+<body>
+  <h1>...Please wait</h1>
+  <div id="info"></div>
+  <form>
+    <button type="button" id="logout" class="hide">ログアウト</button>
+  </form>
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-auth.js"></script>
+  <script src="/js/config.js"></script>
+  <script>
+    // Initialize Firebase
+      // Initialize Firebase
+      var config = {
+      apiKey: "AIzaSyA-wTbdlpBYtSH3R5wKxo60XqA9NvqyhCg",
+      authDomain: "kitdocs-9ad43.firebaseapp.com",
+      databaseURL: "https://kitdocs-9ad43.firebaseio.com",
+      projectId: "kitdocs-9ad43",
+      storageBucket: "kitdocs-9ad43.appspot.com",
+      messagingSenderId: "481073023298",
+      appId: "1:481073023298:web:9b165929547c49e8afa0db"
+    };
+      firebase.initializeApp(config);
+    </script>
+
+  <script>
+    firebase.auth().onAuthStateChanged( (user) => {
+      let logout = document.getElementById("logout");
+
+      //-----------------------------------
+      // ログインチェック
+      //-----------------------------------
+      if(! user) {
+        showMessage('Not Login', 'ログインしていません');
+        logout.classList.add("hide");
+        return(false);
+      }
+
+      //-----------------------------------
+      // ログイン者への処理
+      //-----------------------------------
+      // ログインメッセージ
+      showMessage('Login Complete!', `${user.email}さんがログインしています。`);
+
+      // ログアウトボタンを表示
+      logout.classList.remove("hide");
+
+      // ログアウトボタンを押下
+      logout.addEventListener("click", ()=>{
+        firebase.auth().signOut().then(()=>{
+          console.log("ログアウトしました");
+        })
+        .catch( (error)=>{
+          console.log(`ログアウト時にエラーが発生しました (${error})`);
+        });
+      });
+    });
+
+    /**
+     * メッセージ表示
+     **/
+    function showMessage(title, msg){
+      document.querySelector('h1').innerText = title;
+      document.querySelector('#info').innerText = msg;
+    }
+  </script>
+     <button onclick="location.href='index.html'">home</button>
+</body>
+</html>

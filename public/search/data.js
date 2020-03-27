@@ -117,6 +117,12 @@ var data = [
     body: "liftshift"
   },
   {
+    url: "/done/",
+    title: "logout",
+    date: "0001-01-01T00:00:00Z",
+    body: "logout"
+  },
+  {
     url: "/privacy-policy/",
     title: "Privacy Policy",
     date: "0001-01-01T00:00:00Z",
@@ -207,7 +213,19 @@ var data = [
     body: "機能説明"
   },
   {
+    url: "/download/",
+    title: "沿革",
+    date: "0001-01-01T00:00:00Z",
+    body: "沿革"
+  },
+  {
     url: "/history/",
+    title: "沿革",
+    date: "0001-01-01T00:00:00Z",
+    body: "沿革"
+  },
+  {
+    url: "/signin/",
     title: "沿革",
     date: "0001-01-01T00:00:00Z",
     body: "沿革"
