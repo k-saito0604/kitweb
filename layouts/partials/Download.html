@@ -17,15 +17,6 @@
               <input type="file" value="upload" id="fileButton" />
 
               <script>
-              var config = {
-              apiKey: "AIzaSyA-wTbdlpBYtSH3R5wKxo60XqA9NvqyhCg",
-              authDomain: "kitdocs-9ad43.firebaseapp.com",
-              databaseURL: "https://kitdocs-9ad43.firebaseio.com",
-              projectId: "kitdocs-9ad43",
-              storageBucket: "kitdocs-9ad43.appspot.com",
-              messagingSenderId: "481073023298",
-              appId: "1:481073023298:web:9b165929547c49e8afa0db"
-            };
             //  firebase.initializeApp(config);
           
               var uploader = document.getElementById('uploader');
@@ -285,7 +276,7 @@
                     imgFirestoreRef2.getDownloadURL().then(function(url){
                       var image = document.getElementById("imageFirestore");
                       image.style.backgroundImage = "url("+url+")";
-                      document.getElementById('filename2').innerHTML = '<a href="' + url + '">' + imgFirestoreRef2.name + '</a>';
+                      document.getElementById('filename2').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
                     }).catch(function(error) {
           //            document.getElementById('filename1').innerHTML = error.message;
                       console.log(error);
