@@ -1,3 +1,10 @@
+<div class="container" id="contact">
+
+    <section>
+
+        {{ .Content }}
+
+        {{ if isset .Site.Params "email" }}
 
         <div class="heading">
             <main>
@@ -372,6 +379,27 @@
                 });
               </script>
             </main><!-- main -->
+
+
+      </div>
+
+      {{ end }}
+
+    </section>
+
+
+
+<div class="col-md-4">
+
+    {{ if isset .Site.Params "address" }}
+    <section>
+
+
+
+    </section>
+
+    {{ end }}
+
 </div>
 
 
