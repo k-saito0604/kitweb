@@ -1,5 +1,5 @@
 +++
-title = "働き方改革"
+title = "働き方改革 | GO-Globalで柔軟な働き方が実現できます"
 id = "work-style-reform"
 +++
 働き方改革

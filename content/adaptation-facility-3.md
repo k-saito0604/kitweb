@@ -1,5 +1,5 @@
 +++
-title = "事例"
+title = "中小企業のオフィスで使用しているレガシーアプリケーション導入事例"
 id = "adaptation-facility-3"
 +++
 中小企業オフィスのGO-Globl導入事例

@@ -1,5 +1,5 @@
 +++
-title = "シンクライアント"
+title = "GO-Globalでファットクライアントをシンクライアントへ"
 id = "thin-client"
 +++
 シンクライアント

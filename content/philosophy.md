@@ -1,4 +1,4 @@
 +++
-title = "理念"
+title = "きっとエイエスピー理念"
 ID = "philosophy"
 +++

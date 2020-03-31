@@ -1,5 +1,5 @@
 +++
-title = "機能説明"
+title = "GO-Globalは低コストでセキュアなシンクライアントです"
 ID = "go-global"
 aliases = ["/function-introduction/"]
 +++

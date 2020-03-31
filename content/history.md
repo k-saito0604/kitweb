@@ -1,4 +1,4 @@
 +++
-title = "沿革"
+title = "きっとエイエスピー沿革"
 id = "history"
 +++

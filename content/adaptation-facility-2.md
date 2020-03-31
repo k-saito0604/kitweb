@@ -1,5 +1,5 @@
 +++
-title = "事例"
+title = "必見ソフトウエアベンダーのシンクライアント導入事例クラウド化へ"
 id = "adaptation-facility-2"
 +++
 ISVのGO-Global導入事例

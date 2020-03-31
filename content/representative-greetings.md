@@ -1,4 +1,4 @@
 +++
-title = "代表挨拶"
+title = "きっとエイエスピー代表あいさつ"
 id = "representative-greetings"
 +++

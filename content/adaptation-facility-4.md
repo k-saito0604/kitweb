@@ -1,5 +1,5 @@
 +++
-title = "事例"
+title = "中小企業のBCP対策を低コストで簡単に素早く実現した導入事例"
 id = "adaptation-facility-4"
 +++
 災害に備えBCP（事業継続計画）対策をGO-GLOBALで実装
