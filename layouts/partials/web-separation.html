@@ -1,18 +1,35 @@
+<section class="bar background-image-fixed-3 no-mb color-white text-center">
+    <div class="dark-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!--<div class="icon icon-lg"><i class="{{ .Site.Params.see_more.icon }}"></i>
+                </div>-->
+                <h1 class="text-uppercase">Web分離</h1>
+                <h3 class="text-uppercase">インターネット分離</h3>
+                <p class="lead">仕組みと導入のポイント</p>
+                <h4>総務省セキュリティ対策で注目のWEB分離（インターネット分離）について詳しく解説します。</h4>
+                <p class="text-center">
+                    <a href="{{ . }}" class="btn btn-template-transparent-black btn-lg">
+                    解説を読む
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 <div class="container" id="contact">
 
   <section>
 
-    {{ .Content }}
+    
 
     {{ if isset .Site.Params "email" }}
 
     <div class="heading">
       <main>
-      <img class="img2" src="/img/top-banner-1.jpg">
-      <div class="general-content-wrapper max-width web-separation">
+         <div class="general-content-wrapper max-width web-separation">
         <div class="general-content">
-          <h2>総務省セキュリティ対策で注目のWEB分離（インターネット分離）について詳しく解説します。</h2>
-          <br>
           <p>
             コンピューターウィルスは「メール開封で感染」といった事例から「インターネット閲覧だけで感染」
             「感染したことに気づかないでいた」など、悪質で巧妙なものが年々増えているのが実情です。

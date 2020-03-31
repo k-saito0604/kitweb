@@ -15,13 +15,14 @@
                   <form name="kitform" method="post" action="" data-netlify="true">
                     <div class="row">
                             <div class="form-group">
-                              <label for="name">{{ i18n "contactName" }}</label>
+                              <label for="name">{{ i18n "contactName" }}*</label>
+                              <span class="form-error" id="form-name_error"></span>
                                 <input  type="text" class="form-control" name="name" id="name" required>
                               <label for="furigana">{{ i18n "contactFuri" }}</label>
                                 <input  type="furigana" class="form-control" name="firigana" id="firigana">
-                              <label for="company">{{ i18n "company" }}</label>
+                              <label for="company">{{ i18n "company" }}*</label>
                                 <input  type="company" class="form-control" name="company" id="company" required>
-                               <label for="email">{{ i18n "contactMail" }}</label>
+                               <label for="email">{{ i18n "contactMail" }}*</label>
                                 <input type="email" class="form-control" name="email" id="email" required>
                             
                               <label for="telephone">{{ i18n "contactTEL" }}</label>
@@ -36,7 +37,7 @@
                           </select> 
                         </div>
                             <div class="form-group">
-                              <label for="message">{{ i18n "contactMessage" }}<br>(製品サポートのお問い合わせはこの欄にKitLIDも記載ください)</label>
+                              <label for="message">{{ i18n "contactMessage" }}*<br>(製品サポートのお問い合わせはこの欄にKitLIDも記載ください)</label>
                                 <textarea id="message" class="form-control" name="message" required></textarea>
                             </div>
                         </div>
@@ -60,7 +61,7 @@
                           <div class="form-group">
                             <br>
                             <p>
-                             <input type="checkbox" name="check" id="check" required>個人情報の取り扱いについて了承する
+                             <input type="checkbox" name="check" id="check" required>個人情報の取り扱いについて了承する*
                              </p>
                            </div>
                           <button type="submit" class="btn btn-template-main"><i class="far fa-envelope"></i>{{ i18n "contactSend" }}</button>
