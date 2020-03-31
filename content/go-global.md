@@ -1,6 +1,7 @@
 +++
 title = "機能説明"
-ID = "function-introduction"
+ID = "go-global"
+aliases = ["/function-introduction/"]
 +++
 
 GO-Globalは低コストでセキュアなシンクライアントです
