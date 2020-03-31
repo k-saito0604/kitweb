@@ -134,7 +134,7 @@ jQuery(function() {
 //clickすると飛ぶ
 $(function(){
   $('a[href^="#"]').click(function(){
-    var adjust = -110;
+    var adjust = -210;
     var speed = 1000;
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
