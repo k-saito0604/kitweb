@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>技術ノート</title>
+  <meta name="author" content="kitasp" />
+  
+  
+  
+  
+  <meta name="keywords" content="devows, hugo, go">
+  
+  
+  <meta name="description" content="きっとエイエスピーのホームページ">
+
+  <meta name="generator" content="Hugo 0.68.1" />
+
+  
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+
+  
+  <link href="/js/slick.css" rel="stylesheet">
+  <link href="/js/slick-theme.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+  
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="きっとエイエスピーはGlaphOn社GO-Globalの総代理店">
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:locale" content="ja_jp">
+  <meta property="og:site_name" content="きっとエイエスピーはGlaphOn社GO-Globalの総代理店">
+  <meta property="og:title" content="技術ノート">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/tags/%E6%8A%80%E8%A1%93%E3%83%8E%E3%83%BC%E3%83%88/" />
+  <meta property="og:description" content="きっとエイエスピーのホームページ">
+  <meta property="og:image" content="img/front.png">
+  <meta property="og:image:type" content="image/png">
+  
+  
+  
+    <meta property="og:image:width" content="1151">
+    <meta property="og:image:height" content="634">
+  
+  
+  <meta property="og:updated_time" content="2020-03-23T00:00:00Z">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:title" content="技術ノート">
+  
+  <meta name="twitter:image" content="img/front.png">
+  
+  <meta name="twitter:description" content="きっとエイエスピーのホームページ">
+  
+
+  <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-storage.js"></script>
+  <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-auth.js"></script>
+  <script defer src="https://www.gstatic.com/firebase/init.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+  <script src="/js/config.js"></script>
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="500">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/logo.png" alt="技術ノート logo" class="hidden-xs hidden-sm">
+                    <img src="/img/logo-small.png" alt="技術ノート logo" class="visible-xs visible-sm">
+                    <span class="sr-only">技術ノート - ホームへ戻る</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">ナビゲーションの切り替え</span>
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  <div class = "topbotton">
+                    <a class="fas fa-search" href="/search">ページを検索する</a>
+                    <a href="/contact" class="btn-square-shadow-ora">問い合わせ</a>
+                    <a href="https://gitbook.kitasp.com/" class="btn-square-shadow">技術サイト</a>
+                  </div>
+                  
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a class="dropdown-toggle" href="/function-introduction/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">機能説明</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a href="/web-separation">web分離</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/work-style-reform">働き方改革</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/thin-client">シンクライアント</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/lift-shift">アプリクラウド化</a>
+                        </li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a class="dropdown-toggle" href="/case-study" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">導入事例</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a href="/adaptation-facility-1">医療現場</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-2">ISV</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-3">中小企業</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-4">BCP対策</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-5">教育現場</a>
+                        </li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a class="dropdown-toggle" href="/posts/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">お知らせ</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a href="/support-schedule/">対応スケジュール</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/download/">Download</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/categories/news/">News</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/categories/tech/">tech news</a>
+                        </li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/faq/">FAQ</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/partners-list/">代理店一覧</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a class="dropdown-toggle" href="/company-infomation/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">会社概要</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a href="/representative-greetings/">代表挨拶</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/philosophy/">理念</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/history/">沿革</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/privacy-policy/">プライバシーポリシー</a>
+                        </li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                </span>
+                    </div>
+                </form>
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>技術ノート</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+                <div class="row">
+                    
+
+                    
+
+                    <div class="col-md-9" id="blog-listing-medium">
+
+                        
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1495/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1495/">データセンターにGGサーバを設置するが，SSL</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1495/"><i class="far fa-calendar"></i> 2011-01-21</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/01/21*
+[番号] 技術ノート KGTN 2011012101
+[現象] データセンターにGGサーバを設置するが，SSL-VPN経由でクライアントPCからGGサーバにアクセスできるか？
+[説明] SSL-VPNの環境が，クライアントPC 〜 GGサーバ間でポート番号491 （TCP） の通信路を提供する機能があれば，そのSSL-VPN環境を介してアクセス可能です．なお，RTT （ラウンドトリップタイム） は最悪でも500ms以下 （出来れば100ms以下） でなければなりません．
+ファイル KGTN2011012101.pdf [(47.4 KB)] [kitasp 技術センター, 2011/01/21 12:04]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1495/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1496/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1496/">Ver4.0系のログオン時のパラメタ clientframe の機能を知りたい．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1496/"><i class="far fa-calendar"></i> 2011-01-20</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/01/20*
+[番号] 技術ノート KGTN 2010072901
+[現象] Ver4.0系のログオン時のパラメタ clientframe の機能を知りたい．
+[説明] パラメタ clientframe の値が空またはfalseの場合は，従来の通りです．この値が true の場合は，ログオン直後に背景となるウインドウ （bounding window） が表示され，GG上のアプリケーションのウインドウはこの中に表示されます．アプリケーションが 「クライアント側で動いているのか，サーバ側で動いているのか」 を利用者に意識させい時などに役立ちます．
+ファイル KGTN2010072901.pdf [(225 KB)] [kitasp 技術センター, 2011/01/21 07:42]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1496/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1498/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1498/">データ実行防止 （DEP） の設定で，ライセンスマネージャ lmgrd.exe を対象から除外した場合，副作用等は発生しないか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1498/"><i class="far fa-calendar"></i> 2011-01-19</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/01/19*
+[番号] 技術ノート KGTN 2011011901
+[現象] データ実行防止 （DEP） の設定で，ライセンスマネージャ lmgrd.exe を対象から除外した場合，副作用等は発生しないか？
+[説明] ライセンスマネージャ lmgrd.exe をDEP の対象から外しても，副作用等はありません．
+ファイル KGTN2011011901.pdf [(44.2 KB)] [kitasp 技術センター, 2011/01/19 14:32]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1498/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1499/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1499/">FlexLM （FLEXnet Publisher） が正常に動作しているかどうかチェックしたいが，その方法は？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1499/"><i class="far fa-calendar"></i> 2011-01-14</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/01/14*
+[番号] 技術ノート KGTN 2011011402
+[現象] FlexLM （FLEXnet Publisher） が正常に動作しているかどうかチェックしたいが，その方法は？
+[説明] FlexLM （FLEXnet Publisher） 関連のツール lmutil を使用することで，動作状況をチェックすることが出来ます．以下は，起動するコマンドラインとその結果です．
+C:¥GraphOn¥FlexLM&gt; lmutil lmstat -a
+lmutil - Copyright (c) 1989-2010 Flexera Software, Inc. All Rights Reserved. Flexible License Manager status on Sun 12/14/2008 09:39
+[Detecting lmgrd processes&hellip;] License server status: 27000@pe800A License file(s) on pe800A: C:¥GraphOn¥GO-Global Server¥Programs¥license.lic:
+pe800A: license server UP (MASTER) v11.6  Vendor daemon status (on pe800A):
+blm: UP v10.8 Feature usage info:  Users of session: (Total of 50 licenses issued; Total of 0 licenses in use)</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1499/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1500/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1500/">月次処理で大量の印刷を行いたいが，どのような点に注意すべきか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1500/"><i class="far fa-calendar"></i> 2011-01-13</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/01/13*
+[番号] 技術ノート KGTN 2010120301
+[現象] 月次処理で大量の印刷を行いたいが，どのような点に注意すべきか？
+[説明] GGのクライアント印刷機能では，印刷のスプールファイルをメモリに展開し，それを圧縮してクライアントへ転送します． 「大量の印刷」 が１回のジョブ （ドキュメント） で行われる場合，スプールファイルが巨大 （例えば数百MB〜数GB） になるため，その圧縮処理に時間がかかりますし，圧縮したスプールファイルの転送にも時間がかかります．ユーザから見ると 「印刷ボタンを押したのに反応がない」 という現象になりますので，一般にはこのような運用は避けた方が良いでしょう．従って，以下のような方法が考えられます．
+大量の印刷を複数のジョブに分割する （つまり印刷を分けて行う） ． サーバ側のネットワークプリンタへ印刷する （スプールファイルの圧縮や転送が発生しない） ． 弊社製品 「きっとプリント」 を使用する．
+補　足 通常の印刷処理では，以下の手順でドキュメントが （サーバ側の） 物理的なプリンタへ出力されます．
+スプールファイルの生成 物理的なプリンタへの出力
+クライアント印刷機能の処理では，以下の手順でドキュメントが （クライアント側の） 物理的なプリンタへ出力されます．
+サーバ側でのスプールファイルの生成 サーバ側でのスプールファイルの圧縮 サーバ側からクライアント側へのスプールファイルの転送 クライアント側でのスプールファイルの伸張 クライアント側でのスプールファイルの生成 物理的なプリンタへの出力
+上記2および4で 「スプールファイル全体」 をメモリ上に展開して処理を行いますので，印刷できる帳票のサイズが利用可能なメモリの大きさの制約を受けます．上記3では，大きなスプールファイル （正確には圧縮されたスプールファイル） がサーバ側からクライアント側へネットワーク （LANやWAN） を介して転送されますので，回線の状況等に依存して長く時間がかかります．
+ファイル KGTN2010120301.pdf [(66.3 KB)] [kitasp 技術センター, 2011/01/13 16:58]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1500/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1501/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1501/">[GGW3.2] レンタルサーバにGGをインストールしたが，どのような手順で確認すれば良いか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1501/"><i class="far fa-calendar"></i> 2011-01-06</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/01/06*
+[番号] 技術ノート KGTN 2011010701
+[現象] [GGW3.2] レンタルサーバにGGをインストールしたが，どのような手順で確認すれば良いか？
+[説明] レンタルサーバのサービス （仕様や環境など） によってチェックする内容は変わりますが，一般的には以下の手順で確認するのが良いでしょう．
+サービス &ldquo;GO-Global Application Publishing Service&rdquo; の状態が 「開始」 になっていること．
+そのサーバ内からGGへログオン出来ること． 2.1) &lt;GGのインストールディレクトリ&gt;¥GO-Global Server¥Programs にある ggw.exe をダブルクリック． 2.2) Server Address に localhost を入力． 2.3) Connect ボタンをクリック． 2.4) ログオンダイアログが表示され，かつログオンできることを確認．
+クライアントからGGサーバへ （ネットワークレベルで） 接続出来ること． 3.1) クライアントでDOS窓をオープン． 3.2) telnet &lt;GGサーバのIPアドレス&gt; 491 を実行． 3.3) 接続されることを確認 （接続中の状態が続かないことを確認） ．
+  クライアントからGGのクライアントを介してGGサーバへログオン出来ること．
+補　足 上記3.3でポート番号491へ接続出来ない場合は，レンタルサーバ側のファイアウォール等で491へのアクセスが拒否されています．このような場合は，GGサーバの待ち受けポートを491から443へ変更して下さい （注： クラスタマネージャでポート番号を変更することに加え，ログオン用HTMLで明示的にポート番号443を指定する必要もあります）．
+上記3.2で使用する telnet コマンドが無い環境では，ターミナルエミュレータ &ldquo;Tera Term&rdquo; 等をインストールして下さい．
+ファイル KGTN2011010701.pdf [(70 KB)] [kitasp 技術センター, 2011/01/07 08:45]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1501/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1503/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1503/">サーバを再起動する時，セッションが有無に関係なく無条件に行って良いか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1503/"><i class="far fa-calendar"></i> 2011-01-05</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/01/05*
+[番号] 技術ノート KGTN 2011010501
+[現象] サーバを再起動する時，セッションが有無に関係なく無条件に行って良いか？
+[説明] GGの仕様上は，サーバが再起動される時に全てのセッションを終了させますので，特に問題はありません．但し，サーバが高負荷な時や不安定な時に予期せぬ事象が発生する可能性もゼロとは言えませんので，再起動の前にエンタープライズオプションの GMCheckRaw でセッションを強制終了 （GMCheckRaw ?kn ALL） させることをお勧めします．
+補　足 サーバが高負荷な時に， GMCheckRaw によるセッションを強制終了 （GMCheckRaw ?kn ALL） が保留されるケースが稀に発生します．セッションを強制終了を行った後に，通常の GMCheckRaw で sessionCount がゼロかどうか確認し，ゼロでない場合は再度セッションの強制終了を行って下さい （これが面倒な場合は，10秒間隔で2〜3回セッションの強制終了を行って下さい） ．
+ファイル KGTN2011010501.pdf [(61.6 KB)] [kitasp 技術センター, 2011/01/05 11:01]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1503/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1505/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1505/">BSODの原因としてメモリの枯渇が指摘されたが，物理メモリは8GB積んでおり余裕がある．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1505/"><i class="far fa-calendar"></i> 2011-01-03</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/01/03*
+[番号] 技術ノート KGTN 2011010301
+[現象] BSODの原因としてメモリの枯渇が指摘されたが，物理メモリは8GB積んでおり余裕がある．
+[説明] Windows Server 2003 （32ビット） では， 「物理メモリを多く積んでいても」 実際にアクセス出来る仮想アドレス空間は4GBで，さらにこの4GBの空間は2GBのカーネル空間と2GBのユーザ空間に分けられます．GGでBSODが発生する原因となるメモリの枯渇は，2GBのカーネル空間でのメモリの枯渇のことです．
+注　意 Windows の /3G スイッチを有効にすると，カーネル空間が2GBから1GBに減るため，絶対にこの設定を行わないようにして下さい．
+ファイル KGTN2011010301.pdf [(52.1 KB)] [kitasp 技術センター, 2011/01/03 09:41]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1505/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1506/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1506/">特定アプリケーションでＺオーダー （ウインドウの上下関係） 絡みの表示の不具合が発生したが，GG側で対応は可能か？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1506/"><i class="far fa-calendar"></i> 2010-12-31</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2010/12/31*
+[番号] 技術ノート KGTN 2010090205
+[現象] 特定アプリケーションでＺオーダー （ウインドウの上下関係） 絡みの表示の不具合が発生したが，GG側で対応は可能か？
+[説明] Ｚオーダーの問題は，アプリケーションの挙動と密接に絡んでおり，Ver2系の頃から継続的に改良を行っております．Ver3.2系の仕様はその努力に基づいたもので，他の案件等では特に問題なく動作しております．仮に個別に対応した場合，その問題は解消しても，他の処理でダイアログが裏に隠れる等の問題を引き起こす可能性があります．このような副作用 （リスク） の発生の可能性を考えると，Ver3.2系での対応は困難です．
+参　考 Ｚオーダーが問題が発生した過去の事例では，アプリケーションが 「Windowsの標準的なウインドウの動作とは異なる処理を行った時」 に発生しています．例えば，子ウインドウが最上位に表示されるものの，フォーカスがその子ウインドウに移らず，その下の親ウインドウが持ち続ける等の処理があります．このような場合は，アプリケーションをWindowsの標準的なウインドウの動作に合わせるように変更をお願いします．
+ファイル KGTN2010090205.pdf [(63.6 KB)] [kitasp 技術センター, 2010/12/31 14:10]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1506/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1507/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1507/">Windows の 「キャッシュされたログオン」 機能を利用できるか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1507/"><i class="far fa-calendar"></i> 2010-12-30</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2010/12/30*
+[番号] 技術ノート KGTN 2010123101
+[現象] Windows の 「キャッシュされたログオン」 機能を利用できるか？
+[説明] いいえ，GG はWindows の 「キャッシュされたログオン」 機能をサポートしません．パスワードをキャッシュしたい場合は，GGの機能である
+クライアント側パスワードキャッシュ （クライアント側のプロファイルに保存） サーバ側パスワードキャッシュ （AD上のプロファイルに保存）
+を利用して下さい．
+ファイル KGTN2010123101.pdf [(44.4 KB)] [kitasp 技術センター, 2010/12/31 04:36]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1507/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        
+
+                        <ul class="pager">
+                            
+                            <li class="previous"><a href="/tags/%E6%8A%80%E8%A1%93%E3%83%8E%E3%83%BC%E3%83%88/page/218/">&larr; 次へ</a></li>
+                            
+
+                            
+                            <li class="next"><a href="/tags/%E6%8A%80%E8%A1%93%E3%83%8E%E3%83%BC%E3%83%88/page/220/">前へ &rarr;</a></li>
+                            
+                        </ul>
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">検索</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="検索">
+                <input type="hidden" name="sitesearch" value="/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">カテゴリー</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            
+            <li>
+                <a href="/categories/news">news (2)</a>
+            </li>
+            
+            <li>
+                <a href="/categories/tech">tech (2569)</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">タグ</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            
+            <li>
+                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
+            </li>
+            
+            <li>
+                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
+            </li>
+            
+            <li>
+                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        
+    <div class="col-md-12">
+        <footer id="footer">
+        <div class="footer-nav-wrapper">        
+        <div class="container">
+            <div class="col-md-3 col-sm-3">
+                <div class="footer-nav-column">
+                    <div class="footer-nav-column-title"></div>
+                    <div class="footer-nav-column-content">
+                    <a href="/go-global/">GO-Globalとは</a>
+                    <ul class="footer-nav-list">
+                        <li>
+                            <a href="/web-separation/">WEB分離</a>
+                        </li>
+                        <li>
+                            <a href="/work-style-reform/">働き方改革</a>
+                        </li>
+                        <li>
+                            <a href="/thin-client/">シンクライアント</a>
+                        </li>
+                        <li>
+                            <a href="/security/">セキュリティ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="hidden-md hidden-lg hidden-sm">
+        <div class="col-md-3 col-sm-3">
+            <div class="footer-nav-column">
+            <div class="footer-nav-column-content">
+                <a href="/case-study/">導入事例</a>
+                <ul class="footer-nav-list">
+                    <li>
+                        <a href="/adaptation-facility-1/">適応施設(医療機関)</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-2/">適応施設(教育機関)</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-3/">適応施設(ISV)</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-4/">適応施設(一般オフィス)</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-5/">適応施設(BCP対策) </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <hr class="hidden-md hidden-lg hidden-sm">
+                <div class="col-md-3 col-sm-3">
+                    <div class="footer-nav-column">
+                        <div class="footer-nav-column-title"></div>
+                        <div class="footer-nav-column-content">
+                            <a href="/post/">お知らせ</a>
+                            <ul class="footer-nav-list">
+                                <li>
+                                    <a href="/support-schedule/">対応スケジュール</a>
+                                </li>
+                                <li>
+                                    <a href="/news/">Download</a>
+                                </li>
+                                <li>
+                                    <a href="/categories/news/">サイトニュース</a>
+                                </li>
+                                <li>
+                                    <a href="/categories/tech-news/">技術ニュース</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="hidden-md hidden-lg hidden-sm">
+        
+                </div>
+
+        
+        
+                
+
+
+        
+
+
+        <div class="col-md-3 col-sm-3">
+            <div class="footer-nav-column">
+        <div class="footer-nav-column-content">
+            <a href="/faq/">FAQ</a><br>
+            <a href="/partners-list/">代理店一覧</a><br>
+            <a href="/contact/">問合せフォーム</a><br>
+            <a href="/technical-site/">技術サイト</a><br>
+            <br>
+            <hr class="hidden-md hidden-lg hidden-sm">
+            <a href="/company-information/">企業概要</a>
+            <ul class="footer-nav-list">
+                <li>
+                    <a href="/representative-greetings/">代表あいさつ</a>
+                </li>
+                <li>
+                    <a href="/philosophy/">理念</a>
+                </li>
+                <li>
+                    <a href="/history/">沿革</a>
+                </li>
+                <li>
+                    <a href="/privacy-policy/">個人情報保護方針</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+       
+
+    </div>
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+           <p class="pull-left">Copyright © 2020 KitASP Corp. All Rights Reserved</p>
+            
+           
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/js/jquery.zoom.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+<script src="/js/hpneo.gmaps.js"></script>
+<script src="/js/gmaps.init.js"></script>
+<script src="/js/front.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<script src="/js/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
+<script src="/js/slick.min.js"></script>
+
+
+
+  </body>
+</html>

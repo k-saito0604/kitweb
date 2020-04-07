@@ -136,7 +136,9 @@
 
             <div class="navbar-collapse collapse" id="navigation">
                 <ul class="nav navbar-nav navbar-right">
+                  
                   <div class = "topbotton">
+                    <a class="fas fa-search" href="/search">ページを検索する</a>
                     <a href="/contact" class="btn-square-shadow-ora">問い合わせ</a>
                     <a href="https://gitbook.kitasp.com/" class="btn-square-shadow">技術サイト</a>
                   </div>
@@ -291,149 +293,70 @@
 
         </header>
 
-        <div id="heading-breadcrumbs">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Searches</h1>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-        <div id="content">
-            <div class="container">
-                <div class="row">
-                    
-
-                    
-
-                    <div class="col-md-9" id="blog-listing-medium">
-
-                        
-                        
-                        
-
-                        <ul class="pager">
-                            
-                            <li class="previous disabled"><a href="#">&larr; 次へ</a></li>
-                            
-
-                            
-                            <li class="next disabled"><a href="#">前へ &rarr;</a></li>
-                            
-                        </ul>
-                    </div>
-                    
-
-                    
-
-                    
-
-                    <div class="col-md-3">
-
-                        
-
-                        
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-      <h3 class="panel-title">検索</h3>
+<head>
+  <meta charset="UTF-8">
+  <title>Searches | きっとエイエスピーはGlaphOn社GO-Globalの総代理店</title>
+  <script src="data.js"></script>
+  <style>
+    body {
+      background: #fafafa;
+    }
+    input {
+      color: deeppink;
+      font-size: 1.2em;
+      font-weight: bolder;
+    }
+    input::-webkit-input-placeholder {
+      color: pink;
+    }
+    #result {
+      margin: 1em;
+    }
+    .item_title {
+      text-decoration: none;
+      color: #36f;
+      font-weight: bolder;
+    }
+    .item_excerpt {
+      background: white;
+      margin: 0.5em 2em 1em;
+      padding: 0.5em;
+      border: dashed 1px lightgray;
+      font-size: smaller;
+    }
+    .item_excerpt b {
+      background: pink;
+    }
+  </style>
+</head>
+<div class="col-md-12">
+<h1>search</h1>
+<h4>検索するワードを入力してください。</h4>
+<input onkeyup="search(this.value)" size="15" autocomplete="off" autofocus placeholder="検索ワード" />
+<span id="inputWord"></span> <span id="resultCount"></span>
+<div id="result"></div>
     </div>
 
-    <div class="panel-body">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
-            <div class="input-group">
-                <input type="search" name="q" class="form-control" placeholder="検索">
-                <input type="hidden" name="sitesearch" value="/">
-                <span class="input-group-btn">
-                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
-                </span>
-            </div>
-        </form>
-    </div>
-</div>
 
 
+<div class="col-md-3">
 
+    
 
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (2)</a>
-            </li>
-            
-            <li>
-                <a href="/categories/tech">tech (6)</a>
-            </li>
-            
-        </ul>
-    </div>
+    
 
 </div>
 
 
 
 
+</div>
 
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-        </ul>
-    </div>
+</div>
 
 </div>
 
 
-
-
-
-
-                        
-
-                    </div>
-                    
-
-                    
-
-                </div>
-                
-            </div>
-            
-        </div>
-        
-        
     <div class="col-md-12">
         <footer id="footer">
         <div class="footer-nav-wrapper">        
@@ -577,10 +500,10 @@
 
 
 
-    </div>
-    
+</div>
 
-    
+
+
 <script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="/js/jquery.zoom.js"></script>
@@ -604,6 +527,71 @@
 <script src="/js/slick.min.js"></script>
 
 
-
-  </body>
+<script>
+    function search(query) {
+      var result = searchData(query);
+      var html = createHtml(result);
+      showResult(html);
+      showResultCount(result.length, data.length);
+    }
+    
+    function searchData(query) {
+      
+      
+      var result = [];
+    
+      query = query.trim();
+      if (query.length < 1) {
+        return result;
+      }
+      var re = new RegExp(query, 'i');
+      for (var i = 0; i < data.length; ++i) {
+        var pos = data[i].body.search(re);
+        if (pos != -1) {
+          result.push([i, pos, pos + query.length]);
+        }
+      }
+      return result;
+    }
+    
+    function createHtml(result) {
+      var htmls = [];
+      for (var i = 0; i < result.length; ++i) {
+        var dataIndex = result[i][0];
+        var startPos = result[i][1];
+        var endPos = result[i][2];
+        var url = data[dataIndex].url;
+        var title = data[dataIndex].title;
+        var body = data[dataIndex].body;
+        htmls.push(createEntry(url, title, body, startPos, endPos));
+      }
+      return htmls.join('');
+    }
+    
+    function createEntry(url, title, body, startPos, endPos) {
+      return '<div class="item">' +
+          '<a class="item_title" href="' + url + '">' + title + '</a>' +
+          '<div class="item_excerpt">' + excerpt(body, startPos, endPos) + '</div>' +
+          '</div>';
+    }
+    
+    function excerpt(body, startPos, endPos) {
+      return [
+        body.substring(startPos - 30, startPos),
+        '<b>', body.substring(startPos, endPos), '</b>',
+        body.substring(endPos, endPos + 200)
+      ].join('');
+    }
+    
+    function showResult(html) {
+      var el = document.getElementById('result');
+      el.innerHTML = html;
+    }
+    
+    function showResultCount(count, total) {
+      var el = document.getElementById('resultCount');
+      el.innerHTML = '<b>' + count + '</b> 件見つかりました（' + total + '件中）';
+    }
+    </script>
+</body>
 </html>

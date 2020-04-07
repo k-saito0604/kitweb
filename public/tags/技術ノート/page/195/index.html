@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>技術ノート</title>
+  <meta name="author" content="kitasp" />
+  
+  
+  
+  
+  <meta name="keywords" content="devows, hugo, go">
+  
+  
+  <meta name="description" content="きっとエイエスピーのホームページ">
+
+  <meta name="generator" content="Hugo 0.68.1" />
+
+  
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+
+  
+  <link href="/js/slick.css" rel="stylesheet">
+  <link href="/js/slick-theme.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+  
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="きっとエイエスピーはGlaphOn社GO-Globalの総代理店">
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:locale" content="ja_jp">
+  <meta property="og:site_name" content="きっとエイエスピーはGlaphOn社GO-Globalの総代理店">
+  <meta property="og:title" content="技術ノート">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/tags/%E6%8A%80%E8%A1%93%E3%83%8E%E3%83%BC%E3%83%88/" />
+  <meta property="og:description" content="きっとエイエスピーのホームページ">
+  <meta property="og:image" content="img/front.png">
+  <meta property="og:image:type" content="image/png">
+  
+  
+  
+    <meta property="og:image:width" content="1151">
+    <meta property="og:image:height" content="634">
+  
+  
+  <meta property="og:updated_time" content="2020-03-23T00:00:00Z">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:title" content="技術ノート">
+  
+  <meta name="twitter:image" content="img/front.png">
+  
+  <meta name="twitter:description" content="きっとエイエスピーのホームページ">
+  
+
+  <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-storage.js"></script>
+  <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-auth.js"></script>
+  <script defer src="https://www.gstatic.com/firebase/init.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+  <script src="/js/config.js"></script>
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="500">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/logo.png" alt="技術ノート logo" class="hidden-xs hidden-sm">
+                    <img src="/img/logo-small.png" alt="技術ノート logo" class="visible-xs visible-sm">
+                    <span class="sr-only">技術ノート - ホームへ戻る</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">ナビゲーションの切り替え</span>
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  <div class = "topbotton">
+                    <a class="fas fa-search" href="/search">ページを検索する</a>
+                    <a href="/contact" class="btn-square-shadow-ora">問い合わせ</a>
+                    <a href="https://gitbook.kitasp.com/" class="btn-square-shadow">技術サイト</a>
+                  </div>
+                  
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a class="dropdown-toggle" href="/function-introduction/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">機能説明</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a href="/web-separation">web分離</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/work-style-reform">働き方改革</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/thin-client">シンクライアント</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/lift-shift">アプリクラウド化</a>
+                        </li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a class="dropdown-toggle" href="/case-study" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">導入事例</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a href="/adaptation-facility-1">医療現場</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-2">ISV</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-3">中小企業</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-4">BCP対策</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-5">教育現場</a>
+                        </li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a class="dropdown-toggle" href="/posts/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">お知らせ</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a href="/support-schedule/">対応スケジュール</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/download/">Download</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/categories/news/">News</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/categories/tech/">tech news</a>
+                        </li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/faq/">FAQ</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/partners-list/">代理店一覧</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a class="dropdown-toggle" href="/company-infomation/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">会社概要</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a href="/representative-greetings/">代表挨拶</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/philosophy/">理念</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/history/">沿革</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/privacy-policy/">プライバシーポリシー</a>
+                        </li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                </span>
+                    </div>
+                </form>
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>技術ノート</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+                <div class="row">
+                    
+
+                    
+
+                    <div class="col-md-9" id="blog-listing-medium">
+
+                        
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1214/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1214/">[GGH4.0] GGW3.2.1で動作したアプリケーションが全て動作すると考えて良いか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1214/"><i class="far fa-calendar"></i> 2011-12-02</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/12/02*
+[番号] 技術ノート KGTN 2011120201
+[現象] [GGH4.0] GGW3.2.1で動作したアプリケーションが全て動作すると考えて良いか？
+[説明] 32ビットの Windows 7 で動作するアプリケーションが 64ビットの Windows 7 で動作しないことがあるように，GGW3.2.1 で動作するアプリケーションが GGH4.0 で動作しないこともあります．逆に， GGW3.2.1 で動作しなかったアプリケーションが GGH4.0 で動作することもあります．
+GGはアプリケーションの挙動を監視し，その内容に応じた動作をクライアント上で再現しますが， GGW3.2.1と GGH4.0 ではアプリケーションの挙動を監視する API (Application Programming Interface) やクライアント上で再現する API が異なり，さらにアプリケーションが呼び出す API の組み合わせには無限のバリエーションがあるため， 「GraphOn社は可能な限りアプリケーションが動作するように努力をしておりますが」 しかしながら動作しなくなるアプリケーションが存在しないとは断言できません．
+補　足 GGの処理としては正しいものの，使用した API の副作用 （仕様外の動作） 等でアプリケーションが動作しないこともあります．
+ファイル KGTN2011120201.pdf [(58.4 KB)] [kitasp 技術センター, 2011/12/02 13:07]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1214/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1216/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1216/">Ver4.0系で特定のプリンタだけ Windows Printer Driver を使用したいが可能か？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1216/"><i class="far fa-calendar"></i> 2011-11-30</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/11/30*
+[番号] 技術ノート KGTN 2010072705
+[現象] Ver4.0系で特定のプリンタだけ Windows Printer Driver を使用したいが可能か？
+[説明] プリンタ情報 MappedPrinterDrivers.xml を編集して，サービス &ldquo;GO-Global Application Publishing Service&rdquo; を再起動することで対応可能です．具体的な手順は，以下の通りです．
+MappedPrinterDrivers.xml をTeraPad等のテキストエディタへ開く． 該当するプリンタの項目 Value から &ldquo;;Universal Remote Printer&rdquo; を削除する （下の例では下線の部分） ． MappedPrinterDrivers.xml を上書き保存する． サービス &ldquo;GO-Global Application Publishing Service&rdquo; を再起動する．
+補　足 ユーザが個別に操作するという前提であれば， [Program Window] → [File] → [Printers] → [変更したいプリンタを選択] → [Driver&hellip;] を選択し，表示されるダイアログで下側のラジオボタンをクリックし，その右側のコンボボックスでドライバを選択することで， Windows Printer Driver を使用することが出来ます．
+ファイル KGTN2010072705.pdf [(79.3 KB)] [kitasp 技術センター, 2011/11/30 12:38]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1216/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc2586/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc2586/">[GGW3.2.1/GGH4.X</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2586/"><i class="far fa-calendar"></i> 2011-11-29</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/11/29*
+[番号] 技術ノート KGTN 2011113002
+[現象] [GGW3.2.1/GGH4.X-5.X] APSログに記録される WLE??? の意味は？
+[説明] APSログが記録されているフォルダの中に Codes というフォルダがあり，その中の WLE.html にコードの意味が記述されています． WLE は Win32 のエラーコードで，例えば 1450 は &ldquo;Insufficient system resources exist to complete the requested service.&rdquo; （システム リソースが不足しているため、要求されたサービスを完了できません）　という意味になります．
+ファイル KGTN2011113002.pdf [(59 KB)] [kitasp 技術センター, 2016/05/27 13:48]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2586/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1217/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1217/">[Windows] パフォーマンスカウンタの Memory¥Pages/sec に大きい値が記録されている時があるが，物理メモリが不足しているのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1217/"><i class="far fa-calendar"></i> 2011-11-29</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/11/29*
+[番号] 技術ノート KGTN 2011113001
+[現象] [Windows] パフォーマンスカウンタの Memory¥Pages/sec に大きい値が記録されている時があるが，物理メモリが不足しているのか？
+[説明] このカウンタは 「メモリ上に存在しないデータが要求され，ディスクからの read / write　が発生した頻度 （１秒間毎） 」 を示しています．従って，ページファイルの read / write だけでなく，アプリケーションの実行モジュール読込みやデータファイルの read / write 等でもこの値が増加しますので， Memory¥Pages/sec の値が大きいことが直ちに物理メモリの不足を意味するものではありません．
+参　考 サイズの大きな （あるいは重たい） アプリケーションを初めて起動した時は， Memory¥Pages/sec の値は一時的に大きな値 （例えば 7,000） になります．この後，アプリケーションを終了し改めて起動すると， （状況にもよりますが） アプリケーションの実行モジュールやデータファイルがメモリにキャッシュされているため大きな値にはなりません．
+ファイル KGTN2011113001.pdf [(61.6 KB)] [kitasp 技術センター, 2011/11/30 08:26]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1217/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1218/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1218/">[GGW3.2.1/GGH4.0] GGのログオンダイアログを閉じた時および認証に3回失敗した時，Microsoft Windows Services for UNIX の gwshare.exe でマウントしたドライブが切断される．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1218/"><i class="far fa-calendar"></i> 2011-11-28</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/11/28*
+[番号] 技術ノート KGTN 2011110903
+[現象] [GGW3.2.1/GGH4.0] GGのログオンダイアログを閉じた時および認証に3回失敗した時，Microsoft Windows Services for UNIX の gwshare.exe でマウントしたドライブが切断される．
+[説明] 弊社で現象を確認し，GraphOn社へ報告をしました．この現象は GGW3.2.1 と GGH4.0 の両方のバージョンで発生し，現時点では GGH4.0 で対応すべき課題として認識しています．GraphOn社から新たな情報が届き次第，この技術ノートを更新します．
+補足１ 本現象の発生シナリオは，次の通りです．
+下記コマンドでUNIXのファイルシステムを指定したドライブレターでマウント GGのログオンダイアログを閉じる または 3回認証に失敗 マウントしたネットワークドライブが切断
+なお，正常にログオンしそしてログオフした場合は，マウントしたネットワークドライブが切断される現象は発生しません．
+補足２ 対症療法としては，以下の２つの方法が考えられます．
+エンタープライズオプションのツール GMServiceで， 「ネットワークドライブが切断されているかどうか確認し，切断されていればそのネットワークドライブを再接続する」 というスクリプトを実行する．
+共有したいファイルを Windows の共有フォルダに配置し，ログオンスクリプトでその共有フォルダをマウント （net use コマンド） する． 補足３ 補足２の 1) の 「ネットワークドライブが切断されているかどうか確認し，切断されていればそのネットワークドライブを再接続する」 というスクリプトのサンプルは，以下の通りです．
+補足４ ログオンダイアログを閉じた時および認証に3回失敗した時，GGは用意したセッションを解放する処理を行っております．この処理では，Windowsのファイルシステム・ベースのネットワークドライブやUNIX ファイルシステム・ベースのネットワークドライブを特に意識しておりません．このことから，GGが利用している Windows API の何れかがUNIX ファイルシステム・ベースのネットワークドライブを切断しているのではないかと考えられます．原因を特定するには，UNIX ファイルシステム・ベースのネットワークドライブの挙動を詳細に調べる必要があり，これには多くの時間と工数がかかる予想されます．仮に原因が分ったとしても， 現在のWindows およびGGのアーキテクチャの下では，解決が困難という結論になる可能性もあります．
+補足５ GGW3.0.4で本現象が発生せず，GGW3.2.1 および GGH4.0.1 で発生します．GGW3.2.1 および GGH4.0.1の新たな仕様 （機能） の実装で使用した Windows API 等が，その副作用としてUNIX ファイルシステム・ベースのネットワークドライブを切断する可能性も考えられます．従って，現時点で直ちにGGのバグと結論付けることは出来ません．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1218/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc2587/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc2587/">[GGW3.2.1/GGH4.X</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2587/"><i class="far fa-calendar"></i> 2011-11-25</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/11/25*
+[番号] 技術ノート KGTN 2011112502
+[現象] [GGW3.2.1/GGH4.X-5.X] ログオンスクリプトの Global と User-specific の両方を使用したいが，適用の順番は？
+[説明] Global → User-specific の順序で適用 （実行） されます．特別な事情がなければ，以下のようなスクリプトを記述し， Global として適用 （実行） するのが管理や運用の面から一般に利用されている方法です．
+ECHO OFF :COMMON1 ::--- 共通の前処理を記述 --- ECHO COMMON1 &gt;&gt;C:TEMPGLOLBAL.TXT IF &quot;%USERNAME%&quot; == &quot;TestUser&quot; GOTO :USER_TEST IF &quot;%USERNAME%&quot; == &quot;Administrator&quot; GOTO :USER_ADMIN GOTO :USER_OTHER :USER_TEST :: --- TestUser の処理を記述 --- ECHO TestUser &gt;&gt;C:TEMPGLOLBAL.TXT GOTO :COMMON2 :USER_ADMIN :: --- Administrator の処理を記述 --- ECHO Administrator &gt;&gt;C:TEMPGLOLBAL.TXT GOTO :COMMON2 :USER_OTHER :: --- その他の処理を記述 --- ECHO OTHER &gt;&gt;C:TEMPGLOLBAL.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2587/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1219/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1219/">[Windows2003] GGサーバにユーザがログオンを行った時，下記のエラーが発生した．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1219/"><i class="far fa-calendar"></i> 2011-11-22</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/11/22*
+[番号] 技術ノート KGTN 2011112202
+[現象] [Windows2003] GGサーバにユーザがログオンを行った時，下記のエラーが発生した．
+aps (3468) AS: Function APS_IndependentSession::loadUserProfile () ¥ in file APS_IndependentSession.cpp failed at line 3916 (WLE1450).
+[説明] このメッセージの内容から， 1) ユーザがGGサーバへのログオンを試みて， 2) GGがそのユーザのプロファイルをロードしようとしたが， 3) プロファイルのロードに失敗した ことを意味しています． WLE1450 は，その時に発生したエラー （System Error Code） で，その意味は以下の通りです．
+ERROR_NO_SYSTEM_RESOURCES Insufficient system resources exist to complete the requested service.
+このエラーは （大きな） ファイルの読み込み等でリソース （PTE） が不足した場合や，読み込みに失敗して所定の回数試行しても失敗した場合などに返されます．従って，プロファイル全体のサイズが異常に大きい，またはプロファイルの読み込みに失敗した等が考えられます．なお，コンソールやリモートデスクトップ接続でのログオンでも同じ現象が確認される場合は， Windows Server 自体の問題 または Active Directory の問題 （プロファイルを管理しているファイルサーバ周辺の問題も含みます） の可能性が高いと考えられます．
+ファイル KGTN2011112202.pdf [(62.9 KB)] [kitasp 技術センター, 2011/11/22 14:07]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1219/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1220/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1220/">[Windows7] Windows XP でGGサーバへログオンすると快適に利用できるが， Windows 7 でGGサーバへログオンすると操作に倍くらいの時間がかかる．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1220/"><i class="far fa-calendar"></i> 2011-11-22</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/11/22*
+[番号] 技術ノート KGTN 2011112201
+[現象] [Windows7] Windows XP でGGサーバへログオンすると快適に利用できるが， Windows 7 でGGサーバへログオンすると操作に倍くらいの時間がかかる．
+[説明] 「Windows 7 のネットワークが異常に遅い」 というような報告がネットワーク上に多数あり，これらの情報を参考に設定を変更し改善するかどうか調べて下さい．Google で例えば 「windows7 ネットワーク 遅い」 というキーで探すと，それらの情報が見つかります．代表的な設定としては，以下の３つがあります．
+IPv6を無効にする． http://d.hatena.ne.jp/wonodas/20100516/1274011987
+自動チューニングの設定を高速回線タイプに変更する． http://ymiwa.exblog.jp/13163388/
+SNP （Scalable Networking Pack） を無効にする． http://itpro.nikkeibp.co.jp/article/COLUMN/20100824/351391/
+補足１ IPv6を無効化するに当たって，以下の方法もあります．
+レジストリでIPv6を無効化する． http://www.atmarkit.co.jp/fwin2k/win2ktips/949vistav6rm/vistav6rm.html
+IPv6のトンネルインターフェイスとループバックインターフェイスを無効化する． http://naonao71.wordpress.com/2009/01/05/ipv6%E3%81%AE%E7%84%A1%E5%8A%B9%E5%8C%96%EF%BC%88win2008-or-vista-2/
+補足２ パフォーマンスのチェックのため，GGとウエブ （ブラウザ） を使用して比較をすると，通信する仕組みが大きく異なるため，その結果で 「速い／遅い」 を判断することは出来ません．もし比較をするのであれば，GGとリモートデスクトップ接続を使用するのが良いと思います．もしリモートデスクトップ接続でも同じように遅いのであれば，少なくともGGに依存した問題でないことが分ります．
+ファイル KGTN2011112201.pdf [(70.5 KB)] [kitasp 技術センター, 2011/11/22 11:46]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1220/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1221/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1221/">[GGH4.0] GGがUSBディスク （クライアントドライブ） を認識するタイミングは？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1221/"><i class="far fa-calendar"></i> 2011-11-18</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/11/18*
+[番号] 技術ノート KGTN 2011111801
+[現象] [GGH4.0] GGがUSBディスク （クライアントドライブ） を認識するタイミングは？
+[説明] エクスプローラーで &ldquo;マイ コンピュータ&rdquo; を表示した状態で，クライアントにUSBディスクを挿入すると，クライアントでUSBディスクが認識された直後に， （サーバ側で動作する） エクスプローラーの &ldquo;マイ コンピュータ&rdquo; の中にこのUSBディスクが表示されます．従って，クライアントが認識した直後に，追加または削除されたUSBディスクを認識します．
+  USBディスク挿入前　(Serer: WS2003SP2 + GGH4.0.1.10784, Client: WIN7SP1)
+  USBディスク挿入後
+  ファイル KGTN2011111801.pdf [(349 KB)] [kitasp 技術センター, 2011/11/18 09:27]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1221/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1222/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1222/">[GGH4.0] GO</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1222/"><i class="far fa-calendar"></i> 2011-11-17</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/11/17*
+[番号] 技術ノート KGTN 2011111701
+[現象] [GGH4.0] GO-Global Windows Host 4 のハイライトは？
+[説明] 従来のGGと比べての GO-Global Windows Host 4 (Ver4.0.1) のハイライトは，以下の通りです．
+64ビット版の Windows Server に対応 ホスト環境として Windows Server 2008 (x64) と Windows Server 2008 R2 を利用出来るようになりました．これにより，32ビット版 Windows Server のメモリ 4GB (2GB+2GB) の制約から解放されます．
+仮想環境上で動作する Windows Server に対応 仮想環境 VMWare Esxi と HyperV 上で動作する Windows Server に対応しました．GraphOn社は検証しておりませんが，ユーザ様から KVM, Xen, VirtualBox, Virtage 等でも動作したとの報告があります．
+アプリケーションの互換性の向上 Windowsとのインタフェースを見直し，より多くのアプリケーションが動作するようになりました．
+新しいアーキテクチャによるクライアント印刷機能 印刷ジョブの生成とクライアント側へのジョブの転送が並行して処理されるようになりました．さらに，ユニバーサル・プリンタドライバに Adobe PDF Library を採用することで，高品位なPDFファイルの出力も可能になりました．
+新しいアーキテクチャによるクライアントドライブ機能 クライアントドライブ機能のアーキテクチャを見直し，ローカルドライブに近い感覚でクライアントドライブへアクセス出来るようになりました．また，20MBを超えるファイルのコピーも可能になりました．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1222/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        
+
+                        <ul class="pager">
+                            
+                            <li class="previous"><a href="/tags/%E6%8A%80%E8%A1%93%E3%83%8E%E3%83%BC%E3%83%88/page/194/">&larr; 次へ</a></li>
+                            
+
+                            
+                            <li class="next"><a href="/tags/%E6%8A%80%E8%A1%93%E3%83%8E%E3%83%BC%E3%83%88/page/196/">前へ &rarr;</a></li>
+                            
+                        </ul>
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">検索</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="検索">
+                <input type="hidden" name="sitesearch" value="/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">カテゴリー</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            
+            <li>
+                <a href="/categories/news">news (2)</a>
+            </li>
+            
+            <li>
+                <a href="/categories/tech">tech (2569)</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">タグ</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            
+            <li>
+                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
+            </li>
+            
+            <li>
+                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
+            </li>
+            
+            <li>
+                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        
+    <div class="col-md-12">
+        <footer id="footer">
+        <div class="footer-nav-wrapper">        
+        <div class="container">
+            <div class="col-md-3 col-sm-3">
+                <div class="footer-nav-column">
+                    <div class="footer-nav-column-title"></div>
+                    <div class="footer-nav-column-content">
+                    <a href="/go-global/">GO-Globalとは</a>
+                    <ul class="footer-nav-list">
+                        <li>
+                            <a href="/web-separation/">WEB分離</a>
+                        </li>
+                        <li>
+                            <a href="/work-style-reform/">働き方改革</a>
+                        </li>
+                        <li>
+                            <a href="/thin-client/">シンクライアント</a>
+                        </li>
+                        <li>
+                            <a href="/security/">セキュリティ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="hidden-md hidden-lg hidden-sm">
+        <div class="col-md-3 col-sm-3">
+            <div class="footer-nav-column">
+            <div class="footer-nav-column-content">
+                <a href="/case-study/">導入事例</a>
+                <ul class="footer-nav-list">
+                    <li>
+                        <a href="/adaptation-facility-1/">適応施設(医療機関)</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-2/">適応施設(教育機関)</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-3/">適応施設(ISV)</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-4/">適応施設(一般オフィス)</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-5/">適応施設(BCP対策) </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <hr class="hidden-md hidden-lg hidden-sm">
+                <div class="col-md-3 col-sm-3">
+                    <div class="footer-nav-column">
+                        <div class="footer-nav-column-title"></div>
+                        <div class="footer-nav-column-content">
+                            <a href="/post/">お知らせ</a>
+                            <ul class="footer-nav-list">
+                                <li>
+                                    <a href="/support-schedule/">対応スケジュール</a>
+                                </li>
+                                <li>
+                                    <a href="/news/">Download</a>
+                                </li>
+                                <li>
+                                    <a href="/categories/news/">サイトニュース</a>
+                                </li>
+                                <li>
+                                    <a href="/categories/tech-news/">技術ニュース</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="hidden-md hidden-lg hidden-sm">
+        
+                </div>
+
+        
+        
+                
+
+
+        
+
+
+        <div class="col-md-3 col-sm-3">
+            <div class="footer-nav-column">
+        <div class="footer-nav-column-content">
+            <a href="/faq/">FAQ</a><br>
+            <a href="/partners-list/">代理店一覧</a><br>
+            <a href="/contact/">問合せフォーム</a><br>
+            <a href="/technical-site/">技術サイト</a><br>
+            <br>
+            <hr class="hidden-md hidden-lg hidden-sm">
+            <a href="/company-information/">企業概要</a>
+            <ul class="footer-nav-list">
+                <li>
+                    <a href="/representative-greetings/">代表あいさつ</a>
+                </li>
+                <li>
+                    <a href="/philosophy/">理念</a>
+                </li>
+                <li>
+                    <a href="/history/">沿革</a>
+                </li>
+                <li>
+                    <a href="/privacy-policy/">個人情報保護方針</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+       
+
+    </div>
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+           <p class="pull-left">Copyright © 2020 KitASP Corp. All Rights Reserved</p>
+            
+           
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/js/jquery.zoom.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+<script src="/js/hpneo.gmaps.js"></script>
+<script src="/js/gmaps.init.js"></script>
+<script src="/js/front.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<script src="/js/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
+<script src="/js/slick.min.js"></script>
+
+
+
+  </body>
+</html>
