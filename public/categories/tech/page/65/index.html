@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2430/">
+                                      <a href="/posts/new_md/doc2415/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2430/">[JavaScript] JavaScript でウエッブサーバーの死活を簡単に知る方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2415/">[GGH4.X-5.X] AndroidクライアントのURLスキームを利用したいが，ハイパーリンクでは動作を確認したが，JavaScriptおよびメタタグによるリダイレクトが動作しない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2430/"><i class="far fa-calendar"></i> 2016-08-01</a>
+                                            <a href="/posts/new_md/doc2415/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
 2016/08/01*
-[番号] 技術ノート KGTN 2016070802
-[現象] [JavaScript] JavaScript でウエッブサーバーの死活を簡単に知る方法は？
-[説明] ウエッブサーバーに死活をチェックするための画像ファイルを配置し，その読み込みの成否でウエッブサーバーの死活を判断する方法があります．そのサンプルコードは，以下の通りです．
-ファイル KGTN2016070802.pdf [(57.1 KB)] [kitasp 技術センター, 2016/08/01 13:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2430/" class="btn btn-template-main">続きを読む</a>
+[番号] 技術ノート KGTN 2016072101
+[現象] [GGH4.X-5.X] AndroidクライアントのURLスキームを利用したいが，ハイパーリンクでは動作を確認したが，JavaScriptおよびメタタグによるリダイレクトが動作しない．
+[説明] Chrome (Android) の古いバージョンではJavaScriptおよびメタタグによるリダイレクトが動作しておりましたが，最新のChromeではJavaScriptおよびメタタグによる 「URLスキームへの」 リダイレクトが動作しないようになりました．恐らくセキュリティ関連による仕様変更だと思われますので，ハイパーリンクによる （手動による） リダイレクトを行うようにして下さい．
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt; &lt;html lang=&quot;ja&quot;&gt; &lt;head&gt; &lt;title&gt;URL-Scheme&lt;/title&gt; &lt;/head&gt; &lt;body bgcolor=&quot;#ECF5FF&quot;&gt; &lt;script language=javascript&gt; location.href=&quot;rxp://h=192.168.102.89&amp;hp=491&amp;u=Administrator&amp;p=kit.ASP&quot;; &lt;/script&gt; &lt;/body&gt; &lt;/html&gt;  上記コードは，古いChrome (Android) ではリダイレクトが行われますが，最新のChromeではリダイレクトが行われません．
+ファイル KGTN2016072101.pdf [(61.8 KB)] [kitasp 技術センター, 2016/08/01 13:43]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2415/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +361,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2427/">
+                                      <a href="/posts/new_md/doc2434/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +369,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2427/">[JavaScript] JavaScript で２台のウエッブサーバーの死活をチェックし，その結果で生きているGGサーバーにログオンしたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2434/">[GGH4.X-5.X] GGEasyMonitor でユーザーの存在チェック （二重ログオンのチェック） を行いたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,20 +382,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2427/"><i class="far fa-calendar"></i> 2016-08-01</a>
+                                            <a href="/posts/new_md/doc2434/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
 2016/08/01*
-[番号] 技術ノート KGTN 2016071102
-[現象] [JavaScript] JavaScript で２台のウエッブサーバーの死活をチェックし，その結果で生きているGGサーバーにログオンしたい．
-[説明] ２台のウエッブサーバーに死活をチェックするための画像ファイルを配置し，その読み込みの成否によってログオンするGGサーバーを切り替えるサンプルコードを以下に示します．
-　function updateServer(n,s) { var target = &lsquo;'; var params = location.search;
-　params = params.substring(1); if(params.length == 0) { params = &lsquo;dummy=dummy&rsquo;; }
-　// 死活情報を更新 switch(n) { case 1: statusServer1 = s; break;
-　case 2: statusServer2 = s; break; } // 死活情報が揃ったか？ if((statusServer1 != false)&amp;&amp;(statusServer2 != false)) { // メインサーバーへ接続可能？ if(statusServer1 == &lsquo;OK&rsquo;) { target = &lsquo;http://192.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2427/" class="btn btn-template-main">続きを読む</a>
+[番号] 技術ノート KGTN 2016070702
+[現象] [GGH4.X-5.X] GGEasyMonitor でユーザーの存在チェック （二重ログオンのチェック） を行いたい．
+[説明] 現時点での最新バージョン （2.1.0） には，ユーザーの存在チェックを行う専用のインタフェースは用意されておりません．しかしながら，振分け機能のページにアクセスし，応答内容 （下記文字列） をチェックすることで，ユーザーの存在チェックを行うことは技術的に可能です．
+＊　このユーザーは、ただいま利用中です。 ＊　サーバーに接続中です&hellip; ＊　サーバーに再接続中です&hellip;
+なお，専用のインタフェースの提供をご希望の場合は，その内容によっては個別に対応出来る可能性がありますので，お問合せ下さい．
+ファイル KGTN2016070702.pdf [(62.7 KB)] [kitasp 技術センター, 2016/08/01 13:12]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2434/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -404,7 +404,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2426/">
+                                      <a href="/posts/new_md/doc2425/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -412,7 +412,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2426/">[JavaScript] JavaScript で２台のウエッブサーバーの死活をチェックし，その結果で生きているGGサーバーにログオンしたい．できれば， img タグを使わず，スクリプトだけで行いたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2425/">[GGH4.X-5.X] GGEasyMonitor の振分け機能の死活チェックに画像データへアクセスしたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -425,20 +425,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2426/"><i class="far fa-calendar"></i> 2016-08-01</a>
+                                            <a href="/posts/new_md/doc2425/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
 2016/08/01*
-[番号] 技術ノート KGTN 2016071201
-[現象] [JavaScript] JavaScript で２台のウエッブサーバーの死活をチェックし，その結果で生きているGGサーバーにログオンしたい．できれば， img タグを使わず，スクリプトだけで行いたい．
-[説明] ２台のウエッブサーバーに死活をチェックするための画像ファイルを配置し，その読み込みの成否によってログオンするGGサーバーを切り替えるサンプルコード （スクリプト版） を以下に示します．
-　function updateServer(n,s) { var target = &lsquo;'; var params = location.search;
-　params = params.substring(1); if(params.length == 0) { params = &lsquo;dummy=dummy&rsquo;; }
-　// 死活情報を更新 switch(n) { case 1: statusServer1 = s; break;
-　case 2: statusServer2 = s; break; } // 死活情報が揃ったか？ if((statusServer1 != false)&amp;&amp;(statusServer2 != false)) { // メインサーバーへ接続可能？ if(statusServer1 == &lsquo;OK&rsquo;) { target = &lsquo;http://&rsquo; + addrServer1 + &lsquo;/goglobal/logon.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2426/" class="btn btn-template-main">続きを読む</a>
+[番号] 技術ノート KGTN 2016071202
+[現象] [GGH4.X-5.X] GGEasyMonitor の振分け機能の死活チェックに画像データへアクセスしたい．
+[説明] GGEasyMonitor の振分け機能は，汎用のウエッブサーバーではありませんので画像データの送信機能は持っておりません．しかしながら， Ver2.0.11 から /logo.jpg というファイルへのアクセスに限り，その画像データを送信するようになりましたので，この画像データへアクセスして死活チェックを行って下さい．
+ファイル KGTN2016071202.pdf [(53.3 KB)] [kitasp 技術センター, 2016/08/01 13:25]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2425/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -448,7 +445,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2428/">
+                                      <a href="/posts/new_md/doc2431/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -456,7 +453,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2428/">[JavaScript] JavaScript で２台のウエッブサーバーの死活を簡単に知る方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2431/">[GGH4.X-5.X] GGEasyMonitor をインストールし，1) サービスを開始 をクリックしたが，ログファイルも生成されず動作していないようだ．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -469,18 +466,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2428/"><i class="far fa-calendar"></i> 2016-08-01</a>
+                                            <a href="/posts/new_md/doc2431/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
 2016/08/01*
-[番号] 技術ノート KGTN 2016071101
-[現象] [JavaScript] JavaScript で２台のウエッブサーバーの死活を簡単に知る方法は？
-[説明] ２台のウエッブサーバーに死活をチェックするための画像ファイルを配置し，その読み込みの成否でウエッブサーバーの死活を判断する方法があります．そのサンプルコード （２台の死活状態が揃った時点で結果を表示） は以下の通りです．
-　function updateServer(n,s) { // 死活情報を更新 switch(n) { case 1: statusServer1 = s; break;
-　case 2: statusServer2 = s; break; } // 死活情報が揃ったか？ if((statusServer1 != false)&amp;&amp;(statusServer2 != false)) { if(statusServer1 &lsquo;OK&rsquo;) { alert(&ldquo;Server1: アクセス可能&rdquo;) } else { alert(&ldquo;Server1: アクセス不可&rdquo;) } if(statusServer2 &lsquo;OK&rsquo;) { alert(&ldquo;Server2: アクセス可能&rdquo;) } else { alert(&ldquo;Server2: アクセス不可&rdquo;) } } } ファイル KGTN2016071101.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2428/" class="btn btn-template-main">続きを読む</a>
+[番号] 技術ノート KGTN 2016070801
+[現象] [GGH4.X-5.X] GGEasyMonitor をインストールし，&ldquo;1) サービスを開始&rdquo; をクリックしたが，ログファイルも生成されず動作していないようだ．
+[説明] 設定ファイルの内容に関わらず，ログファイルは必ず生成されます．ログファイルが生成されないのであれば， GGEasyMonitor が必要とするランタイムがインストールされていないのが原因です．&ldquo;5) ランタイムのインストール&rdquo; をクリックし，ランタイムをインストールして下さい．正常にインストールされたのを確認後，改めて &ldquo;1) サービスを開始&rdquo; をクリックして下さい．
+ファイル KGTN2016070801.pdf [(133 KB)] [kitasp 技術センター, 2016/08/01 13:17]
+KGTN2016070801.jpg
+表示 [(27.6 KB)] [kitasp 技術センター, 2016/08/01 13:17]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2431/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -490,7 +488,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2400/">
+                                      <a href="/posts/new_md/doc2433/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -498,7 +496,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2400/">[Windows] Windows の印刷スプーラーサービスとプリンタードライバーの関係は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2433/">[GGH4.X-5.X] GGW3.2.1の拡張パック （監視・振分け機能） と比較して， GGEasyMonitor は何か機能が追加されているのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -511,18 +509,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2400/"><i class="far fa-calendar"></i> 2016-08-01</a>
+                                            <a href="/posts/new_md/doc2433/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
 2016/08/01*
-[番号] 技術ノート KGTN 2016072801
-[現象] [Windows] Windows の印刷スプーラーサービスとプリンタードライバーの関係は？
-[説明] Windows 7 および Windows Server 2008 R2 以前の Windows OS では，スプーラーサービスのプロセス上でプリンタードライバーが動作していました．このため，プリンタードライバーが不安定な状況に陥った場合，プリンタースプーラーが落ちることがありました．
-Windows 7 および Windows Server 2008 R2 またはそれ以降の Windows OS では， Printer Driver Isolation 機能 （プリンタードライバー分離機能） が実装され，スプーラーサービス以外の別プロセス上でプリンタードライバーが動作出来るようになりました．このため，プリンタードライバーが不安定な状況に陥った場合でも，プリンタースプーラーが落ちることを回避出来るようになりました．
-ファイル KGTN2016072801.pdf [(56.7 KB)] [kitasp 技術センター, 2016/08/01 16:23]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2400/" class="btn btn-template-main">続きを読む</a>
+[番号] 技術ノート KGTN 2016070703
+[現象] [GGH4.X-5.X] GGW3.2.1の拡張パック （監視・振分け機能） と比較して， GGEasyMonitor は何か機能が追加されているのか？
+[説明] GGW3.2.1の拡張パック （監視・振分け機能：EO2） と GGEasyMonitor は，基本的な設計思想が異なります． EO2 では，GGの機能のみならずWindowsサーバー自体の監視も行う自己完結型の製品となっておりました．GGEasyMonitor では，GGの機能のみを監視対象とし，Windowsサーバーの監視は Zabbix 等の専用ツールに任せる分業型の製品となっております．なお， Zabbix 等の監視ツールで，GGサーバーの状況を監視するためのソフトウエア （GGEasyMonitoraConnectionCheck） も含まれております．
+ファイル KGTN2016070703.pdf [(61.6 KB)] [kitasp 技術センター, 2016/08/01 13:13]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2433/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -532,7 +529,7 @@ Windows 7 および Windows Server 2008 R2 またはそれ以降の Windows OS �
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2458/">
+                                      <a href="/posts/new_md/doc2407/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -540,7 +537,7 @@ Windows 7 および Windows Server 2008 R2 またはそれ以降の Windows OS �
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2458/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2407/">[GGH4.X-5.X] GGのライセンスサーバー （専用サーバー） の構築方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -553,18 +550,19 @@ Windows 7 および Windows Server 2008 R2 またはそれ以降の Windows OS �
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2458/"><i class="far fa-calendar"></i> 2016-07-01</a>
+                                            <a href="/posts/new_md/doc2407/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/07/01*
-[番号] 技術ノート KGTN 2016070103
-[現象] [GGH4.X-5.X] クライアントのOSが Windows 7 から Windows 10 へ自動でアップグレードされたが，このことでGGの利用に影響があるか？
-[説明] この自動アップグレードは，Windows 全体について更新処理が行われますので，すべての （個別の） マシンについて影響が全く無いと断言することは技術的に困難です．弊社マシンでの事例では，自動アップグレード後も，特に問題なくGGサーバーに接続することが出来ました．
-なお，GGH4.Xをご利用の場合は，クライアントの環境として Windows 10 をサポートする GGH5.X へアップグレードする必要があります．
-ファイル KGTN2016070103.pdf [(56 KB)] [kitasp 技術センター, 2016/07/01 17:40]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2458/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016072501
+[現象] [GGH4.X-5.X] GGのライセンスサーバー （専用サーバー） の構築方法は？
+[説明] GGのライセンスサーバー専用のインストーラーは無く，通常のGG　のインストーラーを使用して下さい．インストール後に，サービス GGAPS (GO-Global Application Publishing Service) を 「停止」 し，スタートアップの種類を 「無効」 にして下さい．ライセンスファイルは， フォルダー C:Program FilesGraphOnGO-GlobalPrograms へコピーして下さい．最後に，サービス GGLicenseManager (GO-Global License Manager) を 「停止→開始」 して下さい．
+ファイル KGTN2016072501.pdf [(65.5 KB)] [kitasp 技術センター, 2016/08/01 13:56]
+KGTN2016072501.jpg
+表示 [(10.4 KB)] [kitasp 技術センター, 2016/08/01 13:56]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2407/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -574,7 +572,7 @@ Windows 7 および Windows Server 2008 R2 またはそれ以降の Windows OS �
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2459/">
+                                      <a href="/posts/new_md/doc2404/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -582,7 +580,7 @@ Windows 7 および Windows Server 2008 R2 またはそれ以降の Windows OS �
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2459/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2404/">[GGH4.X-5.X] GGのライセンスサーバー （専用） の構築手順は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -595,19 +593,25 @@ Windows 7 および Windows Server 2008 R2 またはそれ以降の Windows OS �
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2459/"><i class="far fa-calendar"></i> 2016-07-01</a>
+                                            <a href="/posts/new_md/doc2404/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/07/01*
-[番号] 技術ノート KGTN 2016070102
-[現象] [GGH4.X-5.X] クライアントの環境が Windows 10 の場合， GGH4.X では画面が乱れるそうだが，具体的にどのような状態になるのか？
-[説明] 弊社で確認している画面の乱れは，ウインドウをドラッグした時にその残像が現れるという現象です．以下の事例では，メモ帳のウインドウの一部が残像としてプログラムウインドウ上に表示されています．
-ファイル KGTN2016070102.pdf [(98 KB)] [kitasp 技術センター, 2016/07/01 17:39]
-KGTN2016070102.jpg
-表示 [(21.6 KB)] [kitasp 技術センター, 2016/07/01 17:39]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2459/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016072701
+[現象] [GGH4.X-5.X] GGのライセンスサーバー （専用） の構築手順は？
+[説明] GGのライセンスサーバー （専用） の構築手順は，以下の通りです．
+1.　コマンドプロンプトで &ldquo;ipconfig/all&rdquo; を実行し，その結果とライセンスファイルの内容と照合して下さい．ホスト名 （コンピューター名） が異なる場合は，ライセンスファイルの内容を修正して下さい．
+2.　ライセンスファイルにライセンスサーバーのポート番号を追加して下さい．ポート番号は，通常 27001～27009 を指定します．
+3.　GGをインストールした後，サービス GGAPS を 「停止」 し，スタートアップの種類を 「手動」 にして下さい．
+4.　サービス GGLicenseManager が 「実行中」 であることを確認して下さい．
+5.　ライセンスサーバーの管理ツール lmtools.exe を起動して下さい．
+6.　Server Status → Perform Status Enquiry をクリックし，結果にライセンス数が表示されていることを確認して下さい．
+補　足 このライセンスサーバーをGGサーバーから利用するには，上記の設定に加えて Windows ファイアウォール に受信の規則を追加し，GGサーバーからのアクセスを許可する必要があります．
+1.　管理ツール → セキュリティが強化された Windows ファイアウォール を開き，操作 → 新しい規則 を選択して下さい．
+2.　次へ をクリックして下さい．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2404/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -617,7 +621,7 @@ KGTN2016070102.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2460/">
+                                      <a href="/posts/new_md/doc2401/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -625,7 +629,7 @@ KGTN2016070102.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2460/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2401/">[GGH4.X-5.X] GGのライセンスサーバーを外部からアクセスさせる場合，ファイアウォールの設定はどうすれば良いのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -638,20 +642,25 @@ KGTN2016070102.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2460/"><i class="far fa-calendar"></i> 2016-07-01</a>
+                                            <a href="/posts/new_md/doc2401/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/07/01*
-[番号] 技術ノート KGTN 2016070101
-[現象] [GGH4.X-5.X] クライアントの環境が Windows 10 の場合， GGH4.X ではサポートされないそうだが，サーバーとクライアントの両側のソフトウエアをGGH5.Xへアップグレードせねばならないのか？
-[説明] 基本的にはその通りです．
-弊社の実験では，サーバー側のみをGGH5.Xにアップグレードした環境で描画の乱れ等は発生しませんでした．自己責任となりますが， Windows 10 に対応するため，先ずサーバー側を GGH5.X へアップグレードして様子を見るという選択肢も考えられます．
-ファイル KGTN2016070101.pdf [(111 KB)] [kitasp 技術センター, 2016/07/01 17:37]
-KGTN2016070101.jpg
-表示 [(12 KB)] [kitasp 技術センター, 2016/07/01 17:37]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2460/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016072703
+[現象] [GGH4.X-5.X] GGのライセンスサーバーを外部からアクセスさせる場合，ファイアウォールの設定はどうすれば良いのか？
+[説明] プログラム blm.exe と lmgrd.exe の 「新規の受信の規則」 を追加して下さい．
+ファイル KGTN2016072703.pdf [(116 KB)] [kitasp 技術センター, 2016/08/01 16:22]
+KGTN2016072703-1.jpg
+表示 [(17.9 KB)] [kitasp 技術センター, 2016/08/01 16:22]
+KGTN2016072703-2.jpg
+表示 [(13.9 KB)] [kitasp 技術センター, 2016/08/01 16:22]
+KGTN2016072703-3.jpg
+表示 [(17.9 KB)] [kitasp 技術センター, 2016/08/01 16:22]
+KGTN2016072703-4.jpg
+表示 [(14.3 KB)] [kitasp 技術センター, 2016/08/01 16:22]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2401/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -661,7 +670,7 @@ KGTN2016070101.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2461/">
+                                      <a href="/posts/new_md/doc2408/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -669,7 +678,7 @@ KGTN2016070101.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2461/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2408/">[GGH4.X-5.X] GGサーバー （物理） を選択する場合，サイジングの基本的な考え方について知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -682,17 +691,18 @@ KGTN2016070101.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2461/"><i class="far fa-calendar"></i> 2016-07-01</a>
+                                            <a href="/posts/new_md/doc2408/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/07/01*
-[番号] 技術ノート KGTN 2016063001
-[現象] [GGH4.X-5.X] GGはローカルユーザープロファイルでも利用出来るそうだが，GGサーバーを跨いで 「お気に入り」 等が利用できるのか？
-[説明] GGはユーザープロファイルの管理を Windows の機能に委ねております．ローカルユーザープロファイルに対する変更等は，ログオンしたサーバーのみに反映されますので，GGサーバーを跨いで 「お気に入り」 等を利用することは出来ません．このような場合は，移動ユーザープロファイルをご利用下さい．
-ファイル KGTN2016063001.pdf [(52.3 KB)] [kitasp 技術センター, 2016/07/01 17:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2461/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016072201
+[現象] [GGH4.X-5.X] GGサーバー （物理） を選択する場合，サイジングの基本的な考え方について知りたい．
+[説明] 32ビットの Windows の環境では，利用可能な最大物理メモリのサイズが 4GB （実質的には約3GB） という制限によって，１台のサーバーに収容出来るユーザー数が決まりました．現在の64ビットの Windows の環境ではこの制限が取り払われているため， （十分なメモリが搭載されるという前提の下では） １台のサーバーのコア数と１コア当りのユーザー数によって，１台のサーバーに収容出来るユーザー数が決まります．各ユーザーが事務作業等の負荷が高くないアプリケーションを１つ利用する場合，１コア当り3～6ユーザーの利用を見込むことが出来ますので，比較的安価な6コアのマシンを選択すると，１台のサーバー当り18～36ユーザーということになります．ユーザーがアプリケーションの操作に習熟している場合は，単位時間内の操作が増えるため，１台のサーバーに収容できるユーザー数が少なくなります （多く収容した場合は，画面操作の反応をユーザーが遅く感じることになります） ．逆にユーザーがアプリケーションの操作に習熟していない場合は，単位時間内の操作が減るため，１台のサーバーに収容できるユーザー数が多くなります．
+なお，サーバーの台数を減らすため，コア数が多いハイエンドのサーバーを選択した場合，サーバーの故障時に多くのユーザーが長時間利用出来なくなる可能性があります．１台のサーバーに収容するユーザー数は，「サーバー故障時の対応をどうするか？」 という点も含めて決定する必要があります．
+ファイル KGTN2016072201.pdf [(69.4 KB)] [kitasp 技術センター, 2016/08/01 13:54]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2408/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -702,7 +712,7 @@ KGTN2016070101.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2462/">
+                                      <a href="/posts/new_md/doc2429/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -710,7 +720,7 @@ KGTN2016070101.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2462/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2429/">[GGH4.X-5.X] GO-Global API とは何か？ どうすれば利用出来るのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -723,19 +733,19 @@ KGTN2016070101.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2462/"><i class="far fa-calendar"></i> 2016-07-01</a>
+                                            <a href="/posts/new_md/doc2429/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/07/01*
-[番号] 技術ノート KGTN 2016062903
-[現象] [GGH4.X-5.X] クラスターマネージャーで登録したアプリケーションを，他のGGサーバーに反映する方法を知りたい．
-[説明] クラスターマネージャーで登録したアプリケーションの情報は，下記レジストリに記録されますので，これをファイルにエクスポートして，他のGGサーバーでインポートして下さい．
-HKEY_LOCAL_MACHINESOFTWAREGraphOnGO-GlobalAppServerInstalledApps  ファイル KGTN2016062903.pdf [(86.4 KB)] [kitasp 技術センター, 2016/07/01 17:34]
-KGTN2016062903.jpg
-表示 [(9.26 KB)] [kitasp 技術センター, 2016/07/01 17:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2462/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016070803
+[現象] [GGH4.X-5.X] GO-Global API とは何か？ どうすれば利用出来るのか？
+[説明] GO-Global API は，GO-Global for Windows のオプション製品である SDK (ソフトウエア開発キット) が提供する API （アプリケーションプログラミングインターフェース） のことです． SDK で提供される機能については，下記ドキュメントをご覧下さい．
+http://www.graphon.com/files/GO-Global_APIs_Overview.pdf
+SDK を利用するには，GraphOn社よりオプション製品の SDK を購入し，さらに保守契約を結ぶ必要があります．なお，保守契約の範囲はソフトウエアのバージョンアップに限られ，具体的なコーディング方法等についてのサポート （問合せ） は含まれません．
+ファイル KGTN2016070803.pdf [(68 KB)] [kitasp 技術センター, 2016/08/01 13:20]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2429/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -805,7 +815,7 @@ KGTN2016062903.jpg
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

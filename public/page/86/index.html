@@ -409,37 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2713/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2660/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2713/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2660/">[GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor のウエッブ機能で，監視画面の背景色を変更したい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-09-02
+                            日付 2015-12-17
                             </p>
                             <p class="intro">*技術ノート
-2015/09/02*
-[番号] 技術ノート KGTN 2015090101
-[現象] [GGH4.X-5.X] GGサーバーのアップグレードの手順を知りたい．
-[説明] 以下のスクリーンショットの手順でアップグレード （新しいビルドへのアップデート） を行って下さい．
-ファイル KGTN2015090101.pdf [(602 KB)] [kitasp 技術センター, 2015/09/02 17:28]
-KGTN2015090101-1.jpg
-表示 [(26.4 KB)] [kitasp 技術センター, 2015/09/02 17:28]
-KGTN2015090101-2.jpg
-表示 [(29.2 KB)] [kitasp 技術センター, 2015/09/02 17:28]
-KGTN2015090101-3.jpg
-表示 [(18.4 KB)] [kitasp 技術センター, 2015/09/02 17:28]
-KGTN2015090101-4.jpg
-表示 [(19.9 KB)] [kitasp 技術センター, 2015/09/02 17:28]
-KGTN2015090101-5.jpg
-表示 [(22 KB)] [kitasp 技術センター, 2015/09/02 17:28]
-KGTN2015090101-6.jpg
-表示 [(18.8 KB)] [kitasp 技術センター, 2015/09/02 17:28]</p>
+2015/12/17*
+[番号] 技術ノート KGTN 2015120906
+[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor のウエッブ機能で，監視画面の背景色を変更したい．
+[説明] スタイルシート GGEasyMonitor.css を編集することで，監視画面の背景色やレイアウト等をある程度変更することが出来ます．
+ファイル KGTN2015120906.pdf [(51.5 KB)] [kitasp 技術センター, 2015/12/17 11:46]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2713/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2660/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -458,28 +446,25 @@ KGTN2015090101-6.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2716/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2659/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2716/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2659/">[GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor のフォルダにある SorryPage.html とは何か．</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-09-02
+                            日付 2015-12-17
                             </p>
                             <p class="intro">*技術ノート
-2015/09/02*
-[番号] 技術ノート KGTN 2015082601
-[現象] [GGH4.X-5.X] APIラッピング方式 （GG） とスクリーンスクレーピング方式 （他社製品） を比較した場合，描画パフォーマンスに差異が無いと聞いたが，その通りなのか？
-[説明] いいえ，そうではありません．
-スクリーンスクレーピング方式 （他社製品） では，サーバー側での描画命令の発生と同期することなく，クライアント側に所定の間隔で画面の差分データが転送します．このためピークを持たない比較的平坦で長い通信が発生します．ユーザー数が増えた場合，各セッションの長い通信の上に他のセッションの長い通信が積み重なる形になりますので，ユーザー数の増加とともにパフォーマンスが低下します．さらに，視覚的にパフォーマンスが良いように見せるため，先ず粗い画面の差分データを転送し，その後に本来の解像度の画面の差分データを転送することがあります．この機能が適用された場合，本来のデータの転送に加え粗い画面のデータも転送されますので，トータルの通信量も増えることになります．
-APIラッピング方式 （GG） では，サーバー側での描画命令の発生と同期して，クライアント側にその描画命令 （正確に言えば仮想描画命令） を転送します．このため描画処理が発生した瞬間にピークを持つ短い通信が発生します （その後は殆ど通信が発生しません）．ユーザー数が増えた場合，この間隔が長いピークとピークの間に別のセッションのピークが配置される形になりますので，描画パフォーマンスの低下が極めて低く抑えられます．もちろん， （サーバー側での描画命令の発生と同期してクライアント側に描画命令を転送するため） 粗い画面のデータを送る必要もありませんので， トータルの通信量が増えることもありません．
-この情報は，大規模案件のお客様が実施なさった数ヶ月に及ぶ事前調査の結果を参考にしております．
-ファイル KGTN2015082601.pdf [(73.6 KB)] [kitasp 技術センター, 2015/09/02 16:55]</p>
+2015/12/17*
+[番号] 技術ノート KGTN 2015120907
+[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor のフォルダにある SorryPage.html とは何か．
+[説明] 振分け機能で，利用 （接続） できるサーバーが無い時に，このファイルの内容がブラウザ上に表示されます．例えば，スクリプトを記述することで，所定の間隔で再試行を行うことも出来ます．システムの利用形態に応じて，自由にカスタマイズを行って下さい．
+ファイル KGTN2015120907.pdf [(59.8 KB)] [kitasp 技術センター, 2015/12/17 11:47]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2716/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2659/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -498,26 +483,33 @@ APIラッピング方式 （GG） では，サーバー側での描画命令の�
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2720/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2378/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2720/">[GGH4.X/5.X] 大半のクライアントPCではActiveXクライアントがインストール出来て正常に動作したが，数台のクライアントPCでは失敗した．正常なクライアントPCと失敗したクライアントPCの差異をチェックしたが，同じだと思える．</a></h4>
+                            <h4><a href="/posts/new_md/doc2378/">[GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor の導入手順は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-09-02
+                            日付 2015-12-17
                             </p>
                             <p class="intro">*技術ノート
-2015/09/02*
-[番号] 技術ノート KGTN 2015081801
-[現象] [GGH4.X/5.X] 大半のクライアントPCではActiveXクライアントがインストール出来て正常に動作したが，数台のクライアントPCでは失敗した．正常なクライアントPCと失敗したクライアントPCの差異をチェックしたが，同じだと思える．
-[説明] ActiveXクライアントが正常に動作するクライアントPCと失敗したクライアントPCを比較して，本当に差異が無いとすれば，ポリシーやマルウエアソフト等の影響，Windows自体の異常等が考えられますが，これ以上のことについてはそのマシン固有の環境に依存していると考えられますので，残念ながらこちらでは分かりません．
-このような状況で考え得るActiveXクライアントのインストール手順は， Windows の再インストールを行い，他アプリケーションがインストールされていない環境でActiveXクライアントをインストールする方法です．この方法であれば，確実にインストール出来るはずです．これでもインストール出来ない場合は， IEの設定等に誤りがあると思われます．
-ファイル KGTN2015081801.pdf [(60.9 KB)] [kitasp 技術センター, 2015/09/02 16:46]</p>
+2015/12/17*
+[番号] 技術ノート KGTN 2015121101
+[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor の導入手順は？
+[説明] GGEasyMonitor の導入手順のアウトラインは以下の通りです．
+ １．サーバー機能，ウエッブ機能，振分け機能を利用するマシンを決める． ※ 通常１～２台のマシンを使用します．
+２．エージェント機能を利用するマシン （GG サーバー） を決める． ※ 同一マシン上でサーバー機能とエージェント機能を利用することも出来ます．
+３．全てのマシン上でインストーラー GGEasyMonitor-Setup.exe を実行する． ※ GGH5.0 インストール手順書 (5.その他 GGEasyMonitor 編) を参照して下さ
+４．上記１のマシンで設定ファイル GGEasyMonitor.ini を記述する． ※ 技術ノート KGTN#2015121002 を参考にして下さい．
+５．上記２のマシンで設定ファイル GGeasyMonitor.ini を記述する． ※ 技術ノート KGTN#2015121001 を参考にして下さい．
+６．各マシン上のスタートメニューで GGEasyMonitor → 2) サービスを開始 を実 行する （実行する順序に決まりはありません） ．
+７．クライアントから上記１のマシンにアクセスし監視画面の内容を確認する． ※ 何も表示されない・サーバーの情報が赤色の場合は設定に誤りがあります．
+８．クライアントから上記１のマシンにアクセスして振分け＆接続を確認する． ※ 何も表示されない・GG サーバーに接続出来ない場合は設定に誤りがあります． 補　足 GGEasyMonitor バージョン2.2.0またはそれ以降の場合は，クライアントの情報を採取する下記設定をステップ５の直後に行って下さい．
+[設定作業：GGの設定ファイルの修正] サーバー側から見たクライアントのIPアドレスを得るため， HostProperties.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2720/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2378/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -536,24 +528,25 @@ APIラッピング方式 （GG） では，サーバー側での描画命令の�
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc6/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2662/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc6/">[GGH5.X] APS が開始しない．ログを見ると A Bug Check (BSOD) was detected ... という記録がある．</a></h4>
+                            <h4><a href="/posts/new_md/doc2662/">[GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能は，ほぼ同じタイミングで複数のクライアントから接続要求があった場合，偏った振分けになったりしないのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-09-02
+                            日付 2015-12-17
                             </p>
-                            <p class="intro">技術ノート 2015/09/02
-[番号] 技術ノート KGTN 2015080701
-[現象] [GGH5.X] APS が開始しない．ログを見ると &ldquo;A Bug Check (BSOD) was detected &hellip;&rdquo; という記録がある．
-[説明] 非互換性等によりバグチェック （BSOD） が発生し，GGが無効化されたのが原因だと思われます．ファイル C:Windowssystem32DRIVERSDBCM.bin を削除し，サーバーを再起動して下さい．
-aps (1088) A Bug Check (BSOD) was detected from a previous system start and GO-Global has been disabled. To re-enable GO-Global, delete the C:Windowssystem32DRIVERSDBCM.bin file and restart the computer. To prevent a Bug Check from disabling GO-Global, create the DWORD registry value [HKEY_LOCAL_MACHINESYSTEMCurrentControlSetServicesggseDBCM_Disabled] and set it to 0x00000001.</p>
+                            <p class="intro">*技術ノート
+2015/12/17*
+[番号] 技術ノート KGTN 2015120904
+[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能は，ほぼ同じタイミングで複数のクライアントから接続要求があった場合，偏った振分けになったりしないのか？
+[説明] 振分け処理は，その時点で保持するGGサーバーのセッション数の情報 （利用中のセッション数と最大セッション数） に加え，過去の振分け状況も加味して適切な接続先を選択しますので，ほぼ同じタイミングで複数のクライアントから接続要求があった場合でも，偏った振分けになることはありません．
+ファイル KGTN2015120904.pdf [(58.3 KB)] [kitasp 技術センター, 2015/12/17 11:45]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc6/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2662/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

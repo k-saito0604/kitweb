@@ -409,24 +409,24 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/problematic_md/doc298/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/problematic_md/doc251/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/problematic_md/doc298/">[GGH4.X] クライアントのパラメタでアプリケーションを指定したが，ログオン後に別のアプリケーションやプログラム・ウインドウが表示された．</a></h4>
+                            <h4><a href="/posts/problematic_md/doc251/">[GGW3.2.1] 技術ノート KGTN#2013110601 の SYMEVENT 関連の情報を得たが，この情報からBSODの原因は分かるか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2014-03-07
+                            日付 2014-05-16
                             </p>
-                            <p class="intro">技術ノート 2014/03/07
-[番号] 技術ノート KGTN 2014030501
-[現象] [GGH4.X] クライアントのパラメタでアプリケーションを指定したが，ログオン後に別のアプリケーションやプログラム・ウインドウが表示された．
-[説明] クライアントのパラメタでアプリケーションを指定しても，同じアカウントでサスペンド （保留） されたセッションが存在する場合， 「そのセッションに再接続されるため」 クライアントのパラメタで指定したアプリケーションは起動されません．ログオン後 （正確にはセッション再接続後） は，セッションがサスペンドされた時の画面 （アプリケーション） が表示されます．
-ファイル KGTN2014030501.pdf [(45.5 KB)] [kitasp 技術センター, 2014/03/07 19:36]</p>
+                            <p class="intro">技術ノート 2014/05/16
+[番号] 技術ノート KGTN 2014050701
+[現象] [GGW3.2.1] 技術ノート KGTN#2013110601 の SYMEVENT 関連の情報を得たが，この情報からBSODの原因は分かるか？
+[説明] SYMEVENT 関連の情報をもとにGraphOn社で調査を行ったところ，BSODを引き起こしたと思われる原因が分かりました．
+The issue occurs in version 3.2 when a session closes while the &quot;csrss.exe&quot; process is displaying a dialog box. It is uncommon for &quot;csrss.exe&quot; to display a dialog box, but it does display a dialog box when a hard error (e.g., unhandled access violation) occurs in a process. In the crash you reported, the &quot;csrss.</p>
                             <p class="read-more">
-                              <a href="/posts/problematic_md/doc298/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/problematic_md/doc251/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -445,25 +445,28 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc308/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2692/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc308/">[GGW3.2./GGH4.0] ユーザへの事前通知無しにセッションシャドウイングを行いたい．</a></h4>
+                            <h4><a href="/posts/new_md/doc2692/">[GGH4.X] クライアント印刷機能で，プリンタ名が日本語を含みかつUPD (Universal Printer Driver) を使用して印刷すると，プリンタにドキュメントが出力されない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2014-03-07
+                            日付 2014-05-02
                             </p>
                             <p class="intro">*技術ノート
-2014/03/07*
-[番号] 技術ノート KGTN 2010122202
-[現象] [GGW3.2./GGH4.0] ユーザへの事前通知無しにセッションシャドウイングを行いたい．
-[説明] GGの標準設定では，セッションシャドウイングが開始される前にユーザへの事前通知 &ldquo;Administrator is asking to connect to your session. Do you want to allow Administrator to connect to your session and view your application and data?&rdquo; が行われます．この事前通知は，以下の方法で抑止することが出来ます．
- サービス GO-Global Application Publishing Service を停止する． レジストリエディタ regedit を起動する． HKLMSOFTWAREGraphOnBridges1.0.0AppServer に位置付ける． [編集] → [新規] → [DWORD 値] 新たに生成された名前を SessionShadowingNotification に変更する． この名前の値 （データ） を 0 にする． レジストリエディタを終了する． サービス GO-Global Application Publishing Service を開始する．  なお，ユーザへの事前通知を表示する場合は， SessionShadowingNotification の値を 1 にして下さい．</p>
+2014/05/02*
+[番号] 技術ノート KGTN 2014050201
+[現象] [GGH4.X] クライアント印刷機能で，プリンタ名が日本語を含みかつUPD (Universal Printer Driver) を使用して印刷すると，プリンタにドキュメントが出力されない．
+[説明] この問題は弊社でも現象を確認しており，GraphOn社にも報告しております．この問題が解決されるまで，以下の方法で対応をお願いします．
+日本語を含まないプリンタ名に変更する． Preview PDF へ印刷し，クライアント側に表示されたPDFファイルを改めてプリンタへ印刷する． プリンタドライバとして WPD (Windows Printer Driver) を使用する．
+補足１ この問題は，クライアント側のプリンタへ出力するプログラム pdfprint.exe へのパラメタの文字列 （プリンタ名と中間ファイル名） が短いことに起因しております． GraphOn社もこの原因を認識しており，GGH4.Xの将来のビルドで修正される見込みです．
+補足２ この問題は GGH4.8.2 Patch1 (4.8.2.22090) で修正されました．なお，この修正はサーバー側およびクライアント側で行われておりますので，それぞれのプログラムをアップグレードする必要があります．
+ファイル KGTN2014050201.pdf [(68.6 KB)] [kitasp 技術センター, 2015/11/04 14:47]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc308/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2692/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -482,24 +485,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/problematic_md/doc299/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/problematic_md/doc252/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/problematic_md/doc299/">[GGW3.2] クライアントプリンタが構成されない．APSログに pw (???) RS: Error registering port for printer Printer ...; Failed to create registry key. という記録が多数ある．</a></h4>
+                            <h4><a href="/posts/problematic_md/doc252/">[GGW3.2.1/GGH4.X] Internet Explorer の脆弱性 （2963983） への当面の対応方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2014-03-07
+                            日付 2014-05-02
                             </p>
-                            <p class="intro">技術ノート 2014/03/07
-[番号] 技術ノート KGTN 2014030301
-[現象] [GGW3.2] クライアントプリンタが構成されない．APSログに &ldquo;pw (???) RS: Error registering port for printer &ldquo;Printer &hellip;&quot;; Failed to create registry key.&rdquo; という記録が多数ある．
-[説明] GGW3.2系では，クラスタマネージャで 「デフォルトプリンタのみを構成」 を設定した場合，デフォルトプリンタに設定されたプリンタの情報が記録 （蓄積） され，ログオン時にそれらのプリンタが全て構成されます．クライアント数およびプリンタ数が多い環境では，構成されるプリンタの数が多数になり，サーバ上に生成されるプロキシプリンタ （オートクリエイトプリンタ） が増え，その結果リソース不足が発生し &ldquo;pw (???) RS: Error registering port for printer &ldquo;Printer &hellip;&quot;; Failed to create registry key.&rdquo; というエラーが発生することがあります．対応としては，GGサーバ上にあるプロキシプリンタを全て削除して下さい．さらに， （万全を期すなら） クライアント上の print.ini を削除して，蓄積されたデフォルトプリンタの情報をクリアして下さい．
-ファイル KGTN2014030301.pdf [(58.1 KB)] [kitasp 技術センター, 2014/03/07 19:34]</p>
+                            <p class="intro">技術ノート 2014/05/02
+[番号] 技術ノート KGTN 2014043001
+[現象] [GGW3.2.1/GGH4.X] Internet Explorer の脆弱性 （2963983） への当面の対応方法は？
+[説明] マイクロソフト社から幾つかの回避策が提案されておりますが，適用条件や副作用もあり，残念ながら十分とは言えません．実際，GraphOn社に回避策 「VGX.DLL の登録解除」 の適用の可否を確認したところ，下記の回答がありました．
+Unregistering the dll has not been tested by GraphOn. We test for compatibility of MS Windows updates regularly and would provide patches for any incompatibilities and/or security vulnerabilities found in the product. We would recommend that your customer test this.  VGX.DLL の登録解除による副作用が正確には分からないこと等から，このような回答 （自己責任での適用） をせざるを得ない状況です．従って，マイクロソフト社が対応するまでの 「暫定」 対策としては，次の運用回避方法が妥当な対策だと考えます．
+ GGのログオンページに限り IE を使用する． 他のページについては IE 以外のブラウザ （例： Google Chrome） を使用する．  補　足 大手新聞社のニュースによればマイクロソフト社は月次の更新プログラムで修正したい意向で，その通りであれば5月14日に本件の更新プログラムがリリースされます．</p>
                             <p class="read-more">
-                              <a href="/posts/problematic_md/doc299/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/problematic_md/doc252/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -518,25 +522,24 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/problematic_md/doc297/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/problematic_md/doc253/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/problematic_md/doc297/">[Windows] Windows Server 2008 R2 でプリンタドライバーを削除する手順は？</a></h4>
+                            <h4><a href="/posts/problematic_md/doc253/">[GGH4.X] GGH4.8でクライアントフレーム機能を利用しているが，デスクトップの背景を指定しても白色になる．</a></h4>
                             <p class="author-category">
                             
-                            日付 2014-03-07
+                            日付 2014-04-25
                             </p>
-                            <p class="intro">技術ノート 2014/03/07
-[番号] 技術ノート KGTN 2014030502
-[現象] [Windows] Windows Server 2008 R2 でプリンタドライバーを削除する手順は？
-[説明] 以下の手順でプリンタドライバーを削除することが出来ます．
-[スタート] → [ディバイスとプリンター] → 何れかのプリンターを選択 → [プリント サーバー プロパティ] → [ドライバー] → 削除したいドライバーを選択 → 削除 → &ldquo;ドライバーとパッケージを削除する&rdquo; を選択 → OK → はい → 削除 → OK
-ファイル KGTN2014030502.pdf [(94.2 KB)] [kitasp 技術センター, 2014/03/07 19:40]</p>
+                            <p class="intro">技術ノート 2014/04/25
+[番号] 技術ノート KGTN 2014042501
+[現象] [GGH4.X] GGH4.8でクライアントフレーム機能を利用しているが，デスクトップの背景を指定しても白色になる．
+[説明] 現在のクライアントフレーム機能では，透過表示のサポートと絡んで，背景は白色のみとなります．GraphOn社に確認したところ， 「2014年中にはクライアントフレームの背景表示を実装したい」 との回答がありました．
+ファイル KGTN2014042501.pdf [(45.6 KB)] [kitasp 技術センター, 2014/05/02 15:20]</p>
                             <p class="read-more">
-                              <a href="/posts/problematic_md/doc297/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/problematic_md/doc253/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

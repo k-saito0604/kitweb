@@ -409,25 +409,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2600/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2186/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2600/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2186/">[GGH5.X] ブラウザで YouTube 等の動画を見たい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-04-08
+                            日付 2016-06-17
                             </p>
                             <p class="intro">*技術ノート
-2016/04/08*
-[番号] 技術ノート KGTN 2016032401
-[現象] [GGH4.X-5.X] 描画オブジェクトが多いアプリケーションを利用すると，スムーズに動作しない．サーバー側のCPU使用率を確認したところ，70～100% と高く推移している．
-[説明] APIラッピング方式 （GG） は，スクリーンスクレイピング方式 （RDS） と異なりサーバー側での描画内容を間引くことなくクライアント側へ転送し，クライアント上で描画順序も含め正確に再現するいため，描画オブジェクトが多いアプリケーションではサーバー側およびクライアント側のCPU使用率が高くなる傾向があります．このような場合は，GGサーバーのパラメタ ClientProcessingBatch （技術ノートKGTN#2013020601を参照して下さい） を有効にすることで，多数の描画命令をまとめてクライアント側に転送しパフォーマンスを改善することが出来ます．これでも十分なパフォーマンスが得られない場合は，GGサーバーのCPU性能 （クロック数やコア数） を上げることをお考え下さい．
-ファイル KGTN2016032401.pdf [(65.1 KB)] [kitasp 技術センター, 2016/04/08 17:19]</p>
+2016/06/17*
+[番号] 技術ノート KGTN 2016060902
+[現象] [GGH5.X] ブラウザで YouTube 等の動画を見たい．
+[説明] GGの通信プロトコル Rapid-X は，サーバーとクライアント間の送受信データを高い効率で圧縮/伸張するようになっております．通常のアプリケーションでは，この圧縮/伸張機能が上手く働き，多くのユーザー （セッション） が十分なパフォーマンスで動作することが出来ます．動画を表示するアプリケーションでは，大量のデータが遅延なく送受信される必要がありますが， Rapid-X の下ではその大量のデータに対しても圧縮/伸張機能が働くため，CPU負荷が高まるとともに，処理時間による遅延も発生します．
+このような技術的な背景により，現時点で最新のGGH5.0では，ビデオストリーミング機能はサポートしておりません．GraphOn社にこの機能の要望が既に届いており，将来のバージョンでのサポートを検討している状況です （Rapid-X のプロトコルを拡張することになると思われます） ．
+We have a feature request (ECR 16059) to fully support video streaming to be considered for a future release of the product.  参　考 GraphOn社より，下記の設定を現行製品に適用することでビデオ表示のパフォーマンスが向上するという情報が入りました．この設定に加え，色深度を16ビットにすることでパフォーマンスが向上したという報告があります．
+With the current product, the following configuration changes will provide the best performance for video: Add the following registry values: HKLMSOFTWAREGraphOnGO-GlobalAppServerClientOffscreenSurfaces = 0 HKLMSOFTWAREGraphOnGO-GlobalAppServerDisplayBufferMinDrainRate = 500 (decimal) HKLMSOFTWAREGraphOnGO-GlobalAppServerDisplayBufferThreshold = 0x00010000 Make the following changes in the HostProperties.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2600/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2186/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,27 +448,36 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2597/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2532/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2597/">[IIS] IIS上で実行すると暗号化APIの CryptAcquireContext がエラーとなる．</a></h4>
+                            <h4><a href="/posts/new_md/doc2532/">[iOS/Android] iOSクライアントおよびAndroidクライアントのセッション画面にあるアイコンの機能を知りたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-04-08
+                            日付 2016-06-17
                             </p>
                             <p class="intro">*技術ノート
-2016/04/08*
-[番号] 技術ノート KGTN 2016033101
-[現象] [IIS] IIS上で実行すると暗号化APIの CryptAcquireContext がエラーとなる．
-[説明] アプリケーションプールの既定値の設定で，項目 &ldquo;ユーザープロファイルの読み込み&rdquo; の値を True に設定することで解決します．拡張パックの GGEasyRentEncode をIIS上で実行する場合も，この設定が必要です．
-ファイル KGTN2016033101.pdf [(98.1 KB)] [kitasp 技術センター, 2016/04/08 17:38]
-KGTN2016033101.jpg
-表示 [(30.4 KB)] [kitasp 技術センター, 2016/04/08 17:38]</p>
+2016/06/17*
+[番号] 技術ノート KGTN 2016060304
+[現象] [iOS/Android] iOSクライアントおよびAndroidクライアントのセッション画面にあるアイコンの機能を知りたい．
+[説明] ツールバーの左側にあるアイコン （下記赤丸の部分） はパワー・アイコンと呼ばれ，セッションを切断する時にクリックします．クラスタマネージャーの設定項目 Disconnected session terminate が Immediately の場合は，セッションが終了します．
+ツールバーの右側の最初のアイコン （下記赤丸の部分） はオートズーム・アイコンと呼ばれ，自動ズーム機能をオン・オフする時にクリックします．
+ツールバーの右側の２番目のアイコン （下記赤丸の部分） はキーボード・アイコンと呼ばれ，オンスクリーン・キーボードを開く/閉じる時にクリックします．
+ツールバーの右側の３番目のアイコン （下記赤丸の部分） はタスク・アイコンと呼ばれ，現在実行中のタスク（アプリケーション）のリストが表示されます．リストのタスクを選択することで，そのタスクに切り替えることが出来ます．
+ファイル KGTN2016060304.pdf [(125 KB)] [kitasp 技術センター, 2016/06/17 16:41]
+KGTN2016060304-1.jpg
+表示 [(27 KB)] [kitasp 技術センター, 2016/06/17 16:53]
+KGTN2016060304-2.jpg
+表示 [(26.9 KB)] [kitasp 技術センター, 2016/06/17 16:53]
+KGTN2016060304-3.jpg
+表示 [(26.9 KB)] [kitasp 技術センター, 2016/06/17 16:53]
+KGTN2016060304-4.jpg
+表示 [(26.8 KB)] [kitasp 技術センター, 2016/06/17 16:53]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2597/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2532/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,26 +496,30 @@ KGTN2016033101.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2604/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2531/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2604/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2531/">[iOS/Android] iOSクライアントおよびAndroidクライアントを使用する時， Auto Zoom のオンとオフとではどう違うのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-03-11
+                            日付 2016-06-17
                             </p>
                             <p class="intro">*技術ノート
-2016/03/11*
-[番号] 技術ノート KGTN 2016031101
-[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor のログファイルの出力先 （フォルダ） を変えたい．
-[説明] 設定ファイル GGEasyMonitor.ini の default セクションで，以下の項目を指定して下さい．この設定により， GGEasyMonitor の４種類のログが，指定したフォルダに出力されます （Ver2.0.9またはそれ以降） ．
-[default] logd =
-ファイル KGTN2016031101.pdf [(58.2 KB)] [kitasp 技術センター, 2016/03/11 17:36]</p>
+2016/06/17*
+[番号] 技術ノート KGTN 2016060305
+[現象] [iOS/Android] iOSクライアントおよびAndroidクライアントを使用する時， Auto Zoom のオンとオフとではどう違うのか？
+[説明] Auto Zoom がオフの場合は，Windowsのクライアントの場合と同様に画面上にそのままアプリケーションのウインドウが表示されます．
+Auto Zoom がオンの場合は，画面上でアプリケーションのウインドウが見やすいように自動的に縮尺されて表示されます．
+ファイル KGTN2016060305.pdf [(163 KB)] [kitasp 技術センター, 2016/06/17 16:57]
+KGTN2016060305-1.jpg
+表示 [(22.3 KB)] [kitasp 技術センター, 2016/06/17 16:57]
+KGTN2016060305-2.jpg
+表示 [(26.3 KB)] [kitasp 技術センター, 2016/06/17 16:57]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2604/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2531/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -523,25 +538,30 @@ KGTN2016033101.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2605/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2533/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2605/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2533/">[iOS/Android] iOSクライアントおよびAndroidクライアントを使用する時，セッションを終了させる方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-03-11
+                            日付 2016-06-17
                             </p>
                             <p class="intro">*技術ノート
-2016/03/11*
-[番号] 技術ノート KGTN 2016022901
-[現象] [GGH4.X-5.X] アプリケーションはサーバー上で実行されるので，クライアントPCの性能が実行結果に影響しないと考えて良いか？
-[説明] いいえ．アプリケーションはサーバー上で実行されますが，描画命令等についてはサーバー側からクライアント側へ転送され，その描画命令がクライアントPC上で処理 （実行） されます．描画内容が比較的単純なものであれば，クライアントPCの性能がトータルのパフォーマンスに影響を与えることはありません．グラフィック系のアプリケーションや多数の描画オブジェクトが多数配置された画面では， 「クライアント側での描画処理のウエイトが大きくなるため」 クライアントPCの性能がトータルのパフォーマンスに影響を与える可能性があります．従って，グラフィック系のアプリケーション等をご利用なさりたい場合は，想定されるクライアントPCで期待通りのパフォーマンスが得られるかどうか，事前検証を行われることを推奨します．
-ファイル KGTN2016022901.pdf [(61.5 KB)] [kitasp 技術センター, 2016/03/11 17:35]</p>
+2016/06/17*
+[番号] 技術ノート KGTN 2016060303
+[現象] [iOS/Android] iOSクライアントおよびAndroidクライアントを使用する時，セッションを終了させる方法は？
+[説明] クラスタマネージャーの設定項目 Host Options → Session Shutdown → Disconnected sessions terminate が Immediately の場合は，画面左下の電源ボタンのアイコン （赤丸の部分） をクリックして下さい．
+それ以外の設定 （Never または After ?? minutes） の場合は，プログラムウインドウのメニューで Sign Out を選択して下さい．
+ファイル KGTN2016060303.pdf [(187 KB)] [kitasp 技術センター, 2016/06/17 16:32]
+KGTN2016060303-1.jpg
+表示 [(26.9 KB)] [kitasp 技術センター, 2016/06/17 16:52]
+KGTN2016060303-2.jpg
+表示 [(26.8 KB)] [kitasp 技術センター, 2016/06/17 16:52]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2605/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2533/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

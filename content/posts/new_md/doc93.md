@@ -1,5 +1,5 @@
 ﻿+++
-title = "[GGH4.X] SSLの設定で 56"
+title = "[GGH4.X] SSLの設定で 56-bit DES よりも高いエンクリプションが表示されない．"
 date = "2013-03-22"
 tags = ["技術ノート"]
 categories = ["tech"]

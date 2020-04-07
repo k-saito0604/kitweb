@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2582/">
+                                      <a href="/posts/new_md/doc545/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2582/">[GGW3.2.1/GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc545/">[ExPack] GGCSLib2 のDLLを LoadLibrary でロードしようとするとエラー126が発生する．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,19 +340,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2582/"><i class="far fa-calendar"></i> 2013-03-13</a>
+                                            <a href="/posts/new_md/doc545/"><i class="far fa-calendar"></i> 2013-07-23</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/13*
-[番号] 技術ノート KGTN 2013031401
-[現象] [GGW3.2.1/GGH4.X-5.X] GGのドライバ ggse.sys の役割は？
-[説明] ggse.sys は &ldquo;GO-Global System Extensions Driver&rdquo; で，Windows の環境の下で （GG独自の） マルチユーザ環境を提供します．より具体的には， ggse.sys はセッション毎に分離されたセッション空間を割り当て，その空間上でWin32 サブシステムのインスタンスを動作させます．アプリケーションのメモリ獲得や開放の要求も ggse.sys を介して行われますので，アプリケーションの異常等で不正なメモリ処理が行われた場合は，（ggse.sys が処理を中継しているため） ggse.sys でBSODが発生したかのように記録されます．
-ファイル KGTN2013031401.pdf [(88.3 KB)] [kitasp 技術センター, 2016/05/27 14:02]
-KGTN2013031401.jpg
-表示 [(19.5 KB)] [kitasp 技術センター, 2016/05/27 14:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2582/" class="btn btn-template-main">続きを読む</a>
+2013/07/23*
+[番号] 技術ノート KGTN 2013072301
+[現象] [ExPack] GGCSLib2 のDLLを LoadLibrary でロードしようとするとエラー126が発生する．
+[説明] Win32エラーコード 126 は ERROR_MOD_NOT_FOUND で，意味は 「指定されたモジュールが見つかりません」 です． GGCSLib2 のDLLが正しいフォルダに置かれているかどうか確認して下さい．置かれているにも関わらずエラーが発生している場合は，恐らくVC++のランタイムがインストールされていないのが原因です． &ldquo;Microsoft Visual C++ 2010 再頒布可能パッケージ&rdquo; をインストールして下さい．
+http://www.microsoft.com/ja-jp/download/details.aspx?id=5555 (x86) http://www.microsoft.com/ja-jp/download/details.aspx?id=14632 (x64)
+ファイル KGTN2013072301.pdf [(58.2 KB)] [kitasp 技術センター, 2013/07/23 09:28]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc545/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -362,7 +361,7 @@ KGTN2013031401.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc621/">
+                                      <a href="/posts/new_md/doc546/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -370,7 +369,7 @@ KGTN2013031401.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc621/">[GGH4.5] GGH4.5をWindows Server 2008 R2 Service Pack 1 にインストールしたところ，APSログに存在しない Service Pack 2 にアップグレードするようにと記録された．</a></h2>
+                                    <h2><a href="/posts/new_md/doc546/">[SDK] Client Process Manager API で C:¥Program Files¥Internet Explorer¥iexplore.exe を起動しようとしたが，アプリケーションが立ち上がらない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -383,17 +382,18 @@ KGTN2013031401.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc621/"><i class="far fa-calendar"></i> 2013-03-12</a>
+                                            <a href="/posts/new_md/doc546/"><i class="far fa-calendar"></i> 2013-07-18</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/12*
-[番号] 技術ノート KGTN 2013031301
-[現象] [GGH4.5] GGH4.5をWindows Server 2008 R2 Service Pack 1 にインストールしたところ，APSログに存在しない Service Pack 2 にアップグレードするようにと記録された．
-[説明] &ldquo;APS (???) Windows Server 2008 R2 x64 Service Pack 1 is not supported. Sessions will not start on this operating system. Please upgrade to Windows Server 2008 R2 x64 Service Pack 2 or later.&rdquo; というメッセージは記録の誤りで，次の GGH4.6 で修正される見込みです．なお，このメッセージに関連する副作用等はありませんので，無視して頂いて結構です．
-ファイル KGTN2013031301.pdf [(57.2 KB)] [kitasp 技術センター, 2013/03/13 07:05]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc621/" class="btn btn-template-main">続きを読む</a>
+2013/07/18*
+[番号] 技術ノート KGTN 2013071701
+[現象] [SDK] Client Process Manager API で &ldquo;C:¥Program Files¥Internet Explorer¥iexplore.exe&rdquo; を起動しようとしたが，アプリケーションが立ち上がらない．
+[説明] 関数 createClientProcess に渡す実行ファイルまたはドキュメントのパスは，クライアント・ドライブ機能が対応付けたクライアントのドライブレターを指定する必要があります．例えば，クライアントの C: ドライブが M: ドライブに対応付けられている場合は， &ldquo;M:¥Program Files¥Internet Explorer¥iexplore.exe&rdquo; を指定して下さい．
+補　足 Client Process Manager API は， クライアント・ドライブ機能を使用します．従って，クライアント・ドライブ機能が無効な場合は， Client Process Manager API は動作しません．
+ファイル KGTN2013071701.pdf [(56.4 KB)] [kitasp 技術センター, 2013/07/18 17:16]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc546/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -403,7 +403,7 @@ KGTN2013031401.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc622/">
+                                      <a href="/posts/new_md/doc548/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -411,7 +411,7 @@ KGTN2013031401.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc622/">[ExPack] 拡張パック （エンタープライズ・オプション） に含まれるソースコードはオープンか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc548/">[ExPack] GGTerminalRoaming のサンプル版のインストール方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -424,17 +424,26 @@ KGTN2013031401.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc622/"><i class="far fa-calendar"></i> 2013-03-11</a>
+                                            <a href="/posts/new_md/doc548/"><i class="far fa-calendar"></i> 2013-07-12</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/11*
-[番号] 技術ノート KGTN 2013031201
-[現象] [ExPack] 拡張パック （エンタープライズ・オプション） に含まれるソースコードはオープンか？
-[説明] いいえ，拡張パック （エンタープライズ・オプション） に含まれるソースコードは，オープン・ソース・ソフトウエアではありません．契約した案件に限って開示するもので，その範囲内で利用することが出来ます．
-ファイル KGTN2013031201.pdf [(43.3 KB)] [kitasp 技術センター, 2013/03/12 06:26]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc622/" class="btn btn-template-main">続きを読む</a>
+2013/07/12*
+[番号] 技術ノート KGTN 2013071201
+[現象] [ExPack] GGTerminalRoaming のサンプル版のインストール方法は？
+[説明] 以下の手順でインストールして下さい．
+GGサーバにフォルダ C:¥GraphOn を作成し，そこに配布フォルダ GGTerminalRoaming をコピーして下さい．
+フォルダ C:¥GrapOn¥GGTerminalRoaming¥GSM にあるファイル GGSessionMonitor.ini をテキストエディタやメモ帳で開き，キー host の値にGGサーバのIPアドレスを記入し，ファイルを上書き保存して下さい．
+コマンドプロンプトを開き，DOS窓で GGSessionMonitor -sec gsm を実行して下さい．次に．画面に Debug: &hellip; availability = &lsquo;YES&rsquo; という行が表示されたことを確認して下さい．もし表示されない場合は，IPアドレスに誤りがあるか，または指定したGGサーバ上で APS が開始していない可能性が高いと考えられます．
+DOS窓で GMService -i を実行し，続けて GMService ?s を実行して下さい．この操作で，GGサーバを監視するサービスが登録され，さらにそのサービスが開始します．
+タスクマネージャで GMService.exe と GGSessionMonitor.exe が存在することを確認して下さい．この時点で，GGサーバを常時監視する環境が整いました．
+プログラム C:¥GrapOn¥GGTerminalRoaming¥GGTerminalRoaming.exe をクラスタマネージャで登録して下さい．以上で，環境設定は完了しました．
+最初のクライアントPC （移動前の端末） からGGサーバにログオンし，メモ帳等のアプリケーションを起動して下さい．
+アプリケーション GGTerminalRoaming を起動して下さい．スプラッシュ画面が表示され，最小化状態で動作します （サンプル版の仕様です） ．
+プログラム・ウインドウを使用してセッションを Discoonect して下さい．または，クライアントPC上で gg-client.exe のプロセスを強制終了しても構いません．
+2台目のクライアントPC （移動後の端末） からGGサーバにログオンし，前のステップで切断したセッションに再接続して下さい．正常であれば，プログラム・ウインドウがプライマリ・モニタの左上の位置に表示されます （サンプル版の仕様です） ．他のアプリケーションのウインドウは，移動後のモニタの解像度に合わせて，位置が調整されます．なお，アプリケーションの作りによっては移動しないことがありますが，この場合は，アプリケーションの動作 （ウインドウ管理） に合わせて GGTerminalRoaming をカスタマイズする必要があります．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc548/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -444,7 +453,7 @@ KGTN2013031401.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc300/">
+                                      <a href="/posts/new_md/doc549/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -452,7 +461,7 @@ KGTN2013031401.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc300/">[GGH4.X] GG上のアプリケーションは セッション 0 で実行されるが，GGのセッション毎に異なる （Windowsの）セッションIDを割り当てることは可能か？</a></h2>
+                                    <h2><a href="/posts/new_md/doc549/">[ExPack] GGSessionMonitor がSSLの場合に限りGGサーバに接続出来ない．APSログを見ると， aps (???) CS: I/O error (SSL received shutdown). という記録がある．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -465,19 +474,17 @@ KGTN2013031401.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc300/"><i class="far fa-calendar"></i> 2013-03-11</a>
+                                            <a href="/posts/new_md/doc549/"><i class="far fa-calendar"></i> 2013-07-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/11*
-[番号] 技術ノート KGTN 2013030701
-[現象] [GGH4.X] GG上のアプリケーションは セッション 0 で実行されるが，GGのセッション毎に異なる （Windowsの）セッションIDを割り当てることは可能か？
-[説明] 下記のレジストリ設定を行うことで， ProcessIdToSessionId() API がGG内部のセッションID （環境変数 %RXPSESSIONID% の値） を返すようになります．
-HKLMGraphOnGO-GlobalLoaderProcesses REG_DWORD 0x00000040
-GGH4.8.1.20079 では，64ビット版Windows上で32ビット・アプリケーションおよび64ビット・アプリケーションそれぞれで動作することを確認しました．なお， Administrator Guide に書かれた値 0x00000080 は誤りです．
-ファイル KGTN2013030701.pdf [(61.2 KB)] [kitasp 技術センター, 2014/03/07 19:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc300/" class="btn btn-template-main">続きを読む</a>
+2013/07/02*
+[番号] 技術ノート KGTN 2013070301
+[現象] [ExPack] GGSessionMonitor がSSLの場合に限りGGサーバに接続出来ない．APSログを見ると， &ldquo;aps (???) CS: I/O error (SSL received shutdown).&rdquo; という記録がある．
+[説明] 「原則として」 GGSessionMonitor が動作するマシン上にSSL証明書をインストールする必要はありません．但し，中間CA証明書や自己ルート証明書をGGサーバにインストールしている場合は，それらの証明書を同じように GGSessionMonitor が動作するマシンにもインストールする必要があります．
+ファイル KGTN2013070301.pdf [(51.6 KB)] [kitasp 技術センター, 2013/07/03 07:50]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc549/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -487,7 +494,7 @@ GGH4.8.1.20079 では，64ビット版Windows上で32ビット・アプリケー
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc623/">
+                                      <a href="/posts/new_md/doc550/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -495,7 +502,7 @@ GGH4.8.1.20079 では，64ビット版Windows上で32ビット・アプリケー
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc623/">[GGH4.5] GGのデモライセンス （評価用ライセンス） の期間は１ヶ月だそうだが，より期間の長いライセンスを発行して貰えないか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc550/">[GGH4.X] Excel 2003 でクライアントドライブにファイルを保存し，そのファイルを開こうとすると 「ファイルを読み込めません」 というエラーが発生する．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -508,17 +515,18 @@ GGH4.8.1.20079 では，64ビット版Windows上で32ビット・アプリケー
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc623/"><i class="far fa-calendar"></i> 2013-03-08</a>
+                                            <a href="/posts/new_md/doc550/"><i class="far fa-calendar"></i> 2013-06-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/08*
-[番号] 技術ノート KGTN 2013030807
-[現象] [GGH4.5] GGのデモライセンス （評価用ライセンス） の期間は１ヶ月だそうだが，より期間の長いライセンスを発行して貰えないか？
-[説明] GraphOn社のデモライセンス （評価用ライセンス） の発行は会計システムと直結しており，その期間 （１ヶ月）を長くすることは出来ません．特別な事情がある場合は，弊社営業担当へお問合せ下さい．GraphOn社が「営業的に必要性あり」 と判断すれば，最長3ヶ月のデモライセンスが１回に限り発行されます．
-ファイル KGTN2013030807.pdf [(49.1 KB)] [kitasp 技術センター, 2013/03/08 23:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc623/" class="btn btn-template-main">続きを読む</a>
+2013/06/28*
+[番号] 技術ノート KGTN 2013062801
+[現象] [GGH4.X] Excel 2003 でクライアントドライブにファイルを保存し，そのファイルを開こうとすると 「ファイルを読み込めません」 というエラーが発生する．
+[説明] 弊社でもこの現象を確認しました．この問題は将来修正される可能性はありますが，しかしながら当面は現状の動作通りとなります （既知の問題） ．従って，お手数ですが以下の何れかの対応をお願いします．
+先ずサーバ側にファイルを保存し，そのファイルをエクスプローラー等のファイルマネージャでクライアント側 （クライアントドライブ） へコピーする． Excel 2010 にバージョンアップする．
+ファイル KGTN2013062801.pdf [(51.7 KB)] [kitasp 技術センター, 2013/06/28 12:35]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc550/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -528,7 +536,7 @@ GGH4.8.1.20079 では，64ビット版Windows上で32ビット・アプリケー
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc627/">
+                                      <a href="/posts/new_md/doc551/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -536,7 +544,7 @@ GGH4.8.1.20079 では，64ビット版Windows上で32ビット・アプリケー
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc627/">[GGH4.5] データベースソフト FileMaker はGG上で動作するか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc551/">[Gateway] Gateway サーバが管理しているアイテムの情報は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -549,17 +557,17 @@ GGH4.8.1.20079 では，64ビット版Windows上で32ビット・アプリケー
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc627/"><i class="far fa-calendar"></i> 2013-03-08</a>
+                                            <a href="/posts/new_md/doc551/"><i class="far fa-calendar"></i> 2013-06-20</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/08*
-[番号] 技術ノート KGTN 2013030804
-[現象] [GGH4.5] データベースソフト FileMaker はGG上で動作するか？
-[説明] 一般的にソフトウエアが正常に動作するかという判断は，ソフトウエアメーカーの品質保証担当しか出来ませんので，弊社では FileMaker が動作するかどうかは分かりません．しかしながら，ユーザ様での利用の事例があり （詳細は分かりません） ，GraphOn社が FileMaker で生じた問題を修正した記録があります．このことから，動作する可能性は十分にあると考えられます．
-ファイル KGTN2013030804.pdf [(50.2 KB)] [kitasp 技術センター, 2013/03/08 09:50]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc627/" class="btn btn-template-main">続きを読む</a>
+2013/06/20*
+[番号] 技術ノート KGTN 2013062003
+[現象] [Gateway] Gateway サーバが管理しているアイテムの情報は？
+[説明] GG4.6の Gateway サーバが管理しているアイテム情報は，以下の通りです．
+create table portalitems ( itemType varchar(31) not null, id int8 not null, groupId varchar(255), groupName varchar(255), iconEncoded varchar(255), iconListId varchar(255), iconThumbnailId varchar(255), iconTileId varchar(255), itemUrl varchar(255), name varchar(255), shortcutType varchar(255), owner_id int8, parent_id int8, primary key (id) );  ファイル KGTN2013062003.pdf [(45.2 KB)] [kitasp 技術センター, 2013/06/20 10:51]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc551/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -569,7 +577,7 @@ GGH4.8.1.20079 では，64ビット版Windows上で32ビット・アプリケー
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc624/">
+                                      <a href="/posts/new_md/doc552/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -577,7 +585,7 @@ GGH4.8.1.20079 では，64ビット版Windows上で32ビット・アプリケー
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc624/">[GGW3.2.1] 正式ライセンスを検証するに当たり，MACアドレスの一致だけで良いのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc552/">[Gateway] Gateway サーバが管理しているセッションの情報は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -590,17 +598,17 @@ GGH4.8.1.20079 では，64ビット版Windows上で32ビット・アプリケー
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc624/"><i class="far fa-calendar"></i> 2013-03-08</a>
+                                            <a href="/posts/new_md/doc552/"><i class="far fa-calendar"></i> 2013-06-20</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/08*
-[番号] 技術ノート KGTN 2013030806
-[現象] [GGW3.2.1] 正式ライセンスを検証するに当たり，MACアドレスの一致だけで良いのか？
-[説明] いいえ，ライセンスファイルのホスト名とGGサーバ （ライセンスサーバ） のコンピュータ名が一致している必要があります．
-ファイル KGTN2013030806.pdf [(40.9 KB)] [kitasp 技術センター, 2013/03/08 14:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc624/" class="btn btn-template-main">続きを読む</a>
+2013/06/20*
+[番号] 技術ノート KGTN 2013062002
+[現象] [Gateway] Gateway サーバが管理しているセッションの情報は？
+[説明] GG4.6の Gateway サーバが管理しているセッション情報は，以下の通りです．
+create table session_users ( id bigint generated by default as identity, OS varchar(255), clientId integer not null, clientName varchar(255), credentials varchar(255), hostId bigint, hostName varchar(255), ipAddress varchar(255), meetingId bigint, peerIP varchar(255), port smallint not null, receivedBytes bigint, sentBytes bigint, startTime timestamp, userInstanceName varchar(255), version varchar(255), session_id bigint, primary key (id) ); create table sessions ( id bigint generated by default as identity, hostId bigint, hostUsername varchar(255), hostname varchar(255), isHostAdmin smallint not null, name varchar(255), owner varchar(255), sessionId integer not null, sessionUUID varchar(255), startTime timestamp, status integer not null, workspaceId bigint, workspaceInstanceName varchar(255), workspaceName varchar(255), primary key (id) );  ファイル KGTN2013062002.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc552/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -610,7 +618,7 @@ GGH4.8.1.20079 では，64ビット版Windows上で32ビット・アプリケー
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc626/">
+                                      <a href="/posts/new_md/doc553/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -618,7 +626,7 @@ GGH4.8.1.20079 では，64ビット版Windows上で32ビット・アプリケー
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc626/">[GGW3.2.1] 正式ライセンスを検証するに当たり，どのサービスを立ち上げる必要があるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc553/">[Gateway] Gateway サーバが管理しているホストの情報は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -631,17 +639,17 @@ GGH4.8.1.20079 では，64ビット版Windows上で32ビット・アプリケー
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc626/"><i class="far fa-calendar"></i> 2013-03-08</a>
+                                            <a href="/posts/new_md/doc553/"><i class="far fa-calendar"></i> 2013-06-20</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/08*
-[番号] 技術ノート KGTN 2013030805
-[現象] [GGW3.2.1] 正式ライセンスを検証するに当たり，どのサービスを立ち上げる必要があるのか？
-[説明] ライセンスサーバの GO-Global License Manager と，ライセンスクライアントの GO-Global Application Publishing Service を立ち上げる必要があります．ライセンスファイルを入れ替えた時は，技術的にはライセンスサーバの 「停止→開始」 で良いのですが，慎重を期してライセンスクライアント （APS） の 「停止→開始」 も行うことをお勧めします．
-ファイル KGTN2013030805.pdf [(49.1 KB)] [kitasp 技術センター, 2013/03/08 14:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc626/" class="btn btn-template-main">続きを読む</a>
+2013/06/20*
+[番号] 技術ノート KGTN 2013062001
+[現象] [Gateway] Gateway サーバが管理しているホストの情報は？
+[説明] GG4.6の Gateway サーバが管理しているホスト情報は，以下の通りです．
+create table host_settings ( id bigint generated by default as identity, autoAuthenticate smallint, autoUpdate smallint, listWorkspaces smallint, maxUsersAllowed integer, password varchar(255), passwordEnabled smallint, rememberMeEnabled smallint, rememberPassword smallint, primary key (id) ); create table hosts ( id bigint generated by default as identity, OS varchar(255), address varchar(255), baseSessionID integer, cpuUsage integer, cpuWeight integer, credentials varchar(255), displayName varchar(255), hardwareid bigint, hostWeight integer, isSetUserLimit smallint, encrypt_key varchar(255), lastSessionStartTime timestamp, listWorkspaces smallint, loadDataTimestamp timestamp, maxCpu integer, maxMem integer, maxSessions integer, memWeight integer, memoryUsage integer, name varchar(255), owner varchar(255), proxyHostID bigint, role integer, sessionWeight integer, smiAddress varchar(255), smiPort integer, smiTransport varchar(255), state varchar(255), totalSessionCount integer, userLimit integer, uuid varchar(255), defaultWorkspace_id bigint, settings_id bigint, primary key (id) );  ファイル KGTN2013062001.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc553/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -651,7 +659,7 @@ GGH4.8.1.20079 では，64ビット版Windows上で32ビット・アプリケー
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc628/">
+                                      <a href="/posts/new_md/doc554/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -659,7 +667,7 @@ GGH4.8.1.20079 では，64ビット版Windows上で32ビット・アプリケー
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc628/">[ExtPack] 拡張パックの GMService.exe が記録するログファイルは，どこの記録されるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc554/">[GGH4.5] GGH4.5で， ログオン時に Connection failed. Access to the host was denied というメッセージが表示され，ログオン出来ない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -672,19 +680,20 @@ GGH4.8.1.20079 では，64ビット版Windows上で32ビット・アプリケー
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc628/"><i class="far fa-calendar"></i> 2013-03-07</a>
+                                            <a href="/posts/new_md/doc554/"><i class="far fa-calendar"></i> 2013-06-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/07*
-[番号] 技術ノート KGTN 2013030803
-[現象] [ExtPack] 拡張パックの GMService.exe が記録するログファイルは，どこの記録されるのか？
-[説明] 標準の設定では GMService.exe が置かれたフォルダに GMService-YYYYMMDD.log というファイル名で作成されます．GMService.exe が置かれたフォルダに GMService.ini という設定ファイルがあり，かつそのファイルの中に
-logdir =
-という項目があれば，指定されたパスにログファイルが作成されます．詳細は技術ノートKGTN#2010082502 をご覧下さい．
-ファイル KGTN2013030803.pdf [(49.1 KB)] [kitasp 技術センター, 2013/03/08 08:45]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc628/" class="btn btn-template-main">続きを読む</a>
+2013/06/19*
+[番号] 技術ノート KGTN 2013011703
+[現象] [GGH4.5] GGH4.5で， ログオン時に &ldquo;Connection failed. Access to the host was denied&rdquo; というメッセージが表示され，ログオン出来ない．
+[説明] メッセージの内容は 「GGサーバへ接続出来たものの，GGサーバがログオンを拒否した」 ことを意味します．当該時刻のAPSログを確認して，以下のような記録があれば Windows 側の問題だと考えられます．
+Logon1 on GGSV, aps (10640) Failed to create logon session process during session startup for client at address 192.168.101.34 (NTSTATUS-1073741800, WLE0).
+この例の &ldquo;NTSTATUS-1073741800&rdquo; はGGが検出したエラー内容 （Windowsのカーネル モード API 関数が返した値） で， -1073741800 はアドレス範囲の矛盾 （STATUS_CONFLICTING_ADDRESSES） を意味します．対応としては，先ず以下の手順を行って状況が改善するかどうか確認して下さい．もし改善しない場合は， Windows を再インストールするか，または過去に保存したシステムディスクのイメージを復元して下さい．
+GGをアンインストールする． サーバを再起動する． Windows Update を適用する． サーバを再起動する． GGをインストールする． サーバを再起動する．
+補　足 このメッセージは，更新プログラム KB2813170 が適用された環境でも発生します．この更新プログラムを適用されるとWindwos内部のAPI RtlCreateUserProcess のパラメタが変更され，従来仕様のパラメタを使用するGGへエラーコードが返り，この結果としてエラーダイアログが表示されます．対応は，当面 KB2813170 をアンインストールして下さい．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc554/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -694,7 +703,7 @@ logdir =
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc629/">
+                                      <a href="/posts/new_md/doc2000/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -702,7 +711,7 @@ logdir =
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc629/">[GGH4.5/Android] Android タブレットで Bluetooth wireless keyboard を使用しているが，GGの Android クライアントではタブキーが入力出来ない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2000/">[GGH4.X-5.X] GGH4.X-5.X で，ログオン時に Connection failed. Access to the host was denied というメッセージが表示されたが，これはどのような障害なのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -715,17 +724,21 @@ logdir =
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc629/"><i class="far fa-calendar"></i> 2013-03-07</a>
+                                            <a href="/posts/new_md/doc2000/"><i class="far fa-calendar"></i> 2013-06-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/07*
-[番号] 技術ノート KGTN 2013030802
-[現象] [GGH4.5/Android] Android タブレットで Bluetooth wireless keyboard を使用しているが，GGの Android クライアントではタブキーが入力出来ない．
-[説明] Androidクライアントは Bluetooth wireless keyboard をサポートしておりません．GraphOn社の機能要望リストにはBluetooth wireless keyboard のサポートが登録されておりますので，将来サポートされる可能性はあります．
-ファイル KGTN2013030802.pdf [(45.8 KB)] [kitasp 技術センター, 2013/03/08 07:17]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc629/" class="btn btn-template-main">続きを読む</a>
+2013/06/19*
+[番号] 技術ノート KGTN 2013061901
+[現象] [GGH4.X-5.X] GGH4.X-5.X で，ログオン時に &ldquo;Connection failed. Access to the host was denied&rdquo; というメッセージが表示されたが，これはどのような障害なのか？
+[説明] このメッセージは，GGがログオン時に使用するWindowsのAPIの呼び出しで，エラーが発生したことを意味します．具体的には，非サポートの更新プログラムが適用された場合など，Windowsレベルで何等かの障害が発生したことが考えられます．エラーの詳細情報は，APSログに以下のような情報が記録されます．
+ 1432 2013-04-12 09:19:12.174 Logon237 on Client001, aps (556) Failed to create logon session process during session startup for client at address 192.168.11.112 ([NTSTATUS-1073741800]{.underline}, WLE0).
+ 上記の下線の部分の -1073741800 がNTSTATUSエラーコードで，この場合は
+STATUS_CONFLICTING_ADDRESSES = アドレス範囲の矛盾
+を意味します．この情報が問題を解決する大切な手掛かりとなります．
+ファイル KGTN2013061901.pdf [(48.7 KB)] [kitasp 技術センター, 2017/10/10 10:08]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2000/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -795,7 +808,7 @@ logdir =
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

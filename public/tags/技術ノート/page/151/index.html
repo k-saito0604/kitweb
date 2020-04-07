@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc755/">
+                                      <a href="/posts/new_md/doc659/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc755/">[GGH4.5] GGH4.5は，クライアントの環境として Windows 8 をサポートするのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc659/">[GGW3.2.1] クライアントプリンタ機能を有効にしているGGサーバに接続すると，クライアント側のデフォルトプリンタが変更されることがある．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc755/"><i class="far fa-calendar"></i> 2012-12-11</a>
+                                            <a href="/posts/new_md/doc659/"><i class="far fa-calendar"></i> 2013-02-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/11*
-[番号] 技術ノート KGTN 2012121201
-[現象] [GGH4.5] GGH4.5は，クライアントの環境として Windows 8 をサポートするのか？
-[説明] キーボードおよびマウスを利用する場合は， GGH4.5 はクライアントの環境として Windows 8 をサポートします．タッチパネルを利用する場合は，GGH4.5 はクライアントの環境として Windows 8 をサポートしません．現時点では，タッチパネルのサポートについては未だ何も決まっておりません．もしユーザ数の多いニーズ （案件） があれば，ぜひお知らせ下さい．
-ファイル KGTN2012121201.pdf [(48 KB)] [kitasp 技術センター, 2012/12/12 07:15]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc755/" class="btn btn-template-main">続きを読む</a>
+2013/02/28*
+[番号] 技術ノート KGTN 2010040101
+[現象] [GGW3.2.1] クライアントプリンタ機能を有効にしているGGサーバに接続すると，クライアント側のデフォルトプリンタが変更されることがある．
+[説明] クライアントプリンタ機能が有効な場合，GGはクライアント側のデフォルトプリンタをサーバ側でもデフォルトプリンタとして設定しようと試みます．成功した場合はその通りになりますが，プリンタドライバが無い等の理由で設定出来なかった場合は，過去に設定したプリンタ （つまり print.ini 中で設定されているデフォルトプリンタ） をデフォルトプリンタとして設定します．GGの仕様上，クライアント側のデフォルトプリンタとサーバ側のデフォルトプリンタを一致させますので，この時にクライアント側のデフォルトプリンタが，サーバ側で設定されたプリンタに変更されます．
+補　足 対応としては，クラスタマネージャで &ldquo;Universal Driver&rdquo; および &ldquo;Use as fallback&rdquo; にチェックを入れるか （設定に失敗したプリンタがUPDとして設定されるようになる） ，またはGGサーバ上に使用する全てのプリンタのドライバをインストールして下さい．
+ファイル KGTN2010040101.pdf [(56.1 KB)] [kitasp 技術センター, 2013/02/28 11:13]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc659/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +361,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc763/">
+                                      <a href="/posts/new_md/doc656/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +369,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc763/">[GGH4.X] GGH4.X のクライアントクリップボード機能に関する技術ノートの一覧を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc656/">[GGW3.2.1] プログラムウインドウの初期化 （クライアントプリンタの構成） で遅延が発生した場合，GGはどのような処理を行うのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,18 +382,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc763/"><i class="far fa-calendar"></i> 2012-12-10</a>
+                                            <a href="/posts/new_md/doc656/"><i class="far fa-calendar"></i> 2013-02-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/10*
-[番号] 技術ノート KGTN 2012121004
-[現象] [GGH4.X] GGH4.X のクライアントクリップボード機能に関する技術ノートの一覧を知りたい．
-[説明] 2012-12-10 現在で，以下の技術ノートがあります．
-KGTN2012030501: [GGW3.2.1/GGH4.0] Client Clipboard （クライアント・クリップボード &hellip; KGTN2012052903: [GGH4.0] 単一方向のみペーストできるクライアントクリップボード機能はないのか？ KGTN2012072406: [GGH4.1/Clipboard] クライアントクリップボード機能に関して，どのような点が面倒なの &hellip; KGTN2012101606: [GGH4.X] ClipboardDirection でクリップボードの方向性を指定した時，無効な &hellip; KGTN2012110702: [GGH4.X] クライアント・クリップボード機能で，クライアント側のアプリケーションでコピーした画 &hellip; KGTN2012111301: [GGH4.X] GGH4.5のクライアント・クリップボード機能で，クライアント側で画像をコピーする &hellip; KGTN2012111405: [GGH4.5] GGH4.5のクライアント・クリップボード機能で，クライアント側からサーバ側への画 &hellip; KGTN2012112601: [GGH4.5] クライアントクリップボード機能で，サーバ側の EXCEL のセルをコピーし，クライ &hellip;
-ファイル KGTN2012121004.pdf [(58.1 KB)] [kitasp 技術センター, 2012/12/10 12:01]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc763/" class="btn btn-template-main">続きを読む</a>
+2013/02/28*
+[番号] 技術ノート KGTN 2013021903
+[現象] [GGW3.2.1] プログラムウインドウの初期化 （クライアントプリンタの構成） で遅延が発生した場合，GGはどのような処理を行うのか？
+[説明] プログラムウインドウの初期化 （クライアントプリンタの構成） で遅延が発生した場合，GGは以下の処理を行います．
+クライアントプリンタの構成を開始し１分を経過． クライアントの画面に &ldquo;GO-Global failed to launch the Program Window for your session&rdquo; を表示． &ldquo;The Program Window failed to signal completion of its basic initializations within 1 minute(s) after being launched as process #???&rdquo; をAPSログに記録． 上記2のダイアログでユーザが &ldquo;OK&rdquo; ボタンをクリック． PW.EXE のプロセスを強制終了． PW.EXE が終了したためセッションが終了 （通常の処理）． TCP/IPレベルでコネクションを切断 （サーバ側契機）．
+なお，クライアント側の障害でクライアントプリンタの構成が遅延した時，障害発生の状況により上記2のダイアログが表示されないことがあります （注：プロセッサやメモリの過負荷等で，サーバ側からのダイアログ表示要求を受け取ることが困難な場合） ．
+補　足 プログラムウインドウの初期化のタイムアウトは，クライアントプリンタの構成の遅延だけでなく，ネットワークドライブのマウントやログオンスクリプトの遅延でも発生します．なお，ログオンスクリプトの実行中に強制終了させることは危険なため （注：GGはその処理内容が分からないため強制終了して良いのか判断出来ません） ，GGはログオンスクリプトの終了を待ってタイムアウトのダイアログを表示します．
+ファイル KGTN2013021903.pdf [(72.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc656/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -402,7 +405,7 @@ KGTN2012030501: [GGW3.2.1/GGH4.0] Client Clipboard （クライアント・ク�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc764/">
+                                      <a href="/posts/new_md/doc667/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -410,7 +413,7 @@ KGTN2012030501: [GGW3.2.1/GGH4.0] Client Clipboard （クライアント・ク�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc764/">[GGH4.X] GGH4.X のクライアントドライブ機能に関する技術ノートの一覧を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc667/">[GGH4.5] Internet Explorer 10 でActiveXクライアントは動作するか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -423,17 +426,17 @@ KGTN2012030501: [GGW3.2.1/GGH4.0] Client Clipboard （クライアント・ク�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc764/"><i class="far fa-calendar"></i> 2012-12-10</a>
+                                            <a href="/posts/new_md/doc667/"><i class="far fa-calendar"></i> 2013-02-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/10*
-[番号] 技術ノート KGTN 2012121003
-[現象] [GGH4.X] GGH4.X のクライアントドライブ機能に関する技術ノートの一覧を知りたい．
-[説明] 2012-12-10 現在で，以下の技術ノートがあります．
-KGTN2010111702: [GGH4.0] サーバのみにインストールされたアプリケーションで，クライアントドライブにファイル &hellip; KGTN2010111901: [GGH4.0] クライアントドライブ機能を使い，例えばサーバ側からクライアント側へ100MBのファ &hellip; KGTN2010111902: [GGH4.0] クライアントドライブ機能を使い，サーバ側からクライアント側へ100MBのファイルを &hellip; KGTN2010111903: [GGH4.0] クライアントドライブ機能を使い，サーバ側からクライアント側へ大きなファイルをコピー &hellip; KGTN2010111904: [GGH4.0] クライアントドライブ機能を使い，クライアント側のドライブ間でファイルをコピーした場 &hellip; KGTN2010112201: [GGH4.0] クライアントドライブ機能を使い，サーバ側からクライアント側へ100MBのファイルを &hellip; KGTN2010112202: [GGH4.0] クライアントドライブ機能で [ごみ箱] が利用できるそうだが， [ごみ箱] に移さ &hellip; KGTN2011022504: [GGH4.0] クライアントドライブ機能で FD, CD-ROM, DVD-ROM 等が表示されな &hellip; KGTN2011102108: [GGH4.0] クライアントドライブとして認識されるディバイス （ドライブ） を知りたい． KGTN2011111801: [GGH4.0] GGがUSBディスク （クライアントドライブ） を認識するタイミングは？ KGTN2011120601: [GGH4.0] クライアントドライブ機能のファイルコピーの速度は速くなったのか？ KGTN2011120703: [GGH4.0] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントドライブ機能で &hellip; KGTN2011122202: [GGH4.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc764/" class="btn btn-template-main">続きを読む</a>
+2013/02/27*
+[番号] 技術ノート KGTN 2013022701
+[現象] [GGH4.5] Internet Explorer 10 でActiveXクライアントは動作するか？
+[説明] Windows 7 の環境でInternet Explorer 10 (10.0.9200.16521) を試験したところ，特に問題なくActiveXクライアント （4.5.0.13211） が動作しました．
+ファイル KGTN2013022701.pdf [(43.1 KB)] [kitasp 技術センター, 2013/02/27 09:41]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc667/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -443,7 +446,7 @@ KGTN2010111702: [GGH4.0] サーバのみにインストールされたアプリ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc765/">
+                                      <a href="/posts/new_md/doc664/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -451,7 +454,7 @@ KGTN2010111702: [GGH4.0] サーバのみにインストールされたアプリ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc765/">[GGH4.X] GGH4.X のクライアント印刷機能に関する技術ノートの一覧を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc664/">[GGH4.5] Windows 8 の 「スタート」 で 「Internet Explorer」 を起動して，ActiveXクライアントでGGサーバに接続しようとしたが，ログオン画面が表示されず接続出来ない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -464,17 +467,17 @@ KGTN2010111702: [GGH4.0] サーバのみにインストールされたアプリ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc765/"><i class="far fa-calendar"></i> 2012-12-10</a>
+                                            <a href="/posts/new_md/doc664/"><i class="far fa-calendar"></i> 2013-02-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/10*
-[番号] 技術ノート KGTN 2012121002
-[現象] [GGH4.X] GGH4.X のクライアント印刷機能に関する技術ノートの一覧を知りたい．
-[説明] 2012-12-10 現在で，以下の技術ノートがあります．
-KGTN2010030902: [GGW3.2.1/GGH4.X] キャノンの CAPT （Canon Advanced Print &hellip; KGTN2010111701: [GGH4.0] クライアントが異なる複数のGGサーバに同時にログオンする時，クライアント印刷機能に &hellip; KGTN2010111801: [GGH4.0] クライアント印刷機能の Universal Printer Driver が有効な &hellip; KGTN2010111802: [GGH4.0] クライアント印刷機能の Universal Printer Driver と Wi &hellip; KGTN2010111803: [GGH4.0] Universal Printer Driver が有効 かつ クライアント印刷機 &hellip; KGTN2010121302: [GGH4.0] クライアント印刷機能で大きな印刷ジョブを流した場合，GGW3.2と同じような感じな &hellip; KGTN2011040401: [GGH4.0] 4.0.1.10097 で，クライアント印刷機能の設定画面に Windows Pr &hellip; KGTN2011081902: [GGH4.0] クライアント印刷機能で Universal Driver (UPD) を使用する場 &hellip; KGTN2011120603: [GGW3.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc765/" class="btn btn-template-main">続きを読む</a>
+2013/02/27*
+[番号] 技術ノート KGTN 2013022705
+[現象] [GGH4.5] Windows 8 の 「スタート」 で 「Internet Explorer」 を起動して，ActiveXクライアントでGGサーバに接続しようとしたが，ログオン画面が表示されず接続出来ない．
+[説明] Windows 8 の Internet Explorer には，スタート画面で起動するストアアプリ版 （Metro版） の IE と，デスクトップ画面で起動するデスクトップ版の IE があります．ストアアプリ版の IE はウエッブ閲覧向けに最適化されており，アドオン等を実行することは出来ません．このため，ストアアプリ版の IE ではGGサーバに接続することは出来ません．GGサーバに接続する場合は，デスクトップ版の IE を利用するか，またはストアアプリ版 （Metro版） の IE を起動し 「ページツール」 （スパナのアイコン） をクリックし 「デスクトップで表示する」 を選択して下さい．
+ファイル KGTN2013022705.pdf [(59.2 KB)] [kitasp 技術センター, 2013/02/27 14:46]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc664/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -484,7 +487,7 @@ KGTN2010030902: [GGW3.2.1/GGH4.X] キャノンの CAPT （Canon Advanced Print &
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc761/">
+                                      <a href="/posts/new_md/doc666/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -492,7 +495,7 @@ KGTN2010030902: [GGW3.2.1/GGH4.X] キャノンの CAPT （Canon Advanced Print &
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc761/">[GGH4.X] GGNetworkCheck に関する技術ノートの一覧を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc666/">[GGW3.2] GGW3.2系は Maintenance Phase にあるが， GGW3.2.0 も GGW3.2.1 もサポート対象となるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -505,18 +508,17 @@ KGTN2010030902: [GGW3.2.1/GGH4.X] キャノンの CAPT （Canon Advanced Print &
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc761/"><i class="far fa-calendar"></i> 2012-12-10</a>
+                                            <a href="/posts/new_md/doc666/"><i class="far fa-calendar"></i> 2013-02-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/10*
-[番号] 技術ノート KGTN 2012121006
-[現象] [GGH4.X] GGNetworkCheck に関する技術ノートの一覧を知りたい．
-[説明] 2012-12-10 現在で，以下の技術ノートがあります．
-KGTN2011030201: GGNetworkCheck とはどんなツールなのか？ KGTN2011062101: GGNetworkCheck でネットワークのチェックを行ったところ，下記のようなエラー （切断） &hellip; KGTN2011062102: GGNetworkCheck の下記の下線の記録の意味は？ KGTN2011070501: GGNetworkCheck は， Windows Server 2008 R2 の環境でも動作する &hellip; KGTN2011101903: [Tool] GGNetworkCheck で以下のエラーが記録された． KGTN2012071002: [Tool] GGNetworkCheck の最大同時接続数 （サーバ機能） は幾つか？
-ファイル KGTN2012121006.pdf [(57.6 KB)] [kitasp 技術センター, 2012/12/10 12:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc761/" class="btn btn-template-main">続きを読む</a>
+2013/02/27*
+[番号] 技術ノート KGTN 2013022702
+[現象] [GGW3.2] GGW3.2系は Maintenance Phase にあるが， GGW3.2.0 も GGW3.2.1 もサポート対象となるのか？
+[説明] GGW3.2.0 は 「GGW3.2系 Service Pack なし」 で，GGW3.2.1は 「GGW3.2系 Service Pack 1」 のことです．GraphOn社は最新の Service Pack を含む製品 （つまりGGW3.2.1） をサポートします．
+ファイル KGTN2013022702.pdf [(40.7 KB)] [kitasp 技術センター, 2013/02/27 10:12]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc666/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -526,7 +528,7 @@ KGTN2011030201: GGNetworkCheck とはどんなツールなのか？ KGTN20110621
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc762/">
+                                      <a href="/posts/new_md/doc663/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -534,7 +536,7 @@ KGTN2011030201: GGNetworkCheck とはどんなツールなのか？ KGTN20110621
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc762/">[GGH4.X] GGSessionMonitor に関する技術ノートの一覧を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc663/">[Windows] GGと直接関係はないが，タブレットタイプの Windows 8 端末は，ノートタイプと同様に大半は64bit の Windows なのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -547,17 +549,17 @@ KGTN2011030201: GGNetworkCheck とはどんなツールなのか？ KGTN20110621
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc762/"><i class="far fa-calendar"></i> 2012-12-10</a>
+                                            <a href="/posts/new_md/doc663/"><i class="far fa-calendar"></i> 2013-02-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/10*
-[番号] 技術ノート KGTN 2012121005
-[現象] [GGH4.X] GGSessionMonitor に関する技術ノートの一覧を知りたい．
-[説明] 2012-12-10 現在で，以下の技術ノートがあります．
-KGTN2012062202: [SDK] エンタープライズオプションの GMCheckRaw や GGSessionMonitor &hellip; KGTN2012062601: [SDK] エンタープライズオプションのGGSessionMonitor がGGサーバ上で生成する &hellip; KGTN2012062602: [SDK] エンタープライズオプションの GGSessionMonitor で，ログオン直後にセッシ &hellip; KGTN2012062603: [SDK] エンタープライズオプションの GGSessionMonitor が生成するテーブル us &hellip; KGTN2012062905: [SDK] エンタープライズオプションの GGSessionMonitor はポーリング方式で情報を &hellip; KGTN2012070201: [SDK] エンタープライズオプションの GGSessionMonitor は，GGサーバへの接続に &hellip; KGTN2012070501: [SDK] エンタープライズオプション GGSessionMonitor のデータベースファイルを &hellip; KGTN2012070601: [SDK] エンタープライズオプションの GGSessionMonitor に情報を外部に通知する機 &hellip; KGTN2012071801: [SDK] エンタープライズオプションの GGSessionMonitor とはどんなツールなのか？ KGTN2012101103: [ExPack] 拡張パックでコンピュータSID縛りをしているのは GGSessionMonitor &hellip; KGTN2012121003: [GGH4.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc762/" class="btn btn-template-main">続きを読む</a>
+2013/02/27*
+[番号] 技術ノート KGTN 2013022204
+[現象] [Windows] GGと直接関係はないが，タブレットタイプの Windows 8 端末は，ノートタイプと同様に大半は64bit の Windows なのか？
+[説明] いいえ，低価格帯の製品はWindows 8 (32bit) で，高価格帯の製品は Windows 8 (64bit) と分かれております．低価格帯の製品はIA-32アーキテクチャに基づく Intel Atom を採用しており，このため Windows 8 (32bit) となります （注： 64ビット対応のIntel Atom もありますが，主にサーバ向けです） ．
+ファイル KGTN2013022204.pdf [(48.7 KB)] [kitasp 技術センター, 2013/02/28 07:29]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc663/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -567,7 +569,7 @@ KGTN2012062202: [SDK] エンタープライズオプションの GMCheckRaw や 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc759/">
+                                      <a href="/posts/new_md/doc662/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -575,7 +577,7 @@ KGTN2012062202: [SDK] エンタープライズオプションの GMCheckRaw や 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc759/">[GGH4.X] サポート等に役立つツールに関する技術ノートの一覧を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc662/">[Windows] GGと直接関係はないが，ノートタイプの Windows 8 端末でタッチパネルが付いた機種はあるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -588,17 +590,17 @@ KGTN2012062202: [SDK] エンタープライズオプションの GMCheckRaw や 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc759/"><i class="far fa-calendar"></i> 2012-12-10</a>
+                                            <a href="/posts/new_md/doc662/"><i class="far fa-calendar"></i> 2013-02-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/10*
-[番号] 技術ノート KGTN 2012121008
-[現象] [GGH4.X] サポート等に役立つツールに関する技術ノートの一覧を知りたい．
-[説明] 2012-12-10 現在で，以下の技術ノートがあります．
-KGTN2010070602: ログオンの負荷試験を行いたいが，ツール等はないのか？ KGTN2010070701: 負荷試験用ツール GMLogonTest の使い方は？ KGTN2010072201: エンタープライズオプションの GMFileProc をファイル削除ツールとして使って良いか？ KGTN2010102002: ファイルの同一性をチェックしたいが，チェックサムを計算するお勧めのツールは？ KGTN2011030201: GGNetworkCheck とはどんなツールなのか？ KGTN2011051106: [iPad-Client] オンスクリーン ツールバーを表示させるには？ KGTN2011090101: 問題の切り分け等に役立つツールは？ KGTN2012020701: [GGW3.2.1/GGH4.0] P2V (Physical to Virtual) ツールを使い &hellip; KGTN2012022202: [VM] P2V (Physical to Virtual) ツールの適用実績があるか？ KGTN2012022401: [DEV] GG向けツールの開発にどんなソフトウエアを使用しているのか？ KGTN2012071801: [SDK] エンタープライズオプションの GGSessionMonitor とはどんなツールなのか？ KGTN2012071901: [SDK] エンタープライズオプションの GGSessionManager とはどんなツールなのか？ KGTN2012072501: [Tool] GGのツール GGClipboardCheck について知りたい． KGTN2012083101: [Session] Windowsの監視系ツールで，GGセッションの生成 （ログオン） と消滅 （ロ &hellip; KGTN2012092404: [GGW3.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc759/" class="btn btn-template-main">続きを読む</a>
+2013/02/27*
+[番号] 技術ノート KGTN 2013022801
+[現象] [Windows] GGと直接関係はないが，ノートタイプの Windows 8 端末でタッチパネルが付いた機種はあるのか？
+[説明] 種類はそれほど多くはありませんが，タッチパネルが付いたノートタイプのWindows 8 端末もあります．低価格の製品では，例えば ASUS VivoBook X202E X202E-CT3217 があり，弊社では検証機として使用しております．
+ファイル KGTN2013022801.pdf [(50.6 KB)] [kitasp 技術センター, 2013/02/28 07:46]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc662/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -608,7 +610,7 @@ KGTN2010070602: ログオンの負荷試験を行いたいが，ツール等は�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc757/">
+                                      <a href="/posts/new_md/doc665/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -616,7 +618,7 @@ KGTN2010070602: ログオンの負荷試験を行いたいが，ツール等は�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc757/">[GGH4.X] セッションの切断に関する技術ノートの一覧を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc665/">[Windows] Windows 8 の標準機能でシステムドライブ （C:ドライブ） のイメージをバックアップする方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -629,17 +631,17 @@ KGTN2010070602: ログオンの負荷試験を行いたいが，ツール等は�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc757/"><i class="far fa-calendar"></i> 2012-12-10</a>
+                                            <a href="/posts/new_md/doc665/"><i class="far fa-calendar"></i> 2013-02-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/10*
-[番号] 技術ノート KGTN 2012121009
-[現象] [GGH4.X] セッションの切断に関する技術ノートの一覧を知りたい．
-[説明] 2012-12-10 現在で，以下の技術ノートがあります．
-KGTN2010020201: プロセスが子プロセスを生成し，自分自身は直ちに消滅するケースで，セッションが切断される． KGTN2010022401: セッションが切断される問題が発生したが，何を調べれば良いのか？ KGTN2010022409: 特定のアプリケーションで予期せぬセッションの切断が発生する事例はないか？ KGTN2010031002: ログオン中のセッションを維持した状態で切断し （Disconnect） ，続けて他のクライアントでセ &hellip; KGTN2010070601: GGのセッションが切断されたが，原因としてどのようなことが考えられるか？ KGTN2010091603: TCP/IPレベルでコネクションの切断が認識されない場合，GGサーバはどのタイミングでコネクションの &hellip; KGTN2010091605: GGサーバがクライアントへパケットを送信中にコネクションの切断が発生した場合，APSログにはどの&hellip; KGTN2010102001: アイドルタイムアウトが発生したが，各プロセスの終了からクライアントの切断までに数分を要した． KGTN2010112401: 予期せぬセッションの切断が発生したが，ログレベルを推奨値の４よりも大きな値に設定することで&hellip; KGTN2010112403: SessionVerification を 0 に設定してもセッションが切断されるが，GG側で何とか &hellip; KGTN2010112501: SessionVerification を 0 に変更したところ，セッションが切断されなくなった．切 &hellip; KGTN2010112601: SessionTimeoutBrokenConnection を 0 に変更したが，セッションが切断 &hellip; KGTN2011020402: GGのアプリケーションを利用していると，時々遅くなることがある．また，時々コネクションが切断さ &hellip; KGTN2011062101: GGNetworkCheck でネットワークのチェックを行ったところ，下記のようなエラー （切断） &hellip; KGTN2011110905: [GGH4.0] クライアントフレームを使用してログオンし，そのセッションを一旦切断した．クライアン &hellip; KGTN2012073001: [SDK] エンタープライズオプションの GGSessionManager でセッションを切断するの &hellip;</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc757/" class="btn btn-template-main">続きを読む</a>
+2013/02/27*
+[番号] 技術ノート KGTN 2013022703
+[現象] [Windows] Windows 8 の標準機能でシステムドライブ （C:ドライブ） のイメージをバックアップする方法は？
+[説明] [コントロールパネル] → [ファイル履歴] → [Windows 7 のファイルの回復] → [システムイメージの作成] で，ドライブのイメージをバックアップすることが出来ます．ちなみに，&ldquo;Windows 8 のファイルの回復&rdquo; の間違いではありません．
+ファイル KGTN2013022703.pdf [(44.1 KB)] [kitasp 技術センター, 2013/02/27 12:31]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc665/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -649,7 +651,7 @@ KGTN2010020201: プロセスが子プロセスを生成し，自分自身は直�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc756/">
+                                      <a href="/posts/new_md/doc668/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -657,7 +659,7 @@ KGTN2010020201: プロセスが子プロセスを生成し，自分自身は直�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc756/">[GGH4.X] メモリに関する技術ノートの一覧を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc668/">Ver4.0系で，同一ユーザIDの2つのセッションがある状況で，それぞれのセッションが Disconnect すると，最初に Disconnect したセッションが終了する．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -670,17 +672,20 @@ KGTN2010020201: プロセスが子プロセスを生成し，自分自身は直�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc756/"><i class="far fa-calendar"></i> 2012-12-10</a>
+                                            <a href="/posts/new_md/doc668/"><i class="far fa-calendar"></i> 2013-02-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/10*
-[番号] 技術ノート KGTN 2012121010
-[現象] [GGH4.X] メモリに関する技術ノートの一覧を知りたい．
-[説明] 2012-12-10 現在で，以下の技術ノートがあります．
-KGTN2009031001: UNEXPECTED_KERNEL_MODE_TRAP (0x0000007F) のメモリダンプが発 &hellip; KGTN2009031002: ウエッブ用のロードバランサでGO-Globalのポートを監視すると，サーバのメモリが枯渇する KGTN2010012202: GGサーバの連続稼働を行うとメモリダンプ （BSOD） が発生する． KGTN2010012801: メモリダンプ （BSOD） が発生した後，再起動時にメモリ不足等のエラーが発生する． KGTN2010051101: Windows Server 2008 (x86) でGGの評価をしたいが，物理メモリはどれくらい必 &hellip; KGTN2010120303: 物理メモリが2GBを超えるサーバで， Windows Server 2003 の完全メモリダンプを採 &hellip; KGTN2010120304: Windows Server 2003 の環境で 「カーネル メモリ ダンプ」 を選択しているにも関 &hellip; KGTN2010120602: 物理メモリが2GBを超えるサーバで Windows Server 2003 の完全メモリダンプを採取 &hellip; KGTN2011010201: [GGW3.2.1] BSOD （ブルースクリーンのメモリダンプ） が発生したが，GGの不具合では &hellip; KGTN2011010301: BSODの原因としてメモリの枯渇が指摘されたが，物理メモリは8GB積んでおり余裕がある． KGTN2011122802: [Windows] GGの評価を行うに当たって，サーバ側に必要なメモリの量 （サイズ） は？ KGTN2012010403: [BSOD] BSOD （ブルースクリーンのメモリダンプ） が１日に数回発生する．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc756/" class="btn btn-template-main">続きを読む</a>
+2013/02/26*
+[番号] 技術ノート KGTN 2010072806
+[現象] Ver4.0系で，同一ユーザIDの2つのセッションがある状況で，それぞれのセッションが Disconnect すると，最初に Disconnect したセッションが終了する．
+[説明] この動作はVer4.0系の仕様で，2番目のセッションが Disconnect する時，以下の警告メッセージが表示されます．
+You already have a session (最初のセッション名) that is disconnected. If you disconnect the current session, that previous session will be terminated. Do you want to continue?
+GGH4.5 (13211) で検証したところ，上記の警告表示とセッション終了は行われず，そのままセッションが Disconnect されるように仕様が変更されました．なお， 「同一ユーザIDの2つのセッションがある状況」 では，同じセッションに再接続される保証はありません．
+補　足 この技術ノートの内容は 「セッション再接続機能の仕様」 について説明したもので，セッションが突然切断されると言った現象とは関係がありません．このような現象は，多くの場合ネットワーク （ネットワーク機材） の問題に起因します．弊社ツール GGNetworkCheck 等を使用して，ネットワークの品質を確認して下さい．
+ファイル KGTN2010072806.pdf [(71.4 KB)] [kitasp 技術センター, 2013/02/27 08:37]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc668/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -690,7 +695,7 @@ KGTN2009031001: UNEXPECTED_KERNEL_MODE_TRAP (0x0000007F) のメモリダンプ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc760/">
+                                      <a href="/posts/new_md/doc671/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -698,7 +703,7 @@ KGTN2009031001: UNEXPECTED_KERNEL_MODE_TRAP (0x0000007F) のメモリダンプ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc760/">[GGH4.X] 仮想化（仮想サーバ）に関する技術ノートの一覧を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc671/">[Mac OS X] Mac OS X の環境で， 「Windowsクライアントのように」 アイコンをクリックするだけでGGサーバに接続出来るようにしたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -711,18 +716,21 @@ KGTN2009031001: UNEXPECTED_KERNEL_MODE_TRAP (0x0000007F) のメモリダンプ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc760/"><i class="far fa-calendar"></i> 2012-12-10</a>
+                                            <a href="/posts/new_md/doc671/"><i class="far fa-calendar"></i> 2013-02-25</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/10*
-[番号] 技術ノート KGTN 2012121007
-[現象] [GGH4.X] 仮想化（仮想サーバ）に関する技術ノートの一覧を知りたい．
-[説明] 2012-12-10 現在で，以下の技術ノートがあります．
-KGTN2010051304.pdf 仮想環境でGGサーバを構築したが，アプリケーションの動作が遅い． KGTN2010092901.pdf サーバを仮想化するに当り，サイジング （集約度） の目安は？ KGTN2010120603.pdf 仮想サーバ上でGGを運用する場合，どのMAC アドレスでライセンスを申請すべきか？ KGTN2011071101.pdf GraphOn社が 「公式に」 サポートする仮想環境とGGのバージョンは？ KGTN2012011801.pdf [VM] 仮想化ソフトウェア vSphere 環境でのGGの利用実績はあるか？ KGTN2012012003.pdf [GGW3.2.1/GGH4.0] 仮想サーバ環境でのライセンスの考え方は？ KGTN2012020901.pdf [VM] 仮想マシン （Windows） のディプロイメントとは？ KGTN2012052901.pdf [VM] 技術ノート KGTN#2011071101 の補足３を読むと，GGが仮想環境を正式にサポー &hellip; KGTN2012061501.pdf [VM/AD] Active Directory サーバ （ドメインコントローラー） を仮想環境に配 &hellip;
-ファイル KGTN2012121007.pdf [(63.5 KB)] [kitasp 技術センター, 2012/12/10 13:37]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc760/" class="btn btn-template-main">続きを読む</a>
+2013/02/25*
+[番号] 技術ノート KGTN 2013022503
+[現象] [Mac OS X] Mac OS X の環境で， 「Windowsクライアントのように」 アイコンをクリックするだけでGGサーバに接続出来るようにしたい．
+[説明] Windows環境であれば，Windowsクライアントのショートカットを作成し，プロパティの 「リンク先」 にパラメタを付加することで，アイコン （ショートカット） のクリックだけでGGサーバに接続出来るようになります．Mac OS X 環境では，エイリアスにパラメタを付加することが出来ませんので，以下のページのような作業が必要となります．
+http://pqrs.org/macosx/doc/makeapp/ シェルスクリプトなどの CUI アプリケーションを Mac OS X 方式の .app にする方法
+Mac OS X 10.8.2 の環境で検証を行い，実際に動作することを確認しました．以下のスクリーンショットの下側のGGのアイコンをクリックすると，シェルスクリプトが起動され，その中で指定したGGサーバに接続します．
+[File: gg2.sh] #!/bin/sh /Applications/GO-Global.app/Contents/MacOS/GO-Global -h 192.168.102.81 -u user -p pass dummy &amp; exit 0
+[File: Info.plist]
+ファイル KGTN2013022503.pdf [(122 KB)] [kitasp 技術センター, 2013/02/25 12:12]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc671/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -792,7 +800,7 @@ KGTN2010051304.pdf 仮想環境でGGサーバを構築したが，アプリケ�
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

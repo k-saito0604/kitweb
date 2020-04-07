@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc14/">
+                                      <a href="/posts/new_md/doc2332/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc14/">[hopTo Work] MAX (Mobile App eXperience) の設定はどこに保存されているのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2332/">[GGH4.X-5.X/ExPack] 拡張パックに含まれるソフトウエア GGEasyMonitor とはどんなツールなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,26 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc14/"><i class="far fa-calendar"></i> 2015-07-30</a>
+                                            <a href="/posts/new_md/doc2332/"><i class="far fa-calendar"></i> 2015-11-04</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2015/07/30
-[番号] 技術ノート KGTN 2015073008
-[現象] [hopTo Work] MAX (Mobile App eXperience) の設定はどこに保存されているのか？
-[説明] フォルダ C:ProgramDatahopToRemoteAppSettings の中の .dat というファイルの中に設定が保存されています．
-ファイル KGTN2015073008.pdf [(94.3 KB)] [kitasp 技術センター, 2015/07/30 17:52]
-KGTN2015073008.jpg 表示 [(16.6 KB)] [kitasp 技術センター, 2015/07/30 17:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc14/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">*技術ノート
+2015/11/04*
+[番号] 技術ノート KGTN 2015101404
+[現象] [GGH4.X-5.X/ExPack] 拡張パックに含まれるソフトウエア GGEasyMonitor とはどんなツールなのか？
+[説明] GGEasyMonitor は，下記の機能を持ったインストールや運用が容易なツールです．
+ GGのサービス APS を監視する監視機能 監視情報をサーバーへ通知するエージェント機能 エージェントからの監視情報を収集し管理するサーバー機能 収集した情報をブラウザ上に整理して表示するウエッブ機能 （監視画面）   収集した情報をもとに空きセッション数が多いGGサーバーへ誘導する振分け機能 （振分け画面） 6. 障害が検出されたGGサーバーを振分けの対象から自動的に除外する機能 7. GGサーバーのセッション数の推移や振分け結果などを記録するログ機能
+設定ファイルで，エージェント機能・サーバー機能・振分け機能などを並行して動作させることが出来ますので，GGサーバー上で自己監視を行いながら，他のGGサーバーの監視情報を受信し，それらの情報をブラウザで参照することも可能です．また，エージェント機能とサーバー機能は，それぞれアクティブ動作とパッシブ動作が出来ますので，ファイアウォール内でも動作することが出来ます．
+[監視画面]
+※ testuser001 と administrator はローカルアカウント． aduser001 はドメインアカウント．
+[振分け画面 - Windows]
+[振分け画面 - iPad/iPhone]
+GGEasyMnitor の基本的な構成は，以下の通りです．
+APS ： GGのアプリケーション配信機能 GEM ： GGEasyMonitor xxxPort ： 待受けポートの番号
+設定ファイル 設定ファイル GGEasyMonitor.ini の default セクションで，以下のパラメタを設定して下さい．
+  設定項目 説明 logLevel ログの出力レベル，通常は1を指定し，障害時は4を指定 logLevelCbk 振分け機能のログ出力レベル，通常は4を指定 logLevelNet 通信関連のログ出力レベル，通常は4を指定 logLevelWeb 監視画面のログ出力レベル，通常は4を指定 hostAddr IPアドレスを指定 hostName コンピューター名を指定 hostPort パッシブ機能の待ち受けポート avTimeout アクティブ時のタイムアウト時間（秒） avSleep アクティブ時の送信間隔（秒） pvTimeout パッシブ時のタイムアウト時間（秒） pvSleep 未使用 updateInterval エージェントの送信間隔（秒） updateTimeout 更新タイムアウト時間（秒） ※エージェントからの情報がこの時間を超えて更新されない時，障害発生と認識される bufferSize 送受信バッファのサイズ（MB） maxTempError 一時的なエラーを無視する回数 apsPort APSのポート番号 sessionInfo セッション・リストの採取の有無（YES/NO） rxpAddr GGサーバーのIPアドレス（外部向け） rxpPort GGサーバーのポート番号（外部向け） webPort 監視画面のポート番号 webAutoRefresh 監視画面の更新間隔（秒） webNumSessions セッション一覧でのページ当りの行数 webRefURL 監視画面のURL webRxpURL GGサーバーのログオンページのURL webAuth 監視画面の認証情報 : webCss スタイルシートの情報（原則として修正しない） cbkDisable 振分け機能「停止中」 (YES/NO) cbkPort 振分け用ウエッブページのポート番号 cbkMaxHost 振分け時の候補とするGGサーバーの数 cbkRefTime 振分け用ウエッブページのリフレッシュ時の間隔（秒） cbkRxpURL GGサーバーのログオンページのURL cbkSingleLogon 多重ログオンの禁止の有無（YES/NO） cbkLogonPage ユーザーID未指定時にログオンページを表示 (YES/NO) cbkIgnoreDomain 多重ログオンのチェック時にドメイン名を無視（YES/NO） cbkDefaultDomain 既定のドメイン名（ユーザー名のみの場合に付加） cbkPluginLink POSTメソッド時にプラグインのダウンロードサイトへのリンク ※未指定時は cbkRxpURL の値へのリンクが表示される   個別セクション （機能単位） で，以下のパラメタを設定して下さい．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2332/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +369,7 @@ KGTN2015073008.jpg 表示 [(16.6 KB)] [kitasp 技術センター, 2015/07/30 17:
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc25/">
+                                      <a href="/posts/new_md/doc2676/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +377,7 @@ KGTN2015073008.jpg 表示 [(16.6 KB)] [kitasp 技術センター, 2015/07/30 17:
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc25/">[hopTo] hopTo Work の評価用ライセンスを送って欲しい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2676/">[GGH4.X-5.X/ExPack] 拡張パックに含まれるソフトウエア GGEasyMonitor のサーバー機能およびエージェント機能の設定方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,19 +390,19 @@ KGTN2015073008.jpg 表示 [(16.6 KB)] [kitasp 技術センター, 2015/07/30 17:
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc25/"><i class="far fa-calendar"></i> 2015-07-30</a>
+                                            <a href="/posts/new_md/doc2676/"><i class="far fa-calendar"></i> 2015-11-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/07/30*
-[番号] 技術ノート KGTN 2015072902
-[現象] [hopTo] hopTo Work の評価用ライセンスを送って欲しい．
-[説明] GO-Global for Windows と異なり， hopTo Work では新規インストール時に自動的に30日間の評価用ライセンスがインストール （設定） されます．
-ファイル KGTN2015072902.pdf [(74.3 KB)] [kitasp 技術センター, 2015/07/30 17:21]
-KGTN2015072902.jpg
-表示 [(18.8 KB)] [kitasp 技術センター, 2015/07/30 17:21]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc25/" class="btn btn-template-main">続きを読む</a>
+2015/11/04*
+[番号] 技術ノート KGTN 2015101403
+[現象] [GGH4.X-5.X/ExPack] 拡張パックに含まれるソフトウエア GGEasyMonitor のサーバー機能およびエージェント機能の設定方法は？
+[説明] GGEasyMonitor は，１つのプログラムでサーバー （監視情報を収集して表示する機能） とエージェント （同一サーバー上で動作するAPSを監視し，その監視情報を通知する機能） を複数並行動作させることが出来る汎用の監視ツールです．サーバー機能およびエージェント機能は，設定ファイルのセクションで定義します．
+下記の設定は，エージェント機能の例です．モード AA は，エージェントが監視情報をサーバーへ通知することを意味します．この例では，サーバー 192.168.102.1:8491 へ監視情報を送信します．
+; ＊エージェント機能関連＊ ; [セクション名] : AA_コンピュータ名 or AP_コンピュータ名 ; mode : ★AA = アクティブエージェント, AP = パッシブエージェント ; addr : ★相手（GGEasyMonitorのサーバー機能）のIPアドレス ; port : ★相手（GGEasyMonitorのサーバー機能）のポート番号 ; sessionList : セッションリストの送信の有無（YES/NO） [AA_SERVER] mode = AA addr = 192.168.102.1 port = 8491 sessionList = YES
+下記の設定は，サーバー機能の例です．モード SP は，エージェントからの接続要求を受け付け，監視情報を収集することを意味します．この例では，エージェント 192.168.102.2 からの監視情報を受信します．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2676/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -403,7 +412,7 @@ KGTN2015072902.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc27/">
+                                      <a href="/posts/new_md/doc2669/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -411,7 +420,7 @@ KGTN2015072902.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc27/">[hopTo] RDS のインストール時に 「リモート処理を使用してサーバーに接続できません」 と表示される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2669/">[GGH4.X-5.X] GGEasyMonitorConnectionCheck とはどんなツールなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -424,17 +433,22 @@ KGTN2015072902.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc27/"><i class="far fa-calendar"></i> 2015-07-30</a>
+                                            <a href="/posts/new_md/doc2669/"><i class="far fa-calendar"></i> 2015-11-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/07/30*
-[番号] 技術ノート KGTN 2015072901
-[現象] [hopTo] RDS のインストール時に 「リモート処理を使用してサーバーに接続できません」 と表示される．
-[説明] 管理者権限を持つドメインユーザーでインストールを開始して 「リモート処理を使用してサーバーに接続できません」 と表示される場合は， PowerShell のリモート処理が設定されていないことが原因だと思われます．対象サーバー上で PowerShell を起動 （管理者として実行） し，その中で Enable-PSRemoting を実行して下さい．続行の選択項目は，すべて Y を入力して下さい．
-ファイル KGTN2015072901.pdf [(51 KB)] [kitasp 技術センター, 2015/07/30 17:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc27/" class="btn btn-template-main">続きを読む</a>
+2015/11/04*
+[番号] 技術ノート KGTN 2015110202
+[現象] [GGH4.X-5.X] GGEasyMonitorConnectionCheck とはどんなツールなのか？
+[説明] 設定ファイルまたはコマンドラインで指定したGGサーバーに対して，GGのプロトコルで接続を行い，最大セッション数と現在のセッション数を得るプログラムです．このプログラムが作成された背景は，ログオン中のセッションは正常に動作しているにも関わらず，新規にログオン出来ない （ログオン処理が完了しない） 現象が発生し，それを検出することを目的としたものです．
+設定ファイルと起動パラメタ 設定ファイル GGEasyMonitorConnectionCheck.ini の default セクションで，以下のパラメタを設定して下さい． [なお，拡張パックのライセンスが無い場合は，項目 rxpAddr の値に関わりなくGGサーバーのIPアドレスとして 127.0.0.1 が設定されます （つまり外部のGGサーバーの監視は出来ません） ．]{.underline}
+ 設定項目 説明 logLevel ログの出力レベル，通常は1を指定し，障害時は4を指定 logd ログファイルを作成するフォルダ（省略可） licFile 拡張パックのライセンスファイルのパス（省略可） rxpAddr GGサーバーのIPアドレス（既定値は127.0.0.1） rxpPort GGサーバーのAPSのポート番号（既定値は491） timeout タイムアウトの秒数（既定値は30）
+ GGサーバーのアドレスおよびポート番号は，起動パラメタでも指定することが出来ます．
+ 設定項目 説明 -rxpAddr GGサーバーのIPアドレス -rxpPort GGサーバーのAPSのポート番号 -timeout タイムアウトの秒数（1～3600）
+ プログラムの戻り値 プログラムの戻り値で，状況およびセッション数の情報を知ることが出来ます．
+ 戻り値 説明 101 接続出来ない（接続処理に失敗） 102 接続出来ない（タイムアウト） 201 アカウントの認証に失敗 202 ログオン処理でタイムアウト 999 内部エラー  1000以上 最大セッション数×1000 ＋ 現在のセッション数</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2669/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -444,7 +458,7 @@ KGTN2015072902.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc29/">
+                                      <a href="/posts/new_md/doc2687/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -452,7 +466,7 @@ KGTN2015072902.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc29/">[Microsoft Azure] Microsoft Azure のポータルに， PowerShell のコマンドを入力する場所が見つからない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2687/">[GGH4.X-5.X] GGのクライアントは，なぜ VC&#43;&#43; のランタイムを必要とするのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -465,22 +479,17 @@ KGTN2015072902.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc29/"><i class="far fa-calendar"></i> 2015-07-30</a>
+                                            <a href="/posts/new_md/doc2687/"><i class="far fa-calendar"></i> 2015-11-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/07/30*
-[番号] 技術ノート KGTN 2015072804
-[現象] [Microsoft Azure] Microsoft Azure のポータルに， PowerShell のコマンドを入力する場所が見つからない．
-[説明] Microsoft Azure のポータルにアクセスしているマシンに Microsoft Azure PowerShell をインストールして下さい （注： Microsoft Web Platform Installer を実行する） ．
-Microsoft Azure PowerShell を起動し Add-AzureAccount　を実行することで，以後ポータルにアクセスしているマシンの PowerShell のウインドウから （Azureの環境上で） コマンドを実行することが出来ます．
-ファイル KGTN2015072804.pdf [(129 KB)] [kitasp 技術センター, 2015/07/30 17:14]
-KGTN2015072804-1.jpg
-表示 [(28.5 KB)] [kitasp 技術センター, 2015/07/30 17:14]
-KGTN2015072804-2.jpg
-表示 [(32 KB)] [kitasp 技術センター, 2015/07/30 17:14]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc29/" class="btn btn-template-main">続きを読む</a>
+2015/11/04*
+[番号] 技術ノート KGTN 2015100801
+[現象] [GGH4.X-5.X] GGのクライアントは，なぜ VC++ のランタイムを必要とするのか？
+[説明] VC++ （Microsoft Visual C++） は，事実上のWindowsの標準開発環境であり，GGもこのVC++ を使用して開発されております． VC++ で開発されたアプリケーションを 「VC++ がインストールされてないコンピューター」 上で実行するには， &ldquo;Microsoft Visual C++ 再頒布可能パッケージ&rdquo; （ランタイム） が必要です．
+ファイル KGTN2015100801.pdf [(52.4 KB)] [kitasp 技術センター, 2015/11/04 15:44]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2687/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -490,7 +499,7 @@ KGTN2015072804-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc30/">
+                                      <a href="/posts/new_md/doc2680/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -498,7 +507,7 @@ KGTN2015072804-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc30/">[Microsoft Azure] Microsoft Azure の仮想マシンに，仮想ネットワークの静的な （プライベート） IPアドレスを割り当てる方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2680/">[GGH4.X-5.X] GG環境でブラウザ （IE） を起動すると，ウエッブのコンテンツが表示されない （コンテンツが表示される部分が真っ白の状態） ．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -511,23 +520,17 @@ KGTN2015072804-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc30/"><i class="far fa-calendar"></i> 2015-07-30</a>
+                                            <a href="/posts/new_md/doc2680/"><i class="far fa-calendar"></i> 2015-11-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/07/30*
-[番号] 技術ノート KGTN 2015072803
-[現象] [Microsoft Azure] Microsoft Azure の仮想マシンに，仮想ネットワークの静的な （プライベート） IPアドレスを割り当てる方法は？
-[説明] Azure PowerShell で，下記のコマンドを実行して下さい．
-　&gt; $VM = Get-AzureVM -ServiceName -Name &gt; Set-AzureStaticVNetIP -VM $VM -IPAddress &lt;IPアドレス&gt; | Update-AzureVM
-なお，新しいポータルでは，下記のように画面から設定 （プライベートIPアドレス） することが出来ます．
-ファイル KGTN2015072803.pdf [(108 KB)] [kitasp 技術センター, 2015/07/30 17:10]
-KGTN2015072803-1.jpg
-表示 [(20.1 KB)] [kitasp 技術センター, 2015/07/30 17:10]
-KGTN2015072803-2.jpg
-表示 [(16.2 KB)] [kitasp 技術センター, 2015/07/30 17:10]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc30/" class="btn btn-template-main">続きを読む</a>
+2015/11/04*
+[番号] 技術ノート KGTN 2015110201
+[現象] [GGH4.X-5.X] GG環境でブラウザ （IE） を起動すると，ウエッブのコンテンツが表示されない （コンテンツが表示される部分が真っ白の状態） ．
+[説明] GGの実行環境で何らかの問題が発生したことが考えられます．GGの再インストール （Repair or Update） を行って下さい．弊社の試験環境で１度だけこの現象が発生し，GGの再インストールでこの現象が解消されました （更新プログラムの適用の影響ではないかと推測しております） ．
+ファイル KGTN2015110201.pdf [(55.7 KB)] [kitasp 技術センター, 2015/11/04 17:06]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2680/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -537,7 +540,7 @@ KGTN2015072803-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc31/">
+                                      <a href="/posts/new_md/doc2683/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -545,7 +548,7 @@ KGTN2015072803-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc31/">[Microsoft Azure] Microsoft Azure の仮想マシンは，静的なグローバルIPアドレスの割り当てを受けることが可能なのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2683/">[GGH4.X-5.X] ドキュメント （アプリケーションの印刷画面） からPDFファイルを生成する方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -558,21 +561,19 @@ KGTN2015072803-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc31/"><i class="far fa-calendar"></i> 2015-07-30</a>
+                                            <a href="/posts/new_md/doc2683/"><i class="far fa-calendar"></i> 2015-11-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/07/30*
-[番号] 技術ノート KGTN 2015072802
-[現象] [Microsoft Azure] Microsoft Azure の仮想マシンは，静的なグローバルIPアドレスの割り当てを受けることが可能なのか？
-[説明] 標準の設定では，仮想マシンを 「停止→開始」 した時にグローバルIPアドレスが変ります （注：再起動ではグローバルIPアドレスは変りません） ．例えば， 停止前: 104.214.137.117 → 「停止→開始」 → 開始後: 191.239.97.33 というようにグローバルIPアドレスが変ります．静的なグローバルIPアドレスの割り当てを受けたい場合は，仮想マシンの作成時にインスタンスレベル・パブリック IP （ILPIP） を要求して下さい．詳細については，下記ページをご覧下さい．
-https://azure.microsoft.com/ja-jp/documentation/articles/virtual-networks-instance-level-public-ip/ インスタンスレベル パブリック IP の概要
-補　足 GGクライアントは，DNS名で接続するGGサーバーを指定することが出来ますので，静的なグローバルIPアドレスの割り当てを受けなくてもGGサーバーを運用することが出来ます．なお，DNS名を指定する場合は，DNS名の末尾にドットを付加することをお勧めします．
-ファイル KGTN2015072802.pdf [(76.2 KB)] [kitasp 技術センター, 2015/07/30 17:06]
-KGTN2015072802.jpg
-表示 [(13.1 KB)] [kitasp 技術センター, 2015/07/30 17:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc31/" class="btn btn-template-main">続きを読む</a>
+2015/11/04*
+[番号] 技術ノート KGTN 2015101901
+[現象] [GGH4.X-5.X] ドキュメント （アプリケーションの印刷画面） からPDFファイルを生成する方法は？
+[説明] クライアント印刷機能が有効な設定で，アプリケーションの印刷画面でプリンターとして &ldquo;Preview PDF (from ???)&rdquo; を選択することで，クライアント上にドキュメントのPDFファイルが表示されます．
+ファイル KGTN2015101901.pdf [(111 KB)] [kitasp 技術センター, 2015/11/04 16:09]
+KGTN2015101901.jpg
+表示 [(28.6 KB)] [kitasp 技術センター, 2015/11/04 16:09]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2683/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -582,7 +583,7 @@ KGTN2015072802.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc28/">
+                                      <a href="/posts/new_md/doc2684/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -590,7 +591,7 @@ KGTN2015072802.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc28/">[Microsoft Azure] Microsoft Azure の仮想マシンを Windows Server 2012 R2 で作ったが，言語が英語で設定されている．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2684/">[GGH4.X-5.X] 特定のプリンターのみ，専用プリンタードライバー （WPD） でのクライアント印刷が出来ない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -603,22 +604,21 @@ KGTN2015072802.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc28/"><i class="far fa-calendar"></i> 2015-07-30</a>
+                                            <a href="/posts/new_md/doc2684/"><i class="far fa-calendar"></i> 2015-11-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/07/30*
-[番号] 技術ノート KGTN 2015072805
-[現象] [Microsoft Azure] Microsoft Azure の仮想マシンを Windows Server 2012 R2 で作ったが，言語が英語で設定されている．
-[説明] Microsoft Azure の仕様です． Control Panel → Clock, Language, and Region → Language で，下記のように 「日本語」 を最上位に追加して下さい．
-Options を選択し，次の画面で Download and install language pack を選択して下さい．
-ファイル KGTN2015072805.pdf [(97.8 KB)] [kitasp 技術センター, 2015/07/30 17:18]
-KGTN2015072805-1.jpg
-表示 [(28.4 KB)] [kitasp 技術センター, 2015/07/30 17:18]
-KGTN2015072805-2.jpg
-表示 [(14.3 KB)] [kitasp 技術センター, 2015/07/30 17:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc28/" class="btn btn-template-main">続きを読む</a>
+2015/11/04*
+[番号] 技術ノート KGTN 2015101501
+[現象] [GGH4.X-5.X] 特定のプリンターのみ，専用プリンタードライバー （WPD） でのクライアント印刷が出来ない．
+[説明] 専用プリンタードライバー （以下，単にドライバーと記述します） でクライアント印刷を行う場合，次の点をご確認下さい．
+１．ドライバーがターミナルサービスに対応しているかどうか． ２．サーバー側およびクライアント側のドライバーが同じ機能かつ同じ時期にリリースされたドライバーかどうか．
+GGのクライアント印刷機能は，ターミナルサービスの印刷機能と同じような仕組みで印刷処理を行いますので，ドライバーがターミナルサービスに対応していない場合は利用出来ない可能性が高いと考えられます．また，ターミナルサービスに対応したドライバーであっても，サーバー側のドライバーとクライアント側のドライバーが異なる機能や異なるリリース時期 （バージョン） である場合は，サーバー側のドライバーの処理とクライアント側のドライバーの処理で不整合が発生し上手く印刷出来ない場合があります．
+もしドライバーの仕様 （制限） 等によって，専用プリンタードライバーによるクライアント印刷機能を利用出来ない場合は，以下の方法での利用をご検討下さい．
+１．ユニバーサルプリンタードライバー （Universal Print Driver） を使用する． ２. Preview PDF へ印刷し，クライアント側に表示されたPDFファイル （ドキュメント） を印刷する． ３．USBリダイレクション （ソフトウエア） を利用してプリンターを仮想的にサーバー側に接続する．
+ファイル KGTN2015101501.pdf [(67.1 KB)] [kitasp 技術センター, 2015/11/04 16:06]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2684/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -628,7 +628,7 @@ KGTN2015072805-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc32/">
+                                      <a href="/posts/new_md/doc2681/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -636,7 +636,7 @@ KGTN2015072805-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc32/">[Microsoft Azure] Microsoft Azure の仮想マシン上でGGを利用出来るのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2681/">[GGH5.X] クラスターマネージャーでアプリケーションを登録しようとしたところ， Installed Applications に過去に登録したアプリケーションが表示されない （またはコマンドプロンプトのみが表示される） ．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -649,20 +649,18 @@ KGTN2015072805-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc32/"><i class="far fa-calendar"></i> 2015-07-30</a>
+                                            <a href="/posts/new_md/doc2681/"><i class="far fa-calendar"></i> 2015-11-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/07/30*
-[番号] 技術ノート KGTN 2015072801
-[現象] [Microsoft Azure] Microsoft Azure の仮想マシン上でGGを利用出来るのか？
-[説明] はい，もちろん利用することが出来ます．GGのインストールは，物理マシンと同じ手順でインストールして下さい．これに加え，インターネット側からGGにアクセスする場合は，下記のように仮想マシンにポート番号491 (TCP) のエンドポイントを作成して下さい．
-https://azure.microsoft.com/ja-jp/documentation/articles/virtual-machines-set-up-endpoints/ 仮想マシンに対してエンドポイントを設定する方法
-ファイル KGTN2015072801.pdf [(69.3 KB)] [kitasp 技術センター, 2015/07/30 17:01]
-KGTN2015072801.jpg
-表示 [(17.1 KB)] [kitasp 技術センター, 2015/07/30 17:01]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc32/" class="btn btn-template-main">続きを読む</a>
+2015/11/04*
+[番号] 技術ノート KGTN 2015102601
+[現象] [GGH5.X] クラスターマネージャーでアプリケーションを登録しようとしたところ， Installed Applications に過去に登録したアプリケーションが表示されない （またはコマンドプロンプトのみが表示される） ．
+[説明] これは GGH5.0 の環境で，ライセンスファイルが有効でない場合 （ex. 評価用ライセンスが失効） に発生する現象です．以下の手順を行うことで，この問題が解決します．
+1.有効なライセンスファイルをインストール （コピー） する． 2.サービス GO-Global License Manager を再起動 （開始） する． 3.サービス GO-Global Application Publishing Service を再起動する．
+ファイル KGTN2015102601.pdf [(60.8 KB)] [kitasp 技術センター, 2015/11/04 17:05]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2681/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -672,7 +670,7 @@ KGTN2015072801.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc24/">
+                                      <a href="/posts/new_md/doc2682/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -680,7 +678,7 @@ KGTN2015072801.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc24/">[Microsoft Azure] Microsoft Azureの環境で hopTo Work を利用する場合， Azure RemoteApp サービスに hopTo Work Agent をインストールするのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2682/">[GGW3.2.1] セッション数 （ライセンス数） 絡みの問題が発生した場合，どのような情報を採取すれば良いのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -693,19 +691,24 @@ KGTN2015072801.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc24/"><i class="far fa-calendar"></i> 2015-07-30</a>
+                                            <a href="/posts/new_md/doc2682/"><i class="far fa-calendar"></i> 2015-11-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/07/30*
-[番号] 技術ノート KGTN 2015072903
-[現象] [Microsoft Azure] Microsoft Azureの環境で hopTo Work を利用する場合， Azure RemoteApp サービスに hopTo Work Agent をインストールするのか？
-[説明] Azure RemoteApp サービスは，その機能専用として作られておりますので， hopTo Work Agent をインストールすることは出来ません． Active Directory サーバーと RDS サーバー （hopTo サーバー） をAzure仮想マシン上に作成して下さい．
-ファイル KGTN2015072903.pdf [(64.5 KB)] [kitasp 技術センター, 2015/07/30 17:23]
-KGTN2015072903.jpg
-表示 [(15.1 KB)] [kitasp 技術センター, 2015/07/30 17:23]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc24/" class="btn btn-template-main">続きを読む</a>
+2015/11/04*
+[番号] 技術ノート KGTN 2015102201
+[現象] [GGW3.2.1] セッション数 （ライセンス数） 絡みの問題が発生した場合，どのような情報を採取すれば良いの か？
+[説明] １． 各サーバーのクラスターマネージャーのセッション数 各サーバー上でクラスターマネージャーを起動し，サーバー一覧の中の自サーバーを選択して下さい．この 時のセッション一覧のスクリーンショットを撮って下さい．セッション数が多い場合は，複数に分けて撮って下さ い．下記の例では，サーバー上に２つのセッションが存在します．
+２． 各サーバーのライセンスサーバーのセッション数 各サーバーのライセンスファイルと同じフォルダにある lmtools.exe を起動し， Server Status → Perform Status Enquiry のボタンをクリックして下さい．下に表示される文字列のスクリーンショットを撮って下さい．文 字列の &ldquo;Users of session:&rdquo; の行が実際に使用されているライセンス数です．下記の例では，５つのライセン スのうち，２つのライセンスが使用されています．
+３．各サーバーのログオン確認 各サーバーのライセンスファイルと同じフォルダにある ggw.exe を起動し，自サーバーへログオンして下さい． ログオンが成功してプログラム・ウインドウが表示されるかどうか確認して下さい．プログラム・ウインドウが表示さ れない場合は，エラーメッセージのスクリーンショットを撮って下さい．
+４．通常の方法でのログオンの試行とメッセージ 通常の方法 （振り分けサーバー） でのログオンを試行し，正常にログオン出来るかどうかを確認して下さい． エラーメッセージが表示される場合は，エラーメッセージのスクリーンショットとブラウザのログオンページのソー スコートを保存して下さい．ソースコードを見ることで，どのような順序で各サーバーに接続しようとしたかが分 かります．
+ファイル KGTN2015102201.pdf [(169 KB)] [kitasp 技術センター, 2015/11/04 17:00]
+KGTN2015102201-1.jpg
+表示 [(21.9 KB)] [kitasp 技術センター, 2015/11/04 17:00]
+KGTN2015102201-2.jpg
+表示 [(28.8 KB)] [kitasp 技術センター, 2015/11/04 17:00]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2682/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -715,7 +718,7 @@ KGTN2015072903.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc23/">
+                                      <a href="/posts/new_md/doc2685/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -723,7 +726,7 @@ KGTN2015072903.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc23/">[Microsoft Azure] Microsoft Azureの環境で， hopTo Work サーバーを構築する場合の注意点は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2685/">[GGW3.2] GGサーバーの最大セッション数を確認する方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -736,17 +739,19 @@ KGTN2015072903.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc23/"><i class="far fa-calendar"></i> 2015-07-30</a>
+                                            <a href="/posts/new_md/doc2685/"><i class="far fa-calendar"></i> 2015-11-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/07/30*
-[番号] 技術ノート KGTN 2015072904
-[現象] [Microsoft Azure] Microsoft Azureの環境で， hopTo Work サーバーを構築する場合の注意点は？
-[説明] hopTo Work に依存した注意点は特にありません．弊社では，以下の手順で hopTo Work サーバーの環境を構築しました．
- 仮想ネットワークを作成 （カスタム作成で下記項目は既定値） - DNS サーバーおよび VPN 接続 - 仮想ネットワーク アドレス空間 仮想サーバー２台を上記ネットワークで構築 - &ldquo;地域/アフィニティ グループ/仮想ネットワーク&rdquo; で上記１の仮想ネットワークを指定 最初の仮想サーバーで Active Directory サーバーを構築 - 静的なプライベートIP アドレスを設定する - 技術ノート KGTN#2015072803 を参照 ２台目の仮想サーバーで RDSサーバーを構築 - 上記３のサーバーのドメインに参加すること - RDSのインストールはドメインの管理者権限が必要 - PowerShell で Enable-PSRemoting が実行すること - セッション・コレクションを作成 - RemoteApp プログラムを公開 （ワードパッド等） hopTo Work Agent をRDSサーバーにインストール - hopToWorkAgent.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc23/" class="btn btn-template-main">続きを読む</a>
+2015/11/04*
+[番号] 技術ノート KGTN 2015101402
+[現象] [GGW3.2] GGサーバーの最大セッション数を確認する方法は？
+[説明] GGサーバー上でクラスターマネージャーを起動し， Tools → Server Options → Session Startup → Resource limits → Maximum sessions on this host で最大セッション数を確認することが出来ます （下記の例では50） ．なお，この値はそのGGサーバー上で許容する最大のセッション数のことで，ライセンスサーバー上の空きライセンス数がこの値未満であれば，実際にはこの空きライセンス数が最大のセッション数となります．
+ファイル KGTN2015101402.pdf [(80.5 KB)] [kitasp 技術センター, 2015/11/04 15:48]
+KGTN2015101402.jpg
+表示 [(21.6 KB)] [kitasp 技術センター, 2015/11/04 15:48]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2685/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -816,7 +821,7 @@ KGTN2015072903.jpg
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

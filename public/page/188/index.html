@@ -409,25 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1134/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1035/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1134/">[GGW3.2.1/GGH4.0] 英文のリリースノートに書かれている ISSUES FIXED の詳細を知りたい．</a></h4>
+                            <h4><a href="/posts/new_md/doc1035/">GraphOn社の Release Notes にある BUG#8700 （CASE#3875） の機能は，どの処理について FlexLM のライセンス・チェックアウトを再試行するのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-01-18
+                            日付 2012-05-22
                             </p>
                             <p class="intro">*技術ノート
-2012/01/18*
-[番号] 技術ノート KGTN 2012011802
-[現象] [GGW3.2.1/GGH4.0] 英文のリリースノートに書かれている ISSUES FIXED の詳細を知りたい．
-[説明] 通常のサポートでは，GraphOn社は ISSUES FIXED の詳細に関する情報を提供しておりません．当然のことながら，GraphOn社の開発チームのデータベースの中には詳細な情報がありますが，顧客固有の情報やノウハウに関する情報等を含んでおり，それを単純に公開することは困難です．もし詳細情報を公開するとすれば，それらの情報を含まないように整理し，さらに外部の人間が分るように噛み砕いて説明する必要があります．しかしこの作業が出来るのはその件に絡んだ開発担当者だけであり，日々のGGの開発作業・保守作業の中から，その資料を作成する時間を確保することは非常に困難な状況にあります．このような厳しい事情があることを，ぜひご理解ください．なお，どうしても情報が必要な場合は，プロフェッショナルサービスとして対応させて頂きます．
-ファイル KGTN2012011802.pdf [(62.8 KB)] [kitasp 技術センター, 2012/01/18 13:07]</p>
+2012/05/22*
+[番号] 技術ノート KGTN 2010081802
+[現象] GraphOn社の Release Notes にある BUG#8700 （CASE#3875） の機能は，どの処理について FlexLM のライセンス・チェックアウトを再試行するのか？
+[説明] ログオンが過度に集中した時，この &ldquo;FlexLM - Bad encryption handshake with vendor daemon. (Error code: -33)&rdquo; というエラーが発生しましたので，ログオン処理に関して FlexLM のライセンス・チェックアウトを再試行します （注： PWでのアプリケーション起動処理では，再試行は行われません） ．
+補足１ [Tickets 5677 and 3875 / Bug 8400] Intermittent license error: FlexLM - Bad encryption handshake with vendor daemon. (Error code: -33) As a workaround, we now attempt the license checkout again after an interval.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1134/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1035/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,27 +446,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1133/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1037/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1133/">[GGW3.2.1] ActiveX クライアントにHTML （OBJECTタグ） でユーザIDとパスワードを渡しているが，ユーザがソースコードを表示させるとパスワードが分ってしまう．</a></h4>
+                            <h4><a href="/posts/new_md/doc1037/">[Session] 同一のGGサーバ上で 「A部門は最大3ユーザ，B部門は最大7ユーザ」 というようなログオン管理は可能か？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-01-18
+                            日付 2012-05-18
                             </p>
                             <p class="intro">*技術ノート
-2012/01/18*
-[番号] 技術ノート KGTN 2012010605
-[現象] [GGW3.2.1] ActiveX クライアントにHTML （OBJECTタグ） でユーザIDとパスワードを渡しているが，ユーザがソースコードを表示させるとパスワードが分ってしまう．
-[説明] ActiveX クライアントおよびブラウザの仕様で渡したパスワードを完全に隠すことは出来ませんが，しかし以下の設定を行うことによりユーザがソースコードを表示を出来ないようにすることが可能です．
-この設定により，ActiveX クライアントに制御が移った直後にブラウザ （IE） が自動的に閉じられるため，ユーザがソースコードを表示させることは出来ません．
-補　足 Windows Vista および Windows 7 の環境では， UAC （ユーザーアカウント制御） を無効にするか，またはブラウザ （IE） を 「管理者として実行」 する必要があります．この条件に合致しない場合は，ブラウザ （IE） は自動的に閉じられず，開いたまま （表示されたまま） となります．このような場合は，右クリック （コンテキストメニュー） を禁止する等の方法で対応して下さい．
-ファイル KGTN2012010605.pdf [(67.2 KB)] [kitasp 技術センター, 2012/01/19 08:17]</p>
+2012/05/18*
+[番号] 技術ノート KGTN 2012051401
+[現象] [Session] 同一のGGサーバ上で 「A部門は最大3ユーザ，B部門は最大7ユーザ」 というようなログオン管理は可能か？
+[説明] GGサーバは 「最大20セッション，同一アカウントは最大2セッション」 というように，サーバ全体でのセッション管理 （ログオン管理） のみを行います．従って， お問い合わせの例ではA部門とB部門でサーバを分けるか，またはログオン最初に起動されるアプリケーションを作成し， （各部門について） 所定以下のユーザ数であれば PW を起動し，そうでなければエラーメッセージを表示して終了する方法が考えられます．
+補　足 GGサーバがGGクライアントからの接続要求を受け付ける時，認証情報は渡されませんので，先ずその時点でアカウントを見て拒否することは技術的に困難です．次にGGサーバは認証情報をGGクライアントに要求し Winlogon を行いますが，ここに切り口が用意されておりませんので，この時点でもアカウントを見て拒否することは出来ません．ログオンが完了すると， （初期アプリケーションが指定されていれば） 初期アプリケーションが起動されますので，この専用アプリケーションの中で他セッションの情報を参照し，許容数未満でなければエラーを表示してログオフすることが出来ます．なお，ログオンユーザでは他セッションの情報を直接参照することは出来ませんので （セキュリティの問題） ，サービス等でセッション情報を別途提供する必要があります．
+ファイル KGTN2012051401.pdf [(66.9 KB)] [kitasp 技術センター, 2012/05/18 12:30]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1133/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1037/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,25 +484,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1135/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1038/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1135/">[iPad Client] iPad Client は GO</a></h4>
+                            <h4><a href="/posts/new_md/doc1038/">[Android Client] iPhone 向けのクライアントはリリースされたが， Android 2.3 向けのクライアントはリリースされないのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-01-18
+                            日付 2012-05-15
                             </p>
                             <p class="intro">*技術ノート
-2012/01/18*
-[番号] 技術ノート KGTN 2012011803
-[現象] [iPad Client] iPad Client は GO-Global for UNIX をサポートしているのか？
-[説明] 少なくとも現在リリースされている iPad Client は GO-Global for UNIX をサポートしておりません．今後のことについては未だ明確な情報がありませんが，GraphOn社が公開している資料 &ldquo;Mobile client initiative positioning paper&rdquo; には以下の記述があります．
-ファイル KGTN2012011803.pdf [(72.6 KB)] [kitasp 技術センター, 2012/01/18 11:42]</p>
+2012/05/15*
+[番号] 技術ノート KGTN 2012051601
+[現象] [Android Client] iPhone 向けのクライアントはリリースされたが， Android 2.3 向けのクライアントはリリースされないのか？
+[説明] 「Android 2.3 系はスマートフォン，Android 3.X 系はタブレット」 というように分かれており，ユーザインタフェースも異なります． Android 4.X 系では，スマートフォンとタブレットのユーザインタフェースが統合され，どちらの環境でも動作します． Android Client は，現時点では Android 2.3 をサポートする予定はありませんが，スマートフォン側が Android 4.X 系へバージョンアップされれば Android Client を利用出来るようになります．
+ファイル KGTN2012051601.pdf [(48.7 KB)] [kitasp 技術センター, 2012/05/16 04:18]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1135/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1038/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -522,25 +521,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1138/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1040/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1138/">[GGW3.2.1/GGH4.0] 印刷時に指定した用紙サイズと異なる用紙に出力される．</a></h4>
+                            <h4><a href="/posts/new_md/doc1040/">[iPad/iPhone] Auto-Rotate （自動回転） 機能は，単に画像を回転させているだけか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-01-17
+                            日付 2012-05-01
                             </p>
                             <p class="intro">*技術ノート
-2012/01/17*
-[番号] 技術ノート KGTN 2012011701
-[現象] [GGW3.2.1/GGH4.0] 印刷時に指定した用紙サイズと異なる用紙に出力される．
-[説明] これはGGの問題ではなく，介在するプリンタドライバ等の機能 （設定） に起因して発生します．プリンタドライバ （注：PDFクリエーターやPDFリーダーを含みます，またプリンタ本体やアプリケーションにもこの機能がある可能性があります） の中には，原稿サイズに関わりなく自動的に出力用紙サイズ （トレイ） や印刷方向を決める機能を備えているものがあり，これが機能した時に 「印刷時に指定した用紙サイズ （原稿サイズ） と異なる用紙に出力される」 という現象が発生します．対応としては，技術的に考えれば原稿サイズと出力用紙サイズを一致させることは可能だと考えられますので， （印刷に絡む全ての） プリンタドライバやプリンタ本体等の機能 （設定） を確認し調整して下さい．
-ファイル KGTN2012011701.pdf [(55.3 KB)] [kitasp 技術センター, 2012/01/17 11:18]</p>
+2012/05/01*
+[番号] 技術ノート KGTN 2012050103
+[現象] [iPad/iPhone] Auto-Rotate （自動回転） 機能は，単に画像を回転させているだけか？
+[説明] いいえ．セッションをシャドウイングして確認すると分りますが，ウインドウが描画領域にフィットするように，ウインドウのサイズも自動的に変更されます．
+ファイル KGTN2012050103.pdf [(46.3 KB)] [kitasp 技術センター, 2012/05/01 10:58]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1138/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1040/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

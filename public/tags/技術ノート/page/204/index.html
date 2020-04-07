@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1323/">
+                                      <a href="/posts/new_md/doc1194/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1323/">[GGH4.0] ActiveXクライアントで，接続先サーバ, ユーザID, パスワードを明示的に指定したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1194/">[GGW3.2.1] GGをインストールし，ライセンスファイルもコピーした． license.log や lmtools.exe に異常は見られないのに，クラスタマネージャを起動すると A GO-Globallicense does not exist ???. Please provide a valid license file. というエラーダイアログが表示される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,19 +340,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1323/"><i class="far fa-calendar"></i> 2011-09-02</a>
+                                            <a href="/posts/new_md/doc1194/"><i class="far fa-calendar"></i> 2011-12-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/02*
-[番号] 技術ノート KGTN 2011090102
-[現象] [GGH4.0] ActiveXクライアントで，接続先サーバ, ユーザID, パスワードを明示的に指定したい．
-[説明] GGW3.2.1では logon.html の内容を書き換える必要がありましたが， GGH4.0 では以下のようにURLにパラメタを与えることで接続先のサーバを明示的に指定することが出来ます．
-http://???/logon.html?direct=true&amp;host=192.168.102.71&amp;user=myUserID&amp;password=myPass
-この例では，ActiveXクライアントは 192.168.102.71 のサーバへ接続を試みます．接続に成功した場合，ユーザID myUserID とパスワード myPass でログオンを試みます．
-ファイル KGTN2011090102.pdf [(57.2 KB)] [kitasp 技術センター, 2011/09/02 09:16]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1323/" class="btn btn-template-main">続きを読む</a>
+2011/12/08*
+[番号] 技術ノート KGTN 2011120801
+[現象] [GGW3.2.1] GGをインストールし，ライセンスファイルもコピーした． license.log や lmtools.exe に異常は見られないのに，クラスタマネージャを起動すると &ldquo;A GO-Global license does not exist ???. Please provide a valid license file.&rdquo; というエラーダイアログが表示される．
+[説明] システム環境変数 LM_LICENSE_FILE の値が空か，または正しくないのが原因です． [システムのプロパティ] → [詳細設定] → [環境変数] → [システム環境変数] → [変数LM_LICENSE_FILE をクリック] → [編集] を選択し，変数値にライセンスファイルを置いたフォルダのパスを指定して下さい．
+補　足 システム環境変数ではなく，レジストリで設定する方法もあります．
+レジストリエディタ （regedit） を起動する． &ldquo;¥HKLM¥Software¥FLEXlm License Manager&rdquo;　へ行く． [編集] → [新規] → [文字列値] 名前に &ldquo;BLM_LICENSE_FILE&rdquo; を設定する． &ldquo;BLM_LICENSE_FILE&rdquo; を選択した状態で右クリックする． [修正] 値のデータにライセンスファイルを置いたフォルダのパスを指定する． [OK] レジストリエディタを閉じる． サーバを再起動する．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1194/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -362,7 +361,7 @@ http://???/logon.html?direct=true&amp;host=192.168.102.71&amp;user=myUserID&amp;
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1322/">
+                                      <a href="/posts/new_md/doc1195/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -370,7 +369,7 @@ http://???/logon.html?direct=true&amp;host=192.168.102.71&amp;user=myUserID&amp;
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1322/">[GGH4.0] ActiveXクライアントで，特定アプリケーションのみを起動したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1195/">[GGW3.2.1] 検証のためクライアントプリンタの構成を失敗させたいが，どのような方法があるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -383,21 +382,21 @@ http://???/logon.html?direct=true&amp;host=192.168.102.71&amp;user=myUserID&amp;
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1322/"><i class="far fa-calendar"></i> 2011-09-02</a>
+                                            <a href="/posts/new_md/doc1195/"><i class="far fa-calendar"></i> 2011-12-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/02*
-[番号] 技術ノート KGTN 2011090103
-[現象] [GGH4.0] ActiveXクライアントで，特定アプリケーションのみを起動したい．
-[説明] logon.html を編集し，パラメタ app にアプリケーションを指定することで，特定アプリケーションのみを起動することが可能になります （つまりプログラム・ウインドウを表示せずにアプリケーションを起動） ．
-GGに登録されたアプリケーションを表示名 （Display Name） で起動する場合
-var app = &ldquo;Wordpad&rdquo;; var args = &ldquo;&quot;;
-絶対パスでアプリケーションを指定して起動する場合
-var app = &ldquo;C:¥¥Program Files¥¥Windows NT¥¥Accessories¥¥wordpad.exe&rdquo;; var args = &ldquo;&quot;;
-ファイル KGTN2011090103.pdf [(52.5 KB)] [kitasp 技術センター, 2011/09/02 09:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1322/" class="btn btn-template-main">続きを読む</a>
+2011/12/08*
+[番号] 技術ノート KGTN 2011120901
+[現象] [GGW3.2.1] 検証のためクライアントプリンタの構成を失敗させたいが，どのような方法があるか？
+[説明] 以下の方法で，クライアントプリンタの構成を失敗させることが出来ます．
+クラスタマネージャ　[Universal Driver] のチェックを外し， [Windows folder] のチェックを入れる． サーバ側にローカルプリンタを１台登録する． クライアント側にある print.ini を削除する． クライアント側にローカルプリンタを１台登録する （但しサーバ側にドライバが存在しないこと） ． GGサーバへログオンする． アプリケーションを起動し適当な帳票を印刷する．
+アプリケーションによって，以下のようなダイアログが表示されます．
+「プリンタが組み込まれていません」 という内容のエラーダイアログ サーバ側のプリンタを選択するダイアログ その他警告や情報のダイアログ
+なお，この手順はあくまでも参考であり，妥当性や正確性等を保証するものではありません．
+ファイル KGTN2011120901.pdf [(63 KB)] [kitasp 技術センター, 2011/12/09 07:03]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1195/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -407,7 +406,7 @@ var app = &ldquo;C:¥¥Program Files¥¥Windows NT¥¥Accessories¥¥wordpad.exe
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1314/">
+                                      <a href="/posts/new_md/doc1199/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -415,7 +414,7 @@ var app = &ldquo;C:¥¥Program Files¥¥Windows NT¥¥Accessories¥¥wordpad.exe
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1314/">[GGH4.0] Automatically update clients を有効にしているが， ActiveX クライアントを利用している IE6 の環境のみ働かない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1199/">[GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントドライブ機能で大きなファイルをコピーしている場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -428,18 +427,18 @@ var app = &ldquo;C:¥¥Program Files¥¥Windows NT¥¥Accessories¥¥wordpad.exe
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1314/"><i class="far fa-calendar"></i> 2011-09-02</a>
+                                            <a href="/posts/new_md/doc1199/"><i class="far fa-calendar"></i> 2011-12-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/02*
-[番号] 技術ノート KGTN 2011090208
-[現象] [GGH4.0] Automatically update clients を有効にしているが， ActiveX クライアントを利用している IE6 の環境のみ働かない．
-[説明] ActiveX クライアントを利用している IE6 の環境に関しては，クライアントの自動更新機能は働きません．これは制限事項 （非サポート） になります．
-Automatic client updating for users running the ActiveX Control with Internet Explorer 6.0 is not supported.
-ファイル KGTN2011090208.pdf [(53.7 KB)] [kitasp 技術センター, 2011/09/02 11:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1314/" class="btn btn-template-main">続きを読む</a>
+2011/12/08*
+[番号] 技術ノート KGTN 2011120707
+[現象] [GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントドライブ機能で大きなファイルをコピーしている場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？
+[説明] クライアントドライブ機能で大きなファイルをコピーしている場合であっても，マウスやキーボード操作がなければ，無操作タイムアウトは発生します．
+補　足 一般的な無操作タイムアウトに関する情報は，技術ノート KGTN#2011120705 をご覧下さい．
+ファイル KGTN2011120707.pdf [(48 KB)] [kitasp 技術センター, 2011/12/08 12:30]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1199/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -449,7 +448,7 @@ Automatic client updating for users running the ActiveX Control with Internet Ex
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1318/">
+                                      <a href="/posts/new_md/doc1198/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -457,7 +456,7 @@ Automatic client updating for users running the ActiveX Control with Internet Ex
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1318/">[GGH4.0] GGのポート番号を変更した時，何か作業が必要か？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1198/">[GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントプリンタ機能で大きなファイルを印刷している場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -470,18 +469,18 @@ Automatic client updating for users running the ActiveX Control with Internet Ex
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1318/"><i class="far fa-calendar"></i> 2011-09-02</a>
+                                            <a href="/posts/new_md/doc1198/"><i class="far fa-calendar"></i> 2011-12-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/02*
-[番号] 技術ノート KGTN 2011090204
-[現象] [GGH4.0] GGのポート番号を変更した時，何か作業が必要か？
-[説明] GGのポート番号を変更しただけでは機能しません．以下の手順で変更作業を行って下さい．
-クラスタマネージャでポート番号を変更 クラスタマネージャを終了 Print Spooler サービスを再起動 （停止→開始） GO-Global Application Publishing Service サービスを再起動 （停止→開始）
-ファイル KGTN2011090204.pdf [(50.5 KB)] [kitasp 技術センター, 2011/09/02 10:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1318/" class="btn btn-template-main">続きを読む</a>
+2011/12/08*
+[番号] 技術ノート KGTN 2011120708
+[現象] [GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントプリンタ機能で大きなファイルを印刷している場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？
+[説明] クライアントプリンタ機能で大きなファイルを印刷している場合であっても，マウスやキーボード操作がなければ，無操作タイムアウトは発生します．なお，サーバ側のプリンタはセッションの切断とともに削除されますので，印刷ジョブも併せて消滅します．クライアント側のプリンタについては，既に蓄積されたジョブがあれば消滅せずに残ります．
+補　足 一般的な無操作タイムアウトに関する情報は，技術ノート KGTN#2011120705 をご覧下さい．
+ファイル KGTN2011120708.pdf [(53.2 KB)] [kitasp 技術センター, 2011/12/08 13:06]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1198/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -491,7 +490,7 @@ Automatic client updating for users running the ActiveX Control with Internet Ex
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1321/">
+                                      <a href="/posts/new_md/doc1200/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -499,7 +498,7 @@ Automatic client updating for users running the ActiveX Control with Internet Ex
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1321/">[GGH4.0] Windowsクライアントで，クライアントフレーム機能を使いたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1200/">[GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，常に描画を行うアプリケーションが実行中の場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -512,17 +511,18 @@ Automatic client updating for users running the ActiveX Control with Internet Ex
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1321/"><i class="far fa-calendar"></i> 2011-09-02</a>
+                                            <a href="/posts/new_md/doc1200/"><i class="far fa-calendar"></i> 2011-12-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/02*
-[番号] 技術ノート KGTN 2011090201
-[現象] [GGH4.0] Windowsクライアントで，クライアントフレーム機能を使いたい．
-[説明] Windowsクライアント gg-client.exe にパラメタ ?f を指定することで，クライアントフレームが表示され，その中にGG上で動作するアプリケーションのウインドウが表示されます．ActiveXクライアントの Loose と Embedded の中間のような感じで動作します．フレームのサイズは，デフォルトの場合はクライアントの解像度と同じになり，パラメタ ?geometry を指定すると （例： ?geometry 800x600） ，指定したサイズで表示されます．
-ファイル KGTN2011090201.pdf [(53.1 KB)] [kitasp 技術センター, 2011/09/02 09:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1321/" class="btn btn-template-main">続きを読む</a>
+2011/12/08*
+[番号] 技術ノート KGTN 2011120706
+[現象] [GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，常に描画を行うアプリケーションが実行中の場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？
+[説明] 時計のように常に描画を行うアプリケーションが実行中であっても，マウスやキーボード操作がなければ，無操作タイムアウトは発生します．なお，アプリケーションが描画を行っている最中に無操作タイムアウトが発生した場合，クライアント側に 「コネクション切断」 のダイアログが表示される可能性があります．これは描画命令への応答をサーバ側へ送信しようとした時，既にセッションが切断されていると，その送信に失敗するためです．
+補　足 一般的な無操作タイムアウトに関する情報は，技術ノート KGTN#2011120705 をご覧下さい．
+ファイル KGTN2011120706.pdf [(54.9 KB)] [kitasp 技術センター, 2011/12/08 12:13]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1200/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -532,7 +532,7 @@ Automatic client updating for users running the ActiveX Control with Internet Ex
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1317/">
+                                      <a href="/posts/new_md/doc1203/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -540,7 +540,7 @@ Automatic client updating for users running the ActiveX Control with Internet Ex
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1317/">[GGH4.0] Windowsクライアントのオプションは，セッション再接続時にも全て有効なのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1203/">[GGH4.0] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントドライブ機能で大きなファイルをコピーしている場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -553,17 +553,18 @@ Automatic client updating for users running the ActiveX Control with Internet Ex
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1317/"><i class="far fa-calendar"></i> 2011-09-02</a>
+                                            <a href="/posts/new_md/doc1203/"><i class="far fa-calendar"></i> 2011-12-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/02*
-[番号] 技術ノート KGTN 2011090205
-[現象] [GGH4.0] Windowsクライアントのオプションは，セッション再接続時にも全て有効なのか？
-[説明] いいえ，オプション -a, -r, -ac は無視されます．つまり，アプリケーションの起動 （-a と -r） とクライアントプリンタの再構成 （-ac） は行われません．
-ファイル KGTN2011090205.pdf [(44.7 KB)] [kitasp 技術センター, 2011/09/02 10:43]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1317/" class="btn btn-template-main">続きを読む</a>
+2011/12/07*
+[番号] 技術ノート KGTN 2011120703
+[現象] [GGH4.0] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントドライブ機能で大きなファイルをコピーしている場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？
+[説明] クライアントドライブ機能で大きなファイルをコピーしている場合であっても，マウスやキーボード操作がなければ，無操作タイムアウトは発生します．なお，GGH4.0は最初にコピー元と同じサイズのファイルをコピー先に作成し，次にコピー元のデータを転記します．このため無操作タイムアウトが発生してもコピー先にコピー元と同じサイズのファイルが存在しますが，そのデータは完全ではありません．必要があればマイクロソフト社の FCIV （ファイル チェックサム整合性検証ユーティリティ） を使用し，データが完全かどうか検証することが出来ます．
+補　足 一般的な無操作タイムアウトに関する情報は，技術ノート KGTN#2011120701 をご覧下さい．
+ファイル KGTN2011120703.pdf [(57.1 KB)] [kitasp 技術センター, 2011/12/08 07:30]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1203/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -573,7 +574,7 @@ Automatic client updating for users running the ActiveX Control with Internet Ex
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1315/">
+                                      <a href="/posts/new_md/doc1201/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -581,7 +582,7 @@ Automatic client updating for users running the ActiveX Control with Internet Ex
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1315/">[GGH4.0] クラスタマネージャの Warning period は，どんな値を設定すれば良いのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1201/">[GGH4.0] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントプリンタ機能で大きなファイルを印刷している場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -594,17 +595,18 @@ Automatic client updating for users running the ActiveX Control with Internet Ex
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1315/"><i class="far fa-calendar"></i> 2011-09-02</a>
+                                            <a href="/posts/new_md/doc1201/"><i class="far fa-calendar"></i> 2011-12-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/02*
-[番号] 技術ノート KGTN 2011090207
-[現象] [GGH4.0] クラスタマネージャの Warning period は，どんな値を設定すれば良いのか？
-[説明] 警告ダイアログはセッションが切断される前に表示せねばなりませんので， Session （セッションの制限時間） および Idle （無操作の制限時間） の値よりも小さな値を Warning period に設定せねばなりません．
-ファイル KGTN2011090207.pdf [(49 KB)] [kitasp 技術センター, 2011/09/02 11:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1315/" class="btn btn-template-main">続きを読む</a>
+2011/12/07*
+[番号] 技術ノート KGTN 2011120704
+[現象] [GGH4.0] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントプリンタ機能で大きなファイルを印刷している場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？
+[説明] クライアントプリンタ機能で大きなファイルを印刷している場合であっても，マウスやキーボード操作がなければ，無操作タイムアウトは発生します．なお，サーバ側のプリンタはセッションの切断とともに削除されますので，印刷ジョブも併せて消滅します．クライアント側のプリンタについては，既に蓄積されたジョブは消滅せずに残ります．
+補　足 一般的な無操作タイムアウトに関する情報は，技術ノート KGTN#2011120701 をご覧下さい．
+ファイル KGTN2011120704.pdf [(52.9 KB)] [kitasp 技術センター, 2011/12/08 07:33]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1201/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -614,7 +616,7 @@ Automatic client updating for users running the ActiveX Control with Internet Ex
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1320/">
+                                      <a href="/posts/new_md/doc1204/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -622,7 +624,7 @@ Automatic client updating for users running the ActiveX Control with Internet Ex
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1320/">[GGH4.0] スクロールの描画が遅い．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1204/">[GGH4.0] 無操作タイムアウト （アイドルタイムアウト） に関して，常に描画を行うアプリケーションが実行中の場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -635,18 +637,18 @@ Automatic client updating for users running the ActiveX Control with Internet Ex
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1320/"><i class="far fa-calendar"></i> 2011-09-02</a>
+                                            <a href="/posts/new_md/doc1204/"><i class="far fa-calendar"></i> 2011-12-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/02*
-[番号] 技術ノート KGTN 2011090202
-[現象] [GGH4.0] スクロールの描画が遅い．
-[説明] サーバ側のスムーズ スクロール機能を無効にすることで，スクロールの描画速度が改善する場合があります．スムーズ スクロール機能を無効にする方法は，以下の通りです．
-Internet Explorer を起動 [ツール] を選択 [インターネット オプション] を選択 [詳細設定] を選択 設定 の中の [スムーズ スクロールを使用する] のチェックを非選択 [適用] をクリック
-ファイル KGTN2011090202.pdf [(52.6 KB)] [kitasp 技術センター, 2011/09/02 10:05]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1320/" class="btn btn-template-main">続きを読む</a>
+2011/12/07*
+[番号] 技術ノート KGTN 2011120702
+[現象] [GGH4.0] 無操作タイムアウト （アイドルタイムアウト） に関して，常に描画を行うアプリケーションが実行中の場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？
+[説明] 時計のように常に描画を行うアプリケーションが実行中であっても，マウスやキーボード操作がなければ，無操作タイムアウトは発生します．なお，アプリケーションが描画を行っている最中に無操作タイムアウトが発生した場合，クライアント側に下記のような 「コネクション切断」 のダイアログが表示されます．これは描画命令への応答をサーバ側へ送信しようとした時，既にセッションが切断されており，その送信に失敗するためです．
+補　足 一般的な無操作タイムアウトに関する情報は，技術ノート KGTN#2011120701 をご覧下さい．
+ファイル KGTN2011120702.pdf [(62.4 KB)] [kitasp 技術センター, 2011/12/08 07:28]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1204/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -656,7 +658,7 @@ Internet Explorer を起動 [ツール] を選択 [インターネット オプ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1319/">
+                                      <a href="/posts/new_md/doc1205/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -664,7 +666,7 @@ Internet Explorer を起動 [ツール] を選択 [インターネット オプ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1319/">[GGH4.0] ログオンしたユーザが所属するグループを確認したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1205/">[GGW3.2.1] クライアント印刷機能が有効な時，サーバ側でデフォルトプリンタを変更すると，その変更内容がクライアント側にも反映される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -677,17 +679,17 @@ Internet Explorer を起動 [ツール] を選択 [インターネット オプ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1319/"><i class="far fa-calendar"></i> 2011-09-02</a>
+                                            <a href="/posts/new_md/doc1205/"><i class="far fa-calendar"></i> 2011-12-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/02*
-[番号] 技術ノート KGTN 2011090203
-[現象] [GGH4.0] ログオンしたユーザが所属するグループを確認したい．
-[説明] プログラムウインドウの [Help] の中の [About GraphOn GO-Global] を選択して下さい．表示されるウインドウの中の Group の部分に所属するグループの情報が表示されます．
-ファイル KGTN2011090203.pdf [(53.9 KB)] [kitasp 技術センター, 2011/09/02 10:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1319/" class="btn btn-template-main">続きを読む</a>
+2011/12/07*
+[番号] 技術ノート KGTN 2011120752
+[現象] [GGW3.2.1] クライアント印刷機能が有効な時，サーバ側でデフォルトプリンタを変更すると，その変更内容がクライアント側にも反映される．
+[説明] GGの旧いバージョンでは，サーバ側とクライアント側それぞれに別にデフォルトプリンタが存在していました．しかし 「利用者にとってデフォルトプリンタが複数あることは理解が難しい．サーバ側もクライアント側も同じプリンタをデフォルトプリンタにすべき」 という議論が日本国内から出て， それ以降のバージョン 〜 GGW3.2.1 ではサーバ側でデフォルトプリンタを変更すると，その変更内容がクライアント側にも反映されます （つまりGGW3.2.1の仕様です） ．なお， GGH4.0 からはクライアント印刷機能のアーキテクチャが変更され，サーバ側でのデフォルトプリンタの変更がクライアント側に反映されない仕様になっております．
+ファイル KGTN2011120752.pdf [(52.3 KB)] [kitasp 技術センター, 2011/12/07 14:02]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1205/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -697,7 +699,7 @@ Internet Explorer を起動 [ツール] を選択 [インターネット オプ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1316/">
+                                      <a href="/posts/new_md/doc1206/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -705,7 +707,7 @@ Internet Explorer を起動 [ツール] を選択 [インターネット オプ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1316/">[GGH4.0] ログオンスクリプトとしてVBScripts はサポートされるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1206/">[GGW3.2.1/GGH4.0] クライアント印刷機能を使用しているが，アプリケーションで印刷を行おうとしたところ，サーバ側のプリンタを選択する画面 （プリンタの設定というダイアログ） が表示された．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -718,17 +720,19 @@ Internet Explorer を起動 [ツール] を選択 [インターネット オプ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1316/"><i class="far fa-calendar"></i> 2011-09-02</a>
+                                            <a href="/posts/new_md/doc1206/"><i class="far fa-calendar"></i> 2011-12-06</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/02*
-[番号] 技術ノート KGTN 2011090206
-[現象] [GGH4.0] ログオンスクリプトとしてVBScripts はサポートされるのか？
-[説明] いいえ，ログオンスクリプトとして VBScripts はサポートされません． VBScriptsを利用したい場合は，バッチファイルから起動して下さい．
-ファイル KGTN2011090206.pdf [(42 KB)] [kitasp 技術センター, 2011/09/02 10:56]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1316/" class="btn btn-template-main">続きを読む</a>
+2011/12/06*
+[番号] 技術ノート KGTN 2011120603
+[現象] [GGW3.2.1/GGH4.0] クライアント印刷機能を使用しているが，アプリケーションで印刷を行おうとしたところ，サーバ側のプリンタを選択する画面 （プリンタの設定というダイアログ） が表示された．
+[説明] クライアント印刷機能を使用している時，GGは print.ini の設定に従ってプリンタの環境を構成します．この時クライアント側にプリンタが存在しない （またはクライアント側にデフォルトプリンタが存在しない） と，アプリケーションは，通常以下のようなダイアログを表示します．
+「プリンタが組み込まれていません」 という内容のエラーダイアログ サーバ側のプリンタを選択するダイアログ その他警告や情報のダイアログ
+本件は，この 2) のケースに該当します．継続して同じ状況が発生する時は，クライアント側のプリンタフォルダの状態と print.ini を確認し，異常があれば修正して下さい．継続して同じ状況が発生しない場合は，サーバ一時的な障害 （CPUが高負荷，メモリが不足，プロファイルの正常なロードに失敗など） でプリンタの構成が出来なかったことが考えられます．
+ファイル KGTN2011120603.pdf [(61.5 KB)] [kitasp 技術センター, 2011/12/06 16:27]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1206/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -798,7 +802,7 @@ Internet Explorer を起動 [ツール] を選択 [インターネット オプ�
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

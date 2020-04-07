@@ -409,26 +409,29 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1882/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1721/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1882/">クラスタマネージャでポート番号を491から443へ変更してもUDP491のパケットが送信される．</a></h4>
+                            <h4><a href="/posts/new_md/doc1721/">GMCheckRaw のトレース機能を使う時の設定は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-01-12
+                            日付 2010-06-24
                             </p>
                             <p class="intro">*技術ノート
-2010/01/12*
-[番号] 技術ノート KGTN 2010011202
-[現象] クラスタマネージャでポート番号を491から443へ変更してもUDP491のパケットが送信される．
-[説明] GGサーバは，他のGGサーバ （クラスタマネージャ） へ存在を通知するためにUDP491でパケットを送信します．これはGGサーバの現時点での仕様で，これを停止または変更することは出来ません．なお，ポート番号491は，GraphOn社がIANA （ポート番号等を管理している組織） から正式に割り当てられた番号ですので，他のアプリケーションと重複することはありません．
-go-login Port 491 TCP go-login go-login Port 491 UDP go-login
-ファイル KGTN2010011202.pdf [(51 KB)] [kitasp 技術センター, 2010/01/12 15:24]</p>
+2010/06/24*
+[番号] 技術ノート KGTN 2010062202
+[現象] GMCheckRaw のトレース機能を使う時の設定は？
+[説明] 設定ファイル GMCheck.ini の各サーバのセクションに以下のキーを追加して下さい．
+traceFile = C:¥TEMP¥%COMPUTERNAME%-%YYYYMMDD%.log traceLevel = 1
+traceFile は，トレースログファイルのフルパスを指定して下さい．パスには環境変数と以下の文字列 （変数） を含めることが出来ます．
+YYYYMMDD ： 年月日に展開 HHMMSS ： 時分秒に展開 HHMM ： 時分に展開
+traceLevel は，ログの出力レベルを指定し，0で出力抑止 （既定値） ， 1で出力になります．
+ファイル KGTN2010062202.pdf [(57.4 KB)] [kitasp 技術センター, 2010/06/24 09:35]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1882/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1721/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -447,26 +450,26 @@ go-login Port 491 TCP go-login go-login Port 491 UDP go-login
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1883/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1720/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1883/">SSLの設定を行ったところ，APSログに下記のエラーが記録され，クライアントからの接続が出来ない．</a></h4>
+                            <h4><a href="/posts/new_md/doc1720/">GMCheckRaw の結果を得るには，ファイルを介する方法しかないのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-01-07
+                            日付 2010-06-24
                             </p>
                             <p class="intro">*技術ノート
-2010/01/07*
-[番号] 技術ノート KGTN 2010010701
-[現象] SSLの設定を行ったところ，APSログに下記のエラーが記録され，クライアントからの接続が出来ない． aps (???) CS: Failed to load private key C:¥GraphOn¥SSL¥server.key.
-[説明] 証明書ファイルserver.crtが置かれたフォルダに，秘密鍵ファイルserver.keyが存在しない場合，このエラーが記録されます．秘密鍵ファイルserver.keyを，このフォルダへコピーして下さい．詳細は，管理者ガイド （承認サーバの証明書の取得） をご覧下さい．
-注　意 フォルダのパスやファイル名は，環境（設定）に合わせて読み替えて下さい．
-ファイル KGTN2010010701.pdf [(56.5 KB)] [kitasp 技術センター, 2010/01/07 12:11]</p>
+2010/06/24*
+[番号] 技術ノート KGTN 2010062401
+[現象] GMCheckRaw の結果を得るには，ファイルを介する方法しかないのか？
+[説明] 設定ファイル GMCheck.ini の中の項目 command に実行可能なプログラムを指定すると，以下の環境変数が設定された環境で指定したプログラムが実行されます．つまり，環境変数を介してGMCheckRaw の結果を得ることが出来ます．
+header footer dateTime hostName ipAddress serverID maxSessions sessionCount availability versionNumber sectionName sessionInfo_0 （セッション情報の数） sessionInfo_1 （最初のセッションの情報） sessionInfo_2 （2番目のセッションの情報） &hellip;
+ファイル KGTN2010062401.pdf [(55.5 KB)] [kitasp 技術センター, 2010/06/24 10:20]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1883/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1720/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,27 +488,30 @@ go-login Port 491 TCP go-login go-login Port 491 UDP go-login
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1884/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1719/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1884/">セッションを終了した後も特定のプロセスが残り，再接続してもその画面が表示される．</a></h4>
+                            <h4><a href="/posts/new_md/doc1719/">Windows Server 2008 環境で動作するGGサーバで @ 等の入力が出来ない （異なる文字がエコーバックされる） ．</a></h4>
                             <p class="author-category">
                             
-                            日付 2009-12-24
+                            日付 2010-06-24
                             </p>
                             <p class="intro">*技術ノート
-2009/12/24*
-[番号] 技術ノート KGTN 2009122402
-[現象] セッションを終了した後も特定のプロセスが残り，再接続してもその画面が表示される．
-[説明] 本質的にはそのプログラムの問題を解消すべきですが，以下のレジストリを登録することで 「残るプロセス」 を強制的に終了させることが出来ます．
-[HKEY_LOCAL_MACHINE¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Processes] &ldquo;&ldquo;=dword:00000000
-技術的な背景は，指定されたプロセスがセッション維持の条件から除外され，これにより当該プロセスの存在の有無に関係なくセッションが終了されるようになります．
-ファイル KGTN2009122402.pdf [(61.3 KB)] [kitasp 技術センター, 2009/12/24 17:39]</p>
+2010/06/24*
+[番号] 技術ノート KGTN 2009122401
+[現象] Windows Server 2008 環境で動作するGGサーバで &ldquo;@&rdquo; 等の入力が出来ない （異なる文字がエコーバックされる） ．
+[説明] これは Windows Server 2008 でキーボードの処理が変更されたために発生する問題で，下記のレジストリを登録することで問題が解消します．
+[HKEY_LOCAL_MACHINE¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout] &ldquo;Fallback Layout Text&quot;=&quot;Japanese&rdquo;
+この件はGraphOn社でも確認しており，今後のリリースで修正される予定です．
+補足１ 3.2.1 Patch4 (4466) およびそれ以降では，本問題は解消されております．
+Bug 8997 On Japanese Windows Server 2008, users are unable to logon to an account with a password including &ldquo;@,=,‾,etc&hellip;&quot;.
+補足２ Windows Server 2008 のインストール時に，標準的な106キーボードが接続されていることが前提となります．それ以外の環境では，下記のレジストリの Layout Text の値を上記Fallback Layout Text へセットして下さい．
+[HKEY_LOCAL_MACHINE¥SYSTEM¥CurrentControlSet¥Control¥Keyboard Layouts¥00000411] &ldquo;Layout Display Name&quot;=&rdquo;@C:¥¥Windows¥¥system32¥¥input.dll,-5061&rdquo; &ldquo;Layout File&quot;=&quot;KBDJPN.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1884/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1719/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -524,25 +530,30 @@ go-login Port 491 TCP go-login go-login Port 491 UDP go-login
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1885/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1722/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1885/">APSログに下記の記録があるが，問題ないのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1722/">GMCheckRaw のトレース機能はどんな時に使うのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2009-12-17
+                            日付 2010-06-22
                             </p>
                             <p class="intro">*技術ノート
-2009/12/17*
-[番号] 技術ノート KGTN 2009121801
-[現象] APSログに下記の記録があるが，問題ないのか？ aps (????) AS: Failed to validate strong encryption (FlexLM -5: &ldquo;No such feature exists.&quot;).
-[説明] この記録は，ライセンスファイル内に高度暗号化オプション （GO-Global for Windows のオプション機能です） を有効にする情報がないという意味で，障害を意味するものではありません．従って，この記録は無視していただいて結構です．
-ファイル KGTN2009121801.pdf [(55.6 KB)] [kitasp 技術センター, 2009/12/18 06:21]</p>
+2010/06/22*
+[番号] 技術ノート KGTN 2010062201
+[現象] GMCheckRaw のトレース機能はどんな時に使うのか？
+[説明] Rel#1.07.01 で実装されたGMCheckRaw のトレース機能は，同プログラムとGG （APS） の通信のタイムスタンプを記録することで， 「どの処理の周辺に問題があるのか」 を突き止める時に役立ちます．例えば，GMCheckRaw コマンドを入力してから，ログファイルに
+2010-06-22 13:49:02.656 -&gt; checkServer
+が出力されるまでに5秒かかったとすれば，プロセスの生成に約5秒かかったことになりますので，Windows やハードウエアに問題があると推測されます．
+また， SMI_Initializeの呼出し前後の時間をチェックすることで，GGサーバへの接続に要する時間を確認することが出来ます．30秒かかったとすれば，CPUの過負荷，プロセス間通信の一時的障害，ネットワーク障害や設定ミス，Windowsの異常等が考えられます．
+2010-06-22 13:49:02.656 &gt; SMI_Initialize SMI_Initializeの呼出し前 2010-06-22 13:49:04.312 SMI_Initialize SMI_Initializeの呼出し後
+これ以外にもローレベルな情報を採取することが出来ますので， 「正常値と比較することで」 問題解析の手掛かりとして役立てることが出来ます．
+ファイル KGTN2010062201.pdf [(69.6 KB)] [kitasp 技術センター, 2010/06/22 14:05]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1885/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1722/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

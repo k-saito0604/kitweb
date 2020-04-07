@@ -409,28 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2130/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2100/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2130/">[GGH5.X/ExPack] 拡張パックの GGEasyFileProc とはどのようなツールなのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2100/">[GGH5.X] アンチウイルスソフト Sophos Antivirus は，GGのホスト環境で利用できるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2017-04-07
+                            日付 2017-05-08
                             </p>
                             <p class="intro">*技術ノート
-2017/04/07*
-[番号] 技術ノート KGTN 2017040401
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyFileProc とはどのようなツールなのか？
-[説明] GGEasyFileProc （バージョン1.0.2） は，ファイルのバックアップ，ファイルの削除，バックアップファイルの削除を行うツールです．処理の流れは，次の通りです．
- 設定日数を経過したファイルをバックアップフォルダーへコピー 設定日数を経過したファイルを削除 設定日数を経過した 「バックアップフォルダーの」 ファイルを削除  設定ファイル GGEasyFileProc.ini で指定する項目は以下の通りです．
-  項目名 設定内容 logLevel ログの出力フォルダー logp ログファイルの名称のプリフィックス （既定値はGEFP） logd ログの出力フォルダー  repeatSleep 繰り返しの間隔（単位は分），繰り返さない場合は無指定 [section] セクション名 （処理の単位で，セクション内で下記項目を指定） datDir ファイルが置かれたフォルダー （データフォルダー） bakDir バックアップ先のフォルダー （バックアップフォルダー） datCopy コピー対象とするファイルの経過日数，無条件にコピーする場合は無指定 datDel 削除対象とするデータフォルダーのファイルの経過日数，削除しない場合は無指定 bakDel 削除対象とするバックアップフォルダーのファイルの経過日数，削除しない場合は無指定
- 以下に GGEasyFileProc.ini の設定例を示します．
-[default] logLevel = 4 ログレベル logp = GEFP ログファイルは GEFP-yyyy-mm.dd.log logd = C:kitASPGGEasyMonitorLogs このフォルダーへログファイルを作成 repeatSleep = 60 60 分間隔でファイルを処理 [GGEasyMonitor] datDir = C:kitASPGGEasyMonitorLogs データフォルダー bakDir = C:kitASPGGEasyMonitorLogsBackup バックアップフォルダー datCopy = 1 1 日以上経過したファイルをコピー datDel = 1 1 日以上経過したファイルを削除 bakDel = 30 30 日以上経過したバックアップファイルを削除  以下に GGEasyMonitor-Service.</p>
+2017/05/08*
+[番号] 技術ノート KGTN 2017050203
+[現象] [GGH5.X] アンチウイルスソフト Sophos Antivirus は，GGのホスト環境で利用できるのか？
+[説明] GraphOn社による検証では，下記のレジストリを追加することで利用できます．
+1. Run Regedit on the host computer and add the following DWORD registry value: [HKEY_LOCAL_MACHINESOFTWAREGraphOnGO-GlobalAppServerSandBox] = 0 2. Restart the host computer  ファイル KGTN2017050203.pdf [(34.2 KB)] [kitasp 技術センター, 2017/05/08 15:28]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2130/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2100/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -449,27 +446,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2178/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2097/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2178/">[GGH5.X/ExPack] 拡張パックの GGEasyLog を介して Google Chrome を起動する場合、プロキシサーバーを指定する方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc2097/">[GGH5.X] アンチウイルスソフト Total Defense Anti-Virus は，GGのホスト環境で利用できるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2017-04-07
+                            日付 2017-05-08
                             </p>
                             <p class="intro">*技術ノート
-2017/04/07*
-[番号] 技術ノート KGTN 2017021101
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyLog を介して Google Chrome を起動する場合、プロキシサーバーを指定する方法は？
-[説明] 設定ファイルに GGEasyLog.ini で、以下のような設定を行ってください。
-[CH] path = C:Program Files (x86)GoogleChromeApplicationchrome.exe args = --proxy-server=xxx.xxx.xxx.xxx:8080  ファイル KGTN2017021101.pdf [(215 KB)] [kitasp 技術センター, 2017/04/07 11:59]
-KGTN2017021101.jpg
-表示 [(42 KB)] [kitasp 技術センター, 2017/04/07 11:59]</p>
+2017/05/08*
+[番号] 技術ノート KGTN 2017050207
+[現象] [GGH5.X] アンチウイルスソフト Total Defense Anti-Virus は，GGのホスト環境で利用できるのか？
+[説明] GraphOn社による検証では，ファイアウォール機能を無効化するという条件付きで利用できます．
+ファイル KGTN2017050207.pdf [(29.5 KB)] [kitasp 技術センター, 2017/05/08 15:34]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2178/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2097/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -488,25 +483,25 @@ KGTN2017021101.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2156/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2093/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2156/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor で振分けられた時と直接接続した時とでは，ブラウザでファイルをアップロードする時のパフォーマンスが違う．</a></h4>
+                            <h4><a href="/posts/new_md/doc2093/">[GGH5.X] アンチウイルスソフト Trend Micro ServerProtect は，GGのホスト環境で利用できるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2017-04-07
+                            日付 2017-05-08
                             </p>
                             <p class="intro">*技術ノート
-2017/04/07*
-[番号] 技術ノート KGTN 2017031101
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor で振分けられた時と直接接続した時とでは，ブラウザでファイルをアップロードする時のパフォーマンスが違う．
-[説明] GGEasyMonitor の振分け機能は，GGクライアントへ接続先のGGサーバーのIPアドレスを与えるのみで，GGクライアント～GGサーバー間の通信は 「直接」 行われます．従って，振分け機能を利用した時も直接接続した時も通信経路は全く同じで，ブラウザでファイルをアップロードする時にパフォーマンスが違うことは考えられません．可能性があるとすれば，接続したGGサーバーの差異，アップロード時に接続したウエッブサーバーの差異 （同じURLでもウエッブサーバーが異なる場合があります） ，時間の差異等が考えられます．
-ファイル KGTN2017031101.pdf [(57.8 KB)] [kitasp 技術センター, 2017/04/07 14:36]</p>
+2017/05/08*
+[番号] 技術ノート KGTN 2017050211
+[現象] [GGH5.X] アンチウイルスソフト Trend Micro ServerProtect は，GGのホスト環境で利用できるのか？
+[説明] トレンドマイクロの ServerProtect は多くの案件で利用されており，特に問題なくGGサーバーが稼働しております．
+ファイル KGTN2017050211.pdf [(29.7 KB)] [kitasp 技術センター, 2017/05/08 15:37]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2156/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2093/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -525,25 +520,25 @@ KGTN2017021101.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2160/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2095/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2160/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor で振分けを行っているが，１台のGGサーバーが監視画面では正常だが実際には接続できなくなった．そのGGサーバーを切り離す簡単な方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc2095/">[GGH5.X] アンチウイルスソフト Vipre Antivirus は，GGのホスト環境で利用できるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2017-04-07
+                            日付 2017-05-08
                             </p>
                             <p class="intro">*技術ノート
-2017/04/07*
-[番号] 技術ノート KGTN 2017031001
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor で振分けを行っているが，１台のGGサーバーが監視画面では正常だが実際には接続できなくなった．そのGGサーバーを切り離す簡単な方法は？
-[説明] 障害が発生したGGサーバーのサービス GGEasyMonitor-Service を停止してください．これにより，GGサーバーからの監視情報の送信が停止しますので，振分けサーバーは異常を検知し　「そのGGサーバーへの振分け」 を停止します．なお，GGサーバーとしては動作していますので，切り離した後にGGサーバーとしての動作状況を調査することができます．
-ファイル KGTN2017031001.pdf [(59.9 KB)] [kitasp 技術センター, 2017/04/07 13:59]</p>
+2017/05/08*
+[番号] 技術ノート KGTN 2017050208
+[現象] [GGH5.X] アンチウイルスソフト Vipre Antivirus は，GGのホスト環境で利用できるのか？
+[説明] GraphOn社による検証では， GO-Global Application Publishing service (aps.exe) を除外リストに加えるという条件付きで利用できます．
+ファイル KGTN2017050208.pdf [(31.7 KB)] [kitasp 技術センター, 2017/05/08 15:35]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2160/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2095/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

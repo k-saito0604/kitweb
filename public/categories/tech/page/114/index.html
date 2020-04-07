@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc326/">
+                                      <a href="/posts/problematic_md/doc268/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc326/">[GGH4.X] ActiveXクライアントを使っているが，GGサーバに接続出来ない．先ず何をすべきか？</a></h2>
+                                    <h2><a href="/posts/problematic_md/doc268/">[GGH4.X] PreView PDF では表示されるのに，クライアント印刷が出来ない． 考えられる原因は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc326/"><i class="far fa-calendar"></i> 2014-02-21</a>
+                                            <a href="/posts/problematic_md/doc268/"><i class="far fa-calendar"></i> 2014-04-18</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/02/21*
-[番号] 技術ノート KGTN 2014021701
-[現象] [GGH4.X] ActiveXクライアントを使っているが，GGサーバに接続出来ない．先ず何をすべきか？
-[説明] GGサーバへ接続出来ない原因がActiveXクライアント （の使用方法） にあるかどうかを確認するために，Windowsクライアントで接続出来るかどうか確認して下さい．下記の起動方法で接続出来なければ，GGサーバにコネクションが張れない，つまりネットワークやファイアウォールの設定に原因がある可能性が高いと考えられます．
-gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP アドレス&gt; -hp &lt;クライアント側から見えるGGサーバのポート番号&gt;  ファイル KGTN2014021701.pdf [(56.4 KB)] [kitasp 技術センター, 2014/02/21 21:01]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc326/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">技術ノート 2014/04/18
+[番号] 技術ノート KGTN 2014033101
+[現象] [GGH4.X] PreView PDF では表示されるのに，クライアント印刷が出来ない． 考えられる原因は？
+[説明] PreView PDF で印刷内容が表示されることから，サーバ～クライアント間の UPD の処理は問題無いと考えられます．従って，以下のような原因が推測されます．
+  正しいプリンタを指定してない &hellip; &ldquo;プリンタ名 (from クライアント名)&rdquo; のプリンタを指定して下さい．サーバ側のプリンタや類似したプリンタ名のプリンタを指定している可能性が考えられます．
+  出力先のプリンタの権限が不足している &hellip; クライアント側へ転送された印刷ジョブ（PDF）が，アクセス権の問題等によりプリンタへ出力出来ない可能性が考えられます． Administrator で印刷が可能かどうかチェックして下さい．
+  クライアント側のサービス Print Spooler が停止している &hellip; Print Spooler を開始して下さい．なお，このケースでは，APSログに &ldquo;on , gg-client (???) Failed to open client printer: &rdquo; といったメッセージが記録されます．
+  ファイル KGTN2014033101.pdf [(60.7 KB)] [kitasp 技術センター, 2014/04/18 21:33]</p>
+                                    <p class="read-more"><a href="/posts/problematic_md/doc268/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +362,7 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc317/">
+                                      <a href="/posts/problematic_md/doc264/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +370,7 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc317/">[GGH4.X] GGH4.8.1で動作するクライアント （の環境）　の一覧を知りたい．</a></h2>
+                                    <h2><a href="/posts/problematic_md/doc264/">[GGH4.X] 同じクライアントPCから同じGGサーバに同一ユーザIDで複数ログオンした場合，プロキシ・プリンタの名称はどうなるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,17 +383,16 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc317/"><i class="far fa-calendar"></i> 2014-02-21</a>
+                                            <a href="/posts/problematic_md/doc264/"><i class="far fa-calendar"></i> 2014-04-18</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/02/21*
-[番号] 技術ノート KGTN 2014022102
-[現象] [GGH4.X] GGH4.8.1で動作するクライアント （の環境）　の一覧を知りたい．
-[説明] GGH4.8.1がサポートするクライアントの環境の一覧を次ページ以降に示します．
-ファイル KGTN2014022102.pdf [(75.6 KB)] [kitasp 技術センター, 2014/02/21 22:04]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc317/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">技術ノート 2014/04/18
+[番号] 技術ノート KGTN 2014040702
+[現象] [GGH4.X] 同じクライアントPCから同じGGサーバに同一ユーザIDで複数ログオンした場合，プロキシ・プリンタの名称はどうなるのか？
+[説明] 最初のセッションは PrinterName (from Client) となり，次のセッションは PrinterName (from Client)(2) となり，３番目のセッションはPrinterName (from Client)(3) となります．つまり２番目またはそれ以降のセッションについては，添え字が順に付加されます．
+ファイル KGTN2014040702.pdf [(47.4 KB)] [kitasp 技術センター, 2014/04/18 21:41]</p>
+                                    <p class="read-more"><a href="/posts/problematic_md/doc264/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -401,7 +402,7 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc320/">
+                                      <a href="/posts/problematic_md/doc265/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -409,7 +410,7 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc320/">[GGH4.X] クライアントのOSが Windows 7 だが，GG上で起動したアプリケーションのタスクバー表示がProgram Window のラベルの中にまとめられてしまう．</a></h2>
+                                    <h2><a href="/posts/problematic_md/doc265/">[GGH4.X] 同じクライアントPCから同じGGサーバに同一ユーザIDで複数ログオンした場合，プロキシ・プリンタの名称はどうなるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -422,17 +423,16 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc320/"><i class="far fa-calendar"></i> 2014-02-21</a>
+                                            <a href="/posts/problematic_md/doc265/"><i class="far fa-calendar"></i> 2014-04-18</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/02/21*
-[番号] 技術ノート KGTN 2014022001
-[現象] [GGH4.X] クライアントのOSが Windows 7 だが，GG上で起動したアプリケーションのタスクバー表示がProgram Window のラベルの中にまとめられてしまう．
-[説明] GG上で起動したアプリケーションのラベルを分けて表示したい場合は， タスク バーと [スタート] メニューのプロパティ → タスク バー → タスク バーのボタン で， タスクバーがいっぱいの場合に結合 または 結合しない を選択して下さい．
-ファイル KGTN2014022001.pdf [(50.1 KB)] [kitasp 技術センター, 2014/02/21 21:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc320/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">技術ノート 2014/04/18
+[番号] 技術ノート KGTN 2014040701
+[現象] [GGH4.X] 同じクライアントPCから同じGGサーバに異なるユーザIDで複数ログオンした場合，プロキシ・プリンタの名称はどうなるのか？
+[説明] 最初のセッションは PrinterName (from Client) となり，次のセッションは PrinterName (from Client)(2) となり，３番目のセッションはPrinterName (from Client)(3) となります．つまり２番目またはそれ以降のセッションについては，添え字が順に付加されます．
+ファイル KGTN2014040701.pdf [(53.4 KB)] [kitasp 技術センター, 2014/04/18 21:40]</p>
+                                    <p class="read-more"><a href="/posts/problematic_md/doc265/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -442,7 +442,7 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc321/">
+                                      <a href="/posts/problematic_md/doc258/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -450,7 +450,7 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc321/">[GGH4.X] 拡張パックの振分けサーバを使用したいが，GGサーバに割り当てる （紐付ける） グローバルIPアドレスに余裕がない．</a></h2>
+                                    <h2><a href="/posts/problematic_md/doc258/">[GGW3.2.1/GGH4.X] OpenSSL の脆弱性 （CVE-2014-0160, Heartbeat overflow issue） に関して， GO-Global for Windows は影響を受けないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -463,17 +463,16 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc321/"><i class="far fa-calendar"></i> 2014-02-21</a>
+                                            <a href="/posts/problematic_md/doc258/"><i class="far fa-calendar"></i> 2014-04-18</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/02/21*
-[番号] 技術ノート KGTN 2014021904
-[現象] [GGH4.X] 拡張パックの振分けサーバを使用したいが，GGサーバに割り当てる （紐付ける） グローバルIPアドレスに余裕がない．
-[説明] グローバルIPアドレスに余裕がない場合は，SSL-VPN等でGGサーバ群のローカルネットワークにアクセスする方法が考えられます．ユーザにとっては１ステップ操作が増えますが，管理者視点ではグローバルIPアドレスの数に関係なくGGサーバを増やすことが出来ますし，2段階の認証でセキュリティも強化されるという大きなメリットがあります．
-ファイル KGTN2014021904.pdf [(55.1 KB)] [kitasp 技術センター, 2014/02/21 21:15]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc321/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">技術ノート 2014/04/18
+[番号] 技術ノート KGTN 2014041501
+[現象] [GGW3.2.1/GGH4.X] OpenSSL の脆弱性 （CVE-2014-0160, Heartbeat overflow issue） に関して， GO-Global for Windows は影響を受けないのか？
+[説明] GraphOn社より，影響を受けないとの回答がありました．
+All supported versions of GO-Global for Windows are not vulnerable.  ファイル KGTN2014041501.pdf [(49.2 KB)] [kitasp 技術センター, 2014/04/25 16:15]</p>
+                                    <p class="read-more"><a href="/posts/problematic_md/doc258/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -483,7 +482,7 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc322/">
+                                      <a href="/posts/problematic_md/doc267/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -491,7 +490,7 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc322/">[GGH4.X] 拡張パックの振分けサーバを使用する場合，GGサーバ群を外部のネットワークに直接公開せねばならないのか？</a></h2>
+                                    <h2><a href="/posts/problematic_md/doc267/">[GGW3.2.1] 下記レジストリの生成のタイミングはいつか？　また，このレジストリが存在しないGGサーバと存在するGGサーバがあるが，どのような原因で発生したのか可能性を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -504,17 +503,16 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc322/"><i class="far fa-calendar"></i> 2014-02-21</a>
+                                            <a href="/posts/problematic_md/doc267/"><i class="far fa-calendar"></i> 2014-04-18</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/02/21*
-[番号] 技術ノート KGTN 2014021903
-[現象] [GGH4.X] 拡張パックの振分けサーバを使用する場合，GGサーバ群を外部のネットワークに直接公開せねばならないのか？
-[説明] いいえ，必ずしもGGサーバ群を外部のネットワークに直接公開する必要はありません．クライアントから特定のGGサーバに接続できれば良いので，1対1でコネクションを中継する装置 （中継サーバ，ロードバランサ）をGGサーバ群の前に配置することも出来ます．
-ファイル KGTN2014021903.pdf [(51.1 KB)] [kitasp 技術センター, 2014/02/21 21:12]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc322/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">技術ノート 2014/04/18
+[番号] 技術ノート KGTN 2014040101
+[現象] [GGW3.2.1] 下記レジストリの生成のタイミングはいつか？　また，このレジストリが存在しないGGサーバと存在するGGサーバがあるが，どのような原因で発生したのか可能性を知りたい． HKLMSoftwareGraphOnBridges1.0.0AppServerPDFRendererDisabledLanguages
+[説明] このレジストリ （PDFRendererDisabledLanguages） は，クライアント側のプリンタが UPD (Universal Printer Driver) で構成され，かつ実際にそのプリンタに印刷が行われた時に生成されます．このレジストリが存在しないGGサーバは， UPD で構成されたプリンタに一度も印刷されていないことを意味しています （注：GGをインストールした直後の状態と同じです） ．このレジストリが存在するGGサーバは， UPD で構成されたプリンタに 「少なくとも一度」 印刷されたことを意味しています．
+ファイル KGTN2014040101.pdf [(58.8 KB)] [kitasp 技術センター, 2014/04/18 21:36]</p>
+                                    <p class="read-more"><a href="/posts/problematic_md/doc267/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -524,7 +522,7 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc324/">
+                                      <a href="/posts/problematic_md/doc262/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -532,7 +530,7 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc324/">[GGH4.X] 拡張パックの監視コンソールや振分けサーバは， https でも動作するのか？</a></h2>
+                                    <h2><a href="/posts/problematic_md/doc262/">[Windows] Windows Vista, Windows 7, Windows 8/8.1 のサポート終了は何時か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -545,17 +543,17 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc324/"><i class="far fa-calendar"></i> 2014-02-21</a>
+                                            <a href="/posts/problematic_md/doc262/"><i class="far fa-calendar"></i> 2014-04-18</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/02/21*
-[番号] 技術ノート KGTN 2014021901
-[現象] [GGH4.X] 拡張パックの監視コンソールや振分けサーバは， https でも動作するのか？
-[説明] はい，監視コンソールや振分けサーバのユーザ側の通信はGGのセッションに直接関与しませんので， http でも https でも動作します．また，ウエッブサーバの設定で自由にポート番号を変更することも可能です．
-ファイル KGTN2014021901.pdf [(49.7 KB)] [kitasp 技術センター, 2014/02/21 21:04]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc324/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">技術ノート 2014/04/18
+[番号] 技術ノート KGTN 2014041002
+[現象] [Windows] Windows Vista, Windows 7, Windows 8/8.1 のサポート終了は何時か？
+[説明] 2014年4月時点での　Windows Vista, Windows 7, Windows 8/8.1 のサポート終了日は，以下の通りです．
+・Windows Vista &hellip; 2017年4月11日 ・Windows 7 &hellip; 2020年1月14日 ・Windows 8/8.1 &hellip; 2023年1月10日
+ファイル KGTN2014041002.pdf [(41.1 KB)] [kitasp 技術センター, 2014/04/18 21:45]</p>
+                                    <p class="read-more"><a href="/posts/problematic_md/doc262/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -565,7 +563,7 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc323/">
+                                      <a href="/posts/new_md/doc1998/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -573,7 +571,7 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc323/">[GGH4.X] 拡張パックの監視コンソールや振分けサーバは，冗長構成が可能か？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1998/">[GGH4.X-5.X] クライアント側のプリンタに印刷する安全確実な方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -586,17 +584,24 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc323/"><i class="far fa-calendar"></i> 2014-02-21</a>
+                                            <a href="/posts/new_md/doc1998/"><i class="far fa-calendar"></i> 2014-04-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/02/21*
-[番号] 技術ノート KGTN 2014021902
-[現象] [GGH4.X] 拡張パックの監視コンソールや振分けサーバは，冗長構成が可能か？
-[説明] はい，GGサーバから複数の監視コンソールや振分けサーバに情報 （GGサーバの稼働状況等のデータ） を通知することで，アクティブ・スタンバイ構成が可能です．
-ファイル KGTN2014021902.pdf [(48 KB)] [kitasp 技術センター, 2014/02/21 21:08]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc323/" class="btn btn-template-main">続きを読む</a>
+2014/04/04*
+[番号] 技術ノート KGTN 2014032702
+[現象] [GGH4.X-5.X] クライアント側のプリンタに印刷する安全確実な方法は？
+[説明] 以下の方法は，印刷ボタンを２回 （サーバ側とクライアント側で） クリックする必要がありますが，障害発生時の切り分けが容易で，かつプリンタの機能をフルに （両面印刷やソーターなど） 利用できるため，安全確実な方法としてお勧めです．
+ クラスターマネージャーで [Host Options] → [Client Access] → [Printers] → [Universal Printer Driver] にチェックを入れる （[Windows Printer Drivers] にチェックを入れない） ． 印刷時に Preview PDF (from ???) を選択する．   印刷ボタンをクリックし，クライアント側に印刷内容のPDFファイルが表示されるのを待つ． 4) 表示されたPDFファイルの内容を確認し，それを （Adobe Reader で） 印刷する．
+[クラスターマネージャーの設定画面]
+[アプリケーションの印刷画面]
+ファイル KGTN2014032702.pdf [(79 KB)] [kitasp 技術センター, 2017/10/10 10:28]
+KGTN2014032702-1.jpg
+表示 [(11.4 KB)] [kitasp 技術センター, 2017/10/10 10:31]
+KGTN2014032702-2.jpg
+表示 [(13.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1998/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -606,7 +611,7 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc318/">
+                                      <a href="/posts/problematic_md/doc273/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -614,7 +619,7 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc318/">[GGW3.2.1/GGH4.X] ライセンスサーバを国内に配置し，GGサーバを国内外の拠点に配置しているが，国外のGGサーバのアプリケーションの起動が遅い．</a></h2>
+                                    <h2><a href="/posts/problematic_md/doc273/">[GGH4.X] UPD を使って印刷すると，ドキュメントの内容が用紙に収まらず切れてしまう．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -627,17 +632,16 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc318/"><i class="far fa-calendar"></i> 2014-02-21</a>
+                                            <a href="/posts/problematic_md/doc273/"><i class="far fa-calendar"></i> 2014-04-04</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/02/21*
-[番号] 技術ノート KGTN 2014022101
-[現象] [GGW3.2.1/GGH4.X] ライセンスサーバを国内に配置し，GGサーバを国内外の拠点に配置しているが，国外のGGサーバのアプリケーションの起動が遅い．
-[説明] アプリケーションの起動に当たって， PW は先ずライセンスサーバにライセンスの確認を行いますが，海外のGGサーバから国内のライセンスサーバに確認を行うと （ネットワークの状況等により） 長く時間が掛かることがあります．この確認に時間がかかると，その分だけアプリケーションの起動が遅くなります．従って，ライセンスサーバとGGサーバは，出来るだけ 「ネットワーク的に」 近い場所に配置することをお勧めします．
-ファイル KGTN2014022101.pdf [(48.5 KB)] [kitasp 技術センター, 2014/02/21 21:24]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc318/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">技術ノート 2014/04/04
+[番号] 技術ノート KGTN 2014032404
+[現象] [GGH4.X] UPD を使って印刷すると，ドキュメントの内容が用紙に収まらず切れてしまう．
+[説明] GGH4.8.1Patch1 から，用紙印刷時のスケーリングを指定するオプションが追加されました．GGの設定ファイル HostProperties.xml を下記のようにプロパティを追加 （編集） することで，用紙に収まるようにスケーリングすることが出来ます．もしこの設定でも収まらない場合は，オフセットの値を調整して下さい．
+　&lt;property id=&quot;EnablePrintOptions&quot; group=&quot;Miscellaneous&quot; type=&quot;BOOL&quot;&gt; &lt;value&gt;true&lt;/value&gt; &lt;/property&gt; &lt;property id=&quot;PrintOptions&quot; group=&quot;Miscellaneous&quot; type=&quot;STRING&quot;&gt; &lt;value&gt;-printermargins -xoffset 50 -yoffset 30&lt;/value&gt; &lt;/property&gt;  ファイル KGTN2014032404.pdf [(135 KB)] [kitasp 技術センター, 2014/04/04 15:42]</p>
+                                    <p class="read-more"><a href="/posts/problematic_md/doc273/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -647,7 +651,7 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2677/">
+                                      <a href="/posts/new_md/doc1930/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -655,7 +659,7 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2677/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc1930/">[GGH4.X] UPDのエンジンは，GGH4.7では Adobe PDF Library だったが，GGH4.8では違うのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -668,17 +672,18 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2677/"><i class="far fa-calendar"></i> 2014-02-14</a>
+                                            <a href="/posts/new_md/doc1930/"><i class="far fa-calendar"></i> 2014-04-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/02/14*
-[番号] 技術ノート KGTN 2014021307
-[現象] [GGH4.X-5X] Active Directory と連携したユーザー管理は可能か？
-[説明] はい， Active Directory と連携したユーザー管理が可能です．なお，大規模案件等で運用コストを低減させるため，固定ユーザープロファイルを採用した事例もあります．
-ファイル KGTN2014021307.pdf [(51.4 KB)] [kitasp 技術センター, 2015/12/16 11:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2677/" class="btn btn-template-main">続きを読む</a>
+2014/04/04*
+[番号] 技術ノート KGTN 2014032101
+[現象] [GGH4.X] UPDのエンジンは，GGH4.7では Adobe PDF Library だったが，GGH4.8では違うのか？
+[説明] GGH4.7までは Adobe PDF Library を使用していましが，GGH4.8から VeryPDF を使用するようになりました．これは Adobe PDF Library のロイヤリティや機能等に起因した変更ですが，運用レベルでは縦書き等もサポートされ特に影響はありません．
+補　足 UPDのエンジンの変更と関連して，印刷のスケーリングやオフセット等を調整する機能が GGH4.8.1 Patch1 に実装されました．
+I should mention that there is a difference between the way the UPD worked in version 4.7 and the way it works in version 4.8. In versions 4.x to 4.7, the client was configured (hard coded) to always scale the PDF document to fit within the printable area of the printer.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1930/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -688,7 +693,7 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc345/">
+                                      <a href="/posts/new_md/doc190/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -696,7 +701,7 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc345/">[GGH4.X] GGH4.6が EOL になったが，そのことによってGGH4.6の利用に関して 「具体的に」 どのような技術的な影響があるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc190/">[GGH4.X] WS2008R2の環境で外字は表示されるが，正常に印刷されない．マイクロソフト社のパッチ KB979580 を適用しても改善しない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -709,17 +714,17 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc345/"><i class="far fa-calendar"></i> 2014-02-14</a>
+                                            <a href="/posts/new_md/doc190/"><i class="far fa-calendar"></i> 2014-04-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/02/14*
-[番号] 技術ノート KGTN 2014021201
-[現象] [GGH4.X] GGH4.6が EOL になったが，そのことによってGGH4.6の利用に関して 「具体的に」 どのような技術的な影響があるのか？
-[説明] GGH4.6が EOL になる以前であっても，運用回避策が無い不具合等が発生した場合，個別のバージョン （ビルド） GGH4.6のパッチがリリースされることは無く，GGH4.X系パッチとして GGH4.7.0, GGH4.8.0, GGH4.8.1, &hellip; がリリースされます（されました） ．つまり，GGH4.X系が現行製品である限り，技術的な影響は特にありません．なお，GGH4.6.0 と GGH4.8.1 の大きな差異は，プラットフォームの追加 （Windows Server 2012, Windows Server 2012 R2） ，IE11 のサポート，色深度が24ビット以上での描画の不具合修正です．
-ファイル KGTN2014021201.pdf [(53.2 KB)] [kitasp 技術センター, 2014/02/14 14:38]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc345/" class="btn btn-template-main">続きを読む</a>
+2014/04/04*
+[番号] 技術ノート KGTN 2014032403
+[現象] [GGH4.X] WS2008R2の環境で外字は表示されるが，正常に印刷されない．マイクロソフト社のパッチ KB979580 を適用しても改善しない．
+[説明] この問題はGraphOn社でも認識しており，将来のビルドで修正 （機能追加） される見込みです．
+This feature request is being targeted for a release in Q4 2014 or Q1 2015. This support case is being closed, but the ECR (14321) will remain open.  ファイル KGTN2014032403.pdf [(56.8 KB)] [kitasp 技術センター, 2014/10/03 19:49]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc190/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -789,7 +794,7 @@ gg-client.exe -h &lt;クライアント側から見えるGG サーバのIP ア�
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

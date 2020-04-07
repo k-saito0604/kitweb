@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1758/">
+                                      <a href="/posts/new_md/doc1606/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1758/">仮想環境でGGサーバを構築したが，アプリケーションの動作が遅い．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1606/">Ver4.0系は，クライアント側のプリンタとして Microsoft XPS Document Writer をサポートしているのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1758/"><i class="far fa-calendar"></i> 2010-05-13</a>
+                                            <a href="/posts/new_md/doc1606/"><i class="far fa-calendar"></i> 2010-09-24</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/05/13*
-[番号] 技術ノート KGTN 2010051304
-[現象] 仮想環境でGGサーバを構築したが，アプリケーションの動作が遅い．
-[説明] 遅い原因が仮想マシン （仮想環境） に起因しているのか，切り分けをお願いします．物理マシンで速く，仮想マシンで遅いのであれば，仮想マシンやネットワーク環境をチューニングしてパフォーマンスの改善を図る必要があります．物理マシンでも遅いのであれば，アプリケーションまたはその運用環境に原因があると考えられますので，それを調査する必要があります．
-ファイル KGTN2010051304.pdf [(48.4 KB)] [kitasp 技術センター, 2010/05/13 14:13]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1758/" class="btn btn-template-main">続きを読む</a>
+2010/09/24*
+[番号] 技術ノート KGTN 2010092402
+[現象] Ver4.0系は，クライアント側のプリンタとして Microsoft XPS Document Writer をサポートしているのか？
+[説明] ユニバーサルプリンタドライバ （Universal Printer Driver） を使用する設定で，クライアント側のプリンタとして Microsoft XPS Document Writer をサポートします． Microsoft XPS Printer Driver （つまり Windows Printer Drivers を設定した時） は，サポートしません．本件に関するGraphOn 社の情報 （Readme.txt） は，以下の通りです．
+Microsoft&rsquo;s XPS Document Writer is supported as a client printer when using the Universal Printer Driver, but the XPS Printer Driver is not.
+ファイル KGTN2010092402.pdf [(51.9 KB)] [kitasp 技術センター, 2010/09/24 12:47]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1606/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +361,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc89/">
+                                      <a href="/posts/new_md/doc1604/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +369,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc89/">[GGH4.X] Windows Vista / Windows 7 のクライアントで，個人設定で 「Aero のテーマ」 を選択すると，GGが表示するウインドウをドラッグした時等に反応が遅くなる．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1604/">Ver4.0系は，従来の Java Client をサポートしないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,17 +382,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc89/"><i class="far fa-calendar"></i> 2010-05-12</a>
+                                            <a href="/posts/new_md/doc1604/"><i class="far fa-calendar"></i> 2010-09-24</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/05/12*
-[番号] 技術ノート KGTN 2010051202
-[現象] [GGH4.X] Windows Vista / Windows 7 のクライアントで，個人設定で 「Aero のテーマ」 を選択すると，GGが表示するウインドウをドラッグした時等に反応が遅くなる．
-[説明] Windows Vista / Windows 7 の 「ベーシックテーマ」 では従来のGDI （Graphics Device Interface） で描画を行い， 「Aero のテーマ」 では Direct3D で描画を行います．GGのクライアントはGDIベースで描画を行うため， 「Aero のテーマ」 が設定された環境では Windows の GDI → Direct3D のエミュレーション処理が加わるため，「ベーシックテーマ」 に比べ描画のパフォーマンスが低下します．パフォーマンスの低下はクライアントの性能に依存しますが，もし実用上気になる場合は， 「ベーシックテーマ」 に変更して下さい．
-補　足 Windows 7 の環境では，サービス Desktop Window Manager Session Manager を停止 （スタートアップの種類を手動にして再起動） することで，「ベーシックテーマ」 を設定した時と同じ描画パフォーマンスになります．但し，タスクバーのサムネイル， Windows フリップ， Windows フリップ 3D 等は利用出来なくなります． ファイル KGTN2010051202.pdf [(96.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc89/" class="btn btn-template-main">続きを読む</a>
+2010/09/24*
+[番号] 技術ノート KGTN 2010092404
+[現象] Ver4.0系は，従来の Java Client をサポートしないのか？
+[説明] はい，Ver4.0系は従来の Java Client をサポートしません．詳細は未定ですが，これに代わるクライアントとして， Flash-based client が計画されております．本件に関するGraphOn 社の情報 （Release Notes.txt） は，以下の通りです．
+The Java Client is no longer supported. In its place, a Flash-based client will be included in the upcoming GO-Global Portal release.
+ファイル KGTN2010092404.pdf [(51.1 KB)] [kitasp 技術センター, 2010/09/24 13:40]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1604/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -401,7 +403,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1761/">
+                                      <a href="/posts/new_md/doc1609/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -409,7 +411,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1761/">アンチウイルスソフトウエアのKaspersky Anti</a></h2>
+                                    <h2><a href="/posts/new_md/doc1609/">Ver4.0.0 から Ver4.0.0 Patch 1 へバージョンアップしたところ，クライアント側のドライブが表示されなくなった．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -422,17 +424,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1761/"><i class="far fa-calendar"></i> 2010-05-12</a>
+                                            <a href="/posts/new_md/doc1609/"><i class="far fa-calendar"></i> 2010-09-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/05/12*
-[番号] 技術ノート KGTN 2010051301
-[現象] アンチウイルスソフトウエアのKaspersky Anti-Virus for Windows Servers 6.0 MP4 をインストールすると，GGサーバへリモートデスクトップ接続が出来なくなる （注：GGの機能は正常に動作する） ．
-[説明] 株式会社Kaspersky Labs Japan様の調査によれば， 「GGのドライバと Kaspersky Anti-Virus for Windows Servers 6.0 MP4 のドライバが競合しており，その結果リモートデスクトップ接続が出来なくなるという現象が発生している」 とのことです．対応は， 「修正パッチのリリースまたはCFのリリースが未定ですが，本部としては修正すべき項目として認識しております」 という状況です．
-ファイル KGTN2010051301.pdf [(53.2 KB)] [kitasp 技術センター, 2010/05/13 08:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1761/" class="btn btn-template-main">続きを読む</a>
+2010/09/22*
+[番号] 技術ノート KGTN 2010092202
+[現象] Ver4.0.0 から Ver4.0.0 Patch 1 へバージョンアップしたところ，クライアント側のドライブが表示されなくなった．
+[説明] Ver4.0.0 Patch 1 でクライアントドライブ機能の最適化 （高速化） が行われたため，Ver4.0.0 のクライアントでログオンするとクライアント側のドライブが表示されません．この現象を回避するには，Ver4.0.0 Patch 1 のクライアントをインストールする （アップグレードする） 必要があります．以下は，本件に関するGraphOn社のリリースノートです．
+FASTER CLIENT DRIVE ACCESS Optimizations to the Client Drives feature require upgrading both the client and the host. If an older version of the client accesses the 4.0.0.8304 host, Client Drives will be disabled.  ファイル KGTN2010092202.pdf [(56.5 KB)] [kitasp 技術センター, 2010/09/22 09:24]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1609/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -442,7 +444,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1763/">
+                                      <a href="/posts/new_md/doc1608/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -450,7 +452,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1763/">Windows Server 2008 (x86) でGGの評価をしたいが，物理メモリはどれくらい必要か？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1608/">プリンタドライバを多数のGGサーバにインストールしたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -463,17 +465,26 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1763/"><i class="far fa-calendar"></i> 2010-05-11</a>
+                                            <a href="/posts/new_md/doc1608/"><i class="far fa-calendar"></i> 2010-09-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/05/11*
-[番号] 技術ノート KGTN 2010051101
-[現象] Windows Server 2008 (x86) でGGの評価をしたいが，物理メモリはどれくらい必要か？
-[説明] Windows Server 2008 (x86) をインストールする場合， Windows Update 適用等でも物理メモリの空きメモリがゼロになりますので，GGの評価には物理メモリ2GB以上が必要です．
-ファイル KGTN2010051101.pdf [(51.4 KB)] [kitasp 技術センター, 2010/05/11 09:31]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1763/" class="btn btn-template-main">続きを読む</a>
+2010/09/22*
+[番号] 技術ノート KGTN 2010092203
+[現象] プリンタドライバを多数のGGサーバにインストールしたい．
+[説明] このようなケースでは， 「プリンタドライバを含む」 マスタとなるGGサーバのイメージを作成し，それを展開するのが最善の方法です．プリンタドライバが追加された場合は，各GGサーバ上で標準的な手順でインストールするか，または 「新しいプリンタドライバを含む」 マスタとなるGGサーバのイメージを作成し，それを展開します．
+「自己責任でも構わないので，簡単にプリンタドライバを一括コピーしたい」 ということであれば，下記のスクリプトを利用する方法があります．マスタとなるサーバにプリンタドライバをインストールし，
+cscript pdr_server.vbs
+を実行し，その後各GGサーバで
+cscript pdr_clinet.vbs -server
+を実行することで，マスタとなるサーバのプリンタドライバが一括コピーされます．なお，このスクリプトはあくまでもサンプルであり，その内容や動作について如何なる保証もサポートも行いません．FILE: pdr_server.vbs
+option explicit
+&lsquo;- &lsquo;- 定数 &lsquo;- const L_DriverRegistry = &ldquo;HKLM¥SYSTEM¥CurrentControlSet¥Control¥Print¥Environments¥Windows NT x86&rdquo; const L_DriverFolder = &ldquo;C:¥WINDOWS¥system32¥spool¥drivers¥w32x86&rdquo;
+&lsquo;- &lsquo;- Usage: cscript pdr_server.vbs &lsquo;- main
+&lsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; &lsquo;&mdash; メインルーチン &mdash; &lsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
+sub main dim iRetval iRetval = gg_ExportRegistry(L_DriverRegistry,L_DriverFolder &amp; &ldquo;¥printer_registry.reg&rdquo;) wscript.echo &ldquo;iRetval = &quot; &amp; iRetval end sub</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1608/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -483,7 +494,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1762/">
+                                      <a href="/posts/new_md/doc1610/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -491,7 +502,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1762/">時々 logon.exe のＣＰＵ使用率が非常に高くなり，その状態が継続する．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1610/">Ver4.0の新しいパッチを Repair or Update でインストールすると，イベントログに Application Error が記録され，APS および License Manager が開始しない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -504,18 +515,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1762/"><i class="far fa-calendar"></i> 2010-05-11</a>
+                                            <a href="/posts/new_md/doc1610/"><i class="far fa-calendar"></i> 2010-09-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/05/11*
-[番号] 技術ノート KGTN 2010051201
-[現象] 時々 logon.exe のＣＰＵ使用率が非常に高くなり，その状態が継続する．
-[説明] クラスタマネージャが設定する idle timeout の処理に絡んで，logon.exe のＣＰＵ使用率が100%になる問題がありました．3.2.1 Patch4 (4466) でこの問題は修正されております．リリースノートの情報とGraphOn社のコメントは，以下の通りです．
-Bug 9000 A scenario where the Logon.exe process is consuming 100% CPU. This bug was introduced in 3.2.1.4446 and was related to idle timeout that is set in the Cluster Manager. It is fixed in 3.2.1.4466.
-ファイル KGTN2010051201.pdf [(58.4 KB)] [kitasp 技術センター, 2010/05/12 05:08]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1762/" class="btn btn-template-main">続きを読む</a>
+2010/09/21*
+[番号] 技術ノート KGTN 2010092201
+[現象] Ver4.0の新しいパッチを Repair or Update でインストールすると，イベントログに Application Error が記録され，APS および License Manager が開始しない．
+[説明] これは恐らくインストーラーの問題で，既にGraphOn社へ報告しております．以下の手順でインストールを行うことで，この問題を回避することが出来ます．
+「プログラムの追加と削除」画面で， GO-Global Host の変更ボタンを押下 Program Maintenance 画面で Remove を選択 サーバを再起動 Ver4.0の新しいパッチをインストール サーバを再起動
+ファイル KGTN2010092201.pdf [(55.1 KB)] [kitasp 技術センター, 2010/09/22 08:10]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1610/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -525,7 +536,7 @@ Bug 9000 A scenario where the Logon.exe process is consuming 100% CPU. This bug 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1765/">
+                                      <a href="/posts/new_md/doc98/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -533,7 +544,7 @@ Bug 9000 A scenario where the Logon.exe process is consuming 100% CPU. This bug 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1765/">3.2.1 Patch2 (4420) から 3.2.1 Patch3 (4446) でレジストリの内容が変わっているが，どのような点が変更されたのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc98/">[GGW3.2.1/GGH4.X] ネットワーク障害時に，確実にセッションを終了させるお勧めの設定は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -546,19 +557,17 @@ Bug 9000 A scenario where the Logon.exe process is consuming 100% CPU. This bug 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1765/"><i class="far fa-calendar"></i> 2010-05-07</a>
+                                            <a href="/posts/new_md/doc98/"><i class="far fa-calendar"></i> 2010-09-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/05/07*
-[番号] 技術ノート KGTN 2010050701
-[現象] 3.2.1 Patch2 (4420) から 3.2.1 Patch3 (4446) でレジストリの内容が変わっているが，どのような点が変更されたのか？
-[説明] [変更点その１] 下記の変更によって，RPCおよびDCOMのサービスが session private になりました．各値については，設定変更を行うようなパラメタではありませんので，詳細情報はありません．
-[HKEY_LOCAL_MACHINE¥Software¥GraphOn¥Bridges¥1.0.0¥Loader¥Processes]
- DefaultValuesSet : dword:00003000 &ndash;&gt; dword:00004000 svchost : NONE &ndash;&gt; dword:00000080 (CREATED) svchost -k rpcss : NONE &ndash;&gt; dword:00020070 (CREATED) svchost -k DcomLaunch : NONE &ndash;&gt; dword:00040070 (CREATED)  [変更点その2] 機能的な変更ではなく，表面上の変更（形式上の変更）です．
-[HKEY_LOCAL_MACHINE¥Software¥GraphOn¥GO-Global Server] 1) [HKEY_LOCAL_MACHINE¥Software¥GraphOn¥GO-Global Server¥3.2.0] (DELETED) 2) [HKEY_LOCAL_MACHINE¥Software¥GraphOn¥GO-Global Server¥3.2.1] (CREATED)  ファイル KGTN2010050701.pdf [(62.4 KB)] [kitasp 技術センター, 2010/05/07 10:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1765/" class="btn btn-template-main">続きを読む</a>
+2010/09/17*
+[番号] 技術ノート KGTN 2010091703
+[現象] [GGW3.2.1/GGH4.X] ネットワーク障害時に，確実にセッションを終了させるお勧めの設定は？
+[説明] クラスタマネージャの Server Options (GGW3.2.1) / Host Options (GGH4.X) → Session Shutdown → Disconnect sessions terminate で After 1 minutes を設定することをお勧めします． Immediately の方が直ちにセッションが終了するように思えますが，しかしデフォルトの仕様では 「ネットワーク障害による予期せぬ切断に限り」 3日間セッションが維持されます．このため，確実に早期にセッションを終了させるため After 1 minutes を設定します．
+ファイル KGTN2010091703.pdf [(53.4 KB)] [kitasp 技術センター, 2015/06/12 17:30]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc98/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -568,7 +577,7 @@ Bug 9000 A scenario where the Logon.exe process is consuming 100% CPU. This bug 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1764/">
+                                      <a href="/posts/new_md/doc1611/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -576,7 +585,7 @@ Bug 9000 A scenario where the Logon.exe process is consuming 100% CPU. This bug 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1764/">Windows 7 のクライアントを使用しているが，クライアントドライブへファイルを保存出来ない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1611/">Ver4.0で SessionTimeoutBrokenConnection の値を0にしたいが，レジストリにそのキーが見あたらない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -589,17 +598,19 @@ Bug 9000 A scenario where the Logon.exe process is consuming 100% CPU. This bug 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1764/"><i class="far fa-calendar"></i> 2010-05-07</a>
+                                            <a href="/posts/new_md/doc1611/"><i class="far fa-calendar"></i> 2010-09-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/05/07*
-[番号] 技術ノート KGTN 2010050702
-[現象] Windows 7 のクライアントを使用しているが，クライアントドライブへファイルを保存出来ない．
-[説明] GGクライアントが管理者権限で実行されていない場合，クライアントドライブへのファイルの保存等が出来ません．従って，GGクライアントを管理者権限で実行することで問題が解決します．
-[ActiveXクライアントの場合] IE （Internet Explorer） を 「管理者として実行」 を選択して起動して下さい． [Native クライアントの場合] ggw.exe （GO-Global Client） を 「管理者として実行」 を選択して起動して下さい．  ファイル KGTN2010050702.pdf [(49.2 KB)] [kitasp 技術センター, 2010/05/07 14:00]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1764/" class="btn btn-template-main">続きを読む</a>
+2010/09/17*
+[番号] 技術ノート KGTN 2010091702
+[現象] Ver4.0で SessionTimeoutBrokenConnection の値を0にしたいが，レジストリにそのキーが見あたらない．
+[説明] 従来レジストリに保持されていたサーバ設定のパラメタは，Ver4.0では下記のXLMファイルに保持されるようになりました．
+%ALLUSERSPROFILE%¥Application Data¥GraphOn¥HostProperties.xml
+このファイルをテキストエディタ （TeraPad等） で開き，下記項目の値を0に変更して下さい．
+4320ファイル KGTN2010091702.pdf [(54.7 KB)] [kitasp 技術センター, 2010/09/17 10:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1611/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -609,7 +620,7 @@ Bug 9000 A scenario where the Logon.exe process is consuming 100% CPU. This bug 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1767/">
+                                      <a href="/posts/new_md/doc1612/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -617,7 +628,7 @@ Bug 9000 A scenario where the Logon.exe process is consuming 100% CPU. This bug 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1767/">クライアントの共有フォルダにあるファイルを，GGサーバからネットワークを介して直接アクセスした場合と，クライアントドライブ機能を介してアクセスした場合とでは，動きが異なることがある．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1612/">クライアント側でZオーダー （ウインドウの上下関係） に関する処理を行うプログラムを作成するが，何か注意すべき点はあるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -630,17 +641,17 @@ Bug 9000 A scenario where the Logon.exe process is consuming 100% CPU. This bug 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1767/"><i class="far fa-calendar"></i> 2010-04-28</a>
+                                            <a href="/posts/new_md/doc1612/"><i class="far fa-calendar"></i> 2010-09-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/04/28*
-[番号] 技術ノート KGTN 2010042801
-[現象] クライアントの共有フォルダにあるファイルを，GGサーバからネットワークを介して直接アクセスした場合と，クライアントドライブ機能を介してアクセスした場合とでは，動きが異なることがある．
-[説明] ネットワークを介して直接アクセスした場合は，Windows のファイル共有機能をフルに利用してアクセスします（つまりWindowsレベルではネットワーク上のファイルとして処理されます）．クライアントドライブ機能を介してアクセスした場合は，ローカルドライブへアクセスするAPIをクライアントへ転送してアクセスするため （つまりWindowsレベルではローカル上のファイルとして処理されます） ，アイコン表示等で差異が出ることがあります．
-ファイル KGTN2010042801.pdf [(47.7 KB)] [kitasp 技術センター, 2010/04/28 09:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1767/" class="btn btn-template-main">続きを読む</a>
+2010/09/17*
+[番号] 技術ノート KGTN 2010091701
+[現象] クライアント側でZオーダー （ウインドウの上下関係） に関する処理を行うプログラムを作成するが，何か注意すべき点はあるか？
+[説明] クライアント側でZオーダーに関する処理が行われた場合，それに絡んでサーバ側でもZオーダーに関する処理が行われます．つまり，クライアント側およびサーバ側それぞれでZオーダーに関する処理が行われますので，そのタイミングや処理時間によっては稀に画面が乱れる可能性があります．このような場合は，下記のようにウインドウの処理の後に Sleep(1000) 等を挿入して，タイミングの調整を行って下さい．
+m_subWindow-&gt;DestroyWindow(); ::Sleep(1000);  ファイル KGTN2010091701.pdf [(54.7 KB)] [kitasp 技術センター, 2010/09/17 09:04]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1612/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -650,7 +661,7 @@ Bug 9000 A scenario where the Logon.exe process is consuming 100% CPU. This bug 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1770/">
+                                      <a href="/posts/new_md/doc219/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -658,7 +669,7 @@ Bug 9000 A scenario where the Logon.exe process is consuming 100% CPU. This bug 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1770/">GGサーバにあるClientIdentifiers.ini というファイルの役割は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc219/">[GGW3.2.1] GGはポート番号491を使用するが，これを他のポート番号 （443） に変更したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -671,17 +682,18 @@ Bug 9000 A scenario where the Logon.exe process is consuming 100% CPU. This bug 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1770/"><i class="far fa-calendar"></i> 2010-04-27</a>
+                                            <a href="/posts/new_md/doc219/"><i class="far fa-calendar"></i> 2010-09-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/04/27*
-[番号] 技術ノート KGTN 2010042702
-[現象] GGサーバにあるClientIdentifiers.ini というファイルの役割は？
-[説明] クライアント印刷機能が有効な時に使用されるファイルで，クライアントの print.ini 中の ClientID に対応するプリンタ名およびユーザ名の対応表としての役割を持ちます．クライアントからのログオン時にエントリが作成され，ログアウト時に作成されたエントリが削除されます．
-ファイル KGTN2010042702.pdf [(47 KB)] [kitasp 技術センター, 2010/04/27 10:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1770/" class="btn btn-template-main">続きを読む</a>
+2010/09/16*
+[番号] 技術ノート KGTN 2010091601
+[現象] [GGW3.2.1] GGはポート番号491を使用するが，これを他のポート番号 （443） に変更したい．
+[説明] 【サーバ側：サーバ向け】 クラスタマネージャを起動し， Server Options → Security → Connections → Port の値を，491から443へ変更して下さい．なお，この変更を反映させるには，サーバの再起動 （またはAPSの再起動） が必要です．
+【サーバ側：クライアント向け - ActiveX】 &lt;GGのインストールフォルダ&gt;GO-Global ServerWeblooseactivexlogon.html をテキストエディタ （メモ帳）　で開き，下記の hostport パラメタで新しいポート番号を設定して下さい．
+ファイル KGTN2010091601.pdf [(116 KB)] [kitasp 技術センター, 2014/08/08 14:10]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc219/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -691,7 +703,7 @@ Bug 9000 A scenario where the Logon.exe process is consuming 100% CPU. This bug 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1769/">
+                                      <a href="/posts/new_md/doc1617/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -699,7 +711,7 @@ Bug 9000 A scenario where the Logon.exe process is consuming 100% CPU. This bug 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1769/">クライアント印刷機能の ClientID から，クライアントを特定する方法はないのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1617/">GGはデフォルトの設定で，TCP/UDPのポート番号491以外を使用しないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -712,18 +724,17 @@ Bug 9000 A scenario where the Logon.exe process is consuming 100% CPU. This bug 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1769/"><i class="far fa-calendar"></i> 2010-04-27</a>
+                                            <a href="/posts/new_md/doc1617/"><i class="far fa-calendar"></i> 2010-09-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/04/27*
-[番号] 技術ノート KGTN 2010042703
-[現象] クライアント印刷機能の ClientID から，クライアントを特定する方法はないのか？
-[説明] クライアント印刷機能の ClientID は，UUID （Universally Unique Identifier，汎用一意識別子） を使用しており，現在の実装では最後のパートがクライアントのMACアドレスになります．このMACアドレスを手掛かりに，クライアントを特定する （絞り込む） ことが出来ます．
-ClientID の例： 2978a9ac-5194-11df-93ad-000b972f7140　（太字の部分がMACアドレス）
-ファイル KGTN2010042703.pdf [(66.5 KB)] [kitasp 技術センター, 2010/04/27 13:28]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1769/" class="btn btn-template-main">続きを読む</a>
+2010/09/16*
+[番号] 技術ノート KGTN 2010091602
+[現象] GGはデフォルトの設定で，TCP/UDPのポート番号491以外を使用しないのか？
+[説明] デフォルトの設定で，TCPおよびUDPのポート番号491のみを使用します．TCP:491 はクライアント〜サーバ間の通信 （ＧＧのセッション） が使用し，UDP:491はサーバ〜サーバ間の通信 （クラスタマネージャのサーバ一覧など） が使用します．
+ファイル KGTN2010091602.pdf [(43.1 KB)] [kitasp 技術センター, 2010/09/16 10:06]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1617/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -793,7 +804,7 @@ ClientID の例： 2978a9ac-5194-11df-93ad-000b972f7140　（太字の部分がM
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

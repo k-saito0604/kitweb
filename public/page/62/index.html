@@ -409,27 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2412/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2371/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2412/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2371/">[GGH4.X-5.X] ログオン時に，ユーザー名・セッション名・クライアントのコンピューター名・クライアントのIPアドレスを得る方法を知りたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-08-01
+                            日付 2016-08-25
                             </p>
                             <p class="intro">*技術ノート
-2016/08/01*
-[番号] 技術ノート KGTN 2016072103
-[現象] [GGH4.X-5.X] クラスターマネージャーのLogタブの Back up / Delete の条件は経過日数とサイズが指定出来るが，どちらが優先されるのか？
-[説明] クラスターマネージャーのLogタブの Back up / Delete の処理は，設定文言の通り 「設定した日数を経過した」 時か，または 「設定したサイズを超えた」 時に適用されます （何れかの条件が満たされた時に適用されます） ．
-ファイル KGTN2016072103.pdf [(71.1 KB)] [kitasp 技術センター, 2016/08/01 13:48]
-KGTN2016072103.jpg
-表示 [(6.14 KB)] [kitasp 技術センター, 2016/08/01 13:48]</p>
+2016/08/25*
+[番号] 技術ノート KGTN 2016080802
+[現象] [GGH4.X-5.X] ログオン時に，ユーザー名・セッション名・クライアントのコンピューター名・クライアントのIPアドレスを得る方法を知りたい．
+[説明] 以下のようなグローバル・ログオンスクリプトを作成＆登録することで，ユーザー名・セッション名・クライアントのコンピューター名・クライアントのIPアドレスを得ることが出来ます．なお，セッション名を保持する環境変数 USERSESSION はログオンスクリプトの中では機能しないため，環境変数を組み合わせて生成しています．
+@echo off echo '%USERNAME%','%USERNAME% on %COMPUTERNAME%', '%CLIENTCOMPUTERNAME%','%CLIENTCOMPUTERIPADDRESS%' &gt;&gt; C:TEMPLOGON.TXT  ファイル KGTN2016080802.pdf [(60.9 KB)] [kitasp 技術センター, 2016/08/25 16:48]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2412/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2371/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -448,27 +446,27 @@ KGTN2016072103.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2414/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2370/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2414/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2370/">[GGH4.X-5.X] 拡張パックの GGEasyMonitor のセッション一覧で，クライアントのIPアドレスとコンピューター名の表示は出来ないのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-08-01
+                            日付 2016-08-25
                             </p>
                             <p class="intro">*技術ノート
-2016/08/01*
-[番号] 技術ノート KGTN 2016072102
-[現象] [GGH4.X-5.X] クラスターマネージャーのLogタブで設定した内容は直ちに反映されるのか？
-[説明] クラスターマネージャーのLogタブで設定した時に表示されるメッセージの通りで，サービス APS が再起動された時 （次回開始された時） に反映されます．
-ファイル KGTN2016072102.pdf [(56.6 KB)] [kitasp 技術センター, 2016/08/01 13:45]
-KGTN2016072102.jpg
-表示 [(4.44 KB)] [kitasp 技術センター, 2016/08/01 13:45]</p>
+2016/08/25*
+[番号] 技術ノート KGTN 2016080901
+[現象] [GGH4.X-5.X] 拡張パックの GGEasyMonitor のセッション一覧で，クライアントのIPアドレスとコンピューター名の表示は出来ないのか？
+[説明] GGEasyMonitor が使用しているGraphOn社のSDKでは，クライアントのIPアドレスとコンピューター名を取得することが （事実上） 困難でした．この問題を解決するため，ログオンスクリプトの中でクライアントのIPアドレスとコンピューター名を収集＆記録し，それらの情報を GGEasyMonitor で参照＆表示する機能を実装する方向で開発作業を進めております．開発中の画面は次の通りです．なお，異なる端末やネットワークからのセッション再接続 （端末の移動） にも対応する予定です．
+ファイル KGTN2016080901.pdf [(224 KB)] [kitasp 技術センター, 2016/08/25 16:51]
+KGTN2016080901.jpg
+表示 [(56.7 KB)] [kitasp 技術センター, 2016/08/25 16:51]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2414/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2370/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -487,26 +485,25 @@ KGTN2016072102.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2415/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2373/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2415/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2373/">[GGH4.X-5.X] 更新プログラム KBxxx を適用していないにも関わらず， KBxxx をサポートしたビルドをインストールしないとGGが正常に動作しない．これはどういうことなのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-08-01
+                            日付 2016-08-25
                             </p>
                             <p class="intro">*技術ノート
-2016/08/01*
-[番号] 技術ノート KGTN 2016072101
-[現象] [GGH4.X-5.X] AndroidクライアントのURLスキームを利用したいが，ハイパーリンクでは動作を確認したが，JavaScriptおよびメタタグによるリダイレクトが動作しない．
-[説明] Chrome (Android) の古いバージョンではJavaScriptおよびメタタグによるリダイレクトが動作しておりましたが，最新のChromeではJavaScriptおよびメタタグによる 「URLスキームへの」 リダイレクトが動作しないようになりました．恐らくセキュリティ関連による仕様変更だと思われますので，ハイパーリンクによる （手動による） リダイレクトを行うようにして下さい．
-&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt; &lt;html lang=&quot;ja&quot;&gt; &lt;head&gt; &lt;title&gt;URL-Scheme&lt;/title&gt; &lt;/head&gt; &lt;body bgcolor=&quot;#ECF5FF&quot;&gt; &lt;script language=javascript&gt; location.href=&quot;rxp://h=192.168.102.89&amp;hp=491&amp;u=Administrator&amp;p=kit.ASP&quot;; &lt;/script&gt; &lt;/body&gt; &lt;/html&gt;  上記コードは，古いChrome (Android) ではリダイレクトが行われますが，最新のChromeではリダイレクトが行われません．
-ファイル KGTN2016072101.pdf [(61.8 KB)] [kitasp 技術センター, 2016/08/01 13:43]</p>
+2016/08/25*
+[番号] 技術ノート KGTN 2016080501
+[現象] [GGH4.X-5.X] 更新プログラム KBxxx を適用していないにも関わらず， KBxxx をサポートしたビルドをインストールしないとGGが正常に動作しない．これはどういうことなのか？
+[説明] 更新プログラム KBxxx の修正内容は，その後にリリースされた別の更新プログラムに取り込まれることもあります．このようなケースでは，適用された更新プログラムのリストの中に KBxxx は存在しませんが，その修正内容は別の更新プログラムの中に存在しますので， KBxxx をサポートしたビルドをインストールしないとGGが正常に動作しないことになります．
+ファイル KGTN2016080501.pdf [(51.4 KB)] [kitasp 技術センター, 2016/08/25 16:46]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2415/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2373/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -525,26 +522,27 @@ KGTN2016072102.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2416/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2366/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2416/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2366/">[GGH4.X-5.X] 特定のクライアント （PC） からログオンすると，GG環境のデスクトップが表示されない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-08-01
+                            日付 2016-08-25
                             </p>
                             <p class="intro">*技術ノート
-2016/08/01*
-[番号] 技術ノート KGTN 2016071702
-[現象] [GGH4.X-5.X] XMLHttpRequest の同期実行のサンプルを見たい．
-[説明] 以下に XMLHttpRequest の同期実行のサンプルを示します．なお， XMLHttpRequest のリクエスト先は，セキュリティ上の理由により，同一ドメイン （正確には同じサイト） に制限されます．
-　&lt;!&mdash; ソースコードを読むスクリプト &mdash;&gt;
-ファイル KGTN2016071702.pdf [(62.3 KB)] [kitasp 技術センター, 2016/08/01 13:37]</p>
+2016/08/25*
+[番号] 技術ノート KGTN 2016080904
+[現象] [GGH4.X-5.X] 特定のクライアント （PC） からログオンすると，GG環境のデスクトップが表示されない．
+[説明] GG環境のデスクトップが表示されるクライアント （PC） があるのであれば，サーバー側の問題ではないと考えられます．可能性としては，クライアント （PC） にインストールされたGGクライアントのバージョンが古いことが考えられます．プログラム・ウインドウで，サーバーとクライアントのバージョンを確認して下さい．クライアントのバージョンが古い場合は，新しいバージョンにアップグレードして試して下さい．
+ファイル KGTN2016080904.pdf [(185 KB)] [kitasp 技術センター, 2016/08/25 16:55]
+KGTN2016080904.jpg
+表示 [(37.1 KB)] [kitasp 技術センター, 2016/08/25 16:55]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2416/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2366/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

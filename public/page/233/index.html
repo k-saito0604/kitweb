@@ -409,25 +409,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1636/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1490/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1636/">クラスタマネージャの （Server Options → Session Startup →） Maximum sessions per user に 1 を設定すると，アプリケーションを複数起動出来ないということか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1490/">CS: I/O event (Output buffer full timeout.) は何を意味しているのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-08-26
+                            日付 2011-01-26
                             </p>
                             <p class="intro">*技術ノート
-2010/08/26*
-[番号] 技術ノート KGTN 2010081002
-[現象] クラスタマネージャの （Server Options → Session Startup →） Maximum sessions per user に 1 を設定すると，アプリケーションを複数起動出来ないということか？
-[説明] いいえ， Maximum sessions per user ですから，同一ユーザで複数のセッションを確立できない （つまりログオン出来ない） ということです．ログオンしたセッション内では，複数のアプリケーションを起動することが出来ます．
-ファイル KGTN2010081002.pdf [(47.3 KB)] [kitasp 技術センター, 2010/08/26 15:50]</p>
+2011/01/26*
+[番号] 技術ノート KGTN 2010030301
+[現象] &ldquo;CS: I/O event (Output buffer full timeout.)&rdquo; は何を意味しているのか？
+[説明] GraphOn社の開発担当者に確認したところ，このメッセージが記録されたAPSログを過去に見たことが無いということでした．技術的なコメントは以下の通りです．
+An output buffer used in either client-server or inter-process communication is full. GGW is waiting for the buffer to empty before writing more information into it. Unfortunately, the wait times out before the buffer is emptied.
+つまり， 「クライアント〜サーバ間の通信またはプロセス間の通信で使用する出力バッファがフルで，GGクライアントはそれが空になるまで （送信が完了するまで） 待っていたが，それが完了せずにタイムアウトになった」 ということです．可能性としては，ネットワークの通信障害 （切断には至っていないがデータが流れない状態） ，サーバからクライアントへ過度に多くのメッセージ （描画命令等） が送信され，サーバがクライアントからの応答を受信出来なかった等が考えられます．
+参　考 ある大型案件では，監査系プログラムが何らかの事象を契機として通信を遮断し，その結果 &ldquo;CS: I/O event (Output buffer full timeout.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1636/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1490/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,25 +448,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1643/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1493/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1643/">GG上で動作するプログラムで，クライアントのコンピュータ名を得る方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc1493/">[MSDN] MSDNの Windows 7 Enterprise (x64 and x86) November 2009 をインストールしたが， DHCP でアドレスを得ることが出来ない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-08-25
+                            日付 2011-01-24
                             </p>
                             <p class="intro">*技術ノート
-2010/08/25*
-[番号] 技術ノート KGTN 2010082503
-[現象] GG上で動作するプログラムで，クライアントのコンピュータ名を得る方法は？
-[説明] GGのセッション上で，環境変数 CLIENTCOMPUTERNAME がクライアントのコンピュータ名を保持しています．この環境変数を参照することで，クライアントのコンピュータ名を得ることが出来ます．
-ファイル KGTN2010082503.pdf [(193 KB)] [kitasp 技術センター, 2010/08/25 09:55]</p>
+2011/01/24*
+[番号] 技術ノート KGTN 2011012401
+[現象] [MSDN] MSDNの &ldquo;Windows 7 Enterprise (x64 and x86) November 2009&rdquo; をインストールしたが， DHCP でアドレスを得ることが出来ない．
+[説明] DHCPでアドレスを得ることが出来ない問題に関して，ネット上にさまざまな情報がありますが，弊社で試した範囲では，そのどれもがダメでした．結局，以下の手順で問題が解消しました．
+対象のネットワークディバイスに固定アドレスを割り当てる． IEを起動し，インターネットにアクセス出来ることを確認する． セーフティ → Windows Update で更新プログラムを適用する． 再起動を行う． 「現在選択されている更新プログラムはありません」 と表示されるまで，上記3〜4を繰り返す． 対象のネットワークディバイスをDHCPに変更する． 再起動を行う． &ldquo;ipconfig/all&rdquo; コマンドで正しいIPアドレスが得られたことを確認する．
+ファイル KGTN2011012401.pdf [(57.7 KB)] [kitasp 技術センター, 2011/01/24 11:39]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1643/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1493/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -483,25 +486,29 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1645/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1494/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1645/">エンタープライズオプションの GMCheckRaw を起動すると，瞬間的にCPUの使用率が上昇するが，どの程度の値が妥当なのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1494/">クライアント側でGGのウインドウを操作したいが，注意すべき点は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-08-25
+                            日付 2011-01-21
                             </p>
                             <p class="intro">*技術ノート
-2010/08/25*
-[番号] 技術ノート KGTN 2010082501
-[現象] エンタープライズオプションの GMCheckRaw を起動すると，瞬間的にCPUの使用率が上昇するが，どの程度の値が妥当なのか？
-[説明] GMCheckRaw の試験に使用しているマシンは CPU: Pentimu4 2.8GHz + MEM: 1GB で，この環境では平均すると30%前後，高い場合でも約50%です．
-ファイル KGTN2010082501.pdf [(49.8 KB)] [kitasp 技術センター, 2010/08/25 09:25]</p>
+2011/01/21*
+[番号] 技術ノート KGTN 2011012102
+[現象] クライアント側でGGのウインドウを操作したいが，注意すべき点は？
+[説明] GGがクライアント上に表示するウインドウは，GGサーバで実行されるアプリケーションのウインドウです．クライアント側で 「WindowsのAPIを使用して」 そのウインドウを操作した場合，GGサーバ上で動作するアプリケーションは操作内容を知りませんので，操作後に画面が崩れる等の現象が発生します．従って，原則としてクライアント側で 「WindowsのAPIを使用して」 ウインドウ操作を行うことは出来ません．
+参　考1 ウインドウを最小化する・ウインドウを隠す等の単純な操作を行う場合，技術ノート KGTN#2010031501，KGTN#2010090205，KGTN#2009080501 を参考に，Zオーダーが狂わないような処理を行って下さい．幾つかのユーザ様から，このような方法で 「期待した通りの動作を実現できた」 という報告があります．
+参　考2 以下のようなコードで，GGが表示するウインドウの 「非表示・表示」 が動作しているようです．
+void CGGTest_SendMessageDlg::OnBnClickedOk() { //&mdash; ::MessageBox(NULL,_T(&ldquo;STEP1&rdquo;),_T(&ldquo;GGTest_SendMessage&rdquo;),MB_OK); EnumWindows(EnumWindowsProc1,0); ::MessageBox(NULL,_T(&ldquo;STEP2&rdquo;),_T(&ldquo;GGTest_SendMessage&rdquo;),MB_OK); EnumWindows(EnumWindowsProc2,0); //&mdash; }
+BOOL CALLBACK EnumWindowsProc1(HWND hwnd,LPARAM lParam) { TCHAR tBufC^1024^,tBufT^1024^,tBufX^1024^; //&mdash; ::GetClassName(hwnd,tBufC,(sizeof(tBufC)/sizeof(tBufC^0^))); ::GetWindowText(hwnd,tBufT,(sizeof(tBufT)/sizeof(tBufT^0^))); _stprintf_s(tBufX,_T(&quot;'%s&rsquo; - &lsquo;%s&rsquo;&quot;),tBufC,tBufT); if(_tcslen(tBufT) &gt; 0) { if(_tcsicmp(tBufC,_T(&ldquo;DisplayClientWindowClass&rdquo;)) 0) { ::MessageBox(NULL,tBufX,_T(&ldquo;GGTest_SendMessage#11&rdquo;),MB_OK); ::ShowWindow(hwnd,SW_HIDE); } } //&mdash; return(TRUE); }
+BOOL CALLBACK EnumWindowsProc2(HWND hwnd,LPARAM lParam) { TCHAR tBufC[1024],tBufT[1024],tBufX[1024]; //&mdash; ::GetClassName(hwnd,tBufC,(sizeof(tBufC)/sizeof(tBufC[0]))); ::GetWindowText(hwnd,tBufT,(sizeof(tBufT)/sizeof(tBufT[0]))); _stprintf_s(tBufX,_T(&quot;'%s&rsquo; - &lsquo;%s&rsquo;&quot;),tBufC,tBufT); if(_tcslen(tBufT) &gt; 0) { if(_tcsicmp(tBufC,_T(&ldquo;DisplayClientWindowClass&rdquo;)) 0) { ::MessageBox(NULL,tBufX,_T(&ldquo;GGTest_SendMessage#21&rdquo;),MB_OK); ::ShowWindow(hwnd,SW_SHOW); ::PostMessage(hwnd,WM_PAINT,0,0); ::SetForegroundWindow(hwnd); } } //&mdash; return(TRUE); }</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1645/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1494/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -520,26 +527,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1644/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1495/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1644/">エンタープライズオプションの GMService のログファイルの出力先を変更したい．</a></h4>
+                            <h4><a href="/posts/new_md/doc1495/">データセンターにGGサーバを設置するが，SSL-VPN経由でクライアントPCからGGサーバにアクセスできるか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-08-25
+                            日付 2011-01-21
                             </p>
                             <p class="intro">*技術ノート
-2010/08/25*
-[番号] 技術ノート KGTN 2010082502
-[現象] エンタープライズオプションの GMService のログファイルの出力先を変更したい．
-[説明] GMService のログファイルは，デフォルトの設定でGMServiceが 置かれたフォルダ中に作成されます．別のフォルダに作成したい場合は，下記のように設定ファイル GMService.ini 中でフォルダを指定して下さい．
-[default] logDir = C:¥TEMP
-ファイル KGTN2010082502.pdf [(48.5 KB)] [kitasp 技術センター, 2010/08/25 09:36]</p>
+2011/01/21*
+[番号] 技術ノート KGTN 2011012101
+[現象] データセンターにGGサーバを設置するが，SSL-VPN経由でクライアントPCからGGサーバにアクセスできるか？
+[説明] SSL-VPNの環境が，クライアントPC 〜 GGサーバ間でポート番号491 （TCP） の通信路を提供する機能があれば，そのSSL-VPN環境を介してアクセス可能です．なお，RTT （ラウンドトリップタイム） は最悪でも500ms以下 （出来れば100ms以下） でなければなりません．
+ファイル KGTN2011012101.pdf [(47.4 KB)] [kitasp 技術センター, 2011/01/21 12:04]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1644/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1495/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

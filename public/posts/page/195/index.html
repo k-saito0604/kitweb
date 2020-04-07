@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1205/">
+                                      <a href="/posts/new_md/doc1106/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1205/">[GGW3.2.1] クライアント印刷機能が有効な時，サーバ側でデフォルトプリンタを変更すると，その変更内容がクライアント側にも反映される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1106/">[GGH4.0] CMD.EXE （DOS窓） を開いた状態でセッション再接続を行い，その中で CMD.EXE を起動すると CLIENTCOMPUTERNAME の値がセッション再接続前の値になる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1205/"><i class="far fa-calendar"></i> 2011-12-07</a>
+                                            <a href="/posts/new_md/doc1106/"><i class="far fa-calendar"></i> 2012-02-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/07*
-[番号] 技術ノート KGTN 2011120752
-[現象] [GGW3.2.1] クライアント印刷機能が有効な時，サーバ側でデフォルトプリンタを変更すると，その変更内容がクライアント側にも反映される．
-[説明] GGの旧いバージョンでは，サーバ側とクライアント側それぞれに別にデフォルトプリンタが存在していました．しかし 「利用者にとってデフォルトプリンタが複数あることは理解が難しい．サーバ側もクライアント側も同じプリンタをデフォルトプリンタにすべき」 という議論が日本国内から出て， それ以降のバージョン 〜 GGW3.2.1 ではサーバ側でデフォルトプリンタを変更すると，その変更内容がクライアント側にも反映されます （つまりGGW3.2.1の仕様です） ．なお， GGH4.0 からはクライアント印刷機能のアーキテクチャが変更され，サーバ側でのデフォルトプリンタの変更がクライアント側に反映されない仕様になっております．
-ファイル KGTN2011120752.pdf [(52.3 KB)] [kitasp 技術センター, 2011/12/07 14:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1205/" class="btn btn-template-main">続きを読む</a>
+2012/02/02*
+[番号] 技術ノート KGTN 2012020203
+[現象] [GGH4.0] CMD.EXE （DOS窓） を開いた状態でセッション再接続を行い，その中で CMD.EXE を起動すると CLIENTCOMPUTERNAME の値がセッション再接続前の値になる．
+[説明] GGH4.0.1.Patch4 からは，セッション再接続後の環境の値が CLIENTCOMPUTERNAME に設定されるように仕様が変更されました （注： GGW3.2.1と同じ仕様になりました） ．
+ファイル KGTN2012020203.pdf [(51 KB)] [kitasp 技術センター, 2012/02/02 11:38]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1106/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1206/">
+                                      <a href="/posts/new_md/doc1107/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1206/">[GGW3.2.1/GGH4.0] クライアント印刷機能を使用しているが，アプリケーションで印刷を行おうとしたところ，サーバ側のプリンタを選択する画面 （プリンタの設定というダイアログ） が表示された．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1107/">[GGH4.0] クライアント印刷機能を利用しているが，クライアント側でのドキュメント名 （印刷ジョブ名） が文字化けする．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,19 +381,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1206/"><i class="far fa-calendar"></i> 2011-12-06</a>
+                                            <a href="/posts/new_md/doc1107/"><i class="far fa-calendar"></i> 2012-02-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/06*
-[番号] 技術ノート KGTN 2011120603
-[現象] [GGW3.2.1/GGH4.0] クライアント印刷機能を使用しているが，アプリケーションで印刷を行おうとしたところ，サーバ側のプリンタを選択する画面 （プリンタの設定というダイアログ） が表示された．
-[説明] クライアント印刷機能を使用している時，GGは print.ini の設定に従ってプリンタの環境を構成します．この時クライアント側にプリンタが存在しない （またはクライアント側にデフォルトプリンタが存在しない） と，アプリケーションは，通常以下のようなダイアログを表示します．
-「プリンタが組み込まれていません」 という内容のエラーダイアログ サーバ側のプリンタを選択するダイアログ その他警告や情報のダイアログ
-本件は，この 2) のケースに該当します．継続して同じ状況が発生する時は，クライアント側のプリンタフォルダの状態と print.ini を確認し，異常があれば修正して下さい．継続して同じ状況が発生しない場合は，サーバ一時的な障害 （CPUが高負荷，メモリが不足，プロファイルの正常なロードに失敗など） でプリンタの構成が出来なかったことが考えられます．
-ファイル KGTN2011120603.pdf [(61.5 KB)] [kitasp 技術センター, 2011/12/06 16:27]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1206/" class="btn btn-template-main">続きを読む</a>
+2012/02/02*
+[番号] 技術ノート KGTN 2012020202
+[現象] [GGH4.0] クライアント印刷機能を利用しているが，クライアント側でのドキュメント名 （印刷ジョブ名） が文字化けする．
+[説明] GGH4.0.1.Patch4 からは，クライアント側でのドキュメント名 （印刷ジョブ名） が文字化けする問題は解消しております．
+ファイル KGTN2012020202.pdf [(43.2 KB)] [kitasp 技術センター, 2012/02/02 11:23]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1107/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -403,7 +401,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1208/">
+                                      <a href="/posts/new_md/doc1104/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -411,7 +409,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1208/">[GGH4.0] ActiveX Client で画像圧縮を無効にしたい時， URL で何を指定すれば良いのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1104/">SkyPDF for GO-Global は， Windows 7 の環境で動作するのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -424,18 +422,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1208/"><i class="far fa-calendar"></i> 2011-12-05</a>
+                                            <a href="/posts/new_md/doc1104/"><i class="far fa-calendar"></i> 2012-02-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/05*
-[番号] 技術ノート KGTN 2011120504
-[現象] [GGH4.0] ActiveX Client で画像圧縮を無効にしたい時， URL で何を指定すれば良いのか？
-[説明] 以下のように quantize=false を指定することで，画像圧縮機能を無効にすることが出来ます．
-http://hostname/goglobal/logon.html?quantize=false
-ファイル KGTN2011120504.pdf [(48 KB)] [kitasp 技術センター, 2011/12/05 12:39]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1208/" class="btn btn-template-main">続きを読む</a>
+2012/02/02*
+[番号] 技術ノート KGTN 2011031006
+[現象] SkyPDF for GO-Global は， Windows 7 の環境で動作するのか？
+[説明] SkyPDF for GO-Global を開発したスカイコム社から，以下のコメントを得ました．
+インストールはユーザ Administrator で行う． 技術的には Windows 7 の環境で動作するはず． Windows Vista の環境で動作検証を行っているが， Windows 7 の環境では行っていない．
+つまり， 「Windows 7 の環境で動作すると考えられるが，しかし動作を保証するものではない」 ということになります．
+補　足 サーバ側OS Windows Server 2003 R2 ＋ クライアント側OS Windows 7 という環境に限り，従来のサポートサービスの範囲内でサポートするという回答が開発元のスカイコム社よりありました．
+ファイル KGTN2011031006.pdf [(57.4 KB)] [kitasp 技術センター, 2012/02/02 14:36]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1104/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -445,7 +445,7 @@ http://hostname/goglobal/logon.html?quantize=false
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1207/">
+                                      <a href="/posts/new_md/doc1103/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -453,7 +453,7 @@ http://hostname/goglobal/logon.html?quantize=false
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1207/">[GGH4.0] クライアントドライブ機能のファイルコピーの速度は速くなったのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1103/">SkyPDF for GO-Global は，クライアント環境として Windows 7をサポートしているか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -466,17 +466,18 @@ http://hostname/goglobal/logon.html?quantize=false
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1207/"><i class="far fa-calendar"></i> 2011-12-05</a>
+                                            <a href="/posts/new_md/doc1103/"><i class="far fa-calendar"></i> 2012-02-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/05*
-[番号] 技術ノート KGTN 2011120601
-[現象] [GGH4.0] クライアントドライブ機能のファイルコピーの速度は速くなったのか？
-[説明] GGW3.2.1ではファイルコピー処理自体は高速でしたが，そのためにファイルサイズの制限があり，かつネットワーク帯域も多く占有していました．GGH4.0.1ではファイルサイズの制限20MBを超えるファイルをコピー出来るようになり，さらにネットワーク帯域の占有率も下げました．この結果，ファイルコピーのみで見ると速度は低下しました．しかし，ディレクトリ表示等を含めたトータルの体感速度 （操作時の反応） は向上しています．
-ファイル KGTN2011120601.pdf [(51.8 KB)] [kitasp 技術センター, 2011/12/06 08:49]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1207/" class="btn btn-template-main">続きを読む</a>
+2012/02/02*
+[番号] 技術ノート KGTN 2011020902
+[現象] SkyPDF for GO-Global は，クライアント環境として Windows 7をサポートしているか？
+[説明] いいえ， SkyPDF for GO-Global はクライアント環境として Windows Vista までをサポートし， Windows 7 はサポートしておりません （2011年2月9日現在） ．
+補　足 サーバ側OS Windows Server 2003 R2 ＋ クライアント側OS Windows 7 という環境に限り，従来のサポートサービスの範囲内でサポートするという回答が開発元のスカイコム社よりありました．
+ファイル KGTN2011020902.pdf [(50.7 KB)] [kitasp 技術センター, 2012/02/02 14:38]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1103/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -486,7 +487,7 @@ http://hostname/goglobal/logon.html?quantize=false
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1209/">
+                                      <a href="/posts/new_md/doc1105/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -494,7 +495,7 @@ http://hostname/goglobal/logon.html?quantize=false
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1209/">[GGH4.0] ライセンスファイル license.lic に必要なアクセス権は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1105/">Ver4.0系では，クライアントがIPv4とIPv6の両方のアドレスを持つ時， クライアントのIPアドレスを保持する環境変数の値が CLIENTCOMPUTERIPADDRESS = ::1 となる問題は解消されたのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -507,18 +508,21 @@ http://hostname/goglobal/logon.html?quantize=false
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1209/"><i class="far fa-calendar"></i> 2011-12-05</a>
+                                            <a href="/posts/new_md/doc1105/"><i class="far fa-calendar"></i> 2012-02-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/05*
-[番号] 技術ノート KGTN 2011120503
-[現象] [GGH4.0] ライセンスファイル license.lic に必要なアクセス権は？
-[説明] ライセンスファイル license.lic に必要なアクセス許可 （アクセス権） は，次の通りです．
-Administrators フル コントロール Users 読み取りと実行 SYSTEM フル コントロール
-ファイル KGTN2011120503.pdf [(46 KB)] [kitasp 技術センター, 2011/12/05 12:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1209/" class="btn btn-template-main">続きを読む</a>
+2012/02/02*
+[番号] 技術ノート KGTN 2010072808
+[現象] Ver4.0系では，クライアントがIPv4とIPv6の両方のアドレスを持つ時， クライアントのIPアドレスを保持する環境変数の値が &ldquo;CLIENTCOMPUTERIPADDRESS = ::1&rdquo; となる問題は解消されたのか？
+[説明] いいえ，ビルド 4.0.0.7757 では，この問題は解消されておりません．
+補足１ 2011年7月1日現在の状況で，Ver4.1系で修正の予定です．
+Date: Thu, 30 Jun 2011 22:22:56 +0000 (GMT) The target milestone has changed and this is scheduled to be fixed in 4.1.
+補足２ 2011年12月3日現在の状況で，本件は GGH4.0.1 の次のパッチ （リリース時期未定） で対応する予定です． &ldquo;CLIENTCOMPUTERIPADDRESS = ::1&rdquo; となった原因は，DNS問合せでコンピュータ名から自分のIPアドレスを得ていたためです．修正は，GGサーバに接続したソケットから自分のIPアドレスを得る方法で対応します （下記参照） ．この方法により，実際に接続に使用したネットワーク （インタフェース） のIPアドレスが環境変数 CLIENTCOMPUTERIPADDRESS にセットされます．
+補足３ GGH4.0.1.Patch4 で修正されました．サーバ側だけでなくクライアント側のソフトウエアのアップデートも必要です．
+ファイル KGTN2010072808.pdf [(76.1 KB)] [kitasp 技術センター, 2012/02/02 11:53]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1105/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -528,7 +532,7 @@ Administrators フル コントロール Users 読み取りと実行 SYSTEM フ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1210/">
+                                      <a href="/posts/new_md/doc1108/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -536,7 +540,7 @@ Administrators フル コントロール Users 読み取りと実行 SYSTEM フ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1210/">[SFU] Windows Services for UNIX (SFU) の最新バージョンは？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1108/">[AVG] クライアントPCのファイル toolbar_log.txt が継続的に肥大化している．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -549,17 +553,17 @@ Administrators フル コントロール Users 読み取りと実行 SYSTEM フ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1210/"><i class="far fa-calendar"></i> 2011-12-05</a>
+                                            <a href="/posts/new_md/doc1108/"><i class="far fa-calendar"></i> 2012-02-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/05*
-[番号] 技術ノート KGTN 2011120502
-[現象] [SFU] Windows Services for UNIX (SFU) の最新バージョンは？
-[説明] Windows Services for UNIX (SFU) の最終バージョンは 3.5 です．なお， Windows Server 2003 R2, Windows Server 2008以降のWindows OS では， Windows Services for UNIX (SFU) はSubsystem for Unix Application (SUA) へ移行しています．
-ファイル KGTN2011120502.pdf [(50 KB)] [kitasp 技術センター, 2011/12/05 09:31]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1210/" class="btn btn-template-main">続きを読む</a>
+2012/02/01*
+[番号] 技術ノート KGTN 2012020104
+[現象] [AVG] クライアントPCのファイル toolbar_log.txt が継続的に肥大化している．
+[説明] 先ず，GGの動作に絡んだ問題ではありません．これはアンチウイルスソフト AVG の問題で，IEに登録されたAVG のツールバーのoグです．下記のように将来のアップデートで修正されるようですが，それまではAVGのツールバーを削除することで対応して下さい．
+ファイル KGTN2012020104.pdf [(53.3 KB)] [kitasp 技術センター, 2012/02/01 13:04]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1108/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -569,7 +573,7 @@ Administrators フル コントロール Users 読み取りと実行 SYSTEM フ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1211/">
+                                      <a href="/posts/new_md/doc1109/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -577,7 +581,7 @@ Administrators フル コントロール Users 読み取りと実行 SYSTEM フ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1211/">[SFU] Windows Services for UNIX (SFU) の実行環境は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1109/">[GGW3.2.1] GGの新しいビルド （同一バージョン） を多数のサーバへ反映するにはどうすれば良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -590,17 +594,18 @@ Administrators フル コントロール Users 読み取りと実行 SYSTEM フ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1211/"><i class="far fa-calendar"></i> 2011-12-04</a>
+                                            <a href="/posts/new_md/doc1109/"><i class="far fa-calendar"></i> 2012-02-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/04*
-[番号] 技術ノート KGTN 2011120501
-[現象] [SFU] Windows Services for UNIX (SFU) の実行環境は？
-[説明] Windows 上で動作するUNIXライクな環境 Cygwin は Win32 サブシステム上でPOSIX環境をエミュレートしますが，マイクロソフト社が提供するWindows Services for UNIX (SFU) は Win32 とは独立したサブシステムとしてNTカーネル上で動作しPOSIX環境を提供します．
-ファイル KGTN2011120501.pdf [(51.4 KB)] [kitasp 技術センター, 2011/12/05 08:43]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1211/" class="btn btn-template-main">続きを読む</a>
+2012/02/01*
+[番号] 技術ノート KGTN 2012020103
+[現象] [GGW3.2.1] GGの新しいビルド （同一バージョン） を多数のサーバへ反映するにはどうすれば良いか？
+[説明] 完全かつ確実に新しいビルドをインストールするには，やはりGGのインストーラーにその処理を行わせるのが最善の方法です．従って，最も簡単な方法としては以下の手順が考えられます．
+GGのインストーラーを起動し，作業用フォルダに内容物を展開する （注：インストールは行わない） ． CMD.EXE を起動し，その作業用フォルダをカレントディレクトリにする． getlicense.exe をgetlicense.exe_org にリネームする． 同じフォルダに0バイトのファイルを作成しgetlicense.exe にリネームする． コマンド setup.exe -r -f1setup.iss を実行する （注：応答ファイル setup.iss を作成する） ． コマンドsetup.exe -s -f1setup.iss -f2setup.log を実行するバッチを作成する （注：サイレントインストールを行うバッチファイル） ． この作業用フォルダを各GGサーバへ展開する． Windows の at コマンドを使用して，各GGサーバ上でサイレントインストールを行うバッチファイルを実行する．
+ファイル KGTN2012020103.pdf [(60.3 KB)] [kitasp 技術センター, 2012/02/01 11:57]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1109/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -610,7 +615,7 @@ Administrators フル コントロール Users 読み取りと実行 SYSTEM フ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1212/">
+                                      <a href="/posts/new_md/doc1110/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -618,7 +623,7 @@ Administrators フル コントロール Users 読み取りと実行 SYSTEM フ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1212/">[Android] 日本語入力はどのソフトウエアをサポートしているのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1110/">[SSD] SSD (Solid State Drive) を搭載したマシンを利用しているが，体感的にHDD (Hard Disk Drive) よりも遅いことがある．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -631,17 +636,17 @@ Administrators フル コントロール Users 読み取りと実行 SYSTEM フ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1212/"><i class="far fa-calendar"></i> 2011-12-02</a>
+                                            <a href="/posts/new_md/doc1110/"><i class="far fa-calendar"></i> 2012-02-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/02*
-[番号] 技術ノート KGTN 2011120301
-[現象] [Android] 日本語入力はどのソフトウエアをサポートしているのか？
-[説明] iPad Client と同様に Android Client もクライアント側のIME (Input Method Editor) を使用します．Android には多様な IME が存在しますが，それらをすべてGGの　Android Client がサポートすることは困難です．どのIMEをサポートするのか未だ決まっておりませんが，少なくとも ATOK はサポートするだろうと推測しています．
-ファイル KGTN2011120301.pdf [(47.3 KB)] [kitasp 技術センター, 2011/12/03 05:20]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1212/" class="btn btn-template-main">続きを読む</a>
+2012/02/01*
+[番号] 技術ノート KGTN 2012020102
+[現象] [SSD] SSD (Solid State Drive) を搭載したマシンを利用しているが，体感的にHDD (Hard Disk Drive) よりも遅いことがある．
+[説明] 先ず，GGの動作に絡んでマシンが遅くなることはありません．SSD はランダムリードに関しては非常に速いストレージですが，しかしランダムライトに関してはHDDよりも遅い製品が存在します．体感的にHDDよりも遅いということであれば，恐らくこのランダムライトの問題が発生しているものと推測されます．対策としては，デフラグツールを使用して，デフラグを解消することで速度が改善するという報告があります．なお， Windows 標準の 「ディスク デフラグ ツール」 よりも Defraggler 等のサードパーティーの製品が効果が高いようです．
+ファイル KGTN2012020102.pdf [(57 KB)] [kitasp 技術センター, 2012/02/01 09:47]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1110/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -651,7 +656,7 @@ Administrators フル コントロール Users 読み取りと実行 SYSTEM フ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1214/">
+                                      <a href="/posts/new_md/doc1112/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -659,7 +664,7 @@ Administrators フル コントロール Users 読み取りと実行 SYSTEM フ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1214/">[GGH4.0] GGW3.2.1で動作したアプリケーションが全て動作すると考えて良いか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1112/">[GGH4.0] GGW3.2.1からGGH4.0へバージョンアップしたところ，クライアント印刷が出来なくなった．サポートするプリンタの種類に変更があったのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -672,19 +677,19 @@ Administrators フル コントロール Users 読み取りと実行 SYSTEM フ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1214/"><i class="far fa-calendar"></i> 2011-12-02</a>
+                                            <a href="/posts/new_md/doc1112/"><i class="far fa-calendar"></i> 2012-01-31</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/02*
-[番号] 技術ノート KGTN 2011120201
-[現象] [GGH4.0] GGW3.2.1で動作したアプリケーションが全て動作すると考えて良いか？
-[説明] 32ビットの Windows 7 で動作するアプリケーションが 64ビットの Windows 7 で動作しないことがあるように，GGW3.2.1 で動作するアプリケーションが GGH4.0 で動作しないこともあります．逆に， GGW3.2.1 で動作しなかったアプリケーションが GGH4.0 で動作することもあります．
-GGはアプリケーションの挙動を監視し，その内容に応じた動作をクライアント上で再現しますが， GGW3.2.1と GGH4.0 ではアプリケーションの挙動を監視する API (Application Programming Interface) やクライアント上で再現する API が異なり，さらにアプリケーションが呼び出す API の組み合わせには無限のバリエーションがあるため， 「GraphOn社は可能な限りアプリケーションが動作するように努力をしておりますが」 しかしながら動作しなくなるアプリケーションが存在しないとは断言できません．
-補　足 GGの処理としては正しいものの，使用した API の副作用 （仕様外の動作） 等でアプリケーションが動作しないこともあります．
-ファイル KGTN2011120201.pdf [(58.4 KB)] [kitasp 技術センター, 2011/12/02 13:07]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1214/" class="btn btn-template-main">続きを読む</a>
+2012/01/31*
+[番号] 技術ノート KGTN 2012013104
+[現象] [GGH4.0] GGW3.2.1からGGH4.0へバージョンアップしたところ，クライアント印刷が出来なくなった．サポートするプリンタの種類に変更があったのか？
+[説明] GGW3.2.1からGGH4.0になって，クライアント印刷がサポートするプリンタの種類に変更はありません．しかしクライアント印刷の仕組みが大きく変わったため，従来通りの設定では印刷出来ない可能性があります．これ以上のことについては， 「クライアント印刷が出来なくなった」 件についての詳細な情報が必要です．
+補　足 とりあえず，クライアント印刷が出来る環境を確保したいということであれば，以下の手順で試して下さい．
+クライアントPCに Adobe Reader (Acrobat Reader) をインストールする． クラスタマネージャで Client Accress → Printers → Universal Printer Driver をチェックを入れる． アプリケーションの印刷画面でPreview PDF (from ???) を選択する． クライアントPC上にPDFが表示されたら，その中で印刷操作を行う．
+ファイル KGTN2012013104.pdf [(64 KB)] [kitasp 技術センター, 2012/01/31 11:54]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1112/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -694,7 +699,7 @@ GGはアプリケーションの挙動を監視し，その内容に応じた動
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1216/">
+                                      <a href="/posts/new_md/doc1111/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -702,7 +707,7 @@ GGはアプリケーションの挙動を監視し，その内容に応じた動
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1216/">Ver4.0系で特定のプリンタだけ Windows Printer Driver を使用したいが可能か？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1111/">[GGH4.0] Mac OS X Lion の環境に Parallels Desktop 7 for Mac をインストールし，その上で Windows 7 を動かした場合，GGのクライアントは動作するのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -715,19 +720,17 @@ GGはアプリケーションの挙動を監視し，その内容に応じた動
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1216/"><i class="far fa-calendar"></i> 2011-11-30</a>
+                                            <a href="/posts/new_md/doc1111/"><i class="far fa-calendar"></i> 2012-01-31</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/11/30*
-[番号] 技術ノート KGTN 2010072705
-[現象] Ver4.0系で特定のプリンタだけ Windows Printer Driver を使用したいが可能か？
-[説明] プリンタ情報 MappedPrinterDrivers.xml を編集して，サービス &ldquo;GO-Global Application Publishing Service&rdquo; を再起動することで対応可能です．具体的な手順は，以下の通りです．
-MappedPrinterDrivers.xml をTeraPad等のテキストエディタへ開く． 該当するプリンタの項目 Value から &ldquo;;Universal Remote Printer&rdquo; を削除する （下の例では下線の部分） ． MappedPrinterDrivers.xml を上書き保存する． サービス &ldquo;GO-Global Application Publishing Service&rdquo; を再起動する．
-補　足 ユーザが個別に操作するという前提であれば， [Program Window] → [File] → [Printers] → [変更したいプリンタを選択] → [Driver&hellip;] を選択し，表示されるダイアログで下側のラジオボタンをクリックし，その右側のコンボボックスでドライバを選択することで， Windows Printer Driver を使用することが出来ます．
-ファイル KGTN2010072705.pdf [(79.3 KB)] [kitasp 技術センター, 2011/11/30 12:38]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1216/" class="btn btn-template-main">続きを読む</a>
+2012/01/31*
+[番号] 技術ノート KGTN 2012013103
+[現象] [GGH4.0] Mac OS X Lion の環境に Parallels Desktop 7 for Mac をインストールし，その上で Windows 7 を動かした場合，GGのクライアントは動作するのか？
+[説明] Mac OS X Lion + Parallels Desktop 7 for Mac 上で動作する Windows 7 に関しても，GGのクライアントは正しく動作します．下記のスクリーンショットは， Windows 7 上で動作するアプリケーション （IE9 と ActiveXクライアント） をCoherenceモードで Mac OS X Lion のデスクトップに表示しています．
+ファイル KGTN2012013103.pdf [(200 KB)] [kitasp 技術センター, 2012/01/31 15:08]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1111/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -797,7 +800,7 @@ MappedPrinterDrivers.xml をTeraPad等のテキストエディタへ開く． �
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

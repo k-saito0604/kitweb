@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1895/">
+                                      <a href="/posts/new_md/doc1726/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1895/">クライアントドライブ機能を使い，サーバ側からクライアント側へファイルをコピーするとセッションが切れることがある．また，セッションが切れない場合でも，クライアント側でファイルがロックされ削除が出来ない等の現象が発生することもある．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1726/">ActiveXクライアントのインストールに失敗し，インターネット オプションで IEGCtrl Class は表示されるが削除ボタンが押せない状況．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,20 +340,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1895/"><i class="far fa-calendar"></i> 2009-10-20</a>
+                                            <a href="/posts/new_md/doc1726/"><i class="far fa-calendar"></i> 2010-06-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/10/20*
-[番号] 技術ノート KGTN 2009092001
-[現象] クライアントドライブ機能を使い，サーバ側からクライアント側へファイルをコピーするとセッションが切れることがある．また，セッションが切れない場合でも，クライアント側でファイルがロックされ削除が出来ない等の現象が発生することもある．
-[説明] クライアントドライブ機能を使い，サーバ側からクライアント側へファイルをコピーする場合，ファイルサイズが19MBを越えると以下の現象が発生することがあります．
-・ セッションが切断される （SessionVerification = 0 の場合は発生しません）． ・ クライアント側にファイルサイズが0バイトのファイルが作成される． ・ クライアント側にコピーされたファイルがロックされた状態になる． ・ クライアント側にコピーされたファイルの正しいファイルサイズが得られない．
-この問題は，回線速度やファイルの内容 （テキスト・バイナリ） に依存せず，ファイルサイズのみに依存して発生します．ファイルがロックされた場合は，ActiveXクライアントではIEを閉じることで，Windowsクライアントはggw.exeを終了させることでロックが解除されます．
-クライアントドライブ機能でファイルをコピーする場合，FTPのような専用のファイル転送プロトコルでコピーが行われる訳ではなく，Windows内部の低レベルのファイルコピー処理をフックして，サーバとクライアント間でファイルのコピー処理が行われます．このような仕組みにより， Windowsの遅延書き込み機能等の極めて低レベルな処理もGGのセッションの中で行われ，サーバとクライアント間でエラー等のイベントが正常に伝わらず，それぞれが相手方からのイベントを待ち続けて，タイムアウトによるセッション断や継続的なファイルのロックが発生したものと推測されます．
-ファイル KGTN2009092001.pdf [(70.9 KB)] [kitasp 技術センター, 2009/10/21 05:50]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1895/" class="btn btn-template-main">続きを読む</a>
+2010/06/17*
+[番号] 技術ノート KGTN 2010061705
+[現象] ActiveXクライアントのインストールに失敗し，インターネット オプションで IEGCtrl Class は表示されるが削除ボタンが押せない状況．
+[説明] マシンや失敗した状況が分かりませんので，的確なアドバイスはできませんが，とりあえず以下の作業を行って下さい．
+マシンを再起動する． ユーザ Administrator でログオンする． IEGCtrl Class の削除を試みる． GGサーバのページへアクセスし，ActiveXクライアントのインストールを試みる． 状況が改善しないなら，IEを閉じ GGMInfo.exe でActiveXクライアントを削除する． マシンを再起動する． GGサーバのページへアクセスし，ActiveXクライアントのインストールを試みる．
+ファイル KGTN2010061705.pdf [(52.7 KB)] [kitasp 技術センター, 2010/06/17 13:57]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1726/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -363,7 +361,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1896/">
+                                      <a href="/posts/new_md/doc1729/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -371,7 +369,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1896/">Program Window (pw.exe) はログオン時にどんな処理を行っているのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1729/">Windows の System Pages, System Paged Pool, Paged Pool の意味を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -384,20 +382,21 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1896/"><i class="far fa-calendar"></i> 2009-10-15</a>
+                                            <a href="/posts/new_md/doc1729/"><i class="far fa-calendar"></i> 2010-06-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/10/15*
-[番号] 技術ノート KGTN 2009101501
-[現象] Program Window (pw.exe) はログオン時にどんな処理を行っているのか？
-[説明] Program Window （以下PWと略します） の起動時には，以下の処理が行われます．
- グループポリシの適用 ネットワークディバイスのリストア クライアントドライブのマウント ログオンスクリプトの実行 クライアントプリンタの初期化 初期アプリケーションの起動 （指定されている場合のみ）  ログオン処理が完了した時点で，PWはGG本体へ完了通知を送信し，GG本体はその完了通知を受信することで正常にログオンが行われたと判断します（注：PWからの完了通知を1分以内に受信することで正常と判断します）．
-下記の記録がAPSログにある場合は，ログオン処理が１分以内に完了しなかったことを示します．一般的に考えられる原因としては，a) 存在しないネットワークドライブやネットワークプリンタが指定された場合， b) サーバの高負荷やネットワーク障害で上記の処理に通常よりも多くの時間がかかった場合，などがあります．
-The Program Window failed to signal completion of its basic initializations within 1 minute(s)
-ファイル KGTN2009101501.pdf [(63.8 KB)] [kitasp 技術センター, 2009/10/15 11:51]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1896/" class="btn btn-template-main">続きを読む</a>
+2010/06/17*
+[番号] 技術ノート KGTN 2010061701
+[現象] Windows の System Pages, System Paged Pool, Paged Pool の意味を知りたい．
+[説明] これらは Windows のメモリ管理に関連する単語 （またはレジストリのキー） で，マイクロソフト社のサイトで検索しましたが，適切かつ十分な情報は見つかりませんでした．どうしても知りたいということであれば，マイクロソフト社へお問い合せ下さい．なお，関連するマイクロソフト社のページの幾つかを紹介します．
+http://support.microsoft.com/kb/247904/ja ページ アドレス プールとシステム PTE のメモリ領域の設定方法
+http://support.microsoft.com/kb/312362/ja サーバーがシステム ページ プールからメモリを割り当てることができない
+http://technet.microsoft.com/ja-jp/library/aa995755(EXCHG.65).aspx /Userva と SystemPages の構成
+http://technet.microsoft.com/ja-jp/windows/ee424287.aspx Windows の限界に挑む: ページ プールと非ページ プール
+ファイル KGTN2010061701.pdf [(64.6 KB)] [kitasp 技術センター, 2010/06/17 10:47]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1729/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -407,7 +406,7 @@ The Program Window failed to signal completion of its basic initializations with
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1897/">
+                                      <a href="/posts/new_md/doc1725/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -415,7 +414,7 @@ The Program Window failed to signal completion of its basic initializations with
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1897/">ヘルプウィンドウを表示したウインドウを閉じると，下記のように画面描画が崩れる．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1725/">エンタープライズオプションのGMCheck （GMCheckRaw） のセッション情報の取得に時間がかかる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -428,22 +427,23 @@ The Program Window failed to signal completion of its basic initializations with
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1897/"><i class="far fa-calendar"></i> 2009-08-05</a>
+                                            <a href="/posts/new_md/doc1725/"><i class="far fa-calendar"></i> 2010-06-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/08/05*
-[番号] 技術ノート KGTN 2009080501
-[現象] ヘルプウィンドウを表示したウインドウを閉じると，下記のように画面描画が崩れる．
-[説明] 「画面描画が崩れる」 ということが問題ではなく，
- 親ウィンドウをオープン 2) 子ウィンドウをオープン 3) ヘルプウィンドウをオープン 4) 子ウインドウをクリック （選択）  した時に，下記のように子ウインドウが最上位に上がって来ない事が本質的な問題です．
-本件の場合は
-Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnShowHelp.Click &lsquo;&mdash; kitASP &mdash; Help.ShowHelp(Nothing, &ldquo;C:¥WINDOWS¥Help¥ieeula.chm&rdquo;) Help.ShowHelp(New Control(), &ldquo;C:¥WINDOWS¥Help¥ieeula.chm&rdquo;) &lsquo;&mdash; End Sub
-と修正し，子ウインドウが選択された時に最上位に上がって来るようにします．この修正により，「画面描画が崩れる」 という現象は解消します．
-一般に，GO-Global for Windows は標準的なウインドウ管理を前提として最適化されておりますので，特殊なウインドウ管理 （本件の場合は選択されても最上位に上がって来ない） を行うとその前提が崩れ，結果的に画面が乱れることがあります．
-ファイル KGTN2009080501.pdf [(867 KB)] [kitasp 技術センター, 2009/08/05 09:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1897/" class="btn btn-template-main">続きを読む</a>
+2010/06/17*
+[番号] 技術ノート KGTN 2010061801
+[現象] エンタープライズオプションのGMCheck （GMCheckRaw） のセッション情報の取得に時間がかかる．
+[説明] GMCheck はセッション情報を収集する時に，クライアントのIPアドレスからホスト名を得ようとします （逆引き） ．参照しているネームサーバ （DNS） がこの問い合わせに応答しない場合， GMCCheck はタイムアウト時間が経過するまで待ちますので，結果的にセッション情報の取得に時間がかかります．対応方法としては，
+逆引きを正しく設定する． ダミーのサーバを用意し 「存在しない」 という回答を返す．
+等が考えられます．
+参　考 逆引きの状況の確認には，コマンド nslookup をGGサーバ上で実行して下さい．
+逆引きがある場合 名前:
+逆引きが無い場合 &hellip; Non-existent domain
+逆引きの応答がない場合 &hellip; No response from server
+ファイル KGTN2010061801.pdf [(72.4 KB)] [kitasp 技術センター, 2010/06/18 07:18]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1725/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -453,7 +453,7 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2589/">
+                                      <a href="/posts/new_md/doc1730/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -461,7 +461,7 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2589/">[GGW3.2/GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc1730/">認証局Thawte の 「CA ルート証明書」 を入手する方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -474,21 +474,19 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2589/"><i class="far fa-calendar"></i> 2009-06-10</a>
+                                            <a href="/posts/new_md/doc1730/"><i class="far fa-calendar"></i> 2010-06-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/06/10*
-[番号] 技術ノート KGTN 2009060902
-[現象] [GGW3.2/GGH4.X-5.X] GO-Global for Windows のバージョン情報の詳細を知りたい．
-[説明] GO-Global for Windowsは，
-[メジャー番号] . [マイナー番号] . [サービスパック] . [ビルド]
-という複数の番号で一意的に識別され，ソフトウエアが管理されています．メジャー番号　は内部構造の主要な変更を指し，マイナー番号 は内部構造の主要な変更はないものの主要な機能の追加や変更を指します．サービスパック は小規模な仕様の変更や累積的なバグ修正を指します．一般的な意味でのソフトウエアのバージョン番号は，
-[メジャー番号] . [マイナー番号] . [サービスパック]
-までで，弊社の製品出荷もこのバージョン番号を基本として行います．出荷のタイミングによって，同一バージョン内で細かな修正等が行われた場合は，同一バージョン番号で ビルド が異なることがあります．
-ファイル KGTN2009060902.pdf [(63.6 KB)] [kitasp 技術センター, 2016/05/27 11:55]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2589/" class="btn btn-template-main">続きを読む</a>
+2010/06/16*
+[番号] 技術ノート KGTN 2010061603
+[現象] 認証局Thawte の 「CA ルート証明書」 を入手する方法は？
+[説明] 認証局Thawte は，下記のページで 「CA ルート証明書」 を配布しています （2010年6月16日現在） ．
+https://www.thawte.com/roots/
+このページで名前・会社名・メールアドレス・電話番号を入力し，利用条件に同意すると （Accept ボタンをクリックすると） ，各 「CA ルート証明書」 を含んだファイル thawte-roots.zip をダウンロードすることができます．
+ファイル KGTN2010061603.pdf [(50.4 KB)] [kitasp 技術センター, 2010/06/16 12:59]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1730/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -498,7 +496,7 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1899/">
+                                      <a href="/posts/new_md/doc1731/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -506,7 +504,7 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1899/">Windowsの修正プログラムを適用したいが，もし適用した場合サポートされるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1731/">電子証明書 （xxx.CER） の状態に 「この証明書は有効期限切れかまだ有効ではありません。」 とある．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -519,17 +517,17 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1899/"><i class="far fa-calendar"></i> 2009-06-10</a>
+                                            <a href="/posts/new_md/doc1731/"><i class="far fa-calendar"></i> 2010-06-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/06/10*
-[番号] 技術ノート KGTN 2009060901
-[現象] Windowsの修正プログラムを適用したいが，もし適用した場合サポートされるのか？
-[説明] GO-Global for Windows は，マイクロソフト社が 「完全にテストを行った修正プログラム」 つまり 更新プログラム のみをサポートします．それ以前の修正プログラム （Hotfix） は，マイクロソフト社による完全なテストが行なわれていないため，GraphOn社および弊社は互換性やインストールに関し何らかの問題が発生してもサポートを行うことは出来ません．自己責任で適用する場合も，マイクロソフト社の情報 「運用環境への適用を行う前に、検証環境での十分なテストと、データのバックアップを採取することを強くお勧めいたします」 に従って作業をなさることを強くお勧めします．
-ファイル KGTN2009060901.pdf [(56.3 KB)] [kitasp 技術センター, 2009/06/10 09:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1899/" class="btn btn-template-main">続きを読む</a>
+2010/06/16*
+[番号] 技術ノート KGTN 2010061602
+[現象] 電子証明書 （xxx.CER） の状態に 「この証明書は有効期限切れかまだ有効ではありません。」 とある．
+[説明] GraphOn社および弊社は製品として xxx.CER というファイル （証明書） は配布しておりません．配布していないファイルについてお問い合せを頂いてもお答えすることは出来ませんが，内容を見たところ 「証明書のパス」 に GraphOn Corporation が最上位に位置しており，異常な証明書です．正しい証明書は， GraphOn Corporation の上位に認証局 （CA） が存在します．
+ファイル KGTN2010061602.pdf [(68.5 KB)] [kitasp 技術センター, 2010/06/16 10:34]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1731/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -539,7 +537,7 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1898/">
+                                      <a href="/posts/new_md/doc1732/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -547,7 +545,7 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1898/">修正プログラム（例：KB956807）を GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1732/">電子証明書の詳細に 「失効状態: 失効サーバーがオフラインのため、失効の関数は失効を確認できませんでした。」 という情報がある．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -560,17 +558,17 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1898/"><i class="far fa-calendar"></i> 2009-06-10</a>
+                                            <a href="/posts/new_md/doc1732/"><i class="far fa-calendar"></i> 2010-06-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/06/10*
-[番号] 技術ノート KGTN 2009040701
-[現象] 修正プログラム（例：KB956807）を GO-Global サーバへ適用して構わないか？
-[説明] 修正プログラムの情報の中に 「この修正プログラムは、ここで説明する問題が発生しているシステムにのみ適用してください。この修正プログラムは、今後さらにテストを行う場合があります。したがって、この問題で深刻な影響を受けていない場合は、この修正プログラムが含まれる次のソフトウェア更新プログラムがリリースされるまで待つことを推奨します」 とあるものは，動作保証も如何なる情報の提供も出来ません．ソフトウェア更新プログラムがリリースされた段階で，GraphOn社より互換性情報および （必要であれば） 互換アップデートが提供されます．
-ファイル KGTN2009040701.pdf [(55.6 KB)] [kitasp 技術センター, 2009/06/10 09:21]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1898/" class="btn btn-template-main">続きを読む</a>
+2010/06/16*
+[番号] 技術ノート KGTN 2010061601
+[現象] 電子証明書の詳細に 「失効状態: 失効サーバーがオフラインのため、失効の関数は失効を確認できませんでした。」 という情報がある．
+[説明] IE の設定で 「サーバーの証明書失効を確認する」 の項目が有効になっており，かつその環境からインターネットへの接続が制限されている場合に，お問い合せの情報が表示されます．インターネットへの接続を許可するか，または 「サーバーの証明書失効を確認する」 の項目を無効にして下さい （参考：KGTN#2010061501） ．
+ファイル KGTN2010061601.pdf [(132 KB)] [kitasp 技術センター, 2010/06/16 10:11]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1732/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -580,7 +578,7 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1900/">
+                                      <a href="/posts/new_md/doc1734/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -588,7 +586,7 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1900/">セッションのシャドウイングを行おうとすると，以下のエラーメッセージが表示される</a></h2>
+                                    <h2><a href="/posts/new_md/doc1734/">ActiveXクライアント （ggw-activex.cab） の置き換えの手順を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -601,17 +599,17 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1900/"><i class="far fa-calendar"></i> 2009-05-14</a>
+                                            <a href="/posts/new_md/doc1734/"><i class="far fa-calendar"></i> 2010-06-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/05/14*
-[番号] 技術ノート KGTN 2009051401
-[現象] セッションのシャドウイングを行おうとすると，以下のエラーメッセージが表示される： &ldquo;The version of your client is not compatible with the versions of the other clients that are connected to this session.&rdquo;
-[説明] セッションのシャドウイングを行う場合，GO-Global for Windows サーバと各クライアントのビルド番号が一致していることが必要です．このエラーメッセージはビルド番号が一致していないことを示していますので，GO-Global for Windows サーバと各クライアントのバージョンが一致するように，バージョンアップ等を行って下さい．
-ファイル KGTN2009051401.pdf [(45.5 KB)] [kitasp 技術センター, 2009/05/14 11:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1900/" class="btn btn-template-main">続きを読む</a>
+2010/06/15*
+[番号] 技術ノート KGTN 2010061502
+[現象] ActiveXクライアント （ggw-activex.cab） の置き換えの手順を知りたい．
+[説明] 特別な手順はなく，単にファイルの上書きコピーを行って下さい．もし電子証明書絡みのメッセージ等が表示された場合は，IE側の設定に起因していると考えられますので，システムの管理者またはマイクロソフト社へお問い合せ下さい．なお，ActiveXクライアント （ggw-activex.cab） は，特別な処理等は行っておらず，一般的なActiveXコントロールの枠組みに従って実装されております．
+ファイル KGTN2010061502.pdf [(52 KB)] [kitasp 技術センター, 2010/06/15 09:57]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1734/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -621,7 +619,7 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1901/">
+                                      <a href="/posts/new_md/doc1733/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -629,7 +627,7 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1901/">GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1733/">GG上のアプリケーションで，クライアントドライブ上のデータファイルを開き編集を行い，上書き保存して良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -642,18 +640,18 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1901/"><i class="far fa-calendar"></i> 2009-05-08</a>
+                                            <a href="/posts/new_md/doc1733/"><i class="far fa-calendar"></i> 2010-06-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/05/08*
-[番号] 技術ノート KGTN 2009042801
-[現象] GO-Global for Windows は，本当にターミナルサービスを利用していないのか？
-[説明] ターミナルサービスはコアエンジンによってその機能が提供されますが，その構成要素である termsrv.dllを削除すると，下記のスクリーンショットのようにリモートデスクトップ接続ではアクセス出来なくなります （Windows Server 2008 の例） ．しかし，この環境でもGO-Global クライアントは削除前と同様に正常にアクセス出来て，かつ登録されたアプリケーションを利用することができます．このことから，GO-Global for Windows はターミナルサービスを利用していないことが分かります．
-参　考 termsrv.dll ? 「すべてのターミナル サービス機能およびリモートデスクトップ機能に必要となる、中心的なターミナル サーバーのサービス」 を提供するシステムファイルです．
-ファイル KGTN2009042801.pdf [(145 KB)] [kitasp 技術センター, 2009/05/08 13:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1901/" class="btn btn-template-main">続きを読む</a>
+2010/06/15*
+[番号] 技術ノート KGTN 2010061503
+[現象] GG上のアプリケーションで，クライアントドライブ上のデータファイルを開き編集を行い，上書き保存して良いか？
+[説明] アプリケーションのファイルの読み書きの処理とデータファイルのサイズに依存します．アプリケーションがデータファイルを１度だけ読み書きを行い，かつデータファイルのサイズが小さければ，現実的に可能だと思います．データファイルのサイズが大きければ，アプリケーションのファイルの読み書きに時間がかかりますので運用上現実的ではないと思います．また，データファイルのサイズが小さくても，アプリケーションがデータファイルを何度も繰り返して読み書きを行う場合は，頻繁にサーバとクライアント間でデータの転送が行われますので，恐らく運用上現実的ではないと思います．これらのケースでは，以下の方法の適用が考えられます．
+GGサーバから直接アクセス可能なフォルダへデータファイルをコピー コピーしたデータファイルをアプリケーションで編集&amp;保存 編集後のデータファイルをクライアントへ書き戻し
+ファイル KGTN2010061503.pdf [(53.6 KB)] [kitasp 技術センター, 2010/06/15 11:40]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1733/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -663,7 +661,7 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1904/">
+                                      <a href="/posts/new_md/doc1736/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -671,7 +669,7 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1904/">アンチウイルスソフトをインストールするタイミングが分からない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1736/">IE （Internet Explorer） が電子証明書の失効リストをチェックしないようにしたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -684,19 +682,18 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1904/"><i class="far fa-calendar"></i> 2009-04-30</a>
+                                            <a href="/posts/new_md/doc1736/"><i class="far fa-calendar"></i> 2010-06-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/04/30*
-[番号] 技術ノート KGTN 2009043001
-[現象] アンチウイルスソフトをインストールするタイミングが分からない．
-[説明] アンチウイルスソフトはさまざまな製品やバージョンがありますので，ここでは原則的な考え方のみをご説明します．
-アンチウイルスソフトはシステム全体に影響を与える可能性がありますので，問題が発生した場合 「何が原因か？」 ということを切り分け易いように，1) GO-Global for Windowsサーバを全て構築，2) 動作が正しいことを確認，3) アンチウイルスソフトをインストール， 4) サーバ単体での最終動作確認 を行います．ステップ4で問題が発生した場合は，アンチウイルスソフトによって引き起こされた可能性が高いので，これに関連しそうな部分を重点的に調査します．
-参　考 アンチウイルスソフトのウイルススキャン等によってアプリケーションの起動や動作が遅くなった場合は，当該アプリケーションをウイルススキャンから除外する等のチューニングを行います．
-ファイル KGTN2009043001.pdf [(56.7 KB)] [kitasp 技術センター, 2009/04/30 14:39]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1904/" class="btn btn-template-main">続きを読む</a>
+2010/06/15*
+[番号] 技術ノート KGTN 2010061501
+[現象] IE （Internet Explorer） が電子証明書の失効リストをチェックしないようにしたい．
+[説明] 電子証明書の失効リストは CRL （Certificate Revocation Lists） とも呼ばれ，CA局が発行する 「破棄された」証明書のリストです．インターネットへのアクセスが制限されている環境では，この失効リストへアクセスできないため， IE が失効リストをチェックしないようにする必要があります （注： チェックした場合，警告が表示されたり，その証明書に関連するサイトへのアクセスが遅くなります） ．この設定は，IE8では下記の項目のチェックを入れないようにします．
+IE → ツール → インターネット オプション → 詳細設定 → セキュリティ → サーバーの証明書失効を確認する
+ファイル KGTN2010061501.pdf [(107 KB)] [kitasp 技術センター, 2010/06/15 09:06]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1736/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -706,7 +703,7 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1903/">
+                                      <a href="/posts/new_md/doc1737/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -714,7 +711,7 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1903/">ウエッブサーバ用のロードバランサの死活監視機能（TCP/IPレベル）を利用して良いか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1737/">GGのプラグイン LaunchBrowser で障害が発生した場合の切り分けは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -727,20 +724,17 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1903/"><i class="far fa-calendar"></i> 2009-04-30</a>
+                                            <a href="/posts/new_md/doc1737/"><i class="far fa-calendar"></i> 2010-06-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/04/30*
-[番号] 技術ノート KGTN 2009050101
-[現象] ウエッブサーバ用のロードバランサの死活監視機能（TCP/IPレベル）を利用して良いか？
-[説明] 現在の GO-Global for Windows の仕様として，ロードバランサの死活監視機能（TCP/IPレベル）の利用を想定しておりません．従って，このような死活監視を行われた場合，その結果や GO-Global for Windows の動作について如何なる保証もサポートも行いません．GO-Global for Windows サーバの監視を行う場合は，
-ロードバランサの死活監視機能 （ICMPレベル）， &ldquo;GO-Global Application Publishing Service&rdquo; の監視 （サービスレベル） エンタープライズオプションのGMCheckによる監視 （プロトコルレベル）
-の何れかを行って下さい．
-参　考 GraphOn社にロードバランサの死活監視機能（TCP/IPレベル）のサポートを依頼しておりますが，実装の可能性および実装の時期については未定です．従って，現時点ではこれを前提としたシステム設計等は行わないようにして下さい．
-ファイル KGTN2009050101.pdf [(56.1 KB)] [kitasp 技術センター, 2009/05/01 07:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1903/" class="btn btn-template-main">続きを読む</a>
+2010/06/14*
+[番号] 技術ノート KGTN 2010061404
+[現象] GGのプラグイン LaunchBrowser で障害が発生した場合の切り分けは？
+[説明] 高機能なプラグインではありませんので，もし障害が発生するとすれば，クライアント側のブラウザ起動の周辺だと考えられます．イベントログ （アプリケーション） に，ブラウザを起動するコマンドライン （CreateProcessの第2引数） と，エラー発生時には GetLastError の値が記録されます．
+ファイル KGTN2010061404.pdf [(135 KB)] [kitasp 技術センター, 2010/06/14 13:38]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1737/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -810,7 +804,7 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

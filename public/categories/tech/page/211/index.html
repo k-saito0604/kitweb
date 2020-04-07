@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1387/">
+                                      <a href="/posts/new_md/doc1262/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1387/">PAE （Physical Address Extension） を使用するとセッション数 （同時利用ユーザ数） は増えるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1262/">[Tool] GGNetworkCheck で以下のエラーが記録された．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,18 +340,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1387/"><i class="far fa-calendar"></i> 2011-05-09</a>
+                                            <a href="/posts/new_md/doc1262/"><i class="far fa-calendar"></i> 2011-10-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/05/09*
-[番号] 技術ノート KGTN 2011050901
-[現象] PAE （Physical Address Extension） を使用するとセッション数 （同時利用ユーザ数） は増えるのか？
-[説明] PAE はメモリが素直に増える仕組みではなく，従来のバンクセレクトのように4GBを超える部分のメモリをページ管理し，要求に応じて切り替える仕組みです．これに加え，システムのメモリ空間は2GBままですので （PAEはユーザのメモリ空間のみ機能します） ，セッション数が増えることは残念ながら期待できません．
-参　考 この件に関するGraphOn社のコメントを以下に引用します．
-I reviewed the Capacity Planning Guide and spoke with developer so I would be sure to give you accurate information. You are right that enabling the PAE option will not increase the number of concurrent sessions that can be hosted from a server if System PTEs or Paged Pool is the limiting resource.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1387/" class="btn btn-template-main">続きを読む</a>
+2011/10/19*
+[番号] 技術ノート KGTN 2011101903
+[現象] [Tool] GGNetworkCheck で以下のエラーが記録された．
+C:¥&gt; GGNetworkCheck -c [2011-10-14 11:17:43] INFO: socket(&lsquo;210.196.131.146&rsquo;,&lsquo;7492&rsquo;) -&gt; Connected [2011-10-14 11:17:43] Test#1 CL@11:17:43 -&gt; [2011-10-14 11:17:43] [2011-10-14 11:17:48] Test#1 CL@11:17:48 -&gt; [2011-10-14 11:17:48] ERROR: recv(&lsquo;210.196.131.146&rsquo;,&lsquo;7492&rsquo;) -&gt; Failed
+[説明] 最初の行に Connected と記録されていることから， 210.196.131.146:7492 上で動作するプログラムと接続したことが分ります．次の行で GGNetworkCheck のPINGを送信していますが，最後の行で受信に失敗，つまり相手 （サーバ） が応答を返さなかったことを示しています．接続出来ているにもかかわらず，PINGの応答が無いということは， 210.196.131.146:7492 上で動作するプログラムは GGNetworkCheck 以外のプログラムで，GGのAPS （GGの待ち受けポート） だと推測されます． GGNetworkCheck は，ネットワーク障害を他に依存することなく検出出来るように，サーバ側およびクライアント側それぞれで GGNetworkCheck を使用します．詳細は，技術ノート KGTN#2011030201 をご覧下さい．
+ファイル KGTN2011101903.pdf [(64 KB)] [kitasp 技術センター, 2011/10/19 11:40]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1262/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -361,7 +361,7 @@ I reviewed the Capacity Planning Guide and spoke with developer so I would be su
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1388/">
+                                      <a href="/posts/new_md/doc2208/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -369,7 +369,7 @@ I reviewed the Capacity Planning Guide and spoke with developer so I would be su
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1388/">PW （Program Window） を使用しない運用で，セッションが落ちたり ctfmon.exe が終了したりする．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2208/">[GGH4.X-5.X] クラスタマネージャの Minimum available physical memory の意味は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -382,17 +382,20 @@ I reviewed the Capacity Planning Guide and spoke with developer so I would be su
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1388/"><i class="far fa-calendar"></i> 2011-05-06</a>
+                                            <a href="/posts/new_md/doc2208/"><i class="far fa-calendar"></i> 2011-10-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/05/06*
-[番号] 技術ノート KGTN 2011050601
-[現象] PW （Program Window） を使用しない運用で，セッションが落ちたり ctfmon.exe が終了したりする．
-[説明] この問題は，実行するアプリケーションの作り （設計） に依存して発生することがあります．最初に起動されるプログラムを main.exe ，次に起動されるプログラムを sub.exe とした場合， main.exe が sub.exe を起動する時にCreateProcess 関数をコールし直ちに終了すると， sub.exe が完全に起動する前に 「実行中のプログラムが存在しない時間」 が発生します．GGはこの状態を全てのアプリケーションが終了したと認識し，セッションやctfmon.exe を終了させます．このような場合は， main.exe が sub.exe の起動を確認し，その後に終了するようにして下さい．
-ファイル KGTN2011050601.pdf [(55.9 KB)] [kitasp 技術センター, 2011/05/06 09:56]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1388/" class="btn btn-template-main">続きを読む</a>
+2011/10/14*
+[番号] 技術ノート KGTN 2011101402
+[現象] [GGH4.X-5.X] クラスタマネージャの Minimum available physical memory の意味は？
+[説明] 利用可能な物理メモリが Minimum available physical memory の値よりも少ない場合および極めて近い場合，新たなセッションの生成が禁止されます （ログオン時に &ldquo;Logon failed. Physical memory requirement as not met.&rdquo; のエラーダイアログが表示されます） ．表面上はログオン時の物理メモリの管理に関する設定ですが，運用上は存在するセッションが利用出来る物理メモリを確保する （減らさないようにする） ための設定となります．従って，サーバが不安定等の現象が発生した場合は，「この値を2倍・4倍に増やす」　「32MB・64MB・128MB増やす」 等を試してみる価値があります．
+補　足 利用可能な物理メモリがMinimum available physical memory の値に近い場合，ログオン時に &ldquo;Connection failed. The server could not create a new session.&rdquo;　のエラーダイアログが表示されることがあります．
+ファイル KGTN2011101402.pdf [(94.6 KB)] [kitasp 技術センター, 2017/02/22 16:44]
+KGTN2011101402.jpg
+表示 [(11.7 KB)] [kitasp 技術センター, 2017/02/22 16:44]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2208/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -402,7 +405,7 @@ I reviewed the Capacity Planning Guide and spoke with developer so I would be su
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2588/">
+                                      <a href="/posts/new_md/doc2207/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -410,7 +413,7 @@ I reviewed the Capacity Planning Guide and spoke with developer so I would be su
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2588/">[GGW3.2.1/GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2207/">[GGH4.X-5.X] クラスタマネージャの Minimum available virtual memory の意味は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -423,22 +426,18 @@ I reviewed the Capacity Planning Guide and spoke with developer so I would be su
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2588/"><i class="far fa-calendar"></i> 2011-04-28</a>
+                                            <a href="/posts/new_md/doc2207/"><i class="far fa-calendar"></i> 2011-10-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/04/28*
-[番号] 技術ノート KGTN 2010092803
-[現象] [GGW3.2.1/GGH4.X-5.X] あるアプリケーションを起動すると常駐プロセスが生成され，アプリケーション終了後もそのプロセスが存在するため，セッションがいつまでも終了しない．
-[説明] 常駐プロセスをGGのシステムプロセスとして登録することで，そのプロセスをセッション終了の条件から除外することが出来ます （つまりそのプロセスが存在していても，他の条件が満たされればセッションが終了する） ．設定方法は，以下のレジストリにプロセスのファイル名 （.EXE） を指定します．
-[GGW3.2.1の場合] HKLMSOFTWAREGraphOnBridges1.0.0SystemProcesses REG_DWORD 0
-[GGH4.X-5.Xの場合] HKLMSOFTWAREGraphOnGO-GlobalSystemProcesses REG_DWORD 0
-下記の例では JpnIME.exe が常駐してセッションが終了しないため，この JpnIME.exe を登録します．
-ファイル KGTN2010092803.pdf [(98.5 KB)] [kitasp 技術センター, 2016/05/27 12:02]
-KGTN2010092803.jpg
-表示 [(23.9 KB)] [kitasp 技術センター, 2016/05/27 12:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2588/" class="btn btn-template-main">続きを読む</a>
+2011/10/14*
+[番号] 技術ノート KGTN 2011101403
+[現象] [GGH4.X-5.X] クラスタマネージャの Minimum available virtual memory の意味は？
+[説明] （合計仮想メモリに対する） 利用可能な仮想メモリの比率が Minimum available virtual memory の値よりも小さい場合および極めて近い場合，新たなセッションの生成が禁止されます （ログオン時に &ldquo;Logon failed. Virtual memory requirement as not met.&rdquo; のエラーダイアログが表示されます） ．表面上はログオン時の仮想メモリの管理に関する設定ですが，運用上は存在するセッションが利用出来る仮想メモリを確保する （減らさないようにする） ための設定となります．従って，サーバが不安定等の現象が発生した場合は，この値を 5%・10%・20%・etc&hellip; 増やして試す価値があります．
+補　足 例えば， Minimum available virtual memory の値が10%の場合は，利用可能な仮想メモリが合計仮想メモリの10%を切ったら，ログオンさせないという意味になります．合計仮想メモリと利用可能な仮想メモリの値は，以下のスクリプトで得ることが出来ます．
+strComputer = &ldquo;.&rdquo; Set objWMIService = GetObject(&ldquo;winmgmts:&rdquo; _ &amp; &ldquo;{impersonationLevel=impersonate}!&rdquo; &amp; strComputer &amp; &ldquo;rootcimv2&rdquo;) Set colSettings = objWMIService.ExecQuery _ (&ldquo;Select * from Win32_OperatingSystem&rdquo;) For Each objOperatingSystem in colSettings Wscript.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2207/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -448,7 +447,7 @@ KGTN2010092803.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1389/">
+                                      <a href="/posts/new_md/doc1266/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -456,7 +455,7 @@ KGTN2010092803.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1389/">クライアントのデスクトップのスクリーンショットを撮るためExcelのマクロ機能でプリントスクリーンのイベントを発生させたが，正しい画像がキャプチャーされない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1266/">[GGW3.2.1] クラスタマネージャの Minimum available physical memory の意味は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -469,20 +468,18 @@ KGTN2010092803.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1389/"><i class="far fa-calendar"></i> 2011-04-27</a>
+                                            <a href="/posts/new_md/doc1266/"><i class="far fa-calendar"></i> 2011-10-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/04/27*
-[番号] 技術ノート KGTN 2011042701
-[現象] クライアントのデスクトップのスクリーンショットを撮るためExcelのマクロ機能でプリントスクリーンのイベントを発生させたが，正しい画像がキャプチャーされない．
-[説明] クライアントの物理的な Print Screen キーを押下した場合は， 「GGのクライアントが」 クライアント上のデスクトップのスクリーンショットを撮ります．
-サーバ上で動作するExcel のマクロ機能でプリントスクリーンのイベントを発生させた場合は，サーバ側でスクリーンショットを撮ることになりますので，当然のことながらクライアントのデスクトップのスクリーンショットを撮ることは出来ません （これはGGの仕様です） ．従って，クライアントのデスクトップのスクリーンショットを撮りたい場合は，マクロで
-「Print Screen キーを押下して下さい．その後，このボタンをクリックして下さい」 というダイアログを表示 クリップボードから画像 （クライアントのデスクトップのスクリーンショット） をコピー
-という処理を行って下さい．なお，クライアント側のクリップボードをサーバ側で参照出来るように，クラスタマネージャで Server Option → Client Access → Clipboard を有効にする必要があります．
-ファイル KGTN2011042701.pdf [(56 KB)] [kitasp 技術センター, 2011/04/27 13:39]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1389/" class="btn btn-template-main">続きを読む</a>
+2011/10/14*
+[番号] 技術ノート KGTN 2011101304
+[現象] [GGW3.2.1] クラスタマネージャの Minimum available physical memory の意味は？
+[説明] 利用可能な物理メモリが Minimum available physical memory の値よりも少ない場合および極めて近い場合，新たなセッションの生成が禁止されます （ログオン時に &ldquo;Logon failed. Physical memory requirement as not met.&rdquo; のエラーダイアログが表示されます） ．表面上はログオン時の物理メモリの管理に関する設定ですが，運用上は存在するセッションが利用出来る物理メモリを確保する （減らさないようにする） ための設定となります．従って，サーバが不安定等の現象が発生した場合は，「この値を2倍・4倍に増やす」　「32MB・64MB・128MB増やす」 等を試してみる価値があります．
+補　足 利用可能な物理メモリがMinimum available physical memory の値に近い場合，ログオン時に &ldquo;Connection failed. The server could not create a new session.&rdquo;　のエラーダイアログが表示されることがあります．
+ファイル KGTN2011101304.pdf [(63.1 KB)] [kitasp 技術センター, 2011/10/14 09:44]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1266/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -492,7 +489,7 @@ KGTN2010092803.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1390/">
+                                      <a href="/posts/new_md/doc1267/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -500,7 +497,7 @@ KGTN2010092803.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1390/">ActiveXクライアントは，IE9の環境で利用できるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1267/">[GGW3.2.1] クラスタマネージャの Minimum available virtual memory の意味は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -513,18 +510,18 @@ KGTN2010092803.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1390/"><i class="far fa-calendar"></i> 2011-04-26</a>
+                                            <a href="/posts/new_md/doc1267/"><i class="far fa-calendar"></i> 2011-10-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/04/26*
-[番号] 技術ノート KGTN 2011042601
-[現象] ActiveXクライアントは，IE9の環境で利用できるのか？
-[説明] 下記の環境で試したところ，特に問題無くGGサーバへ接続することが出来ました．
-Windows 7 Professional （32bit） + IE9 （9.0.8112.16421） Windows Server 2008 Enterprise (32bit) + IE9 （9.0.8112.16421）
-ファイル KGTN2011042601.pdf [(50.1 KB)] [kitasp 技術センター, 2011/04/26 12:00]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1390/" class="btn btn-template-main">続きを読む</a>
+2011/10/14*
+[番号] 技術ノート KGTN 2011101305
+[現象] [GGW3.2.1] クラスタマネージャの Minimum available virtual memory の意味は？
+[説明] 利用可能な仮想メモリが Minimum available virtual memory の値よりも少ない場合および極めて近い場合，新たなセッションの生成が禁止されます （ログオン時に &ldquo;Logon failed. Virtual memory requirement as not met.&rdquo; のエラーダイアログが表示されます） ．表面上はログオン時の仮想メモリの管理に関する設定ですが，運用上は存在するセッションが利用出来る仮想メモリを確保する （減らさないようにする） ための設定となります．従って，サーバが不安定等の現象が発生した場合は，この値を2倍・4倍に増やす，32MB・64MB・128MB・256MB・512MB増やす，等を試してみる価値があります．
+補　足 利用可能な仮想メモリのサイズは，以下のスクリプトで得ることが出来ます．
+strComputer = &ldquo;.&rdquo; Set objWMIService = GetObject(&ldquo;winmgmts:&rdquo; _ &amp; &ldquo;{impersonationLevel=impersonate}!¥¥&rdquo; &amp; strComputer &amp; &ldquo;¥root¥cimv2&rdquo;) Set colSettings = objWMIService.ExecQuery _ (&ldquo;Select * from Win32_OperatingSystem&rdquo;) For Each objOperatingSystem in colSettings Wscript.Echo &ldquo;Available Virtual Memory : &quot; &amp; _ objOperatingSystem.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1267/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -534,7 +531,7 @@ Windows 7 Professional （32bit） + IE9 （9.0.8112.16421） Windows Server 200
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1392/">
+                                      <a href="/posts/new_md/doc1265/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -542,7 +539,7 @@ Windows 7 Professional （32bit） + IE9 （9.0.8112.16421） Windows Server 200
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1392/">[GGW3.2.1] GGをバージョンアップしたところ，下記のプログラムを実行するとターゲットのウインドウではなく，別のウインドウにメッセージが表示される．ターゲットのウインドウは，タイトル about:blank で空な状態になる．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1265/">[GGW3.2.1] ログオン時に ctfmon.exe というプログラムが起動されるが何なのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -555,18 +552,17 @@ Windows 7 Professional （32bit） + IE9 （9.0.8112.16421） Windows Server 200
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1392/"><i class="far fa-calendar"></i> 2011-04-22</a>
+                                            <a href="/posts/new_md/doc1265/"><i class="far fa-calendar"></i> 2011-10-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/04/22*
-[番号] 技術ノート KGTN 2011032401
-[現象] [GGW3.2.1] GGをバージョンアップしたところ，下記のプログラムを実行するとターゲットのウインドウではなく，別のウインドウにメッセージが表示される．ターゲットのウインドウは，タイトル about:blank で空な状態になる．
-[説明] GGW3.2.1 + IE6 の環境ではこのような現象が発生しますが， GGW3.2.1 + IE7 の環境では発生しません．これはIE6以降のブラウザに対応したためで，技術的な制約でIE6ではこのような現象が発生します．お手数をお掛けして申し訳ありませんが，IE7へのバージョンアップをお願いします．なお，IE6の利用が必須な場合は，例えば以下のようにプログラムを修正することで， GGW3.2.1 + IE6 の環境でも従来と同じように表示させることが出来ます．
-補　足 プログラムの処理によっては， GGW3.2.1 + IE7 の環境でも空なウインドウが表示される場合があります． IE7の処理とGGのウインドウ管理の絡みで発生する問題と考えられ， GGW3.2.1 + IE8 の環境では正常にウインドウが表示されます．なお，本検証で使用した環境は Windows Server 2003 SP2 + IE8 (8.0.6001.18702) です．
-ファイル KGTN2011032401.pdf [(78.3 KB)] [kitasp 技術センター, 2011/04/22 10:59]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1392/" class="btn btn-template-main">続きを読む</a>
+2011/10/14*
+[番号] 技術ノート KGTN 2011101401
+[現象] [GGW3.2.1] ログオン時に ctfmon.exe というプログラムが起動されるが何なのか？
+[説明] ctfmon.exe は Microsoft Text Services で， 「ユーザー入力テクノロジをサポートするテキスト入力サービスを提供」 する機能を担っています．日本語入力の環境を整えるために， （GGのシステムが） ログオン時にこのctfmon.exe を自動的に起動しています．
+ファイル KGTN2011101401.pdf [(49.3 KB)] [kitasp 技術センター, 2011/10/14 10:14]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1265/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -576,7 +572,7 @@ Windows 7 Professional （32bit） + IE9 （9.0.8112.16421） Windows Server 200
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1393/">
+                                      <a href="/posts/new_md/doc1264/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -584,7 +580,7 @@ Windows 7 Professional （32bit） + IE9 （9.0.8112.16421） Windows Server 200
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1393/">[CASE#23867] 特定のAjaxを使用するアプリケーションで，時々ウインドウ描画等で反応が遅くなる．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1264/">[WS2008] Windows Server 2008 の環境で，ログオンスクリプトの実行が大きく遅延する．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -597,22 +593,19 @@ Windows 7 Professional （32bit） + IE9 （9.0.8112.16421） Windows Server 200
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1393/"><i class="far fa-calendar"></i> 2011-04-21</a>
+                                            <a href="/posts/new_md/doc1264/"><i class="far fa-calendar"></i> 2011-10-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/04/21*
-[番号] 技術ノート KGTN 2011042101
-[現象] [CASE#23867] 特定のAjaxを使用するアプリケーションで，時々ウインドウ描画等で反応が遅くなる．
-[説明] GraphOn社に類似の事例がないか問い合わせたところ，下記の回答が届きました．
-I have not heard of this issue. Would you be able to provide the application so I can reproduce it here?
-GraphOn社に当該アプリケーションを公開する作業を行っておりますが，GraphOn社へ提供する情報を収集・解析する作業の中で以下のことが分かりました．
-描画が止まっているように見える事象は，実際には 「少し動いて停止する」 ような動作を繰り返しています． この状況で， Program Window やローカルの Notepad 等のウインドウを 「最小化→復元」 の操作を行うことで，止まったように見える事象が正常に戻ります．
-IE を実行するプロセッサの関係を１つのプロセッサに限定することで，止まったように見える事象は発生しません．直接 IE を起動せずに，弊社作成の GGAffinity プログラムを介して IE を起動することで，プロセッサを１つに限定させ，その結果止まったように見える事象を回避することが可能です．
-アプリケーションがイベント待ち等で止まっているのであれば，実行中にプロセスのダンプを採取することで原因を調べることが出来ますが，本件は 「少し動いて停止する」 ような動作を繰り返していますので，原因に直接結びつく情報の採取が困難で，様々な方法を試行錯誤している状況です．
-ファイル KGTN2011042101.pdf [(77 KB)] [kitasp 技術センター, 2011/04/21 12:45]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1393/" class="btn btn-template-main">続きを読む</a>
+2011/10/14*
+[番号] 技術ノート KGTN 2011101404
+[現象] [WS2008] Windows Server 2008 の環境で，ログオンスクリプトの実行が大きく遅延する．
+[説明] この現象は弊社で確認しており，現在調査中です．ログオンスクリプト中でプロセス （プログラム） を起動する部分を start コマンドで行うことにより，この現象が解消します．以下に例を示します．
+・現象が発生するログオンスクリプト echo off notepad exit
+・現象が発生しないログオンスクリプト echo off start notepad exit
+ファイル KGTN2011101404.pdf [(52.5 KB)] [kitasp 技術センター, 2011/10/14 12:36]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1264/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -622,7 +615,7 @@ IE を実行するプロセッサの関係を１つのプロセッサに限定�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1394/">
+                                      <a href="/posts/new_md/doc1271/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -630,7 +623,7 @@ IE を実行するプロセッサの関係を１つのプロセッサに限定�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1394/">移動ユーザープロファイルの格納先として，分散ファイルシステムのレプリケーション （DFS</a></h2>
+                                    <h2><a href="/posts/new_md/doc1271/">[GGH4.0] 17ページの印刷物を50部印刷したところ，8部印刷したところでコネクションが切れた．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -643,17 +636,18 @@ IE を実行するプロセッサの関係を１つのプロセッサに限定�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1394/"><i class="far fa-calendar"></i> 2011-04-20</a>
+                                            <a href="/posts/new_md/doc1271/"><i class="far fa-calendar"></i> 2011-10-13</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/04/20*
-[番号] 技術ノート KGTN 2011042001
-[現象] 移動ユーザープロファイルの格納先として，分散ファイルシステムのレプリケーション （DFS-R） 対象フォルダを指定して構わないか？
-[説明] これは，GGではなくWindows一般の問題です．マイクロソフト社の情報によれば， 「頻繁にファイルの書き込み・更新・ロック等が発生するファイルを持つフォルダをDFS-R対象に配置した場合，予期せぬ競合によるファイルの消失等の障害事例が多数報告されているため，推奨していない」 とのことです．
-ファイル KGTN2011042001.pdf [(53.9 KB)] [kitasp 技術センター, 2011/04/20 16:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1394/" class="btn btn-template-main">続きを読む</a>
+2011/10/13*
+[番号] 技術ノート KGTN 2011101301
+[現象] [GGH4.0] 17ページの印刷物を50部印刷したところ，8部印刷したところでコネクションが切れた．
+[説明] GG環境で印刷を行う場合，全ページがプリンタに出力されるまでコネクションが維持される必要があります．従って，ページ数が多いドキュメント等を印刷するケースでは，回線が安定していないとコネクションの切断等が発生し，その結果として印刷のトラブルが発生します．本件のケースでは，以下の手順で印刷することによりコネクションの切断等の影響を最小限に抑えることが出来ます．
+印刷ダイアログで出力先プリンタとして &ldquo;Preview PDF (from ???)&rdquo; を選択する． クライアント上にPDFファイルが表示されるのを待つ． PDFを表示した Adobe Reader のメニューの中の &ldquo;印刷&rdquo; を選択する． 表示された印刷ダイアログで，出力先プリンタおよび部数を設定して印刷を実行する．
+ファイル KGTN2011101301.pdf [(57.5 KB)] [kitasp 技術センター, 2011/10/13 09:51]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1271/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -663,7 +657,7 @@ IE を実行するプロセッサの関係を１つのプロセッサに限定�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1395/">
+                                      <a href="/posts/new_md/doc1268/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -671,7 +665,7 @@ IE を実行するプロセッサの関係を１つのプロセッサに限定�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1395/">[GGW3.2] 無操作時間経過に伴うアイドル時間のカウントが働かないことがある．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1268/">[Network] 実効速度3Mbpsの回線で，何セッション利用できるか知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -684,20 +678,17 @@ IE を実行するプロセッサの関係を１つのプロセッサに限定�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1395/"><i class="far fa-calendar"></i> 2011-04-15</a>
+                                            <a href="/posts/new_md/doc1268/"><i class="far fa-calendar"></i> 2011-10-13</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/04/15*
-[番号] 技術ノート KGTN 2011041501
-[現象] [GGW3.2] 無操作時間経過に伴うアイドル時間のカウントが働かないことがある．
-[説明] これは，ある案件の特定のデータセンターに設置されているGGサーバで発生した問題です．ユーザ様からは 「これはGGのバグだ」 という連絡でしたが，弊社での再現試験および多くのユーザ様の環境で現象が発生しなことから，特定環境に依存した現象だと考えました．GGのパラメタ等を調整しましたが，現象は改善しないため，GraphOn社にレポートを送りました．
-GraphOn社からは 「常識的には考えられない現象なので，診断情報を採取するプログラムを作成するので，その環境で情報を採取して欲しい」 という提案があり，そのプログラムの完成を待って試験を行いました．採取した情報をGraphOn社で分析したところ， Windows のイベント WM_TIMER がGG側へ通知されていないことが分かり，GGの問題でないことが判明しました．
-ユーザ様はGGの問題でないことをご理解なさった上で， 「GG側で何か対策をとることはできないか？」 というご依頼がありましたので，弊社ではGraphOn社に WM_TIMER を使用しないカウントダウンの方法を提案し，GraphOn社では試験等を含めすべてユーザ様責任で弊社が提案した処理を実装しました．仕様変更されたプログラムの完成を待ってユーザ様の環境で試験したところ，カウントダウンは想定通り正常に動作しました．
-この仕様変更は，最終的に ggw-3.2.1.4446 に取り込まれております．以下は，この件に関するリリースノートの情報です．
-When there is no mouse cursor on the window of the GO-Global client, the &ldquo;session timeout&rdquo; countdown stops. On some systems, logon&rsquo;s session event processor does not get the WM_TIMER message, so the dialog is not updated with the correct time. Instead of using the WM_TIMER message, we now create a thread that will sleep for the necessary tick count and then post our own message to the dialog.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1395/" class="btn btn-template-main">続きを読む</a>
+2011/10/13*
+[番号] 技術ノート KGTN 2011101303
+[現象] [Network] 実効速度3Mbpsの回線で，何セッション利用できるか知りたい．
+[説明] １つのセッションが使用する帯域幅は，アプリケーションの処理の内容，操作内容，操作の速さ等に依存するため，一般論として 「約○○bps使用」 と決めることは出来ません．従って，実際の運用に近いシナリオで操作を行い，１つのセッションが使用する帯域幅を求めて下さい．なお，計測時の操作者がアプリケーションの操作に不慣れな場合，画面の変化が緩やかになり，１つのセッションが使用する帯域幅が下がります （マクロ等で操作をシミュレートする場合は，逆に帯域幅が上がることがあります） ．できる限り，運用時と同じ速度で操作が出来る人を選んで下さい．１つのセッションが使用するおおよその帯域幅が分れば， 「実効速度÷１つのセッションが使用する帯域幅」 で目安となるセッション数が分ります．
+ファイル KGTN2011101303.pdf [(57.8 KB)] [kitasp 技術センター, 2011/10/13 10:43]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1268/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -707,7 +698,7 @@ When there is no mouse cursor on the window of the GO-Global client, the &ldquo;
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1396/">
+                                      <a href="/posts/new_md/doc1270/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -715,7 +706,7 @@ When there is no mouse cursor on the window of the GO-Global client, the &ldquo;
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1396/">[GGW3.2] GGは全ての Windows Update をサポートするのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1270/">[Network] 理論値11Mbpsの回線で，何セッション利用できるか知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -728,17 +719,17 @@ When there is no mouse cursor on the window of the GO-Global client, the &ldquo;
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1396/"><i class="far fa-calendar"></i> 2011-04-12</a>
+                                            <a href="/posts/new_md/doc1270/"><i class="far fa-calendar"></i> 2011-10-13</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/04/12*
-[番号] 技術ノート KGTN 2011041201
-[現象] [GGW3.2] GGは全ての Windows Update をサポートするのか？
-[説明] いいえ． IE （Internet Explorer） のメニューの中の Windows Update をクリックして選択される 「優先度の高い更新プログラム」 のみがサポートの対象で，マイクロソフト社が特定ユーザ向けに配布するホットフィックス等はサポート対象外となります （注： GraphOn社はそのようなホットフィックスの入手やインストールは出来ません） ．
-ファイル KGTN2011041201.pdf [(51.7 KB)] [kitasp 技術センター, 2011/04/12 11:17]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1396/" class="btn btn-template-main">続きを読む</a>
+2011/10/13*
+[番号] 技術ノート KGTN 2011101302
+[現象] [Network] 理論値11Mbpsの回線で，何セッション利用できるか知りたい．
+[説明] 通信回線の理論値の速度と実効速度は様々な要因が影響し，多くの場合乖離しますので， 「何セッション利用できるか」 と尋ねられても，ざっくりとした値でも提示することは出来ません．従って，実際の環境で実効速度を計測することが必要不可欠です．なお，実効速度は時間帯等によって大きく変動することがありますので，その辺のことも十分に考慮して下さい．計測した時の実効速度は速かったが，実際に利用する時間帯の実効速度は遅かったという事例もあります．
+ファイル KGTN2011101302.pdf [(55.7 KB)] [kitasp 技術センター, 2011/10/13 10:14]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1270/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -808,7 +799,7 @@ When there is no mouse cursor on the window of the GO-Global client, the &ldquo;
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc158/">
+                                      <a href="/posts/new_md/doc86/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc158/">[Windows] Windows Server 2003 のサーバーをリプレイスするが，新サーバーへプリンタードライバーを移す方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc86/">[Windows] WS2008R2で IE のエラーが発生したが，ダンプファイルの採取方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,23 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc158/"><i class="far fa-calendar"></i> 2014-11-21</a>
+                                            <a href="/posts/new_md/doc86/"><i class="far fa-calendar"></i> 2015-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/11/21*
-[番号] 技術ノート KGTN 2014112101
-[現象] [Windows] Windows Server 2003 のサーバーをリプレイスするが，新サーバーへプリンタードライバーを移す方法は？
-[説明] Microsoft Print Migrator 3.1 （以下 MPM と省略） を入手し，以下の手順で作業を行って下さい．
- 現サーバー上で MPM を起動し Actions → Backup でプリンタードライバー等をバックアップする． 生成された CAB ファイルを新サーバーへコピーする． 新サーバー上で MPM を起動し Actions → Restore でプリンタードライバー等をリストアする． ※リストア時に上記２の CAB ファイルを指定する．  ファイル KGTN2014112101.pdf [(59.5 KB)] [kitasp 技術センター, 2014/11/21 16:42]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc158/" class="btn btn-template-main">続きを読む</a>
+2015/06/11*
+[番号] 技術ノート KGTN 2015021001
+[現象] [Windows] WS2008R2で IE のエラーが発生したが，ダンプファイルの採取方法は？
+[説明] レジストリに以下の設定を行うことで 「ユーザー モード プロセス ダンプ」 を採取することが出来ます．
+HKLMSOFTWAREMicrosoftWindowsWindows Error ReportingLocalDumps DumpFolder REG_EXPAND_SZ C:DumpFiles DumpCount REG_DWORD 10 (The maximum number of dump files) DumpType REG_DWORD 2 (Full dump)
+詳細については，下記ページをご覧下さい．
+https://msdn.microsoft.com/ja-jp/library/windows/desktop/bb787181.aspx Collecting User-Mode Dumps
+https://msdn.microsoft.com/en-us/library/windows/desktop/bb513638%28v=vs.85%29.aspx WER Settings
+ファイル KGTN2015021001.pdf [(70.6 KB)] [kitasp 技術センター, 2015/06/11 17:10]
+KGTN2015021001.jpg
+表示 [(70.4 KB)] [kitasp 技術センター, 2015/06/17 16:44]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc86/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +366,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc168/">
+                                      <a href="/posts/new_md/doc123/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +374,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc168/">[GGH4.X] Windowsクライアントを使用しているが，拡張パックの pdfprint.exe (GGPdfPrint) をインストールする手順は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc123/">[Windows] WS2012R2のインストールの応答ファイルで，パーティションのサイズを 「ディスクの残り全部」 にする方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,19 +387,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc168/"><i class="far fa-calendar"></i> 2014-11-14</a>
+                                            <a href="/posts/new_md/doc123/"><i class="far fa-calendar"></i> 2015-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/11/14*
-[番号] 技術ノート KGTN 2014111401
-[現象] [GGH4.X] Windowsクライアントを使用しているが，拡張パックの pdfprint.exe (GGPdfPrint) をインストールする手順は？
-[説明] サーバー側とクライアント側，それぞれで作業を行って頂く必要があります．先ず，拡張パックのActiveXクライアント gg-activex.cab をダブルクリックし， pdfprint.exe と pdfprint.ini を選択し，それを作業フォルダへコピー （ドラッグ＆ドロップ） して下さい．
-[サーバー側] &lt;GGのインストールフォルダ&gt;UpdatesWindows に pdfprint.exe と pdfprint.ini を上書きコピーして下さい．この作業は，GGの再インストールやアップグレードを行った時も必ず行って下さい．この作業が行われない場合は，GGのクライアント自動更新機能により標準の pdfprint.exe に戻ることになります．
-[クライアント側] &lt;GGクライアントのインストールフォルダ&gt;Client に pdfprint.exe と pdfprint.ini を上書きコピーして下さい．この作業は，GGの再インストールやアップグレードを行った時も原則として行って下さい （注： GGのクライアント自動更新機能でインストールすることも出来ますが，少なくとも再インストールの直後は標準の pdfprint.exe に戻ります） ．
-ファイル KGTN2014111401.pdf [(58.5 KB)] [kitasp 技術センター, 2014/11/14 16:20]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc168/" class="btn btn-template-main">続きを読む</a>
+2015/06/11*
+[番号] 技術ノート KGTN 2015030201
+[現象] [Windows] WS2012R2のインストールの応答ファイルで，パーティションのサイズを 「ディスクの残り全部」 にする方法は？
+[説明] 下記のように CreatePartition で Extend = true を指定して下さい．
+&lt;DiskConfiguration&gt; &lt;WillShowUI&gt;OnError&lt;/WillShowUI&gt; &lt;Disk wcm:action=&quot;add&quot;&gt; &lt;DiskID&gt;0&lt;/DiskID&gt; &lt;WillWipeDisk&gt;true&lt;/WillWipeDisk&gt; &lt;CreatePartitions&gt; &lt;CreatePartition wcm:action=&quot;add&quot;&gt; &lt;Order&gt;1&lt;/Order&gt; &lt;Size&gt;350&lt;/Size&gt; &lt;Type&gt;Primary&lt;/Type&gt; &lt;/CreatePartition&gt; &lt;CreatePartition wcm:action=&quot;add&quot;&gt; &lt;Order&gt;2&lt;/Order&gt; &lt;Extend&gt;true&lt;/Extend&gt; &lt;Type&gt;Primary&lt;/Type&gt; &lt;/CreatePartition&gt; &lt;/CreatePartitions&gt;  https://technet.microsoft.com/ja-jp/library/dd744365%28v=ws.10%29.aspx?f=255&amp;MSPPError=-2147217396 Windows SIM を使用して BIOS ベースのハード ディスク パーティションを作成する
+ファイル KGTN2015030201.pdf [(67.3 KB)] [kitasp 技術センター, 2015/06/11 17:29]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc123/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -403,7 +408,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc169/">
+                                      <a href="/posts/new_md/doc76/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -411,7 +416,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc169/">[GGH4.X] 標準のActiveXクライアントから拡張パックのActiveXクライアントへ切り替える手順は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc76/">[Windows] リモート管理ツール PsExec で，コマンド dir C: を実行させたが 「指定されたファイルが見つかりません」 と表示される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -424,20 +429,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc169/"><i class="far fa-calendar"></i> 2014-11-14</a>
+                                            <a href="/posts/new_md/doc76/"><i class="far fa-calendar"></i> 2015-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/11/14*
-[番号] 技術ノート KGTN 2014111301
-[現象] [GGH4.X] 標準のActiveXクライアントから拡張パックのActiveXクライアントへ切り替える手順は？
-[説明] サーバー側とクライアント側，それぞれで作業を行って頂く必要があります．
-[サーバー側] 標準のActiveXクライアント &lt;GGのインストールフォルダ&gt;Webpluginsgg-activex.cab を，拡張パックのActiveXクライアントで置き換えて下さい．GGサーバーとログオン用ウエッブサーバーを分離している場合は，ログオン用ウエッブサーバー上の標準のActiveXクライアントを置き換えて下さい．
-[クライアント側] IE のインターネットオプションで標準のActiveXクライアントを削除して下さい．
- [ツール] → [インターネットオプション] → [プログラム] → [アドオンの管理] [表示] を &ldquo;すべてのアドオン&rdquo; に設定 [名前] の中の &ldquo;GO-Global 4&rdquo; をダブルクリック [削除] をクリック &ldquo;ユーザーアカウント制御&rdquo; のダイアログで [はい] をクリック &ldquo;詳細情報&rdquo; のダイアログで [閉じる] をクリック &ldquo;アドオンの管理&rdquo; のダイアログで [閉じる] をクリック &ldquo;インターネットオプション&rdquo; のダイアログで [OK] をクリック  この後に一旦 IE を閉じて，通常のログオンの手順で操作を行って下さい．拡張パックのActiveXクライアントのダウンロードとインストールが行われます．上記４で削除ボタンをクリックすることが出来ない場合は， IE を閉じて GGAXDelete4G （ActiveXクライアントの削除ツール） を使って，ActiveXクライアントを削除して下さい．
-ファイル KGTN2014111301.pdf [(63.6 KB)] [kitasp 技術センター, 2014/11/14 16:16]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc169/" class="btn btn-template-main">続きを読む</a>
+2015/06/11*
+[番号] 技術ノート KGTN 2015030902
+[現象] [Windows] リモート管理ツール PsExec で，コマンド dir C: を実行させたが 「指定されたファイルが見つかりません」 と表示される．
+[説明] dir コマンドはコマンド・プロンプトの内部コマンドであるため， PsExec で直接実行しようとするとファイル （コマンド） が見つかりません．コマンド・プロンプトの内部コマンドを実行したい場合は，以下のようにコマンド・プロンプトを介して実行して下さい．
+cmd.exe /c &ldquo;内部コマンド&rdquo;
+ファイル KGTN2015030902.pdf [(58.1 KB)] [kitasp 技術センター, 2015/06/11 17:34]
+KGTN2015030902.jpg
+表示 [(53.3 KB)] [kitasp 技術センター, 2015/06/18 13:48]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc76/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -447,7 +452,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2602/">
+                                      <a href="/posts/new_md/doc74/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -455,7 +460,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2602/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc74/">[Windows] リモート管理ツール PsExec で，サーバーの再起動を含むバッチ処理を実行したところ，再起動後も PsExec が終了しない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -468,17 +473,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2602/"><i class="far fa-calendar"></i> 2014-11-09</a>
+                                            <a href="/posts/new_md/doc74/"><i class="far fa-calendar"></i> 2015-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/11/09*
-[番号] 技術ノート KGTN 2014102703
-[現象] [GGH4.X-5.X] APSログとは，どのような情報を記録したログなのか？
-[説明] APSログは Application Publishing Service （アプリケーション配信サービス） のログで，レベル４を指定することで，セッションが突然切断された等の障害を解析する時に必要となる情報 （環境情報・システム情報・セッション情報など） が記録されております．この情報は主にGraphOn社および弊社が利用することを前提としており，サポート依頼時には障害発生時を含むAPSログ （ファイル） を必ずお送りください．なお，APSログは，標準設定でフォルダ &lt;GGのインストールフォルダー&gt;Log に作成されます．
-ファイル KGTN2014102703.pdf [(67.1 KB)] [kitasp 技術センター, 2016/04/08 17:16]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2602/" class="btn btn-template-main">続きを読む</a>
+2015/06/11*
+[番号] 技術ノート KGTN 2015030904
+[現象] [Windows] リモート管理ツール PsExec で，サーバーの再起動を含むバッチ処理を実行したところ，再起動後も PsExec が終了しない．
+[説明] PsExec のオプション ?d を指定して，アプリケーションの終了を待たないようにして下さい．
+ファイル KGTN2015030904.pdf [(48.5 KB)] [kitasp 技術センター, 2015/06/11 17:35]
+KGTN2015030904.jpg
+表示 [(25.1 KB)] [kitasp 技術センター, 2015/06/18 13:57]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc74/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -488,7 +495,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc173/">
+                                      <a href="/posts/new_md/doc75/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -496,7 +503,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc173/">[GGH4.X] GGのセッションは SSL 3.0 の脆弱性 「POODLE」 の影響はあるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc75/">[Windows] リモート管理ツール PsExec で，複数のコマンドを続けて実行したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -509,17 +516,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc173/"><i class="far fa-calendar"></i> 2014-11-09</a>
+                                            <a href="/posts/new_md/doc75/"><i class="far fa-calendar"></i> 2015-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/11/09*
-[番号] 技術ノート KGTN 2014110401
-[現象] [GGH4.X] GGのセッションは SSL 3.0 の脆弱性 「POODLE」 の影響はあるのか？
-[説明] GGのセッションは SSL 2.0 を使用しておりますので，脆弱性 POODLE （Padding Oracle On Downgraded Legacy Encryption） の影響はありません．なお，GGのVer.5から TLS 1.2 がサポートされる見込みです．
-ファイル KGTN2014110401.pdf [(46.4 KB)] [kitasp 技術センター, 2014/11/09 16:30]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc173/" class="btn btn-template-main">続きを読む</a>
+2015/06/11*
+[番号] 技術ノート KGTN 2015030903
+[現象] [Windows] リモート管理ツール PsExec で，複数のコマンドを続けて実行したい．
+[説明] 複数のコマンドを &amp; で区切り，その文字列をコマンド・プロンプトに渡して下さい．
+ファイル KGTN2015030903.pdf [(53.2 KB)] [kitasp 技術センター, 2015/06/11 17:35]
+KGTN2015030903.jpg
+表示 [(54.9 KB)] [kitasp 技術センター, 2015/06/18 13:49]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc75/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -529,7 +538,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc174/">
+                                      <a href="/posts/new_md/doc77/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -537,7 +546,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc174/">[GGH4.X] IE8 でActiveXクライアントを使用する場合の操作 （ダウンロード関連） は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc77/">[Windows] リモート管理ツール PsExec を利用したいが，管理対象のサーバーで必要なネットワーク設定は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -550,21 +559,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc174/"><i class="far fa-calendar"></i> 2014-11-09</a>
+                                            <a href="/posts/new_md/doc77/"><i class="far fa-calendar"></i> 2015-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/11/09*
-[番号] 技術ノート KGTN 2014102801
-[現象] [GGH4.X] IE8 でActiveXクライアントを使用する場合の操作 （ダウンロード関連） は？
-[説明] １．GGのウエッブサーバにアクセスし， 「&lsquo;GO-Global&rsquo; アドオンをインストールしようとしています」 というメッセージが表示されたら，そのメッセージの領域 （黄色い部分） をクリックします．
-２．「このコンピューター上のすべてのユーザーにこのアドオンをインストールする」 というメッセージが表示されたら，そのメッセージの部分をクリックします．
-３．プログラム名 GO-Global の 「ユーザー アカウント制御」 のダイアログが表示されたら， 「はい」 をクリックします．
-４．名前 GO-Global の 「Internet Explorer セキュリティ」 のダイアログが表示されたら， 「許可する」 をクリックします．
-５．GGのActiveXクライアントがダウンロードされ起動されると，下記のようにGGのログオンダイアログが表示されます．
-ファイル KGTN2014102801.pdf [(191 KB)] [kitasp 技術センター, 2014/11/09 16:15]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc174/" class="btn btn-template-main">続きを読む</a>
+2015/06/11*
+[番号] 技術ノート KGTN 2015030901
+[現象] [Windows] リモート管理ツール PsExec を利用したいが，管理対象のサーバーで必要なネットワーク設定は？
+[説明] &ldquo;セキュリティが強化された Windows ファイアウォール&rdquo; 画面で，グループが &ldquo;リモートサービス管理&rdquo; の受信の規則すべてを 「有効化」 して下さい （下記の赤枠の部分） ．
+ファイル KGTN2015030901.pdf [(130 KB)] [kitasp 技術センター, 2015/06/11 17:33]
+KGTN2015030901.jpg
+表示 [(88.3 KB)] [kitasp 技術センター, 2015/06/18 13:46]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc77/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -574,7 +581,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc176/">
+                                      <a href="/posts/new_md/doc128/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -582,7 +589,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc176/">[GGH4.X] IE8 ～ IE11 でActiveXクライアントを使用する場合の 「インターネット オプション」 の設定は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc128/">[Windows] 物理マシンへ Windows (WS2008R2やWS2012R2) を無人インストールする方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -595,21 +602,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc176/"><i class="far fa-calendar"></i> 2014-11-09</a>
+                                            <a href="/posts/new_md/doc128/"><i class="far fa-calendar"></i> 2015-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/11/09*
-[番号] 技術ノート KGTN 2014102701
-[現象] [GGH4.X] IE8 ～ IE11 でActiveXクライアントを使用する場合の 「インターネット オプション」 の設定は？
-[説明] IE のバージョンにより画面の内容が若干異なりますが，以下の内容を参考に設定を行って下さい．
-１．インターネットオプションを開きます．
-２．インターネットゾーンのセキュリティのレベルを 「中高」 に設定します．
-必要に応じて 「レベルのカスタマイズ」 ボタンをクリックして，下記赤枠の通りに設定されているかどうか確認してください．
-３．インターネットゾーンのプライバシーを「中」に設定します．
-ファイル KGTN2014102701.pdf [(522 KB)] [kitasp 技術センター, 2014/11/09 16:09]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc176/" class="btn btn-template-main">続きを読む</a>
+2015/06/11*
+[番号] 技術ノート KGTN 2015022503
+[現象] [Windows] 物理マシンへ Windows (WS2008R2やWS2012R2) を無人インストールする方法は？
+[説明] 以下の手順で，Windows (WS2008R2やWS2012R2) の無人インストールを行うことが出来ます．
+ Windows System Image Manager で応答ファイルを作成する． 応答ファイルを Autounattend.xml というファイル名でUSBディスクのルートに保存する． サーバーに WindowsのインストールDVDと上記のUSBディスクをセットする． サーバーを起動する．  https://msdn.microsoft.com/ja-jp/library/hh824950.aspx Windows セットアップの自動化の概要
+ファイル KGTN2015022503.pdf [(55.2 KB)] [kitasp 技術センター, 2015/06/11 17:24]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc128/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -619,7 +623,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc175/">
+                                      <a href="/posts/new_md/doc129/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -627,7 +631,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc175/">[GGH4.X] IE9 ～ IE11 でActiveXクライアントを使用する場合の操作 （ダウンロード関連） は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc129/">[Windows] 英語版の Windows Server 2012 R2 の初期インストールおよび sysprep に使える応答ファイルのサンプルが欲しい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -640,21 +644,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc175/"><i class="far fa-calendar"></i> 2014-11-09</a>
+                                            <a href="/posts/new_md/doc129/"><i class="far fa-calendar"></i> 2015-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/11/09*
-[番号] 技術ノート KGTN 2014102702
-[現象] [GGH4.X] IE9 ～ IE11 でActiveXクライアントを使用する場合の操作 （ダウンロード関連） は？
-[説明] IE のバージョンにより画面の内容が若干異なりますが，以下の内容を参考に操作を行って下さい．
-１．GGのウエッブサーバにアクセスし， 「アドオン &lsquo;GO-Global&rsquo; をインストールしようとしています」 というメッセージが表示されたら 「インストール」 をクリックします．
-２．プログラム名 GO-Global の 「ユーザー アカウント制御」 のダイアログが表示されたら， 「はい」 をクリックします．
-３．名前 GO-Global の 「Internet Explorer セキュリティ」 のダイアログが表示されたら， 「許可する」 をクリックします．
-４．GGのActiveXクライアントがダウンロードされ起動されると，下記のようにGGのログオンダイアログが表示されます．
-ファイル KGTN2014102702.pdf [(146 KB)] [kitasp 技術センター, 2014/11/09 16:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc175/" class="btn btn-template-main">続きを読む</a>
+2015/06/11*
+[番号] 技術ノート KGTN 2015022502
+[現象] [Windows] 英語版の Windows Server 2012 R2 の初期インストールおよび sysprep に使える応答ファイルのサンプルが欲しい．
+[説明] 以下に，英語版の Windows Server 2012 R2 の初期インストールおよび sysprep に使える応答ファイルのサンプルを示します．なお，この内容についての助言は歓迎しますが，質問等はご遠慮下さい．
+ファイル KGTN2015022502.pdf [(76.6 KB)] [kitasp 技術センター, 2015/06/11 17:23]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc129/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -664,7 +664,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc146/">
+                                      <a href="/posts/new_md/doc131/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -672,7 +672,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc146/">[GGH4.X] 拡張パックの pdfprint.exe (GGPdfPrint) とはどんなツールなのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc131/">[GGH4.X] 使用しているGGのバージョンを知る方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -685,27 +685,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc146/"><i class="far fa-calendar"></i> 2014-11-09</a>
+                                            <a href="/posts/new_md/doc131/"><i class="far fa-calendar"></i> 2015-01-30</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/11/09*
-[番号] 技術ノート KGTN 2014103101
-[現象] [GGH4.X] 拡張パックの pdfprint.exe (GGPdfPrint) とはどんなツールなのか？
-[説明] UPDで生成されたPDFファイルは，クライアント側の pdfprint.exe でプリンターへ出力 （印刷） されます．GGに添付される pdfprint.exe はVeryPDF社の製品で，プリンターへ出力するという標準的な機能のみを提供します．弊社開発の pdfprint.exe (GGPdfPrint) は Adobe Reader を印刷エンジンとして使用し，GGの利用環境を意識した柔軟な機能を提供します．また，カラー/白黒・両面印刷等の設定は，クライアント側のプリンターの設定値がそのまま適用されます．
-pdfprint.exe (GGPdfPrint) の動作は設定ファイル pdfprint.ini の内容によって決まりますが，この設定ファイルを各ユーザーの　&ldquo;マイ ドキュメント&rdquo;　にコピーし修正することで，ユーザー毎に異なる動作をさせることが可能です （注：マイドキュメントに設定ファイルが無い場合は， pdfprint.exe と同じフォルダーにある設定ファイルが使用されます） ．設定ファイルの内容は，以下の通りです．
-2014年11月現在，標準の設定 （viewerPath とviewerArg2） で動作を確認しているプログラムは Adobe Reader XI です． Adobe Reader の動作状況 （起動・印刷・終了） の認識は，プログラムの動作に強く依存しておりますので，他バージョンでの動作は保証することが出来ません．
-設定ファイル 設定ファイル pdfprint.ini の default セクションで，以下のパラメーターを設定して下さい．
-設定項目
-説明
-logLevel
-ログの出力レベル （通常は0で，障害の調査時は4を指定）
-workTime
-印刷処理のタイムアウト時間 （既定値は60秒） ※タイムアウト発生時に延長確認のダイアログが表示されます．
-viewerPath
-Adobe Reader の本体のフルパス （既定値は &ldquo;.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc146/" class="btn btn-template-main">続きを読む</a>
+2015/01/30*
+[番号] 技術ノート KGTN 2015013001
+[現象] [GGH4.X] 使用しているGGのバージョンを知る方法は？
+[説明] プログラムウインドウ （Program Windows） → Help を選択することで，ご利用中のGGのバージョン情報等が表示されます．下記の赤枠の部分の上段がサーバー側のバージョンで，下段がクライアント側のバージョンです．サーバー側のバージョンとクライアント側のバージョンの差違により問題が発生することもありますので，サポートを受ける場合は，この両方のバージョンをお知らせ下さい．
+ファイル KGTN2015013001.pdf [(59.4 KB)] [kitasp 技術センター, 2015/01/30 16:14]
+KGTN2015013001.jpg
+表示 [(75.6 KB)] [kitasp 技術センター, 2015/01/30 16:18]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc131/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -715,7 +707,7 @@ Adobe Reader の本体のフルパス （既定値は &ldquo;.</p>
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc186/">
+                                      <a href="/posts/new_md/doc2333/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -723,7 +715,7 @@ Adobe Reader の本体のフルパス （既定値は &ldquo;.</p>
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc186/">[GGH4.X] Android クライアントで，クライアントのサウンド機能を実装する予定は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2333/">[GGW3.2.1/GGH4.X-5.X] ライセンス数を増やしたライセンスファイルのインストール手順は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -736,17 +728,21 @@ Adobe Reader の本体のフルパス （既定値は &ldquo;.</p>
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc186/"><i class="far fa-calendar"></i> 2014-10-24</a>
+                                            <a href="/posts/new_md/doc2333/"><i class="far fa-calendar"></i> 2015-01-30</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/10/24*
-[番号] 技術ノート KGTN 2014101001
-[現象] [GGH4.X] Android クライアントで，クライアントのサウンド機能を実装する予定は？
-[説明] 2014年10月現在， Android クライアントで，クライアントのサウンド機能を実装する予定はありません．
-ファイル KGTN2014101001.pdf [(39.3 KB)] [kitasp 技術センター, 2014/10/24 17:59]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc186/" class="btn btn-template-main">続きを読む</a>
+2015/01/30*
+[番号] 技術ノート KGTN 2015012901
+[現象] [GGW3.2.1/GGH4.X-5.X] ライセンス数を増やしたライセンスファイルのインストール手順は？
+[説明] 以下の手順で，新しいライセンスファイルのインストールおよびサーバーの確認および再設定を行って下さい．
+１．ライセンスファイルの置き換え ライセンスサーバーにあるライセンスファイル license.lic を新しいライセンスファイルで置き換えて，サーバーを再起動して下さい．
+２．ライセンス数の確認 ライセンスサーバーにある lmtools.exe を起動し， Server Status → Perform Status Enquiry を実行して，下記赤枠の部分のライセンス数が増えているかどうか確認して下さい．
+３．セッションの上限数の確認および再設定 ライセンスサーバーを使用する 「すべての」 GGサーバーのクラスタマネージャーを起動し， Tools → Host Options (Server Options) → Session Startup → Resource limits → Maximum sessions on this host の値 （そのGGサーバーのセッションの上限数） を確認して下さい．それらの値の合計が新しいライセンス数を下回る場合は，何れかのGGサーバーのMaximum sessions on this host の値を増やして，その合計がライセンス数と同じかまたはそれ以上になるようにして下さい．
+注意：上記のスクリーンショットは WS2012R2 + GGH4.8.2 の環境で撮ったものです．サーバーOSやGGのバージョンが異なる場合，画面のレイアウト等が若干異なる場合があります．
+ファイル KGTN2015012901.pdf [(101 KB)] [kitasp 技術センター, 2016/10/04 16:37]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2333/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -816,7 +812,7 @@ Adobe Reader の本体のフルパス （既定値は &ldquo;.</p>
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

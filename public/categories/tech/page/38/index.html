@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2115/">
+                                      <a href="/posts/new_md/doc2059/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2115/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2059/">[GGH5.X] 5.0.2 Patch 3 release (5.0.2.24620) の Improved Support for High Resolution Windows Devices とは，どのような機能強化なのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,21 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2115/"><i class="far fa-calendar"></i> 2017-05-08</a>
+                                            <a href="/posts/new_md/doc2059/"><i class="far fa-calendar"></i> 2017-06-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/08*
-[番号] 技術ノート KGTN 2017042603
-[現象] [GGH4.X-5.X/Windows] ADPlus で logon.exe のダンプファイルを採取する手順は？
-[説明] 技術ノート KGTN#2017042601 または KGTN#2017042602 を参照して， Debugging Tools for Windows をインストールしてください．ダンプの採取は，このツールの中の adplus.exe を使用します．
-&lt;STEP#1&gt; ダンプファイルを出力するフォルダー C:DUMP を作成します．
-&lt;STEP#2&gt; 管理者でコマンドプロンプトを開き， adplus.exe があるフォルダー &ldquo;C:Program Files (x86)Windows Kits10Debuggersx64&rdquo; へ移動します．
-&lt;STEP#3&gt; ダンプファイルを採取する logon.exe のプロセスIDを調べます．これには，クラスターマネージャー ・ タスクマネージャー ・ Process Explorer 等を使用してください．下記の例では， 3996 が logon.exe のプロセスIDです．
-&lt;STEP#4&gt; コマンドプロンプトで &ldquo;adplus -hang -p -o C:DUMP&rdquo; を実行します （ハングモードでのダンプファイルの採取） ．
-&lt;STEP#5&gt; 続けて，コマンドプロンプトで &ldquo;adplus -crash -p -o C:DUMP&rdquo; を実行します （クラッシュモードでのダンプファイルの採取） ．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2115/" class="btn btn-template-main">続きを読む</a>
+2017/06/08*
+[番号] 技術ノート KGTN 2017060801
+[現象] [GGH5.X] 5.0.2 Patch 3 release (5.0.2.24620) の &ldquo;Improved Support for High Resolution Windows Devices&rdquo; とは，どのような機能強化なのか？
+[説明] これは，5K （5120x2880） 以上の高解像モニターを持つクライアントの環境で，高DPIに対応してない （Not DPI Aware） アプリケーションを自動的に拡大表示する機能です．これにより，高DPIに対応した （DPI Aware） アプリケーションと同じように表示されます．なお，この機能を利用する場合は，サーバー側およびクライアント側を GGH5.0.2.24620 またはそれ以上にアップグレードする必要があります．
+ファイル KGTN2017060801.pdf [(39.1 KB)] [kitasp 技術センター, 2017/06/08 15:10]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2059/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -364,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2088/">
+                                      <a href="/posts/new_md/doc2061/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -372,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2088/">[GGH5.X] GGH5.0.2 Patch 2 release (Version 5.0.2.24304) の主な変更点を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2061/">[GGH5.X] GGEasyParamEdit とはどのようなツールか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -385,18 +381,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2088/"><i class="far fa-calendar"></i> 2017-05-08</a>
+                                            <a href="/posts/new_md/doc2061/"><i class="far fa-calendar"></i> 2017-06-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/08*
-[番号] 技術ノート KGTN 2017042808
-[現象] [GGH5.X] GGH5.0.2 Patch 2 release (Version 5.0.2.24304) の主な変更点を知りたい．
-[説明] 5.0.2.23814 からの主な変更点は次の通りです．
-● サーバー環境としての Windows 10 Creators Update (OS Build 15063) への対応． ● ユーザーIDとパスワードを指定してログオンした時，環境変数 CLIENTCOMPUTERNAME 等が正しくない問題の修正 ● Windows クライアントインストール時に Chrome のアドオンのページが開く問題の修正 ※ gg-client.windows.exe のみの対応で， gg-client.desktop.exe ではアドオンのページが開きます． ● セッションが終了しない，セッションを強制終了できない等の現象が発生する問題の修正 ● プリンター名のカスタマイズで変数 %I が unknown になる問題の修正 ● 環境変数 USERNAME が設定されない問題の修正 ● APSログに &ldquo;Keep-alive not received&hellip;&rdquo; が繰り返し記録される問題の修正
-ファイル KGTN2017042808.pdf [(48.1 KB)] [kitasp 技術センター, 2017/05/09 11:55]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2088/" class="btn btn-template-main">続きを読む</a>
+2017/06/08*
+[番号] 技術ノート KGTN 2017060201
+[現象] [GGH5.X] GGEasyParamEdit とはどのようなツールか？
+[説明] GGEasyParamEdit は，GGの設定ファイル C:ProgramDataGraphOnHostProperties.xml および C:ProgramDataGraphOnDefaultWorkspaceProperties.xml の主な項目 （パラメタ） の値を編集するツールです．起動すると下記のような画面が表示され，項目値の右端をクリックすると候補値が表示されますので，何れかを選択してください．
+編集後に 「保存」 ボタンをクリックすると，自動的にGGのサービスが一時的に停止し，それぞれのファイルに編集した値が反映されます．その後，自動的にGGのサービスが開始します．
+ファイル KGTN2017060201.pdf [(46.3 KB)] [kitasp 技術センター, 2017/06/08 15:06]
+KGTN2017060201.jpg
+表示 [(17.3 KB)] [kitasp 技術センター, 2017/06/08 15:06]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2061/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -406,7 +404,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2107/">
+                                      <a href="/posts/new_md/doc2052/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -414,7 +412,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2107/">[GGH5.X] Windowsクライアントをサイレントインストールした時， Chrome のアドオンのページが表示される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2052/">[GGH5.X] GGH5.0.2 Patch 3 release (Version 5.0.2.24620) の主な変更点を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -427,17 +425,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2107/"><i class="far fa-calendar"></i> 2017-05-08</a>
+                                            <a href="/posts/new_md/doc2052/"><i class="far fa-calendar"></i> 2017-06-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/08*
-[番号] 技術ノート KGTN 2017050101
-[現象] [GGH5.X] Windowsクライアントをサイレントインストールした時， Chrome のアドオンのページが表示される．
-[説明] Windowsクライアントをサイレントインストールした時 （cmd /c gg-client.windows.exe /s /v&rdquo;/qn&rdquo;） ， Chrome のアドオンのページが表示される問題は，バージョン 5.0.2.24304 で修正されております．なお，Desktopクライアントについては，残念ながら未だ修正されておりません．
-ファイル KGTN2017050101.pdf [(35.1 KB)] [kitasp 技術センター, 2017/05/08 15:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2107/" class="btn btn-template-main">続きを読む</a>
+2017/06/08*
+[番号] 技術ノート KGTN 2017060501
+[現象] [GGH5.X] GGH5.0.2 Patch 3 release (Version 5.0.2.24620) の主な変更点を知りたい．
+[説明] 5.0.2.24304 からの主な変更点は次の通りです．
+●　DPI非対応アプリケーションへの高解像度ディスプレイ対応 ※クライアント側に5K以上のモニターと新しいクライアント （ソフトウエア） が必要です． ●　Desktopクライアントインストール時に Chrome のアドオンのページが開く問題の修正 ※サイレントモード cmd /c gg-client.desktop.exe /s /v&rdquo;/qn での起動が必要です． ●　ホスト機能の Windows 10 Creators Update (OS Build 15063) への対応 ●　サービス GGAPS が稀にメモリを大量消費する問題の修正
+ファイル KGTN2017060501.pdf [(46.4 KB)] [kitasp 技術センター, 2017/06/28 15:17]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2052/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -447,7 +446,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2098/">
+                                      <a href="/posts/new_md/doc2060/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -455,7 +454,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2098/">[GGH5.X] アンチウイルスソフト Avast Free Home Antivirus は，GGのホスト環境で利用できるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2060/">[GGH5.X] GraphOn社のサイトで新しいビルドを見つけたが，これをダウンロードして使って良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -468,17 +467,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2098/"><i class="far fa-calendar"></i> 2017-05-08</a>
+                                            <a href="/posts/new_md/doc2060/"><i class="far fa-calendar"></i> 2017-06-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/08*
-[番号] 技術ノート KGTN 2017050206
-[現象] [GGH5.X] アンチウイルスソフト Avast Free Home Antivirus は，GGのホスト環境で利用できるのか？
-[説明] いいえ．GraphOn社による検証では， Avast Free Home Antivirus は利用できません．
-ファイル KGTN2017050206.pdf [(27.3 KB)] [kitasp 技術センター, 2017/05/08 15:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2098/" class="btn btn-template-main">続きを読む</a>
+2017/06/08*
+[番号] 技術ノート KGTN 2017060502
+[現象] [GGH5.X] GraphOn社のサイトで新しいビルドを見つけたが，これをダウンロードして使って良いか？
+[説明] 弊社では，GraphOn社からの新しいビルド　（バージョン） の情報を受け取り，その新しいビルドの動作検証を行い，問題が無ければ製品として出荷します．
+弊社がGraphOn社からの新しいビルドの情報を受けとっていない状況でGraphOn社のサイトに新しいビルドがあった場合，例えばウエッブサーバーの管理者が誤って承認を受けていないビルドを公開した可能性がありますので，これをダウンロードしインストールすることはお勧めできません．また，このビルドによって障害が発生しても，弊社ではサポートすることが出来ません．
+ファイル KGTN2017060502.pdf [(40.8 KB)] [kitasp 技術センター, 2017/06/08 15:09]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2060/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -488,7 +488,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2103/">
+                                      <a href="/posts/new_md/doc2067/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -496,7 +496,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2103/">[GGH5.X] アンチウイルスソフト AVG Antivirus は，GGのホスト環境で利用できるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2067/">[GGH4.X-5.X] Windows の更新プログラムの適用手順は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -509,17 +509,26 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2103/"><i class="far fa-calendar"></i> 2017-05-08</a>
+                                            <a href="/posts/new_md/doc2067/"><i class="far fa-calendar"></i> 2017-05-25</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/08*
-[番号] 技術ノート KGTN 2017050201
-[現象] [GGH5.X] アンチウイルスソフト AVG Antivirus は，GGのホスト環境で利用できるのか？
-[説明] いいえ．GraphOn社による検証では， AVG Antivirus (1.171.3.211) の環境の下ではGGのセッションが開始しません．
-ファイル KGTN2017050201.pdf [(28.8 KB)] [kitasp 技術センター, 2017/05/08 15:26]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2103/" class="btn btn-template-main">続きを読む</a>
+2017/05/25*
+[番号] 技術ノート KGTN 2017052402
+[現象] [GGH4.X-5.X] Windows の更新プログラムの適用手順は？
+[説明] Windows の更新プログラムの中には，Windowsカーネルを大きく書き換えるものがあり，そのような更新プログラムを適用された場合，GGのサービスが開始しないようになります．このような更新プログラムについては，GraphOn社がその更新プログラムをサポートした新しいビルドを用意しますので，更新プログラムの適用の前にその可否を代理店へお問い合わせください．更新プログラムの適用の手順は，次の通りです．
+  更新プログラムを適用
+  サーバーを再起動
+  更新プログラムをサポートした新しいビルドをインストール
+  サーバーを再起動
+  更新プログラムを適用
+  サーバーを再起動
+  重　要 更新プログラムは，その後にリリースされる更新プログラムによって，内容が修正されたり，削除されたりします．このため，更新プログラムがリリースされた直後では互換性の有無が明確ですが，その後は （特定の） 更新プログラムの互換性の有無は明確とはなりません．非互換な更新プログラムがリリースされた場合，GraphOn社は，マイクロソフト社が提供する最新の更新プログラム （&ldquo;更新プログラムの確認&quot;で見つかる更新プログラム） について，それをサポートした新しいビルドを用意しますので，適用に当たってはそれらすべてを適用してください．
+ファイル KGTN2017052402.pdf [(224 KB)] [kitasp 技術センター, 2017/05/25 10:09]
+KGTN2017052402.jpg
+表示 [(11.8 KB)] [kitasp 技術センター, 2017/05/25 10:09]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2067/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -529,7 +538,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2101/">
+                                      <a href="/posts/new_md/doc2070/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -537,7 +546,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2101/">[GGH5.X] アンチウイルスソフト BitDefender Antivirus は，GGのホスト環境で利用できるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2070/">[GGH5.X/ExPack] GGEasyMonitor の振分け機能を利用しているが，現用系でネットワーク障害が発生し一部のGGサーバーへの振分けが出来なくなった．この場合，待機系で振分けを行うように切り替わるのではないか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -550,17 +559,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2101/"><i class="far fa-calendar"></i> 2017-05-08</a>
+                                            <a href="/posts/new_md/doc2070/"><i class="far fa-calendar"></i> 2017-05-25</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/08*
-[番号] 技術ノート KGTN 2017050202
-[現象] [GGH5.X] アンチウイルスソフト BitDefender Antivirus は，GGのホスト環境で利用できるのか？
-[説明] GraphOn社による検証では，32ビットのアプリケーションで印刷が出来ないという制限付きで利用できます．
-ファイル KGTN2017050202.pdf [(29.7 KB)] [kitasp 技術センター, 2017/05/08 15:27]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2101/" class="btn btn-template-main">続きを読む</a>
+2017/05/25*
+[番号] 技術ノート KGTN 2017052302
+[現象] [GGH5.X/ExPack] GGEasyMonitor の振分け機能を利用しているが，現用系でネットワーク障害が発生し一部のGGサーバーへの振分けが出来なくなった．この場合，待機系で振分けを行うように切り替わるのではないか？
+[説明] ネットワーク障害で GGEasyMonitor （現用系） が一部のGGサーバーとの通信が出来なくなっても，他のGGサーバーおよびクライアント （GGEasyLogon） と通信が正常に出来ていれば，現用系の振分け機能が使用されます．なお，現用系がすべてのGGサーバーと通信が出来ていても，クライアントとの通信が出来ない場合は，クライアント （GGEasyLogon） は待機系の振分け機能を利用するように切り替えます．
+ファイル KGTN2017052302.pdf [(35.5 KB)] [kitasp 技術センター, 2017/05/25 10:03]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2070/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -570,7 +579,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2094/">
+                                      <a href="/posts/new_md/doc2068/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -578,7 +587,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2094/">[GGH5.X] アンチウイルスソフト ESET File Security は，GGのホスト環境で利用できるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2068/">[GGH5.X/ExPack] GGEasyMonitor の振分け機能を利用する場合，現用系と待機系の切り替えはどのような仕組みで行われるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -591,17 +600,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2094/"><i class="far fa-calendar"></i> 2017-05-08</a>
+                                            <a href="/posts/new_md/doc2068/"><i class="far fa-calendar"></i> 2017-05-25</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/08*
-[番号] 技術ノート KGTN 2017050210
-[現象] [GGH5.X] アンチウイルスソフト ESET File Security は，GGのホスト環境で利用できるのか？
-[説明] &ldquo;さくらのVPS for Windows Server&rdquo; で ESET File Security が使用されておりますが，この環境で特に問題なくGGサーバーが稼働しております．
-ファイル KGTN2017050210.pdf [(30.6 KB)] [kitasp 技術センター, 2017/05/08 15:36]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2094/" class="btn btn-template-main">続きを読む</a>
+2017/05/25*
+[番号] 技術ノート KGTN 2017052401
+[現象] [GGH5.X/ExPack] GGEasyMonitor の振分け機能を利用する場合，現用系と待機系の切り替えはどのような仕組みで行われるのか？
+[説明] GGEasyMonitor の振分け機能は，現用系と待機系それぞれが独立して動作します．クライアント端末の GGEasyLogon の接続先で最初に指定された振分けサーバーが現用系として使用され，それに接続出来ない時に２番目の振分けサーバーが待機系として使用されます．下記の GGEasyLogon の設定例では， 192.168.1.51 が現用系， 192.168.1.61 が待機系という扱いになります．
+ファイル KGTN2017052401.pdf [(69.6 KB)] [kitasp 技術センター, 2017/05/25 10:06]
+KGTN2017052401.jpg
+表示 [(14.4 KB)] [kitasp 技術センター, 2017/05/25 10:06]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2068/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -611,7 +622,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2099/">
+                                      <a href="/posts/new_md/doc2081/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -619,7 +630,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2099/">[GGH5.X] アンチウイルスソフト F</a></h2>
+                                    <h2><a href="/posts/new_md/doc2081/">[GGH4.X-5.X/Windows] Belarc Advisor のレポートを採取する手順は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -632,17 +643,29 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2099/"><i class="far fa-calendar"></i> 2017-05-08</a>
+                                            <a href="/posts/new_md/doc2081/"><i class="far fa-calendar"></i> 2017-05-24</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/08*
-[番号] 技術ノート KGTN 2017050205
-[現象] [GGH5.X] アンチウイルスソフト F-Secure Server Security は，GGのホスト環境で利用できるのか？
-[説明] GraphOn社による検証では，下記のレジストリを追加することで利用できます．
-1. Run Regedit on the host computer and add the following DWORD registry value: [HKEY_LOCAL_MACHINESOFTWAREGraphOnGO-GlobalAppServerSandBox] = 0 2. Restart the host computer  ファイル KGTN2017050205.pdf [(34.2 KB)] [kitasp 技術センター, 2017/05/08 15:30]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2099/" class="btn btn-template-main">続きを読む</a>
+2017/05/24*
+[番号] 技術ノート KGTN 2017050901
+[現象] [GGH4.X-5.X/Windows] Belarc Advisor のレポートを採取する手順は？
+[説明] 以下の手順で Belarc Advisor のインストールを行ってください．インストール後にレポートが表示されます．
+&lt;STEP#1&gt; ブラウザで https://www.belarc.com/products_belarc_advisor を開き，&ldquo;DOWNLOAD A FREE COPY OF BELARC ADVISOR&rdquo; をクリックします．
+&lt;STEP#2&gt; 「実行」 をクリックします．
+&lt;STEP#3&gt; 「I Agree」 をクリックします．
+&lt;STEP#4&gt; 「Install」 をクリックします．
+&lt;STEP#5&gt; 「Yes」 をクリックします．なお，この画面が続けて表示された場合は，同様に 「Yes」 をクリックしてください．
+&lt;STEP#6&gt; 「OK」 をクリックします．
+&lt;STEP#7&gt; 情報収集処理が開始します （数分掛かることがあります） ．
+&lt;STEP#8&gt; 収集した情報がブラウザ上に表示されます．
+&lt;STEP#9&gt; [ファイル] → [名前を付けて保存] で，空なフォルダーに採取した情報を保存します．
+&lt;STEP#10&gt; 保存したフォルダーをZIP等で圧縮してお送りください．
+ファイル KGTN2017050901.pdf [(1.76 MB)] [kitasp 技術センター, 2017/05/24 17:02]
+KGTN2017050901-1.jpg
+表示 [(21.1 KB)] [kitasp 技術センター, 2017/05/24 17:02]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2081/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -652,7 +675,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2096/">
+                                      <a href="/posts/new_md/doc2078/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -660,7 +683,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2096/">[GGH5.X] アンチウイルスソフト McAfee Anti</a></h2>
+                                    <h2><a href="/posts/new_md/doc2078/">[GGH4.X-5.X] Ver3.2の頃にあったクライアントプリンターの設定情報 （通常使うプリンターや用紙の方向等） のアップロード機能 （クライアント側 → サーバー側） が Ver4.X系およびVer5.X系で機能しない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -673,17 +696,23 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2096/"><i class="far fa-calendar"></i> 2017-05-08</a>
+                                            <a href="/posts/new_md/doc2078/"><i class="far fa-calendar"></i> 2017-05-24</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/08*
-[番号] 技術ノート KGTN 2017050209
-[現象] [GGH5.X] アンチウイルスソフト McAfee Anti-Virus は，GGのホスト環境で利用できるのか？
-[説明] GraphOn社による検証では，GGのポートを McAfee Firewall で開くという条件付きで利用できます．なお，この設定は， Windows 8 の環境でのみ必要です．
-ファイル KGTN2017050209.pdf [(31 KB)] [kitasp 技術センター, 2017/05/08 15:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2096/" class="btn btn-template-main">続きを読む</a>
+2017/05/24*
+[番号] 技術ノート KGTN 2017051002
+[現象] [GGH4.X-5.X] Ver3.2の頃にあったクライアントプリンターの設定情報 （通常使うプリンターや用紙の方向等） のアップロード機能 （クライアント側 → サーバー側） が Ver4.X系およびVer5.X系で機能しない．
+[説明] 技術ノート KGTN#2016091404 の内容と関連して，通常使うプリンターや各プリンターの設定情報は，サーバー側ですべて管理するようになりました．これらの情報は，プログラムウインドウの [File] → [Printers] で設定を行ってください．
+ Printers画面の 「Add」 をクリックします． Add Printer画面で追加するプリンターを選択し 「Add」 をクリックします．  Printers画面で削除するプリンターを選択し 「Remove」 をクリックします．
+Printers画面で設定するプリンターを選択し 「Set Default」 をクリックします．
+ Printers画面で設定するプリンターを選択し 「Edit」 をクリックします． プロパティ画面で必要な設定をします．  ファイル KGTN2017051002.pdf [(863 KB)] [kitasp 技術センター, 2017/05/24 17:15]
+KGTN2017051002-1.jpg
+表示 [(12.7 KB)] [kitasp 技術センター, 2017/05/24 17:15]
+KGTN2017051002-2.jpg
+表示 [(8.02 KB)] [kitasp 技術センター, 2017/05/24 17:15]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2078/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -693,7 +722,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2041/">
+                                      <a href="/posts/new_md/doc2075/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -701,7 +730,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2041/">[GGH5.X] アンチウイルスソフト Norton Antivirus / Symantec Endpoint Protection は，GGのホスト環境で利用できるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2075/">[GGH5.X/Windows] VBSで書かれたスクリプトをアプリケーションとして登録したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -714,17 +743,21 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2041/"><i class="far fa-calendar"></i> 2017-05-08</a>
+                                            <a href="/posts/new_md/doc2075/"><i class="far fa-calendar"></i> 2017-05-24</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/08*
-[番号] 技術ノート KGTN 2017050204
-[現象] [GGH5.X] アンチウイルスソフト Norton Antivirus / Symantec Endpoint Protection は，GGのホスト環境で利用できるのか？
-[説明] GraphOn社による検証では，GGのセッションが開始しない等の問題が発生した場合，GGの再インストールが必要という条件付きで利用できます．なお，この現象はデスクトップOS （Windows 10） でのみ確認されております．
-ファイル KGTN2017050204.pdf [(35.4 KB)] [kitasp 技術センター, 2017/07/27 16:01]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2041/" class="btn btn-template-main">続きを読む</a>
+2017/05/24*
+[番号] 技術ノート KGTN 2017051104
+[現象] [GGH5.X/Windows] VBSで書かれたスクリプトをアプリケーションとして登録したい．
+[説明] クラスターマネージャーでVBSファイルをアプリケーションとして登録することが出来ます．ファイルを指定するダイアログで &ldquo;All Files&rdquo; を設定した後に，VBSファイルを選択してください．
+Option Explicit Const vbNormalFocus = 1 Dim objWShell Set objWShell = CreateObject(&quot;WScript.Shell&quot;) objWShell.Run &quot;Notepad.exe&quot;, vbNormalFocus, False Set objWShell = Nothing  ファイル KGTN2017051104.pdf [(242 KB)] [kitasp 技術センター, 2017/05/24 17:38]
+KGTN2017051104-1.jpg
+表示 [(15.8 KB)] [kitasp 技術センター, 2017/05/24 17:38]
+KGTN2017051104-2.jpg
+表示 [(9.84 KB)] [kitasp 技術センター, 2017/05/24 17:38]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2075/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -794,7 +827,7 @@
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

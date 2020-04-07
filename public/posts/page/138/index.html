@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2139/">
+                                      <a href="/posts/new_md/doc530/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2139/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc530/">[GGH4.X] GGH4.0〜4.6 から GGH4.7 へバージョンアップする場合，上書きインストールではダメなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2139/"><i class="far fa-calendar"></i> 2013-04-02</a>
+                                            <a href="/posts/new_md/doc530/"><i class="far fa-calendar"></i> 2013-09-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/04/02*
-[番号] 技術ノート KGTN 2013040301
-[現象] [GGH4.X-5.X] セッションがハングアップする．ダンプファイルの採取方法は？
-[説明]
- 次のサイトからツール Debugging Tools for Windows （x86版） をダウンロードする． http://www.microsoft.com/whdc/devtools/debugging/default.mspx Debugging Tools for Windows をインストールする． ダンプファイルを保存するフォルダ C:dumps を作成する． GGサーバにログオンしハングアップ状態を再現する． コマンドプロンプトで次のコマンドを実行する． adplus -hang -pn gg-client.exe -o C:dumps 6)１回のダンプファイルの採取で十分な情報が得られないことがあるので，数回 4)～5) を繰り返す．  ファイル KGTN2013040301.pdf [(62.1 KB)] [kitasp 技術センター, 2017/04/11 14:53]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2139/" class="btn btn-template-main">続きを読む</a>
+2013/09/05*
+[番号] 技術ノート KGTN 2013090501
+[現象] [GGH4.X] GGH4.0〜4.6 から GGH4.7 へバージョンアップする場合，上書きインストールではダメなのか？
+[説明] GGH4.0〜4.6 に互換アップデートを適用していない場合は， GGH4.7 を上書きインストールして構いません．互換アップデートが適用されている場合は，この互換アップデートとGG本体 （GGH4.0〜4.6） をアンインストールする必要があります．これは互換アップデートの内容に起因する制限で，今後リリースされる互換アップデートでは，この制限は解消される見込みです．
+ファイル KGTN2013090501.pdf [(45.3 KB)] [kitasp 技術センター, 2013/09/05 09:44]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc530/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc605/">
+                                      <a href="/posts/new_md/doc2056/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc605/">[GGW3.2.1/GGH4.5] GGは Java Standard Edition 7 に対応しているのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2056/">[GGH4.X-5.X] gg-client.exe の起動オプション -cw 0 の意味は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,17 +381,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc605/"><i class="far fa-calendar"></i> 2013-04-01</a>
+                                            <a href="/posts/new_md/doc2056/"><i class="far fa-calendar"></i> 2013-09-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/04/01*
-[番号] 技術ノート KGTN 2013040101
-[現象] [GGW3.2.1/GGH4.5] GGは Java Standard Edition 7 に対応しているのか？
-[説明] Java Standard Edition は Java の開発および実行環境ですので，それに関して特に 「対応」 という概念はありません．なお，現時点で Java SE 7 に関する障害報告等はありません．
-ファイル KGTN2013040101.pdf [(43.7 KB)] [kitasp 技術センター, 2013/04/01 09:56]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc605/" class="btn btn-template-main">続きを読む</a>
+2013/09/04*
+[番号] 技術ノート KGTN 2012033001
+[現象] [GGH4.X-5.X] gg-client.exe の起動オプション -cw 0 の意味は？
+[説明] -cw 0 は，ウインドウの描画 （生成） の最適化機能を無効にする起動オプションです．
+This option turns off the contained window optimization on the host.  補　足 ウインドウの生成・消滅・リサイズ（拡大と縮小）・表示は，他の処理と比較して多くの時間を要します．このため，ウインドウが a) ツールバーにアイテムを持たず，かつ b) 他のGGのウインドウに完全に含まれる時，GGはクライアント上でウインドウを生成せず，その内容を （クライアント上の） 含んでいるウインドウに直接描画する最適化を行います．この最適化はデフォルトの状態で有効で， -cw 0 を指定することで無効になります．
+ファイル KGTN2012033001.pdf [(44.2 KB)] [kitasp 技術センター, 2017/06/28 15:07]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2056/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -401,7 +402,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc604/">
+                                      <a href="/posts/new_md/doc532/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -409,7 +410,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc604/">[iPad] iPad クライアントで，Windows クライアントで表示されるログオンダイアログが表示された．</a></h2>
+                                    <h2><a href="/posts/new_md/doc532/">[GGH4.X] ggw.exe の起動オプション -dfw 0 の意味は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -422,17 +423,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc604/"><i class="far fa-calendar"></i> 2013-04-01</a>
+                                            <a href="/posts/new_md/doc532/"><i class="far fa-calendar"></i> 2013-09-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/04/01*
-[番号] 技術ノート KGTN 2013040102
-[現象] [iPad] iPad クライアントで，Windows クライアントで表示されるログオンダイアログが表示された．
-[説明] iPad クライアントに設定したユーザIDおよびパスワードでログオンに失敗した時，エラーダイアログの後にログオンダイアログが表示されます．設定したユーザIDまたはパスワードが違う，サーバ側でユーザIDまたはパスワードが変更された，Windows側の障害等で認証処理が正常に行われない，などの原因が考えられます．
-ファイル KGTN2013040102.pdf [(46.1 KB)] [kitasp 技術センター, 2013/04/01 11:09]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc604/" class="btn btn-template-main">続きを読む</a>
+2013/09/04*
+[番号] 技術ノート KGTN 2013090401
+[現象] [GGH4.X] ggw.exe の起動オプション -dfw 0 の意味は？
+[説明] -dfw 0 は，ウインドウを移動 （ドラッグ） する時に，外枠のみ表示する 「非サポートの」 オプションです．
+ファイル KGTN2013090401.pdf [(42.9 KB)] [kitasp 技術センター, 2013/09/04 11:58]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc532/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -442,7 +443,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc607/">
+                                      <a href="/posts/new_md/doc531/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -450,7 +451,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc607/">[GGH4.6] GGH4.5からGGH4.6へバージョンアップしたところ，ライセンスサーバが開始しない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc531/">[GGH4.X] GGのシンボルファイルを提供して欲しい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -463,17 +464,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc607/"><i class="far fa-calendar"></i> 2013-03-28</a>
+                                            <a href="/posts/new_md/doc531/"><i class="far fa-calendar"></i> 2013-09-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/28*
-[番号] 技術ノート KGTN 2013032802
-[現象] [GGH4.6] GGH4.5からGGH4.6へバージョンアップしたところ，ライセンスサーバが開始しない．
-[説明] GGH4.5のライセンスでは，GGH4.6のライセンスサーバ （GO-Global License Service） は動作しません．GGH4.5用のライセンスファイルをGGH4.6用のライセンスファイルにアップグレードする必要があります．
-ファイル KGTN2013032802.pdf [(53.8 KB)] [kitasp 技術センター, 2013/03/28 10:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc607/" class="btn btn-template-main">続きを読む</a>
+2013/09/04*
+[番号] 技術ノート KGTN 2013090402
+[現象] [GGH4.X] GGのシンボルファイルを提供して欲しい．
+[説明] GraphOn社は， GO-Global for Windows のシンボルファイルを外部 （代理店等も含む） に公開しておりません．
+ファイル KGTN2013090402.pdf [(43.6 KB)] [kitasp 技術センター, 2013/09/04 12:09]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc531/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -483,7 +484,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc608/">
+                                      <a href="/posts/new_md/doc533/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -491,7 +492,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc608/">[GGH4.6] GGH4.6の主な変更点を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc533/">[GAIJI] Windows Server 2008 R2 で外字エディタが見つからない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -504,17 +505,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc608/"><i class="far fa-calendar"></i> 2013-03-28</a>
+                                            <a href="/posts/new_md/doc533/"><i class="far fa-calendar"></i> 2013-08-30</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/28*
-[番号] 技術ノート KGTN 2013032801
-[現象] [GGH4.6] GGH4.6の主な変更点を知りたい．
-[説明] 2013年3月28日時点で得ている情報 （GGH4.6の主な変更点） は，以下の通りです．
-ファイル KGTN2013032801.pdf [(85.2 KB)] [kitasp 技術センター, 2013/03/28 10:15]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc608/" class="btn btn-template-main">続きを読む</a>
+2013/08/30*
+[番号] 技術ノート KGTN 2013083001
+[現象] [GAIJI] Windows Server 2008 R2 で外字エディタが見つからない．
+[説明] マイクロソフト社の知識ベース KB977042 と KB979580 を参考に，以下の手順で外字を利用する環境を 設定して下さい．
+KB979580 の修正プログラムを入手しインストールする． サーバーマネージャーの 「機能の追加」 で 「デスクトップ エクスペリエンス」 をインストールする． 外字エディタ eudcedit.exe を起動する．
+補　足 外字ファイルは，フォルダ C:¥Windows¥Fonts の中に作成されますが，単にエクスプローラで開くと表示されません．パス ¥¥127.0.0.1¥c$¥Windows¥Fonts でアクセスすることで，外字ファイル EUDC.EUF と EUDC.TTE が表示されます．
+ファイル KGTN2013083001.pdf [(125 KB)] [kitasp 技術センター, 2013/08/30 11:37]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc533/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -524,7 +527,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc606/">
+                                      <a href="/posts/new_md/doc382/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -532,7 +535,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc606/">[GGW3.2.1/GGH4.5] GGW3.2.1をActiveXクライアントで利用しているが，GGH4.5のサーバにアクセスした場合，どのようになるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc382/">[GGH4.X] GGH4.6, GGH4.5 Patch1, GGH4.0 Patch5 の環境で， Microsoft Office の各アプリケーションが起動しない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -545,17 +548,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc606/"><i class="far fa-calendar"></i> 2013-03-28</a>
+                                            <a href="/posts/new_md/doc382/"><i class="far fa-calendar"></i> 2013-08-24</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/28*
-[番号] 技術ノート KGTN 2013032803
-[現象] [GGW3.2.1/GGH4.5] GGW3.2.1をActiveXクライアントで利用しているが，GGH4.5のサーバにアクセスした場合，どのようになるのか？
-[説明] GGW3.2.1のActiveXクライアントとGGH4.5のActiveXクライアントは，同一クライアントマシンで共存することが出来ますので，GGH4.5のサーバにアクセスした時にGGH4.5のActiveXクライアントが追加インストールされます．それ以降の操作は，基本的にはGGW3.2.1の場合と同様です．
-ファイル KGTN2013032803.pdf [(43.8 KB)] [kitasp 技術センター, 2013/03/28 10:59]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc606/" class="btn btn-template-main">続きを読む</a>
+2013/08/24*
+[番号] 技術ノート KGTN 2013082401
+[現象] [GGH4.X] GGH4.6, GGH4.5 Patch1, GGH4.0 Patch5 の環境で， Microsoft Office の各アプリケーションが起動しない．
+[説明] 2013年8月の更新プログラムKB2859537 が適用されると，GGH4.6.0, GGH4.5.0 Patch1 + 64ビットの Windows の環境で，32ビットのアプリケーション （例： Microsoft Office） が起動しません．これはKB2859537 が非互換なためで，この問題を解消するには互換アップデート
+Compatibility_Update_x64_KGTN2013082401.exe
+を適用する必要があります （注： GGH4.7.0またはそれ以上のリリースには適用する必要はありません） ．なお，この互換アップデートは，更新プログラム KB2859537, KB2872339, KB2813170 のサポートを含みます．
+GO-Global Compatibility Update for Microsoft Update KB2859537 and KB2872339 Release Notes for the Compatibility Update August 20, 2013 4.6.0.16538 (4.6.0 release) 4.5.0.13211 (4.5.0 Patch1) The Compatibility Update stops the APS Service so that the new version can be copied.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc382/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -565,7 +570,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1931/">
+                                      <a href="/posts/new_md/doc534/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -573,7 +578,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1931/">[GGW3.2.1/GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc534/">[SSL] SSLサーバ証明書に中間CA証明書が必要な場合，その中間CA証明書はどうやってインストールするのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -586,20 +591,21 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1931/"><i class="far fa-calendar"></i> 2013-03-28</a>
+                                            <a href="/posts/new_md/doc534/"><i class="far fa-calendar"></i> 2013-08-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/28*
-[番号] 技術ノート KGTN 2013032804
-[現象] [GGW3.2.1/GGH4.X-5.X] アマゾン EC2 の環境では起動の度にMACアドレスが変わるため，GGのライセンス申請が出来ない．
-[説明] Virtual Private Cloud の中で稼働する EC2 であれば， Elastic Network Interface (ENI) を利用することでMACアドレスを固定することが出来ます．詳細は，下記ページをご覧下さい．
-http://aws.typepad.com/aws_japan/2011/12/new-elastic-network-interfaces-in-the-virtual-private-cloud.html
-【AWS発表】 Virtual Private Cloudの中でネットワークインタフェースを自在にコントロールできるElastic Network Interfaceの発表
-MACアドレスベースのライセンス対応 - 商用のソフトウェアの中には、特定のMACアドレスに紐づけてライセンシングを行っている場合があります。そのような場合、ENIのMACアドレスに対してライセンスを発行することが可能です。もし、インスタンスを変更する場合や、インスタンスタイプを変更する場合(スペックを変えたいとき)でも、このENIを新しいインスタンスに付与することが可能です。
-ファイル KGTN2013032804.pdf [(48.1 KB)] [kitasp 技術センター, 2018/01/26 14:29]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1931/" class="btn btn-template-main">続きを読む</a>
+2013/08/22*
+[番号] 技術ノート KGTN 2013072501
+[現象] [SSL] SSLサーバ証明書に中間CA証明書が必要な場合，その中間CA証明書はどうやってインストールするのか？
+[説明] SSLサーバ証明書のファイルを server.crt ，１つ上の中間CA証明書のファイルを ica1.crt ，さらにその上の中間CA証明書のファイルを ica2.crt とします．この条件で，以下の手順で新たなSSLサーバ証明書を作成して下さい．
+SSLサーバ証明書 server.crt をコピーし server-org.crt を作る （元の証明書の保存） ． メモ帳で server.crt を開く． 新たなメモ帳で１つ上の中間CA証明書ica1.crt を開く． メモ帳で開いた ica1.crt の内容を，上記2のメモ帳の末尾にペーストする． 上記3のメモ帳を 「保存しない」 で閉じる． 新たなメモ帳でさらにその上の中間CA証明書ica2.crt を開く． メモ帳で開いた ica2.crt の内容を，上記2のメモ帳の末尾にペーストする． 上記6のメモ帳を 「保存しない」 で閉じる． 上記3のメモ帳を 「保存する」 で閉じる （上書き保存） ．
+この手順で作成した （新しい） SSLサーバ証明書のファイル server.crt をクラスタマネージャで指定して下さい．なお，ファイルの COPY コマンドでも同じことが出来ますが，改行コードの問題等が未然に分かるように，メモ帳での作成をお勧めします．
+補足１ 簡単に言えば，以下のようにSSLサーバ証明書，１つ上の中間CA証明書，さらにその上の中間CA証明書を （テキストとして） 結合し保存して下さい．
+&mdash;&ndash;BEGIN CERTIFICATE&mdash;&ndash; SSLサーバ証明書の内容 &mdash;&ndash;END CERTIFICATE&mdash;&ndash;
+&mdash;&ndash;BEGIN CERTIFICATE&mdash;&ndash; １つ上の中間CA証明書の内容 &mdash;&ndash;END CERTIFICATE&mdash;&ndash;</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc534/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -609,7 +615,7 @@ MACアドレスベースのライセンス対応 - 商用のソフトウェア�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc609/">
+                                      <a href="/posts/new_md/doc2635/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -617,7 +623,7 @@ MACアドレスベースのライセンス対応 - 商用のソフトウェア�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc609/">[GGH4.5] アプリケーションの動作が GGW3.2.1 の環境に比べ GGH4.5 の環境の方が遅い．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2635/">[GGH6.X/ExPack] 拡張パックの GGSessionManager とはどんなツールなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -630,17 +636,25 @@ MACアドレスベースのライセンス対応 - 商用のソフトウェア�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc609/"><i class="far fa-calendar"></i> 2013-03-27</a>
+                                            <a href="/posts/new_md/doc2635/"><i class="far fa-calendar"></i> 2013-08-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/27*
-[番号] 技術ノート KGTN 2013032704
-[現象] [GGH4.5] アプリケーションの動作が GGW3.2.1 の環境に比べ GGH4.5 の環境の方が遅い．
-[説明] 総論として，GraphOn社はアプリケーションの動作速度を向上させることを常に考えており，GGH4.5 もその考えが反映された製品です．高速化のために様々な最適化手法を採用しており，例えばGGが表示したウインドウの中に別のウインドウを表示する場合， （処理負荷の高い） 新たなウインドウを生成せずに，元のウインドウの中にビットマップとして新たなウインドウの内容を描画する等の処理を行っております．このような最適化は多くのアプリケーションに有効ですが，極めて稀にアプリケーションの処理内容と最適化手法が馴染まず，遅くなることがあります．これはそのアプリケーションの処理内容に依存して発生する現象で，GraphOn社が （可能な限りシナリオを考慮しても） それを事前に100%予見することは技術的に困難です．もし営業的に重要なアプリケーションであれば，そのアプリケーション・再現手順・現象が発生したクライアントマシンに関する情報 （スペック） 等をご提供頂ければ，弊社およびGraphOn社で回避方法があるかどうか調査します．また回避方法が無い場合でも，将来最適化手法を見直す時の参考資料とさせて頂きます．
-ファイル KGTN2013032704.pdf [(65.9 KB)] [kitasp 技術センター, 2013/03/27 11:27]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc609/" class="btn btn-template-main">続きを読む</a>
+2013/08/19*
+[番号] 技術ノート KGTN 2012071901
+[現象] [GGH6.X/ExPack] 拡張パックの GGSessionManager とはどんなツールなのか？
+[説明] 原則的にはGGサーバー上で動作させるプログラムで、GGのプロトコルを介してGGサーバーのセッション情報を収集し、その情報をもとにコマンドラインで指定された動作 「セッションの強制終了」、 「セッションの強制切断」、 「アプリケーションの起動」 を行います。
+設定ファイルと起動パラメタ 設定ファイル GGSessionManager.ini の default セクションで、以下のパラメタを設定して下さい。
+設定項目 説明
+ loglevel ログの出力レベル，通常は1を指定し，障害時は4を指定 port GGサーバーのポート番号（各セクションで未指定時に適用） logFile ログファイルのパス app アプリケーション名（PW上の名称），コマンドラインが優先される arg アプリケーションの起動パラメタ
+個別セクション （GGサーバー単位） で、以下のパラメタを設定して下さい。
+設定項目 説明
+ host GGサーバーのIPアドレス
+「セッションの強制終了」、 「セッションの強制切断」、 「アプリケーションの起動」 は以下の起動パラメタ （コマンドライン・パラメタ） で指定して下さい。
+設定項目 説明
+ -sec 設定ファイルのセクション名（GGサーバーの指定） -host GGサーバーのIPアドレス（設定ファイルより優先する） -port GGサーバーのポート番号（設定ファイルより優先する） -app アプリケーション名（PW上の名称） -arg アプリケーションの起動パラメタ -soi セッションID id を強制終了する -dci セッションID id を強制切断する -lai セッションID id でアプリケーションを起動する -son セッション名 name を強制終了する -dcn セッション名 name を強制切断する -lan セッション名 name でアプリケーションを起動する -sou ユーザー名 name を強制終了する -dcu ユーザー名 name を強制切断する -lau ユーザー名 name でアプリケーションを起動する</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2635/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -650,7 +664,7 @@ MACアドレスベースのライセンス対応 - 商用のソフトウェア�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2581/">
+                                      <a href="/posts/new_md/doc535/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -658,7 +672,7 @@ MACアドレスベースのライセンス対応 - 商用のソフトウェア�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2581/">[GGW3.2.1/GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc535/">[ExPack] 拡張パックの GGAPSManager とはどんなツールなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -671,18 +685,18 @@ MACアドレスベースのライセンス対応 - 商用のソフトウェア�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2581/"><i class="far fa-calendar"></i> 2013-03-26</a>
+                                            <a href="/posts/new_md/doc535/"><i class="far fa-calendar"></i> 2013-08-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/26*
-[番号] 技術ノート KGTN 2013032701
-[現象] [GGW3.2.1/GGH4.X-5.X] GGサーバのセッション構成 （生成） の詳細は？
-[説明] 弊社が得ている情報および弊社の実験等から，以下の手順でセッションが構成 （生成） されます．
- APS (Application Publishing Service) がクライアントとの TCP/IP のコネクションを確立． 圧縮の有無および暗号化のレベルを調整． APSがクライアント向けにセッションを生成． APSが ggse.sys （システム拡張ドライバ） にセッションの生成を通知． ggse.sys がセッションのためのセッション空間 （マルチユーザ環境） を配置． ggse.sys がセッション空間上でWin32サブシステムのインスタンスを初期化． Win32サブシステムが ggdd.dll を呼び出し，仮想ディスプレイ・ディバイスを生成．   クライアントのディスプレイの解像度と色深度を仮想ディスプレイ・ディバイスに設定． 9) APSが logon.exe を起動． 10) logon.exe がユーザ名とパスワードを受け取り （通常の） 認証処理を実行． 11) 認証後のセキュリティ コンテキストの下でアプリケーションを実行．
-ファイル KGTN2013032701.pdf [(70.5 KB)] [kitasp 技術センター, 2016/05/27 14:05]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2581/" class="btn btn-template-main">続きを読む</a>
+2013/08/16*
+[番号] 技術ノート KGTN 2013081601
+[現象] [ExPack] 拡張パックの GGAPSManager とはどんなツールなのか？
+[説明] GMSessionMonitor と共に GGサーバ上で動作させるプログラム （サービス） で， APS (GO-Global Application Publishing Service) の状態を監視します．サーバ再起動時，設定ファイルで指定した秒数後に APS を開始させます．障害等で APS が停止状態になった場合， APS を自動的に開始します．また GMSessionMonitor の情報を参照し， 「接続出来ない」 や 「情報が更新されない」 等の異常な状況が検出された場合， APS を自動的に再起動します．以上のように，GGサーバの高可用性に役立つツールです．
+設定ファイルと起動パラメタ 設定ファイルGGAPSManager.ini の default セクションで，以下のパラメタを設定して下さい．
+  設定項目 説明 serviceName サービスの名称で &quot;GO-Global APS Manager&quot; を指定 loglevel ログの出力レベル，通常は1を指定し，障害時は4を指定 logFile ログファイルのフルパス sqlFile データベースファイル（サーバの最新情報）のフルパス delayedStart サーバ再起動からAPSを開始するまでの時間（秒） maxStartTime APSの開始に要する最大時間（秒） maxStopTime APSの停止に要する最大時間（秒）  stopGraceTime APSの自動再起動までの猶予時間（秒），-1 は自動再起動機能オフ showStatusTime APSの状態を記録する間隔（秒）</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc535/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -692,7 +706,7 @@ MACアドレスベースのライセンス対応 - 商用のソフトウェア�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc612/">
+                                      <a href="/posts/new_md/doc537/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -700,7 +714,7 @@ MACアドレスベースのライセンス対応 - 商用のソフトウェア�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc612/">[GGH4.5] ActiveXクライアントの環境で，ブラウザを閉じてもセッションが残るようにしたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc537/">[ExPack] Windows Vista &#43; Adobe Reader 8.0 &#43; GGSpoolPDF では正常に動作するが， Windows 7 (32bit) &#43; Adobe Reader XI (11) &#43; GGSpoolPDF の環境では Adobe Reader のプロセスが残る．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -713,17 +727,18 @@ MACアドレスベースのライセンス対応 - 商用のソフトウェア�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc612/"><i class="far fa-calendar"></i> 2013-03-24</a>
+                                            <a href="/posts/new_md/doc537/"><i class="far fa-calendar"></i> 2013-08-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/24*
-[番号] 技術ノート KGTN 2013032501
-[現象] [GGH4.5] ActiveXクライアントの環境で，ブラウザを閉じてもセッションが残るようにしたい．
-[説明] GGW3.2.1では，ActiveXクライアントの環境でブラウザを閉じるとセッションも終了しましたが （デフォルトの設定の場合） ，GGH4.5の場合は logon.html の処理が以下のようになっておりますので，デフォルトの設定でブラウザを閉じてもセッションは維持されます．
-ファイル KGTN2013032501.pdf [(50.8 KB)] [kitasp 技術センター, 2013/03/25 08:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc612/" class="btn btn-template-main">続きを読む</a>
+2013/08/15*
+[番号] 技術ノート KGTN 2013080601
+[現象] [ExPack] Windows Vista + Adobe Reader 8.0 + GGSpoolPDF では正常に動作するが， Windows 7 (32bit) + Adobe Reader XI (11) + GGSpoolPDF の環境では Adobe Reader のプロセスが残る．
+[説明] GGSpoolPDF は Adobe Reader 8.0 向けにデザインされており， Adobe Reader XI の仕様が変更されたため， Adobe Reader のプロセスが残るという現象が発生しました．Adobe Reader 8.0 は，PDFファイルを表示したウインドウに WM_CLOSE を送信することで，印刷終了後にプロセスが終了します． Adobe Reader XI は，PDFファイルを表示したウインドウに WM_CLOSE を送信することでそのウインドウは閉じますが，親のウインドウは （自動的に） 閉じないため，結果としてプロセスが終了せずに残ります．
+次期リリースでは，PDFファイルを表示したウインドウだけでなく，その親のウインドウに対しても WM_CLOSE を送信するように修正を行い， Adobe Reader XI のプロセスが残らないようにする予定です．
+補　足 GGSpoolPDF の次期リリースは，2013年10月31日を予定しております．これよりも前に検証等をご希望の場合は，弊社技術支援センターまでお知らせ下さい．可能であれば，RC版 （出荷候補版） 等をご提供致します．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc537/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -793,7 +808,7 @@ MACアドレスベースのライセンス対応 - 商用のソフトウェア�
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2459/">
+                                      <a href="/posts/new_md/doc2404/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2459/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2404/">[GGH4.X-5.X] GGのライセンスサーバー （専用） の構築手順は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,19 +340,25 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2459/"><i class="far fa-calendar"></i> 2016-07-01</a>
+                                            <a href="/posts/new_md/doc2404/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/07/01*
-[番号] 技術ノート KGTN 2016070102
-[現象] [GGH4.X-5.X] クライアントの環境が Windows 10 の場合， GGH4.X では画面が乱れるそうだが，具体的にどのような状態になるのか？
-[説明] 弊社で確認している画面の乱れは，ウインドウをドラッグした時にその残像が現れるという現象です．以下の事例では，メモ帳のウインドウの一部が残像としてプログラムウインドウ上に表示されています．
-ファイル KGTN2016070102.pdf [(98 KB)] [kitasp 技術センター, 2016/07/01 17:39]
-KGTN2016070102.jpg
-表示 [(21.6 KB)] [kitasp 技術センター, 2016/07/01 17:39]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2459/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016072701
+[現象] [GGH4.X-5.X] GGのライセンスサーバー （専用） の構築手順は？
+[説明] GGのライセンスサーバー （専用） の構築手順は，以下の通りです．
+1.　コマンドプロンプトで &ldquo;ipconfig/all&rdquo; を実行し，その結果とライセンスファイルの内容と照合して下さい．ホスト名 （コンピューター名） が異なる場合は，ライセンスファイルの内容を修正して下さい．
+2.　ライセンスファイルにライセンスサーバーのポート番号を追加して下さい．ポート番号は，通常 27001～27009 を指定します．
+3.　GGをインストールした後，サービス GGAPS を 「停止」 し，スタートアップの種類を 「手動」 にして下さい．
+4.　サービス GGLicenseManager が 「実行中」 であることを確認して下さい．
+5.　ライセンスサーバーの管理ツール lmtools.exe を起動して下さい．
+6.　Server Status → Perform Status Enquiry をクリックし，結果にライセンス数が表示されていることを確認して下さい．
+補　足 このライセンスサーバーをGGサーバーから利用するには，上記の設定に加えて Windows ファイアウォール に受信の規則を追加し，GGサーバーからのアクセスを許可する必要があります．
+1.　管理ツール → セキュリティが強化された Windows ファイアウォール を開き，操作 → 新しい規則 を選択して下さい．
+2.　次へ をクリックして下さい．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2404/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -362,7 +368,7 @@ KGTN2016070102.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2460/">
+                                      <a href="/posts/new_md/doc2401/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -370,7 +376,7 @@ KGTN2016070102.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2460/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2401/">[GGH4.X-5.X] GGのライセンスサーバーを外部からアクセスさせる場合，ファイアウォールの設定はどうすれば良いのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -383,20 +389,25 @@ KGTN2016070102.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2460/"><i class="far fa-calendar"></i> 2016-07-01</a>
+                                            <a href="/posts/new_md/doc2401/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/07/01*
-[番号] 技術ノート KGTN 2016070101
-[現象] [GGH4.X-5.X] クライアントの環境が Windows 10 の場合， GGH4.X ではサポートされないそうだが，サーバーとクライアントの両側のソフトウエアをGGH5.Xへアップグレードせねばならないのか？
-[説明] 基本的にはその通りです．
-弊社の実験では，サーバー側のみをGGH5.Xにアップグレードした環境で描画の乱れ等は発生しませんでした．自己責任となりますが， Windows 10 に対応するため，先ずサーバー側を GGH5.X へアップグレードして様子を見るという選択肢も考えられます．
-ファイル KGTN2016070101.pdf [(111 KB)] [kitasp 技術センター, 2016/07/01 17:37]
-KGTN2016070101.jpg
-表示 [(12 KB)] [kitasp 技術センター, 2016/07/01 17:37]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2460/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016072703
+[現象] [GGH4.X-5.X] GGのライセンスサーバーを外部からアクセスさせる場合，ファイアウォールの設定はどうすれば良いのか？
+[説明] プログラム blm.exe と lmgrd.exe の 「新規の受信の規則」 を追加して下さい．
+ファイル KGTN2016072703.pdf [(116 KB)] [kitasp 技術センター, 2016/08/01 16:22]
+KGTN2016072703-1.jpg
+表示 [(17.9 KB)] [kitasp 技術センター, 2016/08/01 16:22]
+KGTN2016072703-2.jpg
+表示 [(13.9 KB)] [kitasp 技術センター, 2016/08/01 16:22]
+KGTN2016072703-3.jpg
+表示 [(17.9 KB)] [kitasp 技術センター, 2016/08/01 16:22]
+KGTN2016072703-4.jpg
+表示 [(14.3 KB)] [kitasp 技術センター, 2016/08/01 16:22]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2401/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -406,7 +417,7 @@ KGTN2016070101.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2461/">
+                                      <a href="/posts/new_md/doc2408/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -414,7 +425,7 @@ KGTN2016070101.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2461/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2408/">[GGH4.X-5.X] GGサーバー （物理） を選択する場合，サイジングの基本的な考え方について知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -427,17 +438,18 @@ KGTN2016070101.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2461/"><i class="far fa-calendar"></i> 2016-07-01</a>
+                                            <a href="/posts/new_md/doc2408/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/07/01*
-[番号] 技術ノート KGTN 2016063001
-[現象] [GGH4.X-5.X] GGはローカルユーザープロファイルでも利用出来るそうだが，GGサーバーを跨いで 「お気に入り」 等が利用できるのか？
-[説明] GGはユーザープロファイルの管理を Windows の機能に委ねております．ローカルユーザープロファイルに対する変更等は，ログオンしたサーバーのみに反映されますので，GGサーバーを跨いで 「お気に入り」 等を利用することは出来ません．このような場合は，移動ユーザープロファイルをご利用下さい．
-ファイル KGTN2016063001.pdf [(52.3 KB)] [kitasp 技術センター, 2016/07/01 17:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2461/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016072201
+[現象] [GGH4.X-5.X] GGサーバー （物理） を選択する場合，サイジングの基本的な考え方について知りたい．
+[説明] 32ビットの Windows の環境では，利用可能な最大物理メモリのサイズが 4GB （実質的には約3GB） という制限によって，１台のサーバーに収容出来るユーザー数が決まりました．現在の64ビットの Windows の環境ではこの制限が取り払われているため， （十分なメモリが搭載されるという前提の下では） １台のサーバーのコア数と１コア当りのユーザー数によって，１台のサーバーに収容出来るユーザー数が決まります．各ユーザーが事務作業等の負荷が高くないアプリケーションを１つ利用する場合，１コア当り3～6ユーザーの利用を見込むことが出来ますので，比較的安価な6コアのマシンを選択すると，１台のサーバー当り18～36ユーザーということになります．ユーザーがアプリケーションの操作に習熟している場合は，単位時間内の操作が増えるため，１台のサーバーに収容できるユーザー数が少なくなります （多く収容した場合は，画面操作の反応をユーザーが遅く感じることになります） ．逆にユーザーがアプリケーションの操作に習熟していない場合は，単位時間内の操作が減るため，１台のサーバーに収容できるユーザー数が多くなります．
+なお，サーバーの台数を減らすため，コア数が多いハイエンドのサーバーを選択した場合，サーバーの故障時に多くのユーザーが長時間利用出来なくなる可能性があります．１台のサーバーに収容するユーザー数は，「サーバー故障時の対応をどうするか？」 という点も含めて決定する必要があります．
+ファイル KGTN2016072201.pdf [(69.4 KB)] [kitasp 技術センター, 2016/08/01 13:54]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2408/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -447,7 +459,7 @@ KGTN2016070101.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2462/">
+                                      <a href="/posts/new_md/doc2429/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -455,7 +467,7 @@ KGTN2016070101.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2462/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2429/">[GGH4.X-5.X] GO-Global API とは何か？ どうすれば利用出来るのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -468,19 +480,19 @@ KGTN2016070101.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2462/"><i class="far fa-calendar"></i> 2016-07-01</a>
+                                            <a href="/posts/new_md/doc2429/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/07/01*
-[番号] 技術ノート KGTN 2016062903
-[現象] [GGH4.X-5.X] クラスターマネージャーで登録したアプリケーションを，他のGGサーバーに反映する方法を知りたい．
-[説明] クラスターマネージャーで登録したアプリケーションの情報は，下記レジストリに記録されますので，これをファイルにエクスポートして，他のGGサーバーでインポートして下さい．
-HKEY_LOCAL_MACHINESOFTWAREGraphOnGO-GlobalAppServerInstalledApps  ファイル KGTN2016062903.pdf [(86.4 KB)] [kitasp 技術センター, 2016/07/01 17:34]
-KGTN2016062903.jpg
-表示 [(9.26 KB)] [kitasp 技術センター, 2016/07/01 17:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2462/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016070803
+[現象] [GGH4.X-5.X] GO-Global API とは何か？ どうすれば利用出来るのか？
+[説明] GO-Global API は，GO-Global for Windows のオプション製品である SDK (ソフトウエア開発キット) が提供する API （アプリケーションプログラミングインターフェース） のことです． SDK で提供される機能については，下記ドキュメントをご覧下さい．
+http://www.graphon.com/files/GO-Global_APIs_Overview.pdf
+SDK を利用するには，GraphOn社よりオプション製品の SDK を購入し，さらに保守契約を結ぶ必要があります．なお，保守契約の範囲はソフトウエアのバージョンアップに限られ，具体的なコーディング方法等についてのサポート （問合せ） は含まれません．
+ファイル KGTN2016070803.pdf [(68 KB)] [kitasp 技術センター, 2016/08/01 13:20]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2429/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -490,7 +502,7 @@ KGTN2016062903.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2463/">
+                                      <a href="/posts/new_md/doc2416/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -498,7 +510,7 @@ KGTN2016062903.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2463/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2416/">[GGH4.X-5.X] XMLHttpRequest の同期実行のサンプルを見たい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -511,17 +523,18 @@ KGTN2016062903.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2463/"><i class="far fa-calendar"></i> 2016-07-01</a>
+                                            <a href="/posts/new_md/doc2416/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/07/01*
-[番号] 技術ノート KGTN 2016062902
-[現象] [GGH4.X-5.X] GGの場合， gg-client.exe （デスクトップクライアント） を使えば簡単にGGサーバーにログオン出来るが， XenDesktop でも類似の方法でログオン出来るのか？
-[説明] XenDesktop では， ICAファイルを作成し，それを開くという手順になります．ICAファイルを作成するには，ログイン要求 （AD認証） ・リソース情報要求・ICAファイル要求などの細かな処理を行う必要があります．
-ファイル KGTN2016062902.pdf [(56.6 KB)] [kitasp 技術センター, 2016/07/01 17:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2463/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016071702
+[現象] [GGH4.X-5.X] XMLHttpRequest の同期実行のサンプルを見たい．
+[説明] 以下に XMLHttpRequest の同期実行のサンプルを示します．なお， XMLHttpRequest のリクエスト先は，セキュリティ上の理由により，同一ドメイン （正確には同じサイト） に制限されます．
+　&lt;!&mdash; ソースコードを読むスクリプト &mdash;&gt;
+ファイル KGTN2016071702.pdf [(62.3 KB)] [kitasp 技術センター, 2016/08/01 13:37]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2416/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -531,7 +544,7 @@ KGTN2016062903.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2464/">
+                                      <a href="/posts/new_md/doc2420/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -539,7 +552,7 @@ KGTN2016062903.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2464/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2420/">[GGH4.X-5.X] クライアント印刷機能を使って印刷しているが， Windows 7 (64bit) のクライアントでは印刷出来るのに， Windows 7 (32bit) のクライアントでは印刷出来ない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -552,17 +565,19 @@ KGTN2016062903.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2464/"><i class="far fa-calendar"></i> 2016-07-01</a>
+                                            <a href="/posts/new_md/doc2420/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/07/01*
-[番号] 技術ノート KGTN 2016062901
-[現象] [GGH4.X-5.X] XenDesktop の場合， StoreFront / Delivery Controller でICAファイルを作成し，それを使ってログオンせねばならないが，GGの場合も同様の処理が必要か？
-[説明] いいえ，GGはWindows環境の下でアプリケーション配信機能のみを提供するソフトウエアで，独自の認証機能等は持っておりません．クライアントPCのデスクトップ上からGGサーバーにログオンしたい場合は，以下のコマンドラインを実行して下さい．
-gg-client.exe –h &lt;IP アドレス&gt; -u &lt;ユーザーID&gt; -p &lt;パスワード&gt;  ファイル KGTN2016062901.pdf [(65 KB)] [kitasp 技術センター, 2016/07/01 17:31]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2464/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016071402
+[現象] [GGH4.X-5.X] クライアント印刷機能を使って印刷しているが， Windows 7 (64bit) のクライアントでは印刷出来るのに， Windows 7 (32bit) のクライアントでは印刷出来ない．
+[説明] GGのクライアント （ソフトウエア） は，32ビットアプリケーションですので，クライアントOSの種類 （32ビット/64ビット） には影響されません．以下の情報の採取をお願いします．
+サーバー側およびクライアント側のGGのバージョン情報およびAPSログ 出力先のプリンタードライバーの種類 （Windows Printer Drivers / Universal Printer Driver） Preview PDF (from ???) へ印刷した時，画面に印刷内容がPDFファイルとして表示されるかどうか
+なお，出力先のプリンタードライバーの種類が Windows Printer Drivers の場合は，サーバー側およびクライアント側にメーカーが提供するプリンタードライバー （同等の機能＆バージョンであること） を事前にインストールする必要があります．出力先のプリンタードライバーの種類が Universal Printer Driver の場合は，印刷ジョブをPDF形式でサーバー側からクライアント側へ送信するため，サーバー側への （当該機種の） プリンタードライバーを事前にインストールする必要はありません．
+ファイル KGTN2016071402.pdf [(67 KB)] [kitasp 技術センター, 2016/08/01 13:30]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2420/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -572,7 +587,7 @@ gg-client.exe –h &lt;IP アドレス&gt; -u &lt;ユーザーID&gt; -p &lt;パ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2473/">
+                                      <a href="/posts/new_md/doc2414/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -580,7 +595,7 @@ gg-client.exe –h &lt;IP アドレス&gt; -u &lt;ユーザーID&gt; -p &lt;パ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2473/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2414/">[GGH4.X-5.X] クラスターマネージャーのLogタブで設定した内容は直ちに反映されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -593,17 +608,19 @@ gg-client.exe –h &lt;IP アドレス&gt; -u &lt;ユーザーID&gt; -p &lt;パ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2473/"><i class="far fa-calendar"></i> 2016-07-01</a>
+                                            <a href="/posts/new_md/doc2414/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/07/01*
-[番号] 技術ノート KGTN 2016062307
-[現象] [GGH4.X-5.X] クライアントPC上でブラウザを使用すると速いが，GGやRDS上でブラウザを使用するとそれに比べて遅く感じる．
-[説明] クライアントPC上でブラウザを使用する場合は，表示するページのコンテンツを受信し，それをブラウザで直ちに表示します．GGやRDS上でブラウザを使用する場合は，それに加えコンテンツを表示した結果 （ビットマップなど） をサーバー側からクライアント側へ転送する必要があり，この送受信処理に要する時間が若干の遅さとして感じられるのだと思います．
-ファイル KGTN2016062307.pdf [(53.2 KB)] [kitasp 技術センター, 2016/07/01 16:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2473/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016072102
+[現象] [GGH4.X-5.X] クラスターマネージャーのLogタブで設定した内容は直ちに反映されるのか？
+[説明] クラスターマネージャーのLogタブで設定した時に表示されるメッセージの通りで，サービス APS が再起動された時 （次回開始された時） に反映されます．
+ファイル KGTN2016072102.pdf [(56.6 KB)] [kitasp 技術センター, 2016/08/01 13:45]
+KGTN2016072102.jpg
+表示 [(4.44 KB)] [kitasp 技術センター, 2016/08/01 13:45]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2414/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -613,7 +630,7 @@ gg-client.exe –h &lt;IP アドレス&gt; -u &lt;ユーザーID&gt; -p &lt;パ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2474/">
+                                      <a href="/posts/new_md/doc2411/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -621,7 +638,7 @@ gg-client.exe –h &lt;IP アドレス&gt; -u &lt;ユーザーID&gt; -p &lt;パ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2474/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2411/">[GGH4.X-5.X] クラスターマネージャーのLogタブの Back up / Delete の条件のファイルサイズとは，ログファイルのサイズのことなのか？　それとも全ログファイルの合計サイズのことなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -634,17 +651,17 @@ gg-client.exe –h &lt;IP アドレス&gt; -u &lt;ユーザーID&gt; -p &lt;パ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2474/"><i class="far fa-calendar"></i> 2016-07-01</a>
+                                            <a href="/posts/new_md/doc2411/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/07/01*
-[番号] 技術ノート KGTN 2016062306
-[現象] [GGH4.X-5.X] ブラウザ IE10 や IE11 を使い分けることは可能か？
-[説明] ブラウザ Internet Explorer のバージョンは，それを実行する環境 （OS） に依存しますので，１つのGGサーバー上で複数バージョンを使い分けることは出来ません．それぞれのバージョン毎にGGサーバーを構築する必要があります． IE9 に関しては， Windows Server 2008 R2 でGGサーバーを構築することが出来ます． IE10 に関しては， Windows Server 2008 R2 または Windows Server 2012 でGGサーバーを構築することが出来ます． IE11 に関しては， Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 でGGサーバーを構築することが出来ます
-ファイル KGTN2016062306.pdf [(58.1 KB)] [kitasp 技術センター, 2016/07/01 16:51]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2474/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016072104
+[現象] [GGH4.X-5.X] クラスターマネージャーのLogタブの Back up / Delete の条件のファイルサイズとは，ログファイルのサイズのことなのか？　それとも全ログファイルの合計サイズのことなのか？
+[説明] 個別のログファイルのサイズです．運用レベルで考えれば， Delete を指定する場合は，ファイルサイズは削除が行われないような大きなサイズを指定することをお勧めします．
+ファイル KGTN2016072104.pdf [(52.2 KB)] [kitasp 技術センター, 2016/08/01 13:49]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2411/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -654,7 +671,7 @@ gg-client.exe –h &lt;IP アドレス&gt; -u &lt;ユーザーID&gt; -p &lt;パ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2475/">
+                                      <a href="/posts/new_md/doc2412/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -662,7 +679,7 @@ gg-client.exe –h &lt;IP アドレス&gt; -u &lt;ユーザーID&gt; -p &lt;パ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2475/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2412/">[GGH4.X-5.X] クラスターマネージャーのLogタブの Back up / Delete の条件は経過日数とサイズが指定出来るが，どちらが優先されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -675,17 +692,19 @@ gg-client.exe –h &lt;IP アドレス&gt; -u &lt;ユーザーID&gt; -p &lt;パ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2475/"><i class="far fa-calendar"></i> 2016-07-01</a>
+                                            <a href="/posts/new_md/doc2412/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/07/01*
-[番号] 技術ノート KGTN 2016062305
-[現象] [GGH4.X-5.X] GG上のアプリケーションから印刷可能なプリンターは？
-[説明] サーバー側のプリンターは，ログオンしたアカウントでアクセス可能なプリンターを使用することが出来ます．クライアント側のプリンターは， 「クライアント印刷機能が有効な場合」 ログオンしたアカウントでアクセス可能なプリンターを使用することが出来ます．つまり，クライアント側のアカウントおよびサーバー側のアカウントでアクセス可能なプリンターを使用することが出来ます．
-ファイル KGTN2016062305.pdf [(48 KB)] [kitasp 技術センター, 2016/07/01 16:51]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2475/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016072103
+[現象] [GGH4.X-5.X] クラスターマネージャーのLogタブの Back up / Delete の条件は経過日数とサイズが指定出来るが，どちらが優先されるのか？
+[説明] クラスターマネージャーのLogタブの Back up / Delete の処理は，設定文言の通り 「設定した日数を経過した」 時か，または 「設定したサイズを超えた」 時に適用されます （何れかの条件が満たされた時に適用されます） ．
+ファイル KGTN2016072103.pdf [(71.1 KB)] [kitasp 技術センター, 2016/08/01 13:48]
+KGTN2016072103.jpg
+表示 [(6.14 KB)] [kitasp 技術センター, 2016/08/01 13:48]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2412/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -695,7 +714,7 @@ gg-client.exe –h &lt;IP アドレス&gt; -u &lt;ユーザーID&gt; -p &lt;パ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2476/">
+                                      <a href="/posts/new_md/doc2406/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -703,7 +722,7 @@ gg-client.exe –h &lt;IP アドレス&gt; -u &lt;ユーザーID&gt; -p &lt;パ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2476/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2406/">[GGH4.X-5.X] クラスターマネージャーのホスト一覧 （GO-Global Hosts） で青色のアイコンと灰色のアイコンの違いは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -716,19 +735,19 @@ gg-client.exe –h &lt;IP アドレス&gt; -u &lt;ユーザーID&gt; -p &lt;パ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2476/"><i class="far fa-calendar"></i> 2016-07-01</a>
+                                            <a href="/posts/new_md/doc2406/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/07/01*
-[番号] 技術ノート KGTN 2016062304
-[現象] [GGH4.X-5.X] ブラウザ （IE） をホスティングするが，出来るだけ反応が良い設定にしたい．
-[説明] 既定の設定では，描画パフォーマンスが最も良い 「画像の圧縮：有効」 と 「色深度：16ビット」 が適用されます．明示的にパラメタを設定する場合は，クライアント起動時に以下のパラメタを指定して下さい．
-デスクトップクライアント&hellip;：-c -mx 16 ブラウザ系クライアント&hellip;..：&amp;compression=true&amp;maxbpp=16
-さらに，サーバー側の設定として Throttle と Batching を有効にして下さい．具体的な設定方法については，技術ノート KGTN#2011121902 をご覧下さい （技術的な背景に関する情報は KGTN#2013020601 にあります） ．
-ファイル KGTN2016062304.pdf [(71.8 KB)] [kitasp 技術センター, 2016/07/01 16:50]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2476/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016072504
+[現象] [GGH4.X-5.X] クラスターマネージャーのホスト一覧 （GO-Global Hosts） で青色のアイコンと灰色のアイコンの違いは？
+[説明] 各GGサーバーが送信するブロードキャスト・メッセージ （UDP） をクラスターマネージャーが受信した時，そのGGサーバーが青色のアイコンでホスト一覧に表示されます．アイコンをクリックすると，クラスターマネージャーはそのGGサーバーの制御を行うため接続 （TCP） を試みますが，認証等の問題で接続出来ない場合はアイコンが灰色に変わります．なお，ホスト一覧は定期的に更新されますので，この更新のタイミングで灰色のアイコンが青色のアイコンに変わります．
+ファイル KGTN2016072504.pdf [(79.3 KB)] [kitasp 技術センター, 2016/08/01 14:04]
+KGTN2016072504.jpg
+表示 [(7.07 KB)] [kitasp 技術センター, 2016/08/01 14:04]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2406/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -798,7 +817,7 @@ gg-client.exe –h &lt;IP アドレス&gt; -u &lt;ユーザーID&gt; -p &lt;パ�
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

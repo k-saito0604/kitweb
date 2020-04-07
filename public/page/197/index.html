@@ -409,26 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1228/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1121/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1228/">[GGH4.0] GO</a></h4>
+                            <h4><a href="/posts/new_md/doc1121/">[GGW3.2.1/GGH4.0] クライアントを Windows 7 Professional に変更したところ，ActiveX クライアント利用時にマウスのスクロール機能を利用するとブラウザが終了する．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-11-16
+                            日付 2012-01-25
                             </p>
                             <p class="intro">*技術ノート
-2011/11/16*
-[番号] 技術ノート KGTN 2011111602
-[現象] [GGH4.0] GO-Global Windows Host Ver4.0.1 がサポートする64ビットのサーバ環境は？
-[説明] GO-Global Windows Host Ver4.0.1 がサポートする64ビットのサーバ環境は，以下の通りです．
-Windows Server 2008 Standard or Enterprise with Service Pack 2 (x64) Windows Server 2008 R2 Standard or Enterprise (x64)
-ファイル KGTN2011111602.pdf [(41.5 KB)] [kitasp 技術センター, 2011/11/16 13:12]</p>
+2012/01/25*
+[番号] 技術ノート KGTN 2012012502
+[現象] [GGW3.2.1/GGH4.0] クライアントを Windows 7 Professional に変更したところ，ActiveX クライアント利用時にマウスのスクロール機能を利用するとブラウザが終了する．
+[説明] 弊社の標準環境 （検証環境） にはWindows 7 Professional のクライアントがあり，GGW3.2.1/GGH4.0 の両方が問題なく動作しております （下記の画像の通り） ．従って， 「マウスのスクロール機能を利用するとブラウザが終了する」 という現象は，そのマシンにインストールされた他のアプリケーションに起因すると考えられます．マウスのスクロール機能に影響を与える （標準以外の機能を与える） アプリケーションをチェックして下さい．推測になりますが，マウスのスクロール操作でリロードが機能して，ActiveX クライアントが強制的に終了させられているのではないかと思われます．
+ファイル KGTN2012012502.pdf [(98 KB)] [kitasp 技術センター, 2012/01/25 13:09]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1228/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1121/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -447,32 +446,27 @@ Windows Server 2008 Standard or Enterprise with Service Pack 2 (x64) Windows Ser
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1223/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1123/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1223/">[Windows] 物理マシンで動作しているGGサーバを， P2V (Physical to Virtual) ツールを使い仮想マシンへ移行したいが注意点は？</a></h4>
+                            <h4><a href="/posts/new_md/doc1123/">[GGW3.2.1] GGW3.2.1でクライアント印刷機能を利用する時，外字の印刷は出来るのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-11-16
+                            日付 2012-01-23
                             </p>
                             <p class="intro">*技術ノート
-2011/11/16*
-[番号] 技術ノート KGTN 2011111601
-[現象] [Windows] 物理マシンで動作しているGGサーバを， P2V (Physical to Virtual) ツールを使い仮想マシンへ移行したいが注意点は？
-[説明] 「物理マシンから仮想マシンへの移行コストを削減するため P2Vツール を利用したい」 という話をよく耳にしますが，その方面に詳しい方のお話を総合すると，以下のような点に注意が必要です．
-物理マシンから仮想マシンへの移行は，仕様が異なる別の物理マシンへの起動用HDD （システムドライブ） の付け替えと考えるべき．
-旧いマシンのドライバ・サービス・レジストリ （設定ファイル） を削除し，新しいマシンのドライバやサービス等の導入が必要．しかし，旧いマシンのドライバ・サービス・レジストリ （設定ファイル） を適切に削除することは非常に困難．
-新旧マシンのハードウェア仕様が異なる場合，カーネルの再構築やチップセット用ドライバの再導入も必要．
-（さまざまな事例を通して） ドライバ・サービス・レジストリ （設定ファイル）の残存が悪影響を及ぼし，安定性やパフォーマンスに問題が発生する可能性あり．
-安定性やパフォーマンスに問題が発生しない場合でも，運用を開始して障害が発生した時，その原因調査や解決に要する時間 や工数が増える可能性あり．
-自力で問題解決できるだけの技術が必要．解決できない場合，仮想ベンダの有償サポートを受けて解決する必要あり．
-自力で解決出来たとしても移行コストや期間が 「通常の移行よりも」 増える可能性あり．
-ファイル KGTN2011111601.pdf [(71.4 KB)] [kitasp 技術センター, 2011/11/17 08:24]</p>
+2012/01/23*
+[番号] 技術ノート KGTN 2012012301
+[現象] [GGW3.2.1] GGW3.2.1でクライアント印刷機能を利用する時，外字の印刷は出来るのか？
+[説明] 弊社の標準環境 （Server: Windows Server 2003, Client: Windows 7, Printer: Fuji Xerox DocuCentre-II C4300, GG: 3.2.1.4510） で確認したところ，
+サーバ側での印刷 Windows Driver を使用してのクライアント側での印刷 Universal Driver を使用してのクライアント側での印刷
+それぞれの環境で，外字が正しく印刷されました．
+ファイル KGTN2012012301.pdf [(48 KB)] [kitasp 技術センター, 2012/01/23 10:12]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1223/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1123/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -491,26 +485,26 @@ Windows Server 2008 Standard or Enterprise with Service Pack 2 (x64) Windows Ser
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1229/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1126/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1229/">[GGW3.2.1/GGH4.0] 画面の遷移が遅いが，どのようなことが考えられるか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1126/">[GGH4.0] クライアントが異なる複数のGGサーバに同時にログオンする時，クライアント印刷機能に関して注意事項等はあるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-11-14
+                            日付 2012-01-20
                             </p>
                             <p class="intro">*技術ノート
-2011/11/14*
-[番号] 技術ノート KGTN 2011111403
-[現象] [GGW3.2.1/GGH4.0] 画面の遷移が遅いが，どのようなことが考えられるか？
-[説明] 過去の事例ではさまざまな原因があり，さらにそれらが絡み合って発生する場合もあり，可能性を全て列挙することは困難です．代表的な原因として，次のようなことが考えられます．
-ネットワークの遅延や輻輳 &hellip; 例： アクセスラインが夕方になると混雑して遅い． アプリケーションの描画が高負荷 &hellip; 例： 凝った画面で描画オブジェクトが非常に多い． アプリケーションの処理が高負荷 &hellip; 例： 月次処理で大量の帳票を印刷する． ディスクアクセスの遅延 &hellip; 例： ネットワーク上のファイルシステムへのアクセスが集中し遅い． アンチウイルスソフト等の影響 &hellip; 例： 全ファイルのスキャンやアンチウイルスソフトのアップデートなど．
-ファイル KGTN2011111403.pdf [(58.6 KB)] [kitasp 技術センター, 2011/11/14 14:25]</p>
+2012/01/20*
+[番号] 技術ノート KGTN 2010111701
+[現象] [GGH4.0] クライアントが異なる複数のGGサーバに同時にログオンする時，クライアント印刷機能に関して注意事項等はあるのか？
+[説明] Ver4.0系では，クライアント印刷機能の設定ファイル （構成情報） print.ini をクライアント上に持たないため，同時に複数のGGサーバにログオンしても，互いの設定等が影響することはありません．
+補　足 逆に，GGW3.2.1ではクライアント印刷機能の設定ファイルprint.ini でプリンタを管理しているため，同時に複数のセッションを張ると，最初のセッションのみプリンタが構成され，他のセッションについてはプリンタが構成されません （注：複数セッションを許容すると，設定ファイルに矛盾が生じるため） ．
+ファイル KGTN2010111701.pdf [(74.5 KB)] [kitasp 技術センター, 2012/01/20 12:36]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1229/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1126/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -529,25 +523,29 @@ Windows Server 2008 Standard or Enterprise with Service Pack 2 (x64) Windows Ser
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1230/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1128/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1230/">[GGW3.2.1/GGH4.0] Microsoft社の知識ベース KB176792 を参考にIEを操作するプログラムをVC&#43;&#43;で書いたが，GGの環境で動作しない．</a></h4>
+                            <h4><a href="/posts/new_md/doc1128/">[GGW3.2.1/GGH4.0] GGサーバへのログオンに時間がかかるが，何を調べれば良いか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-11-11
+                            日付 2012-01-20
                             </p>
                             <p class="intro">*技術ノート
-2011/11/11*
-[番号] 技術ノート KGTN 2011111101
-[現象] [GGW3.2.1/GGH4.0] Microsoft社の知識ベース KB176792 を参考にIEを操作するプログラムをVC++で書いたが，GGの環境で動作しない．
-[説明] GGの通常の環境ではプロセス explorer.exe が存在しないため，プログラムで使用しているライブラリが Windows Shell (explorer.exe) の機能を使用するとエラーが発生します． GraphOn社の技術ノート Article C00046 の設定 （下記参照） を追加することで，この問題を解消することが出来ます．
-ファイル KGTN2011111101.pdf [(86.4 KB)] [kitasp 技術センター, 2011/11/11 13:38]</p>
+2012/01/20*
+[番号] 技術ノート KGTN 2012012002
+[現象] [GGW3.2.1/GGH4.0] GGサーバへのログオンに時間がかかるが，何を調べれば良いか？
+[説明] 問題点を絞り込むために，とりあえず以下のような手順 （条件） でログオン時間を確認するのが良いでしょう．
+GGのクライアント機能 （ドライブ・プリンタ・クリップボードの全て） とログオンスクリプト機能を無効にして，サーバ上のローカルアカウント Administrator でログオンして下さい．この状況でログオンに時間がかかる場合は，そのサーバ自体やネットワーク環境に本質的な原因があると推測されます．
+ドメイン環境 （AD環境） のアカウントでログオンして下さい．この状況でログオンに時間がかかる場合は，ドメイン環境 （AD環境） に原因があると推測されます．
+ログオンスクリプトを有効にして，ローカルアカウントまたはドメインのアカウントでログオンして下さい．この状況でログオンに時間がかかる場合は，ログオンスクリプト内の処理に原因があると推測されます．
+クライアント機能を 「ひとつずつ」 有効にして，ローカルアカウントまたはドメインのアカウントでログオンして下さい．この状況でログオンに時間がかかるようになった時は，その時に有効にしたクライアント機能に関連する環境に原因があると推測されます．
+ファイル KGTN2012012002.pdf [(57.4 KB)] [kitasp 技術センター, 2012/01/20 11:20]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1230/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1128/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

@@ -409,25 +409,32 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc162/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc79/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc162/">[GGH4.X] 画像の圧縮率変更等による帯域制御の機能はあるか？</a></h4>
+                            <h4><a href="/posts/new_md/doc79/">[Windows] Windows　システム イメージ マネージャー (Windows SIM) を使用して WS2012R2 をインストールしたが，リモートデスクトップで接続出来ない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2014-11-21
+                            日付 2015-06-11
                             </p>
                             <p class="intro">*技術ノート
-2014/11/21*
-[番号] 技術ノート KGTN 2014111709
-[現象] [GGH4.X] 画像の圧縮率変更等による帯域制御の機能はあるか？
-[説明] GGは，「帯域をできるだけ使わない」 という仕様が基本になっております．アプリケーションの仕様等で色深度を32ビットにしたい場合は &ldquo;-qt 0 -mx 32&rdquo; を指定して下さい．オプション &ldquo;-qt 0&rdquo; は 「画像圧縮機能を無効にする」 という意味で， &ldquo;-mx 32&rdquo; は 「色深度を32ビットに設定する」 という意味です．
-ファイル KGTN2014111709.pdf [(49.2 KB)] [kitasp 技術センター, 2014/11/21 16:20]</p>
+2015/06/11*
+[番号] 技術ノート KGTN 2015022001
+[現象] [Windows] Windows　システム イメージ マネージャー (Windows SIM) を使用して WS2012R2 をインストールしたが，リモートデスクトップで接続出来ない．
+[説明] 弊社でも以下の設定でこの現象を確認しております．英語版の WS2012R2 ではリモートデスクトップで接続がこの設定で出来ることから，日本語版の WS2012R2 の不具合か，またはグループ名等が変更されているのではないかと思われます．
+補　足 以下の設定で，リモートデスクトップが Windows ファイアウォール経由の通信を許可されることを確認しました．
+ファイル KGTN2015022001.pdf [(154 KB)] [kitasp 技術センター, 2015/06/11 17:19]
+KGTN2015022001-1.jpg
+表示 [(52.7 KB)] [kitasp 技術センター, 2015/06/17 17:23]
+KGTN2015022001-2.jpg
+表示 [(55.8 KB)] [kitasp 技術センター, 2015/06/17 17:23]
+KGTN2015022001-3.jpg
+表示 [(35.1 KB)] [kitasp 技術センター, 2015/06/17 17:23]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc162/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc79/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,25 +453,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc166/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc73/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc166/">[GGH4.X] 耐故障性 （高可用性） を考えた場合のサーバー構成は？</a></h4>
+                            <h4><a href="/posts/new_md/doc73/">[Windows] WS2008R2 (Windows Server 2008 R2) で PING を送っても応答が無い．</a></h4>
                             <p class="author-category">
                             
-                            日付 2014-11-21
+                            日付 2015-06-11
                             </p>
                             <p class="intro">*技術ノート
-2014/11/21*
-[番号] 技術ノート KGTN 2014111701
-[現象] [GGH4.X] 耐故障性 （高可用性） を考えた場合のサーバー構成は？
-[説明] ハードウエアまたはソフトウエアの （専用の） フォールトトレランス機能を利用する方法もありますが，コスト等の問題があり一般的ではありません．多くの事例では，GGサーバー　（仮想サーバー） を冗長に配置し，ロードバランサー （または拡張パックの振り分けサーバー） で稼働状況をチェックし，障害を検知したGGサーバーを切り離す方法がとられております．なお，GGサーバーの稼働状況は，拡張パックの　GGSessionMonitor から得ることが出来ます．
-ファイル KGTN2014111701.pdf [(53.9 KB)] [kitasp 技術センター, 2014/11/21 15:59]</p>
+2015/06/11*
+[番号] 技術ノート KGTN 2015032501
+[現象] [Windows] WS2008R2 (Windows Server 2008 R2) で PING を送っても応答が無い．
+[説明] WS2008R2は，デフォルトの設定で PING が通らないようになっています． PING が通るようにするには &ldquo;セキュリティが強化された Windows ファイアウォール&rdquo; の &ldquo;受信の規則&rdquo; の &ldquo;ファイルとプリンターの共有（エコー要求 ICMPv4 受信）&rdquo; を有効にして下さい．
+ファイル KGTN2015032501.pdf [(160 KB)] [kitasp 技術センター, 2015/06/11 17:41]
+KGTN2015032501.jpg
+表示 [(82.6 KB)] [kitasp 技術センター, 2015/06/18 14:02]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc166/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc73/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -483,25 +492,31 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc158/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc86/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc158/">[Windows] Windows Server 2003 のサーバーをリプレイスするが，新サーバーへプリンタードライバーを移す方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc86/">[Windows] WS2008R2で IE のエラーが発生したが，ダンプファイルの採取方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2014-11-21
+                            日付 2015-06-11
                             </p>
                             <p class="intro">*技術ノート
-2014/11/21*
-[番号] 技術ノート KGTN 2014112101
-[現象] [Windows] Windows Server 2003 のサーバーをリプレイスするが，新サーバーへプリンタードライバーを移す方法は？
-[説明] Microsoft Print Migrator 3.1 （以下 MPM と省略） を入手し，以下の手順で作業を行って下さい．
- 現サーバー上で MPM を起動し Actions → Backup でプリンタードライバー等をバックアップする． 生成された CAB ファイルを新サーバーへコピーする． 新サーバー上で MPM を起動し Actions → Restore でプリンタードライバー等をリストアする． ※リストア時に上記２の CAB ファイルを指定する．  ファイル KGTN2014112101.pdf [(59.5 KB)] [kitasp 技術センター, 2014/11/21 16:42]</p>
+2015/06/11*
+[番号] 技術ノート KGTN 2015021001
+[現象] [Windows] WS2008R2で IE のエラーが発生したが，ダンプファイルの採取方法は？
+[説明] レジストリに以下の設定を行うことで 「ユーザー モード プロセス ダンプ」 を採取することが出来ます．
+HKLMSOFTWAREMicrosoftWindowsWindows Error ReportingLocalDumps DumpFolder REG_EXPAND_SZ C:DumpFiles DumpCount REG_DWORD 10 (The maximum number of dump files) DumpType REG_DWORD 2 (Full dump)
+詳細については，下記ページをご覧下さい．
+https://msdn.microsoft.com/ja-jp/library/windows/desktop/bb787181.aspx Collecting User-Mode Dumps
+https://msdn.microsoft.com/en-us/library/windows/desktop/bb513638%28v=vs.85%29.aspx WER Settings
+ファイル KGTN2015021001.pdf [(70.6 KB)] [kitasp 技術センター, 2015/06/11 17:10]
+KGTN2015021001.jpg
+表示 [(70.4 KB)] [kitasp 技術センター, 2015/06/17 16:44]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc158/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc86/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -520,27 +535,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc168/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc123/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc168/">[GGH4.X] Windowsクライアントを使用しているが，拡張パックの pdfprint.exe (GGPdfPrint) をインストールする手順は？</a></h4>
+                            <h4><a href="/posts/new_md/doc123/">[Windows] WS2012R2のインストールの応答ファイルで，パーティションのサイズを 「ディスクの残り全部」 にする方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2014-11-14
+                            日付 2015-06-11
                             </p>
                             <p class="intro">*技術ノート
-2014/11/14*
-[番号] 技術ノート KGTN 2014111401
-[現象] [GGH4.X] Windowsクライアントを使用しているが，拡張パックの pdfprint.exe (GGPdfPrint) をインストールする手順は？
-[説明] サーバー側とクライアント側，それぞれで作業を行って頂く必要があります．先ず，拡張パックのActiveXクライアント gg-activex.cab をダブルクリックし， pdfprint.exe と pdfprint.ini を選択し，それを作業フォルダへコピー （ドラッグ＆ドロップ） して下さい．
-[サーバー側] &lt;GGのインストールフォルダ&gt;UpdatesWindows に pdfprint.exe と pdfprint.ini を上書きコピーして下さい．この作業は，GGの再インストールやアップグレードを行った時も必ず行って下さい．この作業が行われない場合は，GGのクライアント自動更新機能により標準の pdfprint.exe に戻ることになります．
-[クライアント側] &lt;GGクライアントのインストールフォルダ&gt;Client に pdfprint.exe と pdfprint.ini を上書きコピーして下さい．この作業は，GGの再インストールやアップグレードを行った時も原則として行って下さい （注： GGのクライアント自動更新機能でインストールすることも出来ますが，少なくとも再インストールの直後は標準の pdfprint.exe に戻ります） ．
-ファイル KGTN2014111401.pdf [(58.5 KB)] [kitasp 技術センター, 2014/11/14 16:20]</p>
+2015/06/11*
+[番号] 技術ノート KGTN 2015030201
+[現象] [Windows] WS2012R2のインストールの応答ファイルで，パーティションのサイズを 「ディスクの残り全部」 にする方法は？
+[説明] 下記のように CreatePartition で Extend = true を指定して下さい．
+&lt;DiskConfiguration&gt; &lt;WillShowUI&gt;OnError&lt;/WillShowUI&gt; &lt;Disk wcm:action=&quot;add&quot;&gt; &lt;DiskID&gt;0&lt;/DiskID&gt; &lt;WillWipeDisk&gt;true&lt;/WillWipeDisk&gt; &lt;CreatePartitions&gt; &lt;CreatePartition wcm:action=&quot;add&quot;&gt; &lt;Order&gt;1&lt;/Order&gt; &lt;Size&gt;350&lt;/Size&gt; &lt;Type&gt;Primary&lt;/Type&gt; &lt;/CreatePartition&gt; &lt;CreatePartition wcm:action=&quot;add&quot;&gt; &lt;Order&gt;2&lt;/Order&gt; &lt;Extend&gt;true&lt;/Extend&gt; &lt;Type&gt;Primary&lt;/Type&gt; &lt;/CreatePartition&gt; &lt;/CreatePartitions&gt;  https://technet.microsoft.com/ja-jp/library/dd744365%28v=ws.10%29.aspx?f=255&amp;MSPPError=-2147217396 Windows SIM を使用して BIOS ベースのハード ディスク パーティションを作成する
+ファイル KGTN2015030201.pdf [(67.3 KB)] [kitasp 技術センター, 2015/06/11 17:29]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc168/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc123/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

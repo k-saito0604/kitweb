@@ -409,27 +409,30 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1018/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2136/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1018/">[VM/AD] Active Directory サーバ （ドメインコントローラー） を仮想環境に配置すると危険だと聞いたが本当か？</a></h4>
+                            <h4><a href="/posts/new_md/doc2136/">[GGH4.X-5.X] Windows および ActiveX クライアントで，クライアント側のIMEを使用したい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-06-15
+                            日付 2012-09-24
                             </p>
                             <p class="intro">*技術ノート
-2012/06/15*
-[番号] 技術ノート KGTN 2012061501
-[現象] [VM/AD] Active Directory サーバ （ドメインコントローラー） を仮想環境に配置すると危険だと聞いたが本当か？
-[説明] Active Directory サーバ （ドメインコントローラー） は非常に重要なサーバで，仮想環境に配置する場合は多くの点に注意する必要があります．下記のマイクロソフト社のページに詳しい情報が掲載されております．
-仮想ホスト環境で Active Directory ドメイン コントローラーをホストする場合の考慮事項 http://support.microsoft.com/kb/888794/ja
-仮想化ドメイン コントローラーの展開に関する考慮事項 http://technet.microsoft.com/ja-jp/library/dd348449(v=ws.10).aspx
-ファイル KGTN2012061501.pdf [(61.7 KB)] [kitasp 技術センター, 2012/06/15 09:38]</p>
+2012/09/24*
+[番号] 技術ノート KGTN 2012092402
+[現象] [GGH4.X-5.X] Windows および ActiveX クライアントで，クライアント側のIMEを使用したい．
+[説明] それぞれ，以下の設定を行って下さい．
+[Windowsクライアント] コマンドラインに -kb ClientSideIME を加える．
+[ActiveXクライアント] logon.html の引数に &amp;keyboard=ClientSideIME を加える．
+ Windows環境の場合，入力中の文字は画面の左上に表示されます．   クライアント側のIMEで入力した文字列は，サーバ側のIMEのバッファに送信されますので，文字列を確定する場合は，エンターキーを２回押下する必要があります．
+ファイル KGTN2012092402.pdf [(525 KB)] [kitasp 技術センター, 2017/04/27 11:34]
+KGTN2012092402.jpg
+表示 [(32.6 KB)] [kitasp 技術センター, 2017/04/27 17:11]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1018/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2136/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -448,25 +451,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1019/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2021/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1019/">[GGH4.0/Multi</a></h4>
+                            <h4><a href="/posts/new_md/doc2021/">[GGH4.X-5.X] Windowsのクライアントに比べLinuxのクライアントの動作が遅い．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-06-14
+                            日付 2012-09-24
                             </p>
                             <p class="intro">*技術ノート
-2012/06/14*
-[番号] 技術ノート KGTN 2012061401
-[現象] [GGH4.0/Multi-monitor] GGH4.0の環境かつマルチモニタ有効 （-mm 1） で，色深度が32ビットのプライマリモニタから，色深度が16ビットのセカンダリモニタへアプリケーション （のウインドウ） を移動すると画面が乱れる．
-[説明] プライマリモニタの色深度が32ビットですので，アプリケーションはその環境に合わせた動作を行います．このアプリケーション （のウインドウ） を色深度が16ビットのセカンダリモニタへ移動した場合，環境が異なりますので画面が乱れるという現象が発生します．対応策としては，
- プライマリモニタとセカンダリモニタの色深度を合わせる， 2) GGクライアントの画像圧縮機能を有効にする （Windowsクライアントの ?c オプションを指定，色深度が自動的に下がります） の２つが考えられます．  ファイル KGTN2012061401.pdf [(62 KB)] [kitasp 技術センター, 2012/06/14 09:58]</p>
+2012/09/24*
+[番号] 技術ノート KGTN 2012092405
+[現象] [GGH4.X-5.X] Windowsのクライアントに比べLinuxのクライアントの動作が遅い．
+[説明] Windowsクライアントの場合は，サーバ側もクライアント側も同じアーキテクチャ （Windows） ですので，その API をフルに活用してパフォーマンスを稼ぐことが出来ます．Linuxクライアントの場合は，サーバ側とクライアント側のアーキテクチャが異なるために，そのような最適化を行うことが出来ませんので，Windowsクライアントに比べ動作が遅く感じることがあります （特に大きなウインドウの移動など） ．スクリーンスクレイピング方式の他社製品では 「描画を間引く」 という手法等で描画の高速化を図ることが出来ますが，APIラッピング方式のGGの場合は忠実に画面を再現するため．この手法を適用することが出来ません．運用上遅さを感じる場合は，クライアントのCPU性能の向上をご検討下さい．
+ファイル KGTN2012092405.pdf [(42.5 KB)] [kitasp 技術センター, 2017/08/25 16:05]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1019/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2021/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,25 +488,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2646/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc915/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2646/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc915/">[GGW3.2.1/GGH4.X] アプリケーションがGGサーバ上で動作するかどうか診断するツールはないのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-06-12
+                            日付 2012-09-24
                             </p>
                             <p class="intro">*技術ノート
-2012/06/12*
-[番号] 技術ノート KGTN 2012061203
-[現象] [GGH4.X-6.X] ロードバランサ （ハードウエア） がある環境で，セッション再接続時に同じGGサーバへ接続させる方法は？
-[説明] ロードバランサ （ハードウエア） の機能に依存しますので事例になりますが， F5 Networks 社の BIG IP がある環境でパーシステンス機能 （接続維持機能，ソースIPアドレス） を利用して，設定した時間内での再接続をGGサーバへ振り分けた案件があります．なお，GGのクライアントはブラウザ （IE等） のセッションとは別のセッションを張りますので，この点にご注意下さい．
-ファイル KGTN2012061203.pdf [(39.8 KB)] [kitasp 技術センター, 2019/09/13 14:24]</p>
+2012/09/24*
+[番号] 技術ノート KGTN 2012092404
+[現象] [GGW3.2.1/GGH4.X] アプリケーションがGGサーバ上で動作するかどうか診断するツールはないのか？
+[説明] マルチユーザでの利用を想定していないアプリケーションは，リソースの競合等が発生し動作しません．また，特定の物理環境を想定してチューニングされたアプリケーションも動作しません．経験的には，素直に作成されたアプリケーションは動作します．
+「アプリケーションが正しく動作する」 という判断は，アプリケーションの仕様を熟知したベンダーにしか出来ませんので，当然のことながらGGが提供するツールでそれを行うことは技術的に不可能です．実際問題としては，ユーザがアプリケーションを利用する標準的なシナリオを作成し， 「その通りに動作するかどうか」 を検証するのが一般的な方法です．
+ファイル KGTN2012092404.pdf [(55.9 KB)] [kitasp 技術センター, 2012/09/24 14:59]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2646/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc915/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -522,25 +526,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2678/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc916/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2678/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc916/">[GGW3.2.1/GGH4.X] アプリケーションをGGサーバに集約した場合，サーバの負荷が気になる．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-06-12
+                            日付 2012-09-24
                             </p>
                             <p class="intro">*技術ノート
-2012/06/12*
-[番号] 技術ノート KGTN 2012061202
-[現象] [GGH4.X-5.X] １つのクライアントから，複数のGGサーバへ同じアカウントで同時にログオン可能か？
-[説明] １台のクライアントPCから，同時に・同じアカウントで・複数のGGサーバへログオンすることが可能です．プロファイルの制御については， Windows （Active Directory） の動作に従います．なお，マイ ドキュメントを使用しない場合 （またはマイドキュメントの内容を破棄して構わない場合） は，移動ユーザープロファイルでなく，固定ユーザープロファイルの利用もご検討下さい．プロファイルの書き戻し等で発生する問題を回避することが可能で，これを利用して同時数千ユーザのシステムを運用している大規模案件もあります．
-ファイル KGTN2012061202.pdf [(60.6 KB)] [kitasp 技術センター, 2015/12/16 11:51]</p>
+2012/09/24*
+[番号] 技術ノート KGTN 2012092403
+[現象] [GGW3.2.1/GGH4.X] アプリケーションをGGサーバに集約した場合，サーバの負荷が気になる．
+[説明] GGだけでなく他社製品も含め，製品自体の負荷は高くありません．１台のサーバで処理できるユーザ数は，各ユーザが起動するアプリケーションのCPU負荷とメモリ使用量の総和で決まります．インターネット上に 「１台のサーバで20〜30のユーザ （クライアント） が稼動」 と言った情報がありますが，大雑把に言えば事務系の業務アプリケーションとワープロ等を利用した時の目安だと考えられます．１人のユーザが多数のアプリケーションを起動した場合や， Excel 等で重たいマクロ処理を行った場合は，CPU負荷およびメモリ使用量が増大し，利用ユーザ数が減ることになります．メモリのネックは64ビットのOSにしてメモリを十分に積めばある程度解決出来ますし，CPUのネックについてもCPU性能を上げる （コア数を増やす） ことである程度解決出来ます．
+仮想化の流れの中では，１台の仮想サーバのユーザ数を例えば同時20ユーザと決めて，物理サーバ上に複数の仮想サーバを配置する事例が増えております．OSのライセンスが増えるという欠点はありますが，段階的にスケールを拡大することが出来るうえ，Windowsが不安定になった場合でも障害が局所化されるという運用上のメリットもあります．
+ファイル KGTN2012092403.pdf [(67.7 KB)] [kitasp 技術センター, 2012/09/24 14:37]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2678/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc916/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

@@ -409,29 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc768/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc675/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc768/">[GGH4.5] クライアントドライブ機能で大きなファイルをコピーした場合，どこがボトルネックになるのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc675/">[GGH4.5] APSログに Detected preexistent conduit mutex named ConduitMutex1 during desktop initialization (WLE183). という記録があり，ログオンに失敗する．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-12-07
+                            日付 2013-02-22
                             </p>
                             <p class="intro">*技術ノート
-2012/12/07*
-[番号] 技術ノート KGTN 2012120701
-[現象] [GGH4.5] クライアントドライブ機能で大きなファイルをコピーした場合，どこがボトルネックになるのか？
-[説明] 約150MBのファイルをサーバ側からクライアント側へコピーした時のネットワークのグラフを以下に示します． サーバ側のプロセッサはAMD Phenom II 1090T 3.21GHz で，約15%のCPU利用率になりました．ネットワークはそれなりの帯域を使用していますが，遅延等は発生していません．従って，大きなファイルを複数のユーザが並行してコピーする場合は，CPU負荷がボトルネックになると考えられます．
-[ネットワーク：サーバ側]
-[プロセッサ：サーバ側]
-[プロセス：サーバ側] logon.exe が約10%
-[ネットワーク遅延：クライアント側]
-ファイル KGTN2012120701.pdf [(390 KB)] [kitasp 技術センター, 2012/12/07 10:11]</p>
+2013/02/22*
+[番号] 技術ノート KGTN 2013022203
+[現象] [GGH4.5] APSログに &ldquo;Detected preexistent conduit mutex named ConduitMutex1 during desktop initialization (WLE183).&rdquo; という記録があり，ログオンに失敗する．
+[説明] WLE183 はGGが検出したエラーで，その内容は &ldquo;ERROR_ALREADY_EXISTS: Cannot create a file when that file already exists.&rdquo; です．GGがセッションを生成しようとした時，確保しようとしたリソースが既に存在しており，正常に確保出来なかったことを意味します．サーバの再起動直後でもこの現象が発生すれば， Windows 環境の異常の可能性が高いと推測されます．対応としては，Windows の再インストール，または可能であればGGサーバを構築した直後のイメージをリストアをお勧めします．
+ファイル KGTN2013022203.pdf [(64.2 KB)] [kitasp 技術センター, 2013/02/22 12:02]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc768/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc675/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -450,27 +446,31 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc770/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2618/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc770/">[GGH4.5/Mac] Mac OS X クライアントで，クライアントドライブ機能のパフォーマンスはどうか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2618/">[GGW3.2.1/GGH4.X-5.X] 64bit版Windows の環境でGGクライアントのレジストリの値を変更したい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-12-06
+                            日付 2013-02-22
                             </p>
                             <p class="intro">*技術ノート
-2012/12/06*
-[番号] 技術ノート KGTN 2012120602
-[現象] [GGH4.5/Mac] Mac OS X クライアントで，クライアントドライブ機能のパフォーマンスはどうか？
-[説明] 約150MBのファイルをサーバ側からクライアント側へコピーした時のネットワークのグラフを以下に示します． Windows Client が有線LANで， Mac OS X Clinet が無線LANですので，実質的にほぼ同等のパフォーマンスだと思われます．
-[Windows Client]
-[Mac OS X Client]
-ファイル KGTN2012120602.pdf [(211 KB)] [kitasp 技術センター, 2012/12/06 14:23]</p>
+2013/02/22*
+[番号] 技術ノート KGTN 2013022202
+[現象] [GGW3.2.1/GGH4.X-5.X] 64bit版Windows の環境でGGクライアントのレジストリの値を変更したい．
+[説明] GGクライアントは32bitアプリケーションで，64bit版Windows の環境で実行される場合は， 「WOW64 レジストリ リダイレクタの働きで」 次のレジストリの下に対応付けられます．
+HKEY_LOCAL_MACHINESoftwareWOW6432Node
+例えば，32bitアプリケーションのGGクライアントが
+HKEY_LOCAL_MACHINESoftwareGraphOnGO-Global ClientPluginsPath REG_SZ &hellip;
+へアクセスした場合は，WOW64レジストリ リダイレクタの働きで，
+HKEY_LOCAL_MACHINESOFTWAREWow6432NodeGraphonGO-Global ClientPluginsPath REG_SZ &hellip;
+をアクセスすることになります．従って，レジストリエディタ （デフォルトの64bitバージョンのレジストリエディタ） を使用する場合は，この実際にアクセスするキーを操作して下さい．なお，32bitバージョンのレジストリエディタ systemrootsyswow64regedit.exe を使用する場合は，32bit版Windowsの環境の場合と同様です．
+ファイル KGTN2013022202.pdf [(61 KB)] [kitasp 技術センター, 2016/03/11 15:20]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc770/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2618/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -489,25 +489,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc351/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc674/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc351/">[GGH4.X] GGのサポートを担当するに当たり，クライアント印刷機能周辺で理解すべきことは？</a></h4>
+                            <h4><a href="/posts/new_md/doc674/">[Windows] あるアプリケーションをインストールしたところ，他のアプリケーションの動作が不安定になり，かつGGのログイン等でもエラーが発生するようになった．問題を解消するには，そのアプリケーションをアンインストールすれば良いか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-12-06
+                            日付 2013-02-22
                             </p>
                             <p class="intro">*技術ノート
-2012/12/06*
-[番号] 技術ノート KGTN 2012120601
-[現象] [GGH4.X] GGのサポートを担当するに当たり，クライアント印刷機能周辺で理解すべきことは？
-[説明] 一般的な印刷機能に関する素養があるという前提で，以下のGGのクライアント印刷機能に特化した内容を理解して下さい．
- 印刷ジョブの流れ UPD と WPD プリンタ設定ツールの機能 クライアント側デフォルトプリンタとGG側デフォルトプリンタの関係 デフォルトプリンタの設定変更 プリンタドライバの設定変更 デフォルトプリンタの強制初期化 プリンタドライバの強制初期化 UPD と PDF とクライアント側プリンタドライバの関係 （用紙選択・印刷方向問題など） その他  ファイル KGTN2012120601.pdf [(54.5 KB)] [kitasp 技術センター, 2014/02/07 16:38]</p>
+2013/02/22*
+[番号] 技術ノート KGTN 2013022205
+[現象] [Windows] あるアプリケーションをインストールしたところ，他のアプリケーションの動作が不安定になり，かつGGのログイン等でもエラーが発生するようになった．問題を解消するには，そのアプリケーションをアンインストールすれば良いか？
+[説明] アプリケーションのアンインストール機能は，そのソフトウエアベンダーが決めた仕様でファイルやレジストリ等を削除するもので，決して 「インストール前の状態に完全に戻す」 機能ではありません．アプリケーションの残骸 （DLL等） がシステムフォルダに存在し続けることも多々あり，その影響で問題が解消しない場合があります．従って，問題が解消しない場合および万全を期す場合は，そのアプリケーションをインストールする前のイメージ （ドライブイメージ） をリストアして下さい．そのようなイメージが無い場合は Windows の再インストールを行って下さい．
+ファイル KGTN2013022205.pdf [(54.2 KB)] [kitasp 技術センター, 2013/02/22 13:59]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc351/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc674/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -526,25 +526,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc771/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc684/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc771/">[GGH4.5/Mac] Mac OS X クライアントで，クライアントドライブ機能を利用して 100MB のファイルをコピー出来るか？</a></h4>
+                            <h4><a href="/posts/new_md/doc684/">[GGH4.5] GGサーバの画面がブラックアウトする．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-12-05
+                            日付 2013-02-21
                             </p>
                             <p class="intro">*技術ノート
-2012/12/05*
-[番号] 技術ノート KGTN 2012120503
-[現象] [GGH4.5/Mac] Mac OS X クライアントで，クライアントドライブ機能を利用して 100MB のファイルをコピー出来るか？
-[説明] Mac OS X 10.8.2 (MEM:4GB) のマシンで検証したところ，双方向で 150MB のバイナリファイルを正常にコピーすることが出来ました．
-ファイル KGTN2012120503.pdf [(43.6 KB)] [kitasp 技術センター, 2012/12/05 14:17]</p>
+2013/02/21*
+[番号] 技術ノート KGTN 2013022102
+[現象] [GGH4.5] GGサーバの画面がブラックアウトする．
+[説明] GraphOn社，弊社，幾つかのユーザ様では，GGサーバの画面がブラックアウトする現象は発生しておりません．そのサーバのディスプレイ周りの問題 （相性も含む） だと思われます．ディスプレイの設定内容の調整，他のディスプレイドライバ （汎用のディスプレイドライバ） へ変更等を試して下さい．
+ファイル KGTN2013022102.pdf [(46.5 KB)] [kitasp 技術センター, 2013/02/21 12:09]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc771/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc684/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

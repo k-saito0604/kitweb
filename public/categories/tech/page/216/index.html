@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1448/">
+                                      <a href="/posts/new_md/doc1311/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1448/">[GGW</a></h2>
+                                    <h2><a href="/posts/new_md/doc1311/">[GGW3.2.1] クライアントPCがサスペンドして，それを復帰させて再接続 （ログオン） すると，他のセッションの画面が表示される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1448/"><i class="far fa-calendar"></i> 2011-02-24</a>
+                                            <a href="/posts/new_md/doc1311/"><i class="far fa-calendar"></i> 2011-09-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/02/24*
-[番号] 技術ノート KGTN 2011022402
-[現象] [GGW-3.2.1] アイドルタイムアウト発生時，どのような流れでセッションが終了するのか？
-[説明] PW と Notepad が起動されている状況で，アイドルタイムアウト発生した時のAPSログを引用します．
-277 2011-02-24 10:19:12.234 Logon6 on Ad-client01, Logon (3156) Initiating logoff in response to an idle-timeout. ＊アイドルタイムアウトが発生 278 2011-02-24 10:19:12.453 Administrator on Ad-client01, ctfmon (1196) CS: Application disconnected. 279 2011-02-24 10:19:12.484 Administrator on Ad-client01, aps (1196) Process #1268 (ctfmon.exe) stopped in session &ldquo;Administrator on Ad-client01&rdquo;. ＊ctfmon.exe が終了 280 2011-02-24 10:19:12.671 Administrator on Ad-client01, notepad (1196) CS: Application disconnected.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1448/" class="btn btn-template-main">続きを読む</a>
+2011/09/05*
+[番号] 技術ノート KGTN 2011090501
+[現象] [GGW3.2.1] クライアントPCがサスペンドして，それを復帰させて再接続 （ログオン） すると，他のセッションの画面が表示される．
+[説明] １ユーザ１アカウントの運用が行われていない環境では，セッション再接続機能が動作すると，同一アカウントを使用している他セッションに接続されることがあります （仕様です） ．このような場合は，１ユーザ１アカウントの運用を徹底する，またはセッション再接続機能を無効にして下さい．セッション再接続機能を無効にするには，以下の２つの設定が必要です．
+クラスタマネージャで Disconnected sessions terminate = Immediately Server Options → Session Shutdown →　Disconnected sessions terminate Immediately を選択
+レジストリの設定を SessionTimeoutBrokenConnection = 0 HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥AppServer SessionTimeoutBrokenConnection DWORD 0 を設定
+詳細については，管理者ガイドまたは技術ノートをご覧下さい．
+ファイル KGTN2011090501.pdf [(67.1 KB)] [kitasp 技術センター, 2011/09/05 09:27]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1311/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +363,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1449/">
+                                      <a href="/posts/new_md/doc1323/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +371,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1449/">[GGW</a></h2>
+                                    <h2><a href="/posts/new_md/doc1323/">[GGH4.0] ActiveXクライアントで，接続先サーバ, ユーザID, パスワードを明示的に指定したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,19 +384,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1449/"><i class="far fa-calendar"></i> 2011-02-24</a>
+                                            <a href="/posts/new_md/doc1323/"><i class="far fa-calendar"></i> 2011-09-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/02/24*
-[番号] 技術ノート KGTN 2011022401
-[現象] [GGW-3.2.1] ユーザが一定時間利用していない時に，強制的にセッションを終了させたい．
-[説明] クラスタマネージャで以下の設定を行うことで，これを実現することが出来ます （アイドル・タイムアウト） ．
-クラスタマネージャ （CM） を起動する． 自サーバを選択する． Tools → Server Options → Session Shutdown Timeouts の項目 Idle にチェックを入れる． 項目 Minutes にアイドルタイムアウトの時間 （単位は分） を入力する． 項目 Action で Log off を指定する．
-詳細については管理者ガイド （または Administrator Guide） をご覧下さい．
-ファイル KGTN2011022401.pdf [(57.4 KB)] [kitasp 技術センター, 2011/02/24 10:04]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1449/" class="btn btn-template-main">続きを読む</a>
+2011/09/02*
+[番号] 技術ノート KGTN 2011090102
+[現象] [GGH4.0] ActiveXクライアントで，接続先サーバ, ユーザID, パスワードを明示的に指定したい．
+[説明] GGW3.2.1では logon.html の内容を書き換える必要がありましたが， GGH4.0 では以下のようにURLにパラメタを与えることで接続先のサーバを明示的に指定することが出来ます．
+http://???/logon.html?direct=true&amp;host=192.168.102.71&amp;user=myUserID&amp;password=myPass
+この例では，ActiveXクライアントは 192.168.102.71 のサーバへ接続を試みます．接続に成功した場合，ユーザID myUserID とパスワード myPass でログオンを試みます．
+ファイル KGTN2011090102.pdf [(57.2 KB)] [kitasp 技術センター, 2011/09/02 09:16]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1323/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -403,7 +406,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1451/">
+                                      <a href="/posts/new_md/doc1322/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -411,7 +414,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1451/">[GGW</a></h2>
+                                    <h2><a href="/posts/new_md/doc1322/">[GGH4.0] ActiveXクライアントで，特定アプリケーションのみを起動したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -424,17 +427,21 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1451/"><i class="far fa-calendar"></i> 2011-02-21</a>
+                                            <a href="/posts/new_md/doc1322/"><i class="far fa-calendar"></i> 2011-09-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/02/21*
-[番号] 技術ノート KGTN 2011022101
-[現象] [GGW-3.2.1] コマンド プロンプト （DOS窓） で，カレントディレクトリをクライアントドライブに変更して，ファイル名を指定して実行したが 「ファイル xxx は見つかりません」 が発生する．
-[説明] クライアントドライブにあるファイルを コマンド プロンプト で直接起動することは出来ません．アプリケーションを起動し，クライアントドライブにあるファイルの絶対パスを指定して開いて下さい．これは GGW-3.2.1 の仕様で， GGH-4.0 ではエラーは発生せず正常に起動されます．
-ファイル KGTN2011022101.pdf [(46.9 KB)] [kitasp 技術センター, 2011/02/21 11:28]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1451/" class="btn btn-template-main">続きを読む</a>
+2011/09/02*
+[番号] 技術ノート KGTN 2011090103
+[現象] [GGH4.0] ActiveXクライアントで，特定アプリケーションのみを起動したい．
+[説明] logon.html を編集し，パラメタ app にアプリケーションを指定することで，特定アプリケーションのみを起動することが可能になります （つまりプログラム・ウインドウを表示せずにアプリケーションを起動） ．
+GGに登録されたアプリケーションを表示名 （Display Name） で起動する場合
+var app = &ldquo;Wordpad&rdquo;; var args = &ldquo;&quot;;
+絶対パスでアプリケーションを指定して起動する場合
+var app = &ldquo;C:¥¥Program Files¥¥Windows NT¥¥Accessories¥¥wordpad.exe&rdquo;; var args = &ldquo;&quot;;
+ファイル KGTN2011090103.pdf [(52.5 KB)] [kitasp 技術センター, 2011/09/02 09:18]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1322/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -444,7 +451,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1452/">
+                                      <a href="/posts/new_md/doc1314/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -452,7 +459,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1452/">APSログに下記のエラーが記録され，クライアントからの接続が出来ない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1314/">[GGH4.0] Automatically update clients を有効にしているが， ActiveX クライアントを利用している IE6 の環境のみ働かない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -465,22 +472,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1452/"><i class="far fa-calendar"></i> 2011-02-21</a>
+                                            <a href="/posts/new_md/doc1314/"><i class="far fa-calendar"></i> 2011-09-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/02/21*
-[番号] 技術ノート KGTN 2010041504
-[現象] APSログに下記のエラーが記録され，クライアントからの接続が出来ない． aps (???) CS: Failed to load certificate C:¥SSL¥server.crt.
-[説明] 証明書ファイル server.crt の内容が正しくないか，または 「GGの管理者ガイドに基づいて」 OpenSSLで作成されたSSL証明書ではありません．GGの管理者ガイドを参考に，正しいSSL証明書を作成し，そのファイルをクラスタマネージャで設定して下さい．
-補　足 証明書がOpenSSLで認識されるかどうか確認するには，次のコマンドを入力して下さい．
-openssl x509 -in server.crt -text
-認識されれば証明書の内容が表示され，認識されなければエラーが表示されます （以下の画面はエラーの一例です） ．
-このエラーが発生した時は，その証明書をメモ帳で開いて下さい．先頭行に &ldquo;&mdash;&ndash;BEGIN CERTIFICATE&mdash;&ndash;&rdquo; ，末尾行に &ldquo;&mdash;&ndash;END CERTIFICATE&mdash;&ndash;&rdquo; が無い場合は，証明書のフォーマットの誤りか，またはフォーマットは正しいものの （認証機関からメールで届いた） 証明書の保存方法に誤りがあります．
-注　意 フォルダのパスやファイル名は，環境（設定）に合わせて読み替えて下さい．
-ファイル KGTN2010041504.pdf [(101 KB)] [kitasp 技術センター, 2011/02/21 10:21]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1452/" class="btn btn-template-main">続きを読む</a>
+2011/09/02*
+[番号] 技術ノート KGTN 2011090208
+[現象] [GGH4.0] Automatically update clients を有効にしているが， ActiveX クライアントを利用している IE6 の環境のみ働かない．
+[説明] ActiveX クライアントを利用している IE6 の環境に関しては，クライアントの自動更新機能は働きません．これは制限事項 （非サポート） になります．
+Automatic client updating for users running the ActiveX Control with Internet Explorer 6.0 is not supported.
+ファイル KGTN2011090208.pdf [(53.7 KB)] [kitasp 技術センター, 2011/09/02 11:18]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1314/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -490,7 +493,7 @@ openssl x509 -in server.crt -text
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1453/">
+                                      <a href="/posts/new_md/doc1318/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -498,7 +501,7 @@ openssl x509 -in server.crt -text
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1453/">[GGH</a></h2>
+                                    <h2><a href="/posts/new_md/doc1318/">[GGH4.0] GGのポート番号を変更した時，何か作業が必要か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -511,17 +514,18 @@ openssl x509 -in server.crt -text
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1453/"><i class="far fa-calendar"></i> 2011-02-18</a>
+                                            <a href="/posts/new_md/doc1318/"><i class="far fa-calendar"></i> 2011-09-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/02/18*
-[番号] 技術ノート KGTN 2011021804
-[現象] [GGH-4.0] 4.0.1.9787 の新機能Support Request Wizard （サポートリクエスト・ウイザード） とは，どういう機能なのか？
-[説明] サポートリクエスト・ウイザードは，GGサーバ上で &ldquo;スタート → プログラム → GraphOn GO-Global 4 → Tools -&gt; Support Request Wizard&rdquo; で起動するツールで，障害解析に必要な情報を採取するツールです．採取した情報は，圧縮しzip 形式でディスクに作成されます（保存先は C:¥GraphOn を指定することをお勧めします）．
-ファイル KGTN2011021804.pdf [(292 KB)] [kitasp 技術センター, 2011/02/18 11:00]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1453/" class="btn btn-template-main">続きを読む</a>
+2011/09/02*
+[番号] 技術ノート KGTN 2011090204
+[現象] [GGH4.0] GGのポート番号を変更した時，何か作業が必要か？
+[説明] GGのポート番号を変更しただけでは機能しません．以下の手順で変更作業を行って下さい．
+クラスタマネージャでポート番号を変更 クラスタマネージャを終了 Print Spooler サービスを再起動 （停止→開始） GO-Global Application Publishing Service サービスを再起動 （停止→開始）
+ファイル KGTN2011090204.pdf [(50.5 KB)] [kitasp 技術センター, 2011/09/02 10:33]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1318/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -531,7 +535,7 @@ openssl x509 -in server.crt -text
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1454/">
+                                      <a href="/posts/new_md/doc1321/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -539,7 +543,7 @@ openssl x509 -in server.crt -text
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1454/">[GGH</a></h2>
+                                    <h2><a href="/posts/new_md/doc1321/">[GGH4.0] Windowsクライアントで，クライアントフレーム機能を使いたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -552,17 +556,17 @@ openssl x509 -in server.crt -text
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1454/"><i class="far fa-calendar"></i> 2011-02-18</a>
+                                            <a href="/posts/new_md/doc1321/"><i class="far fa-calendar"></i> 2011-09-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/02/18*
-[番号] 技術ノート KGTN 2011021803
-[現象] [GGH-4.0] 4.0.1.9787 の新機能Sound Redirection （サウンド・リダイレクション） とは，どういう機能なのか？
-[説明] GGW-3.2.1 のクライアント・サウンド機能と同じで，アプリケーションが PlaySound, sndPlaySound, waveOut の各関数を呼び出した時，その音をクライアント側で鳴らす機能です．
-ファイル KGTN2011021803.pdf [(48.1 KB)] [kitasp 技術センター, 2011/02/18 10:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1454/" class="btn btn-template-main">続きを読む</a>
+2011/09/02*
+[番号] 技術ノート KGTN 2011090201
+[現象] [GGH4.0] Windowsクライアントで，クライアントフレーム機能を使いたい．
+[説明] Windowsクライアント gg-client.exe にパラメタ ?f を指定することで，クライアントフレームが表示され，その中にGG上で動作するアプリケーションのウインドウが表示されます．ActiveXクライアントの Loose と Embedded の中間のような感じで動作します．フレームのサイズは，デフォルトの場合はクライアントの解像度と同じになり，パラメタ ?geometry を指定すると （例： ?geometry 800x600） ，指定したサイズで表示されます．
+ファイル KGTN2011090201.pdf [(53.1 KB)] [kitasp 技術センター, 2011/09/02 09:32]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1321/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -572,7 +576,7 @@ openssl x509 -in server.crt -text
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1455/">
+                                      <a href="/posts/new_md/doc1317/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -580,7 +584,7 @@ openssl x509 -in server.crt -text
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1455/">[GGH</a></h2>
+                                    <h2><a href="/posts/new_md/doc1317/">[GGH4.0] Windowsクライアントのオプションは，セッション再接続時にも全て有効なのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -593,17 +597,17 @@ openssl x509 -in server.crt -text
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1455/"><i class="far fa-calendar"></i> 2011-02-18</a>
+                                            <a href="/posts/new_md/doc1317/"><i class="far fa-calendar"></i> 2011-09-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/02/18*
-[番号] 技術ノート KGTN 2011021802
-[現象] [GGH-4.0] 4.0.1.9787 の新機能 Printers Applet （プリンタアプレット） でデフォルトプリンタを設定した場合，次回のログオン時もそのプリンタがデフォルトになるのか？
-[説明] いいえ，GGH-4.0では従来の print.ini のような設定ファイルをクライアント側に持ちませんので，セッションを跨いで設定を引き継ぐことは出来ません．次回ログオン時には，その時点でのクライアント側のデフォルトプリンタがGG上でもデフォルトプリンタとなります．
-ファイル KGTN2011021802.pdf [(48.2 KB)] [kitasp 技術センター, 2011/02/18 10:13]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1455/" class="btn btn-template-main">続きを読む</a>
+2011/09/02*
+[番号] 技術ノート KGTN 2011090205
+[現象] [GGH4.0] Windowsクライアントのオプションは，セッション再接続時にも全て有効なのか？
+[説明] いいえ，オプション -a, -r, -ac は無視されます．つまり，アプリケーションの起動 （-a と -r） とクライアントプリンタの再構成 （-ac） は行われません．
+ファイル KGTN2011090205.pdf [(44.7 KB)] [kitasp 技術センター, 2011/09/02 10:43]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1317/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -613,7 +617,7 @@ openssl x509 -in server.crt -text
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1456/">
+                                      <a href="/posts/new_md/doc1315/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -621,7 +625,7 @@ openssl x509 -in server.crt -text
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1456/">[GGH</a></h2>
+                                    <h2><a href="/posts/new_md/doc1315/">[GGH4.0] クラスタマネージャの Warning period は，どんな値を設定すれば良いのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -634,18 +638,17 @@ openssl x509 -in server.crt -text
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1456/"><i class="far fa-calendar"></i> 2011-02-18</a>
+                                            <a href="/posts/new_md/doc1315/"><i class="far fa-calendar"></i> 2011-09-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/02/18*
-[番号] 技術ノート KGTN 2011021801
-[現象] [GGH-4.0] 4.0.1.9787 の新機能 Printers Applet （プリンタアプレット） によって，具体的に何が出来るようになるのか？
-[説明] プリンタアプレットは， Program Window から起動が可能で，以下の機能を提供します．
-クライアントプリンタの追加と削除 プリンタのプロパティ編集 デフォルトプリンタの設定 （注：クライアント側の環境は変更しません） プリンタドライバの設定 （注： UPD/NPD の切り替え） テストページの印刷
-ファイル KGTN2011021801.pdf [(109 KB)] [kitasp 技術センター, 2011/02/18 09:59]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1456/" class="btn btn-template-main">続きを読む</a>
+2011/09/02*
+[番号] 技術ノート KGTN 2011090207
+[現象] [GGH4.0] クラスタマネージャの Warning period は，どんな値を設定すれば良いのか？
+[説明] 警告ダイアログはセッションが切断される前に表示せねばなりませんので， Session （セッションの制限時間） および Idle （無操作の制限時間） の値よりも小さな値を Warning period に設定せねばなりません．
+ファイル KGTN2011090207.pdf [(49 KB)] [kitasp 技術センター, 2011/09/02 11:06]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1315/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -655,7 +658,7 @@ openssl x509 -in server.crt -text
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1457/">
+                                      <a href="/posts/new_md/doc1320/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -663,7 +666,7 @@ openssl x509 -in server.crt -text
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1457/">[GGW</a></h2>
+                                    <h2><a href="/posts/new_md/doc1320/">[GGH4.0] スクロールの描画が遅い．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -676,17 +679,18 @@ openssl x509 -in server.crt -text
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1457/"><i class="far fa-calendar"></i> 2011-02-17</a>
+                                            <a href="/posts/new_md/doc1320/"><i class="far fa-calendar"></i> 2011-09-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/02/17*
-[番号] 技術ノート KGTN 2011021701
-[現象] [GGW-3.2.1] APSログに &ldquo;The call to ::PdhMakeCounterPathW () failed&rdquo; という記録があった．
-[説明] この記録は，GGのパフォーマンスカウンタの処理が出力したもので，この状況が発生した時はパフォーマンスモニタにGGのカウンタが情報が表示されません．原因は，何らかの事象でWindowsのパフォーマンスカウンタ関連の初期化処理が遅れ， GGが立ち上がった時にパフォーマンスカウンタの処理を正しく行うことが出来なかったものと推測されます．過去の事例では，各GGサーバのC:ドライブをSANディスクの集約した環境で，SANディスクが過負荷な状況が発生し，Windowsの起動が異常に遅延した時に記録されました．
-ファイル KGTN2011021701.pdf [(54.6 KB)] [kitasp 技術センター, 2011/02/17 09:30]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1457/" class="btn btn-template-main">続きを読む</a>
+2011/09/02*
+[番号] 技術ノート KGTN 2011090202
+[現象] [GGH4.0] スクロールの描画が遅い．
+[説明] サーバ側のスムーズ スクロール機能を無効にすることで，スクロールの描画速度が改善する場合があります．スムーズ スクロール機能を無効にする方法は，以下の通りです．
+Internet Explorer を起動 [ツール] を選択 [インターネット オプション] を選択 [詳細設定] を選択 設定 の中の [スムーズ スクロールを使用する] のチェックを非選択 [適用] をクリック
+ファイル KGTN2011090202.pdf [(52.6 KB)] [kitasp 技術センター, 2011/09/02 10:05]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1320/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -696,7 +700,7 @@ openssl x509 -in server.crt -text
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1459/">
+                                      <a href="/posts/new_md/doc1319/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -704,7 +708,7 @@ openssl x509 -in server.crt -text
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1459/">[GGW</a></h2>
+                                    <h2><a href="/posts/new_md/doc1319/">[GGH4.0] ログオンしたユーザが所属するグループを確認したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -717,20 +721,17 @@ openssl x509 -in server.crt -text
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1459/"><i class="far fa-calendar"></i> 2011-02-16</a>
+                                            <a href="/posts/new_md/doc1319/"><i class="far fa-calendar"></i> 2011-09-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/02/16*
-[番号] 技術ノート KGTN 2011021603
-[現象] [GGW-3.2.1] GG上の Microsoft Office 2010 (Excel) を Windows 7 のクライアントで利用すると，図形の移動で画面が乱れる．
-[説明] Windows 7 のクライアントでGG上の Microsoft Office 2010 (Excel) を利用すると
-正常に描画される 図形の移動で移動前の図形が消えない ＋ 移動後の図形は描画される 図形の移動で移動前の図形が消えない ＋ 移動後の図形は描画されない （注：このケースではExcelがフォーカスを失った時に移動後の図形が描画されます）
-という3つのパターンが発生することを確認しております．上記2または3が発生した場合，とりあえずの対症療法として，移動前と移動後の図形を含む領域 （セル群） を選択して，それを解除して下さい．この操作により，移動後の図形のみが再描画されます．
-補　足 この問題はAero 機能に起因していますので，テーマを 「Aeroテーマ」 以外 （つまりベーシックテーマなど） に変更することで，この問題は解消します． 「Aeroテーマ」 の対応は， GGH-4.1 で予定されております．GraphOn社のコメントは，以下の通りです．
- This is a known issue in the GGW and GG 4.0 releases. We have bug open and it is currently scheduled to be fixed in the 4.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1459/" class="btn btn-template-main">続きを読む</a>
+2011/09/02*
+[番号] 技術ノート KGTN 2011090203
+[現象] [GGH4.0] ログオンしたユーザが所属するグループを確認したい．
+[説明] プログラムウインドウの [Help] の中の [About GraphOn GO-Global] を選択して下さい．表示されるウインドウの中の Group の部分に所属するグループの情報が表示されます．
+ファイル KGTN2011090203.pdf [(53.9 KB)] [kitasp 技術センター, 2011/09/02 10:19]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1319/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -800,7 +801,7 @@ openssl x509 -in server.crt -text
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

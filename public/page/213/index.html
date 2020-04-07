@@ -409,25 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1407/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1283/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1407/">[GGC] アプリケーションは GO</a></h4>
+                            <h4><a href="/posts/new_md/doc1283/">[GGH4.0] Ver4.0 のサービスGO-Global Update Client がサーバ上で見つからない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-04-01
+                            日付 2011-10-05
                             </p>
                             <p class="intro">*技術ノート
-2011/04/01*
-[番号] 技術ノート KGTN 2011040102
-[現象] [GGC] アプリケーションは GO-Global Cloud 上にインストールするのか？
-[説明] いいえ，アプリケーションは GO-Global Host にインストールします． GO-Global Cloud を経由して，アプリケーションの利用や管理を行うことが出来ます．
-ファイル KGTN2011040102.pdf [(41.8 KB)] [kitasp 技術センター, 2011/04/01 10:24]</p>
+2011/10/05*
+[番号] 技術ノート KGTN 2011100502
+[現象] [GGH4.0] Ver4.0 のサービスGO-Global Update Client がサーバ上で見つからない．
+[説明] Ver4.0 のサービスGO-Global Update Client は，クライアント側の GO-Global Client を更新するための機能を担っており，クライアント側の Windows 上で動作します．従って，通常はサーバ側にこのサービスは存在しません．但し，サーバ側で GO-Global Client をインストールした場合は， （当然のことながら） このサービスが存在します．
+ファイル KGTN2011100502.pdf [(48.5 KB)] [kitasp 技術センター, 2011/10/05 10:37]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1407/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1283/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,25 +446,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1404/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1284/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1404/">[GGH] 4.0.1.9787 → 4.0.1.10097 でどんな点が変更されたのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1284/">[GGW3.1.1] Ver3.1.1 のサービスGO-Global Update Client の機能は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-04-01
+                            日付 2011-10-05
                             </p>
                             <p class="intro">*技術ノート
-2011/04/01*
-[番号] 技術ノート KGTN 2011040105
-[現象] [GGH] 4.0.1.9787 → 4.0.1.10097 でどんな点が変更されたのか？
-[説明] 今回は機能追加等は無く，バグ修正やサポート範囲の拡大のみです．詳細は下記の通りです．
-Bug 10849 On x86 hosts, using GetComputerName to obtain the name of the client computer does not work. Bug 10939 The Firefox Plug-in is not supported on Firefox 4. Bug 11328 The Application Publishing Service is stopping on dependent application servers. Bug 11339 The print spooler is crashing. Bug 11364 If two users print at the same time, the smaller job prints but the larger job fails to print.</p>
+2011/10/05*
+[番号] 技術ノート KGTN 2011100501
+[現象] [GGW3.1.1] Ver3.1.1 のサービスGO-Global Update Client の機能は？
+[説明] Ver3.1.1 では， Windows のシステムファイルwin32k.sys, ntoskrnl.exe, ntdll.dll, user32.dll, gdi32.dll 用のカスタムインタフェースが存在し，これらのシステムファイルが更新された時，常にGGのカスタムインタフェース （VBMファイルとして提供） も更新する必要があります． （Ver3.1.1の） GO-Global Update Client は，これらのシステムファイルが更新されたかどうかを監視し，更新された場合はそれに対応するVBMファイルが存在するかどうかを調べ，存在すればカスタムインタフェースを更新する処理を行います．
+しかしながら実際の運用では，Windows の新しいシステムファイルがリリースされた時，GraphOn社は互換アップデートでこのVBMファイルを提供しており， （互換アップデートの） インストーラーがVBMファイルをインストールする機能を持っているため， GO-Global Update Client が有意に働く状況は発生しません．このようなことから， GO-Global Update Client を無効化することをお勧めしております．
+注　意 上記の理由および自動互換アップデート機能の実装により， Ver3.2.1 には GO-Global Update Client は存在しません．また Ver4.0 に存在する GO-Global Update Client は，サービス名は同じですが， 「クライアント側のモジュールを更新する機能」 で，全く内容が異なるサービスです．
+ファイル KGTN2011100501.pdf [(67.5 KB)] [kitasp 技術センター, 2011/10/05 09:00]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1404/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1284/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -483,25 +485,28 @@ Bug 10849 On x86 hosts, using GetComputerName to obtain the name of the client c
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1409/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2189/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1409/">[GGC] GO</a></h4>
+                            <h4><a href="/posts/new_md/doc2189/">[GGW3.2/GGH4.X-5.X] セッションがたまに切れるが，何か簡単に試せることはないか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-03-31
+                            日付 2011-10-05
                             </p>
                             <p class="intro">*技術ノート
-2011/03/31*
-[番号] 技術ノート KGTN 2011033105
-[現象] [GGC] GO-Global Cloud でVer3系のライセンスを使用できるか？
-[説明] いいえ，Ver4系 （GO-Global Cloud） のライセンスとVer3系のライセンスは互換性がありません．
-ファイル KGTN2011033105.pdf [(40.7 KB)] [kitasp 技術センター, 2011/03/31 15:01]</p>
+2011/10/05*
+[番号] 技術ノート KGTN 2009051501
+[現象] [GGW3.2/GGH4.X-5.X] セッションがたまに切れるが，何か簡単に試せることはないか？
+[説明] GO-Global for Windows はデフォルトの設定で， （クライアント～サーバ間に張られる GO-Global for Windows のコネクション上のプロトコルで） クライアントからサーバへ30秒毎にPINGを送信しています（以降，ICMPのPINGと区別するためにGG-PINGと表記します）．30秒以内にサーバから応答があればコネクションが正常と判断し，それを越えて応答がなければコネクションが失われたと判断します （注：応答を受信した直後にコネクションが切れた場合は，それから29秒後にGG-PINGが送信されますので，59秒後にコネクションが切れたと判断します） ．このGG-PINGの機能を以下の設定で無効にすることができます．
+[HKEY_LOCAL_MACHINESOFTWAREGraphOnBridges1.0.0AppServer] SessionVerification REG_DWORD 0
+設定を変更した場合は，必ずサーバを再起動して下さい．GG-PINGの機能を無効にしてもセッションが切れる場合は，TCP/IPレベルで実際にコネクションが切れているものと推測されます．
+補　足 TCP/IPレベルでセッションが切断されているかどうかを確認するには，弊社開発の GGNetworkCheck をご利用下さい．このツールは，GG のサーバ側とクライアント側で動作させるプログラムで，クライアント側主導でTCP/IP のヘルスチェック （接続性確認） を行います．クライアント側は所定の秒数でPING メッセージを送信し （ログに記録も残します） ，サーバ側はPING メッセージを受信するとログに記録するとともに，応答メッセージをクライアント側に送信します．クライアント側は応答メッセージを受信すると，その情報をログに記録します．所定秒数内に相手からのメッセージが届かない，またはTCP/IP レベルでコネクションが切断された場合は，エラーとしてログに記録されます．この２つのログ （クライアント側とサーバ側） を付き合わせることで，ネットワークの状況を確認することが出来ます．GGのプロトコルを使用せずにチェックを行いますので，万一GG上で問題が発生したとしても，ネットワークの状況を確実に把握することが可能です．詳細は，技術ノート KGTN#2011030201 をご覧下さい．
+ファイル KGTN2009051501.pdf [(84 KB)] [kitasp 技術センター, 2017/04/06 17:22]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1409/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2189/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -520,25 +525,26 @@ Bug 10849 On x86 hosts, using GetComputerName to obtain the name of the client c
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1410/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1282/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1410/">[GGC] GO</a></h4>
+                            <h4><a href="/posts/new_md/doc1282/">[iPad Client] iPad クライアントの解像度を縦置き状態に変更したい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-03-31
+                            日付 2011-10-05
                             </p>
                             <p class="intro">*技術ノート
-2011/03/31*
-[番号] 技術ノート KGTN 2011033104
-[現象] [GGC] GO-Global Cloud をVM環境で利用できるか？
-[説明] はい，VM （仮想マシン） 環境で使用することが可能です．
-ファイル KGTN2011033104.pdf [(40.2 KB)] [kitasp 技術センター, 2011/03/31 14:56]</p>
+2011/10/05*
+[番号] 技術ノート KGTN 2011092702
+[現象] [iPad Client] iPad クライアントの解像度を縦置き状態に変更したい．
+[説明] 標準状態では，iPad クライアントの解像度は横向き状態 （つまり1024x768）　になります． 現在，縦置き状態 （つまり768x1024） に設定出来るかどうかGraphOn社へ問い合わせ中です． β版では縦向き表示が可能でしたが， IOS SDK の互換性の問題から正式リリース版では横向き状態のみをサポートします．
+補　足 iPadクライアントのリリース版が縦向き表示をサポートしていない理由は，以下の通りです．
+ファイル KGTN2011092702.pdf [(64.3 KB)] [kitasp 技術センター, 2011/10/05 12:21]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1410/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1282/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

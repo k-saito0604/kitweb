@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc402/">
+                                      <a href="/posts/new_md/doc2086/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc402/">[GGH4.X] GGサーバを新規インストールするが，ライセンス適用・ポリシやアプリの許可設定等について知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2086/">[GGH4.X-5.X] GGサーバ側から見たクライアントのIPアドレスを知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,18 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc402/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/new_md/doc2086/"><i class="far fa-calendar"></i> 2014-02-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2014012007
-[現象] [GGH4.X] GGサーバを新規インストールするが，ライセンス適用・ポリシやアプリの許可設定等について知りたい．
-[説明] GG以外の製品はインストールや設定が複雑ですが，GGの場合は以下の４つのステップです．
- GGのインストール ライセンスファイルのインストール （エクスプローラーでコピー） グループポリシの適用の有無 （クラスタマネージャで設定） 公開するアプリケーションの登録 （クラスタマネージャで登録）  アプリケーションを特定ユーザやグループのみに公開したい場合は，そのアプリケーションの実行形式にアクセス権 （許可・拒否） を設定して下さい．
-ファイル KGTN2014012007.pdf [(48.3 KB)] [kitasp 技術センター, 2014/01/29 16:47]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc402/" class="btn btn-template-main">続きを読む</a>
+2014/02/07*
+[番号] 技術ノート KGTN 2014020703
+[現象] [GGH4.X-5.X] GGサーバ側から見たクライアントのIPアドレスを知りたい．
+[説明] 従来はGGクライアント側から見た自分のIPアドレスのみが環境変数 CLIENTIPADDRESS に保持されていましたが， GGH4.8.1.20079 からこの環境変数に加えサーバ側から見たクライアントのIPアドレスが環境変数 CLIENTNETWORKADDRESS が保持されるようになりました．この機能を有効にするには，設定ファイル C:ProgramDataGraphOnHostProperties.xml に，下記の項目 （設定値） を追加して下さい．なお，作業はGGのサービス GGAPS を停止した状態で行って下さい．
+&lt;property id=&quot;NetworkAddressEnvVarEnabled&quot; group=&quot;ClientAccess&quot; type=&quot;BOOL&quot;&gt; &lt;value&gt;true&lt;/value&gt; &lt;/property&gt;  ファイル KGTN2014020703.pdf [(42.9 KB)] [kitasp 技術センター, 2017/05/24 16:15]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2086/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -361,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc428/">
+                                      <a href="/posts/new_md/doc364/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -369,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc428/">[GGH4.X] GG上で動作するアプリケーションから，そのセッションを切断させたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc364/">[GGH4.X] GGH4.8.0 の次にリリースされるバージョンは， GGH4.9.0 なのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -382,17 +381,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc428/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/new_md/doc364/"><i class="far fa-calendar"></i> 2014-02-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2014010802
-[現象] [GGH4.X] GG上で動作するアプリケーションから，そのセッションを切断させたい．
-[説明] 以下のコードを実行することで，セッションを直ちに切断させることが出来ます．なお，64ビット環境では，64ビットアプリケーションとしてビルドして下さい．
-HMODULE hMod; FARPROC fpDiscon; hMod = ::LoadLibrary(_T(&quot;C:WindowsSystem32Components.dll&quot;)); if(hMod == NULL) { ::MessageBox(NULL,_T(&quot;LoadLibrary = NULL&quot;),_T(&quot;GGSample_Disconnect&quot;),MB_OK); return; } fpDiscon = ::GetProcAddress(hMod,&quot;compsDisconnectSession&quot;); if(fpDiscon == NULL) { ::MessageBox(NULL,_T(&quot;GetProcAddress = NULL&quot;),_T(&quot;GGSample_Disconnect&quot;),MB_OK); return; } (*fpDiscon)(); ::FreeLibrary(hMod);  ファイル KGTN2014010802.pdf [(49 KB)] [kitasp 技術センター, 2014/01/29 15:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc428/" class="btn btn-template-main">続きを読む</a>
+2014/02/07*
+[番号] 技術ノート KGTN 2014020502
+[現象] [GGH4.X] GGH4.8.0 の次にリリースされるバージョンは， GGH4.9.0 なのか？
+[説明] GGH4.5.0 → GGH4.6.0 → GGH4.7.0 → GGH4.8.0 とバージョンが上がりましたが，これにより新しいリリース毎にライセンスファイルのアップグレードが必要となり，かつ製品の EOL も多く発生しました．この問題はGraphOn社も認識しており，2014年にリリースされるビルドについては，比較的大きな機能追加でマイナー番号が上がり （ライセンスファイルのアップグレードが必要） ，主な修正やプラットフォームの追加でサービスパックの番号が上がります （ライセンスファイルのアップグレードは不要） ．次にリリースされるビルドは，主に不具合の修正とプラットフォームの追加が行われますので，バージョンは GGH4.8.1 となります．
+ファイル KGTN2014020502.pdf [(50.3 KB)] [kitasp 技術センター, 2014/02/07 15:26]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc364/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -402,7 +401,7 @@ HMODULE hMod; FARPROC fpDiscon; hMod = ::LoadLibrary(_T(&quot;C:WindowsSystem32C
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc474/">
+                                      <a href="/posts/new_md/doc316/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -410,7 +409,7 @@ HMODULE hMod; FARPROC fpDiscon; hMod = ::LoadLibrary(_T(&quot;C:WindowsSystem32C
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc474/">[GGH4.X] GG上で動作するアプリケーションから，そのセッションを終了させたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc316/">[GGH4.X] GGH4.8.1 は，GGH4.6.0 のパッチ （バグ修正版） なのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -423,17 +422,17 @@ HMODULE hMod; FARPROC fpDiscon; hMod = ::LoadLibrary(_T(&quot;C:WindowsSystem32C
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc474/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/new_md/doc316/"><i class="far fa-calendar"></i> 2014-02-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2013112901
-[現象] [GGH4.X] GG上で動作するアプリケーションから，そのセッションを終了させたい．
-[説明] 以下のコードを実行することで，セッションを直ちに終了させることが出来ます．
-hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot;)); ::SetEvent(hEvent); ::CloseHandle(hEvent);  ファイル KGTN2013112901.pdf [(46.4 KB)] [kitasp 技術センター, 2014/01/29 13:09]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc474/" class="btn btn-template-main">続きを読む</a>
+2014/02/07*
+[番号] 技術ノート KGTN 2014020702
+[現象] [GGH4.X] GGH4.8.1 は，GGH4.6.0 のパッチ （バグ修正版） なのか？
+[説明] サポートするプラットフォームが追加された点を除けば変更点はバグ修正のみで， GGH4.6.0 のパッチ （バグ修正版） という位置付けとなります．なお，GGH4.8.1は，2014年2月時点の更新プログラム （Windows Update） に対応しております．
+[4.7.0.17377] 1. Enhancements * Host support for Windows 8 (64-bit) - Professional and Enterprise Editions. * Host support for Windows Server 2012 (64-bit) - Standard Edition. 2. Issues Fixed Since 4.6.0.16652 [4.8.0.18673] 1. Enhancements * Host support for Windows Server 2012 (64-bit) - Standard Edition. 2. Issues Fixed Since 4.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc316/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -443,7 +442,7 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc415/">
+                                      <a href="/posts/new_md/doc179/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -451,7 +450,7 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc415/">[GGH4.X] GraphOn社は，GGH4.Xの新しいリリース （ビルド） の出荷に当たり，どれくらいの期間出荷試験を行っているのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc179/">[GGH4.X] GGサーバのファイル構成は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -464,17 +463,23 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc415/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/new_md/doc179/"><i class="far fa-calendar"></i> 2014-02-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2014011601
-[現象] [GGH4.X] GraphOn社は，GGH4.Xの新しいリリース （ビルド） の出荷に当たり，どれくらいの期間出荷試験を行っているのか？
-[説明] 新しいリリース （ビルド） のソースコードがフィックスされてから，約4週間～6週間かけて品質保証検査を行っております．
-ファイル KGTN2014011601.pdf [(34.6 KB)] [kitasp 技術センター, 2014/01/29 16:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc415/" class="btn btn-template-main">続きを読む</a>
+2014/02/07*
+[番号] 技術ノート KGTN 2014020302
+[現象] [GGH4.X] GGサーバのファイル構成は？
+[説明] GGサーバのファイル構成 （主なフォルダ） は，以下の通りです．
+  &lt;GGのインストールフォルダ&gt;Programs GGサーバのプログラムファイルおよびライセンスファイル
+  &lt;GGのインストールフォルダ&gt;Log GGサーバのログファイル （APSログ）
+  &lt;GGのインストールフォルダ&gt;Web ウエッブ・インターフェース （ログオン用HTML） のファイル
+  &lt;GGのインストールフォルダ&gt;Support GraphOn社への問合せ時に使用する環境情報を採取するツール
+  &lt;GGのインストールフォルダ&gt;Update クライアントの自動アップデート機能で配布する更新ファイル ※GraphOn社が署名したファイルのみが配布対象となります．
+  C:ProgramDataGraphOn GGサーバの動作に関する設定ファイル （XMLファイル）
+  ファイル KGTN2014020302.pdf [(55.2 KB)] [kitasp 技術センター, 2014/11/09 15:59]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc179/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -484,7 +489,7 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc419/">
+                                      <a href="/posts/new_md/doc366/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -492,7 +497,7 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc419/">[GGH4.X] IdeaPad Miix2 8 のような Windows 8.1 タブレットで，GGのクライアントは動作するか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc366/">[GGH4.X] GGサーバの設定情報は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -505,17 +510,23 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc419/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/new_md/doc366/"><i class="far fa-calendar"></i> 2014-02-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2014011502
-[現象] [GGH4.X] IdeaPad Miix2 8 のような Windows 8.1 タブレットで，GGのクライアントは動作するか？
-[説明] 軽量薄型のタブレットといえども立派な Windows 8.1 マシンですので，十分なパフォーマンスでGGクライアントが動作します．
-ファイル KGTN2014011502.pdf [(89.2 KB)] [kitasp 技術センター, 2014/01/29 16:08]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc419/" class="btn btn-template-main">続きを読む</a>
+2014/02/07*
+[番号] 技術ノート KGTN 2014020303
+[現象] [GGH4.X] GGサーバの設定情報は？
+[説明] GGサーバの主な設定情報は，下記のXMLファイルとレジストリに記録されています．
+  C:ProgramDataGraphOnconfig.xml サーバ自体の基本情報 （コンピュータ名やホストIDなど）
+  C:ProgramDataGraphOnDefaultWorkspaceProperties.xml 主に CM に関連する項目値 （個別のセッション関連）
+  C:ProgramDataGraphOnHostProperties.xml 主に CM に関連する項目値 （認証やセッション生成関連）
+  C:ProgramDataGraphOnMappedPrinterDrives.xml クライアントプリンタ機能のドライバ構成情報
+  HKLMSOFTWAREGraphOnGO-GlobalAppServer パス情報と SessionVerification の設定値
+  HKLMSOFTWAREGraphOnGO-GlobalAppServerInstallApps 公開するアプリケーションの情報
+  ファイル KGTN2014020303.pdf [(58.5 KB)] [kitasp 技術センター, 2014/02/07 15:19]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc366/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -525,7 +536,7 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc490/">
+                                      <a href="/posts/new_md/doc367/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -533,7 +544,7 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc490/">[GGH4.X] INIファイルのリダイレクト機能 （マッピング機能） を利用したいが，技術ノート KGTN#2010041901 と同じ設定を行えば良いのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc367/">[GGH4.X] PW と CM の主な機能は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -546,18 +557,18 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc490/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/new_md/doc367/"><i class="far fa-calendar"></i> 2014-02-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2013112001
-[現象] [GGH4.X] INIファイルのリダイレクト機能 （マッピング機能） を利用したいが，技術ノート KGTN#2010041901 と同じ設定を行えば良いのか？
-[説明] GGH4.5またはそれ以降でINIファイルのリダイレクト機能 （マッピング機能） は実装されていますが，レジストリに設定する内容が若干変更されています．以下の例では， Test_IniFileMapping.ini という設定ファイルへの参照が，各ユーザのプロファイルの下の Test_IniFileMapping.ini へ自動的に切り替わります．
- 各ユーザのプロファイルの下に Test_IniFileMapping.ini という設定ファイルを作成する． レジストリエディタを起動する． HKLMSOFTWAREGraphOnGO-GlobalCompatibilityINIFilePaths へ位置づける． 「新規 → キー」 を選択する． 新しいキーの名前を Test_IniFileMapping.exe （プログラムのファイル名） にする． そのキーの下で 「新規 → 展開可能な文字列値」 を選択する． 名前を Test_IniFileMapping.ini にする． 値を USERPROFILETest_IniFileMapping.ini にする レジストリエディタを閉じる  注　意 「INIファイルマップ機能」 は，アプリケーションがINIファイル用の関数GetPrivateProfileString 等を使用している場合にのみ有効です．アプリケーションが 「これらの関数を使わず」 自前でINIファイルにアクセスしている場合は， 「INIファイルマップ機能」 は適用されません．
-ファイル KGTN2013112001.pdf [(102 KB)] [kitasp 技術センター, 2014/01/29 11:10]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc490/" class="btn btn-template-main">続きを読む</a>
+2014/02/07*
+[番号] 技術ノート KGTN 2014020301
+[現象] [GGH4.X] PW と CM の主な機能は？
+[説明] PW は　Program Window の略で，GGの利用者がログオン後にアプリケーションを起動する時に使用します．また，クライアント印刷機能が有効な場合，GG上で使用するクライアント側のプリンタの構成を設定する時にも使用します．
+CM は Cluster Manager の略で，GGの管理者が公開するアプリケーションの登録やセッションの挙動に関する設定を行う時に使用します．また，セッションの状態を確認し，セッションやプロセスの強制終了や，セッションシャドウイングを行う時にも使用します．
+ファイル KGTN2014020301.pdf [(53.8 KB)] [kitasp 技術センター, 2014/02/07 15:13]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc367/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -567,7 +578,7 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc388/">
+                                      <a href="/posts/new_md/doc365/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -575,7 +586,7 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc388/">[GGH4.X] iOSクライアントをブラウザ （ウエッブのページ） から起動したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc365/">[GGH4.X] クライアントの環境として IE11 が追加される予定と聞いたが，現在使用しているバージョン （ビルド） での対応となるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -588,17 +599,17 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc388/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/new_md/doc365/"><i class="far fa-calendar"></i> 2014-02-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2014012401
-[現象] [GGH4.X] iOSクライアントをブラウザ （ウエッブのページ） から起動したい．
-[説明] iOSクライアントのバージョン4.8から URL Scheme がサポートされましたので，下記コードのハイパーリンク Notepad をクリックすると，IPアドレス 192.168.102.24 （ポート番号 491） にあるGGサーバにアクセスし，ユーザID User （パスワード Password） でログオンし，メモ帳を起動することが出来ます．
-&lt;html&gt; &lt;body&gt; &lt;a href=&quot;rxp://?h=192.168.102.24&amp;hp=491&amp;u=User&amp;p=Password&amp;a=Notepad&quot;&gt;Notepad&lt;/a&gt; &lt;/body&gt; &lt;/html&gt;  ファイル KGTN2014012401.pdf [(56.1 KB)] [kitasp 技術センター, 2014/01/29 17:15]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc388/" class="btn btn-template-main">続きを読む</a>
+2014/02/07*
+[番号] 技術ノート KGTN 2014020501
+[現象] [GGH4.X] クライアントの環境として IE11 が追加される予定と聞いたが，現在使用しているバージョン （ビルド） での対応となるのか？
+[説明] いいえ．サポートする環境 （サーバおよびクライアント） が追加される場合は，必ず新しいバージョン （ビルド）での対応となります．従って，出荷済みのバージョン （ビルド） については，これまで通りとなります．
+ファイル KGTN2014020501.pdf [(44.6 KB)] [kitasp 技術センター, 2014/02/07 15:23]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc365/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -608,7 +619,7 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc475/">
+                                      <a href="/posts/new_md/doc363/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -616,7 +627,7 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc475/">[GGH4.X] PW （プログラムウインドウ） の背景色を変更したが，セッションタイムアウトで終了した時にその設定が保存されなかった．</a></h2>
+                                    <h2><a href="/posts/new_md/doc363/">[GGW3.2.1] GGW3.2.1.4474のActiveXクライアントは，Windows 7 (64ビット版) をサポートしているのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -629,17 +640,17 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc475/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/new_md/doc363/"><i class="far fa-calendar"></i> 2014-02-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2013112801
-[現象] [GGH4.X] PW （プログラムウインドウ） の背景色を変更したが，セッションタイムアウトで終了した時にその設定が保存されなかった．
-[説明] PW に関する各種設定 （背景色やタイトルバーの表示など） は，明示的にサインアウト （ログオフ） した時に保存されます．セッションタイムアウト・外部からの強制終了・Disconnect が行われた時は，これらの情報は保存されません．
-ファイル KGTN2013112801.pdf [(68.3 KB)] [kitasp 技術センター, 2014/01/29 13:07]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc475/" class="btn btn-template-main">続きを読む</a>
+2014/02/07*
+[番号] 技術ノート KGTN 2014020701
+[現象] [GGW3.2.1] GGW3.2.1.4474のActiveXクライアントは，Windows 7 (64ビット版) をサポートしているのか？
+[説明] GGW3.2.1.4474のActiveXクライアントは，Windows 7 (64ビット版および32ビット版) の IE6 ～ IE10 をサポートしております． IE11 にいては， 「互換表示設定」 を行うことで利用することが出来ます．
+ファイル KGTN2014020701.pdf [(47.4 KB)] [kitasp 技術センター, 2014/02/07 15:29]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc363/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -649,7 +660,7 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc409/">
+                                      <a href="/posts/new_md/doc2578/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -657,7 +668,7 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc409/">[GGH4.X] Windows 7 Professional SP1 (32ビット) にGGサーバをインストールしようとしたところ，エラーが発生しインストール出来ない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2578/">[GGH4.X-5.X] Windows Server 2012 (R2) &#43; GGH4.X/5.X でオプション -dfw 0 を指定すると枠のゴミが残る．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -670,17 +681,19 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc409/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/new_md/doc2578/"><i class="far fa-calendar"></i> 2014-01-31</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2014012001
-[現象] [GGH4.X] Windows 7 Professional SP1 (32ビット) にGGサーバをインストールしようとしたところ，エラーが発生しインストール出来ない．
-[説明] GGH4.Xは，Windows 7 Professional SP1 の64ビット環境のみをサポートしており，32ビット環境はサポートしておりません．従って，64ビット環境またはサーバ系OS （Windows Server 2008, Windows Server 2008 R2） をご利用下さい．
-ファイル KGTN2014012001.pdf [(43.2 KB)] [kitasp 技術センター, 2014/01/29 16:37]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc409/" class="btn btn-template-main">続きを読む</a>
+2014/01/31*
+[番号] 技術ノート KGTN 2014012902
+[現象] [GGH4.X-5.X] Windows Server 2012 (R2) + GGH4.X/5.X でオプション -dfw 0 を指定すると枠のゴミが残る．
+[説明] この現象はGGサーバのOSが Windows Server 2012 (R2) の場合に限り発生する現象で，現時点では制限事項（既知の問題） となります．問題が解消されるまで， -dfw 1 （または -dfw オプションを指定しない） を指定して下さい．
+ファイル KGTN2014012902.pdf [(84.2 KB)] [kitasp 技術センター, 2016/05/27 14:10]
+KGTN2014012902.jpg
+表示 [(16.7 KB)] [kitasp 技術センター, 2016/05/27 14:10]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2578/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -690,7 +703,7 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc408/">
+                                      <a href="/posts/new_md/doc372/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -698,7 +711,7 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc408/">[GGH4.X] Windows 8.1 Pro (32ビット) にGGサーバをインストールしようとしたところ，エラーが発生しインストール出来ない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc372/">[GGH4.X] ActiveXクライアントをダウンロードしたがログオン画面が表示されない．何を調べれば良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -711,17 +724,18 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc408/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/new_md/doc372/"><i class="far fa-calendar"></i> 2014-01-31</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2014012002
-[現象] [GGH4.X] Windows 8.1 Pro (32ビット) にGGサーバをインストールしようとしたところ，エラーが発生しインストール出来ない．
-[説明] GGH4.Xは，Windows 8 Professional Edition の64ビット環境のみをサポートしており，32ビット環境はサポートしておりません．従って，64ビット環境またはサーバ系OS （Windows Server 2008, Windows Server 2008 R2） をご利用下さい．
-ファイル KGTN2014012002.pdf [(43.4 KB)] [kitasp 技術センター, 2014/01/29 16:39]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc408/" class="btn btn-template-main">続きを読む</a>
+2014/01/31*
+[番号] 技術ノート KGTN 2014013001
+[現象] [GGH4.X] ActiveXクライアントをダウンロードしたがログオン画面が表示されない．何を調べれば良いか？
+[説明] 以下の手順で操作を行って下さい．
+ クライアントPCを再起動 Administrator でログオン GGAXDelete4G.exe を起動 確認ボタンをクリック メモ帳で表示されたファイル（ログ）を保存 &hellip; ファイル名 info.txt で保存 削除ボタンをクリック メモ帳で表示されたファイル（ログ）を保存 &hellip; ファイル名 del.txt で保存 GGサーバにログオン  この手順を行っても問題が解決しない場合は，上記 5) と 7) で保存したファイル （info.txtとdel.txt） をお送り下さい．
+ファイル KGTN2014013001.pdf [(54 KB)] [kitasp 技術センター, 2014/01/31 14:19]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc372/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -791,7 +805,7 @@ hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

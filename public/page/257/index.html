@@ -409,26 +409,28 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1908/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1739/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1908/">Internet Explorer 8 の環境で ActiveX クライアントは動作するのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1739/">ActiveXクライアントのプロパティ 「デジタル署名」 を見たところ，証明書の有効期限が2004/11/05 から 2005/11/14 だったが，2010年の現在でも使用できるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2009-04-24
+                            日付 2010-06-10
                             </p>
                             <p class="intro">*技術ノート
-2009/04/24*
-[番号] 技術ノート KGTN 2009033101
-[現象] Internet Explorer 8 の環境で ActiveX クライアントは動作するのか？
-[説明] Windows XP SP3 + Internet Explorer 8 (8.0.6001.18702) のクライアントPCで，ggw-3.2.0.4226 の ActiveX クライアントで検証したところ，特に問題なく動作しました．基本的には他の条件でも動作すると思われますが，適用に当たっては必ず事前検証を行うようにして下さい．
-参　考 Internet Explorer 7 (6) + ActiveX クライアントの環境にInternet Explorer 8 をインストールした場合，初回のアクセスに限りActiveX クライアントを利用するかどうか確認するダイアログが表示されます．
-ファイル KGTN2009033101.pdf [(50.8 KB)] [kitasp 技術センター, 2009/04/24 09:56]</p>
+2010/06/10*
+[番号] 技術ノート KGTN 2010061101
+[現象] ActiveXクライアントのプロパティ 「デジタル署名」 を見たところ，証明書の有効期限が2004/11/05 から 2005/11/14 だったが，2010年の現在でも使用できるのか？
+[説明] 署名時にタイムスタンプが設定されていない場合は，証明書の有効期限が満了すると ，期限切れの警告が表示されます．署名時にタイムスタンプが設定されている場合は，証明書の有効期限が満了しても，期限切れの警告は表示されません．ActiveXクライアントは，このタイムスタンプが設定されていますので，証明書 （コードサイニング証明書） の有効期限が満了した後も使用することが出来ます．
+参　考 下記の日本ベリサイン社のFAQに，この辺の詳しい情報が書かれています．
+https://www.verisign.co.jp/codesign/help/faq/210017/index.html 署名したソフトウェアは、証明書の期限切れ後どうなりますか
+https://www.verisign.co.jp/codesign/help/faq/210015/index.html タイムスタンプ署名したソフトウェアは、証明書の期限切れ後どうなりますか
+ファイル KGTN2010061101.pdf [(58.9 KB)] [kitasp 技術センター, 2010/06/11 03:26]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1908/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1739/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -447,25 +449,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1906/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1741/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1906/">プロファイルのTemp の下にGGSurfaceCacheというフォルダが作成される．</a></h4>
+                            <h4><a href="/posts/new_md/doc1741/">大きなファイルをクライアント側へコピーするGGのプラグイン （機能拡張） はあるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2009-04-24
+                            日付 2010-06-10
                             </p>
                             <p class="intro">*技術ノート
-2009/04/24*
-[番号] 技術ノート KGTN 2009031003
-[現象] プロファイルのTemp の下にGGSurfaceCacheというフォルダが作成される．
-[説明] GO-Global for Windows のクライアントが作成するフォルダで，表示速度や通信帯域を最適化するためサーバ毎にキャッシュファイルを作成します．基本的には削除しないことをお勧めしますが，肥大化した場合はフォルダごと削除して構いません．
-ファイル KGTN2009031003.pdf [(49 KB)] [kitasp 技術センター, 2009/04/24 10:00]</p>
+2010/06/10*
+[番号] 技術ノート KGTN 2010061001
+[現象] 大きなファイルをクライアント側へコピーするGGのプラグイン （機能拡張） はあるのか？
+[説明] 大きなファイルをクライアント側へコピーする実験レベルのプラグインを作成し試したところ，1KB程度のブロックに分けて転送する必要があり，残念ながら実用レベルのパフォーマンスを得ることが出来ませんでした （74MBのファイルのコピーに約１時間） ．従って， 「少なくとも現時点では」 そのようなプラグインはありません．
+ファイル KGTN2010061001.pdf [(48.9 KB)] [kitasp 技術センター, 2010/06/10 12:05]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1906/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1741/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -484,25 +486,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1907/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1742/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1907/">正式ライセンスが正しくインストールされたかどうかの確認方法を知りたい（コマンドライン）．</a></h4>
+                            <h4><a href="/posts/new_md/doc1742/">GGのプラグイン （機能拡張） とは何をするものなのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2009-04-24
+                            日付 2010-06-09
                             </p>
                             <p class="intro">*技術ノート
-2009/04/24*
-[番号] 技術ノート KGTN 2009031301
-[現象] 正式ライセンスが正しくインストールされたかどうかの確認方法を知りたい（コマンドライン）．
-[説明] コマンドプロンプトで &ldquo;lmutil lmstat -a&rdquo; を実行します．下記のように，ライセンスファイルに対応するライセンス数が表示されれば，正式ライセンスは正しくインストールされています．&ldquo;lmutil.exe&rdquo; の入手方法については，検索エンジン等でご確認下さい．
-ファイル KGTN2009031301.pdf [(63.5 KB)] [kitasp 技術センター, 2009/04/24 09:58]</p>
+2010/06/09*
+[番号] 技術ノート KGTN 2010060902
+[現象] GGのプラグイン （機能拡張） とは何をするものなのか？
+[説明] GGのプラグイン （機能拡張） は，サーバ側とクライアント側で対になったプログラム （DLL） で，GGの通信プロトコル （Rapid-X） を介してサーバとクライアントが協調して処理を行います．エンタープライズオプションに含まれる （予定の） LaunchBrowser というプラグインは，サーバ側でURLを指定して要求を行うと，クライアント側のブラウザが起動し，指定されたページ （URL） を表示します．
+ファイル KGTN2010060902.pdf [(48.5 KB)] [kitasp 技術センター, 2010/06/09 14:47]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1907/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1742/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -521,29 +523,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1912/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1743/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1912/">GO</a></h4>
+                            <h4><a href="/posts/new_md/doc1743/">Windows XP 上のActiveXクライアントではGGのプラグイン （機能拡張） は動作するが， Windows Vista/7 上のActiveXクライアントでは動作しない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2009-04-23
+                            日付 2010-06-09
                             </p>
                             <p class="intro">*技術ノート
-2009/04/23*
-[番号] 技術ノート KGTN 2009042301
-[現象] GO-Global for Windows上でプラットフォームSDKのSetLocalTime関数の動作がおかしい．
-[説明] SetLocalTime関数の動作は，GO-Global for Windowsのバージョン （ビルド） によって異なります．3.1.1系および3.2.1.4398の動作が，本来期待される動作になります．
-3.1.1.3458 パワーユーザ以上 ： 戻り値は正常 ，時計の設定は変更される 一般ユーザ ： 戻り値はエラー ，時計の設定は変更されない
-3.2.0.4226 パワーユーザ以上 ： 戻り値は正常 ，時計の設定は変更されない 一般ユーザ ： 戻り値は正常 ，時計の設定は変更されない
-3.2.1.4372 パワーユーザ以上 ： 戻り値は正常 ，時計の設定は変更されない 一般ユーザ ： 戻り値は正常 ，時計の設定は変更されない
-3.2.1.4398 パワーユーザ以上 ： 戻り値は正常 ，時計の設定は変更される 一般ユーザ ： 戻り値はエラー ，時計の設定は変更されない
-ファイル KGTN2009042301.pdf [(54.4 KB)] [kitasp 技術センター, 2009/04/23 10:02]</p>
+2010/06/09*
+[番号] 技術ノート KGTN 2010060901
+[現象] Windows XP 上のActiveXクライアントではGGのプラグイン （機能拡張） は動作するが， Windows Vista/7 上のActiveXクライアントでは動作しない．
+[説明] GGのプラグイン （機能拡張） を実行するには，ActiveXクライアントを起動するIEが 「管理者権限」 で起動されている必要があります．従って，IEを起動する時に，以下の手順で行って下さい．
+IEのアイコンを右クリック 「管理者として実行」 を選択
+ファイル KGTN2010060901.pdf [(46.8 KB)] [kitasp 技術センター, 2010/06/09 11:05]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1912/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1743/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

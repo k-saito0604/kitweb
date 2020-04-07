@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2072/">
+                                      <a href="/posts/new_md/doc2049/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2072/">[GGH5.X] 社内ポータルサイト （ウエッブページ） から，振分けサーバーを介してGGサーバーを利用したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2049/">[GGH4.X-5.X] GGEasyUDPCheck とはどんなツールなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,23 +340,22 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2072/"><i class="far fa-calendar"></i> 2017-05-24</a>
+                                            <a href="/posts/new_md/doc2049/"><i class="far fa-calendar"></i> 2017-06-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/24*
-[番号] 技術ノート KGTN 2017052201
-[現象] [GGH5.X] 社内ポータルサイト （ウエッブページ） から，振分けサーバーを介してGGサーバーを利用したい．
-[説明]
-将来リリースされる見込みの HTML5 クライアントではブラウザに事前の準備は不要ですが，現行バージョンでは事前に各ブラウザに専用クライアント （アドオン） をインストールしてください．
-  ブラウザ 専用クライアント 備　考 Internet Explorer 10.0 and 11.0 gg-client.ie-5.0.x.xxxxx.exe 32ビット版のブラウザで動作  Mozilla Firefox 38 (ESR), etc&hellip; gg-client.firefox-5.0.x.xxxxx.exe 32ビット版のブラウザで動作 Google Chrome gg-client.ie-5.0.x.xxxxx.exe デスクトップクライアントも必要
- 社内ポータルサイトには，次の形式のハイパーリンクを配置してください．なお，下記例の 192.168.1.51:8080 は振分けサーバーのIPアドレスと振分け機能のポート番号で，GGの運用環境に応じて読み替えてください．
-  ユーザー名とパスワードをユーザーが入力 （入力画面は動作例を参照） http://192.168.1.51:8080/logon.html
-  パスワードをユーザーが入力 （入力画面は動作例を参照） http://192.168.1.51:8080/logon.html?user=Administrator ・user パラメタでユーザーIDを指定
-  自動ログオン http://192.168.1.51:8080/logon.html?user=Administrator&amp;password=pass.WORD ・user パラメタでユーザーID， password パラメタでパスワードを指定
-  アプリケーションを直接起動 http://192.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2072/" class="btn btn-template-main">続きを読む</a>
+2017/06/28*
+[番号] 技術ノート KGTN 2017061301
+[現象] [GGH4.X-5.X] GGEasyUDPCheck とはどんなツールなのか？
+[説明] クラスターマネージャーの左側に表示されるサーバー一覧 （GO-Global Hosts） は，各GGサーバーが送信する UDP:491 のメッセージをクラスターマネージャーが受信した時に表示されます．この一覧にGGサーバーが表示されない場合は，Windowsファイアウォール等で UDP:491 がブロックされていることが考えられますので，このツールを利用して UDP:491 の受信状況 （到達状況） を確認してください．
+通常はコマンドプロンプトで &ldquo;GGEasyUDPCheck&rdquo; と入力することで利用できますが，必要に応じて設定ファイル GGEasyUDPCheck.ini の default セクションで，以下のパラメタを設定して下さい．
+ 設定項目 説　明 logd ログの出力フォルダ logLevel ログ出力レベル （1～9） rxpPort GGサーバーのポート番号 （既定値：491） interval 計測時間 （既定値：30秒） pvSleep 受信処理のスリープ時間 （既定値：500ミリ秒）
+ さらに設定項目は，下記の引数で上書きすることも出来ます．
+ 引　数 説　明  -logLevel ログ出力レベル -rxpPort GGサーバーのポート番号 -interval 計測時間
+ 画面およびログファイルには，次のような受信情報が記録されます．
+[2017-06-13 12:45:08] Name = DESKTOP-P7UNP59, Addr = 192.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2049/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -366,7 +365,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2066/">
+                                      <a href="/posts/new_md/doc2043/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -374,7 +373,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2066/">[Windows] Windows 10 Creators Update が適用されているかどうかの確認方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2043/">[GGH4.X-5.X] SSL証明書を更新したが，それが正しくGGに適用されているかどうかの確認方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -387,19 +386,26 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2066/"><i class="far fa-calendar"></i> 2017-05-24</a>
+                                            <a href="/posts/new_md/doc2043/"><i class="far fa-calendar"></i> 2017-06-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/24*
-[番号] 技術ノート KGTN 2017051101
-[現象] [Windows] Windows 10 Creators Update が適用されているかどうかの確認方法は？
-[説明] [設定] → [システム] → [バージョン情報] の画面で，バージョンが 1703 となっていれば，Windows 10 Creators Update が適用されています．
-ファイル KGTN2017051101.pdf [(320 KB)] [kitasp 技術センター, 2017/05/24 17:28]
-KGTN2017051101.jpg
-表示 [(23.7 KB)] [kitasp 技術センター, 2017/05/25 10:37]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2066/" class="btn btn-template-main">続きを読む</a>
+2017/06/28*
+[番号] 技術ノート KGTN 2017062701
+[現象] [GGH4.X-5.X] SSL証明書を更新したが，それが正しくGGに適用されているかどうかの確認方法は？
+[説明] ウエッブブラウザのように鍵マークをクリックしてSSL証明書を表示することが出来ませんので，次の手順で確認を行ってください．
+&lt;STEP#1&gt; GGに適用するSSL証明書 （サーバー証明書） を開いて，発行先 （ホスト名） と有効期限が正しいことを確認してください．
+&lt;STEP#2&gt; クラスターマネージャーで 「新しい」 SSL証明書 （サーバー証明書） が正しく指定されていることを確認してください．また， &ldquo;Notify users when connections are secure&rdquo; にチェックを入れてください．
+&lt;STEP#3&gt; クライアントから接続し，下記の 「安全な通信」 のダイアログが表示されることを確認してください．
+ファイル KGTN2017062701.pdf [(79.7 KB)] [kitasp 技術センター, 2017/06/28 15:40]
+KGTN2017062701-1.jpg
+表示 [(13.8 KB)] [kitasp 技術センター, 2017/06/28 15:40]
+KGTN2017062701-2.jpg
+表示 [(12.4 KB)] [kitasp 技術センター, 2017/06/28 15:40]
+KGTN2017062701-3.jpg
+表示 [(7.08 KB)] [kitasp 技術センター, 2017/06/28 15:40]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2043/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -409,7 +415,7 @@ KGTN2017051101.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2073/">
+                                      <a href="/posts/new_md/doc2044/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -417,7 +423,7 @@ KGTN2017051101.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2073/">[Windows] Windows Server 2003 (R2) 向けのランサムウェア WannaCrypt 攻撃に対する更新プログラムを適用したいが，問題はないか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2044/">[GGH4.X-5.X] インターネットから完全に分離された環境でGGを利用するが，バージョンアップをする予定がない場合，次年度以降の保守契約をしないで済ませて構わないか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -430,21 +436,17 @@ KGTN2017051101.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2073/"><i class="far fa-calendar"></i> 2017-05-24</a>
+                                            <a href="/posts/new_md/doc2044/"><i class="far fa-calendar"></i> 2017-06-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/24*
-[番号] 技術ノート KGTN 2017051901
-[現象] [Windows] Windows Server 2003 (R2) 向けのランサムウェア WannaCrypt 攻撃に対する更新プログラムを適用したいが，問題はないか？
-[説明] 下記の弊社の検証環境に更新プログラム KB4012598 をインストールし確認したところ，それぞれの環境でGGが正常に動作しました．
-・Windows Server 2003 R2 + GGH4.8.2.22090 ・Windows Server 2003 R2 + GGH4.8.2.23274 ・Windows Server 2003 R2 + GGH5.0.0.22626
-[更新プログラム KB4012598 を適用する場合は，必ず現在のサーバーのバックアップ （ディスクイメージ） を採取した後に行ってください．Windows の状況によっては他の更新プログラム等が適用される可能性がゼロとは言い切れないため，それに備えて復旧するためのバックアップを採取します．]{.underline}
-ファイル KGTN2017051901.pdf [(143 KB)] [kitasp 技術センター, 2017/05/24 17:44]
-KGTN2017051901.jpg
-表示 [(12.4 KB)] [kitasp 技術センター, 2017/05/24 17:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2073/" class="btn btn-template-main">続きを読む</a>
+2017/06/28*
+[番号] 技術ノート KGTN 2017062601
+[現象] [GGH4.X-5.X] インターネットから完全に分離された環境でGGを利用するが，バージョンアップをする予定がない場合，次年度以降の保守契約をしないで済ませて構わないか？
+[説明] 保守契約が結ばれていない場合，障害発生時の技術サポート （問合せ） ，マイナーおよびメジャーバージョンのアップグレード （不具合修正を含みます） 等を受けることが出来ません．このような点をご理解の上であれば，次年度以降の保守契約をしないで済ませることも可能です．
+ファイル KGTN2017062601.pdf [(39.2 KB)] [kitasp 技術センター, 2017/06/28 15:36]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2044/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -454,7 +456,7 @@ KGTN2017051901.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2082/">
+                                      <a href="/posts/new_md/doc2050/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -462,7 +464,7 @@ KGTN2017051901.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2082/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2050/">[GGH5.X] AndroidクライアントおよびiOSクライアントでログオンした時，エクスプローラーでファイルのタイムスタンプを見ると，正しくない日時が表示される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -475,17 +477,19 @@ KGTN2017051901.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2082/"><i class="far fa-calendar"></i> 2017-05-08</a>
+                                            <a href="/posts/new_md/doc2050/"><i class="far fa-calendar"></i> 2017-06-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/08*
-[番号] 技術ノート KGTN 2017042802
-[現象] [GGH4.X-5.X/Windows] Google 日本語入力は，GGの環境で動作するのか？
-[説明] Windows Server 2012 (R2) の環境に於いて， Google 日本語入力は，同一ユーザーがコンソールまたはリモートデスクトップ接続でログオン中の状況に限り，GG上で日本語入力 を利用することが出来ます．これ以外の場合は，IMEを Google 日本語入力 に切り替えることは出来ますが，日本語を入力することはできません．
-ファイル KGTN2017042802.pdf [(35.3 KB)] [kitasp 技術センター, 2017/05/24 16:48]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2082/" class="btn btn-template-main">続きを読む</a>
+2017/06/28*
+[番号] 技術ノート KGTN 2017060902
+[現象] [GGH5.X] AndroidクライアントおよびiOSクライアントでログオンした時，エクスプローラーでファイルのタイムスタンプを見ると，正しくない日時が表示される．
+[説明] クラスタマネージャの設定 Use client&rsquo;s time zone のチェックを外すことで，この問題が解消します．
+ファイル KGTN2017060902.pdf [(44.8 KB)] [kitasp 技術センター, 2017/06/28 15:21]
+KGTN2017060902.jpg
+表示 [(7.91 KB)] [kitasp 技術センター, 2017/06/28 15:21]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2050/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -495,7 +499,7 @@ KGTN2017051901.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2089/">
+                                      <a href="/posts/new_md/doc2046/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -503,7 +507,7 @@ KGTN2017051901.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2089/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2046/">[GGH5.X] GGEasyLogon を利用する場合，それとは別にGGのデスクトップクライアントをインストールせねばならないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -516,24 +520,19 @@ KGTN2017051901.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2089/"><i class="far fa-calendar"></i> 2017-05-08</a>
+                                            <a href="/posts/new_md/doc2046/"><i class="far fa-calendar"></i> 2017-06-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/08*
-[番号] 技術ノート KGTN 2017042601
-[現象] [GGH4.X-5.X/Windows] ADPlus のクラッシュダンプを採取したいが，ツールの入手方法は？ (Windows Server 2012 R2)
-[説明] 2017年4月26日時点では，次の手順で &ldquo;Debugging Tools for Windows&rdquo; を入手することが出来ます．
-&lt;STEP#1&gt; https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit へアクセスし，画面下方の &ldquo;Download the debugging Tools for Windows (WinDbg)&rdquo; をクリックします．
-&lt;STEP#2&gt; &ldquo;Get Debugging Tools for Windows (WinDbg) (from the SDK)&rdquo; をクリックします．日本語のページが表示された場合は， &ldquo;Windows 向けデバッグ ツール (WinDbg) を SDK から入手する&rdquo; をクリックします．
-&lt;STEP#3&gt; &ldquo;保存&rdquo; をクリックします．
-&lt;STEP#4&gt; &ldquo;実行&rdquo; をクリックします．
-&lt;STEP#5&gt; &ldquo;Next&rdquo; をクリックします．
-&lt;STEP#6&gt; &ldquo;Next&rdquo; をクリックします．
-&lt;STEP#7&gt; &ldquo;Accept&rdquo; をクリックします．
-&lt;STEP#8&gt; &ldquo;Debugging Tools for Windows&rdquo; のみにチェックを入れ，次に &ldquo;Install&rdquo; をクリックします．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2089/" class="btn btn-template-main">続きを読む</a>
+2017/06/28*
+[番号] 技術ノート KGTN 2017062101
+[現象] [GGH5.X] GGEasyLogon を利用する場合，それとは別にGGのデスクトップクライアントをインストールせねばならないのか？
+[説明] GGEasyLogon は，GGのデスクトップクライアントの使い勝手を良くするためのソフトウエアで，GGのデスクトップクライアントを別途インストールする必要があります． GGEasyLogon バージョン5.4.7 またはそれ以降のインストーラー GGEasyLogon-Setup-SingleUser.exe では，GGのデスクトップクライアントが含まれており， 「GGデスクトップクライアントをインストールしますか？」 というダイアログで 「はい」 を選択することで，自動的にGGのデスクトップクライアントがインストールされます．
+ファイル KGTN2017062101.pdf [(51.2 KB)] [kitasp 技術センター, 2017/06/28 15:33]
+KGTN2017062101.jpg
+表示 [(9.65 KB)] [kitasp 技術センター, 2017/06/28 15:33]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2046/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -543,7 +542,7 @@ KGTN2017051901.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2090/">
+                                      <a href="/posts/new_md/doc1979/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -551,7 +550,7 @@ KGTN2017051901.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2090/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc1979/">[GGH5.X] Windows Server 2012 R2 上の IE11 でツールチップが表示されない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -564,26 +563,17 @@ KGTN2017051901.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2090/"><i class="far fa-calendar"></i> 2017-05-08</a>
+                                            <a href="/posts/new_md/doc1979/"><i class="far fa-calendar"></i> 2017-06-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/08*
-[番号] 技術ノート KGTN 2017042602
-[現象] [GGH4.X-5.X/Windows] ADPlus のクラッシュダンプを採取したいが，ツールの入手方法は？ (Windows Server 2008 R2)
-[説明] 2017年4月26日時点では，次の手順で &ldquo;Debugging Tools for Windows&rdquo; を入手することが出来ます．
-&lt;STEP#1&gt; https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit へアクセスし，画面下方の &ldquo;Download the debugging Tools for Windows (WinDbg)&rdquo; をクリックします．
-&lt;STEP#2&gt; &ldquo;Windows 向けデバッグ ツール (WinDbg) を SDK から入手する&rdquo; をクリックします．
-&lt;STEP#3&gt; &ldquo;保存&rdquo; をクリックします．
-&lt;STEP#4&gt; &ldquo;実行&rdquo; をクリックします．
-&lt;STEP#5&gt; &ldquo;Next&rdquo; をクリックします．
-&lt;STEP#6&gt; &ldquo;Next&rdquo; をクリックします．
-&lt;STEP#7&gt; &ldquo;Accept&rdquo; をクリックします．
-&lt;STEP#8&gt; &ldquo;Debugging Tools for Windows&rdquo; のみにチェックを入れ，次に &ldquo;Install&rdquo; をクリックします．
-&lt;STEP#9&gt; &ldquo;Close&rdquo; をクリックします．
-&lt;STEP#10&gt; &ldquo;C:Program Files (x86)Windows Kits10Debuggersx64&rdquo; に adplus.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2090/" class="btn btn-template-main">続きを読む</a>
+2017/06/28*
+[番号] 技術ノート KGTN 2017062801
+[現象] [GGH5.X] Windows Server 2012 R2 上の IE11 でツールチップが表示されない．
+[説明] Windows Server 2012 R2 上の IE11 でツールチップが表示されない問題は， GGH5.0.2.25297 (LA版) またはそれ以降のビルドで修正されております．
+ファイル KGTN2017062801.pdf [(29.5 KB)] [kitasp 技術センター, 2017/10/10 14:11]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1979/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -593,7 +583,7 @@ KGTN2017051901.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2108/">
+                                      <a href="/posts/new_md/doc2048/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -601,7 +591,7 @@ KGTN2017051901.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2108/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2048/">[GGH5.X] デスクトップクライアントのサイレントインストールの方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -614,19 +604,20 @@ KGTN2017051901.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2108/"><i class="far fa-calendar"></i> 2017-05-08</a>
+                                            <a href="/posts/new_md/doc2048/"><i class="far fa-calendar"></i> 2017-06-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/08*
-[番号] 技術ノート KGTN 2017042807
-[現象] [GGH4.X-5.X] ドラッグ時にウインドウの枠のみを表示するオプション &ldquo;-dfw 0&rdquo; を設定すると画面上に枠の軌跡が表示されるが，この問題を解決する方法は？
-[説明] オプション &ldquo;-dfw 0&rdquo; は非サポートのオプション （機能） で，クライアントフレーム機能 （&quot;-f&rdquo; オプション） との併用を想定しています．クライアントフレームの下では，枠の軌跡が表示されることなくドラッグすることが出来ます．
-ファイル KGTN2017042807.pdf [(253 KB)] [kitasp 技術センター, 2017/05/08 15:15]
-KGTN2017042807.jpg
-表示 [(18.5 KB)] [kitasp 技術センター, 2017/05/08 15:15]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2108/" class="btn btn-template-main">続きを読む</a>
+2017/06/28*
+[番号] 技術ノート KGTN 2017061901
+[現象] [GGH5.X] デスクトップクライアントのサイレントインストールの方法は？
+[説明] コマンドプロンプトで，デスクトップクライアントのあるフォルダーに移動し，次のコマンドを実行してください．
+gg-client.desktop-5.x.x.xxxxx.exe /s /v&quot;/qn  なお，5.x.x.xxxxx の部分は，GGクライアントのバージョン番号とビルド番号となり， 5.0.2.24620 またはそれ以降でサイレントインストールが機能します．
+補　足 コマンドのパラメタの意味は，次の通りです．
+[InstallShield] /s &hellip; サイレント・モードを使用 /v &hellip; 後続するパラメーターをMSIパッケージへ渡す [MSI] /qn &hellip; サイレント・モードを使用してインストール
+ファイル KGTN2017061901.pdf [(40.8 KB)] [kitasp 技術センター, 2017/06/28 15:30]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2048/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -636,7 +627,7 @@ KGTN2017042807.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2109/">
+                                      <a href="/posts/new_md/doc2051/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -644,7 +635,7 @@ KGTN2017042807.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2109/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2051/">[GGH5.X] ログのフォルダー C:Program FilesGraphOnGO-GlobalLogClients に記録されるファイルは，どのようなログファイルなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -657,19 +648,19 @@ KGTN2017042807.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2109/"><i class="far fa-calendar"></i> 2017-05-08</a>
+                                            <a href="/posts/new_md/doc2051/"><i class="far fa-calendar"></i> 2017-06-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/08*
-[番号] 技術ノート KGTN 2017042806
-[現象] [GGH4.X-5.X/Windows] &ldquo;さくらのVPS for Windows Server&rdquo; では，GGやリモートデスクトップ接続以外にアクセスする方法はあるのか？
-[説明] サーバー設定画面の &ldquo;コンソール&rdquo; を選択することで，サーバーのコンソールへ接続することが出来ます．致命的な障害が発生した場合は， &ldquo;各種設定 → OSインストール&rdquo; を選ぶことで Windows の再インストールが可能です （20分ほどで完了します） ．
-ファイル KGTN2017042806.pdf [(216 KB)] [kitasp 技術センター, 2017/05/08 15:12]
-KGTN2017042806.jpg
-表示 [(18.6 KB)] [kitasp 技術センター, 2017/05/08 15:12]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2109/" class="btn btn-template-main">続きを読む</a>
+2017/06/28*
+[番号] 技術ノート KGTN 2017060901
+[現象] [GGH5.X] ログのフォルダー C:Program FilesGraphOnGO-GlobalLogClients に記録されるファイルは，どのようなログファイルなのか？
+[説明] GGのクライアント （ソフトウエア） は，クライアントがサーバーに接続されていない時，クライアント端末のログファイルにメッセージを記録します．さらに，ユーザーがサーバーにログオンした直後に，このログファイルをクライアントからサーバーへコピー （同期） します．GGの利用者がサーバーへの接続が頻繁に切断されると報告した時に，システム管理者はこのクライアントおよびサーバーのログファイルをチェックして原因を特定することができます．
+ファイル KGTN2017060901.pdf [(104 KB)] [kitasp 技術センター, 2017/06/28 15:19]
+KGTN2017060901.jpg
+表示 [(31.3 KB)] [kitasp 技術センター, 2017/06/28 15:19]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2051/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -679,7 +670,7 @@ KGTN2017042806.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2110/">
+                                      <a href="/posts/new_md/doc2045/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -687,7 +678,7 @@ KGTN2017042806.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2110/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2045/">[Windows] Microsoft Edge をコマンドプロンプトから起動する方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -700,19 +691,20 @@ KGTN2017042806.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2110/"><i class="far fa-calendar"></i> 2017-05-08</a>
+                                            <a href="/posts/new_md/doc2045/"><i class="far fa-calendar"></i> 2017-06-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/08*
-[番号] 技術ノート KGTN 2017042805
-[現象] [GGH4.X-5.X/Windows] &ldquo;さくらのVPS for Windows Server&rdquo; で標準の Windows Server 2012 R2 は，どのエディションか？
-[説明] Windows Server 2012 R2 Standard です．
-ファイル KGTN2017042805.pdf [(252 KB)] [kitasp 技術センター, 2017/05/08 15:10]
-KGTN2017042805.jpg
-表示 [(15.7 KB)] [kitasp 技術センター, 2017/05/08 15:10]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2110/" class="btn btn-template-main">続きを読む</a>
+2017/06/28*
+[番号] 技術ノート KGTN 2017062102
+[現象] [Windows] Microsoft Edge をコマンドプロンプトから起動する方法は？
+[説明] Microsoft Edge は従来のブラウザと異なり， .exe ファイルを実行する方法では起動できません．次の例のように &ldquo;start microsoft-edge:&rdquo; を実行して起動してください．
+他に次のコマンドを実行する方法もあります．
+explorer.exe shell:AppsFolderMicrosoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge  ファイル KGTN2017062102.pdf [(40.2 KB)] [kitasp 技術センター, 2017/06/28 15:35]
+KGTN2017062102.jpg
+表示 [(8.8 KB)] [kitasp 技術センター, 2017/06/28 15:35]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2045/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -722,7 +714,7 @@ KGTN2017042805.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2111/">
+                                      <a href="/posts/new_md/doc2063/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -730,7 +722,7 @@ KGTN2017042805.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2111/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2063/">[GGH4.X-5.X] クライアントプリンターが登録されなくなった．APSログを見ると spoolsv (???) CS: Request timeout. という記録があった．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -743,17 +735,19 @@ KGTN2017042805.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2111/"><i class="far fa-calendar"></i> 2017-05-08</a>
+                                            <a href="/posts/new_md/doc2063/"><i class="far fa-calendar"></i> 2017-06-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/05/08*
-[番号] 技術ノート KGTN 2017042804
-[現象] [GGH4.X-5.X/Windows] &ldquo;さくらのVPS for Windows Server&rdquo; のMACアドレスは再起動によって変わらないのか？
-[説明] 弊社がテスト環境として使用しているマシン　（W2G）　では，再起動によってMACアドレスが変わることはありません．さくらインターネットへ問い合わせたところ， 「将来的にメンテナンスや障害等の対応でMACアドレスが変更される可能性は排除できないが，しかしながら現在の運用では変更されることはない」 ということでした．
-ファイル KGTN2017042804.pdf [(37.3 KB)] [kitasp 技術センター, 2017/05/08 15:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2111/" class="btn btn-template-main">続きを読む</a>
+2017/06/08*
+[番号] 技術ノート KGTN 2017052601
+[現象] [GGH4.X-5.X] クライアントプリンターが登録されなくなった．APSログを見ると &ldquo;spoolsv (???) CS: Request timeout.&rdquo; という記録があった．
+[説明] spoolsv は， Windows の Print Spooler サービスのことで，このサービスが （過負荷等で） 異常終了し，サービスが停止したことが考えられます．この現象が再度発生した場合は， Print Spooler サービスが 「開始」 状態にあるか確認してください． 「開始」 状態にある場合は，タスクマネージャーから，このサービスのプロセスのダンプを採取してください．
+ファイル KGTN2017052601.pdf [(322 KB)] [kitasp 技術センター, 2017/06/08 14:54]
+KGTN2017052601.jpg
+表示 [(17.6 KB)] [kitasp 技術センター, 2017/06/08 14:54]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2063/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -823,7 +817,7 @@ KGTN2017042805.jpg
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

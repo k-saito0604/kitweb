@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2666/">
+                                      <a href="/posts/new_md/doc2604/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2666/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2604/">[GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor のログファイルの出力先 （フォルダ） を変えたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,23 +340,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2666/"><i class="far fa-calendar"></i> 2015-12-17</a>
+                                            <a href="/posts/new_md/doc2604/"><i class="far fa-calendar"></i> 2016-03-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/12/17*
-[番号] 技術ノート KGTN 2015111201
-[現象] [GGH4.X-5.X] Preview PDF で表示されたPDFファイルを印刷すると， Windowsプリンタードライバーで印刷した時に比べ小さく印刷される．
-[説明] これは，PDFファイルとPDFビューワー （例： Adobe Acrobat Reader DC） の仕様に起因する現象です．同じPDFファイルを Adobe Acrobat Reader DC の印刷画面のパラメタ （ページサイズ処理） を変えて印刷したところ，以下のような結果になりました （右から順に， 「合わせる」 「実際のサイズ」 「カスタム倍率 120%」 を選択） ．
-「合わせる」 では，余白が広く取られており内容が小さく印刷されています． 「実際のサイズ」 では，最小の余白で印刷されています． 「カスタム倍率 120%」 では，拡大印刷され内容の一部が切れています．このように，実際に用紙に印刷される内容の大きさは，PDFビューワーの印刷パラメタによって決まりますので， このパラメタを上手く調整して下さい．
-Adobe Reader XI の印刷画面
-ファイル KGTN2015111201.pdf [(181 KB)] [kitasp 技術センター, 2015/12/17 11:37]
-KGTN2015111201-1.jpg
-表示 [(33.6 KB)] [kitasp 技術センター, 2015/12/17 11:37]
-KGTN2015111201-2.jpg
-表示 [(11 KB)] [kitasp 技術センター, 2015/12/17 11:37]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2666/" class="btn btn-template-main">続きを読む</a>
+2016/03/11*
+[番号] 技術ノート KGTN 2016031101
+[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor のログファイルの出力先 （フォルダ） を変えたい．
+[説明] 設定ファイル GGEasyMonitor.ini の default セクションで，以下の項目を指定して下さい．この設定により， GGEasyMonitor の４種類のログが，指定したフォルダに出力されます （Ver2.0.9またはそれ以降） ．
+[default] logd =
+ファイル KGTN2016031101.pdf [(58.2 KB)] [kitasp 技術センター, 2016/03/11 17:36]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2604/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -366,7 +361,7 @@ KGTN2015111201-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2667/">
+                                      <a href="/posts/new_md/doc2609/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -374,7 +369,7 @@ KGTN2015111201-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2667/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2609/">[GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor の設定ファイルの項目 mode の値は SP なのか？　それとも PS なのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -387,19 +382,17 @@ KGTN2015111201-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2667/"><i class="far fa-calendar"></i> 2015-12-17</a>
+                                            <a href="/posts/new_md/doc2609/"><i class="far fa-calendar"></i> 2016-03-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/12/17*
-[番号] 技術ノート KGTN 2015111001
-[現象] [GGH4.X-5.X] セッション毎にGGが使用するメモリの量 （ワーキングセット） を知りたい．
-[説明] GGのセッション上で動作するプロセスおよび関連するプロセスのメモリの量 （ワーキングセット） の実測値は以下の通りです．
-logon.exe 約4.5MB remoteClip.exe 約9.2MB pw.exe 約18.5MB ctfmon.exe 約8.6MB JpnIME.exe 約7.8MB
-なお，この値 （合計すると約50MB） は Windows Server 2012 R2 の環境で，GGにログオンした直後にタスクマネージャで表示された結果の平均値です．
-ファイル KGTN2015111101.pdf [(108 KB)] [kitasp 技術センター, 2015/12/17 11:21]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2667/" class="btn btn-template-main">続きを読む</a>
+2016/03/11*
+[番号] 技術ノート KGTN 2016022301
+[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor の設定ファイルの項目 mode の値は SP なのか？　それとも PS なのか？
+[説明] 初期のバージョンでは PS でしたが，現在のバージョンでは SP に変更されております （旧設定の PS でも機能します）．なお， AS (SA) および PA (AP) についても同様です．
+ファイル KGTN2016022301.pdf [(54.4 KB)] [kitasp 技術センター, 2016/03/11 16:09]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2609/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -409,7 +402,7 @@ logon.exe 約4.5MB remoteClip.exe 約9.2MB pw.exe 約18.5MB ctfmon.exe 約8.6MB 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2133/">
+                                      <a href="/posts/new_md/doc2605/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -417,7 +410,7 @@ logon.exe 約4.5MB remoteClip.exe 約9.2MB pw.exe 約18.5MB ctfmon.exe 約8.6MB 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2133/">[GGH5.X] GGH5.0で改良されたクライアント・オーディオ機能 （Improved Audio Support） を試したが，クライアント上で音が鳴らない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2605/">[GGH4.X-5.X] アプリケーションはサーバー上で実行されるので，クライアントPCの性能が実行結果に影響しないと考えて良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -430,22 +423,17 @@ logon.exe 約4.5MB remoteClip.exe 約9.2MB pw.exe 約18.5MB ctfmon.exe 約8.6MB 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2133/"><i class="far fa-calendar"></i> 2015-12-17</a>
+                                            <a href="/posts/new_md/doc2605/"><i class="far fa-calendar"></i> 2016-03-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/12/17*
-[番号] 技術ノート KGTN 2015110401
-[現象] [GGH5.X] GGH5.0で改良されたクライアント・オーディオ機能 （Improved Audio Support） を試したが，クライアント上で音が鳴らない．
-[説明] 以下の点について，確認をお願いします．
-[サーバー側の確認事項]
- ディバイスマネージャーの &ldquo;サウンド，ビデオおよびゲームコントローラー&rdquo; に &ldquo;GraphOn Virtual Audio Device (WDM)&rdquo; が登録されていること． クラスタマネージャの Client Access → Sound にチェックが入っていること．  [クライアント側の確認事項]
-  Windows 7 またはそれ以降のバージョンであること．
-  GGH5.Xのクライアントがインストールされていること．
-  Amazonのミュージックの試聴出来ること．
-Improved Audio Support On Windows 7 and later, GO-Global 5 supports a virtual audio device that creates a private mixer for every GO-Global session. These components mix the audio played by applications running in the GO-Global session and encode it in Ogg Vorbis format.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2133/" class="btn btn-template-main">続きを読む</a>
+2016/03/11*
+[番号] 技術ノート KGTN 2016022901
+[現象] [GGH4.X-5.X] アプリケーションはサーバー上で実行されるので，クライアントPCの性能が実行結果に影響しないと考えて良いか？
+[説明] いいえ．アプリケーションはサーバー上で実行されますが，描画命令等についてはサーバー側からクライアント側へ転送され，その描画命令がクライアントPC上で処理 （実行） されます．描画内容が比較的単純なものであれば，クライアントPCの性能がトータルのパフォーマンスに影響を与えることはありません．グラフィック系のアプリケーションや多数の描画オブジェクトが多数配置された画面では， 「クライアント側での描画処理のウエイトが大きくなるため」 クライアントPCの性能がトータルのパフォーマンスに影響を与える可能性があります．従って，グラフィック系のアプリケーション等をご利用なさりたい場合は，想定されるクライアントPCで期待通りのパフォーマンスが得られるかどうか，事前検証を行われることを推奨します．
+ファイル KGTN2016022901.pdf [(61.5 KB)] [kitasp 技術センター, 2016/03/11 17:35]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2605/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -455,7 +443,7 @@ Improved Audio Support On Windows 7 and later, GO-Global 5 supports a virtual au
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2671/">
+                                      <a href="/posts/new_md/doc2608/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -463,7 +451,7 @@ Improved Audio Support On Windows 7 and later, GO-Global 5 supports a virtual au
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2671/">[ExPack] GGEasyMonitor のインターネット環境での監視 （アクティブ・エージェント方式） の構成と設定を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2608/">[iOS] iOSクライアントの操作性 （ウインドウの移動等） は向上したのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -476,23 +464,17 @@ Improved Audio Support On Windows 7 and later, GO-Global 5 supports a virtual au
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2671/"><i class="far fa-calendar"></i> 2015-11-04</a>
+                                            <a href="/posts/new_md/doc2608/"><i class="far fa-calendar"></i> 2016-03-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/11/04*
-[番号] 技術ノート KGTN 2015102105
-[現象] [ExPack] GGEasyMonitor のインターネット環境での監視 （アクティブ・エージェント方式） の構成と設定を知りたい．
-[説明] GGEasyMonitor のインターネット環境での監視 （アクティブ・エージェント方式） の構成例とその設定内容（抜粋） を以下に示します．
-SERVER1
-[SP_SERVER2] mode = SP name = SERVER2 addr = 115.125.248.169 port =
-SERVER2
-[AA_SERVER1] mode = AA addr = 153.226.202.7 port = 8491
-ファイル KGTN2015102105.pdf [(111 KB)] [kitasp 技術センター, 2015/12/17 10:26]
-KGTN2015102105-1.jpg
-表示 [(33.2 KB)] [kitasp 技術センター, 2015/12/17 10:26]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2671/" class="btn btn-template-main">続きを読む</a>
+2016/03/11*
+[番号] 技術ノート KGTN 2016022302
+[現象] [iOS] iOSクライアントの操作性 （ウインドウの移動等） は向上したのか？
+[説明] iPad2 (iOS 9.2.1) + iOSクライアント (5.0.0.21697) + GGH4.8.2.22631 / GGH5.0.0.22626 の環境で確認したところ， Program Window の移動操作等をスムーズに行うことが出来ました．もしこの環境でもウインドウの移動が困難な場合は， iOSクライアントを強制終了 （ホームボタンをダブルクリックし，iOSクライアントを上にスワイプ） し，再度ログオンして下さい．
+ファイル KGTN2016022302.pdf [(55.3 KB)] [kitasp 技術センター, 2016/03/11 16:11]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2608/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -502,7 +484,7 @@ KGTN2015102105-1.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2670/">
+                                      <a href="/posts/new_md/doc2615/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -510,7 +492,7 @@ KGTN2015102105-1.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2670/">[ExPack] GGEasyMonitor のインターネット環境での監視 （パッシブ・エージェント方式） の構成と設定を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2615/">[Windows] 仮想環境の Windows Server 2008 R2 のサーバーでたまにBSODが発生する．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -523,23 +505,19 @@ KGTN2015102105-1.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2670/"><i class="far fa-calendar"></i> 2015-11-04</a>
+                                            <a href="/posts/new_md/doc2615/"><i class="far fa-calendar"></i> 2016-03-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/11/04*
-[番号] 技術ノート KGTN 2015102106
-[現象] [ExPack] GGEasyMonitor のインターネット環境での監視 （パッシブ・エージェント方式） の構成と設定を知りたい．
-[説明] GGEasyMonitor のインターネット環境での監視 （パッシブ・エージェント方式） の構成例とその設定内容 （抜粋） を以下に示します．
-SERVER1
-[SA_SERVER2] mode = SA name = SERVER2 addr = 115.125.248.169 port = 8491
-SERVER2
-[AP_SERVER1] mode = AP addr = 153.226.202.7 port =
-ファイル KGTN2015102106.pdf [(132 KB)] [kitasp 技術センター, 2015/12/17 10:28]
-KGTN2015102106-1.jpg
-表示 [(27.3 KB)] [kitasp 技術センター, 2015/12/17 10:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2670/" class="btn btn-template-main">続きを読む</a>
+2016/03/11*
+[番号] 技術ノート KGTN 2016020501
+[現象] [Windows] 仮想環境の Windows Server 2008 R2 のサーバーでたまにBSODが発生する．
+[説明] 仮想環境がHyper-V以外で，かつ複数CPUの場合， Windows Server 2008 R2 がBSODを引き起こすという報告があります．これに該当する場合は， Windows Server 2012 R2 へアップグレードするか，またはシングルCPUの構成に変更することで問題が解決します．以下に，この件に関するクラウド・エヌの公開情報を引用します．
+ファイル KGTN2016020501.pdf [(150 KB)] [kitasp 技術センター, 2016/03/11 16:02]
+KGTN2016020501.jpg
+表示 [(56 KB)] [kitasp 技術センター, 2016/03/11 16:02]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2615/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -549,7 +527,7 @@ KGTN2015102106-1.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2673/">
+                                      <a href="/posts/new_md/doc2625/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -557,7 +535,7 @@ KGTN2015102106-1.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2673/">[ExPack] GGEasyMonitor のローカルネットワーク上での監視 （アクティブ・エージェント方式） の構成と設定を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2625/">[GGH4.X-5.X/ExPack] GGEasyMonitor でGGサーバーのホットスタンバイを行う方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -570,23 +548,17 @@ KGTN2015102106-1.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2673/"><i class="far fa-calendar"></i> 2015-11-04</a>
+                                            <a href="/posts/new_md/doc2625/"><i class="far fa-calendar"></i> 2016-02-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/11/04*
-[番号] 技術ノート KGTN 2015102103
-[現象] [ExPack] GGEasyMonitor のローカルネットワーク上での監視 （アクティブ・エージェント方式） の構成と設定を知りたい．
-[説明] GGEasyMonitor のローカルネットワーク上での監視 （アクティブ・エージェント方式） の構成例とその設定内容 （抜粋） を以下に示します．
-SERVER1
-[SP_SERVER1] mode = SP name = SERVER1 addr = 192.168.102.89 port =
-[SP_SERVER2] mode = SP name = SERVER2 addr = 192.168.102.61 port =
-[AA_SERVER1] mode = AA addr = 192.168.102.89 port = 8491
-SERVER2
-[AA_SERVER1] mode = AA addr = 192.168.102.89 port = 8491
-ファイル KGTN2015102103.pdf [(84.3 KB)] [kitasp 技術センター, 2015/12/17 10:20]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2673/" class="btn btn-template-main">続きを読む</a>
+2016/02/05*
+[番号] 技術ノート KGTN 2016020405
+[現象] [GGH4.X-5.X/ExPack] GGEasyMonitor でGGサーバーのホットスタンバイを行う方法は？
+[説明] 現用系のGGサーバーに所定の最大セッション数を設定し，待機系のGGサーバーに最大セッション数0を設定します．現用系から待機系に切り替える時は，現用系の最大セッション数を0に，待機系の最大セッション数を所定のセッション数に変更 （設定） して下さい．
+ファイル KGTN2016020405.pdf [(50.8 KB)] [kitasp 技術センター, 2016/02/05 15:36]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2625/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -596,7 +568,7 @@ SERVER2
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2672/">
+                                      <a href="/posts/new_md/doc2622/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -604,7 +576,7 @@ SERVER2
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2672/">[ExPack] GGEasyMonitor のローカルネットワーク上での監視 （パッシブ・エージェント方式） の構成と設定を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2622/">[GGH4.X-5.X/ExPack] GGEasyMonitor で振分けている環境で，全GGサーバーのメンテナンスを行う時の手順は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -617,23 +589,22 @@ SERVER2
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2672/"><i class="far fa-calendar"></i> 2015-11-04</a>
+                                            <a href="/posts/new_md/doc2622/"><i class="far fa-calendar"></i> 2016-02-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/11/04*
-[番号] 技術ノート KGTN 2015102104
-[現象] [ExPack] GGEasyMonitor のローカルネットワーク上での監視 （パッシブ・エージェント方式） の構成と設定を知りたい．
-[説明] GGEasyMonitor のローカルネットワーク上での監視 （パッシブ・エージェント方式） の構成例とその設定内容（抜粋） を以下に示します．
-SERVER1
-[SA_SERVER1] mode = SA name = SERVER1 addr = 192.168.102.89 port = 8491
-[SA_SERVER2] mode = SA name = SERVER2 addr = 192.168.102.61 port = 8491
-[AP_SERVER1] mode = AP addr = 192.168.102.89 port =
-SERVER2
-[AP_SERVER1] mode = AP addr = 192.168.102.89 port =
-ファイル KGTN2015102104.pdf [(89.1 KB)] [kitasp 技術センター, 2015/12/17 10:24]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2672/" class="btn btn-template-main">続きを読む</a>
+2016/02/05*
+[番号] 技術ノート KGTN 2016020407
+[現象] [GGH4.X-5.X/ExPack] GGEasyMonitor で振分けている環境で，全GGサーバーのメンテナンスを行う時の手順は？
+[説明] 以下の手順で全GGサーバーのメンテナンス行うことをお勧めします．
+1.管理画面で Logon を Disable に設定 2.振分け画面が 「ただいまこのサービスはご利用になれません」 になったことを確認 3.全GGサーバーのメンテナンス 4.管理画面で Logon を Enable に設定
+ファイル KGTN2016020407.pdf [(125 KB)] [kitasp 技術センター, 2016/02/05 15:42]
+KGTN2016020407-1.jpg
+表示 [(23.3 KB)] [kitasp 技術センター, 2016/02/05 15:42]
+KGTN2016020407-2.jpg
+表示 [(10.5 KB)] [kitasp 技術センター, 2016/02/05 15:42]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2622/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -643,7 +614,7 @@ SERVER2
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2675/">
+                                      <a href="/posts/new_md/doc2627/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -651,7 +622,7 @@ SERVER2
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2675/">[ExPack] GGEasyMonitor の自己監視 （アクティブ・エージェント方式） の構成と設定を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2627/">[GGH4.X-5.X/ExPack] GGEasyMonitor のフリーウエア版はないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -664,22 +635,17 @@ SERVER2
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2675/"><i class="far fa-calendar"></i> 2015-11-04</a>
+                                            <a href="/posts/new_md/doc2627/"><i class="far fa-calendar"></i> 2016-02-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/11/04*
-[番号] 技術ノート KGTN 2015102101
-[現象] [ExPack] GGEasyMonitor の自己監視 （アクティブ・エージェント方式） の構成と設定を知りたい．
-[説明] GGEasyMonitor の自己監視 （アクティブ・エージェント方式） の構成例とその設定内容 （抜粋） を以下に示します．
-[default] hostName = SERVER1 hostPort = 8491 apsPort = 491
-[SP_SERVER1] mode = SP name = SERVER addr = 192.168.102.89 port =
-[AA_SERVER1] mode = AA addr = 192.168.102.89 port = 8491
-ファイル KGTN2015102101.pdf [(68.1 KB)] [kitasp 技術センター, 2015/12/17 10:12]
-KGTN2015102101-1.jpg
-表示 [(10.4 KB)] [kitasp 技術センター, 2015/12/17 10:12]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2675/" class="btn btn-template-main">続きを読む</a>
+2016/02/05*
+[番号] 技術ノート KGTN 2016020404
+[現象] [GGH4.X-5.X/ExPack] GGEasyMonitor のフリーウエア版はないのか？
+[説明] GGEasyMonitor がGraphOn社の製品 「セッション管理SDK」 を使用していることもあり，フリーウエア版の GGEasyMonitor はありません．先ず 「試してみたい」 ということであれば，１ヶ月間の評価用ライセンスをご用意しております．
+ファイル KGTN2016020404.pdf [(52.6 KB)] [kitasp 技術センター, 2016/02/05 15:35]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2627/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -689,7 +655,7 @@ KGTN2015102101-1.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2674/">
+                                      <a href="/posts/new_md/doc2623/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -697,7 +663,7 @@ KGTN2015102101-1.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2674/">[ExPack] GGEasyMonitor の自己監視 （パッシブ・エージェント方式） の構成と設定を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2623/">[GGH4.X-5.X/ExPack] GGEasyMonitor の振分け機能を使用している環境で，特定のGGサーバーを再起動する手順は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -710,22 +676,20 @@ KGTN2015102101-1.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2674/"><i class="far fa-calendar"></i> 2015-11-04</a>
+                                            <a href="/posts/new_md/doc2623/"><i class="far fa-calendar"></i> 2016-02-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/11/04*
-[番号] 技術ノート KGTN 2015102102
-[現象] [ExPack] GGEasyMonitor の自己監視 （パッシブ・エージェント方式） の構成と設定を知りたい．
-[説明] GGEasyMonitor の自己監視 （パッシブ・エージェント方式） の構成例とその設定内容を以下に示します．
-[default] hostName = SERVER1 hostPort = 8491 apsPort = 491
-[AP_SERVER1] mode = AP addr = 192.168.102.89 port =
-[SA_SERVER1] mode = SA name = SERVER1 addr = 192.168.102.89 port = 8491
-ファイル KGTN2015102102.pdf [(69.6 KB)] [kitasp 技術センター, 2015/12/17 10:17]
-KGTN2015102102-1.jpg
-表示 [(7.46 KB)] [kitasp 技術センター, 2015/12/17 10:17]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2674/" class="btn btn-template-main">続きを読む</a>
+2016/02/05*
+[番号] 技術ノート KGTN 2016020406
+[現象] [GGH4.X-5.X/ExPack] GGEasyMonitor の振分け機能を使用している環境で，特定のGGサーバーを再起動する手順は？
+[説明] 以下の手順でGGサーバーを再起動することをお勧めします．
+1.GGサーバーの最大セッション数に0を設定 2.管理画面で最大セッション数 （SessionMax） が0になったことを確認 3.GGサーバーを再起動 4.GGサーバーの最大セッション数に所定のセッション数を設定
+ファイル KGTN2016020406.pdf [(105 KB)] [kitasp 技術センター, 2016/02/05 15:38]
+KGTN2016020406.jpg
+表示 [(21.8 KB)] [kitasp 技術センター, 2016/02/05 15:38]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2623/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -735,7 +699,7 @@ KGTN2015102102-1.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2689/">
+                                      <a href="/posts/new_md/doc2628/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -743,7 +707,7 @@ KGTN2015102102-1.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2689/">[ExPack] 拡張パックの GGToolSessionCount とはどんなツールなのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2628/">[GGH4.X-5.X/ExPack] GGEasyMonitor の振分け機能を利用したいが，このソフトウエアの購入方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -756,23 +720,17 @@ KGTN2015102102-1.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2689/"><i class="far fa-calendar"></i> 2015-11-04</a>
+                                            <a href="/posts/new_md/doc2628/"><i class="far fa-calendar"></i> 2016-02-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/11/04*
-[番号] 技術ノート KGTN 2015100201
-[現象] [ExPack] 拡張パックの GGToolSessionCount とはどんなツールなのか？
-[説明] GGサーバー上で動作させるプログラム （コンソールアプリケーション） で，クラスタマネージャーで設定された最大セッション数と実行時に存在するセッションの数を標準出力へ表示します．Zabbix などのサーバー監視ツールで，GGサーバーの最大セッション数および現在のセッション数を参照したい時に，このツールを利用することが出来ます．
-R:PUBETC&gt;GGToolSessionCount SessionNow = 2, SessionMax = 45 現在のセッション数は 2 ，最大セッション数は 45 R:PUBETC&gt;GGToolSessionCount SessionNow = -1, SessionMax = 45 APS が停止している場合は -1 が表示されます．  設定 設定ファイルGGToolSessionCount.ini の default セクションで，以下のパラメタを設定して下さい．
- 設定項目 説明
-debug ログの出力レベル，通常は1を指定し，障害時は4を指定
-logd ログを出力するフォルダー 既定値は実行ファイルが置かれたフォルダー
-serviceName APSのサービス名 既定値は &ldquo;GGAPS&rdquo;
-formatString 現在のセッション数と最大セッション数を出力する時の書式 既定値は &ldquo;SessionNow = %d, SessionMax = %d&rdquo;
- ファイル KGTN2015100201.pdf [(79.2 KB)] [kitasp 技術センター, 2015/11/04 15:24]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2689/" class="btn btn-template-main">続きを読む</a>
+2016/02/05*
+[番号] 技術ノート KGTN 2016020402
+[現象] [GGH4.X-5.X/ExPack] GGEasyMonitor の振分け機能を利用したいが，このソフトウエアの購入方法は？
+[説明] GGEasyMonitor は拡張パックに含まれるソフトウエアで，ご購入に当たっては拡張パックをご指定下さい．なお，GGEasyMonitor は拡張パックに含まれる他のソフトウエア （セッション管理SDK, GMService など） を内部的に使用しております．
+ファイル KGTN2016020402.pdf [(55.1 KB)] [kitasp 技術センター, 2016/02/05 15:34]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2628/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -842,7 +800,7 @@ formatString 現在のセッション数と最大セッション数を出力す�
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

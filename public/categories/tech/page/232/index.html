@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1632/">
+                                      <a href="/posts/new_md/doc1484/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1632/">一般ユーザでログオンすると外字エディタが起動出来ない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1484/">サービス GO-Global License Manager の停止状態が続くと，APSのサービスが停止する．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,18 +340,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1632/"><i class="far fa-calendar"></i> 2010-09-01</a>
+                                            <a href="/posts/new_md/doc1484/"><i class="far fa-calendar"></i> 2011-01-31</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/09/01*
-[番号] 技術ノート KGTN 2010090101
-[現象] 一般ユーザでログオンすると外字エディタが起動出来ない．
-[説明] 一般ユーザが外字エディタを起動しようとすると 「外字エディタを使うには，Winnt¥Fonts フォルダへの書き込みアクセス権が必要です．管理者に問い合わせ，このアクセス権を取得して下さい」 というエラーが表示されます （Windowsの仕様です） ．この内容に従い，フォルダ C:¥Windows¥Fonts の プロパティ → セキュリティ を開き，グループ Users 等に 「変更」 の許可を与えて下さい．この設定により，一般ユーザでも外字エディタを起動出来るようになります．
-この変更により，セキュリティは若干弱まりますが， その範囲はフォント絡みに限定されますので，通常の運用では特に問題にならないと思われます．
-ファイル KGTN2010090101.pdf [(57.8 KB)] [kitasp 技術センター, 2010/09/01 12:50]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1632/" class="btn btn-template-main">続きを読む</a>
+2011/01/31*
+[番号] 技術ノート KGTN 2011013102
+[現象] サービス GO-Global License Manager の停止状態が続くと，APSのサービスが停止する．
+[説明] ggw-3.2.1.4446 またはそれ以降では，サービス GO-Global License Manager の停止から約10分でAPSが停止します．この10分間は，新たなユーザのログオンは出来ませんが，ログオン中のユーザがアプリケーションを起動することは出来ます．
+注　意 APS が停止するのは，ログオンしているユーザが存在している場合に限ります．誰もログオンしていない場合は，APS は停止しません （ggw-3.2.1.4466で確認） ．
+ファイル KGTN2011013102.pdf [(50.9 KB)] [kitasp 技術センター, 2011/01/31 11:17]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1484/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -361,7 +361,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1631/">
+                                      <a href="/posts/new_md/doc1485/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -369,7 +369,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1631/">外字エディタでフォントのリンク 「指定したフォントにリンクする」 を設定すると，どこに反映されるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1485/">サービス GO-Global License Manager を停止させて，すぐに開始したが何か問題はあるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -382,19 +382,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1631/"><i class="far fa-calendar"></i> 2010-09-01</a>
+                                            <a href="/posts/new_md/doc1485/"><i class="far fa-calendar"></i> 2011-01-31</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/09/01*
-[番号] 技術ノート KGTN 2010090102
-[現象] 外字エディタでフォントのリンク 「指定したフォントにリンクする」 を設定すると，どこに反映されるのか？
-[説明] 設定した内容は以下のレジストリへ反映されます．
-HKCU¥EUDC¥932 [具体例] HKCU¥EUDC¥932 &ldquo;ＭＳ 明朝&quot;=&quot;C:¥¥GAIJI¥¥GaijiJinja_F040_M.tte&rdquo;
-参　考 レジストリエディタでこの設定を追加しただけでは実際に反映されず，外字エディタが起動された時点で反映されます．GG環境では，ログオンの度に外字エディタを起動する必要があります．
-ファイル KGTN2010090102.pdf [(53 KB)] [kitasp 技術センター, 2010/09/02 08:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1631/" class="btn btn-template-main">続きを読む</a>
+2011/01/31*
+[番号] 技術ノート KGTN 2011013103
+[現象] サービス GO-Global License Manager を停止させて，すぐに開始したが何か問題はあるか？
+[説明] サービス GO-Global License Manager （ライセンスサーバ） が停止すると，新たなユーザはログオン出来ませんが，ログオン中のユーザは 「約10分間」 そのまま利用することが出来ます．その間にライセンスサーバを開始すると，新たなユーザがログオン出来るようになります．但し，数分間はライセンスの利用状況の回復処理が行われますので， それが完了するまでは lmtools 等で表示されるライセンスの利用状況と，実際の状況と整合しないことがあります．
+注　意 ライセンスの利用状況の回復処理が行われている間に，ライセンス数を超えるユーザがログオン出来ないように，クラスタマネージャで適切なユーザ数を設定するようにして下さい （Maximum sessions on this server） ．
+ファイル KGTN2011013103.pdf [(56.7 KB)] [kitasp 技術センター, 2011/01/31 10:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1485/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -404,7 +403,7 @@ HKCU¥EUDC¥932 [具体例] HKCU¥EUDC¥932 &ldquo;ＭＳ 明朝&quot;=&quot;C:�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1633/">
+                                      <a href="/posts/new_md/doc1487/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -412,7 +411,7 @@ HKCU¥EUDC¥932 [具体例] HKCU¥EUDC¥932 &ldquo;ＭＳ 明朝&quot;=&quot;C:�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1633/">セッション中で外字エディタを起動しないと外字が表示されない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1487/">GGサーバにデモライセンスをインストールしたが，サービス GO-Global License Manager を開始しないと lmtools のサーバ状況取得でエラーが発生する．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -425,20 +424,17 @@ HKCU¥EUDC¥932 [具体例] HKCU¥EUDC¥932 &ldquo;ＭＳ 明朝&quot;=&quot;C:�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1633/"><i class="far fa-calendar"></i> 2010-08-31</a>
+                                            <a href="/posts/new_md/doc1487/"><i class="far fa-calendar"></i> 2011-01-30</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/31*
-[番号] 技術ノート KGTN 2010083001
-[現象] セッション中で外字エディタを起動しないと外字が表示されない．
-[説明] 以下の環境で試験を行いましたが，外字エディタを起動することなく，メモ帳で外字が表示されました．恐らく，ご利用の Windows 環境 （アプリケーションを含む） に起因している問題だと思われます．
-(1) Windows Server 2003 SP1 (GGサーバ) (a) 3.1.1.3496：外字使用可※ (b) 3.1.1.3511：外字使用可 (c) 3.1.1.3532：外字使用可 (d) 3.1.1.3538：外字使用可 (e) 3.2.0.4226：外字使用可
-(2) Windows Server 2003 SP2 (GGサーバ) (a) 3.1.1.3532：外字使用可 (b) 3.1.1.3538：外字使用可 (c) 3.2.0.4226：外字使用可 (d) 3.2.1.4466：外字使用可
-(3) Windows Server 2003 R2 SP1 (GGサーバ) (a) 3.1.1.3532：外字使用可 (b) 3.1.1.3538：外字使用可 (c) 3.2.0.4226：外字使用可
-(4) Windows Server 2003 R2 SP2 (GGサーバ) (a) 3.1.1.3532：外字使用可 (b) 3.1.1.3538：外字使用可 (c) 3.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1633/" class="btn btn-template-main">続きを読む</a>
+2011/01/30*
+[番号] 技術ノート KGTN 2011013001
+[現象] GGサーバにデモライセンスをインストールしたが，サービス &ldquo;GO-Global License Manager&rdquo; を開始しないと lmtools のサーバ状況取得でエラーが発生する．
+[説明] lmtools は，ライセンスサーバ （lmgrdとblm） と通信してライセンスの情報を取得するため，サービス &ldquo;GO-Global License Manager&rdquo; が開始状態にないとエラーになります．しかし，デモライセンスはユーザ数を数える必要が無いため，ライセンスを要求するクライアント （GGサーバ） は有効なデモライセンスファイルが存在するだけでライセンスが獲得出来たものとします （FlexLMの仕様です） ．つまり lmtools でエラーとなっても，デモライセンスとしては正しく機能しますので問題はありません．
+ファイル KGTN2011013001.pdf [(53.9 KB)] [kitasp 技術センター, 2011/01/30 15:40]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1487/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -448,7 +444,7 @@ HKCU¥EUDC¥932 [具体例] HKCU¥EUDC¥932 &ldquo;ＭＳ 明朝&quot;=&quot;C:�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1634/">
+                                      <a href="/posts/new_md/doc1486/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -456,7 +452,7 @@ HKCU¥EUDC¥932 [具体例] HKCU¥EUDC¥932 &ldquo;ＭＳ 明朝&quot;=&quot;C:�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1634/">Ver3.2系で使用している SkyPDF for GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1486/">正式ライセンスを一時的にデモライセンスに入れ替えた場合，副作用等は発生しないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -469,18 +465,17 @@ HKCU¥EUDC¥932 [具体例] HKCU¥EUDC¥932 &ldquo;ＭＳ 明朝&quot;=&quot;C:�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1634/"><i class="far fa-calendar"></i> 2010-08-26</a>
+                                            <a href="/posts/new_md/doc1486/"><i class="far fa-calendar"></i> 2011-01-30</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/26*
-[番号] 技術ノート KGTN 2010081203
-[現象] Ver3.2系で使用している SkyPDF for GO-Global （GG-SkyPDF） を，Ver4.0系でもそのまま使用することが出来るのか？
-[説明] PDFファイルが生成されることは確認しましたが，しかし以下の問題があります．
-印刷直後に 「PDFファイルに名前をつけて保存」 ダイアログが表示される． クライアント側のPDFビュアーで 「Adobe Reader で???を開けませんでした」 というエラーが表示される．
-ファイル KGTN2010081203.pdf [(50.2 KB)] [kitasp 技術センター, 2010/08/26 15:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1634/" class="btn btn-template-main">続きを読む</a>
+2011/01/30*
+[番号] 技術ノート KGTN 2011013002
+[現象] 正式ライセンスを一時的にデモライセンスに入れ替えた場合，副作用等は発生しないのか？
+[説明] デモライセンスはユーザ数が無制限ですので，クラスタマネージャでユーザ数を制限する必要があります．その点を除けば，副作用等は一切ありません．
+ファイル KGTN2011013002.pdf [(44.7 KB)] [kitasp 技術センター, 2011/01/30 15:50]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1486/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -490,7 +485,7 @@ HKCU¥EUDC¥932 [具体例] HKCU¥EUDC¥932 &ldquo;ＭＳ 明朝&quot;=&quot;C:�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1640/">
+                                      <a href="/posts/new_md/doc2539/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -498,7 +493,7 @@ HKCU¥EUDC¥932 [具体例] HKCU¥EUDC¥932 &ldquo;ＭＳ 明朝&quot;=&quot;C:�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1640/">エンタープライズオプション GMCheckRaw でサーバの稼働状況のみ知りたい （セッション情報は不要だ） ．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2539/">[GGW3.2.1,GGH4.X-5.X] GG上で動作するアプリケーションを全て終了させるプログラムを作りたい．終了しないアプリケーションは，タイムアウト時間経過後に強制終了させたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -511,17 +506,22 @@ HKCU¥EUDC¥932 [具体例] HKCU¥EUDC¥932 &ldquo;ＭＳ 明朝&quot;=&quot;C:�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1640/"><i class="far fa-calendar"></i> 2010-08-26</a>
+                                            <a href="/posts/new_md/doc2539/"><i class="far fa-calendar"></i> 2011-01-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/26*
-[番号] 技術ノート KGTN 2010082603
-[現象] エンタープライズオプション GMCheckRaw でサーバの稼働状況のみ知りたい （セッション情報は不要だ） ．
-[説明] セッション情報が不要な場合は， GMCheckRaw の起動オプションに ?ns を指定して下さい．このオプションが指定されると， GMCheckRaw はGGサーバが管理するセッション情報を参照しないようになります （セッション数が多い時，CPUの負荷が下がります） ．
-ファイル KGTN2010082603.pdf [(50.2 KB)] [kitasp 技術センター, 2010/08/26 11:15]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1640/" class="btn btn-template-main">続きを読む</a>
+2011/01/28*
+[番号] 技術ノート KGTN 2011012802
+[現象] [GGW3.2.1,GGH4.X-5.X] GG上で動作するアプリケーションを全て終了させるプログラムを作りたい．終了しないアプリケーションは，タイムアウト時間経過後に強制終了させたい．
+[説明] 以下のテストプログラムで，GG上で動作するアプリケーションが終了し，かつ自分人身が最後に終了することを確認しました．なお，プログラム名は GGLogout.exe とし，自分自身に WM_CLOSE を送信しないようにしています．
+タイムアウト時間経過後は，下記の関数により 「ウインドウハンドルに対応付く」 プロセスを強制終了させます．なお，TerminateProcess関数によりプロセスが強制終了された場合は，メモリリーク等が発生する可能性があります．
+ファイル KGTN2011012802.pdf [(74.7 KB)] [kitasp 技術センター, 2016/06/17 16:14]
+KGTN2011012802-1.jpg
+表示 [(16.1 KB)] [kitasp 技術センター, 2016/06/17 16:14]
+KGTN2011012802-2.jpg
+表示 [(12.5 KB)] [kitasp 技術センター, 2016/06/17 16:14]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2539/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -531,7 +531,7 @@ HKCU¥EUDC¥932 [具体例] HKCU¥EUDC¥932 &ldquo;ＭＳ 明朝&quot;=&quot;C:�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1638/">
+                                      <a href="/posts/new_md/doc1488/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -539,7 +539,7 @@ HKCU¥EUDC¥932 [具体例] HKCU¥EUDC¥932 &ldquo;ＭＳ 明朝&quot;=&quot;C:�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1638/">エンタープライズオプション GMService で起動した GMCheckRaw を強制的に再起動する方法はないのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1488/">GG上で動作するアプリケーションを全て終了させるプログラムを作りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -552,18 +552,17 @@ HKCU¥EUDC¥932 [具体例] HKCU¥EUDC¥932 &ldquo;ＭＳ 明朝&quot;=&quot;C:�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1638/"><i class="far fa-calendar"></i> 2010-08-26</a>
+                                            <a href="/posts/new_md/doc1488/"><i class="far fa-calendar"></i> 2011-01-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/26*
-[番号] 技術ノート KGTN 2010082605
-[現象] エンタープライズオプション GMService で起動した GMCheckRaw を強制的に再起動する方法はないのか？
-[説明] GMService 単独でGMCheckRaw を再起動することは出来ませんが， GGServiceMonitor の 「サービスの強制再起動」 機能を利用し， GMService を再起動することで GMCheckRaw を強制的に再起動することが出来ます．
-GGServiceMonitor → 強制再起動 → GMService → 開始・終了 → GMCheckRaw （起動・終了）
-ファイル KGTN2010082605.pdf [(48.1 KB)] [kitasp 技術センター, 2010/08/26 13:57]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1638/" class="btn btn-template-main">続きを読む</a>
+2011/01/28*
+[番号] 技術ノート KGTN 2011012801
+[現象] GG上で動作するアプリケーションを全て終了させるプログラムを作りたい．
+[説明] 以下のテストプログラムで，GG上で動作するアプリケーションが終了し，かつ自分人身が最後に終了することを3.2.1 系で確認しました．なお，プログラム名は GGLogout.exe とし，自分自身に WM_CLOSE を送信しないようにしています．
+ファイル KGTN2011012801.pdf [(54.3 KB)] [kitasp 技術センター, 2011/01/28 12:18]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1488/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -573,7 +572,7 @@ GGServiceMonitor → 強制再起動 → GMService → 開始・終了 → GMChe
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1639/">
+                                      <a href="/posts/new_md/doc1489/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -581,7 +580,7 @@ GGServiceMonitor → 強制再起動 → GMService → 開始・終了 → GMChe
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1639/">エンタープライズオプション GMService の設定項目 restartInterval の機能よく分からない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1489/">TCP/IPレベルでコネクションの切断が認識されない場合，GGサーバはどのタイミングでコネクションの切断を認識するのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -594,17 +593,18 @@ GGServiceMonitor → 強制再起動 → GMService → 開始・終了 → GMChe
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1639/"><i class="far fa-calendar"></i> 2010-08-26</a>
+                                            <a href="/posts/new_md/doc1489/"><i class="far fa-calendar"></i> 2011-01-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/26*
-[番号] 技術ノート KGTN 2010082604
-[現象] エンタープライズオプション GMService の設定項目 restartInterval の機能よく分からない．
-[説明] GMService から起動したプログラムが障害等ですぐに終了した場合， GMService はそのプログラムを直ちに再起動します．さらにプログラムが同じ原因で終了すると， GMService はそのプログラムをまた直ちに再起動します．この 「終了〜再起動」 のループが障害が解消されるまで続きますので，サーバの負荷が継続的に高くなる可能性があります．ここで （例えば） restartInterval = 30 を設定しますと，再起動が30秒間隔で行われるようになりますので，サーバの負荷が継続的に高くなることを防ぐことが出来ます．
-ファイル KGTN2010082604.pdf [(55 KB)] [kitasp 技術センター, 2010/08/26 12:14]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1639/" class="btn btn-template-main">続きを読む</a>
+2011/01/27*
+[番号] 技術ノート KGTN 2010091603
+[現象] TCP/IPレベルでコネクションの切断が認識されない場合，GGサーバはどのタイミングでコネクションの切断を認識するのか？
+[説明] クライアントからサーバへ定期的 （30秒間隔） にGGのPINGパケットを送信しておりますので，GGサーバはこのパケットが （続けて2回） 届かなかった時，コネクションの切断が発生したと認識します．このケースでは，以下のメッセージがAPSログに記録されます．
+CS: Keep-alive signal was not received. Closing the connection.
+ファイル KGTN2010091603.pdf [(52.3 KB)] [kitasp 技術センター, 2011/01/27 10:53]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1489/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -614,7 +614,7 @@ GGServiceMonitor → 強制再起動 → GMService → 開始・終了 → GMChe
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1637/">
+                                      <a href="/posts/new_md/doc1492/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -622,7 +622,7 @@ GGServiceMonitor → 強制再起動 → GMService → 開始・終了 → GMChe
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1637/">クラスタマネージャの （Server Options → Log →） Output level の値と内容を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1492/">[GGW3.2] ggw-3.2.1.4389を使用しているが， VISIBLE = FALSE の状態で最小化，もしくは最小化の解除を行うと，その後の表示で画面が乱れる （例： ウインドウが透明な状態になる） ．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -635,19 +635,19 @@ GGServiceMonitor → 強制再起動 → GMService → 開始・終了 → GMChe
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1637/"><i class="far fa-calendar"></i> 2010-08-26</a>
+                                            <a href="/posts/new_md/doc1492/"><i class="far fa-calendar"></i> 2011-01-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/26*
-[番号] 技術ノート KGTN 2010081001
-[現象] クラスタマネージャの （Server Options → Log →） Output level の値と内容を知りたい．
-[説明] Output level の値と内容は， Administrator Guide の117ページに説明があります．
-0: No output 1: Errors 2: Errors and Events 3: Errors, Events, and Warnings 4: Errors, Events, Warnings, and Diagnostic Messages 5, 6: Errors, Events, Warnings, Diagnostic Messages, and Trace Messages
-実際の運用では，1または4を設定することを推奨します．詳細については，技術ノート KGTN#2010031001 をご覧下さい．
-ファイル KGTN2010081001.pdf [(52.4 KB)] [kitasp 技術センター, 2010/08/26 15:48]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1637/" class="btn btn-template-main">続きを読む</a>
+2011/01/26*
+[番号] 技術ノート KGTN 2011011201
+[現象] [GGW3.2] ggw-3.2.1.4389を使用しているが， &ldquo;VISIBLE = FALSE&rdquo; の状態で最小化，もしくは最小化の解除を行うと，その後の表示で画面が乱れる （例： ウインドウが透明な状態になる） ．
+[説明] この現象は CASE#27283　としてGraphOn社が確認しており， ggw-3.2.1.4420 で修正されております．なお，クライアント側の修正を伴っているため，サーバ側だけでなくクライアント側のアップデートも必要です．
+参考１ 本事象に関するリリースノートは以下の通りです．
+3.2.1.4420 (6/19/2009)  Issues fixed since 3.2.1.4389   Ticket 27283 / Bug 7002 Painting issues in a custom application when opened in a maximized state.
+NOTE: The Windows Client, the ActiveX Control, and the Netscape Plug-in for Windows must be updated for this fix.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1492/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -657,7 +657,7 @@ GGServiceMonitor → 強制再起動 → GMService → 開始・終了 → GMChe
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1636/">
+                                      <a href="/posts/new_md/doc1490/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -665,7 +665,7 @@ GGServiceMonitor → 強制再起動 → GMService → 開始・終了 → GMChe
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1636/">クラスタマネージャの （Server Options → Session Startup →） Maximum sessions per user に 1 を設定すると，アプリケーションを複数起動出来ないということか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1490/">CS: I/O event (Output buffer full timeout.) は何を意味しているのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -678,17 +678,19 @@ GGServiceMonitor → 強制再起動 → GMService → 開始・終了 → GMChe
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1636/"><i class="far fa-calendar"></i> 2010-08-26</a>
+                                            <a href="/posts/new_md/doc1490/"><i class="far fa-calendar"></i> 2011-01-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/26*
-[番号] 技術ノート KGTN 2010081002
-[現象] クラスタマネージャの （Server Options → Session Startup →） Maximum sessions per user に 1 を設定すると，アプリケーションを複数起動出来ないということか？
-[説明] いいえ， Maximum sessions per user ですから，同一ユーザで複数のセッションを確立できない （つまりログオン出来ない） ということです．ログオンしたセッション内では，複数のアプリケーションを起動することが出来ます．
-ファイル KGTN2010081002.pdf [(47.3 KB)] [kitasp 技術センター, 2010/08/26 15:50]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1636/" class="btn btn-template-main">続きを読む</a>
+2011/01/26*
+[番号] 技術ノート KGTN 2010030301
+[現象] &ldquo;CS: I/O event (Output buffer full timeout.)&rdquo; は何を意味しているのか？
+[説明] GraphOn社の開発担当者に確認したところ，このメッセージが記録されたAPSログを過去に見たことが無いということでした．技術的なコメントは以下の通りです．
+An output buffer used in either client-server or inter-process communication is full. GGW is waiting for the buffer to empty before writing more information into it. Unfortunately, the wait times out before the buffer is emptied.
+つまり， 「クライアント〜サーバ間の通信またはプロセス間の通信で使用する出力バッファがフルで，GGクライアントはそれが空になるまで （送信が完了するまで） 待っていたが，それが完了せずにタイムアウトになった」 ということです．可能性としては，ネットワークの通信障害 （切断には至っていないがデータが流れない状態） ，サーバからクライアントへ過度に多くのメッセージ （描画命令等） が送信され，サーバがクライアントからの応答を受信出来なかった等が考えられます．
+参　考 ある大型案件では，監査系プログラムが何らかの事象を契機として通信を遮断し，その結果 &ldquo;CS: I/O event (Output buffer full timeout.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1490/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -698,7 +700,7 @@ GGServiceMonitor → 強制再起動 → GMService → 開始・終了 → GMChe
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1643/">
+                                      <a href="/posts/new_md/doc1493/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -706,7 +708,7 @@ GGServiceMonitor → 強制再起動 → GMService → 開始・終了 → GMChe
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1643/">GG上で動作するプログラムで，クライアントのコンピュータ名を得る方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1493/">[MSDN] MSDNの Windows 7 Enterprise (x64 and x86) November 2009 をインストールしたが， DHCP でアドレスを得ることが出来ない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -719,17 +721,18 @@ GGServiceMonitor → 強制再起動 → GMService → 開始・終了 → GMChe
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1643/"><i class="far fa-calendar"></i> 2010-08-25</a>
+                                            <a href="/posts/new_md/doc1493/"><i class="far fa-calendar"></i> 2011-01-24</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/25*
-[番号] 技術ノート KGTN 2010082503
-[現象] GG上で動作するプログラムで，クライアントのコンピュータ名を得る方法は？
-[説明] GGのセッション上で，環境変数 CLIENTCOMPUTERNAME がクライアントのコンピュータ名を保持しています．この環境変数を参照することで，クライアントのコンピュータ名を得ることが出来ます．
-ファイル KGTN2010082503.pdf [(193 KB)] [kitasp 技術センター, 2010/08/25 09:55]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1643/" class="btn btn-template-main">続きを読む</a>
+2011/01/24*
+[番号] 技術ノート KGTN 2011012401
+[現象] [MSDN] MSDNの &ldquo;Windows 7 Enterprise (x64 and x86) November 2009&rdquo; をインストールしたが， DHCP でアドレスを得ることが出来ない．
+[説明] DHCPでアドレスを得ることが出来ない問題に関して，ネット上にさまざまな情報がありますが，弊社で試した範囲では，そのどれもがダメでした．結局，以下の手順で問題が解消しました．
+対象のネットワークディバイスに固定アドレスを割り当てる． IEを起動し，インターネットにアクセス出来ることを確認する． セーフティ → Windows Update で更新プログラムを適用する． 再起動を行う． 「現在選択されている更新プログラムはありません」 と表示されるまで，上記3〜4を繰り返す． 対象のネットワークディバイスをDHCPに変更する． 再起動を行う． &ldquo;ipconfig/all&rdquo; コマンドで正しいIPアドレスが得られたことを確認する．
+ファイル KGTN2011012401.pdf [(57.7 KB)] [kitasp 技術センター, 2011/01/24 11:39]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1493/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -799,7 +802,7 @@ GGServiceMonitor → 強制再起動 → GMService → 開始・終了 → GMChe
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

@@ -409,25 +409,28 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2480/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2423/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2480/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2423/">[GGH4.X-5.X] メインとサブの２台の GGEasyMonitor を設置するが，メインで障害が発生した時に自動的にサブに切り替える方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-07-01
+                            日付 2016-08-01
                             </p>
                             <p class="intro">*技術ノート
-2016/07/01*
-[番号] 技術ノート KGTN 2016062302
-[現象] [GGH4.X-5.X] GGを利用する場合の標準的なネットワーク帯域について知りたい．
-[説明] GGはAPIラッピング方式を採用しているため，定常的にネットワーク帯域を使用することはなく，描画命令が発生した時に一時的にネットワーク帯域を使用します．このため，標準的なネットワーク帯域を○○bpsとお答えすることは困難ですが，金融系の案件では ISDN 64kbps の環境で運用されている拠点もあります．なお，帯域よりもラウンドトリップタイムが重要なファクター （操作時の反応時間に影響します） で，最悪でも 500ms 以下である必要があります （できるだけ時間が短くかつ安定していることが望ましい） ．
-ファイル KGTN2016062302.pdf [(60.2 KB)] [kitasp 技術センター, 2016/07/01 16:48]</p>
+2016/08/01*
+[番号] 技術ノート KGTN 2016071203
+[現象] [GGH4.X-5.X] メインとサブの２台の GGEasyMonitor を設置するが，メインで障害が発生した時に自動的にサブに切り替える方法は？
+[説明] GGEasyMonitor のバージョン 2.0.11 から画像 （ロゴ） を表示する機能が追加されましたので，この画像の読み込みの成否で死活チェックを行い，生きている GGEasyMonitor に振り分け処理を任せる方法で実現可能です．そのサンプルコードを以下に示します．なお，このファイル （logon.html） は，他のウエッブサーバー上に配置して下さい．
+　function updateServer(n,s) { var target = &lsquo;'; var params = location.search;
+　params = params.substring(1); if(params.length == 0) { params = &lsquo;dummy=dummy&rsquo;; }
+　// 死活情報を更新 switch(n) { case 1: statusServer1 = s; break;
+　case 2: statusServer2 = s; break; } // 死活情報が揃ったか？ if((statusServer1 != false)&amp;&amp;(statusServer2 !</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2480/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2423/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,25 +449,34 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2481/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2403/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2481/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2403/">[GGH4.X-5.X] 外部のライセンスサーバーを使用するGGサーバーの構築手順は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-07-01
+                            日付 2016-08-01
                             </p>
                             <p class="intro">*技術ノート
-2016/07/01*
-[番号] 技術ノート KGTN 2016062205
-[現象] [GGH4.X-5.X] &ldquo;LG-WAN端末 ～ GGサーバー ～ インターネット&rdquo; という環境で，GGサーバー上で動作するアプリケーションからLG-WAN端末側のプリンターへ印刷可能か？
-[説明] GGのクライアント印刷機能を有効にすることで，LG-WAN端末側のプリンターへ印刷が可能です．印刷処理は，&ldquo;LG-WAN端末 ～ GGサーバー&rdquo; 間でGGのプロトコルを通してPDF形式の印刷データーが流れますので，セキュリティ的にも問題はありません．なお， 自動的に生成される Preview PDF というプリンターへ印刷することで，印刷内容をLG-WAN端末上でPDFファイルとして表示 （保存） することも可能です．
-ファイル KGTN2016062205.pdf [(57.9 KB)] [kitasp 技術センター, 2016/07/01 16:42]</p>
+2016/08/01*
+[番号] 技術ノート KGTN 2016072702
+[現象] [GGH4.X-5.X] 外部のライセンスサーバーを使用するGGサーバーの構築手順は？
+[説明] 外部のライセンスサーバーを使用するGGサーバーの構築手順は，以下の通りです．
+1.　GGをインストールした後，サービス GGLicenseManager を 「停止」 し，スタートアップの種類を 「手動」 にして下さい．
+2.　システムのプロパティ → 環境変数 を開き， LM_LICENSE_FILE を選択した後，編集 をクリックして下さい．
+3.変数値に @ を入力し， OK をクリックして下さい．そして， [この設定内容を反映させるためGGサーバーを再起動して下さい．]{.underline} 4.　再起動後，コマンドプロンプトで &ldquo;set&rdquo; を実行し，環境変数 LM_LICENSE_FILE の値が前ステップで設定した値になっていることを確認して下さい．
+5.　ライセンスサーバーの管理ツール lmtools.exe を起動して下さい．
+6.　Server Status → Perform Status Enquiry をクリックし，結果にライセンス数が表示されていることを確認して下さい．
+ファイル KGTN2016072702.pdf [(268 KB)] [kitasp 技術センター, 2016/08/01 15:48]
+KGTN2016072702-1.jpg
+表示 [(16.7 KB)] [kitasp 技術センター, 2016/08/01 15:48]
+KGTN2016072702-2.jpg
+表示 [(14.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2481/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2403/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -483,26 +495,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2482/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2422/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2482/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2422/">[GGH4.X-5.X] 数台の GGEasyMonitor を設置するが，順番にチェックを行い生きているサーバーで振分けるようにしたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-07-01
+                            日付 2016-08-01
                             </p>
                             <p class="intro">*技術ノート
-2016/07/01*
-[番号] 技術ノート KGTN 2016062204
-[現象] [GGH4.X-5.X] クライアントPCの周辺機器の接続や利用の禁止は出来るのか？
-[説明] GGは，サーバー上で実行しているアプリケーションの画面等をクライアントPCに配信するソフトウエアです．従って，クライアントPCの周辺機器の接続や利用を禁止する機能は持っておりません．他の情報セキュリティ対策ソフトウエアの併用をお願いします．
-なお，サーバー側からクライアント側のドライブにアクセスする機能 （クライアントドライブ機能） ，サーバー側からクライアント側のプリンターへ印刷する機能 （クライアント印刷機能） については，サーバー単位に利用の可否を設定することが出来ます．
-ファイル KGTN2016062204.pdf [(54.7 KB)] [kitasp 技術センター, 2016/07/01 16:42]</p>
+2016/08/01*
+[番号] 技術ノート KGTN 2016071301
+[現象] [GGH4.X-5.X] 数台の GGEasyMonitor を設置するが，順番にチェックを行い生きているサーバーで振分けるようにしたい．
+[説明] GGEasyMonitor のバージョン 2.0.11 から画像 （ロゴ） を表示する機能が追加されましたので，順番にこの画像の読み込みを行い，その成否で死活チェックを行います．生きている GGEasyMonitor が見つかった段階で，その GGEasyMonitor に振り分け処理を任せます．このサンプルコードを以下に示します．なお，このファイル （logon.html） は，他のウエッブサーバー上に配置して下さい．
+　&lt;!&mdash; 接続処理を行うスクリプト &mdash;&gt;
+ファイル KGTN2016071301.pdf [(107 KB)] [kitasp 技術センター, 2016/08/01 13:27]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2482/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2422/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -521,28 +533,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2483/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2449/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2483/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2449/">[GGH4.X-5.X] 現在バージョン5.0のサーバーおよびクライアントを使用しているが，バージョン4.8のサーバーにアクセスする場合，クライアントもバージョン4.8にダウングレードした方が良いか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-07-01
+                            日付 2016-08-01
                             </p>
                             <p class="intro">*技術ノート
-2016/07/01*
-[番号] 技術ノート KGTN 2016062203
-[現象] [GGH4.X-5.X] 同時ユーザー数が限られた状況で，特定のユーザーやグループを優先的にログオンさせる方法はあるか？
-[説明] 同時ユーザー数 （ライセンス数） を一般ユーザー数と優先ユーザー数に分け，それぞれを一般ユーザー向けサーバー群 （高集約度） と優先ユーザー向けサーバー群 （低集約度） に割り当てる運用方法が考えられます．なお，拡張パックを使用して振分けを行う場合は，一般ユーザー向けの振分けサーバーと優先ユーザー向けの振分けサーバーを設置する必要があります．１台の振分けサーバーで一般ユーザーと優先ユーザーを分けて振分けたい場合は，振分け機能をカスタマイズすることで対応することが可能です．
-参　考 GGには，連続利用制限機能 （Session Timeout） と無操作ログオフ機能 （Idle Timeout） 機能があり，これらの機能を利用することで無駄なセッション （ライセンス数） を強制回収することが出来ます．このことにより，同時ユーザー数 （ライセンス数） の不足で，ログオン出来ないという状況の発生を低減させることが可能です．
-ファイル KGTN2016062203.pdf [(88.4 KB)] [kitasp 技術センター, 2016/07/01 16:41]
-KGTN2016062203.jpg
-表示 [(6.79 KB)] [kitasp 技術センター, 2016/07/01 16:41]</p>
+2016/08/01*
+[番号] 技術ノート KGTN 2016070104
+[現象] [GGH4.X-5.X] 現在バージョン5.0のサーバーおよびクライアントを使用しているが，バージョン4.8のサーバーにアクセスする場合，クライアントもバージョン4.8にダウングレードした方が良いか？
+[説明] いいえ．バージョン4.8とバージョン5.0は相互に互換性がありますので，バージョン5.0のクライアントでバージョン4.8のサーバーにアクセスしても問題ありません．また，敢えてクライアントをバージョン4.8へダウングレードする必要もありません．
+ファイル KGTN2016070104.pdf [(48.5 KB)] [kitasp 技術センター, 2016/08/01 11:40]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2483/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2449/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

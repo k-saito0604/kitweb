@@ -409,27 +409,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc700/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc96/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc700/">[AD] ADサーバとWEBサーバ （IIS） を同居させて良いか？</a></h4>
+                            <h4><a href="/posts/new_md/doc96/">[GGW3.2.1/GGH4.X] GG向けにアプリケーションを開発するが，どのような点に注意すべきか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2013-02-15
+                            日付 2013-03-15
                             </p>
                             <p class="intro">*技術ノート
-2013/02/15*
-[番号] 技術ノート KGTN 2013021503
-[現象] [AD] ADサーバとWEBサーバ （IIS） を同居させて良いか？
-[説明] ADサーバ （ドメインコントローラ） はセキュリティの要で，攻撃され Domain Admin 権限が奪取さえると，正規のアカウントで他のサーバにアクセス可能となり，極めて深刻な結果をもたらすことになります．このようなリスクを考えると，ADサーバとWEBサーバ （IIS） の同居は避けるべきです．またセキュリティ上の問題を無視することが出来る場合であっても，ADサーバとWEBサーバの同居は技術的な問題を引き起こすことがあり，十分な事前検証が必要となります．
-参　考 http://support.microsoft.com/kb/332097/ja DCPROMO 実行時に一部の IIS フォルダのアクセス許可が保持されない
-http://support.microsoft.com/kb/842493/ja Windows Server 2003 ベースのドメイン コントローラー上の IIS 6.0 Web ページを参照するとエラー メッセージ &ldquo;サービスは利用できません&rdquo; が表示される
-ファイル KGTN2013021503.pdf [(62.3 KB)] [kitasp 技術センター, 2013/02/15 13:05]</p>
+2013/03/15*
+[番号] 技術ノート KGTN 2013031403
+[現象] [GGW3.2.1/GGH4.X] GG向けにアプリケーションを開発するが，どのような点に注意すべきか？
+[説明] GG上で動作するアプリケーションは，１台のサーバ上で複数並行して動作しますので，マルチユーザ対応でなければなりません．例えば，以下のような点に配慮する必要があります．
+ ユーザ固有の情報 （ファイルやレジストリ） を固定位置に配置しない． → 同じファイルに複数のユーザがアクセスすると不整合や解放待ちが発生します． ビジーループ等のCPU負荷が高い処理を行わない． → １ユーザの利用でもCPU負荷が100%近くになります． 過度に頻繁な画面更新を行わない． → クライアントへ送信する画面更新データの通信量が著しく増加します． 過度に凝った画面デザインにしない． → １つの操作毎に描画処理が増え （平均的な） CPU負荷や通信量が増加します． デスクトップの存在を前提とした処理を行わない． → GGの環境にはデスクトップという概念がありません．  さらに，以下のような点についても配慮する必要があります．
+タスクトレイの機能を利用しない． → GGの環境ではタスクトレイが無いため操作出来ません． ※ GGH5.X からデスクトップの表示機能が実装されますので，タスクトレイが利用可能となる見込みです． 一般的でない画面制御をしない． → アクティブなウインドウをZオーダーの最上位以外に配置すると描画が乱れます．  ファイル KGTN2013031403.pdf [(68.1 KB)] [kitasp 技術センター, 2015/06/17 13:10]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc700/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc96/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -448,27 +447,28 @@ http://support.microsoft.com/kb/842493/ja Windows Server 2003 ベースのドメ
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc704/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc617/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc704/">[AD] AD (Active Directory) を利用するが，GGサーバの構築で注意すべきことは？</a></h4>
+                            <h4><a href="/posts/new_md/doc617/">[iPad] iPad クライアントをインストールしたが，GGサーバに接続するまでの手順は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2013-02-14
+                            日付 2013-03-15
                             </p>
                             <p class="intro">*技術ノート
-2013/02/14*
-[番号] 技術ノート KGTN 2013021401
-[現象] [AD] AD (Active Directory) を利用するが，GGサーバの構築で注意すべきことは？
-[説明] ログオフ時に長い時間を要したり，プロファイルの整合性に関する問題が発生する場合があります．このような問題を回避するために，マイクロソフト社が提供する &ldquo;User Profile Hive Cleanup Service&rdquo; をインストールすることをお勧めします．詳細については，下記ページをご覧下さい．
-http://www.microsoft.com/ja-jp/download/details.aspx?id=6676 User Profile Hive Cleanup Service
-なお， Windows Vista および Windows Server 2008 には UPHClean の機能が含まれています．(KB837115)
-ファイル KGTN2013021401.pdf [(56.7 KB)] [kitasp 技術センター, 2013/02/14 10:58]</p>
+2013/03/15*
+[番号] 技術ノート KGTN 2013031503
+[現象] [iPad] iPad クライアントをインストールしたが，GGサーバに接続するまでの手順は？
+[説明]
+  ホスト （GGサーバ） の追加 Host List の右の + をクリック
+  ホスト （GGサーバ） 情報の登録 Host IP Address: ホストのIPアドレスを入力 User Name: ログオンするアカウントのユーザ名を入力 Password: ログオンするアカウントのパスワードを入力 最後に Add ボタンをクリック
+  ホスト （GGサーバ） への接続 Connect ボタンをクリック
+  ファイル KGTN2013031503.pdf [(145 KB)] [kitasp 技術センター, 2013/03/15 10:45]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc704/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc617/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -487,25 +487,26 @@ http://www.microsoft.com/ja-jp/download/details.aspx?id=6676 User Profile Hive C
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc702/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc618/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc702/">[GGH4.5] 拡張パック （エンタープライズ・オプション） を使わずに，GGサーバの現在のセッション数を知る方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc618/">[GGH4.5] Intel G41 Express Chipset を使用したマシンで表示が遅い．</a></h4>
                             <p class="author-category">
                             
-                            日付 2013-02-14
+                            日付 2013-03-14
                             </p>
                             <p class="intro">*技術ノート
-2013/02/14*
-[番号] 技術ノート KGTN 2013021402
-[現象] [GGH4.5] 拡張パック （エンタープライズ・オプション） を使わずに，GGサーバの現在のセッション数を知る方法は？
-[説明] GGのセッションは logon.exe の下で動作しますので，この logon.exe の数 （実行中のプロセスの数） を調べることで現在のセッション数を知ることが出来ます．
-ファイル KGTN2013021402.pdf [(44.6 KB)] [kitasp 技術センター, 2013/02/14 12:37]</p>
+2013/03/14*
+[番号] 技術ノート KGTN 2013031501
+[現象] [GGH4.5] &ldquo;Intel G41 Express Chipset&rdquo; を使用したマシンで表示が遅い．
+[説明] GraphOn社に確認したところ，以下のように &ldquo;Intel G41 Express Chipset&rdquo; で表示が遅いという報告は無く，また関連する情報もありませんでした．
+弊社にも &ldquo;Intel G41 Express Chipset&rdquo; に関する報告や情報はありません．なお画面の解像度や色深度の変更，新しいドライバの適用，その他の通常とは異なる設定 （環境） の確認などを行うことで，問題解決の手掛かりが見付かることがあります．
+ファイル KGTN2013031501.pdf [(59.7 KB)] [kitasp 技術センター, 2013/03/15 08:18]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc702/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc618/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -524,25 +525,25 @@ http://www.microsoft.com/ja-jp/download/details.aspx?id=6676 User Profile Hive C
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc701/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc619/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc701/">[GGW3.2.1] SSLサーバ証明書の公開鍵長を1024ビットから2048ビットに変更したところ，クライアントから接続出来なくなった．</a></h4>
+                            <h4><a href="/posts/new_md/doc619/">[GGH4.5] クライアントの環境として Windows RT のサポートの予定は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2013-02-14
+                            日付 2013-03-14
                             </p>
                             <p class="intro">*技術ノート
-2013/02/14*
-[番号] 技術ノート KGTN 2013021501
-[現象] [GGW3.2.1] SSLサーバ証明書の公開鍵長を1024ビットから2048ビットに変更したところ，クライアントから接続出来なくなった．
-[説明] 公開鍵長2048ビットのSSLサーバ証明書は GGW3.2.1.4510 でサポートされました．このビルド （3.2.1.4510） へアップグレードして下さい．
-ファイル KGTN2013021501.pdf [(41.6 KB)] [kitasp 技術センター, 2013/02/15 06:29]</p>
+2013/03/14*
+[番号] 技術ノート KGTN 2013031502
+[現象] [GGH4.5] クライアントの環境として Windows RT のサポートの予定は？
+[説明] 現時点では，クライアントの環境として Windows RT をサポートする予定はありません．
+ファイル KGTN2013031502.pdf [(41.1 KB)] [kitasp 技術センター, 2013/03/15 08:17]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc701/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc619/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

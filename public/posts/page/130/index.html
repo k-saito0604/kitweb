@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc350/">
+                                      <a href="/posts/new_md/doc393/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc350/">[GGH4.X] GGH4.0～4.7 から GGH4.8 へバージョンアップする場合，上書きインストールではダメなのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc393/">[GGH4.X] クラスタマネージャで Automatically update clients を有効にしているにも関わらず，クライアントのアップグレード （バージョンアップ） が行われない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc350/"><i class="far fa-calendar"></i> 2013-10-16</a>
+                                            <a href="/posts/new_md/doc393/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/10/16*
-[番号] 技術ノート KGTN 2013101602
-[現象] [GGH4.X] GGH4.0～4.7 から GGH4.8 へバージョンアップする場合，上書きインストールではダメなのか？
-[説明] GGH4.0～4.7 に互換アップデート （2013年4月の &ldquo;KB2813170&rdquo; 向け互換アップデート） が適用されていない場合は， GGH4.8を上書きインストールして構いません．もし適用されている場合は，この互換アップデートとGG本体 （GGH4.0～4.7） をアンインストールする必要があります．これは互換アップデートの内容に起因する制限で，今後リリースされる互換アップデートでは，この制限は解消される見込みです．
-ファイル kgtn2013101602.pdf [(51.2 KB)] [kitasp 技術センター, 2014/02/07 16:42]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc350/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2014012301
+[現象] [GGH4.X] クラスタマネージャで Automatically update clients を有効にしているにも関わらず，クライアントのアップグレード （バージョンアップ） が行われない．
+[説明] Windowsクライアントのインストール先がデフォルト値でない場合，アップグレード （バージョンアップ） が行われないという既知の問題があります．Windowsクライアントのアンインストール → Windowsクライアントのインストール （既定値） を行って下さい．
+The automatic client update feature is not supported if the client modifies the client installer to install the client in a location other than the default location. Please install the client in the default client location.  ファイル KGTN2014012301.pdf [(49.3 KB)] [kitasp 技術センター, 2014/01/29 17:08]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc393/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc379/">
+                                      <a href="/posts/new_md/doc479/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc379/">[GGW3.2.1/GGH4.X] BSOD （ブルースクリーンのメモリダンプ） が発生したが，GG の不具合ではないのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc479/">[GGH4.X] クラスタマネージャに登録していないアプリケーションを起動したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,17 +381,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc379/"><i class="far fa-calendar"></i> 2013-10-16</a>
+                                            <a href="/posts/new_md/doc479/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/10/16*
-[番号] 技術ノート KGTN 2013101601
-[現象] [GGW3.2.1/GGH4.X] BSOD （ブルースクリーンのメモリダンプ） が発生したが，GG の不具合ではないのか？
-[説明] GG 上で動作するアプリケーションは，GG のドライバ ggse.sys （GO-Global System Extension Driver） を 介して Windows が管理するメモリの確保や解放を行います．このため，メモリの枯渇や不正な処理が行われてBSOD が発生した場合，表面的な調査で ggse.sys が原因と結論付けた事例が幾つも存在しました （GGW3.2.XおよびGGH4.X） ．しかしながら，弊社またはGraphOn社で詳細に調査を行うと，その何れもがメモリの枯渇やアプリケーションの不正な処理が原因でした．先ず，技術ノート KGTN2013101502 の内容を試してBSODが改善するかどうか確認して下さい．
-ファイル KGTN2013101601.pdf [(58.2 KB)] [kitasp 技術センター, 2014/01/29 17:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc379/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013112603
+[現象] [GGH4.X] クラスタマネージャに登録していないアプリケーションを起動したい．
+[説明] Windowsクライアントのパラメタ （-a） またはActiveXクライアントのパラメタ （app） で，実行プログラムの絶対パスを指定することで，クラスタマネージャに登録していないアプリケーションを起動することが出来ます．
+例： http://&lt;ウエッブサーバ&gt;/logon.html?user=Test&amp;password=Pass&amp;app=C:AppsTeraPad.exe
+ファイル KGTN2013112603.pdf [(50.2 KB)] [kitasp 技術センター, 2014/01/29 11:55]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc479/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -401,7 +402,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc515/">
+                                      <a href="/posts/new_md/doc469/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -409,7 +410,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc515/">[GGH4.6] GGH4.6には２つのビルドがあるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc469/">[GGH4.X] システムのプロパティでユーザの環境変数を定義したが，GGのセッション中に存在しない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -422,17 +423,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc515/"><i class="far fa-calendar"></i> 2013-10-15</a>
+                                            <a href="/posts/new_md/doc469/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/10/15*
-[番号] 技術ノート KGTN 2013101501
-[現象] [GGH4.6] GGH4.6には２つのビルドがあるのか？
-[説明] GGH4.6にはGGH4.6.0.16538 (2013/04/02) とGGH4.6.0.16652 (2013/04/10) の２つのビルドが存在しますが， kitASPでは新しい方のビルド GGH4.6.0.16652 のみを出荷しております．なお，大きな差異は更新プログラム KB2813170 への対応です．
-ファイル KGTN2013101501.pdf [(41.5 KB)] [kitasp 技術センター, 2013/10/15 12:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc515/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013120301
+[現象] [GGH4.X] システムのプロパティでユーザの環境変数を定義したが，GGのセッション中に存在しない．
+[説明] WS2008R2 の環境ではシステムのプロパティで定義したユーザの環境変数がGGのセッション中に存在しますが，WS2003およびWS2008の環境ではシステムのプロパティで定義したユーザの環境変数がGGのセッション中に存在しないという現象を確認しております （GraphOn社では WS2003R2 のみで発生） ．現時点では制限事項で，将来のリリースで修正する方向で調査中です．本件が修正された場合は，リリースノートに管理番号 ECR#14492 で記述されます．
+ファイル KGTN2013120301.pdf [(51.4 KB)] [kitasp 技術センター, 2014/01/29 13:20]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc469/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -442,7 +443,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc516/">
+                                      <a href="/posts/new_md/doc466/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -450,7 +451,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc516/">[GGH4.X] ログオンスクリプトで非同期に処理を行いたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc466/">[GGH4.X] バージョンが 4.5.0 → 4.6.0 → 4.7.0 → 4.8.0 と上がったが，次のリリースは 4.9.0 なのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -463,17 +464,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc516/"><i class="far fa-calendar"></i> 2013-10-15</a>
+                                            <a href="/posts/new_md/doc466/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/10/15*
-[番号] 技術ノート KGTN 2013101101
-[現象] [GGH4.X] ログオンスクリプトで非同期に処理を行いたい．
-[説明] 以下に非同期実行 （クライアントプリンタの構成状況のチェック） のサンプルコードを示します．
-ファイル KGTN2013101101.pdf [(52.3 KB)] [kitasp 技術センター, 2013/10/15 09:28]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc516/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013120401
+[現象] [GGH4.X] バージョンが 4.5.0 → 4.6.0 → 4.7.0 → 4.8.0 と上がったが，次のリリースは 4.9.0 なのか？
+[説明] バージョンが 4.5.0 → 4.6.0 → 4.7.0 → 4.8.0 と上がった件について，GraphOn社も混乱を招いたことを理解しております．次のリリースは， 4.8.1 （あるいは4.8.X） になる見込みです．
+ファイル KGTN2013120401.pdf [(41.4 KB)] [kitasp 技術センター, 2014/01/29 13:26]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc466/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -483,7 +484,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc380/">
+                                      <a href="/posts/new_md/doc455/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -491,7 +492,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc380/">[GGW3.2.1/GGH4.X] BSODが発生した場合，最初にチェックすべきポイントは？</a></h2>
+                                    <h2><a href="/posts/new_md/doc455/">[GGH4.X] ブラウザ Google Chrome は， ActiveX クライアントで動作するか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -504,20 +505,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc380/"><i class="far fa-calendar"></i> 2013-10-15</a>
+                                            <a href="/posts/new_md/doc455/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/10/15*
-[番号] 技術ノート KGTN 2013101502
-[現象] [GGW3.2.1/GGH4.X] BSODが発生した場合，最初にチェックすべきポイントは？
-[説明]
-  BSODが発生したマシンの環境が，GG （サーバ） の動作環境と一致しているかどうか確認して下さい．例えば，GGが Windows Server 2008 R2 SP1 を前提にしている場合， Windows Server 2008 R2 （サービスパック未適用） の環境での動作は保証されません．必ず，GGが要求する動作環境で運用するようにして下さい．
-   動作環境が適合している場合，ハイパースレッディング機能の設定を確認して下さい．ハイパースレッディング機能の設定を変更して （有効の状態でBSODが発生した場合は無効に，無効の状態でBSODが発生した場合は有効に） ，状況が改善することがあります．
-Windows のインストールに問題があり，BSODが発生することがあります．Windowsをインストールした別のマシン （同一のWindowsイメージは不可） にGGをインストールし，同じ手順でBSODが発生するかどうか確認して下さい．別のマシンでBSODが発生しなければ，BSODが発生したマシンのWindowsに問題があるか，またはハードウエア等に問題があると考えられます．  補　足 GGがインストールされた環境にサービスパックを適用する場合は， 「サービスパックを適用しサーバを再起動した後に」 必ずGGを再インストールして下さい．
-ファイル KGTN2013101502.pdf [(58.3 KB)] [kitasp 技術センター, 2014/01/29 17:42]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc380/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013120604
+[現象] [GGH4.X] ブラウザ Google Chrome は， ActiveX クライアントで動作するか？
+[説明] ActiveXクライアントは IE （Internet Explorer） 用のGGクライアントですので，Google Chrome で利用することは出来ません． Google Chrome は， Chrome ウエッブストアで機能拡張 &ldquo;GO-Global browser plug-in&rdquo; を事前にインストールする必要があります
+ファイル KGTN2013120604.pdf [(72.9 KB)] [kitasp 技術センター, 2014/01/29 14:07]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc455/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -527,7 +525,7 @@ Windows のインストールに問題があり，BSODが発生することが�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc518/">
+                                      <a href="/posts/new_md/doc437/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -535,7 +533,7 @@ Windows のインストールに問題があり，BSODが発生することが�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc518/">[GGH4.X] BSODのメモリダンプの採取は，なぜ最新のビルドで行う必要があるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc437/">[GGH4.X] ログオン時に設定されるIMEを変更したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -548,17 +546,21 @@ Windows のインストールに問題があり，BSODが発生することが�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc518/"><i class="far fa-calendar"></i> 2013-10-11</a>
+                                            <a href="/posts/new_md/doc437/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/10/11*
-[番号] 技術ノート KGTN 2013101103
-[現象] [GGH4.X] BSODのメモリダンプの採取は，なぜ最新のビルドで行う必要があるのか？
-[説明] GGはWindows上に独自のマルチユーザ環境を構築しているため，Windowsの動作と独自のマルチユーザ環境の動作が密接に絡んでおり，BSODはその複雑な環境の中で発生します．古いビルドでBSODの調査を行って原因が分かったとしても，その複雑さゆえ最新のビルドでは異なる処理が行われ， （調査で分かった原因が） 対応付けられない可能性があります．このようなことから，分かった原因を確実に反映 （修正） できるように，最新ビルドの環境でBSODのメモリダンプを採取する必要があります．
-ファイル KGTN2013101103.pdf [(52.3 KB)] [kitasp 技術センター, 2013/10/11 13:05]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc518/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013122001
+[現象] [GGH4.X] ログオン時に設定されるIMEを変更したい．
+[説明] ログオン時に設定されるIMEを変更することは可能ですが，設定に当たってはレジストリエディタを使用し，かつ手順が複雑です．以下に 「Google日本語入力」 を設定する手順を示します．
+ Keyboard Layout のコードを取得 HKCUKeyboard LayoutPreload キーの下にあるキーボードのレイアウトコードを参照して記録します．下記の例では 00000411 と e0200411 です．  　[HKCUKeyboard LayoutPreload] &ldquo;2&quot;=&quot;00000411&rdquo; &ldquo;1&quot;=&quot;e0200411&rdquo;
+IME情報の参照 上記１の情報をもとに，下記レジストリの内容を参照します．  　[HKLMSYSTEMCurrentControlSetControlKeyboard Layouts00000411] [HKLMSYSTEMCurrentControlSetControlKeyboard LayoutsE0200411]
+Layout Text の文字列を確認し，設定したいIMEがどれか決定し，その文字列を記録します．下記の例では Google Japanese Input です．
+　[HKLMSYSTEMCurrentControlSetControlKeyboard LayoutsE0200411] &ldquo;Ime File&quot;=&quot;GIMEJA.IME&rdquo; &ldquo;Layout Text&quot;=&quot;Google Japanese Input&rdquo; &ldquo;Layout File&quot;=&quot;kbdjpn.dll&rdquo; &ldquo;Layout Display Name&quot;=&rdquo;@C:Windowssystem32GIMEJa.ime,-101&rdquo;
+Layout Text の設定 上記２で記録した情報を２つのGGのレジストリに設定（変更）します．  　[HKLMSOFTWAREGraphOnGO-GlobalSystem] &ldquo;Layout Text&quot;=&quot;Google Japanese Input&rdquo;</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc437/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -568,7 +570,7 @@ Windows のインストールに問題があり，BSODが発生することが�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc519/">
+                                      <a href="/posts/new_md/doc431/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -576,7 +578,7 @@ Windows のインストールに問題があり，BSODが発生することが�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc519/">[GGH4.X] GGH4.5またはそれ以降でBSODの修正はあるか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc431/">[GGH4.X] 問題が発生した時，現象を知らせれば良いのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -589,19 +591,17 @@ Windows のインストールに問題があり，BSODが発生することが�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc519/"><i class="far fa-calendar"></i> 2013-10-11</a>
+                                            <a href="/posts/new_md/doc431/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/10/11*
-[番号] 技術ノート KGTN 2013090403
-[現象] [GGH4.X] GGH4.5またはそれ以降でBSODの修正はあるか？
-[説明] 以下の BSOD 関連の修正があります．BSODの発生に再現性があれば，最新のGGをインストールし，状況が改善するかどうか試して下さい．
-4.5.0.13063: [12918] The host is blue-screening when starting a GO-Global session. 4.6.0.16652: [13383] Server is bluescreening. 4.8.0.18673: [14103] Server crashes randomly with custom application. 4.8.0.18673: [14277] The server crashes after installing KB2859537.
-補　足 Windows のインストールに絡んだ問題で BSODが発生した事例も少なからずありますので，複数の異なるWindows （のイメージ） 上でBSODの再現性の有無を確認して下さい．特定のWindows （のイメージ） 上でのみBSODが発生する場合は，そのWindows （のイメージ） に何らかの問題があると考えられます．
-ファイル KGTN2013090403.pdf [(55.8 KB)] [kitasp 技術センター, 2013/10/11 12:31]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc519/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013122705
+[現象] [GGH4.X] 問題が発生した時，現象を知らせれば良いのか？
+[説明] GraphOn社が必須としているAPSログと SRW （KGTN#2013122703を参照） のファイルもお送り下さい．また，現象についても 「○○が動作しない」 というような情報だけでは調査が困難ですので，具体的に現象が分かるスクリーンショット （ビデオ） や再現手順等も併せてお送り下さい．
+ファイル KGTN2013122705.pdf [(50.1 KB)] [kitasp 技術センター, 2014/01/29 14:57]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc431/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -611,7 +611,7 @@ Windows のインストールに問題があり，BSODが発生することが�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc520/">
+                                      <a href="/posts/new_md/doc468/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -619,7 +619,7 @@ Windows のインストールに問題があり，BSODが発生することが�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc520/">[GGH4.X] ログオンスクリプトで他のスクリプト （プログラム） を呼び出しているが動かない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc468/">[GGH4.X] 技術ノートに書かれている管理番号 ECR#?? とは何か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -632,17 +632,17 @@ Windows のインストールに問題があり，BSODが発生することが�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc520/"><i class="far fa-calendar"></i> 2013-10-11</a>
+                                            <a href="/posts/new_md/doc468/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/10/11*
-[番号] 技術ノート KGTN 2013101102
-[現象] [GGH4.X] ログオンスクリプトで他のスクリプト （プログラム） を呼び出しているが動かない．
-[説明] ログオンスクリプトで他のスクリプト （プログラム） を呼び出す場合，そのファイルをフルパスで指定して下さい．
-ファイル KGTN2013101102.pdf [(38.4 KB)] [kitasp 技術センター, 2013/10/11 10:53]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc520/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013120302
+[現象] [GGH4.X] 技術ノートに書かれている管理番号 ECR#?? とは何か？
+[説明] これまでは，サポート側の CASE#?? と開発側の BUG#?? の２つの管理番号がありましたが，この２つの管理番号が直接的に関連付いていないため，新しいリリースで修正されたかどうか分からないことがありました．新たな管理番号 ECR#?? は Engineering Change Request （設計変更要求：サポート側→開発側） のことで，修正された場合はこの管理番号がリリースノートに記述されます．
+ファイル KGTN2013120302.pdf [(49.9 KB)] [kitasp 技術センター, 2014/01/29 13:22]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc468/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -652,7 +652,7 @@ Windows のインストールに問題があり，BSODが発生することが�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc517/">
+                                      <a href="/posts/new_md/doc401/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -660,7 +660,7 @@ Windows のインストールに問題があり，BSODが発生することが�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc517/">[GGH4.X] ログオン時に PW と特定のアプリケーションを同時に起動したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc401/">[GGH4.X] 映像や音声を扱うアプリケーションがあるが，GG上で動作するか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -673,17 +673,17 @@ Windows のインストールに問題があり，BSODが発生することが�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc517/"><i class="far fa-calendar"></i> 2013-10-11</a>
+                                            <a href="/posts/new_md/doc401/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/10/11*
-[番号] 技術ノート KGTN 2013101104
-[現象] [GGH4.X] ログオン時に PW と特定のアプリケーションを同時に起動したい．
-[説明] 以下のプログラムを用意し logon.bat をログオンスクリプトとして指定すると，ログオン直後に PW に加えメモ帳も自動的に起動されます．
-ファイル KGTN2013101104.pdf [(52.2 KB)] [kitasp 技術センター, 2013/10/11 14:28]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc517/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2014012008
+[現象] [GGH4.X] 映像や音声を扱うアプリケーションがあるが，GG上で動作するか？
+[説明] GGの通信プロトコル Rapid-X は多数のユーザが効率的に利用できるように，帯域の制限や通信データの圧縮伸張処理等を行っております．映像や音声を扱うリアルタイム性を要求するプログラムは，これらの処理によって残念ながら正常に動作しません．映像や音声を扱うアプリケーションを使用せねばならないシステムでは，GGの拡張パックが提供する 「クライアント側アプリケーション起動」 機能を使用して，それらのアプリケーションをクライアントPC上で実行して下さい．
+ファイル KGTN2014012008.pdf [(53.6 KB)] [kitasp 技術センター, 2014/01/29 16:48]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc401/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -693,7 +693,7 @@ Windows のインストールに問題があり，BSODが発生することが�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc521/">
+                                      <a href="/posts/new_md/doc398/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -701,7 +701,7 @@ Windows のインストールに問題があり，BSODが発生することが�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc521/">[GGH4.8] GGH4.8の主な変更点を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc398/">[GGH4.X] 特定のユーザに限りアプリケーションが正常に動作しない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -714,17 +714,18 @@ Windows のインストールに問題があり，BSODが発生することが�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc521/"><i class="far fa-calendar"></i> 2013-10-10</a>
+                                            <a href="/posts/new_md/doc398/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/10/10*
-[番号] 技術ノート KGTN 2013101002
-[現象] [GGH4.8] GGH4.8の主な変更点を知りたい．
-[説明] 仕様の追加や変更はなく，不具合の修正が主な変更点です．主な修正の内容は以下の通りです．
-ファイル KGTN2013101002.pdf [(48.5 KB)] [kitasp 技術センター, 2013/10/10 14:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc521/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2014012101
+[現象] [GGH4.X] 特定のユーザに限りアプリケーションが正常に動作しない．
+[説明] アプリケーションが正常に動作するアカウントを UserA ，アプリケーションが正常に動作しないアカウントをUserB とします．先ず，クライアントPCに依存した問題でないことを確認するために，同一のクライアントPCから UserA と UserB でログオンしアプリケーションを起動して下さい． UserA で正常に動作し， UserB でエラーが発生すれば，クライアントPCに依存しない問題と考えられます．
+上記に確認により，（GGの問題ではなく） アカウントに依存した問題だと考えられますので， UserA と UserB のアカウントの差異を詳細に調べて下さい．特にアカウントの権限，アクセス権の設定，プロファイルの異常などを細かくチェックして下さい．
+ファイル KGTN2014012101.pdf [(48.9 KB)] [kitasp 技術センター, 2014/01/29 16:57]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc398/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -794,7 +795,7 @@ Windows のインストールに問題があり，BSODが発生することが�
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

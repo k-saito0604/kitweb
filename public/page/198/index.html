@@ -409,25 +409,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1238/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1130/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1238/">[GGH4.0] クライアントフレームを使用すると画面が乱れなくなる．</a></h4>
+                            <h4><a href="/posts/new_md/doc1130/">[GGW3.2.1] マルチモニタ機能を有効/無効にする方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-11-02
+                            日付 2012-01-19
                             </p>
                             <p class="intro">*技術ノート
-2011/11/02*
-[番号] 技術ノート KGTN 2011110201
-[現象] [GGH4.0] クライアントフレームを使用すると画面が乱れなくなる．
-[説明] クライアントフレームを使用しない場合は， （GGクライアントにとって） 背景がクライアント上のデスクトップ （つまり様々な描画オブジェクト） になりますので，サーバ側の画面とクライアント側の画面を矛盾なく描画する必要があります （非常に複雑な処理です） ．クライアントフレームを使用する場合は， （GGクライアントにとって） 背景がサーバ上の壁紙のみになりますので，サーバ側の情報だけで描画することが出来ます．このようなことから，アプリケーションの描画処理に何らかの問題があったとしても， 「クライアントのデスクトップの画面が影響しないため」 正しく表示される可能性があります．
-ファイル KGTN2011110201.pdf [(51.7 KB)] [kitasp 技術センター, 2011/11/02 13:03]</p>
+2012/01/19*
+[番号] 技術ノート KGTN 2012011904
+[現象] [GGW3.2.1] マルチモニタ機能を有効/無効にする方法は？
+[説明] 以下の設定で，マルチモニタ機能を有効/無効にすることが出来ます．
+Windows Client の場合 （ショートカット） ggw.exe -h server1 -mm 0 （無効にする場合） ggw.exe -h server1 -mm 1 （有効にする場合）
+ActiveX Client の場合 （looseactivexlogon.htmlを修正）
+ファイル KGTN2012011904.pdf [(59.1 KB)] [kitasp 技術センター, 2012/01/19 10:26]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1238/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1130/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,31 +448,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1239/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1137/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1239/">[iPad</a></h4>
+                            <h4><a href="/posts/new_md/doc1137/">[GGW3.2.1/GGH4.0] GGではクライアント側でシリアルポート （COMポート） を使用できるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-11-02
+                            日付 2012-01-18
                             </p>
                             <p class="intro">*技術ノート
-2011/11/02*
-[番号] 技術ノート KGTN 2011051101
-[現象] [iPad-Client] iPad-Cleint β版で日本語の入力が出来ない．
-[説明] iPad-Cleint β版では，日本語の入力は出来ません．対症療法になりますが，IME2000等の機能の 「ソフト キーボード」 を利用することで，日本語を入力することが可能です．iPad-Cleint リリース版では，iPad側のIME（日本語入力のキーボード） を使用して日本語の入力が可能になる予定です．
-補足１ フリーソフトの 「DekaスクリーンキーボードCompact」 をインストールし，アプリケーションとして登録して下さい．利用したいアプリケーションとこのアプリケーションを起動することで，タッチパネル上で106キーボードと同じ操作で日本語を含む文字入力が可能になります．
-補足２ GraphOn社からの情報によれば， iPad上で漢字入力 （かな漢字変換） が出来ない問題は， iPad のオペレーティングシステム iOS4 の不具合に起因しているとのことです．次期 iOS5 ではこの不具合が解消され，漢字入力 （かな漢字変換） が出来るようになるという報告がありました．
-実際，GraphOn社の開発チームは， iOS5 のβ版でこの問題が解消されることを確認しています．
-補足３ iOS5 の環境で日本語を入力しようとすると，地球マークのキー （言語切り替え） が表示されない現象が確認されています．この問題については，10月中旬にリリース予定の iPad Client Release 2 で修正される見込みです．
-補足４ iPad Client Release 2 (4.1.1.11249) で，クライアント側のIMEを使用して日本語入力が可能になりました （次ページの画像の通り） ．簡単にテストした範囲では，以下の問題があります．
-日本語フルキーボードを使用してローマ字かな変換をした場合，入力したアルファベットの前の部分が残るケースがある． 日本語テンキーを使用してひらがな入力をした場合，撥音・拗音・半濁音が入力できない．
-補足５ iPad Client Release 2 の問題は，次のリリース iPad Client Release 3 の最優先対応項目となっております．弊社でこの問題について検討したところ，英語キーボードについては （条件が付くかもしれませんが） 対応可能で，日本語キーボードについては撥音・拗音・半濁音の入力が非常に難しいと考えております．従って，iPad Client Release 3では，英語キーボードのみサポートする可能性があります．</p>
+2012/01/18*
+[番号] 技術ノート KGTN 2012011601
+[現象] [GGW3.2.1/GGH4.0] GGではクライアント側でシリアルポート （COMポート） を使用できるのか？
+[説明] GGはシリアルポートおよびパラレルポートのリダイレクション機能をサポートしております．しかし，クライアント側のポートとサーバ側のポートを仮想的に線で結ぶようなイメージでなく，APIレベル （Win32の ReadFile と WriteFile） でデータをリダイレクトするため動作するアプリケーションが限られます．このようなことから，一般的に （汎用的に） シリアルポートを利用したい場合は，サードパーティーの製品をご利用下さい．GraphOn社のサイトで紹介されている製品は以下の通りです．
+補　足 シリアルポートおよびパラレルポートのリダイレクション機能に関するGraphOn社からの情報は，以下の通りです．
+ファイル KGTN2012011601.pdf [(89.4 KB)] [kitasp 技術センター, 2012/01/18 11:14]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1239/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1137/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -489,27 +486,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1241/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1134/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1241/">[GGH4.0] ウインドウをドラッグする時に，枠のみを表示させる設定はないのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1134/">[GGW3.2.1/GGH4.0] 英文のリリースノートに書かれている ISSUES FIXED の詳細を知りたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-10-31
+                            日付 2012-01-18
                             </p>
                             <p class="intro">*技術ノート
-2011/10/31*
-[番号] 技術ノート KGTN 2011103102
-[現象] [GGH4.0] ウインドウをドラッグする時に，枠のみを表示させる設定はないのか？
-[説明] 非サポートの機能として，ドラッグ中にウインドウの枠のみを表示させる機能があります．
-Windows Client 起動パラメタで -dfw 0 を指定する．
-ActiveX Client OBJECTタグのパラメタで を指定する．
-ファイル KGTN2011103102.pdf [(60.1 KB)] [kitasp 技術センター, 2011/10/31 12:58]</p>
+2012/01/18*
+[番号] 技術ノート KGTN 2012011802
+[現象] [GGW3.2.1/GGH4.0] 英文のリリースノートに書かれている ISSUES FIXED の詳細を知りたい．
+[説明] 通常のサポートでは，GraphOn社は ISSUES FIXED の詳細に関する情報を提供しておりません．当然のことながら，GraphOn社の開発チームのデータベースの中には詳細な情報がありますが，顧客固有の情報やノウハウに関する情報等を含んでおり，それを単純に公開することは困難です．もし詳細情報を公開するとすれば，それらの情報を含まないように整理し，さらに外部の人間が分るように噛み砕いて説明する必要があります．しかしこの作業が出来るのはその件に絡んだ開発担当者だけであり，日々のGGの開発作業・保守作業の中から，その資料を作成する時間を確保することは非常に困難な状況にあります．このような厳しい事情があることを，ぜひご理解ください．なお，どうしても情報が必要な場合は，プロフェッショナルサービスとして対応させて頂きます．
+ファイル KGTN2012011802.pdf [(62.8 KB)] [kitasp 技術センター, 2012/01/18 13:07]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1241/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1134/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -528,27 +523,27 @@ ActiveX Client OBJECTタグのパラメタで を指定する．
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1240/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1133/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1240/">[GGW3.2.1] ログオン時に表示されるIMEのモードが英語になる．</a></h4>
+                            <h4><a href="/posts/new_md/doc1133/">[GGW3.2.1] ActiveX クライアントにHTML （OBJECTタグ） でユーザIDとパスワードを渡しているが，ユーザがソースコードを表示させるとパスワードが分ってしまう．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-10-31
+                            日付 2012-01-18
                             </p>
                             <p class="intro">*技術ノート
-2011/10/31*
-[番号] 技術ノート KGTN 2011103103
-[現象] [GGW3.2.1] ログオン時に表示されるIMEのモードが英語になる．
-[説明] この文章では，現象が明確ではありませんので，適切な回答は出来ません．可能性としては，デフォルトのキーボード設定が間違っている （希望のモードと異なっている） ことが考えられます．以下のレジストリがキーボードの情報を保持していますので，これを採取してお送り下さい．
-HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout Fallback Layout REG_SZ ???
-なお， Windows Server 2003 の標準状態であれば，上記の ??? の部分は 「日本語 (MS-IME2002) 」 です．
-ファイル KGTN2011103103.pdf [(58.7 KB)] [kitasp 技術センター, 2011/10/31 13:23]</p>
+2012/01/18*
+[番号] 技術ノート KGTN 2012010605
+[現象] [GGW3.2.1] ActiveX クライアントにHTML （OBJECTタグ） でユーザIDとパスワードを渡しているが，ユーザがソースコードを表示させるとパスワードが分ってしまう．
+[説明] ActiveX クライアントおよびブラウザの仕様で渡したパスワードを完全に隠すことは出来ませんが，しかし以下の設定を行うことによりユーザがソースコードを表示を出来ないようにすることが可能です．
+この設定により，ActiveX クライアントに制御が移った直後にブラウザ （IE） が自動的に閉じられるため，ユーザがソースコードを表示させることは出来ません．
+補　足 Windows Vista および Windows 7 の環境では， UAC （ユーザーアカウント制御） を無効にするか，またはブラウザ （IE） を 「管理者として実行」 する必要があります．この条件に合致しない場合は，ブラウザ （IE） は自動的に閉じられず，開いたまま （表示されたまま） となります．このような場合は，右クリック （コンテキストメニュー） を禁止する等の方法で対応して下さい．
+ファイル KGTN2012010605.pdf [(67.2 KB)] [kitasp 技術センター, 2012/01/19 08:17]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1240/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1133/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

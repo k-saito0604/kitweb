@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1847/">
+                                      <a href="/posts/new_md/doc1689/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1847/">GGのウエッブサーバとしてApacheを利用する場合の注意点は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1689/">Ver4.0系のアドオン GO‐Global Portal は，どのような方式でロードバランス機能を実装しているのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,20 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1847/"><i class="far fa-calendar"></i> 2010-03-03</a>
+                                            <a href="/posts/new_md/doc1689/"><i class="far fa-calendar"></i> 2010-07-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/03/03*
-[番号] 技術ノート KGTN 2010030302
-[現象] GGのウエッブサーバとしてApacheを利用する場合の注意点は？
-[説明] Apacheの設定ファイル httpd.conf の中のDocumentRoot とDirectoryIndex を設定すれば，GG標準のログオン画面が表示されるようになります．設定の内容は以下の通りで，DocumentRoot でGGのWebフォルダを指定し，DirectoryIndex でデフォルトのドキュメントをlogon.html にします．
-DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Global Server/Web&rdquo; DirectoryIndex &ldquo;logon.html&rdquo;
-その他については，Apache の一般的な設定ですので，Apache のドキュメント等をご覧下さい．
-参　考 Apache （Apache HTTP Server） は実績もあり非常に良いウエッブサーバですが，脆弱性が発見された場合，それを修正するには &ldquo;Apache HTTP サーバプロジェクト&rdquo; が提供するパッチ等を入手し適用する必要があります．IIS （Internet Information Server） の場合は Windows Update を適用するだけで自動的に修正されますので，メンテナンスの観点からは IIS の方が手間がかからず便利です．
-ファイル KGTN2010030302.pdf [(65.7 KB)] [kitasp 技術センター, 2010/03/03 12:17]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1847/" class="btn btn-template-main">続きを読む</a>
+2010/07/26*
+[番号] 技術ノート KGTN 2010072701
+[現象] Ver4.0系のアドオン GO‐Global Portal は，どのような方式でロードバランス機能を実装しているのか？
+[説明] GO‐Global Portal は未だリリースされておりませんので詳細は分かりませんが，GGサーバの設定項目にサーバ・セッション・メモリ・プロセッサの重み付けの項目が追加されていますので，Ver3.2系までのリレーサーバとは異なり柔軟なサーバ選択が可能だと思われます．
+100100100100ファイル KGTN2010072701.pdf [(57.4 KB)] [kitasp 技術センター, 2010/07/27 08:19]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1689/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -363,7 +360,7 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1852/">
+                                      <a href="/posts/new_md/doc1692/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -371,7 +368,7 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1852/">GGがサポートしているSSLサーバ証明書は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1692/">GGサーバのC:ドライブのディスク容量は，どれくらいにすべきか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -384,17 +381,17 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1852/"><i class="far fa-calendar"></i> 2010-03-02</a>
+                                            <a href="/posts/new_md/doc1692/"><i class="far fa-calendar"></i> 2010-07-23</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/03/02*
-[番号] 技術ノート KGTN 2010030201
-[現象] GGがサポートしているSSLサーバ証明書は？
-[説明] GGのSSL機能は，暗号化および証明書生成のツールとしてデファクトスタンダードな OpenSSL ツールキットを使用して実装されています．個別の認証局およびSSLサーバ証明書に関する情報は弊社では分かりかねますが，敢えて言えば Apache + mod_ssl （OpenSSLを使用） に対応したSSLサーバ証明書であれば正しく動作する可能性が高いと考えられます．詳細については，各認証局へお問い合わせ下さい．
-ファイル KGTN2010030201.pdf [(51.3 KB)] [kitasp 技術センター, 2010/03/02 09:05]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1852/" class="btn btn-template-main">続きを読む</a>
+2010/07/23*
+[番号] 技術ノート KGTN 2010072301
+[現象] GGサーバのC:ドライブのディスク容量は，どれくらいにすべきか？
+[説明] 弊社の標準環境では Windows Server 2003 のC:ドライブに24GB割り当てております．大規模案件の事例では，コストの問題 （FCディスクを使用） 等から24GBより若干少ない容量を割り当てています （ログレベルは4を設定） ．従って，標準的な利用では24GB〜32GBあれば十分だと思われますが，しかし安定運用を考えるならば，この容量の1.5〜2倍の容量を割り当てて下さい．大規模案件の事例では，アンチウイルスソフトの頻繁なアップデートファイルのダウンロード＆インストール等でディスクの断片化が進み，パフォーマンスに影響を与えるようになりました．想定される容量の1.5〜2倍を割り当てておけば，デフラグ処理等も含めパフォーマンスの低下を低く抑えることが出来ます．
+ファイル KGTN2010072301.pdf [(58.3 KB)] [kitasp 技術センター, 2010/07/23 14:02]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1692/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -404,7 +401,7 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1848/">
+                                      <a href="/posts/new_md/doc1694/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -412,7 +409,7 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1848/">SessionVerification = 0 （KGTN#2010022401を参照） でもセッション断が発生したが，他に考えられる原因はあるか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1694/">エンタープライズオプションの GMFileProc をファイル削除ツールとして使って良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -425,23 +422,18 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1848/"><i class="far fa-calendar"></i> 2010-03-02</a>
+                                            <a href="/posts/new_md/doc1694/"><i class="far fa-calendar"></i> 2010-07-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/03/02*
-[番号] 技術ノート KGTN 2010030205
-[現象] SessionVerification = 0 （KGTN#2010022401を参照） でもセッション断が発生したが，他に考えられる原因はあるか？
-[説明] 例えば，以下のような原因が考えられます （順不同） ．
-セッションに割り当てられたリソースが不足 → クラスタマネージャで Minimum available physical memory およびMinimum available virtual memory を2〜3倍に増やして状況が改善するかどうか確認する．
-サーバ自体のメモリが不足 → １ユーザのみの利用で現象が発生するかどうか確認する．
-クライアント側でスワップが頻発 → クライアントのメモリ空き容量およびスワップの発生状況を確認する．
-処理が過度に高負荷 → 現象が発生する処理を実行してCPU使用率が100%またはそれに近い状態になり，かつその状態が長く続くかどうか確認する．
-サーバまたはクライアントのマシンが不安定 → 他のサーバおよび他のクライアントで現象が発生するかどうか確認する．
-ネットワークの （一時的） 障害 → PINGコマンドでパケットロスやラウンドトリップタイムを確認する （発生頻度が高い時間帯に繰り返し実施する） ．また，これと併せてAPSログの記録も確認する．
-ファイル KGTN2010030205.pdf [(67.6 KB)] [kitasp 技術センター, 2010/03/02 15:00]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1848/" class="btn btn-template-main">続きを読む</a>
+2010/07/22*
+[番号] 技術ノート KGTN 2010072201
+[現象] エンタープライズオプションの GMFileProc をファイル削除ツールとして使って良いか？
+[説明] GG設定ファイルの progPath の値を空にすることで，ファイルの削除ツール （特定のフォルダをチェックし，所定の日数を経過したファイルを削除） として利用することが出来ます．設定のサンプルは以下の通りで，下線の付いた項目のみが意味を持ちます．
+[default] logLevel = 9 dayDelete = 7 progPath = progArgs = progWait = 3 fileExt = txt fileDir = C:¥GraphOn¥Develop¥KitaQ¥GMFileProc¥export¥GMFileProc¥sample fileBackup = C:¥GraphOn¥Develop¥KitaQ¥GMFileProc¥export¥GMFileProc¥sample¥backup fileMove = N fileTooOld = 3600 traceFile = C:¥GraphOn¥Develop¥KitaQ¥GMFileProc¥export¥GMFileProc¥sample¥trace-%YYYYMMDD%.log repeatSleep = 1 &lsquo;&ndash; progBefore = progBeforeArgs = progAfter = progAfterArgs = &lsquo;&mdash;
+ファイル KGTN2010072201.pdf [(54.9 KB)] [kitasp 技術センター, 2010/07/22 09:07]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1694/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -451,7 +443,7 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1849/">
+                                      <a href="/posts/new_md/doc1693/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -459,7 +451,7 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1849/">SSLサーバ証明書とは具体的に何なのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1693/">プラグイン LaunchBrowser を使ってファイルをダウンロードさせるサーバ側のプログラムはないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -472,17 +464,19 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1849/"><i class="far fa-calendar"></i> 2010-03-02</a>
+                                            <a href="/posts/new_md/doc1693/"><i class="far fa-calendar"></i> 2010-07-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/03/02*
-[番号] 技術ノート KGTN 2010030204
-[現象] SSLサーバ証明書とは具体的に何なのか？
-[説明] SSLサーバ証明書とは，認証局と呼ばれる第三者の組織が， SSL （Secure Socket Layer） の暗号化技術を使用するサーバの身元を保証する，電子的な身分証明書のことです．証明書の情報を参照すると （.crtファイルの場合はダブルクリックします） ，発行先という項目に 「この証明書が保証するドメイン名 （ホスト名）」 が表示されます．SSLサーバ証明書の発行に当たっては，ドメイン名の所有者とSSLサーバ証明書の申請者が同一かつ実在の組織 （および代表者） であることが認証局によって確認されますので，この発行先のドメイン名 （ホスト名） を参照することで，接続先のサーバの正しい身元を確認することが出来ます．
-ファイル KGTN2010030204.pdf [(80.8 KB)] [kitasp 技術センター, 2010/03/02 11:47]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1849/" class="btn btn-template-main">続きを読む</a>
+2010/07/22*
+[番号] 技術ノート KGTN 2010072202
+[現象] プラグイン LaunchBrowser を使ってファイルをダウンロードさせるサーバ側のプログラムはないのか？
+[説明] サーバ側のプログラムの処理の概要とVC++2008 でのサンプルコードを以下に示します．
+ファイル選択ダイアログを表示 選択されたファイルをウエッブサーバのドキュメントフォルダへコピー そのファイルをダウンロードするURLを生成 LaunchBrowserI.dll をロード LaunchBrowser のアドレスを取得 LaunchBrowser( , &lt;URLの長さを保持するDWORD変数のポインタ&gt;)　をコール FreeLibrary でLaunchBrowserI.dll を開放
+void CGMFileDownloadDlg::OnBnClickedOk() { TCHAR tFilePath[nBufferSize+1],tFileCopy[nBufferSize+1],tFileName[nBufferSize+1]; TCHAR tBuf[nBufferSize+1]; char cBuf[nBufferSize+1]; DWORD dTemp; size_t CharactersConverted = 0;
+m_filePath.GetWindowTextW(tFilePath,(sizeof(tFilePath)/sizeof(tFilePath[0]))); GetFileTitle(tFilePath,tFileName,nBufferSize); _stprintf_s(tFileCopy,_T(&quot;%s¥¥%s&quot;),opt_copyDir,tFileName); CopyFile(tFilePath,tFileCopy,FALSE); _stprintf_s(tBuf,opt_downloadURL,tFileName); //--- HMODULE hMod = NULL; LaunchBrowser func = NULL; if(!hMod) { hMod = LoadLibrary(_T (&quot;LaunchBrowserI.dll&quot;)); } if(hMod) { func = (LaunchBrowser)GetProcAddress(hMod,&quot;LaunchBrowser&quot;); } _stprintf_s(tBuf,opt_downloadURL,tFileName); wcstombs_s(&amp;CharactersConverted,cBuf,sizeof(cBuf),tBuf,_TRUNCATE); dTemp = strlen(cBuf); (*func)((LPTSTR)cBuf,&amp;dTemp); FreeLibrary(hMod); }  ファイル KGTN2010072202.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1693/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -492,7 +486,7 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1850/">
+                                      <a href="/posts/new_md/doc1696/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -500,7 +494,7 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1850/">SSLサーバ証明書をクラスタマネージャのどこで設定するのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1696/">GGのプラグイン LaunchBrowser の目的は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -513,18 +507,20 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1850/"><i class="far fa-calendar"></i> 2010-03-02</a>
+                                            <a href="/posts/new_md/doc1696/"><i class="far fa-calendar"></i> 2010-07-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/03/02*
-[番号] 技術ノート KGTN 2010030203
-[現象] SSLサーバ証明書をクラスタマネージャのどこで設定するのか？
-[説明] クラスタマネージャでTools → Server Options → Security の順にアクセスし，
- Transport を SSL に変更， 2) Port に 491 または 443 を設定 （通常は491を指定） ， 3) SSL Certificate にSSLサーバ証明書のファイルのパス （拡張子は通常.crt） を設定 します．  注　意 クラスタマネージャで指定するSSLサーバ証明書のファイルは，そのファイルをダブルクリックした時に 「証明書の情報」 が表示されるものでなければなりません． 「このファイルは &ldquo;セキュリティ証明書&rdquo; として使用することは出来ません」 と表示される場合は，証明書の形式や内容に誤りがあり，GGのSSLサーバ証明書として使用することは出来ません．
-ファイル KGTN2010030203.pdf [(98.5 KB)] [kitasp 技術センター, 2010/03/02 10:48]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1850/" class="btn btn-template-main">続きを読む</a>
+2010/07/21*
+[番号] 技術ノート KGTN 2010072103
+[現象] GGのプラグイン LaunchBrowser の目的は？
+[説明] GO-Global for Windows Ver3.X にはサーバ側のドライブだけでなくクライアント側のドライブにアクセスできる機能 「クライアントドライブ機能」 がありますが，制限事項として19MBを越えるファイルをコピーすることが出来ません （参考 KGTN#2009091501） ．そこで，19MBを越える大きなファイルをダウンロードする方法として，ブラウザのファイルダウンロード機能を利用する方法が考えられますが，利用者にダウンロードの度にブラウザを起動して，ダウンロードサイトのURLを入力させるのは現実的ではありません．この問題を解決するために，プラグイン LaunchBrowser を作成しました．サーバ側で動作するアプリケーションが下記のようなコードを呼び出すことで，利用者の介在無しに
+ クライアント側のブラウザが自動的に起動され， 2) 引数で指定したURLへ自動的にアクセスします．  Private Declare Function LaunchBrowser Lib _ &ldquo;C:¥GraphOn¥DLL¥LaunchBrowserI.dll&rdquo; _ (ByVal lpBuffer As String, nSize As Long) As Long &hellip; sUrl = lLen = Len(sUrl) Ret = LaunchBrowser(sUrl, lLen)
+プラグイン LaunchBrowser とウエッブサーバを利用することで，例えば100MBを越える大きなファイルも効率的にダウンロードすることが可能になります．
+参　考 本技術ノートに関連する情報として，以下の技術ノートがあります．
+KGTN#2010061403 GGのプラグイン LaunchBrowser で，クライアント側のブラウザを起動する時のインタフェースは？ KGTN#2010061404 GGのプラグイン LaunchBrowser で障害が発生した場合の切り分けは？ KGTN#2010063001 プラグイン LaunchBrowser を使って，他のプログラムを起動したい． KGTN#2010063002 プラグイン LaunchBrowser をインストールしたクライアントでGGサーバを利用している時， 「例えば」 クライアントのメモ帳を開きキーボードを押下すると &ldquo;コンポーネントが見つかりません - cs.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1696/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -534,7 +530,7 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1851/">
+                                      <a href="/posts/new_md/doc1697/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -542,7 +538,7 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1851/">ベリサイン社のテスト用セキュア・サーバID （SSLサーバ証明書） で試すことが出来るか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1697/">GO-Global Windows Host 4.0 がサポートするサーバOSは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -555,17 +551,18 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1851/"><i class="far fa-calendar"></i> 2010-03-02</a>
+                                            <a href="/posts/new_md/doc1697/"><i class="far fa-calendar"></i> 2010-07-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/03/02*
-[番号] 技術ノート KGTN 2010030202
-[現象] ベリサイン社のテスト用セキュア・サーバID （SSLサーバ証明書） で試すことが出来るか？
-[説明] 管理者ガイドに従って、 1) GGサーバにOpenSSLをインストール， 2) OpenSSLを使い証明書署名要求（CSR）を作成， 3) CSRを元にテスト用セキュア・サーバIDを申請， 4) メールで送られて来た証明書 （文字列） をファイル server.crt へ保存， 5) クラスタマネージャで server.crt を指定 したところ特に問題なく動作しました．
-ファイル KGTN2010030202.pdf [(75.7 KB)] [kitasp 技術センター, 2010/03/02 09:56]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1851/" class="btn btn-template-main">続きを読む</a>
+2010/07/21*
+[番号] 技術ノート KGTN 2010072102
+[現象] GO-Global Windows Host 4.0 がサポートするサーバOSは？
+[説明] 以下のサーバOS環境をサポートします．
+■64ビット環境 Windows Server 2008 R2 Standard or Enterprise Edition (x64) Windows Server 2008 Standard or Enterprise Edition with Service Pack 2 (x64)
+■32ビット環境 Windows Server 2008 Standard or Enterprise Edition with Service Pack 2 (x86) Windows Server 2003 R2 Standard or Enterprise Edition (x86) Windows Server 2003 Standard or Enterprise Edition with Service Pack 2 (x86)</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1697/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -575,7 +572,7 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1854/">
+                                      <a href="/posts/new_md/doc1699/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -583,7 +580,7 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1854/">GGのエンタープライズオプションの message.exe を改造したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1699/">Windows Server 2008 の環境で，エクスプローラーを使ってクライアントドライブへファイルをコピー出来ない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -596,17 +593,21 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1854/"><i class="far fa-calendar"></i> 2010-02-24</a>
+                                            <a href="/posts/new_md/doc1699/"><i class="far fa-calendar"></i> 2010-07-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/02/24*
-[番号] 技術ノート KGTN 2010022408
-[現象] GGのエンタープライズオプションの message.exe を改造したい．
-[説明] エンタープライズオプションの message.exe は，クライアントにメッセージを表示するためのサンプルプログラムです．CDの中の GMS¥etc¥message の下に VB6 と VB2008 のプロジェクトファイル等がありますので，必要に応じて修正して頂いて結構です．
-ファイル KGTN2010022408.pdf [(47.9 KB)] [kitasp 技術センター, 2010/02/24 12:12]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1854/" class="btn btn-template-main">続きを読む</a>
+2010/07/21*
+[番号] 技術ノート KGTN 2010072002
+[現象] Windows Server 2008 の環境で，エクスプローラーを使ってクライアントドライブへファイルをコピー出来ない．
+[説明] Windows Server 2008 の環境では，エクスプローラーはサポートされません．
+補足1 下記のページの方法で， Windows NT 4.0 の File Manager をGGに登録すると，操作性は良くありませんがファイルのコピーが出来ることを確認しました．
+http://people.ee.ethz.ch/‾davidsch/vistafm/{.external}
+なお，この実験はサーバのUACをオフにして，クライアントのIEを 「管理者として実行」 で起動しました．その他については，継続調査中です．
+補足2 CopyFile関数でサーバ側のファイルをクライアント側へコピーするプログラムを作成 （VC++ 2008 を使用） したところ，ファイルは正しくコピーされました．従って， 「エクスプローラーでなく」 CopyFile関数でファイルをコピーする場合は，コピー出来ないという問題は発生しません．なお，クライアント側からサーバ側へコピーする場合は，0バイトのファイルが作成されます．
+ファイル KGTN2010072002.pdf [(61.7 KB)] [kitasp 技術センター, 2010/07/21 09:24]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1699/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -616,7 +617,7 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1858/">
+                                      <a href="/posts/new_md/doc1698/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -624,7 +625,7 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1858/">GGサーバをDMZ （DeMilitarized Zone） に配置して良いか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1698/">Windows Server 2008 の環境で，コンピュータの視覚効果 （テーマ） 等を設定しても，GG上で動作するアプリケーションに反映されない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -637,18 +638,17 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1858/"><i class="far fa-calendar"></i> 2010-02-24</a>
+                                            <a href="/posts/new_md/doc1698/"><i class="far fa-calendar"></i> 2010-07-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/02/24*
-[番号] 技術ノート KGTN 2010022405
-[現象] GGサーバをDMZ （DeMilitarized Zone） に配置して良いか？
-[説明] 技術的には，GGサーバをDMZに配置することは可能です．ただ，DMZへ配置する場合，GGサーバの台数分のグローバルIPが必要になりますが，IPv4グローバルアドレスが枯渇しつつありますので，スケーラビリティの観点から問題になる可能性があります．このようなことから，SSL-VPN （Secure Socket Layer Virtual Private Network） の利用もぜひ一度ご検討下さい．
-参　考 IPv4グローバルアドレスの枯渇時期は，2010年1月20日のJPNICのアナウンスでは，2011年後半と予測されております．
-http://www.nic.ad.jp/ja/topics/2010/20100120-01.html  ファイル KGTN2010022405.pdf [(56.6 KB)] [kitasp 技術センター, 2010/02/24 11:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1858/" class="btn btn-template-main">続きを読む</a>
+2010/07/21*
+[番号] 技術ノート KGTN 2010072101
+[現象] Windows Server 2008 の環境で，コンピュータの視覚効果 （テーマ） 等を設定しても，GG上で動作するアプリケーションに反映されない．
+[説明] コンピュータの視覚効果 （テーマ） 等は，グラフィックチップの能力に頼って画面を描画していますので，ネットワークを介して描画するGG環境では，その機能が要求する十分な描画パフォーマンスを得ることが出来ません．このようなことから，GG環境ではコンピュータの視覚効果 （テーマ） 等の設定は反映されません．
+ファイル KGTN2010072101.pdf [(48.8 KB)] [kitasp 技術センター, 2010/07/21 09:45]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1698/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -658,7 +658,7 @@ http://www.nic.ad.jp/ja/topics/2010/20100120-01.html  ファイル KGTN201002240
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1855/">
+                                      <a href="/posts/new_md/doc1695/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -666,7 +666,7 @@ http://www.nic.ad.jp/ja/topics/2010/20100120-01.html  ファイル KGTN201002240
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1855/">サーバに複数のLANポートがある場合，どのMACアドレスでライセンスを申請すべきか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1695/">エンタープライズオプションのプログラム GMFileProc の目的は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -679,17 +679,22 @@ http://www.nic.ad.jp/ja/topics/2010/20100120-01.html  ファイル KGTN201002240
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1855/"><i class="far fa-calendar"></i> 2010-02-24</a>
+                                            <a href="/posts/new_md/doc1695/"><i class="far fa-calendar"></i> 2010-07-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/02/24*
-[番号] 技術ノート KGTN 2010022407
-[現象] サーバに複数のLANポートがある場合，どのMACアドレスでライセンスを申請すべきか？
-[説明] 技術的には，実際に使用するLANポートのMACアドレスであれば，何れでも構いません．敢えて言えば，サーバの機能上，より重要な役割を持っているLANポートのMACアドレスで申請するのが良いでしょう．
-ファイル KGTN2010022407.pdf [(45.8 KB)] [kitasp 技術センター, 2010/02/24 11:23]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1855/" class="btn btn-template-main">続きを読む</a>
+2010/07/21*
+[番号] 技術ノート KGTN 2010072104
+[現象] エンタープライズオプションのプログラム GMFileProc の目的は？
+[説明] GGサーバの状態を管理する方法として，セッション監視SDKの GMCheck でGGサーバの情報を取得し，その情報を直接DBへ登録する処理が考えられます．正常系のみを考えれば，この方式は単純で効率も良いのですが，大規模案件では想定外の様々な障害が発生しますので，このような方式では問題点の切り分けが難しいという大きな欠点があります （例: 多くのGGサーバがDBのレコードを更新するため，DBで異常が発生した場合，その契機の発見が難しい） ．
+このようなことから，障害発生時に確実に問題点を発見できるように，以下のような処理を行います．
+セッション監視SDKの GMCheck 等でGGサーバの状態をファイルに記録 状態が記録されたファイルをDB登録用共有フォルダへコピー 共有フォルダ中のファイルを順にDBへ登録 登録が完了したファイルをバックアップフォルダへ移動
+各時点でのGGサーバの状態はファイルに記録され，そのファイルの情報は１箇所でDBへ反映され，さらにバックアップフォルダへ保存されますので，障害発生後にファイルを解析することで問題点を発見することが可能になります．プログラム GMFileProc は，この処理の中でファイルの管理を行うプログラムで，以下のような機能を受け持ちます．
+DB登録用共有フォルダ中のファイルを順にピックアップ ピックアップしたファイルをDB登録用プログラムを呼び出してDBへ情報を登録 登録が完了したファイルをバックアップフォルダへ移動 バックアップフォルダ中の古いファイルを削除 OSの異常等に備えて処理した内容をトレースログやイベントログに記録
+これ以外にも，ネットワークやサーバが過負荷でファイルが滞留した時に備え，古いファイルをスキップする等の機能も持っています．
+ファイル KGTN2010072104.pdf [(73 KB)] [kitasp 技術センター, 2010/07/21 14:44]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1695/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -699,7 +704,7 @@ http://www.nic.ad.jp/ja/topics/2010/20100120-01.html  ファイル KGTN201002240
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1853/">
+                                      <a href="/posts/new_md/doc1700/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -707,7 +712,7 @@ http://www.nic.ad.jp/ja/topics/2010/20100120-01.html  ファイル KGTN201002240
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1853/">特定のアプリケーションで予期せぬセッションの切断が発生する事例はないか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1700/">GMFileProc の設定情報 progBefore と progAfter は，どのようなシナリオで使うのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -720,18 +725,18 @@ http://www.nic.ad.jp/ja/topics/2010/20100120-01.html  ファイル KGTN201002240
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1853/"><i class="far fa-calendar"></i> 2010-02-24</a>
+                                            <a href="/posts/new_md/doc1700/"><i class="far fa-calendar"></i> 2010-07-20</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/02/24*
-[番号] 技術ノート KGTN 2010022409
-[現象] 特定のアプリケーションで予期せぬセッションの切断が発生する事例はないか？
-[説明] 過去に１件事例があります．そのアプリケーションは，データの読み込み時に進行状況を表示するため，過度に頻繁に情報 （文字列） を表示していました．これにより非常に多くの表示要求がサーバからクライアントへ送信され，その結果クライアントとサーバ間のPING （到達確認） の送受信に遅延が発生し，最終的に通信障害と認識されセッションが切断されました．
-ggw-3.2.1.4420またはそれ以降では，サーバからクライアントへ要求が送信されている場合，PING （到達確認） を送信しないように仕様が変更され，この問題は解消しました．
-参　考 When a large amount of data was sent from the server to the client, the reply to the client&rsquo;s ping request could take longer than 30 seconds to be returned to the client. When this happened, the client would erroneously assume that it could not communicate with the server, and it would close the connection.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1853/" class="btn btn-template-main">続きを読む</a>
+2010/07/20*
+[番号] 技術ノート KGTN 2010072001
+[現象] GMFileProc の設定情報 progBefore と progAfter は，どのようなシナリオで使うのか？
+[説明] ファイルの内容をデータベースに登録するような処理では，設定情報progPathで指定するプログラムがファイル毎にDBへの接続を繰り返します．DBへの接続は負荷の高い処理ですので，以下のように progBefore と progAfter を利用することで，１回のDB接続で処理をさせることが可能になります．
+progBefore ： データを蓄積する作業ファイルをクリア progPath ： 登録するデータを作業ファイルに追加 progAfter ： DBへ接続後，作業ファイルの内容を連続してDBへ登録
+ファイル KGTN2010072001.pdf [(51.9 KB)] [kitasp 技術センター, 2010/07/20 09:34]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1700/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -801,7 +806,7 @@ ggw-3.2.1.4420またはそれ以降では，サーバからクライアントへ
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

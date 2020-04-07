@@ -1,5 +1,5 @@
 ﻿+++
-title = "[GGH4.X"
+title = "[GGH4.X-5.X] GGEasyLogon とはどんなツールなのか？"
 date = "2015-01-16"
 tags = ["技術ノート"]
 categories = ["tech"]

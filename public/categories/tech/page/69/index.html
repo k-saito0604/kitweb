@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2500/">
+                                      <a href="/posts/new_md/doc2397/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2500/">[GGH5.X] logon.html でアプリケーション名およびその引数を指定する方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2397/">[GGSpoolPdf] SkyPDF for GO-Global を使用した場合の印刷処理の流れを知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2500/"><i class="far fa-calendar"></i> 2016-06-22</a>
+                                            <a href="/posts/new_md/doc2397/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061508
-[現象] [GGH5.X] logon.html でアプリケーション名およびその引数を指定する方法は？
-[説明] logon.html の26行目と43行目のコメントを外して （//を削除する） ，下記のように controlArgs.set の第２引数で値を指定して下さい．
-&lt;script language=javascript&gt; // To specify startup parameters, add controlArgs.set() for each parameter. … controlArgs.set([ &quot;app&quot;, &quot;Notepad&quot; ]); ← アプリケーション名 … controlArgs.set([ &quot;args&quot;, &quot;test.txt&quot; ]); ← 引数  ファイル KGTN2016061508.pdf [(56.8 KB)] [kitasp 技術センター, 2016/06/22 11:53]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2500/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016072802
+[現象] [GGSpoolPdf] SkyPDF for GO-Global を使用した場合の印刷処理の流れを知りたい．
+[説明] SkyPDF for GO-Global （SkyPDF と省略） の印刷の流れの概要は以下の通りです．なお， SkyPDF はプリンタードライバーとしてサーバー側およびクライアント側で実行され， GGSpoolPDF は （クライアント側の SkyPDF の機能により） 一般のアプリケーションとしてクライアント側のユーザーアカウントで実行されます．
+ サーバー上のアプリケーションでユーザーが印刷 プリントスプーラー （サーバー側） がSkyPDF （サーバー側） が起動 SkyPDF （サーバー側） がPDFファイルを生成 GGのクライアント印刷機能がPDFファイル （内部形式） をクライアント側へ転送 　プリントスプーラー（クライアント側） がSkyPDF （クライアント側） を起動 　SkyPDF （クライアント側，以下省略） が転送されたPDFファイルを出力 　SkyPDF が ユーザーアカウントで GGSpoolPDF を起動 　GGSpoolPDF の起動完了後に SkyPDF が終了 　GGSpoolPDF がPDFファイルを作業ファイル （拡張子 pdf_） へコピー 　GGSpoolPDF が Adobe Reader の起動を要求 （内容：作業ファイルの印刷要求） 　GGSpoolPDF が Adobe Reader が画面にPDFを表示するまで待機 (doPrint2:Step#1) 　Adobe Reader の表示＆印刷処理が 「非同期に」 進行 　プリントスプーラー （クライアント側） が出力先のプリンタードライバーを起動 　出力先のプリンタードライバーがRAWデーターを生成 　GGSpoolPDF が Adobe Reader に正常印刷後の終了を要求 (doPrint2:Step#2) 　GGSpoolPDF が作業ファイルの削除が出来るまで待機 （印刷が完了すると削除可能となる） 　Adobe Reader の印刷処理が終了 　GGSpoolPDF がPDFファイルを削除 （設定 deleteFile に従う） 　GGSpoolPDF が終了 印刷処理が終了  ファイル KGTN2016072802.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2397/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2506/">
+                                      <a href="/posts/new_md/doc2405/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2506/">[GGH5.X] logon.html でサーバーのIPアドレスおよびポート番号を指定する方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2405/">[GGSpoolPdf] イベントログに doPrint2: Step#2 の記録があった直後に， Symantec Endpoint Protection が 「改変対策 スキャン」 のイベントログが記録されている．このタイミングでどんな処理が行われるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,17 +381,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2506/"><i class="far fa-calendar"></i> 2016-06-22</a>
+                                            <a href="/posts/new_md/doc2405/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061504
-[現象] [GGH5.X] logon.html でサーバーのIPアドレスおよびポート番号を指定する方法は？
-[説明] logon.html の27行目と31行目のコメントを外して （//を削除する） ，下記のように controlArgs.set の第２引数で値を指定して下さい．
-&lt;script language=javascript&gt; // To specify startup parameters, add controlArgs.set() for each parameter. … controlArgs.set([ &quot;port&quot;, &quot;443&quot; ]); ← ポート番号 … controlArgs.set([ &quot;host&quot;, &quot;192.168.102.89&quot; ]); ← IP アドレス  ファイル KGTN2016061504.pdf [(57.8 KB)] [kitasp 技術センター, 2016/06/22 11:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2506/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016072601
+[現象] [GGSpoolPdf] イベントログに &ldquo;doPrint2: Step#2&rdquo; の記録があった直後に， Symantec Endpoint Protection が 「改変対策 スキャン」 のイベントログが記録されている．このタイミングでどんな処理が行われるのか？
+[説明] GGSpoolPDF (doPrint2) は，以下の処理を行います．
+1.　Acrobat Reader の起動を待つ (STEP#1) 2.　終了を要求 = Acrobat Reader はバックグラウンドへ (STEP#2) 3.　ワークファイルが削除できるまで待つ = 印刷終了を待つ (STEP#3) 4.　空な Acrobat Reader を終了させる (STEP#4, STEP#5) 5.　ファイルの削除処理
+STEP#2 では， EnumWindows() で画面上のすべてのトップレベルウィンドウを列挙し，クラスの名前が &ldquo;AcrobatSDIWindow&rdquo; で，かつウインドウのタイトルが印刷しているファイル名を含むウインドウに対して，ウインドウの最小化 （CloseWindow） と終了要求 （PostMessage, WM_CLOSE） の送信を行います．
+ファイル KGTN2016072601.pdf [(67.7 KB)] [kitasp 技術センター, 2016/08/01 14:30]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2405/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -401,7 +403,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2507/">
+                                      <a href="/posts/new_md/doc2396/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -409,7 +411,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2507/">[GGH5.X] logon.html でユーザーIDおよびパスワードを指定する方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2396/">[GGSpoolPdf] イベントログに GGSpoolPDF の doPrint2: Step#2 の記録があった時刻に， Symantec Endpoint Protection が 「改変対策 スキャン」 のイベントログが記録 （SPOOLSV.EXE が SEP の ccSvcHst.exe と Smc.exe にアクセス） されているが，何か考えられることはあるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -422,17 +424,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2507/"><i class="far fa-calendar"></i> 2016-06-22</a>
+                                            <a href="/posts/new_md/doc2396/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061503
-[現象] [GGH5.X] logon.html でユーザーIDおよびパスワードを指定する方法は？
-[説明] logon.html の20～21行目のコメントを外して （//を削除する） ，下記のように controlArgs.set の第２引数で値を指定して下さい．
-&lt;script language=javascript&gt; // To specify startup parameters, add controlArgs.set() for each parameter. // controlArgs.set([ &quot;user&quot;, &quot;Administrator&quot; ]); controlArgs.set([ &quot;password&quot;, &quot;myPass&quot; ]); // controlArgs.set([ &quot;embed&quot;, &quot;false&quot; ]);  ファイル KGTN2016061503.pdf [(55.2 KB)] [kitasp 技術センター, 2016/06/22 11:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2507/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016072803
+[現象] [GGSpoolPdf] イベントログに GGSpoolPDF の &ldquo;doPrint2: Step#2&rdquo; の記録があった時刻に， Symantec Endpoint Protection が 「改変対策 スキャン」 のイベントログが記録 （SPOOLSV.EXE が SEP の ccSvcHst.exe と Smc.exe にアクセス） されているが，何か考えられることはあるか？
+[説明] GGSpoolPDF および SkyPDF for GO-Global （SkyPDF と省略） 周辺の処理の流れは，技術ノート KGTN#2016072802 の通りです．
+SPOOLSV.EXE はプリントスプーラーのサービスですが，このプリントスプーラーおよびプリントスプーラー上で実行されるプリンタードライバー （SkyPDF および出力先のプリンタードライバー） が，アンチウイルスソフトの SEP のプログラム （ccSvcHst.exe と Smc.exe） に対して 「SEPのプログラムを認識し改変の標的として」 アクセスすることは常識的には考えられません．実際にアクセスがあったとしても，それは SEP が登録した情報を参照し，正常な処理の一部としてアクセスしたものと考えられます （下記 TECH101173 の内容を参照して下さい） ．また，GGSpoolPDF については SEP のプログラムにアクセスするようなコードは一切含んでおりません．このようなことから，先ずシマンテック社に SEP のプログラムに具体的にどのようなアクセスがあったのか （レジストリであればその範囲，ファイルであればパス名） ，ご確認なさることをお勧めいたします （下記の 「参考」 の情報もご覧下さい） ．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2396/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -442,7 +444,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2499/">
+                                      <a href="/posts/new_md/doc2432/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -450,7 +452,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2499/">[GGH5.X] logon.html の内容はVer4.8と同じか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2432/">[GGUX2.3] Red Hat Enterprise Linux 6.7 の環境で localemap 中の </a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -463,18 +465,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2499/"><i class="far fa-calendar"></i> 2016-06-22</a>
+                                            <a href="/posts/new_md/doc2432/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061601
-[現象] [GGH5.X] logon.html の内容はVer4.8と同じか？
-[説明] いいえ，Ver5.0の logon.html は，Ver4.8 の logon.html と全く異なります．Ver5.0 では一般ユーザー向けクライアントがサポートされたため，これに対応するように logon.html の処理も完全に書き換えられました （参考： 処理の本体は logon.js に移っております） ．従って，Ver5.0へアップグレードする時は，ログオン用のウエッブページも必ずアップグレードして下さい．
-なお，GGサーバー上でウエッブサーバー （IIS） の運用が行われている場合は，GGの上書きインストールによって，ウエッブページの内容も自動的にVer5.0へアップグレードされます．
-ファイル KGTN2016061601.pdf [(57.9 KB)] [kitasp 技術センター, 2016/06/22 11:53]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2499/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016070704
+[現象] [GGUX2.3] Red Hat Enterprise Linux 6.7 の環境で localemap 中の &ldquo;#ja_JP ja_JP&rdquo; のコメントを外したところ Gnome が正常に立ち上がらない．
+[説明] この問題は， Linux および Gnome のバージョン （または製品） に依存して発生する現象です． Red Hat Enterprise Linux 6.7 の Gnome の場合は，&ldquo;ja_JP ja_JP.UTF-8&rdquo; を設定することで解決します．
+ファイル KGTN2016070704.pdf [(113 KB)] [kitasp 技術センター, 2016/08/01 13:15]
+KGTN2016070704.jpg
+表示 [(23.1 KB)] [kitasp 技術センター, 2016/08/01 13:15]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2432/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -484,7 +487,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2489/">
+                                      <a href="/posts/new_md/doc2430/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -492,7 +495,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2489/">[GGH5.X] logon.html の処理開始時の大まかな流れを知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2430/">[JavaScript] JavaScript でウエッブサーバーの死活を簡単に知る方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -505,17 +508,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2489/"><i class="far fa-calendar"></i> 2016-06-22</a>
+                                            <a href="/posts/new_md/doc2430/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061701
-[現象] [GGH5.X] logon.html の処理開始時の大まかな流れを知りたい．
-[説明] Ver5.0 の logon.html の処理開始時の大まかな流れは，以下の通りです．
- logon.html がロードされる． logon.js がロードされる． version.jp がロードされる． logon.html 中の controlArgs.set() が実行される （パラメタの既定値の設定） ． logon.js 中の init() が実行される （&ldquo;window.onload = init;&rdquo; により） ．  ファイル KGTN2016061701.pdf [(56.2 KB)] [kitasp 技術センター, 2016/06/22 13:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2489/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016070802
+[現象] [JavaScript] JavaScript でウエッブサーバーの死活を簡単に知る方法は？
+[説明] ウエッブサーバーに死活をチェックするための画像ファイルを配置し，その読み込みの成否でウエッブサーバーの死活を判断する方法があります．そのサンプルコードは，以下の通りです．
+ファイル KGTN2016070802.pdf [(57.1 KB)] [kitasp 技術センター, 2016/08/01 13:19]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2430/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -525,7 +528,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2488/">
+                                      <a href="/posts/new_md/doc2427/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -533,7 +536,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2488/">[GGH5.X] Ver4.8 の logon.html では OBJECT タグを document.write で出力しているが，Ver5.0 の logon.html (logon.js) ではそのような箇所が見つからない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2427/">[JavaScript] JavaScript で２台のウエッブサーバーの死活をチェックし，その結果で生きているGGサーバーにログオンしたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -546,18 +549,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2488/"><i class="far fa-calendar"></i> 2016-06-22</a>
+                                            <a href="/posts/new_md/doc2427/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061702
-[現象] [GGH5.X] Ver4.8 の logon.html では OBJECT タグを document.write で出力しているが，Ver5.0 の logon.html (logon.js) ではそのような箇所が見つからない．
-[説明] 基本的な処理方式が変更されており，Ver5.0 の logon.js の下記の箇所で等価な処理が行われております．
-// OBJECT タグを作成 var newControl = document.createElement(&quot;object&quot;); newControl.id = RAPIDX_CONTROL_NAME; newControl.name = RAPIDX_CONTROL_NAME; newControl.classid = RAPIDX_PLUGIN_CLASS_ID; newControl.alt = RAPIDX_PLUGIN_NAME; newControl.setAttribute(&quot;codebase&quot;, RAPIDX_PLUGIN_CODEBASE); // 子供（PARAM タグ）を追加 writeURLVars(newControl, &quot;object&quot;); // OBJECT タグを logon.html のフレームに追加 var frame = document.getElementById('controlFrame'); frame.appendChild(newControl);  frame.innerHTML の内容例 （window.alert で出力）
-ファイル KGTN2016061702.pdf [(139 KB)] [kitasp 技術センター, 2016/06/22 13:27]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2488/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016071102
+[現象] [JavaScript] JavaScript で２台のウエッブサーバーの死活をチェックし，その結果で生きているGGサーバーにログオンしたい．
+[説明] ２台のウエッブサーバーに死活をチェックするための画像ファイルを配置し，その読み込みの成否によってログオンするGGサーバーを切り替えるサンプルコードを以下に示します．
+　function updateServer(n,s) { var target = &lsquo;'; var params = location.search;
+　params = params.substring(1); if(params.length == 0) { params = &lsquo;dummy=dummy&rsquo;; }
+　// 死活情報を更新 switch(n) { case 1: statusServer1 = s; break;
+　case 2: statusServer2 = s; break; } // 死活情報が揃ったか？ if((statusServer1 != false)&amp;&amp;(statusServer2 != false)) { // メインサーバーへ接続可能？ if(statusServer1 == &lsquo;OK&rsquo;) { target = &lsquo;http://192.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2427/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -567,7 +572,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2503/">
+                                      <a href="/posts/new_md/doc2426/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -575,7 +580,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2503/">[GGH5.X] Ver5.0の logon.html でキーボードの種類 （IMEの種類） を明示的に指定する方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2426/">[JavaScript] JavaScript で２台のウエッブサーバーの死活をチェックし，その結果で生きているGGサーバーにログオンしたい．できれば， img タグを使わず，スクリプトだけで行いたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -588,19 +593,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2503/"><i class="far fa-calendar"></i> 2016-06-22</a>
+                                            <a href="/posts/new_md/doc2426/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061507
-[現象] [GGH5.X] Ver5.0の logon.html でキーボードの種類 （IMEの種類） を明示的に指定する方法は？
-[説明] 日本語キーボードを指定する場合は， logon.html の42行目を次のように修正して下さい．
-controlArgs.set([ &quot;keyboard&quot;, &quot;00000411&quot; ]);  英語キーボードを指定する場合は， logon.html の42行目を次のように修正して下さい．
-controlArgs.set([ &quot;keyboard&quot;, &quot; 00000409&quot; ]);  なお，どちらの場合も行頭の &ldquo;//&rdquo; の削除を忘れないで下さい．
-ファイル KGTN2016061507.pdf [(55 KB)] [kitasp 技術センター, 2016/06/22 11:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2503/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016071201
+[現象] [JavaScript] JavaScript で２台のウエッブサーバーの死活をチェックし，その結果で生きているGGサーバーにログオンしたい．できれば， img タグを使わず，スクリプトだけで行いたい．
+[説明] ２台のウエッブサーバーに死活をチェックするための画像ファイルを配置し，その読み込みの成否によってログオンするGGサーバーを切り替えるサンプルコード （スクリプト版） を以下に示します．
+　function updateServer(n,s) { var target = &lsquo;'; var params = location.search;
+　params = params.substring(1); if(params.length == 0) { params = &lsquo;dummy=dummy&rsquo;; }
+　// 死活情報を更新 switch(n) { case 1: statusServer1 = s; break;
+　case 2: statusServer2 = s; break; } // 死活情報が揃ったか？ if((statusServer1 != false)&amp;&amp;(statusServer2 != false)) { // メインサーバーへ接続可能？ if(statusServer1 == &lsquo;OK&rsquo;) { target = &lsquo;http://&rsquo; + addrServer1 + &lsquo;/goglobal/logon.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2426/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -610,7 +616,7 @@ controlArgs.set([ &quot;keyboard&quot;, &quot; 00000409&quot; ]);  なお，ど�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2498/">
+                                      <a href="/posts/new_md/doc2428/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -618,7 +624,7 @@ controlArgs.set([ &quot;keyboard&quot;, &quot; 00000409&quot; ]);  なお，ど�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2498/">[GGH5.X] Ver5.0のクライアントのインストーラーはどこにあるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2428/">[JavaScript] JavaScript で２台のウエッブサーバーの死活を簡単に知る方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -631,18 +637,18 @@ controlArgs.set([ &quot;keyboard&quot;, &quot; 00000409&quot; ]);  なお，ど�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2498/"><i class="far fa-calendar"></i> 2016-06-22</a>
+                                            <a href="/posts/new_md/doc2428/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061602
-[現象] [GGH5.X] Ver5.0のクライアントのインストーラーはどこにあるのか？
-[説明] フォルダ &lt;GGのインストールフォルダ&gt;GO-GlobalWebClients の中にあります．
- gg-client.chrome.exe Google Chrome 向けクライアント gg-client.desktop.exe Windows 向けクライアント （一般ユーザー用） gg-client.firefox.exe Mozilla Firefox 31 (ESR) 向けクライアント gg-client.ie.exe Internet Explorer 10.0 and 11.0 (32-bit) 向けクライアント gg-client.linux.deb Ubuntu 12.04 LTS (64-bit) 向けクライアント gg-client.linux.rpm Red Hat Enterprise Linux 5 and 6 (64-bit) 向けクライアント gg-client.mac.dmg Mac OS X 10.6 and later向けクライアント gg-client.windows.exe Windows 向けクライアント （主に組込み用） gg-client.windows.msi Windows 向けクライアント （主にADでの配布用）
- ファイル KGTN2016061602.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2498/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016071101
+[現象] [JavaScript] JavaScript で２台のウエッブサーバーの死活を簡単に知る方法は？
+[説明] ２台のウエッブサーバーに死活をチェックするための画像ファイルを配置し，その読み込みの成否でウエッブサーバーの死活を判断する方法があります．そのサンプルコード （２台の死活状態が揃った時点で結果を表示） は以下の通りです．
+　function updateServer(n,s) { // 死活情報を更新 switch(n) { case 1: statusServer1 = s; break;
+　case 2: statusServer2 = s; break; } // 死活情報が揃ったか？ if((statusServer1 != false)&amp;&amp;(statusServer2 != false)) { if(statusServer1 &lsquo;OK&rsquo;) { alert(&ldquo;Server1: アクセス可能&rdquo;) } else { alert(&ldquo;Server1: アクセス不可&rdquo;) } if(statusServer2 &lsquo;OK&rsquo;) { alert(&ldquo;Server2: アクセス可能&rdquo;) } else { alert(&ldquo;Server2: アクセス不可&rdquo;) } } } ファイル KGTN2016071101.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2428/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -652,7 +658,7 @@ controlArgs.set([ &quot;keyboard&quot;, &quot; 00000409&quot; ]);  なお，ど�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2497/">
+                                      <a href="/posts/new_md/doc2400/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -660,7 +666,7 @@ controlArgs.set([ &quot;keyboard&quot;, &quot; 00000409&quot; ]);  なお，ど�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2497/">[GGH5.X] Windows環境でGGを利用中に操作不能となり，暫くすると利用中のアプリケーションが消えた．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2400/">[Windows] Windows の印刷スプーラーサービスとプリンタードライバーの関係は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -673,19 +679,18 @@ controlArgs.set([ &quot;keyboard&quot;, &quot; 00000409&quot; ]);  なお，ど�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2497/"><i class="far fa-calendar"></i> 2016-06-22</a>
+                                            <a href="/posts/new_md/doc2400/"><i class="far fa-calendar"></i> 2016-08-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061603
-[現象] [GGH5.X] Windows環境でGGを利用中に操作不能となり，暫くすると利用中のアプリケーションが消えた．
-[説明] ネットワークの障害でサーバーとクライアント間の接続が切れた可能性が考えられます．一時的な接続不良で あれば，Ver5.X のクライアントは自動的に再接続を試みます （約2分間） ．なお，セッション再接続機能が有効となるには，クラスタマネージャで Disconnected sessions terminate の値が Never または After ? minutes に設定されている必要があります （注：この設定はGGサーバーの管理者が行います） ．
-ファイル KGTN2016061603.pdf [(68.3 KB)] [kitasp 技術センター, 2016/06/22 12:02]
-KGTN2016061603.jpg
-表示 [(8.62 KB)] [kitasp 技術センター, 2016/06/22 12:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2497/" class="btn btn-template-main">続きを読む</a>
+2016/08/01*
+[番号] 技術ノート KGTN 2016072801
+[現象] [Windows] Windows の印刷スプーラーサービスとプリンタードライバーの関係は？
+[説明] Windows 7 および Windows Server 2008 R2 以前の Windows OS では，スプーラーサービスのプロセス上でプリンタードライバーが動作していました．このため，プリンタードライバーが不安定な状況に陥った場合，プリンタースプーラーが落ちることがありました．
+Windows 7 および Windows Server 2008 R2 またはそれ以降の Windows OS では， Printer Driver Isolation 機能 （プリンタードライバー分離機能） が実装され，スプーラーサービス以外の別プロセス上でプリンタードライバーが動作出来るようになりました．このため，プリンタードライバーが不安定な状況に陥った場合でも，プリンタースプーラーが落ちることを回避出来るようになりました．
+ファイル KGTN2016072801.pdf [(56.7 KB)] [kitasp 技術センター, 2016/08/01 16:23]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2400/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -695,7 +700,7 @@ KGTN2016061603.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2494/">
+                                      <a href="/posts/new_md/doc2484/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -703,7 +708,7 @@ KGTN2016061603.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2494/">[GGH5.X] Windows環境のVer5.0の一般ユーザー向けクライアントは，従来のクライアントとどのような点が違うのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2484/">[GGH4.X-5.X] GGのライセンスは5ユーザー単位での販売ということだが，サーバーAに同時12ユーザー，サーバーBに同時8ユーザーというような構成は出来ないということか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -716,18 +721,19 @@ KGTN2016061603.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2494/"><i class="far fa-calendar"></i> 2016-06-22</a>
+                                            <a href="/posts/new_md/doc2484/"><i class="far fa-calendar"></i> 2016-07-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061607
-[現象] [GGH5.X] Windows環境のVer5.0の一般ユーザー向けクライアントは，従来のクライアントとどのような点が違うのか？
-[説明] Ver4.8までのクライアントは，システムが管理するフォルダ &ldquo;Program Files&rdquo; や &ldquo;Downloaded Program Files&rdquo; にインストールされました．これにより，１回のインストールで，クライアントPCを利用する全ユーザーがクライアントを利用出来るという大きなメリットがありました．その反面，クライアントの更新や削除に管理者の権限が必要となるやや深刻なデメリットもありました．
-Ver5.0のクライアントは，ユーザーのプロファイルの AppData の中にインストールされます．このため，各ユーザーが個別にクライアントをインストールせねばなりませんが，しかしクライアントの更新や削除は各ユーザーが自由に行うことが出来ます．
-ファイル KGTN2016061607.pdf [(61.5 KB)] [kitasp 技術センター, 2016/06/22 13:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2494/" class="btn btn-template-main">続きを読む</a>
+2016/07/01*
+[番号] 技術ノート KGTN 2016062202
+[現象] [GGH4.X-5.X] GGのライセンスは5ユーザー単位での販売ということだが，サーバーAに同時12ユーザー，サーバーBに同時8ユーザーというような構成は出来ないということか？
+[説明] 専用のライセンスサーバーを用意し，そこに同時20ユーザーのライセンスを導入します．サーバーAおよびサーバーBそれぞれが，このライセンスサーバーを利用する設定を行い （ライセンスサーバーの共用） ，サーバーAのクラスターマネージャーで Maximum sessions on this host を12 に設定し，サーバーBのクラスターマネージャーで Maximum sessions on this host を8 に設定することで，ご希望の構成が可能となります．
+ファイル KGTN2016062202.pdf [(78.7 KB)] [kitasp 技術センター, 2016/07/01 16:38]
+KGTN2016062202.jpg
+表示 [(7.32 KB)] [kitasp 技術センター, 2016/07/01 16:38]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2484/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -797,7 +803,7 @@ Ver5.0のクライアントは，ユーザーのプロファイルの AppData �
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

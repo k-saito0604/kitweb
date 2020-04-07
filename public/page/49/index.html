@@ -409,27 +409,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2245/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2084/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2245/">[Windows/PowerShell] PowerShell でコンピューター名を得る方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc2084/">[GGH5.X/Windows] Windows Server 2012 (R2) の環境でGGを利用した時， Microsoft IME の予測変換が学習しない （選択した単語が次回に第一候補として表示されない）．</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-11-02
+                            日付 2017-03-07
                             </p>
                             <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101803
-[現象] [Windows/PowerShell] PowerShell でコンピューター名を得る方法は？
-[説明] CIM （WMI） から取得する方法，環境変数 $Env:COMPUTERNAME から取得する方法， Net.Dns でGetHostName() メソッドを利用する方法， hostname コマンドから取得する方法があります．これらのコマンドのパフォーマンスはそれほど差異がありませんが，他のコマンド （IPアドレスを得るなど） では .NET のパフォーマンスが最も良いようです．
-ファイル KGTN2016101803.pdf [(91.5 KB)] [kitasp 技術センター, 2016/11/02 14:36]
-KGTN2016101803.jpg
-表示 [(13.6 KB)] [kitasp 技術センター, 2016/11/02 14:36]</p>
+2017/03/07*
+[番号] 技術ノート KGTN 2016122701
+[現象] [GGH5.X/Windows] Windows Server 2012 (R2) の環境でGGを利用した時， Microsoft IME の予測変換が学習しない （選択した単語が次回に第一候補として表示されない）．
+[説明] Windows Server 2012 (R2) の Microsoft IME でこの現象を確認しておりますが，GGは個別のIMEに対して特別な処理を行っておらず，ATOK 2016 では予測変換の学習が働くことから， Windows Server 2012 (R2) の Microsoft IME の機能に関する問題だと思われます．従って，対応としては ATOK 2016 等の他の IME を使用するか，またはクライアント側IMEを使用することが考えられます．
+[なお， Google 日本語入力 も予測変換の学習が働きますが，しかし同一ユーザーがコンソールまたはリモートデスクトップ接続でログオン中の状況に限りGG上で日本語入力が可能となるため，一般的には利用することが出来ません．過去の技術ノートで Google 日本語入力 が代替のIMEの候補としておりましたが，この限られた状況でのみ動作するため，これは適切な内容ではありませんでした． ]{.underline}
+ファイル KGTN2016122701.pdf [(50.6 KB)] [kitasp 技術センター, 2017/05/24 16:43]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2245/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2084/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -448,27 +447,29 @@ KGTN2016101803.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2222/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2198/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2222/">[Windows/PowerShell] PowerShell でリモートホストに接続出来ない．もちろん Enable</a></h4>
+                            <h4><a href="/posts/new_md/doc2198/">[GGH5.X] GG上で Google Chrome を利用する場合の注意点は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-11-02
+                            日付 2017-03-07
                             </p>
                             <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101811
-[現象] [Windows/PowerShell] PowerShell でリモートホストに接続出来ない．もちろん Enable-PSRemoting は実行している．
-[説明] 基本的な設定を行っているにも関わらずリモートホストに接続出来ない場合は，ホストの信頼情報が設定されていない可能性が高いと考えられます．次のコマンドを実行して，信頼情報を設定して下さい．この設定を行ってもエラーが発生する場合は， Microsoft アカウントの使用が考えられます．これに該当する時は，ローカルアカウントに切り替えて下さい．
-Set-Item WSMan:localhostClientTrustedHosts -Value *  ファイル KGTN2016101811.pdf [(157 KB)] [kitasp 技術センター, 2016/12/14 17:47]
-KGTN2016101811.jpg
-表示 [(32.7 KB)] [kitasp 技術センター, 2016/12/14 17:47]</p>
+2017/03/07*
+[番号] 技術ノート KGTN 2017011601
+[現象] [GGH5.X] GG上で Google Chrome を利用する場合の注意点は？
+[説明] Google Chrome は，使用するタブが増えるとプロセスも増える傾向が見られますので，各ユーザーが幾つのもタブを使用するとリソース不足が発生する可能性が考えられます．以下の例は，４つのサイトを４つのタブで開いた時の IE （上段） と Google Chrome （下段） のプロセスの状況です．
+ファイル KGTN2017011601.pdf [(105 KB)] [kitasp 技術センター, 2017/03/07 16:15]
+KGTN2017011601-1.jpg
+表示 [(10.8 KB)] [kitasp 技術センター, 2017/03/07 16:15]
+KGTN2017011601-2.jpg
+表示 [(16 KB)] [kitasp 技術センター, 2017/03/07 16:15]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2222/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2198/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -487,25 +488,28 @@ KGTN2016101811.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2239/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2200/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2239/">[Windows/PowerShell] PowerShell でローカルアカウントのパスワードを変更する方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc2200/">[GGH5.X] GG上で実行されるアプリケーションのフォントの品質が良くない．アンチエイリアス機能を有効にする方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-11-02
+                            日付 2017-03-07
                             </p>
                             <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101809
-[現象] [Windows/PowerShell] PowerShell でローカルアカウントのパスワードを変更する方法は？
-[説明] 以下のスクリプトでローカルアカウントのパスワードを変更することが出来ます．
-# パスワードの変更 function ChangePasswd( $UserID, $Password ) { $hostname = hostname [ADSI]$UpdateUser = &quot;WinNT://$HostName/$UserID,User&quot; $UpdateUser.SetPassword( $Password ) $UpdateUser.SetInfo() } $UserID = &quot;wguser901&quot; $Password = &quot;Pass.Word2&quot; ChangePasswd $UserID $Password  ファイル KGTN2016101809.pdf [(54.7 KB)] [kitasp 技術センター, 2016/11/02 14:46]</p>
+2017/03/07*
+[番号] 技術ノート KGTN 2017010401
+[現象] [GGH5.X] GG上で実行されるアプリケーションのフォントの品質が良くない．アンチエイリアス機能を有効にする方法は？
+[説明] GGの既定の設定では，アンチエイリアス機能が無効 （ClearType が無効） になっております．サービス GO-Global Application Publishing Service を停止し，設定ファイル DefaultWorkspaceProperties.xml (*1) をテキストエディタで開き，項目 clearType の値を true に変更 （上書き保存） して下さい．これにより，アンチエイリアス機能が有効 （ClearType が有効） になります．
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; &lt;workspaceproperties version=&quot;1.0&quot;&gt; &lt;property id=&quot;SessionVerification&quot; group=&quot;Miscellaneous&quot; type=&quot;BOOL&quot;&gt; &lt;value&gt;true&lt;/value&gt; &lt;/property&gt; &lt;property id=&quot;clearType&quot; group=&quot;Miscellaneous&quot; type=&quot;BOOL&quot;&gt; &lt;value&gt;false&lt;/value&gt; ← true を指定する &lt;/property&gt;  *1 C:ProgramDataGraphOnDefaultWorkspaceProperties.xml
+ファイル KGTN2017010401.pdf [(90.1 KB)] [kitasp 技術センター, 2017/03/07 15:52]
+KGTN2017010401.jpg
+表示 [(13.4 KB)] [kitasp 技術センター, 2017/03/07 15:52]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2239/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2200/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -524,25 +528,35 @@ KGTN2016101811.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2241/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2195/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2241/">[Windows/PowerShell] PowerShell でローカルアカウントのパスワードを無期限にする方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc2195/">[GGH5.X] クラスターマネージャーの Session Shutdown にある Action の Disconnect と Log off の違いは？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-11-02
+                            日付 2017-03-07
                             </p>
                             <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101807
-[現象] [Windows/PowerShell] PowerShell でローカルアカウントのパスワードを無期限にする方法は？
-[説明] 以下のスクリプトでローカルアカウントのパスワードを無期限にすることが出来ます．
-# パスワードの無期限設定 function DontExpirePasswd( $UserID ) { $hostname = hostname [ADSI]$UpdateUser = &quot;WinNT://$HostName/$UserID,User&quot; $UserFlags = $UpdateUser.Get(&quot;UserFlags&quot;) $UserFlags = $UserFlags -bor 0x10000 $UpdateUser.Put(&quot;UserFlags&quot;, $UserFlags) $UpdateUser.SetInfo() } $UserID = &quot;wguser901&quot; DontExpirePasswd $UserID  ファイル KGTN2016101807.pdf [(56.1 KB)] [kitasp 技術センター, 2016/11/02 14:42]</p>
+2017/03/07*
+[番号] 技術ノート KGTN 2017011901
+[現象] [GGH5.X] クラスターマネージャーの Session Shutdown にある Action の Disconnect と Log off の違いは？
+[説明] Session Shutdown の条件が満たされた時， Log off ではセッションが強制終了されます． Disconnect ではクライアントとの接続が切断されるだけでセッション自体は残ります． 詳細については，下記の例をご覧下さい．
+[Log Off の場合]
+無操作が約１分経過後 （セッションが強制終了）
+[Disconnect の場合]
+無操作が約１分経過後 （クライアントを切断するのみ，セッションが残る）
+ファイル KGTN2017011901.pdf [(168 KB)] [kitasp 技術センター, 2017/03/07 16:27]
+KGTN2017011901-1.jpg
+表示 [(10.8 KB)] [kitasp 技術センター, 2017/03/07 16:27]
+KGTN2017011901-2.jpg
+表示 [(12.1 KB)] [kitasp 技術センター, 2017/03/07 16:27]
+KGTN2017011901-3.jpg
+表示 [(11.2 KB)] [kitasp 技術センター, 2017/03/07 16:27]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2241/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2195/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

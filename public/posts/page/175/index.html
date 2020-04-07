@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1008/">
+                                      <a href="/posts/new_md/doc906/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1008/">[APP] CTRL</a></h2>
+                                    <h2><a href="/posts/new_md/doc906/">[GGH4.X] GGには，どのような管理機能があるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1008/"><i class="far fa-calendar"></i> 2012-06-22</a>
+                                            <a href="/posts/new_md/doc906/"><i class="far fa-calendar"></i> 2012-09-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/06/22*
-[番号] 技術ノート KGTN 2012062201
-[現象] [APP] CTRL-C押下時やサーバ再起動時にコンソールアプリケーションを正常終了させたい．
-[説明] 内容的にはGGと全く関係がありませんが，アプリケーション開発の参考情報としてお答えすると， SEH (Structured Exception Handling) の __try &amp; __finally やPOSIXの signal() 関数ではなく， Windows のAPI SetConsoleCtrlHandler() 関数を使用して処理を行って下さい．弊社エンタープライズオプションの GGSessionMonitor.exe は，この関数を使用して実装しており，再起動時等にも情報が正常に記録されます．
-ファイル KGTN2012062201.pdf [(59.2 KB)] [kitasp 技術センター, 2012/06/22 09:10]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1008/" class="btn btn-template-main">続きを読む</a>
+2012/09/27*
+[番号] 技術ノート KGTN 2012092703
+[現象] [GGH4.X] GGには，どのような管理機能があるのか？
+[説明] GG標準の管理機能はクラスタマネージャと呼ばれ，以下の機能があります．
+サーバ一覧の表示 サーバ単位でのセッション一覧の表示 サーバ単位でのプロセス一覧の表示 サーバ単位での登録 （公開） アプリケーションの一覧表示 サーバ単位での登録 （公開） アプリケーションの登録 サーバ単位での各種オプションの設定
+大規模案件等でシステム全体の管理ツール （JP1, Tivoli, etc&hellip;） が予め決められている場合は，それらに情報を 提供するSDK （拡張パック） を別途ご用意しております．サーバの状態・セッションの状態・セッションの履歴等の情報を，データベースやHTTP/POSTを介してそれらに提供することが出来ます．また，セッションの強制切断・セッションの強制終了・ネットワーク監視等を行うコマンドも含まれています．
+ファイル KGTN2012092703.pdf [(61.4 KB)] [kitasp 技術センター, 2012/09/27 10:14]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc906/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +362,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2707/">
+                                      <a href="/posts/new_md/doc905/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +370,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2707/">[GGW3.2.1/GGH4.X] 障害が発生した時，サーバやOSのベンダーに調査を依頼したところ 「GGの中で障害が発生しているので，GGに問題があると回答があった」 が，その通りなのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc905/">[GGH4.X] Windows クライアントをUSBディスクに入れて，出先のパソコンに接続してGGを利用できるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,19 +383,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2707/"><i class="far fa-calendar"></i> 2012-06-22</a>
+                                            <a href="/posts/new_md/doc905/"><i class="far fa-calendar"></i> 2012-09-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/06/22*
-[番号] 技術ノート KGTN 2012062203
-[現象] [GGW3.2.1/GGH4.X] 障害が発生した時，サーバやOSのベンダーに調査を依頼したところ 「GGの中で障害が発生しているので，GGに問題があると回答があった」 が，その通りなのか？
-[説明] GG上で実行されるアプリケーションは，GGが構築するマルチユーザ環境上で動作するため，メモリダンプ等を解析するとGGのモジュールが障害に関与しているように見えます．しかし，メモリ絡みの問題が発生したケースの多くは， 「アプリケーションの要求に従って」 GGがメモリの獲得や参照を行った時に発生しており，根本的な原因はアプリケーションの不具合やOSの不安定が大部分です．
-ある金融系の案件 （同時数千ユーザ） の事例ですが，ログオンが正常に完了しないという問題が発生し，サーバベンダーがOSベンダーの解析結果を示して 「GO-Global の問題です」 とシステムの運用チームに回答しました．運用チームの担当者はGGの特性を熟知されておりますので，この回答には納得できず，原因の可能性が高そうなADサーバとアンチウイルスソフトの調査を行いました．この結果，アンチウイルスソフトのパターンファイルが切り替わった （サイズが大きくなった） 時点から障害が発生したことが判明し，アンチウイルスソフトのベンダーに調査を依頼しました．ここでも 「恐らくGO-Global の問題です」 と回答があったため，パターンファイルをそれ以前の状態に戻して運用したところ，問題の発生が止まりました．この事実からアンチウイルスソフトに原因がある可能性が高く，アンチウイルスソフトのベンダーに詳細な再調査を依頼したところ，その後１ヶ月ほどでアンチウイルスソフトに不具合があることが分りました．
-この他にも同じような事例が多数あります．問題の解決には，可能な限り運用上の情報を採取することが肝要です．上記の事例では，パターンファイルのサイズの差異に気付かねば，原因がまったく分らず （GGの中には原因が無かったので） ，問題が解決しなかった可能性も考えられます．
-ファイル KGTN2012062203.pdf [(77.8 KB)] [kitasp 技術センター, 2015/10/01 11:42]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2707/" class="btn btn-template-main">続きを読む</a>
+2012/09/27*
+[番号] 技術ノート KGTN 2012092704
+[現象] [GGH4.X] Windows クライアントをUSBディスクに入れて，出先のパソコンに接続してGGを利用できるか？
+[説明] Windows クライアントは比較的小さなアプリケーションで，USBディスクの gg-client.exe をクリックするだけで起動します．特定のサーバへ接続したい場合は，ショートカットを作成してパラメタ （接続先など） を指定するか，またはgg-client.exe をパラメタ付きで起動するアプリケーションを作成するのが良いでしょう．
+ファイル KGTN2012092704.pdf [(49.7 KB)] [kitasp 技術センター, 2012/09/27 10:38]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc905/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -403,7 +403,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1007/">
+                                      <a href="/posts/new_md/doc904/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -411,7 +411,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1007/">[SDK] エンタープライズオプションの GMCheckRaw や GGSessionMonitor はポーリング方式で処理を行っているが，効率的にイベントドリブン方式で処理出来ないのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc904/">[GGW3.2.1/GGH4.X] ライセンス数を越えてGGサーバにログオンしようとしてエラーとなった．接続中の端末の使用を中止したが，やはりログオン出来ない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -424,17 +424,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1007/"><i class="far fa-calendar"></i> 2012-06-22</a>
+                                            <a href="/posts/new_md/doc904/"><i class="far fa-calendar"></i> 2012-09-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/06/22*
-[番号] 技術ノート KGTN 2012062202
-[現象] [SDK] エンタープライズオプションの GMCheckRaw や GGSessionMonitor はポーリング方式で処理を行っているが，効率的にイベントドリブン方式で処理出来ないのか？
-[説明] GMCheckRaw および GGSessionMonitor が使用しているGGのインタフェース （非公開） には，イベントドリブン方式で処理を行うためのコールバック関数が用意されており，弊社でもそのインタフェースの利用を考えました．しかし，セッションの詳細情報がコールバック関数に渡されない等の制約あり，トータルのパフォーマンスを考えるとポーリング方式の方が良いという結論になりました．
-ファイル KGTN2012062202.pdf [(56.3 KB)] [kitasp 技術センター, 2012/06/22 12:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1007/" class="btn btn-template-main">続きを読む</a>
+2012/09/27*
+[番号] 技術ノート KGTN 2012092705
+[現象] [GGW3.2.1/GGH4.X] ライセンス数を越えてGGサーバにログオンしようとしてエラーとなった．接続中の端末の使用を中止したが，やはりログオン出来ない．
+[説明] 「接続中の端末の使用を中止した」 という内容が，もし PW でログオフ （サインアウト） という操作を行わずに，単にIEを閉じる等の操作で強制切断した場合は， 「一時的にセッションが残り」 別ユーザがログオン出来ない可能性があります．これは，IEが閉じられた場合，それが意図した切断か，または意図しないIEの終了か分らないため，GGが 「再接続が可能なように」 セッションを維持するためです．対応としては，セッションを維持しない設定に変更するか，または PW でログオフ （サインアウト） 操作を行うようにして下さい．
+ファイル KGTN2012092705.pdf [(55.3 KB)] [kitasp 技術センター, 2012/09/27 11:33]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc904/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -444,7 +444,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1009/">
+                                      <a href="/posts/new_md/doc907/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -452,7 +452,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1009/">[GGH4.0] iPad Client や Android Client をモバイルで利用中にトンネルに入ってセッションが切れた．このような場合，どのように対応すれば良いか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc907/">[GGW3.2.1/GGH4.X] 保守契約が切れた場合，GGを再インストール出来るか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -465,18 +465,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1009/"><i class="far fa-calendar"></i> 2012-06-21</a>
+                                            <a href="/posts/new_md/doc907/"><i class="far fa-calendar"></i> 2012-09-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/06/21*
-[番号] 技術ノート KGTN 2012062002
-[現象] [GGH4.0] iPad Client や Android Client をモバイルで利用中にトンネルに入ってセッションが切れた．このような場合，どのように対応すれば良いか？
-[説明] GGサーバのクラスタマネージャで Host Options → Session Shutdown → Disconnect sessions terminame の設定を Never または After ?? minutes （??はトンネルを通過するまでの時間よりも長い時間）を設定します．この設定によりトンネルを通過している間もセッションがGGサーバ上に保持され，トンネルを出て無線環境が復旧した直後に当該サーバへ接続することで，このセッション （トンネルに入る直前のセッション） に再接続することが出来ます．なお，セッション再接続機能を利用する場合は，必ず１ユーザ１アカウントでの運用を徹底して下さい．１つのアカウントを複数のユーザが共用する場合，それらを識別出来ないため運用上のトラブルが発生する可能性があります．
-補　足 GGクライアントがコネクションの切断を検出した場合は，下記のような 「再接続を行うか？」 というダイアログが表示されます．この場合は，トンネルを出て無線環境が復旧した直後に Yes をクリックすることで自動的に再接続が行われます．
-ファイル KGTN2012062002.pdf [(114 KB)] [kitasp 技術センター, 2012/06/21 13:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1009/" class="btn btn-template-main">続きを読む</a>
+2012/09/27*
+[番号] 技術ノート KGTN 2012092702
+[現象] [GGW3.2.1/GGH4.X] 保守契約が切れた場合，GGを再インストール出来るか？
+[説明] 全く同じマシンであればGGを再インストール出来ますが，他のマシンや同じマシンであってもマザーボードを交換した場合は再インストール出来ません （正確にはライセンス・ファイルが無効となります） ．なお，同じマシンでディスク装置のみを交換した場合は，再インストールが可能です．
+ファイル KGTN2012092702.pdf [(46.8 KB)] [kitasp 技術センター, 2012/09/27 09:45]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc907/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -486,7 +485,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1011/">
+                                      <a href="/posts/new_md/doc911/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -494,7 +493,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1011/">[GGH4.0] エンタープライズオプションの GMCheckRaw の仕様が変更されると聞いているが，どのような点が変更されるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc911/">[GGH4.X] GGはクライアント （Windows） の画面の解像度に自動追従するのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -507,19 +506,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1011/"><i class="far fa-calendar"></i> 2012-06-20</a>
+                                            <a href="/posts/new_md/doc911/"><i class="far fa-calendar"></i> 2012-09-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/06/20*
-[番号] 技術ノート KGTN 2012060102
-[現象] [GGH4.0] エンタープライズオプションの GMCheckRaw の仕様が変更されると聞いているが，どのような点が変更されるのか？
-[説明] 詳細については未だ何も決まっておりません．現在の GMCheckRaw は収集した結果をテキストファイルへ出力するため逐次処理する必要があり （他にも技術的な理由があります） ，このことが情報収集間隔をあまり短く出来ない原因のひとつとなっております．新しいGMCheckRaw では，収集した結果をデータベースへ出力すること，そしてそのことを利用してボトルネックとなっている処理を最適化すること等で，情報収集間隔を短くし，かつ収集した情報を柔軟かつ容易に活用出来ることを狙っております．
-補足１ 新しいバージョンは GGSessionMonitor という名称になる予定です．クライアントのコンピュータ名とIPアドレスの収集に時間がかかることがあるため （逆引きが存在しない場合に顕著） ，サーバ情報・セッション情報・クライアント情報の収集はそれぞれ非同期　（並列） に行います．α版での計測では，サーバ情報とセッション情報の採取は 100〜200ms で完了しております．
-補足２ GGSessionMonitor はセッションのヒストリも記録するため，ユーザ （セッション） の ログオン・ログオフ・切断・再接続 といった情報を得ることが出来ます．さらに，セッション・クライアント・時間帯等を絞って利用状況を追跡できるため，APSログの調査等も効率的に行うことが可能となります．
-ファイル KGTN2012060102.pdf [(74.3 KB)] [kitasp 技術センター, 2012/06/20 14:36]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1011/" class="btn btn-template-main">続きを読む</a>
+2012/09/26*
+[番号] 技術ノート KGTN 2012092603
+[現象] [GGH4.X] GGはクライアント （Windows） の画面の解像度に自動追従するのか？
+[説明] GGは自動的に，クライアントの画面の解像度に追従します．強制的に描画領域を設定したい場合は，クライアントフレーム機能があります．パラメタで指定したサイズのウインドウ （クライアントフレーム） が先ず表示され，そのクライアントフレームの中にGG上で動作するアプリケーションのウインドウが表示されます．なお，クライアントフレームのサイズは，クライアントの画面の解像度を越えることは出来ません．
+ファイル KGTN2012092603.pdf [(50.4 KB)] [kitasp 技術センター, 2012/09/26 10:20]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc911/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -529,7 +526,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1012/">
+                                      <a href="/posts/new_md/doc910/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -537,7 +534,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1012/">[GGW3.2.1/GGH4.0] GGのセッションは，HTTP/HTTPSとは異なり利用開始から利用終了までコネクションを張り続けるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc910/">[GGH4.X] クライアントフレームの背景にビットマップを表示したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -550,17 +547,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1012/"><i class="far fa-calendar"></i> 2012-06-20</a>
+                                            <a href="/posts/new_md/doc910/"><i class="far fa-calendar"></i> 2012-09-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/06/20*
-[番号] 技術ノート KGTN 2012062003
-[現象] [GGW3.2.1/GGH4.0] GGのセッションは，HTTP/HTTPSとは異なり利用開始から利用終了までコネクションを張り続けるのか？
-[説明] はい，その通りです． 「上り」 ではマウスやキーボード操作の情報を遅滞なく伝える必要があり， 「下り」 では画面の更新 （描画） を遅滞なく伝える必要があります．アプリケーションのズムーズな操作感を実現するには，このようにコネクションを張り続ける必要があります．
-ファイル KGTN2012062003.pdf [(48.9 KB)] [kitasp 技術センター, 2012/06/20 11:57]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1012/" class="btn btn-template-main">続きを読む</a>
+2012/09/26*
+[番号] 技術ノート KGTN 2012092604
+[現象] [GGH4.X] クライアントフレームの背景にビットマップを表示したい．
+[説明] クライアントフレームの機能には背景にビットマップを表示する機能はありませんが， Windows の壁紙を設定する手順 （処理） をログオンスクリプトの中で行えば，背景にビットマップを表示することが可能です．時期は未定ですが，拡張パッケージの中にこの機能を行うプログラムを追加する予定です．
+ファイル KGTN2012092604.pdf [(310 KB)] [kitasp 技術センター, 2012/09/26 13:02]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc910/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -570,7 +567,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1013/">
+                                      <a href="/posts/new_md/doc909/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -578,7 +575,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1013/">[GGW3.2.1/GGH4.0] クライアントにGGと他のシンクライアントソリューションのソフトウエア （クライアント） をインストールしても問題ないか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc909/">[GGH4.X] サーバの設定情報を保持するXMLファイルが存在するパスは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -591,17 +588,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1013/"><i class="far fa-calendar"></i> 2012-06-20</a>
+                                            <a href="/posts/new_md/doc909/"><i class="far fa-calendar"></i> 2012-09-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/06/20*
-[番号] 技術ノート KGTN 2012062001
-[現象] [GGW3.2.1/GGH4.0] クライアントにGGと他のシンクライアントソリューションのソフトウエア （クライアント） をインストールしても問題ないか？
-[説明] 現時点では同じクライアントにGGと他のシンクライアントソリューションのソフトウエア （クライアント） をインストールして，障害が発生したという報告はありません．なお，シンクライアントソリューションのソフトウエアの中には多くの通信帯域幅を使用するものがあり，そのような状況に於いてはGGの反応が遅くなる等の問題を引き起こす可能性があります．当然のことながら，これはGGの問題ではなく他シンクライアントソリューションの問題ですので，通信帯域幅を絞る等の対応をお願いします．
-ファイル KGTN2012062001.pdf [(50.9 KB)] [kitasp 技術センター, 2012/06/20 11:07]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1013/" class="btn btn-template-main">続きを読む</a>
+2012/09/26*
+[番号] 技術ノート KGTN 2011100701
+[現象] [GGH4.X] サーバの設定情報を保持するXMLファイルが存在するパスは？
+[説明] サーバの設定情報を保持するXMLファイルのパスは，以下のレジストリに記録されています．
+HKLM¥SOFTWARE¥GraphOn¥GO-Global¥AppServer HostConfig REG_SZ C:¥Documents and Settings¥All Users¥Application Data¥GraphOn¥config.xml
+他の情報も config.xml が存在するフォルダの中にあります．
+ファイル KGTN2011100701.pdf [(53.2 KB)] [kitasp 技術センター, 2012/09/26 13:36]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc909/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -611,7 +610,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1015/">
+                                      <a href="/posts/new_md/doc908/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -619,7 +618,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1015/">[GGW3.2.1/GGH4.0] クライアントドライブ機能で，クライアントのCドライブをGGサーバ上でもCドライブとして利用したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc908/">[GGW3.2.1/GGH4.X] 検証によって　CPU = 1core, MEM = 4GB で10ユーザ利用出来ることが分った．CPU = 4core, MEM = 16GB で40ユーザ利用出来ると考えて良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -632,17 +631,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1015/"><i class="far fa-calendar"></i> 2012-06-19</a>
+                                            <a href="/posts/new_md/doc908/"><i class="far fa-calendar"></i> 2012-09-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/06/19*
-[番号] 技術ノート KGTN 2012061901
-[現象] [GGW3.2.1/GGH4.0] クライアントドライブ機能で，クライアントのCドライブをGGサーバ上でもCドライブとして利用したい．
-[説明] 一般的なインストールではGGサーバのシステムドライブがCドライブになるため，クライアントのCドライブをGGサーバ上でCドライブとしてアクセスすることは出来ません．弊社はその手順を提示することは出来ませんが，あるユーザ様でGGサーバのシステムドライブをDドライブになるようにインストールし （つまりCドライブを使用しない） ，クライアントのCドライブをGGサーバのCドライブに割り当てた事例があります．従って，技術的に完全に不可能ではありませんが，しかしアプリケーションによってはシステムドライブとしてCドライブを前提としているものもあり，このような環境ではアプリケーションが正常に動作しない可能性もあります．
-ファイル KGTN2012061901.pdf [(50.4 KB)] [kitasp 技術センター, 2012/06/19 15:26]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1015/" class="btn btn-template-main">続きを読む</a>
+2012/09/26*
+[番号] 技術ノート KGTN 2012092701
+[現象] [GGW3.2.1/GGH4.X] 検証によって　CPU = 1core, MEM = 4GB で10ユーザ利用出来ることが分った．CPU = 4core, MEM = 16GB で40ユーザ利用出来ると考えて良いか？
+[説明] いいえ，プロセッサやメモリを増やしても，Windowsのオーバーヘッドや周辺のリソースネック等により性能がリニアに伸びることはありません．また，多数のユーザを１台のサーバで運用した場合，Windowsが不安定になると全てのユーザが影響を受けることになり，運用コストを含めたトータルコストがより増大する可能性もあります．このようなケースでは，１台の物理サーバの上に，複数の仮想サーバ （GGサーバ） を配置するのが最近の傾向です．システムの構成決定に当たっては，運用や保守に要するコスト （特に障害発生時等に生じる大きなコスト） も含めたトータルコストで判断なさることを強くお勧めします．
+補　足 データベースサーバやウエッブサーバのように限られたプロセスが定常的に動作するようなシステムでは Windows も安定しているようですが，多数のユーザがアプリケーションの起動と終了を頻繁に繰り返すアプリケーションサーバではメモリの断片化等が発生し易く，Windows が不安定な状況に陥ることがあります．複数のサーバに分けることで，このような問題の発生の可能性が軽減されます．
+ファイル KGTN2012092701.pdf [(68.8 KB)] [kitasp 技術センター, 2012/09/27 07:34]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc908/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -652,7 +652,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1016/">
+                                      <a href="/posts/new_md/doc912/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -660,7 +660,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1016/">[GGH4.0] クライアント上の特定のパスをGG上のクライアントドライブとして割り当てたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc912/">[Win7/WS2008] 壁紙を変更する API はあるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -673,17 +673,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1016/"><i class="far fa-calendar"></i> 2012-06-18</a>
+                                            <a href="/posts/new_md/doc912/"><i class="far fa-calendar"></i> 2012-09-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/06/18*
-[番号] 技術ノート KGTN 2012061802
-[現象] [GGH4.0] クライアント上の特定のパスをGG上のクライアントドライブとして割り当てたい．
-[説明] クライアント上の特定のパスをGG上のクライアントドライブとして割り当てたいという気持ちは分らないでもありませんが，しかし運用レベルで考えれば 「GGにログオンする全てのクライアントPCについて，必ず特定のパス （より詳しく言えば同じ役割を持つパス） が存在すること」 が保証されませんので，そのような機能を製品として実装することは困難です．
-ファイル KGTN2012061802.pdf [(49.2 KB)] [kitasp 技術センター, 2012/06/18 12:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1016/" class="btn btn-template-main">続きを読む</a>
+2012/09/26*
+[番号] 技術ノート KGTN 2012092602
+[現象] [Win7/WS2008] 壁紙を変更する API はあるのか？
+[説明] Windows の関数 SystemParametersInfo() を使用することで，壁紙を変更することが可能です．システムパラメタには SPI_SETDESKWALLPAPER を指定します．単にビットマップのパスを渡すだけでは十分ではなく，レジストリ HKCU¥Contril Panel¥Desktop の WallpaperStyle および TileWallpaper を事前にセットする必要があります．
+ファイル KGTN2012092602.pdf [(54.5 KB)] [kitasp 技術センター, 2012/09/26 10:00]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc912/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -693,7 +693,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1017/">
+                                      <a href="/posts/new_md/doc913/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -701,7 +701,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1017/">[GGW3.2.1] GGW3.2.1 の今後のサポートについて知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc913/">[Win7/WS2008] コントロールパネルの 「個人設定」 を開くコマンドは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -714,17 +714,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1017/"><i class="far fa-calendar"></i> 2012-06-18</a>
+                                            <a href="/posts/new_md/doc913/"><i class="far fa-calendar"></i> 2012-09-25</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/06/18*
-[番号] 技術ノート KGTN 2012061801
-[現象] [GGW3.2.1] GGW3.2.1 の今後のサポートについて知りたい．
-[説明] GGW3.2.1 は，現時点では Mainstream Maintenance Phase (20-Jun-07〜) にありますが，近日中にExtended Maintenance Phase へ移行の予定です．このようなことから， 「新しいパッチはリリースされない」 と非公式な連絡が入っております．
-ファイル KGTN2012061801.pdf [(51.1 KB)] [kitasp 技術センター, 2012/06/18 09:05]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1017/" class="btn btn-template-main">続きを読む</a>
+2012/09/25*
+[番号] 技術ノート KGTN 2012092601
+[現象] [Win7/WS2008] コントロールパネルの 「個人設定」 を開くコマンドは？
+[説明] 下記のコマンドでコントロールパネルの 「個人設定」 を開くことが出来ます．
+control.exe /name Microsoft.Personalization
+ファイル KGTN2012092601.pdf [(44.1 KB)] [kitasp 技術センター, 2012/09/26 08:18]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc913/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -794,7 +795,7 @@
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

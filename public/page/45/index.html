@@ -409,29 +409,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2152/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2178/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2152/">[GGH5.X] クライアント印刷機能で印刷されない．どのような手順で調べれば良いか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2178/">[GGH5.X/ExPack] 拡張パックの GGEasyLog を介して Google Chrome を起動する場合、プロキシサーバーを指定する方法は？</a></h4>
                             <p class="author-category">
                             
                             日付 2017-04-07
                             </p>
                             <p class="intro">*技術ノート
 2017/04/07*
-[番号] 技術ノート KGTN 2017031601
-[現象] [GGH5.X] クライアント印刷機能で印刷されない．どのような手順で調べれば良いか？
-[説明] 以下の手順でスクリーンショットを撮ってください．
- クライアントPCの 「ディバイスとプリンター」 の 「プリンター」 のスクリーンショットを撮ってください．  そのプリンターの印刷ジョブの画面 （印刷/送信待ち一覧） を開いて，スクリーンショットを撮ってください．  メニューの [プリンター] → [一時停止] を選択してください．  GGにログオンし，プログラムウインドウ → [File] → [Printers] を開き，スクリーンショットを撮ってください．  印刷するプリンターがない場合 [Add] をクリックし，スクリーンショットを撮ってください．プリンターがある場合は 7 へ進んでください．  印刷するプリンターを選択後に [Add] をクリックして，スクリーンショットを撮ってください．  メモ帳でそのプリンターに印刷してください （印刷前にスクリーンショットを撮ってください） ．    印刷後に，クライアント側の印刷ジョブの画面に帳票（印刷ジョブ）が蓄積されるかどうか確認してください．
-ファイル KGTN2017031601.pdf [(220 KB)] [kitasp 技術センター, 2017/04/07 15:06]
-KGTN2017031601-1.jpg
-表示 [(10.5 KB)] [kitasp 技術センター, 2017/04/07 15:06]
-KGTN2017031601-2.jpg</p>
+[番号] 技術ノート KGTN 2017021101
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyLog を介して Google Chrome を起動する場合、プロキシサーバーを指定する方法は？
+[説明] 設定ファイルに GGEasyLog.ini で、以下のような設定を行ってください。
+[CH] path = C:Program Files (x86)GoogleChromeApplicationchrome.exe args = --proxy-server=xxx.xxx.xxx.xxx:8080  ファイル KGTN2017021101.pdf [(215 KB)] [kitasp 技術センター, 2017/04/07 11:59]
+KGTN2017021101.jpg
+表示 [(42 KB)] [kitasp 技術センター, 2017/04/07 11:59]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2152/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2178/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -450,36 +448,25 @@ KGTN2017031601-2.jpg</p>
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2151/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2156/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2151/">[GGH5.X] クライアント印刷機能で， UPD で生成されるPDFファイルがクライアント側に届いているかどうか確認する方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc2156/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor で振分けられた時と直接接続した時とでは，ブラウザでファイルをアップロードする時のパフォーマンスが違う．</a></h4>
                             <p class="author-category">
                             
                             日付 2017-04-07
                             </p>
                             <p class="intro">*技術ノート
 2017/04/07*
-[番号] 技術ノート KGTN 2017031602
-[現象] [GGH5.X] クライアント印刷機能で， UPD で生成されるPDFファイルがクライアント側に届いているかどうか確認する方法は？
-[説明] UPD で生成されたPDFファイルは，下記のフォルダーへ （作業フォルダー） 転送されますので，そのフォルダーをエクスプローラーで開いてください．このフォルダーには作業ファイルが多数ありますので，できれば 「削除可能なファイル」 をすべて削除してください （削除は確認を容易にするためです） ．
-C:UsersAppDataLocalTemp
-次に，GGサーバーにログオンし，メモ帳等で印刷してください．
-印刷ボタンをクリックした直後に，作業フォルダー中に 「一瞬」 PDFファイルとログファイルが現れるかどうかを確認してください．なお，ファイル名は次の通りです．
-&lt;GGサーバー上でのプリンタ名&gt; - Job #???.pdf &lt;GGサーバー上でのプリンタ名&gt; - Job #???.log
-PDFファイルとログファイルが 「一瞬」 現れれば，PDFファイルはクライアント側に届いています．
-ファイル KGTN2017031602.pdf [(272 KB)] [kitasp 技術センター, 2017/04/07 15:11]
-KGTN2017031602-1.jpg
-表示 [(30.5 KB)] [kitasp 技術センター, 2017/04/07 15:11]
-KGTN2017031602-2.jpg
-表示 [(15.1 KB)] [kitasp 技術センター, 2017/04/07 15:11]
-KGTN2017031602-3.jpg
-表示 [(36 KB)] [kitasp 技術センター, 2017/04/07 15:11]</p>
+[番号] 技術ノート KGTN 2017031101
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor で振分けられた時と直接接続した時とでは，ブラウザでファイルをアップロードする時のパフォーマンスが違う．
+[説明] GGEasyMonitor の振分け機能は，GGクライアントへ接続先のGGサーバーのIPアドレスを与えるのみで，GGクライアント～GGサーバー間の通信は 「直接」 行われます．従って，振分け機能を利用した時も直接接続した時も通信経路は全く同じで，ブラウザでファイルをアップロードする時にパフォーマンスが違うことは考えられません．可能性があるとすれば，接続したGGサーバーの差異，アップロード時に接続したウエッブサーバーの差異 （同じURLでもウエッブサーバーが異なる場合があります） ，時間の差異等が考えられます．
+ファイル KGTN2017031101.pdf [(57.8 KB)] [kitasp 技術センター, 2017/04/07 14:36]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2151/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2156/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -498,32 +485,25 @@ KGTN2017031602-3.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2143/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2160/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2143/">[GGH5.X] クラスターマネージャーでセッションを強制終了 （Terminate） しようとしたが，セッションが終了しなかった．何を調べれば良いか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2160/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor で振分けを行っているが，１台のGGサーバーが監視画面では正常だが実際には接続できなくなった．そのGGサーバーを切り離す簡単な方法は？</a></h4>
                             <p class="author-category">
                             
                             日付 2017-04-07
                             </p>
                             <p class="intro">*技術ノート
 2017/04/07*
-[番号] 技術ノート KGTN 2017033001
-[現象] [GGH5.X] クラスターマネージャーでセッションを強制終了 （Terminate） しようとしたが，セッションが終了しなかった．何を調べれば良いか？
-[説明] どのような状況でセッションの強制終了に失敗したのかGraphOn社で調査する必要がありますので，次の情報の採取をお願いします．
- 強制終了に失敗したユーザーのID APS.EXE のダンプファイル SRW のZIPファイル  上記２のダンプファイルは，タスクマネージャーを起動し，プロセスタブで &ldquo;GraphOn GO-Global Application Publishing Service&rdquo; を選択し，右クリックで 「ダンプ ファイルの作成」 を選択してください．
-上記３のZIPファイルは，スタートメニューで [GraphOn GO-Global] → [Support Request Wizard] を選択してください． Support Request Wizard の画面では，すべて既定のままの状態で操作を行ってください． ZIP ファイルは，デスクトップ上に作成されます．
-ファイル KGTN2017033001.pdf [(479 KB)] [kitasp 技術センター, 2017/04/07 17:24]
-KGTN2017033001-1.jpg
-表示 [(19.9 KB)] [kitasp 技術センター, 2017/04/07 17:24]
-KGTN2017033001-2.jpg
-表示 [(7.18 KB)] [kitasp 技術センター, 2017/04/07 17:24]
-KGTN2017033001-3.jpg</p>
+[番号] 技術ノート KGTN 2017031001
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor で振分けを行っているが，１台のGGサーバーが監視画面では正常だが実際には接続できなくなった．そのGGサーバーを切り離す簡単な方法は？
+[説明] 障害が発生したGGサーバーのサービス GGEasyMonitor-Service を停止してください．これにより，GGサーバーからの監視情報の送信が停止しますので，振分けサーバーは異常を検知し　「そのGGサーバーへの振分け」 を停止します．なお，GGサーバーとしては動作していますので，切り離した後にGGサーバーとしての動作状況を調査することができます．
+ファイル KGTN2017031001.pdf [(59.9 KB)] [kitasp 技術センター, 2017/04/07 13:59]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2143/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2160/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -542,28 +522,31 @@ KGTN2017033001-3.jpg</p>
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2164/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2166/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2164/">[GGH5.X] 動的な画像を含むウエッブページを表示するとブラウザの反応が極端に悪くなる．</a></h4>
+                            <h4><a href="/posts/new_md/doc2166/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor の開始 （停止） するため，スタートメニューの 1) サービスを開始 （2） サービスを停止） をクリックしたが機能しない．</a></h4>
                             <p class="author-category">
                             
                             日付 2017-04-07
                             </p>
                             <p class="intro">*技術ノート
 2017/04/07*
-[番号] 技術ノート KGTN 2017030302
-[現象] [GGH5.X] 動的な画像を含むウエッブページを表示するとブラウザの反応が極端に悪くなる．
-[説明] GGの通信プロトコル Rapid-X は，サーバーとクライアント間の送受信データを高い効率で圧縮/伸張するようになっております．通常のアプリケーションでは，この圧縮/伸張機能が上手く働き，多くのユーザー （セッション） が十分なパフォーマンスで動作することが出来ます．動的な画像を表示するウエッブページでは大量のデータが送受信されますが， Rapid-X の下ではその大量のデータに対しても圧縮/伸張機能が働くため，CPU負荷が高まるとともに，処理時間による遅延も発生します．このような場合，下記の設定を行うことでパフォーマンスがかなり向上します． また，色深度を16ビットにすることで，さらにパフォーマンスが向上します．
-With the current product, the following configuration changes will provide the best performance for video: Add the following registry values: HKLMSOFTWAREGraphOnGO-GlobalAppServerClientOffscreenSurfaces = 0 HKLMSOFTWAREGraphOnGO-GlobalAppServerDisplayBufferMinDrainRate = 500 (decimal) HKLMSOFTWAREGraphOnGO-GlobalAppServerDisplayBufferThreshold = 0x00010000 Make the following changes in the HostProperties.xml file: ClientProcessingBatch = 1 ClientProcessingThrottleV2 = 1  【未適用かつ色深度32ビット】
-【適用済かつ色深度32ビット】
-【適用済かつ色深度16ビット】
-ファイル KGTN2017030302.pdf [(1 MB)] [kitasp 技術センター, 2017/04/07 13:46]</p>
+[番号] 技術ノート KGTN 2017030201
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor の開始 （停止） するため，スタートメニューの &ldquo;1) サービスを開始&rdquo; （&ldquo;2） サービスを停止&rdquo;） をクリックしたが機能しない．
+[説明] GGEasyMonitor のサービスを開始 （停止） する場合は， 「管理者として実行」 で行ってください．
+Windows Server 2012 R2
+Windows 10 Pro
+ファイル KGTN2017030201.pdf [(259 KB)] [kitasp 技術センター, 2017/04/07 13:19]
+KGTN2017030201-1.jpg
+表示 [(45.8 KB)] [kitasp 技術センター, 2017/04/07 13:20]
+KGTN2017030201-2.jpg
+表示 [(33 KB)] [kitasp 技術センター, 2017/04/07 13:20]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2164/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2166/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

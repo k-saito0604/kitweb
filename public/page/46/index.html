@@ -409,29 +409,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2198/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2162/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2198/">[GGH5.X] GG上で Google Chrome を利用する場合の注意点は？</a></h4>
+                            <h4><a href="/posts/new_md/doc2162/">[GGH5.X/Windows] IE のタブを利用して複数のホームページを開いた場合，メモリの使用量はどうなるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2017-03-07
+                            日付 2017-04-07
                             </p>
                             <p class="intro">*技術ノート
-2017/03/07*
-[番号] 技術ノート KGTN 2017011601
-[現象] [GGH5.X] GG上で Google Chrome を利用する場合の注意点は？
-[説明] Google Chrome は，使用するタブが増えるとプロセスも増える傾向が見られますので，各ユーザーが幾つのもタブを使用するとリソース不足が発生する可能性が考えられます．以下の例は，４つのサイトを４つのタブで開いた時の IE （上段） と Google Chrome （下段） のプロセスの状況です．
-ファイル KGTN2017011601.pdf [(105 KB)] [kitasp 技術センター, 2017/03/07 16:15]
-KGTN2017011601-1.jpg
-表示 [(10.8 KB)] [kitasp 技術センター, 2017/03/07 16:15]
-KGTN2017011601-2.jpg
-表示 [(16 KB)] [kitasp 技術センター, 2017/03/07 16:15]</p>
+2017/04/07*
+[番号] 技術ノート KGTN 2017030801
+[現象] [GGH5.X/Windows] IE のタブを利用して複数のホームページを開いた場合，メモリの使用量はどうなるのか？
+[説明] 以下のメモリの使用量は，実測値になります．
+ タブ1つで about:blank を表示した状態 → 27MB タブ1つで沖縄県のホームページを表示した状態 → 54MB タブ1つで石垣市のホームページを表示した状態 → 44MB タブ1つで宜野湾市のホームページを表示した状態 → 62MB タブ2つで沖縄県と石垣市のホームページを表示した状態 → 93MB タブ3つで沖縄県と石垣市と宜野湾市のホームページを表示した状態 → 148MB  この結果から，１つの IE ＆タブ3つでホームページを開いた場合のメモリの使用量は，３つの IE で別々にホームページを開いた場合のメモリの使用量とあまり変わらないという結果になりました．
+このことから， 「１つの IE だから負荷が軽い」 と考えてタブを多く開くと，メモリ不足が発生する可能性があります．１つのサーバーを多くのユーザーで利用 （共用） するSBC環境では，ブラウザのタブを多く開かないような利用を心掛けることが大切です．
+ファイル KGTN2017030801.pdf [(61.1 KB)] [kitasp 技術センター, 2017/04/07 13:51]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2198/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2162/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -450,28 +448,27 @@ KGTN2017011601-2.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2200/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2161/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2200/">[GGH5.X] GG上で実行されるアプリケーションのフォントの品質が良くない．アンチエイリアス機能を有効にする方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc2161/">[GGH5.X/Windows] IE11 のタブの数を制限する方法はあるか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2017-03-07
+                            日付 2017-04-07
                             </p>
                             <p class="intro">*技術ノート
-2017/03/07*
-[番号] 技術ノート KGTN 2017010401
-[現象] [GGH5.X] GG上で実行されるアプリケーションのフォントの品質が良くない．アンチエイリアス機能を有効にする方法は？
-[説明] GGの既定の設定では，アンチエイリアス機能が無効 （ClearType が無効） になっております．サービス GO-Global Application Publishing Service を停止し，設定ファイル DefaultWorkspaceProperties.xml (*1) をテキストエディタで開き，項目 clearType の値を true に変更 （上書き保存） して下さい．これにより，アンチエイリアス機能が有効 （ClearType が有効） になります．
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; &lt;workspaceproperties version=&quot;1.0&quot;&gt; &lt;property id=&quot;SessionVerification&quot; group=&quot;Miscellaneous&quot; type=&quot;BOOL&quot;&gt; &lt;value&gt;true&lt;/value&gt; &lt;/property&gt; &lt;property id=&quot;clearType&quot; group=&quot;Miscellaneous&quot; type=&quot;BOOL&quot;&gt; &lt;value&gt;false&lt;/value&gt; ← true を指定する &lt;/property&gt;  *1 C:ProgramDataGraphOnDefaultWorkspaceProperties.xml
-ファイル KGTN2017010401.pdf [(90.1 KB)] [kitasp 技術センター, 2017/03/07 15:52]
-KGTN2017010401.jpg
-表示 [(13.4 KB)] [kitasp 技術センター, 2017/03/07 15:52]</p>
+2017/04/07*
+[番号] 技術ノート KGTN 2017030901
+[現象] [GGH5.X/Windows] IE11 のタブの数を制限する方法はあるか？
+[説明] IE11 でタブの数を制限する方法はありません．グループポリシーでタブ・ブラウスを無効化する方法がありますが，しかしながら IE11 は対象外 （IE7～IE10が対象） です．
+ファイル KGTN2017030901.pdf [(298 KB)] [kitasp 技術センター, 2017/04/07 13:53]
+KGTN2017030901.jpg
+表示 [(66 KB)] [kitasp 技術センター, 2017/04/07 13:58]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2200/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2161/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -490,35 +487,28 @@ KGTN2017010401.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2195/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2149/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2195/">[GGH5.X] クラスターマネージャーの Session Shutdown にある Action の Disconnect と Log off の違いは？</a></h4>
+                            <h4><a href="/posts/new_md/doc2149/">[GGH5.X/Windows] Windows Server 2012 R2 の Administrator のアカウント名を変更したい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2017-03-07
+                            日付 2017-04-07
                             </p>
                             <p class="intro">*技術ノート
-2017/03/07*
-[番号] 技術ノート KGTN 2017011901
-[現象] [GGH5.X] クラスターマネージャーの Session Shutdown にある Action の Disconnect と Log off の違いは？
-[説明] Session Shutdown の条件が満たされた時， Log off ではセッションが強制終了されます． Disconnect ではクライアントとの接続が切断されるだけでセッション自体は残ります． 詳細については，下記の例をご覧下さい．
-[Log Off の場合]
-無操作が約１分経過後 （セッションが強制終了）
-[Disconnect の場合]
-無操作が約１分経過後 （クライアントを切断するのみ，セッションが残る）
-ファイル KGTN2017011901.pdf [(168 KB)] [kitasp 技術センター, 2017/03/07 16:27]
-KGTN2017011901-1.jpg
-表示 [(10.8 KB)] [kitasp 技術センター, 2017/03/07 16:27]
-KGTN2017011901-2.jpg
-表示 [(12.1 KB)] [kitasp 技術センター, 2017/03/07 16:27]
-KGTN2017011901-3.jpg
-表示 [(11.2 KB)] [kitasp 技術センター, 2017/03/07 16:27]</p>
+2017/04/07*
+[番号] 技術ノート KGTN 2017032101
+[現象] [GGH5.X/Windows] Windows Server 2012 R2 の Administrator のアカウント名を変更したい．
+[説明] 次の手順で Administrator のアカウントを変更してください．
+[管理ツール] → [ローカル セキュリティ ポリシー] → [ローカル ポリシー] → [セキュリティ オプション] → [アカウント: Administrator アカウント名の変更] を選択し，新たなアカウント名を入力し， [OK] をクリックしてください．最後にサーバーを再起動し，新たなアカウント名でログオンできることを確認してください．なお，パスワードはこれまでと同じです．
+ファイル KGTN2017032101.pdf [(49.5 KB)] [kitasp 技術センター, 2017/04/07 16:52]
+KGTN2017032101.jpg
+表示 [(6.44 KB)] [kitasp 技術センター, 2017/04/07 16:52]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2195/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2149/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -537,32 +527,35 @@ KGTN2017011901-3.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2199/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2148/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2199/">[GGH5.X] 二要素認証を行いたいが，最初の認証機能からGGへログオン情報を渡す方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc2148/">[GGH5.X/Windows] Windows Server 2012 R2 のリモートデスクトップ接続のポート番号を変更したい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2017-03-07
+                            日付 2017-04-07
                             </p>
                             <p class="intro">*技術ノート
-2017/03/07*
-[番号] 技術ノート KGTN 2017011101
-[現象] [GGH5.X] 二要素認証を行いたいが，最初の認証機能からGGへログオン情報を渡す方法は？
-[説明] GGへログオン情報を渡す方法として，次の３つインターフェイスがあります．
-１．専用クライアントのパラメタでログオン情報を渡す方法
-gg-client.exe -h &lt;GG サーバー&gt; -u &lt;ユーザーID&gt; -p &lt;パスワード&gt;  ２．GGEasyLogon のアカウント情報ダイアログにログオン情報を渡す方法
-３．GGEasyMonitor のログオン画面にログオン情報を渡す
-ファイル KGTN2017011101.pdf [(90.5 KB)] [kitasp 技術センター, 2017/03/07 16:13]
-KGTN2017011101-1.jpg
-表示 [(9.48 KB)] [kitasp 技術センター, 2017/03/07 16:13]
-KGTN2017011101-2.jpg
-表示 [(11.9 KB)] [kitasp 技術センター, 2017/03/07 16:13]</p>
+2017/04/07*
+[番号] 技術ノート KGTN 2017032102
+[現象] [GGH5.X/Windows] Windows Server 2012 R2 のリモートデスクトップ接続のポート番号を変更したい．
+[説明] 次の手順でリモートデスクトップ接続のポート番号を変更してください．
+  レジストリエディタでリモートデスクトップ接続のポート番号を変更します （この例では9491） ．
+HKLMSYSTEMCurrentControlSetControlTerminal ServerWinStationsRDP-Tcp PortNumber DWORD (新しいポーt 番号)
+  Windowsファイアウォールで新しいポート番号の受信規則 （TCP許可） を追加します．  ファイル KGTN2017032102.pdf [(487 KB)] [kitasp 技術センター, 2017/04/07 17:13]
+KGTN2017032102-1.jpg
+表示 [(17.5 KB)] [kitasp 技術センター, 2017/04/07 17:13]
+KGTN2017032102-2.jpg
+表示 [(18.3 KB)] [kitasp 技術センター, 2017/04/07 17:14]
+KGTN2017032102-3.jpg
+表示 [(19.9 KB)] [kitasp 技術センター, 2017/04/07 17:14]
+KGTN2017032102-4.jpg
+表示 [(14.9 KB)] [kitasp 技術センター, 2017/04/07 17:14]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2199/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2148/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

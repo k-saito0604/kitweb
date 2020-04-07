@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1712/">
+                                      <a href="/posts/new_md/doc1565/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1712/">開発したアプリケーションで，ローカルドライブのファイルにアクセスすると問題ないが，クライアントドライブのファイルにアクセスするとローカルに比べて非常に遅い．なお，エクスプローラでクライアントドライブのファイルにアクセスした場合は，このような現象は見られない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1565/">クライアントドライブ機能を使い，サーバ側からクライアント側へファイルをコピーした時，クライアント側でファイルがロックされ削除できない等の現象が発生することがある．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,18 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1712/"><i class="far fa-calendar"></i> 2010-06-30</a>
+                                            <a href="/posts/new_md/doc1565/"><i class="far fa-calendar"></i> 2010-11-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/30*
-[番号] 技術ノート KGTN 2010070101
-[現象] 開発したアプリケーションで，ローカルドライブのファイルにアクセスすると問題ないが，クライアントドライブのファイルにアクセスするとローカルに比べて非常に遅い．なお，エクスプローラでクライアントドライブのファイルにアクセスした場合は，このような現象は見られない．
-[説明] クライアントドライブのファイルにアクセスする場合，その処理 （機能） が呼び出すWindowsのAPIを 「ネットワークを介して」 クライアント側へ転送し，クライアント側で実行し，そしてその結果を 「ネットワークを介して」 サーバ側へ返します．１つの処理は多数のAPIを呼び出しますので，その数に比例してネットワークを介した処理が増加し，結果的にローカルドライブに比べ速度が低下することがあります．このような場合は，クライアントドライブにあるファイルを一旦ローカルドライブにコピーし，アプリケーションはコピーしたファイルを参照するのが良い方法です．
-また，ファイルオープンのダイアログでプレビュー機能が実装されているアプリケーションでは，その処理の中でクライアントドライブにあるファイル （の内容） を読むことになりますので，ローカルドライブに比べ速度がかなり低下します．このような場合は，プレビュー機能を使用しないような仕様変更等をご検討下さい．
-ファイル KGTN2010070101.pdf [(58.1 KB)] [kitasp 技術センター, 2010/07/01 08:30]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1712/" class="btn btn-template-main">続きを読む</a>
+2010/11/02*
+[番号] 技術ノート KGTN 2009091502
+[現象] クライアントドライブ機能を使い，サーバ側からクライアント側へファイルをコピーした時，クライアント側でファイルがロックされ削除できない等の現象が発生することがある．
+[説明] サイズが19MBを超えるファイルについては，クライアントドライブ機能の動作は保障できません．この問題は回線速度やファイルの内容 （テキスト・バイナリ） に依存せず，ファイルサイズのみに依存して発生します．ファイルがロックされた場合は，Windowsクライアントでは ggw.exe を終了させることでロックが解除されます．本件はGraphOn社も障害として認識しており，バージョンアップで修正しております．
+ファイル KGTN2009091502.pdf [(54.3 KB)] [kitasp 技術センター, 2010/11/02 16:20]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1565/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -361,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1716/">
+                                      <a href="/posts/new_md/doc1566/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -369,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1716/">GMFileProc のファイル処理の手順を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1566/">Ver3.2.1 &#43; Visio 2003 の環境では図面が2回描画されるが， Ver4.0 &#43; Visio 2010 ではどうなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -382,20 +381,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1716/"><i class="far fa-calendar"></i> 2010-06-29</a>
+                                            <a href="/posts/new_md/doc1566/"><i class="far fa-calendar"></i> 2010-11-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/29*
-[番号] 技術ノート KGTN 2010062901
-[現象] GMFileProc のファイル処理の手順を知りたい．
-[説明] GMFileProc は，以下の順序でファイルを処理します．
-対象ファイルの抽出 （fileDir, fileExt） 抽出したファイルのフルパスを引数としてプロセスを起動 （progPath, progArgs, フルパス） プロセスの終了待ち （progWait） ファイルをバックアップフォルダへ移動 （fileDir, fileBackup, fileMove） 上記2〜4を抽出したファイル全てについて実行 対象フォルダのファイルを削除 （fileDir, dayDelete） バックアップフォルダのファイルを削除 （fileBackup, dayDelete）
-注： 括弧の中は，処理に関連する GMFileProc.ini ファイル中のパラメタです．
-参　考 GMFileProc.ini の設定のサンプルを以下に示します．GG-StatusLoad.exe は，C:¥SHARE¥GG-Status に置かれた ???.datというファイルを引数に取り，遅くとも30秒以内に処理するようなプログラムです．処理が完了すると，そのファイルは C:¥BACKUP¥GG-Status へ移動されます．さらに，移動されたファイルは （作成日時より） 15日経過した時点で削除されます．
-[default] logLevel = 1 dayDelete = 15 progPath = C:¥GraphOn¥Bin¥GG-StatusLoad.exe progArgs = progWait = 30 fileExt = dat fileDir = C:¥SHARE¥GG-Status fileBackup = C:¥BACKUP¥GG-Status fileMove = Y</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1716/" class="btn btn-template-main">続きを読む</a>
+2010/11/01*
+[番号] 技術ノート KGTN 2010110103
+[現象] Ver3.2.1 + Visio 2003 の環境では図面が2回描画されるが， Ver4.0 + Visio 2010 ではどうなのか？
+[説明] Ver4.0 + Visio 2010 試用版で確認したところ，図面は1回描画されるのみで，ちらつき等は発生しませんでした．また，Ver4.0ではクライアントドライブ機能がアーキテクチャレベルで見直しが行われたため，Visioファイルのクライアントドライブからの読み込み，クライアントドライブへの保存が大幅に速くなりました．
+ファイル KGTN2010110103.pdf [(47.4 KB)] [kitasp 技術センター, 2010/11/01 14:30]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1566/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -405,7 +401,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1717/">
+                                      <a href="/posts/new_md/doc1567/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -413,7 +409,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1717/">GMFileProc の設定ファイルの内容を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1567/">クライアントドライブ機能を使い，サーバからクライアントへファイルをコピーするとセッションが切れることがある．また，セッションが切れない場合でも，クライアント側でファイルがロックされ削除が出来ない等の現象が発生することもある．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -426,18 +422,21 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1717/"><i class="far fa-calendar"></i> 2010-06-29</a>
+                                            <a href="/posts/new_md/doc1567/"><i class="far fa-calendar"></i> 2010-11-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/29*
-[番号] 技術ノート KGTN 2010062402
-[現象] GMFileProc の設定ファイルの内容を知りたい．
-[説明] 設定ファイル GMFileProc.ini で指定する項目は以下の通りです．
-logLevel ログの出力レベル （0〜9を指定） dayDelete 保存する日数 （この日数を過ぎると削除される） progPath ファイルを処理するプログラムのパス progArgs ファイルを処理するプログラムの引数 （必要に応じて指定する） progWait プログラムの終了待ち指定 （-1: 無限に待つ， 0: 待たない， n: n 秒待つ） fileExt 処理対象とするファイルの拡張子 fileDir 処理対象とするファイルが置かれたフォルダ fileBackup 処理後に移動するフォルダ （空な場合は移動しない） fileMove Y: 移動する， N: 移動しない
-ファイル KGTN2010062402.pdf [(56.8 KB)] [kitasp 技術センター, 2010/06/29 10:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1717/" class="btn btn-template-main">続きを読む</a>
+2010/11/01*
+[番号] 技術ノート KGTN 2009091501
+[現象] クライアントドライブ機能を使い，サーバからクライアントへファイルをコピーするとセッションが切れることがある．また，セッションが切れない場合でも，クライアント側でファイルがロックされ削除が出来ない等の現象が発生することもある．
+[説明] ファイルサイズが19MBを越えると 「セッションが切れる」 「０バイトのファイルが作成される」 「ファイルがロックされる」 「コピーしたファイルの正しいファイルサイズが得られない」 という現象が発生します．この問題は，回線速度やファイルの内容 （テキスト・バイナリ） に依存せず，ファイルサイズのみに依存して発生します．ファイルがロックされた場合は，ActiveXクライアントではIEを閉じることで，Windowsクライアントはggw.exeを終了させることでロックが解除されます．本件はGraphOn社も障害として認識しており，将来のバージョンで修正する予定です．
+補足１ クライアントドライブ機能でファイルをコピーする場合，FTPのような専用のファイル転送プロトコルでコピーが行われる訳ではなく，Windows内部の低レベルのファイルコピー処理をフックして，サーバとクライアント間でファイルのコピー処理が行われます．このような仕組みにより， Windowsの遅延書き込み機能等の極めて低レベルな処理もGGのセッションの中で行われ，サーバとクライアント間でエラー等のイベントが正常に伝わらず，それぞれが相手方からのイベントを待ち続けて，タイムアウトによるセッション断や継続的なファイルのロックが発生したものと推測します．なお，本補足事項は弊社の独自調査による結果 （GraphOn社にも報告済） を元に記載しています．
+補足２ セッション断については，Windowsがプログレスダイアログを表示するケースで発生することが分かっております．DOS窓を開きcopyコマンドでコピーを行った場合は，セッション断やファイルのロックは発生しません．なお，本補足事項は弊社の独自調査による結果 （GraphOn社にも報告済） を元に記載しています．
+補足3 なぜ発生したのか&hellip;　クライアントドライブ機能のサーバ側とクライアント側で，それぞれが相手からのイベントを待っている状態にあり，処理が完結しないためセッション断やファイルロック等が発生していると推測されます．
+補足4 どうすれば発生しないのか&hellip;　「ファイルの大きさで対応する」 ことが妥当だと考えますが，しかし明確な根拠を持ったファイルの大きさを示すことは困難です．恐らく Windows 内部のキャッシュの空き等に依存しているため， 正確には分かりませんが，実測値で19MB以下であれば大丈夫のようです．なお，GraphOn社には全て状況を報告しており，その情報を試験＆分析作業を行っております． 補足5 GraphOn社のコメント&hellip; We have done some more testing and the issue with the filelock did not occur with a filesize of 20,001KB. It did occur with a filesize of 20,041KB.
+20MB （= 20,480KＢ） は20,041KBを越えますので，運用回避を行う場合のファイルサイズは 「19MB以下」 となります．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1567/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -447,7 +446,7 @@ logLevel ログの出力レベル （0〜9を指定） dayDelete 保存する日
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1718/">
+                                      <a href="/posts/new_md/doc1568/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -455,7 +454,7 @@ logLevel ログの出力レベル （0〜9を指定） dayDelete 保存する日
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1718/">GMCheckRaw の提供が 「デバッグビルド」 と 「リリースビルド」 の２つになったが，その理由は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1568/">モジュール msvcr90.dll でエラーが発生し， aps.exe が開始しない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -468,18 +467,19 @@ logLevel ログの出力レベル （0〜9を指定） dayDelete 保存する日
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1718/"><i class="far fa-calendar"></i> 2010-06-28</a>
+                                            <a href="/posts/new_md/doc1568/"><i class="far fa-calendar"></i> 2010-10-31</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/28*
-[番号] 技術ノート KGTN 2010062801
-[現象] GMCheckRaw の提供が 「デバッグビルド」 と 「リリースビルド」 の２つになったが，その理由は？
-[説明] これまでのリリースは全て 「リリースビルド」 で，特に問題等は発生しておりません．今回敢えて 「デバッグビルド」 も提供することにした理由は，ある案件で Windows が不安定になり，その影響で GMCheckRaw がエラーになる現象が発生しました．この原因を追及するに当たって，技術的な制約等により GMCheckRaw 側から遡る必要があったため， 「デバッグビルド」 も提供することにしました．
-従って，通常は従来通り 「リリースビルド」 を使用し，万一 GMCheckRaw 絡みでエラーが発生した場合に限り， 「デバッグビルド」 で情報を採取するようにして下さい．
-ファイル KGTN2010062801.pdf [(56.9 KB)] [kitasp 技術センター, 2010/06/28 11:00]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1718/" class="btn btn-template-main">続きを読む</a>
+2010/10/31*
+[番号] 技術ノート KGTN 2010110101
+[現象] モジュール msvcr90.dll でエラーが発生し， aps.exe が開始しない．
+エラー発生アプリケーション aps.exe、バージョン 4.0.0.8685 エラー発生モジュール msvcr90.dll、バージョン 9.0.30729.4148 エラー発生アドレス 0x000375b4
+[説明] 弊社ではこの現象を再現することが出来ませんでしたが，発生した環境では16文字以上あったコンピュータ名を15文字以下に短くすることで，この現象が発生しなくなったという報告がありました． KB226144 にありますように，NetBIOS ドメイン名が15文字以下になるようにサーバ環境を設定して下さい．
+http://support.microsoft.com/kb/226144/ja NetBIOS ドメイン名 フィールドに、15 文字の長さ制限 Windows 2000
+ファイル KGTN2010110101.pdf [(61.7 KB)] [kitasp 技術センター, 2010/11/01 08:58]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1568/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -489,7 +489,7 @@ logLevel ログの出力レベル （0〜9を指定） dayDelete 保存する日
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1721/">
+                                      <a href="/posts/new_md/doc1570/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -497,7 +497,7 @@ logLevel ログの出力レベル （0〜9を指定） dayDelete 保存する日
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1721/">GMCheckRaw のトレース機能を使う時の設定は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1570/">Windows Update （更新プログラム） KB981957 は互換性が無く，互換アップデートが必要となったが，今後も同様のことが頻繁に発生するのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -510,21 +510,18 @@ logLevel ログの出力レベル （0〜9を指定） dayDelete 保存する日
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1721/"><i class="far fa-calendar"></i> 2010-06-24</a>
+                                            <a href="/posts/new_md/doc1570/"><i class="far fa-calendar"></i> 2010-10-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/24*
-[番号] 技術ノート KGTN 2010062202
-[現象] GMCheckRaw のトレース機能を使う時の設定は？
-[説明] 設定ファイル GMCheck.ini の各サーバのセクションに以下のキーを追加して下さい．
-traceFile = C:¥TEMP¥%COMPUTERNAME%-%YYYYMMDD%.log traceLevel = 1
-traceFile は，トレースログファイルのフルパスを指定して下さい．パスには環境変数と以下の文字列 （変数） を含めることが出来ます．
-YYYYMMDD ： 年月日に展開 HHMMSS ： 時分秒に展開 HHMM ： 時分に展開
-traceLevel は，ログの出力レベルを指定し，0で出力抑止 （既定値） ， 1で出力になります．
-ファイル KGTN2010062202.pdf [(57.4 KB)] [kitasp 技術センター, 2010/06/24 09:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1721/" class="btn btn-template-main">続きを読む</a>
+2010/10/29*
+[番号] 技術ノート KGTN 2010102901
+[現象] Windows Update （更新プログラム） KB981957 は互換性が無く，互換アップデートが必要となったが，今後も同様のことが頻繁に発生するのか？
+[説明] GraphOn社の認識では，KB981957 のような互換性の無い更新プログラムは非常に稀なケースとのことです．本件に関するGraphOn社のコメントは，下記の通りです．
+Most likely, this is the extremely rare result of a recent Microsoft Windows Update: 981957
+ファイル KGTN2010102901.pdf [(55.7 KB)] [kitasp 技術センター, 2010/10/29 09:11]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1570/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -534,7 +531,7 @@ traceLevel は，ログの出力レベルを指定し，0で出力抑止 （既�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1720/">
+                                      <a href="/posts/new_md/doc1572/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -542,7 +539,7 @@ traceLevel は，ログの出力レベルを指定し，0で出力抑止 （既�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1720/">GMCheckRaw の結果を得るには，ファイルを介する方法しかないのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1572/">3.2.1.4474 （3.2.1 Patch 4 R2） と 3.2.1.4466 （3.2.1 Patch 4） の差異は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -555,18 +552,18 @@ traceLevel は，ログの出力レベルを指定し，0で出力抑止 （既�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1720/"><i class="far fa-calendar"></i> 2010-06-24</a>
+                                            <a href="/posts/new_md/doc1572/"><i class="far fa-calendar"></i> 2010-10-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/24*
-[番号] 技術ノート KGTN 2010062401
-[現象] GMCheckRaw の結果を得るには，ファイルを介する方法しかないのか？
-[説明] 設定ファイル GMCheck.ini の中の項目 command に実行可能なプログラムを指定すると，以下の環境変数が設定された環境で指定したプログラムが実行されます．つまり，環境変数を介してGMCheckRaw の結果を得ることが出来ます．
-header footer dateTime hostName ipAddress serverID maxSessions sessionCount availability versionNumber sectionName sessionInfo_0 （セッション情報の数） sessionInfo_1 （最初のセッションの情報） sessionInfo_2 （2番目のセッションの情報） &hellip;
-ファイル KGTN2010062401.pdf [(55.5 KB)] [kitasp 技術センター, 2010/06/24 10:20]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1720/" class="btn btn-template-main">続きを読む</a>
+2010/10/27*
+[番号] 技術ノート KGTN 2010102703
+[現象] 3.2.1.4474 （3.2.1 Patch 4 R2） と 3.2.1.4466 （3.2.1 Patch 4） の差異は？
+[説明] 互換アップデート （KB981957対応） が適用されているかどうか，という点のみです． 以下のファイルが KB981957 に対応したものに置き換わっています．
+GGDD.DLL ：仮想ディスプレイドライバ ggse.sys ：システム拡張ドライバ VBM_WIN32K.sys ：VBM for WIN32K.sys
+ファイル KGTN2010102703.pdf [(48 KB)] [kitasp 技術センター, 2010/10/27 12:14]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1572/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -576,7 +573,7 @@ header footer dateTime hostName ipAddress serverID maxSessions sessionCount avai
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1722/">
+                                      <a href="/posts/new_md/doc1573/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -584,7 +581,7 @@ header footer dateTime hostName ipAddress serverID maxSessions sessionCount avai
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1722/">GMCheckRaw のトレース機能はどんな時に使うのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1573/">3.2.1.4474 （3.2.1 Patch 4 R2） をインストールしたところ，APSログやクラスタマネージャのバージョン情報が 3.2.1.4466 のままになる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -597,22 +594,17 @@ header footer dateTime hostName ipAddress serverID maxSessions sessionCount avai
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1722/"><i class="far fa-calendar"></i> 2010-06-22</a>
+                                            <a href="/posts/new_md/doc1573/"><i class="far fa-calendar"></i> 2010-10-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/22*
-[番号] 技術ノート KGTN 2010062201
-[現象] GMCheckRaw のトレース機能はどんな時に使うのか？
-[説明] Rel#1.07.01 で実装されたGMCheckRaw のトレース機能は，同プログラムとGG （APS） の通信のタイムスタンプを記録することで， 「どの処理の周辺に問題があるのか」 を突き止める時に役立ちます．例えば，GMCheckRaw コマンドを入力してから，ログファイルに
-2010-06-22 13:49:02.656 -&gt; checkServer
-が出力されるまでに5秒かかったとすれば，プロセスの生成に約5秒かかったことになりますので，Windows やハードウエアに問題があると推測されます．
-また， SMI_Initializeの呼出し前後の時間をチェックすることで，GGサーバへの接続に要する時間を確認することが出来ます．30秒かかったとすれば，CPUの過負荷，プロセス間通信の一時的障害，ネットワーク障害や設定ミス，Windowsの異常等が考えられます．
-2010-06-22 13:49:02.656 &gt; SMI_Initialize SMI_Initializeの呼出し前 2010-06-22 13:49:04.312 SMI_Initialize SMI_Initializeの呼出し後
-これ以外にもローレベルな情報を採取することが出来ますので， 「正常値と比較することで」 問題解析の手掛かりとして役立てることが出来ます．
-ファイル KGTN2010062201.pdf [(69.6 KB)] [kitasp 技術センター, 2010/06/22 14:05]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1722/" class="btn btn-template-main">続きを読む</a>
+2010/10/27*
+[番号] 技術ノート KGTN 2010102702
+[現象] 3.2.1.4474 （3.2.1 Patch 4 R2） をインストールしたところ，APSログやクラスタマネージャのバージョン情報が 3.2.1.4466 のままになる．
+[説明] 3.2.1.4474 （3.2.1 Patch 4 R2） は， 3.2.1.4466 （3.2.1 Patch 4） に互換アップデート （KB981957対応） を適用したものなので，APSログやクラスタマネージャのバージョン情報はベースとなる 3.2.1.4466 になります．
+ファイル KGTN2010102702.pdf [(42.9 KB)] [kitasp 技術センター, 2010/10/27 09:35]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1573/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -622,7 +614,7 @@ header footer dateTime hostName ipAddress serverID maxSessions sessionCount avai
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1723/">
+                                      <a href="/posts/new_md/doc1571/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -630,7 +622,7 @@ header footer dateTime hostName ipAddress serverID maxSessions sessionCount avai
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1723/">Ver3.1系とVer3.2系の差異は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1571/">GGUX （GO-Global for UNIX） は，クライアントとして Firefox 3 をサポートするとあるが， Firefox 3.6 はサポートしないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -643,22 +635,18 @@ header footer dateTime hostName ipAddress serverID maxSessions sessionCount avai
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1723/"><i class="far fa-calendar"></i> 2010-06-21</a>
+                                            <a href="/posts/new_md/doc1571/"><i class="far fa-calendar"></i> 2010-10-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/21*
-[番号] 技術ノート KGTN 2010062101
-[現象] Ver3.1系とVer3.2系の差異は？
-[説明] Ver3.1系からVer3.2系への大きな変更点は以下の通りです．
-Automatic Windows Update and Hotfix Compatibility Ver3.1系では Windows Update の度にGraphOn社が提供する互換アップデートの適用が必要でしたが，Ver3.2系では原則として互換アップデートの適用は不要となりました．
-Backward Compatible Client and Server Ver3.1系では新しいビルドがリリースされる度に，クライアントも更新する必要がありました．Ver3.2系では後方互換性があるため，新しいビルドがリリースされても，クライアントを必ずしも更新する必要はありません．
-Time Zone Redirection Ver3.2系では，設定でクライアント側のタイムゾーンを使用することができます．
-Client-Side Password Caching Ver3.1系ではサーバ側にパスワードをキャッシュすることが出来ましたが，Ver3.2系ではそれに加えクライアント側にもパスワードをキャッシュすることが出来るようになりました．これにより， Active Directory を使用しない環境でもパスワードキャッシュ機能を利用することができます．
-End of Support for Windows 2000 Server Ver3.1系では Windows 2000 Server と Windows 2003 Server をサポートしておりましたが，Ver3.2系では Windows 2003 Server と Windows 2008 Server （3.2.1系） をサポートします．
-ファイル KGTN2010062101.pdf [(66.3 KB)] [kitasp 技術センター, 2010/06/21 12:57]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1723/" class="btn btn-template-main">続きを読む</a>
+2010/10/27*
+[番号] 技術ノート KGTN 2010102801
+[現象] GGUX （GO-Global for UNIX） は，クライアントとして Firefox 3 をサポートするとあるが， Firefox 3.6 はサポートしないのか？
+[説明] 最新のGGUXでは，Firefox 3 以降をサポートしております．GraphOn社のコメントは，下記の通りです．
+We provided support for Firefox 3 and above in the 2.2.9 release of GGUX.　This changed was to the .xpi file&rsquo;s install.rdf file. You will notice the change to this line of code.
+&amp;lt;em:maxVersion&amp;gt;3.*&amp;lt;/em:maxVersion&amp;gt;  ファイル KGTN2010102801.pdf [(51.9 KB)] [kitasp 技術センター, 2010/10/28 08:56]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1571/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -668,7 +656,7 @@ End of Support for Windows 2000 Server Ver3.1系では Windows 2000 Server と W
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc362/">
+                                      <a href="/posts/new_md/doc1574/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -676,7 +664,7 @@ End of Support for Windows 2000 Server Ver3.1系では Windows 2000 Server と W
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc362/">[Windows] Windows のインストール作業を依頼したいが，マシン （サーバ） を3台送る必要があるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1574/">ハードウエアロードバランサで接続先のGGサーバを動的に振り分けているが，このような環境でクライアントプリンタ機能の Cache clinet printers を使用して構わないか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -689,18 +677,18 @@ End of Support for Windows 2000 Server Ver3.1系では Windows 2000 Server と W
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc362/"><i class="far fa-calendar"></i> 2010-06-17</a>
+                                            <a href="/posts/new_md/doc1574/"><i class="far fa-calendar"></i> 2010-10-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/17*
-[番号] 技術ノート KGTN 2010061704
-[現象] [Windows] Windows のインストール作業を依頼したいが，マシン （サーバ） を3台送る必要があるのか？
-[説明] 3台のマシンが同じであれば，1台のみお送り下さい．以下の手順でインストール作業を行います．
- 予備インストール（数回） &hellip; インストールツールやマシンの癖をチェック 1回目のインストールおよびイメージのバックアップ 2回目のインストールおよびイメージのバックアップ 3回目のインストールおよびイメージのバックアップ  上記2～4で気になる事象が発生した場合はその記録 （情報） を残し，再度ゼロからインストールを行います．
-ファイル KGTN2010061704.pdf [(52.1 KB)] [kitasp 技術センター, 2014/02/07 15:39]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc362/" class="btn btn-template-main">続きを読む</a>
+2010/10/26*
+[番号] 技術ノート KGTN 2010102701
+[現象] ハードウエアロードバランサで接続先のGGサーバを動的に振り分けているが，このような環境でクライアントプリンタ機能の Cache clinet printers を使用して構わないか？
+[説明] トータルのユーザ数 （クライアント数） にも依存しますが，一般にはハードウエアロードバランサで接続先のGGサーバを散らす環境では，クライアントプリンタ機能の Cache clinet printers を使用することは極めて危険です．
+例えば，2,000人のユーザがいた場合，各GGサーバには2,000人のユーザがログオンする可能性があり，各ユーザが異なるクライアントから接続すると，少なくとも2,000台のプリンタがGGサーバ上に作成され保持されます．各プリンタはCPUやメモリを消費しますので，過度にプリンタの数が多いと Print Spooler や Windows 自体が不安定になります．このようなことから，ハードウエアロードバランサで接続先のGGサーバを散らす環境では，クライアントプリンタ機能の Cache clinet printers を使用しないようにして下さい．
+ファイル KGTN2010102701.pdf [(57.5 KB)] [kitasp 技術センター, 2010/10/27 08:58]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1574/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -710,7 +698,7 @@ End of Support for Windows 2000 Server Ver3.1系では Windows 2000 Server と W
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1727/">
+                                      <a href="/posts/new_md/doc1577/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -718,7 +706,7 @@ End of Support for Windows 2000 Server Ver3.1系では Windows 2000 Server と W
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1727/">ActiveX クライアントのデジタル署名に関するエラーが発生した．CABファイルを送れば良いのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1577/">以下のような記録がAPSログにあるが，どのような問題が発生しているのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -731,18 +719,18 @@ End of Support for Windows 2000 Server Ver3.1系では Windows 2000 Server と W
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1727/"><i class="far fa-calendar"></i> 2010-06-17</a>
+                                            <a href="/posts/new_md/doc1577/"><i class="far fa-calendar"></i> 2010-10-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/17*
-[番号] 技術ノート KGTN 2010061703
-[現象] ActiveX クライアントのデジタル署名に関するエラーが発生した．CABファイルを送れば良いのか？
-[説明] デジタル署名に関するエラーは環境に依存して発生しますので，CABファイルだけでなく，以下のCABファイルのプロパティのスクリーンショットも必要です．
-デジタル署名 デジタル署名 → 詳細 デジタル署名 → 詳細 → 証明書の表示 （全般） デジタル署名 → 詳細 → 証明書の表示 → 証明のパス デジタル署名 → 詳細 → 証明書の表示 （全般）　→ 副署名 → 詳細　（全般） デジタル署名 → 詳細 → 証明書の表示 （全般）　→ 副署名 → 詳細 → 証明書の表示 （全般） デジタル署名 → 詳細 → 証明書の表示 （全般）　→ 副署名 → 詳細 → 証明書の表示 → 証明のパス
-ファイル KGTN2010061703.pdf [(46.6 KB)] [kitasp 技術センター, 2010/06/17 12:09]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1727/" class="btn btn-template-main">続きを読む</a>
+2010/10/22*
+[番号] 技術ノート KGTN 2010102201
+[現象] 以下のような記録がAPSログにあるが，どのような問題が発生しているのか？
+204 : aps (1312) Invalid environment. 217 : aps (1312) Failed to execute logon request #%d because of an inter-process communication problem. 218 : Logon4 on Go-global02, Logon (1312) Memory allocation failure.
+[説明] サーバの再起動から数時間経過 かつ ユーザの利用が殆ど無い状況で，プロセス間通信のエラーやメモリ割り当てエラーが発生していますので，OS （Windows） 自体またはハードウエアに問題があると推測されます．先ずハードウエアの診断ツールでチェックし，異常が発見されない場合は，OS （Windows） を再インストール（ドライブのイメージがある場合は，そのイメージの復元） するのが最善の策だと思われます．
+ファイル KGTN2010102201.pdf [(63.1 KB)] [kitasp 技術センター, 2010/10/22 11:06]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1577/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -812,7 +800,7 @@ End of Support for Windows 2000 Server Ver3.1系では Windows 2000 Server と W
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

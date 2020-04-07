@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc384/">
+                                      <a href="/posts/new_md/doc1073/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc384/">[Windows] Windows Server 2008 の DEP （データ実行防止）　機能を無効化したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1073/">[GGW3.2.1/GGH4.0] P2V (Physical to Virtual) ツールを使いGGサーバを物理マシンから仮想マシンで移行した場合，物理マシンと同様にサポートを受けられるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,22 +340,21 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc384/"><i class="far fa-calendar"></i> 2011-12-19</a>
+                                            <a href="/posts/new_md/doc1073/"><i class="far fa-calendar"></i> 2012-02-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/19*
-[番号] 技術ノート KGTN 2011121901
-[現象] [Windows] Windows Server 2008 の DEP （データ実行防止）　機能を無効化したい．
-[説明] Windows Server 2008 の DEP （データ実行防止）　機能を無効化するには，下記のコマンドを実行し，サーバを再起動して下さい．
-bcdedit /set nx Alwaysoff
-DEP機能を戻す （有効化する） 時は，下記のコマンドを実行し，サーバを再起動して下さい．
-bcdedit /set nx OptIn
-上記の変更を行った場合は，GGの再インストールを行って下さい．
-補　足 GGW3.2.1 + WS2008 + &ldquo;bcdedit /set nx alwaysoff&rdquo; の環境で，セッションが正常に終了しないという報告がありました．そのような現象が見られた場合は，&ldquo;bcdedit /set nx OptIn&rdquo; を設定して下さい．
-ファイル KGTN2011121901.pdf [(55.7 KB)] [kitasp 技術センター, 2014/01/29 17:29]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc384/" class="btn btn-template-main">続きを読む</a>
+2012/02/22*
+[番号] 技術ノート KGTN 2012020701
+[現象] [GGW3.2.1/GGH4.0] P2V (Physical to Virtual) ツールを使いGGサーバを物理マシンから仮想マシンで移行した場合，物理マシンと同様にサポートを受けられるのか？
+[説明] GGがサポートする環境は，物理マシンまたはGraphOn社が動作を確認した仮想化ソフトウエア （仮想マシン） に，マイクロソフト社の Windows 2003/2008 のインストーラーを使用して作成された標準的な Windows 環境に限られます．従って，P2Vツールによって，ドライバやレジストリが変更等が行われた環境についてはサポートの対象外となります．なお，P2Vツールで移行した環境で発生した問題が，物理マシンまたはGraphOn社が動作を確認した仮想化ソフトウエア環境でも再現する場合は，後者の環境を前提として通常のサポートを行います．
+補足１ 自己責任でP2Vツールを適用する場合は，以下の手順で作業を行って下さい．
+物理マシンの環境からGGをアンインストール P2Vツールで移行 移行環境でGGをインストール
+P2Vツールを適用する場合，一般に 「ハード依存のソフトウエアのアンインストール」 が推奨されており，ディスプレイドライバはこれに該当します．GGのインストーラーはディスプレイドライバの情報を参照し，それに適合する環境を設定するため，結果的にP2Vツール適用するに当りGGのアンインストールが必要となります．
+補足２ P2V (Physical to Virtual) ツールの適用に関する一般的な情報は， 技術ノートKGTN#2011111601 をご覧下さい．
+ファイル KGTN2012020701.pdf [(66 KB)] [kitasp 技術センター, 2012/02/22 09:09]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1073/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -365,7 +364,7 @@ bcdedit /set nx OptIn
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1171/">
+                                      <a href="/posts/new_md/doc1072/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -373,7 +372,7 @@ bcdedit /set nx OptIn
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1171/">[GGW3.2.1/GGH4.0] Program Window (PW) からアプリケーションを起動すると，ウインドウの一部が表示された状態でハングアップする．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1072/">[iPad/Android Client] 画面上部にたまに現れるバーの役割は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -386,21 +385,18 @@ bcdedit /set nx OptIn
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1171/"><i class="far fa-calendar"></i> 2011-12-16</a>
+                                            <a href="/posts/new_md/doc1072/"><i class="far fa-calendar"></i> 2012-02-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/16*
-[番号] 技術ノート KGTN 2011121604
-[現象] [GGW3.2.1/GGH4.0] Program Window (PW) からアプリケーションを起動すると，ウインドウの一部が表示された状態でハングアップする．
-[説明] 通常では考えられない現象ですので，先ず以下の手順で特定の条件に依存するかどうか確認して下さい．
-他のクライアント （パソコン） で同じ現象が再現するかどうか確認する． 他のアカウントで同じ現象が再現するかどうか確認する． 他のアプリケーション （メモ帳など） で同じ現象が再現するかどうか確認する．
-上記の何れかで正常に動作すれば，クライアント・アカウント・アプリケーションに依存して発生する問題だと考えられますので，その周辺に問題がないかどうか調べて下さい．
-上記の何れでも問題が発生する場合は，サーバの一時的な不具合かどうかを確認するために，GGサーバを再起動して現象が再現するかどうか確認して下さい．再現しない場合は，サーバの一時的な不具合だと考えられますので，イベントログやAPSログを確認し，これまでのサーバの稼働状況を確認して下さい （サーバの定期的な再起動が行われておらず，メモリが枯渇した等） ．再現する場合は，GGサーバの本質的な問題だと考えられますので，イベントログやAPSログを確認し，正常ではない記録が残っていないか慎重に調べて下さい．
-調べても分らない場合は，過去に作成したイメージをリストアし，正常に動作するかどうか確認して下さい．正常に動作する場合は，ソフトウエアのインストール （Windows Update やドライバ等のインストール） が問題を引き起こしている可能性が高いと考えられます．正常に動作しない場合は，サーバ環境 （ハードウエアや仮想マシン） やネットワーク環境に起因して問題だと推測されます．
-ファイル KGTN2011121604.pdf [(68.3 KB)] [kitasp 技術センター, 2011/12/16 13:28]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1171/" class="btn btn-template-main">続きを読む</a>
+2012/02/22*
+[番号] 技術ノート KGTN 2012021301
+[現象] [iPad/Android Client] 画面上部にたまに現れるバーの役割は？
+[説明] 画面上部に現れるバーは 「オンスクリーン・ツールバー」 と呼ばれ，１本指で画面を押し，その状態を維持した時に現れます．
+ピンが表示されたボタンは，オンスクリーン・ツールバーが隠れないようにするボタンです （通常は所定時間経過後に自動的に隠れます） ．Ａと表示されたボタンは 「キーボード・トグルボタン」 と呼ばれ，タッチスクリーン・キーボードを表示／非表示にするボタンです．長方形の中に四方向の矢印が表示されたボタンは 「オートズーム・トグルボタン」 と呼ばれ，オートズーム機能を有効／無効にするボタンです． Done （最新のクライアントではDisconnect） と表示されたボタンは，セッションを終了させメイン画面 （接続先を選ぶ画面） へ復帰するボタンです．
+ファイル KGTN2012021301.pdf [(70.6 KB)] [kitasp 技術センター, 2012/02/22 13:55]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1072/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -410,7 +406,7 @@ bcdedit /set nx OptIn
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1174/">
+                                      <a href="/posts/new_md/doc1074/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -418,7 +414,7 @@ bcdedit /set nx OptIn
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1174/">[iPad Client] iPad Client バージョン 4.1.1.11561 で何が変わったのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1074/">[GGW3.2.1/GGH4.0] GGW3.2.1のActiveXクライアントとGGH4.0のActiveXクライアントは１台のクライアントPCに同居出来るのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -431,17 +427,17 @@ bcdedit /set nx OptIn
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1174/"><i class="far fa-calendar"></i> 2011-12-16</a>
+                                            <a href="/posts/new_md/doc1074/"><i class="far fa-calendar"></i> 2012-02-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/16*
-[番号] 技術ノート KGTN 2011121601
-[現象] [iPad Client] iPad Client バージョン 4.1.1.11561 で何が変わったのか？
-[説明] iPad Client バージョン 4.1.1.11561 の大きな変更点は，日本語入力のバグ （日本語入力時にゴミが残る，文字が消せないなど） が修正されたことです．今回のリリースは，このバグを解消することが主な目的でしたので，他に大きな変更点はありません．
-ファイル KGTN2011121601.pdf [(46.1 KB)] [kitasp 技術センター, 2011/12/16 09:09]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1174/" class="btn btn-template-main">続きを読む</a>
+2012/02/21*
+[番号] 技術ノート KGTN 2012022201
+[現象] [GGW3.2.1/GGH4.0] GGW3.2.1のActiveXクライアントとGGH4.0のActiveXクライアントは１台のクライアントPCに同居出来るのか？
+[説明] GGW3.2.1のActiveXクライアントとGGH4.0のActiveXクライアントはメジャーバージョンが異なり，かつそれらに含まれるファイルの名称が衝突しないように構成されておりますので，１台のクライアントPCに同居させることが可能です．
+ファイル KGTN2012022201.pdf [(45 KB)] [kitasp 技術センター, 2012/02/22 07:45]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1074/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -451,7 +447,7 @@ bcdedit /set nx OptIn
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1173/">
+                                      <a href="/posts/new_md/doc1075/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -459,7 +455,7 @@ bcdedit /set nx OptIn
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1173/">[iPad Client] iPad Client バージョン 4.1.1.11561 の日本語入力での制限事項は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1075/">[Android] GGH4.0 の Android Client のベータ版はないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -472,17 +468,18 @@ bcdedit /set nx OptIn
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1173/"><i class="far fa-calendar"></i> 2011-12-16</a>
+                                            <a href="/posts/new_md/doc1075/"><i class="far fa-calendar"></i> 2012-02-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/16*
-[番号] 技術ノート KGTN 2011121602
-[現象] [iPad Client] iPad Client バージョン 4.1.1.11561 の日本語入力での制限事項は？
-[説明] iPad の日本語ローマ字キーボードの数字/記号入力モードで，16個以上の異なる記号を連続して （つまり未確定状態で） 入力すると，先頭の文字から順に確定します． これは，サーバ側のIMEの仕様に起因する制限事項になります （サーバのコンソール上でも類似する現象が発生します） ．
-ファイル KGTN2011121602.pdf [(49.7 KB)] [kitasp 技術センター, 2011/12/16 09:37]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1173/" class="btn btn-template-main">続きを読む</a>
+2012/02/17*
+[番号] 技術ノート KGTN 2012010402
+[現象] [Android] GGH4.0 の Android Client のベータ版はないのか？
+[説明] GraphOn社の品質保証チームの情報によると，GraphOn社の代理店に公開可能なAndroid Client のベータ版があるようなことを言っていますが，しかし実際にはそのような連絡は未だありません．また，そのようなベータ版を入手出来たとしても，日本語入力は未対応だと思われます （注： iPad と異なりAndroid には標準となる IME が無いため，どれをサポートするのか営業的な判断等が必要となるため） ．
+2012-02-09 に Ver. 4.1.3.11959 が正式リリースされました．他のアプリケーション同様 Android マーケット でダウンロードすることが出来ます （ホーム ? アプリ ? ビジネス） ．
+ファイル KGTN2012010402.pdf [(57.6 KB)] [kitasp 技術センター, 2012/02/17 09:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1075/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -492,7 +489,7 @@ bcdedit /set nx OptIn
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1172/">
+                                      <a href="/posts/new_md/doc1076/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -500,7 +497,7 @@ bcdedit /set nx OptIn
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1172/">[iPad Client] キーボードを分割した時，キーボードの種類によっては半透明表示されない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1076/">[GGH4.0] GraphOn社の技術ノート Article C00046 の設定を行うと，クライアントのスタートボタンの位置にサーバ側のスタートボタンが表示される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -513,17 +510,21 @@ bcdedit /set nx OptIn
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1172/"><i class="far fa-calendar"></i> 2011-12-16</a>
+                                            <a href="/posts/new_md/doc1076/"><i class="far fa-calendar"></i> 2012-02-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/16*
-[番号] 技術ノート KGTN 2011121603
-[現象] [iPad Client] キーボードを分割した時，キーボードの種類によっては半透明表示されない．
-[説明] 現時点では 「半透明表示されない」 分割キーボードも iPad Client の仕様です．将来，この仕様が変更された場合は，そのことを本技術ノートに記載します．
-ファイル KGTN2011121603.pdf [(118 KB)] [kitasp 技術センター, 2011/12/16 11:56]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1172/" class="btn btn-template-main">続きを読む</a>
+2012/02/17*
+[番号] 技術ノート KGTN 2011111401
+[現象] [GGH4.0] GraphOn社の技術ノート Article C00046 の設定を行うと，クライアントのスタートボタンの位置にサーバ側のスタートボタンが表示される．
+[説明] Explorer.exe を常駐プロセスとしてログオン時に起動すると， WS2003 の環境では通常通りログオン出来ますが， WS2008 および WS2008R2 の環境ではクライアントのスタートボタンの位置にサーバ側のスタートボタンが表示される現象が発生します．クライアントフレームが有効の場合は，サーバ側のスタートボタンを操作することができ，かつアプリケーションの起動も可能です．本件はGraphOn社に報告済みで，現在発生条件等を詳細に調査している状況です．
+補足１ この問題は技術的に難易度が高く，修正作業が順調に進めば GGH4.0.1 Patch4 で対応の予定です．もし技術的に何らかの問題が発生すれば， GGH4.0.1 Patch4 以降にずれ込む可能性があります． （2011年12月16日現在） 本件はGGH4.0.1.Patch4 で次のような条件付きで修正されました． 1) クライアントフレームは使用不可， 2) タスクバーをデスクトップの下辺位置に固定配置．これ以外の場合については，技術調査中です．
+補足２ GraphOn社では上記補足１の現象は未だ再現ぜず，継続調査中です． (2012-02-08)
+2012-02-14: さまざまな再現試験を行った結果，この問題 （GGH4.0.1.Patch4で発生する問題） は日本語版の Windows Server 2008 (R2) に依存して発生することが分りました．現在，継続調査中です．
+2012-02-17: GraphOn社でもクライアントフレーム時に現象が再現しました．原因は同じだと考えられますので，この再現出来た環境で調査を進めることになりました．
+ファイル KGTN2011111401.pdf [(139 KB)] [kitasp 技術センター, 2012/02/17 09:42]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1076/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -533,7 +534,7 @@ bcdedit /set nx OptIn
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1170/">
+                                      <a href="/posts/new_md/doc2209/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -541,7 +542,7 @@ bcdedit /set nx OptIn
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1170/">[Network] 無線LANでGGサーバにアクセスすると遅い気がするが，チェックすべきポイントは？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2209/">[Windows] Windows のインストール作業を依頼する場合，どのような資料を用意せねばならないか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -554,18 +555,21 @@ bcdedit /set nx OptIn
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1170/"><i class="far fa-calendar"></i> 2011-12-16</a>
+                                            <a href="/posts/new_md/doc2209/"><i class="far fa-calendar"></i> 2012-02-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/16*
-[番号] 技術ノート KGTN 2011121605
-[現象] [Network] 無線LANでGGサーバにアクセスすると遅い気がするが，チェックすべきポイントは？
-[説明] 無線LANに関する一般的なチェックポイントは以下の通りです．
-無線LANルーターを再起動する． 無線LANルーターのファームウェアのバージョンを最新にする． 無線LANルーターのチャンネルを変更する． 無線LANルーターのアンテナの向きを変えてみる． 無線LANルーターと他の無線機器の電波の干渉を調べる． 無線LANルーターのLAN側を固定設定 （100Mbps/10Mbps, Full-Duplex） にする． IEEE 802.11a に変更する （IEEE 802.11b/gの2.4GHzは混んでいる） ． pingでMTUサイズを調べる． その他
-ファイル KGTN2011121605.pdf [(53.3 KB)] [kitasp 技術センター, 2011/12/16 14:57]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1170/" class="btn btn-template-main">続きを読む</a>
+2012/02/16*
+[番号] 技術ノート KGTN 2010070702
+[現象] [Windows] Windows のインストール作業を依頼する場合，どのような資料を用意せねばならないか？
+[説明] Windows をインストールするに当たり，最低限以下の資料 （情報） が必要です．
+  OSの導入支援ツールの資料 Windows をインストールする場合，ハードウエアとともに提供されるOSの導入支援ツール （例： HPのSmartStart, IBMのServerGuide, NEC　の　EXPRESSBUILDER） を使用しますので，このツールの資料が必要です．
+  Windows Update の適用手順の資料 Windows Update を適用するかどうか，適用する場合どのような方法で適用するのか （インターネットを介して適用可能かどうか） ，その他詳しい情報が必要です．
+  Windows のディスク構成の資料 ディスク （パーティション） の構成等に関する情報をお知らせ下さい．少なくともC:ドライブのサイズ （容量） は事前に決める必要があります．
+  ディスクイメージの採取方法の資料 Windowsをインストールする場合， Windows のみの状態， GGをインストールした状態， アプリケーションをインストールした状態，etc&hellip; でディスクのイメージを採取します．この時に使用するディスクイメージの採取ツールの資料が必要です．
+  補　足 Windows のインストールは，最低3回行います （ディスクイメージを3セット作成します） ．慎重に Windows のインストール作業を行っても，その工程の中で何らかの問題が発生し，本番運用時にそれが原因となって障害が発生するケースが少なからずあります．解決策は Windows の再インストールしかありませんが，予め複数のインストールを行うことで，このような障害の問題点の切り分けを容易にし，かつ （Windows に問題があった場合） 復旧も迅速に行うことが可能となります．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2209/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -575,7 +579,7 @@ bcdedit /set nx OptIn
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1175/">
+                                      <a href="/posts/new_md/doc1078/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -583,7 +587,7 @@ bcdedit /set nx OptIn
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1175/">[GGH4.0] メモ帳のファイルダイアログではUSBディスクの挿抜が直ちに反映されるが，エクスプローラではUSBディスクの挿抜が反映されない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1078/">[GGH4.0] GGH4.0.1.Patch4 になってログオンに要する時間が長くなった気がする．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -596,18 +600,18 @@ bcdedit /set nx OptIn
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1175/"><i class="far fa-calendar"></i> 2011-12-15</a>
+                                            <a href="/posts/new_md/doc1078/"><i class="far fa-calendar"></i> 2012-02-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/15*
-[番号] 技術ノート KGTN 2011120602
-[現象] [GGH4.0] メモ帳のファイルダイアログではUSBディスクの挿抜が直ちに反映されるが，エクスプローラではUSBディスクの挿抜が反映されない．
-[説明] WS2003 の環境では，全てのエクスプローラを閉じた後，改めてエクスプローラを起動するとUSBディスクの挿抜状況が反映されます． WS2008 および WS2008R2 では，同じ操作を行っても反映されないことがあります．この件についてGraphOn社へ報告しており，何らかの情報を得た時は，直ちに本技術ノートへ反映します．
-補　足 この問題は技術的に難易度が高く，どのように解決できるのかGraphOn社の開発チームで技術検討が続いている状況です． （2011年12月16日現在）
-ファイル KGTN2011120602.pdf [(64.2 KB)] [kitasp 技術センター, 2011/12/16 08:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1175/" class="btn btn-template-main">続きを読む</a>
+2012/02/15*
+[番号] 技術ノート KGTN 2012021503
+[現象] [GGH4.0] GGH4.0.1.Patch4 になってログオンに要する時間が長くなった気がする．
+[説明] GGH4.0.1.Patch4 と GGH 4.0.1.10784 でログオンに要する時間を計測 （各30回） したところ，　GGH 4.0.1.10784 が7.7秒， GGH4.0.1.Patch4 が8.0秒と若干長くなった程度で，目立って長くなったという結果は得られませんでした．
+Dell PowerEdge 800 Pentium4 2.8GHz / 2GB English Windows Server 2008 SP2 Client Access = All Off Logon Script = None GGH4.0.1.10784 = 7.7 sec GGH4.0.1.Patch4 = 8.0 sec
+ファイル KGTN2012021503.pdf [(47.4 KB)] [kitasp 技術センター, 2012/02/15 11:09]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1078/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -617,7 +621,7 @@ bcdedit /set nx OptIn
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1178/">
+                                      <a href="/posts/new_md/doc2260/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -625,7 +629,7 @@ bcdedit /set nx OptIn
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1178/">[GGW3.2.1] GraphOn社の GGW3.2 のサポートはいつまで続くのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2260/">[GGH4.X-5.X] GGH4.0.1.Patch4 で Program Window (PW) の 「閉じる」 ボタンをクリックした時に表示されるダイアログの意味を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -638,19 +642,24 @@ bcdedit /set nx OptIn
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1178/"><i class="far fa-calendar"></i> 2011-12-15</a>
+                                            <a href="/posts/new_md/doc2260/"><i class="far fa-calendar"></i> 2012-02-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/15*
-[番号] 技術ノート KGTN 2011121504
-[現象] [GGW3.2.1] GraphOn社の GGW3.2 のサポートはいつまで続くのか？
-[説明] GraphOn社は，最新版の１つ前のバージョンまでサポートします．最新版は GGH4.0 で， GGW3.2 はその１つ前のバージョンに当たりますので， GGH4.1 がリリースされた時点で
-Extended Maintenance Phase End of Life
-の時期が決定されます．
-ファイル KGTN2011121504.pdf [(79.5 KB)] [kitasp 技術センター, 2011/12/15 12:48]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1178/" class="btn btn-template-main">続きを読む</a>
+2012/02/15*
+[番号] 技術ノート KGTN 2012021502
+[現象] [GGH4.X-5.X] GGH4.0.1.Patch4 で Program Window (PW) の 「閉じる」 ボタンをクリックした時に表示されるダイアログの意味を知りたい．
+[説明] PW の 「閉じる」 ボタンをクリックした時に表示されるダイアログは，クラスタマネージャの設定項目 Disconnected sessions terminate の値によって異なります．
+[Immediately の場合] この時は， 「セッションとアプリケーションが終了します．本当にそうしますか？」 というダイアログが表示され， 「はい」 をクリックするとセッションが終了します．
+[Never の場合] この時は， 「セッションとアプリケーションが維持されます」 というダイアログが表示され， 「はい」 をクリックするとコネクションのみが切断されます．
+[After ○ minutes の場合] この時は， 「セッションとアプリケーションが○分間維持されます」 というダイアログが表示され， 「はい」 をクリックするとコネクションのみが切断されます．その後○分間内に再接続を行うと，そのセッションに接続することが出来ます．○分間内に再接続を行わないと，セッションとアプリケーションが終了します．
+ファイル KGTN2012021502.pdf [(91.1 KB)] [kitasp 技術センター, 2016/11/02 11:20]
+KGTN2012021502-1.jpg
+表示 [(6.07 KB)] [kitasp 技術センター, 2016/11/02 11:20]
+KGTN2012021502-2.jpg
+表示 [(6.41 KB)] [kitasp 技術センター, 2016/11/02 11:20]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2260/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -660,7 +669,7 @@ Extended Maintenance Phase End of Life
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1177/">
+                                      <a href="/posts/new_md/doc1077/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -668,7 +677,7 @@ Extended Maintenance Phase End of Life
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1177/">[Tool] GGのセッションのトラフィックを視覚的に見る方法はあるか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1077/">[GGW3.2.1/GGH4.0] GGサーバに接続中にタスクバーを移動させたところ，画面が崩れたり，ウインドウを移動出来なかったりする．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -681,18 +690,17 @@ Extended Maintenance Phase End of Life
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1177/"><i class="far fa-calendar"></i> 2011-12-15</a>
+                                            <a href="/posts/new_md/doc1077/"><i class="far fa-calendar"></i> 2012-02-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/15*
-[番号] 技術ノート KGTN 2011121505
-[現象] [Tool] GGのセッションのトラフィックを視覚的に見る方法はあるか？
-[説明] GGにはそのような機能はありませんが，ネットワーク・アナライザ・ソフトウェアWireshark を利用することでトラフィックを視覚的に見ることが出来ます．20MBのZIPファイルをクライアントドライブ機能でコピーした時のトラフィックは以下の通りです （青：サーバ → クライアント，赤：クライアント → サーバ） ．
-Wireshark の具体的な操作法についてはオライリー・ジャパン 「実践 パケット解析 ―Wiresharkを使ったトラブルシューティング」 などの書籍やインターネット上の情報をご覧下さい．
-ファイル KGTN2011121505.pdf [(151 KB)] [kitasp 技術センター, 2011/12/15 13:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1177/" class="btn btn-template-main">続きを読む</a>
+2012/02/15*
+[番号] 技術ノート KGTN 2012021504
+[現象] [GGW3.2.1/GGH4.0] GGサーバに接続中にタスクバーを移動させたところ，画面が崩れたり，ウインドウを移動出来なかったりする．
+[説明] GGはログオン時の有効な描画領域のサイズを調べ，仮想ディスプレイの画面サイズとして設定します．タスクバーを 下（横方向） から 右（縦方向） へ移動させると，仮想ディスプレイの画面サイズとクライアントの有効な描画領域のサイズに不一致が生じるため，画面が崩れたり，ウインドウを移動出来なかったりする現象が発生します．これはGGの仕様ですので，GGサーバを利用中にタスクバーの移動やサイズ変更は行わないようにして下さい．どうしてもその必要がある場合は， 「タスクバーを自動的に隠す」 を有効にして下さい．
+ファイル KGTN2012021504.pdf [(53.8 KB)] [kitasp 技術センター, 2012/02/15 15:06]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1077/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -702,7 +710,7 @@ Wireshark の具体的な操作法についてはオライリー・ジャパン 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1176/">
+                                      <a href="/posts/new_md/doc1079/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -710,7 +718,7 @@ Wireshark の具体的な操作法についてはオライリー・ジャパン 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1176/">[Tool] ネットワーク・アナライザ・ソフトウェアWireshark を利用して障害調査を行う場合，GGのプロトコルの内容まで細かく調べるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1079/">[GGH4.0] Universal Printer Driver を使用してドキュメントを3部印刷したが，プリンタには1部しか印刷されない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -723,19 +731,18 @@ Wireshark の具体的な操作法についてはオライリー・ジャパン 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1176/"><i class="far fa-calendar"></i> 2011-12-15</a>
+                                            <a href="/posts/new_md/doc1079/"><i class="far fa-calendar"></i> 2012-02-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/15*
-[番号] 技術ノート KGTN 2011121506
-[現象] [Tool] ネットワーク・アナライザ・ソフトウェアWireshark を利用して障害調査を行う場合，GGのプロトコルの内容まで細かく調べるのか？
-[説明] GGのプロトコルは非公開ですので，セッションの中身 （プロトコルの内容） まで細かく調べることは出来ません．Wireshark を利用した障害調査としては，例えば
-予期せぬセッション切断の原因調査 アプリケーションの動作が遅い時の手掛かりの調査
-などが考えられます．
-ファイル KGTN2011121506.pdf [(62.5 KB)] [kitasp 技術センター, 2011/12/15 14:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1176/" class="btn btn-template-main">続きを読む</a>
+2012/02/14*
+[番号] 技術ノート KGTN 2011111402
+[現象] [GGH4.0] Universal Printer Driver を使用してドキュメントを3部印刷したが，プリンタには1部しか印刷されない．
+[説明] このような現象が発生することを確認しました．一律に1部しか印刷されない訳ではなく，同じプリンタであっても1部しか印刷されないアプリケーション，正しく3部印刷されるアプリケーションがあります．GraphOn社からの情報によれば，この問題は認識しており Ver4.1 で修正の予定です．当面の対症療法として， 1) 印刷するプリンタとして Preview PDF ??? を選択し， 2) クライアント上でドキュメントをPDFで表示し， 3) Adobe Reader で印刷部数を指定して印刷 して下さい．
+補　足 GraphOn社のリリースノートおよび弊社での検証では， GGH4.0.1.Patch4 で修正済みです．環境に依存して現象が発生するため，もしGGH4.0.1.Patch4 でも1部しか印刷されない場合はお知らせ下さい．
+ファイル KGTN2011111402.pdf [(67.6 KB)] [kitasp 技術センター, 2012/02/14 11:26]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1079/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -805,7 +812,7 @@ Wireshark の具体的な操作法についてはオライリー・ジャパン 
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

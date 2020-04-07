@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2629/">
+                                      <a href="/posts/new_md/doc2553/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2629/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2553/">[GGH4.X-5X] 自社開発ソフトからドライブを参照した際，クライアント側のドライブが表示されず，サーバー側のドライブのみが表示された．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,19 +340,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2629/"><i class="far fa-calendar"></i> 2016-02-05</a>
+                                            <a href="/posts/new_md/doc2553/"><i class="far fa-calendar"></i> 2016-05-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/02/05*
-[番号] 技術ノート KGTN 2016020401
-[現象] [GGH4.X-5.X] アプリケーションのファイルを読み込む機能 （ダイアログ） を開くと，アプリケーションがハングアップする．
-[説明] ファイルに関するダイアログでは，初期処理で存在するドライブをチェックすることがあり，この処理の中で問題が発生していることが考えられます．ドライブ絡みの問題は，以下の方法で問題点を絞り込んで下さい．
-クラスターマネージャでクライアントドライブ機能を無効にして，この現象が発生するかどうか確認して下さい．クライアントドライブ機能が無効の状態でもこの現象が発生する場合は，アプリケーションが （GGが想定していない） 特殊な処理を行っている可能性があります．メモ帳 （テキストエディタ） でファイルを正常に開ける場合は，その可能性が高いと考えられます．
-クライアントドライブ機能が無効の状態でこの現象が発生しない場合は，クライアント側のドライブにアクセスした時に何らかの問題が発生していると考えられます．例えば，クライアント側で 「存在しないネットワークドライブを参照している」 や 「アクセス出来ないネットワークドライブを参照している」 等が原因として考えられます．他のクライアント （マシン） や他のクライアント側のアカウントで状況が変わるかどうかをチェックすることで，問題が発生する条件等を絞り込むことが出来ます．
-ファイル KGTN2016020401.pdf [(64 KB)] [kitasp 技術センター, 2016/02/05 15:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2629/" class="btn btn-template-main">続きを読む</a>
+2016/05/27*
+[番号] 技術ノート KGTN 2016052101
+[現象] [GGH4.X-5X] 自社開発ソフトからドライブを参照した際，クライアント側のドライブが表示されず，サーバー側のドライブのみが表示された．
+[説明] 先ず， GG上でメモ帳を起動し， 「開く」 でクライアント側のドライブが表示されるかどうか確認して下さい．クライアント側のドライブが表示されない場合は，サーバーの管理者がクライアント側のドライブへのアクセスを禁止していると思われますので，サーバーの管理者へお問合せ下さい．
+メモ帳でクライアント側のドライブが表示された場合は，自社開発ソフトのファイルアクセス関連の全てのメニューでクライアント側のドライブが表示されるかどうか確認して下さい．ファイルアクセス関連の全てのメニューでクライアント側のドライブが表示されない場合は，自社開発ソフトがWindowsの下位レベルのAPIでドライブを参照している可能性が高いと考えられます．このような場合は，ファイルアクセス関連のメニューの機能をWindowsの標準的なAPIでドライブを参照するように処理を修正する必要があります．
+ファイルアクセス関連の一部のメニューでクライアント側のドライブが表示されない場合は，そのメニューがWindowsの下位レベルのAPIでドライブを参照している可能性が高いと考えられます．このような場合も，そのメニューの機能をWindowsの標準的なAPIでドライブを参照するように処理を修正する必要があります．
+ファイル KGTN2016052101.pdf [(59.9 KB)] [kitasp 技術センター, 2016/05/27 17:22]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2553/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -362,7 +362,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2630/">
+                                      <a href="/posts/new_md/doc2554/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -370,7 +370,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2630/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2554/">[GGH4.X] Windowsクライアントをインストールしたが，どうやって起動すれば良いのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -383,18 +383,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2630/"><i class="far fa-calendar"></i> 2016-02-05</a>
+                                            <a href="/posts/new_md/doc2554/"><i class="far fa-calendar"></i> 2016-05-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/02/05*
-[番号] 技術ノート KGTN 2016020208
-[現象] [GGH4.X-5.X] アプリケーションの動作が遅い．
-[説明] アプリケーションの動作が遅いと感じられる場合，先ず以下の情報を採取してお送り下さい．
-1.サーバーのマシンスペック 2.クライアントのマシンスペック 3.アプリケーションの情報 （名称や遅いと感じる機能） 4.サーバーとクライアント間のネットワーク情報 （回線速度，往復遅延時間，パケットロス） 5.動作状況でのサーバー側でのタスクマネージャーのパフォーマンスグラフ（CPUとイーサーネット） 6.アプリケーションの動作状況が分かる動画
-ファイル KGTN2016020208.pdf [(52.7 KB)] [kitasp 技術センター, 2016/02/05 15:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2630/" class="btn btn-template-main">続きを読む</a>
+2016/05/27*
+[番号] 技術ノート KGTN 2016052002
+[現象] [GGH4.X] Windowsクライアントをインストールしたが，どうやって起動すれば良いのか？
+[説明] スタートメニュー → GraphOn GO-Global 4 → GO-Global を選択することで Windowsクライアント を起動することが出来ます．
+ファイル KGTN2016052002.pdf [(90.8 KB)] [kitasp 技術センター, 2016/05/27 17:20]
+KGTN2016052002.jpg
+表示 [(19.3 KB)] [kitasp 技術センター, 2016/05/27 17:20]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2554/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -404,7 +405,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2631/">
+                                      <a href="/posts/new_md/doc2538/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -412,7 +413,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2631/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2538/">[GGH5.0] GGH5.0.1.22962 にアップグレードしたところ，クライアント側のUSBディスク （ドライブ） が表示されなくなった．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -425,17 +426,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2631/"><i class="far fa-calendar"></i> 2016-02-05</a>
+                                            <a href="/posts/new_md/doc2538/"><i class="far fa-calendar"></i> 2016-05-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/02/05*
-[番号] 技術ノート KGTN 2016020207
-[現象] [GGH4.X-5.X] デスクトップ上にあるファイルをメールに添付したいが，ファイル選択ダイアログに表示されない．
-[説明] デスクトップの実体は， C:UsersDesktop というフォルダです．GG上で動作するアプリケーションは，クライアント側の C: ドライブを参照することが出来ませんので，ファイル選択ダイアログで （クライアント側の） デスクトップにアクセスすることは出来ません．この問題を解決するには，GGのクライアントドライブ機能を有効にし，クライアントの C: ドライブをサーバー側のM: ドライブに対応付け，ファイル選択ダイアログで M:UsersDesktop を選択する方法が考えられます．
-ファイル KGTN2016020207.pdf [(57.3 KB)] [kitasp 技術センター, 2016/02/05 15:31]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2631/" class="btn btn-template-main">続きを読む</a>
+2016/05/27*
+[番号] 技術ノート KGTN 2016051301
+[現象] [GGH5.0] GGH5.0.1.22962 にアップグレードしたところ，クライアント側のUSBディスク （ドライブ） が表示されなくなった．
+[説明] この問題は， GGH5.0.1.23173 で修正されております． GGH5.0.1.23173 またはそれ以降のビルドへのアップグレードをお願いします．
+ファイル KGTN2016051301.pdf [(47.4 KB)] [kitasp 技術センター, 2016/06/17 16:17]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2538/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -445,7 +446,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2632/">
+                                      <a href="/posts/new_md/doc2258/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -453,7 +454,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2632/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2258/">[GGH5.X] GGH5.0.0～GGH5.0.2の主な変更点 （修正点） は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -466,18 +467,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2632/"><i class="far fa-calendar"></i> 2016-02-05</a>
+                                            <a href="/posts/new_md/doc2258/"><i class="far fa-calendar"></i> 2016-05-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/02/05*
-[番号] 技術ノート KGTN 2016020206
-[現象] [GGH4.X-5.X] ブラウザのパスワード保存機能を利用した場合，他の利用者にそれを使われてしまう可能性はないのか？
-[説明] これはGGの環境に特化した内容ではなく，パソコンの利用に関する一般的な内容です．利用者A・B・C　と１台のパソコンがある環境で，各利用者が同じアカウント Administrator で１台のパソコンを利用するのであれば，保存したパスワード等は他の利用者に使われてしまいます．利用者A・B・C　にそれぞれ個別のアカウント UserA・UserB・UserC を割り当てれば，保存したパスワード等が他の利用者に使われてしまうことはありません．
-つまり，アカウントを共用するのであれば，利用者がパスワード等を保存しないことが必要不可欠です．パスワードを保存するのであれば，利用者毎に異なるアカウントを割り当てることが必須です．
-ファイル KGTN2016020206.pdf [(55.2 KB)] [kitasp 技術センター, 2016/02/05 15:31]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2632/" class="btn btn-template-main">続きを読む</a>
+2016/05/27*
+[番号] 技術ノート KGTN 2016042701
+[現象] [GGH5.X] GGH5.0.0～GGH5.0.2の主な変更点 （修正点） は？
+[説明] GGH5.0.0～GGH5.0.2 の主な変更点 （修正点） は，以下の通りです．
+ ホスト環境での32ビットWindows （Windows Server 2003 / Windows XP） のサポート終了． iOSクライアントの改良 （新しいユーザー インターフェイス，操作性向上，タスク切り替え） ． Androidクライアントの改良 （新しいユーザー インターフェイス，操作性向上，タスク切り替え） ． モバイルクライアント環境 （iOS/Android） での hopTo MAX のサポート （オプション） ． ホスト環境での自動更新機能の追加． Windows更新プログラムによる非互換性の低減． クライアント環境での Mac OS X 10.11 El Capitan のサポート． サーバー環境での安定性の向上 （Watchdog Timer でのBSOD等） ． Microsoft Office 2016 のサポート．  ファイル KGTN2016042701.pdf [(63.4 KB)] [kitasp 技術センター, 2016/11/02 11:48]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2258/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -487,7 +487,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2633/">
+                                      <a href="/posts/new_md/doc2570/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -495,7 +495,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2633/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2570/">[GGH5.X] GGH5.0.1は，サーバー環境として Windows 10 Pro をサポートしているのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -508,19 +508,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2633/"><i class="far fa-calendar"></i> 2016-02-05</a>
+                                            <a href="/posts/new_md/doc2570/"><i class="far fa-calendar"></i> 2016-05-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/02/05*
-[番号] 技術ノート KGTN 2016020203
-[現象] [GGH4.X-5.X] サーバーがマルウェア （ウイルス） に感染した場合，クライアントへ感染する可能性はあるのか？
-[説明] GGのクライアント機能 （ドライブおよびクリップボード） の設定が無効であれば，サーバーとクライアント間の通信内容はキーボードやマウス操作の情報および画面の描画情報に限られますので，サーバー上のマルウェアがクライアント側へ感染することはありません．
-ファイル KGTN2016020203.pdf [(75 KB)] [kitasp 技術センター, 2016/02/05 15:24]
-KGTN2016020203.jpg
-表示 [(11.5 KB)] [kitasp 技術センター, 2016/02/05 15:26]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2633/" class="btn btn-template-main">続きを読む</a>
+2016/05/27*
+[番号] 技術ノート KGTN 2016041301
+[現象] [GGH5.X] GGH5.0.1は，サーバー環境として Windows 10 Pro をサポートしているのか？
+[説明] いいえ，GGH5.0.1 はサーバー環境として Windows 10 Pro をサポートしておりません．インストールは出来ますが，&ldquo;Workstation NT10.0 x64 Service Pack 0 is not tested. Sessions might not start on this operating system. Please consult the administrators guide for a complete list of supported operating systems.&rdquo; というメッセージがAPSログに記録され，クライアントからの接続要求も強制切断されます．
+ファイル KGTN2016041301.pdf [(59.5 KB)] [kitasp 技術センター, 2016/05/27 15:32]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2570/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -530,7 +528,7 @@ KGTN2016020203.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2634/">
+                                      <a href="/posts/new_md/doc2552/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -538,7 +536,7 @@ KGTN2016020203.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2634/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2552/">[GGH5.X] iOSクライアントやAndroidクライアントを使用した場合，ブラウザが認識する解像度はどうなるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -551,19 +549,19 @@ KGTN2016020203.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2634/"><i class="far fa-calendar"></i> 2016-02-05</a>
+                                            <a href="/posts/new_md/doc2552/"><i class="far fa-calendar"></i> 2016-05-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/02/05*
-[番号] 技術ノート KGTN 2016020202
-[現象] [GGH4.X-5.X] GGサーバーで動作するブラウザでファイルをダウンロードした場合，どこに保存されるのか？
-[説明] ブラウザはGGサーバー上で動作しておりますので，基本的にはGGサーバー上の所定のフォルダーに保存されます．クライアント側に保存したい場合は，クラスターマネージャーでクライアントドライブを有効にすることで，下記例のようにクライアント側 （クライアント側のC:ドライブがサーバー側のM:ドライブにマッピングされています） に直接保存することが可能です．なお，ブラウザのキャッシュ等は，GGサーバー上の所定のフォルダー （各ユーザーのプロファイル上） に保存されます．
-ファイル KGTN2016020202.pdf [(202 KB)] [kitasp 技術センター, 2016/02/05 15:22]
-KGTN2016020202.jpg
-表示 [(64.5 KB)] [kitasp 技術センター, 2016/02/05 15:22]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2634/" class="btn btn-template-main">続きを読む</a>
+2016/05/27*
+[番号] 技術ノート KGTN 2016052301
+[現象] [GGH5.X] iOSクライアントやAndroidクライアントを使用した場合，ブラウザが認識する解像度はどうなるのか？
+[説明] サーバー本体の解像度が 1920×1080 (24Bit Color) の環境で， iPad2 ・ FJL22 (Android) ・ Nexus 6P の各ディバイスでテストした結果は以下の通りです．
+機種と向き 解像度 色深度
+ サーバー本体 1920×1080 24Bit Color iPad2 横 1024×713 24Bit Color iPad2 縦 768×969 24bit Color FJL22 横 897×447 24bit Color FJL22 縦 540×795 24Bit Color Nexus 6P 横 1196×613 24Bit Color Nexus 6P 縦 720×1089 24Bit Color
+ファイル KGTN2016052301.pdf [(123 KB)] [kitasp 技術センター, 2016/05/27 17:27]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2552/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -573,7 +571,7 @@ KGTN2016020202.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2636/">
+                                      <a href="/posts/new_md/doc2558/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -581,7 +579,7 @@ KGTN2016020202.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2636/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2558/">[GGH5.X] Windows Server 2008 R2 Datacenter &#43; GGH5.X の環境でBSODが発生したので，原因を調査して欲しい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -594,24 +592,17 @@ KGTN2016020202.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2636/"><i class="far fa-calendar"></i> 2016-02-05</a>
+                                            <a href="/posts/new_md/doc2558/"><i class="far fa-calendar"></i> 2016-05-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/02/05*
-[番号] 技術ノート KGTN 2016020201
-[現象] [GGH4.X-5.X] 同じアカウントで複数のクライアントからログオンした場合，アプリケーションの動作はどのようになるのか？
-[説明] GG向けに作成されたアプリケーションであれば，環境変数 USERSESSION を利用して同一アカウントでもそれぞれ異なるセッションとして認識し，相互に影響を与えることなく動作します．
-IE を始めとする一般のアプリケーションでは，ユーザーのみを認識しセッションを認識しませんので，例えばユーザー１がお気に入りを登録すると，ユーザー２にもその登録内容が直ちに反映されます．これはWindowsの仕様によるもので，コンソールや RDS の環境で （時間を分けて） 同じアカウントでアクセスした場合と同様です．
-１台のGGサーバー上で同じアカウントでの複数ログオンを禁止したい場合は，クラスターマネージャーの設定項目 Maximum sessions per user の値に１を設定して下さい．
-また，複数サーバーの環境で同じアカウントでの複数ログオンを禁止したい場合は，拡張パックの GGEasyMonitor を使用し， singleLogon 機能を有効にして下さい．
-ファイル KGTN2016020201.pdf [(154 KB)] [kitasp 技術センター, 2016/02/05 15:19]
-KGTN2016020201-1.jpg
-表示 [(18 KB)] [kitasp 技術センター, 2016/02/05 15:19]
-KGTN2016020201-2.jpg
-表示 [(28.3 KB)] [kitasp 技術センター, 2016/02/05 15:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2636/" class="btn btn-template-main">続きを読む</a>
+2016/05/27*
+[番号] 技術ノート KGTN 2016051901
+[現象] [GGH5.X] Windows Server 2008 R2 Datacenter + GGH5.X の環境でBSODが発生したので，原因を調査して欲しい．
+[説明] GGH5.Xは以下の環境のみをサポートしており，Windows Server 2008 R2 Datacenter の環境はサポートしておりません．GGH5.X がサポートする Windows Server 2012 R2 Datacenter 等の環境をご利用頂き，その環境の下でBSODが発生した場合に限りGraphOn社にて解析を行います．
+Microsoft Windows Server 2008 R2 Datacenter is not a supported OS for GO-Global: http://www.graphon.com/customer-support/system-requirements Once if you are able to reproduce the BSOD on a supported OS, we can reopen this case. We'll need steps to reproduce, Support Request Wizard logs, memory dumps, and license file (valid maintenance is required).</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2558/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -621,7 +612,7 @@ KGTN2016020201-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2637/">
+                                      <a href="/posts/new_md/doc2561/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -629,7 +620,7 @@ KGTN2016020201-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2637/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2561/">[GGH5.X] アップグレード時に Error 1935.An error occurred during the installation of assembly component {4F6D20F0-CCE5-1492-A01F-C8B3B9A1E18E}. というエラーが発生した．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -642,17 +633,20 @@ KGTN2016020201-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2637/"><i class="far fa-calendar"></i> 2016-02-05</a>
+                                            <a href="/posts/new_md/doc2561/"><i class="far fa-calendar"></i> 2016-05-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/02/05*
-[番号] 技術ノート KGTN 2016012201
-[現象] [GGH4.X-5.X/ExPack] 拡張パックに含まれるソフトウエア GGEasyMonitor の振分け機能がサポートする IE のバージョンは？
-[説明] GGEasyMonitor の振分け機能は，GGのログオン用ウエッブページ logon.html の機能をフルに利用しますので，必ず IE10 または IE11 をご利用下さい．それ以前のバージョンの IE では， logon.html 中に記述された Javascript 等が上手く動作せず，ログオン出来ない可能性があります．このような場合は，他のブラウザ（Google Chrome の最新版など） を使用するか，または GGEasyMonitor をサポートする GGEasyLogon （バージョン5.1.1またはそれ以降） を使用して下さい．
-ファイル KGTN2016012201.pdf [(60.8 KB)] [kitasp 技術センター, 2016/02/05 15:09]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2637/" class="btn btn-template-main">続きを読む</a>
+2016/05/27*
+[番号] 技術ノート KGTN 2016050101
+[現象] [GGH5.X] アップグレード時に &ldquo;Error 1935.An error occurred during the installation of assembly component {4F6D20F0-CCE5-1492-A01F-C8B3B9A1E18E}.&rdquo; というエラーが発生した．
+[説明] このエラーはGGのインストール処理に起因する問題ではなく， Windows 環境に起因する問題です．原因はマイクロソフト社の知識ベース KB946927 等にありますが，対応としては
+ GGのアンインストール GGのインストール  を行って下さい．
+ファイル KGTN2016050101.pdf [(64.9 KB)] [kitasp 技術センター, 2016/05/27 16:45]
+KGTN2016050101.jpg
+表示 [(7.33 KB)] [kitasp 技術センター, 2016/05/27 16:45]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2561/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -662,7 +656,7 @@ KGTN2016020201-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2638/">
+                                      <a href="/posts/new_md/doc2563/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -670,7 +664,7 @@ KGTN2016020201-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2638/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2563/">[iOS/Android] Ver5.0.1 のモバイルクライアントのタッチ操作とコツを知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -683,20 +677,23 @@ KGTN2016020201-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2638/"><i class="far fa-calendar"></i> 2016-02-05</a>
+                                            <a href="/posts/new_md/doc2563/"><i class="far fa-calendar"></i> 2016-05-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/02/05*
-[番号] 技術ノート KGTN 2016011801
-[現象] [GGH4.X-5.X/ExPack] 拡張パックに含まれるソフトウエア GGEasyMonitor の振分け処理のパフォーマンスはどれくらいか？
-[説明] 振分けサーバー （CPUはAMD Phenom II X6 1090T 3.2GHZ / 6core） のパフォーマンスを Apache JMeter で計測した結果は，以下の通りです．
-セッション数2000の状況で５万回の単純振分け， singleLogon = NO
- スレッド数 平均応答時間 90%Line応答時間 エラー発生率 平均振分け効率 50 38ms 20ms 0.00% 1064.0/秒 100 74ms 36ms 0.00% 1129.2/秒 200 151ms 85ms 0.00% 1113.7/秒
- セッション数2000の状況で１万回の拡張振分け ， singleLogon = YES, 新規ログオン時
- スレッド数 平均応答時間 90%Line応答時間 エラー発生率 平均振分け効率 25 411ms 474ms 0.00% 58.9/秒 50 810ms 943ms 0.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2638/" class="btn btn-template-main">続きを読む</a>
+2016/05/27*
+[番号] 技術ノート KGTN 2016042002
+[現象] [iOS/Android] Ver5.0.1 のモバイルクライアントのタッチ操作とコツを知りたい．
+[説明] マウス操作に対応するタッチ操作は，以下の通りです．
+  左クリック １本指 （人差し指） で軽く１回叩く．
+  ダブルクリック １本指 （人差し指） で軽く２回叩く．
+  ドラッグ＆ドロップ １本指 （人差し指） で軽く触れて，そのまま指を動かし，そして指を離す．
+  右クリック ２本指 （人差し指と中指） で軽く１回叩く． 注） ２本の指は 「指１本分くらい」 離して下さい．左側の指の位置がクリック位置となります．
+  右ドラッグ＆ドロップ ２本指 （人差し指と中指） で軽く触れて，そのまま指を動かし，そして指を離す． 注） ２本の指は 「指１本分くらい」 離して下さい．左側の指の位置がクリック位置となります． [　必ず事前に操作対象を左クリックで選択して下さい．操作対象が選択されていない場合，および操作対象上で触れていない場合はホイール回転 （スクロール） として処理されます．]{.underline}
+  ホイール回転 （前方） ２本指 （人差し指と中指） で触れて，そのまま指を上方向へ動かし，そして指を離す． 注） ２本の指は 「指１本分くらい」 離して下さい．２本指で触れた後にゆっくりと指を動かして下さい． 上手く動作しない場合は，操作対象のウインドウを左クリックし，ウインドウにフォーカスを移動させて下さい．
+  ホイール回転 （後方） ２本指 （人差し指と中指） で触れて，そのまま指を下方向へ動かし，そして指を離す． 注） ２本の指は 「指１本分くらい」 離して下さい．２本指で触れた後にゆっくりと指を動かして下さい． 上手く動作しない場合は，操作対象のウインドウを左クリックし，ウインドウにフォーカスを移動させて下さい．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2563/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -706,7 +703,7 @@ KGTN2016020201-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2644/">
+                                      <a href="/posts/new_md/doc2567/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -714,7 +711,7 @@ KGTN2016020201-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2644/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2567/">[iOS] iOSクライアント Ver5.0.1 の環境で Auto Connect を利用すると，直近の接続先以外のサーバーへ接続する．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -727,17 +724,17 @@ KGTN2016020201-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2644/"><i class="far fa-calendar"></i> 2016-01-15</a>
+                                            <a href="/posts/new_md/doc2567/"><i class="far fa-calendar"></i> 2016-05-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/01/15*
-[番号] 技術ノート KGTN 2016011502
-[現象] [GGH4.X-5.X/ExPack] 拡張パックに含まれるソフトウエア GGEasyMonitor で，クライアントのIPアドレスを表示して欲しい．
-[説明] セッション情報の取得に使用しているソフトウエア （SDK） でクライアントのIPアドレスを参照する場合，毎回クライアントPCへのIPアドレスの問合せが発生します．この問合せにはクライアント当たり数秒を要しますので，多数のクライアント （セッション） の情報を高頻度で更新する GGEasyMonitor の仕様では，それを行うことが技術的に困難です．お手数ですが，クライアントのIPアドレスを知りたい場合は，クラスタ・マネージャの併用をお願いします．
-ファイル KGTN2016011502.pdf [(59.3 KB)] [kitasp 技術センター, 2016/01/15 17:36]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2644/" class="btn btn-template-main">続きを読む</a>
+2016/05/27*
+[番号] 技術ノート KGTN 2016041303
+[現象] [iOS] iOSクライアント Ver5.0.1 の環境で Auto Connect を利用すると，直近の接続先以外のサーバーへ接続する．
+[説明] この現象は，Ver5.0.1の初期のiOSクライアント （5.0.1.22931～5.0.1.22998） の不具合です．将来リリースされるビルドで修正される見込みです．
+ファイル KGTN2016041303.pdf [(49.6 KB)] [kitasp 技術センター, 2016/05/27 15:35]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2567/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -807,7 +804,7 @@ KGTN2016020201-2.jpg
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2655/">
+                                      <a href="/posts/new_md/doc2598/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2655/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2598/">[GGH4.X-5.X] GG が RDS に依存してないことを確認する方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,19 +340,23 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2655/"><i class="far fa-calendar"></i> 2015-12-17</a>
+                                            <a href="/posts/new_md/doc2598/"><i class="far fa-calendar"></i> 2016-04-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/12/17*
-[番号] 技術ノート KGTN 2015121002
-[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor で，専用サーバーにサーバー機能・ウエッブ機能・振分け機能をインストールしたいが，その場合に必要な設定項目は？
-[説明] 以下に，２台のGGサーバー （GG-Server1とGG-Server2） の監視情報を受信し，監視画面および振分け画面を表示する設定例を示します． [サーバー機能を利用する場合，サーバー機能関連のセクションに記述する内容は， 「監視情報を通知して来るエージェントの情報」 です．]{.underline} なお，webRxpURL のURLでGGのクライアントが起動出来るように， IIS およびGGのウエッブページ （GGサーバーのwebフォルダ） をインストールする必要があります．
-[default] ; ★あり - 構成によって変更等が必要な項目 ; ★なし - 必要がない限り変更等が不要な項目
-; ＊ログ関連＊ ; logLevel : 一般のログ出力レベル ; logLevelNet : 通信関連のログ出力レベル ; logLevelWeb : 監視画面のログ出力レベル ; logLevelCbk : 振分け機能のログ出力レベル logLevel = 4 logLevelNet = 4 logLevelWeb = 4 logLevelCbk = 4
-; ＊通信関連＊ ; hostPort : ★サーバー/エージェントの待受けポートの番号 ; avSleep : アクティブ時の送信間隔（秒） ; avTimeout : アクティブ時のタイムアウト時間（秒） ; pvSleep : 未使用 ; pvTimeout : パッシブ時のタイムアウト時間（秒） ; updateInterval : ★エージェントの送信間隔（秒） ; bufferSize : ★送受信バッファのサイズ（MB） ; maxTempError : 一時的なエラーを無視する回数 hostPort = 8491 avSleep = 3 avTimeout = 60 pvSleep = 3 pvTimeout = 60 updateInterval = 3 bufferSize = 10 maxTempError = 10</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2655/" class="btn btn-template-main">続きを読む</a>
+2016/04/08*
+[番号] 技術ノート KGTN 2016032802
+[現象] [GGH4.X-5.X] GG が RDS に依存してないことを確認する方法は？
+[説明] もっとも簡単な方法は， RDS 関連のサービスを停止することです． Windows Server 2012 R2 の例では，以下 の６つのサービスを停止します． Remote Desktop Configuration Remote Desktop Connection Broker Remote Desktop Management Remote Desktop Services Remote Desktop Services UserMode Port Redirector RemoteApp and Desktop Connection Management
+このサーバーにRDS でアクセスした場合は，以下のようなエラーが発生して接続することが出来ません．
+他方，このサーバーにGG でアクセスした場合は，以下のように正常に接続することが出来ます．
+ファイル KGTN2016032802.pdf [(395 KB)] [kitasp 技術センター, 2016/04/08 17:35]
+KGTN2016032802-1.jpg
+表示 [(23.8 KB)] [kitasp 技術センター, 2016/04/08 17:35]
+KGTN2016032802-2.jpg
+表示 [(34.5 KB)] [kitasp 技術センター, 2016/04/08 17:35]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2598/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -362,7 +366,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2656/">
+                                      <a href="/posts/new_md/doc1996/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -370,7 +374,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2656/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc1996/">[GGH4.X-5.X] PowerPoint のスライドショーが上手く動作しない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -383,19 +387,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2656/"><i class="far fa-calendar"></i> 2015-12-17</a>
+                                            <a href="/posts/new_md/doc1996/"><i class="far fa-calendar"></i> 2016-04-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/12/17*
-[番号] 技術ノート KGTN 2015121001
-[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor で，GGサーバーにエージェント機能をインストールしたいが，その場合に必要な設定項目は？
-[説明] 以下に，２台の GGEasyMonitor サーバー （GEM-Server1とGEM-Server2） に監視情報を通知する設定例を示します． [エージェント機能を利用する場合，エージェント機能関連のセクションに記述する内容は， 「通知先のサーバー情報」 です．]{.underline}
-[default] ; ★あり - 構成によって変更等が必要な項目 ; ★なし - 必要がない限り変更等が不要な項目
-; ＊ログ関連＊ ; logLevel : 一般のログ出力レベル ; logLevelNet : 通信関連のログ出力レベル ; logLevelWeb : 監視画面のログ出力レベル ; logLevelCbk : 振分け機能のログ出力レベル logLevel = 4 logLevelNet = 4 logLevelWeb = 4 logLevelCbk = 4
-; ＊通信関連＊ ; hostPort : ★サーバー/エージェントの待受けポートの番号 ; avSleep : アクティブ時の送信間隔（秒） ; avTimeout : アクティブ時のタイムアウト時間（秒） ; pvSleep : 未使用 ; pvTimeout : パッシブ時のタイムアウト時間（秒） ; updateInterval : ★エージェントの送信間隔（秒） ; bufferSize : ★送受信バッファのサイズ（MB） ; maxTempError : 一時的なエラーを無視する回数 hostPort = 8491 avSleep = 3 avTimeout = 60 pvSleep = 3 pvTimeout = 60 updateInterval = 3 bufferSize = 10 maxTempError = 10</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2656/" class="btn btn-template-main">続きを読む</a>
+2016/04/08*
+[番号] 技術ノート KGTN 2016032801
+[現象] [GGH4.X-5.X] PowerPoint のスライドショーが上手く動作しない．
+[説明] この問題は Windows Server 2012 R2 / Windows Server 2016 の環境で，バージョン 5.0.2 Patch 5 release （5.0.2.25362） で修正されております．弊社では， PowerPoint 2016 で動作を確認しました．
+ファイル KGTN2016032801.pdf [(32.5 KB)] [kitasp 技術センター, 2017/10/10 10:39]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1996/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -405,7 +407,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2658/">
+                                      <a href="/posts/new_md/doc2599/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -413,7 +415,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2658/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2599/">[GGH4.X-5.X] クライアント環境での Windows 10 のサポート状況を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -426,17 +428,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2658/"><i class="far fa-calendar"></i> 2015-12-17</a>
+                                            <a href="/posts/new_md/doc2599/"><i class="far fa-calendar"></i> 2016-04-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/12/17*
-[番号] 技術ノート KGTN 2015120908
-[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor は，どのようにして起動すれば良いのか？
-[説明] Windowsのタスク スケジューラーで起動するか，または拡張パックに含まれる GMService で起動して下さい． GGEasyMonitor は常時起動しておく必要がありますので，異常終了が発生した時でも自動的に再起動処理を行う GMService の利用をお勧めします．
-ファイル KGTN2015120908.pdf [(55.9 KB)] [kitasp 技術センター, 2015/12/17 11:48]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2658/" class="btn btn-template-main">続きを読む</a>
+2016/04/08*
+[番号] 技術ノート KGTN 2016032402
+[現象] [GGH4.X-5.X] クライアント環境での Windows 10 のサポート状況を知りたい．
+[説明] GGH4.Xは，クライアント環境として Windows 10 をサポートしません．GGH5.X は，クライアント環境として Windows 10 をサポートします （ビルド 5.0.0.22626 またはそれ以降） ．現時点では Microsoft Edge はプラグインや拡張機能を追加することが出来ませんので （Windows 10 の仕様） ，ブラウザとして IE または Chrome をご利用下さい．
+補　足 GGH5.0.0のドキュメントでは，クライアント環境として Windows 10 が記述されておりませんが，次の通り記述の漏れによるものです： &ldquo;CASE#46392 Support for Windows 10 as a client operating system is not documented.&rdquo;
+ファイル KGTN2016032402.pdf [(196 KB)] [kitasp 技術センター, 2016/04/08 17:23]
+KGTN2016032402.jpg
+表示 [(43.9 KB)] [kitasp 技術センター, 2016/04/08 17:26]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2599/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -446,7 +451,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2659/">
+                                      <a href="/posts/new_md/doc2600/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -454,7 +459,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2659/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2600/">[GGH4.X-5.X] 描画オブジェクトが多いアプリケーションを利用すると，スムーズに動作しない．サーバー側のCPU使用率を確認したところ，70～100% と高く推移している．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -467,17 +472,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2659/"><i class="far fa-calendar"></i> 2015-12-17</a>
+                                            <a href="/posts/new_md/doc2600/"><i class="far fa-calendar"></i> 2016-04-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/12/17*
-[番号] 技術ノート KGTN 2015120907
-[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor のフォルダにある SorryPage.html とは何か．
-[説明] 振分け機能で，利用 （接続） できるサーバーが無い時に，このファイルの内容がブラウザ上に表示されます．例えば，スクリプトを記述することで，所定の間隔で再試行を行うことも出来ます．システムの利用形態に応じて，自由にカスタマイズを行って下さい．
-ファイル KGTN2015120907.pdf [(59.8 KB)] [kitasp 技術センター, 2015/12/17 11:47]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2659/" class="btn btn-template-main">続きを読む</a>
+2016/04/08*
+[番号] 技術ノート KGTN 2016032401
+[現象] [GGH4.X-5.X] 描画オブジェクトが多いアプリケーションを利用すると，スムーズに動作しない．サーバー側のCPU使用率を確認したところ，70～100% と高く推移している．
+[説明] APIラッピング方式 （GG） は，スクリーンスクレイピング方式 （RDS） と異なりサーバー側での描画内容を間引くことなくクライアント側へ転送し，クライアント上で描画順序も含め正確に再現するいため，描画オブジェクトが多いアプリケーションではサーバー側およびクライアント側のCPU使用率が高くなる傾向があります．このような場合は，GGサーバーのパラメタ ClientProcessingBatch （技術ノートKGTN#2013020601を参照して下さい） を有効にすることで，多数の描画命令をまとめてクライアント側に転送しパフォーマンスを改善することが出来ます．これでも十分なパフォーマンスが得られない場合は，GGサーバーのCPU性能 （クロック数やコア数） を上げることをお考え下さい．
+ファイル KGTN2016032401.pdf [(65.1 KB)] [kitasp 技術センター, 2016/04/08 17:19]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2600/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -487,7 +492,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2660/">
+                                      <a href="/posts/new_md/doc2597/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -495,7 +500,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2660/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2597/">[IIS] IIS上で実行すると暗号化APIの CryptAcquireContext がエラーとなる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -508,17 +513,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2660/"><i class="far fa-calendar"></i> 2015-12-17</a>
+                                            <a href="/posts/new_md/doc2597/"><i class="far fa-calendar"></i> 2016-04-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/12/17*
-[番号] 技術ノート KGTN 2015120906
-[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor のウエッブ機能で，監視画面の背景色を変更したい．
-[説明] スタイルシート GGEasyMonitor.css を編集することで，監視画面の背景色やレイアウト等をある程度変更することが出来ます．
-ファイル KGTN2015120906.pdf [(51.5 KB)] [kitasp 技術センター, 2015/12/17 11:46]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2660/" class="btn btn-template-main">続きを読む</a>
+2016/04/08*
+[番号] 技術ノート KGTN 2016033101
+[現象] [IIS] IIS上で実行すると暗号化APIの CryptAcquireContext がエラーとなる．
+[説明] アプリケーションプールの既定値の設定で，項目 &ldquo;ユーザープロファイルの読み込み&rdquo; の値を True に設定することで解決します．拡張パックの GGEasyRentEncode をIIS上で実行する場合も，この設定が必要です．
+ファイル KGTN2016033101.pdf [(98.1 KB)] [kitasp 技術センター, 2016/04/08 17:38]
+KGTN2016033101.jpg
+表示 [(30.4 KB)] [kitasp 技術センター, 2016/04/08 17:38]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2597/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -528,7 +535,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2661/">
+                                      <a href="/posts/new_md/doc2610/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -536,7 +543,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2661/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2610/">[GGH4.X-5.0] ブラウザ （Chrome） をホスティングするが， Chrome のユーザー機能を利用すれば，全ての利用者が同じユーザーIDでログオンしても構わないか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -549,17 +556,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2661/"><i class="far fa-calendar"></i> 2015-12-17</a>
+                                            <a href="/posts/new_md/doc2610/"><i class="far fa-calendar"></i> 2016-03-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/12/17*
-[番号] 技術ノート KGTN 2015120905
-[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor がサポートするデータベース・ソフトウエアを知りたい．
-[説明] GGEasyMonitor は，導入や保守の容易さ，および高いパフォーマンスを実現するため，敢えてデータベース・ソフトウエアを使用しておりません．従って，GGのサーバー機能が動作する環境であれば，他のソフトウエアの導入無しに利用することが出来ます．
-ファイル KGTN2015120905.pdf [(55.3 KB)] [kitasp 技術センター, 2015/12/17 11:45]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2661/" class="btn btn-template-main">続きを読む</a>
+2016/03/11*
+[番号] 技術ノート KGTN 2016020504
+[現象] [GGH4.X-5.0] ブラウザ （Chrome） をホスティングするが， Chrome のユーザー機能を利用すれば，全ての利用者が同じユーザーIDでログオンしても構わないか？
+[説明] Chrome のユーザー機能を使用することで，１台のディバイス上で複数のユーザーが設定やブックマークを切り替えて利用することが出来るようになります．しかしながら，共有ディバイス上のユーザーが自由にこのプロフィールを切り替えることが出来ますので，全ユーザーが信頼できる場合に限り利用することをお勧めします．そうでない場合は，１利用者１ユーザーID （アカウント） でログオンするようにして下さい．
+ファイル KGTN2016020504.pdf [(65.1 KB)] [kitasp 技術センター, 2016/03/11 16:06]
+KGTN2016020504.jpg
+表示 [(9.93 KB)] [kitasp 技術センター, 2016/03/11 16:08]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2610/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -569,7 +578,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2662/">
+                                      <a href="/posts/new_md/doc2611/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -577,7 +586,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2662/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2611/">[GGH4.X-5.0] ブラウザ （IE） をホスティングしたいが，利用者がログオンする時のユーザーIDは同じで構わないか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -590,17 +599,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2662/"><i class="far fa-calendar"></i> 2015-12-17</a>
+                                            <a href="/posts/new_md/doc2611/"><i class="far fa-calendar"></i> 2016-03-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/12/17*
-[番号] 技術ノート KGTN 2015120904
-[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能は，ほぼ同じタイミングで複数のクライアントから接続要求があった場合，偏った振分けになったりしないのか？
-[説明] 振分け処理は，その時点で保持するGGサーバーのセッション数の情報 （利用中のセッション数と最大セッション数） に加え，過去の振分け状況も加味して適切な接続先を選択しますので，ほぼ同じタイミングで複数のクライアントから接続要求があった場合でも，偏った振分けになることはありません．
-ファイル KGTN2015120904.pdf [(58.3 KB)] [kitasp 技術センター, 2015/12/17 11:45]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2662/" class="btn btn-template-main">続きを読む</a>
+2016/03/11*
+[番号] 技術ノート KGTN 2016020503
+[現象] [GGH4.X-5.0] ブラウザ （IE） をホスティングしたいが，利用者がログオンする時のユーザーIDは同じで構わないか？
+[説明] ブラウザには，お気に入り機能・パスワード保存機能・オートコンプリート機能等がありますが，利用者が全て同じユーザーIDでログオンした場合，それらの機能で記録された情報が直ちに他の利用者 （セッション） にも反映されてしまいます．これはセキュリティ上問題となりますので，１利用者１ユーザーID （アカウント） での運用を強くお勧めします．
+ファイル KGTN2016020503.pdf [(55.3 KB)] [kitasp 技術センター, 2016/03/11 16:04]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2611/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -610,7 +619,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2663/">
+                                      <a href="/posts/new_md/doc2614/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -618,7 +627,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2663/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2614/">[GGH4.X-5.0] ブラウザやメールソフトのホスティングを考えているが，Windows版かLinux版かを迷っている．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -631,17 +640,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2663/"><i class="far fa-calendar"></i> 2015-12-17</a>
+                                            <a href="/posts/new_md/doc2614/"><i class="far fa-calendar"></i> 2016-03-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/12/17*
-[番号] 技術ノート KGTN 2015120903
-[現象] [GGH4.X-5.X/ExPack] 拡張パックに含まれる GGEasyMonitor の購入前の評価は可能か？
-[説明] はい，GGEasyMonitor の購入前評価として，１ヶ月間の評価用ライセンスを発行することが出来ます． 評価用ライセンスは，利用できるコンピュータを特定しませんので，そのライセンスファイルをコピーすることで複数サーバーでの評価が可能です．
-ファイル KGTN2015120903.pdf [(52.6 KB)] [kitasp 技術センター, 2015/12/17 11:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2663/" class="btn btn-template-main">続きを読む</a>
+2016/03/11*
+[番号] 技術ノート KGTN 2016020502
+[現象] [GGH4.X-5.0] ブラウザやメールソフトのホスティングを考えているが，Windows版かLinux版かを迷っている．
+[説明] 利用するウエッブサイトでの再現性 （サイト構築者が意図した通りにブラウザ上で表示され機能するかということ） を考えますと，Linux版では例えば文字コードやフォントの問題が発生する可能性がありますので，やはりWindows版を利用した方が確実です．また，ホスティングできるアプリケーションの数もWindows環境の方が圧倒的に多いので，この点からもWindows版の方がお勧めです．
+ファイル KGTN2016020502.pdf [(56.7 KB)] [kitasp 技術センター, 2016/03/11 16:03]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2614/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -651,7 +660,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2664/">
+                                      <a href="/posts/new_md/doc2607/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -659,7 +668,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2664/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2607/">[GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor が正常に起動しない．どこをチェックすれば良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -672,17 +681,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2664/"><i class="far fa-calendar"></i> 2015-12-17</a>
+                                            <a href="/posts/new_md/doc2607/"><i class="far fa-calendar"></i> 2016-03-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/12/17*
-[番号] 技術ノート KGTN 2015111301
-[現象] [GGH4.X-5.X] ActiveXクライアントは，サポート対象外の IE7～IE9 の環境で全く動作しないのか？
-[説明] ActiveXクライアントは，事実上サポート対象外の IE7～IE9 の環境でも動作します．問題になるのは，ActiveXクライアントを起動するウエッブページ （logon.html） の方で，この中の JavaScript を各ブラウザで動作するように修正する必要があります．動的にログオン先等を変更しないのであれば，JavaScript の処理を削った静的なウエッブページに書き換えることで対応が可能です．
-ファイル KGTN2015111301.pdf [(57.4 KB)] [kitasp 技術センター, 2015/12/17 11:39]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2664/" class="btn btn-template-main">続きを読む</a>
+2016/03/11*
+[番号] 技術ノート KGTN 2016022401
+[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor が正常に起動しない．どこをチェックすれば良いか？
+[説明] GGEasyMonitor が正常に起動しない場合は，ランタイムのインストールが行われてないか，または拡張パックのライセンスファイルがコピーされていないかのどちらかだと思われます．前者の場合は，スタートメニューの &ldquo;GGEasyMonitor 5) ランタイムのインストール&rdquo; を実行して下さい．後者の場合は，拡張パックのライセンスファイルを入手し，フォルダ C:kitASPGGEasyMonitor へコピーして下さい．
+ファイル KGTN2016022401.pdf [(54.1 KB)] [kitasp 技術センター, 2016/03/11 17:32]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2607/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -692,7 +701,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2665/">
+                                      <a href="/posts/new_md/doc2606/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -700,7 +709,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2665/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2606/">[GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor で振分けられたGGサーバーで， Connection failed. Access to the host was denied. または Failed to connect to any server specified. というエラーメッセージが表示された．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -713,17 +722,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2665/"><i class="far fa-calendar"></i> 2015-12-17</a>
+                                            <a href="/posts/new_md/doc2606/"><i class="far fa-calendar"></i> 2016-03-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/12/17*
-[番号] 技術ノート KGTN 2015120901
-[現象] [GGH4.X-5.X/ExPack] GGを購入したが，インストールディスクに GGEasyMonitor が見当たらない．
-[説明] GGEasyMonitor は拡張パックに含まれるソフトウエアで，GGのインストールディスクには含まれておりません．　GGEasyMonitor をご利用なさりたい場合は，別途拡張パックのご購入をお願いします．
-ファイル KGTN2015120901.pdf [(50.6 KB)] [kitasp 技術センター, 2015/12/17 11:39]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2665/" class="btn btn-template-main">続きを読む</a>
+2016/03/11*
+[番号] 技術ノート KGTN 2016022601
+[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor で振分けられたGGサーバーで， &ldquo;Connection failed. Access to the host was denied.&rdquo; または &ldquo;Failed to connect to any server specified.&rdquo; というエラーメッセージが表示された．
+[説明] 振分け先のGGサーバー上のライセンスファイルまたは利用しているライセンスサーバーで，ライセンスの獲得に失敗した可能性が高いと考えられます （例：評価用ライセンスの失効，空きライセンスの枯渇） ．APSログを参照して，詳しいエラーの情報を採取して下さい．
+なお， GGEasyMonitor はGGサーバー （APS） の状態を詳細にチェックしますが，ライセンスについては実際にログオンする時のみ状況が分かるため，このような状況が発生します．正式ライセンスで，かつ十分なライセンス数が配置されている場合は，このような状況は発生しません．
+ファイル KGTN2016022601.pdf [(67 KB)] [kitasp 技術センター, 2016/03/11 17:34]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2606/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -793,7 +803,7 @@
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

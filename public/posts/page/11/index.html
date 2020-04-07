@@ -319,6 +319,350 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
+                                      <a href="/posts/new_md/doc2668/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc2668/">[GGH6.X] Windows Server 2016 &#43; ATOK Pro 2 &#43; GGH6.0 の環境で、GGクライアントのオプション -kb でログオン時のIMEをATOKにしたい。</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2668/"><i class="far fa-calendar"></i> 2019-07-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2019/07/12*
+[番号] 技術ノート KGTN 2019071101
+[現象] [GGH6.X] Windows Server 2016 + ATOK Pro 2 + GGH6.0 の環境で、GGクライアントのオプション -kb でログオン時のIMEをATOKにしたい。
+[説明] バージョン6.0の英文の Administrator Guide の148～153ページにクライアントのキーボードとIMEの設定方法の説明があります。オプション -kb で指定するパラメタは GGII (GO-Global Input Identifiers) と呼ばれる8桁の16進数で、Microsoft IME のGGIIは次のレジストリにある 00000411 です。
+HKLMSYSTEMCurrentControlSetControlKeyboard Layouts00000411
+ATOK Pro 2 に切り替えるには、このレジストリに別の値で ATOK Pro 2 が登録されている必要がありますが、 Windows Server 2016 の環境に適合する方法で ATOK Pro 2 をインストールした場合、それが登録されないためオプション -kb でログオン時に ATOK Pro 2 に切り替えることは出来ません。なお、次のコントロールパネルで 「ユーザー単位に」 既定のIMEを ATOK Pro 2 にすることは可能です。
+ファイル KGTN2019071101.pdf [(108 KB)] [kitasp 技術センター, 2019/07/12 10:21]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2668/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc59/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc59/">[GGH6.X] バージョン5ホスト機能 （サーバー機能） がインストールされたサーバーをバージョン6へアップグレードする場合，単純にバージョン6のインストーラーを実行すれば良いのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc59/"><i class="far fa-calendar"></i> 2019-07-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2019/07/12*
+[番号] 技術ノート KGTN 2019061901
+[現象] [GGH6.X] バージョン5ホスト機能 （サーバー機能） がインストールされたサーバーをバージョン6へアップグレードする場合，単純にバージョン6のインストーラーを実行すれば良いのか？
+[説明] いいえ，次の理由により単純にバージョン6のインストーラーを実行するだけでアップグレードすることは出来ません．
+・バージョン6のライセンスファイルが必要 ・バージョン6で設定ファイルのパス等の変更
+このため，次の手順でバージョン6へのアップグレードを行って下さい．
+ クラスターマネージャーの設定をスクリーンショット等で採取 ライセンスファイルをバージョン6へアップグレード バージョン6のライセンスファイルを入手 バージョン5のGGをアンインストール 再起動 バージョン6のGGをインストール ライセンスファイルをインストール (フォルダー: C:Program FilesGraphOnGO-GlobalLicensing) 再起動 アドミンコンソール （従来のクラスターマネージャー） で上記1の設定を反映  ファイル KGTN2019061901.pdf [(252 KB)] [kitasp 技術センター, 2019/07/12 09:59]
+KGTN2019061901.jpg
+表示 [(35 KB)] [kitasp 技術センター, 2019/07/12 10:00]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc59/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc126/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc126/">[GGH6.X] バージョン6の Admin Console （アドミンコンソール） は，どのようなプログラムなのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc126/"><i class="far fa-calendar"></i> 2019-07-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2019/07/12*
+[番号] 技術ノート KGTN 2019061405
+[現象] [GGH6.X] バージョン6の Admin Console （アドミンコンソール） は，どのようなプログラムなのか？
+[説明] バージョン5またはそれ以前のバージョンのクラスターマネージャーとほぼ同じプログラムで，バージョン6で呼称が変わりました．機能の主な変更点は，ライセンスと保守期限を確認する Licenses タブが追加です．
+ファイル KGTN2019061405.pdf [(48.2 KB)] [kitasp 技術センター, 2019/07/12 09:43]
+KGTN2019061405.jpg
+表示 [(21.1 KB)] [kitasp 技術センター, 2019/07/12 09:43]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc126/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc159/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc159/">[GGH6.X] バージョン6の GO-Global App と GO-Global Web App は，バージョン5のクライアントと本質的に違うのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc159/"><i class="far fa-calendar"></i> 2019-07-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2019/07/12*
+[番号] 技術ノート KGTN 2019061401
+[現象] [GGH6.X] バージョン6の GO-Global App と GO-Global Web App は，バージョン5のクライアントと本質的に違うのか？
+[説明] いいえ．バージョン5では単に GO-Global Client と呼ばれ，その中にはデスクトップ用クライアントとブラウザ用クライアントが含まれておりました．バージョン6では，デスクトップ用のクライアントを GO-Global App ，ブラウザ用クライアントを GO-Global Web App と呼ぶようになりました．日本語では，どちらのバージョンでも単にデスクトップ用クライアントとブラウザ用クライアントと呼んで頂いて結構です．
+ファイル KGTN2019061401.pdf [(32.1 KB)] [kitasp 技術センター, 2019/07/12 09:22]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc159/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc137/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc137/">[GGH6.X] バージョン6のブラウザ用クライアント （GO-Global Web App） でHTML5クライアントを使用する場合の指定方法は？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc137/"><i class="far fa-calendar"></i> 2019-07-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2019/07/12*
+[番号] 技術ノート KGTN 2019061404
+[現象] [GGH6.X] バージョン6のブラウザ用クライアント （GO-Global Web App） でHTML5クライアントを使用する場合の指定方法は？
+[説明] ブラウザで次のURLへアクセスしてください．
+http://&lt;GG サーバー&gt;/goglobal/logon.html?useApp=false  パラメタ useApp=false を指定することで，HTML5用クライアントが起動されます．
+ファイル KGTN2019061404.pdf [(79 KB)] [kitasp 技術センター, 2019/07/12 09:40]
+KGTN2019061404.jpg
+表示 [(13.9 KB)] [kitasp 技術センター, 2019/07/12 09:41]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc137/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc148/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc148/">[GGH6.X] バージョン6のブラウザ用クライアント （GO-Global Web App） で専用クライアント （ブラウザ用クライアント上で動作するデスクトップ用クライアント） を使用する場合の指定方法は？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc148/"><i class="far fa-calendar"></i> 2019-07-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2019/07/12*
+[番号] 技術ノート KGTN 2019061403
+[現象] [GGH6.X] バージョン6のブラウザ用クライアント （GO-Global Web App） で専用クライアント （ブラウザ用クライアント上で動作するデスクトップ用クライアント） を使用する場合の指定方法は？
+[説明] ブラウザで次のURLへアクセスしてください．
+http://&lt;GG サーバー&gt;/goglobal/logon.html?useApp=true  パラメタ useApp=true を指定することで，デスクトップ用クライアントが起動されます．なおデスクトップ用クライアントがインストールされていない場合は，下記の画面が表示されますので 「実行」 をクリックして，デスクトップ用クライアントをインストールして下さい．
+ファイル KGTN2019061403.pdf [(95.4 KB)] [kitasp 技術センター, 2019/07/12 09:27]
+KGTN2019061403.jpg
+表示 [(29.2 KB)] [kitasp 技術センター, 2019/07/12 09:28]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc148/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc170/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc170/">[GGH6.X] バージョン6のブラウザ用クライアント （GO-Global Web App） には，どのような種類があるのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc170/"><i class="far fa-calendar"></i> 2019-07-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2019/07/12*
+[番号] 技術ノート KGTN 2019061402
+[現象] [GGH6.X] バージョン6のブラウザ用クライアント （GO-Global Web App） には，どのような種類があるのか？
+[説明] バージョン6のブラウザ用クライアントは，ブラウザのHTML5の機能を使用してブラウザの中で動作する 「HTML5クライアント」 と，URLスキーム介してデスクトップ用クライアントを使用する 「専用クライアント」 の２種類があります．前者はブラウザ以外に必要なものはありませんが，次のことを行うことが出来ません．
+・クライアント側のファイルへのアクセス ・クライアント側のプリンターへの直接印刷 ・ブラウザのウインドウ外でのアプリケーションの実行 ・その他
+後者は別途デスクトップ用クライアントをインストールする必要がありますが，GGの機能をフルに利用することが出来ます．デスクトップ用クライアントが動作する環境では，専用クライアント （ブラウザ用クライアント上で動作するデスクトップ用クライアント） の利用をお勧めします．
+ファイル KGTN2019061402.pdf [(38.8 KB)] [kitasp 技術センター, 2019/07/12 09:22]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc170/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc26/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc26/">[GGH6.X] バージョン6のライセンスのアップグレードやリホストの考え方は？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc26/"><i class="far fa-calendar"></i> 2019-07-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2019/07/12*
+[番号] 技術ノート KGTN 2019061904
+[現象] [GGH6.X] バージョン6のライセンスのアップグレードやリホストの考え方は？
+[説明] ライセンスのアップグレードやリホストが行われた場合，旧ライセンスはGraphOn社が処理した時点から30日間のみ機能します．その期間を過ぎると旧ライセンスは機能しなくなります．なお，新ライセンスがお客様に届くまでに数日を要しますので，旧ライセンスは約25日間機能するとお考え下さい．
+From the date your request is processed, any existing license files that were rehosted or upgraded will remain valid for 30 days, after which time they will become non-functional. Please ensure that your newly upgraded and/or rehosted license files are installed and active on your system(s) within 30 days....  ファイル KGTN2019061904.pdf [(35.8 KB)] [kitasp 技術センター, 2019/07/12 10:06]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc26/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
                                       <a href="/posts/new_md/doc92/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
@@ -401,355 +745,6 @@ KGTN2019061701.jpg
                             </div>
                         </section>
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc103/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc103/">[GGH6.X] バージョン6ホスト機能 （サーバー機能） のインストーラーの操作手順は従来と同じか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc103/"><i class="far fa-calendar"></i> 2019-07-12</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2019/07/12*
-[番号] 技術ノート KGTN 2019061702
-[現象] [GGH6.X] バージョン6ホスト機能 （サーバー機能） のインストーラーの操作手順は従来と同じか？
-[説明] いいえ．バージョン6のインストーラーは，操作手順が簡素化されました．メディアの中に含まれる日本語のドキュメントに従って操作を行って下さい．
-バージョン5のインストーラーの画面
-バージョン6のインストーラーの画面
-ファイル KGTN2019061702.pdf [(405 KB)] [kitasp 技術センター, 2019/07/12 09:48]
-KGTN2019061702-1.jpg
-表示 [(31.5 KB)] [kitasp 技術センター, 2019/07/12 09:48]
-KGTN2019061702-2.jpg
-表示 [(40 KB)] [kitasp 技術センター, 2019/07/12 09:51]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc103/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc48/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc48/">[GGH6.X] バージョン6ホスト機能 （サーバー機能） のコントロールパネルの 「プログラムと機能」 での名称はバージョン5と同じか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc48/"><i class="far fa-calendar"></i> 2019-07-12</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2019/07/12*
-[番号] 技術ノート KGTN 2019061902
-[現象] [GGH6.X] バージョン6ホスト機能 （サーバー機能） のコントロールパネルの 「プログラムと機能」 での名称はバージョン5と同じか？
-[説明] はい，バージョン6もバージョン5もプログラムの名称は GO-Global Host です．
-バージョン6の情報
-バージョン5の情報
-ファイル KGTN2019061902.pdf [(120 KB)] [kitasp 技術センター, 2019/07/12 10:03]
-KGTN2019061902-1.jpg
-表示 [(53.4 KB)] [kitasp 技術センター, 2019/07/12 10:03]
-KGTN2019061902-2.jpg
-表示 [(36.4 KB)] [kitasp 技術センター, 2019/07/12 10:03]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc48/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc37/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc37/">[GGH6.X] バージョン6ホスト機能 （サーバー機能） のフォルダー構成はバージョン5と同じか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc37/"><i class="far fa-calendar"></i> 2019-07-12</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2019/07/12*
-[番号] 技術ノート KGTN 2019061903
-[現象] [GGH6.X] バージョン6ホスト機能 （サーバー機能） のフォルダー構成はバージョン5と同じか？
-[説明] いいえ，バージョン6ではライセンス関連のフォルダー Activation と Licensing が追加されました．前者はアクティベーション用のフォルダーで，特に必要のない限り操作等を行うことはありません．後者は従来のバージョンと同じライセンス機能用のフォルダーで，ここにライセンスファイル license.lic をコピーして下さい．ライセンス関連の問題が発生した場合は，このフォルダーを圧縮 （ZIP） してお送り下さい．
-ファイル KGTN2019061903.pdf [(95.9 KB)] [kitasp 技術センター, 2019/07/12 10:04]
-KGTN2019061903.jpg
-表示 [(33 KB)] [kitasp 技術センター, 2019/07/12 10:05]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc37/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc81/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc81/">[GGH6.X] バージョン6ホスト機能 （サーバー機能） のフォルダー構成は従来と同じか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc81/"><i class="far fa-calendar"></i> 2019-07-12</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2019/07/12*
-[番号] 技術ノート KGTN 2019061704
-[現象] [GGH6.X] バージョン6ホスト機能 （サーバー機能） のフォルダー構成は従来と同じか？
-[説明] 従来と異なり，フォルダー C:Program FilesGraphOnGO-Global は役割毎にサブフォルダーに分けられております．
- Activation : オンラインアクティベーション関連のファイル Licensing : ライセンス関連のファイル（license.licやlmtools.exeなど） Log : APSログ Programs : プログラム本体 Support : SRW関連のファイル Updates : 自動更新のファイル群 Web : ウエッブ関連のファイル  ファイル KGTN2019061704.pdf [(94.9 KB)] [kitasp 技術センター, 2019/07/12 09:56]
-KGTN2019061704.jpg
-表示 [(35.4 KB)] [kitasp 技術センター, 2019/07/12 09:56]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc81/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc192/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc192/">[GGH5.X</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc192/"><i class="far fa-calendar"></i> 2019-06-10</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2019/06/10*
-[番号] 技術ノート KGTN 2019060501
-[現象] [GGH5.X-6.X] Windows 10 Version 1903 (May 2019 Update) の環境でホスト機能は動作するのか？
-[説明] GGH5.0.2.27327 および GGH6.0.1.27682 は，Windows 10 Version 1903 (May 2019 Update) の環境では動作しません．しかしながら，以下のパッチを適用することで動作します．
-・host-update-5.0.2.f.msi : 5.0.2.28006 ・host-update-6.0.1.b.msi : 6.0.1.28007 (6.0.1.27172に適用) or 6.0.1.28008 (6.0.1.27682に適用)
-ファイル KGTN2019060501.pdf [(35 KB)] [kitasp 技術センター, 2019/06/10 18:20]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc192/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc203/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc203/">[GGH5.X</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc203/"><i class="far fa-calendar"></i> 2019-06-10</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2019/06/10*
-[番号] 技術ノート KGTN 2019051702
-[現象] [GGH5.X-6.X] HTTPS用のポート番号443にRXPS （SSLで暗号化したGGのプロトコル） を通した場合，セキュリティは低下しないのか？
-[説明] HTTPSもRXPSもSSL/TLSという暗号化された通信路を使用し，その上でそれぞれのプロトコル （HTTPとRXP） で通信を行うものです．
-HTTPS : SSL/TLSで暗号化された通信路上のHTTPプロトコル RXPS : SSL/TLSで暗号化された通信路上のRXPプロトコル
-つまり，HTTPSもRXPSも同じSSL/TLSという暗号化された通信路を使用しますので，セキュリティ的には同等です．なお，HTTPプロトコルはその仕様が公開されておりますので，SSL/TLSの通信路が解読された場合，HTTPプロトコル上の情報も容易に解読することが可能です．他方，GGのRXPプロトコルは仕様が公開されておりませんので，SSL/TLSの通信路が解読された場合でもRXPプロトコル上の情報を解読することは至難です．
-ファイル KGTN2019051702.pdf [(37 KB)] [kitasp 技術センター, 2019/06/10 18:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc203/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc214/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc214/">[GGH5.X</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc214/"><i class="far fa-calendar"></i> 2019-06-10</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2019/06/10*
-[番号] 技術ノート KGTN 2019051701
-[現象] [GGH5.X-6.X/SSL] Let&rsquo;s Encrypt のSSL証明書をGGサーバーで利用したい．
-[説明]
- 下記ページ （win-acme のGitHubのWebサイト） で最新の win-acme をダウンロードします．この技術ノート作成時点では，バージョン2.0.6.284 が最新です．  https://github.com/PKISharp/win-acme/releases
-ダウンロードしたファイルを適当なフォルダーに展開します．  プログラム wacs.exe を &ldquo;管理者として実行&rdquo; します．  メニューで M を選択し，アドバンスオプション付きで証明書を生成します．  メニューで 4 を選択し，手入力でホスト名を指定します．  GGサーバーのホスト名を入力します （ホスト名がネームサーバーに登録されている必要があります） ．  ホスト名が正しいことを確認し，エンターキーを押します．  メニューで 4 を選択します．  メニューで 2 を選択します．  メニューで 3 （OpenSSL向けの証明書） を選択します．  証明書を配置するフォルダーを指定します．  メニューで 1 を選択します．  内容を確認し，エンターキーを押します．  メニューで Q を選択します．  証明書を配置したフォルダーを開き，ファイル -chain.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc214/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc226/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc226/">[GGH6.X] バージョン6のGGクライアントを使用してバージョン5のGGサーバーへアクセスすると，GGクライアントをインストールするように促される．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc226/"><i class="far fa-calendar"></i> 2019-06-10</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2019/06/10*
-[番号] 技術ノート KGTN 2019042301
-[現象] [GGH6.X] バージョン6のGGクライアントを使用してバージョン5のGGサーバーへアクセスすると，GGクライアントをインストールするように促される．
-[説明] ブラウザ向けGGクライアントは，GGのウエッブページとペアで機能します．バージョン6のGGクライアントがインストールされたPCからバージョン5のGGのウエッブページにアクセスした場合，そのPCにはバージョン5のGGクライアントが存在しないため，バージョン5のGGクライアントをインストールするように促されます．この指示に従ってバージョン5のGGクライアントをインストールして下さい．
-なお，Windowsの専用クライアントはGGのウエッブページを使用しませんので，バージョン6のGGクライアントで 「バージョン5のGGクライアントをインストールすることなく」 バージョン5のGGサーバーへアクセスすることが出来ます．
-ファイル KGTN2019042301.pdf [(34.2 KB)] [kitasp 技術センター, 2019/06/10 17:24]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc226/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         
 
                         <ul class="pager">
@@ -814,7 +809,7 @@ HTTPS : SSL/TLSで暗号化された通信路上のHTTPプロトコル RXPS : SS
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

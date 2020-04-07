@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1733/">
+                                      <a href="/posts/new_md/doc348/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1733/">GG上のアプリケーションで，クライアントドライブ上のデータファイルを開き編集を行い，上書き保存して良いか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc348/">[GGW3.2.1/GGH4.X-6.X] プログラム・ウインドウの背景色・文字色・ウインドウの状態をログオン時に設定したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,18 +340,21 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1733/"><i class="far fa-calendar"></i> 2010-06-15</a>
+                                            <a href="/posts/new_md/doc348/"><i class="far fa-calendar"></i> 2010-10-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/15*
-[番号] 技術ノート KGTN 2010061503
-[現象] GG上のアプリケーションで，クライアントドライブ上のデータファイルを開き編集を行い，上書き保存して良いか？
-[説明] アプリケーションのファイルの読み書きの処理とデータファイルのサイズに依存します．アプリケーションがデータファイルを１度だけ読み書きを行い，かつデータファイルのサイズが小さければ，現実的に可能だと思います．データファイルのサイズが大きければ，アプリケーションのファイルの読み書きに時間がかかりますので運用上現実的ではないと思います．また，データファイルのサイズが小さくても，アプリケーションがデータファイルを何度も繰り返して読み書きを行う場合は，頻繁にサーバとクライアント間でデータの転送が行われますので，恐らく運用上現実的ではないと思います．これらのケースでは，以下の方法の適用が考えられます．
-GGサーバから直接アクセス可能なフォルダへデータファイルをコピー コピーしたデータファイルをアプリケーションで編集&amp;保存 編集後のデータファイルをクライアントへ書き戻し
-ファイル KGTN2010061503.pdf [(53.6 KB)] [kitasp 技術センター, 2010/06/15 11:40]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1733/" class="btn btn-template-main">続きを読む</a>
+2010/10/14*
+[番号] 技術ノート KGTN 2010101402
+[現象] [GGW3.2.1/GGH4.X-6.X] プログラム・ウインドウの背景色・文字色・ウインドウの状態をログオン時に設定したい．
+[説明] ログオンスクリプトで，レジストリを直接編集することでプログラム・ウインドウの背景色・文字色・ウインドウの状態を設定することが出来ますが，拡張パックに含まれるプログラム GGPwTool でも簡単に設定することが出来ます．GGPwTool の設定情報は，下記のように全体設定と個別設定の２つの設定情報があり，個別の設定情報の値が優先します．
+ ALLUSERSPROFILEGraphOnGGPwTool.ini （全体設定） USERPROFILEApplication DataGGPwTool.ini （個別設定）  GGPwTool.ini 中で設定できる項目は，以下の通りです．
+[default] LV_ColorBackground=#804000　← 背景色 LV_ColorForeground=#FFFFFF　← 文字色 WinPlaceShowState=3　← ウインドウの状態（1 = 通常，3 = 最大化） LV_StylesBasic=#50000101　← アイコンの状態（#50000100 = Large, #50000102 = Small, #50000101 = Details, #50000104 = List）
+GGPwTool は，以下のようにログオンスクリプトから起動して下さい．
+echo off C:GraphOnBINGGPwTool.exe exit
+ファイル KGTN2010101402.pdf [(47.8 KB)] [kitasp 技術センター, 2019/04/25 18:02]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc348/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -361,7 +364,7 @@ GGサーバから直接アクセス可能なフォルダへデータファイル
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1736/">
+                                      <a href="/posts/new_md/doc2261/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -369,7 +372,7 @@ GGサーバから直接アクセス可能なフォルダへデータファイル
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1736/">IE （Internet Explorer） が電子証明書の失効リストをチェックしないようにしたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2261/">[GGW3.2.1] PW （Program Window） の 「閉じる」 ボタンが押下された時，確認を行ってからウインドウを閉じるように出来ないか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -382,18 +385,19 @@ GGサーバから直接アクセス可能なフォルダへデータファイル
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1736/"><i class="far fa-calendar"></i> 2010-06-15</a>
+                                            <a href="/posts/new_md/doc2261/"><i class="far fa-calendar"></i> 2010-10-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/15*
-[番号] 技術ノート KGTN 2010061501
-[現象] IE （Internet Explorer） が電子証明書の失効リストをチェックしないようにしたい．
-[説明] 電子証明書の失効リストは CRL （Certificate Revocation Lists） とも呼ばれ，CA局が発行する 「破棄された」証明書のリストです．インターネットへのアクセスが制限されている環境では，この失効リストへアクセスできないため， IE が失効リストをチェックしないようにする必要があります （注： チェックした場合，警告が表示されたり，その証明書に関連するサイトへのアクセスが遅くなります） ．この設定は，IE8では下記の項目のチェックを入れないようにします．
-IE → ツール → インターネット オプション → 詳細設定 → セキュリティ → サーバーの証明書失効を確認する
-ファイル KGTN2010061501.pdf [(107 KB)] [kitasp 技術センター, 2010/06/15 09:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1736/" class="btn btn-template-main">続きを読む</a>
+2010/10/14*
+[番号] 技術ノート KGTN 2010101501
+[現象] [GGW3.2.1] PW （Program Window） の 「閉じる」 ボタンが押下された時，確認を行ってからウインドウを閉じるように出来ないか？
+[説明] 現在のGGでは，設定等で 「確認を行ってからPWのウインドウを閉じる」 や 「閉じるボタンを消す」 ことは出来ません．なお，将来リリース予定の Ver4.0.1 では， 「確認を行ってからPWのウインドウを閉じる」 機能が実装される見込みです．
+参　考 We do plan to help resolve this issue in our 4.0.1 RC release as follows, in this release, when they try to close the program windows, the users will be asked.
+&ldquo;Are you sure you want to close the GO-Global program window?&rdquo;
+ファイル KGTN2010101501.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2261/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -403,7 +407,7 @@ IE → ツール → インターネット オプション → 詳細設定 → 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1737/">
+                                      <a href="/posts/new_md/doc1584/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -411,7 +415,7 @@ IE → ツール → インターネット オプション → 詳細設定 → 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1737/">GGのプラグイン LaunchBrowser で障害が発生した場合の切り分けは？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1584/">GGは，クライアント側のIMEを意識しているのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -424,17 +428,17 @@ IE → ツール → インターネット オプション → 詳細設定 → 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1737/"><i class="far fa-calendar"></i> 2010-06-14</a>
+                                            <a href="/posts/new_md/doc1584/"><i class="far fa-calendar"></i> 2010-10-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/14*
-[番号] 技術ノート KGTN 2010061404
-[現象] GGのプラグイン LaunchBrowser で障害が発生した場合の切り分けは？
-[説明] 高機能なプラグインではありませんので，もし障害が発生するとすれば，クライアント側のブラウザ起動の周辺だと考えられます．イベントログ （アプリケーション） に，ブラウザを起動するコマンドライン （CreateProcessの第2引数） と，エラー発生時には GetLastError の値が記録されます．
-ファイル KGTN2010061404.pdf [(135 KB)] [kitasp 技術センター, 2010/06/14 13:38]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1737/" class="btn btn-template-main">続きを読む</a>
+2010/10/14*
+[番号] 技術ノート KGTN 2010101403
+[現象] GGは，クライアント側のIMEを意識しているのか？
+[説明] GGサーバに複数のIMEがインストールされている場合，GGはクライアント側で使用しているIMEと同じものがあるかどうかチェックします．もし存在する場合は，クライアント側と同じIMEを選択します．存在しない場合は，GGがインストールされた時に設定されていたIME （フォールバックIME） を選択します．
+ファイル KGTN2010101403.pdf [(44.1 KB)] [kitasp 技術センター, 2010/10/14 13:13]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1584/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -444,7 +448,7 @@ IE → ツール → インターネット オプション → 詳細設定 → 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1738/">
+                                      <a href="/posts/new_md/doc1585/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -452,7 +456,7 @@ IE → ツール → インターネット オプション → 詳細設定 → 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1738/">GGのプラグイン （機能拡張） には， xxxS.DLL と xxxC.DLL の２つのファイルがあるが，どう違うのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1585/">GGクライアントからGGサーバへの接続 （TCP/IP） に時間がかかることがある．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -465,17 +469,19 @@ IE → ツール → インターネット オプション → 詳細設定 → 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1738/"><i class="far fa-calendar"></i> 2010-06-14</a>
+                                            <a href="/posts/new_md/doc1585/"><i class="far fa-calendar"></i> 2010-10-13</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/14*
-[番号] 技術ノート KGTN 2010061401
-[現象] GGのプラグイン （機能拡張） には， xxxS.DLL と xxxC.DLL の２つのファイルがあるが，どう違うのか？
-[説明] GGのプラグインは，サーバ側で呼び出されたAPIをフックし， 「GGのプロトコル （Rapid-X） を介して」 クライアント側のAPIを実行する仕組みになっています． xxxS.DLL はサーバ側でAPIをフックする役割を持ち， xxxC.DLL はクライアント側でAPI （に関連付けられた機能） を実行する役割を持ちます．なお， xxxI.DLL というファイルは，アプリケーションがプラグインの機能を利用し易いように，単純化されたインタフェースを提供するプログラム （DLL） です．
-ファイル KGTN2010061401.pdf [(50.2 KB)] [kitasp 技術センター, 2010/06/14 12:40]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1738/" class="btn btn-template-main">続きを読む</a>
+2010/10/13*
+[番号] 技術ノート KGTN 201011301
+[現象] GGクライアントからGGサーバへの接続 （TCP/IP） に時間がかかることがある．
+[説明] このような現象は，さまざまな要因が考えられますので，多数の試験を行い原因を絞り込むことが大切です．
+GGサーバの指定をコンピュータ名からIPアドレスに変更してみる （名前解決に関する問題かどうか） ． GGクライアントからGGサーバへ継続的にPINGを送信してみる （ネットワークに関する問題かどうか） ． GGサーバで動作するタスクやアプリケーションをチェックする （サーバの負荷に関する問題かどうか） ．
+特定の時間帯に遅くなる等パターンが分かっている場合は，その時間帯に絡みそうなネットワークやサーバの処理を重点的にチェックするのが良いでしょう．例えば，アンチウイルスソフトが共有ディスクを定期的にスキャンする設定になっており，その処理でネットワークの帯域が広く占有され，その結果GGクライアント〜GGサーバ間の接続障害を引き起こした事例もあります．
+ファイル KGTN2010101301.pdf [(60.4 KB)] [kitasp 技術センター, 2010/10/13 14:32]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1585/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -485,7 +491,7 @@ IE → ツール → インターネット オプション → 詳細設定 → 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1740/">
+                                      <a href="/posts/new_md/doc1586/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -493,7 +499,7 @@ IE → ツール → インターネット オプション → 詳細設定 → 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1740/">ActiveXクライアントのダウンロード時に署名期限切れメッセージが表示される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1586/">プログラムウインドウ （PW） をログオン時に最大化させたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -506,17 +512,18 @@ IE → ツール → インターネット オプション → 詳細設定 → 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1740/"><i class="far fa-calendar"></i> 2010-06-10</a>
+                                            <a href="/posts/new_md/doc1586/"><i class="far fa-calendar"></i> 2010-10-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/10*
-[番号] 技術ノート KGTN 2010061002
-[現象] ActiveXクライアントのダウンロード時に署名期限切れメッセージが表示される．
-[説明] ネットワークを介して配布されるプログラム （ActiveXクライアント） には，プログラムの安全性を保証するために，コードサイニング証明書で開発元の組織の実在性やコードに関する情報を署名します．コードサイニング証明書には有効期限が設定されており，古いActiveXクライアントの中には有効期限が切れるものがあります．もし有効期限切れのメッセージが表示された場合は，弊社宛にActiveXクライアント （CABファイル） をお送り下さい．弊社の最新のコードサイニング証明書で，そのActiveXクライアントに署名を行います．
-ファイル KGTN2010061002.pdf [(51.3 KB)] [kitasp 技術センター, 2010/06/10 14:16]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1740/" class="btn btn-template-main">続きを読む</a>
+2010/10/08*
+[番号] 技術ノート KGTN 201010802
+[現象] プログラムウインドウ （PW） をログオン時に最大化させたい．
+[説明] GGサーバのログオンスクリプトで，以下のレジストリを設定することで， PW のウインドウが最大化された状態で表示されます．
+HKCU¥Software¥GraphOn¥Bridges¥1.0.0¥ProgramWindow¥Settings¥Standard WinPlaceShowState REG_DWORD 3
+ファイル KGTN2010100802.pdf [(46.6 KB)] [kitasp 技術センター, 2010/10/08 11:27]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1586/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -526,7 +533,7 @@ IE → ツール → インターネット オプション → 詳細設定 → 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1739/">
+                                      <a href="/posts/new_md/doc1587/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -534,7 +541,7 @@ IE → ツール → インターネット オプション → 詳細設定 → 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1739/">ActiveXクライアントのプロパティ 「デジタル署名」 を見たところ，証明書の有効期限が2004/11/05 から 2005/11/14 だったが，2010年の現在でも使用できるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1587/">下記のエラーメッセージ中の 20011-0 の部分の意味を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -547,20 +554,19 @@ IE → ツール → インターネット オプション → 詳細設定 → 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1739/"><i class="far fa-calendar"></i> 2010-06-10</a>
+                                            <a href="/posts/new_md/doc1587/"><i class="far fa-calendar"></i> 2010-10-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/10*
-[番号] 技術ノート KGTN 2010061101
-[現象] ActiveXクライアントのプロパティ 「デジタル署名」 を見たところ，証明書の有効期限が2004/11/05 から 2005/11/14 だったが，2010年の現在でも使用できるのか？
-[説明] 署名時にタイムスタンプが設定されていない場合は，証明書の有効期限が満了すると ，期限切れの警告が表示されます．署名時にタイムスタンプが設定されている場合は，証明書の有効期限が満了しても，期限切れの警告は表示されません．ActiveXクライアントは，このタイムスタンプが設定されていますので，証明書 （コードサイニング証明書） の有効期限が満了した後も使用することが出来ます．
-参　考 下記の日本ベリサイン社のFAQに，この辺の詳しい情報が書かれています．
-https://www.verisign.co.jp/codesign/help/faq/210017/index.html 署名したソフトウェアは、証明書の期限切れ後どうなりますか
-https://www.verisign.co.jp/codesign/help/faq/210015/index.html タイムスタンプ署名したソフトウェアは、証明書の期限切れ後どうなりますか
-ファイル KGTN2010061101.pdf [(58.9 KB)] [kitasp 技術センター, 2010/06/11 03:26]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1739/" class="btn btn-template-main">続きを読む</a>
+2010/10/08*
+[番号] 技術ノート KGTN 201010801
+[現象] 下記のエラーメッセージ中の &ldquo;20011-0&rdquo; の部分の意味を知りたい．
+GO-Global 3.2.1.4389 20011-0 on 2010-09-01 at &hellip; You are already running as many sessions as you allowed.
+[説明] &ldquo;20011-0&rdquo; の部分は，エラーメッセージに対応する （内部的な） エラーコードです．GraphOn社のコメントは以下の通りです．
+It is our ID number for the message that is displayed.
+ファイル KGTN2010100801.pdf [(49.5 KB)] [kitasp 技術センター, 2010/10/08 09:43]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1587/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -570,7 +576,7 @@ https://www.verisign.co.jp/codesign/help/faq/210015/index.html タイムスタ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1741/">
+                                      <a href="/posts/new_md/doc1589/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -578,7 +584,7 @@ https://www.verisign.co.jp/codesign/help/faq/210015/index.html タイムスタ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1741/">大きなファイルをクライアント側へコピーするGGのプラグイン （機能拡張） はあるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1589/">ggw-3.2.1.4466を利用しているが，PW （プログラムウインドウ） のメニューから Help を消したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -591,17 +597,19 @@ https://www.verisign.co.jp/codesign/help/faq/210015/index.html タイムスタ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1741/"><i class="far fa-calendar"></i> 2010-06-10</a>
+                                            <a href="/posts/new_md/doc1589/"><i class="far fa-calendar"></i> 2010-10-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/10*
-[番号] 技術ノート KGTN 2010061001
-[現象] 大きなファイルをクライアント側へコピーするGGのプラグイン （機能拡張） はあるのか？
-[説明] 大きなファイルをクライアント側へコピーする実験レベルのプラグインを作成し試したところ，1KB程度のブロックに分けて転送する必要があり，残念ながら実用レベルのパフォーマンスを得ることが出来ませんでした （74MBのファイルのコピーに約１時間） ．従って， 「少なくとも現時点では」 そのようなプラグインはありません．
-ファイル KGTN2010061001.pdf [(48.9 KB)] [kitasp 技術センター, 2010/06/10 12:05]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1741/" class="btn btn-template-main">続きを読む</a>
+2010/10/07*
+[番号] 技術ノート KGTN 201010701
+[現象] ggw-3.2.1.4466を利用しているが，PW （プログラムウインドウ） のメニューから Help を消したい．
+[説明] これは 「純粋に」 技術的な観点からの説明です． pw.dll のリソース Menu → 128 → 1033 の中にある
+POPUP &ldquo;&amp;Help&rdquo; { &hellip; }
+を削除し，コンパイル＆保存することでメニュー項目の Help を消すことができます．
+ファイル KGTN2010100701.pdf [(216 KB)] [kitasp 技術センター, 2010/10/07 11:19]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1589/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -611,7 +619,7 @@ https://www.verisign.co.jp/codesign/help/faq/210015/index.html タイムスタ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1742/">
+                                      <a href="/posts/new_md/doc1588/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -619,7 +627,7 @@ https://www.verisign.co.jp/codesign/help/faq/210015/index.html タイムスタ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1742/">GGのプラグイン （機能拡張） とは何をするものなのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1588/">「マイ ネットワーク」 を非表示にしたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -632,17 +640,19 @@ https://www.verisign.co.jp/codesign/help/faq/210015/index.html タイムスタ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1742/"><i class="far fa-calendar"></i> 2010-06-09</a>
+                                            <a href="/posts/new_md/doc1588/"><i class="far fa-calendar"></i> 2010-10-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/09*
-[番号] 技術ノート KGTN 2010060902
-[現象] GGのプラグイン （機能拡張） とは何をするものなのか？
-[説明] GGのプラグイン （機能拡張） は，サーバ側とクライアント側で対になったプログラム （DLL） で，GGの通信プロトコル （Rapid-X） を介してサーバとクライアントが協調して処理を行います．エンタープライズオプションに含まれる （予定の） LaunchBrowser というプラグインは，サーバ側でURLを指定して要求を行うと，クライアント側のブラウザが起動し，指定されたページ （URL） を表示します．
-ファイル KGTN2010060902.pdf [(48.5 KB)] [kitasp 技術センター, 2010/06/09 14:47]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1742/" class="btn btn-template-main">続きを読む</a>
+2010/10/07*
+[番号] 技術ノート KGTN 201010702
+[現象] 「マイ ネットワーク」 を非表示にしたい．
+[説明] 以下の手順で 「マイ ネットワーク」 を非表示にすることが出来ます．
+レジストリエディタを起動 HKCU¥Software¥Microsoft¥Windows¥CurrentVersion¥Policies¥Explorer を参照 NoNetHood というキーを DWORD値 で作成 値に 1 を設定 レジストリエディタを終了
+レジストリが HKCU ですので，ユーザ単位に設定することになります．全ユーザについて 「マイ ネットワーク」 を非表示にしたい場合は，上記の設定を事前に全ユーザに行うか，またはログオンスクリプトで設定を行うようにして下さい （グループポリシーで設定出来るかもしれません） ．
+ファイル KGTN2010100702.pdf [(55.2 KB)] [kitasp 技術センター, 2010/10/07 14:24]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1588/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -652,7 +662,7 @@ https://www.verisign.co.jp/codesign/help/faq/210015/index.html タイムスタ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1743/">
+                                      <a href="/posts/new_md/doc172/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -660,7 +670,7 @@ https://www.verisign.co.jp/codesign/help/faq/210015/index.html タイムスタ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1743/">Windows XP 上のActiveXクライアントではGGのプラグイン （機能拡張） は動作するが， Windows Vista/7 上のActiveXクライアントでは動作しない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc172/">エクスプローラー中の 「デスクトップ」 を消したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -673,18 +683,21 @@ https://www.verisign.co.jp/codesign/help/faq/210015/index.html タイムスタ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1743/"><i class="far fa-calendar"></i> 2010-06-09</a>
+                                            <a href="/posts/new_md/doc172/"><i class="far fa-calendar"></i> 2010-10-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/09*
-[番号] 技術ノート KGTN 2010060901
-[現象] Windows XP 上のActiveXクライアントではGGのプラグイン （機能拡張） は動作するが， Windows Vista/7 上のActiveXクライアントでは動作しない．
-[説明] GGのプラグイン （機能拡張） を実行するには，ActiveXクライアントを起動するIEが 「管理者権限」 で起動されている必要があります．従って，IEを起動する時に，以下の手順で行って下さい．
-IEのアイコンを右クリック 「管理者として実行」 を選択
-ファイル KGTN2010060901.pdf [(46.8 KB)] [kitasp 技術センター, 2010/06/09 11:05]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1743/" class="btn btn-template-main">続きを読む</a>
+2010/10/07*
+[番号] 技術ノート KGTN 2010100703
+[現象] エクスプローラー中の 「デスクトップ」 を消したい．
+[説明] Microsoft社が提供する環境をカスタマイズするツールTweak UI に 「デスクトップ」 を消す機能がありませんので，エクスプローラー中の 「デスクトップ」 を消すことは出来ないと思われます．
+代替案として，エクスプローラーの起動オプション /e および /root を指定することをお勧めします．この指定を行うことで，指定したフォルダをルートとしてエクスプローラーが起動されるため， 「デスクトップ」 「マイネットワーク」 等は表示されません．詳細については，下記のページをご覧下さい．
+http://support.microsoft.com/kb/314853/ja
+備　考 上記の画面を採取した時のクラスタマネージャの設定は，以下の通りです．
+Command-Line Options: /e,/root,&ldquo;C:Documents and SettingsAdministratorMy Documents&rdquo;
+ファイル KGTN2010100703.pdf [(178 KB)] [kitasp 技術センター, 2014/11/09 16:32]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc172/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -694,7 +707,7 @@ IEのアイコンを右クリック 「管理者として実行」 を選択
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1744/">
+                                      <a href="/posts/new_md/doc1590/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -702,7 +715,7 @@ IEのアイコンを右クリック 「管理者として実行」 を選択
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1744/">GGのプラグイン （機能拡張） を利用する場合に必要な設定は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1590/">Windows Server 2008 をインストールして Windows Update を適用しようとすると，エラーメッセージ「0x80070003」　が表示される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -715,19 +728,20 @@ IEのアイコンを右クリック 「管理者として実行」 を選択
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1744/"><i class="far fa-calendar"></i> 2010-06-08</a>
+                                            <a href="/posts/new_md/doc1590/"><i class="far fa-calendar"></i> 2010-10-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/06/08*
-[番号] 技術ノート KGTN 2010060802
-[現象] GGのプラグイン （機能拡張） を利用する場合に必要な設定は？
-[説明] GGのプラグインは， DLL ファイル （サーバ側とクライアント側のペア） として提供されます．サーバ側およびクライアント側にこのDLLを置くフォルダを作成し，下記のレジストリでそのフォルダの場所を指定して下さい．
-【サーバ側】 HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0 ServerPluginsPath REG_SZ
-【クライアント側】 HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0 ClientPluginsPath REG_SZ
-ファイル KGTN2010060802.pdf [(51.4 KB)] [kitasp 技術センター, 2010/06/08 14:43]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1744/" class="btn btn-template-main">続きを読む</a>
+2010/10/05*
+[番号] 技術ノート KGTN 2010093001
+[現象] Windows Server 2008 をインストールして Windows Update を適用しようとすると，エラーメッセージ「0x80070003」　が表示される．
+[説明] マイクロソフト社の知識ベース KB956705によると，原因は 「この問題は、コンピュータの Windows Update データベースが更新プログラムのデータベース命令と矛盾する場合に発生することがあります」 とのことです．この情報および関連する情報によると，以下のコマンドを実行することでこの問題は解消するようです．
+net stop wuauserv cd %systemroot%¥SoftwareDistribution ren Download Download.old cd DataStore ren Logs Logs.old del DataStore.edb net start wuauserv
+備考１ 上記のコマンドを実行してもエラーが発生した場合は， 「サーバを再起動して」 改めて Windows Update を適用して下さい．
+備考２ この現象が発生するパターンは， Windows Update を適用している最中に， 「時間がかかる」 「Windows Update の画面が消えた」 等の理由で，繰り返して Windows Update を適用したケースが多いようです． 「時間がかかる」 「Windows Update の画面が消えた」 という状況でも，しばらく待つことを強くお勧めします．
+ファイル KGTN2010093001.pdf [(64.4 KB)] [kitasp 技術センター, 2010/10/06 08:58]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1590/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -797,7 +811,7 @@ IEのアイコンを右クリック 「管理者として実行」 を選択
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

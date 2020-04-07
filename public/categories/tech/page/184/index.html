@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1093/">
+                                      <a href="/posts/new_md/doc997/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1093/">[Network] 同じハブに接続しているGGサーバのうち，特定の１台が接続不能になることがある．</a></h2>
+                                    <h2><a href="/posts/new_md/doc997/">[GGH4.0/IME] レジストリ HKLM¥SYSTEM¥CurrentControlSet¥Control¥Keyboard Layouts から該当するIMEのキーを見つける方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,18 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1093/"><i class="far fa-calendar"></i> 2012-02-09</a>
+                                            <a href="/posts/new_md/doc997/"><i class="far fa-calendar"></i> 2012-06-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/02/09*
-[番号] 技術ノート KGTN 2012021001
-[現象] [Network] 同じハブに接続しているGGサーバのうち，特定の１台が接続不能になることがある．
-[説明] このような現象は，多くの場合 1) ハブのポートの不良， 2) LANケーブルの不良， 3) サーバのLANカードの不良が原因です．問題が発生しないサーバと問題が発生するサーバのLANケーブルを交換 （サーバ側） して，現象が変わらなければ 3) のLANカードの不良の可能性が高いと考えられます．現象が発生するサーバが入れ替われば，
- のハブのポートの不良 または 2) のLANケーブルの不良 の可能性が高いと考えられます．この場合は，現象が発生するサーバのLANケーブルを新品と交換することで，LANケーブルの不良かハブのポートの不良かを切り分けることが出来ます．  補　足 上記 3) の場合，弊社ツール GGNetworkCheck で発生内容を確認することが出来ます．詳細については，技術ノートKGTN#2011030201 をご覧下さい．
-ファイル KGTN2012021001.pdf [(57.3 KB)] [kitasp 技術センター, 2012/02/10 07:00]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1093/" class="btn btn-template-main">続きを読む</a>
+2012/06/27*
+[番号] 技術ノート KGTN 2012062703
+[現象] [GGH4.0/IME] レジストリ HKLM¥SYSTEM¥CurrentControlSet¥Control¥Keyboard Layouts から該当するIMEのキーを見つける方法は？
+[説明] 確実な方法は，上から順にキーの内容を参照し， Layout Text が探している IME の名称と合致するものを探します．下記の例では ATOK と思われる Layout Text を順に探し， ATOK 2012 が該当するので， E0200411 を ATOK のキーの候補とします．そして，その候補を使用して実際にログオンし ATOK が選択されるか確認します．選択されれば適切なキーで，選択されなければ次に該当するキーを探します．
+ファイル KGTN2012062703.pdf [(91.6 KB)] [kitasp 技術センター, 2012/06/27 13:16]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc997/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -361,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1098/">
+                                      <a href="/posts/new_md/doc995/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -369,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1098/">[GGW3.2.1/GGH4.0] アプリケーションの印刷画面で指定した用紙サイズと異なる用紙に印刷される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc995/">[GGH4.0] GGW3.2.1 で実装されていたINIファイルマッピング機能は， GGH4.0でも実装されているのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -382,18 +381,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1098/"><i class="far fa-calendar"></i> 2012-02-08</a>
+                                            <a href="/posts/new_md/doc995/"><i class="far fa-calendar"></i> 2012-06-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/02/08*
-[番号] 技術ノート KGTN 2012020801
-[現象] [GGW3.2.1/GGH4.0] アプリケーションの印刷画面で指定した用紙サイズと異なる用紙に印刷される．
-[説明] アプリケーションの印刷画面で指定する用紙は 「原稿サイズ」 と呼ばれ，実際に印刷される用紙のサイズは「出力用紙サイズ」 と呼ばれます．プリンタドライバによっては，原稿サイズの情報ではなく，印刷する内容によって出力用紙サイズを自動選択するものがあり，そのような場合に 「アプリケーションの印刷画面で指定した用紙サイズと異なる用紙に印刷される」 という現象が発生します．GGは出力用紙サイズの決定には関与しませんので，プリンタドライバの設定内容 （機能） を確認して，原稿サイズと出力用紙サイズが一致するように設定して下さい．
-補　足 プリンタドライバに加え， 「自動回転・中央配置・自動拡大縮小」 機能を持つアプリケーションもあります．下記の印刷画面は Adobe Reader 9 のもので，ページ処理の設定で 「自動回転・中央配置」 が設定されており，かつ 「PDFのページサイズに合わせて用紙を選択」 が設定されておりませんので， （印刷内容によっては） 原稿サイズと異なる出力用紙サイズが設定されることがあります．
-ファイル KGTN2012020801.pdf [(116 KB)] [kitasp 技術センター, 2012/02/08 12:29]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1098/" class="btn btn-template-main">続きを読む</a>
+2012/06/27*
+[番号] 技術ノート KGTN 2012060701
+[現象] [GGH4.0] GGW3.2.1 で実装されていたINIファイルマッピング機能は， GGH4.0でも実装されているのか？
+[説明] INIファイルマッピング機能は GGH4.0 での実装が見送られましたが， 4.0.1.11916 (Patch 4) でこの機能が実装されました．GGH4.0 で実装されたINIファイルマッピング機能は，GGW3.2.1のINIファイルマッピング機能と仕様が若干異なります （設定に関する部分） ．アプリケーションTest_INIFilepaths.exe および iniファイル Test_INIFilepaths.ini の設定例を以下に示します．
+[HKLM¥SOFTWARE¥GraphOn¥GO-Global¥Compatibility¥INIFilePaths¥Test_INIFilepaths.exe] TestINIFilepaths.ini REG_EXPAND_SZ USERPROFILE/TestINIFilepaths.ini
+置き換えの指定は REG_EXPAND_SZ （展開可能な文字列値） で指定し，かつそのパス中のフォルダ名は ¥ でなく / で区切って下さい．
+ファイル KGTN2012060701.pdf [(62.8 KB)] [kitasp 技術センター, 2012/06/28 06:56]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc995/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -403,7 +403,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1096/">
+                                      <a href="/posts/new_md/doc1000/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -411,7 +411,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1096/">[VM] 仮想マシン （Windows） のディプロイメントとは？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1000/">[SDK] エンタープライズオプションの GGSessionMonitor が生成するテーブル user_tbl の項目 operation とは何か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -424,18 +424,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1096/"><i class="far fa-calendar"></i> 2012-02-08</a>
+                                            <a href="/posts/new_md/doc1000/"><i class="far fa-calendar"></i> 2012-06-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/02/08*
-[番号] 技術ノート KGTN 2012020901
-[現象] [VM] 仮想マシン （Windows） のディプロイメントとは？
-[説明] ソフトウエアのディプロイメントについてはWikipediaをはじめとして多くの説明が存在しますが，仮想マシンのディプロイメントについては殆ど存在しません．基本的には，テンプレートとなる仮想マシンから複製を作成し，その複製の環境を整備し実際に利用できるようにすることで，具体的には以下の作業があります．
-テンプレートとなる仮想マシン （Windows） のイメージのコピー sysprep (System Preparation Utility) の実行 コンピュータ名の変更 MACアドレスの変更 ネットワーク情報の変更 （IPアドレス，サブネットマスク，デフォルトゲートウェイ，DNSサーバなど） ドメインへの参加 （必要な場合）
-ファイル KGTN2012020901.pdf [(59.2 KB)] [kitasp 技術センター, 2012/02/09 07:12]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1096/" class="btn btn-template-main">続きを読む</a>
+2012/06/26*
+[番号] 技術ノート KGTN 2012062603
+[現象] [SDK] エンタープライズオプションの GGSessionMonitor が生成するテーブル user_tbl の項目 operation とは何か？
+[説明] 内部処理としては， session_table への操作 INSERT / REPLACE / UPDATE / DELETE が記録されます．運用レベルで考えると，以下のような対応が付きます．
+INSERT ログオン REPLACE セッション再接続 UPDATE クライアント情報更新 または セッションの切断 （clientCount = 0） DELETE ログオフ
+ファイル KGTN2012062603.pdf [(55.2 KB)] [kitasp 技術センター, 2012/06/26 10:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1000/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -445,7 +445,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1097/">
+                                      <a href="/posts/new_md/doc1001/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -453,7 +453,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1097/">[Windows] Windows Update （更新プログラム） の一覧の取得方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1001/">[SDK] エンタープライズオプションの GGSessionMonitor で，ログオン直後にセッション情報の clientName と clientAddress の値がアスタリスクになる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -466,18 +466,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1097/"><i class="far fa-calendar"></i> 2012-02-08</a>
+                                            <a href="/posts/new_md/doc1001/"><i class="far fa-calendar"></i> 2012-06-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/02/08*
-[番号] 技術ノート KGTN 2012020802
-[現象] [Windows] Windows Update （更新プログラム） の一覧の取得方法は？
-[説明] Windows Update （更新プログラム） の一覧は，次のコマンドで取得することが出来ます．
-C:¥&gt; wmic qfe
-ファイル KGTN2012020802.pdf [(44.3 KB)] [kitasp 技術センター, 2012/02/08 13:46]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1097/" class="btn btn-template-main">続きを読む</a>
+2012/06/26*
+[番号] 技術ノート KGTN 2012062602
+[現象] [SDK] エンタープライズオプションの GGSessionMonitor で，ログオン直後にセッション情報の clientName と clientAddress の値がアスタリスクになる．
+[説明] クライアントのコンピュータ名およびIPアドレスを得るには，動的にクライアントに問い合せを行う必要があり，逆引きが無いケース等では１台につき数秒〜十数秒を要します．このため， GGSessionMonitor はセッションの監視 （セッション情報の取得） とクライアント情報の取得を非同期に行っており，クライアント情報の取得が完了していない状況ではclientName と clientAddress の値がアスタリスクになります．
+ファイル KGTN2012062602.pdf [(54.9 KB)] [kitasp 技術センター, 2012/06/26 10:38]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1001/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -487,7 +486,7 @@ C:¥&gt; wmic qfe
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1099/">
+                                      <a href="/posts/new_md/doc1005/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -495,7 +494,7 @@ C:¥&gt; wmic qfe
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1099/">[GGH4.0] Mac OS X Lion の環境でNative Client は動作するが， Safari &#43; Plug</a></h2>
+                                    <h2><a href="/posts/new_md/doc1005/">[GGH4.0] 環境変数 CLIENTCOMPUTERNAME と CLIENTCOMPUTERADDRESS の値は，クライアントを移動しても現在の情報を得られるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -508,18 +507,17 @@ C:¥&gt; wmic qfe
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1099/"><i class="far fa-calendar"></i> 2012-02-06</a>
+                                            <a href="/posts/new_md/doc1005/"><i class="far fa-calendar"></i> 2012-06-25</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/02/06*
-[番号] 技術ノート KGTN 2012013102
-[現象] [GGH4.0] Mac OS X Lion の環境でNative Client は動作するが， Safari + Plug-in は動作しない．
-[説明] 下記のスクリーンショットのように，Native Client は動作しますが， Safari
- Plug-in では動作しないことを，弊社およびGraphOn社で確認しております．この原因は Safari が64ビットで動作しており，GGのPlug-in が32ビット環境を前提としているため，環境の不整合により動作しないとのことです （注： Safari の設定を 「32ビットモードで開く」 に変更しても状況は変わりません） ．スケジュールは未定ですが，将来のリリースで対応する予定です．GraphOn社より新たな情報が届き次第，この技術ノートに反映します．  補　足 GGH4.0.1.Patch4 で，Native Client だけでなく Safari + Plug-in も動作するようになりました． Safari + Plug-in &ldquo;Embedded&rdquo; は動作するものの Safari + Plug-in &ldquo;Loose&rdquo; が動作しないという事例が１件ありましたが，調査したところGGには何ら問題がなく， Mac OS X Lion を最新版にアップデートすることで解消しました．
-ファイル KGTN2012013102.pdf [(256 KB)] [kitasp 技術センター, 2012/02/06 12:59]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1099/" class="btn btn-template-main">続きを読む</a>
+2012/06/25*
+[番号] 技術ノート KGTN 2012062502
+[現象] [GGH4.0] 環境変数 CLIENTCOMPUTERNAME と CLIENTCOMPUTERADDRESS の値は，クライアントを移動しても現在の情報を得られるのか？
+[説明] GGH4.0.1.10784 またはそれ以降のビルドでは，最新のクライアントのコンピュータ名とIPアドレスを得ることが出来ます．環境変数の参照には GetEnvironmentVariable 関数 を使用して下さい．
+ファイル KGTN2012062502.pdf [(158 KB)] [kitasp 技術センター, 2012/06/25 13:18]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1005/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -529,7 +527,7 @@ C:¥&gt; wmic qfe
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1100/">
+                                      <a href="/posts/new_md/doc1006/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -537,7 +535,7 @@ C:¥&gt; wmic qfe
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1100/">[VM] 仮想化ソフトウェア vSphere 環境でのGGの利用実績はあるか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1006/">[GGW3.2.1/GGH4.0] エンタープライズオプションの GMCheckRaw および GGSessionMonitor で，クライアントPCのファイアウォールが有効だとコンピュータ名が unknown host になる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -550,20 +548,17 @@ C:¥&gt; wmic qfe
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1100/"><i class="far fa-calendar"></i> 2012-02-06</a>
+                                            <a href="/posts/new_md/doc1006/"><i class="far fa-calendar"></i> 2012-06-25</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/02/06*
-[番号] 技術ノート KGTN 2012011801
-[現象] [VM] 仮想化ソフトウェア vSphere 環境でのGGの利用実績はあるか？
-[説明] vSphere 環境でGGをご利用のユーザ様が存在するかもしれませんが、しかし弊社にはそのような情報は入っておりません．また，GraphOn社にも確認しましたが，同様にそのような情報は持っておりませんでした．
-補足１ GraphOn社より，以下の情報が届きました (2012-01-20) ．
-ここで言う support とは，GraphOn 社がその環境で動作することを確認したという意味であり，仮想環境も含めてサポートする （つまり仮想環境の設定や運用上の問題に起因する障害に対応する） という意味ではありません （技術ノートKGTN#2011071101の補足３と同様の内容） ．
-補足２ GO-Global for Windows でなく GO-Global for UNIX になりますが，某国立大学の案件で同時200ユーザの利用実績があります．
-ファイル KGTN2012011801.pdf [(66.5 KB)] [kitasp 技術センター, 2012/02/06 10:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1100/" class="btn btn-template-main">続きを読む</a>
+2012/06/25*
+[番号] 技術ノート KGTN 2012062501
+[現象] [GGW3.2.1/GGH4.0] エンタープライズオプションの GMCheckRaw および GGSessionMonitor で，クライアントPCのファイアウォールが有効だとコンピュータ名が unknown host になる．
+[説明] GMCheckRaw および GGSessionMonitor が使用しているAPIでは，クライアントPCのファイアウォールが有効な場合unknown host になります．これは現時点での制限事項になります．なお，セッション上の環境変数 CLIENTCOMPUTERNAME については，ファイアウォールの有効・無効に関わらずクライアントPCのコンピュータ名 （ホスト名） が設定されます．
+ファイル KGTN2012062501.pdf [(55.9 KB)] [kitasp 技術センター, 2012/06/25 12:05]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1006/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -573,7 +568,7 @@ C:¥&gt; wmic qfe
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1101/">
+                                      <a href="/posts/new_md/doc1004/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -581,7 +576,7 @@ C:¥&gt; wmic qfe
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1101/">[GGH4.0] クライアントPCから，１つのサーバに同じアカウント （ユーザID） で２つのセッションを張った場合，ライセンス上は２ユーザになるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1004/">[GGW3.2.1/GGH4.0] エンタープライズオプションの GMCheckRaw および GGSessionMonitor のソースコードを開示して欲しい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -594,18 +589,17 @@ C:¥&gt; wmic qfe
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1101/"><i class="far fa-calendar"></i> 2012-02-03</a>
+                                            <a href="/posts/new_md/doc1004/"><i class="far fa-calendar"></i> 2012-06-25</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/02/03*
-[番号] 技術ノート KGTN 2012020201
-[現象] [GGH4.0] クライアントPCから，１つのサーバに同じアカウント （ユーザID） で２つのセッションを張った場合，ライセンス上は２ユーザになるのか？
-[説明] GGH4.0.1.Patch4 以前については，ライセンス上は２ユーザの利用になります．GGH4.0.1.Patch4 からは，同一デスクトップ　（ユーザID）　から張ったセッションであれば， （複数のセッションであっても） １ユーザの利用になります．
-補　足 Mac OS X のクライアントについても，同じアカウント （ユーザID） で２つのセッションを張っても１ユーザの利用になります．
-ファイル KGTN2012020201.pdf [(46.4 KB)] [kitasp 技術センター, 2012/02/03 09:43]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1101/" class="btn btn-template-main">続きを読む</a>
+2012/06/25*
+[番号] 技術ノート KGTN 2012062503
+[現象] [GGW3.2.1/GGH4.0] エンタープライズオプションの GMCheckRaw および GGSessionMonitor のソースコードを開示して欲しい．
+[説明] GraphOn社および弊社が製品として出荷しているソフトウエアに関して，そのソースコードを開示することは出来ません．なお， GMCheckRaw および GGSessionMonitor は，GraphOn社開発のライブラリ （特定代理店のみに公開） を使用して実装しております．
+ファイル KGTN2012062503.pdf [(52.1 KB)] [kitasp 技術センター, 2012/06/25 13:46]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1004/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -615,7 +609,7 @@ C:¥&gt; wmic qfe
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1106/">
+                                      <a href="/posts/new_md/doc1008/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -623,7 +617,7 @@ C:¥&gt; wmic qfe
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1106/">[GGH4.0] CMD.EXE （DOS窓） を開いた状態でセッション再接続を行い，その中で CMD.EXE を起動すると CLIENTCOMPUTERNAME の値がセッション再接続前の値になる．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1008/">[APP] CTRL-C押下時やサーバ再起動時にコンソールアプリケーションを正常終了させたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -636,17 +630,17 @@ C:¥&gt; wmic qfe
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1106/"><i class="far fa-calendar"></i> 2012-02-02</a>
+                                            <a href="/posts/new_md/doc1008/"><i class="far fa-calendar"></i> 2012-06-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/02/02*
-[番号] 技術ノート KGTN 2012020203
-[現象] [GGH4.0] CMD.EXE （DOS窓） を開いた状態でセッション再接続を行い，その中で CMD.EXE を起動すると CLIENTCOMPUTERNAME の値がセッション再接続前の値になる．
-[説明] GGH4.0.1.Patch4 からは，セッション再接続後の環境の値が CLIENTCOMPUTERNAME に設定されるように仕様が変更されました （注： GGW3.2.1と同じ仕様になりました） ．
-ファイル KGTN2012020203.pdf [(51 KB)] [kitasp 技術センター, 2012/02/02 11:38]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1106/" class="btn btn-template-main">続きを読む</a>
+2012/06/22*
+[番号] 技術ノート KGTN 2012062201
+[現象] [APP] CTRL-C押下時やサーバ再起動時にコンソールアプリケーションを正常終了させたい．
+[説明] 内容的にはGGと全く関係がありませんが，アプリケーション開発の参考情報としてお答えすると， SEH (Structured Exception Handling) の __try &amp; __finally やPOSIXの signal() 関数ではなく， Windows のAPI SetConsoleCtrlHandler() 関数を使用して処理を行って下さい．弊社エンタープライズオプションの GGSessionMonitor.exe は，この関数を使用して実装しており，再起動時等にも情報が正常に記録されます．
+ファイル KGTN2012062201.pdf [(59.2 KB)] [kitasp 技術センター, 2012/06/22 09:10]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1008/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -656,7 +650,7 @@ C:¥&gt; wmic qfe
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1107/">
+                                      <a href="/posts/new_md/doc2707/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -664,7 +658,7 @@ C:¥&gt; wmic qfe
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1107/">[GGH4.0] クライアント印刷機能を利用しているが，クライアント側でのドキュメント名 （印刷ジョブ名） が文字化けする．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2707/">[GGW3.2.1/GGH4.X] 障害が発生した時，サーバやOSのベンダーに調査を依頼したところ 「GGの中で障害が発生しているので，GGに問題があると回答があった」 が，その通りなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -677,17 +671,19 @@ C:¥&gt; wmic qfe
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1107/"><i class="far fa-calendar"></i> 2012-02-02</a>
+                                            <a href="/posts/new_md/doc2707/"><i class="far fa-calendar"></i> 2012-06-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/02/02*
-[番号] 技術ノート KGTN 2012020202
-[現象] [GGH4.0] クライアント印刷機能を利用しているが，クライアント側でのドキュメント名 （印刷ジョブ名） が文字化けする．
-[説明] GGH4.0.1.Patch4 からは，クライアント側でのドキュメント名 （印刷ジョブ名） が文字化けする問題は解消しております．
-ファイル KGTN2012020202.pdf [(43.2 KB)] [kitasp 技術センター, 2012/02/02 11:23]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1107/" class="btn btn-template-main">続きを読む</a>
+2012/06/22*
+[番号] 技術ノート KGTN 2012062203
+[現象] [GGW3.2.1/GGH4.X] 障害が発生した時，サーバやOSのベンダーに調査を依頼したところ 「GGの中で障害が発生しているので，GGに問題があると回答があった」 が，その通りなのか？
+[説明] GG上で実行されるアプリケーションは，GGが構築するマルチユーザ環境上で動作するため，メモリダンプ等を解析するとGGのモジュールが障害に関与しているように見えます．しかし，メモリ絡みの問題が発生したケースの多くは， 「アプリケーションの要求に従って」 GGがメモリの獲得や参照を行った時に発生しており，根本的な原因はアプリケーションの不具合やOSの不安定が大部分です．
+ある金融系の案件 （同時数千ユーザ） の事例ですが，ログオンが正常に完了しないという問題が発生し，サーバベンダーがOSベンダーの解析結果を示して 「GO-Global の問題です」 とシステムの運用チームに回答しました．運用チームの担当者はGGの特性を熟知されておりますので，この回答には納得できず，原因の可能性が高そうなADサーバとアンチウイルスソフトの調査を行いました．この結果，アンチウイルスソフトのパターンファイルが切り替わった （サイズが大きくなった） 時点から障害が発生したことが判明し，アンチウイルスソフトのベンダーに調査を依頼しました．ここでも 「恐らくGO-Global の問題です」 と回答があったため，パターンファイルをそれ以前の状態に戻して運用したところ，問題の発生が止まりました．この事実からアンチウイルスソフトに原因がある可能性が高く，アンチウイルスソフトのベンダーに詳細な再調査を依頼したところ，その後１ヶ月ほどでアンチウイルスソフトに不具合があることが分りました．
+この他にも同じような事例が多数あります．問題の解決には，可能な限り運用上の情報を採取することが肝要です．上記の事例では，パターンファイルのサイズの差異に気付かねば，原因がまったく分らず （GGの中には原因が無かったので） ，問題が解決しなかった可能性も考えられます．
+ファイル KGTN2012062203.pdf [(77.8 KB)] [kitasp 技術センター, 2015/10/01 11:42]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2707/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -697,7 +693,7 @@ C:¥&gt; wmic qfe
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1103/">
+                                      <a href="/posts/new_md/doc1007/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -705,7 +701,7 @@ C:¥&gt; wmic qfe
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1103/">SkyPDF for GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1007/">[SDK] エンタープライズオプションの GMCheckRaw や GGSessionMonitor はポーリング方式で処理を行っているが，効率的にイベントドリブン方式で処理出来ないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -718,18 +714,17 @@ C:¥&gt; wmic qfe
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1103/"><i class="far fa-calendar"></i> 2012-02-02</a>
+                                            <a href="/posts/new_md/doc1007/"><i class="far fa-calendar"></i> 2012-06-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/02/02*
-[番号] 技術ノート KGTN 2011020902
-[現象] SkyPDF for GO-Global は，クライアント環境として Windows 7をサポートしているか？
-[説明] いいえ， SkyPDF for GO-Global はクライアント環境として Windows Vista までをサポートし， Windows 7 はサポートしておりません （2011年2月9日現在） ．
-補　足 サーバ側OS Windows Server 2003 R2 ＋ クライアント側OS Windows 7 という環境に限り，従来のサポートサービスの範囲内でサポートするという回答が開発元のスカイコム社よりありました．
-ファイル KGTN2011020902.pdf [(50.7 KB)] [kitasp 技術センター, 2012/02/02 14:38]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1103/" class="btn btn-template-main">続きを読む</a>
+2012/06/22*
+[番号] 技術ノート KGTN 2012062202
+[現象] [SDK] エンタープライズオプションの GMCheckRaw や GGSessionMonitor はポーリング方式で処理を行っているが，効率的にイベントドリブン方式で処理出来ないのか？
+[説明] GMCheckRaw および GGSessionMonitor が使用しているGGのインタフェース （非公開） には，イベントドリブン方式で処理を行うためのコールバック関数が用意されており，弊社でもそのインタフェースの利用を考えました．しかし，セッションの詳細情報がコールバック関数に渡されない等の制約あり，トータルのパフォーマンスを考えるとポーリング方式の方が良いという結論になりました．
+ファイル KGTN2012062202.pdf [(56.3 KB)] [kitasp 技術センター, 2012/06/22 12:32]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1007/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -799,7 +794,7 @@ C:¥&gt; wmic qfe
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

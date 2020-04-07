@@ -409,25 +409,34 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2608/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2549/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2608/">[iOS] iOSクライアントの操作性 （ウインドウの移動等） は向上したのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2549/">[GGH4.X-5.X] 技術ノート KGTN#2016052001 のチェックを行ったところ， Preview PDF (...) からは印刷出来たが，問題のプリンターを指定すると印刷出来ない．次に何をチェックすれば良いか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-03-11
+                            日付 2016-05-31
                             </p>
                             <p class="intro">*技術ノート
-2016/03/11*
-[番号] 技術ノート KGTN 2016022302
-[現象] [iOS] iOSクライアントの操作性 （ウインドウの移動等） は向上したのか？
-[説明] iPad2 (iOS 9.2.1) + iOSクライアント (5.0.0.21697) + GGH4.8.2.22631 / GGH5.0.0.22626 の環境で確認したところ， Program Window の移動操作等をスムーズに行うことが出来ました．もしこの環境でもウインドウの移動が困難な場合は， iOSクライアントを強制終了 （ホームボタンをダブルクリックし，iOSクライアントを上にスワイプ） し，再度ログオンして下さい．
-ファイル KGTN2016022302.pdf [(55.3 KB)] [kitasp 技術センター, 2016/03/11 16:11]</p>
+2016/05/31*
+[番号] 技術ノート KGTN 2016052502
+[現象] [GGH4.X-5.X] 技術ノート KGTN#2016052001 のチェックを行ったところ， Preview PDF (&hellip;) からは印刷出来たが，問題のプリンターを指定すると印刷出来ない．次に何をチェックすれば良いか？
+[説明] GGが使用している印刷エンジン （PDFファイルをプリンターへ出力するプログラム） が正常に動作する環境かどうかのチェックをお願いします．チェックには必ずクライアントにアカウント Administrator でログインし，そのデスクトップ上で行って下さい （注意：クライアント環境のチェックですのでGGにログインする必要はありません） ．なお，この用紙の□の部分にチェックを入れて，下記の手順で指示のあったクリーンショットを添えてお送り下さい．
+C:ドライブの直下に TEMP というフォルダーを作成して下さい．
+　□ C:TEMP を作成した．
+フォルダー C:TEMP に下記圧縮ファイル中の全ファイルを展開 （コピー） して下さい． https://dl.dropboxusercontent.com/u/74576231/kitASP/KGTN2016052402_testprint.zip
+　□ 全ファイルを展開 （コピー） した．
+メモ帳で &ldquo;testprint.bat&rdquo; を開き，その中の &ldquo;FX DocuCentre-IV C4475&rdquo; の部分を，問題のプリンターの名称に書き換え，上書き保存して下さい．
+　□ プリンター名を書き換えて上書き保存した．
+スタートメニューから &ldquo;コマンド プロンプト&rdquo; を起動し，DOS窓上で &ldquo;cd C:TEMP&rdquo; を実行して下さい．
+　□ 起動しコマンドを実行した．
+DOS窓上で &ldquo;testprint.bat&rdquo; を実行して下さい．実行直後の画面全体のスクリーンショットを撮ってお送り下さい （次ページにスクリーンショットのサンプルがあります） ．
+　□ 実行してスクリーンショットを撮った．</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2608/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2549/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,27 +455,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2615/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2548/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2615/">[Windows] 仮想環境の Windows Server 2008 R2 のサーバーでたまにBSODが発生する．</a></h4>
+                            <h4><a href="/posts/new_md/doc2548/">[GGH5.X] hopTo の MAXEdit がAndroidクライアントで上手く動作しない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-03-11
+                            日付 2016-05-31
                             </p>
                             <p class="intro">*技術ノート
-2016/03/11*
-[番号] 技術ノート KGTN 2016020501
-[現象] [Windows] 仮想環境の Windows Server 2008 R2 のサーバーでたまにBSODが発生する．
-[説明] 仮想環境がHyper-V以外で，かつ複数CPUの場合， Windows Server 2008 R2 がBSODを引き起こすという報告があります．これに該当する場合は， Windows Server 2012 R2 へアップグレードするか，またはシングルCPUの構成に変更することで問題が解決します．以下に，この件に関するクラウド・エヌの公開情報を引用します．
-ファイル KGTN2016020501.pdf [(150 KB)] [kitasp 技術センター, 2016/03/11 16:02]
-KGTN2016020501.jpg
-表示 [(56 KB)] [kitasp 技術センター, 2016/03/11 16:02]</p>
+2016/05/31*
+[番号] 技術ノート KGTN 2016052503
+[現象] [GGH5.X] hopTo の MAXEdit がAndroidクライアントで上手く動作しない．
+[説明] Android クライアントの Auto Zoom 機能をオンにして試して下さい． Ver 5.0.1.23043 では， Auto Zoom 機能がオフの場合，入力位置の表示 （パンやズーム） が上手く機能しないことがあります．
+ファイル KGTN2016052503.pdf [(48.6 KB)] [kitasp 技術センター, 2016/05/31 11:53]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2615/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2548/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,25 +492,29 @@ KGTN2016020501.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2042/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2545/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2042/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2545/">[Android] Androidクライアント 5.0.1.23043 は，どんな修正が行われたのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-02-05
+                            日付 2016-05-27
                             </p>
                             <p class="intro">*技術ノート
-2016/02/05*
-[番号] 技術ノート KGTN 2016012203
-[現象] [GGH4.X-5.X] Windows Server 2012 R2 の環境で，サーバー側IMEの変換履歴が記録されない．
-[説明] Windows Server 2012 R2 のIMEの動作環境は， Windows Server 2008 R2 のそれとは大きく異なるため， GraphOn社ではタブレット等と同じようにクライアント側IMEの利用のみとしました． しかしながら，従来のサーバー側IMEの利用の要望もあり， 限定サポート （最低限の機能をサポート） ということで特別にサーバー側IMEが実装されました．このような事情により，変換履歴等の機能は残念ながらサポートされません （制限事項となります） ．
-ファイル KGTN2016012203.pdf [(57.2 KB)] [kitasp 技術センター, 2017/07/21 10:35]</p>
+2016/05/27*
+[番号] 技術ノート KGTN 2016041501
+[現象] [Android] Androidクライアント 5.0.1.23043 は，どんな修正が行われたのか？
+[説明] 直近のリリース （5.0.1.22973） と比較して，以下の不具合が修正されております．
+[CASE#47076] ディバイスによってクライアントが起動時に異常終了する問題 [CASE#47138] ウインドウのドラッグ等で描画が遅い問題 [CASE#47139] &ldquo;Auto Connect&rdquo; が正常に動作しない問題 [CASE#47142] hopTo MAX for GG で定義したショートカットが正しく機能しない問題 [CASE#40321] URLスキームのサポート
+なお，AndroidクライアントのURLスキームは，iOS と Android のアーキテクチャの差異により，下記のようにURLの指定が異なりますのでご注意下さい．
+[iOSクライアント] rxp://?h=192.168.102.89&amp;hp=491&amp;u=Administrator&amp;p= Password （注意: ?有り）
+[Androidクライアント] rxp://h=192.168.102.89&amp;hp=491&amp;u=Administrator&amp;p=Password （注意： ?無し）
+ファイル KGTN2016041501.pdf [(69.8 KB)] [kitasp 技術センター, 2016/06/03 11:57]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2042/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2545/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -522,31 +533,29 @@ KGTN2016020501.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2205/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2565/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2205/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2565/">[Android] Ver5.0.1 のAndroidクライアントの実用性 （操作性） はどうなのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-02-05
+                            日付 2016-05-27
                             </p>
                             <p class="intro">*技術ノート
-2016/02/05*
-[番号] 技術ノート KGTN 2016012202
-[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能を GGEasyLogonで利用する方法は？
-[説明] GGEasyLogon は，バージョン5.1.1またはそれ以降で GGEasyMonitor （バージョン2.0.6またはそれ以降） の振分け機能をサポートします．この環境の下で，以下のように設定して下さい．
-項目 「サーバー」 には，GGサーバーのアドレスではなく GGEasyMonitor のアドレスを @を前置きして 指定して下さい．ポート番号には GGEasyMonitor のポート番号を指定して下さい．ユーザーやパスワード等の他の項目については，通常通りに設定を行って下さい．接続ボタンをクリックすると， GGEasyMonitor の振分け機能に接続先のGGサーバーの問合せを行い，その結果 （応答） で指定されたGGサーバーに接続を行います．なお，多重ログオンを認めていない環境では，既に同じユーザーがログオンして いる場合は，以下のような警告メッセージが表示されます．
-補　足 バージョン 5.4.0 から，以下の設定により複数の GGEasyMonitor （現用系と待機系） を指定することができます．現用系による振り分けが失敗した時，通常のエラーメッセージが表示され，続けて 「予備のサーバーへ接続します」 というメッセージが表示され，待機系による振り分けが行われます．
-@&lt;現用系のGGEasyMonitor&gt;,&lt;待機系のGGEasyMonitor&gt;  ファイル KGTN2016012202.pdf [(81.7 KB)] [kitasp 技術センター, 2017/02/22 16:57]
-KGTN2016012202-1.jpg
-表示 [(14.1 KB)] [kitasp 技術センター, 2017/02/22 16:57]
-KGTN2016012202-2.jpg
-表示 [(6.42 KB)] [kitasp 技術センター, 2017/02/22 16:57]</p>
+2016/05/27*
+[番号] 技術ノート KGTN 2016041901
+[現象] [Android] Ver5.0.1 のAndroidクライアントの実用性 （操作性） はどうなのか？
+[説明] 描画周りの負荷および操作の複雑さという観点から，GoogleマップとGoogle ストリートビューで実用性を確認してみました． Huawei MediaPad T1 7.0 を使用しましたが，この廉価なタブレットでも十分実用的という印象を受けました （ネットワークはLANおよびLTE） ．なお，タッチ操作についても，特にストレスを感じること（操作に困難を感じること） はありませんでした．
+ファイル KGTN2016041901.pdf [(374 KB)] [kitasp 技術センター, 2016/05/27 15:54]
+KGTN2016041901-1.jpg
+表示 [(41.8 KB)] [kitasp 技術センター, 2016/05/27 15:54]
+KGTN2016041901-2.jpg
+表示 [(43 KB)] [kitasp 技術センター, 2016/05/27 15:54]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2205/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2565/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

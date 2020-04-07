@@ -409,31 +409,28 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1260/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1152/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1260/">[GGW3.2.1/WS2003] ctfmon.exe の自動起動のエントリを削除した場合，どうなるのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1152/">[BSOD] BSOD （ブルースクリーンのメモリダンプ） が１日に数回発生する．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-10-20
+                            日付 2012-01-04
                             </p>
                             <p class="intro">*技術ノート
-2011/10/20*
-[番号] 技術ノート KGTN 2011101901
-[現象] [GGW3.2.1/WS2003] ctfmon.exe の自動起動のエントリを削除した場合，どうなるのか？
-[説明] ctfmon.exe はMicrosoft Text Services で，GGの設定から自動起動のエントリを削除した場合，コントロールパネルの [テキストサービスと入力言語] の [高度なテキストサービスをオフにする] の設定に依存して動作が異なります．
-・ [高度なテキストサービスをオフにする]　が無効な場合 かな漢字変換は可能ですが，IMEツールバー （言語バー） が表示されません．
-・ [高度なテキストサービスをオフにする]　が有効な場合 かな漢字変換は可能で，かつIMEツールバー （言語バー） も表示されます．
-補足１ [高度なテキストサービスをオフにする]　が有効な場合でも，手動で ctfmon.exe を起動すると ctfmon.exe のスタートアップが有効になり，これ以降 ctfmon.exe が自動的に起動されます．これを解除するには， msconfig コマンドでスタートアップ項目の ctfmon を無効にして下さい （注意：スタートアップ項目に複数の ctfmon が存在することがあります．その場合は，全ての ctfmon を無効にして下さい） ．
-補足２ msconfig コマンドでスタートアップ項目の ctfmon を有効にした場合は，次のレジストリが登録されます．
-HKCU¥Software¥Microsoft¥Windows¥CurrentVersion¥Run ctfmon.exe REG_SZ C:¥WINDOWS¥system32¥ctfmon.exe
-逆に ctfmon を無効にした場合は，このレジストリが削除されます．
-補足３ GraphOn社に照会していますが，以下のレジストリは機能していないと考えられます．もし機能していれば，[高度なテキストサービスをオフにする] を有効しても ctfmon.exe は起動すると考えられますが，実際には起動しませんので， （恐らく） 上記補足２のレジストリで起動されているものと推測されます．</p>
+2012/01/04*
+[番号] 技術ノート KGTN 2012010403
+[現象] [BSOD] BSOD （ブルースクリーンのメモリダンプ） が１日に数回発生する．
+[説明] BSOD （ブルースクリーンのメモリダンプ） は，経験的に 1) アプリケーションの問題， 2) 運用に起因する問題，3) ネットワークの問題， 4) GGの問題， 5) Windows の問題， 6) ハードウエアの問題 など，さまざまな要因によって発生します．問題の解決に当たっては，メモリダンプの採取のみならず，以下の情報の採取が重要なポイントになります．
+発生日時と発生パターン （例：始業時に発生することが多い） 発生したサーバとその時の利用ユーザ数 発生したユーザ名 （アカウント） 発生した状況 （例：○○画面の検索ボタンを押下した時にフリーズした） その他，何か気付いたこと （例：管理系のネットワークが混雑していた）
+BSODの発生は，その時点よりもかなり前に原因があり （メモリの破壊など） ，発生する直前にその壊されたメモリにアクセスしてBSODが発生するケースも少なくありません．従って，BSOD発生よりもかなり前であっても，何か気付いたことがあればぜひお知らせ下さい．
+補　足 ユーザがGGにログオンする時，ログオン先のGGサーバの選択方法も原因調査の重要なポイントになります．ラウンドロビンや最小ユーザ数等で接続先のサーバが自動的に選択される場合，BSODを引き起こすユーザが１人であっても，そのユーザが再ログオンを繰り返すことで，複数のサーバでBSODが発生することになります．
+ファイル KGTN2012010403.pdf [(67.3 KB)] [kitasp 技術センター, 2012/01/04 15:01]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1260/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1152/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -452,26 +449,29 @@ HKCU¥Software¥Microsoft¥Windows¥CurrentVersion¥Run ctfmon.exe REG_SZ C:¥WI
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1259/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1154/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1259/">[Windows] Windows Client を自動的にクライアントへインストールする方法はないか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1154/">[GGH4.0] Dynamic Display Resize 機能とは何か？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-10-20
+                            日付 2012-01-04
                             </p>
                             <p class="intro">*技術ノート
-2011/10/20*
-[番号] 技術ノート KGTN 2011102001
-[現象] [Windows] Windows Client を自動的にクライアントへインストールする方法はないか？
-[説明] Active Directory環境であれば，グループ・ポリシーで MSI ファイルをインストールすることが可能ですが，一般にはアプリケーションを Windows マシンへ自動的にインストールする方法はありません． 従って， Windows Client を自動的にクライアントへインストールする方法はありません．もし Active Directory環境であれば，例えば下記の記事を参考にして下さい．
-MSIファイルをActive Directoryのグループ・ポリシーでインストールする http://www.atmarkit.co.jp/fwin2k/win2ktips/963msiaddeploy/msiaddeploy.html
-ファイル KGTN2011102001.pdf [(51.5 KB)] [kitasp 技術センター, 2011/10/20 14:28]</p>
+2012/01/04*
+[番号] 技術ノート KGTN 2010111001
+[現象] [GGH4.0] Dynamic Display Resize 機能とは何か？
+[説明] GGではセッションを中断して再接続することが可能ですが， GGW3.2.1 では画面の解像度が異なるクライアントで再接続されると，ウインドウが認識されなかったり （画面の解像度が大きくなった時） ，外側に枠が表示されたり （画面の解像度が小さくなった時） しました．これは，セッションが生成された時の画面の解像度を，再接続時に変更出来ないための制約でした．
+GGH4.0 では，再接続時にそのクライアントの画面の解像度に合わせて，以下のようにリサイズが行われるようになりました．
+ 画面の解像度が大きくなった時   通常状態のウインドウ &hellip; 現在の位置に表示 最大化状態のウインドウ &hellip; 最大化状態で表示  画面の解像度が小さくなった時    通常状態のウインドウ &hellip; 画面に表示可能な位置へ移動
+  最大化状態のウインドウ &hellip; 最大化状態で表示
+1280x800 1024x768
+  ファイル KGTN2010111001.pdf [(148 KB)] [kitasp 技術センター, 2012/01/04 14:04]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1259/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1154/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -490,25 +490,26 @@ MSIファイルをActive Directoryのグループ・ポリシーでインスト�
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1263/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1153/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1263/">[GGH4.0] Windows Server 2008 (x64) でGG の評価をしたいが，物理メモリはどれくらい必要か？</a></h4>
+                            <h4><a href="/posts/new_md/doc1153/">[GGH4.0] セッション再接続機能を利用し，クライアントAからクライアントBへセッションを引き継いだ場合，クライアントプリンタはクライアントBに接続されたプリンタが見えるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-10-19
+                            日付 2012-01-04
                             </p>
                             <p class="intro">*技術ノート
-2011/10/19*
-[番号] 技術ノート KGTN 2011101902
-[現象] [GGH4.0] Windows Server 2008 (x64) でGG の評価をしたいが，物理メモリはどれくらい必要か？
-[説明] Windows Server 2008 (x64) をインストールする場合， （マイクロソフト社の推奨システム要件に準じて） GG の評価には物理メモリ2GB 以上が必要です．
-ファイル KGTN2011101902.pdf [(45.7 KB)] [kitasp 技術センター, 2011/10/19 10:35]</p>
+2012/01/04*
+[番号] 技術ノート KGTN 2011072901
+[現象] [GGH4.0] セッション再接続機能を利用し，クライアントAからクライアントBへセッションを引き継いだ場合，クライアントプリンタはクライアントBに接続されたプリンタが見えるのか？
+[説明] GGH-4.0.1.10357 の仕様では，セッションを引き継ぐ前のプリンタ （つまりクライアントAのプリンタ） が見え，セッションを引き継いだ後のプリンタ （つまりクライアントBのプリンタ） は見えません．現在，GraphOn社にクライアントBのプリンタが見える動作になるよう，機能要求を行っている状況です．
+GGH-4.0.1.10784 (Patch 3) で再接続したクライアント （つまりクライアントB） のプリンタが見えるように仕様が変更されました．もし見えない現象が発生した場合は，お手数ですが発生した環境や再現する手順をお知らせ下さい．
+ファイル KGTN2011072901.pdf [(53.3 KB)] [kitasp 技術センター, 2012/01/04 14:19]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1263/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1153/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -527,26 +528,25 @@ MSIファイルをActive Directoryのグループ・ポリシーでインスト�
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1261/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2453/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1261/">[GGW3.2.1] GO</a></h4>
+                            <h4><a href="/posts/new_md/doc2453/">[GGW3.2.1/GGH4.X-5.X] GGの評価を行うに当たって，サーバー側に必要なディスクの容量は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-10-19
+                            日付 2011-12-28
                             </p>
                             <p class="intro">*技術ノート
-2011/10/19*
-[番号] 技術ノート KGTN 2011101904
-[現象] [GGW3.2.1] GO-Global ActiveX Client.msi は，どのような利用を想定しているのか？
-[説明] Ver3.2.1 の GO-Global ActiveX Client.msi （以下MSIと省略） は，特定のソリューションとして提供されるものではなく，大抵は以下のようなシナリオで利用されます．
-ドメインの管理者がグループ・ポリシー・オブジェクトを介してMSIを配布＆インストール エンドユーザが MSI を直接実行しインストール
-ファイル KGTN2011101904.pdf [(52.6 KB)] [kitasp 技術センター, 2011/10/19 13:19]</p>
+2011/12/28*
+[番号] 技術ノート KGTN 2011122804
+[現象] [GGW3.2.1/GGH4.X-5.X] GGの評価を行うに当たって，サーバー側に必要なディスクの容量は？
+[説明] GraphOn 社のデータシートによれば，GGW3.2.1 が500MB以上で，GGH4.X-5.X では規定されておりません．この理由は，GGが使用するディスクの大半はログで （通常は 1GB もあれば十分です） ，大半はWindows およびGG上で動作するアプリケーションが使用します．従って，Windows やご利用のアプリケーションが必要とするディスク容量の合計 + 1GB が最低ラインとなります．実際の運用を考えると，メモリダンプを記録するディスクも必要ですので，さらに 5～10GB 増やすことをお勧めします．
+ファイル KGTN2011122804.pdf [(57.7 KB)] [kitasp 技術センター, 2016/08/01 11:27]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1261/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2453/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

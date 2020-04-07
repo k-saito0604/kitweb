@@ -409,25 +409,30 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc130/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc105/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc130/">[Windows] Windows Server 2012 R2 の初期インストールおよび sysprep に使える応答ファイルのサンプルが欲しい．</a></h4>
+                            <h4><a href="/posts/new_md/doc105/">[GGH4.X] GGH4.Xのクライアントドライブ機能によるファイルのコピー速度が，WindowsのファイルコピーやGGW3.2.1のクライアントドライブ機能よりも遅い理由を知りたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-06-11
+                            日付 2015-06-12
                             </p>
                             <p class="intro">*技術ノート
-2015/06/11*
-[番号] 技術ノート KGTN 2015022501
-[現象] [Windows] Windows Server 2012 R2 の初期インストールおよび sysprep に使える応答ファイルのサンプルが欲しい．
-[説明] 以下に，Windows Server 2012 R2 の初期インストールおよび sysprep に使える応答ファイルのサンプルを示します．なお，この内容についての助言は歓迎しますが，質問等はご遠慮下さい．
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; &lt;unattend xmlns=&quot;urn:schemas-microsoft-com:unattend&quot;&gt; &lt;settings pass=&quot;windowsPE&quot;&gt; &lt;component name=&quot;Microsoft-Windows-International-Core-WinPE&quot; processorArchitecture=&quot;amd64&quot; publicKeyToken=&quot;31bf3856ad364e35&quot; language=&quot;neutral&quot; versionScope=&quot;nonSxS&quot; xmlns:wcm=&quot;http://schemas.microsoft.com/WMIConfig/2002/State&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt; &lt;SetupUILanguage&gt; &lt;UILanguage&gt;ja-JP&lt;/UILanguage&gt; &lt;/SetupUILanguage&gt; &lt;InputLocale&gt;ja-JP&lt;/InputLocale&gt; &lt;SystemLocale&gt;ja-JP&lt;/SystemLocale&gt; &lt;UILanguage&gt;ja-JP&lt;/UILanguage&gt; &lt;UserLocale&gt;ja-JP&lt;/UserLocale&gt; &lt;/component&gt; &lt;component name=&quot;Microsoft-Windows-Setup&quot; processorArchitecture=&quot;amd64&quot; publicKeyToken=&quot;31bf3856ad364e35&quot; language=&quot;neutral&quot; versionScope=&quot;nonSxS&quot; xmlns:wcm=&quot;http://schemas.microsoft.com/WMIConfig/2002/State&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt; &lt;UserData&gt; &lt;ProductKey&gt; &lt;Key&gt;XXXXX-XXXXX-XXXXX-XXXXX-XXXXX&lt;/Key&gt; &lt;WillShowUI&gt;OnError&lt;/WillShowUI&gt; &lt;/ProductKey&gt; &lt;AcceptEula&gt;true&lt;/AcceptEula&gt; &lt;/UserData&gt; &lt;ImageInstall&gt; &lt;OSImage&gt; &lt;InstallFrom&gt; &lt;MetaData wcm:action=&quot;add&quot;&gt; &lt;Key&gt;/IMAGE/NAME&lt;/Key&gt; &lt;Value&gt;Windows Server 2012 R2 SERVERSTANDARD&lt;/Value&gt; &lt;/MetaData&gt; &lt;/InstallFrom&gt; &lt;InstallTo&gt; &lt;DiskID&gt;0&lt;/DiskID&gt; &lt;PartitionID&gt;2&lt;/PartitionID&gt; &lt;/InstallTo&gt; &lt;/OSImage&gt; &lt;/ImageInstall&gt; &lt;DiskConfiguration&gt; &lt;WillShowUI&gt;OnError&lt;/WillShowUI&gt; &lt;Disk wcm:action=&quot;add&quot;&gt; &lt;DiskID&gt;0&lt;/DiskID&gt; &lt;WillWipeDisk&gt;true&lt;/WillWipeDisk&gt; &lt;CreatePartitions&gt; &lt;CreatePartition wcm:action=&quot;add&quot;&gt; &lt;Order&gt;1&lt;/Order&gt; &lt;Size&gt;350&lt;/Size&gt; &lt;Type&gt;Primary&lt;/Type&gt; &lt;/CreatePartition&gt; &lt;CreatePartition wcm:action=&quot;add&quot;&gt; &lt;Order&gt;2&lt;/Order&gt; &lt;Size&gt;64000&lt;/Size&gt; &lt;Type&gt;Primary&lt;/Type&gt; &lt;/CreatePartition&gt; &lt;/CreatePartitions&gt; &lt;ModifyPartitions&gt; &lt;ModifyPartition wcm:action=&quot;add&quot;&gt; &lt;Active&gt;true&lt;/Active&gt; &lt;Extend&gt;false&lt;/Extend&gt; &lt;Format&gt;NTFS&lt;/Format&gt; &lt;Label&gt;Boot&lt;/Label&gt; &lt;Order&gt;1&lt;/Order&gt; &lt;PartitionID&gt;1&lt;/PartitionID&gt; &lt;/ModifyPartition&gt; &lt;ModifyPartition wcm:action=&quot;add&quot;&gt; &lt;Extend&gt;false&lt;/Extend&gt; &lt;Format&gt;NTFS&lt;/Format&gt; &lt;Label&gt;Windows&lt;/Label&gt; &lt;Letter&gt;C&lt;/Letter&gt; &lt;Order&gt;2&lt;/Order&gt; &lt;PartitionID&gt;2&lt;/PartitionID&gt; &lt;/ModifyPartition&gt; &lt;/ModifyPartitions&gt; &lt;/Disk&gt; &lt;/DiskConfiguration&gt; &lt;/component&gt; &lt;/settings&gt; &lt;settings pass=&quot;oobeSystem&quot;&gt; &lt;component name=&quot;Microsoft-Windows-Shell-Setup&quot; processorArchitecture=&quot;amd64&quot; publicKeyToken=&quot;31bf3856ad364e35&quot; language=&quot;neutral&quot; versionScope=&quot;nonSxS&quot; xmlns:wcm=&quot;http://schemas.</p>
+2015/06/12*
+[番号] 技術ノート KGTN 2015041501
+[現象] [GGH4.X] GGH4.Xのクライアントドライブ機能によるファイルのコピー速度が，WindowsのファイルコピーやGGW3.2.1のクライアントドライブ機能よりも遅い理由を知りたい．
+[説明] GGの通信プロトコル Rapid-X は，GGを利用する全セッション （全ユーザー） のパフォーマンスが低下しないように，特定のセッションがネットワークの帯域の大部分を使用するようなことが起きない仕組みになっております．クライアントドライブ機能を利用するセッションについても同様で，この仕組みの働きにより （帯域制限の無い） Windowsのファイルコピーよりも時間が掛かることになります．
+Windowsで比較的大きなファイルをコピーする場合，ファイルコピーのアニメーションが表示されますが，クライアント側にこのアニメーションの表示するため，サーバ～クライアント間でアニメーションの描画データの転送が発生します． 「コピーするファイルのデータに加え」 この描画データの転送も加わるため，さらにWindowsのファイルコピーに比べ時間が掛かることになります．
+GGW3.2.1では，特殊な方法でこのアニメーションの表示を抑止しておりましたが，ファイルサイズやネットワーク状況等により正しくコピー出来ない問題が発生しましたので，安定性を優先して現在のクライアントドライブ機能の仕様になりました．
+補　足 GGやRDS （ターミナルサービス） のようなアプリケーション配信を行うソフトウエアの基本的な仕様に起因する制約もあります．このようなソフトウエアでは，ユーザーの操作 （キーボードやマウスのイベント） を直ちにサーバー側に送信し，そして処理結果である画面の更新情報を直ちにクライアント側へ送信する必要があります．これらの処理が少しでも遅くなると，キー入力した文字が直ちに画面に反映しないことになり，アプリケーションの利用が著しく困難になります．
+GGやRDSでは，クライアント～サーバー間のユーザー操作や画面の更新情報を直ちに送信するために，出来るだけ少量のデータを高頻度で送るようにしております．このような仕組みの上で大きなファイルの転送を行おうとすると，大きなデータを 「まとめて」 送ることが出来ませんので，結果としてファイルの送受信のパフォーマンスが低下することになります．
+つまり大きなファイルを送受信する場合のパフォーマンスの低下は，アプリケーション配信ソフトウエアの基本的なアーキテクチャに起因しており，これを改善するには大きなデータをまとめて処理できるプロトコル （アプリケーション） を利用 （併用） するのが最善の策となります．
+ファイル KGTN2015041501.pdf [(74.8 KB)] [kitasp 技術センター, 2015/06/12 15:56]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc130/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc105/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,29 +451,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc85/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc101/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc85/">[Windows] Windows System Image Manager (Windows SIM) の入手方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc101/">[GGH4.X] WS2003 (Windows Server 2003) のサポートが2015年7月15日に終了するが，GGのサポートも同日に終了するのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-06-11
+                            日付 2015-06-12
                             </p>
                             <p class="intro">*技術ノート
-2015/06/11*
-[番号] 技術ノート KGTN 2015021701
-[現象] [Windows] Windows System Image Manager (Windows SIM) の入手方法は？
-[説明] Windows　システム イメージ マネージャー (Windows SIM) は，Windows セットアップを無人で行うための応答ファイルの作成ツールで，Windows自動インストール キット (Windows AIK) に含まれています．このISOイメージは下記サイトからダウンロードすることが出来ます．
-http://www.microsoft.com/ja-jp/download/details.aspx?id=5753 Windows 7 用の Windows 自動インストール キット (AIK)
-ISOイメージをマウントし 1) StartCD.exe を実行， 2) 「Windows AIK セットアップ」 をクリック， 3) インストール完了後 「終了」 をクリック， 4) スタートメニューから 「Microsoft Windows AIK → Windows システム イメージ マネージャー」 を選択 して下さい．
-Windows AIK のセットアップ画面
-Windows SIM の画面
-ファイル KGTN2015021701.pdf [(142 KB)] [kitasp 技術センター, 2015/06/11 17:11]</p>
+2015/06/12*
+[番号] 技術ノート KGTN 2015052101
+[現象] [GGH4.X] WS2003 (Windows Server 2003) のサポートが2015年7月15日に終了するが，GGのサポートも同日に終了するのか？
+[説明] GraphOn社は，現時点ではWS2003環境でのGGのサポートを終了するような決定を行っておりません．従って，何らかの決定が行われるまでは，これまでのサポートが継続します．なお，将来何らかの決定が行われた場合は，弊社代理店を通して速やかにお知らせします．
+ファイル KGTN2015052101.pdf [(46.5 KB)] [kitasp 技術センター, 2015/06/12 16:25]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc85/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc101/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -487,25 +488,25 @@ Windows SIM の画面
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc124/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc104/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc124/">[Windows] Windows のインストールDVDに応答ファイルを加える場合，どのフォルダにどのようなファイル名で保存すべきか？</a></h4>
+                            <h4><a href="/posts/new_md/doc104/">[GGH4.X] WS2012R2でRDS （リモート デスクトップ サービス） の環境を構築すると最低でも２台のサーバー（Active DirectoryサーバーとRDSの各種役割サービスを実行するサーバー） が必要だが，WS2012R2でGGの環境を構築すると最低何台のサーバーが必要か？</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-06-11
+                            日付 2015-06-12
                             </p>
                             <p class="intro">*技術ノート
-2015/06/11*
-[番号] 技術ノート KGTN 2015022601
-[現象] [Windows] Windows のインストールDVDに応答ファイルを加える場合，どのフォルダにどのようなファイル名で保存すべきか？
-[説明] ISOファイル （イメージ） のルートに Autounattend.xml というファイル名で保存して下さい．
-ファイル KGTN2015022601.pdf [(42.1 KB)] [kitasp 技術センター, 2015/06/11 17:27]</p>
+2015/06/12*
+[番号] 技術ノート KGTN 2015042201
+[現象] [GGH4.X] WS2012R2でRDS （リモート デスクトップ サービス） の環境を構築すると最低でも２台のサーバー（Active DirectoryサーバーとRDSの各種役割サービスを実行するサーバー） が必要だが，WS2012R2でGGの環境を構築すると最低何台のサーバーが必要か？
+[説明] GGはWS2012R2の環境に独自方式のアプリケーション配信機能を提供するソフトウエアで，インストールおよび実行時に他のサーバーを必要としません．従って，アプリケーションを実行するサーバー１台があれば，そのサーバーにGGをインストールすることで，アプリケーションをリモートから利用出来るようになります．
+ファイル KGTN2015042201.pdf [(50 KB)] [kitasp 技術センター, 2015/06/12 16:03]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc124/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc104/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -524,28 +525,29 @@ Windows SIM の画面
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc78/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc50/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc78/">[Windows] Windows のインストールDVDのISOイメージをUSBディスクに書き，それを使ってインストールしたい．</a></h4>
+                            <h4><a href="/posts/new_md/doc50/">[GGH5.X] Android クライアントで，サーバーのデスクトップを利用する方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-06-11
+                            日付 2015-06-12
                             </p>
                             <p class="intro">*技術ノート
-2015/06/11*
-[番号] 技術ノート KGTN 2015022602
-[現象] [Windows] Windows のインストールDVDのISOイメージをUSBディスクに書き，それを使ってインストールしたい．
-[説明] フリーソフトウエアの　Rufus を使用して，Windows のインストールDVDのISOイメージをUSBディスクに書くことで，そのUSBディスクからWindowsをインストールすることが出来ます．
-https://rufus.akeo.ie/?locale=ja_JP
-ファイル KGTN2015022602.pdf [(73.6 KB)] [kitasp 技術センター, 2015/06/11 17:28]
-KGTN2015022602.jpg
-表示 [(60.7 KB)] [kitasp 技術センター, 2015/06/17 17:49]</p>
+2015/06/12*
+[番号] 技術ノート KGTN 2015060402
+[現象] [GGH5.X] Android クライアントで，サーバーのデスクトップを利用する方法は？
+[説明] 下記のスクリーンショットのように，ホスト情報 （接続情報） の Options 欄で -desktop を指定して下さい．
+ファイル KGTN2015060402.pdf [(118 KB)] [kitasp 技術センター, 2015/06/12 16:28]
+KGTN2015060402-1.jpg
+表示 [(29.5 KB)] [kitasp 技術センター, 2015/06/23 15:47]
+KGTN2015060402-2.jpg
+表示 [(25.2 KB)] [kitasp 技術センター, 2015/06/23 15:47]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc78/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc50/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

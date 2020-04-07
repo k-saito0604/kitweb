@@ -409,27 +409,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc986/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc882/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc986/">[GGH4.0] ユーザ毎にアプリケーションを置いたフォルダを用意し，その中のアプリケーションを起動したい．</a></h4>
+                            <h4><a href="/posts/new_md/doc882/">[GGH4.X] WS2008 (64bit) の環境で Office 2000 を利用できるか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-07-05
+                            日付 2012-10-15
                             </p>
                             <p class="intro">*技術ノート
-2012/07/05*
-[番号] 技術ノート KGTN 2012070502
-[現象] [GGH4.0] ユーザ毎にアプリケーションを置いたフォルダを用意し，その中のアプリケーションを起動したい．
-[説明] 以下のスクリプト （VBScript） をアプリケーションとして登録することで，ユーザ毎に用意したフォルダ中のアプリケーションを起動することが出来ます．
-[runMyApp.vbs] Set WshShell = WScript.CreateObject(&ldquo;WScript.Shell&rdquo;) WshShell.CurrentDirectory = WshShell.ExpandEnvironmentStrings(&ldquo;C:¥myapp¥%USERNAME%&quot;) WshShell.Run &ldquo;myapp.exe&rdquo;,1,false Set WshShell = Nothing
-C:¥myapp ユーザ毎にアプリケーションを置いたフォルダを含む親のフォルダ myapp.exe 起動するアプリケーション
-ファイル KGTN2012070502.pdf [(52.5 KB)] [kitasp 技術センター, 2012/07/05 10:55]</p>
+2012/10/15*
+[番号] 技術ノート KGTN 2012100502
+[現象] [GGH4.X] WS2008 (64bit) の環境で Office 2000 を利用できるか？
+[説明] マイクロソフト社の情報によれば，64ビット環境でサポートされるのは Office XP, Office 2003, Office 2007 またはそれ以降のバージョンに限られます．弊社での実験およびインターネット上の情報では， Office 2000 のインストール直後は動作しますが，時間とともに 「ワードが立ち上がらない」 等の障害が発生します．従って，自己責任であっても Office 2000 の利用は困難です．
+補　足 ある事例では，アンチウイルスソフトの 「カスペルスキー」 をアンインストールすることで， Office 2000 が動作するようになりました．
+ファイル KGTN2012100502.pdf [(59.3 KB)] [kitasp 技術センター, 2012/10/15 10:04]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc986/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc882/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -448,25 +447,26 @@ C:¥myapp ユーザ毎にアプリケーションを置いたフォルダを含�
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc987/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc881/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc987/">[SDK] エンタープライズオプション GGSessionMonitor のデータベースファイルを PHP で読む方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc881/">[GGH4.X] クライアントにプリンタドライバをインストールすることなく印刷したい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-07-05
+                            日付 2012-10-15
                             </p>
                             <p class="intro">*技術ノート
-2012/07/05*
-[番号] 技術ノート KGTN 2012070501
-[現象] [SDK] エンタープライズオプション GGSessionMonitor のデータベースファイルを PHP で読む方法は？
-[説明] GGSessionMonitor が作成するデータベースファイルは SQLite3 です． PHP のドキュメントを読むと様々な方法がありますが，実際に読むことが出来たサンプルを以下に示します．
-&lt;?php $db = new PDO(&quot;sqlite:C:/GraphOn/check/gms413-now.db&quot;); $st = $db-&gt;prepare(&quot;SELECT * FROM session_tbl ORDER BY sessionName ASC&quot;); $st-&gt;execute(); $ii = 0; while($rt = $st-&gt;fetch()) { $ii++; echo &quot;&lt;tr&gt;¥n&quot;; echo &quot; &lt;td align=right&gt;&quot; . $rt['sessionID'] . &quot;&lt;/td&gt;¥n&quot;; echo &quot; &lt;td&gt;&quot; . $rt['sessionName'] . &quot;&lt;/td&gt;¥n&quot;; echo &quot; &lt;td&gt;&quot; . $rt['userName'] . &quot;&lt;/td&gt;¥n&quot;; echo &quot; &lt;td&gt;&quot; .</p>
+2012/10/15*
+[番号] 技術ノート KGTN 2012101501
+[現象] [GGH4.X] クライアントにプリンタドライバをインストールすることなく印刷したい．
+[説明] クライアントにインストールするプリンタドライバの主な役割は，サーバ上で生成されクライアントへ転送された印刷ジョブ （スプールファイル） を物理的なプリンタへ出力することです．従って，プリンタドライバ無しに印刷することは出来ません．
+補　足 クライアント上に Adobe Reader がインストールされている環境に於いて，サーバで印刷したドキュメントをPDFとして表示させる機能 （クライアント印刷機能の一部） があります．このPDFをファイルに保存することで，クライアントで自由に （言い換えればGGとは関係無く） 印刷することが出来ます．
+ファイル KGTN2012101501.pdf [(52.9 KB)] [kitasp 技術センター, 2012/10/15 11:35]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc987/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc881/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,25 +485,25 @@ C:¥myapp ユーザ毎にアプリケーションを置いたフォルダを含�
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc988/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc886/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc988/">[SDK] エンタープライズオプションの GGSessionMonitor は，GGサーバへの接続に失敗した時，保持しているセッション情報を維持するのか？　それとも削除するのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc886/">[GGH4.X] GGのログオン画面無しでGG上のアプリケーションを利用したい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-07-02
+                            日付 2012-10-12
                             </p>
                             <p class="intro">*技術ノート
-2012/07/02*
-[番号] 技術ノート KGTN 2012070201
-[現象] [SDK] エンタープライズオプションの GGSessionMonitor は，GGサーバへの接続に失敗した時，保持しているセッション情報を維持するのか？　それとも削除するのか？
-[説明] GGサーバへの接続に失敗した時，GGSessionMonitor は保持しているセッション情報を削除 （セッションが切断された扱い） します．万一それが GGSessionMonitor 周辺の障害であったとしても，復旧後に登録されるセッションIDが同一になりますので，そのことを識別することは容易です．
-ファイル KGTN2012070201.pdf [(51 KB)] [kitasp 技術センター, 2012/07/02 09:13]</p>
+2012/10/12*
+[番号] 技術ノート KGTN 2012101201
+[現象] [GGH4.X] GGのログオン画面無しでGG上のアプリケーションを利用したい．
+[説明] ActiveXクライアント，Windowsクライアント，iPadクライアント，etc&hellip; では，ログオン情報 （ユーザIDとパスワード） をパラメタで指定することが出来ますので， 「管理者が事前に設定することで」 ログオン画面無しでユーザがGG上のアプリケーションを利用することが出来ます．
+ファイル KGTN2012101201.pdf [(45.7 KB)] [kitasp 技術センター, 2012/10/12 09:14]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc988/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc886/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -522,25 +522,25 @@ C:¥myapp ユーザ毎にアプリケーションを置いたフォルダを含�
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc989/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc885/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc989/">[GGH4.1] GGH4.0からGGH4.1へバージョンを上げたところ，マルチモニタ環境でウインドウを他のモニタへ移動すると画面が乱れた．</a></h4>
+                            <h4><a href="/posts/new_md/doc885/">[GGH4.X] クライアントの種類 （Windows,iPad,Android,etc...）で，利用できるアプリケーションを分けたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-06-29
+                            日付 2012-10-12
                             </p>
                             <p class="intro">*技術ノート
-2012/06/29*
-[番号] 技術ノート KGTN 2012062906
-[現象] [GGH4.1] GGH4.0からGGH4.1へバージョンを上げたところ，マルチモニタ環境でウインドウを他のモニタへ移動すると画面が乱れた．
-[説明] この現象は弊社でも確認しております． Windows Client / ActiveX Client を GGH4.1.3.12744 またはそれ以降に上げることで解消します．GGサーバおよびGGクライアントは，基本的には同一メジャーバージョン間で互換性がありますが，マルチモニタ環境等では互換性が無い場合があります．
-ファイル KGTN2012062906.pdf [(51 KB)] [kitasp 技術センター, 2012/06/29 11:46]</p>
+2012/10/12*
+[番号] 技術ノート KGTN 2012101202
+[現象] [GGH4.X] クライアントの種類 （Windows,iPad,Android,etc&hellip;）で，利用できるアプリケーションを分けたい．
+[説明] 先ず，GGにはクライアントの種類を識別する機能はありませんので，技術ノート KGTN#2012101104 にあるような方法で識別する必要があります．次に， PW はアクセス権 （セキュリティ設定） で利用できるアプリケーションを分けることが可能ですが，クライアントの種類とアクセス権は関連付けることは出来ませんので， PW の機能を利用することは出来ません．従って， 1) クライアントの種類の情報を得て， 2) データベース等を参照して， 3) 該当するアプリケーションを表示する， といった処理を行う 「自前の」 プログラム・ウインドウのようなアプリケーションを作成する必要があります．
+ファイル KGTN2012101202.pdf [(56 KB)] [kitasp 技術センター, 2012/10/12 09:32]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc989/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc885/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

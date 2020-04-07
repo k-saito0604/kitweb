@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc711/">
+                                      <a href="/posts/new_md/doc300/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc711/">[GGH4.5] マウスホバーの表示で文字化けする．</a></h2>
+                                    <h2><a href="/posts/new_md/doc300/">[GGH4.X] GG上のアプリケーションは セッション 0 で実行されるが，GGのセッション毎に異なる （Windowsの）セッションIDを割り当てることは可能か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc711/"><i class="far fa-calendar"></i> 2013-02-04</a>
+                                            <a href="/posts/new_md/doc300/"><i class="far fa-calendar"></i> 2013-03-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/02/04*
-[番号] 技術ノート KGTN 2013020401
-[現象] [GGH4.5] マウスホバーの表示で文字化けする．
-[説明] IE 等で確認したところ，下記のように日本語も問題なく表示されました．恐らく，文字化けを起こしたアプリケーションの処理に何らかの原因があるのではないかと思われます．
-ファイル KGTN2013020401.pdf [(76.2 KB)] [kitasp 技術センター, 2013/02/04 11:26]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc711/" class="btn btn-template-main">続きを読む</a>
+2013/03/11*
+[番号] 技術ノート KGTN 2013030701
+[現象] [GGH4.X] GG上のアプリケーションは セッション 0 で実行されるが，GGのセッション毎に異なる （Windowsの）セッションIDを割り当てることは可能か？
+[説明] 下記のレジストリ設定を行うことで， ProcessIdToSessionId() API がGG内部のセッションID （環境変数 %RXPSESSIONID% の値） を返すようになります．
+HKLMGraphOnGO-GlobalLoaderProcesses REG_DWORD 0x00000040
+GGH4.8.1.20079 では，64ビット版Windows上で32ビット・アプリケーションおよび64ビット・アプリケーションそれぞれで動作することを確認しました．なお， Administrator Guide に書かれた値 0x00000080 は誤りです．
+ファイル KGTN2013030701.pdf [(61.2 KB)] [kitasp 技術センター, 2014/03/07 19:32]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc300/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +362,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc710/">
+                                      <a href="/posts/new_md/doc623/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +370,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc710/">[GGW3.2.1/GGH4.5] GGの互換アップデートは，新しい Windows Update （更新プログラム） がリリースされる度に適用せねばならないのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc623/">[GGH4.5] GGのデモライセンス （評価用ライセンス） の期間は１ヶ月だそうだが，より期間の長いライセンスを発行して貰えないか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,17 +383,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc710/"><i class="far fa-calendar"></i> 2013-02-04</a>
+                                            <a href="/posts/new_md/doc623/"><i class="far fa-calendar"></i> 2013-03-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/02/04*
-[番号] 技術ノート KGTN 2013020402
-[現象] [GGW3.2.1/GGH4.5] GGの互換アップデートは，新しい Windows Update （更新プログラム） がリリースされる度に適用せねばならないのか？
-[説明] いいえ．新しくリリースされた Windows Update （更新プログラム） の中に， Windows のカーネル （システムの中核となる部分） を修正するものがあった場合にのみ，GGの互換アップデートの適用が必要です．
-ファイル KGTN2013020402.pdf [(44.8 KB)] [kitasp 技術センター, 2013/02/04 12:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc710/" class="btn btn-template-main">続きを読む</a>
+2013/03/08*
+[番号] 技術ノート KGTN 2013030807
+[現象] [GGH4.5] GGのデモライセンス （評価用ライセンス） の期間は１ヶ月だそうだが，より期間の長いライセンスを発行して貰えないか？
+[説明] GraphOn社のデモライセンス （評価用ライセンス） の発行は会計システムと直結しており，その期間 （１ヶ月）を長くすることは出来ません．特別な事情がある場合は，弊社営業担当へお問合せ下さい．GraphOn社が「営業的に必要性あり」 と判断すれば，最長3ヶ月のデモライセンスが１回に限り発行されます．
+ファイル KGTN2013030807.pdf [(49.1 KB)] [kitasp 技術センター, 2013/03/08 23:02]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc623/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -401,7 +403,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc712/">
+                                      <a href="/posts/new_md/doc627/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -409,7 +411,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc712/">[iPad] GGサーバのバージョンを上げたところ， iPad で半角英字を入力するとGG上のアプリケーション上で全角英字に変換されるようになった．FEPは ATOK を使っている．</a></h2>
+                                    <h2><a href="/posts/new_md/doc627/">[GGH4.5] データベースソフト FileMaker はGG上で動作するか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -422,21 +424,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc712/"><i class="far fa-calendar"></i> 2013-02-01</a>
+                                            <a href="/posts/new_md/doc627/"><i class="far fa-calendar"></i> 2013-03-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/02/01*
-[番号] 技術ノート KGTN 2013020101
-[現象] [iPad] GGサーバのバージョンを上げたところ， iPad で半角英字を入力するとGG上のアプリケーション上で全角英字に変換されるようになった．FEPは ATOK を使っている．
-[説明] 以下の環境で検証を行いましたが，そのような現象は発生しませんでした．また，iPad クライアントは半角英数字 （のUNICODEを） をGGサーバに送信しており，GGがサーバ上で全角変換をすることはありません．
-Server: WS2008-SP2 (x86) + ATOK2012 + GG4.5.0.13767EB Client: iPad mini (iOS6.1) + GG4.5.0.14966
-補　足 ATOK のツールバーで 「日本語入力オン/オフ = 有効」 の状態にすると， iPad で半角英字を入力するとGG上のアプリケーションで全角英字になることから，何らかの原因でログオンした時点で 「日本語入力オン/オフ = 有効」 になっているのではないかと推測されます．もしそうであれば ATOK の設定等を確認して，ログオンした時点で 「日本語入力オン/オフ = 無効」 になるように設定を変更して下さい．
-2013年2月1日時点で，以下のサイトに参考情報のムービーを公開しております．なお，近い将来削除される可能性があります．
-http://youtu.be/BjQen5-07II JP-002 (ATOK Issue)
-ファイル KGTN2013020101.pdf [(62.7 KB)] [kitasp 技術センター, 2013/02/01 09:42]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc712/" class="btn btn-template-main">続きを読む</a>
+2013/03/08*
+[番号] 技術ノート KGTN 2013030804
+[現象] [GGH4.5] データベースソフト FileMaker はGG上で動作するか？
+[説明] 一般的にソフトウエアが正常に動作するかという判断は，ソフトウエアメーカーの品質保証担当しか出来ませんので，弊社では FileMaker が動作するかどうかは分かりません．しかしながら，ユーザ様での利用の事例があり （詳細は分かりません） ，GraphOn社が FileMaker で生じた問題を修正した記録があります．このことから，動作する可能性は十分にあると考えられます．
+ファイル KGTN2013030804.pdf [(50.2 KB)] [kitasp 技術センター, 2013/03/08 09:50]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc627/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -446,7 +444,7 @@ http://youtu.be/BjQen5-07II JP-002 (ATOK Issue)
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc713/">
+                                      <a href="/posts/new_md/doc624/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -454,7 +452,7 @@ http://youtu.be/BjQen5-07II JP-002 (ATOK Issue)
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc713/">[Tool] GGとは関係がないか，VBS中でRunメソッドを実行した時，リダイレクトが効かない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc624/">[GGW3.2.1] 正式ライセンスを検証するに当たり，MACアドレスの一致だけで良いのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -467,18 +465,17 @@ http://youtu.be/BjQen5-07II JP-002 (ATOK Issue)
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc713/"><i class="far fa-calendar"></i> 2013-01-30</a>
+                                            <a href="/posts/new_md/doc624/"><i class="far fa-calendar"></i> 2013-03-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/01/30*
-[番号] 技術ノート KGTN 2013013001
-[現象] [Tool] GGとは関係がないか，VBS中でRunメソッドを実行した時，リダイレクトが効かない．
-[説明] Runメソッドでアプリケーションを実行する場合， 「リダイレクトが必要な場合は」 以下のように cmd.exe を介して実行して下さい．
-strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; TEMP.TXT&rdquo; objSH.Run strCmd,0,True
-ファイル KGTN2013013001.pdf [(46.1 KB)] [kitasp 技術センター, 2013/01/30 09:55]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc713/" class="btn btn-template-main">続きを読む</a>
+2013/03/08*
+[番号] 技術ノート KGTN 2013030806
+[現象] [GGW3.2.1] 正式ライセンスを検証するに当たり，MACアドレスの一致だけで良いのか？
+[説明] いいえ，ライセンスファイルのホスト名とGGサーバ （ライセンスサーバ） のコンピュータ名が一致している必要があります．
+ファイル KGTN2013030806.pdf [(40.9 KB)] [kitasp 技術センター, 2013/03/08 14:25]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc624/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -488,7 +485,7 @@ strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc715/">
+                                      <a href="/posts/new_md/doc626/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -496,7 +493,7 @@ strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc715/">[GGW3.2.1/GGH4.X] GGは Google Chrome ブラウザをサポートするのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc626/">[GGW3.2.1] 正式ライセンスを検証するに当たり，どのサービスを立ち上げる必要があるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -509,18 +506,17 @@ strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc715/"><i class="far fa-calendar"></i> 2013-01-27</a>
+                                            <a href="/posts/new_md/doc626/"><i class="far fa-calendar"></i> 2013-03-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/01/27*
-[番号] 技術ノート KGTN 2012110901
-[現象] [GGW3.2.1/GGH4.X] GGは Google Chrome ブラウザをサポートするのか？
-[説明] いいえ，現時点ではGGの何れのバージョンも Google Chrome ブラウザをサポートしません．なお，GGH4.5の将来のリリースで Google Chrome ブラウザをサポートする計画があります．
-リリース時期は未定ですが，GGH4.5.0 Patch 2 で Google Chrome をサポートする見込みです．
-ファイル KGTN2012110901.pdf [(61 KB)] [kitasp 技術センター, 2013/01/28 07:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc715/" class="btn btn-template-main">続きを読む</a>
+2013/03/08*
+[番号] 技術ノート KGTN 2013030805
+[現象] [GGW3.2.1] 正式ライセンスを検証するに当たり，どのサービスを立ち上げる必要があるのか？
+[説明] ライセンスサーバの GO-Global License Manager と，ライセンスクライアントの GO-Global Application Publishing Service を立ち上げる必要があります．ライセンスファイルを入れ替えた時は，技術的にはライセンスサーバの 「停止→開始」 で良いのですが，慎重を期してライセンスクライアント （APS） の 「停止→開始」 も行うことをお勧めします．
+ファイル KGTN2013030805.pdf [(49.1 KB)] [kitasp 技術センター, 2013/03/08 14:19]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc626/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -530,7 +526,7 @@ strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc716/">
+                                      <a href="/posts/new_md/doc628/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -538,7 +534,7 @@ strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc716/">[GGW3.2.0] Adobe Reader X にバージョンアップしたところ，印刷出来なくなった．</a></h2>
+                                    <h2><a href="/posts/new_md/doc628/">[ExtPack] 拡張パックの GMService.exe が記録するログファイルは，どこの記録されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -551,17 +547,19 @@ strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc716/"><i class="far fa-calendar"></i> 2013-01-24</a>
+                                            <a href="/posts/new_md/doc628/"><i class="far fa-calendar"></i> 2013-03-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/01/24*
-[番号] 技術ノート KGTN 2013012401
-[現象] [GGW3.2.0] Adobe Reader X にバージョンアップしたところ，印刷出来なくなった．
-[説明] GGの印刷機能 （UPD） は，原則としてそのGGのバージョンのサポート期間に出荷されている Adobe Reader のバージョンの利用を前提としております．Adobe Reader X は GGW3.2.0 のサポート期間が過ぎた後に出荷された製品ですので，GGの印刷機能 （UPD） の動作については分かりません．対応としては，Adobe Reader をバージョンアップ前の製品に戻すか，またはGGをバージョンアップして下さい．
-ファイル KGTN2013012401.pdf [(48.9 KB)] [kitasp 技術センター, 2013/01/24 10:08]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc716/" class="btn btn-template-main">続きを読む</a>
+2013/03/07*
+[番号] 技術ノート KGTN 2013030803
+[現象] [ExtPack] 拡張パックの GMService.exe が記録するログファイルは，どこの記録されるのか？
+[説明] 標準の設定では GMService.exe が置かれたフォルダに GMService-YYYYMMDD.log というファイル名で作成されます．GMService.exe が置かれたフォルダに GMService.ini という設定ファイルがあり，かつそのファイルの中に
+logdir =
+という項目があれば，指定されたパスにログファイルが作成されます．詳細は技術ノートKGTN#2010082502 をご覧下さい．
+ファイル KGTN2013030803.pdf [(49.1 KB)] [kitasp 技術センター, 2013/03/08 08:45]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc628/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -571,7 +569,7 @@ strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc718/">
+                                      <a href="/posts/new_md/doc629/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -579,7 +577,7 @@ strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc718/">[GGH4.5] マルチモニタ環境で動作するセッションをシャドウイング （セッション・シャドウイング） すると，プライマリモニタの画面しか見えない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc629/">[GGH4.5/Android] Android タブレットで Bluetooth wireless keyboard を使用しているが，GGの Android クライアントではタブキーが入力出来ない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -592,17 +590,17 @@ strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc718/"><i class="far fa-calendar"></i> 2013-01-21</a>
+                                            <a href="/posts/new_md/doc629/"><i class="far fa-calendar"></i> 2013-03-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/01/21*
-[番号] 技術ノート KGTN 2013012201
-[現象] [GGH4.5] マルチモニタ環境で動作するセッションをシャドウイング （セッション・シャドウイング） すると，プライマリモニタの画面しか見えない．
-[説明] GGH4.Xのセッション・シャドウイング機能は，プライマリモニタのみを表示します．また他のモニタからウインドウを移動した時にウインドウの一部 （または全部） が黒く表示されることがあります．これらは，GGH4.Xの制限事項となります．
-ファイル KGTN2013012201.pdf [(44.8 KB)] [kitasp 技術センター, 2013/01/22 06:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc718/" class="btn btn-template-main">続きを読む</a>
+2013/03/07*
+[番号] 技術ノート KGTN 2013030802
+[現象] [GGH4.5/Android] Android タブレットで Bluetooth wireless keyboard を使用しているが，GGの Android クライアントではタブキーが入力出来ない．
+[説明] Androidクライアントは Bluetooth wireless keyboard をサポートしておりません．GraphOn社の機能要望リストにはBluetooth wireless keyboard のサポートが登録されておりますので，将来サポートされる可能性はあります．
+ファイル KGTN2013030802.pdf [(45.8 KB)] [kitasp 技術センター, 2013/03/08 07:17]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc629/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -612,7 +610,7 @@ strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2583/">
+                                      <a href="/posts/new_md/doc630/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -620,7 +618,7 @@ strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2583/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc630/">[GGH4.5/iPad] iPad で Apple Wireless Keyboard を使用しているが，GGの iPad クライアントではタブキーが入力出来ない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -633,18 +631,17 @@ strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2583/"><i class="far fa-calendar"></i> 2013-01-21</a>
+                                            <a href="/posts/new_md/doc630/"><i class="far fa-calendar"></i> 2013-03-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/01/21*
-[番号] 技術ノート KGTN 2013012101
-[現象] [GGH4.X-5.X] 画面に残像が残り画面が乱れる．先ず何を調べれば良いか？
-[説明] GGは描画のパフォーマンス （速度） を高めるため，幾つかの前提条件の下に描画の最適化を行っております．クライアントの設定やアプリケーションの動作がこの前提条件に合致しない時に，画面に残像が残る等の描画問題が発生します．先ず， 「コンピュータの視覚効果」 で &ldquo;Aeroテーマ&rdquo; が設定されていないかどうか確認して下さい．もし &ldquo;Aeroテーマ&rdquo; が設定されている場合は， &ldquo;ベーシックテーマ&rdquo; に変更して下さい．
-補　足 「コンピュータの視覚効果」 は，コントロールパネル → [デスクトップのカスタマイズ] → [個人設定] → [テーマの変更] で設定することが出来ます．
-ファイル KGTN2013012101.pdf [(59.8 KB)] [kitasp 技術センター, 2016/05/27 14:00]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2583/" class="btn btn-template-main">続きを読む</a>
+2013/03/07*
+[番号] 技術ノート KGTN 2013030801
+[現象] [GGH4.5/iPad] iPad で Apple Wireless Keyboard を使用しているが，GGの iPad クライアントではタブキーが入力出来ない．
+[説明] iPad クライアントは Bluetooth wireless keyboard (Apple Wireless Keyboard) をサポートしておりません．GraphOn社の機能要望リストにはBluetooth wireless keyboard のサポートが登録されておりますので，将来Apple Wireless Keyboard がサポートされる可能性はあります．
+ファイル KGTN2013030801.pdf [(49.2 KB)] [kitasp 技術センター, 2013/03/08 07:09]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc630/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -654,7 +651,7 @@ strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc721/">
+                                      <a href="/posts/new_md/doc632/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -662,7 +659,7 @@ strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc721/">[GGH4.X] シングルモニタ環境で，ローミング時に画面の乱れが発生するそうだが，どのような現象か？</a></h2>
+                                    <h2><a href="/posts/new_md/doc632/">[GGH4.5] GGのクライアントアプリをインストールせずに利用したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -675,18 +672,17 @@ strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc721/"><i class="far fa-calendar"></i> 2013-01-21</a>
+                                            <a href="/posts/new_md/doc632/"><i class="far fa-calendar"></i> 2013-03-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/01/21*
-[番号] 技術ノート KGTN 2013011003
-[現象] [GGH4.X] シングルモニタ環境で，ローミング時に画面の乱れが発生するそうだが，どのような現象か？
-[説明] 再接続時に， 1) ウインドウの左側に黒い領域が現れる， 2) ウインドウがずれた位置に描画される， 3) その他 を確認しております．現在，詳細な情報を調査中です．
-上記の例では，白いウインドウがずれた位置に描画されています （注：理解し易いように赤い領域を書き加えました） ．
-ファイル KGTN2013011003.pdf [(112 KB)] [kitasp 技術センター, 2013/01/21 09:48]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc721/" class="btn btn-template-main">続きを読む</a>
+2013/03/07*
+[番号] 技術ノート KGTN 2013030705
+[現象] [GGH4.5] GGのクライアントアプリをインストールせずに利用したい．
+[説明] GGサーバ上で実行されるアプリケーションを，クライアントPCで表示・操作するのですから，クライアントPCに何らかのアプリケーションは必要となります．Windows の場合，事前にインストールするのであれば Windows クライアント，ユーザがウエッブページからインストールするのであれば ActiveX クライアントがあります．なお，どちらのクライアントも，サーバ側の設定で自動的にバージョンアップを行うことが出来ます．
+ファイル KGTN2013030705.pdf [(47.2 KB)] [kitasp 技術センター, 2013/03/07 12:37]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc632/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -696,7 +692,7 @@ strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc719/">
+                                      <a href="/posts/new_md/doc631/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -704,7 +700,7 @@ strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc719/">[GGH4.X] マルチモニタ環境で，ローミング時にアプリケーションのウインドウが消えることがある．</a></h2>
+                                    <h2><a href="/posts/new_md/doc631/">[GGH4.5] 拡張パックは，どんなことに役立つのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -717,18 +713,17 @@ strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc719/"><i class="far fa-calendar"></i> 2013-01-21</a>
+                                            <a href="/posts/new_md/doc631/"><i class="far fa-calendar"></i> 2013-03-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/01/21*
-[番号] 技術ノート KGTN 2013010901
-[現象] [GGH4.X] マルチモニタ環境で，ローミング時にアプリケーションのウインドウが消えることがある．
-[説明] 移動元の絶対座標が移動先に存在しない場合，アプリケーションのウインドウを現在のGGの動作ではプライマリ・モニタのタスクバーの位置に移動させるため，タスクバーを常に最前面に表示する設定の場合，アプリケーションのウインドウが消えたように見えることになります．この問題を回避するには， 「タスクバーを自動的に隠す」 を有効にして下さい．
-下記の例では，ブラウザのウインドウがX座標2600に位置にあり，移動先の端末のＸ座標の最大値が2560であるため，移動先でそのまま描画することが出来ません．このため，GGはブラウザのウインドウをプライマリ・モニタのタスクバーの位置に移動させて表示します．
-ファイル KGTN2013010901.pdf [(97.8 KB)] [kitasp 技術センター, 2013/01/21 11:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc719/" class="btn btn-template-main">続きを読む</a>
+2013/03/07*
+[番号] 技術ノート KGTN 2013030706
+[現象] [GGH4.5] 拡張パックは，どんなことに役立つのか？
+[説明] GGサーバの稼働状況の監視は，標準機能ではGUIベースのクラスタ・マネージャで行います．サーバの台数が少なければこの機能でも何とかなりますが，GGサーバの台数が数十台〜数百台となると現実的ではありません．拡張パックの GGSessionMonitor を使用することで，GGサーバの稼働状況等の情報を （既存の） 統合システム運用管理ツール等に渡すことが可能となり，統一的なシステム運用が可能となります．統合システム運用管理ツールが無い場合は，添付されるユーザがカスタマイズ可能な監視ソフトウエア （ひな形） を利用することも出来ます．
+ファイル KGTN2013030706.pdf [(54.8 KB)] [kitasp 技術センター, 2013/03/07 13:11]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc631/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -798,7 +793,7 @@ strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; 
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

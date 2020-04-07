@@ -409,28 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc678/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc600/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc678/">[GGH4.5] 拡張パックのプラグイン GGCSlib が32ビットの Windows 7 では動作するが，64ビットの Windows 7 では動作しない．</a></h4>
+                            <h4><a href="/posts/new_md/doc600/">[GGH4.X] Ubuntu クライアントはないのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2013-02-21
+                            日付 2013-04-03
                             </p>
                             <p class="intro">*技術ノート
-2013/02/21*
-[番号] 技術ノート KGTN 2012120301
-[現象] [GGH4.5] 拡張パックのプラグイン GGCSlib が32ビットの Windows 7 では動作するが，64ビットの Windows 7 では動作しない．
-[説明] 64ビットの Windows 7 では，プラグインを指定するレジストリが異なります．以下のように設定して下さい （注意： フォルダのパスの末尾に必ず ¥ を付けて下さい） ．
-HKEY_LOCAL_MACHINE¥SOFTWARE¥Wow6432Node¥Graphon¥GO-Global ClientPluginsPath REG_SZ
-補　足 32ビットで動作するアプリケーションは，WOW64 レジストリ リダイレクタによって，64 ビット バージョンのレジストリ エディタ上で以下のレジストリ キーへアクセスします．より詳細な情報については，マイクロソフト社の知識ベース KB305097 &ldquo;64 ビット バージョンの Windows でシステム レジストリを表示する方法&rdquo; をご覧下さい．
-HKEY_LOCAL_MACHINE¥Software¥WOW6432Node
-ファイル KGTN2012120301.pdf [(60 KB)] [kitasp 技術センター, 2013/02/22 07:17]</p>
+2013/04/03*
+[番号] 技術ノート KGTN 2013040302
+[現象] [GGH4.X] Ubuntu クライアントはないのか？
+[説明] GGH4.5およびそれ以前のバージョンでは Ubuntu クライアントは提供されておりませんが， GGH4.6からUbuntu クライアント （Ubuntu 12.0.4 LTS をサポート） が提供される見込みです．
+ファイル KGTN2013040302.pdf [(42.6 KB)] [kitasp 技術センター, 2013/04/03 09:55]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc678/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc600/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -449,25 +446,26 @@ HKEY_LOCAL_MACHINE¥Software¥WOW6432Node
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc677/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc601/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc677/">[GGW3.2.1/GGH4.5] ディスクの障害が発生した場合，GGサーバおよびGGクライアントへどのような影響が出るか？</a></h4>
+                            <h4><a href="/posts/new_md/doc601/">[GGH4.5] WS2008R2 の環境でクライアント印刷機能を利用したいが，インパクトプリンタ VP-2300 で印刷は可能か？</a></h4>
                             <p class="author-category">
                             
-                            日付 2013-02-21
+                            日付 2013-04-02
                             </p>
                             <p class="intro">*技術ノート
-2013/02/21*
-[番号] 技術ノート KGTN 2013022201
-[現象] [GGW3.2.1/GGH4.5] ディスクの障害が発生した場合，GGサーバおよびGGクライアントへどのような影響が出るか？
-[説明] 物理的なディスクでI/Oエラーが継続して発生した場合，ネットワーク上のディスクで転送速度が継続して低下した場合， etc&hellip; このような場合は，Windows の動作が遅くなり，その上で動作するアプリケーションの動作も遅くなります．GGの場合は，コネクションが切れる，ログオンが遅くなる，ログオンの初期化処理でタイムアウトが発生する等の現象を引き起こします．
-ファイル KGTN2013022201.pdf [(49.4 KB)] [kitasp 技術センター, 2013/02/22 08:22]</p>
+2013/04/02*
+[番号] 技術ノート KGTN 2013040202
+[現象] [GGH4.5] WS2008R2 の環境でクライアント印刷機能を利用したいが，インパクトプリンタ VP-2300 で印刷は可能か？
+[説明] WS2008R2 の環境のVP-2300 用プリンタドライバは 「インパクトプリンター用 OS添付ドライバー」 がありますので，これを利用することになります．クライアント印刷機能 （Windowsドライバ） は，サーバ〜クライアント間でスプールファイルの転送を行いますが，この場合サーバ側のドライバとクライアント側のドライバが処理するスプールファイルの形式に互換性がなければなりません．アーキテクチャの近い Windows 8 や Windows 7 では互換性をある程度期待出来ますが，他の Windows では分かりません．従って，実際に試してみることを強くお勧めします．
+クライアント印刷機能 （ユニバーサル・ドライバ） については，クライアント側でPDFファイルが正しく印刷出来ることが確認出来れば，クライアント印刷機能の Preview PDF を使用することで印刷出来ると考えられます．
+ファイル KGTN2013040202.pdf [(56.5 KB)] [kitasp 技術センター, 2013/04/02 11:23]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc677/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc601/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -486,25 +484,26 @@ HKEY_LOCAL_MACHINE¥Software¥WOW6432Node
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc680/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc602/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc680/">[GGW3.2.1] PW （プログラムウインドウ） の初期化に関して，クライアント側のリソースと処理時間の関係は？</a></h4>
+                            <h4><a href="/posts/new_md/doc602/">[GGH4.5] クライアント印刷機能を有効にしているが，アプリケーションの印刷ダイアログにプリンタが１台も表示されない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2013-02-21
+                            日付 2013-04-02
                             </p>
                             <p class="intro">*技術ノート
-2013/02/21*
-[番号] 技術ノート KGTN 2013022105
-[現象] [GGW3.2.1] PW （プログラムウインドウ） の初期化に関して，クライアント側のリソースと処理時間の関係は？
-[説明] クライアントプリンタの台数が増加すると，それらの情報を採取するため処理時間が長くなります．クライアントドライブについても同様で，台数が増加すると処理時間が長くなります．それに加え，ネットワークドライブやリムーバブルディスクのアクセスには時間が掛かるため，さらに処理時間が長くなります．
-ファイル KGTN2013022105.pdf [(47.9 KB)] [kitasp 技術センター, 2013/02/21 13:25]</p>
+2013/04/02*
+[番号] 技術ノート KGTN 2013040201
+[現象] [GGH4.5] クライアント印刷機能を有効にしているが，アプリケーションの印刷ダイアログにプリンタが１台も表示されない．
+[説明] GGW3.2系ではログオン時にクライアントプリンタが構成されましたが，GGH4.X系では動的にクライアントプリンタを構成することが出来ます． Program Window → File → Printers のダイアログで Add ボタンをクリックし， Add Printer ダイアログにクライアント側のプリンタが表示されるかどうか確認して下さい．表示された場合は，印刷したいプリンタを選択し Add ボタンをクリックして下さい．そして， Printers ダイアログに選択したプリンタが追加されているかどうか確認して下さい．追加された場合は，アプリケーションを起動し印刷ダイアログでそのプリンタに印刷し，実際に印刷されるかどうか確認して下さい．各ステップでエラーが発生した場合は，そのスクリーンショットを採取して下さい．
+補　足 上記説明でプリンタが追加された直後に，項目 Driver の内容を確認して下さい．この項目には，プリンタの構成に使用されたドライバの情報 （種類） が表示されます．さらに Test Page ボタンをクリックし，テストページが印刷されるかどうかも確認して下さい．
+ファイル KGTN2013040201.pdf [(58.3 KB)] [kitasp 技術センター, 2013/04/02 09:36]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc680/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc602/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -523,27 +522,25 @@ HKEY_LOCAL_MACHINE¥Software¥WOW6432Node
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc685/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2139/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc685/">[GGW3.2.1] PW （プログラムウインドウ） の初期化処理でタイムアウトが発生した場合，その後PWとセッションはどのような状態になるのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2139/">[GGH4.X-5.X] セッションがハングアップする．ダンプファイルの採取方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2013-02-21
+                            日付 2013-04-02
                             </p>
                             <p class="intro">*技術ノート
-2013/02/21*
-[番号] 技術ノート KGTN 2013022101
-[現象] [GGW3.2.1] PW （プログラムウインドウ） の初期化処理でタイムアウトが発生した場合，その後PWとセッションはどのような状態になるのか？
-[説明] タイムアウトのダイアログが表示されかつOKボタンがクリックされた場合は，PWが終了し続けてセッションも終了します．
-タイムアウトのダイアログが表示されない （クライアント側がビジーで表示出来ない） か，または表示されてもOKボタンがクリックされない場合は，PWもセッションも維持されます．この状況でクライアント側の ggw.exe がタスクマネージャ等で強制終了されると， ggw.exe が終了通知をサーバ側に送信出来る場合はセッションが終了します． ggw.exe が終了通知をサーバ側に送信出来ない場合はセッションが維持されます．
-補　足 PWの初期化処理でタイムアウトが発生し ggw.exe を強制終了させた時， （その後も継続して） セッションが残っていれば ggw.exe が終了要求のメッセージを受け取ることが困難な状況にあったと考えられます
-ファイル KGTN2013022101.pdf [(55.1 KB)] [kitasp 技術センター, 2013/02/21 09:59]</p>
+2013/04/02*
+[番号] 技術ノート KGTN 2013040301
+[現象] [GGH4.X-5.X] セッションがハングアップする．ダンプファイルの採取方法は？
+[説明]
+ 次のサイトからツール Debugging Tools for Windows （x86版） をダウンロードする． http://www.microsoft.com/whdc/devtools/debugging/default.mspx Debugging Tools for Windows をインストールする． ダンプファイルを保存するフォルダ C:dumps を作成する． GGサーバにログオンしハングアップ状態を再現する． コマンドプロンプトで次のコマンドを実行する． adplus -hang -pn gg-client.exe -o C:dumps 6)１回のダンプファイルの採取で十分な情報が得られないことがあるので，数回 4)～5) を繰り返す．  ファイル KGTN2013040301.pdf [(62.1 KB)] [kitasp 技術センター, 2017/04/11 14:53]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc685/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2139/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

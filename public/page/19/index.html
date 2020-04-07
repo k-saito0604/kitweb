@@ -409,29 +409,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1114/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc947/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1114/">[Power4G] Power4Gを起動したところ， 「ベンダーの初期化に失敗しました．IDAPIサービスライブラリをロード出来ません．ファイル：GDS32.DLL，エイリアス:PatientDB」 というエラーが表示される．</a></h4>
+                            <h4><a href="/posts/new_md/doc947/">[GGH5.X] クラスターマネージャーの Logon scripts の Global のチェックの有無の情報はどこに記録されているのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2018-07-20
+                            日付 2018-10-04
                             </p>
                             <p class="intro">*技術ノート
-2018/07/20*
-[番号] 技術ノート KGTN 2018071001
-[現象] [Power4G] Power4Gを起動したところ， 「ベンダーの初期化に失敗しました．IDAPIサービスライブラリをロード出来ません．ファイル：GDS32.DLL，エイリアス:PatientDB」 というエラーが表示される．
-[説明] このエラーメッセージは，環境に何らかの問題が発生し，当該ファイルがロード出来なかったことを意味でします．コマンドプロンプトを開き，フォルダー C:Power4GfbBin で，コマンド installclient.exe i g を実行して下さい．
-ファイル KGTN2018071001.pdf [(94.1 KB)] [kitasp 技術センター, 2018/07/20 16:09]
-KGTN2018071001-1.jpg
-表示 [(16.2 KB)] [kitasp 技術センター, 2018/07/20 16:09]
-KGTN2018071001-2.jpg
-表示 [(5.97 KB)] [kitasp 技術センター, 2018/07/20 16:10]</p>
+2018/10/04*
+[番号] 技術ノート KGTN 2018082301
+[現象] [GGH5.X] クラスターマネージャーの Logon scripts の Global のチェックの有無の情報はどこに記録されているのか？
+[説明] Logon scripts の Global のチェックの有無は，設定ファイル （xmlファイル） ではなく，レジストリに記録されております．レジストリの場所とその値は次の通りです．
+[HKLMSOFTWAREGraphOnGO-GlobalAppServer] 1. Logon scripts の Global にチェックあり LogonScriptOptions&quot;=dword:0000000e 2. Logon scripts の Global にチェックなし LogonScriptOptions&quot;=dword:0000000c  ファイル KGTN2018082301.pdf [(87.2 KB)] [kitasp 技術センター, 2018/10/04 10:15]
+KGTN2018082301.jpg
+表示 [(24.3 KB)] [kitasp 技術センター, 2018/10/04 10:15]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1114/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc947/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -450,27 +448,40 @@ KGTN2018071001-2.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1180/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc936/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1180/">[G Suite] G Suite のメール機能 （Gmail） で，他の外部のメールアドレスで送信する方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc936/">[GGH5.X] バージョン5.0を利用しているが，最新ビルドへのアップグレードの方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2018-06-26
+                            日付 2018-10-04
                             </p>
                             <p class="intro">*技術ノート
-2018/06/26*
-[番号] 技術ノート KGTN 2018062101
-[現象] [G Suite] G Suite のメール機能 （Gmail） で，他の外部のメールアドレスで送信する方法は？
-[説明] 設定に先立ち，次の情報を揃えて下さい．
- 利用したいメールアドレス SMTPサーバーのホスト名 SMTPサーバーのポート番号 セキュリティーの種類 （SSL/TLS） ユーザーID パスワード  G Suite のメール機能 （Gmail） の画面で [設定] → [アカウント] → [他のメール アドレスを追加] を選択することで，他の外部のメールアドレスを利用するための設定を行うことが出来ます．
-STEP#1 &ldquo;自分のメールアドレスを追加&rdquo; 画面1 ・項目 「名前」 にメールアドレスの横に表示される名前を入力します． ・項目 「メール アドレス」 に利用したいメールアドレスを入力します． ・項目 「エイリアスとして扱います」 にチェックを入れます． ・ボタン 「次のステップ」 をクリックします．
-STEP#2 &ldquo;自分のメールアドレスを追加&rdquo; 画面2 ・項目 「SMTPサーバー」 にSMTPサーバーのホスト名を入力します． ・項目 「ポート番号」 にSMTPサーバーのポート番号を入力します． ・項目 「ユーザー名」 にSMTPサーバーの認証に使用するユーザーIDを入力します． ・項目 「パスワード」 にSMTPサーバーの認証に使用するパスワードを入力します． ・項目 「&hellip;セキュリティで保護された接続」 の何れかをセキュリティーの種類の従って選択します． ・ボタン 「アカウントを追加」 をクリックします．</p>
+2018/10/04*
+[番号] 技術ノート KGTN 2018082401
+[現象] [GGH5.X] バージョン5.0を利用しているが，最新ビルドへのアップグレードの方法は？
+[説明] GGサーバー上で最新ビルドのインストーラー （HOST） を起動し，次の操作を行って下さい．
+1.&ldquo;Next&gt;&rdquo; をクリックします．
+2.&ldquo;Repair or Update&rdquo; を選択し &ldquo;Next&gt;&rdquo; をクリックします．
+3.&ldquo;Install&rdquo; をクリックします．
+4.&ldquo;OK&rdquo; をクリックします．
+5.&ldquo;Skip&rdquo; をクリックします （ライセンスファイルは既にあるため） ．
+6.&ldquo;Finish&rdquo; をクリックします．
+7.&ldquo;Yes&rdquo; をクリックします （サーバーを再起動します） ．
+8.再起動後にクラスターマネージャーが正常に表示されることを確認します．
+ファイル KGTN2018082401.pdf [(258 KB)] [kitasp 技術センター, 2018/10/04 10:46]
+KGTN2018082401-1.jpg
+表示 [(17.9 KB)] [kitasp 技術センター, 2018/10/04 10:46]
+KGTN2018082401-2.jpg
+表示 [(22.1 KB)] [kitasp 技術センター, 2018/10/04 10:46]
+KGTN2018082401-3.jpg
+表示 [(15.6 KB)] [kitasp 技術センター, 2018/10/04 10:46]
+KGTN2018082401-4.jpg</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1180/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc936/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -489,27 +500,25 @@ STEP#2 &ldquo;自分のメールアドレスを追加&rdquo; 画面2 ・項目 �
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1169/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc925/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1169/">[G Suite] G Suite のメール機能 （Gmail） で，外部のSMTPサーバーを利用せずに，他の外部のメールアドレスで送信する方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc925/">[GGH6.0] バージョン6.0で動画表示のパフォーマンスを向上させる設定は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2018-06-26
+                            日付 2018-10-04
                             </p>
                             <p class="intro">*技術ノート
-2018/06/26*
-[番号] 技術ノート KGTN 2018062102
-[現象] [G Suite] G Suite のメール機能 （Gmail） で，外部のSMTPサーバーを利用せずに，他の外部のメールアドレスで送信する方法は？
-[説明] G Suite で外部のメールアドレスで送信する場合は，そのメールアドレスの利用環境で指定されたSMTPサーバーを使用すべきですが， G Suite のSMTPサーバーは外部のメールアドレスで送信することも許容しています．つまり，外部のメールアドレスを受信することが出来るユーザーであれば，そのユーザーが G Suite でその外部のメールアドレスで送信しても構わないという運用方針のようです （注： 将来この運用方針が変わる可能性もゼロではありません） ．この運用方針を前提としての設定方法は次の通りです．
-G Suite のメール機能 （Gmail） の画面で [設定] → [アカウント] → [他のメール アドレスを追加] を選択し，次に他の外部のメールアドレスを利用するための設定を行います．
-STEP#1 &ldquo;自分のメールアドレスを追加&rdquo; 画面1 ・項目 「名前」 にメールアドレスの横に表示される名前を入力します． ・項目 「メール アドレス」 に利用したいメールアドレスを入力します． ・項目 「エイリアスとして扱います」 にチェックを入れます． ・ボタン 「次のステップ」 をクリックします．
-STEP#2 &ldquo;自分のメールアドレスを追加&rdquo; 画面2 ・項目 「SMTPサーバー」 に smtp.gmail.com 入力します． ・項目 「ポート番号」 に 587 を入力します． ・項目 「ユーザー名」 に G Suite のアカウントのメールアドレスを入力します． ・項目 「パスワード」 に G Suite のアカウントのパスワードを入力します．*1 ・項目 「TLSを使用したセキュリティで保護された接続」 を選択します． ・ボタン 「アカウントを追加」 をクリックします． [・*1： G Suite のアカウントが2段階認証の場合は 「アプリ パスワード」 を生成し，それを使用して下さい．]{.</p>
+2018/10/04*
+[番号] 技術ノート KGTN 2018082402
+[現象] [GGH6.0] バージョン6.0で動画表示のパフォーマンスを向上させる設定は？
+[説明] パフォーマンス自動調整機能を有効にすることで，動画表示のパフォーマンスが向上します．この設定方法は，次の通りです．
+1. サービスGO-Global Application Publishing Service を停止する． 2. C:ProgramDataGraphOnGO-GlobalHostProperties.xml をテキストエディタで開く． 3. 文字列 ClientProcessingBatch を探す． 4. 次の行にある値 0 を 1 に変更する． 5. 文字列 ClientProcessingThrottleV2 を探す． 6. 次の行にある値 0 を 1 に変更する． 7. ファイルを上書き保存する． 8. レジストリエディタを起動する． 9. HKEY_LOCAL_MACHINESOFTWAREGraphOnGOGlobalAppServer へ位置づける． 10. 新規 → DWORD (32 ビット) 値 を選択する． 11. 名前を ClientOffscreenSurfaces に変更する． 12. 値が 0 であることを確認する． 13. レジストリエディタを閉じる． 14. サービスGO-Global Application Publishing Service を開始する．  補　足 パフォーマンス自動調整機能が無効な場合，ホストからクライアントへ描画命令が送信され，クライアントはその描画命令に従い画面を更新します．動画を表示するアプリケーションの場合は，描画命令を送信するよりも，ホスト上で描画結果を待ちその画像データをクライアントへ送信し，クライアントがその画像データで画面を更新した方が効率的です．パフォーマンス自動調整機能を有効にする上記設定が行われると，アプリケーションの処理内容に応じて，より効率の良い方式が自動的に選択されます．なお，動画ではフレームが間引かれても問題ありませんが，一般のアプリケーションの描画では間引かれると画面が乱れる可能性がありますので，パフォーマンス自動調整機能の既定の設定は無効になっております．</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1169/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc925/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -528,26 +537,25 @@ STEP#2 &ldquo;自分のメールアドレスを追加&rdquo; 画面2 ・項目 �
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1191/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1047/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1191/">[GGH3.X</a></h4>
+                            <h4><a href="/posts/new_md/doc1047/">[GGH6.0LA] APSが開始しているにもかかわらず， Admin Console がAPSと通信出来ない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2018-06-26
+                            日付 2018-08-09
                             </p>
                             <p class="intro">*技術ノート
-2018/06/26*
-[番号] 技術ノート KGTN 2018062002
-[現象] [GGH3.X-6.X] GGのメジャー番号が上がった場合，どのような点が変わるのか？
-[説明] メジャー番号が上がった場合，アーキテクチャー等に変更があります．メジャー番号が 3 → 4 へ上がった時は，GGのマルチユーザー環境やクライアントとサーバー間の通信の仕組みそのものの変更等がありました．メジャー番号が 4 → 5 へ上がった時は，GGのクライアント （ソフトウエア） の運用環境および表示内容 （Windowsテーマへの対応） の変更等がありました．メジャー番号が 5 → 6 へ上がる時は， HTML5クライアントの提供や動画の表示パフォーマンスの改善等が行われる予定です．
-GGはサーバー上で実行しているアプリケーションの画面をクライアント側へ配信するミドルウエアですので，業務アプリケーションのバージョンアップのような目立つ違いこそありませんが，しかしながら利用者レベルでの使い勝手や管理者レベルでの運用方法などが着実に改良されております．
-ファイル KGTN2018062002.pdf [(45.1 KB)] [kitasp 技術センター, 2018/06/26 11:29]</p>
+2018/08/09*
+[番号] 技術ノート KGTN 2018080901
+[現象] [GGH6.0LA] APSが開始しているにもかかわらず， Admin Console がAPSと通信出来ない．
+[説明] 原因は調査中ですが，設定ファイル hostproperties.xml を次のように修正することで，この問題の発生を回避することが出来ます．
+&lt;property id=&quot;UpdateServer&quot; group=&quot;HostCompatibility&quot; type=&quot;STRING&quot;&gt; &lt;value&gt;127.0.0.1&lt;/value&gt;  ファイル KGTN2018080901.pdf [(36.6 KB)] [kitasp 技術センター, 2018/08/09 16:28]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1191/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1047/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

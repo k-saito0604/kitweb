@@ -409,26 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1712/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1565/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1712/">開発したアプリケーションで，ローカルドライブのファイルにアクセスすると問題ないが，クライアントドライブのファイルにアクセスするとローカルに比べて非常に遅い．なお，エクスプローラでクライアントドライブのファイルにアクセスした場合は，このような現象は見られない．</a></h4>
+                            <h4><a href="/posts/new_md/doc1565/">クライアントドライブ機能を使い，サーバ側からクライアント側へファイルをコピーした時，クライアント側でファイルがロックされ削除できない等の現象が発生することがある．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-06-30
+                            日付 2010-11-02
                             </p>
                             <p class="intro">*技術ノート
-2010/06/30*
-[番号] 技術ノート KGTN 2010070101
-[現象] 開発したアプリケーションで，ローカルドライブのファイルにアクセスすると問題ないが，クライアントドライブのファイルにアクセスするとローカルに比べて非常に遅い．なお，エクスプローラでクライアントドライブのファイルにアクセスした場合は，このような現象は見られない．
-[説明] クライアントドライブのファイルにアクセスする場合，その処理 （機能） が呼び出すWindowsのAPIを 「ネットワークを介して」 クライアント側へ転送し，クライアント側で実行し，そしてその結果を 「ネットワークを介して」 サーバ側へ返します．１つの処理は多数のAPIを呼び出しますので，その数に比例してネットワークを介した処理が増加し，結果的にローカルドライブに比べ速度が低下することがあります．このような場合は，クライアントドライブにあるファイルを一旦ローカルドライブにコピーし，アプリケーションはコピーしたファイルを参照するのが良い方法です．
-また，ファイルオープンのダイアログでプレビュー機能が実装されているアプリケーションでは，その処理の中でクライアントドライブにあるファイル （の内容） を読むことになりますので，ローカルドライブに比べ速度がかなり低下します．このような場合は，プレビュー機能を使用しないような仕様変更等をご検討下さい．
-ファイル KGTN2010070101.pdf [(58.1 KB)] [kitasp 技術センター, 2010/07/01 08:30]</p>
+2010/11/02*
+[番号] 技術ノート KGTN 2009091502
+[現象] クライアントドライブ機能を使い，サーバ側からクライアント側へファイルをコピーした時，クライアント側でファイルがロックされ削除できない等の現象が発生することがある．
+[説明] サイズが19MBを超えるファイルについては，クライアントドライブ機能の動作は保障できません．この問題は回線速度やファイルの内容 （テキスト・バイナリ） に依存せず，ファイルサイズのみに依存して発生します．ファイルがロックされた場合は，Windowsクライアントでは ggw.exe を終了させることでロックが解除されます．本件はGraphOn社も障害として認識しており，バージョンアップで修正しております．
+ファイル KGTN2009091502.pdf [(54.3 KB)] [kitasp 技術センター, 2010/11/02 16:20]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1712/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1565/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -447,28 +446,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1716/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1566/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1716/">GMFileProc のファイル処理の手順を知りたい．</a></h4>
+                            <h4><a href="/posts/new_md/doc1566/">Ver3.2.1 &#43; Visio 2003 の環境では図面が2回描画されるが， Ver4.0 &#43; Visio 2010 ではどうなのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-06-29
+                            日付 2010-11-01
                             </p>
                             <p class="intro">*技術ノート
-2010/06/29*
-[番号] 技術ノート KGTN 2010062901
-[現象] GMFileProc のファイル処理の手順を知りたい．
-[説明] GMFileProc は，以下の順序でファイルを処理します．
-対象ファイルの抽出 （fileDir, fileExt） 抽出したファイルのフルパスを引数としてプロセスを起動 （progPath, progArgs, フルパス） プロセスの終了待ち （progWait） ファイルをバックアップフォルダへ移動 （fileDir, fileBackup, fileMove） 上記2〜4を抽出したファイル全てについて実行 対象フォルダのファイルを削除 （fileDir, dayDelete） バックアップフォルダのファイルを削除 （fileBackup, dayDelete）
-注： 括弧の中は，処理に関連する GMFileProc.ini ファイル中のパラメタです．
-参　考 GMFileProc.ini の設定のサンプルを以下に示します．GG-StatusLoad.exe は，C:¥SHARE¥GG-Status に置かれた ???.datというファイルを引数に取り，遅くとも30秒以内に処理するようなプログラムです．処理が完了すると，そのファイルは C:¥BACKUP¥GG-Status へ移動されます．さらに，移動されたファイルは （作成日時より） 15日経過した時点で削除されます．
-[default] logLevel = 1 dayDelete = 15 progPath = C:¥GraphOn¥Bin¥GG-StatusLoad.exe progArgs = progWait = 30 fileExt = dat fileDir = C:¥SHARE¥GG-Status fileBackup = C:¥BACKUP¥GG-Status fileMove = Y</p>
+2010/11/01*
+[番号] 技術ノート KGTN 2010110103
+[現象] Ver3.2.1 + Visio 2003 の環境では図面が2回描画されるが， Ver4.0 + Visio 2010 ではどうなのか？
+[説明] Ver4.0 + Visio 2010 試用版で確認したところ，図面は1回描画されるのみで，ちらつき等は発生しませんでした．また，Ver4.0ではクライアントドライブ機能がアーキテクチャレベルで見直しが行われたため，Visioファイルのクライアントドライブからの読み込み，クライアントドライブへの保存が大幅に速くなりました．
+ファイル KGTN2010110103.pdf [(47.4 KB)] [kitasp 技術センター, 2010/11/01 14:30]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1716/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1566/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -487,26 +483,29 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1717/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1567/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1717/">GMFileProc の設定ファイルの内容を知りたい．</a></h4>
+                            <h4><a href="/posts/new_md/doc1567/">クライアントドライブ機能を使い，サーバからクライアントへファイルをコピーするとセッションが切れることがある．また，セッションが切れない場合でも，クライアント側でファイルがロックされ削除が出来ない等の現象が発生することもある．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-06-29
+                            日付 2010-11-01
                             </p>
                             <p class="intro">*技術ノート
-2010/06/29*
-[番号] 技術ノート KGTN 2010062402
-[現象] GMFileProc の設定ファイルの内容を知りたい．
-[説明] 設定ファイル GMFileProc.ini で指定する項目は以下の通りです．
-logLevel ログの出力レベル （0〜9を指定） dayDelete 保存する日数 （この日数を過ぎると削除される） progPath ファイルを処理するプログラムのパス progArgs ファイルを処理するプログラムの引数 （必要に応じて指定する） progWait プログラムの終了待ち指定 （-1: 無限に待つ， 0: 待たない， n: n 秒待つ） fileExt 処理対象とするファイルの拡張子 fileDir 処理対象とするファイルが置かれたフォルダ fileBackup 処理後に移動するフォルダ （空な場合は移動しない） fileMove Y: 移動する， N: 移動しない
-ファイル KGTN2010062402.pdf [(56.8 KB)] [kitasp 技術センター, 2010/06/29 10:52]</p>
+2010/11/01*
+[番号] 技術ノート KGTN 2009091501
+[現象] クライアントドライブ機能を使い，サーバからクライアントへファイルをコピーするとセッションが切れることがある．また，セッションが切れない場合でも，クライアント側でファイルがロックされ削除が出来ない等の現象が発生することもある．
+[説明] ファイルサイズが19MBを越えると 「セッションが切れる」 「０バイトのファイルが作成される」 「ファイルがロックされる」 「コピーしたファイルの正しいファイルサイズが得られない」 という現象が発生します．この問題は，回線速度やファイルの内容 （テキスト・バイナリ） に依存せず，ファイルサイズのみに依存して発生します．ファイルがロックされた場合は，ActiveXクライアントではIEを閉じることで，Windowsクライアントはggw.exeを終了させることでロックが解除されます．本件はGraphOn社も障害として認識しており，将来のバージョンで修正する予定です．
+補足１ クライアントドライブ機能でファイルをコピーする場合，FTPのような専用のファイル転送プロトコルでコピーが行われる訳ではなく，Windows内部の低レベルのファイルコピー処理をフックして，サーバとクライアント間でファイルのコピー処理が行われます．このような仕組みにより， Windowsの遅延書き込み機能等の極めて低レベルな処理もGGのセッションの中で行われ，サーバとクライアント間でエラー等のイベントが正常に伝わらず，それぞれが相手方からのイベントを待ち続けて，タイムアウトによるセッション断や継続的なファイルのロックが発生したものと推測します．なお，本補足事項は弊社の独自調査による結果 （GraphOn社にも報告済） を元に記載しています．
+補足２ セッション断については，Windowsがプログレスダイアログを表示するケースで発生することが分かっております．DOS窓を開きcopyコマンドでコピーを行った場合は，セッション断やファイルのロックは発生しません．なお，本補足事項は弊社の独自調査による結果 （GraphOn社にも報告済） を元に記載しています．
+補足3 なぜ発生したのか&hellip;　クライアントドライブ機能のサーバ側とクライアント側で，それぞれが相手からのイベントを待っている状態にあり，処理が完結しないためセッション断やファイルロック等が発生していると推測されます．
+補足4 どうすれば発生しないのか&hellip;　「ファイルの大きさで対応する」 ことが妥当だと考えますが，しかし明確な根拠を持ったファイルの大きさを示すことは困難です．恐らく Windows 内部のキャッシュの空き等に依存しているため， 正確には分かりませんが，実測値で19MB以下であれば大丈夫のようです．なお，GraphOn社には全て状況を報告しており，その情報を試験＆分析作業を行っております． 補足5 GraphOn社のコメント&hellip; We have done some more testing and the issue with the filelock did not occur with a filesize of 20,001KB. It did occur with a filesize of 20,041KB.
+20MB （= 20,480KＢ） は20,041KBを越えますので，運用回避を行う場合のファイルサイズは 「19MB以下」 となります．</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1717/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1567/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -525,26 +524,27 @@ logLevel ログの出力レベル （0〜9を指定） dayDelete 保存する日
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1718/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1568/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1718/">GMCheckRaw の提供が 「デバッグビルド」 と 「リリースビルド」 の２つになったが，その理由は？</a></h4>
+                            <h4><a href="/posts/new_md/doc1568/">モジュール msvcr90.dll でエラーが発生し， aps.exe が開始しない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-06-28
+                            日付 2010-10-31
                             </p>
                             <p class="intro">*技術ノート
-2010/06/28*
-[番号] 技術ノート KGTN 2010062801
-[現象] GMCheckRaw の提供が 「デバッグビルド」 と 「リリースビルド」 の２つになったが，その理由は？
-[説明] これまでのリリースは全て 「リリースビルド」 で，特に問題等は発生しておりません．今回敢えて 「デバッグビルド」 も提供することにした理由は，ある案件で Windows が不安定になり，その影響で GMCheckRaw がエラーになる現象が発生しました．この原因を追及するに当たって，技術的な制約等により GMCheckRaw 側から遡る必要があったため， 「デバッグビルド」 も提供することにしました．
-従って，通常は従来通り 「リリースビルド」 を使用し，万一 GMCheckRaw 絡みでエラーが発生した場合に限り， 「デバッグビルド」 で情報を採取するようにして下さい．
-ファイル KGTN2010062801.pdf [(56.9 KB)] [kitasp 技術センター, 2010/06/28 11:00]</p>
+2010/10/31*
+[番号] 技術ノート KGTN 2010110101
+[現象] モジュール msvcr90.dll でエラーが発生し， aps.exe が開始しない．
+エラー発生アプリケーション aps.exe、バージョン 4.0.0.8685 エラー発生モジュール msvcr90.dll、バージョン 9.0.30729.4148 エラー発生アドレス 0x000375b4
+[説明] 弊社ではこの現象を再現することが出来ませんでしたが，発生した環境では16文字以上あったコンピュータ名を15文字以下に短くすることで，この現象が発生しなくなったという報告がありました． KB226144 にありますように，NetBIOS ドメイン名が15文字以下になるようにサーバ環境を設定して下さい．
+http://support.microsoft.com/kb/226144/ja NetBIOS ドメイン名 フィールドに、15 文字の長さ制限 Windows 2000
+ファイル KGTN2010110101.pdf [(61.7 KB)] [kitasp 技術センター, 2010/11/01 08:58]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1718/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1568/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

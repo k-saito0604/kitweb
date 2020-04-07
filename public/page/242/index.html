@@ -409,25 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1737/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1584/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1737/">GGのプラグイン LaunchBrowser で障害が発生した場合の切り分けは？</a></h4>
+                            <h4><a href="/posts/new_md/doc1584/">GGは，クライアント側のIMEを意識しているのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-06-14
+                            日付 2010-10-14
                             </p>
                             <p class="intro">*技術ノート
-2010/06/14*
-[番号] 技術ノート KGTN 2010061404
-[現象] GGのプラグイン LaunchBrowser で障害が発生した場合の切り分けは？
-[説明] 高機能なプラグインではありませんので，もし障害が発生するとすれば，クライアント側のブラウザ起動の周辺だと考えられます．イベントログ （アプリケーション） に，ブラウザを起動するコマンドライン （CreateProcessの第2引数） と，エラー発生時には GetLastError の値が記録されます．
-ファイル KGTN2010061404.pdf [(135 KB)] [kitasp 技術センター, 2010/06/14 13:38]</p>
+2010/10/14*
+[番号] 技術ノート KGTN 2010101403
+[現象] GGは，クライアント側のIMEを意識しているのか？
+[説明] GGサーバに複数のIMEがインストールされている場合，GGはクライアント側で使用しているIMEと同じものがあるかどうかチェックします．もし存在する場合は，クライアント側と同じIMEを選択します．存在しない場合は，GGがインストールされた時に設定されていたIME （フォールバックIME） を選択します．
+ファイル KGTN2010101403.pdf [(44.1 KB)] [kitasp 技術センター, 2010/10/14 13:13]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1737/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1584/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,25 +446,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1738/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1585/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1738/">GGのプラグイン （機能拡張） には， xxxS.DLL と xxxC.DLL の２つのファイルがあるが，どう違うのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1585/">GGクライアントからGGサーバへの接続 （TCP/IP） に時間がかかることがある．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-06-14
+                            日付 2010-10-13
                             </p>
                             <p class="intro">*技術ノート
-2010/06/14*
-[番号] 技術ノート KGTN 2010061401
-[現象] GGのプラグイン （機能拡張） には， xxxS.DLL と xxxC.DLL の２つのファイルがあるが，どう違うのか？
-[説明] GGのプラグインは，サーバ側で呼び出されたAPIをフックし， 「GGのプロトコル （Rapid-X） を介して」 クライアント側のAPIを実行する仕組みになっています． xxxS.DLL はサーバ側でAPIをフックする役割を持ち， xxxC.DLL はクライアント側でAPI （に関連付けられた機能） を実行する役割を持ちます．なお， xxxI.DLL というファイルは，アプリケーションがプラグインの機能を利用し易いように，単純化されたインタフェースを提供するプログラム （DLL） です．
-ファイル KGTN2010061401.pdf [(50.2 KB)] [kitasp 技術センター, 2010/06/14 12:40]</p>
+2010/10/13*
+[番号] 技術ノート KGTN 201011301
+[現象] GGクライアントからGGサーバへの接続 （TCP/IP） に時間がかかることがある．
+[説明] このような現象は，さまざまな要因が考えられますので，多数の試験を行い原因を絞り込むことが大切です．
+GGサーバの指定をコンピュータ名からIPアドレスに変更してみる （名前解決に関する問題かどうか） ． GGクライアントからGGサーバへ継続的にPINGを送信してみる （ネットワークに関する問題かどうか） ． GGサーバで動作するタスクやアプリケーションをチェックする （サーバの負荷に関する問題かどうか） ．
+特定の時間帯に遅くなる等パターンが分かっている場合は，その時間帯に絡みそうなネットワークやサーバの処理を重点的にチェックするのが良いでしょう．例えば，アンチウイルスソフトが共有ディスクを定期的にスキャンする設定になっており，その処理でネットワークの帯域が広く占有され，その結果GGクライアント〜GGサーバ間の接続障害を引き起こした事例もあります．
+ファイル KGTN2010101301.pdf [(60.4 KB)] [kitasp 技術センター, 2010/10/13 14:32]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1738/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1585/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -483,25 +485,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1740/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1586/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1740/">ActiveXクライアントのダウンロード時に署名期限切れメッセージが表示される．</a></h4>
+                            <h4><a href="/posts/new_md/doc1586/">プログラムウインドウ （PW） をログオン時に最大化させたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-06-10
+                            日付 2010-10-08
                             </p>
                             <p class="intro">*技術ノート
-2010/06/10*
-[番号] 技術ノート KGTN 2010061002
-[現象] ActiveXクライアントのダウンロード時に署名期限切れメッセージが表示される．
-[説明] ネットワークを介して配布されるプログラム （ActiveXクライアント） には，プログラムの安全性を保証するために，コードサイニング証明書で開発元の組織の実在性やコードに関する情報を署名します．コードサイニング証明書には有効期限が設定されており，古いActiveXクライアントの中には有効期限が切れるものがあります．もし有効期限切れのメッセージが表示された場合は，弊社宛にActiveXクライアント （CABファイル） をお送り下さい．弊社の最新のコードサイニング証明書で，そのActiveXクライアントに署名を行います．
-ファイル KGTN2010061002.pdf [(51.3 KB)] [kitasp 技術センター, 2010/06/10 14:16]</p>
+2010/10/08*
+[番号] 技術ノート KGTN 201010802
+[現象] プログラムウインドウ （PW） をログオン時に最大化させたい．
+[説明] GGサーバのログオンスクリプトで，以下のレジストリを設定することで， PW のウインドウが最大化された状態で表示されます．
+HKCU¥Software¥GraphOn¥Bridges¥1.0.0¥ProgramWindow¥Settings¥Standard WinPlaceShowState REG_DWORD 3
+ファイル KGTN2010100802.pdf [(46.6 KB)] [kitasp 技術センター, 2010/10/08 11:27]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1740/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1586/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -520,28 +523,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1739/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1587/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1739/">ActiveXクライアントのプロパティ 「デジタル署名」 を見たところ，証明書の有効期限が2004/11/05 から 2005/11/14 だったが，2010年の現在でも使用できるのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1587/">下記のエラーメッセージ中の 20011-0 の部分の意味を知りたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-06-10
+                            日付 2010-10-08
                             </p>
                             <p class="intro">*技術ノート
-2010/06/10*
-[番号] 技術ノート KGTN 2010061101
-[現象] ActiveXクライアントのプロパティ 「デジタル署名」 を見たところ，証明書の有効期限が2004/11/05 から 2005/11/14 だったが，2010年の現在でも使用できるのか？
-[説明] 署名時にタイムスタンプが設定されていない場合は，証明書の有効期限が満了すると ，期限切れの警告が表示されます．署名時にタイムスタンプが設定されている場合は，証明書の有効期限が満了しても，期限切れの警告は表示されません．ActiveXクライアントは，このタイムスタンプが設定されていますので，証明書 （コードサイニング証明書） の有効期限が満了した後も使用することが出来ます．
-参　考 下記の日本ベリサイン社のFAQに，この辺の詳しい情報が書かれています．
-https://www.verisign.co.jp/codesign/help/faq/210017/index.html 署名したソフトウェアは、証明書の期限切れ後どうなりますか
-https://www.verisign.co.jp/codesign/help/faq/210015/index.html タイムスタンプ署名したソフトウェアは、証明書の期限切れ後どうなりますか
-ファイル KGTN2010061101.pdf [(58.9 KB)] [kitasp 技術センター, 2010/06/11 03:26]</p>
+2010/10/08*
+[番号] 技術ノート KGTN 201010801
+[現象] 下記のエラーメッセージ中の &ldquo;20011-0&rdquo; の部分の意味を知りたい．
+GO-Global 3.2.1.4389 20011-0 on 2010-09-01 at &hellip; You are already running as many sessions as you allowed.
+[説明] &ldquo;20011-0&rdquo; の部分は，エラーメッセージに対応する （内部的な） エラーコードです．GraphOn社のコメントは以下の通りです．
+It is our ID number for the message that is displayed.
+ファイル KGTN2010100801.pdf [(49.5 KB)] [kitasp 技術センター, 2010/10/08 09:43]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1739/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1587/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

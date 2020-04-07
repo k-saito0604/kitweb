@@ -409,26 +409,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2337/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1018/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2337/">[GGW3.2.1/GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc1018/">[VM/AD] Active Directory サーバ （ドメインコントローラー） を仮想環境に配置すると危険だと聞いたが本当か？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-01-30
+                            日付 2012-06-15
                             </p>
                             <p class="intro">*技術ノート
-2012/01/30*
-[番号] 技術ノート KGTN 2012013001
-[現象] [GGW3.2.1/GGH4.X-5.X] ActiveXクライアントで inbrowserprocess = false, autoclosebrowser = true にしているが，ブラウザ （IE） が閉じない．
-[説明] ブラウザを 「管理者として実行」 するか，またはウエッブサーバーのURLを信頼済みサイト （インターネットオプション → セキュリティ → 信頼済みサイト） として登録して下さい．
-補　足 GGH4.Xでは， logon.html に下記のコードを追加することでブラウザを閉じることも出来ます．なお，将来のIE （IE11の後継ブラウザ） では，その仕様次第ですので機能しなくなる可能性があります．
-else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT&gt;'); } //--- 追加（ここから） --- if ((bAutoCloseBrowser == &quot;true&quot; )&amp;&amp;(bInBrowser == &quot;false&quot;)) { (window.open('','_self').opener=window).close(); } //--- 追加（ここまで） ---  ファイル KGTN2012013001.pdf [(87.4 KB)] [kitasp 技術センター, 2016/10/04 16:00]</p>
+2012/06/15*
+[番号] 技術ノート KGTN 2012061501
+[現象] [VM/AD] Active Directory サーバ （ドメインコントローラー） を仮想環境に配置すると危険だと聞いたが本当か？
+[説明] Active Directory サーバ （ドメインコントローラー） は非常に重要なサーバで，仮想環境に配置する場合は多くの点に注意する必要があります．下記のマイクロソフト社のページに詳しい情報が掲載されております．
+仮想ホスト環境で Active Directory ドメイン コントローラーをホストする場合の考慮事項 http://support.microsoft.com/kb/888794/ja
+仮想化ドメイン コントローラーの展開に関する考慮事項 http://technet.microsoft.com/ja-jp/library/dd348449(v=ws.10).aspx
+ファイル KGTN2012061501.pdf [(61.7 KB)] [kitasp 技術センター, 2012/06/15 09:38]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2337/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1018/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -447,26 +448,25 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1116/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1019/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1116/">[GGW3.2.1] サービス GO</a></h4>
+                            <h4><a href="/posts/new_md/doc1019/">[GGH4.0/Multi-monitor] GGH4.0の環境かつマルチモニタ有効 （-mm 1） で，色深度が32ビットのプライマリモニタから，色深度が16ビットのセカンダリモニタへアプリケーション （のウインドウ） を移動すると画面が乱れる．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-01-30
+                            日付 2012-06-14
                             </p>
                             <p class="intro">*技術ノート
-2012/01/30*
-[番号] 技術ノート KGTN 2012013003
-[現象] [GGW3.2.1] サービス GO-Global Application Publishing Service が正常に停止しないことがある．
-[説明] アプリケーションの動作と絡んで，メモリが解放されない等の理由でサービス GO-Global Application Publishing Service が正常に停止しないことがあります．これは既知の問題で，サーバを再起動することで対応をお願いします．GGH4.0については，アーキテクチャの変更等もあり，現時点ではこのような報告はありません．
-補　足 利用中のセッションを全て強制終了させたい場合は，エンタープライズオプションの GMCheckRaw の利用をご検討下さい．個別セッション （ユーザID または セッションIDを指定） の強制終了，全セッションの強制終了，セッション一覧の取得等が可能です．
-ファイル KGTN2012013003.pdf [(63.9 KB)] [kitasp 技術センター, 2012/01/30 11:44]</p>
+2012/06/14*
+[番号] 技術ノート KGTN 2012061401
+[現象] [GGH4.0/Multi-monitor] GGH4.0の環境かつマルチモニタ有効 （-mm 1） で，色深度が32ビットのプライマリモニタから，色深度が16ビットのセカンダリモニタへアプリケーション （のウインドウ） を移動すると画面が乱れる．
+[説明] プライマリモニタの色深度が32ビットですので，アプリケーションはその環境に合わせた動作を行います．このアプリケーション （のウインドウ） を色深度が16ビットのセカンダリモニタへ移動した場合，環境が異なりますので画面が乱れるという現象が発生します．対応策としては，
+ プライマリモニタとセカンダリモニタの色深度を合わせる， 2) GGクライアントの画像圧縮機能を有効にする （Windowsクライアントの ?c オプションを指定，色深度が自動的に下がります） の２つが考えられます．  ファイル KGTN2012061401.pdf [(62 KB)] [kitasp 技術センター, 2012/06/14 09:58]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1116/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1019/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,26 +485,25 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1115/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2678/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1115/">[iPad/Android] iPad Client およびAndroid Client のオートズーム機能を有効にしているが，コンテキストメニューがズームされない時がある．</a></h4>
+                            <h4><a href="/posts/new_md/doc2678/">[GGH4.X-5.X] １つのクライアントから，複数のGGサーバへ同じアカウントで同時にログオン可能か？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-01-30
+                            日付 2012-06-12
                             </p>
                             <p class="intro">*技術ノート
-2012/01/30*
-[番号] 技術ノート KGTN 2012012701
-[現象] [iPad/Android] iPad Client およびAndroid Client のオートズーム機能を有効にしているが，コンテキストメニューがズームされない時がある．
-[説明] 仕様上は （ダイアログと同様に） コンテキストメニューも自動的にズームされるはずですが，しかし状況によってはズームされないことがあるようです．アプリケーションが 「GraphOn社が想定していない方法」 でコンテキストメニューを表示している可能性があり，現在GraphOn社で調査中です．新たな情報が入り次第，この技術ノートに反映します．
-補　足 以下のように，GraphOn社からほぼ正反対の情報が届いており，それらを整理するように依頼しております．
-ファイル KGTN2012012701.pdf [(66.7 KB)] [kitasp 技術センター, 2012/01/30 13:48]</p>
+2012/06/12*
+[番号] 技術ノート KGTN 2012061202
+[現象] [GGH4.X-5.X] １つのクライアントから，複数のGGサーバへ同じアカウントで同時にログオン可能か？
+[説明] １台のクライアントPCから，同時に・同じアカウントで・複数のGGサーバへログオンすることが可能です．プロファイルの制御については， Windows （Active Directory） の動作に従います．なお，マイ ドキュメントを使用しない場合 （またはマイドキュメントの内容を破棄して構わない場合） は，移動ユーザープロファイルでなく，固定ユーザープロファイルの利用もご検討下さい．プロファイルの書き戻し等で発生する問題を回避することが可能で，これを利用して同時数千ユーザのシステムを運用している大規模案件もあります．
+ファイル KGTN2012061202.pdf [(60.6 KB)] [kitasp 技術センター, 2015/12/16 11:51]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1115/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2678/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -523,26 +522,25 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1119/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2646/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1119/">[GGH4.0] GGH4.0 をアンインストールする場合，コントロールパネルから 「削除」 を実行するだけで良いのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2646/">[GGH4.X-6.X] ロードバランサ （ハードウエア） がある環境で，セッション再接続時に同じGGサーバへ接続させる方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-01-27
+                            日付 2012-06-12
                             </p>
                             <p class="intro">*技術ノート
-2012/01/27*
-[番号] 技術ノート KGTN 2012012704
-[現象] [GGH4.0] GGH4.0 をアンインストールする場合，コントロールパネルから 「削除」 を実行するだけで良いのか？
-[説明] Windows の処理の関係で 「削除」 を実行するだけはGGのファイル全てを削除することは出来ません （注：現時点での制限事項になります） ．確実に削除するために，以下の手順を行って下さい．
-コントロールパネルを使い GO-Global Host を削除する， 下記バッチ ggh4_clean.bat を実行する． 再起動する． 下記バッチ ggh4_clean.bat を実行する．
-[ggh4_clean.bat] cd C:¥WINDOWS¥system32 del . rename QtCore4.dll QtCore4.dll rename QtGui4.dll QtGui4.dll rename QtNetwork4.dll QtNetwork4.dll rename cpls.dll cpls.dll rename cs4s3.dll cs4s3.dll rename ggscards.dll ggscards.dll rename GoPrintMon.dll GoPrintMon.dll rename pbr4u.dll pbr4u.dll rename pmu.dll pmu.dll rename redirector.dll redirector.dll rename snds.dll snds.dll rename VBM_UserMode.</p>
+2012/06/12*
+[番号] 技術ノート KGTN 2012061203
+[現象] [GGH4.X-6.X] ロードバランサ （ハードウエア） がある環境で，セッション再接続時に同じGGサーバへ接続させる方法は？
+[説明] ロードバランサ （ハードウエア） の機能に依存しますので事例になりますが， F5 Networks 社の BIG IP がある環境でパーシステンス機能 （接続維持機能，ソースIPアドレス） を利用して，設定した時間内での再接続をGGサーバへ振り分けた案件があります．なお，GGのクライアントはブラウザ （IE等） のセッションとは別のセッションを張りますので，この点にご注意下さい．
+ファイル KGTN2012061203.pdf [(39.8 KB)] [kitasp 技術センター, 2019/09/13 14:24]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1119/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2646/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

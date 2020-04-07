@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc537/">
+                                      <a href="/posts/new_md/doc446/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc537/">[ExPack] Windows Vista &#43; Adobe Reader 8.0 &#43; GGSpoolPDF では正常に動作するが， Windows 7 (32bit) &#43; Adobe Reader XI (11) &#43; GGSpoolPDF の環境では Adobe Reader のプロセスが残る．</a></h2>
+                                    <h2><a href="/posts/new_md/doc446/">[GGW3.2.1] GGW3.2.1の環境で，ログアウトしてもセッションが残る （セッション上のプロセスが終了しない） ．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,18 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc537/"><i class="far fa-calendar"></i> 2013-08-15</a>
+                                            <a href="/posts/new_md/doc446/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/08/15*
-[番号] 技術ノート KGTN 2013080601
-[現象] [ExPack] Windows Vista + Adobe Reader 8.0 + GGSpoolPDF では正常に動作するが， Windows 7 (32bit) + Adobe Reader XI (11) + GGSpoolPDF の環境では Adobe Reader のプロセスが残る．
-[説明] GGSpoolPDF は Adobe Reader 8.0 向けにデザインされており， Adobe Reader XI の仕様が変更されたため， Adobe Reader のプロセスが残るという現象が発生しました．Adobe Reader 8.0 は，PDFファイルを表示したウインドウに WM_CLOSE を送信することで，印刷終了後にプロセスが終了します． Adobe Reader XI は，PDFファイルを表示したウインドウに WM_CLOSE を送信することでそのウインドウは閉じますが，親のウインドウは （自動的に） 閉じないため，結果としてプロセスが終了せずに残ります．
-次期リリースでは，PDFファイルを表示したウインドウだけでなく，その親のウインドウに対しても WM_CLOSE を送信するように修正を行い， Adobe Reader XI のプロセスが残らないようにする予定です．
-補　足 GGSpoolPDF の次期リリースは，2013年10月31日を予定しております．これよりも前に検証等をご希望の場合は，弊社技術支援センターまでお知らせ下さい．可能であれば，RC版 （出荷候補版） 等をご提供致します．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc537/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013121103
+[現象] [GGW3.2.1] GGW3.2.1の環境で，ログアウトしてもセッションが残る （セッション上のプロセスが終了しない） ．
+[説明] もしデータ実行防止 （DEP） の設定が無効 &ldquo;bcdedit /set nx alwaysoff&rdquo; であれば，その設定を &ldquo;bcdedit /set nx OptIn&rdquo; に変更して下さい．
+ファイル KGTN2013121103.pdf [(47.7 KB)] [kitasp 技術センター, 2014/01/29 14:23]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc446/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -361,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc538/">
+                                      <a href="/posts/new_md/doc430/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -369,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc538/">[ExPack] 技術ノート KGTN#2013080601 の説明に 「親のウインドウに対しても WM_CLOSE を送信する」 とあるが，ローカルで起動された Adobe Reader XI のウインドウを閉じる可能性はないのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc430/">[GGW3.2.1] GGW3.2系は2013年12月14日に EOL （製品終了） になったそうだが，具体的にはどういう事なのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -382,17 +381,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc538/"><i class="far fa-calendar"></i> 2013-08-15</a>
+                                            <a href="/posts/new_md/doc430/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/08/15*
-[番号] 技術ノート KGTN 2013080602
-[現象] [ExPack] 技術ノート KGTN#2013080601 の説明に 「親のウインドウに対しても WM_CLOSE を送信する」 とあるが，ローカルで起動された Adobe Reader XI のウインドウを閉じる可能性はないのか？
-[説明] WM_CLOSE を送信する候補のウインドウのプロセスIDを調べ （GetWindowThreadProcessId関数） ，その親のプロセスを順に辿り （PROCESSENTRY32 構造体の th32ParentProcessID を参照）， Adobe Reader XI を起動した GGSpoolPDF のプロセスIDが現れた場合に限り WM_CLOSE を送信します．従って，ローカルで起動されたAdobe Reader XI のウインドウを閉じる可能性はありません．
-ファイル KGTN2013080602.pdf [(57.9 KB)] [kitasp 技術センター, 2013/08/15 11:40]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc538/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013122706
+[現象] [GGW3.2.1] GGW3.2系は2013年12月14日に EOL （製品終了） になったそうだが，具体的にはどういう事なのか？
+[説明] ライセンス契約の範囲内で製品 （GGW3.2系） を使い続けることは出来ますが，サポートは原則として EOL 以前の知識ベースの情報 （技術ノート） の提供等に制限されます．このサポートの範囲で問題を解決することが困難な場合は，現行バージョン （GGH4.X系） への移行をご検討下さい．
+ファイル KGTN2013122706.pdf [(50.3 KB)] [kitasp 技術センター, 2014/01/29 14:58]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc430/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -402,7 +401,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc301/">
+                                      <a href="/posts/new_md/doc442/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -410,7 +409,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc301/">[SDK] エンタープライズオプションのGGSessionMonitor がGGサーバ上で生成する SQLite3 テーブルの定義を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc442/">[GGW3.2.1] Microsoft Office 2010 で図形等を描画すると，一部領域が黒く表示される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -423,17 +422,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc301/"><i class="far fa-calendar"></i> 2013-08-15</a>
+                                            <a href="/posts/new_md/doc442/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/08/15*
-[番号] 技術ノート KGTN 2012062601
-[現象] [SDK] エンタープライズオプションのGGSessionMonitor がGGサーバ上で生成する SQLite3 テーブルの定義を知りたい．
-[説明] 将来変更 （拡張） される可能性はありますが，現時点では以下の通りです．
-CREATE TABLE IF NOT EXISTS server_tbl ( -- サーバ情報 serverName text, -- サーバのホスト名 serverAddress text, -- サーバのIPアドレス maxSessions integer, -- 最大セッション数 sessionCount integer, -- 現在のセッション数 cpuUsage integer, -- CPUの負荷 （未使用） memoryUsage integer, -- メモリの負荷 （未使用） availability text, -- 利用可否フラグ　（YES/NO） checkTime text, -- 最終チェック日時 tickCount integer -- データ登録時の GetTickCount() の値 *1 ); CREATE TABLE IF NOT EXISTS session_tbl ( -- 現在のセッション情報 sessionID integer, -- セッションID sessionName text UNIQUE, -- セッション名 userName text, -- ユーザ名 startTime text, -- セッション開始日時 clientCount integer, -- 接続クライアント数 （0/1） clientID integer, -- クライアントID serverName text, -- サーバのホスト名 clientName text, -- クライアントのホスト名 clientAddress text, -- クライアントのIPアドレス tickCount integer, -- データ登録時の GetTickCount() の値 *2 tickDiff integer -- サーバとの時間差 （内部処理用） *2 ); CREATE TABLE IF NOT EXISTS user_tbl ( -- セッションの履歴情報 seqid text, -- シーケンスID （一意性あり） -- YYYYMMDD-HHMMSS-NN （NN: 00→01→02) logDate text, -- 記録日時 operation text, -- 操作： INSERT,REPLACE,UPDATE,DELETE sessionID integer, -- セッションID sessionName text, -- セッション名 userName text, -- ユーザ名 startTime text, -- セッション開始日時 clientCount integer, -- 接続クライアント数 （0/1） clientID integer, -- クライアントID serverName text, -- サーバのホスト名 clientName text, -- クライアントのホスト名 clientAddress text, -- クライアントのIPアドレス endTime text -- セッション終了日時 ); CREATE TABLE IF NOT EXISTS appn_tbl ( -- 現在のアプリケーション情報 *2 applicationID integer, -- アプリケーションID pid integer, -- プロセスID applicationName text, -- アプリケーション名 path text, -- アプリケーションのパス args text, -- アプリケーションのコマンドライン sessionID integer, -- セッションID sessionName text, -- セッション名 userName text, -- ユーザ名 startTime text, -- セッション開始日時 tickCount integer, -- アプリケーション起動時の GetTickCount() の値 tickDiff integer -- サーバとの時間差 （内部処理用） ); CREATE TABLE IF NOT EXISTS appl_tbl ( -- アプリケーションの履歴情報 *2 seqid text, -- シーケンスID （一意性あり） -- YYYYMMDD-HHMMSS-NN （NN: 00→01→02) logDate text, -- 記録日時 operation text, -- 記録内容： APP:START, APP:END applicationID integer, -- アプリケーションID pid integer, -- プロセスID applicationName text, -- アプリケーション名 path text, -- アプリケーションのパス args text, -- アプリケーションのコマンドライン sessionID integer, -- セッションID sessionName text, -- セッション名 userName text, -- ユーザ名 startTime text, -- セッション開始日時 endTime text, -- セッション終了日時 elapsedTime integer -- プロセスの実行時間（秒） );  *1 - 1.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc301/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013121701
+[現象] [GGW3.2.1] Microsoft Office 2010 で図形等を描画すると，一部領域が黒く表示される．
+[説明] GGW3.2系は2007年6月20日出荷開始で， Microsoft Office 2010 は2010年6月17日出荷開始です．このような事情により，GGW3.2系は Microsoft Office 2010 をサポートしておりません （GraphOn社はMicrosoft Office 2010 に関して内部的なテスト等も行っておりません） ．GGW3.2系をご使用の場合は， Microsoft Office 2003 または Microsoft Office 2007 をご利用下さい． Microsoft Office 2010 をご利用なさりたい場合は， 2010年6月30日出荷開始のGGH4.X系をご使用下さい．
+ファイル KGTN2013121701.pdf [(50.8 KB)] [kitasp 技術センター, 2014/01/29 14:33]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc442/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -443,7 +442,7 @@ CREATE TABLE IF NOT EXISTS server_tbl ( -- サーバ情報 serverName text, -- �
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc541/">
+                                      <a href="/posts/new_md/doc349/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -451,7 +450,7 @@ CREATE TABLE IF NOT EXISTS server_tbl ( -- サーバ情報 serverName text, -- �
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc541/">[ExPack] GGCSLib2 でクライアント側でアプリケーションを起動しているが，セッション再接続を行うとアプリケーションが起動出来なくなる．</a></h2>
+                                    <h2><a href="/posts/new_md/doc349/">[GGW3.2.1] Office 2007 と Office 2010 の画面を見比べるとそれほど差が無いように思うが，GGW3.2.1上で Office 2010 は画面が正常に表示されない．GGのパラメタ設定で改善しないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -464,17 +463,18 @@ CREATE TABLE IF NOT EXISTS server_tbl ( -- サーバ情報 serverName text, -- �
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc541/"><i class="far fa-calendar"></i> 2013-08-05</a>
+                                            <a href="/posts/new_md/doc349/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/08/05*
-[番号] 技術ノート KGTN 2013080501
-[現象] [ExPack] GGCSLib2 でクライアント側でアプリケーションを起動しているが，セッション再接続を行うとアプリケーションが起動出来なくなる．
-[説明] GGCSLib2 が使用しているAPIがセッション再接続をサポートしていないため，このような現象が発生します．回避方法としては，クライアント側でアプリケーションを起動する単機能のプログラムを作成し，現在GGCSLib2 でクライアント側でアプリケーションを起動している箇所で，作成したプログラムを実行（CreateProcess 関数を使用してプログラムを起動しプログラムの終了を待つ） するようにして下さい．
-ファイル KGTN2013080501.pdf [(50.8 KB)] [kitasp 技術センター, 2013/08/05 09:40]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc541/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2014011201
+[現象] [GGW3.2.1] Office 2007 と Office 2010 の画面を見比べるとそれほど差が無いように思うが，GGW3.2.1上で Office 2010 は画面が正常に表示されない．GGのパラメタ設定で改善しないのか？
+[説明] Microsoft Office は，同じような画面でもソフトウエア （Excel, Word, etc&hellip;） が異なると実装方式が異なり，また同様にバージョンが異なると実装方式が異なります．このような技術的背景により，一般に Office のバージョンが上がると，その Office のバージョンに対応した新しいGGがリリースされるまで （GG上では） 正常に動作しません．GGW3.2.1 は Office 2007 までをサポートしますので， Office 2010 は正常に動作しません．従って，GGW3.2.1では Office 2007 またはそれ以前のバージョンをご利用下さい．
+補　足 なお，同様の理由で最新のGGH4.8.1 （2014年2月時点） は Office 2010 までをサポートしますので， Office 2013 は正常に動作しません （GGH4.8.2でサポートの予定） ．
+ファイル KGTN2014011201.pdf [(56.6 KB)] [kitasp 技術センター, 2014/02/14 14:29]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc349/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -484,7 +484,7 @@ CREATE TABLE IF NOT EXISTS server_tbl ( -- サーバ情報 serverName text, -- �
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc542/">
+                                      <a href="/posts/new_md/doc489/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -492,7 +492,7 @@ CREATE TABLE IF NOT EXISTS server_tbl ( -- サーバ情報 serverName text, -- �
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc542/">クラスタマネージャで Disconnected sessions terminate に Immediately を設定しているにも関わらず， Connected Clients = 0 の状態でセッションが残る．</a></h2>
+                                    <h2><a href="/posts/new_md/doc489/">[Network] GGサーバに接続出来ないため調査で telnet 491 を試すように言われたが，GGサーバにTelnetサービスをインストールしたくない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -505,21 +505,23 @@ CREATE TABLE IF NOT EXISTS server_tbl ( -- サーバ情報 serverName text, -- �
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc542/"><i class="far fa-calendar"></i> 2013-07-28</a>
+                                            <a href="/posts/new_md/doc489/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/07/28*
-[番号] 技術ノート KGTN 2010091607
-[現象] クラスタマネージャで Disconnected sessions terminate に Immediately を設定しているにも関わらず， Connected Clients = 0 の状態でセッションが残る．
-[説明] 弊社の試験環境で一度だけ，この現象が発生しました．再現性がなく現時点では原因等が不明ですが，万一この現象が発生した場合はDisconnected sessions terminate に After 1 minutes を設定することで，セッションが約１分で切断されるようになります．
-補足１ クライアントのLANケーブルを抜いた状況で発生することが分かり， SessionTimeoutBrokenConnection というレジストリの値 （予期せぬコネクション断が発生した時，この値の時間だけセッションが維持される） がImmediately が設定されている時に限り作用し，セッションが維持されていました．従って，以下のように0を設定することで，１〜3分以内にセッションが切断されるようになります （注：より正確に言えば，1〜3分以内とはWindowsのTCP/IPが切断を認識するまでの時間を指します．GGの処理については，TCP/IPが切断を認識した直後にセッションを直ちに終了させます）．
-HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥AppServer SessionTimeoutBrokenConnection REG_DWORD 0
-補足２ GGサーバがGGH4.Xの場合は， 「補足１のレジストリではなく」 下記の設定ファイルの項目の値を変更して下さい．
-[設定ファイルのパス] C:¥ProgramData¥GraphOn¥HostProperties.xml
-[変更する項目] 0ファイル KGTN2010091607.pdf [(75.2 KB)] [kitasp 技術センター, 2013/07/29 07:47]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc542/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013112101
+[現象] [Network] GGサーバに接続出来ないため調査で &ldquo;telnet &lt;GGサーバのIPアドレス&gt; 491&rdquo; を試すように言われたが，GGサーバにTelnetサービスをインストールしたくない．
+[説明] GGサーバにTelnetサービスをインストールする必要はありません．telnetクライアントは，Telnetプロトコル （RFC854で規定） で端末間で通信を行うため 「だけ」 のツールと理解されているようですが， telnet コマンドは ping コマンドとともに，ネットワークの調査に使用する最も基本的なツールです．
+コマンド &ldquo;telnet &lt;GGサーバのIPアドレス&gt; 491&rdquo; を実行することで，TCP/IPレベルでGGサーバへの接続性の確認を行うことが出来ます．この方法はGGに限らず，他のプロトコルでも広く使用されています．マイクロソフト社の知識ベースにも telnet コマンドを使用した技術情報が多数あります．
+http://support.microsoft.com/kb/187628/ja Telnet を使用してポート 3389 の機能を確認する
+http://support.microsoft.com/kb/189326/ja Telnet を使用して IMAP の基本的な接続性を確認する方法
+http://support.microsoft.com/kb/165186/JA Telnet を使用して基本的な POP3 接続を確認する
+http://support.microsoft.com/kb/196748/ja Telnet を使用してインターネット メールの接続をテストする方法
+http://support.microsoft.com/kb/153119/ja SMTP 通信のテストのためにポート25にTelnet
+ファイル KGTN2013112101.pdf [(61.1 KB)] [kitasp 技術センター, 2014/01/29 11:15]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc489/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -529,7 +531,7 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥AppServer SessionTimeoutBrokenConnectio
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc544/">
+                                      <a href="/posts/new_md/doc487/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -537,7 +539,7 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥AppServer SessionTimeoutBrokenConnectio
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc544/">[ExPack] GGCSLib2 のサンプル版のインストール方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc487/">[Network] telnet 491 でGGサーバへの接続性は確認出来たが，正常にログイン出来ない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -550,28 +552,17 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥AppServer SessionTimeoutBrokenConnectio
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc544/"><i class="far fa-calendar"></i> 2013-07-26</a>
+                                            <a href="/posts/new_md/doc487/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/07/26*
-[番号] 技術ノート KGTN 2013072401
-[現象] [ExPack] GGCSLib2 のサンプル版のインストール方法は？
-[説明] 以下の手順でインストールして下さい．
-[はじめに] 配布フォルダ GGCSLib2 には，以下の４つのサブフォルダが含まれています．
-各サブフォルダの内容は，次の通りです．
-Client &hellip; クライアント側のプラグイン Sample &hellip; サンプルプログラムのソースコード （プロジェクト） Server_x64 &hellip; サーバ側のプラグイン （64ビット版） Server_x86 &hellip; サーバ側のプラグイン （32ビット版）
-[サーバ側の設定] 配布フォルダ GGCSLib2 を C:¥TEMP へコピーして下さい．OSが64ビットの場合は，フォルダ C:¥TEMP¥GGCSLib2¥Server_x64 を開いて下さい．OSが32ビットの場合は，フォルダ C:¥TEMP¥GGCSLib2¥Server_x86 を開いて下さい．
-フォルダの中にある Copy.bat をダブルクリックして実行して下さい．
-フォルダ C:¥GraphOn¥DLL を開いて下さい．
-フォルダの中にある ServerPluginsPath.reg をダブルクリックして実行して下さい．レジストリエディタが表示する確認ダイアログは，以下のスクリーンショットの赤枠の方を選択して下さい．
-サンプルプログラム C:¥GrapOn¥DLL¥GGCSLib2T.exe をクラスタマネージャで登録して下さい．以上で，サーバ側の環境設定は完了しました．
-[クライアント側の設定] 配布フォルダ GGCSLib2 を C:¥TEMP へコピーして下さい．フォルダ C:¥TEMP¥GGCSLib2¥Client を開いて下さい．
-フォルダの中にある Copy.bat をダブルクリックして実行して下さい．
-フォルダ C:¥GraphOn¥DLL を開いて下さい．
-フォルダの中にあるClientPluginsPath(WOW6432Node).reg をダブルクリックして実行して下さい．レジストリエディタが表示する確認ダイアログは，以下のスクリーンショットの赤枠の方を選択して下さい．以上で，クライアント側の環境設定は完了しました．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc544/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013112103
+[現象] [Network] &ldquo;telnet &lt;GGサーバのIPアドレス&gt; 491&rdquo; でGGサーバへの接続性は確認出来たが，正常にログイン出来ない．
+[説明] TCP/IPレベルでGGサーバへの接続性は確認出来にも関わらず正常にログイン出来ない場合は，Windows 自体の問題か，またはGGまたはその周辺の問題の可能性が高いと考えられます．前者の場合は，リソースの枯渇 （例えばハンドルの枯渇） やCPU過負荷等が一般的に考えられます．後者の場合は，ログオンスクリプトの不具合やアンチウイルスソフトの影響等が一般的に考えられます．
+ファイル KGTN2013112103.pdf [(49.9 KB)] [kitasp 技術センター, 2014/01/29 11:24]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc487/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -581,7 +572,7 @@ Client &hellip; クライアント側のプラグイン Sample &hellip; サン�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc543/">
+                                      <a href="/posts/new_md/doc488/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -589,7 +580,7 @@ Client &hellip; クライアント側のプラグイン Sample &hellip; サン�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc543/">[GGH4.X] GGW3.2.1で動作している機能が，GGH4.0.1では動作しなくなった．GGH4.6で確認すると動作しているが，GGH4.0.1の不具合か？</a></h2>
+                                    <h2><a href="/posts/new_md/doc488/">[Network] telnet 491 でGGサーバへの接続性を確認するが，クライアントPC上で実行すれば良いのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -602,18 +593,17 @@ Client &hellip; クライアント側のプラグイン Sample &hellip; サン�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc543/"><i class="far fa-calendar"></i> 2013-07-26</a>
+                                            <a href="/posts/new_md/doc488/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/07/26*
-[番号] 技術ノート KGTN 2013072601
-[現象] [GGH4.X] GGW3.2.1で動作している機能が，GGH4.0.1では動作しなくなった．GGH4.6で確認すると動作しているが，GGH4.0.1の不具合か？
-[説明] GGH4.0はGGH4.X系の最初のバージョンで，GGW3.2.1でサポートしていた機能 （技術的に移行可能な機能） のうち，時間的な制約等で積み残した （移行を見送った） 機能があります．積み残した機能の大半はGGH4.5で移行されましたので，お問合せの機能も積み残された機能に該当すると考えられます．
-2013年7月現在，GGH4.0およびGGH4.5は通常サポート　（Mainstream Maintenance） が終了しておりますので，GGH4.6へバージョンアップなさることを強くお勧めします．
-ファイル KGTN2013072601.pdf [(51.5 KB)] [kitasp 技術センター, 2013/07/26 20:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc543/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013112102
+[現象] [Network] &ldquo;telnet &lt;GGサーバのIPアドレス&gt; 491&rdquo; でGGサーバへの接続性を確認するが，クライアントPC上で実行すれば良いのか？
+[説明] 先ず最初に実行すべき箇所は，クライアントPCです．接続出来ない場合は，次にGGサーバと同じLAN上にあるマシンで実行して下さい．この状況で接続出来ない場合は，GGサーバ自体またはその周辺のネットワーク機材に問題がある可能性が高いと考えられます．逆に接続できる場合は，クライアントPC～GGサーバ間のネットワークまたはクライアントPCに問題がある可能性が高いと考えられます．
+ファイル KGTN2013112102.pdf [(48.9 KB)] [kitasp 技術センター, 2014/01/29 11:22]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc488/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -623,7 +613,7 @@ Client &hellip; クライアント側のプラグイン Sample &hellip; サン�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc545/">
+                                      <a href="/posts/new_md/doc416/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -631,7 +621,7 @@ Client &hellip; クライアント側のプラグイン Sample &hellip; サン�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc545/">[ExPack] GGCSLib2 のDLLを LoadLibrary でロードしようとするとエラー126が発生する．</a></h2>
+                                    <h2><a href="/posts/new_md/doc416/">[Windows8] Windows 8 の 「すべてのプログラム」 に表示されるアプリケーションは，どこを参照しているのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -644,18 +634,18 @@ Client &hellip; クライアント側のプラグイン Sample &hellip; サン�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc545/"><i class="far fa-calendar"></i> 2013-07-23</a>
+                                            <a href="/posts/new_md/doc416/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/07/23*
-[番号] 技術ノート KGTN 2013072301
-[現象] [ExPack] GGCSLib2 のDLLを LoadLibrary でロードしようとするとエラー126が発生する．
-[説明] Win32エラーコード 126 は ERROR_MOD_NOT_FOUND で，意味は 「指定されたモジュールが見つかりません」 です． GGCSLib2 のDLLが正しいフォルダに置かれているかどうか確認して下さい．置かれているにも関わらずエラーが発生している場合は，恐らくVC++のランタイムがインストールされていないのが原因です． &ldquo;Microsoft Visual C++ 2010 再頒布可能パッケージ&rdquo; をインストールして下さい．
-http://www.microsoft.com/ja-jp/download/details.aspx?id=5555 (x86) http://www.microsoft.com/ja-jp/download/details.aspx?id=14632 (x64)
-ファイル KGTN2013072301.pdf [(58.2 KB)] [kitasp 技術センター, 2013/07/23 09:28]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc545/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2014011505
+[現象] [Windows8] Windows 8 の 「すべてのプログラム」 に表示されるアプリケーションは，どこを参照しているのか？
+[説明] すべてのユーザに共通なアプリケーションは，以下のフォルダを参照します．
+C:ProgramDataMicrosoftWindowsStart MenuPrograms  個別のユーザに関するアプリケーションは，以下のフォルダを参照します．
+C:Usersユーザー名AppDataRoamingMicrosoftWindowsStart Menu  ファイル KGTN2014011505.pdf [(52.2 KB)] [kitasp 技術センター, 2014/01/29 16:16]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc416/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -665,7 +655,7 @@ http://www.microsoft.com/ja-jp/download/details.aspx?id=5555 (x86) http://www.mi
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc548/">
+                                      <a href="/posts/new_md/doc443/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -673,7 +663,7 @@ http://www.microsoft.com/ja-jp/download/details.aspx?id=5555 (x86) http://www.mi
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc548/">[ExPack] GGTerminalRoaming のサンプル版のインストール方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc443/">[Windows] Diskpart コマンドのdelete partition を実行したが，回復パーティションを削除できない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -686,26 +676,18 @@ http://www.microsoft.com/ja-jp/download/details.aspx?id=5555 (x86) http://www.mi
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc548/"><i class="far fa-calendar"></i> 2013-07-12</a>
+                                            <a href="/posts/new_md/doc443/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/07/12*
-[番号] 技術ノート KGTN 2013071201
-[現象] [ExPack] GGTerminalRoaming のサンプル版のインストール方法は？
-[説明] 以下の手順でインストールして下さい．
-GGサーバにフォルダ C:¥GraphOn を作成し，そこに配布フォルダ GGTerminalRoaming をコピーして下さい．
-フォルダ C:¥GrapOn¥GGTerminalRoaming¥GSM にあるファイル GGSessionMonitor.ini をテキストエディタやメモ帳で開き，キー host の値にGGサーバのIPアドレスを記入し，ファイルを上書き保存して下さい．
-コマンドプロンプトを開き，DOS窓で GGSessionMonitor -sec gsm を実行して下さい．次に．画面に Debug: &hellip; availability = &lsquo;YES&rsquo; という行が表示されたことを確認して下さい．もし表示されない場合は，IPアドレスに誤りがあるか，または指定したGGサーバ上で APS が開始していない可能性が高いと考えられます．
-DOS窓で GMService -i を実行し，続けて GMService ?s を実行して下さい．この操作で，GGサーバを監視するサービスが登録され，さらにそのサービスが開始します．
-タスクマネージャで GMService.exe と GGSessionMonitor.exe が存在することを確認して下さい．この時点で，GGサーバを常時監視する環境が整いました．
-プログラム C:¥GrapOn¥GGTerminalRoaming¥GGTerminalRoaming.exe をクラスタマネージャで登録して下さい．以上で，環境設定は完了しました．
-最初のクライアントPC （移動前の端末） からGGサーバにログオンし，メモ帳等のアプリケーションを起動して下さい．
-アプリケーション GGTerminalRoaming を起動して下さい．スプラッシュ画面が表示され，最小化状態で動作します （サンプル版の仕様です） ．
-プログラム・ウインドウを使用してセッションを Discoonect して下さい．または，クライアントPC上で gg-client.exe のプロセスを強制終了しても構いません．
-2台目のクライアントPC （移動後の端末） からGGサーバにログオンし，前のステップで切断したセッションに再接続して下さい．正常であれば，プログラム・ウインドウがプライマリ・モニタの左上の位置に表示されます （サンプル版の仕様です） ．他のアプリケーションのウインドウは，移動後のモニタの解像度に合わせて，位置が調整されます．なお，アプリケーションの作りによっては移動しないことがありますが，この場合は，アプリケーションの動作 （ウインドウ管理） に合わせて GGTerminalRoaming をカスタマイズする必要があります．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc548/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013121202
+[現象] [Windows] Diskpart コマンドのdelete partition を実行したが，回復パーティションを削除できない．
+[説明] delete partition は，通常既知のデータ パーティションのみを削除することが出来ます．回復パーティション等を削除する場合は， delete partition override を実行して下さい．詳細については，下記ページをご覧ください．
+Diskpart のコマンド ライン オプション http://technet.microsoft.com/ja-jp/library/cc766465(v=ws.10).aspx
+ファイル KGTN2013121202.pdf [(53 KB)] [kitasp 技術センター, 2014/01/29 14:31]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc443/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -715,7 +697,7 @@ DOS窓で GMService -i を実行し，続けて GMService ?s を実行して下�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc550/">
+                                      <a href="/posts/new_md/doc499/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -723,7 +705,7 @@ DOS窓で GMService -i を実行し，続けて GMService ?s を実行して下�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc550/">[GGH4.X] Excel 2003 でクライアントドライブにファイルを保存し，そのファイルを開こうとすると 「ファイルを読み込めません」 というエラーが発生する．</a></h2>
+                                    <h2><a href="/posts/new_md/doc499/">[Windows] NTLM認証とは何か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -736,18 +718,17 @@ DOS窓で GMService -i を実行し，続けて GMService ?s を実行して下�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc550/"><i class="far fa-calendar"></i> 2013-06-28</a>
+                                            <a href="/posts/new_md/doc499/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/06/28*
-[番号] 技術ノート KGTN 2013062801
-[現象] [GGH4.X] Excel 2003 でクライアントドライブにファイルを保存し，そのファイルを開こうとすると 「ファイルを読み込めません」 というエラーが発生する．
-[説明] 弊社でもこの現象を確認しました．この問題は将来修正される可能性はありますが，しかしながら当面は現状の動作通りとなります （既知の問題） ．従って，お手数ですが以下の何れかの対応をお願いします．
-先ずサーバ側にファイルを保存し，そのファイルをエクスプローラー等のファイルマネージャでクライアント側 （クライアントドライブ） へコピーする． Excel 2010 にバージョンアップする．
-ファイル KGTN2013062801.pdf [(51.7 KB)] [kitasp 技術センター, 2013/06/28 12:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc550/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013111201
+[現象] [Windows] NTLM認証とは何か？
+[説明] NTLM認証は &ldquo;Windows NT LAN Manager Authentication&rdquo; のことで，Windows NT 4.0以前の NT系OSで使用されていたネットワークログオンのためのユーザ認証方式です． Windows 2000 からはデフォルトの認証方式として Kerberos認証 が採用されましたが，旧環境との互換性を保つためNTLM認証も利用可能となっています．
+ファイル KGTN2013111201.pdf [(50.1 KB)] [kitasp 技術センター, 2014/01/29 10:45]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc499/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -817,7 +798,7 @@ DOS窓で GMService -i を実行し，続けて GMService ?s を実行して下�
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

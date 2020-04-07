@@ -409,25 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1704/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1555/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1704/">無操作タイムアウト （アイドルタイムアウト） の判断に利用されるイベントを知りたい．</a></h4>
+                            <h4><a href="/posts/new_md/doc1555/">[GGH4.0] クラスタマネージャの設定で Universal Printer Driver のみチェックを入れているが， Windows Printer Driver （通常のプリンタドライバ） でクライアントプリンタが構成される．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-07-12
+                            日付 2010-11-15
                             </p>
                             <p class="intro">*技術ノート
-2010/07/12*
-[番号] 技術ノート KGTN 2010071202
-[現象] 無操作タイムアウト （アイドルタイムアウト） の判断に利用されるイベントを知りたい．
-[説明] 無操作タイムアウト （アイドルタイムアウト） の判断は，サーバとクライアント間の通信の有無をもとに行われます （注：死活監視のパケットを除きます） ．従って，キーボード操作・マウス操作・画面描画・ファイルコピー・印刷などがその判断に利用されます．
-ファイル KGTN2010071202.pdf [(45.8 KB)] [kitasp 技術センター, 2010/07/12 10:11]</p>
+2010/11/15*
+[番号] 技術ノート KGTN 2010111503
+[現象] [GGH4.0] クラスタマネージャの設定で Universal Printer Driver のみチェックを入れているが， Windows Printer Driver （通常のプリンタドライバ） でクライアントプリンタが構成される．
+[説明] Ver4.0系では，サーバ側に Windows Printer Driver （通常のプリンタドライバ） がインストールされている場合，クラスタマネージャの設定の関わりなく Windows Printer Driver が選択されます．Universal Printer Driver を選択させたい場合は， 「プリンタとFAX」 フォルダを開き， [ファイル] → [サーバーのプロパティ] → [ドライバ] → [インストールされたプリンタ ドライバ] にある該当するドライバ （名前） を削除して下さい．
+ファイル KGTN2010111503.pdf [(52 KB)] [kitasp 技術センター, 2010/11/15 11:09]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1704/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1555/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,34 +446,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1706/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1559/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1706/">GGのセッションが切断されたが，原因としてどのようなことが考えられるか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1559/">Internet Explorer，メモ帳，その他アプリケーションの ファイルを開く ダイアログ中で，ファイル （フォルダ） を作成または削除した時に，ダイアログがリフレッシュされない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-07-09
+                            日付 2010-11-12
                             </p>
                             <p class="intro">*技術ノート
-2010/07/09*
-[番号] 技術ノート KGTN 2010070601
-[現象] GGのセッションが切断されたが，原因としてどのようなことが考えられるか？
-[説明] 予期せぬGGのセッション断は，以下のような多くの可能性が考えられます．
-ネットワークの問題 事例： ネットワーク機材の不具合，UDPが絡んでのネットワークの輻輳
-ハードウエアの問題 事例： 集約したC:ドライブ装置の過負荷 （Windowsのパフォーマンス低下）
-OS （Windows） の問題 事例： 不適切なチューニング， 連続運用による動作不安定
-アプリケーションの問題 事例： 過度な描画
-クライアントの問題 事例： 実メモリ不足等によるスワップの多発
-その他 事例： 日本〜中国間での利用
-このように，さまざま事象で予期せぬセッション断が発生する可能性がありますので，原因調査に当たっては出来るだけ広範な情報を採取＆蓄積し，そしてそれらを分析して原因を絞り込むようにして下さい．
-補足1 GGは標準状態で，次のアルゴリズムでコネクションの死活監視を行います： クライアントは，サーバとの接続が維持されているかを確認するために，30秒毎にgg-pingパケット （要求） を送信します．サーバは，クライアントからのgg-pingパケットを受け取ると，それに対するgg-pingパケット （応答） をクライアントへ送信します．クライアントとサーバは，それぞれ 「相手からのパケットを2回続けて受信出来ないと」 ，接続が失われたと判断しセッションを強制切断します．
-補足2 コネクションの死活監視 （gg-pingパケットの処理） を無効化することも可能です． サービスGO-Global Application Publishing Service を停止する． レジストリエディタで，以下のレジストリ設定を行う． HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥AppServer SessionVerification REG_DWORD 0 サービスGO-Global Application Publishing Service を開始する．
-ファイル KGTN2010070601.pdf [(82.7 KB)] [kitasp 技術センター, 2010/07/09 20:27]</p>
+2010/11/12*
+[番号] 技術ノート KGTN 2009071401
+[現象] Internet Explorer，メモ帳，その他アプリケーションの &ldquo;ファイルを開く&rdquo; ダイアログ中で，ファイル （フォルダ） を作成または削除した時に，ダイアログがリフレッシュされない．
+[説明] GO-Global for Windows の標準の設定では，パフォーマンスを優先し，自動リフレッシュ機能が無効になっています．自動リフレッシュ機能を有効にするには，アプリケーション毎に以下の設定を行う必要があります．
+スタート → ファイル名を指定して実行 → 名前に regedit を入力 → OKボタンをクリック レジストリキー HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥Loader¥Processes を開く 編集 → 新規 → DWORD 値 名前に自動リフレッシュ機能を有効にしたいプログラム名を入力 （例：メモ帳の場合は notepad.exe） 入力した名前をダブルクリック → DWORD 値の編集 → b を入力 （表記は16進数） → OKボタンをクリック レジストリエディタを終了 サーバを再起動
+この機能は，GO-Global for Windows Version 3.2.0.4167 またはそれ以降で有効です．
+ファイル KGTN2009071401.pdf [(65.1 KB)] [kitasp 技術センター, 2010/11/12 09:08]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1706/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1559/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -492,25 +485,25 @@ OS （Windows） の問題 事例： 不適切なチューニング， 連続運
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc725/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1556/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc725/">ログオンの負荷試験を行いたいが，ツール等はないのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1556/">クライアントが Windows Vista （UACが有効） かつ利用するユーザが 「標準ユーザー」 という条件で，GGのActiveXクライアントを使わせたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-07-08
+                            日付 2010-11-12
                             </p>
                             <p class="intro">*技術ノート
-2010/07/08*
-[番号] 技術ノート KGTN 2010070602
-[現象] ログオンの負荷試験を行いたいが，ツール等はないのか？
-[説明] セッション関連の試験を行うため GMLogonTest というツールがあります．このツールは，クライアント側で Windows クライアント （gg-client.exe） を非同期に繰り返し起動するバッチと，サーバ側で負荷の重たい処理を実行し終了する （ログアウトする） アプリケーションから構成されます． 「ログオン処理 → 高負荷な処理 →ログアウト」 を行うセッションを複数並行して行うことにより，擬似的に負荷試験を行うことが可能です．
-ファイル KGTN2010070602.pdf [(43.8 KB)] [kitasp 技術センター, 2018/11/29 15:06]</p>
+2010/11/12*
+[番号] 技術ノート KGTN 2010111201
+[現象] クライアントが Windows Vista （UACが有効） かつ利用するユーザが 「標準ユーザー」 という条件で，GGのActiveXクライアントを使わせたい．
+[説明] 事前に 「管理者が」 下記の手順でActiveX インストーラ サービスを構成することで，GGのActiveXクライアントを 「標準ユーザーに」 ダウンロードさせることが可能です．
+[スタート] → [コントロール パネル] → [プログラム] → [プログラムと機能] [Windows の機能の有効化または無効化] をクリック （時間がかかります） [ActiveX インストーラサービス] を有効にして [OK] ボタンをクリック [スタート] → [検索の開始] gpedit.msc と入力しエンターキーを押下 [コンピュータの構成] → [管理用テンプレート] → [Windows コンポーネント] [ActiveX Installer Service] をダブルクリック [ActiveX コントロールの承認されたインストールサイト] ポリシーをダブルクリック [設定] タブで [有効] を選択し [表示] ボタンをクリック [追加] ボタンをクリック [追加する項目の名前を入力してください]　に ActiveXクライアントのダウンロードサイトのURLを入力 [追加する項目の値を入力してください] に 2,1,0,0 を入力</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc725/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1556/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -529,27 +522,25 @@ OS （Windows） の問題 事例： 不適切なチューニング， 連続運
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc714/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1560/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc714/">負荷試験用ツール GMLogonTest の使い方は？</a></h4>
+                            <h4><a href="/posts/new_md/doc1560/">[GGH4.0] セッションシャドウイング機能を利用する時，クライアントの画面解像度よりサーバの画面解像度が小さい場合，どのように表示されるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-07-08
+                            日付 2010-11-10
                             </p>
                             <p class="intro">*技術ノート
-2010/07/08*
-[番号] 技術ノート KGTN 2010070701
-[現象] 負荷試験用ツール GMLogonTest の使い方は？
-[説明] 以下の手順で，サーバ側 （試験用アプリケーションの登録） とクライアント側 （試験用ログオンバッチの設定と実行） のインストール作業を行って下さい．
-【サーバ側】
- GMLogonTest (Server Side) 中の Install.bat を実行します． &ldquo;ユーザー アカウント制御&rdquo; のダイアログで 「はい」 を選択します． &ldquo;レジストリ エディター&rdquo; のダイアログでは 「はい」 （続行） を選択します． 実行完了後サービス GGAPS を再起動します．  【クライアント側】
- Windowsクライアントをインストールします． GMLogonTest (Client Side) をデスクトップにコピーします． GMLogonTest_wait_sub.bat をメモ帳で開き下記の項目を設定 （変更） します． set host=GGサーバのIPアドレスまたはホスト名 set user=試験に使用するアカウントのID set pass=試験に使用するアカウントのパスワード set app=GMLogonTest set GGDIR=Windows Client がインストールされたフォルダ GMLogonTest_sub.bat をダブルクリックして実行します． 正常にログオン出来て，かつ画像が表示され，数秒後に全て終了することを確認して下さい． GMLogonTest.bat をメモ帳で開き下記の項目を設定 （変更） します． set loop=ログオンの回数 set wait=ログオンの間隔 （秒） GMLogonTest.</p>
+2010/11/10*
+[番号] 技術ノート KGTN 2010111002
+[現象] [GGH4.0] セッションシャドウイング機能を利用する時，クライアントの画面解像度よりサーバの画面解像度が小さい場合，どのように表示されるのか？
+[説明] Ver3.2系では，スクロールバー付きのウインドウ上に同じサイズで表示されましたが，Ver4.0系ではウインドウのサイズに合わせて拡大・縮小して表示されます．下記の例では，サーバの画面解像度が800x600，左側のクライアント （PWの色が青の方） の画面解像度が1024x768，右側のクライアント （PWの色が黒の方） の画面解像度が1280x800です．
+ファイル KGTN2010111002.pdf [(351 KB)] [kitasp 技術センター, 2010/11/10 11:54]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc714/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1560/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

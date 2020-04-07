@@ -409,27 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1284/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1168/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1284/">[GGW3.1.1] Ver3.1.1 のサービスGO</a></h4>
+                            <h4><a href="/posts/new_md/doc1168/">[iPad Client] iPad Client は接続先サーバを設定画面で指定せねばならないが，ブラウザから動的に指定する方法なないのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-10-05
+                            日付 2011-12-20
                             </p>
                             <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2011100501
-[現象] [GGW3.1.1] Ver3.1.1 のサービスGO-Global Update Client の機能は？
-[説明] Ver3.1.1 では， Windows のシステムファイルwin32k.sys, ntoskrnl.exe, ntdll.dll, user32.dll, gdi32.dll 用のカスタムインタフェースが存在し，これらのシステムファイルが更新された時，常にGGのカスタムインタフェース （VBMファイルとして提供） も更新する必要があります． （Ver3.1.1の） GO-Global Update Client は，これらのシステムファイルが更新されたかどうかを監視し，更新された場合はそれに対応するVBMファイルが存在するかどうかを調べ，存在すればカスタムインタフェースを更新する処理を行います．
-しかしながら実際の運用では，Windows の新しいシステムファイルがリリースされた時，GraphOn社は互換アップデートでこのVBMファイルを提供しており， （互換アップデートの） インストーラーがVBMファイルをインストールする機能を持っているため， GO-Global Update Client が有意に働く状況は発生しません．このようなことから， GO-Global Update Client を無効化することをお勧めしております．
-注　意 上記の理由および自動互換アップデート機能の実装により， Ver3.2.1 には GO-Global Update Client は存在しません．また Ver4.0 に存在する GO-Global Update Client は，サービス名は同じですが， 「クライアント側のモジュールを更新する機能」 で，全く内容が異なるサービスです．
-ファイル KGTN2011100501.pdf [(67.5 KB)] [kitasp 技術センター, 2011/10/05 09:00]</p>
+2011/12/20*
+[番号] 技術ノート KGTN 2011122002
+[現象] [iPad Client] iPad Client は接続先サーバを設定画面で指定せねばならないが，ブラウザから動的に指定する方法なないのか？
+[説明] 現状では接続先サーバを iPad Client の設定画面で指定するしか方法がありません．ただ，過去にも同じようなご要望がありましたので，GraphOn社へ iPad URL Scheme のサポートを依頼しております （実装時期等は未定です） ．これが実装されると，動的に接続先等を指定できるようになります．
+ファイル KGTN2011122002.pdf [(52.5 KB)] [kitasp 技術センター, 2011/12/20 09:10]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1284/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1168/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -448,28 +446,28 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2189/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2642/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2189/">[GGW3.2/GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2642/">[GGH4.X-5.X] Throttle と Batching を有効にする方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-10-05
+                            日付 2011-12-19
                             </p>
                             <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2009051501
-[現象] [GGW3.2/GGH4.X-5.X] セッションがたまに切れるが，何か簡単に試せることはないか？
-[説明] GO-Global for Windows はデフォルトの設定で， （クライアント～サーバ間に張られる GO-Global for Windows のコネクション上のプロトコルで） クライアントからサーバへ30秒毎にPINGを送信しています（以降，ICMPのPINGと区別するためにGG-PINGと表記します）．30秒以内にサーバから応答があればコネクションが正常と判断し，それを越えて応答がなければコネクションが失われたと判断します （注：応答を受信した直後にコネクションが切れた場合は，それから29秒後にGG-PINGが送信されますので，59秒後にコネクションが切れたと判断します） ．このGG-PINGの機能を以下の設定で無効にすることができます．
-[HKEY_LOCAL_MACHINESOFTWAREGraphOnBridges1.0.0AppServer] SessionVerification REG_DWORD 0
-設定を変更した場合は，必ずサーバを再起動して下さい．GG-PINGの機能を無効にしてもセッションが切れる場合は，TCP/IPレベルで実際にコネクションが切れているものと推測されます．
-補　足 TCP/IPレベルでセッションが切断されているかどうかを確認するには，弊社開発の GGNetworkCheck をご利用下さい．このツールは，GG のサーバ側とクライアント側で動作させるプログラムで，クライアント側主導でTCP/IP のヘルスチェック （接続性確認） を行います．クライアント側は所定の秒数でPING メッセージを送信し （ログに記録も残します） ，サーバ側はPING メッセージを受信するとログに記録するとともに，応答メッセージをクライアント側に送信します．クライアント側は応答メッセージを受信すると，その情報をログに記録します．所定秒数内に相手からのメッセージが届かない，またはTCP/IP レベルでコネクションが切断された場合は，エラーとしてログに記録されます．この２つのログ （クライアント側とサーバ側） を付き合わせることで，ネットワークの状況を確認することが出来ます．GGのプロトコルを使用せずにチェックを行いますので，万一GG上で問題が発生したとしても，ネットワークの状況を確実に把握することが可能です．詳細は，技術ノート KGTN#2011030201 をご覧下さい．
-ファイル KGTN2009051501.pdf [(84 KB)] [kitasp 技術センター, 2017/04/06 17:22]</p>
+2011/12/19*
+[番号] 技術ノート KGTN 2011121902
+[現象] [GGH4.X-5.X] Throttle と Batching を有効にする方法は？
+[説明] 1)　サービス &ldquo;GO-Global Application Publishing Service&rdquo; を停止して下さい．
+2)　設定ファイル ALLUSERSPROFILEApplication DataGraphOnHostProperties.xmlの内容を以下のように変更して下さい．
+&lt;property id=&quot;ClientProcessingBatch&quot; group=&quot;Miscellaneous&quot; type=&quot;UINT32&quot;&gt; &lt;value&gt;1&lt;/value&gt; ← 1 をセットする． &lt;/property&gt; &lt;property id=&quot;ClientProcessingThrottle&quot; group=&quot;Miscellaneous&quot; type=&quot;UINT32&quot;&gt; &lt;value&gt;1&lt;/value&gt; ← 1 をセットする． &lt;/property&gt;  3)　サービス &ldquo;GO-Global Application Publishing Service&rdquo; を開始して下さい．
+補　足 アプリケーションが比較的頻繁にハングアップする （アプリケーションが操作出来なくなる） 場合は，このThrottle と Batching を有効にして状況が改善するかどうか試してみる価値があります．実際，見掛けは小さく単純な画面を持つアプリケーションでしたが，このThrottle と Batching を有効にして状況が改善した事例があります．
+ファイル KGTN2011121902.pdf [(76.2 KB)] [kitasp 技術センター, 2016/02/05 11:42]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2189/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2642/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -488,26 +486,30 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1282/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc384/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1282/">[iPad Client] iPad クライアントの解像度を縦置き状態に変更したい．</a></h4>
+                            <h4><a href="/posts/new_md/doc384/">[Windows] Windows Server 2008 の DEP （データ実行防止）　機能を無効化したい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-10-05
+                            日付 2011-12-19
                             </p>
                             <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2011092702
-[現象] [iPad Client] iPad クライアントの解像度を縦置き状態に変更したい．
-[説明] 標準状態では，iPad クライアントの解像度は横向き状態 （つまり1024x768）　になります． 現在，縦置き状態 （つまり768x1024） に設定出来るかどうかGraphOn社へ問い合わせ中です． β版では縦向き表示が可能でしたが， IOS SDK の互換性の問題から正式リリース版では横向き状態のみをサポートします．
-補　足 iPadクライアントのリリース版が縦向き表示をサポートしていない理由は，以下の通りです．
-ファイル KGTN2011092702.pdf [(64.3 KB)] [kitasp 技術センター, 2011/10/05 12:21]</p>
+2011/12/19*
+[番号] 技術ノート KGTN 2011121901
+[現象] [Windows] Windows Server 2008 の DEP （データ実行防止）　機能を無効化したい．
+[説明] Windows Server 2008 の DEP （データ実行防止）　機能を無効化するには，下記のコマンドを実行し，サーバを再起動して下さい．
+bcdedit /set nx Alwaysoff
+DEP機能を戻す （有効化する） 時は，下記のコマンドを実行し，サーバを再起動して下さい．
+bcdedit /set nx OptIn
+上記の変更を行った場合は，GGの再インストールを行って下さい．
+補　足 GGW3.2.1 + WS2008 + &ldquo;bcdedit /set nx alwaysoff&rdquo; の環境で，セッションが正常に終了しないという報告がありました．そのような現象が見られた場合は，&ldquo;bcdedit /set nx OptIn&rdquo; を設定して下さい．
+ファイル KGTN2011121901.pdf [(55.7 KB)] [kitasp 技術センター, 2014/01/29 17:29]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1282/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc384/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -526,25 +528,29 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1279/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1171/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1279/">GG上で利用したいアプリケーションがあるが，環境変数が不足しており動作しない．</a></h4>
+                            <h4><a href="/posts/new_md/doc1171/">[GGW3.2.1/GGH4.0] Program Window (PW) からアプリケーションを起動すると，ウインドウの一部が表示された状態でハングアップする．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-10-05
+                            日付 2011-12-16
                             </p>
                             <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2011100504
-[現象] GG上で利用したいアプリケーションがあるが，環境変数が不足しており動作しない．
-[説明] そのGGサーバを利用する全てのユーザに共通な環境変数であれば， Windows の [システムのプロパティ]　→ [詳細設定] → [環境変数] → [システム環境変数] （Windows Server 2003 の場合）　で定義するのが良いでしょう．設定する内容については，そのアプリケーションのドキュメント等をご覧下さい．
-ファイル KGTN2011100504.pdf [(48.9 KB)] [kitasp 技術センター, 2011/10/05 14:34]</p>
+2011/12/16*
+[番号] 技術ノート KGTN 2011121604
+[現象] [GGW3.2.1/GGH4.0] Program Window (PW) からアプリケーションを起動すると，ウインドウの一部が表示された状態でハングアップする．
+[説明] 通常では考えられない現象ですので，先ず以下の手順で特定の条件に依存するかどうか確認して下さい．
+他のクライアント （パソコン） で同じ現象が再現するかどうか確認する． 他のアカウントで同じ現象が再現するかどうか確認する． 他のアプリケーション （メモ帳など） で同じ現象が再現するかどうか確認する．
+上記の何れかで正常に動作すれば，クライアント・アカウント・アプリケーションに依存して発生する問題だと考えられますので，その周辺に問題がないかどうか調べて下さい．
+上記の何れでも問題が発生する場合は，サーバの一時的な不具合かどうかを確認するために，GGサーバを再起動して現象が再現するかどうか確認して下さい．再現しない場合は，サーバの一時的な不具合だと考えられますので，イベントログやAPSログを確認し，これまでのサーバの稼働状況を確認して下さい （サーバの定期的な再起動が行われておらず，メモリが枯渇した等） ．再現する場合は，GGサーバの本質的な問題だと考えられますので，イベントログやAPSログを確認し，正常ではない記録が残っていないか慎重に調べて下さい．
+調べても分らない場合は，過去に作成したイメージをリストアし，正常に動作するかどうか確認して下さい．正常に動作する場合は，ソフトウエアのインストール （Windows Update やドライバ等のインストール） が問題を引き起こしている可能性が高いと考えられます．正常に動作しない場合は，サーバ環境 （ハードウエアや仮想マシン） やネットワーク環境に起因して問題だと推測されます．
+ファイル KGTN2011121604.pdf [(68.3 KB)] [kitasp 技術センター, 2011/12/16 13:28]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1279/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1171/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

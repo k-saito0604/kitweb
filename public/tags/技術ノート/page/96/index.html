@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc76/">
+                                      <a href="/posts/new_md/doc53/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc76/">[Windows] リモート管理ツール PsExec で，コマンド dir C: を実行させたが 「指定されたファイルが見つかりません」 と表示される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc53/">[GGH5.X] パラメタ -desktop (&amp;desktop=true) を指定したが，サーバーのデスクトップが表示されない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,405 +340,420 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc76/"><i class="far fa-calendar"></i> 2015-06-11</a>
+                                            <a href="/posts/new_md/doc53/"><i class="far fa-calendar"></i> 2015-06-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2015/06/12*
+[番号] 技術ノート KGTN 2015052601
+[現象] [GGH5.X] パラメタ -desktop (&amp;desktop=true) を指定したが，サーバーのデスクトップが表示されない．
+[説明] GGの既定の設定では，サーバーのデスクトップ表示機能は無効です．以下の手順でサーバーのデスクトップ表示機能を有効にして下さい．
+1.サービス GO-Global Application Publishing Service を停止する． 2.テキストエディタで ALLUSERSPROFILEGraphOnHostProperties.xml を開く． 3.プロパティ AllowDesktop の値に true を設定する．
+&lt;property id=&quot;AllowDesktop&quot; group=&quot;Miscellaneous&quot; type=&quot;BOOL&quot;&gt; &lt;value&gt;true&lt;/value&gt; &lt;/property&gt;  4.%ALLUSERSPROFILE%GraphOnHostProperties.xml を保存する． 5.サービス GO-Global Application Publishing Service を開始する．
+上記3でプロパティ AllowDesktop が見つからない場合は，枠内の情報 （行） を追加して下さい．
+ファイル KGTN2015052601.pdf [(134 KB)] [kitasp 技術センター, 2015/06/12 16:26]
+KGTN2015052601.jpg
+表示 [(25.8 KB)] [kitasp 技術センター, 2015/06/23 14:43]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc53/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc52/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc52/">[GGH5.X] 管理者権限が不要なActiveXクライアントのインストール手順を知りたい．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc52/"><i class="far fa-calendar"></i> 2015-06-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2015/06/12*
+[番号] 技術ノート KGTN 2015052602
+[現象] [GGH5.X] 管理者権限が不要なActiveXクライアントのインストール手順を知りたい．
+[説明] 管理者権限が不要なActiveXクライアントのインストール手順は以下の通りです．
+1.IEでGGサーバーのウエッブページにアクセスし，そのページの Download をクリックする． 2.下部の 「実行」 ボタンをクリックする． 3.「Next」 ボタンをクリックする． 4.&ldquo;I accept &hellip;&rdquo; を選択し，その後に 「Next」 ボタンをクリックする． 5.「Install」 ボタンをクリックする． 6.「Finish」 ボタンをクリックする． 7.IE を一旦閉じて，新たにGGサーバーのウエッブページにアクセスする．下記の Sign In ダイアログが表示されればActiveXクライアントのインストールは成功です． ファイル KGTN2015052602.pdf [(242 KB)] [kitasp 技術センター, 2015/06/12 16:27]
+KGTN2015052602-1.jpg
+表示 [(13.9 KB)] [kitasp 技術センター, 2015/06/23 14:52]
+KGTN2015052602-2.jpg
+表示 [(18 KB)] [kitasp 技術センター, 2015/06/23 14:52]
+KGTN2015052602-31.jpg
+表示 [(18.2 KB)] [kitasp 技術センター, 2015/06/23 14:52]
+KGTN2015052602-32.jpg
+表示 [(29 KB)] [kitasp 技術センター, 2015/06/23 14:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc52/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc55/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc55/">[hopTo Work 2.0] hopTo Work 2.0 のインストール方法は？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc55/"><i class="far fa-calendar"></i> 2015-06-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2015/06/12*
+[番号] 技術ノート KGTN 2015043001
+[現象] [hopTo Work 2.0] hopTo Work 2.0 のインストール方法は？
+[説明] hopTo Work 2.0 のインストールは，以下の手順で 「RD セッション ホスト」 上で行って下さい．
+1.管理者権限で hopToWorkAgent.exe を起動する． 2.&ldquo;I agree &hellip;&rdquo; にチェックを入れて Install をクリックする． 3.インストールが開始される． 4.Close をクリックする． 5.アプリケーションの hopTo Control Panel を右クリックして &ldquo;スタート画面にピン留めする&rdquo; を選択する． 6.スタートの hopTo Control Panel をクリックする． 7.Configuration をクリックする． 8.Next をクリックする． 9Finish をクリックする．なお，&ldquo;Office version and activation&rdquo; 以外の項目に×が表示された場合は，環境の確認 （設定） を行った後に再インストールを行って下さい． 10.Exit をクリックして下さい．なおライセンスのインストールを行う場合は Licensing をクリックして，技術ノート KGTN#2015042701 の手順に従って下さい． ファイル KGTN2015043001.pdf [(329 KB)] [kitasp 技術センター, 2015/06/12 16:18]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc55/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc102/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc102/">[hopTo Work 2.0] hopTo Work 2.0 のサーバーにGG （GO-Global for Windows 4.8） をインストールして構わないか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc102/"><i class="far fa-calendar"></i> 2015-06-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2015/06/12*
+[番号] 技術ノート KGTN 2015042801
+[現象] [hopTo Work 2.0] hopTo Work 2.0 のサーバーにGG （GO-Global for Windows 4.8） をインストールして構わないか？
+[説明] 弊社で Windows Server 2012 R2 + hopTo Work 2.0 + GO-Global for Windows 4.8.2 という環境で検証を行い，ぞれぞれのソフトウエアが正常に動作することを確認しました．また，メーカーに確認したところ 「特に問題なく動作する」 という回答がありました．
+Engineering tells me that it (GGH4.8) should work without any issues.  ファイル KGTN2015042801.pdf [(54.6 KB)] [kitasp 技術センター, 2015/06/12 16:17]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc102/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc58/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc58/">[hopTo Work 2.0] hopTo Work 2.0 のサーバーを構築するが，新たに専用のサーバーを１台用意すれば良いのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc58/"><i class="far fa-calendar"></i> 2015-06-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2015/06/12*
+[番号] 技術ノート KGTN 2015042401
+[現象] [hopTo Work 2.0] hopTo Work 2.0 のサーバーを構築するが，新たに専用のサーバーを１台用意すれば良いのか？
+[説明] hopTo Work 2.0 は単体でアプリケーションをクライアントへ配信するソフトウエアではなく， RDS （リモート デスクトップ サービス） の機能を利用してアプリケーションをタブレット （iOSおよびAndroid） へ配信するソフトウエアです．従って，RDSの環境 （新規または既存） を用意して，　&ldquo;リモート デスクトップ セッション ホスト&rdquo; のサーバーに hopTo Work 2.0 のAgentソフトウエアをインストールします．
+RDSの環境も新規に構築する場合は，最低２台のサーバーが必要となります．これは，RDSがドメインの環境を必要条件としており，かつRDSのサーバーとActive Directory サーバーが１台のサーバーに同居出来ないためです．つまり， Active Directory サーバーと RDSサーバー （hopTo Work 2.0 をインストール） という構成になります
+ファイル KGTN2015042401.pdf [(97.5 KB)] [kitasp 技術センター, 2015/06/12 16:06]
+KGTN2015042401.jpg
+表示 [(21.7 KB)] [kitasp 技術センター, 2015/06/23 10:24]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc58/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc56/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc56/">[hopTo Work 2.0] hopTo Work 2.0 のライセンスファイルのインストール方法は？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc56/"><i class="far fa-calendar"></i> 2015-06-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2015/06/12*
+[番号] 技術ノート KGTN 2015042701
+[現象] [hopTo Work 2.0] hopTo Work 2.0 のライセンスファイルのインストール方法は？
+[説明] hopTo Work 2.0 のライセンスファイルは，以下の手順でインストールを行って下さい．
+1.アプリで hopTo Work Control Panel を起動する． 2.Licensing をクリックする． 3.Activate license をクリックする． 4.Activation code 欄にライセンス情報 （アクティベーションコード） を入力する． 5.Number of seats to activate 欄で All を選択する． 6.Activate をクリックする． 7.OK をクリックする． 8.メモ帳を 「管理者として実行」 する． 9.「ファイル」 → 「開く」 を選択する． 10.ファイル C:Program FileshopToLicenseMgrhopto.opt を選択する （注：一覧に表示されない場合は，ファイル名の欄に hopto.opt と入力して下さい）． 11.「開く」 をクリックする． 12.利用出来るユーザーの情報 &ldquo;INCLUDE core USER &quot; を登録する （注：複数のユーザーを登録する場合は，この行を追加して下さい）． 13.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc56/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc66/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc66/">[hopTo Work 2.0] iOS環境での hopTo Work 2.0 の 「アプリケーションを起動する画面」 を見たい．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc66/"><i class="far fa-calendar"></i> 2015-06-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2015/06/12*
+[番号] 技術ノート KGTN 2015041003
+[現象] [hopTo Work 2.0] iOS環境での hopTo Work 2.0 の 「アプリケーションを起動する画面」 を見たい．
+[説明] iOS環境での hopTo Work 2.0 のアプリケーションの起動画面と， Remote App のアプリケーションの起動画面を以下に示します．
+hopTo Work のアプリケーション起動画面
+RemoteApp のアプリケーション起動画面 （リモート リソース　フィードの画面）
+ファイル KGTN2015041003.pdf [(82 KB)] [kitasp 技術センター, 2015/06/12 15:52]
+KGTN2015041003-1.jpg
+表示 [(15.5 KB)] [kitasp 技術センター, 2015/06/22 17:21]
+KGTN2015041003-2.jpg
+表示 [(16.1 KB)] [kitasp 技術センター, 2015/06/22 17:21]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc66/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc65/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc65/">[hopTo Work 2.0] iOS環境での hopTo Work 2.0 のアプリケーション利用時の画面を見たい．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc65/"><i class="far fa-calendar"></i> 2015-06-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2015/06/12*
+[番号] 技術ノート KGTN 2015041004
+[現象] [hopTo Work 2.0] iOS環境での hopTo Work 2.0 のアプリケーション利用時の画面を見たい．
+[説明] iOS環境での hopTo Work 2.0 のアプリケーション利用時の画面と， Remote App のアプリケーション利用時の画面を以下に示します．
+hopTo Work 2.0 では，複数のアプリケーションを起動した場合，それぞれのアプリケーションが別のカンバス上に配置され，アプリケーションの切り替えはカンバスの選択 （タブをクリック） で行います．
+RemoteApp では，複数のアプリケーションを起動した場合，各アプリケーションが同じカンバス上に配置され，アプリケーションの切り替えはアプリケーションのウインドウをクリックして行います．
+ファイル KGTN2015041004.pdf [(70.7 KB)] [kitasp 技術センター, 2015/06/12 15:53]
+KGTN2015041004-11.jpg
+表示 [(14.4 KB)] [kitasp 技術センター, 2015/06/22 17:25]
+KGTN2015041004-12.jpg
+表示 [(9.35 KB)] [kitasp 技術センター, 2015/06/22 17:25]
+KGTN2015041004-21.jpg
+表示 [(16.2 KB)] [kitasp 技術センター, 2015/06/22 17:25]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc65/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc62/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc62/">[hopTo Work] hopTo Work 2.0 は，Android の環境でどの日本語入力ソフトウエアをサポートするのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc62/"><i class="far fa-calendar"></i> 2015-06-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2015/06/12*
+[番号] 技術ノート KGTN 2015041602
+[現象] [hopTo Work] hopTo Work 2.0 は，Android の環境でどの日本語入力ソフトウエアをサポートするのか？
+[説明] hopTo Work 2.0 は，Android の環境で &ldquo;Google日本語入力&rdquo; のみをサポートします．なお，未確定の文字はアプリケーション上に反映されません．
+ファイル KGTN2015041602.pdf [(78.4 KB)] [kitasp 技術センター, 2015/06/12 15:59]
+KGTN2015041602.jpg
+表示 [(30.7 KB)] [kitasp 技術センター, 2015/06/22 17:48]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc62/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc2574/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc2574/">[GGH4.X-5.X] GGと IIS の関係について知りたい．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2574/"><i class="far fa-calendar"></i> 2015-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
 2015/06/11*
-[番号] 技術ノート KGTN 2015030902
-[現象] [Windows] リモート管理ツール PsExec で，コマンド dir C: を実行させたが 「指定されたファイルが見つかりません」 と表示される．
-[説明] dir コマンドはコマンド・プロンプトの内部コマンドであるため， PsExec で直接実行しようとするとファイル （コマンド） が見つかりません．コマンド・プロンプトの内部コマンドを実行したい場合は，以下のようにコマンド・プロンプトを介して実行して下さい．
-cmd.exe /c &ldquo;内部コマンド&rdquo;
-ファイル KGTN2015030902.pdf [(58.1 KB)] [kitasp 技術センター, 2015/06/11 17:34]
-KGTN2015030902.jpg
-表示 [(53.3 KB)] [kitasp 技術センター, 2015/06/18 13:48]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc76/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc74/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc74/">[Windows] リモート管理ツール PsExec で，サーバーの再起動を含むバッチ処理を実行したところ，再起動後も PsExec が終了しない．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc74/"><i class="far fa-calendar"></i> 2015-06-11</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2015/06/11*
-[番号] 技術ノート KGTN 2015030904
-[現象] [Windows] リモート管理ツール PsExec で，サーバーの再起動を含むバッチ処理を実行したところ，再起動後も PsExec が終了しない．
-[説明] PsExec のオプション ?d を指定して，アプリケーションの終了を待たないようにして下さい．
-ファイル KGTN2015030904.pdf [(48.5 KB)] [kitasp 技術センター, 2015/06/11 17:35]
-KGTN2015030904.jpg
-表示 [(25.1 KB)] [kitasp 技術センター, 2015/06/18 13:57]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc74/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc75/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc75/">[Windows] リモート管理ツール PsExec で，複数のコマンドを続けて実行したい．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc75/"><i class="far fa-calendar"></i> 2015-06-11</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2015/06/11*
-[番号] 技術ノート KGTN 2015030903
-[現象] [Windows] リモート管理ツール PsExec で，複数のコマンドを続けて実行したい．
-[説明] 複数のコマンドを &amp; で区切り，その文字列をコマンド・プロンプトに渡して下さい．
-ファイル KGTN2015030903.pdf [(53.2 KB)] [kitasp 技術センター, 2015/06/11 17:35]
-KGTN2015030903.jpg
-表示 [(54.9 KB)] [kitasp 技術センター, 2015/06/18 13:49]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc75/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc77/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc77/">[Windows] リモート管理ツール PsExec を利用したいが，管理対象のサーバーで必要なネットワーク設定は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc77/"><i class="far fa-calendar"></i> 2015-06-11</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2015/06/11*
-[番号] 技術ノート KGTN 2015030901
-[現象] [Windows] リモート管理ツール PsExec を利用したいが，管理対象のサーバーで必要なネットワーク設定は？
-[説明] &ldquo;セキュリティが強化された Windows ファイアウォール&rdquo; 画面で，グループが &ldquo;リモートサービス管理&rdquo; の受信の規則すべてを 「有効化」 して下さい （下記の赤枠の部分） ．
-ファイル KGTN2015030901.pdf [(130 KB)] [kitasp 技術センター, 2015/06/11 17:33]
-KGTN2015030901.jpg
-表示 [(88.3 KB)] [kitasp 技術センター, 2015/06/18 13:46]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc77/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc128/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc128/">[Windows] 物理マシンへ Windows (WS2008R2やWS2012R2) を無人インストールする方法は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc128/"><i class="far fa-calendar"></i> 2015-06-11</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2015/06/11*
-[番号] 技術ノート KGTN 2015022503
-[現象] [Windows] 物理マシンへ Windows (WS2008R2やWS2012R2) を無人インストールする方法は？
-[説明] 以下の手順で，Windows (WS2008R2やWS2012R2) の無人インストールを行うことが出来ます．
- Windows System Image Manager で応答ファイルを作成する． 応答ファイルを Autounattend.xml というファイル名でUSBディスクのルートに保存する． サーバーに WindowsのインストールDVDと上記のUSBディスクをセットする． サーバーを起動する．  https://msdn.microsoft.com/ja-jp/library/hh824950.aspx Windows セットアップの自動化の概要
-ファイル KGTN2015022503.pdf [(55.2 KB)] [kitasp 技術センター, 2015/06/11 17:24]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc128/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc129/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc129/">[Windows] 英語版の Windows Server 2012 R2 の初期インストールおよび sysprep に使える応答ファイルのサンプルが欲しい．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc129/"><i class="far fa-calendar"></i> 2015-06-11</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2015/06/11*
-[番号] 技術ノート KGTN 2015022502
-[現象] [Windows] 英語版の Windows Server 2012 R2 の初期インストールおよび sysprep に使える応答ファイルのサンプルが欲しい．
-[説明] 以下に，英語版の Windows Server 2012 R2 の初期インストールおよび sysprep に使える応答ファイルのサンプルを示します．なお，この内容についての助言は歓迎しますが，質問等はご遠慮下さい．
-ファイル KGTN2015022502.pdf [(76.6 KB)] [kitasp 技術センター, 2015/06/11 17:23]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc129/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc131/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc131/">[GGH4.X] 使用しているGGのバージョンを知る方法は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc131/"><i class="far fa-calendar"></i> 2015-01-30</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2015/01/30*
-[番号] 技術ノート KGTN 2015013001
-[現象] [GGH4.X] 使用しているGGのバージョンを知る方法は？
-[説明] プログラムウインドウ （Program Windows） → Help を選択することで，ご利用中のGGのバージョン情報等が表示されます．下記の赤枠の部分の上段がサーバー側のバージョンで，下段がクライアント側のバージョンです．サーバー側のバージョンとクライアント側のバージョンの差違により問題が発生することもありますので，サポートを受ける場合は，この両方のバージョンをお知らせ下さい．
-ファイル KGTN2015013001.pdf [(59.4 KB)] [kitasp 技術センター, 2015/01/30 16:14]
-KGTN2015013001.jpg
-表示 [(75.6 KB)] [kitasp 技術センター, 2015/01/30 16:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc131/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2333/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2333/">[GGW3.2.1/GGH4.X</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2333/"><i class="far fa-calendar"></i> 2015-01-30</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2015/01/30*
-[番号] 技術ノート KGTN 2015012901
-[現象] [GGW3.2.1/GGH4.X-5.X] ライセンス数を増やしたライセンスファイルのインストール手順は？
-[説明] 以下の手順で，新しいライセンスファイルのインストールおよびサーバーの確認および再設定を行って下さい．
-１．ライセンスファイルの置き換え ライセンスサーバーにあるライセンスファイル license.lic を新しいライセンスファイルで置き換えて，サーバーを再起動して下さい．
-２．ライセンス数の確認 ライセンスサーバーにある lmtools.exe を起動し， Server Status → Perform Status Enquiry を実行して，下記赤枠の部分のライセンス数が増えているかどうか確認して下さい．
-３．セッションの上限数の確認および再設定 ライセンスサーバーを使用する 「すべての」 GGサーバーのクラスタマネージャーを起動し， Tools → Host Options (Server Options) → Session Startup → Resource limits → Maximum sessions on this host の値 （そのGGサーバーのセッションの上限数） を確認して下さい．それらの値の合計が新しいライセンス数を下回る場合は，何れかのGGサーバーのMaximum sessions on this host の値を増やして，その合計がライセンス数と同じかまたはそれ以上になるようにして下さい．
-注意：上記のスクリーンショットは WS2012R2 + GGH4.8.2 の環境で撮ったものです．サーバーOSやGGのバージョンが異なる場合，画面のレイアウト等が若干異なる場合があります．
-ファイル KGTN2015012901.pdf [(101 KB)] [kitasp 技術センター, 2016/10/04 16:37]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2333/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1997/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1997/">[GGH4.X</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1997/"><i class="far fa-calendar"></i> 2015-01-23</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2015/01/23*
-[番号] 技術ノート KGTN 2015011901
-[現象] [GGH4.X-5.X] GGEasyLogon は，接続先に１つのGGサーバーしか指定出来ないのか？
-[説明] いいえ，複数のGGサーバーのIPアドレスをセミコロンで区切って複数指定することが出来ます．下記の設定例では，先ず 192.168.102.81 のGGサーバーにログオンします．空きセッションが無い場合や通信障害等でログオン出来ない場合は，次のIPアドレス 192.168.102.61 のGGサーバーにログオンします．このサーバーのログオンにも失敗した場合は，エラーダイアログが表示されます （GGのクライアントがエラーを表示します） ．
-本機能は常に指定されたIPアドレスの順に接続を試みますので，負荷分散の機能はありません．クライアント端末毎にIPアドレスの順序を変えることで，疑似的な負荷分散を行わせることは可能です．
-ファイル KGTN2015011901.pdf [(46.4 KB)] [kitasp 技術センター, 2017/10/10 10:37]
-KGTN2015011901.jpg
-表示 [(11.8 KB)] [kitasp 技術センター, 2017/10/10 10:37]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1997/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc132/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc132/">[GGH4.X] 自己責任で構わないので IE7 でActiveXクライアントを利用する方法はないのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc132/"><i class="far fa-calendar"></i> 2015-01-23</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2015/01/23*
-[番号] 技術ノート KGTN 2015012101
-[現象] [GGH4.X] 自己責任で構わないので IE7 でActiveXクライアントを利用する方法はないのか？
-[説明] logon.html が置かれたフォルダにある logon_PluginFunctions.js を以下のように修正 （IE7の認識処理の追加） することで，IE7でActiveXクライアントを利用出来るようになります．なお，このコードは GGH4.8.2 の環境で動作を確認しておりますので，他のバージョンでは修正が必要な場合があります．
-function GetPlatform() { // Browser name string, major version, and agent string var name = navigator.appName; var ver = parseInt(navigator.appVersion); var agent = navigator.userAgent; var platform = navigator.platform; // Microsoft Internet Explorer and version this.msie = (document.documentMode != undefined); this.msie4up = (document.documentMode &gt;= 4); this.msie6up = (document.documentMode &gt;= 6); this.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc132/" class="btn btn-template-main">続きを読む</a>
+[番号] 技術ノート KGTN 2015030502
+[現象] [GGH4.X-5.X] GGと IIS の関係について知りたい．
+[説明] 「GGは IIS を使って通信を行う」 とご理解なさっているなら，それは正しくありません． IIS の役割は，主にActiveXクライアントの配信 （ダウンロード） と接続先のGGサーバーの情報 （接続情報） を与えることのみを行います． IE がActiveXクライアントと接続先のGGサーバーの情報を得ると，ActiveXクライアントは指定されたGGサーバーに 「IIS を介することなく」 Rapid-Xプロトコル （ポート番号の既定値は491） で直接接続を行います．なお，GGのログオン画面は，ActiveXクライアントが直接表示した画面ではなく，GGサーバーが表示した画面です．
+ファイル KGTN2015030502.pdf [(100 KB)] [kitasp 技術センター, 2016/05/27 15:08]
+KGTN2015030502.jpg
+表示 [(22.5 KB)] [kitasp 技術センター, 2016/05/27 15:08]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2574/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -808,7 +823,7 @@ function GetPlatform() { // Browser name string, major version, and agent string
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

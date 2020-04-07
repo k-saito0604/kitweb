@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1306/">
+                                      <a href="/posts/new_md/doc1189/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1306/">フォルダ C:¥Windows¥Temp の下にある GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1189/">[GGW3.2.1] クライアント印刷機能で -ac allを指定した場合，ログオン時に構成されるプリンタの順序は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1306/"><i class="far fa-calendar"></i> 2011-09-08</a>
+                                            <a href="/posts/new_md/doc1189/"><i class="far fa-calendar"></i> 2011-12-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/08*
-[番号] 技術ノート KGTN 2011090801
-[現象] フォルダ C:¥Windows¥Temp の下にある GO-Global??? というファイルは何なのか？
-[説明] APS ログに記録する Operating Environment 情報， Application Environment 情報， Environment Variables 情報を保持する作業ファイルです．このファイルは，サービス GO-Global Application Publishing Service を停止すると自動的に削除されますが，障害等で残った （つまり3個以上存在） 場合は，必要に応じて GO-Global Application Publishing Service を停止後に，エクスプローラ等で削除して下さい．
-ファイル KGTN2011090801.pdf [(57.7 KB)] [kitasp 技術センター, 2011/09/08 12:01]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1306/" class="btn btn-template-main">続きを読む</a>
+2011/12/09*
+[番号] 技術ノート KGTN 2011120751
+[現象] [GGW3.2.1] クライアント印刷機能で &ldquo;-ac all&rdquo; を指定した場合，ログオン時に構成されるプリンタの順序は？
+[説明] GGW3.2.1.4466 で確認したところ， Win32API の EnumeratePrinters() がプリンタを数え上げる順にクライアントプリンタが構成されました．なお， GGH4.0ではこれとは異なる順序で構成されましたので，バージョンアップを前提とすれば 「クライアントプリンタの構成順序は不定」 とお考え下さい．
+補　足 print.ini を空 （[Client Data] 以外のセクションを全て削除） にしてログオンを行うと，構成した順序で print.ini にプリンタのセクションが追加されます．
+ファイル KGTN2011120751.pdf [(54.3 KB)] [kitasp 技術センター, 2011/12/09 13:15]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1189/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +361,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1307/">
+                                      <a href="/posts/new_md/doc1187/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +369,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1307/">外部のプログラムが認証情報を持っているが，それに合致しないユーザ （セッション） を排除したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1187/">[GGW3.2.1] 互換アップデートを適用したかどうか分る方法はないか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,18 +382,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1307/"><i class="far fa-calendar"></i> 2011-09-07</a>
+                                            <a href="/posts/new_md/doc1187/"><i class="far fa-calendar"></i> 2011-12-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/07*
-[番号] 技術ノート KGTN 2011090701
-[現象] 外部のプログラムが認証情報を持っているが，それに合致しないユーザ （セッション） を排除したい．
-[説明] 以下のようなアプリケーションを作成し，最初に起動するアプリケーションとして登録することで実現が可能です．
-環境変数 USERNAME からユーザ名を得る． このユーザ名をキーとして，外部のプログラムが持っている認証情報と照合する． 合致すればCreateProcess関数等で業務のメインプログラムを起動する． 合致しなければ 「認証されていません．強制終了します」 と言った文言のダイアログを表示し，プログラムを終了する （セッションも自動的に終了します） ．
-ファイル KGTN2011090701.pdf [(57.5 KB)] [kitasp 技術センター, 2011/09/07 13:45]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1307/" class="btn btn-template-main">続きを読む</a>
+2011/12/09*
+[番号] 技術ノート KGTN 2011120903
+[現象] [GGW3.2.1] 互換アップデートを適用したかどうか分る方法はないか？
+[説明] 互換アップデートのプログラムは，下記のファイル （の最新版） を Windows のシステムフォルダへコピーするのみで，特に適用されたかどうかの情報は記録しておりません．従って，互換アップデートが適用されているかどうかを知る方法はありません．敢えて言えば， 「互換アップデートがリリースされた時期」 と 「下記ファイルの更新日時」 を比較し， 1) 下記ファイルの中に明らかに日付が新しいものがある → より新しい互換アップデートが適用されている可能性が高い， 2) 下記ファイルの中にほぼ同じ日付のものがある → その互換アップデートが適用されている可能性が高い， 3) 下記ファイルの全ての日付が明らかに古い → その互換アップデートが適用されていない可能性が高い と考えることが出来ます．
+C:¥WINDOWS¥system32¥drivers¥VBM_NTOSKRNL.SYS C:¥WINDOWS¥system32¥drivers¥VBM_WIN32K.SYS C:¥WINDOWS¥system32¥drivers¥ggse.sys C:¥WINDOWS¥system32¥GGDD.DLL
+ファイル KGTN2011120903.pdf [(56 KB)] [kitasp 技術センター, 2011/12/09 13:55]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1187/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -402,7 +403,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1308/">
+                                      <a href="/posts/new_md/doc1190/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -410,7 +411,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1308/">ライセンスサーバの 3台冗長構成 （Three</a></h2>
+                                    <h2><a href="/posts/new_md/doc1190/">[GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，マウスポインタの移動も 「操作された」 と判断されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -423,17 +424,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1308/"><i class="far fa-calendar"></i> 2011-09-06</a>
+                                            <a href="/posts/new_md/doc1190/"><i class="far fa-calendar"></i> 2011-12-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/06*
-[番号] 技術ノート KGTN 2010120103
-[現象] ライセンスサーバの 3台冗長構成 （Three-Server Redundancy） とは具体的にどのような機能か？
-[説明] GGのライセンス管理はFlexLM （FlexNet Publisher） を使用しております．FlexLM の3台冗長構成 （Three-Server Redundancy） では，ハードウエア・フェイルオーバー保護のみを目的としており，負荷分散等は行われません （注意： 従って，3台冗長構成のライセンスサーバ１台を多数のサーバが利用するような運用は避けて下さい） ．3台冗長構成では，3台のサーバのうち１台のサーバが 「マスタ」 となり，そのサーバのみがライセンスを発行することが出来ます．マスタサーバがハードウエア障害等でダウンした場合は，残りの2台のサーバの何れかがマスタサーバに昇格し，ライセンスの発行を引き継ぎます （注：引継ぎや復帰には数十秒〜数分の時間を要します） ．そのサーバも続けてダウンした場合は，FlexLMの仕様で残りの1台がマスタサーバに昇格することはなく，ライセンスの発行が停止します．
-ファイル KGTN2010120103.pdf [(61.1 KB)] [kitasp 技術センター, 2011/09/06 19:08]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1308/" class="btn btn-template-main">続きを読む</a>
+2011/12/09*
+[番号] 技術ノート KGTN 2011120705
+[現象] [GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，マウスポインタの移動も 「操作された」 と判断されるのか？
+[説明] Program Window および GG上で動作しているアプリケーションのウインドウ上でマウスポインタを移動し続けると，無操作タイムアウトは発生しません．つまり，マウスポインタの移動も 「操作された」 と判断されます．確認は GGW3.2.1.4482 で行いました．
+補　足 クライアントにインストールされたアプリケーションの副作用等により，無操作タイムアウト機能が正しく動作しないことがあります．過去１件あった事例では， 「GGが表示したウインドウの何れかがアクティブな場合」 に，無操作タイムアウトが発生しませんでした．
+ファイル KGTN2011120705.pdf [(55.4 KB)] [kitasp 技術センター, 2011/12/09 10:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1190/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -443,7 +445,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1310/">
+                                      <a href="/posts/new_md/doc1193/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -451,7 +453,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1310/">[GGH4.0] クラスタマネージャの項目 Shared account の機能は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1193/">[GGH4.0] アンチウイルスソフト F-Secure Anti-Virus for Windows (Ver9.00) をインストールした環境で， GGH4.0 をインストールすると　SessionInitializer.exe　がウイルスとして認識され隔離される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -464,17 +466,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1310/"><i class="far fa-calendar"></i> 2011-09-05</a>
+                                            <a href="/posts/new_md/doc1193/"><i class="far fa-calendar"></i> 2011-12-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/05*
-[番号] 技術ノート KGTN 2011090502
-[現象] [GGH4.0] クラスタマネージャの項目 Shared account の機能は？
-[説明] １ユーザ１アカウントの運用が行われていない環境では，セッション再接続機能が動作すると，同一アカウントを使用している （サスペンド中の） 他セッションに接続されることがあります．このような予期せぬ接続が行われないように，そのアカウント名をShared account で指定します．指定されたアカウントは，再接続処理が行われませんので，予期せぬ接続等を抑止することが出来ます．
-ファイル KGTN2011090502.pdf [(51.8 KB)] [kitasp 技術センター, 2011/09/05 10:31]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1310/" class="btn btn-template-main">続きを読む</a>
+2011/12/08*
+[番号] 技術ノート KGTN 2011120902
+[現象] [GGH4.0] アンチウイルスソフト F-Secure Anti-Virus for Windows (Ver9.00) をインストールした環境で， GGH4.0 をインストールすると　SessionInitializer.exe　がウイルスとして認識され隔離される．
+[説明] 他のアンチウイルスソフトでは　SessionInitializer.exe　は　「脅威は検出されませんでした」　という結果になりますので， F-Secure Anti-Virus for Windows (Ver9.00) が SessionInitializer.exe をウイルスとして誤認したと考えられます．GGのインストールフォルダ （またはSessionInitializer.exe） を，ウイルスチェックの対象から除外するようにして下さい．
+ファイル KGTN2011120902.pdf [(54.8 KB)] [kitasp 技術センター, 2011/12/09 08:29]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1193/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -484,7 +486,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1309/">
+                                      <a href="/posts/new_md/doc1196/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -492,7 +494,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1309/">[GGW3.1.1] uc_???.html というファイル名の大きなログが出来ている．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1196/">[GGW3.2.1/GGH4.0] 無操作タイムアウトのカウントダウンがリセットされるのは，どんな時か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -505,19 +507,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1309/"><i class="far fa-calendar"></i> 2011-09-05</a>
+                                            <a href="/posts/new_md/doc1196/"><i class="far fa-calendar"></i> 2011-12-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/05*
-[番号] 技術ノート KGTN 2011090503
-[現象] [GGW3.1.1] uc_???.html というファイル名の大きなログが出来ている．
-[説明] uc_???.html というファイルは，サービス GO-Global Update Client が作成するログです．このサービスは，現状では特に役割を持ちませんので，サービス自体を無効にして下さい．
-サービス GO-Global Update Client のスタートアップの種類を 「無効」 にする． サーバを再起動する．
-なお，その大きなファイルは，エクスプローラー等で削除して構いません．
-ファイル KGTN2011090503.pdf [(51 KB)] [kitasp 技術センター, 2011/09/05 11:17]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1309/" class="btn btn-template-main">続きを読む</a>
+2011/12/08*
+[番号] 技術ノート KGTN 2011120710
+[現象] [GGW3.2.1/GGH4.0] 無操作タイムアウトのカウントダウンがリセットされるのは，どんな時か？
+[説明] GGが表示したウインドウ上でのマウス操作 （ウインドウ上でのマウスポインタの移動も含みます） およびキーボード操作が行われた時，無操作タイムアウトのカウントダウンがリセットされます．詳細については，技術ノート KGTN#2011120701 〜 KGTN#2011120708 をご覧下さい．
+ファイル KGTN2011120710.pdf [(49.6 KB)] [kitasp 技術センター, 2011/12/09 06:28]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1196/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -527,7 +527,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1311/">
+                                      <a href="/posts/new_md/doc1197/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -535,7 +535,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1311/">[GGW3.2.1] クライアントPCがサスペンドして，それを復帰させて再接続 （ログオン） すると，他のセッションの画面が表示される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1197/">[GGW3.2.1/GGH4.0] 無操作タイムアウトのテストを行いたいが，どのような手順で行えば良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -548,20 +548,21 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1311/"><i class="far fa-calendar"></i> 2011-09-05</a>
+                                            <a href="/posts/new_md/doc1197/"><i class="far fa-calendar"></i> 2011-12-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/05*
-[番号] 技術ノート KGTN 2011090501
-[現象] [GGW3.2.1] クライアントPCがサスペンドして，それを復帰させて再接続 （ログオン） すると，他のセッションの画面が表示される．
-[説明] １ユーザ１アカウントの運用が行われていない環境では，セッション再接続機能が動作すると，同一アカウントを使用している他セッションに接続されることがあります （仕様です） ．このような場合は，１ユーザ１アカウントの運用を徹底する，またはセッション再接続機能を無効にして下さい．セッション再接続機能を無効にするには，以下の２つの設定が必要です．
-クラスタマネージャで Disconnected sessions terminate = Immediately Server Options → Session Shutdown →　Disconnected sessions terminate Immediately を選択
-レジストリの設定を SessionTimeoutBrokenConnection = 0 HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥AppServer SessionTimeoutBrokenConnection DWORD 0 を設定
-詳細については，管理者ガイドまたは技術ノートをご覧下さい．
-ファイル KGTN2011090501.pdf [(67.1 KB)] [kitasp 技術センター, 2011/09/05 09:27]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1311/" class="btn btn-template-main">続きを読む</a>
+2011/12/08*
+[番号] 技術ノート KGTN 2011120709
+[現象] [GGW3.2.1/GGH4.0] 無操作タイムアウトのテストを行いたいが，どのような手順で行えば良いか？
+[説明] 例えば，以下のような方法があります．なお，これらはあくまでも参考であり，妥当性や正確性等を保証するものではありません．
+マウスポインタの移動に関するテスト Program Window 上で実際にマウスポインタを移動させる．
+常に描画を行うアプリケーションに関するテスト ストップウォッチのプログラム 「SGウォッチ」 等を計測状態にする．
+ファイルコピーに関するテスト 数GBのファイルをコピーする （両方向テストが必要） ．
+印刷に関するテスト ページ数の多いワード等のドキュメントを1000部印刷する．
+ファイル KGTN2011120709.pdf [(60 KB)] [kitasp 技術センター, 2011/12/08 13:43]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1197/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -571,7 +572,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1323/">
+                                      <a href="/posts/new_md/doc1194/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -579,7 +580,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1323/">[GGH4.0] ActiveXクライアントで，接続先サーバ, ユーザID, パスワードを明示的に指定したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1194/">[GGW3.2.1] GGをインストールし，ライセンスファイルもコピーした． license.log や lmtools.exe に異常は見られないのに，クラスタマネージャを起動すると A GO-Globallicense does not exist ???. Please provide a valid license file. というエラーダイアログが表示される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -592,19 +593,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1323/"><i class="far fa-calendar"></i> 2011-09-02</a>
+                                            <a href="/posts/new_md/doc1194/"><i class="far fa-calendar"></i> 2011-12-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/02*
-[番号] 技術ノート KGTN 2011090102
-[現象] [GGH4.0] ActiveXクライアントで，接続先サーバ, ユーザID, パスワードを明示的に指定したい．
-[説明] GGW3.2.1では logon.html の内容を書き換える必要がありましたが， GGH4.0 では以下のようにURLにパラメタを与えることで接続先のサーバを明示的に指定することが出来ます．
-http://???/logon.html?direct=true&amp;host=192.168.102.71&amp;user=myUserID&amp;password=myPass
-この例では，ActiveXクライアントは 192.168.102.71 のサーバへ接続を試みます．接続に成功した場合，ユーザID myUserID とパスワード myPass でログオンを試みます．
-ファイル KGTN2011090102.pdf [(57.2 KB)] [kitasp 技術センター, 2011/09/02 09:16]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1323/" class="btn btn-template-main">続きを読む</a>
+2011/12/08*
+[番号] 技術ノート KGTN 2011120801
+[現象] [GGW3.2.1] GGをインストールし，ライセンスファイルもコピーした． license.log や lmtools.exe に異常は見られないのに，クラスタマネージャを起動すると &ldquo;A GO-Global license does not exist ???. Please provide a valid license file.&rdquo; というエラーダイアログが表示される．
+[説明] システム環境変数 LM_LICENSE_FILE の値が空か，または正しくないのが原因です． [システムのプロパティ] → [詳細設定] → [環境変数] → [システム環境変数] → [変数LM_LICENSE_FILE をクリック] → [編集] を選択し，変数値にライセンスファイルを置いたフォルダのパスを指定して下さい．
+補　足 システム環境変数ではなく，レジストリで設定する方法もあります．
+レジストリエディタ （regedit） を起動する． &ldquo;¥HKLM¥Software¥FLEXlm License Manager&rdquo;　へ行く． [編集] → [新規] → [文字列値] 名前に &ldquo;BLM_LICENSE_FILE&rdquo; を設定する． &ldquo;BLM_LICENSE_FILE&rdquo; を選択した状態で右クリックする． [修正] 値のデータにライセンスファイルを置いたフォルダのパスを指定する． [OK] レジストリエディタを閉じる． サーバを再起動する．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1194/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -614,7 +614,7 @@ http://???/logon.html?direct=true&amp;host=192.168.102.71&amp;user=myUserID&amp;
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1322/">
+                                      <a href="/posts/new_md/doc1195/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -622,7 +622,7 @@ http://???/logon.html?direct=true&amp;host=192.168.102.71&amp;user=myUserID&amp;
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1322/">[GGH4.0] ActiveXクライアントで，特定アプリケーションのみを起動したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1195/">[GGW3.2.1] 検証のためクライアントプリンタの構成を失敗させたいが，どのような方法があるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -635,21 +635,21 @@ http://???/logon.html?direct=true&amp;host=192.168.102.71&amp;user=myUserID&amp;
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1322/"><i class="far fa-calendar"></i> 2011-09-02</a>
+                                            <a href="/posts/new_md/doc1195/"><i class="far fa-calendar"></i> 2011-12-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/02*
-[番号] 技術ノート KGTN 2011090103
-[現象] [GGH4.0] ActiveXクライアントで，特定アプリケーションのみを起動したい．
-[説明] logon.html を編集し，パラメタ app にアプリケーションを指定することで，特定アプリケーションのみを起動することが可能になります （つまりプログラム・ウインドウを表示せずにアプリケーションを起動） ．
-GGに登録されたアプリケーションを表示名 （Display Name） で起動する場合
-var app = &ldquo;Wordpad&rdquo;; var args = &ldquo;&quot;;
-絶対パスでアプリケーションを指定して起動する場合
-var app = &ldquo;C:¥¥Program Files¥¥Windows NT¥¥Accessories¥¥wordpad.exe&rdquo;; var args = &ldquo;&quot;;
-ファイル KGTN2011090103.pdf [(52.5 KB)] [kitasp 技術センター, 2011/09/02 09:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1322/" class="btn btn-template-main">続きを読む</a>
+2011/12/08*
+[番号] 技術ノート KGTN 2011120901
+[現象] [GGW3.2.1] 検証のためクライアントプリンタの構成を失敗させたいが，どのような方法があるか？
+[説明] 以下の方法で，クライアントプリンタの構成を失敗させることが出来ます．
+クラスタマネージャ　[Universal Driver] のチェックを外し， [Windows folder] のチェックを入れる． サーバ側にローカルプリンタを１台登録する． クライアント側にある print.ini を削除する． クライアント側にローカルプリンタを１台登録する （但しサーバ側にドライバが存在しないこと） ． GGサーバへログオンする． アプリケーションを起動し適当な帳票を印刷する．
+アプリケーションによって，以下のようなダイアログが表示されます．
+「プリンタが組み込まれていません」 という内容のエラーダイアログ サーバ側のプリンタを選択するダイアログ その他警告や情報のダイアログ
+なお，この手順はあくまでも参考であり，妥当性や正確性等を保証するものではありません．
+ファイル KGTN2011120901.pdf [(63 KB)] [kitasp 技術センター, 2011/12/09 07:03]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1195/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -659,7 +659,7 @@ var app = &ldquo;C:¥¥Program Files¥¥Windows NT¥¥Accessories¥¥wordpad.exe
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1314/">
+                                      <a href="/posts/new_md/doc1199/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -667,7 +667,7 @@ var app = &ldquo;C:¥¥Program Files¥¥Windows NT¥¥Accessories¥¥wordpad.exe
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1314/">[GGH4.0] Automatically update clients を有効にしているが， ActiveX クライアントを利用している IE6 の環境のみ働かない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1199/">[GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントドライブ機能で大きなファイルをコピーしている場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -680,18 +680,18 @@ var app = &ldquo;C:¥¥Program Files¥¥Windows NT¥¥Accessories¥¥wordpad.exe
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1314/"><i class="far fa-calendar"></i> 2011-09-02</a>
+                                            <a href="/posts/new_md/doc1199/"><i class="far fa-calendar"></i> 2011-12-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/02*
-[番号] 技術ノート KGTN 2011090208
-[現象] [GGH4.0] Automatically update clients を有効にしているが， ActiveX クライアントを利用している IE6 の環境のみ働かない．
-[説明] ActiveX クライアントを利用している IE6 の環境に関しては，クライアントの自動更新機能は働きません．これは制限事項 （非サポート） になります．
-Automatic client updating for users running the ActiveX Control with Internet Explorer 6.0 is not supported.
-ファイル KGTN2011090208.pdf [(53.7 KB)] [kitasp 技術センター, 2011/09/02 11:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1314/" class="btn btn-template-main">続きを読む</a>
+2011/12/08*
+[番号] 技術ノート KGTN 2011120707
+[現象] [GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントドライブ機能で大きなファイルをコピーしている場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？
+[説明] クライアントドライブ機能で大きなファイルをコピーしている場合であっても，マウスやキーボード操作がなければ，無操作タイムアウトは発生します．
+補　足 一般的な無操作タイムアウトに関する情報は，技術ノート KGTN#2011120705 をご覧下さい．
+ファイル KGTN2011120707.pdf [(48 KB)] [kitasp 技術センター, 2011/12/08 12:30]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1199/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -701,7 +701,7 @@ Automatic client updating for users running the ActiveX Control with Internet Ex
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1318/">
+                                      <a href="/posts/new_md/doc1198/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -709,7 +709,7 @@ Automatic client updating for users running the ActiveX Control with Internet Ex
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1318/">[GGH4.0] GGのポート番号を変更した時，何か作業が必要か？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1198/">[GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントプリンタ機能で大きなファイルを印刷している場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -722,18 +722,18 @@ Automatic client updating for users running the ActiveX Control with Internet Ex
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1318/"><i class="far fa-calendar"></i> 2011-09-02</a>
+                                            <a href="/posts/new_md/doc1198/"><i class="far fa-calendar"></i> 2011-12-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/02*
-[番号] 技術ノート KGTN 2011090204
-[現象] [GGH4.0] GGのポート番号を変更した時，何か作業が必要か？
-[説明] GGのポート番号を変更しただけでは機能しません．以下の手順で変更作業を行って下さい．
-クラスタマネージャでポート番号を変更 クラスタマネージャを終了 Print Spooler サービスを再起動 （停止→開始） GO-Global Application Publishing Service サービスを再起動 （停止→開始）
-ファイル KGTN2011090204.pdf [(50.5 KB)] [kitasp 技術センター, 2011/09/02 10:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1318/" class="btn btn-template-main">続きを読む</a>
+2011/12/08*
+[番号] 技術ノート KGTN 2011120708
+[現象] [GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントプリンタ機能で大きなファイルを印刷している場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？
+[説明] クライアントプリンタ機能で大きなファイルを印刷している場合であっても，マウスやキーボード操作がなければ，無操作タイムアウトは発生します．なお，サーバ側のプリンタはセッションの切断とともに削除されますので，印刷ジョブも併せて消滅します．クライアント側のプリンタについては，既に蓄積されたジョブがあれば消滅せずに残ります．
+補　足 一般的な無操作タイムアウトに関する情報は，技術ノート KGTN#2011120705 をご覧下さい．
+ファイル KGTN2011120708.pdf [(53.2 KB)] [kitasp 技術センター, 2011/12/08 13:06]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1198/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -803,7 +803,7 @@ Automatic client updating for users running the ActiveX Control with Internet Ex
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

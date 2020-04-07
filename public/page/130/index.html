@@ -409,25 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc350/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc393/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc350/">[GGH4.X] GGH4.0～4.7 から GGH4.8 へバージョンアップする場合，上書きインストールではダメなのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc393/">[GGH4.X] クラスタマネージャで Automatically update clients を有効にしているにも関わらず，クライアントのアップグレード （バージョンアップ） が行われない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2013-10-16
+                            日付 2014-01-29
                             </p>
                             <p class="intro">*技術ノート
-2013/10/16*
-[番号] 技術ノート KGTN 2013101602
-[現象] [GGH4.X] GGH4.0～4.7 から GGH4.8 へバージョンアップする場合，上書きインストールではダメなのか？
-[説明] GGH4.0～4.7 に互換アップデート （2013年4月の &ldquo;KB2813170&rdquo; 向け互換アップデート） が適用されていない場合は， GGH4.8を上書きインストールして構いません．もし適用されている場合は，この互換アップデートとGG本体 （GGH4.0～4.7） をアンインストールする必要があります．これは互換アップデートの内容に起因する制限で，今後リリースされる互換アップデートでは，この制限は解消される見込みです．
-ファイル kgtn2013101602.pdf [(51.2 KB)] [kitasp 技術センター, 2014/02/07 16:42]</p>
+2014/01/29*
+[番号] 技術ノート KGTN 2014012301
+[現象] [GGH4.X] クラスタマネージャで Automatically update clients を有効にしているにも関わらず，クライアントのアップグレード （バージョンアップ） が行われない．
+[説明] Windowsクライアントのインストール先がデフォルト値でない場合，アップグレード （バージョンアップ） が行われないという既知の問題があります．Windowsクライアントのアンインストール → Windowsクライアントのインストール （既定値） を行って下さい．
+The automatic client update feature is not supported if the client modifies the client installer to install the client in a location other than the default location. Please install the client in the default client location.  ファイル KGTN2014012301.pdf [(49.3 KB)] [kitasp 技術センター, 2014/01/29 17:08]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc350/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc393/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,25 +446,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc379/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc479/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc379/">[GGW3.2.1/GGH4.X] BSOD （ブルースクリーンのメモリダンプ） が発生したが，GG の不具合ではないのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc479/">[GGH4.X] クラスタマネージャに登録していないアプリケーションを起動したい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2013-10-16
+                            日付 2014-01-29
                             </p>
                             <p class="intro">*技術ノート
-2013/10/16*
-[番号] 技術ノート KGTN 2013101601
-[現象] [GGW3.2.1/GGH4.X] BSOD （ブルースクリーンのメモリダンプ） が発生したが，GG の不具合ではないのか？
-[説明] GG 上で動作するアプリケーションは，GG のドライバ ggse.sys （GO-Global System Extension Driver） を 介して Windows が管理するメモリの確保や解放を行います．このため，メモリの枯渇や不正な処理が行われてBSOD が発生した場合，表面的な調査で ggse.sys が原因と結論付けた事例が幾つも存在しました （GGW3.2.XおよびGGH4.X） ．しかしながら，弊社またはGraphOn社で詳細に調査を行うと，その何れもがメモリの枯渇やアプリケーションの不正な処理が原因でした．先ず，技術ノート KGTN2013101502 の内容を試してBSODが改善するかどうか確認して下さい．
-ファイル KGTN2013101601.pdf [(58.2 KB)] [kitasp 技術センター, 2014/01/29 17:44]</p>
+2014/01/29*
+[番号] 技術ノート KGTN 2013112603
+[現象] [GGH4.X] クラスタマネージャに登録していないアプリケーションを起動したい．
+[説明] Windowsクライアントのパラメタ （-a） またはActiveXクライアントのパラメタ （app） で，実行プログラムの絶対パスを指定することで，クラスタマネージャに登録していないアプリケーションを起動することが出来ます．
+例： http://&lt;ウエッブサーバ&gt;/logon.html?user=Test&amp;password=Pass&amp;app=C:AppsTeraPad.exe
+ファイル KGTN2013112603.pdf [(50.2 KB)] [kitasp 技術センター, 2014/01/29 11:55]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc379/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc479/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -483,25 +484,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc515/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc469/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc515/">[GGH4.6] GGH4.6には２つのビルドがあるのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc469/">[GGH4.X] システムのプロパティでユーザの環境変数を定義したが，GGのセッション中に存在しない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2013-10-15
+                            日付 2014-01-29
                             </p>
                             <p class="intro">*技術ノート
-2013/10/15*
-[番号] 技術ノート KGTN 2013101501
-[現象] [GGH4.6] GGH4.6には２つのビルドがあるのか？
-[説明] GGH4.6にはGGH4.6.0.16538 (2013/04/02) とGGH4.6.0.16652 (2013/04/10) の２つのビルドが存在しますが， kitASPでは新しい方のビルド GGH4.6.0.16652 のみを出荷しております．なお，大きな差異は更新プログラム KB2813170 への対応です．
-ファイル KGTN2013101501.pdf [(41.5 KB)] [kitasp 技術センター, 2013/10/15 12:44]</p>
+2014/01/29*
+[番号] 技術ノート KGTN 2013120301
+[現象] [GGH4.X] システムのプロパティでユーザの環境変数を定義したが，GGのセッション中に存在しない．
+[説明] WS2008R2 の環境ではシステムのプロパティで定義したユーザの環境変数がGGのセッション中に存在しますが，WS2003およびWS2008の環境ではシステムのプロパティで定義したユーザの環境変数がGGのセッション中に存在しないという現象を確認しております （GraphOn社では WS2003R2 のみで発生） ．現時点では制限事項で，将来のリリースで修正する方向で調査中です．本件が修正された場合は，リリースノートに管理番号 ECR#14492 で記述されます．
+ファイル KGTN2013120301.pdf [(51.4 KB)] [kitasp 技術センター, 2014/01/29 13:20]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc515/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc469/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -520,25 +521,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc516/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc466/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc516/">[GGH4.X] ログオンスクリプトで非同期に処理を行いたい．</a></h4>
+                            <h4><a href="/posts/new_md/doc466/">[GGH4.X] バージョンが 4.5.0 → 4.6.0 → 4.7.0 → 4.8.0 と上がったが，次のリリースは 4.9.0 なのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2013-10-15
+                            日付 2014-01-29
                             </p>
                             <p class="intro">*技術ノート
-2013/10/15*
-[番号] 技術ノート KGTN 2013101101
-[現象] [GGH4.X] ログオンスクリプトで非同期に処理を行いたい．
-[説明] 以下に非同期実行 （クライアントプリンタの構成状況のチェック） のサンプルコードを示します．
-ファイル KGTN2013101101.pdf [(52.3 KB)] [kitasp 技術センター, 2013/10/15 09:28]</p>
+2014/01/29*
+[番号] 技術ノート KGTN 2013120401
+[現象] [GGH4.X] バージョンが 4.5.0 → 4.6.0 → 4.7.0 → 4.8.0 と上がったが，次のリリースは 4.9.0 なのか？
+[説明] バージョンが 4.5.0 → 4.6.0 → 4.7.0 → 4.8.0 と上がった件について，GraphOn社も混乱を招いたことを理解しております．次のリリースは， 4.8.1 （あるいは4.8.X） になる見込みです．
+ファイル KGTN2013120401.pdf [(41.4 KB)] [kitasp 技術センター, 2014/01/29 13:26]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc516/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc466/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

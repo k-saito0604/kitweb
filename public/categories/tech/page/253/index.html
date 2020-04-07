@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1864/">
+                                      <a href="/posts/new_md/doc1701/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1864/">GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1701/">プラグイン LaunchBrowser を使ってファイルをダウンロードさせたいが，ウエッブサーバのドキュメント外に置かれたファイルをダウンロードさせることは可能か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1864/"><i class="far fa-calendar"></i> 2010-02-23</a>
+                                            <a href="/posts/new_md/doc1701/"><i class="far fa-calendar"></i> 2010-07-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/02/23*
-[番号] 技術ノート KGTN 2010022301
-[現象] GO-Global for Windows Ver3.2系は，Windows Server 2008 R2 （64ビット） をサポートするのか？
-[説明] 現行バージョンでは Windows Server 2008 R2 （64ビット） をサポートしませんが，次期メジャーバージョン &ldquo;GO-Global for Windows Ver.4&rdquo; ではサポートする予定です．なお，リリース時期等については未定です．
-ファイル KGTN2010022301.pdf [(42.6 KB)] [kitasp 技術センター, 2010/02/23 09:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1864/" class="btn btn-template-main">続きを読む</a>
+2010/07/15*
+[番号] 技術ノート KGTN 2010071501
+[現象] プラグイン LaunchBrowser を使ってファイルをダウンロードさせたいが，ウエッブサーバのドキュメント外に置かれたファイルをダウンロードさせることは可能か？
+[説明] CGI （スクリプト） を利用することで可能です．PHPのサンプルを以下に示します．
+// // Example: // 1) http://localhost/gm_download.php?file=gg-explorer.exe // 2) http://localhost/gm_download.php?file=12345.dat // $fileDir = &ldquo;C:¥¥GraphOn¥¥BIN¥¥&rdquo;; $fileName = $_GET[&ldquo;file&rdquo;]; //- //- $fileNameA is &ldquo;actual file name&rdquo; //- $fileNameA = &ldquo;XXX.EXE&rdquo;; // $fileName; //- $filePath = $fileDir . $fileName; if((file_exists($filePath) != TRUE)||(is_dir($filePath) == TRUE)) { exit(&ldquo;File not found! - ¥&rdquo;&rdquo; . $fileName . &ldquo;¥&rdquo;&quot;); } $fileLength = filesize($filePath); header(&ldquo;Content-Disposition: attachment; filename=$fileNameA&rdquo;); header(&ldquo;Content-Length:$fileLength&rdquo;); header(&ldquo;Content-Type: application/octet-stream&rdquo;); readfile($filePath); ?</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1701/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1863/">
+                                      <a href="/posts/new_md/doc1705/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1863/">Windows Updateの適用方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1705/">クライアントドライブ機能において，受け取り側 （クライアント） のドライブに十分な容量が無い時，コピーを行うと0バイトのファイルが作成される．また，この時警告ダイアログは表示されない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,18 +381,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1863/"><i class="far fa-calendar"></i> 2010-02-23</a>
+                                            <a href="/posts/new_md/doc1705/"><i class="far fa-calendar"></i> 2010-07-12</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/02/23*
-[番号] 技術ノート KGTN 2010022302
-[現象] Windows Updateの適用方法は？
-[説明] Windows Update の適用は，原則として以下の手順で行って下さい．
-IE を起動． &ldquo;Windows Update&rdquo; を選択． &ldquo;高速&rdquo; を選択． &ldquo;更新プログラムのインストール&rdquo; を実行． &ldquo;今すぐ再起動&rdquo; を選択 （サーバを再起動） ． 上記1〜5を適用可能な更新プログラムが無くなるまで繰り返し実行．
-ファイル KGTN2010022302.pdf [(46.3 KB)] [kitasp 技術センター, 2010/02/23 11:54]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1863/" class="btn btn-template-main">続きを読む</a>
+2010/07/12*
+[番号] 技術ノート KGTN 2010071201
+[現象] クライアントドライブ機能において，受け取り側 （クライアント） のドライブに十分な容量が無い時，コピーを行うと0バイトのファイルが作成される．また，この時警告ダイアログは表示されない．
+[説明] 弊社およびGraphOn社で現象を確認しました．この動作は，技術ノート KGTN#2009091501 の問題と関連しており，Ver3.2 系での制限事項 （既知の問題） となります．
+ファイル KGTN2010071201.pdf [(50.2 KB)] [kitasp 技術センター, 2010/07/12 09:43]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1705/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -402,7 +401,7 @@ IE を起動． &ldquo;Windows Update&rdquo; を選択． &ldquo;高速&rdquo; �
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1862/">
+                                      <a href="/posts/new_md/doc1703/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -410,7 +409,7 @@ IE を起動． &ldquo;Windows Update&rdquo; を選択． &ldquo;高速&rdquo; �
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1862/">セッションが切断される問題が発生したが，何を調べれば良いのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1703/">多数のサーバにGGをインストールするが，クラスタマネージャの設定を簡単に行う方法はないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -423,20 +422,19 @@ IE を起動． &ldquo;Windows Update&rdquo; を選択． &ldquo;高速&rdquo; �
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1862/"><i class="far fa-calendar"></i> 2010-02-23</a>
+                                            <a href="/posts/new_md/doc1703/"><i class="far fa-calendar"></i> 2010-07-12</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/02/23*
-[番号] 技術ノート KGTN 2010022401
-[現象] セッションが切断される問題が発生したが，何を調べれば良いのか？
-[説明] 予期せぬセッションの切断は，多くの事例ではネットワーク側の障害によって発生しています．先ず，GG自体の問題かどうか切り分けるために，以下の設定を行い状況が改善するかどうか確認して下さい．
-レジストリエディタ （regedit.exe） を起動する． HKEY_LOCAL_MACHINE¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥AppServer を開く． SessionVerification の値を 0 に変更する． レジストリエディタを終了する． サーバを再起動する．
-この設定変更により，GGサーバとクライアント間での30秒毎のPING （到達性確認） が行われなくなり，GGはどのような状況でも自発的にセッションを切断しないようになります．もし，この状況でも予期せぬセッションの切断が発生する場合は， Windows （WinSock） レベルでコネクションの切断が検出されたことになります．つまり，一般的にはネットワーク側で障害が発生したと考えられます．
-参　考 予期せぬセッションの切断が （ネットワークレベルの問題で） 比較的頻繁に発生し，かつ原因が分からない場合は，「ネットワーク機材のオートネゴシエーションの不整合」 「ルーター間のパラメタの不整合」 「電圧低下や熱暴走等によるネットワーク機材の不安定動作」 等も考えられます．あらゆる可能性を考えて，原因の調査を行って下さい．
-ファイル KGTN2010022401.pdf [(74 KB)] [kitasp 技術センター, 2010/02/24 08:40]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1862/" class="btn btn-template-main">続きを読む</a>
+2010/07/12*
+[番号] 技術ノート KGTN 2010071301
+[現象] 多数のサーバにGGをインストールするが，クラスタマネージャの設定を簡単に行う方法はないのか？
+[説明] クラスタマネージャで設定する項目は，全てレジストリに保持されますので，以下の手順で他サーバへ設定することが出来ます．
+ひな形になるサーバ上でクラスタマネージャの各項目を設定する． レジストリエディタを起動し，以下のレジストリをエクスポートする． HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥AppServer 設定を反映したい各サーバ上でエクスポートしたレジストリ （のファイル） をインポートする．
+なお，上記3でインポートする時は，APSが停止した状態で行って下さい．
+ファイル KGTN2010071301.pdf [(52.8 KB)] [kitasp 技術センター, 2010/07/13 08:04]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1703/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -446,7 +444,7 @@ IE を起動． &ldquo;Windows Update&rdquo; を選択． &ldquo;高速&rdquo; �
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2456/">
+                                      <a href="/posts/new_md/doc1704/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -454,7 +452,7 @@ IE を起動． &ldquo;Windows Update&rdquo; を選択． &ldquo;高速&rdquo; �
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2456/">[GGW3.2.1/GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc1704/">無操作タイムアウト （アイドルタイムアウト） の判断に利用されるイベントを知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -467,21 +465,17 @@ IE を起動． &ldquo;Windows Update&rdquo; を選択． &ldquo;高速&rdquo; �
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2456/"><i class="far fa-calendar"></i> 2010-02-21</a>
+                                            <a href="/posts/new_md/doc1704/"><i class="far fa-calendar"></i> 2010-07-12</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/02/21*
-[番号] 技術ノート KGTN 2010021702
-[現象] [GGW3.2.1/GGH4.X-5.X] GGのログ （ログレベル4設定時のAPSログとイベントログ） にはどのような情報が記録されるのか？
-[説明] ログレベル4設定時のAPSログとイベントログ （アプリケーション） には，以下の情報が記録されます．主な内容は，セッションの開始と終了，アプリケーション （プロセス） の開始と終了に関する情報で，アプリケーションの利用に関する監査情報等は記録されません．このような監査情報が必要な場合は，情報セキュリティ対策ソフトウェア等の併用をお願いします．
-The GO-Global Application Publishing Service began successfully. GGのアプリケーション配信機能が正常に起動したことを示します．
-Session &ldquo;Logon1 on Server1&rdquo; started. 何れかのクライアントが接続して来たことを示します．
-Process #nnnn (Logon.exe) started in session &ldquo;Logon1 on Server1&rdquo;. 接続して来たクライアントのログオン処理が開始されたことを示します．
-User Administrator logged on to session &ldquo;Logon1 on Server1&rdquo;, and the session was renamed to &ldquo;Administrator on Server1&rdquo;. 接続して来たクライアントのログオン処理が完了したことを示します．この例では，ユーザ名が Administrator で，一意的なセッション名が Administrator on Server1 です．
-Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2456/" class="btn btn-template-main">続きを読む</a>
+2010/07/12*
+[番号] 技術ノート KGTN 2010071202
+[現象] 無操作タイムアウト （アイドルタイムアウト） の判断に利用されるイベントを知りたい．
+[説明] 無操作タイムアウト （アイドルタイムアウト） の判断は，サーバとクライアント間の通信の有無をもとに行われます （注：死活監視のパケットを除きます） ．従って，キーボード操作・マウス操作・画面描画・ファイルコピー・印刷などがその判断に利用されます．
+ファイル KGTN2010071202.pdf [(45.8 KB)] [kitasp 技術センター, 2010/07/12 10:11]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1704/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -491,7 +485,7 @@ Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1867/">
+                                      <a href="/posts/new_md/doc1706/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -499,7 +493,7 @@ Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1867/">Visio 2007 Viewer は，Ver3.2.1 上で動作するのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1706/">GGのセッションが切断されたが，原因としてどのようなことが考えられるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -512,17 +506,26 @@ Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1867/"><i class="far fa-calendar"></i> 2010-02-21</a>
+                                            <a href="/posts/new_md/doc1706/"><i class="far fa-calendar"></i> 2010-07-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/02/21*
-[番号] 技術ノート KGTN 2010021802
-[現象] Visio 2007 Viewer は，Ver3.2.1 上で動作するのか？
-[説明] 過去のVisioに添付されたサンプルデータ （比較的大きな図面） で確認した範囲では，特に問題なく動作しております．
-ファイル KGTN2010021802.pdf [(43.3 KB)] [kitasp 技術センター, 2010/02/22 08:23]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1867/" class="btn btn-template-main">続きを読む</a>
+2010/07/09*
+[番号] 技術ノート KGTN 2010070601
+[現象] GGのセッションが切断されたが，原因としてどのようなことが考えられるか？
+[説明] 予期せぬGGのセッション断は，以下のような多くの可能性が考えられます．
+ネットワークの問題 事例： ネットワーク機材の不具合，UDPが絡んでのネットワークの輻輳
+ハードウエアの問題 事例： 集約したC:ドライブ装置の過負荷 （Windowsのパフォーマンス低下）
+OS （Windows） の問題 事例： 不適切なチューニング， 連続運用による動作不安定
+アプリケーションの問題 事例： 過度な描画
+クライアントの問題 事例： 実メモリ不足等によるスワップの多発
+その他 事例： 日本〜中国間での利用
+このように，さまざま事象で予期せぬセッション断が発生する可能性がありますので，原因調査に当たっては出来るだけ広範な情報を採取＆蓄積し，そしてそれらを分析して原因を絞り込むようにして下さい．
+補足1 GGは標準状態で，次のアルゴリズムでコネクションの死活監視を行います： クライアントは，サーバとの接続が維持されているかを確認するために，30秒毎にgg-pingパケット （要求） を送信します．サーバは，クライアントからのgg-pingパケットを受け取ると，それに対するgg-pingパケット （応答） をクライアントへ送信します．クライアントとサーバは，それぞれ 「相手からのパケットを2回続けて受信出来ないと」 ，接続が失われたと判断しセッションを強制切断します．
+補足2 コネクションの死活監視 （gg-pingパケットの処理） を無効化することも可能です． サービスGO-Global Application Publishing Service を停止する． レジストリエディタで，以下のレジストリ設定を行う． HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥AppServer SessionVerification REG_DWORD 0 サービスGO-Global Application Publishing Service を開始する．
+ファイル KGTN2010070601.pdf [(82.7 KB)] [kitasp 技術センター, 2010/07/09 20:27]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1706/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -532,7 +535,7 @@ Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1866/">
+                                      <a href="/posts/new_md/doc725/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -540,7 +543,7 @@ Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1866/">エンタープライズオプションのアプリケーション利用モニタ （GGAppMon） はどんな情報が収集できるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc725/">ログオンの負荷試験を行いたいが，ツール等はないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -553,18 +556,17 @@ Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1866/"><i class="far fa-calendar"></i> 2010-02-21</a>
+                                            <a href="/posts/new_md/doc725/"><i class="far fa-calendar"></i> 2010-07-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/02/21*
-[番号] 技術ノート KGTN 2010021801
-[現象] エンタープライズオプションのアプリケーション利用モニタ （GGAppMon） はどんな情報が収集できるのか？
-[説明] アプリケーション利用モニタ （GGAppMon） が収集する情報は以下の通りです．
-項番 情　報 備考 （例） 1 開始/終了フラグ S: 開始， E: 終了 2 サーバ名 Server1 3 アプリケーション名 Notepad 4 ユーザ名 Administrator 5 開始時刻 2010/1/13 10:35:22 6 終了時刻 2010/1/13 10:52:52 7 利用時間 （秒） 1049 8 セッション名 Administrator on Server1 9 実行ファイルのパス C:¥WINDOWS¥notepad.exe 10 プロセスID 2992 11 クライアントのコンピュータ名 Client1 12 クライアントのIPアドレス 192.168.102.191
-ファイル KGTN2010021801.pdf [(53.7 KB)] [kitasp 技術センター, 2010/02/22 08:24]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1866/" class="btn btn-template-main">続きを読む</a>
+2010/07/08*
+[番号] 技術ノート KGTN 2010070602
+[現象] ログオンの負荷試験を行いたいが，ツール等はないのか？
+[説明] セッション関連の試験を行うため GMLogonTest というツールがあります．このツールは，クライアント側で Windows クライアント （gg-client.exe） を非同期に繰り返し起動するバッチと，サーバ側で負荷の重たい処理を実行し終了する （ログアウトする） アプリケーションから構成されます． 「ログオン処理 → 高負荷な処理 →ログアウト」 を行うセッションを複数並行して行うことにより，擬似的に負荷試験を行うことが可能です．
+ファイル KGTN2010070602.pdf [(43.8 KB)] [kitasp 技術センター, 2018/11/29 15:06]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc725/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -574,7 +576,7 @@ Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1865/">
+                                      <a href="/posts/new_md/doc714/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -582,7 +584,7 @@ Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1865/">資料に 「クライアントのバージョンアップが必要」 と書かれていたが， ggw.exe のバージョンは従来のものと同じであった．</a></h2>
+                                    <h2><a href="/posts/new_md/doc714/">負荷試験用ツール GMLogonTest の使い方は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -595,17 +597,19 @@ Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1865/"><i class="far fa-calendar"></i> 2010-02-21</a>
+                                            <a href="/posts/new_md/doc714/"><i class="far fa-calendar"></i> 2010-07-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/02/21*
-[番号] 技術ノート KGTN 2010021701
-[現象] 資料に 「クライアントのバージョンアップが必要」 と書かれていたが， ggw.exe のバージョンは従来のものと同じであった．
-[説明] 「クライアントのバージョンアップが必要」 と書かれている場合は，単に ggw.exe がバージョンアップされたという意味ではなく，クライアントを構成する各ファイル （ggw.exe, cs.dll, dc.dll, etc&hellip;） の何れかがバージョンアップされたという意味です．
-ファイル KGTN2010021701.pdf [(147 KB)] [kitasp 技術センター, 2010/02/22 08:26]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1865/" class="btn btn-template-main">続きを読む</a>
+2010/07/08*
+[番号] 技術ノート KGTN 2010070701
+[現象] 負荷試験用ツール GMLogonTest の使い方は？
+[説明] 以下の手順で，サーバ側 （試験用アプリケーションの登録） とクライアント側 （試験用ログオンバッチの設定と実行） のインストール作業を行って下さい．
+【サーバ側】
+ GMLogonTest (Server Side) 中の Install.bat を実行します． &ldquo;ユーザー アカウント制御&rdquo; のダイアログで 「はい」 を選択します． &ldquo;レジストリ エディター&rdquo; のダイアログでは 「はい」 （続行） を選択します． 実行完了後サービス GGAPS を再起動します．  【クライアント側】
+ Windowsクライアントをインストールします． GMLogonTest (Client Side) をデスクトップにコピーします． GMLogonTest_wait_sub.bat をメモ帳で開き下記の項目を設定 （変更） します． set host=GGサーバのIPアドレスまたはホスト名 set user=試験に使用するアカウントのID set pass=試験に使用するアカウントのパスワード set app=GMLogonTest set GGDIR=Windows Client がインストールされたフォルダ GMLogonTest_sub.bat をダブルクリックして実行します． 正常にログオン出来て，かつ画像が表示され，数秒後に全て終了することを確認して下さい． GMLogonTest.bat をメモ帳で開き下記の項目を設定 （変更） します． set loop=ログオンの回数 set wait=ログオンの間隔 （秒） GMLogonTest.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc714/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -615,7 +619,7 @@ Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1870/">
+                                      <a href="/posts/new_md/doc1707/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -623,7 +627,7 @@ Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1870/">Adobe Photoshop CS4 は，Ver3.2.1 上で動作するのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1707/">GGのプラグイン （機能拡張） のファイルの中に， ServerPluginsPath.reg と ClientPluginsPath.reg というファイルがあるが，これは何か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -636,17 +640,20 @@ Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1870/"><i class="far fa-calendar"></i> 2010-02-18</a>
+                                            <a href="/posts/new_md/doc1707/"><i class="far fa-calendar"></i> 2010-07-06</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/02/18*
-[番号] 技術ノート KGTN 2010021805
-[現象] Adobe Photoshop CS4 は，Ver3.2.1 上で動作するのか？
-[説明] Adobe Photoshop CS4 のシステム最低要件に，サーバ系Windows (Windows Server 2003 および Windows Server 2008) が含まれていないため，実行のみならずインストールも出来ません．
-ファイル KGTN2010021805.pdf [(43.6 KB)] [kitasp 技術センター, 2010/02/18 14:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1870/" class="btn btn-template-main">続きを読む</a>
+2010/07/06*
+[番号] 技術ノート KGTN 2010061402
+[現象] GGのプラグイン （機能拡張） のファイルの中に， ServerPluginsPath.reg と ClientPluginsPath.reg というファイルがあるが，これは何か？
+[説明] GGのプラグインを実行するには，GGサーバおよびGGクライアントにプラグインが配置されたフォルダを教える必要があります． ServerPluginsPath.reg はGGサーバにこのフォルダを教えるレジストリファイルで，ClientPluginsPath.reg はGGクライアントにこのフォルダを教えるレジストリファイルです．それぞれの環境で，ダブルクリックして実行して下さい．下記の設定とは異なるパスにプラグインを配置する場合は，メモ帳等でパス情報を修正して下さい．
+[ServerPluginsPath.reg] [HKEY_LOCAL_MACHINE¥SOFTWARE¥GraphOn¥Bridges¥1.0.0] &ldquo;ServerPluginsPath&quot;=&quot;C:¥¥GraphOn¥¥GO-Global Server¥¥Programs¥¥plugins&rdquo;
+[ClientPluginsPath.reg] [HKEY_LOCAL_MACHINE¥SOFTWARE¥GraphOn¥Bridges¥1.0.0] &ldquo;ClientPluginsPath&quot;=&quot;C:¥¥GraphOn¥¥plugins&rdquo;
+補　足 プラグインのインストールバッチ Install.bat を走らせると自動的に設定されます．従って，通常はこれらのregファイルをインポートする必要はありません．
+ファイル KGTN2010061402.pdf [(62.6 KB)] [kitasp 技術センター, 2010/07/06 14:51]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1707/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -656,7 +663,7 @@ Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1871/">
+                                      <a href="/posts/new_md/doc1708/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -664,7 +671,7 @@ Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1871/">GG上で動作するアプリケーションから，クライアント側に接続されたスキャナを利用できるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1708/">プラグイン LaunchBrowser のインストール手順は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -677,17 +684,19 @@ Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1871/"><i class="far fa-calendar"></i> 2010-02-18</a>
+                                            <a href="/posts/new_md/doc1708/"><i class="far fa-calendar"></i> 2010-07-06</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/02/18*
-[番号] 技術ノート KGTN 2010021804
-[現象] GG上で動作するアプリケーションから，クライアント側に接続されたスキャナを利用できるのか？
-[説明] プリンタについてはクライアント印刷機能により，GG上で動作するアプリケーションから，クライアント側に接続されたプリンタへ印刷することが出来ますが，スキャナについては現在そのような機能が無いため，利用することが出来ません．スキャナを利用する場合は，クライアント側で取り込んで，そのデータ （ファイル） をサーバへアップロードする （あるいは共有フォルダを利用する） 方法をご検討下さい．
-ファイル KGTN2010021804.pdf [(47.9 KB)] [kitasp 技術センター, 2010/02/18 11:43]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1871/" class="btn btn-template-main">続きを読む</a>
+2010/07/06*
+[番号] 技術ノート KGTN 2010070603
+[現象] プラグイン LaunchBrowser のインストール手順は？
+[説明] サーバ側もクライアント側もバッチファイル Install.bat を走らせるだけですが，必要に応じて （環境によって）バッチファイル中で指定されたインストール先のパスを事前に修正して下さい．
+【サーバ側】 set plugins=C:¥GraphOn¥GO-Global Server¥Programs¥plugins ← プラグインを置くフォルダ set dllhome=C:¥GraphOn ← インタフェースのDLLやサンプルプログラムを置くフォルダ
+【クライアント側】 set plugins=C:¥GraphOn¥plugins ← プラグインを置くフォルダ
+ファイル KGTN2010070603.pdf [(53 KB)] [kitasp 技術センター, 2010/07/06 14:32]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1708/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -697,7 +706,7 @@ Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1869/">
+                                      <a href="/posts/new_md/doc1709/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -705,7 +714,7 @@ Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1869/">SkyPDF for GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1709/">クライアント印刷機能でUniversal Driver （UPD） を使用すると，異なるサイズの用紙に印刷される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -718,18 +727,18 @@ Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1869/"><i class="far fa-calendar"></i> 2010-02-18</a>
+                                            <a href="/posts/new_md/doc1709/"><i class="far fa-calendar"></i> 2010-07-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/02/18*
-[番号] 技術ノート KGTN 2010021806
-[現象] SkyPDF for GO-Global のプリンタに関して，プロパティ上でドライバを変更した場合，元に戻してもプロパティを参照出来なくなる．
-[説明] プリンタドライバを別のものに変更すると， SkyPDF は別のプリンタの情報 (Devmode) を取得し，それを元に動作しようとします． Devmode はプリンタによりサイズや内容が全く異なりますので，別のものが指定されると予期せぬデータが入ってきたり，領域外を参照する可能性があります．本ドライバでは，このような状況は仕様として想定しておりません．このため， SkyPDFプリンタのプリンタドライバを一度別のものに変更してから，もう一度 SkyPDF ドライバに戻すような動作に関しては，動作補償の範囲外になります．
-補　足 上記の説明は，株式会社スカイコムから提供された技術情報を元に作成しました．なお，プリンタドライバを変更するボタンのキャプションは 「新しいドライバ」 となっており，ヘルプの説明も 「プリンタドライバを追加または更新する時にクリックします」 となっております．
-ファイル KGTN2010021806.pdf [(58.8 KB)] [kitasp 技術センター, 2010/02/19 08:20]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1869/" class="btn btn-template-main">続きを読む</a>
+2010/07/02*
+[番号] 技術ノート KGTN 2010070202
+[現象] クライアント印刷機能でUniversal Driver （UPD） を使用すると，異なるサイズの用紙に印刷される．
+[説明] Adobe Reader の設定 「PDFのページサイズに合わせて用紙を選択」 を有効にして印刷して下さい．本件に関連する情報が下記のページにあります．
+http://www.atmarkit.co.jp/fdotnet/vblab/appqa_04/appqa_04_01.html A3サイズのPDF文書がA4用紙に印刷されてしまう
+ファイル KGTN2010070202.pdf [(51.7 KB)] [kitasp 技術センター, 2010/07/02 13:48]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1709/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -799,7 +808,7 @@ Process #nnnn (pw.exe) started in session &ldquo;Administrator on Server1&rdquo;
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

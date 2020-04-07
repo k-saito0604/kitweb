@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1197/">
+                                      <a href="/posts/new_md/doc1094/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1197/">[GGW3.2.1/GGH4.0] 無操作タイムアウトのテストを行いたいが，どのような手順で行えば良いか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1094/">[GGW3.2.1] GGの設定情報を多数のサーバへ反映するにはどうすれば良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,21 +340,22 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1197/"><i class="far fa-calendar"></i> 2011-12-08</a>
+                                            <a href="/posts/new_md/doc1094/"><i class="far fa-calendar"></i> 2012-02-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/08*
-[番号] 技術ノート KGTN 2011120709
-[現象] [GGW3.2.1/GGH4.0] 無操作タイムアウトのテストを行いたいが，どのような手順で行えば良いか？
-[説明] 例えば，以下のような方法があります．なお，これらはあくまでも参考であり，妥当性や正確性等を保証するものではありません．
-マウスポインタの移動に関するテスト Program Window 上で実際にマウスポインタを移動させる．
-常に描画を行うアプリケーションに関するテスト ストップウォッチのプログラム 「SGウォッチ」 等を計測状態にする．
-ファイルコピーに関するテスト 数GBのファイルをコピーする （両方向テストが必要） ．
-印刷に関するテスト ページ数の多いワード等のドキュメントを1000部印刷する．
-ファイル KGTN2011120709.pdf [(60 KB)] [kitasp 技術センター, 2011/12/08 13:43]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1197/" class="btn btn-template-main">続きを読む</a>
+2012/02/09*
+[番号] 技術ノート KGTN 2012012702
+[現象] [GGW3.2.1] GGの設定情報を多数のサーバへ反映するにはどうすれば良いか？
+[説明] GGW3.2.1の主な設定情報はレジストリ ¥HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer の下に保持されておりますので，最も簡単な方法としては以下の手順が考えられます．
+雛形のサーバを作成する． レジストリ ¥HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServerをエクスポートする． 各サーバでエクスポートしたファイルをインポートする．
+他の方法としては， （例えば） 以下のような設定情報を書き換えるスクリプトを作成し，サーバ毎に設定を変更する手順が考えられます．
+[スクリプト] for /F &ldquo;token=1,2,3,4&rdquo; %%i in (servers.txt) do ( reg add &ldquo;¥¥%i¥HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer&rdquo; /v &ldquo;LicenseCheckoutAttempts&rdquo; /t REG_DWORD /d 0x3 /f reg query &ldquo;¥¥%i¥¥HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer&rdquo; /v &ldquo;LicenseCheckoutAttempts&rdquo; )
+[servers.txt] server1.domain.local server2.domain.local server3.domain.local &hellip; server100.domain.local
+補　足 GGW3.2.1に関しては，管理情報の中にサーバ固有の情報 （コンピュータ名など） を保持しておりません．従って，上記のような方法で全てのサーバへ展開することが可能です．
+ファイル KGTN2012012702.pdf [(70.3 KB)] [kitasp 技術センター, 2012/02/09 14:04]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1094/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -364,7 +365,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1195/">
+                                      <a href="/posts/new_md/doc1093/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -372,7 +373,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1195/">[GGW3.2.1] 検証のためクライアントプリンタの構成を失敗させたいが，どのような方法があるか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1093/">[Network] 同じハブに接続しているGGサーバのうち，特定の１台が接続不能になることがある．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -385,21 +386,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1195/"><i class="far fa-calendar"></i> 2011-12-08</a>
+                                            <a href="/posts/new_md/doc1093/"><i class="far fa-calendar"></i> 2012-02-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/08*
-[番号] 技術ノート KGTN 2011120901
-[現象] [GGW3.2.1] 検証のためクライアントプリンタの構成を失敗させたいが，どのような方法があるか？
-[説明] 以下の方法で，クライアントプリンタの構成を失敗させることが出来ます．
-クラスタマネージャ　[Universal Driver] のチェックを外し， [Windows folder] のチェックを入れる． サーバ側にローカルプリンタを１台登録する． クライアント側にある print.ini を削除する． クライアント側にローカルプリンタを１台登録する （但しサーバ側にドライバが存在しないこと） ． GGサーバへログオンする． アプリケーションを起動し適当な帳票を印刷する．
-アプリケーションによって，以下のようなダイアログが表示されます．
-「プリンタが組み込まれていません」 という内容のエラーダイアログ サーバ側のプリンタを選択するダイアログ その他警告や情報のダイアログ
-なお，この手順はあくまでも参考であり，妥当性や正確性等を保証するものではありません．
-ファイル KGTN2011120901.pdf [(63 KB)] [kitasp 技術センター, 2011/12/09 07:03]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1195/" class="btn btn-template-main">続きを読む</a>
+2012/02/09*
+[番号] 技術ノート KGTN 2012021001
+[現象] [Network] 同じハブに接続しているGGサーバのうち，特定の１台が接続不能になることがある．
+[説明] このような現象は，多くの場合 1) ハブのポートの不良， 2) LANケーブルの不良， 3) サーバのLANカードの不良が原因です．問題が発生しないサーバと問題が発生するサーバのLANケーブルを交換 （サーバ側） して，現象が変わらなければ 3) のLANカードの不良の可能性が高いと考えられます．現象が発生するサーバが入れ替われば，
+ のハブのポートの不良 または 2) のLANケーブルの不良 の可能性が高いと考えられます．この場合は，現象が発生するサーバのLANケーブルを新品と交換することで，LANケーブルの不良かハブのポートの不良かを切り分けることが出来ます．  補　足 上記 3) の場合，弊社ツール GGNetworkCheck で発生内容を確認することが出来ます．詳細については，技術ノートKGTN#2011030201 をご覧下さい．
+ファイル KGTN2012021001.pdf [(57.3 KB)] [kitasp 技術センター, 2012/02/10 07:00]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1093/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -409,7 +407,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1199/">
+                                      <a href="/posts/new_md/doc1098/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -417,7 +415,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1199/">[GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントドライブ機能で大きなファイルをコピーしている場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1098/">[GGW3.2.1/GGH4.0] アプリケーションの印刷画面で指定した用紙サイズと異なる用紙に印刷される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -430,18 +428,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1199/"><i class="far fa-calendar"></i> 2011-12-08</a>
+                                            <a href="/posts/new_md/doc1098/"><i class="far fa-calendar"></i> 2012-02-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/08*
-[番号] 技術ノート KGTN 2011120707
-[現象] [GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントドライブ機能で大きなファイルをコピーしている場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？
-[説明] クライアントドライブ機能で大きなファイルをコピーしている場合であっても，マウスやキーボード操作がなければ，無操作タイムアウトは発生します．
-補　足 一般的な無操作タイムアウトに関する情報は，技術ノート KGTN#2011120705 をご覧下さい．
-ファイル KGTN2011120707.pdf [(48 KB)] [kitasp 技術センター, 2011/12/08 12:30]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1199/" class="btn btn-template-main">続きを読む</a>
+2012/02/08*
+[番号] 技術ノート KGTN 2012020801
+[現象] [GGW3.2.1/GGH4.0] アプリケーションの印刷画面で指定した用紙サイズと異なる用紙に印刷される．
+[説明] アプリケーションの印刷画面で指定する用紙は 「原稿サイズ」 と呼ばれ，実際に印刷される用紙のサイズは「出力用紙サイズ」 と呼ばれます．プリンタドライバによっては，原稿サイズの情報ではなく，印刷する内容によって出力用紙サイズを自動選択するものがあり，そのような場合に 「アプリケーションの印刷画面で指定した用紙サイズと異なる用紙に印刷される」 という現象が発生します．GGは出力用紙サイズの決定には関与しませんので，プリンタドライバの設定内容 （機能） を確認して，原稿サイズと出力用紙サイズが一致するように設定して下さい．
+補　足 プリンタドライバに加え， 「自動回転・中央配置・自動拡大縮小」 機能を持つアプリケーションもあります．下記の印刷画面は Adobe Reader 9 のもので，ページ処理の設定で 「自動回転・中央配置」 が設定されており，かつ 「PDFのページサイズに合わせて用紙を選択」 が設定されておりませんので， （印刷内容によっては） 原稿サイズと異なる出力用紙サイズが設定されることがあります．
+ファイル KGTN2012020801.pdf [(116 KB)] [kitasp 技術センター, 2012/02/08 12:29]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1098/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -451,7 +449,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1198/">
+                                      <a href="/posts/new_md/doc1096/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -459,7 +457,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1198/">[GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントプリンタ機能で大きなファイルを印刷している場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1096/">[VM] 仮想マシン （Windows） のディプロイメントとは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -472,18 +470,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1198/"><i class="far fa-calendar"></i> 2011-12-08</a>
+                                            <a href="/posts/new_md/doc1096/"><i class="far fa-calendar"></i> 2012-02-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/08*
-[番号] 技術ノート KGTN 2011120708
-[現象] [GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントプリンタ機能で大きなファイルを印刷している場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？
-[説明] クライアントプリンタ機能で大きなファイルを印刷している場合であっても，マウスやキーボード操作がなければ，無操作タイムアウトは発生します．なお，サーバ側のプリンタはセッションの切断とともに削除されますので，印刷ジョブも併せて消滅します．クライアント側のプリンタについては，既に蓄積されたジョブがあれば消滅せずに残ります．
-補　足 一般的な無操作タイムアウトに関する情報は，技術ノート KGTN#2011120705 をご覧下さい．
-ファイル KGTN2011120708.pdf [(53.2 KB)] [kitasp 技術センター, 2011/12/08 13:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1198/" class="btn btn-template-main">続きを読む</a>
+2012/02/08*
+[番号] 技術ノート KGTN 2012020901
+[現象] [VM] 仮想マシン （Windows） のディプロイメントとは？
+[説明] ソフトウエアのディプロイメントについてはWikipediaをはじめとして多くの説明が存在しますが，仮想マシンのディプロイメントについては殆ど存在しません．基本的には，テンプレートとなる仮想マシンから複製を作成し，その複製の環境を整備し実際に利用できるようにすることで，具体的には以下の作業があります．
+テンプレートとなる仮想マシン （Windows） のイメージのコピー sysprep (System Preparation Utility) の実行 コンピュータ名の変更 MACアドレスの変更 ネットワーク情報の変更 （IPアドレス，サブネットマスク，デフォルトゲートウェイ，DNSサーバなど） ドメインへの参加 （必要な場合）
+ファイル KGTN2012020901.pdf [(59.2 KB)] [kitasp 技術センター, 2012/02/09 07:12]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1096/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -493,7 +491,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1200/">
+                                      <a href="/posts/new_md/doc1097/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -501,7 +499,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1200/">[GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，常に描画を行うアプリケーションが実行中の場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1097/">[Windows] Windows Update （更新プログラム） の一覧の取得方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -514,18 +512,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1200/"><i class="far fa-calendar"></i> 2011-12-08</a>
+                                            <a href="/posts/new_md/doc1097/"><i class="far fa-calendar"></i> 2012-02-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/08*
-[番号] 技術ノート KGTN 2011120706
-[現象] [GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，常に描画を行うアプリケーションが実行中の場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？
-[説明] 時計のように常に描画を行うアプリケーションが実行中であっても，マウスやキーボード操作がなければ，無操作タイムアウトは発生します．なお，アプリケーションが描画を行っている最中に無操作タイムアウトが発生した場合，クライアント側に 「コネクション切断」 のダイアログが表示される可能性があります．これは描画命令への応答をサーバ側へ送信しようとした時，既にセッションが切断されていると，その送信に失敗するためです．
-補　足 一般的な無操作タイムアウトに関する情報は，技術ノート KGTN#2011120705 をご覧下さい．
-ファイル KGTN2011120706.pdf [(54.9 KB)] [kitasp 技術センター, 2011/12/08 12:13]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1200/" class="btn btn-template-main">続きを読む</a>
+2012/02/08*
+[番号] 技術ノート KGTN 2012020802
+[現象] [Windows] Windows Update （更新プログラム） の一覧の取得方法は？
+[説明] Windows Update （更新プログラム） の一覧は，次のコマンドで取得することが出来ます．
+C:¥&gt; wmic qfe
+ファイル KGTN2012020802.pdf [(44.3 KB)] [kitasp 技術センター, 2012/02/08 13:46]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1097/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -535,7 +533,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1203/">
+                                      <a href="/posts/new_md/doc1099/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -543,7 +541,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1203/">[GGH4.0] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントドライブ機能で大きなファイルをコピーしている場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1099/">[GGH4.0] Mac OS X Lion の環境でNative Client は動作するが， Safari &#43; Plug-in は動作しない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -556,18 +554,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1203/"><i class="far fa-calendar"></i> 2011-12-07</a>
+                                            <a href="/posts/new_md/doc1099/"><i class="far fa-calendar"></i> 2012-02-06</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/07*
-[番号] 技術ノート KGTN 2011120703
-[現象] [GGH4.0] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントドライブ機能で大きなファイルをコピーしている場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？
-[説明] クライアントドライブ機能で大きなファイルをコピーしている場合であっても，マウスやキーボード操作がなければ，無操作タイムアウトは発生します．なお，GGH4.0は最初にコピー元と同じサイズのファイルをコピー先に作成し，次にコピー元のデータを転記します．このため無操作タイムアウトが発生してもコピー先にコピー元と同じサイズのファイルが存在しますが，そのデータは完全ではありません．必要があればマイクロソフト社の FCIV （ファイル チェックサム整合性検証ユーティリティ） を使用し，データが完全かどうか検証することが出来ます．
-補　足 一般的な無操作タイムアウトに関する情報は，技術ノート KGTN#2011120701 をご覧下さい．
-ファイル KGTN2011120703.pdf [(57.1 KB)] [kitasp 技術センター, 2011/12/08 07:30]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1203/" class="btn btn-template-main">続きを読む</a>
+2012/02/06*
+[番号] 技術ノート KGTN 2012013102
+[現象] [GGH4.0] Mac OS X Lion の環境でNative Client は動作するが， Safari + Plug-in は動作しない．
+[説明] 下記のスクリーンショットのように，Native Client は動作しますが， Safari
+ Plug-in では動作しないことを，弊社およびGraphOn社で確認しております．この原因は Safari が64ビットで動作しており，GGのPlug-in が32ビット環境を前提としているため，環境の不整合により動作しないとのことです （注： Safari の設定を 「32ビットモードで開く」 に変更しても状況は変わりません） ．スケジュールは未定ですが，将来のリリースで対応する予定です．GraphOn社より新たな情報が届き次第，この技術ノートに反映します．  補　足 GGH4.0.1.Patch4 で，Native Client だけでなく Safari + Plug-in も動作するようになりました． Safari + Plug-in &ldquo;Embedded&rdquo; は動作するものの Safari + Plug-in &ldquo;Loose&rdquo; が動作しないという事例が１件ありましたが，調査したところGGには何ら問題がなく， Mac OS X Lion を最新版にアップデートすることで解消しました．
+ファイル KGTN2012013102.pdf [(256 KB)] [kitasp 技術センター, 2012/02/06 12:59]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1099/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -577,7 +575,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1201/">
+                                      <a href="/posts/new_md/doc1100/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -585,7 +583,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1201/">[GGH4.0] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントプリンタ機能で大きなファイルを印刷している場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1100/">[VM] 仮想化ソフトウェア vSphere 環境でのGGの利用実績はあるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -598,18 +596,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1201/"><i class="far fa-calendar"></i> 2011-12-07</a>
+                                            <a href="/posts/new_md/doc1100/"><i class="far fa-calendar"></i> 2012-02-06</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/07*
-[番号] 技術ノート KGTN 2011120704
-[現象] [GGH4.0] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントプリンタ機能で大きなファイルを印刷している場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？
-[説明] クライアントプリンタ機能で大きなファイルを印刷している場合であっても，マウスやキーボード操作がなければ，無操作タイムアウトは発生します．なお，サーバ側のプリンタはセッションの切断とともに削除されますので，印刷ジョブも併せて消滅します．クライアント側のプリンタについては，既に蓄積されたジョブは消滅せずに残ります．
-補　足 一般的な無操作タイムアウトに関する情報は，技術ノート KGTN#2011120701 をご覧下さい．
-ファイル KGTN2011120704.pdf [(52.9 KB)] [kitasp 技術センター, 2011/12/08 07:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1201/" class="btn btn-template-main">続きを読む</a>
+2012/02/06*
+[番号] 技術ノート KGTN 2012011801
+[現象] [VM] 仮想化ソフトウェア vSphere 環境でのGGの利用実績はあるか？
+[説明] vSphere 環境でGGをご利用のユーザ様が存在するかもしれませんが、しかし弊社にはそのような情報は入っておりません．また，GraphOn社にも確認しましたが，同様にそのような情報は持っておりませんでした．
+補足１ GraphOn社より，以下の情報が届きました (2012-01-20) ．
+ここで言う support とは，GraphOn 社がその環境で動作することを確認したという意味であり，仮想環境も含めてサポートする （つまり仮想環境の設定や運用上の問題に起因する障害に対応する） という意味ではありません （技術ノートKGTN#2011071101の補足３と同様の内容） ．
+補足２ GO-Global for Windows でなく GO-Global for UNIX になりますが，某国立大学の案件で同時200ユーザの利用実績があります．
+ファイル KGTN2012011801.pdf [(66.5 KB)] [kitasp 技術センター, 2012/02/06 10:34]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1100/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -619,7 +619,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1204/">
+                                      <a href="/posts/new_md/doc1101/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -627,7 +627,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1204/">[GGH4.0] 無操作タイムアウト （アイドルタイムアウト） に関して，常に描画を行うアプリケーションが実行中の場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1101/">[GGH4.0] クライアントPCから，１つのサーバに同じアカウント （ユーザID） で２つのセッションを張った場合，ライセンス上は２ユーザになるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -640,18 +640,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1204/"><i class="far fa-calendar"></i> 2011-12-07</a>
+                                            <a href="/posts/new_md/doc1101/"><i class="far fa-calendar"></i> 2012-02-03</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/07*
-[番号] 技術ノート KGTN 2011120702
-[現象] [GGH4.0] 無操作タイムアウト （アイドルタイムアウト） に関して，常に描画を行うアプリケーションが実行中の場合でも，マウスやキーボード操作がなければ 「操作がなかった」 と判断されるのか？
-[説明] 時計のように常に描画を行うアプリケーションが実行中であっても，マウスやキーボード操作がなければ，無操作タイムアウトは発生します．なお，アプリケーションが描画を行っている最中に無操作タイムアウトが発生した場合，クライアント側に下記のような 「コネクション切断」 のダイアログが表示されます．これは描画命令への応答をサーバ側へ送信しようとした時，既にセッションが切断されており，その送信に失敗するためです．
-補　足 一般的な無操作タイムアウトに関する情報は，技術ノート KGTN#2011120701 をご覧下さい．
-ファイル KGTN2011120702.pdf [(62.4 KB)] [kitasp 技術センター, 2011/12/08 07:28]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1204/" class="btn btn-template-main">続きを読む</a>
+2012/02/03*
+[番号] 技術ノート KGTN 2012020201
+[現象] [GGH4.0] クライアントPCから，１つのサーバに同じアカウント （ユーザID） で２つのセッションを張った場合，ライセンス上は２ユーザになるのか？
+[説明] GGH4.0.1.Patch4 以前については，ライセンス上は２ユーザの利用になります．GGH4.0.1.Patch4 からは，同一デスクトップ　（ユーザID）　から張ったセッションであれば， （複数のセッションであっても） １ユーザの利用になります．
+補　足 Mac OS X のクライアントについても，同じアカウント （ユーザID） で２つのセッションを張っても１ユーザの利用になります．
+ファイル KGTN2012020201.pdf [(46.4 KB)] [kitasp 技術センター, 2012/02/03 09:43]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1101/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -661,7 +661,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1205/">
+                                      <a href="/posts/new_md/doc1106/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -669,7 +669,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1205/">[GGW3.2.1] クライアント印刷機能が有効な時，サーバ側でデフォルトプリンタを変更すると，その変更内容がクライアント側にも反映される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1106/">[GGH4.0] CMD.EXE （DOS窓） を開いた状態でセッション再接続を行い，その中で CMD.EXE を起動すると CLIENTCOMPUTERNAME の値がセッション再接続前の値になる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -682,17 +682,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1205/"><i class="far fa-calendar"></i> 2011-12-07</a>
+                                            <a href="/posts/new_md/doc1106/"><i class="far fa-calendar"></i> 2012-02-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/07*
-[番号] 技術ノート KGTN 2011120752
-[現象] [GGW3.2.1] クライアント印刷機能が有効な時，サーバ側でデフォルトプリンタを変更すると，その変更内容がクライアント側にも反映される．
-[説明] GGの旧いバージョンでは，サーバ側とクライアント側それぞれに別にデフォルトプリンタが存在していました．しかし 「利用者にとってデフォルトプリンタが複数あることは理解が難しい．サーバ側もクライアント側も同じプリンタをデフォルトプリンタにすべき」 という議論が日本国内から出て， それ以降のバージョン 〜 GGW3.2.1 ではサーバ側でデフォルトプリンタを変更すると，その変更内容がクライアント側にも反映されます （つまりGGW3.2.1の仕様です） ．なお， GGH4.0 からはクライアント印刷機能のアーキテクチャが変更され，サーバ側でのデフォルトプリンタの変更がクライアント側に反映されない仕様になっております．
-ファイル KGTN2011120752.pdf [(52.3 KB)] [kitasp 技術センター, 2011/12/07 14:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1205/" class="btn btn-template-main">続きを読む</a>
+2012/02/02*
+[番号] 技術ノート KGTN 2012020203
+[現象] [GGH4.0] CMD.EXE （DOS窓） を開いた状態でセッション再接続を行い，その中で CMD.EXE を起動すると CLIENTCOMPUTERNAME の値がセッション再接続前の値になる．
+[説明] GGH4.0.1.Patch4 からは，セッション再接続後の環境の値が CLIENTCOMPUTERNAME に設定されるように仕様が変更されました （注： GGW3.2.1と同じ仕様になりました） ．
+ファイル KGTN2012020203.pdf [(51 KB)] [kitasp 技術センター, 2012/02/02 11:38]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1106/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -702,7 +702,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1206/">
+                                      <a href="/posts/new_md/doc1107/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -710,7 +710,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1206/">[GGW3.2.1/GGH4.0] クライアント印刷機能を使用しているが，アプリケーションで印刷を行おうとしたところ，サーバ側のプリンタを選択する画面 （プリンタの設定というダイアログ） が表示された．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1107/">[GGH4.0] クライアント印刷機能を利用しているが，クライアント側でのドキュメント名 （印刷ジョブ名） が文字化けする．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -723,19 +723,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1206/"><i class="far fa-calendar"></i> 2011-12-06</a>
+                                            <a href="/posts/new_md/doc1107/"><i class="far fa-calendar"></i> 2012-02-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/06*
-[番号] 技術ノート KGTN 2011120603
-[現象] [GGW3.2.1/GGH4.0] クライアント印刷機能を使用しているが，アプリケーションで印刷を行おうとしたところ，サーバ側のプリンタを選択する画面 （プリンタの設定というダイアログ） が表示された．
-[説明] クライアント印刷機能を使用している時，GGは print.ini の設定に従ってプリンタの環境を構成します．この時クライアント側にプリンタが存在しない （またはクライアント側にデフォルトプリンタが存在しない） と，アプリケーションは，通常以下のようなダイアログを表示します．
-「プリンタが組み込まれていません」 という内容のエラーダイアログ サーバ側のプリンタを選択するダイアログ その他警告や情報のダイアログ
-本件は，この 2) のケースに該当します．継続して同じ状況が発生する時は，クライアント側のプリンタフォルダの状態と print.ini を確認し，異常があれば修正して下さい．継続して同じ状況が発生しない場合は，サーバ一時的な障害 （CPUが高負荷，メモリが不足，プロファイルの正常なロードに失敗など） でプリンタの構成が出来なかったことが考えられます．
-ファイル KGTN2011120603.pdf [(61.5 KB)] [kitasp 技術センター, 2011/12/06 16:27]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1206/" class="btn btn-template-main">続きを読む</a>
+2012/02/02*
+[番号] 技術ノート KGTN 2012020202
+[現象] [GGH4.0] クライアント印刷機能を利用しているが，クライアント側でのドキュメント名 （印刷ジョブ名） が文字化けする．
+[説明] GGH4.0.1.Patch4 からは，クライアント側でのドキュメント名 （印刷ジョブ名） が文字化けする問題は解消しております．
+ファイル KGTN2012020202.pdf [(43.2 KB)] [kitasp 技術センター, 2012/02/02 11:23]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1107/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -805,7 +803,7 @@
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

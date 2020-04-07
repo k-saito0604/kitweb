@@ -409,25 +409,29 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc136/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc68/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc136/">[GGH4.X] 拡張パックの GGPdfPrint をWindowsクライアントへ組み込む方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc68/">[GGH5.X] デスクトップ用のクライアント （Windowsクライアント） のインストール手順は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-01-16
+                            日付 2015-06-11
                             </p>
                             <p class="intro">*技術ノート
-2015/01/16*
-[番号] 技術ノート KGTN 2014122602
-[現象] [GGH4.X] 拡張パックの GGPdfPrint をWindowsクライアントへ組み込む方法は？
-[説明] GGPdfPrint の２つのファイル pdfprint.exe と pdfprint.ini が置かれたフォルダで，下記の内容のファイルInstallNC.vbs を作成し，それを実行して下さい．
-Option Explicit On Error Resume Next Dim objShell, objFso Dim pathX64,pathX86,pathTarget '--- Set objShell = WScript.CreateObject(&quot;WScript.Shell&quot;) Set objFso = CreateObject(&quot;Scripting.FileSystemObject&quot;) pathX64 = objShell.RegRead(&quot;HKLMSOFTWAREWow6432NodeGraphOnGO-Globalclient&quot;) pathX86 = objShell.RegRead(&quot;HKLMSOFTWAREGraphOnGO-Globalclient&quot;) pathTarget = &quot;&quot; If pathX64 &lt;&gt; &quot;&quot; Then ' WScript.Echo pathX64 pathTarget = objFso.GetParentFolderName(pathX64) End If If pathX86 &lt;&gt; &quot;&quot; Then ' WScript.Echo pathX86 pathTarget = objFso.</p>
+2015/06/11*
+[番号] 技術ノート KGTN 2015040304
+[現象] [GGH5.X] デスクトップ用のクライアント （Windowsクライアント） のインストール手順は？
+[説明] 以下，GGサーバーにウエッブサーバーが同居している環境でのデスクトップ用のクライアント （Windowsクライアント） のインストール手順を示します．
+１．IEを立ち上げ http://&lt;GGサーバーのアドレス&gt;/index.htm{.external} へアクセスし，&ldquo;Install Client&rdquo; をクリックする． ２．&ldquo;show all clients&rdquo; をクリックする． ３．&ldquo;Windows Client&rdquo; をクリックする． ４．下の方にある &ldquo;Download&rdquo; をクリックする. ５．&ldquo;実行&rdquo; をクリックする. ６．&ldquo;Next&rdquo; をクリックする． ７．&ldquo;I accept &hellip;&rdquo; を選択し &ldquo;Next&rdquo; をクリックする． ８．&ldquo;Install&rdquo; をクリックする． ９．&ldquo;Finish&rdquo; をクリックする． １０．スタートメニューから &ldquo;GO-Global&rdquo; をクリックする． １１．接続画面が表示される． ファイル KGTN2015040304.pdf [(813 KB)] [kitasp 技術センター, 2015/06/11 17:53]
+KGTN2015040304-11.jpg
+表示 [(20.2 KB)] [kitasp 技術センター, 2015/06/22 17:06]
+KGTN2015040304-12.jpg
+表示 [(19.2 KB)] [kitasp 技術センター, 2015/06/22 17:06]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc136/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc68/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,25 +450,26 @@ Option Explicit On Error Resume Next Dim objShell, objFso Dim pathX64,pathX86,pa
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc144/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc111/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc144/">[GGW3.2.1] サーバー側で Microsoft XPS Document Writer および XPS ビューアーを利用できるか？</a></h4>
+                            <h4><a href="/posts/new_md/doc111/">[GGH5.X] 自動セッション再接続機能とは，どのような機能か？</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-01-16
+                            日付 2015-06-11
                             </p>
                             <p class="intro">*技術ノート
-2015/01/16*
-[番号] 技術ノート KGTN 2014121102
-[現象] [GGW3.2.1] サーバー側で Microsoft XPS Document Writer および XPS ビューアーを利用できるか？
-[説明] いいえ，GGW3.2.1 では Microsoft XPS Document Writer および XPS ビューアーをサポートしておりません．
-ECR#9661 Microsoft XPS Document Writer does not work if using the XPS driver. This issue is not fixed, but is documented.  ファイル KGTN2014121102.pdf [(48.3 KB)] [kitasp 技術センター, 2015/01/16 16:55]</p>
+2015/06/11*
+[番号] 技術ノート KGTN 2015040305
+[現象] [GGH5.X] 自動セッション再接続機能とは，どのような機能か？
+[説明] ネットワーク障害等によりサーバー～クライアント間でセッションが切断された時に，障害の復旧を待ってサーバー上でサスペンド状態にあるセッションに自動的に再接続を行う機能です．
+コマンドラインでは -autoreconnect を，プラグイン（URL）では &amp;autoreconnect=を指定することで，この機能が有効になります．ここで は，再試行の回数を指定して下さい．
+ファイル KGTN2015040305.pdf [(48.9 KB)] [kitasp 技術センター, 2015/06/11 17:53]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc144/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc111/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -483,26 +488,29 @@ ECR#9661 Microsoft XPS Document Writer does not work if using the XPS driver. Th
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc151/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc108/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc151/">[GGH4.X] GGRxpConnect とは，どのようなソフトウエアなのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc108/">[hopTo Work 2.0] hopTo Work は，どのようなサーバー環境で動作するのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2014-12-12
+                            日付 2015-06-11
                             </p>
                             <p class="intro">*技術ノート
-2014/12/12*
-[番号] 技術ノート KGTN 2014120401
-[現象] [GGH4.X] GGRxpConnect とは，どのようなソフトウエアなのか？
-[説明] GGRxpConnect は弊社開発のソフトウエアで，本ソフトウエアを Windows PC にインストールすることにより Internet Explorer の環境でGGクライアントを起動するURLスキームが利用出来るようになります．具体的には， IE で rxp://?h=192.168.102.81&amp;hp=491&amp;u=Administrator&amp;p=Password&amp;a=Notepad というURLにアクセスすると，GGのWindowsクライアントが起動し，192.168.102.81のGGサーバーにログオンし，そしてメモ帳 （Notepad） が立ち上がります．GGRxpConnect のインストール手順は，次の通りです．
- Windowsクライアントをインストールする （既にインストールされている場合は不要） ． GGRxpConnect の配布フォルダにある install.bat を管理者として実行する．  このURLスキームで指定可能なパラメタは以下の通りです．
-Host....................: h= ; GG サーバーのアドレス Port....................: hp= ; GG サーバーのポート番号 User....................: u= ; ユーザー名 Password................: p= ; パスワード Application.............: a= ; 起動するアプリケーションの名前 Application Arguments...: r= ; 起動するアプリケーションの引数 Image Compression.......: qt= ; 画像圧縮（0/1） Printer Configuration.</p>
+2015/06/11*
+[番号] 技術ノート KGTN 2015040801
+[現象] [hopTo Work 2.0] hopTo Work は，どのようなサーバー環境で動作するのか？
+[説明] hopTo Work は，以下のサーバー環境で動作します．
+・Windows Server 2012 R2 ・Windows Server 2008 R2 ・Windows 8.x (64-bit) ・Windows 7 (64-bit)
+上記OSに加え，以下の環境を必要とします．
+・Microsoft .NET Framework 4.5.1 ・RDP (Remote Desktop Protocol) ・Microsoft Office 2010 32-bit/64-bit or Office 2007 （ドキュメント編集を行う場合） ・Microsoft RemoteApp （サードパーティーのアプリケーションを利用する場合）
+補　足 hopTo Work は SharePoint 2010， SharePoint 2013，およびクライアントドライブをサポートします．
+ファイル KGTN2015040801.pdf [(49 KB)] [kitasp 技術センター, 2015/06/11 17:55]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc151/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc108/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -521,30 +529,28 @@ Host....................: h= ; GG サーバーのアドレス Port..............
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc152/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc109/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc152/">[GGH4.X] アプリケーションの起動パラメタ （引数） をユーザーによって異なる値にしたい．</a></h4>
+                            <h4><a href="/posts/new_md/doc109/">[hopTo Work 2.0] hopTo Work を試したいが，どんなサーバー （構成） が必要か？</a></h4>
                             <p class="author-category">
                             
-                            日付 2014-12-12
+                            日付 2015-06-11
                             </p>
                             <p class="intro">*技術ノート
-2014/12/12*
-[番号] 技術ノート KGTN 2014120101
-[現象] [GGH4.X] アプリケーションの起動パラメタ （引数） をユーザーによって異なる値にしたい．
-[説明] アプリケーションを起動するバッチファイルを作成し，その処理の中でユーザーに応じたパラメタを指定して下さい （バッチの書き方についてはWindowsの資料等をご覧下さい） ．このバッチファイルをGGに登録する方法とサンプルは，以下の通りです．なお， VBScript を介してバッチを起動する理由は，DOS窓を表示させない （残さない） ためです．
- バッチファイルを起動する VBScript のファイルを作成する． VBScript をクラスタマネージャに登録する．  [File: Test.bat] echo off notepad %USERNAME%.TXT exit
-[File: Test.vbs] Set WshShell = WScript.CreateObject(&ldquo;WScript.Shell&rdquo;) Call WshShell.Run( &ldquo;cmd.exe /c C:GraphOnTest.bat&rdquo;, 0, False )　← バッチファイルを指定
-[クラスタマネージャへの登録]
-ファイル KGTN2014120101.pdf [(88.6 KB)] [kitasp 技術センター, 2014/12/12 16:52]
-KGTN2014120101.jpg
-表示 [(55.8 KB)] [kitasp 技術センター, 2014/12/12 16:55]</p>
+2015/06/11*
+[番号] 技術ノート KGTN 2015040802
+[現象] [hopTo Work 2.0] hopTo Work を試したいが，どんなサーバー （構成） が必要か？
+[説明] hopTo Work が利用する環境，つまり　RDS や RemoteApps の要件として以下の役割を持つサーバーが必要となります．
+・Active Directory サーバー （ドメインコントローラー） ・リモート デスクトップ (RD) セッション ホスト ・リモート デスクトップ (RD) 接続ブローカー ・リモート デスクトップ (RD) Web アクセス ・リモート デスクトップ (RD) ライセンス
+詳細については，下記ページをご覧下さい．
+Windows Server 2012 標準的なリモート デスクトップ サービス環境構築手順について http://blogs.technet.com/b/askcorejp/archive/2014/07/09/win2012rds.aspx
+ファイル KGTN2015040802.pdf [(57.8 KB)] [kitasp 技術センター, 2015/06/11 17:55]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc152/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc109/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

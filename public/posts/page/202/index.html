@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1284/">
+                                      <a href="/posts/new_md/doc1168/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1284/">[GGW3.1.1] Ver3.1.1 のサービスGO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1168/">[iPad Client] iPad Client は接続先サーバを設定画面で指定せねばならないが，ブラウザから動的に指定する方法なないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,19 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1284/"><i class="far fa-calendar"></i> 2011-10-05</a>
+                                            <a href="/posts/new_md/doc1168/"><i class="far fa-calendar"></i> 2011-12-20</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2011100501
-[現象] [GGW3.1.1] Ver3.1.1 のサービスGO-Global Update Client の機能は？
-[説明] Ver3.1.1 では， Windows のシステムファイルwin32k.sys, ntoskrnl.exe, ntdll.dll, user32.dll, gdi32.dll 用のカスタムインタフェースが存在し，これらのシステムファイルが更新された時，常にGGのカスタムインタフェース （VBMファイルとして提供） も更新する必要があります． （Ver3.1.1の） GO-Global Update Client は，これらのシステムファイルが更新されたかどうかを監視し，更新された場合はそれに対応するVBMファイルが存在するかどうかを調べ，存在すればカスタムインタフェースを更新する処理を行います．
-しかしながら実際の運用では，Windows の新しいシステムファイルがリリースされた時，GraphOn社は互換アップデートでこのVBMファイルを提供しており， （互換アップデートの） インストーラーがVBMファイルをインストールする機能を持っているため， GO-Global Update Client が有意に働く状況は発生しません．このようなことから， GO-Global Update Client を無効化することをお勧めしております．
-注　意 上記の理由および自動互換アップデート機能の実装により， Ver3.2.1 には GO-Global Update Client は存在しません．また Ver4.0 に存在する GO-Global Update Client は，サービス名は同じですが， 「クライアント側のモジュールを更新する機能」 で，全く内容が異なるサービスです．
-ファイル KGTN2011100501.pdf [(67.5 KB)] [kitasp 技術センター, 2011/10/05 09:00]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1284/" class="btn btn-template-main">続きを読む</a>
+2011/12/20*
+[番号] 技術ノート KGTN 2011122002
+[現象] [iPad Client] iPad Client は接続先サーバを設定画面で指定せねばならないが，ブラウザから動的に指定する方法なないのか？
+[説明] 現状では接続先サーバを iPad Client の設定画面で指定するしか方法がありません．ただ，過去にも同じようなご要望がありましたので，GraphOn社へ iPad URL Scheme のサポートを依頼しております （実装時期等は未定です） ．これが実装されると，動的に接続先等を指定できるようになります．
+ファイル KGTN2011122002.pdf [(52.5 KB)] [kitasp 技術センター, 2011/12/20 09:10]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1168/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -362,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2189/">
+                                      <a href="/posts/new_md/doc2642/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -370,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2189/">[GGW3.2/GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2642/">[GGH4.X-5.X] Throttle と Batching を有効にする方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -383,20 +381,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2189/"><i class="far fa-calendar"></i> 2011-10-05</a>
+                                            <a href="/posts/new_md/doc2642/"><i class="far fa-calendar"></i> 2011-12-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2009051501
-[現象] [GGW3.2/GGH4.X-5.X] セッションがたまに切れるが，何か簡単に試せることはないか？
-[説明] GO-Global for Windows はデフォルトの設定で， （クライアント～サーバ間に張られる GO-Global for Windows のコネクション上のプロトコルで） クライアントからサーバへ30秒毎にPINGを送信しています（以降，ICMPのPINGと区別するためにGG-PINGと表記します）．30秒以内にサーバから応答があればコネクションが正常と判断し，それを越えて応答がなければコネクションが失われたと判断します （注：応答を受信した直後にコネクションが切れた場合は，それから29秒後にGG-PINGが送信されますので，59秒後にコネクションが切れたと判断します） ．このGG-PINGの機能を以下の設定で無効にすることができます．
-[HKEY_LOCAL_MACHINESOFTWAREGraphOnBridges1.0.0AppServer] SessionVerification REG_DWORD 0
-設定を変更した場合は，必ずサーバを再起動して下さい．GG-PINGの機能を無効にしてもセッションが切れる場合は，TCP/IPレベルで実際にコネクションが切れているものと推測されます．
-補　足 TCP/IPレベルでセッションが切断されているかどうかを確認するには，弊社開発の GGNetworkCheck をご利用下さい．このツールは，GG のサーバ側とクライアント側で動作させるプログラムで，クライアント側主導でTCP/IP のヘルスチェック （接続性確認） を行います．クライアント側は所定の秒数でPING メッセージを送信し （ログに記録も残します） ，サーバ側はPING メッセージを受信するとログに記録するとともに，応答メッセージをクライアント側に送信します．クライアント側は応答メッセージを受信すると，その情報をログに記録します．所定秒数内に相手からのメッセージが届かない，またはTCP/IP レベルでコネクションが切断された場合は，エラーとしてログに記録されます．この２つのログ （クライアント側とサーバ側） を付き合わせることで，ネットワークの状況を確認することが出来ます．GGのプロトコルを使用せずにチェックを行いますので，万一GG上で問題が発生したとしても，ネットワークの状況を確実に把握することが可能です．詳細は，技術ノート KGTN#2011030201 をご覧下さい．
-ファイル KGTN2009051501.pdf [(84 KB)] [kitasp 技術センター, 2017/04/06 17:22]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2189/" class="btn btn-template-main">続きを読む</a>
+2011/12/19*
+[番号] 技術ノート KGTN 2011121902
+[現象] [GGH4.X-5.X] Throttle と Batching を有効にする方法は？
+[説明] 1)　サービス &ldquo;GO-Global Application Publishing Service&rdquo; を停止して下さい．
+2)　設定ファイル ALLUSERSPROFILEApplication DataGraphOnHostProperties.xmlの内容を以下のように変更して下さい．
+&lt;property id=&quot;ClientProcessingBatch&quot; group=&quot;Miscellaneous&quot; type=&quot;UINT32&quot;&gt; &lt;value&gt;1&lt;/value&gt; ← 1 をセットする． &lt;/property&gt; &lt;property id=&quot;ClientProcessingThrottle&quot; group=&quot;Miscellaneous&quot; type=&quot;UINT32&quot;&gt; &lt;value&gt;1&lt;/value&gt; ← 1 をセットする． &lt;/property&gt;  3)　サービス &ldquo;GO-Global Application Publishing Service&rdquo; を開始して下さい．
+補　足 アプリケーションが比較的頻繁にハングアップする （アプリケーションが操作出来なくなる） 場合は，このThrottle と Batching を有効にして状況が改善するかどうか試してみる価値があります．実際，見掛けは小さく単純な画面を持つアプリケーションでしたが，このThrottle と Batching を有効にして状況が改善した事例があります．
+ファイル KGTN2011121902.pdf [(76.2 KB)] [kitasp 技術センター, 2016/02/05 11:42]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2642/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -406,7 +404,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1282/">
+                                      <a href="/posts/new_md/doc384/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -414,7 +412,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1282/">[iPad Client] iPad クライアントの解像度を縦置き状態に変更したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc384/">[Windows] Windows Server 2008 の DEP （データ実行防止）　機能を無効化したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -427,18 +425,22 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1282/"><i class="far fa-calendar"></i> 2011-10-05</a>
+                                            <a href="/posts/new_md/doc384/"><i class="far fa-calendar"></i> 2011-12-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2011092702
-[現象] [iPad Client] iPad クライアントの解像度を縦置き状態に変更したい．
-[説明] 標準状態では，iPad クライアントの解像度は横向き状態 （つまり1024x768）　になります． 現在，縦置き状態 （つまり768x1024） に設定出来るかどうかGraphOn社へ問い合わせ中です． β版では縦向き表示が可能でしたが， IOS SDK の互換性の問題から正式リリース版では横向き状態のみをサポートします．
-補　足 iPadクライアントのリリース版が縦向き表示をサポートしていない理由は，以下の通りです．
-ファイル KGTN2011092702.pdf [(64.3 KB)] [kitasp 技術センター, 2011/10/05 12:21]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1282/" class="btn btn-template-main">続きを読む</a>
+2011/12/19*
+[番号] 技術ノート KGTN 2011121901
+[現象] [Windows] Windows Server 2008 の DEP （データ実行防止）　機能を無効化したい．
+[説明] Windows Server 2008 の DEP （データ実行防止）　機能を無効化するには，下記のコマンドを実行し，サーバを再起動して下さい．
+bcdedit /set nx Alwaysoff
+DEP機能を戻す （有効化する） 時は，下記のコマンドを実行し，サーバを再起動して下さい．
+bcdedit /set nx OptIn
+上記の変更を行った場合は，GGの再インストールを行って下さい．
+補　足 GGW3.2.1 + WS2008 + &ldquo;bcdedit /set nx alwaysoff&rdquo; の環境で，セッションが正常に終了しないという報告がありました．そのような現象が見られた場合は，&ldquo;bcdedit /set nx OptIn&rdquo; を設定して下さい．
+ファイル KGTN2011121901.pdf [(55.7 KB)] [kitasp 技術センター, 2014/01/29 17:29]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc384/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -448,7 +450,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1279/">
+                                      <a href="/posts/new_md/doc1171/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -456,7 +458,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1279/">GG上で利用したいアプリケーションがあるが，環境変数が不足しており動作しない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1171/">[GGW3.2.1/GGH4.0] Program Window (PW) からアプリケーションを起動すると，ウインドウの一部が表示された状態でハングアップする．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -469,17 +471,21 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1279/"><i class="far fa-calendar"></i> 2011-10-05</a>
+                                            <a href="/posts/new_md/doc1171/"><i class="far fa-calendar"></i> 2011-12-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2011100504
-[現象] GG上で利用したいアプリケーションがあるが，環境変数が不足しており動作しない．
-[説明] そのGGサーバを利用する全てのユーザに共通な環境変数であれば， Windows の [システムのプロパティ]　→ [詳細設定] → [環境変数] → [システム環境変数] （Windows Server 2003 の場合）　で定義するのが良いでしょう．設定する内容については，そのアプリケーションのドキュメント等をご覧下さい．
-ファイル KGTN2011100504.pdf [(48.9 KB)] [kitasp 技術センター, 2011/10/05 14:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1279/" class="btn btn-template-main">続きを読む</a>
+2011/12/16*
+[番号] 技術ノート KGTN 2011121604
+[現象] [GGW3.2.1/GGH4.0] Program Window (PW) からアプリケーションを起動すると，ウインドウの一部が表示された状態でハングアップする．
+[説明] 通常では考えられない現象ですので，先ず以下の手順で特定の条件に依存するかどうか確認して下さい．
+他のクライアント （パソコン） で同じ現象が再現するかどうか確認する． 他のアカウントで同じ現象が再現するかどうか確認する． 他のアプリケーション （メモ帳など） で同じ現象が再現するかどうか確認する．
+上記の何れかで正常に動作すれば，クライアント・アカウント・アプリケーションに依存して発生する問題だと考えられますので，その周辺に問題がないかどうか調べて下さい．
+上記の何れでも問題が発生する場合は，サーバの一時的な不具合かどうかを確認するために，GGサーバを再起動して現象が再現するかどうか確認して下さい．再現しない場合は，サーバの一時的な不具合だと考えられますので，イベントログやAPSログを確認し，これまでのサーバの稼働状況を確認して下さい （サーバの定期的な再起動が行われておらず，メモリが枯渇した等） ．再現する場合は，GGサーバの本質的な問題だと考えられますので，イベントログやAPSログを確認し，正常ではない記録が残っていないか慎重に調べて下さい．
+調べても分らない場合は，過去に作成したイメージをリストアし，正常に動作するかどうか確認して下さい．正常に動作する場合は，ソフトウエアのインストール （Windows Update やドライバ等のインストール） が問題を引き起こしている可能性が高いと考えられます．正常に動作しない場合は，サーバ環境 （ハードウエアや仮想マシン） やネットワーク環境に起因して問題だと推測されます．
+ファイル KGTN2011121604.pdf [(68.3 KB)] [kitasp 技術センター, 2011/12/16 13:28]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1171/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -489,7 +495,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1285/">
+                                      <a href="/posts/new_md/doc1174/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -497,7 +503,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1285/">[GGH4.0] Windows Server 2008 R2 で，従来のターミナル サービス （TS） がリモート デスクトップ サービス （RDS） に変わったが，GGはこの RDS を使用していないのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1174/">[iPad Client] iPad Client バージョン 4.1.1.11561 で何が変わったのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -510,17 +516,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1285/"><i class="far fa-calendar"></i> 2011-10-03</a>
+                                            <a href="/posts/new_md/doc1174/"><i class="far fa-calendar"></i> 2011-12-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/03*
-[番号] 技術ノート KGTN 2011100302
-[現象] [GGH4.0] Windows Server 2008 R2 で，従来のターミナル サービス （TS） がリモート デスクトップ サービス （RDS） に変わったが，GGはこの RDS を使用していないのか？
-[説明] 従来と同じように，リモート デスクトップ サービス （RDS） を使用しておりません． 実際，サービス Remote Desktop Services を無効にしても，GGでログインおよびアプリケーションの起動等が可能です．
-ファイル KGTN2011100302.pdf [(51.9 KB)] [kitasp 技術センター, 2011/10/03 13:20]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1285/" class="btn btn-template-main">続きを読む</a>
+2011/12/16*
+[番号] 技術ノート KGTN 2011121601
+[現象] [iPad Client] iPad Client バージョン 4.1.1.11561 で何が変わったのか？
+[説明] iPad Client バージョン 4.1.1.11561 の大きな変更点は，日本語入力のバグ （日本語入力時にゴミが残る，文字が消せないなど） が修正されたことです．今回のリリースは，このバグを解消することが主な目的でしたので，他に大きな変更点はありません．
+ファイル KGTN2011121601.pdf [(46.1 KB)] [kitasp 技術センター, 2011/12/16 09:09]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1174/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -530,7 +536,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1288/">
+                                      <a href="/posts/new_md/doc1173/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -538,7 +544,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1288/">GGのプラグイン LaunchBrowser で，クライアント側のブラウザを起動する時のインタフェースは？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1173/">[iPad Client] iPad Client バージョン 4.1.1.11561 の日本語入力での制限事項は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -551,21 +557,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1288/"><i class="far fa-calendar"></i> 2011-09-30</a>
+                                            <a href="/posts/new_md/doc1173/"><i class="far fa-calendar"></i> 2011-12-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/30*
-[番号] 技術ノート KGTN 2010061403
-[現象] GGのプラグイン LaunchBrowser で，クライアント側のブラウザを起動する時のインタフェースは？
-[説明] LaunchBrowser のインタフェースは下記のようになっています （VBの例） ．
-Private Declare Function LaunchBrowser Lib _ &ldquo;C:¥GraphOn¥DLL¥LaunchBrowserI.dll&rdquo; _ (ByVal lpBuffer As String, nSize As Long) As Long &hellip; sUrl = Text1.Text lLen = Len(sUrl) Ret = LaunchBrowser(sUrl, lLen)
-関数LaunchBrowser の最初の引数はURLを含む文字列で，２番目の引数はその文字列の長さです．ブラウザのパスが標準以外の場合は，クライアント側の LaunchBrowser.ini の設定項目 browserPath を修正して，ブラウザのパスを変更して下さい
-[default] logLevel=1 browserPath=C:¥Program Files¥Internet Explorer¥iexplore.exe
-注　意 LaunchBrowser は， Ver3.2.1の環境で 「エンタープライズオプションをご利用のユーザ様に限り」 ご提供可能な，非サポートのプログラムです．
-ファイル KGTN2010061403.pdf [(65.9 KB)] [kitasp 技術センター, 2011/09/30 11:10]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1288/" class="btn btn-template-main">続きを読む</a>
+2011/12/16*
+[番号] 技術ノート KGTN 2011121602
+[現象] [iPad Client] iPad Client バージョン 4.1.1.11561 の日本語入力での制限事項は？
+[説明] iPad の日本語ローマ字キーボードの数字/記号入力モードで，16個以上の異なる記号を連続して （つまり未確定状態で） 入力すると，先頭の文字から順に確定します． これは，サーバ側のIMEの仕様に起因する制限事項になります （サーバのコンソール上でも類似する現象が発生します） ．
+ファイル KGTN2011121602.pdf [(49.7 KB)] [kitasp 技術センター, 2011/12/16 09:37]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1173/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -575,7 +577,7 @@ Private Declare Function LaunchBrowser Lib _ &ldquo;C:¥GraphOn¥DLL¥LaunchBrow
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1287/">
+                                      <a href="/posts/new_md/doc1172/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -583,7 +585,7 @@ Private Declare Function LaunchBrowser Lib _ &ldquo;C:¥GraphOn¥DLL¥LaunchBrow
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1287/">プラグイン LaunchBrowser を使って，他のプログラムを起動したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1172/">[iPad Client] キーボードを分割した時，キーボードの種類によっては半透明表示されない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -596,22 +598,17 @@ Private Declare Function LaunchBrowser Lib _ &ldquo;C:¥GraphOn¥DLL¥LaunchBrow
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1287/"><i class="far fa-calendar"></i> 2011-09-30</a>
+                                            <a href="/posts/new_md/doc1172/"><i class="far fa-calendar"></i> 2011-12-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/30*
-[番号] 技術ノート KGTN 2010063001
-[現象] プラグイン LaunchBrowser を使って，他のプログラムを起動したい．
-[説明] プラグイン LaunchBrowser の設定ファイルLaunchBrowser.ini に，下記の書式で起動したいプログラムを指定して下さい．
-[default] logLevel=1 browserPath=C:¥Program Files¥Internet Explorer¥iexplore.exe browserPath^1^=C:¥GraphOn¥BIN¥SAMPLE.EXE browserPath^2^=C:¥Program Files¥Microsoft Office¥Office¥EXCEL.EXE
-サーバ側から起動する時の文字列 （URL） の先頭に [1] を付加すると browserPath^1^ のプログラムが起動され，同様に [2] を付加すると browserPath^2^ のプログラムが起動されます．例えば，
-[2]C:¥DATA¥SAMPLE.XLS
-を指定すると，クライアント側の C:¥DATA¥SAMPLE.XLS というファイルが開きます．なお，指定可能なプログラムは，[1] 〜 [9] の９個です．
-注　意 LaunchBrowser は， Ver3.2.1の環境で 「エンタープライズオプションをご利用のユーザ様に限り」 ご提供可能な，非サポートのプログラムです．
-ファイル KGTN2010063001.pdf [(85.1 KB)] [kitasp 技術センター, 2011/09/30 11:16]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1287/" class="btn btn-template-main">続きを読む</a>
+2011/12/16*
+[番号] 技術ノート KGTN 2011121603
+[現象] [iPad Client] キーボードを分割した時，キーボードの種類によっては半透明表示されない．
+[説明] 現時点では 「半透明表示されない」 分割キーボードも iPad Client の仕様です．将来，この仕様が変更された場合は，そのことを本技術ノートに記載します．
+ファイル KGTN2011121603.pdf [(118 KB)] [kitasp 技術センター, 2011/12/16 11:56]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1172/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -621,7 +618,7 @@ Private Declare Function LaunchBrowser Lib _ &ldquo;C:¥GraphOn¥DLL¥LaunchBrow
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1289/">
+                                      <a href="/posts/new_md/doc1170/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -629,7 +626,7 @@ Private Declare Function LaunchBrowser Lib _ &ldquo;C:¥GraphOn¥DLL¥LaunchBrow
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1289/">[GGW3.2.1] クライアントとして MacOS 10.7 (Lion) の環境はサポートされているのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1170/">[Network] 無線LANでGGサーバにアクセスすると遅い気がするが，チェックすべきポイントは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -642,17 +639,18 @@ Private Declare Function LaunchBrowser Lib _ &ldquo;C:¥GraphOn¥DLL¥LaunchBrow
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1289/"><i class="far fa-calendar"></i> 2011-09-29</a>
+                                            <a href="/posts/new_md/doc1170/"><i class="far fa-calendar"></i> 2011-12-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/29*
-[番号] 技術ノート KGTN 2011081104
-[現象] [GGW3.2.1] クライアントとして MacOS 10.7 (Lion) の環境はサポートされているのか？
-[説明] 3.2.1 Patch 5 (4482) で動作したという報告はありますが，しかし MacOS 10.7 (Lion) の環境は正式にはサポートされておりません． いいえ， 3.2.1 Patch 6 で対応の予定です．何らかの理由で MacOS 10.7 (Lion) の環境での事前検証をご希望の場合は，弊社営業担当者へお問い合わせ下さい．
-ファイル KGTN2011081104.pdf [(49.7 KB)] [kitasp 技術センター, 2011/09/29 11:04]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1289/" class="btn btn-template-main">続きを読む</a>
+2011/12/16*
+[番号] 技術ノート KGTN 2011121605
+[現象] [Network] 無線LANでGGサーバにアクセスすると遅い気がするが，チェックすべきポイントは？
+[説明] 無線LANに関する一般的なチェックポイントは以下の通りです．
+無線LANルーターを再起動する． 無線LANルーターのファームウェアのバージョンを最新にする． 無線LANルーターのチャンネルを変更する． 無線LANルーターのアンテナの向きを変えてみる． 無線LANルーターと他の無線機器の電波の干渉を調べる． 無線LANルーターのLAN側を固定設定 （100Mbps/10Mbps, Full-Duplex） にする． IEEE 802.11a に変更する （IEEE 802.11b/gの2.4GHzは混んでいる） ． pingでMTUサイズを調べる． その他
+ファイル KGTN2011121605.pdf [(53.3 KB)] [kitasp 技術センター, 2011/12/16 14:57]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1170/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -662,7 +660,7 @@ Private Declare Function LaunchBrowser Lib _ &ldquo;C:¥GraphOn¥DLL¥LaunchBrow
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc229/">
+                                      <a href="/posts/new_md/doc1175/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -670,7 +668,7 @@ Private Declare Function LaunchBrowser Lib _ &ldquo;C:¥GraphOn¥DLL¥LaunchBrow
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc229/">[WS2008] IEを利用した時， Rundll32 でエラーが起きる．何か参考になる情報はないのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1175/">[GGH4.0] メモ帳のファイルダイアログではUSBディスクの挿抜が直ちに反映されるが，エクスプローラではUSBディスクの挿抜が反映されない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -683,19 +681,18 @@ Private Declare Function LaunchBrowser Lib _ &ldquo;C:¥GraphOn¥DLL¥LaunchBrow
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc229/"><i class="far fa-calendar"></i> 2011-09-28</a>
+                                            <a href="/posts/new_md/doc1175/"><i class="far fa-calendar"></i> 2011-12-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/28*
-[番号] 技術ノート KGTN 2011092802
-[現象] [WS2008] IEを利用した時， Rundll32 でエラーが起きる．何か参考になる情報はないのか？
-[説明] GraphOn社のコメントは以下の通りで，ウイルスやスパイウエア （アドウエア） 等の問題 （影響） だと推測しています．詳細は，引用中のサイトの情報をご覧下さい．
-We don't believe this issue is related to GG. We have seen this error on google search and many posts pointed to this issue as a virus or Ad ware issue. They resolved the issue be using spyware removal programs. See below.  http://www.vistax64.com/vista-security/151705-rundll32-error-ie.html
-補足１ 問題点を明確にするために，以下の内容をチェックして下さい．これらの設定内容で改善しない場合は，GGW3.2系は EOL 状態にありますので，運用回避 （エラーを無視する） をお願いします．
- UACの有効/無効で状況が変わるかどうか？ DEP （データ実行防止） を 「無効」 または 「IEを除外」 して状況が変わるかどうか？ ログオンユーザが Administrator （ローカルアカウント） で状況が変わるかどうか？ コンテンツを変えて状況が変わるかどうか （表示するコンテンツに依存するかどうか） ？ Windows Server 2008 インストール直後の環境 （イメージ） で現象が発生するかどうか？  なお，現行バージョン GGH4.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc229/" class="btn btn-template-main">続きを読む</a>
+2011/12/15*
+[番号] 技術ノート KGTN 2011120602
+[現象] [GGH4.0] メモ帳のファイルダイアログではUSBディスクの挿抜が直ちに反映されるが，エクスプローラではUSBディスクの挿抜が反映されない．
+[説明] WS2003 の環境では，全てのエクスプローラを閉じた後，改めてエクスプローラを起動するとUSBディスクの挿抜状況が反映されます． WS2008 および WS2008R2 では，同じ操作を行っても反映されないことがあります．この件についてGraphOn社へ報告しており，何らかの情報を得た時は，直ちに本技術ノートへ反映します．
+補　足 この問題は技術的に難易度が高く，どのように解決できるのかGraphOn社の開発チームで技術検討が続いている状況です． （2011年12月16日現在）
+ファイル KGTN2011120602.pdf [(64.2 KB)] [kitasp 技術センター, 2011/12/16 08:32]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1175/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -705,7 +702,7 @@ We don't believe this issue is related to GG. We have seen this error on google 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1293/">
+                                      <a href="/posts/new_md/doc1178/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -713,7 +710,7 @@ We don't believe this issue is related to GG. We have seen this error on google 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1293/">[CASE#23867] 特定のAjaxを使用するアプリケーションで，時々ウインドウ描画等で反応が遅くなる．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1178/">[GGW3.2.1] GraphOn社の GGW3.2 のサポートはいつまで続くのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -726,21 +723,19 @@ We don't believe this issue is related to GG. We have seen this error on google 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1293/"><i class="far fa-calendar"></i> 2011-09-27</a>
+                                            <a href="/posts/new_md/doc1178/"><i class="far fa-calendar"></i> 2011-12-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/09/27*
-[番号] 技術ノート KGTN 2011091602
-[現象] [CASE#23867] 特定のAjaxを使用するアプリケーションで，時々ウインドウ描画等で反応が遅くなる．
-[説明] GraphOn社の技術者がこの問題の発生する環境で調査したところ，技術ノート KGTN#2011042101 の説明の通り，アプリケーションが 「少し動いて停止する」 という状況を繰り返していました．状況を詳細に調べると，Windows のシステムファイル &ldquo;jscript.dll&rdquo; の中でこの状況が発生していることが分かりました． &ldquo;jscript.dll&rdquo; は，以下のように Microsoft JavaScript の処理を行うプログラムの一部です．
-GraphOn社の技術者は，さらに &ldquo;jscript.dll&rdquo; のどの部分で問題が発生しているのか解析を試みましたが，（Windows のシステムファイルということで） 解析に必要なシンボルテーブルが提供されていないため，問題箇所を特定することが困難という結論に至りました．
-そこで， GO-Global Ver4.0 では本件の現象が発生しないことから， &ldquo;jscript.dll&rdquo; の調査結果をもとにVer3.2 とVer4.0のアーキテクチャの差異のうち関連がありそうな部分を詳細に検討しました．その結果，以下の描画処理の差異が影響している可能性が高いことが分かりました．
-Ver4.0ではログオン・プロセスの１つのスレッドがクライアントへ描画命令を送信しますが， Ver3.2　ではセッション上で動作する全てプロセスの全てのスレッドが 「並行して」 クライアントへ描画命令を送信することが可能です．このアーキテクチャの差異が，問題の発生に絡んでいると推測されます （例： Ver3.2 の環境では，&ldquo;jscript.dll&rdquo; が並列的な描画を行うと，タイミングにより描画命令の相互干渉が発生し，処理が遅延する． Ver4.0 の環境では，　&ldquo;jscript.dll&rdquo; が並列的な描画を行っても，ログオン・プロセスが描画命令をシリアル化するため相互干渉が発生ぜず，処理が遅延しない） ．
-Ver3.2 でプロセッサ・アフィニティがどのように作用するのか明確ではありませんが，しかし弊社作成のプログラム GGAffinify.exe を使ってIEを実行するCPUを１個に限定することで， 「実質的に」 Ver4.0 と同じように１つのスレッドがクライアントへ描画命令を送信する状況になったと考えられます．従って，本件は Ver3.2 の環境で GGAffinify.exe を利用することが，最善の対応策となります．
-ファイル KGTN2011091602.pdf [(92.2 KB)] [kitasp 技術センター, 2011/09/27 09:43]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1293/" class="btn btn-template-main">続きを読む</a>
+2011/12/15*
+[番号] 技術ノート KGTN 2011121504
+[現象] [GGW3.2.1] GraphOn社の GGW3.2 のサポートはいつまで続くのか？
+[説明] GraphOn社は，最新版の１つ前のバージョンまでサポートします．最新版は GGH4.0 で， GGW3.2 はその１つ前のバージョンに当たりますので， GGH4.1 がリリースされた時点で
+Extended Maintenance Phase End of Life
+の時期が決定されます．
+ファイル KGTN2011121504.pdf [(79.5 KB)] [kitasp 技術センター, 2011/12/15 12:48]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1178/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -810,7 +805,7 @@ Ver3.2 でプロセッサ・アフィニティがどのように作用するの�
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

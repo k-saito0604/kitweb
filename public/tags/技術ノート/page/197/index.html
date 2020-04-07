@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1235/">
+                                      <a href="/posts/new_md/doc1129/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1235/">[iPad Client] iPad Client で設定できるスタートアップ・パラメタは？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1129/">[GGW3.2.1/GGH4.0] サーバを同じ時間帯に再起動しているが，たまにライセンスサーバ （FlexLM） でエラーが発生する．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,20 +340,21 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1235/"><i class="far fa-calendar"></i> 2011-11-07</a>
+                                            <a href="/posts/new_md/doc1129/"><i class="far fa-calendar"></i> 2012-01-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/11/07*
-[番号] 技術ノート KGTN 2011110401
-[現象] [iPad Client] iPad Client で設定できるスタートアップ・パラメタは？
-[説明] Favorites に登録されたホストをクリックすると，右側に Host Information が表示されます．この画面で，以下の項目を設定することが出来ます．
-Auto Zoom ? 自動ズーム機能の有効/無効 Auto Launch ? 初期起動アプリケーションの指定 Port Number ? GGサーバのポート番号 Image Compression ? 画像圧縮機能の有効/無効
-現時点でサポートするパラメタは，上記の4つのみです．
-補　足 将来リリースする iPad Client で，他のStartup Parameters のサポートも検討しているようですが，現時点ではその詳細やスケジュール等は未定です．
-ファイル KGTN2011110401.pdf [(61.3 KB)] [kitasp 技術センター, 2011/11/07 09:36]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1235/" class="btn btn-template-main">続きを読む</a>
+2012/01/19*
+[番号] 技術ノート KGTN 2012012001
+[現象] [GGW3.2.1/GGH4.0] サーバを同じ時間帯に再起動しているが，たまにライセンスサーバ （FlexLM） でエラーが発生する．
+[説明] これと同じような現象が過去に幾つかの大規模案件で発生し，その何れもがライセンスサーバの問題ではなく，運用に絡んだサーバ・ディスク・ネットワークの高負荷に起因しております．具体的な内容は，以下の通りです．
+一斉再起動によるディスクやネットワークの遅延 → C:ドライブをSANディスクに集約したケースで発生しました．
+再起動時のアンチウイルスソフトのアップデート → 全てのサーバが一斉にアップデートを行うとディスクやネットワークにかなりの負荷がかかります．
+再起動時のアンチウイルスソフトのフルスキャン → 全てのファイルをスキャンした場合，ディスクやプロセッサに負荷がかかります．
+対応としては，再起動のタイミングをずらす，アンチウイルスソフトのアップデートやスキャンのタイミングをずらす，GGのサービスの開始をずらす等の方法が考えられます．
+ファイル KGTN2012012001.pdf [(58.8 KB)] [kitasp 技術センター, 2012/01/20 08:56]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1129/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -363,7 +364,7 @@ Auto Zoom ? 自動ズーム機能の有効/無効 Auto Launch ? 初期起動ア�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1237/">
+                                      <a href="/posts/new_md/doc1131/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -371,7 +372,7 @@ Auto Zoom ? 自動ズーム機能の有効/無効 Auto Launch ? 初期起動ア�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1237/">[Active Directory] GG初回ログオン時に，不完全なユーザープロファイルが作成される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1131/">[GGW3.2.1] GG環境で画像を表示すると色深度が浅く （低く） 表示される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -384,18 +385,17 @@ Auto Zoom ? 自動ズーム機能の有効/無効 Auto Launch ? 初期起動ア�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1237/"><i class="far fa-calendar"></i> 2011-11-02</a>
+                                            <a href="/posts/new_md/doc1131/"><i class="far fa-calendar"></i> 2012-01-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/11/02*
-[番号] 技術ノート KGTN 2011110202
-[現象] [Active Directory] GG初回ログオン時に，不完全なユーザープロファイルが作成される．
-[説明] ユーザープロファイルの中には， Windows のデスクトップにログオンした時に作成されるものがあり，これらのデータ （レジストリ等） はGG初回ログオン時に作成されません （注：GGはデスクトップを使用しないため） ．このような場合は，構成済みユーザープロファイルを作成して，それをデフォルトユーザーに設定 （コピー） することで，GG初回ログオン時に必要なユーザープロファイルが作成されます．構成済みユーザープロファイルについては，下記ページ等を参考にして下さい．
-http://technet.microsoft.com/ja-jp/library/cc780839(WS.10).aspx 構成済みユーザー プロファイルを作成する
-ファイル KGTN2011110202.pdf [(51 KB)] [kitasp 技術センター, 2011/11/02 13:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1237/" class="btn btn-template-main">続きを読む</a>
+2012/01/19*
+[番号] 技術ノート KGTN 2012011903
+[現象] [GGW3.2.1] GG環境で画像を表示すると色深度が浅く （低く） 表示される．
+[説明] GGW3.2.1 では，既定の色深度が16ビットに設定されており，色深度が深い （高い） 画像は減色されて表示されます．オリジナル通りの画像を表示させたい場合は， looseactivexlogon.html を以下のように修正して下さい （ActiveXクライアントの場合） ．
+ファイル KGTN2012011903.pdf [(59.5 KB)] [kitasp 技術センター, 2012/01/19 10:13]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1131/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -405,7 +405,7 @@ http://technet.microsoft.com/ja-jp/library/cc780839(WS.10).aspx 構成済みユ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1238/">
+                                      <a href="/posts/new_md/doc1130/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -413,7 +413,7 @@ http://technet.microsoft.com/ja-jp/library/cc780839(WS.10).aspx 構成済みユ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1238/">[GGH4.0] クライアントフレームを使用すると画面が乱れなくなる．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1130/">[GGW3.2.1] マルチモニタ機能を有効/無効にする方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -426,17 +426,19 @@ http://technet.microsoft.com/ja-jp/library/cc780839(WS.10).aspx 構成済みユ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1238/"><i class="far fa-calendar"></i> 2011-11-02</a>
+                                            <a href="/posts/new_md/doc1130/"><i class="far fa-calendar"></i> 2012-01-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/11/02*
-[番号] 技術ノート KGTN 2011110201
-[現象] [GGH4.0] クライアントフレームを使用すると画面が乱れなくなる．
-[説明] クライアントフレームを使用しない場合は， （GGクライアントにとって） 背景がクライアント上のデスクトップ （つまり様々な描画オブジェクト） になりますので，サーバ側の画面とクライアント側の画面を矛盾なく描画する必要があります （非常に複雑な処理です） ．クライアントフレームを使用する場合は， （GGクライアントにとって） 背景がサーバ上の壁紙のみになりますので，サーバ側の情報だけで描画することが出来ます．このようなことから，アプリケーションの描画処理に何らかの問題があったとしても， 「クライアントのデスクトップの画面が影響しないため」 正しく表示される可能性があります．
-ファイル KGTN2011110201.pdf [(51.7 KB)] [kitasp 技術センター, 2011/11/02 13:03]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1238/" class="btn btn-template-main">続きを読む</a>
+2012/01/19*
+[番号] 技術ノート KGTN 2012011904
+[現象] [GGW3.2.1] マルチモニタ機能を有効/無効にする方法は？
+[説明] 以下の設定で，マルチモニタ機能を有効/無効にすることが出来ます．
+Windows Client の場合 （ショートカット） ggw.exe -h server1 -mm 0 （無効にする場合） ggw.exe -h server1 -mm 1 （有効にする場合）
+ActiveX Client の場合 （looseactivexlogon.htmlを修正）
+ファイル KGTN2012011904.pdf [(59.1 KB)] [kitasp 技術センター, 2012/01/19 10:26]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1130/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -446,7 +448,7 @@ http://technet.microsoft.com/ja-jp/library/cc780839(WS.10).aspx 構成済みユ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1239/">
+                                      <a href="/posts/new_md/doc1137/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -454,7 +456,7 @@ http://technet.microsoft.com/ja-jp/library/cc780839(WS.10).aspx 構成済みユ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1239/">[iPad</a></h2>
+                                    <h2><a href="/posts/new_md/doc1137/">[GGW3.2.1/GGH4.0] GGではクライアント側でシリアルポート （COMポート） を使用できるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -467,23 +469,18 @@ http://technet.microsoft.com/ja-jp/library/cc780839(WS.10).aspx 構成済みユ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1239/"><i class="far fa-calendar"></i> 2011-11-02</a>
+                                            <a href="/posts/new_md/doc1137/"><i class="far fa-calendar"></i> 2012-01-18</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/11/02*
-[番号] 技術ノート KGTN 2011051101
-[現象] [iPad-Client] iPad-Cleint β版で日本語の入力が出来ない．
-[説明] iPad-Cleint β版では，日本語の入力は出来ません．対症療法になりますが，IME2000等の機能の 「ソフト キーボード」 を利用することで，日本語を入力することが可能です．iPad-Cleint リリース版では，iPad側のIME（日本語入力のキーボード） を使用して日本語の入力が可能になる予定です．
-補足１ フリーソフトの 「DekaスクリーンキーボードCompact」 をインストールし，アプリケーションとして登録して下さい．利用したいアプリケーションとこのアプリケーションを起動することで，タッチパネル上で106キーボードと同じ操作で日本語を含む文字入力が可能になります．
-補足２ GraphOn社からの情報によれば， iPad上で漢字入力 （かな漢字変換） が出来ない問題は， iPad のオペレーティングシステム iOS4 の不具合に起因しているとのことです．次期 iOS5 ではこの不具合が解消され，漢字入力 （かな漢字変換） が出来るようになるという報告がありました．
-実際，GraphOn社の開発チームは， iOS5 のβ版でこの問題が解消されることを確認しています．
-補足３ iOS5 の環境で日本語を入力しようとすると，地球マークのキー （言語切り替え） が表示されない現象が確認されています．この問題については，10月中旬にリリース予定の iPad Client Release 2 で修正される見込みです．
-補足４ iPad Client Release 2 (4.1.1.11249) で，クライアント側のIMEを使用して日本語入力が可能になりました （次ページの画像の通り） ．簡単にテストした範囲では，以下の問題があります．
-日本語フルキーボードを使用してローマ字かな変換をした場合，入力したアルファベットの前の部分が残るケースがある． 日本語テンキーを使用してひらがな入力をした場合，撥音・拗音・半濁音が入力できない．
-補足５ iPad Client Release 2 の問題は，次のリリース iPad Client Release 3 の最優先対応項目となっております．弊社でこの問題について検討したところ，英語キーボードについては （条件が付くかもしれませんが） 対応可能で，日本語キーボードについては撥音・拗音・半濁音の入力が非常に難しいと考えております．従って，iPad Client Release 3では，英語キーボードのみサポートする可能性があります．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1239/" class="btn btn-template-main">続きを読む</a>
+2012/01/18*
+[番号] 技術ノート KGTN 2012011601
+[現象] [GGW3.2.1/GGH4.0] GGではクライアント側でシリアルポート （COMポート） を使用できるのか？
+[説明] GGはシリアルポートおよびパラレルポートのリダイレクション機能をサポートしております．しかし，クライアント側のポートとサーバ側のポートを仮想的に線で結ぶようなイメージでなく，APIレベル （Win32の ReadFile と WriteFile） でデータをリダイレクトするため動作するアプリケーションが限られます．このようなことから，一般的に （汎用的に） シリアルポートを利用したい場合は，サードパーティーの製品をご利用下さい．GraphOn社のサイトで紹介されている製品は以下の通りです．
+補　足 シリアルポートおよびパラレルポートのリダイレクション機能に関するGraphOn社からの情報は，以下の通りです．
+ファイル KGTN2012011601.pdf [(89.4 KB)] [kitasp 技術センター, 2012/01/18 11:14]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1137/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -493,7 +490,7 @@ http://technet.microsoft.com/ja-jp/library/cc780839(WS.10).aspx 構成済みユ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1241/">
+                                      <a href="/posts/new_md/doc1134/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -501,7 +498,7 @@ http://technet.microsoft.com/ja-jp/library/cc780839(WS.10).aspx 構成済みユ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1241/">[GGH4.0] ウインドウをドラッグする時に，枠のみを表示させる設定はないのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1134/">[GGW3.2.1/GGH4.0] 英文のリリースノートに書かれている ISSUES FIXED の詳細を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -514,19 +511,17 @@ http://technet.microsoft.com/ja-jp/library/cc780839(WS.10).aspx 構成済みユ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1241/"><i class="far fa-calendar"></i> 2011-10-31</a>
+                                            <a href="/posts/new_md/doc1134/"><i class="far fa-calendar"></i> 2012-01-18</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/31*
-[番号] 技術ノート KGTN 2011103102
-[現象] [GGH4.0] ウインドウをドラッグする時に，枠のみを表示させる設定はないのか？
-[説明] 非サポートの機能として，ドラッグ中にウインドウの枠のみを表示させる機能があります．
-Windows Client 起動パラメタで -dfw 0 を指定する．
-ActiveX Client OBJECTタグのパラメタで を指定する．
-ファイル KGTN2011103102.pdf [(60.1 KB)] [kitasp 技術センター, 2011/10/31 12:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1241/" class="btn btn-template-main">続きを読む</a>
+2012/01/18*
+[番号] 技術ノート KGTN 2012011802
+[現象] [GGW3.2.1/GGH4.0] 英文のリリースノートに書かれている ISSUES FIXED の詳細を知りたい．
+[説明] 通常のサポートでは，GraphOn社は ISSUES FIXED の詳細に関する情報を提供しておりません．当然のことながら，GraphOn社の開発チームのデータベースの中には詳細な情報がありますが，顧客固有の情報やノウハウに関する情報等を含んでおり，それを単純に公開することは困難です．もし詳細情報を公開するとすれば，それらの情報を含まないように整理し，さらに外部の人間が分るように噛み砕いて説明する必要があります．しかしこの作業が出来るのはその件に絡んだ開発担当者だけであり，日々のGGの開発作業・保守作業の中から，その資料を作成する時間を確保することは非常に困難な状況にあります．このような厳しい事情があることを，ぜひご理解ください．なお，どうしても情報が必要な場合は，プロフェッショナルサービスとして対応させて頂きます．
+ファイル KGTN2012011802.pdf [(62.8 KB)] [kitasp 技術センター, 2012/01/18 13:07]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1134/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -536,7 +531,7 @@ ActiveX Client OBJECTタグのパラメタで を指定する．
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1240/">
+                                      <a href="/posts/new_md/doc1133/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -544,7 +539,7 @@ ActiveX Client OBJECTタグのパラメタで を指定する．
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1240/">[GGW3.2.1] ログオン時に表示されるIMEのモードが英語になる．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1133/">[GGW3.2.1] ActiveX クライアントにHTML （OBJECTタグ） でユーザIDとパスワードを渡しているが，ユーザがソースコードを表示させるとパスワードが分ってしまう．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -557,19 +552,19 @@ ActiveX Client OBJECTタグのパラメタで を指定する．
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1240/"><i class="far fa-calendar"></i> 2011-10-31</a>
+                                            <a href="/posts/new_md/doc1133/"><i class="far fa-calendar"></i> 2012-01-18</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/31*
-[番号] 技術ノート KGTN 2011103103
-[現象] [GGW3.2.1] ログオン時に表示されるIMEのモードが英語になる．
-[説明] この文章では，現象が明確ではありませんので，適切な回答は出来ません．可能性としては，デフォルトのキーボード設定が間違っている （希望のモードと異なっている） ことが考えられます．以下のレジストリがキーボードの情報を保持していますので，これを採取してお送り下さい．
-HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout Fallback Layout REG_SZ ???
-なお， Windows Server 2003 の標準状態であれば，上記の ??? の部分は 「日本語 (MS-IME2002) 」 です．
-ファイル KGTN2011103103.pdf [(58.7 KB)] [kitasp 技術センター, 2011/10/31 13:23]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1240/" class="btn btn-template-main">続きを読む</a>
+2012/01/18*
+[番号] 技術ノート KGTN 2012010605
+[現象] [GGW3.2.1] ActiveX クライアントにHTML （OBJECTタグ） でユーザIDとパスワードを渡しているが，ユーザがソースコードを表示させるとパスワードが分ってしまう．
+[説明] ActiveX クライアントおよびブラウザの仕様で渡したパスワードを完全に隠すことは出来ませんが，しかし以下の設定を行うことによりユーザがソースコードを表示を出来ないようにすることが可能です．
+この設定により，ActiveX クライアントに制御が移った直後にブラウザ （IE） が自動的に閉じられるため，ユーザがソースコードを表示させることは出来ません．
+補　足 Windows Vista および Windows 7 の環境では， UAC （ユーザーアカウント制御） を無効にするか，またはブラウザ （IE） を 「管理者として実行」 する必要があります．この条件に合致しない場合は，ブラウザ （IE） は自動的に閉じられず，開いたまま （表示されたまま） となります．このような場合は，右クリック （コンテキストメニュー） を禁止する等の方法で対応して下さい．
+ファイル KGTN2012010605.pdf [(67.2 KB)] [kitasp 技術センター, 2012/01/19 08:17]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1133/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -579,7 +574,7 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout Fallback Layout
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1242/">
+                                      <a href="/posts/new_md/doc1135/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -587,7 +582,7 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout Fallback Layout
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1242/">[iPad Client] iPad Client Release2 で日本語の入力は可能になったが，ローマ字かな漢字変換でローマ字の一部が残る．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1135/">[iPad Client] iPad Client は GO-Global for UNIX をサポートしているのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -600,19 +595,17 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout Fallback Layout
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1242/"><i class="far fa-calendar"></i> 2011-10-27</a>
+                                            <a href="/posts/new_md/doc1135/"><i class="far fa-calendar"></i> 2012-01-18</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/27*
-[番号] 技術ノート KGTN 2011102701
-[現象] [iPad Client] iPad Client Release2 で日本語の入力は可能になったが，ローマ字かな漢字変換でローマ字の一部が残る．
-[説明] Windows や Linux のクライアントであれば事前に弊社で試験を行い，問題があればリリース前に修正させますが， iPad の場合は App Store の手続き上の制限等で事前に試験を行うことが出来ません．さらに，クライアント側のIMEを使用するGGクライアントはこの iPad Client が初めてで，GraphOn社の試験も十分ではありませんでした．このような事情で，残念ながら本件のバグが発生しております．現在，GraphOn社に弊社の （原因の） 推測を添えて，バグ修正依頼を出しております．修正されるまで，いま暫くお待ち下さい．
-補足１ 以下は弊社の推測になりますが， 1) 未確定の文字をサーバ側でエコーバックさせるためローマ字を送信， 2) iPad上で変換文字が選択された時に先に送った文字を消去， 3) その後に変換文字を送信 していると考えられます．今回の問題は，消去すべき文字数の計算にミスがあると推測しています．
-補足２ 上記補足１の推測を確認するために，IMEの設定を 「直接入力」 に変更して検証しました． &ldquo;kanji&rdquo; と入力すると，通常状態で英字の文字列が入力され， iPad 上で &ldquo;漢字&rdquo; を選択すると英字 （の一部） が消去され，その後に &ldquo;漢字&rdquo; が入力 （エコーバック） されました． 補足３ ローマ字が消えないという問題以外に，選択した漢字 （の文字列） が正しく入力されない問題も確認しています．下記の例では，タイミング等に依存して （？） ， 「ミ」 が1〜5文字入力されます．
-ファイル KGTN2011102701.pdf [(120 KB)] [kitasp 技術センター, 2011/10/27 14:12]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1242/" class="btn btn-template-main">続きを読む</a>
+2012/01/18*
+[番号] 技術ノート KGTN 2012011803
+[現象] [iPad Client] iPad Client は GO-Global for UNIX をサポートしているのか？
+[説明] 少なくとも現在リリースされている iPad Client は GO-Global for UNIX をサポートしておりません．今後のことについては未だ明確な情報がありませんが，GraphOn社が公開している資料 &ldquo;Mobile client initiative positioning paper&rdquo; には以下の記述があります．
+ファイル KGTN2012011803.pdf [(72.6 KB)] [kitasp 技術センター, 2012/01/18 11:42]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1135/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -622,7 +615,7 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout Fallback Layout
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1243/">
+                                      <a href="/posts/new_md/doc1138/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -630,7 +623,7 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout Fallback Layout
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1243/">[GGH4.0] ActiveXクライアントは，他のプログラムをインストールするのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1138/">[GGW3.2.1/GGH4.0] 印刷時に指定した用紙サイズと異なる用紙に出力される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -643,17 +636,17 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout Fallback Layout
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1243/"><i class="far fa-calendar"></i> 2011-10-26</a>
+                                            <a href="/posts/new_md/doc1138/"><i class="far fa-calendar"></i> 2012-01-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/26*
-[番号] 技術ノート KGTN 2011102603
-[現象] [GGH4.0] ActiveXクライアントは，他のプログラムをインストールするのか？
-[説明] gg-activex.cab の中にvcredist_x86.exe が含まれており， Microsoft Visual C++ 2008 Redistributable （Microsoft Visual C++ 再頒布可能パッケージ） が必要に応じてインストールされます．
-ファイル KGTN2011102603.pdf [(49.1 KB)] [kitasp 技術センター, 2011/10/26 12:05]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1243/" class="btn btn-template-main">続きを読む</a>
+2012/01/17*
+[番号] 技術ノート KGTN 2012011701
+[現象] [GGW3.2.1/GGH4.0] 印刷時に指定した用紙サイズと異なる用紙に出力される．
+[説明] これはGGの問題ではなく，介在するプリンタドライバ等の機能 （設定） に起因して発生します．プリンタドライバ （注：PDFクリエーターやPDFリーダーを含みます，またプリンタ本体やアプリケーションにもこの機能がある可能性があります） の中には，原稿サイズに関わりなく自動的に出力用紙サイズ （トレイ） や印刷方向を決める機能を備えているものがあり，これが機能した時に 「印刷時に指定した用紙サイズ （原稿サイズ） と異なる用紙に出力される」 という現象が発生します．対応としては，技術的に考えれば原稿サイズと出力用紙サイズを一致させることは可能だと考えられますので， （印刷に絡む全ての） プリンタドライバやプリンタ本体等の機能 （設定） を確認し調整して下さい．
+ファイル KGTN2012011701.pdf [(55.3 KB)] [kitasp 技術センター, 2012/01/17 11:18]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1138/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -663,7 +656,7 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout Fallback Layout
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1245/">
+                                      <a href="/posts/new_md/doc1140/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -671,7 +664,7 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout Fallback Layout
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1245/">[GGH4.0] HostProperties.xml の各項目についての資料はないのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1140/">[GGW3.2.1/GGH4.0] GGはカレンダー （閏年） に依存して，問題が起きることはないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -684,17 +677,17 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout Fallback Layout
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1245/"><i class="far fa-calendar"></i> 2011-10-26</a>
+                                            <a href="/posts/new_md/doc1140/"><i class="far fa-calendar"></i> 2012-01-13</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/26*
-[番号] 技術ノート KGTN 2011102601
-[現象] [GGH4.0] HostProperties.xml の各項目についての資料はないのか？
-[説明] HostProperties.xml の各項目は，原則としてクラスタマネージャで設定した値が記録されていますので，各項目についての資料はありません．クラスタマネージャに存在しない項目については，必要に応じて技術ノートの中で情報を提供しております．
-ファイル KGTN2011102601.pdf [(47.9 KB)] [kitasp 技術センター, 2011/10/26 09:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1245/" class="btn btn-template-main">続きを読む</a>
+2012/01/13*
+[番号] 技術ノート KGTN 2012011302
+[現象] [GGW3.2.1/GGH4.0] GGはカレンダー （閏年） に依存して，問題が起きることはないのか？
+[説明] GGはアプリケーションを配信するミドルウエアであり，カレンダー （閏年） に影響を受けるような処理は行っておりません．なお，GG上で動作するアプリケーション （配信するアプリケーション） の動作については，それぞれのアプリケーションの仕様等をご確認下さい．
+ファイル KGTN2012011302.pdf [(48.1 KB)] [kitasp 技術センター, 2012/01/13 12:32]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1140/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -704,7 +697,7 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout Fallback Layout
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1244/">
+                                      <a href="/posts/new_md/doc1139/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -712,7 +705,7 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout Fallback Layout
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1244/">[GGH4.0] アプリケーションのウインドウをドラッグ （移動） する時，そのウインドウの枠のみを表示する機能はないのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1139/">[GGW3.2.1/GGH4.0] GGは問題 （障害） 毎のパッチファイルが存在するのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -725,17 +718,17 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout Fallback Layout
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1244/"><i class="far fa-calendar"></i> 2011-10-26</a>
+                                            <a href="/posts/new_md/doc1139/"><i class="far fa-calendar"></i> 2012-01-13</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/26*
-[番号] 技術ノート KGTN 2011102602
-[現象] [GGH4.0] アプリケーションのウインドウをドラッグ （移動） する時，そのウインドウの枠のみを表示する機能はないのか？
-[説明] GraphOn社に問い合わせ中です．
-ファイル KGTN2011102602.pdf [(43.4 KB)] [kitasp 技術センター, 2011/10/26 09:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1244/" class="btn btn-template-main">続きを読む</a>
+2012/01/13*
+[番号] 技術ノート KGTN 2012011303
+[現象] [GGW3.2.1/GGH4.0] GGは問題 （障害） 毎のパッチファイルが存在するのか？
+[説明] いいえ，GGには問題 （障害） 毎のパッチファイルは存在しません．GGは低レベルな場所でアプリケーションの動作 （APIの呼び出し） を監視し，その情報を元にクライアント上で画面を再現します．このような仕組みのため，修正の大半はアプリケーションの動作を監視する部分が絡み，問題毎のパッチファイルを提供することは技術的に困難です．
+ファイル KGTN2012011303.pdf [(50.3 KB)] [kitasp 技術センター, 2012/01/13 14:14]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1139/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -805,7 +798,7 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout Fallback Layout
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

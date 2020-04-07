@@ -409,25 +409,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1163/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1064/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1163/">[GGH4.0] クライアントドライブ機能を有効にすると，GGへのログオンが30秒くらい遅くなる．</a></h4>
+                            <h4><a href="/posts/new_md/doc1064/">[iPad Client] WiFi環境で iPad Client を使用しているが，たまに数秒間止まった感じになる．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-12-22
+                            日付 2012-03-07
                             </p>
                             <p class="intro">*技術ノート
-2011/12/22*
-[番号] 技術ノート KGTN 2011122202
-[現象] [GGH4.0] クライアントドライブ機能を有効にすると，GGへのログオンが30秒くらい遅くなる．
-[説明] サーバ側およびクライアント側のアンチウイルスソフトを無効にすることで，この現象が発生しなくなった事例があります．さらに，改めてそれぞれのアンチウイルスソフトを有効にしたところ，この現象は再現 （再発） しませんでした．このようなことから詳しい原因を特定できませんでしたが，アンチウイルスソフトがGGのクライアントドライブ機能を受け持つDLLを掴んでいたことが原因として考えられます．対応としては， 「GGがインストールされたフォルダを」 アンチウイルスソフトがスキャンする対象から除外する方法が妥当だと思います．
-ファイル KGTN2011122202.pdf [(51.7 KB)] [kitasp 技術センター, 2011/12/22 21:31]</p>
+2012/03/07*
+[番号] 技術ノート KGTN 2012020101
+[現象] [iPad Client] WiFi環境で iPad Client を使用しているが，たまに数秒間止まった感じになる．
+[説明] 右クリック操作 （コンテキストメニューの表示） で数秒間止まる現象を，弊社およびGraphOn社で確認しております．現時点では修正のスケジュールは未定ですが，GraphOn 社より新たな情報が届き次第，この技術ノートに反映します．なお，この現象はAndroid Client では発生しません．
+(2012-03-07) この問題は 4.1.1.12004 でも発生します．
+ファイル KGTN2012020101.pdf [(60.4 KB)] [kitasp 技術センター, 2012/03/07 09:07]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1163/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1064/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,26 +447,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc383/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1065/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc383/">[GGW3.2.1/GGH4.X] GGH4.Xをインストールしたサーバを，GGW3.2.1へ戻す時の手順は？</a></h4>
+                            <h4><a href="/posts/new_md/doc1065/">[GGW3.2.1/GGH4.0] Client Clipboard （クライアント・クリップボード機能） でエラーが記録される．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-12-22
+                            日付 2012-03-05
                             </p>
                             <p class="intro">*技術ノート
-2011/12/22*
-[番号] 技術ノート KGTN 2011122301
-[現象] [GGW3.2.1/GGH4.X] GGH4.Xをインストールしたサーバを，GGW3.2.1へ戻す時の手順は？
-[説明] 必ず以下の手順でGGH4.XのアンインストールとGGW3.2.1の再インストールを行って下さい．これ以外の手順でGGW3.2.1の再インストールを行った場合，GG上でアプリケーションが正常に動作しない等の問題が発生します．
- GGH4.Xをアンインストールする． 次の２つのファイルが存在すれは，それらを削除する． C:WindowsSystem32redirector.dll C:WindowsSystem32snds.dl サーバを再起動する． GGW3.2.1をインストールする． サーバを再起動する．  なお，上記１でライセンスファイルも削除されますので，事前にライセンスファイルを待避 （コピー） して下さい．
-There are two files from 4.0.1 that do not get cleaned up and need to be removed. Go to C:WindowsSystem32 and remove redirector.dll and snds.dll. Then reboot the system.  ファイル KGTN2011122301.pdf [(60.1 KB)] [kitasp 技術センター, 2014/01/29 17:31]</p>
+2012/03/05*
+[番号] 技術ノート KGTN 2012030501
+[現象] [GGW3.2.1/GGH4.0] Client Clipboard （クライアント・クリップボード機能） でエラーが記録される．
+[説明] Windows ではさまざまなオブジェクトをクリップボードにコピーすることが出来ますが，GGのクライアント・クリップボード機能では，コピー操作と同時に 「クライアント側からサーバ側へ」 あるいは 「サーバ側からクライアントへ側」 へオブジェクトをコピー （データ転送） する必要があるため，対象となるオブジェクトのサイズが大きい場合や，マシンを跨いでコピーできない形式の場合はエラーとなります．これは GG の仕様 （動作） に基づく制限事項となります．原則的には，文字列や画像等の基本的なデータのみがサポートされるとお考え下さい．
+補　足 クライアント・クリップボード機能では，コピー操作と同時に 「他方のクリップボードへデータをコピーする」 ，表現を変えれば 「他方のクリップボードへデータをペーストする」 という処理が行われます．従って，例えば何気なく Ctrl-C を押下したにも関わらず，その操作の直後に大量のデータが他方のクリップボードへペーストされることがある点にご注意下さい．
+ファイル KGTN2012030501.pdf [(61.8 KB)] [kitasp 技術センター, 2012/03/05 09:58]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc383/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1065/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -484,31 +485,27 @@ There are two files from 4.0.1 that do not get cleaned up and need to be removed
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1162/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1066/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1162/">[GGW3.2.1] Windows Server 2008 (32bit) &#43; GGW3.2.1 の環境で，クライアント印刷が出来ない．</a></h4>
+                            <h4><a href="/posts/new_md/doc1066/">[Network] さまざまなネットワーク環境 （回線速度・パケット遅延・パケット損失など） で試験したいが，お勧めのツールは？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-12-22
+                            日付 2012-03-02
                             </p>
                             <p class="intro">*技術ノート
-2011/12/22*
-[番号] 技術ノート KGTN 2011122003
-[現象] [GGW3.2.1] Windows Server 2008 (32bit) + GGW3.2.1 の環境で，クライアント印刷が出来ない．
-[説明] 弊社でも２つの試験環境でクライアント印刷が出来ない （サーバー側のプリンタにジョブが生成されるがクライアント側へ転送されない，しかしテスト印刷は正しくクライアント側へ印刷出来る） 問題を確認しております．既にGraphOn社へ報告済みで，新たな情報が届き次第，この技術ノートを更新します． このような場合は， （通常） 印刷出来ないアカウントの print.ini を消すことで問題が解消します．
-[Windows 7 または Windows Vista] %USERPROFILE%¥AppData¥Local¥print.ini を消す．
-[Windows XP など] %USERPROFILE%¥Local Settings¥Application Data¥print.ini を消す．
-なお，この現象および解消方法はWindows Server 2008 (32bit) だけでなく Windows Server 2003 の環境でも適用されます．
-補　足 上記の方法で問題が解消せず，かつ現象が発生するGGサーバで 「過去に GGH4.0 をインストールしたことがある場合」 は，以下の作業を行って下さい．
-GGW3.2.1 をアンインストールし再起動する． 次の２つのファイル （過去のGGH4.0のファイル） を削除する． C:¥Windows¥System32¥redirector.dll C:¥Windows¥System32¥snds.dl GGW3.2.1 をインストールする．
-なお，上記１でライセンスファイルも削除されますので，事前にライセンスファイルを待避 （コピー） して下さい．
-ファイル KGTN2011122003.pdf [(73.3 KB)] [kitasp 技術センター, 2011/12/23 01:47]</p>
+2012/03/02*
+[番号] 技術ノート KGTN 2012030201
+[現象] [Network] さまざまなネットワーク環境 （回線速度・パケット遅延・パケット損失など） で試験したいが，お勧めのツールは？
+[説明] さまざまなツールがありますが，弊社では Windows 環境で動作する Wlinee を主に使用しています．回線速度・パケット遅延・パケット損失のパラメタを柔軟に設定することが可能で，GGの試験には十分な機能を有しています．
+上記設定画面は，双方向の帯域が 256kbps，パケット損失0%，パケット遅延200ms前後 （RTTは400ms前後） という設定です．なお， Wlinee のダウンロードサイトは以下の通りで，弊社ではこれを Windows Server 2003 R2 にインストールしています．
+http://sourceforge.jp/projects/wlinee/releases/
+ファイル KGTN2012030201.pdf [(222 KB)] [kitasp 技術センター, 2012/03/02 12:49]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1162/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1066/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -527,26 +524,25 @@ GGW3.2.1 をアンインストールし再起動する． 次の２つのファ�
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1167/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1067/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1167/">[DNS] マスターサーバでの変更を，直ちにスレイブサーバへ反映させたい．</a></h4>
+                            <h4><a href="/posts/new_md/doc1067/">[GGW3.2.1/GGH4.0] GGサーバへアクセスするクライアントが，IPマスカレード等で全て同一IPアドレスになるが，このような環境でもセッション再接続機能を利用できるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-12-21
+                            日付 2012-03-01
                             </p>
                             <p class="intro">*技術ノート
-2011/12/21*
-[番号] 技術ノート KGTN 2011122101
-[現象] [DNS] マスターサーバでの変更を，直ちにスレイブサーバへ反映させたい．
-[説明] 幾つかの方法がありますが， 「比較的手間がかからず障害発生時の切り分けが容易」 という基準で考えれば，rsync を利用してマスターサーバから各スレイブサーバへゾーンファイルを転送する方法がお勧めです．スレイブサーバは新しいゾーンファイルが転送されて来たかを常にチェックし，届いていればその新しいゾーンファイルの再読み込みを行います．下記ページに，具体的な情報が紹介されていますので，ご覧下さい．
-スレーブ・サーバのゾーン転送とセキュリティ http://www.atmarkit.co.jp/flinux/rensai/bind905/bind905b.html
-ファイル KGTN2011122101.pdf [(62.5 KB)] [kitasp 技術センター, 2011/12/21 09:41]</p>
+2012/03/01*
+[番号] 技術ノート KGTN 2012030102
+[現象] [GGW3.2.1/GGH4.0] GGサーバへアクセスするクライアントが，IPマスカレード等で全て同一IPアドレスになるが，このような環境でもセッション再接続機能を利用できるのか？
+[説明] セッション再接続機能は，再接続すべきセッションをユーザIDで判断しますので，IPマスカレード等で全てのクライアントが同一IPアドレスであっても問題ありません．逆に，全てのクライアントが異なるIPアドレスであったとしても，ユーザIDの利用が重複しているとセッション再接続機能を利用することは出来ません．
+ファイル KGTN2012030102.pdf [(47.7 KB)] [kitasp 技術センター, 2012/03/01 14:29]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1167/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1067/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

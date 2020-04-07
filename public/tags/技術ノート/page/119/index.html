@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc440/">
+                                      <a href="/posts/new_md/doc322/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc440/">[GGH4.X] ActiveXクライアントをインストール中に IE でエラー （Win32の例外） が発生した．何をすべきか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc322/">[GGH4.X] 拡張パックの振分けサーバを使用する場合，GGサーバ群を外部のネットワークに直接公開せねばならないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,21 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc440/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/new_md/doc322/"><i class="far fa-calendar"></i> 2014-02-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2013121901
-[現象] [GGH4.X] ActiveXクライアントをインストール中に IE でエラー （Win32の例外） が発生した．何をすべきか？
-[説明] 一般にプログラムのインストール中にシステムレベルのエラーが発生した場合，どのような状況になっているのか推測出来ません．とりあえず，その時のデスクトップのスクリーンショットを採取し， （関連するファイルがロックされた状態になっている可能性がありますので） マシンを再起動して下さい．そして，以下の手順でActiveXクライアントを再度インストールして下さい．
-  ActiveXクライアントを通常の手順でインストール A. 正常にインストールが完了しログオンに成功 → 正常 B. システムレベルのエラーが再度発生 → Windowsの障害 C. 正常にインストールが完了しログオンに失敗 → 下記2へ
-  GGAXDelete4 または GGAXDelete4G でActiveXクライアントを強制削除
-  ActiveXクライアントを通常の手順でインストール A. 正常にインストールが完了しログオンに成功 → 正常 B. 正常にインストールが完了しログオンに失敗 → 下記4へ
-  GGAXDelete4 または GGAXDelete4G でActiveXクライアントを強制コピー
-  ファイル KGTN2013121901.pdf [(57 KB)] [kitasp 技術センター, 2014/01/29 14:38]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc440/" class="btn btn-template-main">続きを読む</a>
+2014/02/21*
+[番号] 技術ノート KGTN 2014021903
+[現象] [GGH4.X] 拡張パックの振分けサーバを使用する場合，GGサーバ群を外部のネットワークに直接公開せねばならないのか？
+[説明] いいえ，必ずしもGGサーバ群を外部のネットワークに直接公開する必要はありません．クライアントから特定のGGサーバに接続できれば良いので，1対1でコネクションを中継する装置 （中継サーバ，ロードバランサ）をGGサーバ群の前に配置することも出来ます．
+ファイル KGTN2014021903.pdf [(51.1 KB)] [kitasp 技術センター, 2014/02/21 21:12]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc322/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -364,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc404/">
+                                      <a href="/posts/new_md/doc324/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -372,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc404/">[GGH4.X] ActiveXクライアント利用に https で接続するが，その後GGサーバに接続した後も https (443) で描画命令等の通信を行うのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc324/">[GGH4.X] 拡張パックの監視コンソールや振分けサーバは， https でも動作するのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -385,17 +381,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc404/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/new_md/doc324/"><i class="far fa-calendar"></i> 2014-02-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2014012006
-[現象] [GGH4.X] ActiveXクライアント利用に https で接続するが，その後GGサーバに接続した後も https (443) で描画命令等の通信を行うのか？
-[説明] プロトコルとポート番号を分けてお考え下さい．ActiveXクライアント利用に http または https を利用するのは，ActiveXクライアントのパラメタ （つまりGGサーバへの接続情報） を取得するためです．ActiveXクライアントはこの情報を得ると，パラメタで指定されたGGサーバのIPアドレスとポート番号へ独自のプロトコル （Rapid-X） で通信を開始します．これ以降，すべての通信はこのポートのみを使用します．
-ファイル KGTN2014012006.pdf [(51.1 KB)] [kitasp 技術センター, 2014/01/29 16:45]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc404/" class="btn btn-template-main">続きを読む</a>
+2014/02/21*
+[番号] 技術ノート KGTN 2014021901
+[現象] [GGH4.X] 拡張パックの監視コンソールや振分けサーバは， https でも動作するのか？
+[説明] はい，監視コンソールや振分けサーバのユーザ側の通信はGGのセッションに直接関与しませんので， http でも https でも動作します．また，ウエッブサーバの設定で自由にポート番号を変更することも可能です．
+ファイル KGTN2014021901.pdf [(49.7 KB)] [kitasp 技術センター, 2014/02/21 21:04]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc324/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -405,7 +401,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc465/">
+                                      <a href="/posts/new_md/doc323/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -413,7 +409,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc465/">[GGH4.X] APS の開始を３分遅らせたところ，その間 GGSessionMonitor が起動と終了を繰り返す．</a></h2>
+                                    <h2><a href="/posts/new_md/doc323/">[GGH4.X] 拡張パックの監視コンソールや振分けサーバは，冗長構成が可能か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -426,17 +422,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc465/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/new_md/doc323/"><i class="far fa-calendar"></i> 2014-02-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2013120402
-[現象] [GGH4.X] APS の開始を３分遅らせたところ，その間 GGSessionMonitor が起動と終了を繰り返す．
-[説明] GGSessionMonitor が使用するSDKの制約で，GGサーバ （APS） への接続要求を１回しか行うことが出来ません．このため接続に失敗する状況では， GGSessionMonitor が起動と終了を繰り返します （GMService の設定で繰り返しの間隔等が決まります） ．
-ファイル KGTN2013120402.pdf [(49.3 KB)] [kitasp 技術センター, 2014/01/29 13:28]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc465/" class="btn btn-template-main">続きを読む</a>
+2014/02/21*
+[番号] 技術ノート KGTN 2014021902
+[現象] [GGH4.X] 拡張パックの監視コンソールや振分けサーバは，冗長構成が可能か？
+[説明] はい，GGサーバから複数の監視コンソールや振分けサーバに情報 （GGサーバの稼働状況等のデータ） を通知することで，アクティブ・スタンバイ構成が可能です．
+ファイル KGTN2014021902.pdf [(48 KB)] [kitasp 技術センター, 2014/02/21 21:08]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc323/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -446,7 +442,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc423/">
+                                      <a href="/posts/new_md/doc318/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -454,7 +450,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc423/">[GGH4.X] APSログに NTSTATUS ??? というエラーが記録されていた．何をすべきか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc318/">[GGW3.2.1/GGH4.X] ライセンスサーバを国内に配置し，GGサーバを国内外の拠点に配置しているが，国外のGGサーバのアプリケーションの起動が遅い．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -467,18 +463,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc423/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/new_md/doc318/"><i class="far fa-calendar"></i> 2014-02-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2014010901
-[現象] [GGH4.X] APSログに NTSTATUS ??? というエラーが記録されていた．何をすべきか？
-[説明] APSログに NTSTATUS ??? というエラーが記録された場合は，Windowsの内部でエラーが発生したことを意味し， ??? の部分がそのエラーの内容を示すコードです．例えば， NTSTATUS-1073741801 の場合は，「 {クォータ不足} 仮想メモリまたはページング ファイルのクォータが不足するため、指定した操作を完了できません」 というエラーを示しています （注： http://accelart.jp/blog/NTSTATUSErrMsgJa.html を参照）．対応は，エラーの内容にもとにマイクロソフト社の知識ベース等を参照し，その内容に従って下さい．
-補　足 NTSTATUS-1073741801 の場合は，一時的な仮想メモリの不足の可能性もありますので，先ずサーバを再起動して様子を見るという方法もあります．そして NTSTATUS-1073741801 が再発した場合は，本質的に仮想メモリが不足していると考えられますので，仮想メモリを増やして下さい．
-ファイル KGTN2014010901.pdf [(61.8 KB)] [kitasp 技術センター, 2014/01/29 15:50]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc423/" class="btn btn-template-main">続きを読む</a>
+2014/02/21*
+[番号] 技術ノート KGTN 2014022101
+[現象] [GGW3.2.1/GGH4.X] ライセンスサーバを国内に配置し，GGサーバを国内外の拠点に配置しているが，国外のGGサーバのアプリケーションの起動が遅い．
+[説明] アプリケーションの起動に当たって， PW は先ずライセンスサーバにライセンスの確認を行いますが，海外のGGサーバから国内のライセンスサーバに確認を行うと （ネットワークの状況等により） 長く時間が掛かることがあります．この確認に時間がかかると，その分だけアプリケーションの起動が遅くなります．従って，ライセンスサーバとGGサーバは，出来るだけ 「ネットワーク的に」 近い場所に配置することをお勧めします．
+ファイル KGTN2014022101.pdf [(48.5 KB)] [kitasp 技術センター, 2014/02/21 21:24]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc318/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -488,7 +483,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc476/">
+                                      <a href="/posts/new_md/doc2677/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -496,7 +491,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc476/">[GGH4.X] APSログは，障害発生時に情報が記録されるものなのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2677/">[GGH4.X-5X] Active Directory と連携したユーザー管理は可能か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -509,17 +504,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc476/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/new_md/doc2677/"><i class="far fa-calendar"></i> 2014-02-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2013112702
-[現象] [GGH4.X] APSログは，障害発生時に情報が記録されるものなのか？
-[説明] いいえ．APSログはGGサーバの健康状態を記録したもので， 通常レベル4を設定します．レベル1では，サーバの状態が殆ど記録されませんので，障害等が発生した場合等にその原因を探ることが困難です．
-ファイル KGTN2013112702.pdf [(44.6 KB)] [kitasp 技術センター, 2014/01/29 13:05]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc476/" class="btn btn-template-main">続きを読む</a>
+2014/02/14*
+[番号] 技術ノート KGTN 2014021307
+[現象] [GGH4.X-5X] Active Directory と連携したユーザー管理は可能か？
+[説明] はい， Active Directory と連携したユーザー管理が可能です．なお，大規模案件等で運用コストを低減させるため，固定ユーザープロファイルを採用した事例もあります．
+ファイル KGTN2014021307.pdf [(51.4 KB)] [kitasp 技術センター, 2015/12/16 11:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2677/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -529,7 +524,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc429/">
+                                      <a href="/posts/new_md/doc345/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -537,7 +532,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc429/">[GGH4.X] Components.dll というファイルはどこにあるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc345/">[GGH4.X] GGH4.6が EOL になったが，そのことによってGGH4.6の利用に関して 「具体的に」 どのような技術的な影響があるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -550,17 +545,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc429/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/new_md/doc345/"><i class="far fa-calendar"></i> 2014-02-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2014010801
-[現象] [GGH4.X] Components.dll というファイルはどこにあるのか？
-[説明] Windows Server 2008 R2 の環境では，フォルダ C:WindowsSystem32 の中にあります．このファイルの機能は，従来の Redirector に相当します．
-ファイル KGTN2014010801.pdf [(47 KB)] [kitasp 技術センター, 2014/01/29 15:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc429/" class="btn btn-template-main">続きを読む</a>
+2014/02/14*
+[番号] 技術ノート KGTN 2014021201
+[現象] [GGH4.X] GGH4.6が EOL になったが，そのことによってGGH4.6の利用に関して 「具体的に」 どのような技術的な影響があるのか？
+[説明] GGH4.6が EOL になる以前であっても，運用回避策が無い不具合等が発生した場合，個別のバージョン （ビルド） GGH4.6のパッチがリリースされることは無く，GGH4.X系パッチとして GGH4.7.0, GGH4.8.0, GGH4.8.1, &hellip; がリリースされます（されました） ．つまり，GGH4.X系が現行製品である限り，技術的な影響は特にありません．なお，GGH4.6.0 と GGH4.8.1 の大きな差異は，プラットフォームの追加 （Windows Server 2012, Windows Server 2012 R2） ，IE11 のサポート，色深度が24ビット以上での描画の不具合修正です．
+ファイル KGTN2014021201.pdf [(53.2 KB)] [kitasp 技術センター, 2014/02/14 14:38]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc345/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -570,7 +565,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc454/">
+                                      <a href="/posts/new_md/doc347/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -578,7 +573,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc454/">[GGH4.X] GGH4.8 がサポートするクライアントは？</a></h2>
+                                    <h2><a href="/posts/new_md/doc347/">[GGH4.X] GGH4.8.1の動作環境に The following browsers are supported with Adobe Flash Player 9: Internet Explorer 10.0 and 11.0 とあるが， IE8 や IE9 では動作しないということか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -591,17 +586,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc454/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/new_md/doc347/"><i class="far fa-calendar"></i> 2014-02-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2013120605
-[現象] [GGH4.X] GGH4.8 がサポートするクライアントは？
-[説明] GGH4.8 がサポートするクライアントの環境は，以下の通りです．
-ファイル KGTN2013120605.pdf [(88.7 KB)] [kitasp 技術センター, 2014/01/29 14:08]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc454/" class="btn btn-template-main">続きを読む</a>
+2014/02/14*
+[番号] 技術ノート KGTN 2014020801
+[現象] [GGH4.X] GGH4.8.1の動作環境に &ldquo;The following browsers are supported with Adobe Flash Player 9: Internet Explorer 10.0 and 11.0&rdquo; とあるが， IE8 や IE9 では動作しないということか？
+[説明] 将来のことを考えれば IE10 や IE11 にアップグレードすることが望ましいのですが， GGH4.Xでは IE8 および IE9 でも問題なく動作します．
+I have just connected to my 4.8.1 host from an XP machine running IE8.0 and it works fine. I have also connected from an Vista machine with IE9.0 and that also works fine.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc347/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -611,7 +606,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc464/">
+                                      <a href="/posts/problematic_md/doc250/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -619,7 +614,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc464/">[GGH4.X] GGH4.8.0 用の正式ライセンスファイルは， GGH4.8.1 でも使用出来るのか？</a></h2>
+                                    <h2><a href="/posts/problematic_md/doc250/">[GGH4.X] GGH4.8を Windows Server 2012 および Windows Server 2012 R2 にインストールしたところ，IMEの動作がおかしい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -632,17 +627,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc464/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/problematic_md/doc250/"><i class="far fa-calendar"></i> 2014-02-14</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2013120403
-[現象] [GGH4.X] GGH4.8.0 用の正式ライセンスファイルは， GGH4.8.1 でも使用出来るのか？
-[説明] GGのライセンス管理では，メジャーバージョンとマイナーバーションを認識しますので （つまりX.X） ，GGH4.8.0用の正式ライセンスファイルを GGH4.8.1 の環境でも使用することが出来ます．
-ファイル KGTN2013120403.pdf [(40.6 KB)] [kitasp 技術センター, 2014/01/29 13:29]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc464/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">技術ノート 2014/02/14
+[番号] 技術ノート KGTN 2014021203
+[現象] [GGH4.X] GGH4.8を Windows Server 2012 および Windows Server 2012 R2 にインストールしたところ，IMEの動作がおかしい．
+[説明] iPad (iOS) や Surface (Windows8) まで含めて考えると，クライアント側のIMEを利用するのがこれからの流れだと思われます．このような技術的な流れおよび Windows Server 2012 (R2) 環境でのサーバ側のIMEサポートの技術的難易度の高さ等から，Windows Server 2012 (R2) 環境ではクライアント側のIMEのみをサポートします．このため，未確定の文字は画面左上にエコーバックされます （エコーバックの位置は将来改良される予定です） ．
+補　足 本件に関するGraphOn社のコメントは以下の通りです．
+We don't plan to support server-side IMEs on Windows Server 2012, but we will change the clientside IME window so it opens near the caret.  ファイル KGTN2014021203.pdf [(91.4 KB)] [kitasp 技術センター, 2014/06/14 18:56]</p>
+                                    <p class="read-more"><a href="/posts/problematic_md/doc250/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -652,7 +647,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc463/">
+                                      <a href="/posts/new_md/doc346/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -660,7 +655,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc463/">[GGH4.X] GGH4.8.1.19200 の各数字は何を表すのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc346/">[GGH4.X] GGW3.2.1からGGH4.Xへのアップグレードを考えているが， Windows Server 2003 の利用実績はあるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -673,17 +668,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc463/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/new_md/doc346/"><i class="far fa-calendar"></i> 2014-02-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2013120404
-[現象] [GGH4.X] GGH4.8.1.19200 の各数字は何を表すのか？
-[説明] 「4.8.1.19200」 の各数字は，それぞれ 「メジャーバージョン，マイナーバージョン，サービスパック，ビルド」 を表します．
-ファイル KGTN2013120404.pdf [(38 KB)] [kitasp 技術センター, 2014/01/29 13:31]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc463/" class="btn btn-template-main">続きを読む</a>
+2014/02/14*
+[番号] 技術ノート KGTN 2014021001
+[現象] [GGH4.X] GGW3.2.1からGGH4.Xへのアップグレードを考えているが， Windows Server 2003 の利用実績はあるのか？
+[説明] GGH4.0 は2010年の出荷で，当時は Windows Server 2003 (R2) の利用が大半でした． Windows Server 2003 (R2) は 「2015年7月14日 に延長サポートが終了しますので」 お勧めとは言えませんが， GGH4.X の実行環境としては問題ありません．なお，GGH4.Xがサポートする　Windows Server 2003 の環境は，以下の通りです．
+Windows Server 2003 R2 with Service Pack 2 - Standard Edition (32-bit) - Enterprise Edition (32-bit) Windows Server 2003 with Service - Standard Edition (32-bit) - Enterprise Edition (32-bit)  ファイル KGTN2014021001.pdf [(54.6 KB)] [kitasp 技術センター, 2014/02/14 14:34]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc346/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -693,7 +688,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc427/">
+                                      <a href="/posts/new_md/doc328/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -701,7 +696,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc427/">[GGH4.X] GGH4.8以前のビルドからGGH4.8へアップグレードする手順は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc328/">[GGH4.X] GGはモバイルクライアントをサポートしているのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -714,19 +709,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc427/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                            <a href="/posts/new_md/doc328/"><i class="far fa-calendar"></i> 2014-02-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2014010803
-[現象] [GGH4.X] GGH4.8以前のビルドからGGH4.8へアップグレードする手順は？
-[説明] コントロールパネルの 「プログラムのアンインストールまたは変更」 で &ldquo;GO-Global x64 Compatibility Update&rdquo; が存在するかどうか確認して下さい．存在する場合は，先ずこれをアンインストールして下さい．
-アンインストール＆再起動後に，GGH4.8を上書きインストールして下さい．評価用ライセンスをご利用の場合，先ず下記のダイアログが表示されますので 「はい」 を選択して下さい．
-上書きインストールの各画面 （License Setup 画面を除く） で 「Next」 「Install」 「OK」 の何れかを選択して下さい．License Setup 画面では，必ず 「Skip」 を選択して下さい．最後に再起動 （Reboot） を行えば，アップグレード作業が完了します．
-ファイル KGTN2014010803.pdf [(201 KB)] [kitasp 技術センター, 2014/01/29 15:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc427/" class="btn btn-template-main">続きを読む</a>
+2014/02/14*
+[番号] 技術ノート KGTN 2014021315
+[現象] [GGH4.X] GGはモバイルクライアントをサポートしているのか？
+[説明] はい， iOS (iPhone, iPad) および Android をサポートしております．小さく狭い画面でも操作性が低下しないように，GO-Global独自の自動ズーム機能が搭載されております．
+ファイル KGTN2014021315.pdf [(62.9 KB)] [kitasp 技術センター, 2014/02/14 15:15]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc328/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -796,7 +789,7 @@
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

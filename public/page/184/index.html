@@ -409,25 +409,29 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1095/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc998/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1095/">[GGH4.0] WS2008にGGH4.0をインストールしたところ，セッションは生成されるものの暫くすると消滅し，ログオン出来ない．</a></h4>
+                            <h4><a href="/posts/new_md/doc998/">[GGH4.0/IME] Windows Server 2008 の標準のIME （Microsoft IME） に加え ATOK 2012 を使用しているが， ActiveX Client で IME を指定してログインしたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-02-09
+                            日付 2012-06-27
                             </p>
                             <p class="intro">*技術ノート
-2012/02/09*
-[番号] 技術ノート KGTN 2012020902
-[現象] [GGH4.0] WS2008にGGH4.0をインストールしたところ，セッションは生成されるものの暫くすると消滅し，ログオン出来ない．
-[説明] Windows Server 2008 の環境を調べ， SP2 （サービスパック2） が適用されていない場合は， SP2 を適用して下さい．GGH4.0は，Windows Server 2008 の SP2 またはそれ以降をサポートします．詳細については，技術ノート KGTN#2011022102 をご覧下さい．
-ファイル KGTN2012020902.pdf [(48.2 KB)] [kitasp 技術センター, 2012/02/09 13:19]</p>
+2012/06/27*
+[番号] 技術ノート KGTN 2012062702
+[現象] [GGH4.0/IME] Windows Server 2008 の標準のIME （Microsoft IME） に加え ATOK 2012 を使用しているが， ActiveX Client で IME を指定してログインしたい．
+[説明] ActiveX Client を起動する時に パラメタを指定します． はレジストリ HKLM¥SYSTEM¥CurrentControlSet¥Control¥Keyboard Layouts の該当するIMEのキーを指定します．本件の場合は，以下のパラメタを指定します （環境によって値が異なる場合があります） ．
+Microsoft IME ATOK 2012 logon.html を書き換えると，例えば以下のようなURLでIMEを切り替えることが出来ます．
+Microsoft IME http://192.168.102.104/logon.html?keyboard=00000411 ATOK 2012 http://192.168.102.104/logon.html?keyboard=E0200411
+補　足 上記の logon.html の書き換えの概要は以下の通りです．
+変数 keyboard の追加 var keyboard = GetVar(&ldquo;keyboard&rdquo;); OBJECTタグのパラメタの追加 document.write( &lsquo;&rsquo;);
+ファイル KGTN2012062702.pdf [(69.9 KB)] [kitasp 技術センター, 2012/06/27 12:35]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1095/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc998/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,30 +450,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1094/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc999/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1094/">[GGW3.2.1] GGの設定情報を多数のサーバへ反映するにはどうすれば良いか？</a></h4>
+                            <h4><a href="/posts/new_md/doc999/">[GGH4.0/IME] Windows Server 2008 の標準のIME （Microsoft IME） に加え ATOK 2012 を使用しているが， Windows Client で IME を指定してログインしたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-02-09
+                            日付 2012-06-27
                             </p>
                             <p class="intro">*技術ノート
-2012/02/09*
-[番号] 技術ノート KGTN 2012012702
-[現象] [GGW3.2.1] GGの設定情報を多数のサーバへ反映するにはどうすれば良いか？
-[説明] GGW3.2.1の主な設定情報はレジストリ ¥HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer の下に保持されておりますので，最も簡単な方法としては以下の手順が考えられます．
-雛形のサーバを作成する． レジストリ ¥HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServerをエクスポートする． 各サーバでエクスポートしたファイルをインポートする．
-他の方法としては， （例えば） 以下のような設定情報を書き換えるスクリプトを作成し，サーバ毎に設定を変更する手順が考えられます．
-[スクリプト] for /F &ldquo;token=1,2,3,4&rdquo; %%i in (servers.txt) do ( reg add &ldquo;¥¥%i¥HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer&rdquo; /v &ldquo;LicenseCheckoutAttempts&rdquo; /t REG_DWORD /d 0x3 /f reg query &ldquo;¥¥%i¥¥HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer&rdquo; /v &ldquo;LicenseCheckoutAttempts&rdquo; )
-[servers.txt] server1.domain.local server2.domain.local server3.domain.local &hellip; server100.domain.local
-補　足 GGW3.2.1に関しては，管理情報の中にサーバ固有の情報 （コンピュータ名など） を保持しておりません．従って，上記のような方法で全てのサーバへ展開することが可能です．
-ファイル KGTN2012012702.pdf [(70.3 KB)] [kitasp 技術センター, 2012/02/09 14:04]</p>
+2012/06/27*
+[番号] 技術ノート KGTN 2012062701
+[現象] [GGH4.0/IME] Windows Server 2008 の標準のIME （Microsoft IME） に加え ATOK 2012 を使用しているが， Windows Client で IME を指定してログインしたい．
+[説明] Windows Client ggw.exe を起動する時に -kb パラメタを指定します． はレジストリ HKLM¥SYSTEM¥CurrentControlSet¥Control¥Keyboard Layouts の該当するIMEのキーを指定します．本件の場合は，以下のパラメタを指定します （環境によって値が異なる場合があります） ．
+Microsoft IME -kb 00000411 ATOK 2012 -kb E0200411
+ファイル KGTN2012062701.pdf [(59.3 KB)] [kitasp 技術センター, 2012/06/27 09:28]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1094/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc999/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -488,26 +488,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1093/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc997/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1093/">[Network] 同じハブに接続しているGGサーバのうち，特定の１台が接続不能になることがある．</a></h4>
+                            <h4><a href="/posts/new_md/doc997/">[GGH4.0/IME] レジストリ HKLM¥SYSTEM¥CurrentControlSet¥Control¥Keyboard Layouts から該当するIMEのキーを見つける方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-02-09
+                            日付 2012-06-27
                             </p>
                             <p class="intro">*技術ノート
-2012/02/09*
-[番号] 技術ノート KGTN 2012021001
-[現象] [Network] 同じハブに接続しているGGサーバのうち，特定の１台が接続不能になることがある．
-[説明] このような現象は，多くの場合 1) ハブのポートの不良， 2) LANケーブルの不良， 3) サーバのLANカードの不良が原因です．問題が発生しないサーバと問題が発生するサーバのLANケーブルを交換 （サーバ側） して，現象が変わらなければ 3) のLANカードの不良の可能性が高いと考えられます．現象が発生するサーバが入れ替われば，
- のハブのポートの不良 または 2) のLANケーブルの不良 の可能性が高いと考えられます．この場合は，現象が発生するサーバのLANケーブルを新品と交換することで，LANケーブルの不良かハブのポートの不良かを切り分けることが出来ます．  補　足 上記 3) の場合，弊社ツール GGNetworkCheck で発生内容を確認することが出来ます．詳細については，技術ノートKGTN#2011030201 をご覧下さい．
-ファイル KGTN2012021001.pdf [(57.3 KB)] [kitasp 技術センター, 2012/02/10 07:00]</p>
+2012/06/27*
+[番号] 技術ノート KGTN 2012062703
+[現象] [GGH4.0/IME] レジストリ HKLM¥SYSTEM¥CurrentControlSet¥Control¥Keyboard Layouts から該当するIMEのキーを見つける方法は？
+[説明] 確実な方法は，上から順にキーの内容を参照し， Layout Text が探している IME の名称と合致するものを探します．下記の例では ATOK と思われる Layout Text を順に探し， ATOK 2012 が該当するので， E0200411 を ATOK のキーの候補とします．そして，その候補を使用して実際にログオンし ATOK が選択されるか確認します．選択されれば適切なキーで，選択されなければ次に該当するキーを探します．
+ファイル KGTN2012062703.pdf [(91.6 KB)] [kitasp 技術センター, 2012/06/27 13:16]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1093/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc997/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -526,26 +525,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1098/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc995/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1098/">[GGW3.2.1/GGH4.0] アプリケーションの印刷画面で指定した用紙サイズと異なる用紙に印刷される．</a></h4>
+                            <h4><a href="/posts/new_md/doc995/">[GGH4.0] GGW3.2.1 で実装されていたINIファイルマッピング機能は， GGH4.0でも実装されているのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-02-08
+                            日付 2012-06-27
                             </p>
                             <p class="intro">*技術ノート
-2012/02/08*
-[番号] 技術ノート KGTN 2012020801
-[現象] [GGW3.2.1/GGH4.0] アプリケーションの印刷画面で指定した用紙サイズと異なる用紙に印刷される．
-[説明] アプリケーションの印刷画面で指定する用紙は 「原稿サイズ」 と呼ばれ，実際に印刷される用紙のサイズは「出力用紙サイズ」 と呼ばれます．プリンタドライバによっては，原稿サイズの情報ではなく，印刷する内容によって出力用紙サイズを自動選択するものがあり，そのような場合に 「アプリケーションの印刷画面で指定した用紙サイズと異なる用紙に印刷される」 という現象が発生します．GGは出力用紙サイズの決定には関与しませんので，プリンタドライバの設定内容 （機能） を確認して，原稿サイズと出力用紙サイズが一致するように設定して下さい．
-補　足 プリンタドライバに加え， 「自動回転・中央配置・自動拡大縮小」 機能を持つアプリケーションもあります．下記の印刷画面は Adobe Reader 9 のもので，ページ処理の設定で 「自動回転・中央配置」 が設定されており，かつ 「PDFのページサイズに合わせて用紙を選択」 が設定されておりませんので， （印刷内容によっては） 原稿サイズと異なる出力用紙サイズが設定されることがあります．
-ファイル KGTN2012020801.pdf [(116 KB)] [kitasp 技術センター, 2012/02/08 12:29]</p>
+2012/06/27*
+[番号] 技術ノート KGTN 2012060701
+[現象] [GGH4.0] GGW3.2.1 で実装されていたINIファイルマッピング機能は， GGH4.0でも実装されているのか？
+[説明] INIファイルマッピング機能は GGH4.0 での実装が見送られましたが， 4.0.1.11916 (Patch 4) でこの機能が実装されました．GGH4.0 で実装されたINIファイルマッピング機能は，GGW3.2.1のINIファイルマッピング機能と仕様が若干異なります （設定に関する部分） ．アプリケーションTest_INIFilepaths.exe および iniファイル Test_INIFilepaths.ini の設定例を以下に示します．
+[HKLM¥SOFTWARE¥GraphOn¥GO-Global¥Compatibility¥INIFilePaths¥Test_INIFilepaths.exe] TestINIFilepaths.ini REG_EXPAND_SZ USERPROFILE/TestINIFilepaths.ini
+置き換えの指定は REG_EXPAND_SZ （展開可能な文字列値） で指定し，かつそのパス中のフォルダ名は ¥ でなく / で区切って下さい．
+ファイル KGTN2012060701.pdf [(62.8 KB)] [kitasp 技術センター, 2012/06/28 06:56]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1098/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc995/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

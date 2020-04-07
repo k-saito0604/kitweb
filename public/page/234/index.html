@@ -409,25 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1651/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1504/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1651/">クライアント側で動作するアプリケーションがアラートダイアログを表示した後，その確認ボタンを押下すると，アラート画面上にGG画面上でフォーカスを持つボタンが表示される．</a></h4>
+                            <h4><a href="/posts/new_md/doc1504/">[GGW3.2] aps (1320) CS: The client did not initiate the handshake operation. という記録がAPSログにあるが，何が起きたのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-08-20
+                            日付 2011-01-05
                             </p>
                             <p class="intro">*技術ノート
-2010/08/20*
-[番号] 技術ノート KGTN 2010082001
-[現象] クライアント側で動作するアプリケーションがアラートダイアログを表示した後，その確認ボタンを押下すると，アラート画面上にGG画面上でフォーカスを持つボタンが表示される．
-[説明] アラートダイアログが表示された時に，そのダイアログがアクティブかどうか確認して下さい．最上位に表示されながらアクティブでない場合は，GGは自分のウインドウが未だ最上位にあると判断し処理を行いますので，このような状況が発生します．対応としては，ダイアログを最上位に表示する時，そのダイアログをアクティブな状態にして下さい．
-ファイル KGTN2010082001.pdf [(47.8 KB)] [kitasp 技術センター, 2010/08/20 16:36]</p>
+2011/01/05*
+[番号] 技術ノート KGTN 2011010401
+[現象] [GGW3.2] &ldquo;aps (1320) CS: The client did not initiate the handshake operation.&rdquo; という記録がAPSログにあるが，何が起きたのか？
+[説明] GGサーバの通信ポート （通常491） に対して，TCP/IPレベルの接続はあったものの，相手方がGGのプロトコル （Rapid-X） を話さなかったことを意味します．通常は，ハードウエア・ロードバランサのヘルスチェック機能 （TCP/IP） が利用されて場合などで，この記録が残ります．なお，以下の後続の情報も併せて記録されます．
+3 2010-12-04 12:45:42.062 aps (1320) CS: The client did not initiate the handshake operation. 4 2010-12-04 12:45:42.203 aps (1320) CS: Failed to create the transport server. 5 2010-12-04 12:45:42.296 aps (1320) CS: Failed to accept a connection from a client at IP address 127.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1651/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1504/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,26 +446,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1654/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1503/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1654/">3.2.1.4466 の readme.txt のサーバ環境に 32bit / 64bit の記述がない．</a></h4>
+                            <h4><a href="/posts/new_md/doc1503/">サーバを再起動する時，セッションが有無に関係なく無条件に行って良いか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-08-19
+                            日付 2011-01-05
                             </p>
                             <p class="intro">*技術ノート
-2010/08/19*
-[番号] 技術ノート KGTN 2010081904
-[現象] 3.2.1.4466 の readme.txt のサーバ環境に 32bit / 64bit の記述がない．
-[説明] オペレーティングシステムのリストの中には記述されておりませんが，その直前に 「以下の32ビット Windows オペレーティングシステムを何れかを必要とする」という記述があります．
-The GO-Global Server requires one of the following 32-bit Windows operating systems:
- Windows Server 2008 Standard or Enterprise Edition with Service Packs 1 and 2 Windows Server 2003 Standard or Enterprise Edition with Service Packs 1 and 2 Windows Server 2003 R2 Standard or Enterprise Edition Windows XP Professional with Service Packs 2 and 3.</p>
+2011/01/05*
+[番号] 技術ノート KGTN 2011010501
+[現象] サーバを再起動する時，セッションが有無に関係なく無条件に行って良いか？
+[説明] GGの仕様上は，サーバが再起動される時に全てのセッションを終了させますので，特に問題はありません．但し，サーバが高負荷な時や不安定な時に予期せぬ事象が発生する可能性もゼロとは言えませんので，再起動の前にエンタープライズオプションの GMCheckRaw でセッションを強制終了 （GMCheckRaw ?kn ALL） させることをお勧めします．
+補　足 サーバが高負荷な時に， GMCheckRaw によるセッションを強制終了 （GMCheckRaw ?kn ALL） が保留されるケースが稀に発生します．セッションを強制終了を行った後に，通常の GMCheckRaw で sessionCount がゼロかどうか確認し，ゼロでない場合は再度セッションの強制終了を行って下さい （これが面倒な場合は，10秒間隔で2〜3回セッションの強制終了を行って下さい） ．
+ファイル KGTN2011010501.pdf [(61.6 KB)] [kitasp 技術センター, 2011/01/05 11:01]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1654/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1503/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -484,26 +484,26 @@ The GO-Global Server requires one of the following 32-bit Windows operating syst
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1655/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1505/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1655/">SkyPDF for GO</a></h4>
+                            <h4><a href="/posts/new_md/doc1505/">BSODの原因としてメモリの枯渇が指摘されたが，物理メモリは8GB積んでおり余裕がある．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-08-19
+                            日付 2011-01-03
                             </p>
                             <p class="intro">*技術ノート
-2010/08/19*
-[番号] 技術ノート KGTN 2010081902
-[現象] SkyPDF for GO-Global （GG-SkyPDF） の設定ファイル skyinfo.ini 中の VIEWERARGS = &ldquo;/t /n /s /h&rdquo; の意味は？
-[説明] これらはPDFビュアー （Adobe Reader 8/9） の起動パラメタで，それぞれの意味 （機能） は以下の通りです．
-/t &hellip; 出力先のプリンタを指定する /n &hellip; Adobe Reader を新たなインスタンスで起動する /s &hellip; スプラッシュ画面を表示しない /h &hellip; Adobe Reader を最小化状態で起動する
-ファイル KGTN2010081902.pdf [(55.7 KB)] [kitasp 技術センター, 2010/08/19 09:14]</p>
+2011/01/03*
+[番号] 技術ノート KGTN 2011010301
+[現象] BSODの原因としてメモリの枯渇が指摘されたが，物理メモリは8GB積んでおり余裕がある．
+[説明] Windows Server 2003 （32ビット） では， 「物理メモリを多く積んでいても」 実際にアクセス出来る仮想アドレス空間は4GBで，さらにこの4GBの空間は2GBのカーネル空間と2GBのユーザ空間に分けられます．GGでBSODが発生する原因となるメモリの枯渇は，2GBのカーネル空間でのメモリの枯渇のことです．
+注　意 Windows の /3G スイッチを有効にすると，カーネル空間が2GBから1GBに減るため，絶対にこの設定を行わないようにして下さい．
+ファイル KGTN2011010301.pdf [(52.1 KB)] [kitasp 技術センター, 2011/01/03 09:41]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1655/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1505/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -522,25 +522,26 @@ The GO-Global Server requires one of the following 32-bit Windows operating syst
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1653/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1506/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1653/">Ver4.0系は，サーバ環境として Windows Server 2003 (32bit) および Windows Server 2008 (32bit) をサポートするのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1506/">特定アプリケーションでＺオーダー （ウインドウの上下関係） 絡みの表示の不具合が発生したが，GG側で対応は可能か？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-08-19
+                            日付 2010-12-31
                             </p>
                             <p class="intro">*技術ノート
-2010/08/19*
-[番号] 技術ノート KGTN 2010081905
-[現象] Ver4.0系は，サーバ環境として Windows Server 2003 (32bit) および Windows Server 2008 (32bit) をサポートするのか？
-[説明] Ver4.0系でサポートするサーバ環境は以下の通りです．
- Windows Server 2008 Standard or Enterprise with Service Pack 2 (x86 and x64) Windows Server 2008 R2 Standard or Enterprise (x64) Windows Server 2003 R2 Standard or Enterprise Edition (x86) Windows Server 2003 Standard or Enterprise Edition with Service Pack 2 (x86)  ファイル KGTN2010081905.pdf [(53.6 KB)] [kitasp 技術センター, 2010/08/19 12:57]</p>
+2010/12/31*
+[番号] 技術ノート KGTN 2010090205
+[現象] 特定アプリケーションでＺオーダー （ウインドウの上下関係） 絡みの表示の不具合が発生したが，GG側で対応は可能か？
+[説明] Ｚオーダーの問題は，アプリケーションの挙動と密接に絡んでおり，Ver2系の頃から継続的に改良を行っております．Ver3.2系の仕様はその努力に基づいたもので，他の案件等では特に問題なく動作しております．仮に個別に対応した場合，その問題は解消しても，他の処理でダイアログが裏に隠れる等の問題を引き起こす可能性があります．このような副作用 （リスク） の発生の可能性を考えると，Ver3.2系での対応は困難です．
+参　考 Ｚオーダーが問題が発生した過去の事例では，アプリケーションが 「Windowsの標準的なウインドウの動作とは異なる処理を行った時」 に発生しています．例えば，子ウインドウが最上位に表示されるものの，フォーカスがその子ウインドウに移らず，その下の親ウインドウが持ち続ける等の処理があります．このような場合は，アプリケーションをWindowsの標準的なウインドウの動作に合わせるように変更をお願いします．
+ファイル KGTN2010090205.pdf [(63.6 KB)] [kitasp 技術センター, 2010/12/31 14:10]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1653/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1506/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

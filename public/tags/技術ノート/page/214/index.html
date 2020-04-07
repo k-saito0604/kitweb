@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1429/">
+                                      <a href="/posts/new_md/doc1297/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1429/">GGNetworkCheck とはどんなツールなのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1297/">[GGW3.2.1] 漢字入力が突然出来なくなった．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,20 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1429/"><i class="far fa-calendar"></i> 2011-03-08</a>
+                                            <a href="/posts/new_md/doc1297/"><i class="far fa-calendar"></i> 2011-09-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/03/08*
-[番号] 技術ノート KGTN 2011030201
-[現象] GGNetworkCheck とはどんなツールなのか？
-[説明] GGのサーバ側とクライアント側で動作させるプログラムで，クライアント側主導でTCP/IPのヘルスチェック （接続性確認） を行います．クライアント側は所定の秒数でPINGメッセージを送信し （ログに記録も残します） ，サーバ側はPINGメッセージを受信するとログに記録するとともに，応答メッセージをクライアント側に送信します．クライアント側は応答メッセージを受信すると，その情報をログに記録します．所定秒数内に相手からのメッセージが届かない，またはTCP/IPレベルでコネクションが切断された場合は，エラーとしてログに記録されます．この２つのログ （クライアント側とサーバ側） を付き合わせることで，ネットワークの状況を確認することが出来ます．
-GGNetworkCheck は， GMService との併用で自動監視が出来るように，コンソールアプリケーションとして作成されています．GGNetworkCheck は，１つのプログラムの中にサーバ機能とクライアント機能の両方を持っており，逆方向のヘルスチェックも簡単に行うことが出来ます．さらに，サーバ機能は 「多」 クライアントからの同時アクセスも可能な実装になっています．
-設定ファイル 設定ファイル GGNetworkCheck.ini の default セクションで，以下のパラメタを設定して下さい．
-設定項目 説明 mode S = サーバとして起動 / C = クライアントとして起動 host サーバのIPアドレス（IPv4 / IPv6） port サーバの待受けポートの番号 interval ヘルスチェックの間隔（秒） repeat ヘルスチェックの回数（注：-1は無限回） sleep コネクション切断後の再チェックまでの間隔（秒） clTimeout クライアント時の送受信のタイムアウト時間（秒） svTimeout サーバ時の送受信タイムアウト時間（秒） 注：clTimeout +5秒以上を指定すること logd ログを保存するフォルダ（絶対パス） prefix 送信メッセージの先頭に付加する文字列 clTimeAdj ログに記録されるクライアント時間の微調整（±3600秒まで） svTimeAdj ログに記録されるサーバ時間の微調整（±3600秒まで） 設定項目は，下記のコマンドの引数で上書きすることが出来ます．
-設定項目 説明 -s サーバとして起動 -c クライアントとして起動 -h address サーバのIPアドレス（IPv4/IPv6） -hp port サーバの待受けポートの番号 -i sec コネクション切断後の再チェックまでの間隔（秒） -r times ヘルスチェックの回数（注：-1は無限回） -l dir ログを保存するフォルダ（絶対パス） -x msg 送信メッセージの先頭に付加する文字列 同じ設定ファイルGGNetworkCheck.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1429/" class="btn btn-template-main">続きを読む</a>
+2011/09/22*
+[番号] 技術ノート KGTN 2011092201
+[現象] [GGW3.2.1] 漢字入力が突然出来なくなった．
+[説明] このような現ﾛが起きた場合は，先ずプロセス &ldquo;ctfmon.exe&rdquo; がセッション中に存在するかどうか確認して下さい．存在しない場合は，何らの理由でログオン時に起動されなかったか，または起動されたものの何らかの理由で終了したことが考えられます．対症療法としては， &ldquo;ctfmon.exe&rdquo; をアプリケーションとして登録し，この現象が発生した直後に起動することで， （IMEのツールバーが表示され） 漢字入力が出来るようになります．
+ファイル KGTN2011092201.pdf [(52.4 KB)] [kitasp 技術センター, 2011/09/22 12:18]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1297/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -363,7 +360,7 @@ GGNetworkCheck は， GMService との併用で自動監視が出来るように
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1432/">
+                                      <a href="/posts/new_md/doc1299/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -371,7 +368,7 @@ GGNetworkCheck は， GMService との併用で自動監視が出来るように
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1432/">[GGW3.2.1] コマンド プロンプト （DOS窓） のウインドウを開くことなくバッチを実行したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1299/">[GGH4.0] エンタープライズオプションの GMCheckRaw.exe が必要とするDLLは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -384,20 +381,18 @@ GGNetworkCheck は， GMService との併用で自動監視が出来るように
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1432/"><i class="far fa-calendar"></i> 2011-03-01</a>
+                                            <a href="/posts/new_md/doc1299/"><i class="far fa-calendar"></i> 2011-09-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/03/01*
-[番号] 技術ノート KGTN 2011030103
-[現象] [GGW3.2.1] コマンド プロンプト （DOS窓） のウインドウを開くことなくバッチを実行したい．
-[説明] 下記のバッチをアプリケーションとして登録すると，3.2.1系ではコマンド プロンプトのウインドウが表示されます．
-[FILE: myNotePad.bat] ECHO OFF NOTEPAD EXIT
-コマンド プロンプトのウインドウを非表示にするには，以下のWSHのプログラムをアプリケーションとして登録し，そのプログラムからバッチを起動するようにします．
-[FILE: myNotePad.vbs] Set WshShell = WScript.CreateObject(&ldquo;WScript.Shell&rdquo;) ' Call WshShell.Run( &ldquo;cmd.exe /c C:¥GraphOn¥BAT¥myNotePad.bat&rdquo;, 0, True ) ← 同期実行 Call WshShell.Run( &ldquo;cmd.exe /c C:¥GraphOn¥BAT¥myNotePad.bat&rdquo;, 0, False ) ← 非同期実行
-ファイル KGTN2011030103.pdf [(55.6 KB)] [kitasp 技術センター, 2011/03/01 10:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1432/" class="btn btn-template-main">続きを読む</a>
+2011/09/21*
+[番号] 技術ノート KGTN 2011092101
+[現象] [GGH4.0] エンタープライズオプションの GMCheckRaw.exe が必要とするDLLは？
+[説明] 現状 （GGH-4.0.1.10784 / x86） では，以下のDLLがGMCheckRaw.exe の実行に必要です．
+cs4.dll cs4u.dll pbr4u.dll pmu.dll QtCore4.dll smc.dll sms.dll
+ファイル KGTN2011092101.pdf [(47 KB)] [kitasp 技術センター, 2011/09/21 10:09]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1299/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -407,7 +402,7 @@ GGNetworkCheck は， GMService との併用で自動監視が出来るように
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1433/">
+                                      <a href="/posts/new_md/doc1298/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -415,7 +410,7 @@ GGNetworkCheck は， GMService との併用で自動監視が出来るように
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1433/">[GGW3.2] ggw</a></h2>
+                                    <h2><a href="/posts/new_md/doc1298/">既知の問題とは，いわゆるバグを意味するのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -428,17 +423,17 @@ GGNetworkCheck は， GMService との併用で自動監視が出来るように
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1433/"><i class="far fa-calendar"></i> 2011-03-01</a>
+                                            <a href="/posts/new_md/doc1298/"><i class="far fa-calendar"></i> 2011-09-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/03/01*
-[番号] 技術ノート KGTN 2011030102
-[現象] [GGW3.2] ggw-3.2.1.xxxx の環境で互換性の無い更新プログラム （Windows Update） があるが， ggw-3.2.0.yyyy の環境ではどうなのか？
-[説明] 互換性の無い更新プログラム （Windows Update） は，それが Windows のカーネルを書き換えるためで，従って過去の ggw-3.2.0.yyyy の環境でも互換性はありません．
-ファイル KGTN2011030102.pdf [(44.1 KB)] [kitasp 技術センター, 2011/03/01 10:07]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1433/" class="btn btn-template-main">続きを読む</a>
+2011/09/21*
+[番号] 技術ノート KGTN 2011092103
+[現象] 既知の問題とは，いわゆるバグを意味するのか？
+[説明] いいえ．バグと推測される場合もありますが，バグでないと推測される場合もあります．例えば，アプリケーションが特定のリソースの排他的使用を前提として作成されている場合，GGのマルチユーザ環境で複数起動されるとリソースの使用に関して競合が発生し，その結果アプリケーションが正しく動作しない状況が発生します．また，アプリケーションが Windows のデスクトップでの利用を前提として作成されている場合，GGのマルチユーザ環境にはWindows のデスクトップが存在しませんので，想定された動作はしません．このように，技術的に回避が困難な問題等も 「既知の問題」 となります．
+ファイル KGTN2011092103.pdf [(54.5 KB)] [kitasp 技術センター, 2011/09/21 14:20]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1298/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -448,7 +443,7 @@ GGNetworkCheck は， GMService との併用で自動監視が出来るように
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1434/">
+                                      <a href="/posts/new_md/doc2621/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -456,7 +451,7 @@ GGNetworkCheck は， GMService との併用で自動監視が出来るように
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1434/">GGをバージョンアップしたところ，遅く感じる．CPUの使用率も90%を超えている．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2621/">[GGH4.X-5.X] iPad クライアントを利用しているが，ウインドウの移動等の操作が面倒だ．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -469,17 +464,20 @@ GGNetworkCheck は， GMService との併用で自動監視が出来るように
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1434/"><i class="far fa-calendar"></i> 2011-03-01</a>
+                                            <a href="/posts/new_md/doc2621/"><i class="far fa-calendar"></i> 2011-09-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/03/01*
-[番号] 技術ノート KGTN 2011030101
-[現象] GGをバージョンアップしたところ，遅く感じる．CPUの使用率も90%を超えている．
-[説明] タスクマネージャの 「プロセス」 タブを表示し，CPU使用率が高い順にプロセス （イメージ名） を並べて下さい．これによって，どのプロセスがCPUを消費し，その結果としてサーバが遅くなる現象を招いているか分かります．
-ファイル KGTN2011030101.pdf [(45.3 KB)] [kitasp 技術センター, 2011/03/01 09:15]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1434/" class="btn btn-template-main">続きを読む</a>
+2011/09/16*
+[番号] 技術ノート KGTN 2011091601
+[現象] [GGH4.X-5.X] iPad クライアントを利用しているが，ウインドウの移動等の操作が面倒だ．
+[説明] iPad クライアントを利用した場合， 「タッチパネルの操作に慣れるまで」 ウインドウの移動等で苦労することがあります．このような問題を解消するため，弊社では GGWindowTool というアプリケーションを作成しました．これはGG上で動作するアプリケーションで，起動中のアプリケーションのウインドウの移動等をクリック操作だけで行うことが出来るツールです．機能の詳細は以下の通りです．
+(1)ウインドウ指定コンボボックス &hellip; 操作対象のウインドウのタイトルを選択 (2)移動量設定コンボボックス &hellip; 上下左右の移動時に移動する距離を設定 （単位はピクセル）
+(3)左上ボタン &hellip; デスクトップの左上へ移動 (4)左下ボタン &hellip; デスクトップの左下へ移動 (5)右上ボタン &hellip; デスクトップの右上へ移動 (6)右下ボタン &hellip; デスクトップの右下へ移動 (7)中央ボタン &hellip; デスクトップの中央へ移動
+(8)上ボタン &hellip; 上方向に移動量分だけ移動 (9)下ボタン &hellip; 下方向に移動量分だけ移動 (10)左ボタン &hellip; 左方向に移動量分だけ移動 (11)右ボタン &hellip; 右方向に移動量分だけ移動
+(12)最小化ボタン &hellip; ウインドウを最小化 (13)最大化ボタン &hellip; ウインドウを最大化 (14)復元ボタン &hellip; ウインドウを復元 (15)再描画ボタン &hellip; ウインドウを再描画 (16)閉じるボタン &hellip; ウインドウ （アプリケーション） を終了 (17)終了ボタン &hellip; GGWindowTool 自体が終了</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2621/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -489,7 +487,7 @@ GGNetworkCheck は， GMService との併用で自動監視が出来るように
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1431/">
+                                      <a href="/posts/new_md/doc1300/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -497,7 +495,7 @@ GGNetworkCheck は， GMService との併用で自動監視が出来るように
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1431/">以下の条件でクライアントのOSを Windows 7 へ移行できるか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1300/">[GGH4.0] リモートアクセス用ソフトウエアの中に， iPadの画面上にマウスポインタを表示してポインティングさせる製品があるが，GGには同様の機能は無いのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -510,21 +508,17 @@ GGNetworkCheck は， GMService との併用で自動監視が出来るように
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1431/"><i class="far fa-calendar"></i> 2011-03-01</a>
+                                            <a href="/posts/new_md/doc1300/"><i class="far fa-calendar"></i> 2011-09-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/03/01*
-[番号] 技術ノート KGTN 2011022502
-[現象] 以下の条件でクライアントのOSを Windows 7 へ移行できるか？
-●シナリオ１ サーバ ggw-3.2.1.4420 クライアント ggw-3.2.0.4203 ●シナリオ2 サーバ ggw-3.2.1.4420 クライアント ggw-3.2.1.4420 ●シナリオ3 サーバ ggw-3.2.1.4420 クライアント ggw-3.2.1.4474 ●シナリオ4 サーバ ggw-3.2.1.4474 クライアント ggw-3.2.1.4474
-[説明] ●シナリオ1 クライアントが ggw-3.2.0.4203 で，技術ノートKGTN#2011022301により Windows 7 はサポートしておりませんので移行は出来ません．
-●シナリオ2 クライアントが ggw-3.2.1.4420 で，技術ノートKGTN#2011022301により Windows 7 はサポートしておりませんので移行は出来ません．
-●シナリオ3 クライアントがggw-3.2.1.4474 で，技術ノート KGTN#2011022301 によりWindows 7 はサポートしております ので移行は可能です．なお，サーバがggw-3.2.1.4420 ですので，それ以降で修正された問題等は，そのま ま残ります．また，互換性の無いWindows Update （更新ブログラム） は適用することが出来ません．
-●シナリオ4 クライアントが ggw-3.2.1.4474 で，技術ノートKGTN#2011022301により Windows 7 はサポートしておりますので移行は可能です．
-参　考 Ver3.2系では，クライアントとサーバは 「接続性に関して」 それぞれ後方互換性があります．従って，Ver3.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1431/" class="btn btn-template-main">続きを読む</a>
+2011/09/15*
+[番号] 技術ノート KGTN 2011091501
+[現象] [GGH4.0] リモートアクセス用ソフトウエアの中に， iPadの画面上にマウスポインタを表示してポインティングさせる製品があるが，GGには同様の機能は無いのか？
+[説明] iPad がマウスをサポートしていない状況でマウスポインタという概念を持ち込むことは，正確にポインティングするためとは言え，正しい方法ではないと考えます．GraphOn社は， 「iPadの操作性を維持した上で」 正確にポインティングするために，オートズーム機能を実装しました．オートズーム機能を有効にすると，ダイアログ等が表示された直後に自動的にズーム （拡大表示） され，表示項目等のポインティングが容易になります．
+ファイル KGTN2011091501.pdf [(120 KB)] [kitasp 技術センター, 2011/09/15 09:23]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1300/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -534,7 +528,7 @@ GGNetworkCheck は， GMService との併用で自動監視が出来るように
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1430/">
+                                      <a href="/posts/new_md/doc1301/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -542,7 +536,7 @@ GGNetworkCheck は， GMService との併用で自動監視が出来るように
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1430/">以下の条件でサーバのGGをバージョンアップ出来るか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1301/">[GGW3.2.1] Win32 API の MoveWindow で表示中のウインドウを移動すると画面上にゴミが残ることがある．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -555,19 +549,18 @@ GGNetworkCheck は， GMService との併用で自動監視が出来るように
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1430/"><i class="far fa-calendar"></i> 2011-03-01</a>
+                                            <a href="/posts/new_md/doc1301/"><i class="far fa-calendar"></i> 2011-09-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/03/01*
-[番号] 技術ノート KGTN 2011022503
-[現象] 以下の条件でサーバのGGをバージョンアップ出来るか？
-●現状 サーバ ggw-3.2.1.4420 クライアント ggw-3.2.0.4203 ●希望 サーバ ggw-3.2.1.4474 クライアント ggw-3.2.0.4203
-[説明] 3.2系は，サーバとクライアント間で下位互換性と上位互換性がありますので，希望の構成で利用することが出来ます．但し， ggw-3.2.0.4203 → ggw-3.2.1.4474 で修正された項目のうち，クライアントのアップデートが必要な項目は反映されません．
-参　考 Ver3.2系では，クライアントとサーバは 「接続性に関して」 それぞれ後方互換性があります．従って，Ver3.2系内ではバージョンが異なるクライアントとサーバを組み合わせて利用することが可能ですが，しかし組み合わせによって修正内容が 「反映される／反映されない」 と言った機能的な問題が発生しますので，本番運用に当たっては十分な事前検証をお願いします．
-2.3 Backward Compatible Client and Server （3.2系のリリースノートより） This allows a client to connect to a GO-Global Server when the major and minor versions of the client and server match but the service pack or build numbers do not.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1430/" class="btn btn-template-main">続きを読む</a>
+2011/09/14*
+[番号] 技術ノート KGTN 2011091401
+[現象] [GGW3.2.1] Win32 API の MoveWindow で表示中のウインドウを移動すると画面上にゴミが残ることがある．
+[説明] この現象は GGW3.2.1 の既知の問題 （制限事項） で，以下のように移動の直前で非表示にして，移動の直後に表示して下さい．
+ShowWindow(hWnd,SW_HIDE); MoveWindow(hWnd, &hellip; ); ShowWindow(hWnd,SW_SHOW);
+ファイル KGTN2011091401.pdf [(49.7 KB)] [kitasp 技術センター, 2011/09/14 10:38]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1301/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -577,7 +570,7 @@ GGNetworkCheck は， GMService との併用で自動監視が出来るように
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1436/">
+                                      <a href="/posts/new_md/doc1303/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -585,7 +578,7 @@ GGNetworkCheck は， GMService との併用で自動監視が出来るように
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1436/">[GGW3.2.1] 3.2.1.4420で 「ロードバランサのヘルスチェック機能 （TCP/IPレベル） に対応しました」 とあるが，どういうことなのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1303/">[GGW3.2.1] レジストリ HKCU¥Software¥GraphOn¥Bridges¥1.0.0¥ProgramWindow¥Settings¥Standard は，GGのインストール時に生成されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -598,19 +591,17 @@ GGNetworkCheck は， GMService との併用で自動監視が出来るように
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1436/"><i class="far fa-calendar"></i> 2011-02-28</a>
+                                            <a href="/posts/new_md/doc1303/"><i class="far fa-calendar"></i> 2011-09-13</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/02/28*
-[番号] 技術ノート KGTN 2011022804
-[現象] [GGW3.2.1] 3.2.1.4420で 「ロードバランサのヘルスチェック機能 （TCP/IPレベル） に対応しました」 とあるが，どういうことなのか？
-[説明] GGは一斉ログオン等の高負荷時にも対応するため，GGのポートに接続要求があった時点でセッション用のメモリを確保します．ハードウエア・ロードバランサのヘルスチェック機能 （TCP/IPレベル） でGGを監視すると，頻繁にメモリの確保＆開放が行われるため状況によっては問題を引き起こしていました．3.2.1.4420では，ハードウエア・ロードバランサによる監視も想定した処理を行うように変更されました．
-備　考 この件に関する情報は英文のリリースノートにはありませんが，下記のように 3.2.1 Patch2 (4420) で実装されております．
-It looks like it was inadvertently left out of the Release Notes, but it was verified as fixed in 3.2.1 Patch2.
-ファイル KGTN2011022804.pdf [(65.2 KB)] [kitasp 技術センター, 2011/02/28 14:09]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1436/" class="btn btn-template-main">続きを読む</a>
+2011/09/13*
+[番号] 技術ノート KGTN 2011091301
+[現象] [GGW3.2.1] レジストリ &ldquo;HKCU¥Software¥GraphOn¥Bridges¥1.0.0¥ProgramWindow¥Settings¥Standard&rdquo; は，GGのインストール時に生成されるのか？
+[説明] このレジストリは &ldquo;HKCU&rdquo; で&quot;ProgramWindow&rdquo; ということから，ユーザ単位にプログラムウインドウの情報を保持しています．従って，GGのインストール時に生成されることはなく，各ユーザ毎に初回ログオン時に生成されます．
+ファイル KGTN2011091301.pdf [(46.4 KB)] [kitasp 技術センター, 2011/09/13 11:49]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1303/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -620,7 +611,7 @@ It looks like it was inadvertently left out of the Release Notes, but it was ver
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1439/">
+                                      <a href="/posts/new_md/doc1305/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -628,7 +619,7 @@ It looks like it was inadvertently left out of the Release Notes, but it was ver
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1439/">[GGW3.2.1] 印刷時に拡張子BPFのファイルがオープン出来ないというエラーがAPSログに記録される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1305/">[GGW3.2.1] 2つのクライアントが異なるGGサーバにログオンしている状況で，印刷が他方のクライアントに出力された事例はあるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -641,18 +632,17 @@ It looks like it was inadvertently left out of the Release Notes, but it was ver
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1439/"><i class="far fa-calendar"></i> 2011-02-27</a>
+                                            <a href="/posts/new_md/doc1305/"><i class="far fa-calendar"></i> 2011-09-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/02/27*
-[番号] 技術ノート KGTN 2011022801
-[現象] [GGW3.2.1] 印刷時に拡張子BPFのファイルがオープン出来ないというエラーがAPSログに記録される．
-89 2011-02-22 18:33:33.049 user on server, xxx (1260) RS: Error printing document - Failed to open temporary file &ldquo;C:¥Users¥user¥AppData¥Local¥Temp¥57210312128.bpf&rdquo;.
-[説明] 拡張子 .bpf のファイルは，クライアント印刷機能 （Native Driver） で印刷が行われた時に，サーバ側に一時的に作成されるスプールファイルです．このファイルのオープンに失敗したということですから，恐らくサーバのセキュリティ絡みの問題だと思われます （アクセス権が不十分でTempフォルダにファイルを作成出来ない等） ．
-ファイル KGTN2011022801.pdf [(61.1 KB)] [kitasp 技術センター, 2011/02/28 07:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1439/" class="btn btn-template-main">続きを読む</a>
+2011/09/09*
+[番号] 技術ノート KGTN 2011090901
+[現象] [GGW3.2.1] 2つのクライアントが異なるGGサーバにログオンしている状況で，印刷が他方のクライアントに出力された事例はあるか？
+[説明] GGのクライアント印刷の仕組み上，他のGGサーバ上のユーザ （のセッション） に印刷ジョブが出力されることはありません．実際，同時数千ユーザの案件でも，このような現象が発生したことは一度もありません．
+ファイル KGTN2011090901.pdf [(46.6 KB)] [kitasp 技術センター, 2011/09/09 09:56]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1305/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -662,7 +652,7 @@ It looks like it was inadvertently left out of the Release Notes, but it was ver
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1440/">
+                                      <a href="/posts/new_md/doc1304/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -670,7 +660,7 @@ It looks like it was inadvertently left out of the Release Notes, but it was ver
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1440/">[GGH4.0] クライアントドライブ機能で FD, CD</a></h2>
+                                    <h2><a href="/posts/new_md/doc1304/">Ver4.0系では，GGサーバの設定情報が従来のレジストリに存在しない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -683,18 +673,20 @@ It looks like it was inadvertently left out of the Release Notes, but it was ver
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1440/"><i class="far fa-calendar"></i> 2011-02-25</a>
+                                            <a href="/posts/new_md/doc1304/"><i class="far fa-calendar"></i> 2011-09-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/02/25*
-[番号] 技術ノート KGTN 2011022504
-[現象] [GGH4.0] クライアントドライブ機能で FD, CD-ROM, DVD-ROM 等が表示されない．
-[説明] 4.0系では， FD, CD-ROM, DVD-ROM 等のリームバブルディスクは，クライアントドライブとしてサポートされません． Administrator Guide の内容を以下に引用します．
-GO-Global allows users to access USB drives. Removable drives such a floppy disks, CD ROMs, and DVD-ROMs are not supported as client drives.
-ファイル KGTN2011022504.pdf [(52.3 KB)] [kitasp 技術センター, 2011/02/25 16:15]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1440/" class="btn btn-template-main">続きを読む</a>
+2011/09/09*
+[番号] 技術ノート KGTN 2010072602
+[現象] Ver4.0系では，GGサーバの設定情報が従来のレジストリに存在しない．
+[説明] Ver4.0系では，GGサーバの設定情報がXMLファイルに保持されるようになりました．フォルダおよびXMLファイルの一覧は以下の通りです．
+C:¥Documents and Settings¥All Users¥Application Data¥GraphOn
+補　足 Windows Server 2008 の環境では，以下のパスに配置されます．
+C:¥ProgramData¥GraphOn
+ファイル KGTN2010072602.pdf [(376 KB)] [kitasp 技術センター, 2011/09/09 11:30]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1304/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -704,7 +696,7 @@ GO-Global allows users to access USB drives. Removable drives such a floppy disk
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1441/">
+                                      <a href="/posts/new_md/doc1306/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -712,7 +704,7 @@ GO-Global allows users to access USB drives. Removable drives such a floppy disk
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1441/">「描画オブジェクトが不完全に描画される」 「ウインドウ内の幾つかの描画オブジェクトが表示されない」 等の問題が発生したが，どんな情報を採取すれば良いか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1306/">フォルダ C:¥Windows¥Temp の下にある GO-Global??? というファイルは何なのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -725,18 +717,17 @@ GO-Global allows users to access USB drives. Removable drives such a floppy disk
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1441/"><i class="far fa-calendar"></i> 2011-02-25</a>
+                                            <a href="/posts/new_md/doc1306/"><i class="far fa-calendar"></i> 2011-09-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/02/25*
-[番号] 技術ノート KGTN 2011022501
-[現象] 「描画オブジェクトが不完全に描画される」 「ウインドウ内の幾つかの描画オブジェクトが表示されない」 等の問題が発生したが，どんな情報を採取すれば良いか？
-[説明] クライアントクリップボード機能が 「有効」 であれば，この機能を 「無効」 にして再現するかどうかを確認して下さい．状況が変わらない場合は，クライアント側で動作する ggw.exe の情報をタスクマネージャ （プロセスタブ，表示→列の選択で各項目を選択） か Process Explorer （Performanceタブ） で採取して下さい．あと，ビデオアダプタのメモリの大きさ，画面の解像度と色深度等もお知らせ下さい．
-参　考 本技術ノートに関連するGraphOn社のコメントを引用します．
-It could be some kind of client side memory or graphical handle issue. If the client was running out of memory or handles then painting anomalies like this could occur. We think they could tell if this is the issue by running the task manager on the client and looking at the ggw process.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1441/" class="btn btn-template-main">続きを読む</a>
+2011/09/08*
+[番号] 技術ノート KGTN 2011090801
+[現象] フォルダ C:¥Windows¥Temp の下にある GO-Global??? というファイルは何なのか？
+[説明] APS ログに記録する Operating Environment 情報， Application Environment 情報， Environment Variables 情報を保持する作業ファイルです．このファイルは，サービス GO-Global Application Publishing Service を停止すると自動的に削除されますが，障害等で残った （つまり3個以上存在） 場合は，必要に応じて GO-Global Application Publishing Service を停止後に，エクスプローラ等で削除して下さい．
+ファイル KGTN2011090801.pdf [(57.7 KB)] [kitasp 技術センター, 2011/09/08 12:01]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1306/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -806,7 +797,7 @@ It could be some kind of client side memory or graphical handle issue. If the cl
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

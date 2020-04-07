@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2236/">
+                                      <a href="/posts/new_md/doc2216/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2236/">[Windows/PowerShell] PowerShell を使用してローカルとリモートのコンピューター名を取得したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2216/">[Windows/PowerShell/ExPack] PowerShell でプロファイル中にマイドキュメント等のフォルダーを作るバッチを生成したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,19 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2236/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                            <a href="/posts/new_md/doc2216/"><i class="far fa-calendar"></i> 2016-12-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101813
-[現象] [Windows/PowerShell] PowerShell を使用してローカルとリモートのコンピューター名を取得したい．
-[説明] 以下に PowerShell での実行例 （最初はローカル，２番目はリモート） を示します．
-ファイル KGTN2016101813.pdf [(112 KB)] [kitasp 技術センター, 2016/11/02 15:17]
-KGTN2016101813.jpg
-表示 [(22.3 KB)] [kitasp 技術センター, 2016/11/02 15:17]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2236/" class="btn btn-template-main">続きを読む</a>
+2016/12/15*
+[番号] 技術ノート KGTN 2016120602
+[現象] [Windows/PowerShell/ExPack] PowerShell でプロファイル中にマイドキュメント等のフォルダーを作るバッチを生成したい．
+[説明] ローカルアカウントで Windows PowerShell を 「管理者として実行する」 で起動し，その中で下記のコマンドを実行して下さい．
+# # プロファイルに各種フォルダーを作成するバッチを生成するスクリプト # # 設定情報 $FilePrefix = &quot;GenMakeProfileFolder&quot; # 生成するファイルのプリフィックス $HomeFolder = &quot;C:HOME&quot; # プロファイルのホームフォルダー $FolderList = # 生成するフォルダーのリスト @( &quot;Documents&quot;, &quot;Favorites&quot;, &quot;Downloads&quot; ) # ホスト情報およびユーザー情報の設定など Try { . (&quot;.ConfconfUserList.ps1&quot;) } Catch { Write-Host &quot;インクルードファイルが見つかりません。&quot; Exit 1001 } # 引数のチェック if($Args.Length -ne 0) { Write-Host &quot;Usage: genProfileFolderList.ps1&quot; Exit 1002 } # 既存ファイルの削除 if ((Test-Path &quot;$FilePrefix.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2216/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -362,7 +360,7 @@ KGTN2016101813.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2232/">
+                                      <a href="/posts/new_md/doc2210/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -370,7 +368,7 @@ KGTN2016101813.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2232/">[Windows/PowerShell] PowerShell を使用して複数のリモートコンピューターでコマンドを実行し，その実行結果を得る方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2210/">[Windows/PowerShell/ExPack] ワークグループ環境＆複数のGGサーバーでNAS上にマイドキュメントやお気に入りを配置した運用環境の構築手順は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -383,17 +381,19 @@ KGTN2016101813.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2232/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                            <a href="/posts/new_md/doc2210/"><i class="far fa-calendar"></i> 2016-12-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101902
-[現象] [Windows/PowerShell] PowerShell を使用して複数のリモートコンピューターでコマンドを実行し，その実行結果を得る方法は？
-[説明] 以下に，各リモートコンピューターからコンピューター名とIPアドレス （文字列） を得るサンプルを示します．
-$hostList = @(&quot;192.168.102.60&quot;,&quot;192.168.102.72&quot;,&quot;192.168.102.110&quot;) Function hostInfo ($ipAddr) { $hostName = [Net.Dns]::GetHostName() $hostAddr = [Net.Dns]::GetHostAddresses('') | Where-Object -FilterScript { ($_.AddressFamily -Eq &quot;InterNetwork&quot;) } | select -ExpandProperty IPAddressToString return &quot;hostName: {0,-16}, hostAddr: {1,-16}&quot; -f $hostName,$hostAddr } $ii = 0 ForEach($target In $hostList) { $ret = Invoke-Command $target -ScriptBlock ${function:hostInfo} -ArgumentList $target ++$ii &quot;[{0}] {1}&quot; -f $ii,$ret }  ファイル KGTN2016101902.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2232/" class="btn btn-template-main">続きを読む</a>
+2016/12/15*
+[番号] 技術ノート KGTN 2016120603
+[現象] [Windows/PowerShell/ExPack] ワークグループ環境＆複数のGGサーバーでNAS上にマイドキュメントやお気に入りを配置した運用環境の構築手順は？
+[説明] ここで記述する内容は，他の情報 （技術ノート，PowerShell，Batch，NAS，etc&hellip;） を前提としており，閉じた内容でないことをご理解下さい．また， PowerShell をリモート実行出来る環境が構築されていることも前提としています．
+[STEP#0] ・管理サーバー・GGサーバー・NASのホスト名およびIPアドレスを決める （採取する） ． ・スクリプト genProfileFolderList.ps1 に設定情報をセットする． ・スクリプト genProfileSymbolicLinkList.ps1 に設定情報をセットする．
+# 設定情報 $FilePrefix = &quot;GenMakeProfileFolder&quot; # 生成するファイルのプリフィックス $HomeFolder = &quot;C:HOME&quot; # プロファイルのホームフォルダー $FolderList = # 生成するフォルダーのリスト @( &quot;Documents&quot;, &quot;Favorites&quot;, &quot;Downloads&quot; )  スクリプト genProfileFolderList.ps1 の設定情報
+# 設定情報 $FilePrefix = &quot;GenMakeProfileSymbolicLink&quot; # 生成するファイルのプリフィックス $HomeFolder = &quot;C:Users&quot; # プロファイルのホームフォルダー $NASAddr = &quot;192.168.0.2&quot; # NAS のアドレス $FolderList = # 生成するフォルダーのリスト @( &quot;Documents&quot;, &quot;Favorites&quot;, &quot;Downloads&quot; )  スクリプト genProfileSymbolicLinkList.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2210/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -403,7 +403,7 @@ $hostList = @(&quot;192.168.102.60&quot;,&quot;192.168.102.72&quot;,&quot;192.16
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2231/">
+                                      <a href="/posts/new_md/doc2212/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -411,7 +411,7 @@ $hostList = @(&quot;192.168.102.60&quot;,&quot;192.168.102.72&quot;,&quot;192.16
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2231/">[Windows/PowerShell] PowerShell を使用して複数のリモートコンピューターにアカウントを作りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2212/">[Windows/PowerShell/ExPack] 技術ノート KGTN#2016120603 の環境で NAS のIPアドレスを間違えた．IPアドレスを修正するには，どのような作業をすれば良いのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -424,17 +424,17 @@ $hostList = @(&quot;192.168.102.60&quot;,&quot;192.168.102.72&quot;,&quot;192.16
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2231/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                            <a href="/posts/new_md/doc2212/"><i class="far fa-calendar"></i> 2016-12-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101903
-[現象] [Windows/PowerShell] PowerShell を使用して複数のリモートコンピューターにアカウントを作りたい．
-[説明] 以下に，各リモートコンピューターにアカウントを作成するサンプルを示します．
-$hostList = @(&quot;192.168.102.60&quot;,&quot;192.168.102.72&quot;,&quot;192.168.102.110&quot;) $argUser = &quot;wguser9012&quot; $argPass = &quot;Pass.Word&quot; Function addUser ([string]$user,[string]$pass) { # 共通 [bool]$myError = $false $hostname = hostname # アカウント作成 try { [ADSI]$Computer = &quot;WinNT://$hostname,computer&quot; $NewUser = $Computer.Create(&quot;User&quot;,$user) [void]$NewUser.SetPassword($pass) [void]$NewUser.SetInfo() Write-Host &quot;addUser: Create = OK (&quot; $hostname &quot;)&quot; } catch { $myError = $true Write-Host &quot;addUser: Create = NG (&quot; $hostname &quot;)&quot; } # RDS の利用設定 if($myError -eq $false) { try { $Group = $Computer.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2231/" class="btn btn-template-main">続きを読む</a>
+2016/12/15*
+[番号] 技術ノート KGTN 2016120903
+[現象] [Windows/PowerShell/ExPack] 技術ノート KGTN#2016120603 の環境で NAS のIPアドレスを間違えた．IPアドレスを修正するには，どのような作業をすれば良いのか？
+[説明] 先ず，正しいNASのIPアドレスを genProfileSymbolicLinkList.ps1 を設定し，バッチファイルを生成して下さい．次に，このバッチファイルを各GGサーバー上で （管理者権限で） 実行して下さい．この手順で，プロファイル中のシンボリックリンクの先が，正しいNAS上のフォルダーを指すようになります．
+ファイル KGTN2016120903.pdf [(58.1 KB)] [kitasp 技術センター, 2016/12/15 11:22]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2212/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -444,7 +444,7 @@ $hostList = @(&quot;192.168.102.60&quot;,&quot;192.168.102.72&quot;,&quot;192.16
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2234/">
+                                      <a href="/posts/new_md/doc2214/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -452,7 +452,7 @@ $hostList = @(&quot;192.168.102.60&quot;,&quot;192.168.102.72&quot;,&quot;192.16
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2234/">[Windows/PowerShell] PowerShell を使用して複数のリモートコンピューターのホスト名を取得したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2214/">[Windows/PowerShell/ExPack] 技術ノート KGTN#2016120603 の環境で NAS　がダウンした場合，GGの利用はどうなるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -465,19 +465,17 @@ $hostList = @(&quot;192.168.102.60&quot;,&quot;192.168.102.72&quot;,&quot;192.16
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2234/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                            <a href="/posts/new_md/doc2214/"><i class="far fa-calendar"></i> 2016-12-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101814
-[現象] [Windows/PowerShell] PowerShell を使用して複数のリモートコンピューターのホスト名を取得したい．
-[説明] 以下に PowerShell での実行例を示します．
-ファイル KGTN2016101814.pdf [(77.1 KB)] [kitasp 技術センター, 2016/11/02 15:20]
-KGTN2016101814.jpg
-表示 [(7.91 KB)] [kitasp 技術センター, 2016/11/02 15:20]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2234/" class="btn btn-template-main">続きを読む</a>
+2016/12/15*
+[番号] 技術ノート KGTN 2016120902
+[現象] [Windows/PowerShell/ExPack] 技術ノート KGTN#2016120603 の環境で NAS　がダウンした場合，GGの利用はどうなるのか？
+[説明] ログオン時およびアプリケーション利用時に 「ダウン中の」 NAS にアクセスするため，ログオンに時間がかかります （タイムアウトを待つため） ．アプリケーションについても，同じ理由でマイドキュメントやお気に入りにアクセスする度に時間がかかります．
+ファイル KGTN2016120902.pdf [(51.4 KB)] [kitasp 技術センター, 2016/12/15 11:20]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2214/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -487,7 +485,7 @@ KGTN2016101814.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2230/">
+                                      <a href="/posts/new_md/doc2215/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -495,7 +493,7 @@ KGTN2016101814.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2230/">[Windows/PowerShell] PowerShell を使用して複数のリモートコンピューター上の同一アカウントのパスワードを変更したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2215/">[Windows/PowerShell/ExPack] 技術ノート KGTN#2016120603 を試したいが，どのような点に注意すれば良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -508,17 +506,22 @@ KGTN2016101814.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2230/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                            <a href="/posts/new_md/doc2215/"><i class="far fa-calendar"></i> 2016-12-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101904
-[現象] [Windows/PowerShell] PowerShell を使用して複数のリモートコンピューター上の同一アカウントのパスワードを変更したい．
-[説明] 以下に，各リモートコンピューターの同一アカウントのパスワードを変更するサンプルを示します．
-$hostList = @(&quot;192.168.102.60&quot;,&quot;192.168.102.72&quot;,&quot;192.168.102.110&quot;) $argUser = &quot;wguser9012&quot; $argPass = &quot;Pass.Word&quot; Function changePassword ([string]$user,[string]$pass) { # 共通 [bool]$myError = $false $hostname = hostname # パスワードの変更 try { [ADSI]$UpdateUser = &quot;WinNT://$hostname/$user,User&quot; [void]$UpdateUser.SetPassword($pass) [void]$UpdateUser.SetInfo() Write-Host &quot;changePassword: SetPassword = OK (&quot; $hostname &quot;)&quot; } catch { $myError = $true Write-Host &quot;changePassword: SetPassword = NG (&quot; $hostname &quot;)&quot; } return &quot;{0,-16}, {1,-16}, {2,-16}, {3}&quot; -f $hostname,$user,$pass,!</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2230/" class="btn btn-template-main">続きを読む</a>
+2016/12/15*
+[番号] 技術ノート KGTN 2016120901
+[現象] [Windows/PowerShell/ExPack] 技術ノート KGTN#2016120603 を試したいが，どのような点に注意すれば良いか？
+[説明] 技術ノート KGTN#2016120603 を試す場合，以下のポイントを押さえて下さい．
+[ポイント１] 検証環境として，管理サーバー・GGサーバー・NAS （またはWindows） の３台マシンが必要です．管理サーバーでは， PowerShell のスクリプトよびGGクライアントの実行を行います．GGサーバーでは，アカウントの作成 （管理サーバーからのPowerShell 実行およびRDSによるログオン） およびGGサーバーの実行を行います．NAS では，GGサーバー上のアカウントの 「マイドキュメント」 や 「お気に入り」 のリダイレクト先である共有フォルダーを保持します．各マシンの管理者アカウント Administrator は，必ずパスワードを揃えるようにして下さい．
+[ポイント２] 管理サーバーおよびGGサーバーの PowerShell は，必ずバージョン5.0またはそれ以降にして下さい （それ以前のバージョンの場合は技術ノートKGTN#2016101701 の方法で入手して下さい）．&ldquo;Windows PowerShell&rdquo; （のコンソール） を起動する時は，必ず 「管理者として実行する」 で起動して下さい．さらに，２台のマシン上で技術ノート KGTN#2016120501 を参考に環境設定を行い，管理サーバーからGGサーバーへ Enter-PSSession （リモート接続） が出来るようにして下さい．
+PowerShell のバージョン確認 (Windows 10 Pro)
+PowerShell のバージョン確認 (Windows Server 2012 R2)
+&ldquo;Windows PowerShell&rdquo; を 「管理者として実行する」 (Windows 10 Pro)
+&ldquo;Windows PowerShell&rdquo; を 「管理者として実行する」 (Windows Server 2012 R2)</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2215/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -528,7 +531,7 @@ $hostList = @(&quot;192.168.102.60&quot;,&quot;192.168.102.72&quot;,&quot;192.16
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2249/">
+                                      <a href="/posts/new_md/doc2211/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -536,7 +539,7 @@ $hostList = @(&quot;192.168.102.60&quot;,&quot;192.168.102.72&quot;,&quot;192.16
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2249/">[Windows/PowerShell] Windows Server 2012 R2 の環境に PowerShell 5.0 をインストールするため W2K12</a></h2>
+                                    <h2><a href="/posts/new_md/doc2211/">[Windows] シンボリック・リンクの作成と削除の方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -549,20 +552,17 @@ $hostList = @(&quot;192.168.102.60&quot;,&quot;192.168.102.72&quot;,&quot;192.16
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2249/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                            <a href="/posts/new_md/doc2211/"><i class="far fa-calendar"></i> 2016-12-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101701
-[現象] [Windows/PowerShell] Windows Server 2012 R2 の環境に PowerShell 5.0 をインストールするため W2K12-KB3134759-x64.msu を起動したところ， 「この更新プログラムはお使いのコンピューターには適用できません」 と表示される．
-[説明] W2K12-KB3134759-x64.msu は，Windows Server 2012 （R2なし） の環境用の更新プログラムです． Windows Server 2012 R2 の環境では， Win8.1AndW2K12R2-KB3134758-x64.msu をインストールして下さい．
-https://msdn.microsoft.com/ja-jp/powershell/wmf/5.0/install
-ファイル KGTN2016101701.pdf [(173 KB)] [kitasp 技術センター, 2016/11/02 14:26]
-KGTN2016101701.jpg
-表示 [(42.1 KB)] [kitasp 技術センター, 2016/11/02 14:26]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2249/" class="btn btn-template-main">続きを読む</a>
+2016/12/15*
+[番号] 技術ノート KGTN 2016120904
+[現象] [Windows] シンボリック・リンクの作成と削除の方法は？
+[説明] プロファイル中にマイドキュメントのシンボリック・リンクを作成する例と，それを削除する例を以下に示します．del コマンドでもシンボリック・リンクを削除することが出来ますが，しかしリンク先が存在しない場合にタイムアウトを待つことになるため時間を要します．
+mklink /D C:UserslocalUser011Documents 192.168.0.2localUser011Documents rmdir C:UserslocalUser011Documents  ファイル KGTN2016120904.pdf [(54.8 KB)] [kitasp 技術センター, 2016/12/15 11:23]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2211/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -572,7 +572,7 @@ KGTN2016101701.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2225/">
+                                      <a href="/posts/new_md/doc2217/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -580,7 +580,7 @@ KGTN2016101701.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2225/">[Windows/PowerShell] 複数のGGサーバー （ワークグループ） にアカウントが存在するいかどうか調べたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2217/">[Windows/PowerShell/ExPack] PowerShell で複数サーバーの複数アカウントに連続してログオンしたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -593,19 +593,17 @@ KGTN2016101701.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2225/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                            <a href="/posts/new_md/doc2217/"><i class="far fa-calendar"></i> 2016-12-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016102502
-[現象] [Windows/PowerShell] 複数のGGサーバー （ワークグループ） にアカウントが存在するいかどうか調べたい．
-[説明] 以下にスクリプトのサンプルを示します．
-ファイル： ConfconfHostList.ps1
-# 処理の対象とするサーバー $hostList = @( &quot;192.168.102.60&quot;, &quot;192.168.102.72&quot;, &quot;192.168.102.110&quot; )  ファイル： checkUser.ps1
-# ホスト情報の設定 Try { . (&quot;.ConfconfHostList.ps1&quot;) } Catch { Write-Host &quot;インクルードファイルが見つかりません。&quot; Exit 1001 } # 引数のチェック if($Args.Length -ne 1) { Write-Host &quot;Usage: checkUser.ps1 &lt;userid&gt;&quot; Exit 1002 } $argUser = $Args[0] # ユーザーID ... &quot;wguser9012&quot; # ローカルアカウントの存在チェック（本体） Function checkUser ([string]$user) { # 共通 $hostname = hostname # ローカルアカウントの確認 try { $objComputer = [ADSI](&quot;WinNT://$hostname,computer&quot;) $colUsers = ($objComputer.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2225/" class="btn btn-template-main">続きを読む</a>
+2016/12/14*
+[番号] 技術ノート KGTN 2016120601
+[現象] [Windows/PowerShell/ExPack] PowerShell で複数サーバーの複数アカウントに連続してログオンしたい．
+[説明] ローカルアカウントで Windows PowerShell を 「管理者として実行する」 で起動し，その中で下記のコマンドを実行して下さい．
+# # GG サーバーに連続ログオンするバッチを生成するスクリプト # # 設定情報 $FilePrefix = &quot;GenRDSrdsLogon&quot; # 生成するファイルのプリフィックス # ホスト情報およびユーザー情報の設定など Try { . (&quot;.ConfconfHostList.ps1&quot;) . (&quot;.ConfconfUserList.ps1&quot;) } Catch { Write-Host &quot;インクルードファイルが見つかりません。&quot; Exit 1001 } # 引数のチェック if($Args.Length -ne 0) { Write-Host &quot;Usage: genRDSLogonList.ps1&quot; Exit 1002 } # 既存ファイルの削除 ForEach($targetH In $hostList) { if ((Test-Path &quot;$FilePrefix-$targetH.bat&quot;) -eq $True) { Remove-Item (&quot;$FilePrefix-$targetH.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2217/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -615,7 +613,7 @@ KGTN2016101701.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2226/">
+                                      <a href="/posts/new_md/doc2220/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -623,7 +621,7 @@ KGTN2016101701.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2226/">[Windows/PowerShell] 複数のGGサーバー （ワークグループ） に複数のアカウントを一括登録したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2220/">[Windows/PowerShell] PowerShell でシンボリックリンクを作成する方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -636,20 +634,17 @@ KGTN2016101701.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2226/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                            <a href="/posts/new_md/doc2220/"><i class="far fa-calendar"></i> 2016-12-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016102501
-[現象] [Windows/PowerShell] 複数のGGサーバー （ワークグループ） に複数のアカウントを一括登録したい．
-[説明] 以下にスクリプトのサンプルを示します．
-ファイル： hostList.ps1
-# 処理の対象とするサーバー $hostList = @( &quot;192.168.102.60&quot;, &quot;192.168.102.72&quot;, &quot;192.168.102.110&quot; )  ファイル： userList.ps1
-# 追加するアカウント $userList = @( @(&quot;wguser9025&quot;,&quot;Pass.Word&quot;), @(&quot;wguser9026&quot;,&quot;Pass.Word&quot;), @(&quot;wguser9027&quot;,&quot;Pass.Word&quot;) )  ファイル： addUserList.ps1
-# ホスト情報およびユーザー情報の設定 Try { . (&quot;.hostList.ps1&quot;) . (&quot;.userList.ps1&quot;) } Catch { Write-Host &quot;インクルードファイルが見つかりません。&quot; Exit 1001 } # アカウントの追加（本体） Function addUser ([string]$user,[string]$pass) { # 共通 [bool]$myError = $false $hostname = hostname # アカウント作成 try { [ADSI]$Computer = &quot;WinNT://$hostname,computer&quot; $NewUser = $Computer.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2226/" class="btn btn-template-main">続きを読む</a>
+2016/12/14*
+[番号] 技術ノート KGTN 2016120101
+[現象] [Windows/PowerShell] PowerShell でシンボリックリンクを作成する方法は？
+[説明] Ver.5 の環境で，以下のように New-Item &hellip; -ItemType SymbolicLink を実行することでシンボリックリンクを作成することが出来ます．
+New-Item -Path C:Usersuser -Name TechNote -Value 192.168.0.10pubTechNote -ItemType SymbolicLink  ファイル KGTN2016120101.pdf [(53.7 KB)] [kitasp 技術センター, 2016/12/14 17:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2220/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -659,7 +654,7 @@ KGTN2016101701.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2251/">
+                                      <a href="/posts/new_md/doc2219/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -667,7 +662,7 @@ KGTN2016101701.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2251/">[Windows] VC&#43;&#43; でソフトウェアを開発しているが，アプリケーションを起動しその結果 （コンソール出力） を文字列として得るサンプルが欲しい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2219/">[Windows/PowerShell] PowerShell でパスワード入力のダイアログの表示無しに，リモートコンピューターに接続 （Enter-PSSession） する方法を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -680,17 +675,17 @@ KGTN2016101701.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2251/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                            <a href="/posts/new_md/doc2219/"><i class="far fa-calendar"></i> 2016-12-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016100701
-[現象] [Windows] VC++ でソフトウェアを開発しているが，アプリケーションを起動しその結果 （コンソール出力） を文字列として得るサンプルが欲しい．
-[説明] 下記にパイプを使用したサンプルを示します．
-int gglib_ExecAndRedirect(TCHAR *tCmd, TCHAR *tOutbuf, DWORD *dOutbuf) { HANDLE hOutput; HANDLE hStdOutputWritePipe,hStdOutput,hStdError; ::CreatePipe(&amp;hOutput,&amp;hStdOutputWritePipe,NULL,0); ::DuplicateHandle( GetCurrentProcess(), hStdOutputWritePipe, GetCurrentProcess(), &amp;hStdOutput, 0, TRUE, DUPLICATE_SAME_ACCESS); ::DuplicateHandle( GetCurrentProcess(), hStdOutput, GetCurrentProcess(), &amp;hStdError, 0, TRUE, DUPLICATE_SAME_ACCESS); ::CloseHandle(hStdOutputWritePipe); //--- PROCESS_INFORMATION pi; STARTUPINFO si; TCHAR tCmdCopy[1024]; ZeroMemory(&amp;si,sizeof(STARTUPINFO)); si.cb = sizeof(STARTUPINFO); si.dwFlags = STARTF_USESTDHANDLES|STARTF_USESHOWWINDOW; si.hStdInput = GetStdHandle(STD_INPUT_HANDLE); si.hStdOutput = hStdOutput; si.hStdError = hStdError; si.wShowWindow = SW_HIDE; _tcscpy_s(tCmdCopy,tCmd); if(::CreateProcess(NULL,tCmdCopy,NULL,NULL,TRUE, CREATE_NEW_CONSOLE,NULL,NULL,&amp;si,&amp;pi) == 0) { ::CloseHandle(hStdOutput); ::CloseHandle(hStdError); ::CloseHandle(hOutput); hOutput = INVALID_HANDLE_VALUE; return(-1); } ::CloseHandle(pi.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2251/" class="btn btn-template-main">続きを読む</a>
+2016/12/14*
+[番号] 技術ノート KGTN 2016113002
+[現象] [Windows/PowerShell] PowerShell でパスワード入力のダイアログの表示無しに，リモートコンピューターに接続 （Enter-PSSession） する方法を知りたい．
+[説明] 以下のスクリプトでパスワード入力のダイアログの表示無しに，リモートコンピューターに接続することが出来ます．
+# 引数のチェック if($Args.Length -ne 3) { Write-Host &quot;Usage: enterPSSession.ps1 &lt;host&gt; &lt;user&gt; &lt;password&gt;&quot; Exit 1002 } $argHost = $Args[0] $argUser = $Args[1] $argPass = $Args[2] $password = ConvertTo-SecureString $argPass -AsPlainText -Force $cred= New-Object System.Management.Automation.PSCredential($argUser,$password) Enter-PSSession $argHost -Credential $cred  ファイル KGTN2016113002.pdf [(58.7 KB)] [kitasp 技術センター, 2016/12/14 17:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2219/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -700,7 +695,7 @@ int gglib_ExecAndRedirect(TCHAR *tCmd, TCHAR *tOutbuf, DWORD *dOutbuf) { HANDLE 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2264/">
+                                      <a href="/posts/new_md/doc2204/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -708,7 +703,7 @@ int gglib_ExecAndRedirect(TCHAR *tCmd, TCHAR *tOutbuf, DWORD *dOutbuf) { HANDLE 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2264/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2204/">[Windows/PowerShell] PowerShell でリモート処理を行う場合に必要な設定は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -721,17 +716,18 @@ int gglib_ExecAndRedirect(TCHAR *tCmd, TCHAR *tOutbuf, DWORD *dOutbuf) { HANDLE 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2264/"><i class="far fa-calendar"></i> 2016-10-05</a>
+                                            <a href="/posts/new_md/doc2204/"><i class="far fa-calendar"></i> 2016-12-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016092903
-[現象] [GGH4.X-5.X] IIS のポート番号を変更する場合，GGの設定も変更する必要があるか？
-[説明] IIS はGGのクライアント （ファイル） や logon.html の配信に使用されており， IIS のポート番号の変更がGG自体の動作に影響を与えることはありません．拡張パックの GGEasyMonitor に関しては， logon.html のページを参照しますので，設定ファイルの内容を変更する必要があります．
-ファイル KGTN2016092903.pdf [(56.3 KB)] [kitasp 技術センター, 2016/10/05 17:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2264/" class="btn btn-template-main">続きを読む</a>
+2016/12/14*
+[番号] 技術ノート KGTN 2016120501
+[現象] [Windows/PowerShell] PowerShell でリモート処理を行う場合に必要な設定は？
+[説明] ローカルアカウントで Windows PowerShell を 「管理者として実行する」 で起動し，その中で下記のコマンドを実行して下さい． Set-ExecutionPolicy Bypass は，状況に応じてセキュリティを高めるRemoteSigned 等に変更して下さい．
+1. Enable-PSRemoting 2. Set-Item WSMan:localhostClientTrustedHosts -Value * 3. Winrm Quickconfig 4. Enter-PSSession &lt;接続先のIP アドレス&gt; 5. Set-ExecutionPolicy Bypass  上記の設定を行ってもリモート接続 （Enter-PSSession） に失敗する場合は，接続先に接続元と同じ管理者アカウントが存在するかどうかを確認して下さい．
+ファイル KGTN2016120501.pdf [(65.7 KB)] [kitasp 技術センター, 2017/02/22 17:00]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2204/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -801,7 +797,7 @@ int gglib_ExecAndRedirect(TCHAR *tCmd, TCHAR *tOutbuf, DWORD *dOutbuf) { HANDLE 
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

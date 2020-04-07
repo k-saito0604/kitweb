@@ -409,25 +409,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1292/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1177/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1292/">[GGW3.2.1] 動作試験や負荷試験のため，同一PC （クライアント） から複数のセッションを張っても良いか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1177/">[Tool] GGのセッションのトラフィックを視覚的に見る方法はあるか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-09-27
+                            日付 2011-12-15
                             </p>
                             <p class="intro">*技術ノート
-2011/09/27*
-[番号] 技術ノート KGTN 2011092701
-[現象] [GGW3.2.1] 動作試験や負荷試験のため，同一PC （クライアント） から複数のセッションを張っても良いか？
-[説明] 同一PCから複数のセッションを張った場合，クライアントプリンタの構成時に障害が発生する可能性があります．従って，原則的には１PC （クライアント） １セッションで試験を行うようにして下さい．さらに，１ユーザID　１セッションの原則も守って下さい．
-ファイル KGTN2011092701.pdf [(48.7 KB)] [kitasp 技術センター, 2011/09/28 08:58]</p>
+2011/12/15*
+[番号] 技術ノート KGTN 2011121505
+[現象] [Tool] GGのセッションのトラフィックを視覚的に見る方法はあるか？
+[説明] GGにはそのような機能はありませんが，ネットワーク・アナライザ・ソフトウェアWireshark を利用することでトラフィックを視覚的に見ることが出来ます．20MBのZIPファイルをクライアントドライブ機能でコピーした時のトラフィックは以下の通りです （青：サーバ → クライアント，赤：クライアント → サーバ） ．
+Wireshark の具体的な操作法についてはオライリー・ジャパン 「実践 パケット解析 ―Wiresharkを使ったトラブルシューティング」 などの書籍やインターネット上の情報をご覧下さい．
+ファイル KGTN2011121505.pdf [(151 KB)] [kitasp 技術センター, 2011/12/15 13:33]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1292/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1177/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,27 +447,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1294/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1176/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1294/">[GGH4.0] Windows Server 2008 R2 の環境で，GGのパフォーマンス・カウンタを追加出来ない．</a></h4>
+                            <h4><a href="/posts/new_md/doc1176/">[Tool] ネットワーク・アナライザ・ソフトウェアWireshark を利用して障害調査を行う場合，GGのプロトコルの内容まで細かく調べるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-09-26
+                            日付 2011-12-15
                             </p>
                             <p class="intro">*技術ノート
-2011/09/26*
-[番号] 技術ノート KGTN 2011070801
-[現象] [GGH4.0] Windows Server 2008 R2 の環境で，GGのパフォーマンス・カウンタを追加出来ない．
-[説明] Windows Server 2008 R2 の環境に於いて，パフォーマンス・オブジェクト &ldquo;GO-Global Server&rdquo; が存在せず，GGのパフォーマンス・カウンタを追加出来ないのは既知の問題としてGraphOn社の対応リストに登録されています．2011年7月8日時点では， Ver4.1 またはそれ以降で対応予定となっております．
-This is a bug with Windows Server 2008 R2. It is scheduled to be fixed in 4.1, but it is a Priority 2 so we can&rsquo;t guarantee it will be fixed in that release.
-補　足 本件には，２つの問題が内包されています．ひとつは，パフォーマンスカウンタがインストールされないというインストーラーの問題です．もうひとつは，Windows Server 2008 R2 の環境で32ビットのアプリケーションがパフォーマンスカウンタを表示出来ない問題です．
-ファイル KGTN2011070801.pdf [(64.7 KB)] [kitasp 技術センター, 2011/09/26 14:16]</p>
+2011/12/15*
+[番号] 技術ノート KGTN 2011121506
+[現象] [Tool] ネットワーク・アナライザ・ソフトウェアWireshark を利用して障害調査を行う場合，GGのプロトコルの内容まで細かく調べるのか？
+[説明] GGのプロトコルは非公開ですので，セッションの中身 （プロトコルの内容） まで細かく調べることは出来ません．Wireshark を利用した障害調査としては，例えば
+予期せぬセッション切断の原因調査 アプリケーションの動作が遅い時の手掛かりの調査
+などが考えられます．
+ファイル KGTN2011121506.pdf [(62.5 KB)] [kitasp 技術センター, 2011/12/15 14:06]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1294/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1176/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,25 +486,26 @@ This is a bug with Windows Server 2008 R2. It is scheduled to be fixed in 4.1, b
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1296/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1179/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1296/">[GGW3.2.1] メッセージの日本語化の予定は？</a></h4>
+                            <h4><a href="/posts/new_md/doc1179/">APIラッピング方式は，スクリーン・スクレイピング方式に比べ常に描画性能と高いと考えて良いか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-09-26
+                            日付 2011-12-15
                             </p>
                             <p class="intro">*技術ノート
-2011/09/26*
-[番号] 技術ノート KGTN 2011092601
-[現象] [GGW3.2.1] メッセージの日本語化の予定は？
-[説明] 現時点では，メッセージの日本語化の予定はありません． 「特定メッセージに限り日本語化して欲しい」 ということであれば，弊社プロフェッショナルサービスで個別対応させて頂きます．
-ファイル KGTN2011092601.pdf [(43.7 KB)] [kitasp 技術センター, 2011/09/26 11:49]</p>
+2011/12/15*
+[番号] 技術ノート KGTN 2011121503
+[現象] APIラッピング方式は，スクリーン・スクレイピング方式に比べ常に描画性能と高いと考えて良いか？
+[説明] APIラッピング方式ではアプリケーションが描画した命令 （API） をクライアントへ 「同期して」 転送し，それを受け取ったクライアントが命令内容に従って物理的な画面に描画します．一方，スクリーン・スクレイピング方式ではアプリケーションが描画した結果 （ビットマップの差分） をクライアントへ 「非同期に」 転送し，それを受け取ったクライアントがビットマップを物理的な画面に描画します．アプリケーションの操作ウインドウのように描画オブジェクトが多数配置された画面等では，サーバ側での描画のタイミングと同期してクライアントで描画が行われるAPIラッピング方式の方がより高い描画性能が得られます．
+APIラッピング方式にも不得意な画面があります．全画面サイズの画像 （ビットマップ） を順に表示するようなケースでは，APIラッピング方式でも画像データをクライアントへ送る必要があり　（１ピクセル単位に描画命令を送るとデータ量やオーバーヘッドが大幅に増加するため） ，この画像データの転送時間がほぼ描画に要する時間となります．従って，APIラッピング方式のメリットが活きる箇所が少なく，スクリーン・スクレイピング方式と同程度の描画性能になると思われます （非同期でビットマップを転送するスクリーン・スクレイピング方式の方が速く感じることもあります） ．敢えて言えば，GGは全ユーザのパフォーマンスが上がるよう通信帯域を管理しておりますので，多数のユーザが全画面サイズの画像 （ビットマップ） を順に表示するようなケースでは，GGの方がトータルの描画性能が高くなる可能性はあります．
+ファイル KGTN2011121503.pdf [(65.2 KB)] [kitasp 技術センター, 2011/12/15 10:22]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1296/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1179/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -522,25 +524,25 @@ This is a bug with Windows Server 2008 R2. It is scheduled to be fixed in 4.1, b
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1295/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1182/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1295/">[GGW3.2.1] リレーサーバ環境と独立アプリケーションサーバ （非リレーサーバ環境） を比べると，リレーサーバ環境の方がログオフに時間がかかるようだ．</a></h4>
+                            <h4><a href="/posts/new_md/doc1182/">[GGW3.2.1] 20MBを超えるファイルをコピーした時， 「ファイルがロックされる等の事象は発生するもののコピー処理は成功する」 と考えて良いか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-09-26
+                            日付 2011-12-14
                             </p>
                             <p class="intro">*技術ノート
-2011/09/26*
-[番号] 技術ノート KGTN 2011092602
-[現象] [GGW3.2.1] リレーサーバ環境と独立アプリケーションサーバ （非リレーサーバ環境） を比べると，リレーサーバ環境の方がログオフに時間がかかるようだ．
-[説明] リレーサーバ環境では，従属アプリケーションサーバ （Dependent Application Server） のセッションの終了を待って，その後にリレーサーバがクライアントとのセッションを切断しますので，独立アプリケーションサーバ（Independent Application Server） の環境に比べてログオフに時間がかかります．これはログオフに限ったことではなく，ログオン時にもリレーサーバ環境の方が時間がかかります．
-ファイル KGTN2011092602.pdf [(47.4 KB)] [kitasp 技術センター, 2011/09/26 12:39]</p>
+2011/12/14*
+[番号] 技術ノート KGTN 2011121501
+[現象] [GGW3.2.1] 20MBを超えるファイルをコピーした時， 「ファイルがロックされる等の事象は発生するもののコピー処理は成功する」 と考えて良いか？
+[説明] 最初のファイルコピーでは確かにそのような動作を示しますが，しかしその後のファイルコピーでは異常な動作（描画が正しくない，コネクションが切断されるなど） が発生することが確認されております．従って，20MBを超えるファイルコピーについては， 「条件付きであっても」 如何なる動作もお約束出来ません．
+ファイル KGTN2011121501.pdf [(51.1 KB)] [kitasp 技術センター, 2011/12/15 06:47]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1295/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1182/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

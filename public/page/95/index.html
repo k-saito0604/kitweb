@@ -409,25 +409,29 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc118/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc44/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc118/">[Windows] APS (GO</a></h4>
+                            <h4><a href="/posts/new_md/doc44/">[Windows] WS2012R2やWS2008R2の環境で，エクスプローラーの 「ネットワーク」 アイコンを非表示にしたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-06-11
+                            日付 2015-07-09
                             </p>
                             <p class="intro">*技術ノート
-2015/06/11*
-[番号] 技術ノート KGTN 2015031101
-[現象] [Windows] APS (GO-Global Application Publishing Service) の開始・停止・状況確認を外部のコンピュータから行いたい．
-[説明] Windows Sysinternals の PsService と WSH (VBScript) を使用したサンプルを以下に示します．なお，この内容についての助言は歓迎しますが，質問等はご遠慮下さい．
-'- '- PsGGAPS.vbs : APS の開始/停止/状況確認 を行う． '- Sample: cscript PsGGAPS.vbs 10.1.8.93 query '- Option Explicit Dim objShell,objFso Dim objParm,argServer,argCommand Dim strResult,aryStrings,aryStrings2,ii '--- Set objShell = CreateObject(&quot;Wscript.Shell&quot;) Set objFso = CreateObject(&quot;Scripting.FileSystemObject&quot;) Set objParm = Wscript.Arguments '--- If objParm.Count &lt;&gt; 2 Then WScript.Echo &quot;Usage: PsGGAPS &lt;server&gt; &lt;command&gt;&quot; WScript.</p>
+2015/07/09*
+[番号] 技術ノート KGTN 2015061901
+[現象] [Windows] WS2012R2やWS2008R2の環境で，エクスプローラーの 「ネットワーク」 アイコンを非表示にしたい．
+[説明] 下記の方法で，エクスプローラーの 「ネットワーク」 アイコンが消えることを確認しました．なお ShellFolder 値を書き換えるには，アクセス許可を開き Administrators にフルコントロールを与える必要があります．この変更が拒否された場合は，詳細設定で所有者を Administrator に変更して下さい．
+ファイル KGTN2015061901-1.jpg
+表示 [(38 KB)] [kitasp 技術センター, 2015/07/09 12:00]
+KGTN2015061901-2.jpg
+表示 [(18.5 KB)] [kitasp 技術センター, 2015/07/09 12:00]
+KGTN2015061901.pdf [(114 KB)] [kitasp 技術センター, 2015/07/09 16:04]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc118/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc44/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,27 +450,37 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc80/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc41/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc80/">[Windows] C:ドライブが存在しない Windows Server 2012 R2 の環境を構築出来るか？</a></h4>
+                            <h4><a href="/posts/new_md/doc41/">[Windows] WS2012R2やWS2008R2の環境で，ユーザーがファイル共有機能を利用してクライアントPCへファイルをダウンロード （コピー） 出来ないようにしたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-06-11
+                            日付 2015-07-09
                             </p>
                             <p class="intro">*技術ノート
-2015/06/11*
-[番号] 技術ノート KGTN 2015021705
-[現象] [Windows] C:ドライブが存在しない Windows Server 2012 R2 の環境を構築出来るか？
-[説明] Windows 8 用 Windows アセスメント &amp; デプロイメント キット (Windows ADK) に含まれる Windows　システム イメージ マネージャー (Windows SIM) を利用することで，以下のスクリーンショットのようにC:ドライブが存在しないWS2012R2の環境 （システムドライブはW:） を構築することが出来ます．このような特殊な　Windows のインストール等については，弊社プロフェッショナル・サービスで対応いたします．
-ファイル KGTN2015021705.pdf [(140 KB)] [kitasp 技術センター, 2015/06/11 17:17]
-KGTN2015021705.jpg
-表示 [(38.9 KB)] [kitasp 技術センター, 2015/06/17 17:17]</p>
+2015/07/09*
+[番号] 技術ノート KGTN 2015061903
+[現象] [Windows] WS2012R2やWS2008R2の環境で，ユーザーがファイル共有機能を利用してクライアントPCへファイルをダウンロード （コピー） 出来ないようにしたい．
+[説明] エクスプローラーや共通ファイル・ダイアログから 「ネットワーク」 アイコンを消す方法もありますが，ユーザーがUNC （例： 192.168.102.60MyDrive） で直接クライアントPCへアクセスした場合は，残念ながらファイルのダウンロードが出来てしまいます．この問題を解決するには，Windowsファイアウォールの設定で，ファイル共有機能を利用出来ないようにする必要があります．
+「送信の規則」 を追加
+「接続をブロックする」 送信規則
+「接続をブロックする」 ポートは TCP の 445,137-139
+「接続をブロックする」 相手はクライアントPCのアドレス （ネットワーク）
+ファイル KGTN2015061903-1.jpg
+表示 [(33.8 KB)] [kitasp 技術センター, 2015/07/09 13:59]
+KGTN2015061903-2.jpg
+表示 [(20.4 KB)] [kitasp 技術センター, 2015/07/09 13:59]
+KGTN2015061903-3.jpg
+表示 [(21 KB)] [kitasp 技術センター, 2015/07/09 13:59]
+KGTN2015061903-4.jpg
+表示 [(19.9 KB)] [kitasp 技術センター, 2015/07/09 14:00]
+KGTN2015061903.pdf [(222 KB)] [kitasp 技術センター, 2015/07/09 16:05]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc80/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc41/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,29 +499,26 @@ KGTN2015021705.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc83/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2055/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc83/">[Windows] C:ドライブが存在しない Windows のサーバー環境を構築したいが，何かヒントはないのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2055/">[GGH4.X-5.X] Microsoft Edge (Windows 10) 用のクライアントに関する情報を知りたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-06-11
+                            日付 2015-06-12
                             </p>
                             <p class="intro">*技術ノート
-2015/06/11*
-[番号] 技術ノート KGTN 2015021703
-[現象] [Windows] C:ドライブが存在しない Windows のサーバー環境を構築したいが，何かヒントはないのか？
-[説明] Windows　システム イメージ マネージャー (Windows SIM) を利用することで，C:ドライブが存在しない Windows のサーバー環境を構築することが出来ます．以下にヒントとなる情報を示します．
-ファイル KGTN2015021703.pdf [(167 KB)] [kitasp 技術センター, 2015/06/11 17:13]
-KGTN2015021703-1.jpg
-表示 [(44.6 KB)] [kitasp 技術センター, 2015/06/17 17:08]
-KGTN2015021703-2.jpg
-表示 [(39.3 KB)] [kitasp 技術センター, 2015/06/17 17:08]</p>
+2015/06/12*
+[番号] 技術ノート KGTN 2015060403
+[現象] [GGH4.X-5.X] Microsoft Edge (Windows 10) 用のクライアントに関する情報を知りたい．
+[説明] GGH4.X については，クライアント端末の動作環境として Windows 10 自体がサポートされません．従って， Microsoft Edge もサポート対象外となります．
+GGH5.X については， Microsoft Edge 向けのGGクライアント （プラグイン） の提供予定はありませんが，現在開発中の HTML5 クライアントが Microsoft Edge 上で動作する予定です．
+ファイル KGTN2015060403.pdf [(35 KB)] [kitasp 技術センター, 2017/06/28 15:11]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc83/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2055/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -526,29 +537,28 @@ KGTN2015021703-2.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc84/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2624/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc84/">[Windows] C:ドライブが存在しない Windows のサーバー環境を構築出来るか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2624/">[GGH4.X-6.X] GGEasyLogon （6.2.0以降） とはどんなツールなのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-06-11
+                            日付 2015-06-12
                             </p>
                             <p class="intro">*技術ノート
-2015/06/11*
-[番号] 技術ノート KGTN 2015021702
-[現象] [Windows] C:ドライブが存在しない Windows のサーバー環境を構築出来るか？
-[説明] Windows　システム イメージ マネージャー (Windows SIM) を利用することで，以下のスクリーンショットのようにC:ドライブが存在しない Windows のサーバー環境を構築することが出来ます．このような特殊な　Windows のインストール等については，弊社プロフェッショナル・サービスで対応いたします．
-ファイル KGTN2015021702.pdf [(130 KB)] [kitasp 技術センター, 2015/06/11 17:12]
-KGTN2015021702-1.jpg
-表示 [(37.7 KB)] [kitasp 技術センター, 2015/06/17 16:54]
-KGTN2015021702-2.jpg
-表示 [(27 KB)] [kitasp 技術センター, 2015/06/17 16:55]</p>
+2015/06/12*
+[番号] 技術ノート KGTN 2015060201
+[現象] [GGH4.X-6.X] GGEasyLogon （6.2.0以降） とはどんなツールなのか？
+[説明] GGのWindowsクライアントを起動するツール （一般ユーザー向け） で，事前に設定ファイルにGGサーバー毎の接続情報を登録することで，GGサーバーを一覧から選んで 「１クリックで」 接続することが出来ます．接続後は自動的に最小化状態になり，GGサーバーとの接続が終了すると自動的に復元します．
+[ボタン] 接続　： 選択した接続先にログオンします． 接続状態にある場合は表示が「接続中」になります． 詳細/編集 ： 接続先の詳細情報を表示します． 切断　： ログオン中のセッションを強制切断します． 新規　： 接続先を新たに登録します． 削除　： 選択中の接続先を削除します． 閉じる　： プログラムを終了します．
+[項　目] 接続先 ： 接続先の名称を入力します． サーバー ： 接続先のサーバーのIPアドレスとポート番号を入力します．GGEasyMonitor の振り分け機能を利用する場合は，GGEasyMonitor のIPアドレスとポート番号を 指定して下さい（注：この場合はIPアドレスの前に @ を付けて下さい）． ユーザーID ： ユーザーIDを入力します（省略すると接続時に入力画面が表示されます）． パスワード ： パスワードを入力します（省略すると接続時に入力画面が表示されます）．
+アプリケーション： アプリケーションを直接起動する場合にアプリケーション名を指定します． 引　数　： アプリケーションへ渡す引数を指定します． オプション　： 接続時のオプションを選択します． ※オプションのパラメタを直接記述することも出来ます．
+※下記4つのパラメタの詳細については，技術ノート KGTN#2017092101 をご覧ください． アプリケーションの画面の幅　： GG 上で利用するアプリケーションの画面の最大の幅 アプリケーションの画面の高さ： GG 上で利用するアプリケーションの画面の最大の高さ アプリケーションの色深度　： GG 上で利用するアプリケーションの色深度 （16 または32） 表示の拡大率　： GG 上で動作するアプリケーションの拡大率 （100～300%）</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc84/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2624/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

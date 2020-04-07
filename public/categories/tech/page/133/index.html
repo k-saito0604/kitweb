@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc542/">
+                                      <a href="/posts/new_md/doc489/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc542/">クラスタマネージャで Disconnected sessions terminate に Immediately を設定しているにも関わらず， Connected Clients = 0 の状態でセッションが残る．</a></h2>
+                                    <h2><a href="/posts/new_md/doc489/">[Network] GGサーバに接続出来ないため調査で telnet 491 を試すように言われたが，GGサーバにTelnetサービスをインストールしたくない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,21 +340,23 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc542/"><i class="far fa-calendar"></i> 2013-07-28</a>
+                                            <a href="/posts/new_md/doc489/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/07/28*
-[番号] 技術ノート KGTN 2010091607
-[現象] クラスタマネージャで Disconnected sessions terminate に Immediately を設定しているにも関わらず， Connected Clients = 0 の状態でセッションが残る．
-[説明] 弊社の試験環境で一度だけ，この現象が発生しました．再現性がなく現時点では原因等が不明ですが，万一この現象が発生した場合はDisconnected sessions terminate に After 1 minutes を設定することで，セッションが約１分で切断されるようになります．
-補足１ クライアントのLANケーブルを抜いた状況で発生することが分かり， SessionTimeoutBrokenConnection というレジストリの値 （予期せぬコネクション断が発生した時，この値の時間だけセッションが維持される） がImmediately が設定されている時に限り作用し，セッションが維持されていました．従って，以下のように0を設定することで，１〜3分以内にセッションが切断されるようになります （注：より正確に言えば，1〜3分以内とはWindowsのTCP/IPが切断を認識するまでの時間を指します．GGの処理については，TCP/IPが切断を認識した直後にセッションを直ちに終了させます）．
-HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥AppServer SessionTimeoutBrokenConnection REG_DWORD 0
-補足２ GGサーバがGGH4.Xの場合は， 「補足１のレジストリではなく」 下記の設定ファイルの項目の値を変更して下さい．
-[設定ファイルのパス] C:¥ProgramData¥GraphOn¥HostProperties.xml
-[変更する項目] 0ファイル KGTN2010091607.pdf [(75.2 KB)] [kitasp 技術センター, 2013/07/29 07:47]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc542/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013112101
+[現象] [Network] GGサーバに接続出来ないため調査で &ldquo;telnet &lt;GGサーバのIPアドレス&gt; 491&rdquo; を試すように言われたが，GGサーバにTelnetサービスをインストールしたくない．
+[説明] GGサーバにTelnetサービスをインストールする必要はありません．telnetクライアントは，Telnetプロトコル （RFC854で規定） で端末間で通信を行うため 「だけ」 のツールと理解されているようですが， telnet コマンドは ping コマンドとともに，ネットワークの調査に使用する最も基本的なツールです．
+コマンド &ldquo;telnet &lt;GGサーバのIPアドレス&gt; 491&rdquo; を実行することで，TCP/IPレベルでGGサーバへの接続性の確認を行うことが出来ます．この方法はGGに限らず，他のプロトコルでも広く使用されています．マイクロソフト社の知識ベースにも telnet コマンドを使用した技術情報が多数あります．
+http://support.microsoft.com/kb/187628/ja Telnet を使用してポート 3389 の機能を確認する
+http://support.microsoft.com/kb/189326/ja Telnet を使用して IMAP の基本的な接続性を確認する方法
+http://support.microsoft.com/kb/165186/JA Telnet を使用して基本的な POP3 接続を確認する
+http://support.microsoft.com/kb/196748/ja Telnet を使用してインターネット メールの接続をテストする方法
+http://support.microsoft.com/kb/153119/ja SMTP 通信のテストのためにポート25にTelnet
+ファイル KGTN2013112101.pdf [(61.1 KB)] [kitasp 技術センター, 2014/01/29 11:15]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc489/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -364,7 +366,7 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥AppServer SessionTimeoutBrokenConnectio
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc544/">
+                                      <a href="/posts/new_md/doc487/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -372,7 +374,7 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥AppServer SessionTimeoutBrokenConnectio
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc544/">[ExPack] GGCSLib2 のサンプル版のインストール方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc487/">[Network] telnet 491 でGGサーバへの接続性は確認出来たが，正常にログイン出来ない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -385,28 +387,17 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥AppServer SessionTimeoutBrokenConnectio
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc544/"><i class="far fa-calendar"></i> 2013-07-26</a>
+                                            <a href="/posts/new_md/doc487/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/07/26*
-[番号] 技術ノート KGTN 2013072401
-[現象] [ExPack] GGCSLib2 のサンプル版のインストール方法は？
-[説明] 以下の手順でインストールして下さい．
-[はじめに] 配布フォルダ GGCSLib2 には，以下の４つのサブフォルダが含まれています．
-各サブフォルダの内容は，次の通りです．
-Client &hellip; クライアント側のプラグイン Sample &hellip; サンプルプログラムのソースコード （プロジェクト） Server_x64 &hellip; サーバ側のプラグイン （64ビット版） Server_x86 &hellip; サーバ側のプラグイン （32ビット版）
-[サーバ側の設定] 配布フォルダ GGCSLib2 を C:¥TEMP へコピーして下さい．OSが64ビットの場合は，フォルダ C:¥TEMP¥GGCSLib2¥Server_x64 を開いて下さい．OSが32ビットの場合は，フォルダ C:¥TEMP¥GGCSLib2¥Server_x86 を開いて下さい．
-フォルダの中にある Copy.bat をダブルクリックして実行して下さい．
-フォルダ C:¥GraphOn¥DLL を開いて下さい．
-フォルダの中にある ServerPluginsPath.reg をダブルクリックして実行して下さい．レジストリエディタが表示する確認ダイアログは，以下のスクリーンショットの赤枠の方を選択して下さい．
-サンプルプログラム C:¥GrapOn¥DLL¥GGCSLib2T.exe をクラスタマネージャで登録して下さい．以上で，サーバ側の環境設定は完了しました．
-[クライアント側の設定] 配布フォルダ GGCSLib2 を C:¥TEMP へコピーして下さい．フォルダ C:¥TEMP¥GGCSLib2¥Client を開いて下さい．
-フォルダの中にある Copy.bat をダブルクリックして実行して下さい．
-フォルダ C:¥GraphOn¥DLL を開いて下さい．
-フォルダの中にあるClientPluginsPath(WOW6432Node).reg をダブルクリックして実行して下さい．レジストリエディタが表示する確認ダイアログは，以下のスクリーンショットの赤枠の方を選択して下さい．以上で，クライアント側の環境設定は完了しました．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc544/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013112103
+[現象] [Network] &ldquo;telnet &lt;GGサーバのIPアドレス&gt; 491&rdquo; でGGサーバへの接続性は確認出来たが，正常にログイン出来ない．
+[説明] TCP/IPレベルでGGサーバへの接続性は確認出来にも関わらず正常にログイン出来ない場合は，Windows 自体の問題か，またはGGまたはその周辺の問題の可能性が高いと考えられます．前者の場合は，リソースの枯渇 （例えばハンドルの枯渇） やCPU過負荷等が一般的に考えられます．後者の場合は，ログオンスクリプトの不具合やアンチウイルスソフトの影響等が一般的に考えられます．
+ファイル KGTN2013112103.pdf [(49.9 KB)] [kitasp 技術センター, 2014/01/29 11:24]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc487/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -416,7 +407,7 @@ Client &hellip; クライアント側のプラグイン Sample &hellip; サン�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc543/">
+                                      <a href="/posts/new_md/doc488/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -424,7 +415,7 @@ Client &hellip; クライアント側のプラグイン Sample &hellip; サン�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc543/">[GGH4.X] GGW3.2.1で動作している機能が，GGH4.0.1では動作しなくなった．GGH4.6で確認すると動作しているが，GGH4.0.1の不具合か？</a></h2>
+                                    <h2><a href="/posts/new_md/doc488/">[Network] telnet 491 でGGサーバへの接続性を確認するが，クライアントPC上で実行すれば良いのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -437,18 +428,17 @@ Client &hellip; クライアント側のプラグイン Sample &hellip; サン�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc543/"><i class="far fa-calendar"></i> 2013-07-26</a>
+                                            <a href="/posts/new_md/doc488/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/07/26*
-[番号] 技術ノート KGTN 2013072601
-[現象] [GGH4.X] GGW3.2.1で動作している機能が，GGH4.0.1では動作しなくなった．GGH4.6で確認すると動作しているが，GGH4.0.1の不具合か？
-[説明] GGH4.0はGGH4.X系の最初のバージョンで，GGW3.2.1でサポートしていた機能 （技術的に移行可能な機能） のうち，時間的な制約等で積み残した （移行を見送った） 機能があります．積み残した機能の大半はGGH4.5で移行されましたので，お問合せの機能も積み残された機能に該当すると考えられます．
-2013年7月現在，GGH4.0およびGGH4.5は通常サポート　（Mainstream Maintenance） が終了しておりますので，GGH4.6へバージョンアップなさることを強くお勧めします．
-ファイル KGTN2013072601.pdf [(51.5 KB)] [kitasp 技術センター, 2013/07/26 20:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc543/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013112102
+[現象] [Network] &ldquo;telnet &lt;GGサーバのIPアドレス&gt; 491&rdquo; でGGサーバへの接続性を確認するが，クライアントPC上で実行すれば良いのか？
+[説明] 先ず最初に実行すべき箇所は，クライアントPCです．接続出来ない場合は，次にGGサーバと同じLAN上にあるマシンで実行して下さい．この状況で接続出来ない場合は，GGサーバ自体またはその周辺のネットワーク機材に問題がある可能性が高いと考えられます．逆に接続できる場合は，クライアントPC～GGサーバ間のネットワークまたはクライアントPCに問題がある可能性が高いと考えられます．
+ファイル KGTN2013112102.pdf [(48.9 KB)] [kitasp 技術センター, 2014/01/29 11:22]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc488/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -458,7 +448,7 @@ Client &hellip; クライアント側のプラグイン Sample &hellip; サン�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc545/">
+                                      <a href="/posts/new_md/doc416/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -466,7 +456,7 @@ Client &hellip; クライアント側のプラグイン Sample &hellip; サン�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc545/">[ExPack] GGCSLib2 のDLLを LoadLibrary でロードしようとするとエラー126が発生する．</a></h2>
+                                    <h2><a href="/posts/new_md/doc416/">[Windows8] Windows 8 の 「すべてのプログラム」 に表示されるアプリケーションは，どこを参照しているのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -479,18 +469,18 @@ Client &hellip; クライアント側のプラグイン Sample &hellip; サン�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc545/"><i class="far fa-calendar"></i> 2013-07-23</a>
+                                            <a href="/posts/new_md/doc416/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/07/23*
-[番号] 技術ノート KGTN 2013072301
-[現象] [ExPack] GGCSLib2 のDLLを LoadLibrary でロードしようとするとエラー126が発生する．
-[説明] Win32エラーコード 126 は ERROR_MOD_NOT_FOUND で，意味は 「指定されたモジュールが見つかりません」 です． GGCSLib2 のDLLが正しいフォルダに置かれているかどうか確認して下さい．置かれているにも関わらずエラーが発生している場合は，恐らくVC++のランタイムがインストールされていないのが原因です． &ldquo;Microsoft Visual C++ 2010 再頒布可能パッケージ&rdquo; をインストールして下さい．
-http://www.microsoft.com/ja-jp/download/details.aspx?id=5555 (x86) http://www.microsoft.com/ja-jp/download/details.aspx?id=14632 (x64)
-ファイル KGTN2013072301.pdf [(58.2 KB)] [kitasp 技術センター, 2013/07/23 09:28]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc545/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2014011505
+[現象] [Windows8] Windows 8 の 「すべてのプログラム」 に表示されるアプリケーションは，どこを参照しているのか？
+[説明] すべてのユーザに共通なアプリケーションは，以下のフォルダを参照します．
+C:ProgramDataMicrosoftWindowsStart MenuPrograms  個別のユーザに関するアプリケーションは，以下のフォルダを参照します．
+C:Usersユーザー名AppDataRoamingMicrosoftWindowsStart Menu  ファイル KGTN2014011505.pdf [(52.2 KB)] [kitasp 技術センター, 2014/01/29 16:16]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc416/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -500,7 +490,7 @@ http://www.microsoft.com/ja-jp/download/details.aspx?id=5555 (x86) http://www.mi
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc548/">
+                                      <a href="/posts/new_md/doc443/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -508,7 +498,7 @@ http://www.microsoft.com/ja-jp/download/details.aspx?id=5555 (x86) http://www.mi
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc548/">[ExPack] GGTerminalRoaming のサンプル版のインストール方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc443/">[Windows] Diskpart コマンドのdelete partition を実行したが，回復パーティションを削除できない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -521,26 +511,18 @@ http://www.microsoft.com/ja-jp/download/details.aspx?id=5555 (x86) http://www.mi
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc548/"><i class="far fa-calendar"></i> 2013-07-12</a>
+                                            <a href="/posts/new_md/doc443/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/07/12*
-[番号] 技術ノート KGTN 2013071201
-[現象] [ExPack] GGTerminalRoaming のサンプル版のインストール方法は？
-[説明] 以下の手順でインストールして下さい．
-GGサーバにフォルダ C:¥GraphOn を作成し，そこに配布フォルダ GGTerminalRoaming をコピーして下さい．
-フォルダ C:¥GrapOn¥GGTerminalRoaming¥GSM にあるファイル GGSessionMonitor.ini をテキストエディタやメモ帳で開き，キー host の値にGGサーバのIPアドレスを記入し，ファイルを上書き保存して下さい．
-コマンドプロンプトを開き，DOS窓で GGSessionMonitor -sec gsm を実行して下さい．次に．画面に Debug: &hellip; availability = &lsquo;YES&rsquo; という行が表示されたことを確認して下さい．もし表示されない場合は，IPアドレスに誤りがあるか，または指定したGGサーバ上で APS が開始していない可能性が高いと考えられます．
-DOS窓で GMService -i を実行し，続けて GMService ?s を実行して下さい．この操作で，GGサーバを監視するサービスが登録され，さらにそのサービスが開始します．
-タスクマネージャで GMService.exe と GGSessionMonitor.exe が存在することを確認して下さい．この時点で，GGサーバを常時監視する環境が整いました．
-プログラム C:¥GrapOn¥GGTerminalRoaming¥GGTerminalRoaming.exe をクラスタマネージャで登録して下さい．以上で，環境設定は完了しました．
-最初のクライアントPC （移動前の端末） からGGサーバにログオンし，メモ帳等のアプリケーションを起動して下さい．
-アプリケーション GGTerminalRoaming を起動して下さい．スプラッシュ画面が表示され，最小化状態で動作します （サンプル版の仕様です） ．
-プログラム・ウインドウを使用してセッションを Discoonect して下さい．または，クライアントPC上で gg-client.exe のプロセスを強制終了しても構いません．
-2台目のクライアントPC （移動後の端末） からGGサーバにログオンし，前のステップで切断したセッションに再接続して下さい．正常であれば，プログラム・ウインドウがプライマリ・モニタの左上の位置に表示されます （サンプル版の仕様です） ．他のアプリケーションのウインドウは，移動後のモニタの解像度に合わせて，位置が調整されます．なお，アプリケーションの作りによっては移動しないことがありますが，この場合は，アプリケーションの動作 （ウインドウ管理） に合わせて GGTerminalRoaming をカスタマイズする必要があります．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc548/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013121202
+[現象] [Windows] Diskpart コマンドのdelete partition を実行したが，回復パーティションを削除できない．
+[説明] delete partition は，通常既知のデータ パーティションのみを削除することが出来ます．回復パーティション等を削除する場合は， delete partition override を実行して下さい．詳細については，下記ページをご覧ください．
+Diskpart のコマンド ライン オプション http://technet.microsoft.com/ja-jp/library/cc766465(v=ws.10).aspx
+ファイル KGTN2013121202.pdf [(53 KB)] [kitasp 技術センター, 2014/01/29 14:31]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc443/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -550,7 +532,7 @@ DOS窓で GMService -i を実行し，続けて GMService ?s を実行して下�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc550/">
+                                      <a href="/posts/new_md/doc499/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -558,7 +540,7 @@ DOS窓で GMService -i を実行し，続けて GMService ?s を実行して下�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc550/">[GGH4.X] Excel 2003 でクライアントドライブにファイルを保存し，そのファイルを開こうとすると 「ファイルを読み込めません」 というエラーが発生する．</a></h2>
+                                    <h2><a href="/posts/new_md/doc499/">[Windows] NTLM認証とは何か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -571,18 +553,17 @@ DOS窓で GMService -i を実行し，続けて GMService ?s を実行して下�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc550/"><i class="far fa-calendar"></i> 2013-06-28</a>
+                                            <a href="/posts/new_md/doc499/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/06/28*
-[番号] 技術ノート KGTN 2013062801
-[現象] [GGH4.X] Excel 2003 でクライアントドライブにファイルを保存し，そのファイルを開こうとすると 「ファイルを読み込めません」 というエラーが発生する．
-[説明] 弊社でもこの現象を確認しました．この問題は将来修正される可能性はありますが，しかしながら当面は現状の動作通りとなります （既知の問題） ．従って，お手数ですが以下の何れかの対応をお願いします．
-先ずサーバ側にファイルを保存し，そのファイルをエクスプローラー等のファイルマネージャでクライアント側 （クライアントドライブ） へコピーする． Excel 2010 にバージョンアップする．
-ファイル KGTN2013062801.pdf [(51.7 KB)] [kitasp 技術センター, 2013/06/28 12:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc550/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013111201
+[現象] [Windows] NTLM認証とは何か？
+[説明] NTLM認証は &ldquo;Windows NT LAN Manager Authentication&rdquo; のことで，Windows NT 4.0以前の NT系OSで使用されていたネットワークログオンのためのユーザ認証方式です． Windows 2000 からはデフォルトの認証方式として Kerberos認証 が採用されましたが，旧環境との互換性を保つためNTLM認証も利用可能となっています．
+ファイル KGTN2013111201.pdf [(50.1 KB)] [kitasp 技術センター, 2014/01/29 10:45]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc499/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -592,7 +573,7 @@ DOS窓で GMService -i を実行し，続けて GMService ?s を実行して下�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc551/">
+                                      <a href="/posts/new_md/doc444/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -600,7 +581,7 @@ DOS窓で GMService -i を実行し，続けて GMService ?s を実行して下�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc551/">[Gateway] Gateway サーバが管理しているアイテムの情報は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc444/">[Windows] Windows 7, Windows 8, Windows 8.1 の環境で，回復パーティションを削除したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -613,17 +594,18 @@ DOS窓で GMService -i を実行し，続けて GMService ?s を実行して下�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc551/"><i class="far fa-calendar"></i> 2013-06-20</a>
+                                            <a href="/posts/new_md/doc444/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/06/20*
-[番号] 技術ノート KGTN 2013062003
-[現象] [Gateway] Gateway サーバが管理しているアイテムの情報は？
-[説明] GG4.6の Gateway サーバが管理しているアイテム情報は，以下の通りです．
-create table portalitems ( itemType varchar(31) not null, id int8 not null, groupId varchar(255), groupName varchar(255), iconEncoded varchar(255), iconListId varchar(255), iconThumbnailId varchar(255), iconTileId varchar(255), itemUrl varchar(255), name varchar(255), shortcutType varchar(255), owner_id int8, parent_id int8, primary key (id) );  ファイル KGTN2013062003.pdf [(45.2 KB)] [kitasp 技術センター, 2013/06/20 10:51]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc551/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013121201
+[現象] [Windows] Windows 7, Windows 8, Windows 8.1 の環境で，回復パーティションを削除したい．
+[説明] Diskpart コマンドを使用することで，回復パーティション等を削除することが可能です．下記ページをご覧下さい．なお，非常に危険なコマンドですので，何が起きるか予測できない方は，使用すべきではありません．
+Diskpart コマンド ライン ユーティリティの説明 http://support.microsoft.com/kb/300415/ja
+ファイル KGTN2013121201.pdf [(50.4 KB)] [kitasp 技術センター, 2014/01/29 14:29]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc444/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -633,7 +615,7 @@ create table portalitems ( itemType varchar(31) not null, id int8 not null, grou
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc552/">
+                                      <a href="/posts/new_md/doc376/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -641,7 +623,7 @@ create table portalitems ( itemType varchar(31) not null, id int8 not null, grou
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc552/">[Gateway] Gateway サーバが管理しているセッションの情報は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc376/">[Windows] Windows Server 2008 R2 や Windows Server 2012 のサービス一覧で，スタートアップの種類が 「手動 （トリガー開始）」 と表示されたものがあるが，これは何なのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -654,17 +636,17 @@ create table portalitems ( itemType varchar(31) not null, id int8 not null, grou
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc552/"><i class="far fa-calendar"></i> 2013-06-20</a>
+                                            <a href="/posts/new_md/doc376/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/06/20*
-[番号] 技術ノート KGTN 2013062002
-[現象] [Gateway] Gateway サーバが管理しているセッションの情報は？
-[説明] GG4.6の Gateway サーバが管理しているセッション情報は，以下の通りです．
-create table session_users ( id bigint generated by default as identity, OS varchar(255), clientId integer not null, clientName varchar(255), credentials varchar(255), hostId bigint, hostName varchar(255), ipAddress varchar(255), meetingId bigint, peerIP varchar(255), port smallint not null, receivedBytes bigint, sentBytes bigint, startTime timestamp, userInstanceName varchar(255), version varchar(255), session_id bigint, primary key (id) ); create table sessions ( id bigint generated by default as identity, hostId bigint, hostUsername varchar(255), hostname varchar(255), isHostAdmin smallint not null, name varchar(255), owner varchar(255), sessionId integer not null, sessionUUID varchar(255), startTime timestamp, status integer not null, workspaceId bigint, workspaceInstanceName varchar(255), workspaceName varchar(255), primary key (id) );  ファイル KGTN2013062002.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc552/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2014012011
+[現象] [Windows] Windows Server 2008 R2 や Windows Server 2012 のサービス一覧で，スタートアップの種類が 「手動 （トリガー開始）」 と表示されたものがあるが，これは何なのか？
+[説明] 従来の Windows では，サービスはサーバーの起動で開始され，シャットダウンで終了していました．Windows Server 2008 R2 や Windows Server 2012 の 「トリガースタートサービス」 機能により，そのサービスが関連する環境 （状態） が有効になった時に， 「手動 （トリガー開始）」 のサービスが開始されるようになりました．
+ファイル KGTN2014012011.pdf [(52.4 KB)] [kitasp 技術センター, 2014/01/31 14:06]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc376/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -674,7 +656,7 @@ create table session_users ( id bigint generated by default as identity, OS varc
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc553/">
+                                      <a href="/posts/new_md/doc497/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -682,7 +664,7 @@ create table session_users ( id bigint generated by default as identity, OS varc
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc553/">[Gateway] Gateway サーバが管理しているホストの情報は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc497/">[Windows] Windows Server 2012 と Windows Server 2012 R2 の違いは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -695,17 +677,17 @@ create table session_users ( id bigint generated by default as identity, OS varc
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc553/"><i class="far fa-calendar"></i> 2013-06-20</a>
+                                            <a href="/posts/new_md/doc497/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/06/20*
-[番号] 技術ノート KGTN 2013062001
-[現象] [Gateway] Gateway サーバが管理しているホストの情報は？
-[説明] GG4.6の Gateway サーバが管理しているホスト情報は，以下の通りです．
-create table host_settings ( id bigint generated by default as identity, autoAuthenticate smallint, autoUpdate smallint, listWorkspaces smallint, maxUsersAllowed integer, password varchar(255), passwordEnabled smallint, rememberMeEnabled smallint, rememberPassword smallint, primary key (id) ); create table hosts ( id bigint generated by default as identity, OS varchar(255), address varchar(255), baseSessionID integer, cpuUsage integer, cpuWeight integer, credentials varchar(255), displayName varchar(255), hardwareid bigint, hostWeight integer, isSetUserLimit smallint, encrypt_key varchar(255), lastSessionStartTime timestamp, listWorkspaces smallint, loadDataTimestamp timestamp, maxCpu integer, maxMem integer, maxSessions integer, memWeight integer, memoryUsage integer, name varchar(255), owner varchar(255), proxyHostID bigint, role integer, sessionWeight integer, smiAddress varchar(255), smiPort integer, smiTransport varchar(255), state varchar(255), totalSessionCount integer, userLimit integer, uuid varchar(255), defaultWorkspace_id bigint, settings_id bigint, primary key (id) );  ファイル KGTN2013062001.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc553/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013111301
+[現象] [Windows] Windows Server 2012 と Windows Server 2012 R2 の違いは？
+[説明] Windows Server 20012 は Windows Server 2008 R2 の後継OSで，クラウドに最適化されたプラットフォームという位置付けです． Windows Server 2012 R2 は Windows Server 2012 の後継OSで，クラウド・プラットフォームとして 「サーバー・ストレージ・ネットワーク」 の各分野で大幅に機能強化を行った製品という位置付けです．提供される仮想マシンは，レガシなハードウェア要素を持つ世代 1 (Generation 1) と，レガシなハードウェア要素を持たない世代 2 (Generation 2) の２種類があります．世代 2 仮想マシンは，64 ビット版の Windows 8 以降または Windows Server 2012 以降のみをゲスト OS としてサポートします．
+ファイル KGTN2013111301.pdf [(50.5 KB)] [kitasp 技術センター, 2014/01/29 10:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc497/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -715,7 +697,7 @@ create table host_settings ( id bigint generated by default as identity, autoAut
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2000/">
+                                      <a href="/posts/new_md/doc399/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -723,7 +705,7 @@ create table host_settings ( id bigint generated by default as identity, autoAut
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2000/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc399/">[Windows] Windows Server 2012 の IE10 には Flash Player が同梱されているはずなのに使えない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -736,21 +718,17 @@ create table host_settings ( id bigint generated by default as identity, autoAut
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2000/"><i class="far fa-calendar"></i> 2013-06-19</a>
+                                            <a href="/posts/new_md/doc399/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/06/19*
-[番号] 技術ノート KGTN 2013061901
-[現象] [GGH4.X-5.X] GGH4.X-5.X で，ログオン時に &ldquo;Connection failed. Access to the host was denied&rdquo; というメッセージが表示されたが，これはどのような障害なのか？
-[説明] このメッセージは，GGがログオン時に使用するWindowsのAPIの呼び出しで，エラーが発生したことを意味します．具体的には，非サポートの更新プログラムが適用された場合など，Windowsレベルで何等かの障害が発生したことが考えられます．エラーの詳細情報は，APSログに以下のような情報が記録されます．
- 1432 2013-04-12 09:19:12.174 Logon237 on Client001, aps (556) Failed to create logon session process during session startup for client at address 192.168.11.112 ([NTSTATUS-1073741800]{.underline}, WLE0).
- 上記の下線の部分の -1073741800 がNTSTATUSエラーコードで，この場合は
-STATUS_CONFLICTING_ADDRESSES = アドレス範囲の矛盾
-を意味します．この情報が問題を解決する大切な手掛かりとなります．
-ファイル KGTN2013061901.pdf [(48.7 KB)] [kitasp 技術センター, 2017/10/10 10:08]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2000/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2014012010
+[現象] [Windows] Windows Server 2012 の IE10 には Flash Player が同梱されているはずなのに使えない．
+[説明] Windows Server 2012 にはFlash Player が同梱されていますが，しかしインストールされていません．サーバー マネージャの機能の追加で 「デスクトップ エクスペリエンス」 をインストールして下さい．
+ファイル KGTN2014012010.pdf [(44.5 KB)] [kitasp 技術センター, 2014/01/29 16:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc399/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -820,7 +798,7 @@ STATUS_CONFLICTING_ADDRESSES = アドレス範囲の矛盾
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

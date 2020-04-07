@@ -319,6 +319,47 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
+                                      <a href="/posts/new_md/doc2346/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc2346/">[GGH4.X-6.X] GGのホスト機能は、ある特定の更新プログラムを適用した環境での動作をサポートするのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2346/"><i class="far fa-calendar"></i> 2019-11-05</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2019/11/05*
+[番号] 技術ノート KGTN 2019091901
+[現象] [GGH4.X-6.X] GGのホスト機能は、ある特定の更新プログラムを適用した環境での動作をサポートするのか？
+[説明] いいえ。GGのホスト機能は、その時点での全ての更新プログラムを適用した環境での動作のみをサポートします （非互換な場合は、その環境に対応する互換アップデートまたは新しいビルドを提供します） 。特定の更新プログラムを選択して適用した環境についてはサポートしません。
+The GO-Global Host is supported on computers that have the latest Windows Updates installed.  ファイル KGTN2019091901.pdf [(36.8 KB)] [kitasp 技術センター, 2019/11/05 13:34]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2346/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
                                       <a href="/posts/new_md/doc2324/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
@@ -327,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2324/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2324/">[GGH4.X-6.X] GG上で動作するアプリケーションが固まったように見える。</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -362,7 +403,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2335/">
+                                      <a href="/posts/new_md/doc2180/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -370,7 +411,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2335/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2180/">[GGH4.X-6.X] UPD (Universal Printer Driver) の印刷の仕組みは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -383,17 +424,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2335/"><i class="far fa-calendar"></i> 2019-11-05</a>
+                                            <a href="/posts/new_md/doc2180/"><i class="far fa-calendar"></i> 2019-11-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
 2019/11/05*
-[番号] 技術ノート KGTN 2019092501
-[現象] [GGH4.X-6.X] BSODが発生したが、最新ビルドでないとメモリダンプの解析をして貰えないのか？
-[説明] メモリダンプの解析は、GGの処理のみならずWindowsの内部処理も解析を行う必要があり、それを行うにはWindowsの内部処理に精通した限られた技術者が多くの時間を掛けて行わねばなりません。また、最新ビルドではBSODの問題が修正されている可能性があり、仮に修正されていなかったとしてもその不具合修正は最新ビルドに対して行われますので、BSODによるメモリダンプの解析は （特別な契約がない限り） 最新ビルドに対してのみGraphOn社が行います。
-ファイル KGTN2019092501.pdf [(44.3 KB)] [kitasp 技術センター, 2019/11/05 13:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2335/" class="btn btn-template-main">続きを読む</a>
+[番号] 技術ノート KGTN 2019102304
+[現象] [GGH4.X-6.X] UPD (Universal Printer Driver) の印刷の仕組みは？
+[説明] Windows環境でのUPD の印刷の流れは次の通りです。
+ ユーザーがアプリケーションで印刷操作を行うと、Windows API が呼び出され、ドキュメントがプリンターへレンダリング （印刷イメージを生成） されます。 Microsoft PostScript プリンタードライバーがアプリケーションのグラフィックコマンドをPostScriptに変換し、PostScriptデータを印刷スプーラーのプロキシプリンターのポートに送信します。 GGポートモニターが PostScript データを受信し、その内容を作業ファイルに保存します。 GGポートモニターは作業ファイルを VeryPDF を使ってPDFファイルに変換し、さらにサービスAPSを介してPDFファイルをクライアント側へ送信します （送信完了後にPDFファイルは削除されます） 。 PDFファイルを受け取ったGGクライアントは、VeryPDF のPDF印刷ツール pdfprint.exe を使用してプリンターへ印刷します （印刷完了後にPDFファイルは削除されます） 。  ファイル KGTN2019102304.pdf [(66.6 KB)] [kitasp 技術センター, 2019/11/05 14:17]
+KGTN2019102304.jpg
+表示 [(32.4 KB)] [kitasp 技術センター, 2019/11/05 14:17]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2180/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -403,7 +446,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2346/">
+                                      <a href="/posts/new_md/doc2235/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -411,7 +454,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2346/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2235/">[GGH4.X-6.X] アプリケーションからクライアント側のドライブにファイルを出力すると、遅かったり出力されなかったりするが、この問題を解決する方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -424,17 +467,227 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2346/"><i class="far fa-calendar"></i> 2019-11-05</a>
+                                            <a href="/posts/new_md/doc2235/"><i class="far fa-calendar"></i> 2019-11-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
 2019/11/05*
-[番号] 技術ノート KGTN 2019091901
-[現象] [GGH4.X-6.X] GGのホスト機能は、ある特定の更新プログラムを適用した環境での動作をサポートするのか？
-[説明] いいえ。GGのホスト機能は、その時点での全ての更新プログラムを適用した環境での動作のみをサポートします （非互換な場合は、その環境に対応する互換アップデートまたは新しいビルドを提供します） 。特定の更新プログラムを選択して適用した環境についてはサポートしません。
-The GO-Global Host is supported on computers that have the latest Windows Updates installed.  ファイル KGTN2019091901.pdf [(36.8 KB)] [kitasp 技術センター, 2019/11/05 13:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2346/" class="btn btn-template-main">続きを読む</a>
+[番号] 技術ノート KGTN 2019101002
+[現象] [GGH4.X-6.X] アプリケーションからクライアント側のドライブにファイルを出力すると、遅かったり出力されなかったりするが、この問題を解決する方法は？
+[説明] アプリケーションからクライアント側のドライブに細かな単位で出力される場合、サーバーとクライアント間で多くの仮想命令が転送されるため、サーバー側に出力する場合と比較してパフォーマンスが大きく低下することがあります （処理内容によっては出力されないことがあるかもしれません） 。このような場合は、サーバー側のドライブにファイルを出力し、そのファイルをクライアント側のドライブへコピーしてください。このような処理を行うことで、サーバーとクライアント間での仮想命令の転送が最小化されパフォーマンスが向上します。
+ファイル KGTN2019101002.pdf [(39.3 KB)] [kitasp 技術センター, 2019/11/05 13:59]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2235/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc2213/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc2213/">[GGH4.X-6.X] クライアント印刷機能でサーバー側に生成されるプロキシプリンターについて知りたい。</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2213/"><i class="far fa-calendar"></i> 2019-11-05</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2019/11/05*
+[番号] 技術ノート KGTN 2019102301
+[現象] [GGH4.X-6.X] クライアント印刷機能でサーバー側に生成されるプロキシプリンターについて知りたい。
+[説明] クライアント印刷機能が有効な環境でユーザーがGGにログオンすると、サービス APS がクライアントPCからアクセス可能なプリンターとして機能するプロキシプリンターをサーバー上に作成します。このプロキシプリンターは、サーバーの [デバイスとプリンター] の中に表示されます。管理者にはプロキシプリンターに対するフルコントロールが付与され、一般ユーザーにはプロキシプリンターでの印刷や管理が出来る権限が付与されます。
+デフォルトでは、クライアントPC上のユーザーのデフォルトプリンター用のプロキシプリンターのみが作成されます。GGログオン時のパラメタで -ac all または printConfig=all が指定されると、クライアントPC上のユーザーが利用可能な全てのプリンター用のプロキシプリンターが作成されます。逆に、GGログオン時のパラメタで -ac none または printConfig=none が指定されると、プロキシプリンターは作成されません。このオプションは、セッションでのクライアント印刷機能を事実上無効にします。作成されたプロキシプリンターは、セッションが終了すると自動的に削除されます。
+ファイル KGTN2019102301.pdf [(76.8 KB)] [kitasp 技術センター, 2019/11/05 14:10]
+KGTN2019102301.jpg
+表示 [(25.2 KB)] [kitasp 技術センター, 2019/11/05 14:10]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2213/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc2291/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc2291/">[GGH4.X-6.X] サーバー側のファイル WebCacheV01.dat が肥大化し</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2291/"><i class="far fa-calendar"></i> 2019-11-05</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2019/11/05*
+[番号] 技術ノート KGTN 2019100701
+[現象] [GGH4.X-6.X] サーバー側のファイル WebCacheV01.dat が肥大化しているが、そのサイズを制限する方法や生成させない方法はないのか？
+[説明] マイクロソフト社に正式なサポートを依頼して次の回答を得ております。
+IE に限らず、WebCache を利用するプロセスが動作している場合は 「WebCacheV01.dat」 ファイルが作成 されます。Microsoft Access も WebCache を利用しております。 「WebCacheV01.dat」ファイルサイズの 上限を設定する方法や、「WebCacheV01.dat」ファイルを生成させない設定や機能については、誠に恐縮な がら、ご用意がございません。  ファイル KGTN2019100701.pdf [(42.4 KB)] [kitasp 技術センター, 2019/11/05 13:48]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2291/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc2224/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc2224/">[GGH4.X-6.X] ブラウザのプロセスの中で動作するGGのクライアント （プラグイン） を使用すると、クライアント側のドライブにアクセス出来ない。</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2224/"><i class="far fa-calendar"></i> 2019-11-05</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2019/11/05*
+[番号] 技術ノート KGTN 2019101601
+[現象] [GGH4.X-6.X] ブラウザのプロセスの中で動作するGGのクライアント （プラグイン） を使用すると、クライアント側のドライブにアクセス出来ない。
+[説明] ブラウザの種類やバージョンによって例外があるかもしれませんが （特に古い環境） 、基本的にはブラウザのプロセス上で動作するGGのクライアント （プラグイン） では、クライアント側のドライブにアクセスすることが出来ません。
+この理由は、ブラウザで悪意のあるサイトへアクセスした時に、そのブラウザが動作する環境 （パソコン） を守る必要があるため、ブラウザ上からはドライブへのアクセスが出来ないようになっております。このため、ブラウザ上で動作するGGのクライアント （プラグイン） もクライアント側のドライブにアクセスすることが出来ません。
+クライアント側のドライブへアクセスする必要がある場合は、その環境の専用クライアントをご利用ください。
+ファイル KGTN2019101601.pdf [(39.1 KB)] [kitasp 技術センター, 2019/11/05 14:09]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2224/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc2191/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc2191/">[GGH4.X-6.X] プロキシプリンターを除くサーバー側のプリンターとGGの関係は？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2191/"><i class="far fa-calendar"></i> 2019-11-05</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2019/11/05*
+[番号] 技術ノート KGTN 2019102303
+[現象] [GGH4.X-6.X] プロキシプリンターを除くサーバー側のプリンターとGGの関係は？
+[説明] GGは、サーバー側のプリンター （プロキシプリンターを除く） の処理に関与しません。
+GO-Global is not involved when users print to local or network printers that are accessible from a GO-Global host.  ファイル KGTN2019102303.pdf [(29.6 KB)] [kitasp 技術センター, 2019/11/05 14:14]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2191/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc2313/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc2313/">[GGH4.X-6.X] 新しいWindowsの更新プログラムの適用と、それに対応したGGの新しいビルドのインストールの順序は？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2313/"><i class="far fa-calendar"></i> 2019-11-05</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2019/11/05*
+[番号] 技術ノート KGTN 2019092601
+[現象] [GGH4.X-6.X] 新しいWindowsの更新プログラムの適用と、それに対応したGGの新しいビルドのインストールの順序は？
+[説明] GGのインストーラーは、インストール時点のWindowsの環境 （更新プログラムの適用状況など） を調べ、それに合ったGGの環境設定を行います。このため、GGの新しいビルドをインストールする前に、新しいWindowsの更新プログラムを適用して下さい。
+ファイル KGTN2019092601.pdf [(33.7 KB)] [kitasp 技術センター, 2019/11/05 13:41]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2313/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -482,264 +735,6 @@ The GO-Global Host is supported on computers that have the latest Windows Update
 実行結果 （メモ帳中に登録した棒と丸の外字が表示されています）
 ファイル KGTN2019092701.pdf [(117 KB)] [kitasp 技術センター, 2019/11/05 13:46]</p>
                                     <p class="read-more"><a href="/posts/new_md/doc2302/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2280/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2280/">[GGH6.X] Windows Server 2016 と Windows Server 2019 の互換性情報にはビルド番号の記載がないが、すべてのビルドで利用できるということか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2280/"><i class="far fa-calendar"></i> 2019-11-05</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2019/11/05*
-[番号] 技術ノート KGTN 2019100901
-[現象] [GGH6.X] Windows Server 2016 と Windows Server 2019 の互換性情報にはビルド番号の記載がないが、すべてのビルドで利用できるということか？
-[説明] はい、GraphOn社より下記の回答を得ています。
-Our supported platforms are shown here - https://www.graphon.com/go-global/#requirements We support any build number for Operating systems as long as they are listed on this page.  ファイル KGTN2019100901.pdf [(34.3 KB)] [kitasp 技術センター, 2019/11/05 13:54]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2280/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2246/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2246/">[GGH6.X] Windowsの更新プログラムに対応するGGのアップデートが提供されているが、このアップデートの内容を含むGGのビルドはないのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2246/"><i class="far fa-calendar"></i> 2019-11-05</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2019/11/05*
-[番号] 技術ノート KGTN 2019101001
-[現象] [GGH6.X] Windowsの更新プログラムに対応するGGのアップデートが提供されているが、このアップデートの内容を含むGGのビルドはないのか？
-[説明] GGのビルドは開発チームのスケジュールに従ってリリースされます。この間にWindowsの更新プログラムで非互換となった場合に、GGのアップデートがリリースされます。この状況で新規インストールなさる場合は、最新ビルドとアップデートの２つをインストールして頂く必要があります。その後リリースされるビルドでは、このアップデートの内容が取り込まれます。
-ファイル KGTN2019101001.pdf [(37 KB)] [kitasp 技術センター, 2019/11/05 13:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2246/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2268/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2268/">[GGH6.X] アドミンコンソールを起動すると、画面が表示されるまで数分～十数分かかる。</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2268/"><i class="far fa-calendar"></i> 2019-11-05</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2019/11/05*
-[番号] 技術ノート KGTN 2019100902
-[現象] [GGH6.X] アドミンコンソールを起動すると、画面が表示されるまで数分～十数分かかる。
-[説明] この問題は、主にGGサーバーがインターネットにアクセス出来ない場合に発生します。弊社ではほぼ原因が分かっており、GraphOn社へサポート依頼を行っております。GraphOn社で修正が行われるまで、次の対症療法を行ってください。弊社の検証環境では、画面が表示されるまで462秒要していたのが22秒まで改善されました。
-  管理者のアカウントを使いメモ帳でファイル C:WindowsSystem32driversetchosts を開きます。
-  ファイルの末尾に 127.0.0.1 license.graphon.com という行を追加します。
-  ファイルを上書き保存します。
-  サーバーを再起動します。
-127.0.0.1 license.graphon.com
-  ファイル KGTN2019100902.pdf [(48.5 KB)] [kitasp 技術センター, 2019/11/05 13:56]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2268/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2202/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2202/">[GGH6.X] クライアント印刷機能のUPD (Universal Printer Driver) の設定を自己責任で編集したい。</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2202/"><i class="far fa-calendar"></i> 2019-11-05</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2019/11/05*
-[番号] 技術ノート KGTN 2019102302
-[現象] [GGH6.X] クライアント印刷機能のUPD (Universal Printer Driver) の設定を自己責任で編集したい。
-[説明] UPD の構成情報は C:WindowsSystem32spooldriversx643UniversalRemotePrinter.ppd というファイルにあります。この設定情報を編集することで、用紙のマージン設定の修正等を行うことが出来ます。なお、この UniversalRemotePrinter.ppd の内容等に関するお問い合わせはご遠慮ください。
-ファイル KGTN2019102302.pdf [(54.6 KB)] [kitasp 技術センター, 2019/11/05 14:12]
-KGTN2019102302.jpg
-表示 [(33.8 KB)] [kitasp 技術センター, 2019/11/05 14:12]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2202/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2257/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2257/">[GGH6.X] バージョン4.8やバージョン5.0からバージョン6.0へアップグレードし、何等かの理由で元のバージョンに戻したい場合、どのようにすれば良いのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2257/"><i class="far fa-calendar"></i> 2019-11-05</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2019/11/05*
-[番号] 技術ノート KGTN 2019100903
-[現象] [GGH6.X] バージョン4.8やバージョン5.0からバージョン6.0へアップグレードし、何等かの理由で元のバージョンに戻したい場合、どのようにすれば良いのか？
-[説明] 技術的にはバージョン6.0をアンインストールし、再起動後に旧バージョンを再度インストールすれば元のバージョンに戻ります。ただ旧バージョンでカスタマイズ等が行われていた場合は、それらの作業内容が失われますので、カスタマイズ等も改めて行って頂く必要があります。また、この作業の中でWindowsレベルでの障害等 （例えばファイルシステムの異常） が発生した場合は、元の環境に戻らない可能性も考えられます。このようなことから、バージョン6.0のアンインストールおよび旧バージョンのインストールという手順はお勧めできません。
-GGのインストールに限りませんが、仮想サーバー環境でシステムを更新する場合、「更新前の環境」で復元ポイントや仮想マシンのイメージバックアップを作成し、新しい環境で障害が発生した時は、作成した復元ポイントやイメージバックアップを使って更新前の環境に戻す手順が一般的です。事前に復元方法を確認 （実際に検証） した後、この方法でバージョン6.0へアップグレードなさることをお勧めします。
-ファイル KGTN2019100903.pdf [(49.1 KB)] [kitasp 技術センター, 2019/11/05 13:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2257/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2413/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2413/">[ExPack] バージョン6の GGCSLib2 のサンプル版のインストール方法は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2413/"><i class="far fa-calendar"></i> 2019-09-17</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2019/09/17*
-[番号] 技術ノート KGTN 2019081501
-[現象] [ExPack] バージョン6の GGCSLib2 のサンプル版のインストール方法は？
-[説明] 以下の手順でインストールして下さい。
-[はじめに] 配布フォルダ GGCSLib2 には、以下の４つのサブフォルダが含まれています。
-各サブフォルダの内容は、次の通りです。
- Client &hellip; クライアント側のプラグイン （32ビット版、64ビット環境でも動作） Etc &hellip; VC++2010 と VC++2017 のランタイム Sample &hellip; サンプルプログラムのソースコード （プロジェクト） Server &hellip; サーバー側のプラグイン （64ビット版）  [サーバー側の設定]
- 配布フォルダ GGCSLib2 を C:TEMP へコピーして下さい。 フォルダ C:TEMPGGCSLib2Server を開いて下さい。 フォルダの中にある Install.bat をダブルクリックし実行して下さい。なお、このバッチの実行には管理者権限が必要です。  サンプルプログラム C:kitASPGGCSLib2GGCSLib2T.exe をアドミンコンソールで登録して下さい。  [クライアント側の設定]
- 配布フォルダ GGCSLib2 を C:TEMP へコピーして下さい。 フォルダ C:TEMPGGCSLib2Client を開いて下さい。 フォルダの中にある Install.bat をダブルクリックし実行して下さい。なお、このバッチの実行には管理者権限が必要です。  [動作試験]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2413/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -809,7 +804,7 @@ GGのインストールに限りませんが、仮想サーバー環境でシス
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc348/">
+                                      <a href="/posts/new_md/doc1436/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc348/">[GGW3.2.1/GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc1436/">[GGW3.2.1] 3.2.1.4420で 「ロードバランサのヘルスチェック機能 （TCP/IPレベル） に対応しました」 とあるが，どういうことなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,21 +340,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc348/"><i class="far fa-calendar"></i> 2010-10-14</a>
+                                            <a href="/posts/new_md/doc1436/"><i class="far fa-calendar"></i> 2011-02-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/14*
-[番号] 技術ノート KGTN 2010101402
-[現象] [GGW3.2.1/GGH4.X-6.X] プログラム・ウインドウの背景色・文字色・ウインドウの状態をログオン時に設定したい．
-[説明] ログオンスクリプトで，レジストリを直接編集することでプログラム・ウインドウの背景色・文字色・ウインドウの状態を設定することが出来ますが，拡張パックに含まれるプログラム GGPwTool でも簡単に設定することが出来ます．GGPwTool の設定情報は，下記のように全体設定と個別設定の２つの設定情報があり，個別の設定情報の値が優先します．
- ALLUSERSPROFILEGraphOnGGPwTool.ini （全体設定） USERPROFILEApplication DataGGPwTool.ini （個別設定）  GGPwTool.ini 中で設定できる項目は，以下の通りです．
-[default] LV_ColorBackground=#804000　← 背景色 LV_ColorForeground=#FFFFFF　← 文字色 WinPlaceShowState=3　← ウインドウの状態（1 = 通常，3 = 最大化） LV_StylesBasic=#50000101　← アイコンの状態（#50000100 = Large, #50000102 = Small, #50000101 = Details, #50000104 = List）
-GGPwTool は，以下のようにログオンスクリプトから起動して下さい．
-echo off C:GraphOnBINGGPwTool.exe exit
-ファイル KGTN2010101402.pdf [(47.8 KB)] [kitasp 技術センター, 2019/04/25 18:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc348/" class="btn btn-template-main">続きを読む</a>
+2011/02/28*
+[番号] 技術ノート KGTN 2011022804
+[現象] [GGW3.2.1] 3.2.1.4420で 「ロードバランサのヘルスチェック機能 （TCP/IPレベル） に対応しました」 とあるが，どういうことなのか？
+[説明] GGは一斉ログオン等の高負荷時にも対応するため，GGのポートに接続要求があった時点でセッション用のメモリを確保します．ハードウエア・ロードバランサのヘルスチェック機能 （TCP/IPレベル） でGGを監視すると，頻繁にメモリの確保＆開放が行われるため状況によっては問題を引き起こしていました．3.2.1.4420では，ハードウエア・ロードバランサによる監視も想定した処理を行うように変更されました．
+備　考 この件に関する情報は英文のリリースノートにはありませんが，下記のように 3.2.1 Patch2 (4420) で実装されております．
+It looks like it was inadvertently left out of the Release Notes, but it was verified as fixed in 3.2.1 Patch2.
+ファイル KGTN2011022804.pdf [(65.2 KB)] [kitasp 技術センター, 2011/02/28 14:09]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1436/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -364,7 +362,7 @@ echo off C:GraphOnBINGGPwTool.exe exit
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2261/">
+                                      <a href="/posts/new_md/doc1438/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -372,7 +370,7 @@ echo off C:GraphOnBINGGPwTool.exe exit
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2261/">[GGW3.2.1] PW （Program Window） の 「閉じる」 ボタンが押下された時，確認を行ってからウインドウを閉じるように出来ないか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1438/">[GGW3.2.1] APSログに CS: I/O event (socketAvailable ...) というエラーが記録される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -385,19 +383,18 @@ echo off C:GraphOnBINGGPwTool.exe exit
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2261/"><i class="far fa-calendar"></i> 2010-10-14</a>
+                                            <a href="/posts/new_md/doc1438/"><i class="far fa-calendar"></i> 2011-02-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/14*
-[番号] 技術ノート KGTN 2010101501
-[現象] [GGW3.2.1] PW （Program Window） の 「閉じる」 ボタンが押下された時，確認を行ってからウインドウを閉じるように出来ないか？
-[説明] 現在のGGでは，設定等で 「確認を行ってからPWのウインドウを閉じる」 や 「閉じるボタンを消す」 ことは出来ません．なお，将来リリース予定の Ver4.0.1 では， 「確認を行ってからPWのウインドウを閉じる」 機能が実装される見込みです．
-参　考 We do plan to help resolve this issue in our 4.0.1 RC release as follows, in this release, when they try to close the program windows, the users will be asked.
-&ldquo;Are you sure you want to close the GO-Global program window?&rdquo;
-ファイル KGTN2010101501.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2261/" class="btn btn-template-main">続きを読む</a>
+2011/02/27*
+[番号] 技術ノート KGTN 2011022802
+[現象] [GGW3.2.1] APSログに &ldquo;CS: I/O event (socketAvailable &hellip;)&rdquo; というエラーが記録される．
+191 2011-02-22 18:47:11.405 aps (1560) CS: I/O event (socketAvailable &ndash; conflict between ioctlsocket and select).
+[説明] この記録は， 「通常の意味でのエラーではなく」 TCP/Pの通信に関する正常系での参考情報です．従って，このメッセージは無視して頂いて結構です．
+ファイル KGTN2011022802.pdf [(52.5 KB)] [kitasp 技術センター, 2011/02/28 07:29]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1438/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -407,7 +404,7 @@ echo off C:GraphOnBINGGPwTool.exe exit
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1584/">
+                                      <a href="/posts/new_md/doc1437/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -415,7 +412,7 @@ echo off C:GraphOnBINGGPwTool.exe exit
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1584/">GGは，クライアント側のIMEを意識しているのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1437/">[GGW3.2.1] APSログに RS: Error getting port for printer というエラーが記録される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -428,17 +425,18 @@ echo off C:GraphOnBINGGPwTool.exe exit
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1584/"><i class="far fa-calendar"></i> 2010-10-14</a>
+                                            <a href="/posts/new_md/doc1437/"><i class="far fa-calendar"></i> 2011-02-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/14*
-[番号] 技術ノート KGTN 2010101403
-[現象] GGは，クライアント側のIMEを意識しているのか？
-[説明] GGサーバに複数のIMEがインストールされている場合，GGはクライアント側で使用しているIMEと同じものがあるかどうかチェックします．もし存在する場合は，クライアント側と同じIMEを選択します．存在しない場合は，GGがインストールされた時に設定されていたIME （フォールバックIME） を選択します．
-ファイル KGTN2010101403.pdf [(44.1 KB)] [kitasp 技術センター, 2010/10/14 13:13]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1584/" class="btn btn-template-main">続きを読む</a>
+2011/02/27*
+[番号] 技術ノート KGTN 2011022803
+[現象] [GGW3.2.1] APSログに &ldquo;RS: Error getting port for printer&rdquo; というエラーが記録される．
+6406 2011-02-24 17:29:45.784 USER on server, APP (8028) RS: Error getting port for printer &ldquo;90LBPR_103-751@90W7PRUSER&rdquo;; Failed to open registry key.
+[説明] このエラーは，クライアントプリンタのポートの情報が得られなかったことを意味します．セキュリティの問題でレジストリを開くことが出来なかったか，またはプリンタドライバの問題等でレジストリが存在しなかったことが考えられます．他の （異なる機種の） プリンタを試して，同じ現象が発生すれば前者の可能性が高く，同じ現象が発生しなければ後者の可能性が高いと考えられます．また，同じプリンタを異なるユーザで試して，現象が発生しなければ，ユーザ （アカウント） に依存した問題だと考えられます．
+ファイル KGTN2011022803.pdf [(61.3 KB)] [kitasp 技術センター, 2011/02/28 07:47]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1437/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -448,7 +446,7 @@ echo off C:GraphOnBINGGPwTool.exe exit
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1585/">
+                                      <a href="/posts/new_md/doc1439/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -456,7 +454,7 @@ echo off C:GraphOnBINGGPwTool.exe exit
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1585/">GGクライアントからGGサーバへの接続 （TCP/IP） に時間がかかることがある．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1439/">[GGW3.2.1] 印刷時に拡張子BPFのファイルがオープン出来ないというエラーがAPSログに記録される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -469,19 +467,18 @@ echo off C:GraphOnBINGGPwTool.exe exit
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1585/"><i class="far fa-calendar"></i> 2010-10-13</a>
+                                            <a href="/posts/new_md/doc1439/"><i class="far fa-calendar"></i> 2011-02-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/13*
-[番号] 技術ノート KGTN 201011301
-[現象] GGクライアントからGGサーバへの接続 （TCP/IP） に時間がかかることがある．
-[説明] このような現象は，さまざまな要因が考えられますので，多数の試験を行い原因を絞り込むことが大切です．
-GGサーバの指定をコンピュータ名からIPアドレスに変更してみる （名前解決に関する問題かどうか） ． GGクライアントからGGサーバへ継続的にPINGを送信してみる （ネットワークに関する問題かどうか） ． GGサーバで動作するタスクやアプリケーションをチェックする （サーバの負荷に関する問題かどうか） ．
-特定の時間帯に遅くなる等パターンが分かっている場合は，その時間帯に絡みそうなネットワークやサーバの処理を重点的にチェックするのが良いでしょう．例えば，アンチウイルスソフトが共有ディスクを定期的にスキャンする設定になっており，その処理でネットワークの帯域が広く占有され，その結果GGクライアント〜GGサーバ間の接続障害を引き起こした事例もあります．
-ファイル KGTN2010101301.pdf [(60.4 KB)] [kitasp 技術センター, 2010/10/13 14:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1585/" class="btn btn-template-main">続きを読む</a>
+2011/02/27*
+[番号] 技術ノート KGTN 2011022801
+[現象] [GGW3.2.1] 印刷時に拡張子BPFのファイルがオープン出来ないというエラーがAPSログに記録される．
+89 2011-02-22 18:33:33.049 user on server, xxx (1260) RS: Error printing document - Failed to open temporary file &ldquo;C:¥Users¥user¥AppData¥Local¥Temp¥57210312128.bpf&rdquo;.
+[説明] 拡張子 .bpf のファイルは，クライアント印刷機能 （Native Driver） で印刷が行われた時に，サーバ側に一時的に作成されるスプールファイルです．このファイルのオープンに失敗したということですから，恐らくサーバのセキュリティ絡みの問題だと思われます （アクセス権が不十分でTempフォルダにファイルを作成出来ない等） ．
+ファイル KGTN2011022801.pdf [(61.1 KB)] [kitasp 技術センター, 2011/02/28 07:19]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1439/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -491,7 +488,7 @@ GGサーバの指定をコンピュータ名からIPアドレスに変更して�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1586/">
+                                      <a href="/posts/new_md/doc1440/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -499,7 +496,7 @@ GGサーバの指定をコンピュータ名からIPアドレスに変更して�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1586/">プログラムウインドウ （PW） をログオン時に最大化させたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1440/">[GGH4.0] クライアントドライブ機能で FD, CD-ROM, DVD-ROM 等が表示されない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -512,18 +509,18 @@ GGサーバの指定をコンピュータ名からIPアドレスに変更して�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1586/"><i class="far fa-calendar"></i> 2010-10-08</a>
+                                            <a href="/posts/new_md/doc1440/"><i class="far fa-calendar"></i> 2011-02-25</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/08*
-[番号] 技術ノート KGTN 201010802
-[現象] プログラムウインドウ （PW） をログオン時に最大化させたい．
-[説明] GGサーバのログオンスクリプトで，以下のレジストリを設定することで， PW のウインドウが最大化された状態で表示されます．
-HKCU¥Software¥GraphOn¥Bridges¥1.0.0¥ProgramWindow¥Settings¥Standard WinPlaceShowState REG_DWORD 3
-ファイル KGTN2010100802.pdf [(46.6 KB)] [kitasp 技術センター, 2010/10/08 11:27]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1586/" class="btn btn-template-main">続きを読む</a>
+2011/02/25*
+[番号] 技術ノート KGTN 2011022504
+[現象] [GGH4.0] クライアントドライブ機能で FD, CD-ROM, DVD-ROM 等が表示されない．
+[説明] 4.0系では， FD, CD-ROM, DVD-ROM 等のリームバブルディスクは，クライアントドライブとしてサポートされません． Administrator Guide の内容を以下に引用します．
+GO-Global allows users to access USB drives. Removable drives such a floppy disks, CD ROMs, and DVD-ROMs are not supported as client drives.
+ファイル KGTN2011022504.pdf [(52.3 KB)] [kitasp 技術センター, 2011/02/25 16:15]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1440/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -533,7 +530,7 @@ HKCU¥Software¥GraphOn¥Bridges¥1.0.0¥ProgramWindow¥Settings¥Standard WinPl
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1589/">
+                                      <a href="/posts/new_md/doc1441/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -541,7 +538,7 @@ HKCU¥Software¥GraphOn¥Bridges¥1.0.0¥ProgramWindow¥Settings¥Standard WinPl
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1589/">ggw</a></h2>
+                                    <h2><a href="/posts/new_md/doc1441/">「描画オブジェクトが不完全に描画される」 「ウインドウ内の幾つかの描画オブジェクトが表示されない」 等の問題が発生したが，どんな情報を採取すれば良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -554,19 +551,18 @@ HKCU¥Software¥GraphOn¥Bridges¥1.0.0¥ProgramWindow¥Settings¥Standard WinPl
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1589/"><i class="far fa-calendar"></i> 2010-10-07</a>
+                                            <a href="/posts/new_md/doc1441/"><i class="far fa-calendar"></i> 2011-02-25</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/07*
-[番号] 技術ノート KGTN 201010701
-[現象] ggw-3.2.1.4466を利用しているが，PW （プログラムウインドウ） のメニューから Help を消したい．
-[説明] これは 「純粋に」 技術的な観点からの説明です． pw.dll のリソース Menu → 128 → 1033 の中にある
-POPUP &ldquo;&amp;Help&rdquo; { &hellip; }
-を削除し，コンパイル＆保存することでメニュー項目の Help を消すことができます．
-ファイル KGTN2010100701.pdf [(216 KB)] [kitasp 技術センター, 2010/10/07 11:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1589/" class="btn btn-template-main">続きを読む</a>
+2011/02/25*
+[番号] 技術ノート KGTN 2011022501
+[現象] 「描画オブジェクトが不完全に描画される」 「ウインドウ内の幾つかの描画オブジェクトが表示されない」 等の問題が発生したが，どんな情報を採取すれば良いか？
+[説明] クライアントクリップボード機能が 「有効」 であれば，この機能を 「無効」 にして再現するかどうかを確認して下さい．状況が変わらない場合は，クライアント側で動作する ggw.exe の情報をタスクマネージャ （プロセスタブ，表示→列の選択で各項目を選択） か Process Explorer （Performanceタブ） で採取して下さい．あと，ビデオアダプタのメモリの大きさ，画面の解像度と色深度等もお知らせ下さい．
+参　考 本技術ノートに関連するGraphOn社のコメントを引用します．
+It could be some kind of client side memory or graphical handle issue. If the client was running out of memory or handles then painting anomalies like this could occur. We think they could tell if this is the issue by running the task manager on the client and looking at the ggw process.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1441/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -576,7 +572,7 @@ POPUP &ldquo;&amp;Help&rdquo; { &hellip; }
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1588/">
+                                      <a href="/posts/new_md/doc1442/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -584,7 +580,7 @@ POPUP &ldquo;&amp;Help&rdquo; { &hellip; }
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1588/">「マイ ネットワーク」 を非表示にしたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1442/">[GGW-3.2.1] PW （Program Window） に共有フォルダを配置したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -597,19 +593,17 @@ POPUP &ldquo;&amp;Help&rdquo; { &hellip; }
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1588/"><i class="far fa-calendar"></i> 2010-10-07</a>
+                                            <a href="/posts/new_md/doc1442/"><i class="far fa-calendar"></i> 2011-02-24</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/07*
-[番号] 技術ノート KGTN 201010702
-[現象] 「マイ ネットワーク」 を非表示にしたい．
-[説明] 以下の手順で 「マイ ネットワーク」 を非表示にすることが出来ます．
-レジストリエディタを起動 HKCU¥Software¥Microsoft¥Windows¥CurrentVersion¥Policies¥Explorer を参照 NoNetHood というキーを DWORD値 で作成 値に 1 を設定 レジストリエディタを終了
-レジストリが HKCU ですので，ユーザ単位に設定することになります．全ユーザについて 「マイ ネットワーク」 を非表示にしたい場合は，上記の設定を事前に全ユーザに行うか，またはログオンスクリプトで設定を行うようにして下さい （グループポリシーで設定出来るかもしれません） ．
-ファイル KGTN2010100702.pdf [(55.2 KB)] [kitasp 技術センター, 2010/10/07 14:24]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1588/" class="btn btn-template-main">続きを読む</a>
+2011/02/24*
+[番号] 技術ノート KGTN 2011022406
+[現象] [GGW-3.2.1] PW （Program Window） に共有フォルダを配置したい．
+[説明] アプリケーションとしてエクスプローラー （gg-explorer.exe） を登録し， Command-Line Options に共有フォルダのパスを指定して下さい．ユーザ毎に共有フォルダを変えたい場合は，同じような処理をバッチ等で行うのが良いでしょう （注：具体的な内容については， Windows の利用方法に関することになりますので，GGの技術ノートでは言及しません） ．
+ファイル KGTN2011022406.pdf [(126 KB)] [kitasp 技術センター, 2011/02/24 12:51]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1442/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -619,7 +613,7 @@ POPUP &ldquo;&amp;Help&rdquo; { &hellip; }
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc172/">
+                                      <a href="/posts/new_md/doc1448/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -627,7 +621,7 @@ POPUP &ldquo;&amp;Help&rdquo; { &hellip; }
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc172/">エクスプローラー中の 「デスクトップ」 を消したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1448/">[GGW-3.2.1] アイドルタイムアウト発生時，どのような流れでセッションが終了するのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -640,21 +634,17 @@ POPUP &ldquo;&amp;Help&rdquo; { &hellip; }
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc172/"><i class="far fa-calendar"></i> 2010-10-07</a>
+                                            <a href="/posts/new_md/doc1448/"><i class="far fa-calendar"></i> 2011-02-24</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/07*
-[番号] 技術ノート KGTN 2010100703
-[現象] エクスプローラー中の 「デスクトップ」 を消したい．
-[説明] Microsoft社が提供する環境をカスタマイズするツールTweak UI に 「デスクトップ」 を消す機能がありませんので，エクスプローラー中の 「デスクトップ」 を消すことは出来ないと思われます．
-代替案として，エクスプローラーの起動オプション /e および /root を指定することをお勧めします．この指定を行うことで，指定したフォルダをルートとしてエクスプローラーが起動されるため， 「デスクトップ」 「マイネットワーク」 等は表示されません．詳細については，下記のページをご覧下さい．
-http://support.microsoft.com/kb/314853/ja
-備　考 上記の画面を採取した時のクラスタマネージャの設定は，以下の通りです．
-Command-Line Options: /e,/root,&ldquo;C:Documents and SettingsAdministratorMy Documents&rdquo;
-ファイル KGTN2010100703.pdf [(178 KB)] [kitasp 技術センター, 2014/11/09 16:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc172/" class="btn btn-template-main">続きを読む</a>
+2011/02/24*
+[番号] 技術ノート KGTN 2011022402
+[現象] [GGW-3.2.1] アイドルタイムアウト発生時，どのような流れでセッションが終了するのか？
+[説明] PW と Notepad が起動されている状況で，アイドルタイムアウト発生した時のAPSログを引用します．
+277 2011-02-24 10:19:12.234 Logon6 on Ad-client01, Logon (3156) Initiating logoff in response to an idle-timeout. ＊アイドルタイムアウトが発生 278 2011-02-24 10:19:12.453 Administrator on Ad-client01, ctfmon (1196) CS: Application disconnected. 279 2011-02-24 10:19:12.484 Administrator on Ad-client01, aps (1196) Process #1268 (ctfmon.exe) stopped in session &ldquo;Administrator on Ad-client01&rdquo;. ＊ctfmon.exe が終了 280 2011-02-24 10:19:12.671 Administrator on Ad-client01, notepad (1196) CS: Application disconnected.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1448/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -664,7 +654,7 @@ Command-Line Options: /e,/root,&ldquo;C:Documents and SettingsAdministratorMy Do
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1590/">
+                                      <a href="/posts/new_md/doc1443/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -672,7 +662,7 @@ Command-Line Options: /e,/root,&ldquo;C:Documents and SettingsAdministratorMy Do
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1590/">Windows Server 2008 をインストールして Windows Update を適用しようとすると，エラーメッセージ「0x80070003」　が表示される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1443/">[GGW-3.2.1] クライアントプリンタの名前付け書式 （PrinterNameFormat） を，空および固定の文字列に変更したところ，既定の -%U@%C が適用される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -685,20 +675,17 @@ Command-Line Options: /e,/root,&ldquo;C:Documents and SettingsAdministratorMy Do
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1590/"><i class="far fa-calendar"></i> 2010-10-05</a>
+                                            <a href="/posts/new_md/doc1443/"><i class="far fa-calendar"></i> 2011-02-24</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/05*
-[番号] 技術ノート KGTN 2010093001
-[現象] Windows Server 2008 をインストールして Windows Update を適用しようとすると，エラーメッセージ「0x80070003」　が表示される．
-[説明] マイクロソフト社の知識ベース KB956705によると，原因は 「この問題は、コンピュータの Windows Update データベースが更新プログラムのデータベース命令と矛盾する場合に発生することがあります」 とのことです．この情報および関連する情報によると，以下のコマンドを実行することでこの問題は解消するようです．
-net stop wuauserv cd %systemroot%¥SoftwareDistribution ren Download Download.old cd DataStore ren Logs Logs.old del DataStore.edb net start wuauserv
-備考１ 上記のコマンドを実行してもエラーが発生した場合は， 「サーバを再起動して」 改めて Windows Update を適用して下さい．
-備考２ この現象が発生するパターンは， Windows Update を適用している最中に， 「時間がかかる」 「Windows Update の画面が消えた」 等の理由で，繰り返して Windows Update を適用したケースが多いようです． 「時間がかかる」 「Windows Update の画面が消えた」 という状況でも，しばらく待つことを強くお勧めします．
-ファイル KGTN2010093001.pdf [(64.4 KB)] [kitasp 技術センター, 2010/10/06 08:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1590/" class="btn btn-template-main">続きを読む</a>
+2011/02/24*
+[番号] 技術ノート KGTN 2011022405
+[現象] [GGW-3.2.1] クライアントプリンタの名前付け書式 （PrinterNameFormat） を，空および固定の文字列に変更したところ，既定の -%U@%C が適用される．
+[説明] クライアントプリンタの名前付け書式は，管理者ガイドにあるトークン （%U, %I, %M %C, %S） が１つも含まれない場合，既定の -%U@%C が適用されます．
+ファイル KGTN2011022405.pdf [(48.2 KB)] [kitasp 技術センター, 2011/02/24 12:11]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1443/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -708,7 +695,7 @@ net stop wuauserv cd %systemroot%¥SoftwareDistribution ren Download Download.ol
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1592/">
+                                      <a href="/posts/new_md/doc1444/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -716,7 +703,7 @@ net stop wuauserv cd %systemroot%¥SoftwareDistribution ren Download Download.ol
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1592/">エンタープライズオプション GMCheckRaw でセッションを強制終了させた時，セッション中のプロセスはどんな順序で終了するのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1444/">[GGW-3.2.1] クライアントプリンタ機能を使用しているが，サーバ側のプリンタを通常使うプリンタ （デフォルトプリンタ） に変更出来ない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -729,18 +716,17 @@ net stop wuauserv cd %systemroot%¥SoftwareDistribution ren Download Download.ol
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1592/"><i class="far fa-calendar"></i> 2010-10-05</a>
+                                            <a href="/posts/new_md/doc1444/"><i class="far fa-calendar"></i> 2011-02-24</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/05*
-[番号] 技術ノート KGTN 201010601
-[現象] エンタープライズオプション GMCheckRaw でセッションを強制終了させた時，セッション中のプロセスはどんな順序で終了するのか？
-[説明] セッションの強制終了が要求された時 （内部的には SMI_DestorySession が呼ばれた時） ，セッション中のプロセスはランダムに終了します．GraphOn社のコメントは以下の通りです．
-Development has confirmed that the processes are terminated in a random order.
-ファイル KGTN2010100601.pdf [(51.5 KB)] [kitasp 技術センター, 2010/10/06 07:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1592/" class="btn btn-template-main">続きを読む</a>
+2011/02/24*
+[番号] 技術ノート KGTN 2011022404
+[現象] [GGW-3.2.1] クライアントプリンタ機能を使用しているが，サーバ側のプリンタを通常使うプリンタ （デフォルトプリンタ） に変更出来ない．
+[説明] クライアントプリンタ機能を使用している場合は， 「クライアント側のプリンタのみ」 デフォルトプリンタに設定することが出来ます．これは，GGのクライアントプリンタ機能の仕様です．
+ファイル KGTN2011022404.pdf [(43 KB)] [kitasp 技術センター, 2011/02/24 11:38]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1444/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -810,7 +796,7 @@ Development has confirmed that the processes are terminated in a random order.
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

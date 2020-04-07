@@ -409,27 +409,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1628/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1482/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1628/">「GGサーバのコンソールで実行した結果」 と 「クライアントからGGサーバへログオンし実行した結果」 が異なるが，どのような可能性が考えられるか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1482/">APSログに AS: Failed to complete license heartbeat. という記録があった．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-09-02
+                            日付 2011-02-01
                             </p>
                             <p class="intro">*技術ノート
-2010/09/02*
-[番号] 技術ノート KGTN 2010090202
-[現象] 「GGサーバのコンソールで実行した結果」 と 「クライアントからGGサーバへログオンし実行した結果」 が異なるが，どのような可能性が考えられるか？
-[説明] 以下のような可能性が考えられます．
-描画に関する問題 デスクトップに絡む問題 権限に関する問題
-「描画に関する問題」 は，主にウインドウの描画や上下関係に関して Windows の一般的でない処理が行われた場合です （例：ウインドウが最上位に表示されるもののフォーカスは下位のウインドウに残る） ． 「デスクトップに絡む問題」 は，GG環境はデスクトップを持っておりませんので，デスクトップの存在を前提としたアプリケーション等でエラーになることがあります． 「権限の関する問題」 は，GGのログオン画面を使用せずに，パススルー認証を使用した場合， Windows の仕様に絡んでやや弱い権限 （INTERACTIVE権限を持たない） で実行されるため，処理によってはエラーになることがあります （注：GGのパスワードキャッシュ機能を使用することで回避することが出来ます） ．
-ファイル KGTN2010090202.pdf [(58.9 KB)] [kitasp 技術センター, 2010/09/02 10:37]</p>
+2011/02/01*
+[番号] 技術ノート KGTN 2011013104
+[現象] APSログに &ldquo;AS: Failed to complete license heartbeat.&rdquo; という記録があった．
+[説明] APSがライセンスサーバと通信出来なくなった時に，この情報が記録されます．一般的な原因としては，APS〜ライセンスサーバ間の通信障害 （同一サーバの場合はWindowsの異常） ，サービス &ldquo;GO-Global License Manager&rdquo; の停止等が考えられます．この記録は障害発生から2分毎に検出され，5回検出された時点 （つまり10分経過した時点） でAPSが停止します．
+参　考 下記の事例は，1回目の記録と2回目が2分を遙かに超えており，従って通信障害は08:41:56 よりも前に発生したことしか分かりません．
+2011-01-28 08:41:56.478 AS: Failed to complete license heartbeat. (1) 2011-01-28 08:43:29.608 AS: Failed to complete license heartbeat. (1) 2011-01-28 08:44:31.861 AS: Failed to complete license heartbeat. (1) 2011-01-28 08:45:09.557 AS: Failed to complete license heartbeat. (1) 2011-01-28 08:45:41.778 AS: Failed to complete license heartbeat.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1628/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1482/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -448,27 +447,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1630/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1481/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1630/">GG環境でログオンの度に外字エディタを起動することなく外字を使いたい．</a></h4>
+                            <h4><a href="/posts/new_md/doc1481/">次のエラーがAPSログに記録されたが，どのような原因が考えられるか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-09-01
+                            日付 2011-02-01
                             </p>
                             <p class="intro">*技術ノート
-2010/09/01*
-[番号] 技術ノート KGTN 2010090103
-[現象] GG環境でログオンの度に外字エディタを起動することなく外字を使いたい．
-[説明] 「制限が付いても構わないので簡単に外字を使いたい」 ということであれば，外字ファイル EUDC.TTE を置き換えることで実現することが出来ます．置き換えの具体的な手順は以下の通りです．
-外字エディタを起動する． コード F040 に適当な文字を作成する． 外字エディタを終了する（文字は保存する）． ← 外字ファイルが作成される サーバを再起動する． コマンド プロンプト を起動する（DOS窓を開く）． C:¥ cd ¥Windows¥Fonts rename eudc.tte xxx copy C:¥Windows¥Fonts¥eudc.tte ← 外字ファイルを置き換える サーバを再起動する． 外字エディタを起動し，そのまま終了する． ← 外字の環境を反映させる サーバを再起動する．
-備　考 Windows Server 2003 SP2 + 外字フォント 「外字神社」 で動作を確認しました．なお，この外字フォントには .euf ファイルが含まれておりませんので，外字エディタでの編集 （ビットマップの表示を含む） は出来ません．
-ファイル KGTN2010090103.pdf [(71.9 KB)] [kitasp 技術センター, 2010/09/02 08:29]</p>
+2011/02/01*
+[番号] 技術ノート KGTN 2010110102
+[現象] 次のエラーがAPSログに記録されたが，どのような原因が考えられるか？
+230 &hellip; aps (10004) CS: An unknown error occurred while creating the transport server. 231 &hellip; aps (10004) CS: Failed to create the transport server. 232 &hellip; aps (10004) CS: Failed to accept a connection from a client at IP address xx.xx.xx.xx. 233 &hellip; aps (10004) CS_ConnectionStartThread::run ()
+[説明] この記録は， 「IPアドレスxx.xx.xx.xx を持つ機器がGGサーバに接続して来たが，その後GGのプロトコルを話さなかったので，接続処理でエラーになった」 ということを意味します．よくある事例では，ロードバランサのヘルスチェック機能 （TCP/IPレベル） によるGGサーバのポート監視があります．ロードバランサでGGサーバのヘルスチェックを行う場合は，ICMP （PING） による監視を行って下さい．どうしてもTCP/IPによる監視を行いたい場合は，エンタープライズオプションの GGHelthCheck をご利用下さい．詳細については，技術ノート KGTN#2011013101 をご覧下さい．</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1630/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1481/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -487,26 +484,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1632/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1484/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1632/">一般ユーザでログオンすると外字エディタが起動出来ない．</a></h4>
+                            <h4><a href="/posts/new_md/doc1484/">サービス GO-Global License Manager の停止状態が続くと，APSのサービスが停止する．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-09-01
+                            日付 2011-01-31
                             </p>
                             <p class="intro">*技術ノート
-2010/09/01*
-[番号] 技術ノート KGTN 2010090101
-[現象] 一般ユーザでログオンすると外字エディタが起動出来ない．
-[説明] 一般ユーザが外字エディタを起動しようとすると 「外字エディタを使うには，Winnt¥Fonts フォルダへの書き込みアクセス権が必要です．管理者に問い合わせ，このアクセス権を取得して下さい」 というエラーが表示されます （Windowsの仕様です） ．この内容に従い，フォルダ C:¥Windows¥Fonts の プロパティ → セキュリティ を開き，グループ Users 等に 「変更」 の許可を与えて下さい．この設定により，一般ユーザでも外字エディタを起動出来るようになります．
-この変更により，セキュリティは若干弱まりますが， その範囲はフォント絡みに限定されますので，通常の運用では特に問題にならないと思われます．
-ファイル KGTN2010090101.pdf [(57.8 KB)] [kitasp 技術センター, 2010/09/01 12:50]</p>
+2011/01/31*
+[番号] 技術ノート KGTN 2011013102
+[現象] サービス GO-Global License Manager の停止状態が続くと，APSのサービスが停止する．
+[説明] ggw-3.2.1.4446 またはそれ以降では，サービス GO-Global License Manager の停止から約10分でAPSが停止します．この10分間は，新たなユーザのログオンは出来ませんが，ログオン中のユーザがアプリケーションを起動することは出来ます．
+注　意 APS が停止するのは，ログオンしているユーザが存在している場合に限ります．誰もログオンしていない場合は，APS は停止しません （ggw-3.2.1.4466で確認） ．
+ファイル KGTN2011013102.pdf [(50.9 KB)] [kitasp 技術センター, 2011/01/31 11:17]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1632/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1484/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -525,27 +522,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1631/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1485/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1631/">外字エディタでフォントのリンク 「指定したフォントにリンクする」 を設定すると，どこに反映されるのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1485/">サービス GO-Global License Manager を停止させて，すぐに開始したが何か問題はあるか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-09-01
+                            日付 2011-01-31
                             </p>
                             <p class="intro">*技術ノート
-2010/09/01*
-[番号] 技術ノート KGTN 2010090102
-[現象] 外字エディタでフォントのリンク 「指定したフォントにリンクする」 を設定すると，どこに反映されるのか？
-[説明] 設定した内容は以下のレジストリへ反映されます．
-HKCU¥EUDC¥932 [具体例] HKCU¥EUDC¥932 &ldquo;ＭＳ 明朝&quot;=&quot;C:¥¥GAIJI¥¥GaijiJinja_F040_M.tte&rdquo;
-参　考 レジストリエディタでこの設定を追加しただけでは実際に反映されず，外字エディタが起動された時点で反映されます．GG環境では，ログオンの度に外字エディタを起動する必要があります．
-ファイル KGTN2010090102.pdf [(53 KB)] [kitasp 技術センター, 2010/09/02 08:25]</p>
+2011/01/31*
+[番号] 技術ノート KGTN 2011013103
+[現象] サービス GO-Global License Manager を停止させて，すぐに開始したが何か問題はあるか？
+[説明] サービス GO-Global License Manager （ライセンスサーバ） が停止すると，新たなユーザはログオン出来ませんが，ログオン中のユーザは 「約10分間」 そのまま利用することが出来ます．その間にライセンスサーバを開始すると，新たなユーザがログオン出来るようになります．但し，数分間はライセンスの利用状況の回復処理が行われますので， それが完了するまでは lmtools 等で表示されるライセンスの利用状況と，実際の状況と整合しないことがあります．
+注　意 ライセンスの利用状況の回復処理が行われている間に，ライセンス数を超えるユーザがログオン出来ないように，クラスタマネージャで適切なユーザ数を設定するようにして下さい （Maximum sessions on this server） ．
+ファイル KGTN2011013103.pdf [(56.7 KB)] [kitasp 技術センター, 2011/01/31 10:52]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1631/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1485/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

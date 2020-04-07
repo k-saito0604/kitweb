@@ -409,25 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc733/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc644/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc733/">[GGH4.X] マルチモニタ環境で，他方のモニタにウインドウを移動出来ない時がある．</a></h4>
+                            <h4><a href="/posts/new_md/doc644/">[GGH4.5] GGのログを syslog に渡すことが出来るか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2013-01-07
+                            日付 2013-03-05
                             </p>
                             <p class="intro">*技術ノート
-2013/01/07*
-[番号] 技術ノート KGTN 2013010701
-[現象] [GGH4.X] マルチモニタ環境で，他方のモニタにウインドウを移動出来ない時がある．
-[説明] この現象はGGの環境に関わりなく発生するもので，現在の座標に対応する座標が他方のモニタに無い場合に発生します．下記に例では，左方向に 「真横に」 移動させることは出来ず，上方向にも移動させる必要があります．
-ファイル KGTN2013010701.pdf [(64.6 KB)] [kitasp 技術センター, 2013/01/07 10:13]</p>
+2013/03/05*
+[番号] 技術ノート KGTN 2013030504
+[現象] [GGH4.5] GGのログを syslog に渡すことが出来るか？
+[説明] GGのログレベルを4に設定するとWindowsのイベントログに主な情報が記録されますので， Ntsyslog 等のツールを利用することで （そのイベントログを） syslog へ転送出来ると思います．これ以上の内容については，インターネット上の情報等を参照して下さい．特にご要望があれば，弊社プロフェッショナル・サービス （有償） で調査することも可能です．
+ファイル KGTN2013030504.pdf [(50.6 KB)] [kitasp 技術センター, 2013/03/05 12:01]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc733/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc644/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,25 +446,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc734/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc641/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc734/">[GGH4.X] クライアントクリップボード機能で，ペースト出来ないオブジェクトがある現象が修正される可能性は？</a></h4>
+                            <h4><a href="/posts/new_md/doc641/">[GGW3.2.1/GGH4.5] あるアプリケーションがリソースの枯渇を招き， ggse.sys がメモリの獲得に失敗してBSODが発生した．BSODが発生しないように ggse.sys を修正して欲しい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2013-01-04
+                            日付 2013-03-05
                             </p>
                             <p class="intro">*技術ノート
-2013/01/04*
-[番号] 技術ノート KGTN 2013010402
-[現象] [GGH4.X] クライアントクリップボード機能で，ペースト出来ないオブジェクトがある現象が修正される可能性は？
-[説明] 一般論として，クリップボードのデータ形式やデータの保持方法は，特定データを除きアプリケーションが自由に決めることが出来るため，あらゆるアプリケーションの全てのデータ形式をGGでサポートすることは技術的に困難です．Excelのセルの装飾等がペースト出来ない件は，弊社の調査で 「環境によってペースト出来ることもある」 ことから，クライアントクリップボード機能の実装方法に本質的な問題があるのではなく，何らかの不具合が存在しているか，または Windows の想定外の動作に起因しているものと推測されます．GraphOn社および弊社で継続して調査することで，この現象は解決出来るものと考えております．
-ファイル KGTN2013010402.pdf [(60.4 KB)] [kitasp 技術センター, 2013/01/04 12:47]</p>
+2013/03/05*
+[番号] 技術ノート KGTN 2013030602
+[現象] [GGW3.2.1/GGH4.5] あるアプリケーションがリソースの枯渇を招き， ggse.sys がメモリの獲得に失敗してBSODが発生した．BSODが発生しないように ggse.sys を修正して欲しい．
+[説明] 技術的な背景は割愛しますが，仮に ggse.sys でBSODが発生しないようになっても 「リソースの枯渇」 という状況は変わりませんので，結局はWindows がハングアップ状態になる，他のプロセスがBSODを引き起こす， etc&hellip; と言った状況が発生し，サーバの再起動が必要になります．よって， ggse.sys の修正は本質的な問題の解決とはなりません．本質的な問題の解決には，リソースの枯渇を招いたアプリケーションの動作を調査し，問題点 （プログラム自体や設定ファイルの内容など） を解決する必要があります．技術的に 「リソースの枯渇」が妥当な結果であれば，定期的にサーバの再起動を行う等の運用方法の見直しが必要となります．
+ファイル KGTN2013030602.pdf [(59.3 KB)] [kitasp 技術センター, 2013/03/06 08:58]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc734/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc641/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -483,25 +483,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc735/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc642/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc735/">[GGH4.X] マウスのホイールボタンをGGのセッションの外側で離した時，そのイベントをGGへ通知する機能の実装の可能性は？</a></h4>
+                            <h4><a href="/posts/new_md/doc642/">[Windows] GGとは関係がないが， PC (Windows 8) の無線LANが突然繋がらなくなった．PC (Windows 7) の無線LANは問題なく接続出来ている．</a></h4>
                             <p class="author-category">
                             
-                            日付 2013-01-04
+                            日付 2013-03-05
                             </p>
                             <p class="intro">*技術ノート
-2013/01/04*
-[番号] 技術ノート KGTN 2013010401
-[現象] [GGH4.X] マウスのホイールボタンをGGのセッションの外側で離した時，そのイベントをGGへ通知する機能の実装の可能性は？
-[説明] マウスポインタの位置に存在する描画オブジェクトに対し，マウス操作のイベントを通知するという動作が，GGの基本的なアーキテクチャです．マウスのホイールボタンの件は，この基本的なアーキテクチャの動作から外れるもので，従ってGraphOn社の認識としては 「仕様であり」 不具合ではありません．もしこの機能を実装するとすれば，GGの基本的なアーキテクチャの変更が必要で，比較的工数を要する 「機能追加作業」 という扱いになります （既にその回答をGraphOn社より得ています） ．営業的な側面では，この機能追加作業に要する追加コストが必要になると思われます．
-ファイル KGTN2013010401.pdf [(57.2 KB)] [kitasp 技術センター, 2013/01/04 12:25]</p>
+2013/03/05*
+[番号] 技術ノート KGTN 2013030601
+[現象] [Windows] GGとは関係がないが， PC (Windows 8) の無線LANが突然繋がらなくなった．PC (Windows 7) の無線LANは問題なく接続出来ている．
+[説明] 弊社でも同じ現象が発生しました．PC (Windows 8) の無線LANが突然切断状態になり，再接続を試みても，ファイアウォールを無効にしても，アクセスポイントを変更しても，さらに再起動しても繋がらなくなりました．この状況でも PC (Windows 7) やiPadの無線LANは正常に動作していました．可能な限り調査をしましたが結局原因は分かりませんでした．しかし，翌朝になるとこの問題は解消していました．インターネット上にもこのような報告がありますので， Windows 8 の 「インターネットへの接続性」のチェックに何か不具合 （必要以上にチェックが厳しい？） があるのかもしれません．
+ファイル KGTN2013030601.pdf [(56.5 KB)] [kitasp 技術センター, 2013/03/06 05:31]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc735/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc642/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -520,25 +520,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc737/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc643/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc737/">[GGH4.5] GGH4.5のマルチモニター機能は，何台のモニタをサポートするのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc643/">[Windows] GGとは関係がないが， Windows 8 のリフレッシュ機能を実行した場合，インストールしたアプリケーションはどうなるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2013-01-03
+                            日付 2013-03-05
                             </p>
                             <p class="intro">*技術ノート
-2013/01/03*
-[番号] 技術ノート KGTN 2012121501
-[現象] [GGH4.5] GGH4.5のマルチモニター機能は，何台のモニタをサポートするのか？
-[説明] GGH4.5のマルチモニター機能は，４台のモニタをサポートします．
-ファイル KGTN2012121501.pdf [(84.3 KB)] [kitasp 技術センター, 2013/01/04 08:33]</p>
+2013/03/05*
+[番号] 技術ノート KGTN 2013030505
+[現象] [Windows] GGとは関係がないが， Windows 8 のリフレッシュ機能を実行した場合，インストールしたアプリケーションはどうなるのか？
+[説明] ストア版のアプリケーションは復元されますが，デスクトップ版のアプリケーションは削除されます．削除されたアプリケーションは，デスクトップ上に作成された 「削除されたアプリケーション」 というファイルで確認することが出来ます．なお，この 「削除されたアプリケーション」 の中にプレインストールに含まれるドライバが存在することがあり，このような場合は削除されたドライバを入手しインストールする必要があります （リフレッシュ機能で失われるドライバがある点に注意して下さい） ．
+補　足 上記説明の通りリフレッシュ機能にも欠点がありますので，安全確実という点では 「Windows 7 のファイルの回復」 機能の利用がお勧めです．
+ファイル KGTN2013030505.pdf [(50.8 KB)] [kitasp 技術センター, 2013/03/05 14:33]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc737/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc643/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

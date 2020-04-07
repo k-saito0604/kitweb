@@ -409,25 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2616/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc116/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2616/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc116/">[Windows] GGサーバーのアップグレードを外部のコンピュータから行いたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2014-11-21
+                            日付 2015-06-11
                             </p>
                             <p class="intro">*技術ノート
-2014/11/21*
-[番号] 技術ノート KGTN 2014111710
-[現象] [GGH4.X-5.X] GG上でどのようなアプリケーションが正常に動作しないか？
-[説明] 以下のようなアプリケーションは，GG上で正常に動作しない可能性が高いと考えられます．
- 絶対パスでファイルを参照しているアプリケーション． ビジーループ処理を行っているアプリケーション． Windowsの下位レベルのAPIを使用しているアプリケーション． ウインドウ管理が特殊なアプリケーション （例：アクティブなのにウインドウが最上位に位置しない）． DirectXで描画するアプリケーション （注： GGH4.8.2以降であれば動作）． 映像系のアプリケーション （注：将来のバージョンで H.264 をサポート予定）． クライアント側の背景を透過表示するような仕様のアプリケーション （注：不透明表示になります）． デスクトップでの利用を想定したアプリケーション （デスクトップのリソースへのアクセス）． 9.その他  ファイル KGTN2014111710.pdf [(61.2 KB)] [kitasp 技術センター, 2016/03/11 15:24]</p>
+2015/06/11*
+[番号] 技術ノート KGTN 2015031201
+[現象] [Windows] GGサーバーのアップグレードを外部のコンピュータから行いたい．
+[説明] Windows Sysinternals の PsExec と WSH (VBScript) を使用したサンプルを以下に示します．このスクリプトは，GGのインストールプログラム （ファイル） をターゲットのGGサーバーへ自動的にコピーし，アップグレード処理を行います．なお，この内容についての助言は歓迎しますが，質問等はご遠慮下さい．
+'- '- PsGGUpgrade.vbs : GG のアップグレードを行うスクリプト '- Sample: cscript PsGGUpgrade.vbs 10.1.8.93 gg-host.windows_x64.exe '- Option Explicit Dim objShell,objFso Dim objParm,argServer,argCommand Dim strResult,aryStrings,aryStrings2,ii '--- Set objShell = CreateObject(&quot;Wscript.Shell&quot;) Set objFso = CreateObject(&quot;Scripting.FileSystemObject&quot;) Set objParm = Wscript.Arguments '--- If objParm.Count &lt;&gt; 2 Then WScript.Echo &quot;Usage: PsGGUpgrade &lt;server&gt; &lt;file&gt;&quot; WScript.Quit 101 End If '--- argServer = objParm(0) argCommand = objParm(1) &amp; &quot; /s /v&quot;&quot;/qn REINSTALL=All&quot;&quot;&quot; strResult = RemoteShell(&quot;PsExec -d -c -f &quot; &amp; argServer &amp; &quot; &quot; &amp; argCommand) Wscript.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2616/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc116/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,26 +446,30 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2617/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc125/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2617/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc125/">[Windows] ISOファイル （イメージ） にファイルを追加したいが，どのようなソフトウエアがあるか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2014-11-21
+                            日付 2015-06-11
                             </p>
                             <p class="intro">*技術ノート
-2014/11/21*
-[番号] 技術ノート KGTN 2014111705
-[現象] [GGH4.X-5.X] GGにセキュリティに関する機能 （クリップボード共有の禁止，スクリーンショットの取得禁止，操作ログの採取など） はあるのか？
-[説明] スクリーンショットの取得禁止や操作ログの採取に関しては，アプリケーション配信機能の範囲を超えるため，他ソフトウエアの併用をお願いします．
-クライアントとサーバー間のクリップボード共有については，クライアントのリソース利用という観点から，以下のように細かな機能を持っております．
- 禁止 片方向 （クライアント → サーバー） 許可 片方向 （サーバー → クライアント） 許可 双方向許可  ファイル KGTN2014111705.pdf [(55.2 KB)] [kitasp 技術センター, 2016/03/11 15:23]</p>
+2015/06/11*
+[番号] 技術ノート KGTN 2015022505
+[現象] [Windows] ISOファイル （イメージ） にファイルを追加したいが，どのようなソフトウエアがあるか？
+[説明] 調べた範囲では，以下のソフトウエアが見つかりました．
+  WinISO (Shareware) ? JPY 1,814 http://www.winiso.com/
+  UltraISO (Shareware) ? USD 29.95 http://www.ezbsystems.com/ultraiso/
+  PowerISO (Shareware) ? USD 29.95 http://poweriso.com/
+  MagicISO (Shareware) - JPY 3,915 http://www.magiciso.com/
+  WinISO では， 1) ISOファイルを開く， 2) 開いたファイルの中の適当なフォルダにファイルを追加する， 3) 名前を付けてISO形式で保存する， という手順で簡単にファイルを取り込むことが出来ます．
+ファイル KGTN2015022505.pdf [(55.1 KB)] [kitasp 技術センター, 2015/06/11 17:26]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2617/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc125/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -484,25 +488,28 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2639/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc113/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2639/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc113/">[Windows] PowerShell でリモート管理をしたいが，必要な設定は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2014-11-21
+                            日付 2015-06-11
                             </p>
                             <p class="intro">*技術ノート
-2014/11/21*
-[番号] 技術ノート KGTN 2014111702
-[現象] [GGH4.X-5.X] GG上で音声や動画を使用するアプリケーションを利用出来るか？
-[説明] Flash等を使用した動的なウエッブページの表示は可能ですが，映像等の視聴を行うアプリケーションの利用は出来ません．ロードマップ上では，将来のバージョンで動画 H.264 がサポートされる予定です （音声についてはVer5でサポートされております） ．
-ファイル KGTN2014111702.pdf [(52.2 KB)] [kitasp 技術センター, 2016/02/05 13:27]</p>
+2015/06/11*
+[番号] 技術ノート KGTN 2015032601
+[現象] [Windows] PowerShell でリモート管理をしたいが，必要な設定は？
+[説明] 管理するサーバーと管理されるサーバー，それぞれでアクセス許可を与える必要があります．
+[管理されるサーバー側での設定] PowerShell コンソールを管理者権限で起動し，下記コマンドを実行する． Enable-PSRemoting
+[管理するサーバー側での設定] PowerShell コンソールを管理者権限で起動し，下記コマンドを実行する． Set-Item WSMan:localhostClientTrustedHosts -Value *
+詳細については，例えば http://atamoco.boy.jp/ps/20100913_2.php をご覧下さい．
+ファイル KGTN2015032601.pdf [(55.4 KB)] [kitasp 技術センター, 2015/06/11 17:43]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2639/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc113/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -521,27 +528,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2653/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc127/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2653/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc127/">[Windows] Windows (WS2008R2やWS2012R2) インストールDVDのイメージに無人インストールの応答ファイルを加えたいが，どこに置けば良いのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2014-11-21
+                            日付 2015-06-11
                             </p>
                             <p class="intro">*技術ノート
-2014/11/21*
-[番号] 技術ノート KGTN 2014111704
-[現象] [GGH4.X-5.X] GG上で動作するアプリケーションから利用可能なクライアント側のリソースは？
-[説明] GGがサポートするリソースは， 1) クリップボード， 2) サウンド， 3) ドライブ， 4) プリンタ, 5) シリアル＆パラレルポート， 6) スマートカード です．利用の可否は，クラスタマネージャの下記画面で設定することが出来ます．クリップボードについては，設定ファイルでコピー＆ペーストの方向 （クライアント → サーバー，サーバー → クライアント，双方向） を指定することが出来ます．なお，ヘッドセットやICカードリーダー等USBで接続するディバイスについては，USBの仮想化ソフトウエアを併用することで利用出来る可能性があります．
-ファイル KGTN2014111704.pdf [(67.6 KB)] [kitasp 技術センター, 2015/12/25 15:32]
-KGTN2014111704.jpg
-表示 [(21.9 KB)] [kitasp 技術センター, 2015/12/25 15:32]</p>
+2015/06/11*
+[番号] 技術ノート KGTN 2015022504
+[現象] [Windows] Windows (WS2008R2やWS2012R2) インストールDVDのイメージに無人インストールの応答ファイルを加えたいが，どこに置けば良いのか？
+[説明] イメージ中のフォルダ sources の下に Autounattend.xml というファイル名で応答ファイルを置いて下さい．
+https://msdn.microsoft.com/ja-jp/library/hh824950.aspx Windows セットアップの自動化の概要
+ファイル KGTN2015022504.pdf [(49.1 KB)] [kitasp 技術センター, 2015/06/11 17:25]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2653/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc127/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

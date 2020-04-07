@@ -409,26 +409,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1748/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1593/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1748/">エンタープライズオプションの GMCheck （GMCheckRaw） を使ってセッション情報をDBに取り込むが，二重ログオンを禁止するにはどのような処理にすれば良いか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1593/">ADサーバおよびGGサーバが Windows Server 2008 の環境で， 「フォルダ リダイレクト」 の 「ドキュメント」 等が機能しない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-06-03
+                            日付 2010-10-04
                             </p>
                             <p class="intro">*技術ノート
-2010/06/03*
-[番号] 技術ノート KGTN 2010060302
-[現象] エンタープライズオプションの GMCheck （GMCheckRaw） を使ってセッション情報をDBに取り込むが，二重ログオンを禁止するにはどのような処理にすれば良いか？
-[説明] GMCheck によるセッション情報のDBへの取り込みとGGサーバへのログオンはその仕組み上同期していないため，アプリケーションの初期画面等で以下のチェックを行い，他に同一ユーザが存在する時は 「既に同じユーザでログオンされています」 等のエラーメッセージを表示し，アプリケーションを終了させて下さい．
-GMCheck でセッション情報をDBへ取り込む （例えば10秒間隔） ． アプリケーションの初期画面で環境変数 COMPUTERNAME と USERSESSION を参照する． DB中に同一の COMPUTERNAME と USERSESSION のセッション情報があれば，自分自身のセッション情報なので 「ログオン成功」 と判断する． DB中に同一の COMPUTERNAME と USERSESSION のセッション情報が無く，かつ同じユーザID（環境変数USERNAMEの値） が存在すれば，他サーバ （または他クライアント） で既にログオンされているため， 「ログオン不可」 と判断する． 何れも存在しない場合は，セッション情報のDBへの取り込みが完了していないので，スリープして再度チェックを行う． チェックを繰り返しても存在しない場合は，障害と考えられるので 「障害が発生しました．エラーコード:xxxを管理者へ連絡して下さい」 等のエラーメッセージを表示して終了する．
-ファイル KGTN2010060302.pdf [(66.6 KB)] [kitasp 技術センター, 2010/06/03 09:24]</p>
+2010/10/04*
+[番号] 技術ノート KGTN 2010100101
+[現象] ADサーバおよびGGサーバが Windows Server 2008 の環境で， 「フォルダ リダイレクト」 の 「ドキュメント」 等が機能しない．
+[説明] この現象は，弊社およびGraphOn社でも確認しております．GraphOn社のコメントによれば， 「Ver4.0.1で対応の予定 （スケジュール未定） 」 とのことです．なお，GGサーバのコンソールで一度ログオンすれば，それ以降は 「フォルダ リダイレクト」 が機能します．
+備　考 この現象は， Windows Server 2008 上の Active Directory の環境に依存し，かつVer3.2系およびVer4.0系それぞれで発生します．
+The issue exists in 3.2.1 also, and it depends on AD on a 2008 GG server.
+ファイル KGTN2010100101.pdf [(67.3 KB)] [kitasp 技術センター, 2010/10/04 12:21]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1748/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1593/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -447,26 +448,26 @@ GMCheck でセッション情報をDBへ取り込む （例えば10秒間隔） 
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1749/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1595/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1749/">エンタープライズオプションの GMCheck （GMCheckRaw） を使ってセッション情報をDBで管理したいが，どのようにすればDBへ取り込むことが出来るのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1595/">Active Directory の 「移動ユーザプロファイル」 および 「フォルダリダイレクト」 を優しく解説した資料はないか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-06-02
+                            日付 2010-10-01
                             </p>
                             <p class="intro">*技術ノート
-2010/06/02*
-[番号] 技術ノート KGTN 2010060301
-[現象] エンタープライズオプションの GMCheck （GMCheckRaw） を使ってセッション情報をDBで管理したいが，どのようにすればDBへ取り込むことが出来るのか？
-[説明] GMCheck の設定ファイルGMCheck.ini で command パラメタにEXEやBAT等の実行可能なプログラムのパスを指定すると，GMCheck はセッション情報を採取した後にそのプログラムを呼び出します．呼び出す時に環境変数の採取した情報をセットしますので，その環境変数を参照することでセッション情報等をDBを登録することが可能です．
-参　考 プログラム （バッチ） のサンプルと，実行結果を以下に示します．
-[File: sample_report.bat] echo off echo &mdash; &raquo; C:¥TEMP¥report.txt echo dateTime = dateTime &raquo; C:¥TEMP¥report.txt echo hostName = hostName &raquo; C:¥TEMP¥report.txt echo ipAddress = ipAddress &raquo; C:¥TEMP¥report.txt echo maxSessions = maxSessions &raquo; C:¥TEMP¥report.txt echo sessionCount = sessionCount &raquo; C:¥TEMP¥report.txt echo availability = availability &raquo; C:¥TEMP¥report.txt echo versionNumber = versionNumber &raquo; C:¥TEMP¥report.</p>
+2010/10/01*
+[番号] 技術ノート KGTN 2010100102
+[現象] Active Directory の 「移動ユーザプロファイル」 および 「フォルダリダイレクト」 を優しく解説した資料はないか？
+[説明] マイクロソフト社の 「マイクロソフト Network &amp; AD サポートチーム公式ブログ」 にある 「プロファイル情報を格納したファイルサーバーの移行方法」 がこの辺の情報について優しく解説しています．下記ページをご覧下さい．
+http://blogs.technet.com/b/jpntsblog/archive/2010/04/07/3323553.aspx
+ファイル KGTN2010100102.pdf [(51 KB)] [kitasp 技術センター, 2010/10/01 10:36]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1749/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1595/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,26 +486,25 @@ GMCheck でセッション情報をDBへ取り込む （例えば10秒間隔） 
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1750/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1596/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1750/">APSログに，下記のような記録が繰り返し記録された．何が起きたのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1596/">Windows Server 2008 環境でGPMCを使いフォルダリダイレクトの設定を行おうとしたところ， 「ドキュメント」 が一覧に表示されない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-05-31
+                            日付 2010-09-30
                             </p>
                             <p class="intro">*技術ノート
-2010/05/31*
-[番号] 技術ノート KGTN 2010053101
-[現象] APSログに，下記のような記録が繰り返し記録された．何が起きたのか？
-ggw (?) CS: Invalid request ID - 263 ggw (?) CS_Component::processRequest (requestId: 263, channel: 0xbef350) ggw (?) Stack Trace: CS_Component::processRequest (requestId: 263) ggw (?) Stack Trace: CS_Bridge::processRequest(requestId: 263) ggw (???) Stack Trace: ChannelProcessorWndProc ()
-[説明] この繰り返しの直前に &ldquo;aps (???) CS: Broken protocol.&rdquo; という記録があれば，Windows またはネットワークの問題でサーバとクライアント間で一時的な通信障害が発生し，プロトコル上の同期が失われた状態が発生したと考えられます．同期が失われた状態では電文を正しく処理できませんので， 「同期が復旧するまでの間」 上記のようなログが記録されます．実害はありませんが，APSログが大きくなる場合は，クラスタマネージャの Server Options → Log → Maintenance でログファイルのバックアップの条件 （ファイルサイズ） を適切な値に設定して下さい．
-ファイル KGTN2010053101.pdf [(68.6 KB)] [kitasp 技術センター, 2010/05/31 14:15]</p>
+2010/09/30*
+[番号] 技術ノート KGTN 2010093002
+[現象] Windows Server 2008 環境でGPMCを使いフォルダリダイレクトの設定を行おうとしたところ， 「ドキュメント」 が一覧に表示されない．
+[説明] マイクロソフト社の知識ベース KB953407によると，原因は日本語版を作成する時に 「ドキュメント」 とすべきところを誤って 「最近使ったファイル」 に翻訳 （ローカライズ ） したとのことです．対応等については，当該知識ベースをご覧下さい．
+ファイル KGTN2010093002.pdf [(50.8 KB)] [kitasp 技術センター, 2010/09/30 14:13]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1750/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1596/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -523,27 +523,27 @@ ggw (?) CS: Invalid request ID - 263 ggw (?) CS_Component::processRequest (reque
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc387/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc360/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc387/">ggw</a></h4>
+                            <h4><a href="/posts/new_md/doc360/">[Windows] サーバを仮想化するに当り，サイジング （集約度） の目安は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-05-25
+                            日付 2010-09-29
                             </p>
                             <p class="intro">*技術ノート
-2010/05/25*
-[番号] 技術ノート KGTN 2010052501
-[現象] ggw-3.1.1系のサーバで，Windows の起動オプション （boot.ini 中のパラメタ） を /NoExecute=OptIn から /Execute に変更して再起動したところ，APS が開始しなくなった．
-[説明] 変更内容は 「データ実行防止」 の無効化ですが， Windows レベルではカーネルの変更が発生します．ggw-3.1.1系では，インストーラーがカーネルの内容をチェックし，それに適合するGGのシステムファイルをインストールするため，この （パラメタの変更に伴う） カーネルの変更が発生すると，APS　が開始しなくなります．従って，
- 起動オプションを元に戻す． 技術ノート KGTN#2010052101 の復旧するための方法の3を試す．  のどちらかで復旧を行って下さい．
-補　足 GGW3.2.1 + WS2008 + &ldquo;bcdedit /set nx alwaysoff&rdquo; の環境で，セッションが正常に終了しないという報告がありました．そのような現象が見られた場合は，&ldquo;bcdedit /set nx OptIn&rdquo; を設定して下さい．
-ファイル KGTN2010052501.pdf [(60.7 KB)] [kitasp 技術センター, 2014/01/29 17:17]</p>
+2010/09/29*
+[番号] 技術ノート KGTN 2010092901
+[現象] [Windows] サーバを仮想化するに当り，サイジング （集約度） の目安は？
+[説明] サーバの機能 （役割） や運用形態に左右されますので一般論として答えることは出来ませんが，ハードウエアベンダーやマイクロソフト社の情報などを参考にすると，4コアを積んだ物理サーバ上では4台の仮想サーバ，8コアを積んだ物理サーバ上では8台の仮想サーバ，16コアを積んだ物理サーバ上では16台の仮想サーバ，&hellip; がひとつの目安になります．
+GGサーバの場合は，始業時の集中ログオンやアプリケーションの利用によるプロセスの頻繁な生成や消滅等があり，バックグランド処理を行うサーバ （DBサーバなど） と比較して高負荷になりがちです．このような点も十分に考慮して，過度な集約を行わないことが肝要です．
+補　足 CPU （コア） だけでなく，物理的なバスやディスクのパフォーマンスも十分に考慮して下さい．仮想サーバも，最終的には物理的なバスやディスクを使用しますので，それらのパフォーマンスがネックとなり， Windows のパフォーマンスが大幅に低下した事例 （SANディスクを使用） もあります．
+ファイル KGTN2010092901.pdf [(62.6 KB)] [kitasp 技術センター, 2014/02/07 16:01]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc387/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc360/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

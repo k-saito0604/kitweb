@@ -409,27 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1082/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc987/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1082/">Adobe Acrobat 9 Pro は，Ver3.2.1 上で動作するのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc987/">[SDK] エンタープライズオプション GGSessionMonitor のデータベースファイルを PHP で読む方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-02-13
+                            日付 2012-07-05
                             </p>
                             <p class="intro">*技術ノート
-2012/02/13*
-[番号] 技術ノート KGTN 2010021803
-[現象] Adobe Acrobat 9 Pro は，Ver3.2.1 上で動作するのか？
-[説明] 技術およびライセンス上の問題があると考えられます．ドキュメントのPDF化が目的であれば，GGのオプション製品 SkyPDF for GO-Global の利用をご検討下さい．
-補足１ 「GGのクライアントプリンタとして &ldquo;Jaws PDF Creator&rdquo;　と &ldquo;PrimoPDF&rdquo; が動作した」 という報告が，幾つかのユーザ様より届いております．当然のことながら，GraphOn社および各ソフトウエアベンダーがその動作を保証するものではありませんので，利用等に当たっては自己責任でお願いします．
-補足２ GGH4.0では，クライアント印刷機能 （Universal Printer Driver 有効時） で &ldquo;Preview PDF&rdquo; というプリンタが自動的に作成され，このプリンタに印刷するとクライアント側にそのドキュメントのPDFファイルが表示されます． Adobe Reader のファイルメニューの中の 「コピーを保存」 を選ぶことで，PDFファイルをクライアント上に保存することが出来ます．つまり，GGH4.0では Adobe Acrobat 等のPDFクリエーター無しにPDFファイルを作成することが可能です．
-ファイル KGTN2010021803.pdf [(67.9 KB)] [kitasp 技術センター, 2012/02/13 12:48]</p>
+2012/07/05*
+[番号] 技術ノート KGTN 2012070501
+[現象] [SDK] エンタープライズオプション GGSessionMonitor のデータベースファイルを PHP で読む方法は？
+[説明] GGSessionMonitor が作成するデータベースファイルは SQLite3 です． PHP のドキュメントを読むと様々な方法がありますが，実際に読むことが出来たサンプルを以下に示します．
+&lt;?php $db = new PDO(&quot;sqlite:C:/GraphOn/check/gms413-now.db&quot;); $st = $db-&gt;prepare(&quot;SELECT * FROM session_tbl ORDER BY sessionName ASC&quot;); $st-&gt;execute(); $ii = 0; while($rt = $st-&gt;fetch()) { $ii++; echo &quot;&lt;tr&gt;¥n&quot;; echo &quot; &lt;td align=right&gt;&quot; . $rt['sessionID'] . &quot;&lt;/td&gt;¥n&quot;; echo &quot; &lt;td&gt;&quot; . $rt['sessionName'] . &quot;&lt;/td&gt;¥n&quot;; echo &quot; &lt;td&gt;&quot; . $rt['userName'] . &quot;&lt;/td&gt;¥n&quot;; echo &quot; &lt;td&gt;&quot; .</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1082/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc987/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -448,25 +446,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1083/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc988/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1083/">[Android Client] Android 4.0 (Ice Cream Sandwich) で Android Client を使ったが，キーボード表示等はメニューボタンから操作出来た方が良い．</a></h4>
+                            <h4><a href="/posts/new_md/doc988/">[SDK] エンタープライズオプションの GGSessionMonitor は，GGサーバへの接続に失敗した時，保持しているセッション情報を維持するのか？　それとも削除するのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-02-12
+                            日付 2012-07-02
                             </p>
                             <p class="intro">*技術ノート
-2012/02/12*
-[番号] 技術ノート KGTN 2012021303
-[現象] [Android Client] Android 4.0 (Ice Cream Sandwich) で Android Client を使ったが，キーボード表示等はメニューボタンから操作出来た方が良い．
-[説明] Android Phone にはメニューボタンが存在しますが， Android Tablet や iPad にはメニューボタンが存在しません．このため，操作性の統一をはかると，現在の仕様 （オンスクリーン・ツールバー） になります．
-ファイル KGTN2012021303.pdf [(47.8 KB)] [kitasp 技術センター, 2012/02/13 08:05]</p>
+2012/07/02*
+[番号] 技術ノート KGTN 2012070201
+[現象] [SDK] エンタープライズオプションの GGSessionMonitor は，GGサーバへの接続に失敗した時，保持しているセッション情報を維持するのか？　それとも削除するのか？
+[説明] GGサーバへの接続に失敗した時，GGSessionMonitor は保持しているセッション情報を削除 （セッションが切断された扱い） します．万一それが GGSessionMonitor 周辺の障害であったとしても，復旧後に登録されるセッションIDが同一になりますので，そのことを識別することは容易です．
+ファイル KGTN2012070201.pdf [(51 KB)] [kitasp 技術センター, 2012/07/02 09:13]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1083/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc988/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,25 +483,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1084/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc989/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1084/">[Android Client] タブレットを横にした状態でGGサーバに接続し，その後にタブレットを縦にすると （ローテーとさせると） ，画面が小さく表示される．</a></h4>
+                            <h4><a href="/posts/new_md/doc989/">[GGH4.1] GGH4.0からGGH4.1へバージョンを上げたところ，マルチモニタ環境でウインドウを他のモニタへ移動すると画面が乱れた．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-02-12
+                            日付 2012-06-29
                             </p>
                             <p class="intro">*技術ノート
-2012/02/12*
-[番号] 技術ノート KGTN 2012021302
-[現象] [Android Client] タブレットを横にした状態でGGサーバに接続し，その後にタブレットを縦にすると （ローテーとさせると） ，画面が小さく表示される．
-[説明] GGはクライアントから接続要求があった時点で画面サイズ （解像度） を設定します．このような仕様のため，接続した後にタブレットをローテートさせても画面サイズは変わらず，結果的に画面が小さく表示されてしまいます．画面サイズを変更したい時は，
- セッションを Disconnect する， 2) タブレットをローテートさせる， 3) セッション再接続を行う という手順で操作を行って下さい．なお，セッション再接続時にタッチスクリーン・キーボードが表示されているとその分狭くなりますので，必ずタッチスクリーン・キーボードを非表示にして再接続を行うようにして下さい．  ファイル KGTN2012021302.pdf [(55.7 KB)] [kitasp 技術センター, 2012/02/13 05:29]</p>
+2012/06/29*
+[番号] 技術ノート KGTN 2012062906
+[現象] [GGH4.1] GGH4.0からGGH4.1へバージョンを上げたところ，マルチモニタ環境でウインドウを他のモニタへ移動すると画面が乱れた．
+[説明] この現象は弊社でも確認しております． Windows Client / ActiveX Client を GGH4.1.3.12744 またはそれ以降に上げることで解消します．GGサーバおよびGGクライアントは，基本的には同一メジャーバージョン間で互換性がありますが，マルチモニタ環境等では互換性が無い場合があります．
+ファイル KGTN2012062906.pdf [(51 KB)] [kitasp 技術センター, 2012/06/29 11:46]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1084/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc989/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -522,25 +520,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1089/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc990/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1089/">[Android Client] Android Client は， Android 4.0 (Ice Cream Sandwich) の環境でも動作するのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc990/">[SDK] エンタープライズオプションの GGSessionMonitor はポーリング方式で情報を採取しているが，イベントドリブン方式の方が良いのではないか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-02-10
+                            日付 2012-06-29
                             </p>
                             <p class="intro">*技術ノート
-2012/02/10*
-[番号] 技術ノート KGTN 2012021004
-[現象] [Android Client] Android Client は， Android 4.0 (Ice Cream Sandwich) の環境でも動作するのか？
-[説明] 弊社では未だ確認しておりませんが， HTC Desire HD にAndroid 4.0 をインストールしたユーザ様より， 「画面は小さいものの，特に問題なく動作している」 という報告がありました．
-ファイル KGTN2012021004.pdf [(46.6 KB)] [kitasp 技術センター, 2012/02/10 11:08]</p>
+2012/06/29*
+[番号] 技術ノート KGTN 2012062905
+[現象] [SDK] エンタープライズオプションの GGSessionMonitor はポーリング方式で情報を採取しているが，イベントドリブン方式の方が良いのではないか？
+[説明] イベントドリブン方式も検討しましたが，使用しているインタフェースの制約，高負荷時の取りこぼしや遅延の可能性を考慮し，敢えてポーリング方式を採用しました．ポーリング方式の実装に当たっては，高い信頼性が要求される公営競技システム （トータリゼータ） 設計開発で培った技術を活用しております．
+ファイル KGTN2012062905.pdf [(54.7 KB)] [kitasp 技術センター, 2012/06/29 10:31]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1089/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc990/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

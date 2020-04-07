@@ -409,25 +409,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1584/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1437/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1584/">GGは，クライアント側のIMEを意識しているのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1437/">[GGW3.2.1] APSログに RS: Error getting port for printer というエラーが記録される．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-10-14
+                            日付 2011-02-27
                             </p>
                             <p class="intro">*技術ノート
-2010/10/14*
-[番号] 技術ノート KGTN 2010101403
-[現象] GGは，クライアント側のIMEを意識しているのか？
-[説明] GGサーバに複数のIMEがインストールされている場合，GGはクライアント側で使用しているIMEと同じものがあるかどうかチェックします．もし存在する場合は，クライアント側と同じIMEを選択します．存在しない場合は，GGがインストールされた時に設定されていたIME （フォールバックIME） を選択します．
-ファイル KGTN2010101403.pdf [(44.1 KB)] [kitasp 技術センター, 2010/10/14 13:13]</p>
+2011/02/27*
+[番号] 技術ノート KGTN 2011022803
+[現象] [GGW3.2.1] APSログに &ldquo;RS: Error getting port for printer&rdquo; というエラーが記録される．
+6406 2011-02-24 17:29:45.784 USER on server, APP (8028) RS: Error getting port for printer &ldquo;90LBPR_103-751@90W7PRUSER&rdquo;; Failed to open registry key.
+[説明] このエラーは，クライアントプリンタのポートの情報が得られなかったことを意味します．セキュリティの問題でレジストリを開くことが出来なかったか，またはプリンタドライバの問題等でレジストリが存在しなかったことが考えられます．他の （異なる機種の） プリンタを試して，同じ現象が発生すれば前者の可能性が高く，同じ現象が発生しなければ後者の可能性が高いと考えられます．また，同じプリンタを異なるユーザで試して，現象が発生しなければ，ユーザ （アカウント） に依存した問題だと考えられます．
+ファイル KGTN2011022803.pdf [(61.3 KB)] [kitasp 技術センター, 2011/02/28 07:47]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1584/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1437/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,27 +447,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1585/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1439/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1585/">GGクライアントからGGサーバへの接続 （TCP/IP） に時間がかかることがある．</a></h4>
+                            <h4><a href="/posts/new_md/doc1439/">[GGW3.2.1] 印刷時に拡張子BPFのファイルがオープン出来ないというエラーがAPSログに記録される．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-10-13
+                            日付 2011-02-27
                             </p>
                             <p class="intro">*技術ノート
-2010/10/13*
-[番号] 技術ノート KGTN 201011301
-[現象] GGクライアントからGGサーバへの接続 （TCP/IP） に時間がかかることがある．
-[説明] このような現象は，さまざまな要因が考えられますので，多数の試験を行い原因を絞り込むことが大切です．
-GGサーバの指定をコンピュータ名からIPアドレスに変更してみる （名前解決に関する問題かどうか） ． GGクライアントからGGサーバへ継続的にPINGを送信してみる （ネットワークに関する問題かどうか） ． GGサーバで動作するタスクやアプリケーションをチェックする （サーバの負荷に関する問題かどうか） ．
-特定の時間帯に遅くなる等パターンが分かっている場合は，その時間帯に絡みそうなネットワークやサーバの処理を重点的にチェックするのが良いでしょう．例えば，アンチウイルスソフトが共有ディスクを定期的にスキャンする設定になっており，その処理でネットワークの帯域が広く占有され，その結果GGクライアント〜GGサーバ間の接続障害を引き起こした事例もあります．
-ファイル KGTN2010101301.pdf [(60.4 KB)] [kitasp 技術センター, 2010/10/13 14:32]</p>
+2011/02/27*
+[番号] 技術ノート KGTN 2011022801
+[現象] [GGW3.2.1] 印刷時に拡張子BPFのファイルがオープン出来ないというエラーがAPSログに記録される．
+89 2011-02-22 18:33:33.049 user on server, xxx (1260) RS: Error printing document - Failed to open temporary file &ldquo;C:¥Users¥user¥AppData¥Local¥Temp¥57210312128.bpf&rdquo;.
+[説明] 拡張子 .bpf のファイルは，クライアント印刷機能 （Native Driver） で印刷が行われた時に，サーバ側に一時的に作成されるスプールファイルです．このファイルのオープンに失敗したということですから，恐らくサーバのセキュリティ絡みの問題だと思われます （アクセス権が不十分でTempフォルダにファイルを作成出来ない等） ．
+ファイル KGTN2011022801.pdf [(61.1 KB)] [kitasp 技術センター, 2011/02/28 07:19]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1585/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1439/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,26 +485,26 @@ GGサーバの指定をコンピュータ名からIPアドレスに変更して�
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1586/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1440/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1586/">プログラムウインドウ （PW） をログオン時に最大化させたい．</a></h4>
+                            <h4><a href="/posts/new_md/doc1440/">[GGH4.0] クライアントドライブ機能で FD, CD-ROM, DVD-ROM 等が表示されない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-10-08
+                            日付 2011-02-25
                             </p>
                             <p class="intro">*技術ノート
-2010/10/08*
-[番号] 技術ノート KGTN 201010802
-[現象] プログラムウインドウ （PW） をログオン時に最大化させたい．
-[説明] GGサーバのログオンスクリプトで，以下のレジストリを設定することで， PW のウインドウが最大化された状態で表示されます．
-HKCU¥Software¥GraphOn¥Bridges¥1.0.0¥ProgramWindow¥Settings¥Standard WinPlaceShowState REG_DWORD 3
-ファイル KGTN2010100802.pdf [(46.6 KB)] [kitasp 技術センター, 2010/10/08 11:27]</p>
+2011/02/25*
+[番号] 技術ノート KGTN 2011022504
+[現象] [GGH4.0] クライアントドライブ機能で FD, CD-ROM, DVD-ROM 等が表示されない．
+[説明] 4.0系では， FD, CD-ROM, DVD-ROM 等のリームバブルディスクは，クライアントドライブとしてサポートされません． Administrator Guide の内容を以下に引用します．
+GO-Global allows users to access USB drives. Removable drives such a floppy disks, CD ROMs, and DVD-ROMs are not supported as client drives.
+ファイル KGTN2011022504.pdf [(52.3 KB)] [kitasp 技術センター, 2011/02/25 16:15]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1586/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1440/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -523,27 +523,26 @@ HKCU¥Software¥GraphOn¥Bridges¥1.0.0¥ProgramWindow¥Settings¥Standard WinPl
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1589/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1441/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1589/">ggw</a></h4>
+                            <h4><a href="/posts/new_md/doc1441/">「描画オブジェクトが不完全に描画される」 「ウインドウ内の幾つかの描画オブジェクトが表示されない」 等の問題が発生したが，どんな情報を採取すれば良いか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-10-07
+                            日付 2011-02-25
                             </p>
                             <p class="intro">*技術ノート
-2010/10/07*
-[番号] 技術ノート KGTN 201010701
-[現象] ggw-3.2.1.4466を利用しているが，PW （プログラムウインドウ） のメニューから Help を消したい．
-[説明] これは 「純粋に」 技術的な観点からの説明です． pw.dll のリソース Menu → 128 → 1033 の中にある
-POPUP &ldquo;&amp;Help&rdquo; { &hellip; }
-を削除し，コンパイル＆保存することでメニュー項目の Help を消すことができます．
-ファイル KGTN2010100701.pdf [(216 KB)] [kitasp 技術センター, 2010/10/07 11:19]</p>
+2011/02/25*
+[番号] 技術ノート KGTN 2011022501
+[現象] 「描画オブジェクトが不完全に描画される」 「ウインドウ内の幾つかの描画オブジェクトが表示されない」 等の問題が発生したが，どんな情報を採取すれば良いか？
+[説明] クライアントクリップボード機能が 「有効」 であれば，この機能を 「無効」 にして再現するかどうかを確認して下さい．状況が変わらない場合は，クライアント側で動作する ggw.exe の情報をタスクマネージャ （プロセスタブ，表示→列の選択で各項目を選択） か Process Explorer （Performanceタブ） で採取して下さい．あと，ビデオアダプタのメモリの大きさ，画面の解像度と色深度等もお知らせ下さい．
+参　考 本技術ノートに関連するGraphOn社のコメントを引用します．
+It could be some kind of client side memory or graphical handle issue. If the client was running out of memory or handles then painting anomalies like this could occur. We think they could tell if this is the issue by running the task manager on the client and looking at the ggw process.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1589/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1441/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

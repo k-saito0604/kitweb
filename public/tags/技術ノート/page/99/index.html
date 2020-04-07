@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2575/">
+                                      <a href="/posts/new_md/doc83/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2575/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc83/">[Windows] C:ドライブが存在しない Windows のサーバー環境を構築したいが，何かヒントはないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,19 +340,21 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2575/"><i class="far fa-calendar"></i> 2014-11-21</a>
+                                            <a href="/posts/new_md/doc83/"><i class="far fa-calendar"></i> 2015-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/11/21*
-[番号] 技術ノート KGTN 2014111802
-[現象] [GGH4.X-5.X] アプリケーション配信に関する処理シーケンスを知りたい．
-[説明] ActiveXクライアント利用時の処理の流れを，以下に示します．ウエッブサーバーの機能は，ActiveXクライアントおよびログオン情報 （接続先GGサーバーやアカウント等の情報） の提供のみを行います．ActiveXクライアント～GGサーバー間で接続処理が完了すると，以後は 「ウエッブサーバーを介さずに」 そのコネクション上で全ての処理 （注意： ログオン処理も含まれます） が行われます．なお，Windowsクライアント （専用クライアント） を利用する場合は，下記４のシーケンスから開始します．
-ファイル KGTN2014111802.pdf [(164 KB)] [kitasp 技術センター, 2016/05/27 15:04]
-KGTN2014111802.jpg
-表示 [(42.9 KB)] [kitasp 技術センター, 2016/05/27 15:04]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2575/" class="btn btn-template-main">続きを読む</a>
+2015/06/11*
+[番号] 技術ノート KGTN 2015021703
+[現象] [Windows] C:ドライブが存在しない Windows のサーバー環境を構築したいが，何かヒントはないのか？
+[説明] Windows　システム イメージ マネージャー (Windows SIM) を利用することで，C:ドライブが存在しない Windows のサーバー環境を構築することが出来ます．以下にヒントとなる情報を示します．
+ファイル KGTN2015021703.pdf [(167 KB)] [kitasp 技術センター, 2015/06/11 17:13]
+KGTN2015021703-1.jpg
+表示 [(44.6 KB)] [kitasp 技術センター, 2015/06/17 17:08]
+KGTN2015021703-2.jpg
+表示 [(39.3 KB)] [kitasp 技術センター, 2015/06/17 17:08]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc83/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -362,7 +364,7 @@ KGTN2014111802.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2576/">
+                                      <a href="/posts/new_md/doc84/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -370,7 +372,7 @@ KGTN2014111802.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2576/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc84/">[Windows] C:ドライブが存在しない Windows のサーバー環境を構築出来るか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -383,17 +385,21 @@ KGTN2014111802.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2576/"><i class="far fa-calendar"></i> 2014-11-21</a>
+                                            <a href="/posts/new_md/doc84/"><i class="far fa-calendar"></i> 2015-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/11/21*
-[番号] 技術ノート KGTN 2014111706
-[現象] [GGH4.X-5.X] Citrix XenApp や VMware Horizon と比較してパフォーマンスはどうか？
-[説明] ある大規模システムのインフラ設計で，数ヶ月に渡り GG と Citrix XenApp と VMware Horizon （サーバーOS環境） の公平な評価 （実運用を想定した業務アプリケーションでの評価） が行われました．CPUやメモリの使用量については，その上で動作するアプリケーションの方が遙かに多く使用するため，３製品に特に大きな差はありませんでした．差が出た点は，ログオン時間とデータ通信量です．GGはセッション毎にWin32サブシステムを生成しないため，他製品よりも早くログオン処理が完了しました．また，GGは定期的に画面を監視して差分を転送するのではなく，描画命令を仮想化してクライアント側へ転送するため，トータルのデータ通信量が少ないという結果になりました （注： 定期的な通信が発生せず，荒い画像を先に送信するようなこともありません） ．このように，GGはGraphOn社の独自の方式で十分な性能を有しております．
-ファイル KGTN2014111706.pdf [(73.2 KB)] [kitasp 技術センター, 2016/05/27 15:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2576/" class="btn btn-template-main">続きを読む</a>
+2015/06/11*
+[番号] 技術ノート KGTN 2015021702
+[現象] [Windows] C:ドライブが存在しない Windows のサーバー環境を構築出来るか？
+[説明] Windows　システム イメージ マネージャー (Windows SIM) を利用することで，以下のスクリーンショットのようにC:ドライブが存在しない Windows のサーバー環境を構築することが出来ます．このような特殊な　Windows のインストール等については，弊社プロフェッショナル・サービスで対応いたします．
+ファイル KGTN2015021702.pdf [(130 KB)] [kitasp 技術センター, 2015/06/11 17:12]
+KGTN2015021702-1.jpg
+表示 [(37.7 KB)] [kitasp 技術センター, 2015/06/17 16:54]
+KGTN2015021702-2.jpg
+表示 [(27 KB)] [kitasp 技術センター, 2015/06/17 16:55]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc84/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -403,7 +409,7 @@ KGTN2014111802.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2616/">
+                                      <a href="/posts/new_md/doc116/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -411,7 +417,7 @@ KGTN2014111802.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2616/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc116/">[Windows] GGサーバーのアップグレードを外部のコンピュータから行いたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -424,17 +430,17 @@ KGTN2014111802.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2616/"><i class="far fa-calendar"></i> 2014-11-21</a>
+                                            <a href="/posts/new_md/doc116/"><i class="far fa-calendar"></i> 2015-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/11/21*
-[番号] 技術ノート KGTN 2014111710
-[現象] [GGH4.X-5.X] GG上でどのようなアプリケーションが正常に動作しないか？
-[説明] 以下のようなアプリケーションは，GG上で正常に動作しない可能性が高いと考えられます．
- 絶対パスでファイルを参照しているアプリケーション． ビジーループ処理を行っているアプリケーション． Windowsの下位レベルのAPIを使用しているアプリケーション． ウインドウ管理が特殊なアプリケーション （例：アクティブなのにウインドウが最上位に位置しない）． DirectXで描画するアプリケーション （注： GGH4.8.2以降であれば動作）． 映像系のアプリケーション （注：将来のバージョンで H.264 をサポート予定）． クライアント側の背景を透過表示するような仕様のアプリケーション （注：不透明表示になります）． デスクトップでの利用を想定したアプリケーション （デスクトップのリソースへのアクセス）． 9.その他  ファイル KGTN2014111710.pdf [(61.2 KB)] [kitasp 技術センター, 2016/03/11 15:24]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2616/" class="btn btn-template-main">続きを読む</a>
+2015/06/11*
+[番号] 技術ノート KGTN 2015031201
+[現象] [Windows] GGサーバーのアップグレードを外部のコンピュータから行いたい．
+[説明] Windows Sysinternals の PsExec と WSH (VBScript) を使用したサンプルを以下に示します．このスクリプトは，GGのインストールプログラム （ファイル） をターゲットのGGサーバーへ自動的にコピーし，アップグレード処理を行います．なお，この内容についての助言は歓迎しますが，質問等はご遠慮下さい．
+'- '- PsGGUpgrade.vbs : GG のアップグレードを行うスクリプト '- Sample: cscript PsGGUpgrade.vbs 10.1.8.93 gg-host.windows_x64.exe '- Option Explicit Dim objShell,objFso Dim objParm,argServer,argCommand Dim strResult,aryStrings,aryStrings2,ii '--- Set objShell = CreateObject(&quot;Wscript.Shell&quot;) Set objFso = CreateObject(&quot;Scripting.FileSystemObject&quot;) Set objParm = Wscript.Arguments '--- If objParm.Count &lt;&gt; 2 Then WScript.Echo &quot;Usage: PsGGUpgrade &lt;server&gt; &lt;file&gt;&quot; WScript.Quit 101 End If '--- argServer = objParm(0) argCommand = objParm(1) &amp; &quot; /s /v&quot;&quot;/qn REINSTALL=All&quot;&quot;&quot; strResult = RemoteShell(&quot;PsExec -d -c -f &quot; &amp; argServer &amp; &quot; &quot; &amp; argCommand) Wscript.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc116/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -444,7 +450,7 @@ KGTN2014111802.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2617/">
+                                      <a href="/posts/new_md/doc125/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -452,7 +458,7 @@ KGTN2014111802.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2617/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc125/">[Windows] ISOファイル （イメージ） にファイルを追加したいが，どのようなソフトウエアがあるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -465,18 +471,22 @@ KGTN2014111802.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2617/"><i class="far fa-calendar"></i> 2014-11-21</a>
+                                            <a href="/posts/new_md/doc125/"><i class="far fa-calendar"></i> 2015-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/11/21*
-[番号] 技術ノート KGTN 2014111705
-[現象] [GGH4.X-5.X] GGにセキュリティに関する機能 （クリップボード共有の禁止，スクリーンショットの取得禁止，操作ログの採取など） はあるのか？
-[説明] スクリーンショットの取得禁止や操作ログの採取に関しては，アプリケーション配信機能の範囲を超えるため，他ソフトウエアの併用をお願いします．
-クライアントとサーバー間のクリップボード共有については，クライアントのリソース利用という観点から，以下のように細かな機能を持っております．
- 禁止 片方向 （クライアント → サーバー） 許可 片方向 （サーバー → クライアント） 許可 双方向許可  ファイル KGTN2014111705.pdf [(55.2 KB)] [kitasp 技術センター, 2016/03/11 15:23]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2617/" class="btn btn-template-main">続きを読む</a>
+2015/06/11*
+[番号] 技術ノート KGTN 2015022505
+[現象] [Windows] ISOファイル （イメージ） にファイルを追加したいが，どのようなソフトウエアがあるか？
+[説明] 調べた範囲では，以下のソフトウエアが見つかりました．
+  WinISO (Shareware) ? JPY 1,814 http://www.winiso.com/
+  UltraISO (Shareware) ? USD 29.95 http://www.ezbsystems.com/ultraiso/
+  PowerISO (Shareware) ? USD 29.95 http://poweriso.com/
+  MagicISO (Shareware) - JPY 3,915 http://www.magiciso.com/
+  WinISO では， 1) ISOファイルを開く， 2) 開いたファイルの中の適当なフォルダにファイルを追加する， 3) 名前を付けてISO形式で保存する， という手順で簡単にファイルを取り込むことが出来ます．
+ファイル KGTN2015022505.pdf [(55.1 KB)] [kitasp 技術センター, 2015/06/11 17:26]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc125/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -486,7 +496,7 @@ KGTN2014111802.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2639/">
+                                      <a href="/posts/new_md/doc113/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -494,7 +504,7 @@ KGTN2014111802.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2639/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc113/">[Windows] PowerShell でリモート管理をしたいが，必要な設定は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -507,17 +517,20 @@ KGTN2014111802.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2639/"><i class="far fa-calendar"></i> 2014-11-21</a>
+                                            <a href="/posts/new_md/doc113/"><i class="far fa-calendar"></i> 2015-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/11/21*
-[番号] 技術ノート KGTN 2014111702
-[現象] [GGH4.X-5.X] GG上で音声や動画を使用するアプリケーションを利用出来るか？
-[説明] Flash等を使用した動的なウエッブページの表示は可能ですが，映像等の視聴を行うアプリケーションの利用は出来ません．ロードマップ上では，将来のバージョンで動画 H.264 がサポートされる予定です （音声についてはVer5でサポートされております） ．
-ファイル KGTN2014111702.pdf [(52.2 KB)] [kitasp 技術センター, 2016/02/05 13:27]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2639/" class="btn btn-template-main">続きを読む</a>
+2015/06/11*
+[番号] 技術ノート KGTN 2015032601
+[現象] [Windows] PowerShell でリモート管理をしたいが，必要な設定は？
+[説明] 管理するサーバーと管理されるサーバー，それぞれでアクセス許可を与える必要があります．
+[管理されるサーバー側での設定] PowerShell コンソールを管理者権限で起動し，下記コマンドを実行する． Enable-PSRemoting
+[管理するサーバー側での設定] PowerShell コンソールを管理者権限で起動し，下記コマンドを実行する． Set-Item WSMan:localhostClientTrustedHosts -Value *
+詳細については，例えば http://atamoco.boy.jp/ps/20100913_2.php をご覧下さい．
+ファイル KGTN2015032601.pdf [(55.4 KB)] [kitasp 技術センター, 2015/06/11 17:43]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc113/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -527,7 +540,7 @@ KGTN2014111802.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2653/">
+                                      <a href="/posts/new_md/doc127/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -535,7 +548,7 @@ KGTN2014111802.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2653/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc127/">[Windows] Windows (WS2008R2やWS2012R2) インストールDVDのイメージに無人インストールの応答ファイルを加えたいが，どこに置けば良いのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -548,19 +561,18 @@ KGTN2014111802.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2653/"><i class="far fa-calendar"></i> 2014-11-21</a>
+                                            <a href="/posts/new_md/doc127/"><i class="far fa-calendar"></i> 2015-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/11/21*
-[番号] 技術ノート KGTN 2014111704
-[現象] [GGH4.X-5.X] GG上で動作するアプリケーションから利用可能なクライアント側のリソースは？
-[説明] GGがサポートするリソースは， 1) クリップボード， 2) サウンド， 3) ドライブ， 4) プリンタ, 5) シリアル＆パラレルポート， 6) スマートカード です．利用の可否は，クラスタマネージャの下記画面で設定することが出来ます．クリップボードについては，設定ファイルでコピー＆ペーストの方向 （クライアント → サーバー，サーバー → クライアント，双方向） を指定することが出来ます．なお，ヘッドセットやICカードリーダー等USBで接続するディバイスについては，USBの仮想化ソフトウエアを併用することで利用出来る可能性があります．
-ファイル KGTN2014111704.pdf [(67.6 KB)] [kitasp 技術センター, 2015/12/25 15:32]
-KGTN2014111704.jpg
-表示 [(21.9 KB)] [kitasp 技術センター, 2015/12/25 15:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2653/" class="btn btn-template-main">続きを読む</a>
+2015/06/11*
+[番号] 技術ノート KGTN 2015022504
+[現象] [Windows] Windows (WS2008R2やWS2012R2) インストールDVDのイメージに無人インストールの応答ファイルを加えたいが，どこに置けば良いのか？
+[説明] イメージ中のフォルダ sources の下に Autounattend.xml というファイル名で応答ファイルを置いて下さい．
+https://msdn.microsoft.com/ja-jp/library/hh824950.aspx Windows セットアップの自動化の概要
+ファイル KGTN2015022504.pdf [(49.1 KB)] [kitasp 技術センター, 2015/06/11 17:25]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc127/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -570,7 +582,7 @@ KGTN2014111704.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc95/">
+                                      <a href="/posts/new_md/doc117/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -578,7 +590,7 @@ KGTN2014111704.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc95/">[GGH4.X] GGH4.8.2のサーバー側およびクライアント側のシステム要件は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc117/">[Windows] Windows Server 2008 R2 で PowerShell 4.0 を利用したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -591,17 +603,19 @@ KGTN2014111704.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc95/"><i class="far fa-calendar"></i> 2014-11-21</a>
+                                            <a href="/posts/new_md/doc117/"><i class="far fa-calendar"></i> 2015-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/11/21*
-[番号] 技術ノート KGTN 2014111803
-[現象] [GGH4.X] GGH4.8.2のサーバー側およびクライアント側のシステム要件は？
-[説明] 主なシステム要件は下記の通りです．クライアント側は，ブラウザから起動するクライアントとインストールして起動する専用クライアントの２種類があります（iOS と Android は専用クライアントのみ）．
-[サーバー側] OS: Windows Server 2012 R2 Datacenter Edition Windows Server 2012 R2 Standard Edition Windows Server 2012 Standard Edition Windows Server 2008 R2 with SP1 Standard Edition Windows Server 2008 R2 with SP1 Enterprise Edition Windows Server 2008 with SP2 Standard Edition (32/64-bit) Windows Server 2008 with SP2 Enterprise Edition (32/64-bit) Windows Server 2003 R2 with SP2 Standard Edition Windows Server 2003 R2 with SP2 Enterprise Edition Memory: 2GB以上 Network: RTT 500ms 以下</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc95/" class="btn btn-template-main">続きを読む</a>
+2015/06/11*
+[番号] 技術ノート KGTN 2015031102
+[現象] [Windows] Windows Server 2008 R2 で PowerShell 4.0 を利用したい．
+[説明] 下記ファイルをダウンロードし， Windows Server 2008 R2 にインストールして下さい．
+Microsoft .NET Framework 4.5.1 NDP451-KB2858728-x86-x64-AllOS-ENU.exe http://www.microsoft.com/ja-jp/download/details.aspx?id=40779
+Windows Management Framework 4.0 Windows6.1-KB2819745-x64-MultiPkg.msu http://www.microsoft.com/ja-jp/download/details.aspx?id=40855
+ファイル KGTN2015031102.pdf [(50.1 KB)] [kitasp 技術センター, 2015/06/11 17:40]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc117/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -611,7 +625,7 @@ KGTN2014111704.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc163/">
+                                      <a href="/posts/new_md/doc82/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -619,7 +633,7 @@ KGTN2014111704.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc163/">[GGH4.X] GGではポリシーによる制御は可能か？</a></h2>
+                                    <h2><a href="/posts/new_md/doc82/">[Windows] Windows Server 2012 R2 のインストールをカスタマイズしたいが， Windows Server 2008 R2 用の Windows　システム イメージ マネージャー (Windows SIM) を使えば良いのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -632,17 +646,20 @@ KGTN2014111704.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc163/"><i class="far fa-calendar"></i> 2014-11-21</a>
+                                            <a href="/posts/new_md/doc82/"><i class="far fa-calendar"></i> 2015-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/11/21*
-[番号] 技術ノート KGTN 2014111708
-[現象] [GGH4.X] GGではポリシーによる制御は可能か？
-[説明] Windowsのポリシーを適用することは出来ますが （Apply Group Policy） ，GG自体の動作に関するポリシーはありません．フォルダ %ALLUSERSPROFILE%GraphOn の下にあるXMLファイルで，GGの細かな機能を設定することが出来ます．なお，これらのXMLファイルの内容を修正する場合は，必ずサービス GO-Global Application Publishing Service を停止して行って下さい．
-ファイル KGTN2014111708.pdf [(52.9 KB)] [kitasp 技術センター, 2014/11/21 16:17]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc163/" class="btn btn-template-main">続きを読む</a>
+2015/06/11*
+[番号] 技術ノート KGTN 2015021704
+[現象] [Windows] Windows Server 2012 R2 のインストールをカスタマイズしたいが， Windows Server 2008 R2 用の Windows　システム イメージ マネージャー (Windows SIM) を使えば良いのか？
+[説明] いいえ，Windows Server 2008 R2 用の Windows SIM を使用することは出来ません （イメージの選択は出来ますが，カタログ・ファイルの作成でエラーが発生します） ．Windows 8 用 Windows アセスメント &amp; デプロイメント キット (Windows ADK) に含まれる Windows SIM を使用して下さい．
+http://www.microsoft.com/ja-jp/download/details.aspx?id=30652 Windows 8 用 Windows アセスメント &amp; デプロイメント キット
+ファイル KGTN2015021704.pdf [(99.5 KB)] [kitasp 技術センター, 2015/06/11 17:14]
+KGTN2015021704.jpg
+表示 [(39.7 KB)] [kitasp 技術センター, 2015/06/17 17:14]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc82/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -652,7 +669,7 @@ KGTN2014111704.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc164/">
+                                      <a href="/posts/new_md/doc130/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -660,7 +677,7 @@ KGTN2014111704.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc164/">[GGH4.X] GGのアカウントは独自方式なのか？　統合Windows認証を利用出来るか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc130/">[Windows] Windows Server 2012 R2 の初期インストールおよび sysprep に使える応答ファイルのサンプルが欲しい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -673,17 +690,17 @@ KGTN2014111704.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc164/"><i class="far fa-calendar"></i> 2014-11-21</a>
+                                            <a href="/posts/new_md/doc130/"><i class="far fa-calendar"></i> 2015-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/11/21*
-[番号] 技術ノート KGTN 2014111707
-[現象] [GGH4.X] GGのアカウントは独自方式なのか？　統合Windows認証を利用出来るか？
-[説明] GGは，独自の認証方式を持っておりません．Windows環境の 1) 基本認証， 2) 統合Windows認証 を使用することが出来ます．GGにはクライアント側に資格情報を保存する機能 （Cache passwords on the client） があり，これを利用することで統合Windows認証を使用しない場合でも簡単にログオンすることが出来ます．
-ファイル KGTN2014111707.pdf [(49.1 KB)] [kitasp 技術センター, 2014/11/21 16:15]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc164/" class="btn btn-template-main">続きを読む</a>
+2015/06/11*
+[番号] 技術ノート KGTN 2015022501
+[現象] [Windows] Windows Server 2012 R2 の初期インストールおよび sysprep に使える応答ファイルのサンプルが欲しい．
+[説明] 以下に，Windows Server 2012 R2 の初期インストールおよび sysprep に使える応答ファイルのサンプルを示します．なお，この内容についての助言は歓迎しますが，質問等はご遠慮下さい．
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; &lt;unattend xmlns=&quot;urn:schemas-microsoft-com:unattend&quot;&gt; &lt;settings pass=&quot;windowsPE&quot;&gt; &lt;component name=&quot;Microsoft-Windows-International-Core-WinPE&quot; processorArchitecture=&quot;amd64&quot; publicKeyToken=&quot;31bf3856ad364e35&quot; language=&quot;neutral&quot; versionScope=&quot;nonSxS&quot; xmlns:wcm=&quot;http://schemas.microsoft.com/WMIConfig/2002/State&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt; &lt;SetupUILanguage&gt; &lt;UILanguage&gt;ja-JP&lt;/UILanguage&gt; &lt;/SetupUILanguage&gt; &lt;InputLocale&gt;ja-JP&lt;/InputLocale&gt; &lt;SystemLocale&gt;ja-JP&lt;/SystemLocale&gt; &lt;UILanguage&gt;ja-JP&lt;/UILanguage&gt; &lt;UserLocale&gt;ja-JP&lt;/UserLocale&gt; &lt;/component&gt; &lt;component name=&quot;Microsoft-Windows-Setup&quot; processorArchitecture=&quot;amd64&quot; publicKeyToken=&quot;31bf3856ad364e35&quot; language=&quot;neutral&quot; versionScope=&quot;nonSxS&quot; xmlns:wcm=&quot;http://schemas.microsoft.com/WMIConfig/2002/State&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt; &lt;UserData&gt; &lt;ProductKey&gt; &lt;Key&gt;XXXXX-XXXXX-XXXXX-XXXXX-XXXXX&lt;/Key&gt; &lt;WillShowUI&gt;OnError&lt;/WillShowUI&gt; &lt;/ProductKey&gt; &lt;AcceptEula&gt;true&lt;/AcceptEula&gt; &lt;/UserData&gt; &lt;ImageInstall&gt; &lt;OSImage&gt; &lt;InstallFrom&gt; &lt;MetaData wcm:action=&quot;add&quot;&gt; &lt;Key&gt;/IMAGE/NAME&lt;/Key&gt; &lt;Value&gt;Windows Server 2012 R2 SERVERSTANDARD&lt;/Value&gt; &lt;/MetaData&gt; &lt;/InstallFrom&gt; &lt;InstallTo&gt; &lt;DiskID&gt;0&lt;/DiskID&gt; &lt;PartitionID&gt;2&lt;/PartitionID&gt; &lt;/InstallTo&gt; &lt;/OSImage&gt; &lt;/ImageInstall&gt; &lt;DiskConfiguration&gt; &lt;WillShowUI&gt;OnError&lt;/WillShowUI&gt; &lt;Disk wcm:action=&quot;add&quot;&gt; &lt;DiskID&gt;0&lt;/DiskID&gt; &lt;WillWipeDisk&gt;true&lt;/WillWipeDisk&gt; &lt;CreatePartitions&gt; &lt;CreatePartition wcm:action=&quot;add&quot;&gt; &lt;Order&gt;1&lt;/Order&gt; &lt;Size&gt;350&lt;/Size&gt; &lt;Type&gt;Primary&lt;/Type&gt; &lt;/CreatePartition&gt; &lt;CreatePartition wcm:action=&quot;add&quot;&gt; &lt;Order&gt;2&lt;/Order&gt; &lt;Size&gt;64000&lt;/Size&gt; &lt;Type&gt;Primary&lt;/Type&gt; &lt;/CreatePartition&gt; &lt;/CreatePartitions&gt; &lt;ModifyPartitions&gt; &lt;ModifyPartition wcm:action=&quot;add&quot;&gt; &lt;Active&gt;true&lt;/Active&gt; &lt;Extend&gt;false&lt;/Extend&gt; &lt;Format&gt;NTFS&lt;/Format&gt; &lt;Label&gt;Boot&lt;/Label&gt; &lt;Order&gt;1&lt;/Order&gt; &lt;PartitionID&gt;1&lt;/PartitionID&gt; &lt;/ModifyPartition&gt; &lt;ModifyPartition wcm:action=&quot;add&quot;&gt; &lt;Extend&gt;false&lt;/Extend&gt; &lt;Format&gt;NTFS&lt;/Format&gt; &lt;Label&gt;Windows&lt;/Label&gt; &lt;Letter&gt;C&lt;/Letter&gt; &lt;Order&gt;2&lt;/Order&gt; &lt;PartitionID&gt;2&lt;/PartitionID&gt; &lt;/ModifyPartition&gt; &lt;/ModifyPartitions&gt; &lt;/Disk&gt; &lt;/DiskConfiguration&gt; &lt;/component&gt; &lt;/settings&gt; &lt;settings pass=&quot;oobeSystem&quot;&gt; &lt;component name=&quot;Microsoft-Windows-Shell-Setup&quot; processorArchitecture=&quot;amd64&quot; publicKeyToken=&quot;31bf3856ad364e35&quot; language=&quot;neutral&quot; versionScope=&quot;nonSxS&quot; xmlns:wcm=&quot;http://schemas.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc130/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -693,7 +710,7 @@ KGTN2014111704.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc160/">
+                                      <a href="/posts/new_md/doc85/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -701,7 +718,7 @@ KGTN2014111704.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc160/">[GGH4.X] GGを利用する場合に前提となるシステムおよび共存出来ないシステムを知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc85/">[Windows] Windows System Image Manager (Windows SIM) の入手方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -714,17 +731,21 @@ KGTN2014111704.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc160/"><i class="far fa-calendar"></i> 2014-11-21</a>
+                                            <a href="/posts/new_md/doc85/"><i class="far fa-calendar"></i> 2015-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/11/21*
-[番号] 技術ノート KGTN 2014111801
-[現象] [GGH4.X] GGを利用する場合に前提となるシステムおよび共存出来ないシステムを知りたい．
-[説明] GGは単独でアプリケーション配信機能を提供することが出来ますので，その動作に必要不可欠なシステム（前提となるシステム） は特にありません．また共存出来ないシステムも基本的にはありませんが，アンチウイルスソフトウエアの中には，GGをウイルス等と誤認する製品もあるようです．利用実績のあるアンチウイルスソフトウエアについては，弊社にお問い合わせ下さい．
-ファイル KGTN2014111801.pdf [(48.9 KB)] [kitasp 技術センター, 2014/11/21 16:28]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc160/" class="btn btn-template-main">続きを読む</a>
+2015/06/11*
+[番号] 技術ノート KGTN 2015021701
+[現象] [Windows] Windows System Image Manager (Windows SIM) の入手方法は？
+[説明] Windows　システム イメージ マネージャー (Windows SIM) は，Windows セットアップを無人で行うための応答ファイルの作成ツールで，Windows自動インストール キット (Windows AIK) に含まれています．このISOイメージは下記サイトからダウンロードすることが出来ます．
+http://www.microsoft.com/ja-jp/download/details.aspx?id=5753 Windows 7 用の Windows 自動インストール キット (AIK)
+ISOイメージをマウントし 1) StartCD.exe を実行， 2) 「Windows AIK セットアップ」 をクリック， 3) インストール完了後 「終了」 をクリック， 4) スタートメニューから 「Microsoft Windows AIK → Windows システム イメージ マネージャー」 を選択 して下さい．
+Windows AIK のセットアップ画面
+Windows SIM の画面
+ファイル KGTN2015021701.pdf [(142 KB)] [kitasp 技術センター, 2015/06/11 17:11]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc85/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -794,7 +815,7 @@ KGTN2014111704.jpg
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

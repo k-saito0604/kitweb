@@ -409,30 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2544/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2489/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2544/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2489/">[GGH5.X] logon.html の処理開始時の大まかな流れを知りたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-05-27
+                            日付 2016-06-22
                             </p>
                             <p class="intro">*技術ノート
-2016/05/27*
-[番号] 技術ノート KGTN 2016052501
-[現象] [GGH4.X-5.X] 技術ノート KGTN#2016052001 のチェックを行ったところ， Preview PDF (&hellip;) で表示されたPDFファイルの保存と，保存したファイルの表示および印刷が正常に動作した．次に何をチェックすれば良いか？
-[説明] 以下の手順でチェックをお願いします (注意： 先の技術ノートと一部重複する部分がありますが，チェックの流れとして必要な手順ですので必ず行うようお願いします) ．なお，この用紙の□の部分にチェックを入れて，お送り下さい．
-1.　GGにログインし [メモ帳]{.underline} を開いて下さい．次に，文字列 ABC を入力し問題のプリンターへ印刷して下さい．
-　□ 正しく印刷された → ログアウトして下記２へ． □ 印刷されたが内容が正しくない → プリンタードライバ等が正常に動作していないようです． □ 印刷されない → ログアウトして下記２へ．
-2.　GGにログインし [現象が発生するアプリケーション]{.underline} を開いて下さい．プリンター Preview Pdf (&hellip;) へ印刷して下さい．
-　□ 画面にPDFファイルが表示された → 下記３へ． □ 画面にPDFファイルが表示されない． → 他のクライアントPCでも，画面にPDFファイルが表示されるかどうかご確認下さい． □ 他のクライアントPCでは，画面にPDFファイルが表示された． → このクライアントPCが正常に動作していないようです． □ 他のクライアントPCのいずれでも，画面にPDFファイルが表示されない． → アクセスされているGO-Globalホストが正常に動作していないようです．GO-Globalホスト管理者にご相談ください．
-3.　上記２で表示されたPDFファイルを [保存することなく]{.underline} そのまま問題のプリンターへ印刷して下さい．
-　□ 正しく印刷された → ログアウトして下記４へ． □ 印刷されたが内容が正しくない → プリンタードライバ等が正常に動作していないようです． □ 印刷されない → ログアウトして下記４へ． → 印刷物のサイズが大きい場合，印刷処理でメモリやディスク等のリソース不足が発生して印刷出来ないことがあります． このような場合は，分割して印刷するか，または不足しているリソースを追加 （増設） して下さい．なお，印刷物のサイズが大きくない場合であっても，リソースに殆ど余裕が無い場合は同じ状況が発生します．</p>
+2016/06/22*
+[番号] 技術ノート KGTN 2016061701
+[現象] [GGH5.X] logon.html の処理開始時の大まかな流れを知りたい．
+[説明] Ver5.0 の logon.html の処理開始時の大まかな流れは，以下の通りです．
+ logon.html がロードされる． logon.js がロードされる． version.jp がロードされる． logon.html 中の controlArgs.set() が実行される （パラメタの既定値の設定） ． logon.js 中の init() が実行される （&ldquo;window.onload = init;&rdquo; により） ．  ファイル KGTN2016061701.pdf [(56.2 KB)] [kitasp 技術センター, 2016/06/22 13:25]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2544/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2489/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -451,33 +446,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2550/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2488/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2550/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2488/">[GGH5.X] Ver4.8 の logon.html では OBJECT タグを document.write で出力しているが，Ver5.0 の logon.html (logon.js) ではそのような箇所が見つからない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-05-27
+                            日付 2016-06-22
                             </p>
                             <p class="intro">*技術ノート
-2016/05/27*
-[番号] 技術ノート KGTN 2016052402
-[現象] [GGH4.X-5.X] 技術ノート KGTN#2016052001 のチェックを行ったところ，Preview PDF (&hellip;) からは印刷出来たが，問題のプリンターを指定すると印刷出来ない．次に何をチェックすれば良いか？
-[説明] GG が使用している印刷エンジン （PDF ファイルをプリンターへ出力するプログラム） が正常に動作する環境かどうかのチェックをお願いします．チェックには必ずアカウント Administrator を使用して下さい．なお，この用紙の□の部分にチェックを入れて，スクリーンショットを添えてお送り下さい．
-1.　C:ドライブの直下に TEMP というフォルダーを作成して下さい．
-　□ C:TEMP を作成した．
-2.　フォルダー C:TEMP に下記圧縮ファイル中の全ファイルを展開 （コピー） して下さい． https://dl.dropboxusercontent.com/u/74576231/kitASP/KGTN2016052402_testprint.zip
-　□ 全ファイルを展開 （コピー） した．
-3.　メモ帳で &ldquo;testprint.bat&rdquo; を開き，その中の &ldquo;FX DocuCentre-IV C4475&rdquo; の部分を，問題のプリンターの名称に書き換え，上書き保存して下さい．
-　□ プリンター名を書き換えて上書き保存した．
-4.　スタートメニューから &ldquo;コマンド プロンプト&rdquo; を起動し，DOS 窓上で &ldquo;cd C:TEMP&rdquo; を実行して下さい．
-　□ 起動しコマンドを実行した．
-5.　DOS 窓上で &ldquo;testprint.bat&rdquo; を実行して下さい．実行直後の画面全体のスクリーンショットを撮ってお送り下さい （次ページにスクリーンショットのサンプルがあります） ．</p>
+2016/06/22*
+[番号] 技術ノート KGTN 2016061702
+[現象] [GGH5.X] Ver4.8 の logon.html では OBJECT タグを document.write で出力しているが，Ver5.0 の logon.html (logon.js) ではそのような箇所が見つからない．
+[説明] 基本的な処理方式が変更されており，Ver5.0 の logon.js の下記の箇所で等価な処理が行われております．
+// OBJECT タグを作成 var newControl = document.createElement(&quot;object&quot;); newControl.id = RAPIDX_CONTROL_NAME; newControl.name = RAPIDX_CONTROL_NAME; newControl.classid = RAPIDX_PLUGIN_CLASS_ID; newControl.alt = RAPIDX_PLUGIN_NAME; newControl.setAttribute(&quot;codebase&quot;, RAPIDX_PLUGIN_CODEBASE); // 子供（PARAM タグ）を追加 writeURLVars(newControl, &quot;object&quot;); // OBJECT タグを logon.html のフレームに追加 var frame = document.getElementById('controlFrame'); frame.appendChild(newControl);  frame.innerHTML の内容例 （window.alert で出力）
+ファイル KGTN2016061702.pdf [(139 KB)] [kitasp 技術センター, 2016/06/22 13:27]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2550/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2488/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -496,28 +484,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2551/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2503/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2551/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2503/">[GGH5.X] Ver5.0の logon.html でキーボードの種類 （IMEの種類） を明示的に指定する方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-05-27
+                            日付 2016-06-22
                             </p>
                             <p class="intro">*技術ノート
-2016/05/27*
-[番号] 技術ノート KGTN 2016052401
-[現象] [GGH4.X-5.X] 技術ノート KGTN#2016052001 のチェックを行ったところ， Preview PDF (&hellip;) で表示された PDF ファイルの保存と，保存したファイルの表示および印刷が正常に動作した．次に何をチェックすれば良い か？
-[説明] 以下の手順でチェックをお願いします (注意： 先の技術ノートと一部重複する部分がありますが，チェックの流れとして必要な手順ですので必ず行うようお願いします) ．なお，この用紙の□の部分にチェックを入れて，スクリーンショットを添えてお送り下さい．
-1.　GG にログインしメモ帳を開いて下さい．次に，文字列 ABC を入力し問題のプリンターへ印刷して下さい．
-　□ 正しく印刷された → 下記２へ． □ 印刷されたが内容が正しくない → プリンタードライバ等が正常に動作していないようです． □ 印刷されない → 下記２へ．
-2.　GG にログインし現象が発生するアプリケーションを開いて下さい．プリンター Preview Pdf (&hellip;) へ印刷して下さい．
-　□ 画面にPDF ファイルが表示された → 下記３へ． □ 画面にPDF ファイルが表示されない． → 他のクライアントPC でも，画面にPDF ファイルが表示されるかどうかご確認下さい． □ 他のクライアントPC では，画面にPDF ファイルが表示された． → このクライアントPC が正常に動作していないようです． □ 他のクライアントPC のいずれでも，画面にPDF ファイルが表示されない． → アクセスされているGO-Global ホストが正常に動作していないようです．GO-Global ホスト管理者にご相談ください．</p>
+2016/06/22*
+[番号] 技術ノート KGTN 2016061507
+[現象] [GGH5.X] Ver5.0の logon.html でキーボードの種類 （IMEの種類） を明示的に指定する方法は？
+[説明] 日本語キーボードを指定する場合は， logon.html の42行目を次のように修正して下さい．
+controlArgs.set([ &quot;keyboard&quot;, &quot;00000411&quot; ]);  英語キーボードを指定する場合は， logon.html の42行目を次のように修正して下さい．
+controlArgs.set([ &quot;keyboard&quot;, &quot; 00000409&quot; ]);  なお，どちらの場合も行頭の &ldquo;//&rdquo; の削除を忘れないで下さい．
+ファイル KGTN2016061507.pdf [(55 KB)] [kitasp 技術センター, 2016/06/22 11:52]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2551/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2503/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -536,27 +523,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2553/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2498/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2553/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2498/">[GGH5.X] Ver5.0のクライアントのインストーラーはどこにあるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-05-27
+                            日付 2016-06-22
                             </p>
                             <p class="intro">*技術ノート
-2016/05/27*
-[番号] 技術ノート KGTN 2016052101
-[現象] [GGH4.X-5X] 自社開発ソフトからドライブを参照した際，クライアント側のドライブが表示されず，サーバー側のドライブのみが表示された．
-[説明] 先ず， GG上でメモ帳を起動し， 「開く」 でクライアント側のドライブが表示されるかどうか確認して下さい．クライアント側のドライブが表示されない場合は，サーバーの管理者がクライアント側のドライブへのアクセスを禁止していると思われますので，サーバーの管理者へお問合せ下さい．
-メモ帳でクライアント側のドライブが表示された場合は，自社開発ソフトのファイルアクセス関連の全てのメニューでクライアント側のドライブが表示されるかどうか確認して下さい．ファイルアクセス関連の全てのメニューでクライアント側のドライブが表示されない場合は，自社開発ソフトがWindowsの下位レベルのAPIでドライブを参照している可能性が高いと考えられます．このような場合は，ファイルアクセス関連のメニューの機能をWindowsの標準的なAPIでドライブを参照するように処理を修正する必要があります．
-ファイルアクセス関連の一部のメニューでクライアント側のドライブが表示されない場合は，そのメニューがWindowsの下位レベルのAPIでドライブを参照している可能性が高いと考えられます．このような場合も，そのメニューの機能をWindowsの標準的なAPIでドライブを参照するように処理を修正する必要があります．
-ファイル KGTN2016052101.pdf [(59.9 KB)] [kitasp 技術センター, 2016/05/27 17:22]</p>
+2016/06/22*
+[番号] 技術ノート KGTN 2016061602
+[現象] [GGH5.X] Ver5.0のクライアントのインストーラーはどこにあるのか？
+[説明] フォルダ &lt;GGのインストールフォルダ&gt;GO-GlobalWebClients の中にあります．
+ gg-client.chrome.exe Google Chrome 向けクライアント gg-client.desktop.exe Windows 向けクライアント （一般ユーザー用） gg-client.firefox.exe Mozilla Firefox 31 (ESR) 向けクライアント gg-client.ie.exe Internet Explorer 10.0 and 11.0 (32-bit) 向けクライアント gg-client.linux.deb Ubuntu 12.04 LTS (64-bit) 向けクライアント gg-client.linux.rpm Red Hat Enterprise Linux 5 and 6 (64-bit) 向けクライアント gg-client.mac.dmg Mac OS X 10.6 and later向けクライアント gg-client.windows.exe Windows 向けクライアント （主に組込み用） gg-client.windows.msi Windows 向けクライアント （主にADでの配布用）
+ ファイル KGTN2016061602.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2553/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2498/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

@@ -409,26 +409,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1181/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1081/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1181/">[GGW3.2.1] 20MBを超えるファイルを分割してクライアントへコピーすることを考えているが，分割したファイルをクライアント上で結合することは出来るか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1081/">[iPad Client] iPad Client からGGサーバにログオンすると環境変数CLIENTCOMPUTERNAME とCLIENTCOMPUTERIPADDRESS が設定されない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-12-14
+                            日付 2012-02-13
                             </p>
                             <p class="intro">*技術ノート
-2011/12/14*
-[番号] 技術ノート KGTN 2011121502
-[現象] [GGW3.2.1] 20MBを超えるファイルを分割してクライアントへコピーすることを考えているが，分割したファイルをクライアント上で結合することは出来るか？
-[説明] ファイルを結合するには，ファイルの内容を読まねばなりませんので，サーバ上で動作するアプリケーションで結合することは技術的に問題があります．従って，以下のような手順でクライアント側で結合する必要があります．
-転送したいファイルを20MB以下のサイズに分割する． 分割したファイルを結合するバッチファイルを作成する． 分割したファイルおよび結合用バッチファイルをクライアントへコピーする． ユーザがクライアント上で結合用バッチファイルを実行する．
-ファイル KGTN2011121502.pdf [(50.1 KB)] [kitasp 技術センター, 2011/12/15 06:58]</p>
+2012/02/13*
+[番号] 技術ノート KGTN 2011110902
+[現象] [iPad Client] iPad Client からGGサーバにログオンすると環境変数CLIENTCOMPUTERNAME とCLIENTCOMPUTERIPADDRESS が設定されない．
+[説明] GraphOn社も現象を確認しており，現在仕分けチームの判断待ちの状態にあります．
+補　足 GGH4.0.1.Patch4 で修正されました．
+ファイル KGTN2011110902.pdf [(59.8 KB)] [kitasp 技術センター, 2012/02/14 08:33]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1181/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1081/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -447,26 +447,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1183/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1082/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1183/">[iPad Client] iPad Client の色深度を最大限まで上げたい．</a></h4>
+                            <h4><a href="/posts/new_md/doc1082/">Adobe Acrobat 9 Pro は，Ver3.2.1 上で動作するのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-12-14
+                            日付 2012-02-13
                             </p>
                             <p class="intro">*技術ノート
-2011/12/14*
-[番号] 技術ノート KGTN 2011121401
-[現象] [iPad Client] iPad Client の色深度を最大限まで上げたい．
-[説明] 現時点で最新の iPad Client (4.1.1.11561) は， Settings の Image Compression を無効にすることで画像圧縮機能を無効にすることが出来ますが，最大色深度を設定する （32bit に上げる） ことは出来ません．この問題を解決するために，サーバ側の既定の最大色深度を 32bit に変更します．この設定の手順は以下の通りです．
-サービス GO-Global Application Publishing Service を停止する． エディタで C:¥Documents and Settings¥All Users¥Application Data¥GraphOn¥HostProperties.xml を開く （注：改行コードの差異から，メモ帳で開くと正しく表示されません） ． 文字列 を探す． その次の行 16の 16 を 32 に修正する． ファイルを保存する． サービス GO-Global Application Publishing Service を開始する．
-この手順で既定の最大色深度が 32bit になりますので， iPad Client (4.1.1.11561) の Settings の Image Compression を無効にして （画像圧縮機能を無効にする） ，GGサーバに接続して下さい．</p>
+2012/02/13*
+[番号] 技術ノート KGTN 2010021803
+[現象] Adobe Acrobat 9 Pro は，Ver3.2.1 上で動作するのか？
+[説明] 技術およびライセンス上の問題があると考えられます．ドキュメントのPDF化が目的であれば，GGのオプション製品 SkyPDF for GO-Global の利用をご検討下さい．
+補足１ 「GGのクライアントプリンタとして &ldquo;Jaws PDF Creator&rdquo;　と &ldquo;PrimoPDF&rdquo; が動作した」 という報告が，幾つかのユーザ様より届いております．当然のことながら，GraphOn社および各ソフトウエアベンダーがその動作を保証するものではありませんので，利用等に当たっては自己責任でお願いします．
+補足２ GGH4.0では，クライアント印刷機能 （Universal Printer Driver 有効時） で &ldquo;Preview PDF&rdquo; というプリンタが自動的に作成され，このプリンタに印刷するとクライアント側にそのドキュメントのPDFファイルが表示されます． Adobe Reader のファイルメニューの中の 「コピーを保存」 を選ぶことで，PDFファイルをクライアント上に保存することが出来ます．つまり，GGH4.0では Adobe Acrobat 等のPDFクリエーター無しにPDFファイルを作成することが可能です．
+ファイル KGTN2010021803.pdf [(67.9 KB)] [kitasp 技術センター, 2012/02/13 12:48]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1183/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1082/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,26 +486,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1185/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1083/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1185/">[iPad Client] アプリケーションのウインドウをドラッグすると表示が遅い．</a></h4>
+                            <h4><a href="/posts/new_md/doc1083/">[Android Client] Android 4.0 (Ice Cream Sandwich) で Android Client を使ったが，キーボード表示等はメニューボタンから操作出来た方が良い．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-12-12
+                            日付 2012-02-12
                             </p>
                             <p class="intro">*技術ノート
-2011/12/12*
-[番号] 技術ノート KGTN 2011121202
-[現象] [iPad Client] アプリケーションのウインドウをドラッグすると表示が遅い．
-[説明] 以下のような操作を行うことで，ウインドウのドラッグ操作をスムーズに行うことが出来ます．
-ピンチイン （画面を縮小） 操作でカンバス全体を表示する． ウインドウのドラッグ操作を行う． 指を離す． （オートズーム機能で） 縮小したウインドウが自動的に拡大される．
-ファイル KGTN2011121202.pdf [(46.8 KB)] [kitasp 技術センター, 2011/12/12 12:51]</p>
+2012/02/12*
+[番号] 技術ノート KGTN 2012021303
+[現象] [Android Client] Android 4.0 (Ice Cream Sandwich) で Android Client を使ったが，キーボード表示等はメニューボタンから操作出来た方が良い．
+[説明] Android Phone にはメニューボタンが存在しますが， Android Tablet や iPad にはメニューボタンが存在しません．このため，操作性の統一をはかると，現在の仕様 （オンスクリーン・ツールバー） になります．
+ファイル KGTN2012021303.pdf [(47.8 KB)] [kitasp 技術センター, 2012/02/13 08:05]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1185/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1083/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -523,25 +523,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1184/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1084/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1184/">[iPad Client] キーボードを表示すると，GG上で動作するアプリケーションのウインドウが縮小表示される．</a></h4>
+                            <h4><a href="/posts/new_md/doc1084/">[Android Client] タブレットを横にした状態でGGサーバに接続し，その後にタブレットを縦にすると （ローテーとさせると） ，画面が小さく表示される．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-12-12
+                            日付 2012-02-12
                             </p>
                             <p class="intro">*技術ノート
-2011/12/12*
-[番号] 技術ノート KGTN 2011121203
-[現象] [iPad Client] キーボードを表示すると，GG上で動作するアプリケーションのウインドウが縮小表示される．
-[説明] iPad のキーボードを分割 （Split） 表示することで （キーボード右下のキーボードボタンを長押し分割を選択） ，キーボードが表示されてもウインドウが縮小表示されなくなります．
-ファイル KGTN2011121203.pdf [(43.3 KB)] [kitasp 技術センター, 2011/12/12 13:24]</p>
+2012/02/12*
+[番号] 技術ノート KGTN 2012021302
+[現象] [Android Client] タブレットを横にした状態でGGサーバに接続し，その後にタブレットを縦にすると （ローテーとさせると） ，画面が小さく表示される．
+[説明] GGはクライアントから接続要求があった時点で画面サイズ （解像度） を設定します．このような仕様のため，接続した後にタブレットをローテートさせても画面サイズは変わらず，結果的に画面が小さく表示されてしまいます．画面サイズを変更したい時は，
+ セッションを Disconnect する， 2) タブレットをローテートさせる， 3) セッション再接続を行う という手順で操作を行って下さい．なお，セッション再接続時にタッチスクリーン・キーボードが表示されているとその分狭くなりますので，必ずタッチスクリーン・キーボードを非表示にして再接続を行うようにして下さい．  ファイル KGTN2012021302.pdf [(55.7 KB)] [kitasp 技術センター, 2012/02/13 05:29]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1184/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1084/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

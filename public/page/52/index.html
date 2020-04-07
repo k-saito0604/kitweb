@@ -409,25 +409,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2295/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2250/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2295/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2250/">[GGW3.2,GGH4.X-5.X] GGの特定バージョン （ビルド） がサポートする IE のバージョンを確認する方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-10-05
+                            日付 2016-11-02
                             </p>
                             <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016090801
-[現象] [GGH4.X-5.X] 接続関連のパラメタ SessionTimeoutBrokenConnection は，どこで指定するのか？
-[説明] 設定ファイル ProgramDataGraphOnHostProperties.xml の下記の箇所で指定します．この値を変更する場合は，必ずサービス GGAPS を停止した状態で行って下さい．
-&lt;property id=&quot;SessionTimeoutBrokenConnection&quot; group=&quot;Miscellaneous&quot; type=&quot;UINT32&quot;&gt; &lt;value&gt;0&lt;/value&gt; &lt;/property&gt;  ファイル KGTN2016090801.pdf [(59.6 KB)] [kitasp 技術センター, 2016/10/05 14:46]</p>
+2016/11/02*
+[番号] 技術ノート KGTN 2016101401
+[現象] [GGW3.2,GGH4.X-5.X] GGの特定バージョン （ビルド） がサポートする IE のバージョンを確認する方法は？
+[説明] 以下の手順で，GGの特定バージョン （ビルド） がサポートする IE のバージョンを確認することが出来ます．
+1.GGの特定バージョン （ビルド） のCDに含まれる readme.txt （ggw-readme-xxx.txt） を開き， &ldquo;1.2 GO-Global Clients&rdquo; にあるサポート対象の IE （ActiveX Control） のバージョンを確認する． 例１：GGW3.2.1.4466 ⇒ Internet Explorer 6.0 or later 例２：GGH 5.0.2.23352 ⇒ Internet Explorer 10.0 and 11.0 (32-bit)
+2.上記の IE のバージョンに &ldquo;or laler&rdquo; がある場合は， readme.txt （ggw-readme-xxx.txt） の日付を確認し，その日よりも前にリリースされた最新の IE のバージョンを確認する． 例１：GGW3.2.1.4466 ⇒ 2010年4月22日 ⇒ IE8 （2009年3月20日） 例２：該当せず
+3.上記１のバージョンから上記２のバージョンまでがサポート対象の IE となる． 例１：GGW3.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2295/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2250/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,28 +448,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2296/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2233/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2296/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2233/">[Windows/IE] Google の検索サイトにアクセスすると 「このWebサイトのセキュリティ証明書には問題があります」 と表示される．</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-10-05
+                            日付 2016-11-02
                             </p>
                             <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016090702
-[現象] [GGH4.X-5.X] クラスターマネージャーのセッションタブでIPアドレスが空欄のセッションがあるが，このセッションはどのような状態にあるのか？
-[説明] クラスターマネージャーのセッションタブでIPアドレスが空欄のセッションは，ユーザーが Disconnect （セッションを残してクライアントを切断） したか，またはネットワーク障害での切断やGGにログオンしたブラウザを強制的に閉じた場合などに発生します．
-このようなセッションを 「自動的に」 終了させたい場合は， [Host Options] → [Session Shutdown] → [Disconnected sessions terminate] で Immediately (直ちに終了) または After ? minutes （?分経過後に終了） を設定して下さい．
-ファイル KGTN2016090702.pdf [(125 KB)] [kitasp 技術センター, 2016/10/05 11:21]
-KGTN2016090702.jpg
-表示 [(21.8 KB)] [kitasp 技術センター, 2016/10/05 11:21]</p>
+2016/11/02*
+[番号] 技術ノート KGTN 2016101901
+[現象] [Windows/IE] Google の検索サイトにアクセスすると 「このWebサイトのセキュリティ証明書には問題があります」 と表示される．
+[説明] コンピューターの日付が，Webサイトのセキュリティ証明書の有効期間外に設定されていることが原因だと思われます．コンピューターの日付を確認し，正しい日付を設定して下さい．下記の例は，コンピューターに１年前の日付 2015年10月19日 が設定されていました．
+ファイル KGTN2016101901.pdf [(72.3 KB)] [kitasp 技術センター, 2016/11/02 15:22]
+KGTN2016101901.jpg
+表示 [(12 KB)] [kitasp 技術センター, 2016/11/02 15:22]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2296/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2233/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -486,25 +487,27 @@ KGTN2016090702.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2314/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2244/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2314/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2244/">[Windows/PowerShell] PowerShell でIPアドレスを得る方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-10-05
+                            日付 2016-11-02
                             </p>
                             <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016082905
-[現象] [GGH4.X-5.X] セッション情報取得SDKでアプリケーションを開発する場合，すべてのセッションの情報をまとめて取得出来るのか？
-[説明] いいえ，関数 SMI_EnumerateSessions() を使って，すべてのセッションを列挙する必要があります．
-ファイル KGTN2016082905.pdf [(50.5 KB)] [kitasp 技術センター, 2016/10/05 10:38]</p>
+2016/11/02*
+[番号] 技術ノート KGTN 2016101804
+[現象] [Windows/PowerShell] PowerShell でIPアドレスを得る方法は？
+[説明] 現実的には，以下のように PowerShell のコマンド Get-NetIPAddress を使う方法と Net.DNS で GetHostAddresses() メソッドを利用する方法があります．速度重視の場合は， .NET の利用をお勧めします．
+(Get-NetIPAddress | Where-Object -FilterScript { ($_.InterfaceAlias -Eq &quot;イーサネット&quot;) -And ($_.AddressFamily -Eq &quot;IPv4&quot;) } | select -ExpandProperty IPAddress) ([Net.Dns]::GetHostAddresses('') | Where-Object -FilterScript { ($_.AddressFamily -Eq &quot;InterNetwork&quot;) } | select -ExpandProperty IPAddressToString)  ファイル KGTN2016101804.pdf [(79 KB)] [kitasp 技術センター, 2016/11/02 14:38]
+KGTN2016101804.jpg
+表示 [(30.8 KB)] [kitasp 技術センター, 2016/11/02 14:38]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2314/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2244/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -523,25 +526,27 @@ KGTN2016090702.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2316/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2245/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2316/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2245/">[Windows/PowerShell] PowerShell でコンピューター名を得る方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-10-05
+                            日付 2016-11-02
                             </p>
                             <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016082904
-[現象] [GGH4.X-5.X] セッション情報取得SDKでアプリケーションを開発する場合，最大セッション数と現在利用中のセッション数はどこから得るのか？
-[説明] 最大セッション数はクラスター・マネージャーで設定する項目ですので，構造体 SMI_SERVER_INFO の中に保持されています．現在利用中のセッション数は設定項目ではありませんので，構造体 SMI_SERVER_METRICS の中に保持されています．
-SMI_SERVER_INFO smi_serverInfo; SMI_SERVER_METRICS smi_serverMetrics; … SMI_GetServerInfo(smi_serverID,SMI_SERVER_INFO_SCHEMA_2,&amp;smi_serverInfo); SMI_GetServerMetrics(smi_serverID,&amp;smi_serverMetrics); iSessionMax = smi_serverInfo.maxSessions; iSessionNow = smi_serverMetrics.totalSessionCount;  ファイル KGTN2016082904.pdf [(55.8 KB)] [kitasp 技術センター, 2016/10/05 10:37]</p>
+2016/11/02*
+[番号] 技術ノート KGTN 2016101803
+[現象] [Windows/PowerShell] PowerShell でコンピューター名を得る方法は？
+[説明] CIM （WMI） から取得する方法，環境変数 $Env:COMPUTERNAME から取得する方法， Net.Dns でGetHostName() メソッドを利用する方法， hostname コマンドから取得する方法があります．これらのコマンドのパフォーマンスはそれほど差異がありませんが，他のコマンド （IPアドレスを得るなど） では .NET のパフォーマンスが最も良いようです．
+ファイル KGTN2016101803.pdf [(91.5 KB)] [kitasp 技術センター, 2016/11/02 14:36]
+KGTN2016101803.jpg
+表示 [(13.6 KB)] [kitasp 技術センター, 2016/11/02 14:36]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2316/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2245/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

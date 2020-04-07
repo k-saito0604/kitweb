@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc800/">
+                                      <a href="/posts/new_md/doc2641/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc800/">[GGH4.X] Microsoft Office 2010 Professtional はGGH4.5で動作するか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2641/">[GGH4.X-5.X] GGサーバのパラメタ ClientProcessingBatch の詳細について知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc800/"><i class="far fa-calendar"></i> 2012-11-09</a>
+                                            <a href="/posts/new_md/doc2641/"><i class="far fa-calendar"></i> 2013-02-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/09*
-[番号] 技術ノート KGTN 2012110904
-[現象] [GGH4.X] Microsoft Office 2010 Professtional はGGH4.5で動作するか？
-[説明] Microsoft Office の多くのソフトウエアから構成され，そしてそれぞれが非常に多くの機能を持っているため，単純に 「動作する」 と言うことは技術的に困難です．ちなみに，GraphOn社のオンライン・デモサイトは，Microsoft Office 2010 Professtional で運用 （GGH4.5 + Word/Excel/PowerPoint） されております．
-ファイル KGTN2012110904.pdf [(54.2 KB)] [kitasp 技術センター, 2012/11/09 10:49]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc800/" class="btn btn-template-main">続きを読む</a>
+2013/02/07*
+[番号] 技術ノート KGTN 2013020601
+[現象] [GGH4.X-5.X] GGサーバのパラメタ ClientProcessingBatch の詳細について知りたい．
+[説明] ClientProcessingBatch = 0 の場合は，サーバはクライアントに対して描画命令を送信します．ClientProcessingBatch = 1 の場合は，サーバ側で 「クライアント画面の描画効率を判断し」 描画命令または画像データ （スクリーンスクレーピング） の何れかを送信します．描画命令を送信するケースでは，さまざまな描画上の最適化が行われるため，アプリケーションによってはこの最適化に馴染まず画面の乱れ等を引き起こすことがあります（主に一般的でない画面上の動作） ．このような場合は， ClientProcessingBatch = 1 を適用することで，この画面の乱れを回避出来る可能性があります．より詳しい内容については，以下のGraphOn社の説明をご覧下さい．
+[ClientProcessingBatch] When ClientProcessingBatch is set to 0, the host updates the client&rsquo;s display by sending primitive drawing commands such as &ldquo;draw rectangle&rdquo;, &ldquo;draw line&rdquo;, &ldquo;draw text,&quot;, etc&hellip; to the client. Alternatively, the host could simply wait and send an image with the final result of the drawing operations to the client.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2641/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc798/">
+                                      <a href="/posts/new_md/doc706/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc798/">[GGH4.X] クライアント印刷機能で，ドメインの特定ユーザ （特定クライアント） でプリンタが構成されない．何を調べれば良いか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc706/">[GGH4.X] リモートデスクトップ接続 （mstsc.exe） をアプリケーションとして登録し，それを iPad や Android クライアントから利用すると，接続先のデスクトップでキーボード入力が上手く動作しない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,18 +381,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc798/"><i class="far fa-calendar"></i> 2012-11-09</a>
+                                            <a href="/posts/new_md/doc706/"><i class="far fa-calendar"></i> 2013-02-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/09*
-[番号] 技術ノート KGTN 2012111001
-[現象] [GGH4.X] クライアント印刷機能で，ドメインの特定ユーザ （特定クライアント） でプリンタが構成されない．何を調べれば良いか？
-クラスタマネージャのClient Access 画面 クラスタマネージャのSecurity 画面 セッション中のコマンドプロンプトで whoami/all を実行した結果 当該ユーザでのパススルー認証の使用の有無 GGサーバのコンソールで当該ユーザで直接ログオンしプリンタが追加出来るかどうか GGの Administrator Guide の Configuration Requirements for Delegation Support の設定 （4.5.0 の P73） が全て行われているかどうか
-[説明] 以下の情報の採取および確認を行って下さい．
-ファイル KGTN2012111001.pdf [(63.9 KB)] [kitasp 技術センター, 2012/11/10 05:08]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc798/" class="btn btn-template-main">続きを読む</a>
+2013/02/07*
+[番号] 技術ノート KGTN 2012091202
+[現象] [GGH4.X] リモートデスクトップ接続 （mstsc.exe） をアプリケーションとして登録し，それを iPad や Android クライアントから利用すると，接続先のデスクトップでキーボード入力が上手く動作しない．
+[説明] iPad や Android クライアントはローカルのIMEを利用するため，GGサーバ側から見ると通常のキー操作として認識されません （スキャンコードや仮想キーコードに紐付かない） ．通常のアプリケーションはこの仕様で問題ありませんが，リモートデスクトップ接続ではキーボード入力が動作しないという状況が発生します．
+この問題を回避するには，先ずWindowsのスクリーンキーボード （osk.exe） をGGサーバ上で起動し，その後にリモートデスクトップ接続を行って下さい．スクリーンキーボードを操作することで，接続先のデスクトップでキーボード操作が可能になります．
+補足１ 技術的背景： iPad ?-(GG Clinet) &ndash; GG-Server ?-(mstsc) &ndash; Windows Server という環境で iPad 上で文字を入力した場合，入力した文字はUNICODE （キーコードは Packet） で送信されます． GG-Server/mstsc は，この文字の情報を ローカルで処理することなく Windows Server へ転送するため， Windows Server 上で動作するアプリケーションに入力した文字列が反映されます． RETURN および BS キーは， （Packetでなく） 通常のキーコードで送信され，これが GG-Server 上で処理されます．このため，Windows Server 上で動作するアプリケーションに入力が反映されない状況が発生します．なお，この結果 （GraphOn社に報告済み） は弊社の検証環境で確認出来た内容であり，環境が異なれば別の結果になる可能性があります．
+補足２ この問題をGraphOn社の品質保証チームが確認しました．開発チームで詳細な調査および解析を行い，技術的・営業的に可能な内容であれば修正を行います．
+ファイル KGTN2012091202.pdf [(77.4 KB)] [kitasp 技術センター, 2013/02/08 08:14]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc706/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -402,7 +404,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc799/">
+                                      <a href="/posts/new_md/doc709/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -410,7 +412,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc799/">[GGH4.X] クライアント印刷機能を使用する場合，サーバ側に対応するプリンタが作成されるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc709/">[GGH4.5] Windows Phone 8 用のクライアントはあるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -423,17 +425,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc799/"><i class="far fa-calendar"></i> 2012-11-09</a>
+                                            <a href="/posts/new_md/doc709/"><i class="far fa-calendar"></i> 2013-02-06</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/09*
-[番号] 技術ノート KGTN 2012110905
-[現象] [GGH4.X] クライアント印刷機能を使用する場合，サーバ側に対応するプリンタが作成されるのか？
-[説明] セッションが存在する間のみ，クライアント側のプリンタに対応するプリンタが 「一時的に」 サーバ側に作成されます．管理者 （Administrator） は，GGサーバのプリンタ・フォルダを参照することで，それらのプリンタの一覧を見ることが出来ます．
-ファイル KGTN2012110905.pdf [(55 KB)] [kitasp 技術センター, 2012/11/09 12:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc799/" class="btn btn-template-main">続きを読む</a>
+2013/02/06*
+[番号] 技術ノート KGTN 2013020603
+[現象] [GGH4.5] Windows Phone 8 用のクライアントはあるか？
+[説明] 2013年1月28日の時点で， Windows Phone 8 用クライアントの開発予定はありません．
+ファイル KGTN2013020603.pdf [(38.5 KB)] [kitasp 技術センター, 2013/02/06 12:02]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc709/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -443,7 +445,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc807/">
+                                      <a href="/posts/new_md/doc708/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -451,7 +453,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc807/">[GGH4.X] Windows7 &#43; IE9 の環境でActiveXクライアントの詳細画面の確認方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc708/">[GGH4.5] レジストリの項目 GO-Global¥Loader¥Processes および GO-Global¥System¥Modules を調整して，描画の乱れが改善する可能性はあるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -464,18 +466,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc807/"><i class="far fa-calendar"></i> 2012-11-08</a>
+                                            <a href="/posts/new_md/doc708/"><i class="far fa-calendar"></i> 2013-02-06</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/08*
-[番号] 技術ノート KGTN 2012110802
-[現象] [GGH4.X] Windows7 + IE9 の環境でActiveXクライアントの詳細画面の確認方法は？
-[説明] 以下の手順でActiveXクライアントの詳細画面を確認することが出来ます．
-IE9を起動 [ツール] → [インターネット オプション] [プログラム] → [アドオンの管理] [表示] → [すべてのアドオン] [名前] → [GraphOn Corporation] → [GO-Global 4] [GO-Global 4] をダブルクリック
-ファイル KGTN2012110802.pdf [(69.1 KB)] [kitasp 技術センター, 2012/11/08 11:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc807/" class="btn btn-template-main">続きを読む</a>
+2013/02/06*
+[番号] 技術ノート KGTN 2013020604
+[現象] [GGH4.5] レジストリの項目 GO-Global¥Loader¥Processes および GO-Global¥System¥Modules を調整して，描画の乱れが改善する可能性はあるか？
+[説明] これらは，プロセス自体の挙動 （生成や消滅の詳細，クライアント機能の利用の有無，クライアントへ画面を転送するかどうか等） を設定する項目であり，描画に関する調整項目ではありません．
+ファイル KGTN2013020604.pdf [(51.4 KB)] [kitasp 技術センター, 2013/02/06 12:48]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc708/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -485,7 +486,7 @@ IE9を起動 [ツール] → [インターネット オプション] [プログ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc804/">
+                                      <a href="/posts/new_md/doc2547/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -493,7 +494,7 @@ IE9を起動 [ツール] → [インターネット オプション] [プログ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc804/">[Windows] WMIリポジトリとは何か？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2547/">[GGH4.X-5.X] 描画の乱れが発生した場合，これを解消するため何か試すことはないか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -506,19 +507,20 @@ IE9を起動 [ツール] → [インターネット オプション] [プログ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc804/"><i class="far fa-calendar"></i> 2012-11-08</a>
+                                            <a href="/posts/new_md/doc2547/"><i class="far fa-calendar"></i> 2013-02-06</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/08*
-[番号] 技術ノート KGTN 2012110805
-[現象] [Windows] WMIリポジトリとは何か？
-[説明] マイクロソフト社のブログに次の説明があります．
-WMI リポジトリとは，OS や SCCM の様々な情報を格納するデータベースであり，システム情報を取得する際に使用するデータベースです．WMI リポジトリの破損や不整合が発生していると，SCCM のインストールや，インベントリ等，様々な動作に支障をきたすため，再構築が有効です．
-http://blogs.technet.com/b/systemcenterjp/archive/2012/07/20/3509911.aspx
-ファイル KGTN2012110805.pdf [(54.2 KB)] [kitasp 技術センター, 2012/11/08 14:13]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc804/" class="btn btn-template-main">続きを読む</a>
+2013/02/06*
+[番号] 技術ノート KGTN 2013020602
+[現象] [GGH4.X-5.X] 描画の乱れが発生した場合，これを解消するため何か試すことはないか？
+[説明] 描画の乱れが発生した場合，以下の内容を試して下さい．
+1)　&ldquo;Aeroテーマ&rdquo; を &ldquo;ベーシックテーマ&rdquo; に変更する． → GGは &ldquo;ベーシックテーマ&rdquo; の利用を前提としております．詳細は技術ノート KGTN#2013012101 をご覧下さい．
+2)　&ldquo;ClientProcessingBatch = 1&rdquo; を試してみる． → &ldquo;ClientProcessingBatch = 1&rdquo; が設定されると，描画処理に &ldquo;スクリーンスクレーピング&rdquo; 方式が併用されるため，GGの描画の最適化機能とアプリケーションの描画処理が馴染まない場合に，状況が改善される可能性があります．詳細は技術ノート KGTN#2013020601 をご覧下さい．
+3)　クライアントフレーム機能を試してみる． → クライアントフレーム機能が有効な場合は，クライアント上で動作するアプリケーションのウインドウとGG上で動作するアプリケーションのウインドウが完全に分離されますので，相互作用で問題が発生している場合に，状況が改善される可能性があります．詳細は技術ノート KGTN#2011090201 をご覧下さい．
+ファイル KGTN2013020602.pdf [(64.6 KB)] [kitasp 技術センター, 2016/06/03 11:56]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2547/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -528,7 +530,7 @@ http://blogs.technet.com/b/systemcenterjp/archive/2012/07/20/3509911.aspx
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc805/">
+                                      <a href="/posts/new_md/doc711/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -536,7 +538,7 @@ http://blogs.technet.com/b/systemcenterjp/archive/2012/07/20/3509911.aspx
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc805/">[Windows] WMIリポジトリの再構築方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc711/">[GGH4.5] マウスホバーの表示で文字化けする．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -549,18 +551,17 @@ http://blogs.technet.com/b/systemcenterjp/archive/2012/07/20/3509911.aspx
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc805/"><i class="far fa-calendar"></i> 2012-11-08</a>
+                                            <a href="/posts/new_md/doc711/"><i class="far fa-calendar"></i> 2013-02-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/08*
-[番号] 技術ノート KGTN 2012110804
-[現象] [Windows] WMIリポジトリの再構築方法は？
-[説明] WMIリポジトリの再構築はGGのサポート範疇ではありませんが，例えば以下のページをご覧下さい．
-http://technet.microsoft.com/ja-jp/scriptcenter/ff576025.aspx WMI の FAQ: トラブルシューティングとヒント リポジトリを再構築する
-ファイル KGTN2012110804.pdf [(48.4 KB)] [kitasp 技術センター, 2012/11/08 14:03]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc805/" class="btn btn-template-main">続きを読む</a>
+2013/02/04*
+[番号] 技術ノート KGTN 2013020401
+[現象] [GGH4.5] マウスホバーの表示で文字化けする．
+[説明] IE 等で確認したところ，下記のように日本語も問題なく表示されました．恐らく，文字化けを起こしたアプリケーションの処理に何らかの原因があるのではないかと思われます．
+ファイル KGTN2013020401.pdf [(76.2 KB)] [kitasp 技術センター, 2013/02/04 11:26]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc711/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -570,7 +571,7 @@ http://technet.microsoft.com/ja-jp/scriptcenter/ff576025.aspx WMI の FAQ: ト�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc808/">
+                                      <a href="/posts/new_md/doc710/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -578,7 +579,7 @@ http://technet.microsoft.com/ja-jp/scriptcenter/ff576025.aspx WMI の FAQ: ト�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc808/">[GGH4.X] ActiveXクライアントが動作しないが，確認するため正常な 「詳細情報」 の画面を見たい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc710/">[GGW3.2.1/GGH4.5] GGの互換アップデートは，新しい Windows Update （更新プログラム） がリリースされる度に適用せねばならないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -591,17 +592,17 @@ http://technet.microsoft.com/ja-jp/scriptcenter/ff576025.aspx WMI の FAQ: ト�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc808/"><i class="far fa-calendar"></i> 2012-11-07</a>
+                                            <a href="/posts/new_md/doc710/"><i class="far fa-calendar"></i> 2013-02-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/07*
-[番号] 技術ノート KGTN 2012110801
-[現象] [GGH4.X] ActiveXクライアントが動作しないが，確認するため正常な 「詳細情報」 の画面を見たい．
-[説明] 弊社の試験環境に於けるActiveXクライアントの 「詳細情報」 の画面は以下の通りです．なお，バージョン情報は異なる可能性があります．
-ファイル KGTN2012110801.pdf [(68.2 KB)] [kitasp 技術センター, 2012/11/08 08:15]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc808/" class="btn btn-template-main">続きを読む</a>
+2013/02/04*
+[番号] 技術ノート KGTN 2013020402
+[現象] [GGW3.2.1/GGH4.5] GGの互換アップデートは，新しい Windows Update （更新プログラム） がリリースされる度に適用せねばならないのか？
+[説明] いいえ．新しくリリースされた Windows Update （更新プログラム） の中に， Windows のカーネル （システムの中核となる部分） を修正するものがあった場合にのみ，GGの互換アップデートの適用が必要です．
+ファイル KGTN2013020402.pdf [(44.8 KB)] [kitasp 技術センター, 2013/02/04 12:19]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc710/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -611,7 +612,7 @@ http://technet.microsoft.com/ja-jp/scriptcenter/ff576025.aspx WMI の FAQ: ト�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc810/">
+                                      <a href="/posts/new_md/doc712/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -619,7 +620,7 @@ http://technet.microsoft.com/ja-jp/scriptcenter/ff576025.aspx WMI の FAQ: ト�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc810/">[GGH4.X] クライアント・クリップボード機能で，クライアント側のアプリケーションでコピーした画像が，サーバ側のアプリケーションに貼り付けられない場合がある．どのような場合にダメなのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc712/">[iPad] GGサーバのバージョンを上げたところ， iPad で半角英字を入力するとGG上のアプリケーション上で全角英字に変換されるようになった．FEPは ATOK を使っている．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -632,18 +633,21 @@ http://technet.microsoft.com/ja-jp/scriptcenter/ff576025.aspx WMI の FAQ: ト�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc810/"><i class="far fa-calendar"></i> 2012-11-07</a>
+                                            <a href="/posts/new_md/doc712/"><i class="far fa-calendar"></i> 2013-02-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/07*
-[番号] 技術ノート KGTN 2012110702
-[現象] [GGH4.X] クライアント・クリップボード機能で，クライアント側のアプリケーションでコピーした画像が，サーバ側のアプリケーションに貼り付けられない場合がある．どのような場合にダメなのか？
-[説明] Windows のクリップボード機能は複雑で，コピー操作が行われたアプリケーションは 「自分が定めた （通常は複数の） データ形式」 でクリップボードにデータの塊を記録します．ペースト操作が行われたアプリケーションは， 「自分が解釈可能なデータ形式」 がクリップボード中にあれば，そのデータの塊を取り出し＆解釈し，それを自分のデータ中に貼り付けます．データ形式はそれぞれのアプリケーションが独自に作成することが可能で，他のアプリケーションが解釈出来ないものもあります．さらに，クリップボードにデータそのものではなく，データを得るための情報 （ファイルのパスやハンドルなど） を記録する事が可能で，このような場合はマシンを跨いでコピー＆ペーストを行うことは出来ません．
-このように，コピー側とペースト側のアプリケーションの仕様 （相互の影響） でコピー＆ペーストが 「出来る／出来ない」 が発生しますので，一般論としてダメなケースを挙げることは困難です．
-ファイル KGTN2012110702.pdf [(59.5 KB)] [kitasp 技術センター, 2012/11/07 09:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc810/" class="btn btn-template-main">続きを読む</a>
+2013/02/01*
+[番号] 技術ノート KGTN 2013020101
+[現象] [iPad] GGサーバのバージョンを上げたところ， iPad で半角英字を入力するとGG上のアプリケーション上で全角英字に変換されるようになった．FEPは ATOK を使っている．
+[説明] 以下の環境で検証を行いましたが，そのような現象は発生しませんでした．また，iPad クライアントは半角英数字 （のUNICODEを） をGGサーバに送信しており，GGがサーバ上で全角変換をすることはありません．
+Server: WS2008-SP2 (x86) + ATOK2012 + GG4.5.0.13767EB Client: iPad mini (iOS6.1) + GG4.5.0.14966
+補　足 ATOK のツールバーで 「日本語入力オン/オフ = 有効」 の状態にすると， iPad で半角英字を入力するとGG上のアプリケーションで全角英字になることから，何らかの原因でログオンした時点で 「日本語入力オン/オフ = 有効」 になっているのではないかと推測されます．もしそうであれば ATOK の設定等を確認して，ログオンした時点で 「日本語入力オン/オフ = 無効」 になるように設定を変更して下さい．
+2013年2月1日時点で，以下のサイトに参考情報のムービーを公開しております．なお，近い将来削除される可能性があります．
+http://youtu.be/BjQen5-07II JP-002 (ATOK Issue)
+ファイル KGTN2013020101.pdf [(62.7 KB)] [kitasp 技術センター, 2013/02/01 09:42]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc712/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -653,7 +657,7 @@ http://technet.microsoft.com/ja-jp/scriptcenter/ff576025.aspx WMI の FAQ: ト�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc811/">
+                                      <a href="/posts/new_md/doc713/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -661,7 +665,7 @@ http://technet.microsoft.com/ja-jp/scriptcenter/ff576025.aspx WMI の FAQ: ト�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc811/">[GGW3.2.1/GGH4.X] 生体認証 （指紋認証、静脈認証） を利用した事例はあるか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc713/">[Tool] GGとは関係がないか，VBS中でRunメソッドを実行した時，リダイレクトが効かない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -674,17 +678,18 @@ http://technet.microsoft.com/ja-jp/scriptcenter/ff576025.aspx WMI の FAQ: ト�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc811/"><i class="far fa-calendar"></i> 2012-11-06</a>
+                                            <a href="/posts/new_md/doc713/"><i class="far fa-calendar"></i> 2013-01-30</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/06*
-[番号] 技術ノート KGTN 2012110701
-[現象] [GGW3.2.1/GGH4.X] 生体認証 （指紋認証、静脈認証） を利用した事例はあるか？
-[説明] 生体認証 （指紋認証や静脈認証など） を利用した事例はあるかもしれませんが，しかし弊社にはICカード認証以外の報告は入っておりません．ICカード認証の事例では，技術ノート KGTN#2012021401 に則した方式で実装されており，生体認証にもこの方式を適用することが可能だと思われます．
-ファイル KGTN2012110701.pdf [(47.3 KB)] [kitasp 技術センター, 2012/11/07 07:55]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc811/" class="btn btn-template-main">続きを読む</a>
+2013/01/30*
+[番号] 技術ノート KGTN 2013013001
+[現象] [Tool] GGとは関係がないか，VBS中でRunメソッドを実行した時，リダイレクトが効かない．
+[説明] Runメソッドでアプリケーションを実行する場合， 「リダイレクトが必要な場合は」 以下のように cmd.exe を介して実行して下さい．
+strCmd = &ldquo;cmd /c xdoc2txt.exe &quot; + WScript.Arguments(0) + &quot; &gt; TEMP.TXT&rdquo; objSH.Run strCmd,0,True
+ファイル KGTN2013013001.pdf [(46.1 KB)] [kitasp 技術センター, 2013/01/30 09:55]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc713/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -694,7 +699,7 @@ http://technet.microsoft.com/ja-jp/scriptcenter/ff576025.aspx WMI の FAQ: ト�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc813/">
+                                      <a href="/posts/new_md/doc715/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -702,7 +707,7 @@ http://technet.microsoft.com/ja-jp/scriptcenter/ff576025.aspx WMI の FAQ: ト�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc813/">[GGH4.X] GGH4.5のクライアント印刷機能で，サーバ側のプリンタフォルダにオートクリエイト・プリンタが作成されない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc715/">[GGW3.2.1/GGH4.X] GGは Google Chrome ブラウザをサポートするのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -715,17 +720,18 @@ http://technet.microsoft.com/ja-jp/scriptcenter/ff576025.aspx WMI の FAQ: ト�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc813/"><i class="far fa-calendar"></i> 2012-11-05</a>
+                                            <a href="/posts/new_md/doc715/"><i class="far fa-calendar"></i> 2013-01-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/05*
-[番号] 技術ノート KGTN 2012110510
-[現象] [GGH4.X] GGH4.5のクライアント印刷機能で，サーバ側のプリンタフォルダにオートクリエイト・プリンタが作成されない．
-[説明] GGW3.2.1ではクライアント側のプリンタに対応するプリンタがサーバ側のプリンタフォルダに作成されましたが，GGH4.5ではそのようなプリンタ （オートクリエイト・プリンタ） は作成されません．
-ファイル KGTN2012110510.pdf [(42.7 KB)] [kitasp 技術センター, 2012/11/05 14:29]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc813/" class="btn btn-template-main">続きを読む</a>
+2013/01/27*
+[番号] 技術ノート KGTN 2012110901
+[現象] [GGW3.2.1/GGH4.X] GGは Google Chrome ブラウザをサポートするのか？
+[説明] いいえ，現時点ではGGの何れのバージョンも Google Chrome ブラウザをサポートしません．なお，GGH4.5の将来のリリースで Google Chrome ブラウザをサポートする計画があります．
+リリース時期は未定ですが，GGH4.5.0 Patch 2 で Google Chrome をサポートする見込みです．
+ファイル KGTN2012110901.pdf [(61 KB)] [kitasp 技術センター, 2013/01/28 07:25]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc715/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -795,7 +801,7 @@ http://technet.microsoft.com/ja-jp/scriptcenter/ff576025.aspx WMI の FAQ: ト�
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

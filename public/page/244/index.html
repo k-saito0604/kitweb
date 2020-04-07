@@ -409,28 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1760/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1603/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1760/">Microsoft Office 2007 の Access や Excel を使用しているが，稀に ntdll.dll でエラーが発生し，当該アプリケーションが異常終了する．</a></h4>
+                            <h4><a href="/posts/new_md/doc1603/">Ver4.0系で， Host Options → Security → Connections の設定項目から Use TCP as fallback が消えたが，どうしてなのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-05-13
+                            日付 2010-09-24
                             </p>
                             <p class="intro">*技術ノート
-2010/05/13*
-[番号] 技術ノート KGTN 2010051302
-[現象] Microsoft Office 2007 の Access や Excel を使用しているが，稀に ntdll.dll でエラーが発生し，当該アプリケーションが異常終了する．
-[説明] ntdll.dll は Windows のシステムファイルで，NTカーネルの関数を提供する役割を持っています．従って，大抵のAPIは最終的には ntdll.dll （NT Layer DLL） を呼び出しますが，この時に不正なメモリアドレス等が指定されると ntdll.dll でエラーが発生します．つまり， ntdll.dll でエラーが発生してもそれ自体に問題はなく，呼び出した側のアプリケーション等に問題がある可能性が高いと考えられます．
-再現が可能であれば，ADPlus （KB286350） を使って当該アプリケーションのダンプファイルを採取することで，原因を絞り込むことが可能です．再現が不可能であれば，発生した状況を蓄積することで，再現手順を発見するようにして下さい．
-Microsoft Office 2007 に限って言えば， Office IME 2007 を使用するとOSが不安定になり， ntdll.dll でエラーが発生するという情報がネット上に幾つか見られます．
-補　足 GraphOn社には，本件に関する技術的なレポート （バグレポート等） はありません．
-ファイル KGTN2010051302.pdf [(64.6 KB)] [kitasp 技術センター, 2010/05/13 10:22]</p>
+2010/09/24*
+[番号] 技術ノート KGTN 2010092407
+[現象] Ver4.0系で， Host Options → Security → Connections の設定項目から Use TCP as fallback が消えたが，どうしてなのか？
+[説明] Use TCP as fallback というオプションは， Java Client がSSLをサポートしていないため，これと他のクライアントを併用する時に必要な機能でした．Ver4.0系以降では Java Client をサポートしないため， Use TCP as fallback オプションも削除しました．
+ファイル KGTN2010092407.pdf [(49.7 KB)] [kitasp 技術センター, 2010/09/24 14:11]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1760/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1603/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -449,25 +446,26 @@ Microsoft Office 2007 に限って言えば， Office IME 2007 を使用する�
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1756/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1605/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1756/">Windows Vista / Windows 7 のクライアントで 「Aeroのテーマ」 を設定したが，GGのウインドウが透過表示にならない．</a></h4>
+                            <h4><a href="/posts/new_md/doc1605/">Ver4.0系の64ビット版 （サーバ） をVMware環境にインストール出来るか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-05-13
+                            日付 2010-09-24
                             </p>
                             <p class="intro">*技術ノート
-2010/05/13*
-[番号] 技術ノート KGTN 2010051305
-[現象] Windows Vista / Windows 7 のクライアントで 「Aeroのテーマ」 を設定したが，GGのウインドウが透過表示にならない．
-[説明] GGのウインドウは，その領域全てをサーバ側の情報に基づいて描画されますので，クライアント側の背景は透過表示されません （注：サムネイル等は表示されます） ．
-ファイル KGTN2010051305.pdf [(45.5 KB)] [kitasp 技術センター, 2010/05/13 14:32]</p>
+2010/09/24*
+[番号] 技術ノート KGTN 2010092403
+[現象] Ver4.0系の64ビット版 （サーバ） をVMware環境にインストール出来るか？
+[説明] Ver4.0系の64ビット版 （サーバ） を VMware 7 の環境にインストールすることが出来ますが， VMware 6 の環境にはインストールすることは出来ません．本件に関するGraphOn 社の情報 （Readme.txt） は，以下の通りです．
+The 64-bit GO-Global Host software can be installed on a system with VMWARE 7, but not VMWARE 6.
+ファイル KGTN2010092403.pdf [(51.2 KB)] [kitasp 技術センター, 2010/09/24 13:00]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1756/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1605/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -486,25 +484,26 @@ Microsoft Office 2007 に限って言えば， Office IME 2007 を使用する�
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1758/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1606/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1758/">仮想環境でGGサーバを構築したが，アプリケーションの動作が遅い．</a></h4>
+                            <h4><a href="/posts/new_md/doc1606/">Ver4.0系は，クライアント側のプリンタとして Microsoft XPS Document Writer をサポートしているのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-05-13
+                            日付 2010-09-24
                             </p>
                             <p class="intro">*技術ノート
-2010/05/13*
-[番号] 技術ノート KGTN 2010051304
-[現象] 仮想環境でGGサーバを構築したが，アプリケーションの動作が遅い．
-[説明] 遅い原因が仮想マシン （仮想環境） に起因しているのか，切り分けをお願いします．物理マシンで速く，仮想マシンで遅いのであれば，仮想マシンやネットワーク環境をチューニングしてパフォーマンスの改善を図る必要があります．物理マシンでも遅いのであれば，アプリケーションまたはその運用環境に原因があると考えられますので，それを調査する必要があります．
-ファイル KGTN2010051304.pdf [(48.4 KB)] [kitasp 技術センター, 2010/05/13 14:13]</p>
+2010/09/24*
+[番号] 技術ノート KGTN 2010092402
+[現象] Ver4.0系は，クライアント側のプリンタとして Microsoft XPS Document Writer をサポートしているのか？
+[説明] ユニバーサルプリンタドライバ （Universal Printer Driver） を使用する設定で，クライアント側のプリンタとして Microsoft XPS Document Writer をサポートします． Microsoft XPS Printer Driver （つまり Windows Printer Drivers を設定した時） は，サポートしません．本件に関するGraphOn 社の情報 （Readme.txt） は，以下の通りです．
+Microsoft&rsquo;s XPS Document Writer is supported as a client printer when using the Universal Printer Driver, but the XPS Printer Driver is not.
+ファイル KGTN2010092402.pdf [(51.9 KB)] [kitasp 技術センター, 2010/09/24 12:47]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1758/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1606/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -523,25 +522,26 @@ Microsoft Office 2007 に限って言えば， Office IME 2007 を使用する�
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc89/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1604/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc89/">[GGH4.X] Windows Vista / Windows 7 のクライアントで，個人設定で 「Aero のテーマ」 を選択すると，GGが表示するウインドウをドラッグした時等に反応が遅くなる．</a></h4>
+                            <h4><a href="/posts/new_md/doc1604/">Ver4.0系は，従来の Java Client をサポートしないのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-05-12
+                            日付 2010-09-24
                             </p>
                             <p class="intro">*技術ノート
-2010/05/12*
-[番号] 技術ノート KGTN 2010051202
-[現象] [GGH4.X] Windows Vista / Windows 7 のクライアントで，個人設定で 「Aero のテーマ」 を選択すると，GGが表示するウインドウをドラッグした時等に反応が遅くなる．
-[説明] Windows Vista / Windows 7 の 「ベーシックテーマ」 では従来のGDI （Graphics Device Interface） で描画を行い， 「Aero のテーマ」 では Direct3D で描画を行います．GGのクライアントはGDIベースで描画を行うため， 「Aero のテーマ」 が設定された環境では Windows の GDI → Direct3D のエミュレーション処理が加わるため，「ベーシックテーマ」 に比べ描画のパフォーマンスが低下します．パフォーマンスの低下はクライアントの性能に依存しますが，もし実用上気になる場合は， 「ベーシックテーマ」 に変更して下さい．
-補　足 Windows 7 の環境では，サービス Desktop Window Manager Session Manager を停止 （スタートアップの種類を手動にして再起動） することで，「ベーシックテーマ」 を設定した時と同じ描画パフォーマンスになります．但し，タスクバーのサムネイル， Windows フリップ， Windows フリップ 3D 等は利用出来なくなります． ファイル KGTN2010051202.pdf [(96.</p>
+2010/09/24*
+[番号] 技術ノート KGTN 2010092404
+[現象] Ver4.0系は，従来の Java Client をサポートしないのか？
+[説明] はい，Ver4.0系は従来の Java Client をサポートしません．詳細は未定ですが，これに代わるクライアントとして， Flash-based client が計画されております．本件に関するGraphOn 社の情報 （Release Notes.txt） は，以下の通りです．
+The Java Client is no longer supported. In its place, a Flash-based client will be included in the upcoming GO-Global Portal release.
+ファイル KGTN2010092404.pdf [(51.1 KB)] [kitasp 技術センター, 2010/09/24 13:40]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc89/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1604/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

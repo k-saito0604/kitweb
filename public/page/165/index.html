@@ -409,29 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc901/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc793/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc901/">[GGW3.2.1/GG</a></h4>
+                            <h4><a href="/posts/new_md/doc793/">[GGH4.X] クライアント印刷機能で，クライアントプリンタは構成されているのに，サーバ側のプリンタフォルダにプリンタが１台も無い．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-10-02
+                            日付 2012-11-12
                             </p>
                             <p class="intro">*技術ノート
-2012/10/02*
-[番号] 技術ノート KGTN 2012100201
-[現象] [GGW3.2.1/GG-SkyPDF] GGW3.2.1 + GG-SkyPDF (SkyPDF for GO-Global) + GGSpoolPDF で印刷を行う場合， Adobe Reader のバージョンは幾つにすべきか？
-[説明] GGSpoolPDF に添付されている設定ファイル GGSpoolPDF.ini は， Adobe Reader のバージョン8向けの設定になっております．バージョン9またはそれ以降については，下記補足の方法で対応が可能だと思われます．
-補足１ Adobe Reader へ印刷要求を行う時 （つまり Adobe Reader を起動する時） ， GGSpoolPDF は以下の引数を Adobe Reader へ渡します．
-  デフォルトプリンタへ出力する場合 &lt;iniファイルの viewerArg1 の値&gt; &lt;PDFファイルのフルパス&gt;
-  プリンタを指定して出力する場合 &lt;iniファイルのviewerArg2 の値&gt; &lt;PDFファイルのフルパス&gt;
-  近日公開予定の XI のコマンドラインの機能が同じ場合は，現在の設定のままで印刷可能です．もしコマンドラインの機能 （形式） が変わった場合は，機能的に同等なパラメタを viewerArg1 および viewerArg2 に設定することにより印刷可能だと思われます．
-補足２ Adobe Reader の起動に時間がかかり，上手く印刷出来ない場合は，GGSpoolPDF.</p>
+2012/11/12*
+[番号] 技術ノート KGTN 2012111205
+[現象] [GGH4.X] クライアント印刷機能で，クライアントプリンタは構成されているのに，サーバ側のプリンタフォルダにプリンタが１台も無い．
+[説明] 弊社の検証環境 （WS2008 32bit） で一度，そのような現象が発生しました．これは Windows が一時的に不安定になったのが原因のようで，サーバ側で 「ログアウト → ログオン」 することで構成されたプリンタが全て表示されるようになりました．
+ファイル KGTN2012111205.pdf [(49 KB)] [kitasp 技術センター, 2012/11/12 12:06]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc901/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc793/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -450,25 +446,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc902/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc794/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc902/">[ETC] GGとは関係ないが， Dropbox でリンクが解除されてしまったが，再リンクする場合の手順は？</a></h4>
+                            <h4><a href="/posts/new_md/doc794/">[GGH4.X] クライアント印刷機能で，構成されたプリンタとドライバの種類を確認する方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-09-27
+                            日付 2012-11-12
                             </p>
                             <p class="intro">*技術ノート
-2012/09/27*
-[番号] 技術ノート KGTN 2012092706
-[現象] [ETC] GGとは関係ないが， Dropbox でリンクが解除されてしまったが，再リンクする場合の手順は？
-[説明] 「ファイルの保管場所」 としてリンク解除前のフォルダを指定すると， 「元のフォルダ名（同期するフォルダの問題）」 というフォルダが新たに作成され，収拾が付かない状況になります．クライアント側のファイルとサーバ側のファイルを完全に分けた方が安全なので，クライアント側のフォルダを &hellip;¥Dropbox_OLD とリネームして，サーバ側に対応するフォルダを &hellip;¥Dropbox として作成するのがお勧めです．この方法であれば，何か問題が起きた場合でも，それぞれのファイルの内容を比較することで問題を解決することが出来ます．
-ファイル KGTN2012092706.pdf [(54.9 KB)] [kitasp 技術センター, 2012/09/27 17:55]</p>
+2012/11/12*
+[番号] 技術ノート KGTN 2012111204
+[現象] [GGH4.X] クライアント印刷機能で，構成されたプリンタとドライバの種類を確認する方法は？
+[説明] プログラム・ウインドウで File → Printers で表示されるダイアログで確認することが出来ます．このダイアログには構成されたプリンタの一覧が表示され，右側の列にドライバの種別が表示されます．
+ファイル KGTN2012111204.pdf [(56 KB)] [kitasp 技術センター, 2012/11/12 11:49]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc902/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc794/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -487,27 +483,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc906/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc795/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc906/">[GGH4.X] GGには，どのような管理機能があるのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc795/">[GGH4.X] クライアント印刷機能で，設定を Universal Printer Driver から Windows Printer Drivers へ変更したところプリンタが消えた．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-09-27
+                            日付 2012-11-12
                             </p>
                             <p class="intro">*技術ノート
-2012/09/27*
-[番号] 技術ノート KGTN 2012092703
-[現象] [GGH4.X] GGには，どのような管理機能があるのか？
-[説明] GG標準の管理機能はクラスタマネージャと呼ばれ，以下の機能があります．
-サーバ一覧の表示 サーバ単位でのセッション一覧の表示 サーバ単位でのプロセス一覧の表示 サーバ単位での登録 （公開） アプリケーションの一覧表示 サーバ単位での登録 （公開） アプリケーションの登録 サーバ単位での各種オプションの設定
-大規模案件等でシステム全体の管理ツール （JP1, Tivoli, etc&hellip;） が予め決められている場合は，それらに情報を 提供するSDK （拡張パック） を別途ご用意しております．サーバの状態・セッションの状態・セッションの履歴等の情報を，データベースやHTTP/POSTを介してそれらに提供することが出来ます．また，セッションの強制切断・セッションの強制終了・ネットワーク監視等を行うコマンドも含まれています．
-ファイル KGTN2012092703.pdf [(61.4 KB)] [kitasp 技術センター, 2012/09/27 10:14]</p>
+2012/11/12*
+[番号] 技術ノート KGTN 2012111203
+[現象] [GGH4.X] クライアント印刷機能で，設定を Universal Printer Driver から Windows Printer Drivers へ変更したところプリンタが消えた．
+[説明] GGW3.2.1では print.ini に記録された情報が優先しましたが，GGH4.5ではクラスタマネージャの設定が無条件に適用されます．従って， Universal Printer Driver から Windows Printer Drivers へ変更した場合，GGサーバ上に Windows Printer Driver が存在しないプリンタは構成されなくなります （つまりクライアントプリンタから消えます） ．
+ファイル KGTN2012111203.pdf [(54 KB)] [kitasp 技術センター, 2012/11/12 11:27]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc906/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc795/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -526,25 +520,28 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc905/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc796/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc905/">[GGH4.X] Windows クライアントをUSBディスクに入れて，出先のパソコンに接続してGGを利用できるか？</a></h4>
+                            <h4><a href="/posts/new_md/doc796/">[GGH4.X] クラスタマネージャで Session Shutdown の Timeouts -&gt; Session を指定した場合の動作を知りたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-09-27
+                            日付 2012-11-12
                             </p>
                             <p class="intro">*技術ノート
-2012/09/27*
-[番号] 技術ノート KGTN 2012092704
-[現象] [GGH4.X] Windows クライアントをUSBディスクに入れて，出先のパソコンに接続してGGを利用できるか？
-[説明] Windows クライアントは比較的小さなアプリケーションで，USBディスクの gg-client.exe をクリックするだけで起動します．特定のサーバへ接続したい場合は，ショートカットを作成してパラメタ （接続先など） を指定するか，またはgg-client.exe をパラメタ付きで起動するアプリケーションを作成するのが良いでしょう．
-ファイル KGTN2012092704.pdf [(49.7 KB)] [kitasp 技術センター, 2012/09/27 10:38]</p>
+2012/11/12*
+[番号] 技術ノート KGTN 2012111201
+[現象] [GGH4.X] クラスタマネージャで Session Shutdown の Timeouts -&gt; Session を指定した場合の動作を知りたい．
+[説明] 以下の設定を前提に，動作の説明をします．
+Session 5 minutes Warning period 2 minutes Grace period 1 minutes
+セッションは最大5分に制限され，セッション終了時刻の2分前に警告ダイアログが表示されます．セッション終了時刻になると，下記のダイアログが表示され，その時点で動作しているアプリケーションに終了要求が送信されます （アプリケーションの仕様に従って保存ダイアログ等が表示されます） ，さらに猶予時間1分を経過した時点で，全てのアプリケーションが強制終了になります．
+補　足 GGH4.5.0.13767 での検証では，警告ダイアログは正しい時刻に表示されますが，終了時刻が設定よりも１分遅くなります．
+ファイル KGTN2012111201.pdf [(62.9 KB)] [kitasp 技術センター, 2012/11/12 11:06]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc905/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc796/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

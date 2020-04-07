@@ -409,25 +409,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc846/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc745/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc846/">[GGH4.X] クライアント印刷機能の設定情報 （デフォルトプリンタ） 中の defaultlocation の意味は？</a></h4>
+                            <h4><a href="/posts/new_md/doc745/">[GGH4.5] セッション上のプログラムを終了させたが，クラスタマネージャで確認するとアプリケーションのプロセスが残っている．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-10-30
+                            日付 2012-12-27
                             </p>
                             <p class="intro">*技術ノート
-2012/10/30*
-[番号] 技術ノート KGTN 2012103006
-[現象] [GGH4.X] クライアント印刷機能の設定情報 （デフォルトプリンタ） 中の defaultlocation の意味は？
-[説明] クライアント印刷機能の設定情報 （デフォルトプリンタ） 中の default はプリンタ名を示し， defaultlocation は場所 （1: クライアント側， 2: サーバ側） を示します．GGW3.2.1では， 「クライアント印刷機能が有効な場合」 デフォルトプリンタはクライアント側のプリンタに限られましたが， GGH4.Xではサーバ側のプリンタもデフォルトプリンタに設定することが出来ます．
-ファイル KGTN2012103006.pdf [(47.7 KB)] [kitasp 技術センター, 2012/10/30 11:04]</p>
+2012/12/27*
+[番号] 技術ノート KGTN 2012122702
+[現象] [GGH4.5] セッション上のプログラムを終了させたが，クラスタマネージャで確認するとアプリケーションのプロセスが残っている．
+[説明] クラスタマネージャで残っているプロセス （仮に myProgram.exe とします） が，常駐プロセスかどうか確認してください．常駐プロセスであれば，下記の設定を行うことでセッションを終了させることが出来ます．常駐プロセスでない場合は，そのプログラムの処理に原因があると考えられますので，そのプログラムがどのような状況にあるのか （特定のイベントを待っているとか） 調査してください．諸事情で調査が困難な場合は， 「対症療法として」 当該プログラムを常駐プロセスと同様に設定して下さい．
+[レジストリに以下の設定を追加する] HKEY_LOCAL_MACHINE¥SOFTWARE¥GraphOn¥GO-Global¥System¥Processes myProgram.exe REG_DWORD 0
+ファイル KGTN2012122702.pdf [(56.3 KB)] [kitasp 技術センター, 2012/12/27 11:46]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc846/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc745/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,26 +447,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc845/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc744/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc845/">[GGH4.X] クライアント印刷機能の設定情報を保持するファイルの名称で，コンピュータ名とプリンタ名の間の文字列の意味は？</a></h4>
+                            <h4><a href="/posts/new_md/doc744/">[iOS] GGとは関係はないが， App Store を介さないでアプリケーションをインストールする方法はないか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-10-30
+                            日付 2012-12-27
                             </p>
                             <p class="intro">*技術ノート
-2012/10/30*
-[番号] 技術ノート KGTN 2012103007
-[現象] [GGH4.X] クライアント印刷機能の設定情報を保持するファイルの名称で，コンピュータ名とプリンタ名の間の文字列の意味は？
-[説明] { ? }.xml の ? の部分は，GGW3.2.1の ClientID に相当し，クライアントおよびユーザを一意に識別するIDです．この情報は，クライアントの下記レジストリに保持されています （HKLMではなくHKCUである点に注意して下さい）．
-HKCU¥Software¥GraphOn¥GO-Global¥Client ClientID REG_SZ 81067710-d1f9-11e0-a399-0021706f0ef4
-ファイル KGTN2012103007.pdf [(55.6 KB)] [kitasp 技術センター, 2012/10/30 11:33]</p>
+2012/12/27*
+[番号] 技術ノート KGTN 2012122703
+[現象] [iOS] GGとは関係はないが， App Store を介さないでアプリケーションをインストールする方法はないか？
+[説明] Jailbreakしていないディバイスで App Store を介さないでアプリケーションをインストールする方法があったとしても，それはiOSの不具合を突いた方法だと考えられ，iOSのバージョンアップ等で不具合が解決されれば利用出来なくなります （注：実際そのような事例があります） ．従って，永続的な App Store を介さないでアプリケーションをインストールする方法は無いと考えられます．
+ファイル KGTN2012122703.pdf [(49 KB)] [kitasp 技術センター, 2012/12/27 14:00]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc845/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc744/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -484,27 +484,25 @@ HKCU¥Software¥GraphOn¥GO-Global¥Client ClientID REG_SZ 81067710-d1f9-11e0-a3
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc850/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc748/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc850/">[GGH4.X] クライアント印刷機能の設定情報，つまりGGW3.2.1の print.ini に相当するファイルはないのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc748/">[GGH4.5] Mac OS X クライアントの環境で GetComputerName() を使用してクライアントのコンピュータ名を得ることが出来るのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-10-30
+                            日付 2012-12-26
                             </p>
                             <p class="intro">*技術ノート
-2012/10/30*
-[番号] 技術ノート KGTN 2012103003
-[現象] [GGH4.X] クライアント印刷機能の設定情報，つまりGGW3.2.1の print.ini に相当するファイルはないのか？
-[説明] 場所と内容は異なりますが， GGW3.2.1 の print.ini に相当するファイルが存在します． （クライアント側でなく） サーバ側の %APPDATA%¥GraphOn¥Printers というフォルダの下に
-{ ??? }.xml
-というファイルがプリンタ他毎に作成され，この中にプリンタの情報が保持されています．
-ファイル KGTN2012103003.pdf [(54.4 KB)] [kitasp 技術センター, 2012/10/30 09:54]</p>
+2012/12/26*
+[番号] 技術ノート KGTN 2012122601
+[現象] [GGH4.5] Mac OS X クライアントの環境で GetComputerName() を使用してクライアントのコンピュータ名を得ることが出来るのか？
+[説明] はい，サーバ側が GGH4.5.0.13767 (WS2008/32bit, WS2008R2) ，クライアント側が GGH4.5.0.13211 (OS X 10.8.2) の環境で，クライアントのコンピュータ名を得られることを確認しました．確認方法の詳細については，技術ノート KGTN#2012110203 をご覧下さい．
+ファイル KGTN2012122601.pdf [(57.6 KB)] [kitasp 技術センター, 2012/12/26 13:59]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc850/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc748/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -523,25 +521,26 @@ HKCU¥Software¥GraphOn¥GO-Global¥Client ClientID REG_SZ 81067710-d1f9-11e0-a3
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc843/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc749/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc843/">[GGW3.2.1/GGH4.X] GGはIIS Worker Process を使用しているのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc749/">[VM] GGサーバを仮想化するに当たり，ディスクの集約についての考え方を知りたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-10-30
+                            日付 2012-12-25
                             </p>
                             <p class="intro">*技術ノート
-2012/10/30*
-[番号] 技術ノート KGTN 2012103102
-[現象] [GGW3.2.1/GGH4.X] GGはIIS Worker Process を使用しているのか？
-[説明] GG （APS） は， IIS Worker Process を使用しておりません．従って， Windows が正常に動作している限り，GGの動作が IIS に影響を与えることはありません．もしAPSログにエラーが記録されており，かつ同時刻にIISでエラーが発生したとすれば， Windows 自体またはサーバ （仮想サーバ） に異常が発生した可能性が高いと考えられます．
-ファイル KGTN2012103102.pdf [(49 KB)] [kitasp 技術センター, 2012/10/31 04:55]</p>
+2012/12/25*
+[番号] 技術ノート KGTN 2012122502
+[現象] [VM] GGサーバを仮想化するに当たり，ディスクの集約についての考え方を知りたい．
+[説明] GGの事例およびGGとは関係の無い一般的な事例でディスクの集約絡みの障害が幾つも報告されており，「これなら絶対に大丈夫」 というような設計方法は未だありません．障害を経験した案件等では，新システムの設計に当たり，以下のような対策を行っています．
+ファイバーチャネル等をより太く （速く） する． 物理ディスクの数を増やす （アクセスを散らす） ． キャッシュを増やす （SSDを利用する） ． 運用に則した事前確認試験等を行うことで設計の精度を上げる． その他
+ファイル KGTN2012122502.pdf [(58.6 KB)] [kitasp 技術センター, 2012/12/25 11:06]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc843/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc749/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

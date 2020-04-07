@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2216/">
+                                      <a href="/posts/new_md/doc2163/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2216/">[Windows/PowerShell/ExPack] PowerShell でプロファイル中にマイドキュメント等のフォルダーを作るバッチを生成したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2163/">[GGH5.X/Windows] 現実に即した負荷試験を行いたいが，お勧めの手順を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2216/"><i class="far fa-calendar"></i> 2016-12-15</a>
+                                            <a href="/posts/new_md/doc2163/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/12/15*
-[番号] 技術ノート KGTN 2016120602
-[現象] [Windows/PowerShell/ExPack] PowerShell でプロファイル中にマイドキュメント等のフォルダーを作るバッチを生成したい．
-[説明] ローカルアカウントで Windows PowerShell を 「管理者として実行する」 で起動し，その中で下記のコマンドを実行して下さい．
-# # プロファイルに各種フォルダーを作成するバッチを生成するスクリプト # # 設定情報 $FilePrefix = &quot;GenMakeProfileFolder&quot; # 生成するファイルのプリフィックス $HomeFolder = &quot;C:HOME&quot; # プロファイルのホームフォルダー $FolderList = # 生成するフォルダーのリスト @( &quot;Documents&quot;, &quot;Favorites&quot;, &quot;Downloads&quot; ) # ホスト情報およびユーザー情報の設定など Try { . (&quot;.ConfconfUserList.ps1&quot;) } Catch { Write-Host &quot;インクルードファイルが見つかりません。&quot; Exit 1001 } # 引数のチェック if($Args.Length -ne 0) { Write-Host &quot;Usage: genProfileFolderList.ps1&quot; Exit 1002 } # 既存ファイルの削除 if ((Test-Path &quot;$FilePrefix.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2216/" class="btn btn-template-main">続きを読む</a>
+2017/04/07*
+[番号] 技術ノート KGTN 2017030601
+[現象] [GGH5.X/Windows] 現実に即した負荷試験を行いたいが，お勧めの手順を知りたい．
+[説明] 現実に即した負荷試験ということであれば，できるだけ多くの利用者 （端末） に参加して頂くことが大切です．これにより，GGサーバーだけでなくネットワークにも適切 （妥当） な負荷が掛かり，試験結果の信頼性が高まります．負荷試験の手順は，試験結果の評価が出来るように，例えば次のようなシナリオ （午前9時スタート） で実施することをお勧めします．
+ 09:00 ～ 09:05 「ログオン → 30秒待機 → ログオフ」，この繰り返し 09:05 ～ 09:10 「ログオン → ブラウザを起動」 ※評価が出来るように待機 09:10 ～ 09:15 「ウエッブページにアクセス → 10秒待機」，この繰り返し ※ネットサーフィンをしているような操作 09:15 ～ 09:20 「通常利用するアプリケーションを起動」 ※評価が出来るように待機 5.09:20 ～ 09:30 「アプリケーションを自由に利用」，その後ログオフ  ファイル KGTN2017030601.pdf [(62.6 KB)] [kitasp 技術センター, 2017/04/07 13:48]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2163/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2210/">
+                                      <a href="/posts/new_md/doc2132/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2210/">[Windows/PowerShell/ExPack] ワークグループ環境＆複数のGGサーバーでNAS上にマイドキュメントやお気に入りを配置した運用環境の構築手順は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2132/">[GGH5.X] GGPDFPrint の機能とインストール手順を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,19 +381,25 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2210/"><i class="far fa-calendar"></i> 2016-12-15</a>
+                                            <a href="/posts/new_md/doc2132/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/12/15*
-[番号] 技術ノート KGTN 2016120603
-[現象] [Windows/PowerShell/ExPack] ワークグループ環境＆複数のGGサーバーでNAS上にマイドキュメントやお気に入りを配置した運用環境の構築手順は？
-[説明] ここで記述する内容は，他の情報 （技術ノート，PowerShell，Batch，NAS，etc&hellip;） を前提としており，閉じた内容でないことをご理解下さい．また， PowerShell をリモート実行出来る環境が構築されていることも前提としています．
-[STEP#0] ・管理サーバー・GGサーバー・NASのホスト名およびIPアドレスを決める （採取する） ． ・スクリプト genProfileFolderList.ps1 に設定情報をセットする． ・スクリプト genProfileSymbolicLinkList.ps1 に設定情報をセットする．
-# 設定情報 $FilePrefix = &quot;GenMakeProfileFolder&quot; # 生成するファイルのプリフィックス $HomeFolder = &quot;C:HOME&quot; # プロファイルのホームフォルダー $FolderList = # 生成するフォルダーのリスト @( &quot;Documents&quot;, &quot;Favorites&quot;, &quot;Downloads&quot; )  スクリプト genProfileFolderList.ps1 の設定情報
-# 設定情報 $FilePrefix = &quot;GenMakeProfileSymbolicLink&quot; # 生成するファイルのプリフィックス $HomeFolder = &quot;C:Users&quot; # プロファイルのホームフォルダー $NASAddr = &quot;192.168.0.2&quot; # NAS のアドレス $FolderList = # 生成するフォルダーのリスト @( &quot;Documents&quot;, &quot;Favorites&quot;, &quot;Downloads&quot; )  スクリプト genProfileSymbolicLinkList.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2210/" class="btn btn-template-main">続きを読む</a>
+2017/04/07*
+[番号] 技術ノート KGTN 2017031801
+[現象] [GGH5.X] GGPDFPrint の機能とインストール手順を知りたい．
+[説明] GGPDFPrint は，GGクライアントに組み込まれた UPD （Universal Printer Driver） の印刷エンジンを置き換えるソフトウエアで，この機能によりドキュメントを Adobe Reader を使用して印刷するようになります （Adobe Reader の手動操作は必要ありません） ．さらに， [マイ ドキュメント] にログを出力する機能もあるため， UPD による印刷の諸問題の調査に利用することができます．
+インストールの手順は，次の通りです．
+&lt;STEP#1&gt; GGPDFPrint-Setup.exe を入手し，ダブルクリックして起動します．
+&lt;STEP#2&gt; GGのデスクトップクライアント （シングルユーザー） 版のインストーラー以外の方法でGGのクライアントがインストールされている場合は， [参照] ボタンをクリックして，そのインストール先のフォルダーを選択します．その後， [次へ] をクリックします．
+選択したフォルダーにGGクライアントがない場合は， [次へ] をクリックした直後に次のメッセージが表示されます．再度， [参照] をクリックし，正しいフォルダーを指定してください．
+選択したフォルダーに既に GGPDFPrint がインストールされている場合は， [次へ] をクリックした直後に次のメッセージが表示されます．インストールを中断してください．
+&lt;STEP#3&gt; [インストール] をクリックします．
+&lt;STEP#4&gt; [完了] をクリックします．
+&lt;STEP#5&gt; [スタート] → [すべてのプログラム] → [GGPDFPrint] を選択してください．
+Windows 7 Windows 10 &lt;STEP#6&gt; [1.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2132/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -403,7 +409,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2212/">
+                                      <a href="/posts/new_md/doc2147/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -411,7 +417,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2212/">[Windows/PowerShell/ExPack] 技術ノート KGTN#2016120603 の環境で NAS のIPアドレスを間違えた．IPアドレスを修正するには，どのような作業をすれば良いのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2147/">[GGH5.X] GGを簡単かつ安価に試すクラウド環境はあるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -424,17 +430,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2212/"><i class="far fa-calendar"></i> 2016-12-15</a>
+                                            <a href="/posts/new_md/doc2147/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/12/15*
-[番号] 技術ノート KGTN 2016120903
-[現象] [Windows/PowerShell/ExPack] 技術ノート KGTN#2016120603 の環境で NAS のIPアドレスを間違えた．IPアドレスを修正するには，どのような作業をすれば良いのか？
-[説明] 先ず，正しいNASのIPアドレスを genProfileSymbolicLinkList.ps1 を設定し，バッチファイルを生成して下さい．次に，このバッチファイルを各GGサーバー上で （管理者権限で） 実行して下さい．この手順で，プロファイル中のシンボリックリンクの先が，正しいNAS上のフォルダーを指すようになります．
-ファイル KGTN2016120903.pdf [(58.1 KB)] [kitasp 技術センター, 2016/12/15 11:22]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2212/" class="btn btn-template-main">続きを読む</a>
+2017/04/07*
+[番号] 技術ノート KGTN 2017032201
+[現象] [GGH5.X] GGを簡単かつ安価に試すクラウド環境はあるか？
+[説明] さくらインターネットの 「さくらのVPS for Windows Server」 の W2G にGGをインストールし，１ユーザーで Microsoft Office 等が利用できることを確認した事績があります．
+ファイル KGTN2017032201.pdf [(48.9 KB)] [kitasp 技術センター, 2017/04/07 17:16]
+KGTN2017032201.jpg
+表示 [(14.4 KB)] [kitasp 技術センター, 2017/04/07 17:16]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2147/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -444,7 +452,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2214/">
+                                      <a href="/posts/new_md/doc2138/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -452,7 +460,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2214/">[Windows/PowerShell/ExPack] 技術ノート KGTN#2016120603 の環境で NAS　がダウンした場合，GGの利用はどうなるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2138/">[GGH5.X] GGサーバー上で CubePDF Utility は動作するのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -465,17 +473,22 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2214/"><i class="far fa-calendar"></i> 2016-12-15</a>
+                                            <a href="/posts/new_md/doc2138/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/12/15*
-[番号] 技術ノート KGTN 2016120902
-[現象] [Windows/PowerShell/ExPack] 技術ノート KGTN#2016120603 の環境で NAS　がダウンした場合，GGの利用はどうなるのか？
-[説明] ログオン時およびアプリケーション利用時に 「ダウン中の」 NAS にアクセスするため，ログオンに時間がかかります （タイムアウトを待つため） ．アプリケーションについても，同じ理由でマイドキュメントやお気に入りにアクセスする度に時間がかかります．
-ファイル KGTN2016120902.pdf [(51.4 KB)] [kitasp 技術センター, 2016/12/15 11:20]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2214/" class="btn btn-template-main">続きを読む</a>
+2017/04/07*
+[番号] 技術ノート KGTN 2017020802
+[現象] [GGH5.X] GGサーバー上で CubePDF Utility は動作するのか？
+[説明] Windows Server 2012 R2 + GO-Global 5.0.2.23814 + cubepdf-utility-0.4.1b-x64 という環境で動作確認を行ったところ，下記のようにPDFファイルを開き，幾つかのページを削除し，そのファイルを保存することが出来ました．
+CubePDF Utility をGGサーバーにインストールする場合，必ず64bitネイティブ版を使用してください ( [32ビット版ではPDFファイルの内容が表示されません]{.underline} ）．さらに，インストール直後に CubeWidget をアンインストールしてください （ [アンインストールしない場合，このプログラムが常駐しセッションが終了しません]{.underline} ） ．
+ファイル KGTN2017020802.pdf [(292 KB)] [kitasp 技術センター, 2017/04/07 11:46]
+KGTN2017020802-1.jpg
+表示 [(39.8 KB)] [kitasp 技術センター, 2017/04/07 11:47]
+KGTN2017020802-2.jpg
+表示 [(20.4 KB)] [kitasp 技術センター, 2017/04/11 14:58]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2138/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -485,7 +498,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2215/">
+                                      <a href="/posts/new_md/doc2182/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -493,7 +506,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2215/">[Windows/PowerShell/ExPack] 技術ノート KGTN#2016120603 を試したいが，どのような点に注意すれば良いか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2182/">[GGH5.X] GGサーバー上で HO_Cad 2.70 は動作するのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -506,22 +519,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2215/"><i class="far fa-calendar"></i> 2016-12-15</a>
+                                            <a href="/posts/new_md/doc2182/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/12/15*
-[番号] 技術ノート KGTN 2016120901
-[現象] [Windows/PowerShell/ExPack] 技術ノート KGTN#2016120603 を試したいが，どのような点に注意すれば良いか？
-[説明] 技術ノート KGTN#2016120603 を試す場合，以下のポイントを押さえて下さい．
-[ポイント１] 検証環境として，管理サーバー・GGサーバー・NAS （またはWindows） の３台マシンが必要です．管理サーバーでは， PowerShell のスクリプトよびGGクライアントの実行を行います．GGサーバーでは，アカウントの作成 （管理サーバーからのPowerShell 実行およびRDSによるログオン） およびGGサーバーの実行を行います．NAS では，GGサーバー上のアカウントの 「マイドキュメント」 や 「お気に入り」 のリダイレクト先である共有フォルダーを保持します．各マシンの管理者アカウント Administrator は，必ずパスワードを揃えるようにして下さい．
-[ポイント２] 管理サーバーおよびGGサーバーの PowerShell は，必ずバージョン5.0またはそれ以降にして下さい （それ以前のバージョンの場合は技術ノートKGTN#2016101701 の方法で入手して下さい）．&ldquo;Windows PowerShell&rdquo; （のコンソール） を起動する時は，必ず 「管理者として実行する」 で起動して下さい．さらに，２台のマシン上で技術ノート KGTN#2016120501 を参考に環境設定を行い，管理サーバーからGGサーバーへ Enter-PSSession （リモート接続） が出来るようにして下さい．
-PowerShell のバージョン確認 (Windows 10 Pro)
-PowerShell のバージョン確認 (Windows Server 2012 R2)
-&ldquo;Windows PowerShell&rdquo; を 「管理者として実行する」 (Windows 10 Pro)
-&ldquo;Windows PowerShell&rdquo; を 「管理者として実行する」 (Windows Server 2012 R2)</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2215/" class="btn btn-template-main">続きを読む</a>
+2017/04/07*
+[番号] 技術ノート KGTN 2017020804
+[現象] [GGH5.X] GGサーバー上で HO_Cad 2.70 は動作するのか？
+[説明] Windows Server 2012 R2 + GO-Global 5.0.2.23814 + ho_cad_2_70 という環境で動作確認を行ったところ，下記のように起動しました （注：操作等については弊社では分かりませんので確認しておりません） ．
+ファイル KGTN2017020804.pdf [(163 KB)] [kitasp 技術センター, 2017/04/07 11:52]
+KGTN2017020804.jpg
+表示 [(30.2 KB)] [kitasp 技術センター, 2017/04/07 11:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2182/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -531,7 +541,7 @@ PowerShell のバージョン確認 (Windows Server 2012 R2)
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2211/">
+                                      <a href="/posts/new_md/doc2183/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -539,7 +549,7 @@ PowerShell のバージョン確認 (Windows Server 2012 R2)
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2211/">[Windows] シンボリック・リンクの作成と削除の方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2183/">[GGH5.X] GGサーバー上で Jw_cad は動作するのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -552,17 +562,19 @@ PowerShell のバージョン確認 (Windows Server 2012 R2)
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2211/"><i class="far fa-calendar"></i> 2016-12-15</a>
+                                            <a href="/posts/new_md/doc2183/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/12/15*
-[番号] 技術ノート KGTN 2016120904
-[現象] [Windows] シンボリック・リンクの作成と削除の方法は？
-[説明] プロファイル中にマイドキュメントのシンボリック・リンクを作成する例と，それを削除する例を以下に示します．del コマンドでもシンボリック・リンクを削除することが出来ますが，しかしリンク先が存在しない場合にタイムアウトを待つことになるため時間を要します．
-mklink /D C:UserslocalUser011Documents 192.168.0.2localUser011Documents rmdir C:UserslocalUser011Documents  ファイル KGTN2016120904.pdf [(54.8 KB)] [kitasp 技術センター, 2016/12/15 11:23]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2211/" class="btn btn-template-main">続きを読む</a>
+2017/04/07*
+[番号] 技術ノート KGTN 2017020803
+[現象] [GGH5.X] GGサーバー上で Jw_cad は動作するのか？
+[説明] Windows Server 2012 R2 + GO-Global 5.0.2.23814 + jww802 という環境で動作確認を行ったところ，下記のように図面を開くことができました （注：操作等については弊社では分かりませんので確認しておりません） ．
+ファイル KGTN2017020803.pdf [(226 KB)] [kitasp 技術センター, 2017/04/07 11:49]
+KGTN2017020803.jpg
+表示 [(40.8 KB)] [kitasp 技術センター, 2017/04/07 11:50]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2183/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -572,7 +584,7 @@ mklink /D C:UserslocalUser011Documents 192.168.0.2localUser011Documents rmdir C:
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2217/">
+                                      <a href="/posts/new_md/doc2184/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -580,7 +592,7 @@ mklink /D C:UserslocalUser011Documents 192.168.0.2localUser011Documents rmdir C:
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2217/">[Windows/PowerShell/ExPack] PowerShell で複数サーバーの複数アカウントに連続してログオンしたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2184/">[GGH5.X] GGサーバー側にPDFファイルを生成できるソフトウエアは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -593,17 +605,22 @@ mklink /D C:UserslocalUser011Documents 192.168.0.2localUser011Documents rmdir C:
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2217/"><i class="far fa-calendar"></i> 2016-12-14</a>
+                                            <a href="/posts/new_md/doc2184/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/12/14*
-[番号] 技術ノート KGTN 2016120601
-[現象] [Windows/PowerShell/ExPack] PowerShell で複数サーバーの複数アカウントに連続してログオンしたい．
-[説明] ローカルアカウントで Windows PowerShell を 「管理者として実行する」 で起動し，その中で下記のコマンドを実行して下さい．
-# # GG サーバーに連続ログオンするバッチを生成するスクリプト # # 設定情報 $FilePrefix = &quot;GenRDSrdsLogon&quot; # 生成するファイルのプリフィックス # ホスト情報およびユーザー情報の設定など Try { . (&quot;.ConfconfHostList.ps1&quot;) . (&quot;.ConfconfUserList.ps1&quot;) } Catch { Write-Host &quot;インクルードファイルが見つかりません。&quot; Exit 1001 } # 引数のチェック if($Args.Length -ne 0) { Write-Host &quot;Usage: genRDSLogonList.ps1&quot; Exit 1002 } # 既存ファイルの削除 ForEach($targetH In $hostList) { if ((Test-Path &quot;$FilePrefix-$targetH.bat&quot;) -eq $True) { Remove-Item (&quot;$FilePrefix-$targetH.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2217/" class="btn btn-template-main">続きを読む</a>
+2017/04/07*
+[番号] 技術ノート KGTN 2017020801
+[現象] [GGH5.X] GGサーバー側にPDFファイルを生成できるソフトウエアは？
+[説明] PDF生成ソフトウエアの中には，PDFファイルの生成先を指定するダイアログをカーネルの中で表示するものがあり，このようなソフトウエアは使用することが出来ません．GGのセッションの中でPDFファイルの生成先を指定するダイアログを表示する製品として， Foxit Reader 8 があります．
+下記の例は， foxit-reader_8.1.2.1123_jp を既定の設定でサーバー側にインストールし，サーバー側のプリンター Foxit Reader PDF Printer へ印刷した時のものです．
+ファイル KGTN2017020801.pdf [(371 KB)] [kitasp 技術センター, 2017/04/07 11:41]
+KGTN2017020801-1.jpg
+表示 [(45 KB)] [kitasp 技術センター, 2017/04/07 11:41]
+KGTN2017020801-2.jpg
+表示 [(40.5 KB)] [kitasp 技術センター, 2017/04/07 11:41]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2184/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -613,7 +630,7 @@ mklink /D C:UserslocalUser011Documents 192.168.0.2localUser011Documents rmdir C:
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2220/">
+                                      <a href="/posts/new_md/doc2153/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -621,7 +638,7 @@ mklink /D C:UserslocalUser011Documents 192.168.0.2localUser011Documents rmdir C:
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2220/">[Windows/PowerShell] PowerShell でシンボリックリンクを作成する方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2153/">[GGH5.X] Mozilla Firefox 52 をインストールしたが，GGの Firefox クライアントが動作しない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -634,17 +651,20 @@ mklink /D C:UserslocalUser011Documents 192.168.0.2localUser011Documents rmdir C:
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2220/"><i class="far fa-calendar"></i> 2016-12-14</a>
+                                            <a href="/posts/new_md/doc2153/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/12/14*
-[番号] 技術ノート KGTN 2016120101
-[現象] [Windows/PowerShell] PowerShell でシンボリックリンクを作成する方法は？
-[説明] Ver.5 の環境で，以下のように New-Item &hellip; -ItemType SymbolicLink を実行することでシンボリックリンクを作成することが出来ます．
-New-Item -Path C:Usersuser -Name TechNote -Value 192.168.0.10pubTechNote -ItemType SymbolicLink  ファイル KGTN2016120101.pdf [(53.7 KB)] [kitasp 技術センター, 2016/12/14 17:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2220/" class="btn btn-template-main">続きを読む</a>
+2017/04/07*
+[番号] 技術ノート KGTN 2017031401
+[現象] [GGH5.X] Mozilla Firefox 52 をインストールしたが，GGの Firefox クライアントが動作しない．
+[説明] GGの Firefox クライアントが公式にサポートする環境は， Mozilla Firefox 38 (ESR) です．弊社の試験では，Mozilla Firefox 52 (ESR) / Win32 で動作することを確認しております．
+https://ftp.mozilla.org/pub/firefox/releases/52.0esr/win32/ja/
+ファイル KGTN2017031401.pdf [(148 KB)] [kitasp 技術センター, 2017/04/07 14:54]
+KGTN2017031401.jpg
+表示 [(35.4 KB)] [kitasp 技術センター, 2017/04/07 14:54]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2153/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -654,7 +674,7 @@ New-Item -Path C:Usersuser -Name TechNote -Value 192.168.0.10pubTechNote -ItemTy
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2219/">
+                                      <a href="/posts/new_md/doc2176/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -662,7 +682,7 @@ New-Item -Path C:Usersuser -Name TechNote -Value 192.168.0.10pubTechNote -ItemTy
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2219/">[Windows/PowerShell] PowerShell でパスワード入力のダイアログの表示無しに，リモートコンピューターに接続 （Enter</a></h2>
+                                    <h2><a href="/posts/new_md/doc2176/">[GGH5.X] Windowsの関数 SetDefaultPrinter でデフォルトプリンタを変更したいが，引数で存在するプリンターを  の形式で指定するとエラーとなる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -675,17 +695,20 @@ New-Item -Path C:Usersuser -Name TechNote -Value 192.168.0.10pubTechNote -ItemTy
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2219/"><i class="far fa-calendar"></i> 2016-12-14</a>
+                                            <a href="/posts/new_md/doc2176/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/12/14*
-[番号] 技術ノート KGTN 2016113002
-[現象] [Windows/PowerShell] PowerShell でパスワード入力のダイアログの表示無しに，リモートコンピューターに接続 （Enter-PSSession） する方法を知りたい．
-[説明] 以下のスクリプトでパスワード入力のダイアログの表示無しに，リモートコンピューターに接続することが出来ます．
-# 引数のチェック if($Args.Length -ne 3) { Write-Host &quot;Usage: enterPSSession.ps1 &lt;host&gt; &lt;user&gt; &lt;password&gt;&quot; Exit 1002 } $argHost = $Args[0] $argUser = $Args[1] $argPass = $Args[2] $password = ConvertTo-SecureString $argPass -AsPlainText -Force $cred= New-Object System.Management.Automation.PSCredential($argUser,$password) Enter-PSSession $argHost -Credential $cred  ファイル KGTN2016113002.pdf [(58.7 KB)] [kitasp 技術センター, 2016/12/14 17:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2219/" class="btn btn-template-main">続きを読む</a>
+2017/04/07*
+[番号] 技術ノート KGTN 2017021501
+[現象] [GGH5.X] Windowsの関数 SetDefaultPrinter でデフォルトプリンタを変更したいが，引数で存在するプリンターを の形式で指定するとエラーとなる．
+[説明] GG環境で関数 SetDefaultPrinter を使ってデフォルトプリンタを変更する場合は，次の形式でプリンターを指定してください．
+[サーバー側のプリンター] 形式： 例１： &ldquo;Foxit Reader PDF Printer&rdquo; 例２： &ldquo;Microsoft XPS Document Writer&rdquo;
+[クライアント側のプリンター] 形式： (from ) 例１： &quot; Preview PDF (from WIN10-ISUMI1)&rdquo; 例２： &quot; FX DocuCentre-IV 1号機 (from WIN10-ISUMI1)&rdquo;
+なお，クライアント名は環境変数 CLIENTCOMPUTERNAME から得ることができます．
+ファイル KGTN2017021501.pdf [(62.4 KB)] [kitasp 技術センター, 2017/04/07 13:02]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2176/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -695,7 +718,7 @@ New-Item -Path C:Usersuser -Name TechNote -Value 192.168.0.10pubTechNote -ItemTy
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2204/">
+                                      <a href="/posts/new_md/doc2144/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -703,7 +726,7 @@ New-Item -Path C:Usersuser -Name TechNote -Value 192.168.0.10pubTechNote -ItemTy
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2204/">[Windows/PowerShell] PowerShell でリモート処理を行う場合に必要な設定は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2144/">[GGH5.X] オプション -desktop でログオンした時，ウインドウの右上の×をクリックしてもセッションが終了しない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -716,18 +739,19 @@ New-Item -Path C:Usersuser -Name TechNote -Value 192.168.0.10pubTechNote -ItemTy
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2204/"><i class="far fa-calendar"></i> 2016-12-14</a>
+                                            <a href="/posts/new_md/doc2144/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/12/14*
-[番号] 技術ノート KGTN 2016120501
-[現象] [Windows/PowerShell] PowerShell でリモート処理を行う場合に必要な設定は？
-[説明] ローカルアカウントで Windows PowerShell を 「管理者として実行する」 で起動し，その中で下記のコマンドを実行して下さい． Set-ExecutionPolicy Bypass は，状況に応じてセキュリティを高めるRemoteSigned 等に変更して下さい．
-1. Enable-PSRemoting 2. Set-Item WSMan:localhostClientTrustedHosts -Value * 3. Winrm Quickconfig 4. Enter-PSSession &lt;接続先のIP アドレス&gt; 5. Set-ExecutionPolicy Bypass  上記の設定を行ってもリモート接続 （Enter-PSSession） に失敗する場合は，接続先に接続元と同じ管理者アカウントが存在するかどうかを確認して下さい．
-ファイル KGTN2016120501.pdf [(65.7 KB)] [kitasp 技術センター, 2017/02/22 17:00]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2204/" class="btn btn-template-main">続きを読む</a>
+2017/04/07*
+[番号] 技術ノート KGTN 2017032702
+[現象] [GGH5.X] オプション &ldquo;-desktop&rdquo; でログオンした時，ウインドウの右上の×をクリックしてもセッションが終了しない．
+[説明] ウインドウの右上の×をクリックした場合，リモートデスクトップ接続の 「切断」 に相当する処理となり，セッションは終了しません．セッションを終了させる場合は， [スタート] を右クリック → [シャットダウンまたはサインアウト] → [サインアウト] を選択してください．
+ファイル KGTN2017032702.pdf [(305 KB)] [kitasp 技術センター, 2017/04/07 17:19]
+KGTN2017032702.jpg
+表示 [(16.6 KB)] [kitasp 技術センター, 2017/04/07 17:20]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2144/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -797,7 +821,7 @@ New-Item -Path C:Usersuser -Name TechNote -Value 192.168.0.10pubTechNote -ItemTy
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

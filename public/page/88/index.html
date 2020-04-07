@@ -409,25 +409,30 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc27/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2669/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc27/">[hopTo] RDS のインストール時に 「リモート処理を使用してサーバーに接続できません」 と表示される．</a></h4>
+                            <h4><a href="/posts/new_md/doc2669/">[GGH4.X-5.X] GGEasyMonitorConnectionCheck とはどんなツールなのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-07-30
+                            日付 2015-11-04
                             </p>
                             <p class="intro">*技術ノート
-2015/07/30*
-[番号] 技術ノート KGTN 2015072901
-[現象] [hopTo] RDS のインストール時に 「リモート処理を使用してサーバーに接続できません」 と表示される．
-[説明] 管理者権限を持つドメインユーザーでインストールを開始して 「リモート処理を使用してサーバーに接続できません」 と表示される場合は， PowerShell のリモート処理が設定されていないことが原因だと思われます．対象サーバー上で PowerShell を起動 （管理者として実行） し，その中で Enable-PSRemoting を実行して下さい．続行の選択項目は，すべて Y を入力して下さい．
-ファイル KGTN2015072901.pdf [(51 KB)] [kitasp 技術センター, 2015/07/30 17:19]</p>
+2015/11/04*
+[番号] 技術ノート KGTN 2015110202
+[現象] [GGH4.X-5.X] GGEasyMonitorConnectionCheck とはどんなツールなのか？
+[説明] 設定ファイルまたはコマンドラインで指定したGGサーバーに対して，GGのプロトコルで接続を行い，最大セッション数と現在のセッション数を得るプログラムです．このプログラムが作成された背景は，ログオン中のセッションは正常に動作しているにも関わらず，新規にログオン出来ない （ログオン処理が完了しない） 現象が発生し，それを検出することを目的としたものです．
+設定ファイルと起動パラメタ 設定ファイル GGEasyMonitorConnectionCheck.ini の default セクションで，以下のパラメタを設定して下さい． [なお，拡張パックのライセンスが無い場合は，項目 rxpAddr の値に関わりなくGGサーバーのIPアドレスとして 127.0.0.1 が設定されます （つまり外部のGGサーバーの監視は出来ません） ．]{.underline}
+ 設定項目 説明 logLevel ログの出力レベル，通常は1を指定し，障害時は4を指定 logd ログファイルを作成するフォルダ（省略可） licFile 拡張パックのライセンスファイルのパス（省略可） rxpAddr GGサーバーのIPアドレス（既定値は127.0.0.1） rxpPort GGサーバーのAPSのポート番号（既定値は491） timeout タイムアウトの秒数（既定値は30）
+ GGサーバーのアドレスおよびポート番号は，起動パラメタでも指定することが出来ます．
+ 設定項目 説明 -rxpAddr GGサーバーのIPアドレス -rxpPort GGサーバーのAPSのポート番号 -timeout タイムアウトの秒数（1～3600）
+ プログラムの戻り値 プログラムの戻り値で，状況およびセッション数の情報を知ることが出来ます．
+ 戻り値 説明 101 接続出来ない（接続処理に失敗） 102 接続出来ない（タイムアウト） 201 アカウントの認証に失敗 202 ログオン処理でタイムアウト 999 内部エラー  1000以上 最大セッション数×1000 ＋ 現在のセッション数</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc27/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2669/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,30 +451,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc29/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2687/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc29/">[Microsoft Azure] Microsoft Azure のポータルに， PowerShell のコマンドを入力する場所が見つからない．</a></h4>
+                            <h4><a href="/posts/new_md/doc2687/">[GGH4.X-5.X] GGのクライアントは，なぜ VC&#43;&#43; のランタイムを必要とするのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-07-30
+                            日付 2015-11-04
                             </p>
                             <p class="intro">*技術ノート
-2015/07/30*
-[番号] 技術ノート KGTN 2015072804
-[現象] [Microsoft Azure] Microsoft Azure のポータルに， PowerShell のコマンドを入力する場所が見つからない．
-[説明] Microsoft Azure のポータルにアクセスしているマシンに Microsoft Azure PowerShell をインストールして下さい （注： Microsoft Web Platform Installer を実行する） ．
-Microsoft Azure PowerShell を起動し Add-AzureAccount　を実行することで，以後ポータルにアクセスしているマシンの PowerShell のウインドウから （Azureの環境上で） コマンドを実行することが出来ます．
-ファイル KGTN2015072804.pdf [(129 KB)] [kitasp 技術センター, 2015/07/30 17:14]
-KGTN2015072804-1.jpg
-表示 [(28.5 KB)] [kitasp 技術センター, 2015/07/30 17:14]
-KGTN2015072804-2.jpg
-表示 [(32 KB)] [kitasp 技術センター, 2015/07/30 17:14]</p>
+2015/11/04*
+[番号] 技術ノート KGTN 2015100801
+[現象] [GGH4.X-5.X] GGのクライアントは，なぜ VC++ のランタイムを必要とするのか？
+[説明] VC++ （Microsoft Visual C++） は，事実上のWindowsの標準開発環境であり，GGもこのVC++ を使用して開発されております． VC++ で開発されたアプリケーションを 「VC++ がインストールされてないコンピューター」 上で実行するには， &ldquo;Microsoft Visual C++ 再頒布可能パッケージ&rdquo; （ランタイム） が必要です．
+ファイル KGTN2015100801.pdf [(52.4 KB)] [kitasp 技術センター, 2015/11/04 15:44]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc29/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2687/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -488,31 +488,25 @@ KGTN2015072804-2.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc30/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2680/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc30/">[Microsoft Azure] Microsoft Azure の仮想マシンに，仮想ネットワークの静的な （プライベート） IPアドレスを割り当てる方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc2680/">[GGH4.X-5.X] GG環境でブラウザ （IE） を起動すると，ウエッブのコンテンツが表示されない （コンテンツが表示される部分が真っ白の状態） ．</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-07-30
+                            日付 2015-11-04
                             </p>
                             <p class="intro">*技術ノート
-2015/07/30*
-[番号] 技術ノート KGTN 2015072803
-[現象] [Microsoft Azure] Microsoft Azure の仮想マシンに，仮想ネットワークの静的な （プライベート） IPアドレスを割り当てる方法は？
-[説明] Azure PowerShell で，下記のコマンドを実行して下さい．
-　&gt; $VM = Get-AzureVM -ServiceName -Name &gt; Set-AzureStaticVNetIP -VM $VM -IPAddress &lt;IPアドレス&gt; | Update-AzureVM
-なお，新しいポータルでは，下記のように画面から設定 （プライベートIPアドレス） することが出来ます．
-ファイル KGTN2015072803.pdf [(108 KB)] [kitasp 技術センター, 2015/07/30 17:10]
-KGTN2015072803-1.jpg
-表示 [(20.1 KB)] [kitasp 技術センター, 2015/07/30 17:10]
-KGTN2015072803-2.jpg
-表示 [(16.2 KB)] [kitasp 技術センター, 2015/07/30 17:10]</p>
+2015/11/04*
+[番号] 技術ノート KGTN 2015110201
+[現象] [GGH4.X-5.X] GG環境でブラウザ （IE） を起動すると，ウエッブのコンテンツが表示されない （コンテンツが表示される部分が真っ白の状態） ．
+[説明] GGの実行環境で何らかの問題が発生したことが考えられます．GGの再インストール （Repair or Update） を行って下さい．弊社の試験環境で１度だけこの現象が発生し，GGの再インストールでこの現象が解消されました （更新プログラムの適用の影響ではないかと推測しております） ．
+ファイル KGTN2015110201.pdf [(55.7 KB)] [kitasp 技術センター, 2015/11/04 17:06]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc30/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2680/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -531,29 +525,27 @@ KGTN2015072803-2.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc31/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2683/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc31/">[Microsoft Azure] Microsoft Azure の仮想マシンは，静的なグローバルIPアドレスの割り当てを受けることが可能なのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2683/">[GGH4.X-5.X] ドキュメント （アプリケーションの印刷画面） からPDFファイルを生成する方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-07-30
+                            日付 2015-11-04
                             </p>
                             <p class="intro">*技術ノート
-2015/07/30*
-[番号] 技術ノート KGTN 2015072802
-[現象] [Microsoft Azure] Microsoft Azure の仮想マシンは，静的なグローバルIPアドレスの割り当てを受けることが可能なのか？
-[説明] 標準の設定では，仮想マシンを 「停止→開始」 した時にグローバルIPアドレスが変ります （注：再起動ではグローバルIPアドレスは変りません） ．例えば， 停止前: 104.214.137.117 → 「停止→開始」 → 開始後: 191.239.97.33 というようにグローバルIPアドレスが変ります．静的なグローバルIPアドレスの割り当てを受けたい場合は，仮想マシンの作成時にインスタンスレベル・パブリック IP （ILPIP） を要求して下さい．詳細については，下記ページをご覧下さい．
-https://azure.microsoft.com/ja-jp/documentation/articles/virtual-networks-instance-level-public-ip/ インスタンスレベル パブリック IP の概要
-補　足 GGクライアントは，DNS名で接続するGGサーバーを指定することが出来ますので，静的なグローバルIPアドレスの割り当てを受けなくてもGGサーバーを運用することが出来ます．なお，DNS名を指定する場合は，DNS名の末尾にドットを付加することをお勧めします．
-ファイル KGTN2015072802.pdf [(76.2 KB)] [kitasp 技術センター, 2015/07/30 17:06]
-KGTN2015072802.jpg
-表示 [(13.1 KB)] [kitasp 技術センター, 2015/07/30 17:06]</p>
+2015/11/04*
+[番号] 技術ノート KGTN 2015101901
+[現象] [GGH4.X-5.X] ドキュメント （アプリケーションの印刷画面） からPDFファイルを生成する方法は？
+[説明] クライアント印刷機能が有効な設定で，アプリケーションの印刷画面でプリンターとして &ldquo;Preview PDF (from ???)&rdquo; を選択することで，クライアント上にドキュメントのPDFファイルが表示されます．
+ファイル KGTN2015101901.pdf [(111 KB)] [kitasp 技術センター, 2015/11/04 16:09]
+KGTN2015101901.jpg
+表示 [(28.6 KB)] [kitasp 技術センター, 2015/11/04 16:09]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc31/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2683/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

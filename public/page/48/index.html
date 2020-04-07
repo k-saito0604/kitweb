@@ -409,29 +409,28 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2253/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2141/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2253/">[GGH4.X] Windowsの証明書インポートウィザードで証明ストアとして 「信頼されたルート証明機関」 を指定するとインポートに失敗する．</a></h4>
+                            <h4><a href="/posts/new_md/doc2141/">[GGH5.X] クライアント印刷機能で UPD （Universal Printer Driver） を使用した時，印刷されない画像がある．</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-11-02
+                            日付 2017-04-07
                             </p>
                             <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016100301
-[現象] [GGH4.X] Windowsの証明書インポートウィザードで証明ストアとして 「信頼されたルート証明機関」 を指定するとインポートに失敗する．
-[説明] このインポートに失敗する現象は，バージョン5.0またはそれ以降にアップグレードすることで改善されます．
-GGH4.8.2 GGH5.0.2 ファイル KGTN2016100301.pdf [(245 KB)] [kitasp 技術センター, 2016/11/02 13:43]
-KGTN2016100301-1.jpg
-表示 [(28.3 KB)] [kitasp 技術センター, 2016/11/02 13:43]
-KGTN2016100301-2.jpg
-表示 [(29.2 KB)] [kitasp 技術センター, 2016/11/02 13:43]</p>
+2017/04/07*
+[番号] 技術ノート KGTN 2017040501
+[現象] [GGH5.X] クライアント印刷機能で UPD （Universal Printer Driver） を使用した時，印刷されない画像がある．
+[説明] 次の手順で UPD の印刷エンジン （pdfprint.exe） にパラメタを追加してください．
+ サービス Application Publishing Service を停止する． テキストエディタで C:ProgramDataGraphOnHostProperties.xml を開く． プロパティー EnablePrintOptions の値を true にする． プロパティー PrintOptions の値に -raster2 -raster2center -printermargins を加える． 上書き保存する． サービス Application Publishing Service を開始する．  この設定を加えると，印刷内容が 「印刷前に」 画像データーへ変換され，その画像がプリンターへ出力されます．なお，印刷内容の再現性は高まりますが，画像データーへ変換するため，印刷に要する時間が長くなります．
+ファイル KGTN2017040501.pdf [(45.5 KB)] [kitasp 技術センター, 2017/04/07 18:00]
+KGTN2017040501.jpg
+表示 [(26.7 KB)] [kitasp 技術センター, 2017/04/07 18:01]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2253/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2141/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -450,27 +449,29 @@ KGTN2016100301-2.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2254/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2152/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2254/">[GGH4.X] Windowsの証明書インポートウィザードは，GGの環境で利用出来るか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2152/">[GGH5.X] クライアント印刷機能で印刷されない．どのような手順で調べれば良いか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-11-02
+                            日付 2017-04-07
                             </p>
                             <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016093002
-[現象] [GGH4.X] Windowsの証明書インポートウィザードは，GGの環境で利用出来るか？
-[説明] Windows Server 2012 R2 + GGH4.8.2.23274 の環境で確認したところ，下記スクリーンショットの通り正常に証明書をインポートすることが出来ました．
-ファイル KGTN2016093002.pdf [(165 KB)] [kitasp 技術センター, 2016/11/02 13:38]
-KGTN2016093002.jpg
-表示 [(41.2 KB)] [kitasp 技術センター, 2016/11/02 13:38]</p>
+2017/04/07*
+[番号] 技術ノート KGTN 2017031601
+[現象] [GGH5.X] クライアント印刷機能で印刷されない．どのような手順で調べれば良いか？
+[説明] 以下の手順でスクリーンショットを撮ってください．
+ クライアントPCの 「ディバイスとプリンター」 の 「プリンター」 のスクリーンショットを撮ってください．  そのプリンターの印刷ジョブの画面 （印刷/送信待ち一覧） を開いて，スクリーンショットを撮ってください．  メニューの [プリンター] → [一時停止] を選択してください．  GGにログオンし，プログラムウインドウ → [File] → [Printers] を開き，スクリーンショットを撮ってください．  印刷するプリンターがない場合 [Add] をクリックし，スクリーンショットを撮ってください．プリンターがある場合は 7 へ進んでください．  印刷するプリンターを選択後に [Add] をクリックして，スクリーンショットを撮ってください．  メモ帳でそのプリンターに印刷してください （印刷前にスクリーンショットを撮ってください） ．    印刷後に，クライアント側の印刷ジョブの画面に帳票（印刷ジョブ）が蓄積されるかどうか確認してください．
+ファイル KGTN2017031601.pdf [(220 KB)] [kitasp 技術センター, 2017/04/07 15:06]
+KGTN2017031601-1.jpg
+表示 [(10.5 KB)] [kitasp 技術センター, 2017/04/07 15:06]
+KGTN2017031601-2.jpg</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2254/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2152/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -489,26 +490,36 @@ KGTN2016093002.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc503/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2151/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc503/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能を利用しているが，特定のユーザーを特定のサーバーへ振り分けたい．</a></h4>
+                            <h4><a href="/posts/new_md/doc2151/">[GGH5.X] クライアント印刷機能で， UPD で生成されるPDFファイルがクライアント側に届いているかどうか確認する方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-11-02
+                            日付 2017-04-07
                             </p>
                             <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101402
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能を利用しているが，特定のユーザーを特定のサーバーへ振り分けたい．
-[説明] バージョン 2.2.3 より，特定のユーザーを特定のサーバーに振り分けるプライマリーサーバー設定機能が実装されました．設定ファイル GGEasyMonitorUserInfo.ini で，下記のようにユーザーIDと接続先のサーバー （プライマリーサーバー） を指定します．ユーザー名の末尾にはワイルドカード （＊） を指定することが可能です．接続先のサーバー （プライマリーサーバー） が利用出来ない場合は，通常の振り分け処理で接続先のサーバー （代替サーバー） が選択されます．この場合は，代替サーバーへ振り分けるというメッセージが表示されます （次ページのスクリーンショットを参照） ．
-[administrator]　← ユーザーID hostName = GG-SERVER0 ← 接続先のサーバー名 [wguser1*] ← wguser1??? hostName = GG-SERVER1 [wguser2*] ← wguser2??? hostName = GG-SERVER2 [wguser3*] ← wguser3??? hostName = GG-SERVER3  複数の振分け規則が合致する場合は，先に合致する規則 （より上に書かれた規則） が優先します．
-ファイル KGTN2016101402.pdf [(127 KB)] [kitasp 技術センター, 2019/01/22 10:01]</p>
+2017/04/07*
+[番号] 技術ノート KGTN 2017031602
+[現象] [GGH5.X] クライアント印刷機能で， UPD で生成されるPDFファイルがクライアント側に届いているかどうか確認する方法は？
+[説明] UPD で生成されたPDFファイルは，下記のフォルダーへ （作業フォルダー） 転送されますので，そのフォルダーをエクスプローラーで開いてください．このフォルダーには作業ファイルが多数ありますので，できれば 「削除可能なファイル」 をすべて削除してください （削除は確認を容易にするためです） ．
+C:UsersAppDataLocalTemp
+次に，GGサーバーにログオンし，メモ帳等で印刷してください．
+印刷ボタンをクリックした直後に，作業フォルダー中に 「一瞬」 PDFファイルとログファイルが現れるかどうかを確認してください．なお，ファイル名は次の通りです．
+&lt;GGサーバー上でのプリンタ名&gt; - Job #???.pdf &lt;GGサーバー上でのプリンタ名&gt; - Job #???.log
+PDFファイルとログファイルが 「一瞬」 現れれば，PDFファイルはクライアント側に届いています．
+ファイル KGTN2017031602.pdf [(272 KB)] [kitasp 技術センター, 2017/04/07 15:11]
+KGTN2017031602-1.jpg
+表示 [(30.5 KB)] [kitasp 技術センター, 2017/04/07 15:11]
+KGTN2017031602-2.jpg
+表示 [(15.1 KB)] [kitasp 技術センター, 2017/04/07 15:11]
+KGTN2017031602-3.jpg
+表示 [(36 KB)] [kitasp 技術センター, 2017/04/07 15:11]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc503/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2151/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -527,28 +538,32 @@ KGTN2016093002.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2227/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2143/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2227/">[GGH5.X/ExPack] 拡張パックの GGEasyPassword で複数のGGサーバー （ワークグループ） のアカウントのパスワードを変更したい．</a></h4>
+                            <h4><a href="/posts/new_md/doc2143/">[GGH5.X] クラスターマネージャーでセッションを強制終了 （Terminate） しようとしたが，セッションが終了しなかった．何を調べれば良いか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-11-02
+                            日付 2017-04-07
                             </p>
                             <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016102401
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyPassword で複数のGGサーバー （ワークグループ） のアカウントのパスワードを変更したい．
-[説明] 以下に設定のサンプルを示します．
-ファイル： GGEasyPassword.ini
-[default] logLevel = 9 logd = %TEMP% command = psexec64 -u Administrator -p Passwd C:PS1GGEasyPasswordchangePassword.bat %s %s  ファイル： changePassword.bat
-echo off echo パスワードの変更処理を開始しました。 echo しばらくお待ち下さい… :: changePassword.bat &quot;wguser9012&quot; &quot;Passwd&quot; powershell C:PS1GGEasyPasswordchangePassword.ps1 %1 %2 :: --- [EOF] ---  ファイル： changePassword.ps1
-# 引数のチェック if($Args.Length -ne 2) { Write-Host &quot;Usage: changePassword.ps1 &lt;userid&gt; &lt;password&gt;&quot; Exit 1001 } $argUser = $Args[0] # ユーザーID .</p>
+2017/04/07*
+[番号] 技術ノート KGTN 2017033001
+[現象] [GGH5.X] クラスターマネージャーでセッションを強制終了 （Terminate） しようとしたが，セッションが終了しなかった．何を調べれば良いか？
+[説明] どのような状況でセッションの強制終了に失敗したのかGraphOn社で調査する必要がありますので，次の情報の採取をお願いします．
+ 強制終了に失敗したユーザーのID APS.EXE のダンプファイル SRW のZIPファイル  上記２のダンプファイルは，タスクマネージャーを起動し，プロセスタブで &ldquo;GraphOn GO-Global Application Publishing Service&rdquo; を選択し，右クリックで 「ダンプ ファイルの作成」 を選択してください．
+上記３のZIPファイルは，スタートメニューで [GraphOn GO-Global] → [Support Request Wizard] を選択してください． Support Request Wizard の画面では，すべて既定のままの状態で操作を行ってください． ZIP ファイルは，デスクトップ上に作成されます．
+ファイル KGTN2017033001.pdf [(479 KB)] [kitasp 技術センター, 2017/04/07 17:24]
+KGTN2017033001-1.jpg
+表示 [(19.9 KB)] [kitasp 技術センター, 2017/04/07 17:24]
+KGTN2017033001-2.jpg
+表示 [(7.18 KB)] [kitasp 技術センター, 2017/04/07 17:24]
+KGTN2017033001-3.jpg</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2227/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2143/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

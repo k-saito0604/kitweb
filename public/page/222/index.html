@@ -409,26 +409,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1523/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1375/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1523/">GGサーバの監視に，ロードバランサのヘルスチェック機能でポート番号491へコネクトして良いか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1375/">GGクライアントとGGサーバ間にロードバランサを配置しているが，ロードバランサを介して接続しようとすると Failed to connect to XXXXX on port #491 というエラーが表示される．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-12-03
+                            日付 2011-05-19
                             </p>
                             <p class="intro">*技術ノート
-2010/12/03*
-[番号] 技術ノート KGTN 2010120302
-[現象] GGサーバの監視に，ロードバランサのヘルスチェック機能でポート番号491へコネクトして良いか？
-[説明] ロードバランサのヘルスチェック機能でポート番号491へコネクトするような監視は，原則として行わないようにして下さい．安全確実な監視方法として，エンタープライズオプションの GMCheck （GMCheckRaw） による監視を行うことを強くお勧めします．
-参　考 GGはログオンが集中した時でも処理をさばけるように，TCP/IPレベルのコネクト要求があった時点で，ログオン処理 （の前処理） を開始します．ロードバランサのヘルスチェック機能でポート番号491へコネクトされた場合もこのログオン処理が行われ，実際にはログオンされませんので，ログオフ処理 （の一部） も続けて行われることになります．つまり，１回の監視でログオン処理とログオフ処理が行われ，さらに頻繁に繰り返されることでサーバに負荷を与えることになります．このようなことから，ロードバランサのヘルスチェック機能でポート番号491を監視すべきではありません．
-ファイル KGTN2010120302.pdf [(59.6 KB)] [kitasp 技術センター, 2010/12/03 11:38]</p>
+2011/05/19*
+[番号] 技術ノート KGTN 2011051901
+[現象] GGクライアントとGGサーバ間にロードバランサを配置しているが，ロードバランサを介して接続しようとすると&quot;Failed to connect to XXXXX on port #491&rdquo; というエラーが表示される．
+[説明] このエラーは，GGクライアントから見て接続先の XXXXX （ポート番号491） に接続出来なかったことを意味します．従って，以下のようなケースが考えられます．
+接続先 XXXXX が正しくない． XXXXX がロードバランサの場合，ロードバランサがGGクライアントからの接続を受け付けていない． ロードバランサがGGサーバの監視を正しく行っていない （正しく認識していない） ． その他
+何れにしても，ロードバランサのログ等を調べて，どのような事象が発生しているのか確認することが必要です．
+ファイル KGTN2011051901.pdf [(52 KB)] [kitasp 技術センター, 2011/05/19 09:41]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1523/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1375/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -447,26 +448,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1521/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1373/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1521/">Windows Server 2003 の環境で 「カーネル メモリ ダンプ」 を選択しているにも関わらず， 「完全メモリ ダンプ」が生成される．</a></h4>
+                            <h4><a href="/posts/new_md/doc1373/">Ver4.0系は，シリアルポートおよびパラレルポートのリダイレクションをサポートしないのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-12-03
+                            日付 2011-05-19
                             </p>
                             <p class="intro">*技術ノート
-2010/12/03*
-[番号] 技術ノート KGTN 2010120304
-[現象] Windows Server 2003 の環境で 「カーネル メモリ ダンプ」 を選択しているにも関わらず， 「完全メモリ ダンプ」が生成される．
-[説明] 物理メモリを増設した場合， 「起動と回復のためのレジストリ値」 CrashDumpEnabled がそれに応じた値に変更されないため，このような現象が発生します．メモリを増設した場合は， [デバッグ情報の書き込み] のダンプファイルの種類を再設定するだけでなく，下記の CrashDumpEnabled のレジストリ値も変更する必要があります．
-HKLM¥System¥CurrentControlSet¥Control¥CrashControl CrashDumpEnabled REG_DWORD 0x0 = 無し 0x1 = 完全メモリ ダンプ 0x2 = カーネル メモリ ダンプ 0x3 = 最小目折り ダンプ (64 KB)
-ファイル KGTN2010120304.pdf [(63.8 KB)] [kitasp 技術センター, 2010/12/03 14:52]</p>
+2011/05/19*
+[番号] 技術ノート KGTN 2010092406
+[現象] Ver4.0系は，シリアルポートおよびパラレルポートのリダイレクションをサポートしないのか？
+[説明] 従来のバージョンでは，制限付きでシリアルポートおよびパラレルポートのリダイレクションをサポートしておりましたが，Ver4.0系ではクライアント側のシリアルポートおよびパラレルポートへのアクセスが困難なため，これらのリダイレクションをサポートしません．
+補　足 いいえ，シリアルポートおよびパラレルポートのリダイレクションは， GGH-4.0.1.9787 からサポートされています．
+Serial and Parallel Port Redirection GO-Global supports serial and parallel port redirection when the application accesses the serial or parallel port directly, i.e., if the application calls the Win32 ReadFile and WriteFile APIs to respectively read from and write to the device.
+ファイル KGTN2010092406.pdf [(53.5 KB)] [kitasp 技術センター, 2011/05/19 10:50]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1521/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1373/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,27 +487,27 @@ HKLM¥System¥CurrentControlSet¥Control¥CrashControl CrashDumpEnabled REG_DWOR
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1522/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1374/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1522/">物理メモリが2GBを超えるサーバで， Windows Server 2003 の完全メモリダンプを採取する方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc1374/">Ver4.0系は，従来のクライアント機能の 「サウンド」 をサポートしないのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-12-03
+                            日付 2011-05-19
                             </p>
                             <p class="intro">*技術ノート
-2010/12/03*
-[番号] 技術ノート KGTN 2010120303
-[現象] 物理メモリが2GBを超えるサーバで， Windows Server 2003 の完全メモリダンプを採取する方法は？
-[説明] 物理メモリが2GBを超えるサーバで Windows Server 2003 の完全メモリダンプを採取する方法はありません．但し， boot.ini ファイルにMaxMem=2000 パラメータを指定することで （Windows が使用するメモリを制限することで） ，完全メモリダンプを採取することは可能です．詳細は，下記マイクロソフト社のページをご覧下さい．
-http://support.microsoft.com/kb/833721/ja Windows XP および Windows Server 2003 の Boot.ini ファイルで使用可能なスイッチ オプション
-http://support.microsoft.com/kb/244139/ja キーボード操作でメモリ ダンプ ファイルを作成できる Windows の機能
-ファイル KGTN2010120303.pdf [(58.1 KB)] [kitasp 技術センター, 2010/12/03 14:10]</p>
+2011/05/19*
+[番号] 技術ノート KGTN 2010092405
+[現象] Ver4.0系は，従来のクライアント機能の 「サウンド」 をサポートしないのか？
+[説明] はい，Ver4.0系はオーディオ・リダイレクション （Audio Redirection） をサポートしません．クライアント側で鳴るのは，ビープ音のみとなります．本件に関するGraphOn 社の情報 （Release Notes.txt） は，以下の通りです．
+The Sound option has been removed from the Client Access tab of the Cluster Manager&rsquo;s Host Options dialog, and only beeps play on the client computer.
+補　足 いいえ，オーディオ・リダイレクション （Audio Redirection） は， GGH-4.0.1.9787 からサポートされています．
+Sound Redirection GO-Global redirects sounds to the client computer when applications use PlaySound, sndPlaySound, or waveOut.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1522/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1374/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -524,25 +526,25 @@ http://support.microsoft.com/kb/244139/ja キーボード操作でメモリ ダ�
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1528/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1377/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1528/">Mac OS X Client （3.2.1系） がサポートするコマンドラインの引数は？</a></h4>
+                            <h4><a href="/posts/new_md/doc1377/">[GGW3.2.1] 3.2.1 Patch5 (4482) で修正された内容を知りたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-12-02
+                            日付 2011-05-13
                             </p>
                             <p class="intro">*技術ノート
-2010/12/02*
-[番号] 技術ノート KGTN 2010120201
-[現象] Mac OS X Client （3.2.1系） がサポートするコマンドラインの引数は？
-[説明] 以下の引数のみをサポートします．これ以外の引数を指定した場合は，その動作については保証されません．
-Argument Description -h The IP address of the GO-Global Server. -u The client&rsquo;s network user name. -p The client?s network password. Please note that if you specify a password on the command-line, the password may be visible to other users running process reporting tools such as ps. To protect the user?s password, use -p - to request the password at startup.</p>
+2011/05/13*
+[番号] 技術ノート KGTN 2011051301
+[現象] [GGW3.2.1] 3.2.1 Patch5 (4482) で修正された内容を知りたい．
+[説明] 統合Windows認証かつキャッシュパスワード時に，ユーザ名を変更出来ない点を制限事項としました． (Bug#7116) ログオンが集中した時に，ライセンスサーバでFlexLM - Bad encryption handshake with vendor daemon. (Error code: -33) が発生する問題を改善しました． (Bug#8400) HyperV仮想マシン環境での安定性が向上しました．(Bug#8952) アイドルタイムアウトの設定で disconnect 時の処理を改良しました．(Bug#9525) Microsoft XPS Document Writer をNPDでサポートしない点を制限事項としました．詳細は，技術ノートKGTN#2010041601をご覧下さい． (Bug# 9661) 3.2.1 Patch3およびPatch4で Cache client printers が動作しない問題を修正しました．詳細は，技術ノートKGTN# 2010051001をご覧下さい． (Bug# 9870) 3.2.1 Patch5 リリース時点までの Windows Update に対応しました．
+ファイル KGTN2011051301.pdf [(66.2 KB)] [kitasp 技術センター, 2011/05/13 10:11]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1528/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1377/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

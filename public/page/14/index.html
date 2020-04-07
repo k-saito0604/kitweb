@@ -409,25 +409,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc581/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc414/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc581/">[ExPack] GGEasyMonitor の負荷分散の方式は？</a></h4>
+                            <h4><a href="/posts/new_md/doc414/">[GGH4.X-6.X] GGは，新元号の施行によって影響を受けるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2018-11-29
+                            日付 2019-01-22
                             </p>
                             <p class="intro">*技術ノート
-2018/11/29*
-[番号] 技術ノート KGTN 2018102401
-[現象] [ExPack] GGEasyMonitor の負荷分散の方式は？
-[説明] GGEasyMonitor へ接続要求 （振分け要求） があった時，もっとも空きセッション数が多いGGサーバーを選択します．つまり，セッション数という物差しでもっとも余裕があるGGサーバーが選択されます．
-ファイル KGTN2018102401.pdf [(35.2 KB)] [kitasp 技術センター, 2018/11/29 17:06]</p>
+2019/01/22*
+[番号] 技術ノート KGTN 2018121901
+[現象] [GGH4.X-6.X] GGは，新元号の施行によって影響を受けるのか？
+[説明] GGは米国で開発されたソフトウエアで，元号に関する処理そのものが存在しませんので，新元号の施行によって影響を受けることはありません．
+ご注意頂きたいのは，GG上で実行されるアプリケーションが元号に関する処理を含む場合，新元号の施行によって （そのアプリケーションが） 影響を受ける可能性があります．対応については，アプリケーションのメーカー等にお問合せ下さい．なお，Windows に関してはマイクロソフト社が下記サイトで情報を公開しております．必要に応じてご参照下さい．
+https://blogs.technet.microsoft.com/jperablog/ 新元号対応に関する情報提供方法につきまして
+ファイル KGTN2018121901.pdf [(44.7 KB)] [kitasp 技術センター, 2019/01/22 11:02]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc581/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc414/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,26 +448,29 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc536/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc370/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc536/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc370/">[GGH4.X-6.X] GG上のブラウザでWebメールを利用する時，文字入力で反応の遅さを感じる．</a></h4>
                             <p class="author-category">
                             
-                            日付 2018-11-29
+                            日付 2019-01-22
                             </p>
                             <p class="intro">*技術ノート
-2018/11/29*
-[番号] 技術ノート KGTN 2018103001
-[現象] [GGH4.X-6.X] バージョン4.8のデモライセンスを申請したところ，ライセンスファイルの INCREMENT 行に 5.0 と書かれていた．このファイルは，バージョン5.0のデモライセンスではないのか？
-[説明] バージョン5.0のライセンスファイルは，バージョン4.8のGGサーバーで動作します．ライセンスファイルのバージョンとGGサーバーのバージョンの関係は，次の通りです：
-   バージョン4.8のライセンスファイルは，バージョン4.8のGGサーバーでのみ動作します． 2. バージョン5.0のライセンスファイルは，バージョン5.0と4.8のGGサーバーで動作します． 3. バージョン6.0のライセンスファイルは，バージョン6.0と5.0と4.8のGGサーバーで動作します．
-ファイル KGTN2018103001.pdf [(33.2 KB)] [kitasp 技術センター, 2018/11/29 17:12]</p>
+2019/01/22*
+[番号] 技術ノート KGTN 2019011001
+[現象] [GGH4.X-6.X] GG上のブラウザでWebメールを利用する時，文字入力で反応の遅さを感じる．
+[説明] Gmail やYahoo!メール等のWebメールの事例では，文字入力で反応の遅さを感じるというような報告はありません．もしご利用のWebメールがこの現象が見られるのであれば，文字入力の中で描画に負荷のかかる処理が行われているのではないかと思われます．考えられる対応としては，
+・Webメールの最新版を試す ・Webメールの設定を変更して試す ・他のWebメールを使用する ・GGのクライアント側IME機能を使用する
+等が考えられます．下記のWebメールでは 「エディターの種類」 を テキスト から HTML へ変更することで，文字入力の反応の改善が見られました．
+ファイル KGTN2019011001.pdf [(191 KB)] [kitasp 技術センター, 2019/01/22 11:14]
+KGTN2019011001.jpg
+表示 [(22.3 KB)] [kitasp 技術センター, 2019/01/22 11:15]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc536/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc370/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -484,27 +489,31 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc525/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc359/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc525/">[GGH5.X</a></h4>
+                            <h4><a href="/posts/new_md/doc359/">[GGH4.X-6.X] フォルダー C:ProgramDataGraphOn にあるxmlファイルをテキストエディタで編集したが，編集内容がGGサーバーに反映されない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2018-11-29
+                            日付 2019-01-22
                             </p>
                             <p class="intro">*技術ノート
-2018/11/29*
-[番号] 技術ノート KGTN 2018110101
-[現象] [GGH5.X-6.X] GGにログオンしようとすると &ldquo;Connection failed. The host could not create a new session.&rdquo; というメッセージが表示される．
-[説明] GGサーバーが新たなセッションを生成しようとした時に， Windows レベルでエラーが発生するとこのエラーメッセージが表示されます．次の手順でGGサーバーをチェックして下さい．
-最新のAPSログを開きます． 文字列 &ldquo;A Bug Check (BSOD) was detected from a previous system start&hellip;&rdquo; (*1) を探します． この文字列があれば C:Windowssystem32DRIVERSDBCM.bin を削除しサーバーを再起動します． この文字列がなけば，最新の更新プログラムに対応したGGの最新ビルドを上書きインストールします．
-*1
-aps (???) A Bug Check (BSOD) was detected from a previous system start and GO-Global has been disabled. To re-enable GO-Global, delete the C:Windowssystem32DRIVERSDBCM.bin file and restart the computer.</p>
+2019/01/22*
+[番号] 技術ノート KGTN 2018120501
+[現象] [GGH4.X-6.X] フォルダー C:ProgramDataGraphOn にあるxmlファイルをテキストエディタで編集したが，編集内容がGGサーバーに反映されない．
+[説明] UAC （ユーザーアカウント制御） の働きで，編集した結果がユーザープロファイルの VirtualStore に保存されているためです．テキストエディタを 「管理者として実行」 で起動することで，編集内容が元々のファイルに反映されます．
+C:UsersAdministratorAppDataLocalVirtualStoreProgramDataGraphOn にアクセス
+C:ProgramDataGraphOn にアクセス
+ファイル KGTN2018120501.pdf [(497 KB)] [kitasp 技術センター, 2019/01/22 10:29]
+KGTN2018120501-1.jpg
+表示 [(32.1 KB)] [kitasp 技術センター, 2019/01/22 11:25]
+KGTN2018120501-2.jpg
+表示 [(35.7 KB)] [kitasp 技術センター, 2019/01/22 11:25]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc525/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc359/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -523,27 +532,25 @@ aps (???) A Bug Check (BSOD) was detected from a previous system start and GO-Gl
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc547/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc392/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc547/">[GGH5.X</a></h4>
+                            <h4><a href="/posts/new_md/doc392/">[GGH4.X-6.X] プログラムウインドウのサイズを固定する設定はないのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2018-11-29
+                            日付 2019-01-22
                             </p>
                             <p class="intro">*技術ノート
-2018/11/29*
-[番号] 技術ノート KGTN 2018102601
-[現象] [GGH5.X-6.X] Sysinternals の License Agreement の画面を抑止したい．
-[説明] 次のレジストリをアカウント毎に追加することで， License Agreement の画面を抑止することが出来ます．
-reg.exe ADD HKCUSoftwareSysinternals /v EulaAccepted /t REG_DWORD /d 1 /f reg.exe ADD HKU.DEFAULTSoftwareSysinternals /v EulaAccepted /t REG_DWORD /d 1 /f  ファイル KGTN2018102601.pdf [(103 KB)] [kitasp 技術センター, 2018/11/29 17:10]
-KGTN2018102601.jpg
-表示 [(32.5 KB)] [kitasp 技術センター, 2018/11/29 17:10]</p>
+2019/01/22*
+[番号] 技術ノート KGTN 2018122501
+[現象] [GGH4.X-6.X] プログラムウインドウのサイズを固定する設定はないのか？
+[説明] プログラムウインドウは，各ユーザーが利用し易いようにサイズを変更出来るようになっており，サイズを固定することは出来ません．
+ファイル KGTN2018122501.pdf [(29.2 KB)] [kitasp 技術センター, 2019/01/22 11:03]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc547/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc392/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

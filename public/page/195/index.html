@@ -409,25 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1205/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1106/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1205/">[GGW3.2.1] クライアント印刷機能が有効な時，サーバ側でデフォルトプリンタを変更すると，その変更内容がクライアント側にも反映される．</a></h4>
+                            <h4><a href="/posts/new_md/doc1106/">[GGH4.0] CMD.EXE （DOS窓） を開いた状態でセッション再接続を行い，その中で CMD.EXE を起動すると CLIENTCOMPUTERNAME の値がセッション再接続前の値になる．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-12-07
+                            日付 2012-02-02
                             </p>
                             <p class="intro">*技術ノート
-2011/12/07*
-[番号] 技術ノート KGTN 2011120752
-[現象] [GGW3.2.1] クライアント印刷機能が有効な時，サーバ側でデフォルトプリンタを変更すると，その変更内容がクライアント側にも反映される．
-[説明] GGの旧いバージョンでは，サーバ側とクライアント側それぞれに別にデフォルトプリンタが存在していました．しかし 「利用者にとってデフォルトプリンタが複数あることは理解が難しい．サーバ側もクライアント側も同じプリンタをデフォルトプリンタにすべき」 という議論が日本国内から出て， それ以降のバージョン 〜 GGW3.2.1 ではサーバ側でデフォルトプリンタを変更すると，その変更内容がクライアント側にも反映されます （つまりGGW3.2.1の仕様です） ．なお， GGH4.0 からはクライアント印刷機能のアーキテクチャが変更され，サーバ側でのデフォルトプリンタの変更がクライアント側に反映されない仕様になっております．
-ファイル KGTN2011120752.pdf [(52.3 KB)] [kitasp 技術センター, 2011/12/07 14:02]</p>
+2012/02/02*
+[番号] 技術ノート KGTN 2012020203
+[現象] [GGH4.0] CMD.EXE （DOS窓） を開いた状態でセッション再接続を行い，その中で CMD.EXE を起動すると CLIENTCOMPUTERNAME の値がセッション再接続前の値になる．
+[説明] GGH4.0.1.Patch4 からは，セッション再接続後の環境の値が CLIENTCOMPUTERNAME に設定されるように仕様が変更されました （注： GGW3.2.1と同じ仕様になりました） ．
+ファイル KGTN2012020203.pdf [(51 KB)] [kitasp 技術センター, 2012/02/02 11:38]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1205/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1106/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,27 +446,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1206/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1107/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1206/">[GGW3.2.1/GGH4.0] クライアント印刷機能を使用しているが，アプリケーションで印刷を行おうとしたところ，サーバ側のプリンタを選択する画面 （プリンタの設定というダイアログ） が表示された．</a></h4>
+                            <h4><a href="/posts/new_md/doc1107/">[GGH4.0] クライアント印刷機能を利用しているが，クライアント側でのドキュメント名 （印刷ジョブ名） が文字化けする．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-12-06
+                            日付 2012-02-02
                             </p>
                             <p class="intro">*技術ノート
-2011/12/06*
-[番号] 技術ノート KGTN 2011120603
-[現象] [GGW3.2.1/GGH4.0] クライアント印刷機能を使用しているが，アプリケーションで印刷を行おうとしたところ，サーバ側のプリンタを選択する画面 （プリンタの設定というダイアログ） が表示された．
-[説明] クライアント印刷機能を使用している時，GGは print.ini の設定に従ってプリンタの環境を構成します．この時クライアント側にプリンタが存在しない （またはクライアント側にデフォルトプリンタが存在しない） と，アプリケーションは，通常以下のようなダイアログを表示します．
-「プリンタが組み込まれていません」 という内容のエラーダイアログ サーバ側のプリンタを選択するダイアログ その他警告や情報のダイアログ
-本件は，この 2) のケースに該当します．継続して同じ状況が発生する時は，クライアント側のプリンタフォルダの状態と print.ini を確認し，異常があれば修正して下さい．継続して同じ状況が発生しない場合は，サーバ一時的な障害 （CPUが高負荷，メモリが不足，プロファイルの正常なロードに失敗など） でプリンタの構成が出来なかったことが考えられます．
-ファイル KGTN2011120603.pdf [(61.5 KB)] [kitasp 技術センター, 2011/12/06 16:27]</p>
+2012/02/02*
+[番号] 技術ノート KGTN 2012020202
+[現象] [GGH4.0] クライアント印刷機能を利用しているが，クライアント側でのドキュメント名 （印刷ジョブ名） が文字化けする．
+[説明] GGH4.0.1.Patch4 からは，クライアント側でのドキュメント名 （印刷ジョブ名） が文字化けする問題は解消しております．
+ファイル KGTN2012020202.pdf [(43.2 KB)] [kitasp 技術センター, 2012/02/02 11:23]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1206/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1107/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,26 +483,28 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1208/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1104/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1208/">[GGH4.0] ActiveX Client で画像圧縮を無効にしたい時， URL で何を指定すれば良いのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1104/">SkyPDF for GO-Global は， Windows 7 の環境で動作するのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-12-05
+                            日付 2012-02-02
                             </p>
                             <p class="intro">*技術ノート
-2011/12/05*
-[番号] 技術ノート KGTN 2011120504
-[現象] [GGH4.0] ActiveX Client で画像圧縮を無効にしたい時， URL で何を指定すれば良いのか？
-[説明] 以下のように quantize=false を指定することで，画像圧縮機能を無効にすることが出来ます．
-http://hostname/goglobal/logon.html?quantize=false
-ファイル KGTN2011120504.pdf [(48 KB)] [kitasp 技術センター, 2011/12/05 12:39]</p>
+2012/02/02*
+[番号] 技術ノート KGTN 2011031006
+[現象] SkyPDF for GO-Global は， Windows 7 の環境で動作するのか？
+[説明] SkyPDF for GO-Global を開発したスカイコム社から，以下のコメントを得ました．
+インストールはユーザ Administrator で行う． 技術的には Windows 7 の環境で動作するはず． Windows Vista の環境で動作検証を行っているが， Windows 7 の環境では行っていない．
+つまり， 「Windows 7 の環境で動作すると考えられるが，しかし動作を保証するものではない」 ということになります．
+補　足 サーバ側OS Windows Server 2003 R2 ＋ クライアント側OS Windows 7 という環境に限り，従来のサポートサービスの範囲内でサポートするという回答が開発元のスカイコム社よりありました．
+ファイル KGTN2011031006.pdf [(57.4 KB)] [kitasp 技術センター, 2012/02/02 14:36]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1208/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1104/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -523,25 +523,26 @@ http://hostname/goglobal/logon.html?quantize=false
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1207/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1103/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1207/">[GGH4.0] クライアントドライブ機能のファイルコピーの速度は速くなったのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1103/">SkyPDF for GO-Global は，クライアント環境として Windows 7をサポートしているか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-12-05
+                            日付 2012-02-02
                             </p>
                             <p class="intro">*技術ノート
-2011/12/05*
-[番号] 技術ノート KGTN 2011120601
-[現象] [GGH4.0] クライアントドライブ機能のファイルコピーの速度は速くなったのか？
-[説明] GGW3.2.1ではファイルコピー処理自体は高速でしたが，そのためにファイルサイズの制限があり，かつネットワーク帯域も多く占有していました．GGH4.0.1ではファイルサイズの制限20MBを超えるファイルをコピー出来るようになり，さらにネットワーク帯域の占有率も下げました．この結果，ファイルコピーのみで見ると速度は低下しました．しかし，ディレクトリ表示等を含めたトータルの体感速度 （操作時の反応） は向上しています．
-ファイル KGTN2011120601.pdf [(51.8 KB)] [kitasp 技術センター, 2011/12/06 08:49]</p>
+2012/02/02*
+[番号] 技術ノート KGTN 2011020902
+[現象] SkyPDF for GO-Global は，クライアント環境として Windows 7をサポートしているか？
+[説明] いいえ， SkyPDF for GO-Global はクライアント環境として Windows Vista までをサポートし， Windows 7 はサポートしておりません （2011年2月9日現在） ．
+補　足 サーバ側OS Windows Server 2003 R2 ＋ クライアント側OS Windows 7 という環境に限り，従来のサポートサービスの範囲内でサポートするという回答が開発元のスカイコム社よりありました．
+ファイル KGTN2011020902.pdf [(50.7 KB)] [kitasp 技術センター, 2012/02/02 14:38]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1207/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1103/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

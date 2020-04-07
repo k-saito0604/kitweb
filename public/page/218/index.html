@@ -409,25 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1471/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1330/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1471/">インストール及び起動確認まで行ったが， RDP による通信テストを行いたい．</a></h4>
+                            <h4><a href="/posts/new_md/doc1330/">[GGW3.2.1] JP1/PFM （パフォーマンス管理ミドルウエア） が，予期せず停止した． GGPerf のデータバッファが8バイト境界に揃っていないこととの関係は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-02-08
+                            日付 2011-08-25
                             </p>
                             <p class="intro">*技術ノート
-2011/02/08*
-[番号] 技術ノート KGTN 2011020801
-[現象] インストール及び起動確認まで行ったが， RDP による通信テストを行いたい．
-[説明] RDP （Remote Desktop Protocol） はターミナルサービス （リモート デスクトップ） の通信プロトコルですが，GGはターミナルサービス機能を使用しておりませんので RDP による通信は行いません．GGが使用する通信プロトコルは，高度に効率的な圧縮技術を備えた Rapid-X （RXP） プロトコルで，これはGraphOn社の特許技術に基づいています．GGの各クライアントは，この Rapid-X を使用してGGサーバとの通信を行います．
-ファイル KGTN2011020801.pdf [(51 KB)] [kitasp 技術センター, 2011/02/08 15:31]</p>
+2011/08/25*
+[番号] 技術ノート KGTN 2011082501
+[現象] [GGW3.2.1] JP1/PFM （パフォーマンス管理ミドルウエア） が，予期せず停止した． GGPerf のデータバッファが8バイト境界に揃っていないこととの関係は？
+[説明] 技術ノート KGTN#2010122201 にありますように．この警告 （データバッファが8バイト境界に揃っていない） の内容は 「パフォーマンスライブラリが記録したイベントID 1016 については無害なものですので無視して構いません」 ということで， JP1/PFM の予期せぬ停止とは関連が無いと考えられます．仮に GGPerf に問題があったとしても，パフォーマンス管理ミドルウエアのJP1/PFM が予期せぬ停止をすることは （常識的には） 異常ですので， （JP1/PFM 自体に問題が無いとすれば） Windows が不安定な状況にあった等の原因が推測されます （参考： 正しいかどうかは未確認ですが，あるユーザ様より 「Windowsのパフォーマンスカウンタライブラリ自体にハンドルリークが発生する問題が存在する」 という報告が届いております） ．
+ファイル KGTN2011082501.pdf [(61.4 KB)] [kitasp 技術センター, 2011/08/25 13:19]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1471/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1330/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,25 +446,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1473/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1329/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1473/">[GGW3.2.1] Idle Timeout のカウントダウンが停止する問題があったが，解決されたのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1329/">クライアント （プラグイン） は， Mozilla Firefox 6.0 に対応しているのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-02-07
+                            日付 2011-08-25
                             </p>
                             <p class="intro">*技術ノート
-2011/02/07*
-[番号] 技術ノート KGTN 2011020701
-[現象] [GGW3.2.1] Idle Timeout のカウントダウンが停止する問題があったが，解決されたのか？
-[説明] 3.2.1.4446または，それ以降で Idle Timeout のカウントダウンが停止する問題は解消されております．これは，環境によって WM_TIMER イベントが通知されない現象が発生するためで，別スレッドを生成し経過時間をチェックする方式に処理が変更されました．以下は，GraphOn社のコメントです．
-When there is no mouse cursor on the window of the GO-Global client, the &ldquo;session timeout&rdquo; countdown stops. On some systems, logon&rsquo;s session event processor does not get the WM_TIMER message, so the dialog is not updated with the correct time. Instead of using the WM_TIMER message, we now create a thread that will sleep for the necessary tick count and then post our own message to the dialog.</p>
+2011/08/25*
+[番号] 技術ノート KGTN 2011082601
+[現象] クライアント （プラグイン） は， Mozilla Firefox 6.0 に対応しているのか？
+[説明] GGH4.0.1 はMozilla Firefox 6.0 に対応していますが，GGW3.2.1は対応しておりません．確定ではありませんが，GraphOn社は GGW3.2.1 についても対応する方向で検討しております．
+ファイル KGTN2011082601.pdf [(44.9 KB)] [kitasp 技術センター, 2011/08/26 08:14]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1473/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1329/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -483,26 +483,27 @@ When there is no mouse cursor on the window of the GO-Global client, the &ldquo;
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1472/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1331/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1472/">[GGW3.2.1] Universal Printer Driver を使用した場合，何ページくらい印刷出来るのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1331/">[GGH4.0] Mac OS X 用のクライアントのキーマッピングテーブルを編集したいが，お勧めのツールは？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-02-07
+                            日付 2011-08-24
                             </p>
                             <p class="intro">*技術ノート
-2011/02/07*
-[番号] 技術ノート KGTN 2011020702
-[現象] [GGW3.2.1] Universal Printer Driver を使用した場合，何ページくらい印刷出来るのか？
-[説明] ドキュメントの種類やハードウエア環境に依存して，印刷出来るページ数は大きく異なりますので，一般論で印刷可能なページ数を示すことは出来ません．ある実験では， 「7,000ページは印刷できたが，7,200ページは印刷出来なかった」 という報告があります．
-参　考 Universal Printer Driver が使用するPDFエンジン PDF-XChange 3 のメーカーのコメントは以下の通りです．
-The varies very much depending on the hardware you have (e.g. Disk space, Ram and Processor etc) and of course the files themselves. The type of content and compression/optimization will also have some bearing. We are aware of many clients creating in excess of 20,000 pages</p>
+2011/08/24*
+[番号] 技術ノート KGTN 2011082401
+[現象] [GGH4.0] Mac OS X 用のクライアントのキーマッピングテーブルを編集したいが，お勧めのツールは？
+[説明] Mac OS X 用のクライアントのキーマッピングテーブルは，Mac OS X 環境のキーコードとWindows環境のキーコード等を対応付ける表で，その編集に当たってはそれぞれの環境のキーコードを表示するツールを利用するのが便利です．
+[Mac OS X 環境] Full Key Codes 1.2 - Full Key Codes is a little utility to display code informations about each key of the keyboard. The developers know why :-)
+[Windows 環境] KeyInDisp ? スキャンコード・仮想キーコード等が表示されます．
+ファイル KGTN2011082401.pdf [(76.9 KB)] [kitasp 技術センター, 2011/08/24 13:27]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1472/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1331/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -521,27 +522,25 @@ The varies very much depending on the hardware you have (e.g. Disk space, Ram an
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1474/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1332/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1474/">GGのアプリケーションを利用していると，時々遅くなることがある．また，時々コネクションが切断されることもある．何を調べれば良いか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1332/">[GGSkyPDF] SkyPDF for GO-Global がサポートする環境は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-02-04
+                            日付 2011-08-22
                             </p>
                             <p class="intro">*技術ノート
-2011/02/04*
-[番号] 技術ノート KGTN 2011020402
-[現象] GGのアプリケーションを利用していると，時々遅くなることがある．また，時々コネクションが切断されることもある．何を調べれば良いか？
-[説明] ネットワークの障害かどうか切り分けるために，コマンド プロンプト （DOS窓） で以下のコマンドを実行して下さい．
-ping ?n 10000 &lt;GGサーバのIPアドレス&gt;
-正常な環境では 「要求がタイムアウトしました」 というメッセージは記録されませんが，ネットワークに障害があると下記のように時々 「要求がタイムアウトしました」 が記録されます．この事例では，クライアントPCが接続されたハブが老朽化し，不安定になっていました．
-ファイル KGTN2011020402.pdf [(141 KB)] [kitasp 技術センター, 2011/02/04 11:35]</p>
+2011/08/22*
+[番号] 技術ノート KGTN 2011082202
+[現象] [GGSkyPDF] SkyPDF for GO-Global がサポートする環境は？
+[説明] GO-Global for Windows のバージョンは 3.2.1 で， Adobe Reader のバージョンは 8 です．
+ファイル KGTN2011082202.pdf [(45.3 KB)] [kitasp 技術センター, 2011/08/22 14:49]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1474/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1332/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

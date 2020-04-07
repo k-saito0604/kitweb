@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2348/">
+                                      <a href="/posts/new_md/doc2298/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2348/">[GGH5.X/ExPack] 拡張パック GGEasyMonitor が使用しているSDKとはどのようなものなのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2298/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で，  の形式でユーザーIDを指定すると，多重ログオンの禁止機能が働かない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2348/"><i class="far fa-calendar"></i> 2016-08-26</a>
+                                            <a href="/posts/new_md/doc2298/"><i class="far fa-calendar"></i> 2016-10-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/08/26*
-[番号] 技術ノート KGTN 2016082201
-[現象] [GGH5.X/ExPack] 拡張パック GGEasyMonitor が使用しているSDKとはどのようなものなのか？
-[説明] GGEasyMonitor が使用しているSDKは Session Manager API と呼ばれるもので，アバウトに言えばクラスター・マネージャーの機能を実装するのに必要な機能を提供する開発ツールです．セッション情報 （一覧） を取得する処理のアウトラインは，次の通りです．
-// APS に接続 SMI_Initialize(...); // サーバー情報の取得 SMI_EnumerateServer(...); SMI_GetServerInfo(...); SMI_GetServerMetrics(...); // セッション情報の取得 SMI_EnumerateSessions(...); while(...) { SMI_GetSessionInfo(...); SMI_EnumerateSessions(...); } // 終了処理 SMI_Shutdown();  ファイル KGTN2016082201.pdf [(65.4 KB)] [kitasp 技術センター, 2016/08/26 13:49]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2348/" class="btn btn-template-main">続きを読む</a>
+2016/10/05*
+[番号] 技術ノート KGTN 2016090501
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で， の形式でユーザーIDを指定すると，多重ログオンの禁止機能が働かない．
+[説明] 現在の GGEasyMonitor では，多重ログオンのチェックをユーザーIDのみをキーとして行っているため，
+の形式でユーザーIDが指定された場合，多重ログオンの禁止機能が働きません．GraphOn社が提供するAPIではセッションのドメイン名を得ることが出来ないため，多重ログオンのチェック時にドメイン名を無視する機能 （ユーザーIDのみでチェックする機能） をバージョン 2.2.1 で追加しました．この機能の設定項目は下記の通りで，既定値は YES です．
+; cbkIgnoreDomain: 多重ログオンのチェック時にドメイン名を無視する (YES/NO) cbkIgnoreDomain = YES  補　足 GraphOn社が提供するAPIではドメイン名を取得することは出来ませんが，別の方法としてセッション上で動作する GGEasyMonitorClientInfo.exe でドメイン名を取得し，その情報を GGEasyMonitor へ反映する方法をバージョン2.2.2で追加しました．この機能を有効にするには， GGEasyMonitorClientInfo.exe の設定ファイルで下記項目を指定して下さい．なお，この機能を指定した場合は， 必ず cbkIgnoreDomain = NO を指定して下さい．
+includeDomain = YES  この機能を有効にした場合，振分け機能ではドメイン指定が必須となりますので，ドメイン未指定時にドメインを自動的に付加する機能も併せて追加しました．この機能の設定項目は下記の通りです．
+cbkDefaultDomain = &lt;ドメイン名&gt;  ファイル KGTN2016090501.pdf [(79.6 KB)] [kitasp 技術センター, 2016/10/05 11:06]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2298/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +363,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/problematic_md/doc2351/">
+                                      <a href="/posts/new_md/doc2294/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +371,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc2351/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor のバージョン2.2.0をインストールしたが，クライアントの名前やアドレスに * が表示される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2294/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で，ドメイン名を指定したログオンを行う場合の設定は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,20 +384,24 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/problematic_md/doc2351/"><i class="far fa-calendar"></i> 2016-08-26</a>
+                                            <a href="/posts/new_md/doc2294/"><i class="far fa-calendar"></i> 2016-10-05</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2016/08/26
-[番号] 技術ノート KGTN 2016081902
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor のバージョン2.2.0をインストールしたが，クライアントの名前やアドレスに &ldquo;*&rdquo; が表示される．
-[説明] クライアント情報を取得するため，以下の設定作業を行って下さい．
-[GGの設定ファイルの修正] サーバー側から見たクライアントのIPアドレスを得るため， HostProperties.xml　の下記の項目に true を設定して下さい．なお，この作業はサービス GGAPS を停止した状態で行って下さい．
-&lt;property id=&quot;NetworkAddressEnvVarEnabled&quot; group=&quot;ClientAccess&quot; type=&quot;BOOL&quot;&gt; &lt;value&gt;true&lt;/value&gt; &lt;/property&gt;  [グローバル・ログオンスクリプトの登録] クライアントの情報を取得し，それらの情報を作業ファイル （GGEasyMonitorClientInfo-Data.ini） に記録するため， logon-gem-ci.bat をグローバル・ログオンスクリプトとして登録して下さい．次に，管理者権限で GGEasyMonitor-Files.bat を実行し，作業ファイルに必要なアクセス権を設定して下さい．
-ファイル KGTN2016081902.pdf [(75.5 KB)] [kitasp 技術センター, 2016/08/26 13:23]
-KGTN2016081902.jpg
-表示 [(11 KB)] [kitasp 技術センター, 2016/08/26 13:23]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc2351/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">*技術ノート
+2016/10/05*
+[番号] 技術ノート KGTN 2016090802
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で，ドメイン名を指定したログオンを行う場合の設定は？
+[説明] 振分け機能でドメイン名を使用する場合の推奨設定は，次の通りです．
+[設定ファイル： GGEasyMonitor.ini]
+ cbkIgnoreDomain NO （ログオン画面で入力されたドメイン名をそのまま使用） cbkDefaultDomain （ログオン画面でユーザーIDのみの場合，このドメイン名を付加）
+ [設定ファイル： GGEasyMonitorClientInfo.ini]
+ includeDomain YES （セッション情報のユーザー名にドメイン名を含める） ※ ローカルアカウントの場合，ドメイン名は付きません．
+adServer NO （サーバーにADとGGがインストールされている場合はYES） ※ ADサーバーへのGGのインストールは推奨しません．
+ ファイル KGTN2016090802.pdf [(214 KB)] [kitasp 技術センター, 2016/10/05 14:49]
+KGTN2016090802.jpg
+表示 [(51.6 KB)] [kitasp 技術センター, 2016/10/05 14:49]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2294/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -404,7 +411,7 @@ KGTN2016081902.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2345/">
+                                      <a href="/posts/new_md/doc2286/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -412,7 +419,7 @@ KGTN2016081902.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2345/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で，ユーザーIDを指定しない時に表示されるログオン画面がURLで指定したパラメタを引き継がない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2286/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で，ブラウザ Chrome に対応したPOSTメソッドが無い理由は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -425,17 +432,17 @@ KGTN2016081902.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2345/"><i class="far fa-calendar"></i> 2016-08-26</a>
+                                            <a href="/posts/new_md/doc2286/"><i class="far fa-calendar"></i> 2016-10-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/08/26*
-[番号] 技術ノート KGTN 2016082301
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で，ユーザーIDを指定しない時に表示されるログオン画面がURLで指定したパラメタを引き継がない．
-[説明] GGEasyMonitor が表示するログオン画面がURLで指定したパラメタを引き継がない問題は，バージョン2.2.1で修正されております． GGEasyMonitor バージョン2.2.1またはそれ以降へのアップグレードをお願いします．
-ファイル KGTN2016082301.pdf [(54 KB)] [kitasp 技術センター, 2016/08/26 13:54]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2345/" class="btn btn-template-main">続きを読む</a>
+2016/10/05*
+[番号] 技術ノート KGTN 2016091004
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で，ブラウザ Chrome に対応したPOSTメソッドが無い理由は？
+[説明] IE や Firefox のプラグインでは，パラメタを object (param) タグやembed タグで渡すため，URL欄からパラメタを消し去ることが出来ます．一方， Chrome のプラグインでは，下記のようにパラメタをURLで渡さねばならないため，POSTメソッドを使用してもURL欄からパラメタを消し去ることが出来ません．このような理由で， Chrome に対応したPOSTメソッドの作成を断念しました．
+chrome-extension://kkehppgllpkfohejllckommnpfeomhnc/main.html?user=Administrator&amp;password=pass &amp;h=192.168.102.89&amp;version=5.0.2.23352  ファイル KGTN2016091004.pdf [(65.1 KB)] [kitasp 技術センター, 2016/10/05 15:17]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2286/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -445,7 +452,7 @@ KGTN2016081902.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2330/">
+                                      <a href="/posts/new_md/doc2287/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -453,7 +460,7 @@ KGTN2016081902.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2330/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor をバージョン2.1.Xから2.2.Xへアップグレードする手順は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2287/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で，ブラウザ Firefox でアクセスした時のPOST後の画面を見たい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -466,20 +473,19 @@ KGTN2016081902.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2330/"><i class="far fa-calendar"></i> 2016-08-26</a>
+                                            <a href="/posts/new_md/doc2287/"><i class="far fa-calendar"></i> 2016-10-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/08/26*
-[番号] 技術ノート KGTN 2016081903
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor をバージョン2.1.Xから2.2.Xへアップグレードする手順は？
-[説明] GGEasyMonitor バージョン2.1.Xから2.2.Xへのアップグレードの手順は，次の通りです．
- 設定ファイル GGEasyMonitor.ini のバックアップ スタートメニューの &ldquo;2) サービスを停止&quot;の実行 スタートメニューの &ldquo;6) アンインストール&quot;の実行 バージョン2.2.X のインストール バックアップした設定ファイル GGEasyMonitor.ini のコピー （復元） 下記の設定作業 （クライアント情報の採取関連の設定） の実行 スタートメニューの &ldquo;1) サービスを開始&quot;の実行  [設定作業：GGの設定ファイルの修正] サーバー側から見たクライアントのIPアドレスを得るため， HostProperties.xml　の下記の項目に true を設定して下さい．なお，この作業はサービス GGAPS を停止した状態で行って下さい．
-&lt;property id=&quot;NetworkAddressEnvVarEnabled&quot; group=&quot;ClientAccess&quot; type=&quot;BOOL&quot;&gt; &lt;value&gt;true&lt;/value&gt; &lt;/property&gt;  [設定作業：グローバル・ログオンスクリプトの登録] クライアントの情報を取得し，それらの情報を作業ファイル （GGEasyMonitorClientInfo-Data.ini） に記録するため， logon-gem-ci.bat をグローバル・ログオンスクリプトとして登録して下さい．次に，管理者権限で GGEasyMonitor-Files.bat を実行し，作業ファイルに必要なアクセス権を設定して下さい．
-補　足 GGEasyMonitor バージョン2.2.Xで追加された主なファイルおよびリリースノートは次の通りです．
- GGEasyMonitorClientInfo.exe クライアントの情報を採取するプログラム GGEasyMonitorClientInfo.ini クライアントの情報を採取するプログラムの設定ファイル GGEasyMonitorClientInfo-Data.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2330/" class="btn btn-template-main">続きを読む</a>
+2016/10/05*
+[番号] 技術ノート KGTN 2016091003
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で，ブラウザ Firefox でアクセスした時のPOST後の画面を見たい．
+[説明] ブラウザ Firefox でアクセスした時のPOST後の画面は次の通りです （開発中の画面で将来変更される可能性があります） ．ブラウザのURL欄にユーザーIDやパスワード等のパラメタは一切表示されません．
+ファイル KGTN2016091003.pdf [(129 KB)] [kitasp 技術センター, 2016/10/05 15:15]
+KGTN2016091003.jpg
+表示 [(28.7 KB)] [kitasp 技術センター, 2016/10/05 15:15]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2287/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -489,7 +495,7 @@ KGTN2016081902.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2347/">
+                                      <a href="/posts/new_md/doc2315/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -497,7 +503,7 @@ KGTN2016081902.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2347/">[GGH5.X/ExPack] 振分け機能でデスクトップを表示する場合のURLは？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2315/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor はデータベースとして MSXML を使用しているそうだが，排他制御は大丈夫なのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -510,18 +516,17 @@ KGTN2016081902.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2347/"><i class="far fa-calendar"></i> 2016-08-26</a>
+                                            <a href="/posts/new_md/doc2315/"><i class="far fa-calendar"></i> 2016-10-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/08/26*
-[番号] 技術ノート KGTN 2016082204
-[現象] [GGH5.X/ExPack] 振分け機能でデスクトップを表示する場合のURLは？
-[説明] 下記のようにURLに &amp;desktop=true を追加して下さい．
-http://192.168.102.89:8089/logon.html?user=Administrator&amp;password=pass&amp;desktop=true  &ldquo;http://192.168.102.89:8089/logon.html?desktop=true&rdquo; の場合 （ユーザー名を指定しない場合） は，GGEasyMonitor バージョン2.2.1以前ではデスクトップ表示のパラメタが機能しません．
-ファイル KGTN2016082204.pdf [(58.8 KB)] [kitasp 技術センター, 2016/08/26 13:53]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2347/" class="btn btn-template-main">続きを読む</a>
+2016/10/05*
+[番号] 技術ノート KGTN 2016083001
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor はデータベースとして MSXML を使用しているそうだが，排他制御は大丈夫なのか？
+[説明] GGEasyMonitor のデータベース関連の処理はオブジェクト化されており， MSXML が管理するデータにアクセスする部分はミューテックスで排他制御が行われております．従って，多数のスレッドがデータベース処理を要求する状況であっても， MSXML のデータへ複数のスレッドが同時にアクセスすることはありません．
+ファイル KGTN2016083001.pdf [(57.3 KB)] [kitasp 技術センター, 2016/10/05 10:38]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2315/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -531,7 +536,7 @@ http://192.168.102.89:8089/logon.html?user=Administrator&amp;password=pass&amp;d
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2342/">
+                                      <a href="/posts/new_md/doc2311/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -539,7 +544,7 @@ http://192.168.102.89:8089/logon.html?user=Administrator&amp;password=pass&amp;d
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2342/">[GGH5.X/GGEasyLogon] GGEasyLogon で GGEasyMonitor の振分け機能を利用した時，多重ログオンのエラーメッセージは，ブラウザが起動されその中に表示されるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2311/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor をカスタマイズして，ユーザーの存在チェック機能を実装してもらう場合，どのようなインターフェースが提供されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -552,19 +557,17 @@ http://192.168.102.89:8089/logon.html?user=Administrator&amp;password=pass&amp;d
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2342/"><i class="far fa-calendar"></i> 2016-08-26</a>
+                                            <a href="/posts/new_md/doc2311/"><i class="far fa-calendar"></i> 2016-10-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/08/26*
-[番号] 技術ノート KGTN 2016082401
-[現象] [GGH5.X/GGEasyLogon] GGEasyLogon で GGEasyMonitor の振分け機能を利用した時，多重ログオンのエラーメッセージは，ブラウザが起動されその中に表示されるのか？
-[説明] いいえ， GGEasyLogon が表示するダイアログ中にエラーメッセージが表示されます．
-ファイル KGTN2016082401.pdf [(230 KB)] [kitasp 技術センター, 2016/08/26 14:06]
-KGTN2016082401.jpg
-表示 [(49.1 KB)] [kitasp 技術センター, 2016/08/26 14:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2342/" class="btn btn-template-main">続きを読む</a>
+2016/10/05*
+[番号] 技術ノート KGTN 2016083003
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor をカスタマイズして，ユーザーの存在チェック機能を実装してもらう場合，どのようなインターフェースが提供されるのか？
+[説明] ユーザーの存在チェック機能は，振分け処理の機能を拡張する形で実装する予定です．基本的な問合せ （GETメソッド） とその結果 （HTML） の形式は次の通りです．
+振分け（既存機能） ： http://&lt;振分けサーバー&gt;/logon.html?user=Administrator&amp;... ユーザーの存在チェック ： http://&lt;振分けサーバー&gt;/userCheck.html?user=Administrator &lt;html&gt; &lt;head&gt;GGEasyMonitor&lt;/head&gt; &lt;body&gt;Administrator : YES&lt;/body&gt; ← 存在する場合は YES，存在しない場合は NO &lt;/html&gt;  ファイル KGTN2016083003.pdf [(64.1 KB)] [kitasp 技術センター, 2016/10/05 10:41]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2311/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -574,7 +577,7 @@ KGTN2016082401.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2343/">
+                                      <a href="/posts/new_md/doc2305/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -582,7 +585,7 @@ KGTN2016082401.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2343/">[GGH5.X/GGEasyLogon] GGEasyMonitor で振分けを行う場合， GGEasyLogon の設定項目のサーバーに @ を指定して構わないか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2305/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor をバージョン2.1.Xから2.2.Xへアップグレードする場合，GGの設定ファイル HostProperties.xml の修正やログオンスクリプトの設定が必須なのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -595,19 +598,17 @@ KGTN2016082401.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2343/"><i class="far fa-calendar"></i> 2016-08-26</a>
+                                            <a href="/posts/new_md/doc2305/"><i class="far fa-calendar"></i> 2016-10-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/08/26*
-[番号] 技術ノート KGTN 2016082303
-[現象] [GGH5.X/GGEasyLogon] GGEasyMonitor で振分けを行う場合， GGEasyLogon の設定項目のサーバーに @ を指定して構わないか？
-[説明] はい，サーバーに @ が指定された場合は，名前解決が行われます．
-ファイル KGTN2016082303.pdf [(59.6 KB)] [kitasp 技術センター, 2016/08/26 14:00]
-KGTN2016082303.jpg
-表示 [(20 KB)] [kitasp 技術センター, 2016/08/26 14:00]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2343/" class="btn btn-template-main">続きを読む</a>
+2016/10/05*
+[番号] 技術ノート KGTN 2016083104
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor をバージョン2.1.Xから2.2.Xへアップグレードする場合，GGの設定ファイル HostProperties.xml の修正やログオンスクリプトの設定が必須なのか？
+[説明] いいえ，GGの設定ファイル HostProperties.xml の修正やログオンスクリプトの設定は，監視画面にクライアントの情報 （IPアドレスやコンピューター名など） を表示する時に必要なもので，それらが &ldquo;*&rdquo; 表示でも構わなければ修正や設定の作業は必要ありません．
+ファイル KGTN2016083104.pdf [(58 KB)] [kitasp 技術センター, 2016/10/05 10:54]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2305/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -617,7 +618,7 @@ KGTN2016082303.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2344/">
+                                      <a href="/posts/new_md/doc2309/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -625,7 +626,7 @@ KGTN2016082303.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2344/">[GGH5.X/GGEasyLogon] 運用でパスワードは手入力と決まっているため GGEasyLogon を利用出来ない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2309/">[GGH5.X/ExPack] 拡張パックの GGSessionManager でセッションを強制終了した場合，無条件にプロセスを殺すような処理が行われるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -638,21 +639,17 @@ KGTN2016082303.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2344/"><i class="far fa-calendar"></i> 2016-08-26</a>
+                                            <a href="/posts/new_md/doc2309/"><i class="far fa-calendar"></i> 2016-10-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/08/26*
-[番号] 技術ノート KGTN 2016082302
-[現象] [GGH5.X/GGEasyLogon] 運用でパスワードは手入力と決まっているため GGEasyLogon を利用出来ない．
-[説明] GGEasyLogon の接続先の設定画面でパスワードを空欄にして下さい．GGサーバーヘ接続後に，パスワードの入力を促すダイアログが表示されます．
-ファイル KGTN2016082302.pdf [(193 KB)] [kitasp 技術センター, 2016/08/26 13:57]
-KGTN2016082302-1.jpg
-表示 [(17.7 KB)] [kitasp 技術センター, 2016/08/26 13:57]
-KGTN2016082302-2.jpg
-表示 [(35.1 KB)] [kitasp 技術センター, 2016/08/26 13:57]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2344/" class="btn btn-template-main">続きを読む</a>
+2016/10/05*
+[番号] 技術ノート KGTN 2016083005
+[現象] [GGH5.X/ExPack] 拡張パックの GGSessionManager でセッションを強制終了した場合，無条件にプロセスを殺すような処理が行われるのか？
+[説明] いいえ，関数 TerminateProcess() のようなリスクを伴う強制的な終了処理が行われる訳ではありません．クラスターマネージャーを操作して，セッションを終了させる場合と同様に，正常な手順を踏んでセッションを終了させます．以下に，セッションの強制終了時のAPSログを示します．ログの130行目に &ldquo;Successfully unloaded user profile&rdquo; という文言も見えます．
+121 GGSessionManager (5512) Attempting to terminate session 2. ... 125 Administrator on Ggh50-lic, aps (5512) Session ID 2: Process #3952 (C:Program FilesGraphOnGO-GlobalProgramspw.exe) stopped in session &quot;Administrator on Ggh50-lic&quot;. ... 130 Logon2 on Ggh50-lic, Logon (928) Successfully unloaded user profile. ... 132 Administrator on Ggh50-lic, aps (5512) Session ID 2: Process #928 (?</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2309/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -662,7 +659,7 @@ KGTN2016082302-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2328/">
+                                      <a href="/posts/new_md/doc2278/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -670,7 +667,7 @@ KGTN2016082302-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2328/">[GGH5.X/GGEasyMonitopr] 拡張パックの GGEasyMonitor の振分けで想定外の事象が発生したが，手掛かりとなる情報を採取する方法はあるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2278/">[GGH5.X/ExPaxck] 拡張パックの GGEasyPassword の設定ファイルでパスワード変更のコマンドを指定するが，そのコマンドにドメイン管理者のユーザーIDとパスワードを指定するので心配だ．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -683,18 +680,19 @@ KGTN2016082302-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2328/"><i class="far fa-calendar"></i> 2016-08-26</a>
+                                            <a href="/posts/new_md/doc2278/"><i class="far fa-calendar"></i> 2016-10-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/08/26*
-[番号] 技術ノート KGTN 2016082304
-[現象] [GGH5.X/GGEasyMonitopr] 拡張パックの GGEasyMonitor の振分けで想定外の事象が発生したが，手掛かりとなる情報を採取する方法はあるのか？
-[説明] バージョン 2.2.1 より，ユーザーIDのチェックおよび GGEasyMonitor が管理するデータベース （XML） の内容をログファイル （LOG-yyyymmdd.log） に記録する機能が実装されております．この機能を利用するには，監視機能の snapshot.html へアクセスして下さい．
-記録されたXMLデータを整形した結果
-&lt;?xml version=&quot;1.0&quot;?&gt; &lt;host&gt; &lt;session addr=&quot;192.168.102.81:491&quot; host=&quot;ht01-ad&quot; id=&quot;summary&quot;&gt; &lt;now&gt;0&lt;/now&gt; &lt;max&gt;0&lt;/max&gt; &lt;rem&gt;0&lt;/rem&gt; &lt;/session&gt; &lt;session addr=&quot;192.168.102.60:491&quot; host=&quot;ws2012r2-60&quot; id=&quot;summary&quot;&gt; &lt;now&gt;0&lt;/now&gt; &lt;max&gt;50&lt;/max&gt; &lt;rem&gt;50&lt;/rem&gt; &lt;/session&gt; &lt;session addr=&quot;192.168.102.89:491&quot; host=&quot;ggh50-lic&quot; id=&quot;summary&quot;&gt; &lt;now&gt;1&lt;/now&gt; &lt;max&gt;55&lt;/max&gt; &lt;rem&gt;54&lt;/rem&gt; &lt;/session&gt; &lt;session addr=&quot;192.168.102.89:491&quot; host=&quot;ggh50-lic&quot; user=&quot;administrator&quot; id=&quot;19&quot;&gt; &lt;name&gt;Administrator on Ggh50-lic&lt;/name&gt; &lt;user&gt;administrator&lt;/user&gt; &lt;sessionID&gt;#19&lt;/sessionID&gt; &lt;clientCount&gt;0&lt;/clientCount&gt; &lt;clinetAddr&gt;192.168.102.89&lt;/clinetAddr&gt; &lt;clinetName&gt;ggh50-lic&lt;/clinetName&gt; &lt;clinetNet&gt;192.168.102.89&lt;/clinetNet&gt; &lt;startTime&gt;2016-08-24 07:49:07&lt;/startTime&gt; &lt;/session&gt; &lt;/host  ファイル KGTN2016082304.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2328/" class="btn btn-template-main">続きを読む</a>
+2016/10/05*
+[番号] 技術ノート KGTN 2016091403
+[現象] [GGH5.X/ExPaxck] 拡張パックの GGEasyPassword の設定ファイルでパスワード変更のコマンドを指定するが，そのコマンドにドメイン管理者のユーザーIDとパスワードを指定するので心配だ．
+[説明] パスワード変更のコマンドを指定する項目 command が平文の場合，自動的に暗号化され （再） 保存されます．従って，メモ帳等で設定直後に一度 GGEasyPassword を起動することで，ドメイン管理者のユーザーIDおよびパスワードを暗号化することが可能です．
+設定ファイル（メモ帳等で設定直後）
+command = psexec64 -u gg-ad0Administrator -p pass net user %s %s /domain  設定ファイル（GGEasyPassword を起動後）
+command =$$948BA1440B96D29CD39B75085D03612FCDA67ADA4ACDB14B9210CE39ED6EDD3E81 …  ファイル KGTN2016091403.pdf [(62.9 KB)] [kitasp 技術センター, 2016/10/05 16:27]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2278/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -704,7 +702,7 @@ KGTN2016082302-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2341/">
+                                      <a href="/posts/new_md/doc2299/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -712,7 +710,7 @@ KGTN2016082302-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2341/">[GGH5.X] デスクトップ表示機能を管理者に限り利用出来るようにしたいが可能か？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2299/">[GGH5.X/hopTo] Chrome で Gmail を利用したいが，自動でタッチキーボードが表示されない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -725,17 +723,17 @@ KGTN2016082302-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2341/"><i class="far fa-calendar"></i> 2016-08-26</a>
+                                            <a href="/posts/new_md/doc2299/"><i class="far fa-calendar"></i> 2016-10-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/08/26*
-[番号] 技術ノート KGTN 2016082402
-[現象] [GGH5.X] デスクトップ表示機能を管理者に限り利用出来るようにしたいが可能か？
-[説明] GGの仕様として，デスクトップ表示機能の禁止は 「サーバー単位」 でのみ行うことが出来ます．従って，管理者に限り利用出来るような設定はありません． GGEasyMonitor や GGEasyLogon を必ず使用する前提であれば，例えば Administrator 以外のユーザーのログオン要求は desktop オプションを強制的に削除するような処理の実装が可能です．ご希望あれば，プロフェッショナル・サービス （有償） での対応を検討致します．
-ファイル KGTN2016082402.pdf [(62.3 KB)] [kitasp 技術センター, 2016/08/26 14:07]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2341/" class="btn btn-template-main">続きを読む</a>
+2016/10/05*
+[番号] 技術ノート KGTN 2016090105
+[現象] [GGH5.X/hopTo] Chrome で Gmail を利用したいが，自動でタッチキーボードが表示されない．
+[説明] Chrome の環境でタッチキーボードが自動的に表示されない問題は，現時点では制限事項となります． Gmail の 「返信」 で画面上に入力行を自動的に表示する機能 （MAXEdit および MAXZoom） については正しく動作しております．
+ファイル KGTN2016090105.pdf [(54.1 KB)] [kitasp 技術センター, 2016/10/05 11:04]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2299/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -805,7 +803,7 @@ KGTN2016082302-2.jpg
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

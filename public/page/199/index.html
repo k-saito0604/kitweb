@@ -409,25 +409,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1248/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1143/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1248/">[GGW3.2.1] 複数のユーザがGG上で業務システムを利用しているが，他ユーザが利用している画面が表示されることがある．</a></h4>
+                            <h4><a href="/posts/new_md/doc1143/">[GGH4.0] ターミナルローミング （異なる端末からの再接続） のための機能はあるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-10-24
+                            日付 2012-01-06
                             </p>
                             <p class="intro">*技術ノート
-2011/10/24*
-[番号] 技術ノート KGTN 2011102501
-[現象] [GGW3.2.1] 複数のユーザがGG上で業務システムを利用しているが，他ユーザが利用している画面が表示されることがある．
-[説明] 過去にこのような事例は１件もありません．ログオン時にそのセッション専用の画面環境が構成され， （管理者が明示的に操作するセッションシャドウイングを除けば） 他のセッションからその画面へアクセスすることは出来ません．従って，業務システム （アプリケーション） の動作に起因する可能性が高いと考えられます．GGのセッションと業務システム （アプリケーション） の動作を区別して，技術的な観点から何が起きているのか調べて下さい．
-ファイル KGTN2011102501.pdf [(54.6 KB)] [kitasp 技術センター, 2011/10/25 08:56]</p>
+2012/01/06*
+[番号] 技術ノート KGTN 2012010606
+[現象] [GGH4.0] ターミナルローミング （異なる端末からの再接続） のための機能はあるのか？
+[説明] Dynamic Display Resize 機能 画面の解像度が異なるクライアントからセッション再接続した時，自動的に画面の解像度を調整する機能が実装されました．これにより，画面の解像度が異なるクライアント間の移動が容易になりました．
+Simplified Client Printing and Management 機能 ログオン時ではなく印刷時にクライアントプリンタを構成する機能が実装されました．これにより，セッション再接続後は，その端末のプリントフォルダに存在するプリンタへ印刷することが可能になりました．また，プリンタアプレット （下記画面） を使用することでクライアントプリンタの構成を柔軟に変更することが可能となり，さらにユニバーサル・プリンタドライバに Adobe PDF Library を採用することで，移動先のプリンタのドライバが無い時でも，このユニバーサル・プリンタドライバで高品位な印刷が可能になりました．
+ファイル KGTN2012010606.pdf [(185 KB)] [kitasp 技術センター, 2012/01/06 13:17]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1248/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1143/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,25 +447,28 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1250/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1978/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1250/">[GGH4.0] Windows Client の中に Clientlauncher.exe と gg</a></h4>
+                            <h4><a href="/posts/new_md/doc1978/">[GGH4.X-5.X] Universal Printer Driver を使用すると， [プリンタの設定] 画面でプリンタ固有の細かい設定が出来ない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-10-22
+                            日付 2012-01-06
                             </p>
                             <p class="intro">*技術ノート
-2011/10/22*
-[番号] 技術ノート KGTN 2011102201
-[現象] [GGH4.0] Windows Client の中に Clientlauncher.exe と gg-client.exe があるが，どちらを使用するのか？
-[説明] Clientlauncher.exe は， Windows Client (Native Client) とGO-Global Cloud Client のAdobe AIR に関する部分のインタフェースとしての役割を持ちます．従って， Windows Client としては gg-client.exe を使用して下さい．
-ファイル KGTN2011102201.pdf [(52.4 KB)] [kitasp 技術センター, 2011/10/22 20:06]</p>
+2012/01/06*
+[番号] 技術ノート KGTN 2011090209
+[現象] [GGH4.X-5.X] Universal Printer Driver を使用すると， [プリンタの設定] 画面でプリンタ固有の細かい設定が出来ない．
+[説明] 出力先プリンタの細かい設定を行いたい場合は， Preview PDF を選択しクライアント側でPDFファイルを表示させ，その中の印刷機能でプリンタ固有の細かい設定 （両面印刷機能，ステープル機能など） を行って下さい．
+補　足 Windows Printer Drivers (Native Driver) でも，両面印刷やソーター等の機能を指定出来ない場合があります．通常，プリンタドライバが標準的な印刷の枠組みを超えた （独自の） 方法でオプション機器等のプリンタの情報を得ていることに起因し，GGサーバとGGクライアントが同一ネットワーク上に存在すれば，プリンタとプリンタドライバが直接通信出来るため問題は発生しませんが，異なるネットワーク上に存在する場合は通信が出来ず，その結果オプション機器等が見えない （選択出来ない）　状況が発生します．このような場合も，上記説明の方法 （クライアントでPDFを表示し，PDFビュアーで印刷） で対応して下さい．また，プリンタによっては，
+   機能を制限して標準的な印刷の枠組みでオプション機器等を設定出来るドライバ 2) オプション機器等を別途手動で設定できるドライバ
+が用意されていることもあります．
+ファイル KGTN2011090209.pdf [(52.4 KB)] [kitasp 技術センター, 2017/11/24 14:25]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1250/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1978/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -483,25 +487,28 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1255/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc669/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1255/">[Excel] GGの環境でアプリケーションが生成したExcelファイルを開いたところ，セルの中の文字が化けている．</a></h4>
+                            <h4><a href="/posts/new_md/doc669/">[GGH4.X-6.X] Universal Printer Driver を使用すると， [プリンタの設定] 画面でプリンタ固有の細かい設定が出来ない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-10-21
+                            日付 2012-01-06
                             </p>
                             <p class="intro">*技術ノート
-2011/10/21*
-[番号] 技術ノート KGTN 2011102104
-[現象] [Excel] GGの環境でアプリケーションが生成したExcelファイルを開いたところ，セルの中の文字が化けている．
-[説明] GO-Global はアプリケーションの画面を配信するミドルウエアで， Excel のセルの中の文字コード等には関与しません．従って， 「セルの中の文字が化けている」 ということであれば，アプリケーションに起因する問題だと推測されます．アプリケーションが生成する文字コードに関する設定等を確認して下さい．
-ファイル KGTN2011102104.pdf [(48.3 KB)] [kitasp 技術センター, 2011/10/21 11:20]</p>
+2012/01/06*
+[番号] 技術ノート KGTN 2011090209
+[現象] [GGH4.X-6.X] Universal Printer Driver を使用すると， [プリンタの設定] 画面でプリンタ固有の細かい設定が出来ない．
+[説明] 出力先プリンタの細かい設定を行いたい場合は， Preview PDF を選択しクライアント側でPDFファイルを表示させ，その中の印刷機能でプリンタ固有の細かい設定 （両面印刷機能，ステープル機能など） を行って下さい．
+補　足 Windows Printer Drivers (Native Driver) でも，両面印刷やソーター等の機能を指定出来ない場合があります．通常，プリンタドライバが標準的な印刷の枠組みを超えた （独自の） 方法でプリンタのオプション機器等の情報を直接得ており，GGサーバーとGGクライアントが同じLAN環境に存在すればプリンタドライバとプリンタがTCP/IP等で直接通信出来るため問題は発生しません．しかし同じLAN環境に存在しない場合は、 「GGサーバー上で動作するプリンタドライバ」 と 「GGクライアントが存在するネットワークに接続されたプリンタ」 がTCP/IP等で直接通信が出来ないため，オプション機器等が見えない （選択出来ない）　状況が発生します．このような場合は，上記説明の方法 （クライアントでPDFを表示し，PDFビュアーで印刷） で対応して下さい．また，プリンタによっては，
+   機能を制限して標準的な印刷の枠組みでオプション機器等を設定出来るドライバ 2) オプション機器等を別途手動で設定できるドライバ
+が用意されていることもあります．
+ファイル KGTN2011090209.pdf [(55.9 KB)] [kitasp 技術センター, 2020/03/23 14:26]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1255/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc669/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -520,25 +527,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1253/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1144/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1253/">[GGH4.0] IE6の環境でクライアントの自動更新機能 （Automatically update clients） が機能しない．</a></h4>
+                            <h4><a href="/posts/new_md/doc1144/">[GGW3.2.1] GGH4.0 では CLIENTCOMPUTERADDRESS の値にソケットから得た情報をセットするように変更されるそうだが， GGW3.2.1 も同様に変更されるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-10-21
+                            日付 2012-01-06
                             </p>
                             <p class="intro">*技術ノート
-2011/10/21*
-[番号] 技術ノート KGTN 2011102106
-[現象] [GGH4.0] IE6の環境でクライアントの自動更新機能 （Automatically update clients） が機能しない．
-[説明] クライアントの自動更新機能は，IE6の環境をサポートしません．
-ファイル KGTN2011102106.pdf [(50.1 KB)] [kitasp 技術センター, 2011/10/21 13:08]</p>
+2012/01/06*
+[番号] 技術ノート KGTN 2012010401
+[現象] [GGW3.2.1] GGH4.0 では CLIENTCOMPUTERADDRESS の値にソケットから得た情報をセットするように変更されるそうだが， GGW3.2.1 も同様に変更されるのか？
+[説明] GGH4.0 では CLIENTCOMPUTERADDRESS の値にソケットから得た情報，つまり実際にGGサーバへ接続したネットワーク （ソケット） のIPアドレスが設定されるように変更されます． GGW3.2.1 については，GraphOn社に確認したところ， （少なくとも現時点では） その予定はないとのことです．
+ファイル KGTN2012010401.pdf [(57.7 KB)] [kitasp 技術センター, 2012/01/06 12:13]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1253/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1144/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

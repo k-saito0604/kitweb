@@ -409,28 +409,70 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2083/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2073/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2083/">[Windows] 日本語入力システム ATOK は，サーバー環境で動作するのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2073/">[Windows] Windows Server 2003 (R2) 向けのランサムウェア WannaCrypt 攻撃に対する更新プログラムを適用したいが，問題はないか？</a></h4>
+                            <p class="author-category">
+                            
+                            日付 2017-05-24
+                            </p>
+                            <p class="intro">*技術ノート
+2017/05/24*
+[番号] 技術ノート KGTN 2017051901
+[現象] [Windows] Windows Server 2003 (R2) 向けのランサムウェア WannaCrypt 攻撃に対する更新プログラムを適用したいが，問題はないか？
+[説明] 下記の弊社の検証環境に更新プログラム KB4012598 をインストールし確認したところ，それぞれの環境でGGが正常に動作しました．
+・Windows Server 2003 R2 + GGH4.8.2.22090 ・Windows Server 2003 R2 + GGH4.8.2.23274 ・Windows Server 2003 R2 + GGH5.0.0.22626
+[更新プログラム KB4012598 を適用する場合は，必ず現在のサーバーのバックアップ （ディスクイメージ） を採取した後に行ってください．Windows の状況によっては他の更新プログラム等が適用される可能性がゼロとは言い切れないため，それに備えて復旧するためのバックアップを採取します．]{.underline}
+ファイル KGTN2017051901.pdf [(143 KB)] [kitasp 技術センター, 2017/05/24 17:44]
+KGTN2017051901.jpg
+表示 [(12.4 KB)] [kitasp 技術センター, 2017/05/24 17:44]</p>
+                            <p class="read-more">
+                              <a href="/posts/new_md/doc2073/" class="btn btn-template-main">続きを読む</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="col-md-6 col-sm-6">
+                    <div class="box-image-text blog">
+                        <div class="top">
+                            <div class="image" style="overflow:hidden">
+                                
+                                <img src="/img/technote.jpg" class="img-responsive" alt="" >
+                                
+                            </div>
+                            <div class="bg"></div>
+                            <div class="text">
+                                <p class="buttons">
+                                    <a href="/posts/new_md/doc2115/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <h4><a href="/posts/new_md/doc2115/">[GGH4.X-5.X/Windows] ADPlus で logon.exe のダンプファイルを採取する手順は？</a></h4>
                             <p class="author-category">
                             
                             日付 2017-05-08
                             </p>
                             <p class="intro">*技術ノート
 2017/05/08*
-[番号] 技術ノート KGTN 2017042801
-[現象] [Windows] 日本語入力システム ATOK は，サーバー環境で動作するのか？
-[説明] ATOK 2017 for Windows の動作環境は， Windows 10, Windows 8.1, Windows 7 SP1以上 ですが， ATOK Pro 3 for Windows の動作環境は，これらの環境に加え Windows Server 2012 R2/2012/2008 R2/2008 SP2以上 があり，サーバー環境もサポートされます．
-補　足 GGのセッション上でも ATOK が動作することを確認しておりますが，導入をご検討の場合は評価版等での事前検証を必ず行ってください．
-ファイル KGTN2017042801.pdf [(300 KB)] [kitasp 技術センター, 2017/05/24 16:47]
-KGTN2017042801.jpg
-表示 [(13.5 KB)] [kitasp 技術センター, 2017/05/24 16:47]</p>
+[番号] 技術ノート KGTN 2017042603
+[現象] [GGH4.X-5.X/Windows] ADPlus で logon.exe のダンプファイルを採取する手順は？
+[説明] 技術ノート KGTN#2017042601 または KGTN#2017042602 を参照して， Debugging Tools for Windows をインストールしてください．ダンプの採取は，このツールの中の adplus.exe を使用します．
+&lt;STEP#1&gt; ダンプファイルを出力するフォルダー C:DUMP を作成します．
+&lt;STEP#2&gt; 管理者でコマンドプロンプトを開き， adplus.exe があるフォルダー &ldquo;C:Program Files (x86)Windows Kits10Debuggersx64&rdquo; へ移動します．
+&lt;STEP#3&gt; ダンプファイルを採取する logon.exe のプロセスIDを調べます．これには，クラスターマネージャー ・ タスクマネージャー ・ Process Explorer 等を使用してください．下記の例では， 3996 が logon.exe のプロセスIDです．
+&lt;STEP#4&gt; コマンドプロンプトで &ldquo;adplus -hang -p -o C:DUMP&rdquo; を実行します （ハングモードでのダンプファイルの採取） ．
+&lt;STEP#5&gt; 続けて，コマンドプロンプトで &ldquo;adplus -crash -p -o C:DUMP&rdquo; を実行します （クラッシュモードでのダンプファイルの採取） ．</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2083/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2115/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -449,27 +491,34 @@ KGTN2017042801.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc492/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2090/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc492/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2090/">[GGH4.X-5.X/Windows] ADPlus のクラッシュダンプを採取したいが，ツールの入手方法は？ (Windows Server 2008 R2)</a></h4>
                             <p class="author-category">
                             
-                            日付 2017-04-28
+                            日付 2017-05-08
                             </p>
                             <p class="intro">*技術ノート
-2017/04/28*
-[番号] 技術ノート KGTN 2017041901
-[現象] [GGH4.X-6.X] ログオン時に &ldquo;You are already running as many sessions as you allowed.&rdquo; というメッセージが表示された．
-[説明] クラスターマネージャーで &ldquo;Maximum sessions per user&rdquo; にチェックが入っている時，この項目の数値 （同一アカウントで同時にログオンできるユーザー数） を超えて，同じアカウントでログオンしようとした時に，このメッセージが表示されます．チェックを外す，同時セッション数を増やす，既存のユーザーがログオフする，この何れかの対応を行ってください．
-ファイル KGTN2017041901.pdf [(114 KB)] [kitasp 技術センター, 2019/01/22 10:05]
-KGTN2017041901.jpg
-表示 [(19.7 KB)] [kitasp 技術センター, 2019/01/22 10:05]</p>
+2017/05/08*
+[番号] 技術ノート KGTN 2017042602
+[現象] [GGH4.X-5.X/Windows] ADPlus のクラッシュダンプを採取したいが，ツールの入手方法は？ (Windows Server 2008 R2)
+[説明] 2017年4月26日時点では，次の手順で &ldquo;Debugging Tools for Windows&rdquo; を入手することが出来ます．
+&lt;STEP#1&gt; https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit へアクセスし，画面下方の &ldquo;Download the debugging Tools for Windows (WinDbg)&rdquo; をクリックします．
+&lt;STEP#2&gt; &ldquo;Windows 向けデバッグ ツール (WinDbg) を SDK から入手する&rdquo; をクリックします．
+&lt;STEP#3&gt; &ldquo;保存&rdquo; をクリックします．
+&lt;STEP#4&gt; &ldquo;実行&rdquo; をクリックします．
+&lt;STEP#5&gt; &ldquo;Next&rdquo; をクリックします．
+&lt;STEP#6&gt; &ldquo;Next&rdquo; をクリックします．
+&lt;STEP#7&gt; &ldquo;Accept&rdquo; をクリックします．
+&lt;STEP#8&gt; &ldquo;Debugging Tools for Windows&rdquo; のみにチェックを入れ，次に &ldquo;Install&rdquo; をクリックします．
+&lt;STEP#9&gt; &ldquo;Close&rdquo; をクリックします．
+&lt;STEP#10&gt; &ldquo;C:Program Files (x86)Windows Kits10Debuggersx64&rdquo; に adplus.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc492/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2090/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -488,64 +537,32 @@ KGTN2017041901.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2127/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2089/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2127/">[GGH4.X] 現在GGH4.8を使用しているが， Windows 10 のクライアント端末を導入する場合，どのように対応すべきか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2089/">[GGH4.X-5.X/Windows] ADPlus のクラッシュダンプを採取したいが，ツールの入手方法は？ (Windows Server 2012 R2)</a></h4>
                             <p class="author-category">
                             
-                            日付 2017-04-28
+                            日付 2017-05-08
                             </p>
                             <p class="intro">*技術ノート
-2017/04/28*
-[番号] 技術ノート KGTN 2017041201
-[現象] [GGH4.X] 現在GGH4.8を使用しているが， Windows 10 のクライアント端末を導入する場合，どのように対応すべきか？
-[説明] クライアント端末として Windows 10 の環境をサポートするGGは，バージョン5.0からです．従って，GGの環境をバージョン4.8からバージョン5.0へアップグレードして頂く必要があります． Windows 10 以前のクライアント端末が残る場合は，サーバー機能に下位互換性がありますので，従来のクライアント・ソフトウエアをご利用頂けます．なお，バージョン5.0の新機能をご利用なさる場合は，やはりアップグレードが必要となります．
-ファイル KGTN2017041201.pdf [(36.4 KB)] [kitasp 技術センター, 2017/04/28 11:56]</p>
+2017/05/08*
+[番号] 技術ノート KGTN 2017042601
+[現象] [GGH4.X-5.X/Windows] ADPlus のクラッシュダンプを採取したいが，ツールの入手方法は？ (Windows Server 2012 R2)
+[説明] 2017年4月26日時点では，次の手順で &ldquo;Debugging Tools for Windows&rdquo; を入手することが出来ます．
+&lt;STEP#1&gt; https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit へアクセスし，画面下方の &ldquo;Download the debugging Tools for Windows (WinDbg)&rdquo; をクリックします．
+&lt;STEP#2&gt; &ldquo;Get Debugging Tools for Windows (WinDbg) (from the SDK)&rdquo; をクリックします．日本語のページが表示された場合は， &ldquo;Windows 向けデバッグ ツール (WinDbg) を SDK から入手する&rdquo; をクリックします．
+&lt;STEP#3&gt; &ldquo;保存&rdquo; をクリックします．
+&lt;STEP#4&gt; &ldquo;実行&rdquo; をクリックします．
+&lt;STEP#5&gt; &ldquo;Next&rdquo; をクリックします．
+&lt;STEP#6&gt; &ldquo;Next&rdquo; をクリックします．
+&lt;STEP#7&gt; &ldquo;Accept&rdquo; をクリックします．
+&lt;STEP#8&gt; &ldquo;Debugging Tools for Windows&rdquo; のみにチェックを入れ，次に &ldquo;Install&rdquo; をクリックします．</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2127/" class="btn btn-template-main">続きを読む</a>
-                            </p>
-                        </div>
-                    </div>
-                    
-
-                </div>
-                
-                <div class="col-md-6 col-sm-6">
-                    <div class="box-image-text blog">
-                        <div class="top">
-                            <div class="image" style="overflow:hidden">
-                                
-                                <img src="/img/technote.jpg" class="img-responsive" alt="" >
-                                
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
-                                    <a href="/posts/new_md/doc2125/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <h4><a href="/posts/new_md/doc2125/">[GGH5.X/Windows] Windows Server 2012 R2 の環境に多数のローカルアカウントを作りたいが，何か問題はあるか？</a></h4>
-                            <p class="author-category">
-                            
-                            日付 2017-04-28
-                            </p>
-                            <p class="intro">*技術ノート
-2017/04/28*
-[番号] 技術ノート KGTN 2017041402
-[現象] [GGH5.X/Windows] Windows Server 2012 R2 の環境に多数のローカルアカウントを作りたいが，何か問題はあるか？
-[説明] 300～500ユーザーを登録すると，エクスプローラーの右クリックから 「新規作成」 消えるという現象が発生します．この現象は，他のユーザーの報告および弊社での複数回の再現試験で確認しました．この問題の解決方法は，現時点では分かっておりません．
-ファイル KGTN2017041402.pdf [(269 KB)] [kitasp 技術センター, 2017/04/28 11:59]
-KGTN2017041402.jpg
-表示 [(12.7 KB)] [kitasp 技術センター, 2017/04/28 11:59]</p>
-                            <p class="read-more">
-                              <a href="/posts/new_md/doc2125/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2089/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

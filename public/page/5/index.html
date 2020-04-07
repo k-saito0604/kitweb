@@ -409,28 +409,31 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1926/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1948/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1926/">[Windows] クライアントPCの 「コンピューターの管理」 を開こうとすると、 「このアプリは保護のためブロックされました。(途中省略) mmc.exe 発行元: 不明」 と表示される。</a></h4>
+                            <h4><a href="/posts/new_md/doc1948/">[GGH6.X] バージョン4.8からバージョン6.0へのアップグレードを考えているが、先にクライアント （ソフトウエア） をバージョン6.0へアップグレードすることは可能か？</a></h4>
                             <p class="author-category">
                             
                             日付 2020-01-24
                             </p>
                             <p class="intro">*技術ノート
 2020/01/24*
-[番号] 技術ノート KGTN 2019122701
-[現象] [Windows] クライアントPCの 「コンピューターの管理」 を開こうとすると、 「このアプリは保護のためブロックされました。(途中省略) mmc.exe 発行元: 不明」 と表示される。
-[説明] 色々と調べましたが、残念ながら原因は不明です。対症療法として、管理者権限で　&ldquo;コマンド プロンプト&rdquo; を開き、その中でコマンド compmgmt.msc を実行してください。
-セキュリティが若干弱くなる可能性もありますが、UAC （ユーザー アカウント制御） の設定を 「通知しない」 に変更し、さらに 「ローカル グループ ポリシー」 の設定を次のように変更することで、 mmc.exe を正常に起動出来るようになります。 [コンピューターの構成] → [Windowsの設定] → [セキュリティの設定] → [ローカル ポリシー] → [セキュリティ オプション] → [ユーザー アカウント制御: 管理者承認モードですべての管理者を実行する] を 「無効」 に変更し、コンピューターを再起動してください。
-ファイル KGTN2019122701.pdf [(174 KB)] [kitasp 技術センター, 2020/01/24 12:59]
-KGTN2019122701-1.jpg
-表示 [(31.4 KB)] [kitasp 技術センター, 2020/01/24 12:59]</p>
+[番号] 技術ノート KGTN 2019120601
+[現象] [GGH6.X] バージョン4.8からバージョン6.0へのアップグレードを考えているが、先にクライアント （ソフトウエア） をバージョン6.0へアップグレードすることは可能か？
+[説明] バージョン6.0のクライアントは下位互換性があるため、端末側を先にアップグレードすることが可能です。但しブラウザ系のクライアントでは、ログオンするページのコンテンツ （HTML） がバージョン4.8とバージョン6.0では異なるため、単純にクライアントをアップグレードするだけでは上手く動作しません。バージョン6.0用のウエッブサーバーを別途用意する必要があり、その運用は次のようになります。
+ バージョン6.0のクライアント機能をインストールする。 バージョン6.0のログオンページ （移行期用） へアクセスする。 ★移行期の運用★ バージョン6.0のサーバー機能をインストールする。 バージョン6.0のログオンページ（本番用）へアクセスする。  利用者にとってみると 「移行前のログオンページ → 移行期のログオンページ → 移行前と同じログオンページ」 とアクセスするページが変わり、操作上の負担が大きくなります。
+この問題を回避するには、ログオンページに依存しないWindowsの専用クライアントと弊社開発のログオンプログラム GGEasyLogon を使用する方法があります。この方法では、ブラウザを立ち上げることなく、下記画面から接続先のサーバーやユーザーを選んでワンクリックでGGサーバーへログオンすることが出来ます。
+ブラウザからの機能が必須でなければ、この GGEasyLogon の利用をご検討ください。
+[※上記内容は、バージョン4.8からバージョン5.0へのアップグレードについても同様です。]{.underline}
+ファイル KGTN2019120601.pdf [(61.3 KB)] [kitasp 技術センター, 2020/01/24 12:53]
+KGTN2019120601.jpg
+表示 [(19 KB)] [kitasp 技術センター, 2020/01/24 12:53]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1926/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1948/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -443,29 +446,33 @@ KGTN2019122701-1.jpg
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 
-                                <img src="/img/Windowsupdate.jpg" class="img-responsive" alt="" >
+                                <img src="/img/technote.jpg" class="img-responsive" alt="" >
                                 
                             </div>
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/202001windowsupdatefast/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2135/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/202001windowsupdatefast/">2020年1月のWindows Update 互換性情報についての速報</a></h4>
+                            <h4><a href="/posts/new_md/doc2135/">[GGH6.X] バージョン6.0の環境でログオンスクリプトを指定すると、そのスクリプトの起動までに約10秒を要する。</a></h4>
                             <p class="author-category">
                             
-                            日付 2020-01-15
+                            日付 2020-01-24
                             </p>
-                            <p class="intro"><p>正規販売代理店技術担当者様 各位</p>
-<p>いつもお世話になっております。
-きっとエイエスピー 技術支援センターから2020年1月のWindows Update
-互換性情報についての速報です。</p></p>
+                            <p class="intro">*技術ノート
+2020/01/24*
+[番号] 技術ノート KGTN 2019110801
+[現象] [GGH6.X] バージョン6.0の環境でログオンスクリプトを指定すると、そのスクリプトの起動までに約10秒を要する。
+[説明] この現象は、ログオンダイアログを介さずにログオンする時 （クライアントのパラメタでユーザーIDとパスワードの両方を指定した時） に発生し、ログオンダイアログでユーザーIDやパスワードを入力した時は発生しません。GraphOn社もこの問題を認識しており、将来のビルドで修正される見込みです。当面の対症療法として、GGサーバーのレジストリに下記設定を行うことで、現象が発生しないようになります。
+HKLMSOFTWAREGraphOnGO-GlobalLoaderProcessesconhost.exe = 2 HKLMSOFTWAREGraphOnGO-GlobalLoaderProcessescmd.exe = 2  ファイル KGTN2019110801.pdf [(83.9 KB)] [kitasp 技術センター, 2020/01/24 12:15]
+KGTN2019110801.jpg
+表示 [(50.8 KB)] [kitasp 技術センター, 2020/01/24 12:15]</p>
                             <p class="read-more">
-                              <a href="/posts/202001windowsupdatefast/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2135/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -478,26 +485,32 @@ KGTN2019122701-1.jpg
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 
-                                <img src="/img/Windowsupdate.jpg" class="img-responsive" alt="" >
+                                <img src="/img/technote.jpg" class="img-responsive" alt="" >
                                 
                             </div>
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/20200101/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2058/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/20200101/">謹んで新春の祝詞を申し上げます。</a></h4>
+                            <h4><a href="/posts/new_md/doc2058/">[GGH6.X] モバイルクライアントのURLスキーム機能が上手く動作しない。</a></h4>
                             <p class="author-category">
                             
-                            日付 2020-01-01
+                            日付 2020-01-24
                             </p>
-                            <p class="intro">本年もさらなるサービス向上に向け、気持ちを新たに取り組んでまいります。 お気付きのことは何なりとご指導いただければ幸いです。 変わらぬご愛顧のほど心よりお願い申し上げます。 令和２年</p>
+                            <p class="intro">*技術ノート
+2020/01/24*
+[番号] 技術ノート KGTN 2019111602
+[現象] [GGH6.X] モバイルクライアントのURLスキーム機能が上手く動作しない。
+[説明] iOS版のモバイルクライアント （6.0.1.27224） では、英数字以外の一部文字が正しく処理されない現象を確認しております。パスワードに使用する文字を英数字にのみにすることで、正常にログイン出来るようになると思われます。
+Android版のモバイルクライアント （6.0.1.28070） では、 rxp://? でクライアントが起動されない現象を確認しております。この問題については対症療法がありませんので、GraphOn社の修正をお待ち頂くようお願いします。
+ファイル KGTN2019111602.pdf [(42.8 KB)] [kitasp 技術センター, 2020/01/24 12:30]</p>
                             <p class="read-more">
-                              <a href="/posts/20200101/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2058/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -510,28 +523,34 @@ KGTN2019122701-1.jpg
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 
-                                <img src="/img/Windowsupdate.jpg" class="img-responsive" alt="" >
+                                <img src="/img/technote.jpg" class="img-responsive" alt="" >
                                 
                             </div>
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/201912windowsupdate/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2124/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/201912windowsupdate/">2019年12月のWindows Update互換性情報に関して</a></h4>
+                            <h4><a href="/posts/new_md/doc2124/">[GGH6.X] 小さなサイズで起動したブラウザでHTML5クライアントを起動すると、GG上のアプリケーションの画面全体が表示されない。</a></h4>
                             <p class="author-category">
                             
-                            日付 2019-12-26
+                            日付 2020-01-24
                             </p>
-                            <p class="intro"><p>正規販売代理店技術担当者様 各位</p>
-<p>いつもお世話になっております。<!-- raw HTML omitted -->
-きっとエイエスピー 技術支援センターでございます。</p></p>
+                            <p class="intro">*技術ノート
+2020/01/24*
+[番号] 技術ノート KGTN 2019111201
+[現象] [GGH6.X] 小さなサイズで起動したブラウザでHTML5クライアントを起動すると、GG上のアプリケーションの画面全体が表示されない。
+[説明] GGのHTML5クライアントは、サーバー上で動作するアプリケーションの画面サイズを変えることなくブラウザ上で再現します。このため、HTML5クライアントを起動するブラウザのサイズが小さな場合は、アプリケーションの画面全体が表示されないことがあります。HTML5クライアントを使用する場合は、出来るだけブラウザを大きな画面サイズにしてから起動するようにしてください。
+HTML5クライアントを起動する時に noscale=true というパラメタを指定することで、ログオン後にブラウザの画面サイズを大きくすることで、GGの描画領域を拡大することが出来ます。
+http://&lt;GG サーバー&gt;/goglobal/logon.html?useApp=false&amp;noscale=true  ファイル KGTN2019111201.pdf [(73.7 KB)] [kitasp 技術センター, 2020/01/24 12:18]
+KGTN2019111201.jpg
+表示 [(24.9 KB)] [kitasp 技術センター, 2020/01/24 12:19]</p>
                             <p class="read-more">
-                              <a href="/posts/201912windowsupdate/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2124/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2253/">
+                                      <a href="/posts/new_md/doc2141/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2253/">[GGH4.X] Windowsの証明書インポートウィザードで証明ストアとして 「信頼されたルート証明機関」 を指定するとインポートに失敗する．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2141/">[GGH5.X] クライアント印刷機能で UPD （Universal Printer Driver） を使用した時，印刷されない画像がある．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,21 +340,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2253/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                            <a href="/posts/new_md/doc2141/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016100301
-[現象] [GGH4.X] Windowsの証明書インポートウィザードで証明ストアとして 「信頼されたルート証明機関」 を指定するとインポートに失敗する．
-[説明] このインポートに失敗する現象は，バージョン5.0またはそれ以降にアップグレードすることで改善されます．
-GGH4.8.2 GGH5.0.2 ファイル KGTN2016100301.pdf [(245 KB)] [kitasp 技術センター, 2016/11/02 13:43]
-KGTN2016100301-1.jpg
-表示 [(28.3 KB)] [kitasp 技術センター, 2016/11/02 13:43]
-KGTN2016100301-2.jpg
-表示 [(29.2 KB)] [kitasp 技術センター, 2016/11/02 13:43]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2253/" class="btn btn-template-main">続きを読む</a>
+2017/04/07*
+[番号] 技術ノート KGTN 2017040501
+[現象] [GGH5.X] クライアント印刷機能で UPD （Universal Printer Driver） を使用した時，印刷されない画像がある．
+[説明] 次の手順で UPD の印刷エンジン （pdfprint.exe） にパラメタを追加してください．
+ サービス Application Publishing Service を停止する． テキストエディタで C:ProgramDataGraphOnHostProperties.xml を開く． プロパティー EnablePrintOptions の値を true にする． プロパティー PrintOptions の値に -raster2 -raster2center -printermargins を加える． 上書き保存する． サービス Application Publishing Service を開始する．  この設定を加えると，印刷内容が 「印刷前に」 画像データーへ変換され，その画像がプリンターへ出力されます．なお，印刷内容の再現性は高まりますが，画像データーへ変換するため，印刷に要する時間が長くなります．
+ファイル KGTN2017040501.pdf [(45.5 KB)] [kitasp 技術センター, 2017/04/07 18:00]
+KGTN2017040501.jpg
+表示 [(26.7 KB)] [kitasp 技術センター, 2017/04/07 18:01]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2141/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -364,7 +363,7 @@ KGTN2016100301-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2254/">
+                                      <a href="/posts/new_md/doc2152/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -372,7 +371,7 @@ KGTN2016100301-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2254/">[GGH4.X] Windowsの証明書インポートウィザードは，GGの環境で利用出来るか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2152/">[GGH5.X] クライアント印刷機能で印刷されない．どのような手順で調べれば良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -385,19 +384,21 @@ KGTN2016100301-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2254/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                            <a href="/posts/new_md/doc2152/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016093002
-[現象] [GGH4.X] Windowsの証明書インポートウィザードは，GGの環境で利用出来るか？
-[説明] Windows Server 2012 R2 + GGH4.8.2.23274 の環境で確認したところ，下記スクリーンショットの通り正常に証明書をインポートすることが出来ました．
-ファイル KGTN2016093002.pdf [(165 KB)] [kitasp 技術センター, 2016/11/02 13:38]
-KGTN2016093002.jpg
-表示 [(41.2 KB)] [kitasp 技術センター, 2016/11/02 13:38]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2254/" class="btn btn-template-main">続きを読む</a>
+2017/04/07*
+[番号] 技術ノート KGTN 2017031601
+[現象] [GGH5.X] クライアント印刷機能で印刷されない．どのような手順で調べれば良いか？
+[説明] 以下の手順でスクリーンショットを撮ってください．
+ クライアントPCの 「ディバイスとプリンター」 の 「プリンター」 のスクリーンショットを撮ってください．  そのプリンターの印刷ジョブの画面 （印刷/送信待ち一覧） を開いて，スクリーンショットを撮ってください．  メニューの [プリンター] → [一時停止] を選択してください．  GGにログオンし，プログラムウインドウ → [File] → [Printers] を開き，スクリーンショットを撮ってください．  印刷するプリンターがない場合 [Add] をクリックし，スクリーンショットを撮ってください．プリンターがある場合は 7 へ進んでください．  印刷するプリンターを選択後に [Add] をクリックして，スクリーンショットを撮ってください．  メモ帳でそのプリンターに印刷してください （印刷前にスクリーンショットを撮ってください） ．    印刷後に，クライアント側の印刷ジョブの画面に帳票（印刷ジョブ）が蓄積されるかどうか確認してください．
+ファイル KGTN2017031601.pdf [(220 KB)] [kitasp 技術センター, 2017/04/07 15:06]
+KGTN2017031601-1.jpg
+表示 [(10.5 KB)] [kitasp 技術センター, 2017/04/07 15:06]
+KGTN2017031601-2.jpg</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2152/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -407,7 +408,7 @@ KGTN2016093002.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc503/">
+                                      <a href="/posts/new_md/doc2151/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -415,7 +416,7 @@ KGTN2016093002.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc503/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能を利用しているが，特定のユーザーを特定のサーバーへ振り分けたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2151/">[GGH5.X] クライアント印刷機能で， UPD で生成されるPDFファイルがクライアント側に届いているかどうか確認する方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -428,18 +429,28 @@ KGTN2016093002.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc503/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                            <a href="/posts/new_md/doc2151/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101402
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能を利用しているが，特定のユーザーを特定のサーバーへ振り分けたい．
-[説明] バージョン 2.2.3 より，特定のユーザーを特定のサーバーに振り分けるプライマリーサーバー設定機能が実装されました．設定ファイル GGEasyMonitorUserInfo.ini で，下記のようにユーザーIDと接続先のサーバー （プライマリーサーバー） を指定します．ユーザー名の末尾にはワイルドカード （＊） を指定することが可能です．接続先のサーバー （プライマリーサーバー） が利用出来ない場合は，通常の振り分け処理で接続先のサーバー （代替サーバー） が選択されます．この場合は，代替サーバーへ振り分けるというメッセージが表示されます （次ページのスクリーンショットを参照） ．
-[administrator]　← ユーザーID hostName = GG-SERVER0 ← 接続先のサーバー名 [wguser1*] ← wguser1??? hostName = GG-SERVER1 [wguser2*] ← wguser2??? hostName = GG-SERVER2 [wguser3*] ← wguser3??? hostName = GG-SERVER3  複数の振分け規則が合致する場合は，先に合致する規則 （より上に書かれた規則） が優先します．
-ファイル KGTN2016101402.pdf [(127 KB)] [kitasp 技術センター, 2019/01/22 10:01]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc503/" class="btn btn-template-main">続きを読む</a>
+2017/04/07*
+[番号] 技術ノート KGTN 2017031602
+[現象] [GGH5.X] クライアント印刷機能で， UPD で生成されるPDFファイルがクライアント側に届いているかどうか確認する方法は？
+[説明] UPD で生成されたPDFファイルは，下記のフォルダーへ （作業フォルダー） 転送されますので，そのフォルダーをエクスプローラーで開いてください．このフォルダーには作業ファイルが多数ありますので，できれば 「削除可能なファイル」 をすべて削除してください （削除は確認を容易にするためです） ．
+C:UsersAppDataLocalTemp
+次に，GGサーバーにログオンし，メモ帳等で印刷してください．
+印刷ボタンをクリックした直後に，作業フォルダー中に 「一瞬」 PDFファイルとログファイルが現れるかどうかを確認してください．なお，ファイル名は次の通りです．
+&lt;GGサーバー上でのプリンタ名&gt; - Job #???.pdf &lt;GGサーバー上でのプリンタ名&gt; - Job #???.log
+PDFファイルとログファイルが 「一瞬」 現れれば，PDFファイルはクライアント側に届いています．
+ファイル KGTN2017031602.pdf [(272 KB)] [kitasp 技術センター, 2017/04/07 15:11]
+KGTN2017031602-1.jpg
+表示 [(30.5 KB)] [kitasp 技術センター, 2017/04/07 15:11]
+KGTN2017031602-2.jpg
+表示 [(15.1 KB)] [kitasp 技術センター, 2017/04/07 15:11]
+KGTN2017031602-3.jpg
+表示 [(36 KB)] [kitasp 技術センター, 2017/04/07 15:11]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2151/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -449,7 +460,7 @@ KGTN2016093002.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2227/">
+                                      <a href="/posts/new_md/doc2143/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -457,7 +468,7 @@ KGTN2016093002.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2227/">[GGH5.X/ExPack] 拡張パックの GGEasyPassword で複数のGGサーバー （ワークグループ） のアカウントのパスワードを変更したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2143/">[GGH5.X] クラスターマネージャーでセッションを強制終了 （Terminate） しようとしたが，セッションが終了しなかった．何を調べれば良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -470,20 +481,24 @@ KGTN2016093002.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2227/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                            <a href="/posts/new_md/doc2143/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016102401
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyPassword で複数のGGサーバー （ワークグループ） のアカウントのパスワードを変更したい．
-[説明] 以下に設定のサンプルを示します．
-ファイル： GGEasyPassword.ini
-[default] logLevel = 9 logd = %TEMP% command = psexec64 -u Administrator -p Passwd C:PS1GGEasyPasswordchangePassword.bat %s %s  ファイル： changePassword.bat
-echo off echo パスワードの変更処理を開始しました。 echo しばらくお待ち下さい… :: changePassword.bat &quot;wguser9012&quot; &quot;Passwd&quot; powershell C:PS1GGEasyPasswordchangePassword.ps1 %1 %2 :: --- [EOF] ---  ファイル： changePassword.ps1
-# 引数のチェック if($Args.Length -ne 2) { Write-Host &quot;Usage: changePassword.ps1 &lt;userid&gt; &lt;password&gt;&quot; Exit 1001 } $argUser = $Args[0] # ユーザーID .</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2227/" class="btn btn-template-main">続きを読む</a>
+2017/04/07*
+[番号] 技術ノート KGTN 2017033001
+[現象] [GGH5.X] クラスターマネージャーでセッションを強制終了 （Terminate） しようとしたが，セッションが終了しなかった．何を調べれば良いか？
+[説明] どのような状況でセッションの強制終了に失敗したのかGraphOn社で調査する必要がありますので，次の情報の採取をお願いします．
+ 強制終了に失敗したユーザーのID APS.EXE のダンプファイル SRW のZIPファイル  上記２のダンプファイルは，タスクマネージャーを起動し，プロセスタブで &ldquo;GraphOn GO-Global Application Publishing Service&rdquo; を選択し，右クリックで 「ダンプ ファイルの作成」 を選択してください．
+上記３のZIPファイルは，スタートメニューで [GraphOn GO-Global] → [Support Request Wizard] を選択してください． Support Request Wizard の画面では，すべて既定のままの状態で操作を行ってください． ZIP ファイルは，デスクトップ上に作成されます．
+ファイル KGTN2017033001.pdf [(479 KB)] [kitasp 技術センター, 2017/04/07 17:24]
+KGTN2017033001-1.jpg
+表示 [(19.9 KB)] [kitasp 技術センター, 2017/04/07 17:24]
+KGTN2017033001-2.jpg
+表示 [(7.18 KB)] [kitasp 技術センター, 2017/04/07 17:24]
+KGTN2017033001-3.jpg</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2143/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -493,7 +508,7 @@ echo off echo パスワードの変更処理を開始しました。 echo しば
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2248/">
+                                      <a href="/posts/new_md/doc2164/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -501,7 +516,7 @@ echo off echo パスワードの変更処理を開始しました。 echo しば
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2248/">[GGH5.X] Windowsクライアントのパラメタ </a></h2>
+                                    <h2><a href="/posts/new_md/doc2164/">[GGH5.X] 動的な画像を含むウエッブページを表示するとブラウザの反応が極端に悪くなる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -514,17 +529,20 @@ echo off echo パスワードの変更処理を開始しました。 echo しば
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2248/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                            <a href="/posts/new_md/doc2164/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101801
-[現象] [GGH5.X] Windowsクライアントのパラメタ -dfw 0 はActiveXクライアントではどのように指定するのか？
-[説明] ActiveXクライアントのログオン用ページ logon.html は，パラメタ -dfw に対応する機能を持っておりません． logon.html を修正して，以下のパラメタ （dragfullwindows） を追加して下さい．
-// controlArgs.set([ &quot;autoclose&quot;, &quot;false&quot; ]); //--- controlArgs.set([ &quot;dragfullwindows&quot;, &quot;0&quot;]); ← 追加 //--- // controlArgs.set([ &quot;printerconfig&quot;, &quot;default&quot; ]);  ファイル KGTN2016101801.pdf [(59.6 KB)] [kitasp 技術センター, 2016/11/02 14:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2248/" class="btn btn-template-main">続きを読む</a>
+2017/04/07*
+[番号] 技術ノート KGTN 2017030302
+[現象] [GGH5.X] 動的な画像を含むウエッブページを表示するとブラウザの反応が極端に悪くなる．
+[説明] GGの通信プロトコル Rapid-X は，サーバーとクライアント間の送受信データを高い効率で圧縮/伸張するようになっております．通常のアプリケーションでは，この圧縮/伸張機能が上手く働き，多くのユーザー （セッション） が十分なパフォーマンスで動作することが出来ます．動的な画像を表示するウエッブページでは大量のデータが送受信されますが， Rapid-X の下ではその大量のデータに対しても圧縮/伸張機能が働くため，CPU負荷が高まるとともに，処理時間による遅延も発生します．このような場合，下記の設定を行うことでパフォーマンスがかなり向上します． また，色深度を16ビットにすることで，さらにパフォーマンスが向上します．
+With the current product, the following configuration changes will provide the best performance for video: Add the following registry values: HKLMSOFTWAREGraphOnGO-GlobalAppServerClientOffscreenSurfaces = 0 HKLMSOFTWAREGraphOnGO-GlobalAppServerDisplayBufferMinDrainRate = 500 (decimal) HKLMSOFTWAREGraphOnGO-GlobalAppServerDisplayBufferThreshold = 0x00010000 Make the following changes in the HostProperties.xml file: ClientProcessingBatch = 1 ClientProcessingThrottleV2 = 1  【未適用かつ色深度32ビット】
+【適用済かつ色深度32ビット】
+【適用済かつ色深度16ビット】
+ファイル KGTN2017030302.pdf [(1 MB)] [kitasp 技術センター, 2017/04/07 13:46]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2164/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -534,7 +552,7 @@ echo off echo パスワードの変更処理を開始しました。 echo しば
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2228/">
+                                      <a href="/posts/new_md/doc2155/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -542,7 +560,7 @@ echo off echo パスワードの変更処理を開始しました。 echo しば
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2228/">[GGH5.X] 外字は UPD （ユニバーサル プリンター ドライバー） でも正しく印刷されるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2155/">[GGH5.X] 特定ユーザーが 「コントロール パネル」 を利用出来ないようにしたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -555,19 +573,26 @@ echo off echo パスワードの変更処理を開始しました。 echo しば
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2228/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                            <a href="/posts/new_md/doc2155/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016102002
-[現象] [GGH5.X] 外字は UPD （ユニバーサル プリンター ドライバー） でも正しく印刷されるのか？
-[説明] 以下のように，外字についても UPD による印刷が可能です．
-ファイル KGTN2016102002.pdf [(143 KB)] [kitasp 技術センター, 2016/11/02 15:37]
-KGTN2016102002.jpg
-表示 [(31.1 KB)] [kitasp 技術センター, 2016/11/02 15:37]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2228/" class="btn btn-template-main">続きを読む</a>
+2017/04/07*
+[番号] 技術ノート KGTN 2017031102
+[現象] [GGH5.X] 特定ユーザーが 「コントロール パネル」 を利用出来ないようにしたい．
+[説明] 「コントロール パネル」 を利用出来ないグループを作成し，そのグループにその特定ユーザーを加えます．そして， C:WindowsSystem32control.exe のセキュリティで &ldquo;そのグループ = 拒否&rdquo; を設定してください．なお， Control.exe の所有者を Administrator に変更した後に，この設定を行ってください．
+グループの登録とユーザーの追加
+Control.exe のセキュリティ設定
+実行結果
+ファイル KGTN2017031102.pdf [(285 KB)] [kitasp 技術センター, 2017/04/07 14:42]
+KGTN2017031102-1.jpg
+表示 [(10.8 KB)] [kitasp 技術センター, 2017/04/07 14:42]
+KGTN2017031102-2.jpg
+表示 [(16.9 KB)] [kitasp 技術センター, 2017/04/07 14:42]
+KGTN2017031102-3.jpg
+表示 [(55.5 KB)] [kitasp 技術センター, 2017/04/07 14:42]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2155/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -577,7 +602,7 @@ KGTN2016102002.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2229/">
+                                      <a href="/posts/new_md/doc2170/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -585,7 +610,7 @@ KGTN2016102002.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2229/">[GGH5.X] 外字を利用する場合の設定は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2170/">[GGW3.2/GGH4.X-5.X] 限られたユーザーによる試験運用では，目立ったトラブルは発生しなかった．これから本番運用に入るが，この結果から大きなトラブルが発生しないと考えて良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -598,19 +623,20 @@ KGTN2016102002.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2229/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                            <a href="/posts/new_md/doc2170/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016102001
-[現象] [GGH5.X] 外字を利用する場合の設定は？
-[説明] 下記マイクロソフト社の文書 （KB977042） の方法３ 「管理者権限を持つユーザーで外字エディターを起動する」 を行うことで外字を使用することが出来ます． Windows Server 2012 R2 や Windows Server 2008 R2 ではデフォルトでは外字エディター （EUDCEDIT.EXE） がインストールされていないため，&ldquo;サーバーマネージャー → 役割と機能の追加 → 機能 → ユーザーインターフェイスとインフラストラクチャ → デスクトップエクスペリエンス&rdquo; を選択してインストールを行って下さい．
-Windows Server 2008 R2 で外字を使用する方法 https://support.microsoft.com/ja-jp/kb/977042  ファイル KGTN2016102001.pdf [(180 KB)] [kitasp 技術センター, 2016/11/02 15:33]
-KGTN2016102001.jpg
-表示 [(40.3 KB)] [kitasp 技術センター, 2016/11/02 15:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2229/" class="btn btn-template-main">続きを読む</a>
+2017/04/07*
+[番号] 技術ノート KGTN 2017022801
+[現象] [GGW3.2/GGH4.X-5.X] 限られたユーザーによる試験運用では，目立ったトラブルは発生しなかった．これから本番運用に入るが，この結果から大きなトラブルが発生しないと考えて良いか？
+[説明] 本番運用に入ると，GG （の機能） 以外の部分に存在する問題が顕在化し，その問題によって大きなトラブルが引き起こされることがあります．そのような事例を２件ご紹介します．
+[不定期にGGサーバーの接続が切れる] 本番運用サーバーに入ってから，不定期にGGサーバーの接続が切れるという問題が発生しました．さまざまなチェックを行っても，さらにGGサーバー （マシン） を交換してもこの現象が続き，非常に大きな問題となりました．約半年後に分かった原因は，サーバールームの近くに大きなカラーコピーが２台設置されており，その２台のカラーコピーが同時に使われた時に電圧低下が発生し，それによってハブが不安定となり，GGの接続が切れるというものでした．ブラウザ （HTTP/HTTPS） では，セッションの接続と切断を繰り返しますので，ハブが不安定でも障害が目立ちませんが，GGやRDSでは常時セッションが接続されている必要がありますので，ハブが不安定だと接続が切断されることになります．
+[不定期にGGサーバーのリソースが枯渇する] 本番運用サーバーに入ってから，不定期にGGサーバーのリソースが枯渇するという問題が発生しました．問題が発生した時点でのユーザーの利用状況を調べたところ，毎回あるユーザーが使用していることが判明しました．そこで，そのユーザーにヒアリングを行ったところ，巨大な Excel のシートを開いていることが分かりました．GGサーバーでは，多くのユーザーが同時にログオンしアプリケーションを使用しますので，１人のユーザーでも巨大なデータ処理等を行うとリソースの枯渇を招くことがあります．
+このように，問題の原因がGG以外の部分に存在することも多く，そのような場合にGGに範囲を絞って調査を行うと，いつまでの原因が分からないという状況に陥ります．色々と調べても原因が特定できない場合は，可能な限り調査範囲を広げて，あらゆる可能性を考えてください．
+ファイル KGTN2017022801.pdf [(77.3 KB)] [kitasp 技術センター, 2017/04/07 13:12]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2170/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -620,7 +646,7 @@ KGTN2016102001.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2250/">
+                                      <a href="/posts/new_md/doc2193/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -628,7 +654,7 @@ KGTN2016102001.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2250/">[GGW3.2,GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2193/">[GGH4.X-5.X] クライアントフレーム機能をマルチディスプレイ環境で利用したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -641,19 +667,17 @@ KGTN2016102001.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2250/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                            <a href="/posts/new_md/doc2193/"><i class="far fa-calendar"></i> 2017-03-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101401
-[現象] [GGW3.2,GGH4.X-5.X] GGの特定バージョン （ビルド） がサポートする IE のバージョンを確認する方法は？
-[説明] 以下の手順で，GGの特定バージョン （ビルド） がサポートする IE のバージョンを確認することが出来ます．
-1.GGの特定バージョン （ビルド） のCDに含まれる readme.txt （ggw-readme-xxx.txt） を開き， &ldquo;1.2 GO-Global Clients&rdquo; にあるサポート対象の IE （ActiveX Control） のバージョンを確認する． 例１：GGW3.2.1.4466 ⇒ Internet Explorer 6.0 or later 例２：GGH 5.0.2.23352 ⇒ Internet Explorer 10.0 and 11.0 (32-bit)
-2.上記の IE のバージョンに &ldquo;or laler&rdquo; がある場合は， readme.txt （ggw-readme-xxx.txt） の日付を確認し，その日よりも前にリリースされた最新の IE のバージョンを確認する． 例１：GGW3.2.1.4466 ⇒ 2010年4月22日 ⇒ IE8 （2009年3月20日） 例２：該当せず
-3.上記１のバージョンから上記２のバージョンまでがサポート対象の IE となる． 例１：GGW3.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2250/" class="btn btn-template-main">続きを読む</a>
+2017/03/07*
+[番号] 技術ノート KGTN 2017012501
+[現象] [GGH4.X-5.X] クライアントフレーム機能をマルチディスプレイ環境で利用したい．
+[説明] クライアントフレーム機能は，１つのウインドウ （クライアントフレーム） の中にアプリケーションのウインドウを表示する機能ですので，複数のディスプレイに複数のウインドウ （クライアントフレーム） を表示することは出来ません．
+ファイル KGTN2017012501.pdf [(46.8 KB)] [kitasp 技術センター, 2017/03/07 16:47]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2193/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -663,7 +687,7 @@ KGTN2016102001.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2233/">
+                                      <a href="/posts/new_md/doc2197/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -671,7 +695,7 @@ KGTN2016102001.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2233/">[Windows/IE] Google の検索サイトにアクセスすると 「このWebサイトのセキュリティ証明書には問題があります」 と表示される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2197/">[GGH5.X/ExPack] GGサーバーの自己監視 （GGEasyMonitor） のサンプルは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -684,19 +708,17 @@ KGTN2016102001.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2233/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                            <a href="/posts/new_md/doc2197/"><i class="far fa-calendar"></i> 2017-03-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101901
-[現象] [Windows/IE] Google の検索サイトにアクセスすると 「このWebサイトのセキュリティ証明書には問題があります」 と表示される．
-[説明] コンピューターの日付が，Webサイトのセキュリティ証明書の有効期間外に設定されていることが原因だと思われます．コンピューターの日付を確認し，正しい日付を設定して下さい．下記の例は，コンピューターに１年前の日付 2015年10月19日 が設定されていました．
-ファイル KGTN2016101901.pdf [(72.3 KB)] [kitasp 技術センター, 2016/11/02 15:22]
-KGTN2016101901.jpg
-表示 [(12 KB)] [kitasp 技術センター, 2016/11/02 15:22]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2233/" class="btn btn-template-main">続きを読む</a>
+2017/03/07*
+[番号] 技術ノート KGTN 2017011602
+[現象] [GGH5.X/ExPack] GGサーバーの自己監視 （GGEasyMonitor） のサンプルは？
+[説明] GGEasyMonitor によるGGサーバーの自己監視のサンプルは次の通りです．
+; ＊ログ関連＊ logd = Logs logLevel = 4 logLevelNet = 4 logLevelWeb = 4 logLevelCbk = 4 ; ＊通信関連＊ hostName = WS2012R2-ISUMI1 hostAddr = 192.168.0.103 hostPort = 8491 avSleep = 3 avTimeout = 60 pvSleep = 3 pvTimeout = 60 updateInterval = 3 updateTimeout = 10 bufferSize = 10 maxTempError = 10 ; ＊APS 関連＊ apsPort = 491 sessionInfo = YES rxpAddr = 192.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2197/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -706,7 +728,7 @@ KGTN2016101901.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2244/">
+                                      <a href="/posts/new_md/doc2194/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -714,7 +736,7 @@ KGTN2016101901.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2244/">[Windows/PowerShell] PowerShell でIPアドレスを得る方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2194/">[GGH5.X/ExPack] 拡張パックの GGEasyLog は，どのようなソフトウエアなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -727,19 +749,30 @@ KGTN2016101901.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2244/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                            <a href="/posts/new_md/doc2194/"><i class="far fa-calendar"></i> 2017-03-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101804
-[現象] [Windows/PowerShell] PowerShell でIPアドレスを得る方法は？
-[説明] 現実的には，以下のように PowerShell のコマンド Get-NetIPAddress を使う方法と Net.DNS で GetHostAddresses() メソッドを利用する方法があります．速度重視の場合は， .NET の利用をお勧めします．
-(Get-NetIPAddress | Where-Object -FilterScript { ($_.InterfaceAlias -Eq &quot;イーサネット&quot;) -And ($_.AddressFamily -Eq &quot;IPv4&quot;) } | select -ExpandProperty IPAddress) ([Net.Dns]::GetHostAddresses('') | Where-Object -FilterScript { ($_.AddressFamily -Eq &quot;InterNetwork&quot;) } | select -ExpandProperty IPAddressToString)  ファイル KGTN2016101804.pdf [(79 KB)] [kitasp 技術センター, 2016/11/02 14:38]
-KGTN2016101804.jpg
-表示 [(30.8 KB)] [kitasp 技術センター, 2016/11/02 14:38]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2244/" class="btn btn-template-main">続きを読む</a>
+2017/03/07*
+[番号] 技術ノート KGTN 2017012301
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyLog は，どのようなソフトウエアなのか？
+[説明] GGEasyLog はアプリケーション （.EXE） のラッパー・プログラムで，これを介してアプリケーションが起動されると，アプリケーションの起動日時・終了日時・ユーザーID・クライアント端末の名前・クライアント端末のIPアドレスがログに記録されます．環境設定および動作例を以下に示します．
+[設定ファイル]
+ログを記録するアプリケーションの名称とプログラム（.EXE）のパスを登録します．
+[アプリケーション登録]
+クラスターマネージャーでは，実行パスに GGEasyLog を指定し，コマンドラインのオプションで ?app を指定します．アイコンを本来のアプリケーションのアイコンに変更します．
+[アプリケーションの起動]
+GGにログオン後，登録したアプリケーションを起動します． 先ず，GGEasyLog が起動され， GGEasyLog はログに起動日時を記録し，次にアプリケーション （この例ではIE） を起動します．この時タスクバーには，ラッパーの GGEasyLog は現れません．
+[アプリケーションの終了]
+アプリケーションを閉じます． GGEasyLog はアプリケーションの終了を認識し，終了日時を記録します．
+[ログ]
+Start行 が開始日時， Ended行 が終了日時です． App はアプリケーションの名称， PID はプロセスID，USER はユーザーID， CNAME はクライアント端末の名前， IPADDR はクライアント端末のIPアドレスです．
+ファイル KGTN2017012301.pdf [(369 KB)] [kitasp 技術センター, 2017/03/07 16:47]
+KGTN2017012301-1.jpg
+表示 [(12.4 KB)] [kitasp 技術センター, 2017/03/07 16:47]
+KGTN2017012301-2.jpg</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2194/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -809,7 +842,7 @@ KGTN2016101804.jpg
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

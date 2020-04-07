@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc795/">
+                                      <a href="/posts/new_md/doc702/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc795/">[GGH4.X] クライアント印刷機能で，設定を Universal Printer Driver から Windows Printer Drivers へ変更したところプリンタが消えた．</a></h2>
+                                    <h2><a href="/posts/new_md/doc702/">[GGH4.5] 拡張パック （エンタープライズ・オプション） を使わずに，GGサーバの現在のセッション数を知る方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc795/"><i class="far fa-calendar"></i> 2012-11-12</a>
+                                            <a href="/posts/new_md/doc702/"><i class="far fa-calendar"></i> 2013-02-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/12*
-[番号] 技術ノート KGTN 2012111203
-[現象] [GGH4.X] クライアント印刷機能で，設定を Universal Printer Driver から Windows Printer Drivers へ変更したところプリンタが消えた．
-[説明] GGW3.2.1では print.ini に記録された情報が優先しましたが，GGH4.5ではクラスタマネージャの設定が無条件に適用されます．従って， Universal Printer Driver から Windows Printer Drivers へ変更した場合，GGサーバ上に Windows Printer Driver が存在しないプリンタは構成されなくなります （つまりクライアントプリンタから消えます） ．
-ファイル KGTN2012111203.pdf [(54 KB)] [kitasp 技術センター, 2012/11/12 11:27]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc795/" class="btn btn-template-main">続きを読む</a>
+2013/02/14*
+[番号] 技術ノート KGTN 2013021402
+[現象] [GGH4.5] 拡張パック （エンタープライズ・オプション） を使わずに，GGサーバの現在のセッション数を知る方法は？
+[説明] GGのセッションは logon.exe の下で動作しますので，この logon.exe の数 （実行中のプロセスの数） を調べることで現在のセッション数を知ることが出来ます．
+ファイル KGTN2013021402.pdf [(44.6 KB)] [kitasp 技術センター, 2013/02/14 12:37]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc702/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc796/">
+                                      <a href="/posts/new_md/doc701/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc796/">[GGH4.X] クラスタマネージャで Session Shutdown の Timeouts </a></h2>
+                                    <h2><a href="/posts/new_md/doc701/">[GGW3.2.1] SSLサーバ証明書の公開鍵長を1024ビットから2048ビットに変更したところ，クライアントから接続出来なくなった．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,20 +381,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc796/"><i class="far fa-calendar"></i> 2012-11-12</a>
+                                            <a href="/posts/new_md/doc701/"><i class="far fa-calendar"></i> 2013-02-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/12*
-[番号] 技術ノート KGTN 2012111201
-[現象] [GGH4.X] クラスタマネージャで Session Shutdown の Timeouts -&gt; Session を指定した場合の動作を知りたい．
-[説明] 以下の設定を前提に，動作の説明をします．
-Session 5 minutes Warning period 2 minutes Grace period 1 minutes
-セッションは最大5分に制限され，セッション終了時刻の2分前に警告ダイアログが表示されます．セッション終了時刻になると，下記のダイアログが表示され，その時点で動作しているアプリケーションに終了要求が送信されます （アプリケーションの仕様に従って保存ダイアログ等が表示されます） ，さらに猶予時間1分を経過した時点で，全てのアプリケーションが強制終了になります．
-補　足 GGH4.5.0.13767 での検証では，警告ダイアログは正しい時刻に表示されますが，終了時刻が設定よりも１分遅くなります．
-ファイル KGTN2012111201.pdf [(62.9 KB)] [kitasp 技術センター, 2012/11/12 11:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc796/" class="btn btn-template-main">続きを読む</a>
+2013/02/14*
+[番号] 技術ノート KGTN 2013021501
+[現象] [GGW3.2.1] SSLサーバ証明書の公開鍵長を1024ビットから2048ビットに変更したところ，クライアントから接続出来なくなった．
+[説明] 公開鍵長2048ビットのSSLサーバ証明書は GGW3.2.1.4510 でサポートされました．このビルド （3.2.1.4510） へアップグレードして下さい．
+ファイル KGTN2013021501.pdf [(41.6 KB)] [kitasp 技術センター, 2013/02/15 06:29]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc701/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -404,7 +401,7 @@ Session 5 minutes Warning period 2 minutes Grace period 1 minutes
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc801/">
+                                      <a href="/posts/new_md/doc705/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -412,7 +409,7 @@ Session 5 minutes Warning period 2 minutes Grace period 1 minutes
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc801/">[GGH4.X] Adobe Acrobat XI はGGH4.5で動作するか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc705/">[GGW3.2.1] The Program Window failed to signal completion of its basic initializations within 1 minute(s) が発生したが，どのような箇所を調べれば良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -425,17 +422,19 @@ Session 5 minutes Warning period 2 minutes Grace period 1 minutes
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc801/"><i class="far fa-calendar"></i> 2012-11-09</a>
+                                            <a href="/posts/new_md/doc705/"><i class="far fa-calendar"></i> 2013-02-13</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/09*
-[番号] 技術ノート KGTN 2012110903
-[現象] [GGH4.X] Adobe Acrobat XI はGGH4.5で動作するか？
-[説明] Adobe Acrobat XI の動作に関する情報はありませんが，過去の製品ではCPUやメモリの負荷等の問題で利用出来ませんでした．なお，GGH4.5のクライアント印刷は Adobe PDF Library (v10) を使用しており，この機能を利用することで 「Adobe Acrobat 無しに」 PDFファイルを作成することが出来ます．
-ファイル KGTN2012110903.pdf [(51.4 KB)] [kitasp 技術センター, 2012/11/09 09:50]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc801/" class="btn btn-template-main">続きを読む</a>
+2013/02/13*
+[番号] 技術ノート KGTN 2013021301
+[現象] [GGW3.2.1] &ldquo;The Program Window failed to signal completion of its basic initializations within 1 minute(s)&rdquo; が発生したが，どのような箇所を調べれば良いか？
+[説明] 技術ノート KGTN#2009101501 にありますように，この記録は以下の一連のログオン処理が１分以内に完了しなかったことを示します．
+ Windows レベルのログオン グループポリシの適用 ネットワークディバイスのリストア クライアントドライブのマウント ログオンスクリプトの実行 Progream Window (PW) の起動 クライアントプリンタの初期化 初期アプリケーションの起動 （指定されている場合のみ）  処理の遅延が発生する箇所は，認証サーバ（AD）・GGサーバ・GGクライアント・ネットワーク・仮想マシンが考えられますので，どの箇所で遅延が発生しているのか特定する必要があります．
+先ず，発生する時間帯・発生するGGサーバ・発生するGGクライアント・発生するネットワーク（拠点）に何らかのパターンがあるかどうか確認して下さい．ある時間帯に集中して発生するようであれば，認証サーバ・ネットワーク・仮想マシン・アンチウイルスソフト等で問題が発生しているかどうか調べて下さい．あるGGサーバに集中して発生するようであれば，GGサーバのCPUやメモリの負荷等を調べ，パフォーマンスを低下させている原因がないかどうか調べて下さい．あるGGクライアント （機種・OS・プリンタについても注意） に集中して発生するようであれば，GGクライアントのCPUやメモリの負荷等を調べ，パフォーマンスを低下させている原因がないかどうか調べて下さい．あるネットワーク（拠点）に集中して発生するようであれば， PING や弊社ツール GGNetworkCheck を使用してパケットロスや応答遅延が発生していないかどうか調べて下さい．
+ファイル KGTN2013021301.pdf [(74.9 KB)] [kitasp 技術センター, 2013/02/13 09:21]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc705/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -445,7 +444,7 @@ Session 5 minutes Warning period 2 minutes Grace period 1 minutes
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc802/">
+                                      <a href="/posts/new_md/doc707/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -453,7 +452,7 @@ Session 5 minutes Warning period 2 minutes Grace period 1 minutes
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc802/">[GGH4.X] Adobe Reader XI はGGH4.5で動作するか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc707/">[GGH4.5/UoN] GG環境で UoN (USB over Network) を使用して，クライアント上のUSBディスクにアクセスする場合，セキュリティ （アクセス権） はどうなるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -466,17 +465,17 @@ Session 5 minutes Warning period 2 minutes Grace period 1 minutes
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc802/"><i class="far fa-calendar"></i> 2012-11-09</a>
+                                            <a href="/posts/new_md/doc707/"><i class="far fa-calendar"></i> 2013-02-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/09*
-[番号] 技術ノート KGTN 2012110902
-[現象] [GGH4.X] Adobe Reader XI はGGH4.5で動作するか？
-[説明] Adobe Reader XI (11.0.0) がインストールされた WS2008 SP3 (32bit) 上に GGH4.5 をインストールして確認したところ， PDFビュアの機能は特に問題なく動作しました．
-ファイル KGTN2012110902.pdf [(46.1 KB)] [kitasp 技術センター, 2012/11/09 09:39]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc802/" class="btn btn-template-main">続きを読む</a>
+2013/02/07*
+[番号] 技術ノート KGTN 2013020701
+[現象] [GGH4.5/UoN] GG環境で UoN (USB over Network) を使用して，クライアント上のUSBディスクにアクセスする場合，セキュリティ （アクセス権） はどうなるのか？
+[説明] USBディスクのファイルシステムがFAT32の場合は，本質的にアクセス権を設定出来ませんので，無条件でアクセス可能です．USBディスクのファイルシステムがNTFSの場合は，デフォルトで &ldquo;Everyoneフルコントロール&rdquo; が設定されるため，無条件でアクセス可能です．明示的にセキュリティ （アクセス権） が設定された場合は，その設定内容に従ってアクセスすることが出来ます．
+ファイル KGTN2013020701.pdf [(47.4 KB)] [kitasp 技術センター, 2013/02/07 12:10]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc707/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -486,7 +485,7 @@ Session 5 minutes Warning period 2 minutes Grace period 1 minutes
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc800/">
+                                      <a href="/posts/new_md/doc2641/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -494,7 +493,7 @@ Session 5 minutes Warning period 2 minutes Grace period 1 minutes
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc800/">[GGH4.X] Microsoft Office 2010 Professtional はGGH4.5で動作するか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2641/">[GGH4.X-5.X] GGサーバのパラメタ ClientProcessingBatch の詳細について知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -507,17 +506,17 @@ Session 5 minutes Warning period 2 minutes Grace period 1 minutes
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc800/"><i class="far fa-calendar"></i> 2012-11-09</a>
+                                            <a href="/posts/new_md/doc2641/"><i class="far fa-calendar"></i> 2013-02-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/09*
-[番号] 技術ノート KGTN 2012110904
-[現象] [GGH4.X] Microsoft Office 2010 Professtional はGGH4.5で動作するか？
-[説明] Microsoft Office の多くのソフトウエアから構成され，そしてそれぞれが非常に多くの機能を持っているため，単純に 「動作する」 と言うことは技術的に困難です．ちなみに，GraphOn社のオンライン・デモサイトは，Microsoft Office 2010 Professtional で運用 （GGH4.5 + Word/Excel/PowerPoint） されております．
-ファイル KGTN2012110904.pdf [(54.2 KB)] [kitasp 技術センター, 2012/11/09 10:49]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc800/" class="btn btn-template-main">続きを読む</a>
+2013/02/07*
+[番号] 技術ノート KGTN 2013020601
+[現象] [GGH4.X-5.X] GGサーバのパラメタ ClientProcessingBatch の詳細について知りたい．
+[説明] ClientProcessingBatch = 0 の場合は，サーバはクライアントに対して描画命令を送信します．ClientProcessingBatch = 1 の場合は，サーバ側で 「クライアント画面の描画効率を判断し」 描画命令または画像データ （スクリーンスクレーピング） の何れかを送信します．描画命令を送信するケースでは，さまざまな描画上の最適化が行われるため，アプリケーションによってはこの最適化に馴染まず画面の乱れ等を引き起こすことがあります（主に一般的でない画面上の動作） ．このような場合は， ClientProcessingBatch = 1 を適用することで，この画面の乱れを回避出来る可能性があります．より詳しい内容については，以下のGraphOn社の説明をご覧下さい．
+[ClientProcessingBatch] When ClientProcessingBatch is set to 0, the host updates the client&rsquo;s display by sending primitive drawing commands such as &ldquo;draw rectangle&rdquo;, &ldquo;draw line&rdquo;, &ldquo;draw text,&quot;, etc&hellip; to the client. Alternatively, the host could simply wait and send an image with the final result of the drawing operations to the client.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2641/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -527,7 +526,7 @@ Session 5 minutes Warning period 2 minutes Grace period 1 minutes
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc798/">
+                                      <a href="/posts/new_md/doc706/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -535,7 +534,7 @@ Session 5 minutes Warning period 2 minutes Grace period 1 minutes
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc798/">[GGH4.X] クライアント印刷機能で，ドメインの特定ユーザ （特定クライアント） でプリンタが構成されない．何を調べれば良いか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc706/">[GGH4.X] リモートデスクトップ接続 （mstsc.exe） をアプリケーションとして登録し，それを iPad や Android クライアントから利用すると，接続先のデスクトップでキーボード入力が上手く動作しない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -548,18 +547,20 @@ Session 5 minutes Warning period 2 minutes Grace period 1 minutes
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc798/"><i class="far fa-calendar"></i> 2012-11-09</a>
+                                            <a href="/posts/new_md/doc706/"><i class="far fa-calendar"></i> 2013-02-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/09*
-[番号] 技術ノート KGTN 2012111001
-[現象] [GGH4.X] クライアント印刷機能で，ドメインの特定ユーザ （特定クライアント） でプリンタが構成されない．何を調べれば良いか？
-クラスタマネージャのClient Access 画面 クラスタマネージャのSecurity 画面 セッション中のコマンドプロンプトで whoami/all を実行した結果 当該ユーザでのパススルー認証の使用の有無 GGサーバのコンソールで当該ユーザで直接ログオンしプリンタが追加出来るかどうか GGの Administrator Guide の Configuration Requirements for Delegation Support の設定 （4.5.0 の P73） が全て行われているかどうか
-[説明] 以下の情報の採取および確認を行って下さい．
-ファイル KGTN2012111001.pdf [(63.9 KB)] [kitasp 技術センター, 2012/11/10 05:08]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc798/" class="btn btn-template-main">続きを読む</a>
+2013/02/07*
+[番号] 技術ノート KGTN 2012091202
+[現象] [GGH4.X] リモートデスクトップ接続 （mstsc.exe） をアプリケーションとして登録し，それを iPad や Android クライアントから利用すると，接続先のデスクトップでキーボード入力が上手く動作しない．
+[説明] iPad や Android クライアントはローカルのIMEを利用するため，GGサーバ側から見ると通常のキー操作として認識されません （スキャンコードや仮想キーコードに紐付かない） ．通常のアプリケーションはこの仕様で問題ありませんが，リモートデスクトップ接続ではキーボード入力が動作しないという状況が発生します．
+この問題を回避するには，先ずWindowsのスクリーンキーボード （osk.exe） をGGサーバ上で起動し，その後にリモートデスクトップ接続を行って下さい．スクリーンキーボードを操作することで，接続先のデスクトップでキーボード操作が可能になります．
+補足１ 技術的背景： iPad ?-(GG Clinet) &ndash; GG-Server ?-(mstsc) &ndash; Windows Server という環境で iPad 上で文字を入力した場合，入力した文字はUNICODE （キーコードは Packet） で送信されます． GG-Server/mstsc は，この文字の情報を ローカルで処理することなく Windows Server へ転送するため， Windows Server 上で動作するアプリケーションに入力した文字列が反映されます． RETURN および BS キーは， （Packetでなく） 通常のキーコードで送信され，これが GG-Server 上で処理されます．このため，Windows Server 上で動作するアプリケーションに入力が反映されない状況が発生します．なお，この結果 （GraphOn社に報告済み） は弊社の検証環境で確認出来た内容であり，環境が異なれば別の結果になる可能性があります．
+補足２ この問題をGraphOn社の品質保証チームが確認しました．開発チームで詳細な調査および解析を行い，技術的・営業的に可能な内容であれば修正を行います．
+ファイル KGTN2012091202.pdf [(77.4 KB)] [kitasp 技術センター, 2013/02/08 08:14]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc706/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -569,7 +570,7 @@ Session 5 minutes Warning period 2 minutes Grace period 1 minutes
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc799/">
+                                      <a href="/posts/new_md/doc709/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -577,7 +578,7 @@ Session 5 minutes Warning period 2 minutes Grace period 1 minutes
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc799/">[GGH4.X] クライアント印刷機能を使用する場合，サーバ側に対応するプリンタが作成されるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc709/">[GGH4.5] Windows Phone 8 用のクライアントはあるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -590,17 +591,17 @@ Session 5 minutes Warning period 2 minutes Grace period 1 minutes
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc799/"><i class="far fa-calendar"></i> 2012-11-09</a>
+                                            <a href="/posts/new_md/doc709/"><i class="far fa-calendar"></i> 2013-02-06</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/09*
-[番号] 技術ノート KGTN 2012110905
-[現象] [GGH4.X] クライアント印刷機能を使用する場合，サーバ側に対応するプリンタが作成されるのか？
-[説明] セッションが存在する間のみ，クライアント側のプリンタに対応するプリンタが 「一時的に」 サーバ側に作成されます．管理者 （Administrator） は，GGサーバのプリンタ・フォルダを参照することで，それらのプリンタの一覧を見ることが出来ます．
-ファイル KGTN2012110905.pdf [(55 KB)] [kitasp 技術センター, 2012/11/09 12:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc799/" class="btn btn-template-main">続きを読む</a>
+2013/02/06*
+[番号] 技術ノート KGTN 2013020603
+[現象] [GGH4.5] Windows Phone 8 用のクライアントはあるか？
+[説明] 2013年1月28日の時点で， Windows Phone 8 用クライアントの開発予定はありません．
+ファイル KGTN2013020603.pdf [(38.5 KB)] [kitasp 技術センター, 2013/02/06 12:02]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc709/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -610,7 +611,7 @@ Session 5 minutes Warning period 2 minutes Grace period 1 minutes
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc807/">
+                                      <a href="/posts/new_md/doc708/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -618,7 +619,7 @@ Session 5 minutes Warning period 2 minutes Grace period 1 minutes
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc807/">[GGH4.X] Windows7 &#43; IE9 の環境でActiveXクライアントの詳細画面の確認方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc708/">[GGH4.5] レジストリの項目 GO-Global¥Loader¥Processes および GO-Global¥System¥Modules を調整して，描画の乱れが改善する可能性はあるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -631,18 +632,17 @@ Session 5 minutes Warning period 2 minutes Grace period 1 minutes
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc807/"><i class="far fa-calendar"></i> 2012-11-08</a>
+                                            <a href="/posts/new_md/doc708/"><i class="far fa-calendar"></i> 2013-02-06</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/08*
-[番号] 技術ノート KGTN 2012110802
-[現象] [GGH4.X] Windows7 + IE9 の環境でActiveXクライアントの詳細画面の確認方法は？
-[説明] 以下の手順でActiveXクライアントの詳細画面を確認することが出来ます．
-IE9を起動 [ツール] → [インターネット オプション] [プログラム] → [アドオンの管理] [表示] → [すべてのアドオン] [名前] → [GraphOn Corporation] → [GO-Global 4] [GO-Global 4] をダブルクリック
-ファイル KGTN2012110802.pdf [(69.1 KB)] [kitasp 技術センター, 2012/11/08 11:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc807/" class="btn btn-template-main">続きを読む</a>
+2013/02/06*
+[番号] 技術ノート KGTN 2013020604
+[現象] [GGH4.5] レジストリの項目 GO-Global¥Loader¥Processes および GO-Global¥System¥Modules を調整して，描画の乱れが改善する可能性はあるか？
+[説明] これらは，プロセス自体の挙動 （生成や消滅の詳細，クライアント機能の利用の有無，クライアントへ画面を転送するかどうか等） を設定する項目であり，描画に関する調整項目ではありません．
+ファイル KGTN2013020604.pdf [(51.4 KB)] [kitasp 技術センター, 2013/02/06 12:48]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc708/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -652,7 +652,7 @@ IE9を起動 [ツール] → [インターネット オプション] [プログ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc804/">
+                                      <a href="/posts/new_md/doc2547/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -660,7 +660,7 @@ IE9を起動 [ツール] → [インターネット オプション] [プログ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc804/">[Windows] WMIリポジトリとは何か？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2547/">[GGH4.X-5.X] 描画の乱れが発生した場合，これを解消するため何か試すことはないか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -673,19 +673,20 @@ IE9を起動 [ツール] → [インターネット オプション] [プログ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc804/"><i class="far fa-calendar"></i> 2012-11-08</a>
+                                            <a href="/posts/new_md/doc2547/"><i class="far fa-calendar"></i> 2013-02-06</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/08*
-[番号] 技術ノート KGTN 2012110805
-[現象] [Windows] WMIリポジトリとは何か？
-[説明] マイクロソフト社のブログに次の説明があります．
-WMI リポジトリとは，OS や SCCM の様々な情報を格納するデータベースであり，システム情報を取得する際に使用するデータベースです．WMI リポジトリの破損や不整合が発生していると，SCCM のインストールや，インベントリ等，様々な動作に支障をきたすため，再構築が有効です．
-http://blogs.technet.com/b/systemcenterjp/archive/2012/07/20/3509911.aspx
-ファイル KGTN2012110805.pdf [(54.2 KB)] [kitasp 技術センター, 2012/11/08 14:13]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc804/" class="btn btn-template-main">続きを読む</a>
+2013/02/06*
+[番号] 技術ノート KGTN 2013020602
+[現象] [GGH4.X-5.X] 描画の乱れが発生した場合，これを解消するため何か試すことはないか？
+[説明] 描画の乱れが発生した場合，以下の内容を試して下さい．
+1)　&ldquo;Aeroテーマ&rdquo; を &ldquo;ベーシックテーマ&rdquo; に変更する． → GGは &ldquo;ベーシックテーマ&rdquo; の利用を前提としております．詳細は技術ノート KGTN#2013012101 をご覧下さい．
+2)　&ldquo;ClientProcessingBatch = 1&rdquo; を試してみる． → &ldquo;ClientProcessingBatch = 1&rdquo; が設定されると，描画処理に &ldquo;スクリーンスクレーピング&rdquo; 方式が併用されるため，GGの描画の最適化機能とアプリケーションの描画処理が馴染まない場合に，状況が改善される可能性があります．詳細は技術ノート KGTN#2013020601 をご覧下さい．
+3)　クライアントフレーム機能を試してみる． → クライアントフレーム機能が有効な場合は，クライアント上で動作するアプリケーションのウインドウとGG上で動作するアプリケーションのウインドウが完全に分離されますので，相互作用で問題が発生している場合に，状況が改善される可能性があります．詳細は技術ノート KGTN#2011090201 をご覧下さい．
+ファイル KGTN2013020602.pdf [(64.6 KB)] [kitasp 技術センター, 2016/06/03 11:56]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2547/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -695,7 +696,7 @@ http://blogs.technet.com/b/systemcenterjp/archive/2012/07/20/3509911.aspx
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc805/">
+                                      <a href="/posts/new_md/doc711/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -703,7 +704,7 @@ http://blogs.technet.com/b/systemcenterjp/archive/2012/07/20/3509911.aspx
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc805/">[Windows] WMIリポジトリの再構築方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc711/">[GGH4.5] マウスホバーの表示で文字化けする．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -716,18 +717,17 @@ http://blogs.technet.com/b/systemcenterjp/archive/2012/07/20/3509911.aspx
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc805/"><i class="far fa-calendar"></i> 2012-11-08</a>
+                                            <a href="/posts/new_md/doc711/"><i class="far fa-calendar"></i> 2013-02-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/11/08*
-[番号] 技術ノート KGTN 2012110804
-[現象] [Windows] WMIリポジトリの再構築方法は？
-[説明] WMIリポジトリの再構築はGGのサポート範疇ではありませんが，例えば以下のページをご覧下さい．
-http://technet.microsoft.com/ja-jp/scriptcenter/ff576025.aspx WMI の FAQ: トラブルシューティングとヒント リポジトリを再構築する
-ファイル KGTN2012110804.pdf [(48.4 KB)] [kitasp 技術センター, 2012/11/08 14:03]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc805/" class="btn btn-template-main">続きを読む</a>
+2013/02/04*
+[番号] 技術ノート KGTN 2013020401
+[現象] [GGH4.5] マウスホバーの表示で文字化けする．
+[説明] IE 等で確認したところ，下記のように日本語も問題なく表示されました．恐らく，文字化けを起こしたアプリケーションの処理に何らかの原因があるのではないかと思われます．
+ファイル KGTN2013020401.pdf [(76.2 KB)] [kitasp 技術センター, 2013/02/04 11:26]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc711/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -797,7 +797,7 @@ http://technet.microsoft.com/ja-jp/scriptcenter/ff576025.aspx WMI の FAQ: ト�
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

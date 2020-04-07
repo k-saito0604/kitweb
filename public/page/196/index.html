@@ -409,25 +409,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2586/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc180/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2586/">[GGW3.2.1/GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc180/">[GGW3.2.1/GGH4.X] 新規に作成したアカウントでアプリケーションを起動すると文字化けが発生する．コンソールでログオンすると，それ以降アプリケーションの文字化けが解消する．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-11-29
+                            日付 2012-01-31
                             </p>
                             <p class="intro">*技術ノート
-2011/11/29*
-[番号] 技術ノート KGTN 2011113002
-[現象] [GGW3.2.1/GGH4.X-5.X] APSログに記録される WLE??? の意味は？
-[説明] APSログが記録されているフォルダの中に Codes というフォルダがあり，その中の WLE.html にコードの意味が記述されています． WLE は Win32 のエラーコードで，例えば 1450 は &ldquo;Insufficient system resources exist to complete the requested service.&rdquo; （システム リソースが不足しているため、要求されたサービスを完了できません）　という意味になります．
-ファイル KGTN2011113002.pdf [(59 KB)] [kitasp 技術センター, 2016/05/27 13:48]</p>
+2012/01/31*
+[番号] 技術ノート KGTN 2012013101
+[現象] [GGW3.2.1/GGH4.X] 新規に作成したアカウントでアプリケーションを起動すると文字化けが発生する．コンソールでログオンすると，それ以降アプリケーションの文字化けが解消する．
+[説明] GGにはデスクトップという概念がありませんので，新規に作成したアカウントでGGにログオンした場合，デスクトップに関連する情報 （レジストリ・フォルダ・ファイルなど） が作成されません．アプリケーションがデスクトップに関連する情報を利用するような仕様で作成されている場合，それらが存在しないため文字化けが発生します （注：アプリケーションによってはエラーダイアログの表示等もあります） ．コンソールでログオンすると，その時にデスクトップに関連する情報が作成されるため，それ以降GGでログオンすると文字化けが解消します．
+技術的な背景は上記の通りで，対応としては 1) コンソールで一度ログオンする （または構成済みユーザプロファイルを使用する） ， 2) アプリケーションが参照する情報 （レジストリ・フォルダ・ファイルなど） を突き止め，アカウントにそれらの情報を登録 （作成） する， 3) アプリケーションを修正しデスクトップに関連する情報を利用しないようにする， などが考えられます．
+ファイル KGTN2012013101.pdf [(55.8 KB)] [kitasp 技術センター, 2014/11/09 15:51]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2586/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc180/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,26 +447,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1217/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1117/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1217/">[Windows] パフォーマンスカウンタの Memory¥Pages/sec に大きい値が記録されている時があるが，物理メモリが不足しているのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1117/">[APP] ログオンするユーザによってアプリケーション （の表示） が文字化けする．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-11-29
+                            日付 2012-01-30
                             </p>
                             <p class="intro">*技術ノート
-2011/11/29*
-[番号] 技術ノート KGTN 2011113001
-[現象] [Windows] パフォーマンスカウンタの Memory¥Pages/sec に大きい値が記録されている時があるが，物理メモリが不足しているのか？
-[説明] このカウンタは 「メモリ上に存在しないデータが要求され，ディスクからの read / write　が発生した頻度 （１秒間毎） 」 を示しています．従って，ページファイルの read / write だけでなく，アプリケーションの実行モジュール読込みやデータファイルの read / write 等でもこの値が増加しますので， Memory¥Pages/sec の値が大きいことが直ちに物理メモリの不足を意味するものではありません．
-参　考 サイズの大きな （あるいは重たい） アプリケーションを初めて起動した時は， Memory¥Pages/sec の値は一時的に大きな値 （例えば 7,000） になります．この後，アプリケーションを終了し改めて起動すると， （状況にもよりますが） アプリケーションの実行モジュールやデータファイルがメモリにキャッシュされているため大きな値にはなりません．
-ファイル KGTN2011113001.pdf [(61.6 KB)] [kitasp 技術センター, 2011/11/30 08:26]</p>
+2012/01/30*
+[番号] 技術ノート KGTN 2012013002
+[現象] [APP] ログオンするユーザによってアプリケーション （の表示） が文字化けする．
+[説明] これまでの経験では，アプリケーション中でロケール設定が行われていないと，このような現象が発生します． アプリケーション中でロケール設定 setlocale(LC_ALL, &ldquo;Japanese&rdquo;);　等を行って下さい．
+ファイル KGTN2012013002.pdf [(46.7 KB)] [kitasp 技術センター, 2012/01/30 10:16]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1217/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1117/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -484,32 +484,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1218/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2337/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1218/">[GGW3.2.1/GGH4.0] GGのログオンダイアログを閉じた時および認証に3回失敗した時，Microsoft Windows Services for UNIX の gwshare.exe でマウントしたドライブが切断される．</a></h4>
+                            <h4><a href="/posts/new_md/doc2337/">[GGW3.2.1/GGH4.X-5.X] ActiveXクライアントで inbrowserprocess = false, autoclosebrowser = true にしているが，ブラウザ （IE） が閉じない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-11-28
+                            日付 2012-01-30
                             </p>
                             <p class="intro">*技術ノート
-2011/11/28*
-[番号] 技術ノート KGTN 2011110903
-[現象] [GGW3.2.1/GGH4.0] GGのログオンダイアログを閉じた時および認証に3回失敗した時，Microsoft Windows Services for UNIX の gwshare.exe でマウントしたドライブが切断される．
-[説明] 弊社で現象を確認し，GraphOn社へ報告をしました．この現象は GGW3.2.1 と GGH4.0 の両方のバージョンで発生し，現時点では GGH4.0 で対応すべき課題として認識しています．GraphOn社から新たな情報が届き次第，この技術ノートを更新します．
-補足１ 本現象の発生シナリオは，次の通りです．
-下記コマンドでUNIXのファイルシステムを指定したドライブレターでマウント GGのログオンダイアログを閉じる または 3回認証に失敗 マウントしたネットワークドライブが切断
-なお，正常にログオンしそしてログオフした場合は，マウントしたネットワークドライブが切断される現象は発生しません．
-補足２ 対症療法としては，以下の２つの方法が考えられます．
-エンタープライズオプションのツール GMServiceで， 「ネットワークドライブが切断されているかどうか確認し，切断されていればそのネットワークドライブを再接続する」 というスクリプトを実行する．
-共有したいファイルを Windows の共有フォルダに配置し，ログオンスクリプトでその共有フォルダをマウント （net use コマンド） する． 補足３ 補足２の 1) の 「ネットワークドライブが切断されているかどうか確認し，切断されていればそのネットワークドライブを再接続する」 というスクリプトのサンプルは，以下の通りです．
-補足４ ログオンダイアログを閉じた時および認証に3回失敗した時，GGは用意したセッションを解放する処理を行っております．この処理では，Windowsのファイルシステム・ベースのネットワークドライブやUNIX ファイルシステム・ベースのネットワークドライブを特に意識しておりません．このことから，GGが利用している Windows API の何れかがUNIX ファイルシステム・ベースのネットワークドライブを切断しているのではないかと考えられます．原因を特定するには，UNIX ファイルシステム・ベースのネットワークドライブの挙動を詳細に調べる必要があり，これには多くの時間と工数がかかる予想されます．仮に原因が分ったとしても， 現在のWindows およびGGのアーキテクチャの下では，解決が困難という結論になる可能性もあります．
-補足５ GGW3.0.4で本現象が発生せず，GGW3.2.1 および GGH4.0.1 で発生します．GGW3.2.1 および GGH4.0.1の新たな仕様 （機能） の実装で使用した Windows API 等が，その副作用としてUNIX ファイルシステム・ベースのネットワークドライブを切断する可能性も考えられます．従って，現時点で直ちにGGのバグと結論付けることは出来ません．</p>
+2012/01/30*
+[番号] 技術ノート KGTN 2012013001
+[現象] [GGW3.2.1/GGH4.X-5.X] ActiveXクライアントで inbrowserprocess = false, autoclosebrowser = true にしているが，ブラウザ （IE） が閉じない．
+[説明] ブラウザを 「管理者として実行」 するか，またはウエッブサーバーのURLを信頼済みサイト （インターネットオプション → セキュリティ → 信頼済みサイト） として登録して下さい．
+補　足 GGH4.Xでは， logon.html に下記のコードを追加することでブラウザを閉じることも出来ます．なお，将来のIE （IE11の後継ブラウザ） では，その仕様次第ですので機能しなくなる可能性があります．
+else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT&gt;'); } //--- 追加（ここから） --- if ((bAutoCloseBrowser == &quot;true&quot; )&amp;&amp;(bInBrowser == &quot;false&quot;)) { (window.open('','_self').opener=window).close(); } //--- 追加（ここまで） ---  ファイル KGTN2012013001.pdf [(87.4 KB)] [kitasp 技術センター, 2016/10/04 16:00]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1218/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2337/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -528,25 +522,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2587/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1116/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2587/">[GGW3.2.1/GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc1116/">[GGW3.2.1] サービス GO-Global Application Publishing Service が正常に停止しないことがある．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-11-25
+                            日付 2012-01-30
                             </p>
                             <p class="intro">*技術ノート
-2011/11/25*
-[番号] 技術ノート KGTN 2011112502
-[現象] [GGW3.2.1/GGH4.X-5.X] ログオンスクリプトの Global と User-specific の両方を使用したいが，適用の順番は？
-[説明] Global → User-specific の順序で適用 （実行） されます．特別な事情がなければ，以下のようなスクリプトを記述し， Global として適用 （実行） するのが管理や運用の面から一般に利用されている方法です．
-ECHO OFF :COMMON1 ::--- 共通の前処理を記述 --- ECHO COMMON1 &gt;&gt;C:TEMPGLOLBAL.TXT IF &quot;%USERNAME%&quot; == &quot;TestUser&quot; GOTO :USER_TEST IF &quot;%USERNAME%&quot; == &quot;Administrator&quot; GOTO :USER_ADMIN GOTO :USER_OTHER :USER_TEST :: --- TestUser の処理を記述 --- ECHO TestUser &gt;&gt;C:TEMPGLOLBAL.TXT GOTO :COMMON2 :USER_ADMIN :: --- Administrator の処理を記述 --- ECHO Administrator &gt;&gt;C:TEMPGLOLBAL.TXT GOTO :COMMON2 :USER_OTHER :: --- その他の処理を記述 --- ECHO OTHER &gt;&gt;C:TEMPGLOLBAL.</p>
+2012/01/30*
+[番号] 技術ノート KGTN 2012013003
+[現象] [GGW3.2.1] サービス GO-Global Application Publishing Service が正常に停止しないことがある．
+[説明] アプリケーションの動作と絡んで，メモリが解放されない等の理由でサービス GO-Global Application Publishing Service が正常に停止しないことがあります．これは既知の問題で，サーバを再起動することで対応をお願いします．GGH4.0については，アーキテクチャの変更等もあり，現時点ではこのような報告はありません．
+補　足 利用中のセッションを全て強制終了させたい場合は，エンタープライズオプションの GMCheckRaw の利用をご検討下さい．個別セッション （ユーザID または セッションIDを指定） の強制終了，全セッションの強制終了，セッション一覧の取得等が可能です．
+ファイル KGTN2012013003.pdf [(63.9 KB)] [kitasp 技術センター, 2012/01/30 11:44]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2587/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1116/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

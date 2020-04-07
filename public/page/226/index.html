@@ -409,25 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1565/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1416/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1565/">クライアントドライブ機能を使い，サーバ側からクライアント側へファイルをコピーした時，クライアント側でファイルがロックされ削除できない等の現象が発生することがある．</a></h4>
+                            <h4><a href="/posts/new_md/doc1416/">UI （ユーザインタフェース） を持つプログラムを，GGのシステムプロセスとして登録した場合，どのような影響が出るのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-11-02
+                            日付 2011-03-29
                             </p>
                             <p class="intro">*技術ノート
-2010/11/02*
-[番号] 技術ノート KGTN 2009091502
-[現象] クライアントドライブ機能を使い，サーバ側からクライアント側へファイルをコピーした時，クライアント側でファイルがロックされ削除できない等の現象が発生することがある．
-[説明] サイズが19MBを超えるファイルについては，クライアントドライブ機能の動作は保障できません．この問題は回線速度やファイルの内容 （テキスト・バイナリ） に依存せず，ファイルサイズのみに依存して発生します．ファイルがロックされた場合は，Windowsクライアントでは ggw.exe を終了させることでロックが解除されます．本件はGraphOn社も障害として認識しており，バージョンアップで修正しております．
-ファイル KGTN2009091502.pdf [(54.3 KB)] [kitasp 技術センター, 2010/11/02 16:20]</p>
+2011/03/29*
+[番号] 技術ノート KGTN 2011032901
+[現象] UI （ユーザインタフェース） を持つプログラムを，GGのシステムプロセスとして登録した場合，どのような影響が出るのか？
+[説明] （当該プログラムを除く） &ldquo;UIを持ちかつシステムプロセスでないプログラム&rdquo; のプロセスが全て終了した時，そのプログラムがシステムプロセスとして登録されていると，ユーザの操作無しに強制的に終了させられます．これ以外の動作上の差異はありません．
+ファイル KGTN2011032901.pdf [(47.6 KB)] [kitasp 技術センター, 2011/03/29 11:49]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1565/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1416/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,25 +446,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1566/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1417/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1566/">Ver3.2.1 &#43; Visio 2003 の環境では図面が2回描画されるが， Ver4.0 &#43; Visio 2010 ではどうなのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1417/">[GGW3.2.1] ログオンスクリプトと次のレジストリで指定するプログラムは，どちらが先に起動されるのか？HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Run¥LocalMachine</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-11-01
+                            日付 2011-03-18
                             </p>
                             <p class="intro">*技術ノート
-2010/11/01*
-[番号] 技術ノート KGTN 2010110103
-[現象] Ver3.2.1 + Visio 2003 の環境では図面が2回描画されるが， Ver4.0 + Visio 2010 ではどうなのか？
-[説明] Ver4.0 + Visio 2010 試用版で確認したところ，図面は1回描画されるのみで，ちらつき等は発生しませんでした．また，Ver4.0ではクライアントドライブ機能がアーキテクチャレベルで見直しが行われたため，Visioファイルのクライアントドライブからの読み込み，クライアントドライブへの保存が大幅に速くなりました．
-ファイル KGTN2010110103.pdf [(47.4 KB)] [kitasp 技術センター, 2010/11/01 14:30]</p>
+2011/03/18*
+[番号] 技術ノート KGTN 2011031802
+[現象] [GGW3.2.1] ログオンスクリプトと次のレジストリで指定するプログラムは，どちらが先に起動されるのか？HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Run¥LocalMachine
+[説明] プログラムの （大まかな） 起動の順番は，以下の通りです．
+Logon.exe ログオンスクリプト pw.exe &hellip;¥System¥Run¥LocalMachine で指定されたプログラム ggw.exe ?a で指定されたプログラム
+ファイル KGTN2011031802.pdf [(53.2 KB)] [kitasp 技術センター, 2011/03/18 14:32]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1566/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1417/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -483,29 +484,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1567/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1418/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1567/">クライアントドライブ機能を使い，サーバからクライアントへファイルをコピーするとセッションが切れることがある．また，セッションが切れない場合でも，クライアント側でファイルがロックされ削除が出来ない等の現象が発生することもある．</a></h4>
+                            <h4><a href="/posts/new_md/doc1418/">[WS2008] Windows Server 2008 の環境で，一般ユーザが IE を起動しようとすると失敗する．なお， Firefox は正常に起動する．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-11-01
+                            日付 2011-03-18
                             </p>
                             <p class="intro">*技術ノート
-2010/11/01*
-[番号] 技術ノート KGTN 2009091501
-[現象] クライアントドライブ機能を使い，サーバからクライアントへファイルをコピーするとセッションが切れることがある．また，セッションが切れない場合でも，クライアント側でファイルがロックされ削除が出来ない等の現象が発生することもある．
-[説明] ファイルサイズが19MBを越えると 「セッションが切れる」 「０バイトのファイルが作成される」 「ファイルがロックされる」 「コピーしたファイルの正しいファイルサイズが得られない」 という現象が発生します．この問題は，回線速度やファイルの内容 （テキスト・バイナリ） に依存せず，ファイルサイズのみに依存して発生します．ファイルがロックされた場合は，ActiveXクライアントではIEを閉じることで，Windowsクライアントはggw.exeを終了させることでロックが解除されます．本件はGraphOn社も障害として認識しており，将来のバージョンで修正する予定です．
-補足１ クライアントドライブ機能でファイルをコピーする場合，FTPのような専用のファイル転送プロトコルでコピーが行われる訳ではなく，Windows内部の低レベルのファイルコピー処理をフックして，サーバとクライアント間でファイルのコピー処理が行われます．このような仕組みにより， Windowsの遅延書き込み機能等の極めて低レベルな処理もGGのセッションの中で行われ，サーバとクライアント間でエラー等のイベントが正常に伝わらず，それぞれが相手方からのイベントを待ち続けて，タイムアウトによるセッション断や継続的なファイルのロックが発生したものと推測します．なお，本補足事項は弊社の独自調査による結果 （GraphOn社にも報告済） を元に記載しています．
-補足２ セッション断については，Windowsがプログレスダイアログを表示するケースで発生することが分かっております．DOS窓を開きcopyコマンドでコピーを行った場合は，セッション断やファイルのロックは発生しません．なお，本補足事項は弊社の独自調査による結果 （GraphOn社にも報告済） を元に記載しています．
-補足3 なぜ発生したのか&hellip;　クライアントドライブ機能のサーバ側とクライアント側で，それぞれが相手からのイベントを待っている状態にあり，処理が完結しないためセッション断やファイルロック等が発生していると推測されます．
-補足4 どうすれば発生しないのか&hellip;　「ファイルの大きさで対応する」 ことが妥当だと考えますが，しかし明確な根拠を持ったファイルの大きさを示すことは困難です．恐らく Windows 内部のキャッシュの空き等に依存しているため， 正確には分かりませんが，実測値で19MB以下であれば大丈夫のようです．なお，GraphOn社には全て状況を報告しており，その情報を試験＆分析作業を行っております． 補足5 GraphOn社のコメント&hellip; We have done some more testing and the issue with the filelock did not occur with a filesize of 20,001KB. It did occur with a filesize of 20,041KB.
-20MB （= 20,480KＢ） は20,041KBを越えますので，運用回避を行う場合のファイルサイズは 「19MB以下」 となります．</p>
+2011/03/18*
+[番号] 技術ノート KGTN 2011031801
+[現象] [WS2008] Windows Server 2008 の環境で，一般ユーザが IE を起動しようとすると失敗する．なお， Firefox は正常に起動する．
+[説明] Windows Server 2008 の環境で一般ユーザが IE を起動する場合は，以下の手順で UAC （User Accounts Control = ユーザーアカウント制御） を無効にして下さい．
+[コントロールパネル] を開く． [ユーザー アカウント] を開く． [ユーザーアカウント制御の有効化または無効化] をクリックする． [ユーザアカウント制御 （UAC） を使ってコンピュータの保護に役立たせる] のチェックを外す． [OK] ボタンをクリックする． サーバを再起動する．
+この件に関するGraphOn社の情報を以下に引用します．
+With Windows Server 2008, launching Internet Explorer through GO-Global will crash Internet Explorer. To avoid this, disable User Accounts Control　Panel (UAC) on the GO-Global Server.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1567/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1418/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -524,27 +523,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1568/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1419/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1568/">モジュール msvcr90.dll でエラーが発生し， aps.exe が開始しない．</a></h4>
+                            <h4><a href="/posts/new_md/doc1419/">[GGW3.2] Windows Server 2008 の環境で，GraphOn社の技術ノート Article C00046 に従って Explorer.exe を登録したところ，ログオン時に 「無効なディスプレイの設定です」 というダイアログが表示される．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-10-31
+                            日付 2011-03-17
                             </p>
                             <p class="intro">*技術ノート
-2010/10/31*
-[番号] 技術ノート KGTN 2010110101
-[現象] モジュール msvcr90.dll でエラーが発生し， aps.exe が開始しない．
-エラー発生アプリケーション aps.exe、バージョン 4.0.0.8685 エラー発生モジュール msvcr90.dll、バージョン 9.0.30729.4148 エラー発生アドレス 0x000375b4
-[説明] 弊社ではこの現象を再現することが出来ませんでしたが，発生した環境では16文字以上あったコンピュータ名を15文字以下に短くすることで，この現象が発生しなくなったという報告がありました． KB226144 にありますように，NetBIOS ドメイン名が15文字以下になるようにサーバ環境を設定して下さい．
-http://support.microsoft.com/kb/226144/ja NetBIOS ドメイン名 フィールドに、15 文字の長さ制限 Windows 2000
-ファイル KGTN2010110101.pdf [(61.7 KB)] [kitasp 技術センター, 2010/11/01 08:58]</p>
+2011/03/17*
+[番号] 技術ノート KGTN 2011031702
+[現象] [GGW3.2] Windows Server 2008 の環境で，GraphOn社の技術ノート Article C00046 に従って Explorer.exe を登録したところ，ログオン時に 「無効なディスプレイの設定です」 というダイアログが表示される．
+[説明] Explorer.exe が必要としている情報が不足しているのが原因です．GGサーバのコンソールで，一度ログオンすることでこの現象は解消します．または，このダイアログでOKボタンを押下することで，次回ログオン時からダイアログは表示されなくなります．AD環境等では，構成済みプロファイルを作成することで，事前にこの問題を回避することが出来ます．
+ファイル KGTN2011031702.pdf [(117 KB)] [kitasp 技術センター, 2011/03/17 12:49]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1568/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1419/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

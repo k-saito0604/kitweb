@@ -1,5 +1,5 @@
 ﻿+++
-title = "[GGH4.X"
+title = "[GGH4.X-5.X] Mac OS X Client は，日本語キーボードをサポートしているのか？"
 date = "2013-03-01"
 tags = ["技術ノート"]
 categories = ["tech"]

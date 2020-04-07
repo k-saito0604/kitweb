@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1229/">
+                                      <a href="/posts/new_md/doc1126/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1229/">[GGW3.2.1/GGH4.0] 画面の遷移が遅いが，どのようなことが考えられるか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1126/">[GGH4.0] クライアントが異なる複数のGGサーバに同時にログオンする時，クライアント印刷機能に関して注意事項等はあるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,18 +340,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1229/"><i class="far fa-calendar"></i> 2011-11-14</a>
+                                            <a href="/posts/new_md/doc1126/"><i class="far fa-calendar"></i> 2012-01-20</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/11/14*
-[番号] 技術ノート KGTN 2011111403
-[現象] [GGW3.2.1/GGH4.0] 画面の遷移が遅いが，どのようなことが考えられるか？
-[説明] 過去の事例ではさまざまな原因があり，さらにそれらが絡み合って発生する場合もあり，可能性を全て列挙することは困難です．代表的な原因として，次のようなことが考えられます．
-ネットワークの遅延や輻輳 &hellip; 例： アクセスラインが夕方になると混雑して遅い． アプリケーションの描画が高負荷 &hellip; 例： 凝った画面で描画オブジェクトが非常に多い． アプリケーションの処理が高負荷 &hellip; 例： 月次処理で大量の帳票を印刷する． ディスクアクセスの遅延 &hellip; 例： ネットワーク上のファイルシステムへのアクセスが集中し遅い． アンチウイルスソフト等の影響 &hellip; 例： 全ファイルのスキャンやアンチウイルスソフトのアップデートなど．
-ファイル KGTN2011111403.pdf [(58.6 KB)] [kitasp 技術センター, 2011/11/14 14:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1229/" class="btn btn-template-main">続きを読む</a>
+2012/01/20*
+[番号] 技術ノート KGTN 2010111701
+[現象] [GGH4.0] クライアントが異なる複数のGGサーバに同時にログオンする時，クライアント印刷機能に関して注意事項等はあるのか？
+[説明] Ver4.0系では，クライアント印刷機能の設定ファイル （構成情報） print.ini をクライアント上に持たないため，同時に複数のGGサーバにログオンしても，互いの設定等が影響することはありません．
+補　足 逆に，GGW3.2.1ではクライアント印刷機能の設定ファイルprint.ini でプリンタを管理しているため，同時に複数のセッションを張ると，最初のセッションのみプリンタが構成され，他のセッションについてはプリンタが構成されません （注：複数セッションを許容すると，設定ファイルに矛盾が生じるため） ．
+ファイル KGTN2010111701.pdf [(74.5 KB)] [kitasp 技術センター, 2012/01/20 12:36]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1126/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -361,7 +361,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1230/">
+                                      <a href="/posts/new_md/doc1128/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -369,7 +369,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1230/">[GGW3.2.1/GGH4.0] Microsoft社の知識ベース KB176792 を参考にIEを操作するプログラムをVC&#43;&#43;で書いたが，GGの環境で動作しない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1128/">[GGW3.2.1/GGH4.0] GGサーバへのログオンに時間がかかるが，何を調べれば良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -382,17 +382,21 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1230/"><i class="far fa-calendar"></i> 2011-11-11</a>
+                                            <a href="/posts/new_md/doc1128/"><i class="far fa-calendar"></i> 2012-01-20</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/11/11*
-[番号] 技術ノート KGTN 2011111101
-[現象] [GGW3.2.1/GGH4.0] Microsoft社の知識ベース KB176792 を参考にIEを操作するプログラムをVC++で書いたが，GGの環境で動作しない．
-[説明] GGの通常の環境ではプロセス explorer.exe が存在しないため，プログラムで使用しているライブラリが Windows Shell (explorer.exe) の機能を使用するとエラーが発生します． GraphOn社の技術ノート Article C00046 の設定 （下記参照） を追加することで，この問題を解消することが出来ます．
-ファイル KGTN2011111101.pdf [(86.4 KB)] [kitasp 技術センター, 2011/11/11 13:38]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1230/" class="btn btn-template-main">続きを読む</a>
+2012/01/20*
+[番号] 技術ノート KGTN 2012012002
+[現象] [GGW3.2.1/GGH4.0] GGサーバへのログオンに時間がかかるが，何を調べれば良いか？
+[説明] 問題点を絞り込むために，とりあえず以下のような手順 （条件） でログオン時間を確認するのが良いでしょう．
+GGのクライアント機能 （ドライブ・プリンタ・クリップボードの全て） とログオンスクリプト機能を無効にして，サーバ上のローカルアカウント Administrator でログオンして下さい．この状況でログオンに時間がかかる場合は，そのサーバ自体やネットワーク環境に本質的な原因があると推測されます．
+ドメイン環境 （AD環境） のアカウントでログオンして下さい．この状況でログオンに時間がかかる場合は，ドメイン環境 （AD環境） に原因があると推測されます．
+ログオンスクリプトを有効にして，ローカルアカウントまたはドメインのアカウントでログオンして下さい．この状況でログオンに時間がかかる場合は，ログオンスクリプト内の処理に原因があると推測されます．
+クライアント機能を 「ひとつずつ」 有効にして，ローカルアカウントまたはドメインのアカウントでログオンして下さい．この状況でログオンに時間がかかるようになった時は，その時に有効にしたクライアント機能に関連する環境に原因があると推測されます．
+ファイル KGTN2012012002.pdf [(57.4 KB)] [kitasp 技術センター, 2012/01/20 11:20]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1128/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -402,7 +406,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1231/">
+                                      <a href="/posts/new_md/doc1127/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -410,7 +414,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1231/">テストドライブライセンスからパーマネントライセンスに切り替えたところ， Bad encryption handshake with vendor daemon. (Error code: </a></h2>
+                                    <h2><a href="/posts/new_md/doc1127/">[GGW3.2.1/GGH4.0] 仮想サーバ環境でのライセンスの考え方は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -423,21 +427,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1231/"><i class="far fa-calendar"></i> 2011-11-10</a>
+                                            <a href="/posts/new_md/doc1127/"><i class="far fa-calendar"></i> 2012-01-20</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/11/10*
-[番号] 技術ノート KGTN 2010032802
-[現象] テストドライブライセンスからパーマネントライセンスに切り替えたところ， Bad encryption handshake with vendor daemon. (Error code: -33) というエラーがAPSログに記録されるようになった．
-[説明] パーマネントライセンスでは同時利用ユーザ数を数える必要があるため，ログオンの度にライセンスサーバ （FlexLM） へライセンス獲得の要求を行います．このエラーは， 「ログオンが集中して，ライセンスサーバへライセンス獲得の要求を送信することが出来なかった」 ことを意味します．
-3.2.1.4446 よりも前のビルドでは，この状況が発生すると，直ちにログオンが失敗します．3.2.1.4446 またはそれ以降では，１秒間隔で3回まで試行を行い，3回とも失敗した時にログオンが失敗します．弊社および大規模案件での負荷試験では，この試行機能の実装により，本件のエラーによるログオンの失敗は一度も発生しておりません．
-補足１ １秒間隔で3回まで試行という仕様は，以下のレジストリの値で変更することが可能です．
-HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer LicenseCheckoutAttempts DWORD LicenseCheckoutRetryInterval DWORD
-補足２ エラーメッセージの意味は， &ldquo;The client performs an encryption handshake operation with the daemon prior to any licensing operations. This handshake operation failed.&rdquo; で， （クライアント〜サーバ間の） 通信の暗号化のハンドシェーク処理でエラーが発生したということです．このエラーを検出したモジュールは， FlexLM のlc_checkout という関数で，GG側の関数 （処理） ではありません．
-補足３ 「ログオンが集中して，ライセンスサーバへライセンス獲得の要求を送信することが出来なかった」 以外に，サーバ上で実行されている処理で CPU の負荷が高い時に （パフォーマンスカウンタに現れない瞬間的な高負荷も含みます） ，ライセンス獲得の要求が発生した時も本現象が発生する可能性があります．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1231/" class="btn btn-template-main">続きを読む</a>
+2012/01/20*
+[番号] 技術ノート KGTN 2012012003
+[現象] [GGW3.2.1/GGH4.0] 仮想サーバ環境でのライセンスの考え方は？
+[説明] 現時点では，仮想サーバを想定したライセンスの取り扱いは規定されておりません．従って，仮想サーバであっても，物理サーバの場合と同じようにお考え下さい．
+ファイル KGTN2012012003.pdf [(43.9 KB)] [kitasp 技術センター, 2012/01/20 11:28]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1127/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -447,7 +447,7 @@ HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer LicenseCheckoutAttempts DWORD
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1232/">
+                                      <a href="/posts/new_md/doc1124/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -455,7 +455,7 @@ HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer LicenseCheckoutAttempts DWORD
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1232/">[GGH4.0] クライアントフレームを使用してログオンし，そのセッションを一旦切断した．クライアントフレームを使用せずに再接続すると画面が乱れた．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1124/">GraphOn社が 「公式に」 サポートする仮想環境とGGのバージョンは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -468,17 +468,23 @@ HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer LicenseCheckoutAttempts DWORD
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1232/"><i class="far fa-calendar"></i> 2011-11-09</a>
+                                            <a href="/posts/new_md/doc1124/"><i class="far fa-calendar"></i> 2012-01-20</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/11/09*
-[番号] 技術ノート KGTN 2011110905
-[現象] [GGH4.0] クライアントフレームを使用してログオンし，そのセッションを一旦切断した．クライアントフレームを使用せずに再接続すると画面が乱れた．
-[説明] セッション再接続を行う場合は，元のセッションがクライアントフレームを使用したのであれば，再接続もクライアントフレームを使用して下さい．逆に元のセッションがクライアントフレームを使用していないのであれば，再接続もクライアントフレームを使用しないで下さい．
-ファイル KGTN2011110905.pdf [(44.1 KB)] [kitasp 技術センター, 2011/11/09 13:40]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1232/" class="btn btn-template-main">続きを読む</a>
+2012/01/20*
+[番号] 技術ノート KGTN 2011071101
+[現象] GraphOn社が 「公式に」 サポートする仮想環境とGGのバージョンは？
+[説明] 仮想環境を 「公式に」 サポートするGGのバージョンは4.0またはそれ以降で， VMWare Esxi, HyperV, vSphere の各環境で GraphOn社は検証を行っております．
+補足１ 技術的な観点では，GGはWindowsの環境のみに依存して動作しますので，Windowsが物理マシンと同等に動作する環境であればGGも動作すると考えられます．Windowsがサポートする仮想環境については，マイクロソフト社の下記知識ベースを参照して下さい．
+http://support.microsoft.com/kb/957006/ja Microsoft サーバー ソフトウェアおよびサポート対象の仮想化環境
+http://support.microsoft.com/kb/897615/ja マイクロソフト以外のハードウェア仮想化ソフトウェアでマイクロソフトのソフトウェアを実行する場合のサポート ポリシー
+補足２ GraphOn社が 「公式に」 サポートする仮想環境以外では，ユーザ様から KVM, Xen, VirtualBox, Virtage 等で動作したとの報告があります．また，GGW3.2.1 に関しても，ユーザ様から仮想環境で動作したとの報告があります．もしこれらの環境で問題が発生した場合は，物理環境 （サーバ） 上での再現試験をお願いする場合があります．この試験等により問題が仮想環境に依存しないことが確認されれば，物理環境 （サーバ） の場合と同様の方法でGGをサポートします．
+補足３ 上記の 「公式にサポート」 とは，GraphOn社がその環境で動作することを確認したという意味であり，仮想環境も含めてサポートする （つまり仮想環境の設定や運用上の問題に起因する障害に対応する） という意味ではありません．
+補足４ GraphOn社より，以下の情報が届きました (2012-01-20) ．この情報は，本技術ノートの説明にも反映しております．
+ファイル KGTN2011071101.pdf [(81.2 KB)] [kitasp 技術センター, 2012/01/20 13:51]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1124/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -488,7 +494,7 @@ HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer LicenseCheckoutAttempts DWORD
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1234/">
+                                      <a href="/posts/new_md/doc1132/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -496,7 +502,7 @@ HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer LicenseCheckoutAttempts DWORD
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1234/">[Active Directory] ドメインのユーザでログオンすることが出来ない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1132/">[GGH4.0] モニタが複数台あるクライアントで，GGが全てのモニタを１台のモニタとして表示する．プライマリモニタだけにGGの画面を表示したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -509,18 +515,20 @@ HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer LicenseCheckoutAttempts DWORD
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1234/"><i class="far fa-calendar"></i> 2011-11-07</a>
+                                            <a href="/posts/new_md/doc1132/"><i class="far fa-calendar"></i> 2012-01-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/11/07*
-[番号] 技術ノート KGTN 2011110801
-[現象] [Active Directory] ドメインのユーザでログオンすることが出来ない．
-[説明] 先ず，GGサーバのコンソールで，ログオン出来ない ユーザID でログオンを試みて下さい．ログオンに失敗するようであれば，そのGGサーバのドメイン環境自体に問題がありますので， Active Directory 周り （ネットワーク環境を含みます） を調査して下さい．
-ログオンに成功するようであれば，GGログオン時にドメイン名が省略されていることが原因だと推測されます．単に ユーザID を入力するのではなく， ドメイン名¥ユーザID の形式で入力下さい．
-ファイル KGTN2011110801.pdf [(49.3 KB)] [kitasp 技術センター, 2011/11/08 07:59]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1234/" class="btn btn-template-main">続きを読む</a>
+2012/01/19*
+[番号] 技術ノート KGTN 2012011902
+[現象] [GGH4.0] モニタが複数台あるクライアントで，GGが全てのモニタを１台のモニタとして表示する．プライマリモニタだけにGGの画面を表示したい．
+[説明] GGH4.0は，デフォルト設定でマルチモニタ機能が有効で，全てのモニタを１台のモニタとして表示します．プライマリモニタだけにGGの画面を表示したい場合は，マルチモニタ機能を無効にして下さい．
+Windows Client の場合 （ショートカット） gg-client.exe -h server1 -mm 0
+ActiveX Client の場合 （ハイパーリンク） http://hostname/goglobal/logon.html?multimonitor=false
+補　足 参考として，管理者ガイドの該当箇所から情報を引用します．
+ファイル KGTN2012011902.pdf [(74.4 KB)] [kitasp 技術センター, 2012/01/19 09:41]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1132/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -530,7 +538,7 @@ HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer LicenseCheckoutAttempts DWORD
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc193/">
+                                      <a href="/posts/new_md/doc2452/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -538,7 +546,7 @@ HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer LicenseCheckoutAttempts DWORD
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc193/">[iOS Client] iOS クライアントは URL Scheme をサポートしているのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2452/">[GGH4.X-5.X] ActiveXクライアントで，GGサーバに接続時に自動的にブラウザ （IE） を閉じたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -551,17 +559,19 @@ HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer LicenseCheckoutAttempts DWORD
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc193/"><i class="far fa-calendar"></i> 2011-11-07</a>
+                                            <a href="/posts/new_md/doc2452/"><i class="far fa-calendar"></i> 2012-01-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/11/07*
-[番号] 技術ノート KGTN 2011110701
-[現象] [iOS Client] iOS クライアントは URL Scheme をサポートしているのか？
-[説明] iOS クライアントのバージョン4.8から URL Scheme をサポートしております．詳細については，技術ノート KGTN#2014012401 および KGTN#2014012701 をご覧下さい．
-ファイル KGTN2011110701.pdf [(43.5 KB)] [kitasp 技術センター, 2014/10/03 19:40]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc193/" class="btn btn-template-main">続きを読む</a>
+2012/01/19*
+[番号] 技術ノート KGTN 2012011901
+[現象] [GGH4.X-5.X] ActiveXクライアントで，GGサーバに接続時に自動的にブラウザ （IE） を閉じたい．
+[説明] 下記のようにlogon.html にパラメタ （下線部分） を与えることで，GGサーバに接続時に自動的にブラウザ （IE） を閉じることが可能です．但し，Windows Vista および Windows 7 の環境では， UAC （ユーザーアカウント制御） を無効にするか，またはブラウザ （IE） を 「管理者として実行」 する必要があります．
+http://myServer/logon.html?user=User&amp;password=Pass&amp;bInBrowser=false&amp;autoclose=true
+補　足 パラメタに関する仕様は以下の通りです．
+The correct functionality (when fixed) will be as follows: When &quot;autoclose&quot; = &quot;true,&quot; the browser will close at different times depending on the &quot;bInBrowser&quot; setting. If &quot;bInBrowser&quot; is set to &quot;false,&quot; the browser will close as soon as the session starts.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2452/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -571,7 +581,7 @@ HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer LicenseCheckoutAttempts DWORD
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1235/">
+                                      <a href="/posts/new_md/doc1129/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -579,7 +589,7 @@ HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer LicenseCheckoutAttempts DWORD
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1235/">[iPad Client] iPad Client で設定できるスタートアップ・パラメタは？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1129/">[GGW3.2.1/GGH4.0] サーバを同じ時間帯に再起動しているが，たまにライセンスサーバ （FlexLM） でエラーが発生する．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -592,20 +602,21 @@ HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer LicenseCheckoutAttempts DWORD
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1235/"><i class="far fa-calendar"></i> 2011-11-07</a>
+                                            <a href="/posts/new_md/doc1129/"><i class="far fa-calendar"></i> 2012-01-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/11/07*
-[番号] 技術ノート KGTN 2011110401
-[現象] [iPad Client] iPad Client で設定できるスタートアップ・パラメタは？
-[説明] Favorites に登録されたホストをクリックすると，右側に Host Information が表示されます．この画面で，以下の項目を設定することが出来ます．
-Auto Zoom ? 自動ズーム機能の有効/無効 Auto Launch ? 初期起動アプリケーションの指定 Port Number ? GGサーバのポート番号 Image Compression ? 画像圧縮機能の有効/無効
-現時点でサポートするパラメタは，上記の4つのみです．
-補　足 将来リリースする iPad Client で，他のStartup Parameters のサポートも検討しているようですが，現時点ではその詳細やスケジュール等は未定です．
-ファイル KGTN2011110401.pdf [(61.3 KB)] [kitasp 技術センター, 2011/11/07 09:36]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1235/" class="btn btn-template-main">続きを読む</a>
+2012/01/19*
+[番号] 技術ノート KGTN 2012012001
+[現象] [GGW3.2.1/GGH4.0] サーバを同じ時間帯に再起動しているが，たまにライセンスサーバ （FlexLM） でエラーが発生する．
+[説明] これと同じような現象が過去に幾つかの大規模案件で発生し，その何れもがライセンスサーバの問題ではなく，運用に絡んだサーバ・ディスク・ネットワークの高負荷に起因しております．具体的な内容は，以下の通りです．
+一斉再起動によるディスクやネットワークの遅延 → C:ドライブをSANディスクに集約したケースで発生しました．
+再起動時のアンチウイルスソフトのアップデート → 全てのサーバが一斉にアップデートを行うとディスクやネットワークにかなりの負荷がかかります．
+再起動時のアンチウイルスソフトのフルスキャン → 全てのファイルをスキャンした場合，ディスクやプロセッサに負荷がかかります．
+対応としては，再起動のタイミングをずらす，アンチウイルスソフトのアップデートやスキャンのタイミングをずらす，GGのサービスの開始をずらす等の方法が考えられます．
+ファイル KGTN2012012001.pdf [(58.8 KB)] [kitasp 技術センター, 2012/01/20 08:56]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1129/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -615,7 +626,7 @@ Auto Zoom ? 自動ズーム機能の有効/無効 Auto Launch ? 初期起動ア�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1237/">
+                                      <a href="/posts/new_md/doc1131/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -623,7 +634,7 @@ Auto Zoom ? 自動ズーム機能の有効/無効 Auto Launch ? 初期起動ア�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1237/">[Active Directory] GG初回ログオン時に，不完全なユーザープロファイルが作成される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1131/">[GGW3.2.1] GG環境で画像を表示すると色深度が浅く （低く） 表示される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -636,18 +647,17 @@ Auto Zoom ? 自動ズーム機能の有効/無効 Auto Launch ? 初期起動ア�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1237/"><i class="far fa-calendar"></i> 2011-11-02</a>
+                                            <a href="/posts/new_md/doc1131/"><i class="far fa-calendar"></i> 2012-01-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/11/02*
-[番号] 技術ノート KGTN 2011110202
-[現象] [Active Directory] GG初回ログオン時に，不完全なユーザープロファイルが作成される．
-[説明] ユーザープロファイルの中には， Windows のデスクトップにログオンした時に作成されるものがあり，これらのデータ （レジストリ等） はGG初回ログオン時に作成されません （注：GGはデスクトップを使用しないため） ．このような場合は，構成済みユーザープロファイルを作成して，それをデフォルトユーザーに設定 （コピー） することで，GG初回ログオン時に必要なユーザープロファイルが作成されます．構成済みユーザープロファイルについては，下記ページ等を参考にして下さい．
-http://technet.microsoft.com/ja-jp/library/cc780839(WS.10).aspx 構成済みユーザー プロファイルを作成する
-ファイル KGTN2011110202.pdf [(51 KB)] [kitasp 技術センター, 2011/11/02 13:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1237/" class="btn btn-template-main">続きを読む</a>
+2012/01/19*
+[番号] 技術ノート KGTN 2012011903
+[現象] [GGW3.2.1] GG環境で画像を表示すると色深度が浅く （低く） 表示される．
+[説明] GGW3.2.1 では，既定の色深度が16ビットに設定されており，色深度が深い （高い） 画像は減色されて表示されます．オリジナル通りの画像を表示させたい場合は， looseactivexlogon.html を以下のように修正して下さい （ActiveXクライアントの場合） ．
+ファイル KGTN2012011903.pdf [(59.5 KB)] [kitasp 技術センター, 2012/01/19 10:13]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1131/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -657,7 +667,7 @@ http://technet.microsoft.com/ja-jp/library/cc780839(WS.10).aspx 構成済みユ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1238/">
+                                      <a href="/posts/new_md/doc1130/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -665,7 +675,7 @@ http://technet.microsoft.com/ja-jp/library/cc780839(WS.10).aspx 構成済みユ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1238/">[GGH4.0] クライアントフレームを使用すると画面が乱れなくなる．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1130/">[GGW3.2.1] マルチモニタ機能を有効/無効にする方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -678,17 +688,19 @@ http://technet.microsoft.com/ja-jp/library/cc780839(WS.10).aspx 構成済みユ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1238/"><i class="far fa-calendar"></i> 2011-11-02</a>
+                                            <a href="/posts/new_md/doc1130/"><i class="far fa-calendar"></i> 2012-01-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/11/02*
-[番号] 技術ノート KGTN 2011110201
-[現象] [GGH4.0] クライアントフレームを使用すると画面が乱れなくなる．
-[説明] クライアントフレームを使用しない場合は， （GGクライアントにとって） 背景がクライアント上のデスクトップ （つまり様々な描画オブジェクト） になりますので，サーバ側の画面とクライアント側の画面を矛盾なく描画する必要があります （非常に複雑な処理です） ．クライアントフレームを使用する場合は， （GGクライアントにとって） 背景がサーバ上の壁紙のみになりますので，サーバ側の情報だけで描画することが出来ます．このようなことから，アプリケーションの描画処理に何らかの問題があったとしても， 「クライアントのデスクトップの画面が影響しないため」 正しく表示される可能性があります．
-ファイル KGTN2011110201.pdf [(51.7 KB)] [kitasp 技術センター, 2011/11/02 13:03]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1238/" class="btn btn-template-main">続きを読む</a>
+2012/01/19*
+[番号] 技術ノート KGTN 2012011904
+[現象] [GGW3.2.1] マルチモニタ機能を有効/無効にする方法は？
+[説明] 以下の設定で，マルチモニタ機能を有効/無効にすることが出来ます．
+Windows Client の場合 （ショートカット） ggw.exe -h server1 -mm 0 （無効にする場合） ggw.exe -h server1 -mm 1 （有効にする場合）
+ActiveX Client の場合 （looseactivexlogon.htmlを修正）
+ファイル KGTN2012011904.pdf [(59.1 KB)] [kitasp 技術センター, 2012/01/19 10:26]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1130/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -698,7 +710,7 @@ http://technet.microsoft.com/ja-jp/library/cc780839(WS.10).aspx 構成済みユ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1239/">
+                                      <a href="/posts/new_md/doc1137/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -706,7 +718,7 @@ http://technet.microsoft.com/ja-jp/library/cc780839(WS.10).aspx 構成済みユ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1239/">[iPad</a></h2>
+                                    <h2><a href="/posts/new_md/doc1137/">[GGW3.2.1/GGH4.0] GGではクライアント側でシリアルポート （COMポート） を使用できるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -719,23 +731,18 @@ http://technet.microsoft.com/ja-jp/library/cc780839(WS.10).aspx 構成済みユ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1239/"><i class="far fa-calendar"></i> 2011-11-02</a>
+                                            <a href="/posts/new_md/doc1137/"><i class="far fa-calendar"></i> 2012-01-18</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/11/02*
-[番号] 技術ノート KGTN 2011051101
-[現象] [iPad-Client] iPad-Cleint β版で日本語の入力が出来ない．
-[説明] iPad-Cleint β版では，日本語の入力は出来ません．対症療法になりますが，IME2000等の機能の 「ソフト キーボード」 を利用することで，日本語を入力することが可能です．iPad-Cleint リリース版では，iPad側のIME（日本語入力のキーボード） を使用して日本語の入力が可能になる予定です．
-補足１ フリーソフトの 「DekaスクリーンキーボードCompact」 をインストールし，アプリケーションとして登録して下さい．利用したいアプリケーションとこのアプリケーションを起動することで，タッチパネル上で106キーボードと同じ操作で日本語を含む文字入力が可能になります．
-補足２ GraphOn社からの情報によれば， iPad上で漢字入力 （かな漢字変換） が出来ない問題は， iPad のオペレーティングシステム iOS4 の不具合に起因しているとのことです．次期 iOS5 ではこの不具合が解消され，漢字入力 （かな漢字変換） が出来るようになるという報告がありました．
-実際，GraphOn社の開発チームは， iOS5 のβ版でこの問題が解消されることを確認しています．
-補足３ iOS5 の環境で日本語を入力しようとすると，地球マークのキー （言語切り替え） が表示されない現象が確認されています．この問題については，10月中旬にリリース予定の iPad Client Release 2 で修正される見込みです．
-補足４ iPad Client Release 2 (4.1.1.11249) で，クライアント側のIMEを使用して日本語入力が可能になりました （次ページの画像の通り） ．簡単にテストした範囲では，以下の問題があります．
-日本語フルキーボードを使用してローマ字かな変換をした場合，入力したアルファベットの前の部分が残るケースがある． 日本語テンキーを使用してひらがな入力をした場合，撥音・拗音・半濁音が入力できない．
-補足５ iPad Client Release 2 の問題は，次のリリース iPad Client Release 3 の最優先対応項目となっております．弊社でこの問題について検討したところ，英語キーボードについては （条件が付くかもしれませんが） 対応可能で，日本語キーボードについては撥音・拗音・半濁音の入力が非常に難しいと考えております．従って，iPad Client Release 3では，英語キーボードのみサポートする可能性があります．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1239/" class="btn btn-template-main">続きを読む</a>
+2012/01/18*
+[番号] 技術ノート KGTN 2012011601
+[現象] [GGW3.2.1/GGH4.0] GGではクライアント側でシリアルポート （COMポート） を使用できるのか？
+[説明] GGはシリアルポートおよびパラレルポートのリダイレクション機能をサポートしております．しかし，クライアント側のポートとサーバ側のポートを仮想的に線で結ぶようなイメージでなく，APIレベル （Win32の ReadFile と WriteFile） でデータをリダイレクトするため動作するアプリケーションが限られます．このようなことから，一般的に （汎用的に） シリアルポートを利用したい場合は，サードパーティーの製品をご利用下さい．GraphOn社のサイトで紹介されている製品は以下の通りです．
+補　足 シリアルポートおよびパラレルポートのリダイレクション機能に関するGraphOn社からの情報は，以下の通りです．
+ファイル KGTN2012011601.pdf [(89.4 KB)] [kitasp 技術センター, 2012/01/18 11:14]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1137/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -805,7 +812,7 @@ http://technet.microsoft.com/ja-jp/library/cc780839(WS.10).aspx 構成済みユ�
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

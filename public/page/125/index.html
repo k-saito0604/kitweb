@@ -409,25 +409,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc401/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2580/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc401/">[GGH4.X] 映像や音声を扱うアプリケーションがあるが，GG上で動作するか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2580/">[GGH4.X-5.X] クライアント側でランタイムエラー R6016 - not enough space for thread data が発生するが，どのようなエラーなのか？</a></h4>
                             <p class="author-category">
                             
                             日付 2014-01-29
                             </p>
                             <p class="intro">*技術ノート
 2014/01/29*
-[番号] 技術ノート KGTN 2014012008
-[現象] [GGH4.X] 映像や音声を扱うアプリケーションがあるが，GG上で動作するか？
-[説明] GGの通信プロトコル Rapid-X は多数のユーザが効率的に利用できるように，帯域の制限や通信データの圧縮伸張処理等を行っております．映像や音声を扱うリアルタイム性を要求するプログラムは，これらの処理によって残念ながら正常に動作しません．映像や音声を扱うアプリケーションを使用せねばならないシステムでは，GGの拡張パックが提供する 「クライアント側アプリケーション起動」 機能を使用して，それらのアプリケーションをクライアントPC上で実行して下さい．
-ファイル KGTN2014012008.pdf [(53.6 KB)] [kitasp 技術センター, 2014/01/29 16:48]</p>
+[番号] 技術ノート KGTN 2014010904
+[現象] [GGH4.X-5.X] クライアント側でランタイムエラー R6016 - not enough space for thread data が発生するが，どのようなエラーなのか？
+[説明] 下記マイクロソフト社のページによれば， C ランタイム エラー R6016 は 「メモリ不足のため、_beginthread を呼び出せません」 という意味です．GGのクライアントがサーバへ接続するためのスレッドを生成しようとした時や終了処理を行っている時などに，メモリ不足でスレッドの生成に失敗したと考えられます．特に実害が無ければ，このエラーを無視して頂いて構いません．詳細については，下記ページをご覧下さい．
+https://msdn.microsoft.com/ja-jp/library/d509d9f9.aspx http://m-jun.seesaa.net/article/423112238.html
+ファイル KGTN2014010904.pdf [(66.3 KB)] [kitasp 技術センター, 2016/05/27 14:07]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc401/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2580/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,26 +447,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc398/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc447/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc398/">[GGH4.X] 特定のユーザに限りアプリケーションが正常に動作しない．</a></h4>
+                            <h4><a href="/posts/new_md/doc447/">[GGH4.X-6.X] GG上で動作するアプリケーションから、そのセッションを終了させたい。</a></h4>
                             <p class="author-category">
                             
                             日付 2014-01-29
                             </p>
                             <p class="intro">*技術ノート
 2014/01/29*
-[番号] 技術ノート KGTN 2014012101
-[現象] [GGH4.X] 特定のユーザに限りアプリケーションが正常に動作しない．
-[説明] アプリケーションが正常に動作するアカウントを UserA ，アプリケーションが正常に動作しないアカウントをUserB とします．先ず，クライアントPCに依存した問題でないことを確認するために，同一のクライアントPCから UserA と UserB でログオンしアプリケーションを起動して下さい． UserA で正常に動作し， UserB でエラーが発生すれば，クライアントPCに依存しない問題と考えられます．
-上記に確認により，（GGの問題ではなく） アカウントに依存した問題だと考えられますので， UserA と UserB のアカウントの差異を詳細に調べて下さい．特にアカウントの権限，アクセス権の設定，プロファイルの異常などを細かくチェックして下さい．
-ファイル KGTN2014012101.pdf [(48.9 KB)] [kitasp 技術センター, 2014/01/29 16:57]</p>
+[番号] 技術ノート KGTN 2013112901
+[現象] [GGH4.X-6.X] GG上で動作するアプリケーションから、そのセッションを終了させたい。
+[説明] 以下のコードを実行することで、セッションを直ちに終了させることが出来ます。
+hEvent = ::OpenEvent(EVENT_ALL_ACCESS,FALSE,_T(&quot;ggSessionShutdownEvent&quot;)); ::SetEvent(hEvent); ::CloseHandle(hEvent);  拡張パックにはこの機能を実装したプログラム GGEasyLogoff が含まれており、これを呼び出す （起動する） ことでアプリケーションやバッチでセッションを終了させることが可能となります。
+ファイル KGTN2013112901.pdf [(39.3 KB)] [kitasp 技術センター, 2020/03/23 14:29]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc398/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc447/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -484,26 +485,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2640/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc406/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2640/">[GGW3.2.1/GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc406/">[GGH4.X] 2014年1月時点で，サポート対象となるGGのバージョンは？</a></h4>
                             <p class="author-category">
                             
                             日付 2014-01-29
                             </p>
                             <p class="intro">*技術ノート
 2014/01/29*
-[番号] 技術ノート KGTN 2013121702
-[現象] [GGW3.2.1/GGH4.X-5.X] 特定のクライアントPCからログオンすると時間がかかる．同一ユーザで他のクライアント PCからログオンすると正常だ．
-[説明] ログオンに時間が掛かるクライアントPCのCPU・メモリ・ディスク等の負荷を確認して下さい．CPU負荷が高い，空きメモリが少ない，ディスクのアクセスランプが殆ど点灯状態，このような状況であれば，クライアントPC自体に問題がありますので，この問題を解決して下さい．
-上記の内容が正常な場合は，クライアントPCに接続されたドライブやプリンタに問題がある可能性が高いと考えられます． 「存在しないネットワークドライブを参照している」 「存在しないネットワークプリンタが登録されている」 等が，よく発生する原因です．
-ファイル KGTN2013121702.pdf [(59.6 KB)] [kitasp 技術センター, 2016/02/05 13:25]</p>
+[番号] 技術ノート KGTN 2014012004
+[現象] [GGH4.X] 2014年1月時点で，サポート対象となるGGのバージョンは？
+[説明] 2014年1月時点で GGH4.6, GGH4.7, GGH4.8 がサポート対象となっており，それ以前のバージョンはすべてサポート終了 （End of Life） となっております．
+ファイル KGTN2014012004.pdf [(39.8 KB)] [kitasp 技術センター, 2014/01/29 16:42]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2640/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc406/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -522,26 +522,29 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc452/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc440/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc452/">[GGW3.2.1/GGH4.X] APSログに記録されていた WLE5 の意味は？</a></h4>
+                            <h4><a href="/posts/new_md/doc440/">[GGH4.X] ActiveXクライアントをインストール中に IE でエラー （Win32の例外） が発生した．何をすべきか？</a></h4>
                             <p class="author-category">
                             
                             日付 2014-01-29
                             </p>
                             <p class="intro">*技術ノート
 2014/01/29*
-[番号] 技術ノート KGTN 2013120902
-[現象] [GGW3.2.1/GGH4.X] APSログに記録されていた WLE5 の意味は？
-[説明] WLE は &ldquo;Win32 Error Code&rdquo; を意味し，そのエラーコード 5 は ERROR_ACCESS_DENIED （アクセスが拒否されました） という意味です．エラーコードの一覧は，例えば下記サイトをご覧下さい．
-http://ir9.jp/prog/ayu/win32err.htm
-ファイル KGTN2013120902.pdf [(50.3 KB)] [kitasp 技術センター, 2014/01/29 14:14]</p>
+[番号] 技術ノート KGTN 2013121901
+[現象] [GGH4.X] ActiveXクライアントをインストール中に IE でエラー （Win32の例外） が発生した．何をすべきか？
+[説明] 一般にプログラムのインストール中にシステムレベルのエラーが発生した場合，どのような状況になっているのか推測出来ません．とりあえず，その時のデスクトップのスクリーンショットを採取し， （関連するファイルがロックされた状態になっている可能性がありますので） マシンを再起動して下さい．そして，以下の手順でActiveXクライアントを再度インストールして下さい．
+  ActiveXクライアントを通常の手順でインストール A. 正常にインストールが完了しログオンに成功 → 正常 B. システムレベルのエラーが再度発生 → Windowsの障害 C. 正常にインストールが完了しログオンに失敗 → 下記2へ
+  GGAXDelete4 または GGAXDelete4G でActiveXクライアントを強制削除
+  ActiveXクライアントを通常の手順でインストール A. 正常にインストールが完了しログオンに成功 → 正常 B. 正常にインストールが完了しログオンに失敗 → 下記4へ
+  GGAXDelete4 または GGAXDelete4G でActiveXクライアントを強制コピー
+  ファイル KGTN2013121901.pdf [(57 KB)] [kitasp 技術センター, 2014/01/29 14:38]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc452/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc440/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

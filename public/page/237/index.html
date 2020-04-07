@@ -409,27 +409,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1681/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1532/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1681/">Ver4.0系のActiveXクライアントのCABファイルが，約10MBになったが何が変わったのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1532/">ライセンスサーバを 3台冗長構成 （Three-Server Redundancy） にする場合，ライセンスファイルに何か追加する必要があるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-07-28
+                            日付 2010-11-26
                             </p>
                             <p class="intro">*技術ノート
-2010/07/28*
-[番号] 技術ノート KGTN 2010072805
-[現象] Ver4.0系のActiveXクライアントのCABファイルが，約10MBになったが何が変わったのか？
-[説明] Ver3.2系のCABファイル （ggw-activex.cab） は約2MBですので，Ver4.0系のCABファイル （同じファイル名） は約5倍になりました．大きくなった主な理由は，クライアントプリンタ機能の仕様変更に伴い， Adobe PDF Library がActiveXクライアントに加えられたためです．
-備考1 ビルド 4.0.0.7757 のCABファイル （ggw-activex.cab） の署名関連の情報は，以下の通りです．
-デジタル署名 ? 署名時刻 2010年7月13日 6:13:00， 有効期限 2011年11月13日 (Thawte) 副署名 - 署名時刻 2010年7月13日 6:13:00， 有効期限 2012年06月15日 (VeriSign)
-ファイル KGTN2010072805.pdf [(56.1 KB)] [kitasp 技術センター, 2010/07/28 13:33]</p>
+2010/11/26*
+[番号] 技術ノート KGTN 2010112602
+[現象] ライセンスサーバを 3台冗長構成 （Three-Server Redundancy） にする場合，ライセンスファイルに何か追加する必要があるのか？
+[説明] プライマリライセンスサーバが常にマスターとして動作するようにキーワード PRIMARY_IS_MASTER を記述する必要があります．
+SERVER pat 17003456 27001 PRIMARY_IS_MASTER SERVER lee 17004355 27001 SERVER terry 17007ea8 27001
+参　考 PRIMARY_IS_MASTER - Used with license servers configured for three-server redundancy to indicate how master control is transferred between the primary and secondary servers. If this is set and the primary server goes down, when the primary server comes back up again, it will always become the master.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1681/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1532/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -448,25 +447,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1683/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1534/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1683/">Ver4.0系の高負荷時 （例：オンライン開始時） の挙動はどうか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1534/">Windows Server 2008 上で動作するVer3.2.1系 （ggw-3.2.1.4466等） で，セッションが残ることがある．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-07-28
+                            日付 2010-11-25
                             </p>
                             <p class="intro">*技術ノート
-2010/07/28*
-[番号] 技術ノート KGTN 2010072803
-[現象] Ver4.0系の高負荷時 （例：オンライン開始時） の挙動はどうか？
-[説明] エンタープライズオプションの負荷試験ツール GMLogonTest で，１秒間隔で25ログオンの試験を繰り返しましたが， 「ログオンに失敗する」 「セッションが消える」 「アプリケーションがハングアップする」 等の現象は発生しませんでした （環境： OS ? Windows Server 2003, CPU - Pentium4 2.8GHz，MEM ? 1GB） ．唯一発生した問題は，高負荷時にクラスタマネージャのホスト一覧から自サーバが消え，セッション一覧が表示されないという現象でした．クラスタマネージャを閉じて，新たに起動すればセッションが正しく表示されますので，とりあえず運用回避で対応が可能です．
-ファイル KGTN2010072803.pdf [(59.4 KB)] [kitasp 技術センター, 2010/07/28 10:44]</p>
+2010/11/25*
+[番号] 技術ノート KGTN 2010112502
+[現象] Windows Server 2008 上で動作するVer3.2.1系 （ggw-3.2.1.4466等） で，セッションが残ることがある．
+HKLM¥GraphOn¥Bridges¥1.0.0¥AppServer SessionTimeoutBrokenConnection　REG_DWORD 0
+補　足 本現象は， SessionTimeoutBrokenConnection &gt; 0 であれば Windows Server 2008 だけでなく Windows Server 2003 でも同様に発生します．従って， SessionTimeoutBrokenConnection という項目が追加されたことによる仕様変更と推測しています （GraphOn社へ確認中） ．
+[説明]
+ファイル KGTN2010112502.pdf [(71.6 KB)] [kitasp 技術センター, 2010/11/25 14:45]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1683/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1534/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,28 +486,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1686/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1536/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1686/">Ver4.0系でのクライアントプリンタの処理 （UPD/WPDのドライバ選択） について知りたい．</a></h4>
+                            <h4><a href="/posts/new_md/doc1536/">SessionVerification を 0 に変更したところ，セッションが切断されなくなった．切断の原因として，どんなことが考えられるか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-07-27
+                            日付 2010-11-24
                             </p>
                             <p class="intro">*技術ノート
-2010/07/27*
-[番号] 技術ノート KGTN 2010072704
-[現象] Ver4.0系でのクライアントプリンタの処理 （UPD/WPDのドライバ選択） について知りたい．
-[説明] Ver3.2系では，クライアント側にプリンタ情報 print.ini を配置し，この情報に従って 「クライアント （ユーザ） 単位に」 クライアントプリンタが構成されていました．Ver4.0系では，サーバ側にプリンタ情報 MappedPrinterDrivers.xml を配置し，この情報に従って 「サーバ単位に」 クライアントプリンタが構成されるようになりました．
-Universal Printer Driver と Windows Printer Drivers の選択は，次のアルゴリズムで行われます．
-MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver sources でUniversal Printer Driver が選択されていれば， UPD で構成する． Driver sources でWindows Printer Driver のみが選択されていれば， WPD で構成する． どちらも選択されていない場合は，WPD で構成する．
-つまり，簡単にまとめると，以下のようになります．
-MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver sources でUniversal Printer Driver が選択されていれば， UPD で構成する． Driver sources でUniversal Printer Driver が選択されていなければ， WPD で構成する．</p>
+2010/11/24*
+[番号] 技術ノート KGTN 2010112501
+[現象] SessionVerification を 0 に変更したところ，セッションが切断されなくなった．切断の原因として，どんなことが考えられるか？
+[説明] SessionVerification が 1 の場合，GGクライアントは30秒毎にPING （要求） パケットをGGサーバへ送信し，GGサーバはこの30秒毎のパケットを受信すると，PING （応答） パケットをGGクライアントへ送信します．GGクライアントおよびGGサーバは，30秒毎のPING （要求または応答） パケットが続けて2回相手から届かなかった時，通信障害が発生していると認識しセッションを切断します．
+従って，原因としては 1) OS （Windows） の問題等によりPINGパケットを送信出来なかった， 2) CPUの過負荷やスワップアウトの多発等によりPINGパケットの送信に著しく時間を要した， 3) クライアント〜サーバ間のネットワーク （機材） で障害が発生しPINGパケットが配送されなかった，などが考えられます．
+参　考 ある案件では，特定のシステムのみセッションの切断が発生し，上記3が原因と推測されました．しかし，大規模なシステムということもあり，サービス開始までに障害の原因を特定することが出来なかったため，暫定処置として SessionVerification を 0 に設定して運用を開始しました．既に半年以上運用されておりますが，特に問題等は発生しておりません （注意： あくまでも事例の紹介であり， SessionVerification を 0 に設定しての運用を勧めるものではありません） ．
+ファイル KGTN2010112501.pdf [(67.3 KB)] [kitasp 技術センター, 2010/11/25 03:47]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1686/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1536/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -525,25 +525,27 @@ MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1688/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1538/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1688/">Ver4.0系では，クライアントプリンタの構成がPW (Program Window) の処理で行われるのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1538/">SessionVerification を 0 に設定した場合，ユーザが誤ってログオフした時，セッションが終了せずに残り続けたりしないのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-07-27
+                            日付 2010-11-24
                             </p>
                             <p class="intro">*技術ノート
-2010/07/27*
-[番号] 技術ノート KGTN 2010072702
-[現象] Ver4.0系では，クライアントプリンタの構成がPW (Program Window) の処理で行われるのか？
-[説明] いいえ，クライアントプリンタの構成は PW の起動と並行して行われます．この仕組みの変更により， PW の初期化完了までの時間が非常に短くなりました．これと絡んで，サーバ側でデフォルトプリンタを変更されても，クライアント側のデフォルトプリンタが変更されない仕様になりました．
-ファイル KGTN2010072702.pdf [(47.5 KB)] [kitasp 技術センター, 2010/07/27 09:30]</p>
+2010/11/24*
+[番号] 技術ノート KGTN 2010112402
+[現象] SessionVerification を 0 に設定した場合，ユーザが誤ってログオフした時，セッションが終了せずに残り続けたりしないのか？
+[説明] サーバ側およびクライアント側それぞれでネットワークの切断が認識されない障害が発生した時 （例えば中間に介在するネットワーク機材の障害等） ， SessionVerification を 1 に設定することでGGレベルで障害を検出することが出来ます．
+ご質問の 「SessionVerification を 0 に設定した状況で，ユーザが誤ってログオフした時」 は，GGクライアントがログオフを認識し，その事象をGGサーバに通知しますので，セッションは正しく切断されます．レベル4のAPSログには，例えば以下のような情報が記録されます．
+111 2010-10-24 12:04:43.125 User01 on Server, iexplore (936) CS: Client disconnected. &hellip; 129 2010-10-24 12:04:44.750 User01 on Server, aps (936) Session &ldquo;User001 on Server&rdquo; stopped.
+ファイル KGTN2010112402.pdf [(63.1 KB)] [kitasp 技術センター, 2010/11/24 12:15]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1688/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1538/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

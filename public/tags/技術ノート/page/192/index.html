@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1179/">
+                                      <a href="/posts/new_md/doc2382/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1179/">APIラッピング方式は，スクリーン・スクレイピング方式に比べ常に描画性能と高いと考えて良いか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2382/">[GGH4.X-5.X] 設定ファイルHostProperties.xml 中のQuantizeSwitch の機能と値を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,18 +340,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1179/"><i class="far fa-calendar"></i> 2011-12-15</a>
+                                            <a href="/posts/new_md/doc2382/"><i class="far fa-calendar"></i> 2012-02-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/15*
-[番号] 技術ノート KGTN 2011121503
-[現象] APIラッピング方式は，スクリーン・スクレイピング方式に比べ常に描画性能と高いと考えて良いか？
-[説明] APIラッピング方式ではアプリケーションが描画した命令 （API） をクライアントへ 「同期して」 転送し，それを受け取ったクライアントが命令内容に従って物理的な画面に描画します．一方，スクリーン・スクレイピング方式ではアプリケーションが描画した結果 （ビットマップの差分） をクライアントへ 「非同期に」 転送し，それを受け取ったクライアントがビットマップを物理的な画面に描画します．アプリケーションの操作ウインドウのように描画オブジェクトが多数配置された画面等では，サーバ側での描画のタイミングと同期してクライアントで描画が行われるAPIラッピング方式の方がより高い描画性能が得られます．
-APIラッピング方式にも不得意な画面があります．全画面サイズの画像 （ビットマップ） を順に表示するようなケースでは，APIラッピング方式でも画像データをクライアントへ送る必要があり　（１ピクセル単位に描画命令を送るとデータ量やオーバーヘッドが大幅に増加するため） ，この画像データの転送時間がほぼ描画に要する時間となります．従って，APIラッピング方式のメリットが活きる箇所が少なく，スクリーン・スクレイピング方式と同程度の描画性能になると思われます （非同期でビットマップを転送するスクリーン・スクレイピング方式の方が速く感じることもあります） ．敢えて言えば，GGは全ユーザのパフォーマンスが上がるよう通信帯域を管理しておりますので，多数のユーザが全画面サイズの画像 （ビットマップ） を順に表示するようなケースでは，GGの方がトータルの描画性能が高くなる可能性はあります．
-ファイル KGTN2011121503.pdf [(65.2 KB)] [kitasp 技術センター, 2011/12/15 10:22]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1179/" class="btn btn-template-main">続きを読む</a>
+2012/02/14*
+[番号] 技術ノート KGTN 2012021501
+[現象] [GGH4.X-5.X] 設定ファイルHostProperties.xml 中のQuantizeSwitch の機能と値を知りたい．
+[説明] この項目は，イメージ圧縮機能を 「サーバ単位に」 設定したい時に使用します．サーバ側の設定とクライアント側の設定に依存してイメージ圧縮機能が設定され，その詳細は以下の通りです．
+  サーバ側の設定 クライアント側の設定 イメージ圧縮機能 QuantizeSwitch = 0 -mx 32 -qt 0 無効 QuantizeSwitch = 0 -mx 32 無効 QuantizeSwitch = 1 -mx 32 -qt 0 有効 QuantizeSwitch = 1 -mx 32 有効  QuantizeSwitch = 4294967295 -mx 32 -qt 0 無効 QuantizeSwitch = 4294967295 -mx 32 有効
+ この内容をまとめると，以下のようになります．
+ QuantizeSwitch = 0 の時，クライアントのイメージ圧縮の設定によらず無効． QuantizeSwitch = 1 の時，クライアントのイメージ圧縮の設定によらず有効． QuantizeSwitch = 4294967295 の時，クライアントのイメージ圧縮の設定に従う．  ファイル KGTN2012021501.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2382/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -361,7 +362,7 @@ APIラッピング方式にも不得意な画面があります．全画面サ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1182/">
+                                      <a href="/posts/new_md/doc206/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -369,7 +370,7 @@ APIラッピング方式にも不得意な画面があります．全画面サ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1182/">[GGW3.2.1] 20MBを超えるファイルをコピーした時， 「ファイルがロックされる等の事象は発生するもののコピー処理は成功する」 と考えて良いか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc206/">[GGW3.2.1/GGH4.X] GGはICカードやUSBトークン等による認証をサポートしているのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -382,17 +383,22 @@ APIラッピング方式にも不得意な画面があります．全画面サ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1182/"><i class="far fa-calendar"></i> 2011-12-14</a>
+                                            <a href="/posts/new_md/doc206/"><i class="far fa-calendar"></i> 2012-02-13</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/14*
-[番号] 技術ノート KGTN 2011121501
-[現象] [GGW3.2.1] 20MBを超えるファイルをコピーした時， 「ファイルがロックされる等の事象は発生するもののコピー処理は成功する」 と考えて良いか？
-[説明] 最初のファイルコピーでは確かにそのような動作を示しますが，しかしその後のファイルコピーでは異常な動作（描画が正しくない，コネクションが切断されるなど） が発生することが確認されております．従って，20MBを超えるファイルコピーについては， 「条件付きであっても」 如何なる動作もお約束出来ません．
-ファイル KGTN2011121501.pdf [(51.1 KB)] [kitasp 技術センター, 2011/12/15 06:47]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1182/" class="btn btn-template-main">続きを読む</a>
+2012/02/13*
+[番号] 技術ノート KGTN 2012021401
+[現象] [GGW3.2.1/GGH4.X] GGはICカードやUSBトークン等による認証をサポートしているのか？
+[説明] GG自体はICカードやUSBトークン等による認証をサポートしておりません．しかし，クライアント側およびサーバ側に以下の処理を行うアプリケーションを作成することで，それに近い機能を実装することが可能です．
+[クライアント側認証アプリケーション]
+ ログオン用アプリケーションでユーザを認証 （ICカードやUSBトークン等） する． GGクライアントを起動する． ggw.exe -h &lt;GGサーバ&gt; -u -p -a -r ※ GGH4.X の場合は gg-client.exe を指定  [サーバ側認証アプリケーション]
+ 引数で渡される認証情報 （ -r ） をチェックする． 成功すれば本来のアプリケーションを起動する． 失敗すればアプリケーションを終了する （つまりログオフになる） ．  クライアント～サーバ間の認証 （情報） は，必ずしも必要ではありません．しかし高いセキュリティが要求される場合は，ワンタイムパスワード等を併用されることをお勧めします．
+補足１ 「利用ユーザ数が最小のサーバ」 など動的にサーバを選択したい場合は，GGクライアントを起動する前にその情報を得る機能を追加する必要があります．なお，GGサーバの利用ユーザ数は，拡張パックが提供するコマンド GGSessionMonitor で得ることが出来ます．
+補足２ GraphOｎ社のリリースノートの中に &ldquo;Smart card&rdquo; の文言が見られますが，これは特定のプラットフォーム上でドキュメントに署名するための機能で，スマートカードによる認証機能ではありません．
+ファイル KGTN2012021401.pdf [(69.4 KB)] [kitasp 技術センター, 2014/09/06 17:20]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc206/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -402,7 +408,7 @@ APIラッピング方式にも不得意な画面があります．全画面サ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1181/">
+                                      <a href="/posts/new_md/doc1081/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -410,7 +416,7 @@ APIラッピング方式にも不得意な画面があります．全画面サ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1181/">[GGW3.2.1] 20MBを超えるファイルを分割してクライアントへコピーすることを考えているが，分割したファイルをクライアント上で結合することは出来るか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1081/">[iPad Client] iPad Client からGGサーバにログオンすると環境変数CLIENTCOMPUTERNAME とCLIENTCOMPUTERIPADDRESS が設定されない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -423,18 +429,18 @@ APIラッピング方式にも不得意な画面があります．全画面サ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1181/"><i class="far fa-calendar"></i> 2011-12-14</a>
+                                            <a href="/posts/new_md/doc1081/"><i class="far fa-calendar"></i> 2012-02-13</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/14*
-[番号] 技術ノート KGTN 2011121502
-[現象] [GGW3.2.1] 20MBを超えるファイルを分割してクライアントへコピーすることを考えているが，分割したファイルをクライアント上で結合することは出来るか？
-[説明] ファイルを結合するには，ファイルの内容を読まねばなりませんので，サーバ上で動作するアプリケーションで結合することは技術的に問題があります．従って，以下のような手順でクライアント側で結合する必要があります．
-転送したいファイルを20MB以下のサイズに分割する． 分割したファイルを結合するバッチファイルを作成する． 分割したファイルおよび結合用バッチファイルをクライアントへコピーする． ユーザがクライアント上で結合用バッチファイルを実行する．
-ファイル KGTN2011121502.pdf [(50.1 KB)] [kitasp 技術センター, 2011/12/15 06:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1181/" class="btn btn-template-main">続きを読む</a>
+2012/02/13*
+[番号] 技術ノート KGTN 2011110902
+[現象] [iPad Client] iPad Client からGGサーバにログオンすると環境変数CLIENTCOMPUTERNAME とCLIENTCOMPUTERIPADDRESS が設定されない．
+[説明] GraphOn社も現象を確認しており，現在仕分けチームの判断待ちの状態にあります．
+補　足 GGH4.0.1.Patch4 で修正されました．
+ファイル KGTN2011110902.pdf [(59.8 KB)] [kitasp 技術センター, 2012/02/14 08:33]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1081/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -444,7 +450,7 @@ APIラッピング方式にも不得意な画面があります．全画面サ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1183/">
+                                      <a href="/posts/new_md/doc1082/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -452,7 +458,7 @@ APIラッピング方式にも不得意な画面があります．全画面サ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1183/">[iPad Client] iPad Client の色深度を最大限まで上げたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1082/">Adobe Acrobat 9 Pro は，Ver3.2.1 上で動作するのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -465,18 +471,19 @@ APIラッピング方式にも不得意な画面があります．全画面サ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1183/"><i class="far fa-calendar"></i> 2011-12-14</a>
+                                            <a href="/posts/new_md/doc1082/"><i class="far fa-calendar"></i> 2012-02-13</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/14*
-[番号] 技術ノート KGTN 2011121401
-[現象] [iPad Client] iPad Client の色深度を最大限まで上げたい．
-[説明] 現時点で最新の iPad Client (4.1.1.11561) は， Settings の Image Compression を無効にすることで画像圧縮機能を無効にすることが出来ますが，最大色深度を設定する （32bit に上げる） ことは出来ません．この問題を解決するために，サーバ側の既定の最大色深度を 32bit に変更します．この設定の手順は以下の通りです．
-サービス GO-Global Application Publishing Service を停止する． エディタで C:¥Documents and Settings¥All Users¥Application Data¥GraphOn¥HostProperties.xml を開く （注：改行コードの差異から，メモ帳で開くと正しく表示されません） ． 文字列 を探す． その次の行 16の 16 を 32 に修正する． ファイルを保存する． サービス GO-Global Application Publishing Service を開始する．
-この手順で既定の最大色深度が 32bit になりますので， iPad Client (4.1.1.11561) の Settings の Image Compression を無効にして （画像圧縮機能を無効にする） ，GGサーバに接続して下さい．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1183/" class="btn btn-template-main">続きを読む</a>
+2012/02/13*
+[番号] 技術ノート KGTN 2010021803
+[現象] Adobe Acrobat 9 Pro は，Ver3.2.1 上で動作するのか？
+[説明] 技術およびライセンス上の問題があると考えられます．ドキュメントのPDF化が目的であれば，GGのオプション製品 SkyPDF for GO-Global の利用をご検討下さい．
+補足１ 「GGのクライアントプリンタとして &ldquo;Jaws PDF Creator&rdquo;　と &ldquo;PrimoPDF&rdquo; が動作した」 という報告が，幾つかのユーザ様より届いております．当然のことながら，GraphOn社および各ソフトウエアベンダーがその動作を保証するものではありませんので，利用等に当たっては自己責任でお願いします．
+補足２ GGH4.0では，クライアント印刷機能 （Universal Printer Driver 有効時） で &ldquo;Preview PDF&rdquo; というプリンタが自動的に作成され，このプリンタに印刷するとクライアント側にそのドキュメントのPDFファイルが表示されます． Adobe Reader のファイルメニューの中の 「コピーを保存」 を選ぶことで，PDFファイルをクライアント上に保存することが出来ます．つまり，GGH4.0では Adobe Acrobat 等のPDFクリエーター無しにPDFファイルを作成することが可能です．
+ファイル KGTN2010021803.pdf [(67.9 KB)] [kitasp 技術センター, 2012/02/13 12:48]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1082/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -486,7 +493,7 @@ APIラッピング方式にも不得意な画面があります．全画面サ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1185/">
+                                      <a href="/posts/new_md/doc1083/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -494,7 +501,7 @@ APIラッピング方式にも不得意な画面があります．全画面サ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1185/">[iPad Client] アプリケーションのウインドウをドラッグすると表示が遅い．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1083/">[Android Client] Android 4.0 (Ice Cream Sandwich) で Android Client を使ったが，キーボード表示等はメニューボタンから操作出来た方が良い．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -507,18 +514,17 @@ APIラッピング方式にも不得意な画面があります．全画面サ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1185/"><i class="far fa-calendar"></i> 2011-12-12</a>
+                                            <a href="/posts/new_md/doc1083/"><i class="far fa-calendar"></i> 2012-02-12</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/12*
-[番号] 技術ノート KGTN 2011121202
-[現象] [iPad Client] アプリケーションのウインドウをドラッグすると表示が遅い．
-[説明] 以下のような操作を行うことで，ウインドウのドラッグ操作をスムーズに行うことが出来ます．
-ピンチイン （画面を縮小） 操作でカンバス全体を表示する． ウインドウのドラッグ操作を行う． 指を離す． （オートズーム機能で） 縮小したウインドウが自動的に拡大される．
-ファイル KGTN2011121202.pdf [(46.8 KB)] [kitasp 技術センター, 2011/12/12 12:51]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1185/" class="btn btn-template-main">続きを読む</a>
+2012/02/12*
+[番号] 技術ノート KGTN 2012021303
+[現象] [Android Client] Android 4.0 (Ice Cream Sandwich) で Android Client を使ったが，キーボード表示等はメニューボタンから操作出来た方が良い．
+[説明] Android Phone にはメニューボタンが存在しますが， Android Tablet や iPad にはメニューボタンが存在しません．このため，操作性の統一をはかると，現在の仕様 （オンスクリーン・ツールバー） になります．
+ファイル KGTN2012021303.pdf [(47.8 KB)] [kitasp 技術センター, 2012/02/13 08:05]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1083/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -528,7 +534,7 @@ APIラッピング方式にも不得意な画面があります．全画面サ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1184/">
+                                      <a href="/posts/new_md/doc1084/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -536,7 +542,7 @@ APIラッピング方式にも不得意な画面があります．全画面サ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1184/">[iPad Client] キーボードを表示すると，GG上で動作するアプリケーションのウインドウが縮小表示される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1084/">[Android Client] タブレットを横にした状態でGGサーバに接続し，その後にタブレットを縦にすると （ローテーとさせると） ，画面が小さく表示される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -549,17 +555,17 @@ APIラッピング方式にも不得意な画面があります．全画面サ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1184/"><i class="far fa-calendar"></i> 2011-12-12</a>
+                                            <a href="/posts/new_md/doc1084/"><i class="far fa-calendar"></i> 2012-02-12</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/12*
-[番号] 技術ノート KGTN 2011121203
-[現象] [iPad Client] キーボードを表示すると，GG上で動作するアプリケーションのウインドウが縮小表示される．
-[説明] iPad のキーボードを分割 （Split） 表示することで （キーボード右下のキーボードボタンを長押し分割を選択） ，キーボードが表示されてもウインドウが縮小表示されなくなります．
-ファイル KGTN2011121203.pdf [(43.3 KB)] [kitasp 技術センター, 2011/12/12 13:24]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1184/" class="btn btn-template-main">続きを読む</a>
+2012/02/12*
+[番号] 技術ノート KGTN 2012021302
+[現象] [Android Client] タブレットを横にした状態でGGサーバに接続し，その後にタブレットを縦にすると （ローテーとさせると） ，画面が小さく表示される．
+[説明] GGはクライアントから接続要求があった時点で画面サイズ （解像度） を設定します．このような仕様のため，接続した後にタブレットをローテートさせても画面サイズは変わらず，結果的に画面が小さく表示されてしまいます．画面サイズを変更したい時は，
+ セッションを Disconnect する， 2) タブレットをローテートさせる， 3) セッション再接続を行う という手順で操作を行って下さい．なお，セッション再接続時にタッチスクリーン・キーボードが表示されているとその分狭くなりますので，必ずタッチスクリーン・キーボードを非表示にして再接続を行うようにして下さい．  ファイル KGTN2012021302.pdf [(55.7 KB)] [kitasp 技術センター, 2012/02/13 05:29]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1084/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -569,7 +575,7 @@ APIラッピング方式にも不得意な画面があります．全画面サ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1186/">
+                                      <a href="/posts/new_md/doc1089/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -577,7 +583,7 @@ APIラッピング方式にも不得意な画面があります．全画面サ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1186/">[GGW3.2.1] GGW3.2.1.4510 (Patch6) の主な変更点は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1089/">[Android Client] Android Client は， Android 4.0 (Ice Cream Sandwich) の環境でも動作するのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -590,18 +596,17 @@ APIラッピング方式にも不得意な画面があります．全画面サ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1186/"><i class="far fa-calendar"></i> 2011-12-11</a>
+                                            <a href="/posts/new_md/doc1089/"><i class="far fa-calendar"></i> 2012-02-10</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/11*
-[番号] 技術ノート KGTN 2011121201
-[現象] [GGW3.2.1] GGW3.2.1.4510 (Patch6) の主な変更点は？
-[説明] GGW3.2.1. 4482 (Patch5) からGGW3.2.1.4510 (Patch6) への主な変更点は，以下の通りです．
-Web Proxy Auto-Discovery Protocol (WPAD) がサポートされました． クラスタマネージャでセッションが切断された時，セッションが閉じない問題が修正されました． 右Ctrl と Alr を押下した時，セッションがロックされる問題が修正されました． セッションが切断れた時，ページファイルが増える問題が修正されました． 2048-bit SSL 証明書使用時に接続出来ない問題が修正されました． Mac OS 10.7 Lion 上でSafari plug-in が動作しない問題が修正されました． バッファオーバーフローの問題が修正されました （安定性の向上） ． Mozilla Firefox 5.0 およびそれ以降がサポートされました．
-ファイル KGTN2011121201.pdf [(53.8 KB)] [kitasp 技術センター, 2011/12/12 08:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1186/" class="btn btn-template-main">続きを読む</a>
+2012/02/10*
+[番号] 技術ノート KGTN 2012021004
+[現象] [Android Client] Android Client は， Android 4.0 (Ice Cream Sandwich) の環境でも動作するのか？
+[説明] 弊社では未だ確認しておりませんが， HTC Desire HD にAndroid 4.0 をインストールしたユーザ様より， 「画面は小さいものの，特に問題なく動作している」 という報告がありました．
+ファイル KGTN2012021004.pdf [(46.6 KB)] [kitasp 技術センター, 2012/02/10 11:08]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1089/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -611,7 +616,7 @@ Web Proxy Auto-Discovery Protocol (WPAD) がサポートされました． ク�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1192/">
+                                      <a href="/posts/new_md/doc1092/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -619,7 +624,7 @@ Web Proxy Auto-Discovery Protocol (WPAD) がサポートされました． ク�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1192/">[GGH4.0] 無操作タイムアウト （アイドルタイムアウト） に関して，マウスポインタの移動も 「操作された」 と判断されるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1092/">[Android Client] Android Client は，いつリリースされるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -632,18 +637,18 @@ Web Proxy Auto-Discovery Protocol (WPAD) がサポートされました． ク�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1192/"><i class="far fa-calendar"></i> 2011-12-09</a>
+                                            <a href="/posts/new_md/doc1092/"><i class="far fa-calendar"></i> 2012-02-10</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/09*
-[番号] 技術ノート KGTN 2011120701
-[現象] [GGH4.0] 無操作タイムアウト （アイドルタイムアウト） に関して，マウスポインタの移動も 「操作された」 と判断されるのか？
-[説明] Program Window および GG上で動作しているアプリケーションのウインドウ上でマウスポインタを移動し続けると，無操作タイムアウトは発生しません．つまり，マウスポインタの移動も 「操作された」 と判断されます．なお， PW 上に単にマウスポインタを置いている場合は，設定時間が経過した時点で無操作タイムアウトが発生します．確認は GGH4.0.1.10784 で行いました．
-補　足 クライアントにインストールされたアプリケーションの副作用等により，無操作タイムアウト機能が正しく動作しないことがあります．過去１件あった事例では， 「GGが表示したウインドウの何れかがアクティブな場合」 に，無操作タイムアウトが発生しませんでした．
-ファイル KGTN2011120701.pdf [(204 KB)] [kitasp 技術センター, 2011/12/09 10:51]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1192/" class="btn btn-template-main">続きを読む</a>
+2012/02/10*
+[番号] 技術ノート KGTN 2012021002
+[現象] [Android Client] Android Client は，いつリリースされるのか？
+[説明] 日本時間の2012年2月10日にAndroid Client がリリースされました．インストールは，通常のアプリケーションと同様の方法で行って下さい．
+マーケットを起動する． キーワード &ldquo;GO-Global&rdquo; で検索する． 検索結果の中の &ldquo;GO-Global&rdquo; を開く． &ldquo;ダウンロード&rdquo; をタップする．
+ファイル KGTN2012021002.pdf [(46.4 KB)] [kitasp 技術センター, 2012/02/10 09:03]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1092/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -653,7 +658,7 @@ Web Proxy Auto-Discovery Protocol (WPAD) がサポートされました． ク�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2620/">
+                                      <a href="/posts/new_md/doc1085/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -661,7 +666,7 @@ Web Proxy Auto-Discovery Protocol (WPAD) がサポートされました． ク�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2620/">[GGW3.2.1/GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc1085/">[General] 不具合は全て修正すべきではないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -674,22 +679,17 @@ Web Proxy Auto-Discovery Protocol (WPAD) がサポートされました． ク�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2620/"><i class="far fa-calendar"></i> 2011-12-09</a>
+                                            <a href="/posts/new_md/doc1085/"><i class="far fa-calendar"></i> 2012-02-10</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/09*
-[番号] 技術ノート KGTN 2011120904
-[現象] [GGW3.2.1/GGH4.X-5.X] アプリケーションで印刷ボタンを押して，印刷ダイアログが表示されるまでに時間がかかる．
-[説明] アプリケーションの印刷機能 （の実装） に大きく依存するため，考えられることの幾つかをご紹介します．
-   印刷ダイアログの中には通常利用可能なプリンタのリストが表示されますが，このリストの組み立てに時間がかかっている可能性があります．例えば，物理的に存在しないネットワークプリンタがあると，タイムアウトの発生まで応答を待つため時間がかかります．また，各プリンタの細かい情報を採取する等の処理でも時間がかかる可能性があります．
- サービス Print Spooler の処理が何らかの理由で遅い可能性があります．スプーラーは比較的高負荷になり易く，プロセッサの処理能力不足等で時間がかかっている可能性があります．また，メモリ不足等でパフォーマンスが低下している可能性もあります．
-   アプリケーションが事前に印刷イメージを作成する等，印刷ダイアログを表示する前に多くの処理を行っている可能性があります．可能であれば，アプリケーションの処理内容を確認して下さい．
-  サーバがネットワーク上のディスクをアクセスするケースでは，ネットワークの輻輳等により時間がかかっている可能性があります．物理マシンでC:ドライブをネットワーク上のSANディスクに集約 や 仮想マシンで，このような現象が発生した事例があります．
-なお，仮想サーバ上で遅く物理サーバで速いという事例がありました．異なる環境 （サーバ・ネットワーク・プリンタ） でも実験を行い，問題点を絞り込むことも大切な作業です．
-ファイル KGTN2011120904.pdf [(75.3 KB)] [kitasp 技術センター, 2016/03/11 15:16]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2620/" class="btn btn-template-main">続きを読む</a>
+2012/02/10*
+[番号] 技術ノート KGTN 2012021008
+[現象] [General] 不具合は全て修正すべきではないのか？
+[説明] 技術者や時間などの資源が無限にあれば， 「技術的に可能な内容であれば」 全ての不具合を修正することは可能だと思います．しかしながら，製品である以上投下できる資源には限界があり，その制約の中で製品の完成度を最大化することがメーカーとしての努めだと考えます．この最大化の達成のために，残念ながら 「修正までに多くの時間がかかる」 「不具合の原因が分っているのに運用回避をお願いする」 「不具合が分っているのに修正しない」 という状況も発生します．技術者としてはとても心苦しいのですが，どうかこのような事情をご理解下さい．
+ファイル KGTN2012021008.pdf [(54.5 KB)] [kitasp 技術センター, 2012/02/10 20:16]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1085/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -699,7 +699,7 @@ Web Proxy Auto-Discovery Protocol (WPAD) がサポートされました． ク�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1188/">
+                                      <a href="/posts/new_md/doc1090/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -707,7 +707,7 @@ Web Proxy Auto-Discovery Protocol (WPAD) がサポートされました． ク�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1188/">[GGW3.2.1] APSログに，下記の記録があった．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1090/">[iPad Client] GGH4.0.1.Path4 でマウスポインタが表示されると聞いたが，マウスポインタが表示されない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -720,19 +720,17 @@ Web Proxy Auto-Discovery Protocol (WPAD) がサポートされました． ク�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1188/"><i class="far fa-calendar"></i> 2011-12-09</a>
+                                            <a href="/posts/new_md/doc1090/"><i class="far fa-calendar"></i> 2012-02-10</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/12/09*
-[番号] 技術ノート KGTN 2011112501
-[現象] [GGW3.2.1] APSログに，下記の記録があった．
-aps (1340) AS: Rejected settings given for editing myTepa (64).
-[説明] クラスタマネージャでアプリケーション （上記の例では myTepa） を登録しようとした時， Startup Information のパラメタが正しくない状況で [OK] ボタンを押下すると，この記録がAPSログに残ります （C:¥ と指定すべきところを C;¥ と指定したなど）．従って，通常この記録は無視して構いません．
-補　足 このエラーメッセージは，レジストリに記録されているアプリケーションの登録情報が正しく読み取れない場合にも記録されます．サーバの負荷が一時的に異常に高くなった場合，アンチウイルスソフトと競合 （レジストリの参照） した場合，その他 （致命的でない） ハードウエア障害等でも記録される可能性があります．
-ファイル KGTN2011112501.pdf [(63.6 KB)] [kitasp 技術センター, 2011/12/09 13:23]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1188/" class="btn btn-template-main">続きを読む</a>
+2012/02/10*
+[番号] 技術ノート KGTN 2012021003
+[現象] [iPad Client] GGH4.0.1.Path4 でマウスポインタが表示されると聞いたが，マウスポインタが表示されない．
+[説明] 弊社およびGraphOn社でこの現象を確認しております．日本語版の Windows Server 2003/2008 または 英語版の Windows Server 2008/2003 で &ldquo;Keyboard input method = Japanese&rdquo; としてインストールした環境で，この問題が発生します．GGの基本機能ということもあり，この件についての回避策はありません． GraphOn社より情報が入り次第，この技術ノートを更新します．
+ファイル KGTN2012021003.pdf [(52.2 KB)] [kitasp 技術センター, 2012/02/10 10:55]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1090/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -802,7 +800,7 @@ aps (1340) AS: Rejected settings given for editing myTepa (64).
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

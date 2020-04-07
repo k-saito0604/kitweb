@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2692/">
+                                      <a href="/posts/new_md/doc194/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2692/">[GGH4.X] クライアント印刷機能で，プリンタ名が日本語を含みかつUPD (Universal Printer Driver) を使用して印刷すると，プリンタにドキュメントが出力されない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc194/">[GGH4.X] リモートデスクトップ接続 （クライアント） を特定ユーザーにのみ公開したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,20 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2692/"><i class="far fa-calendar"></i> 2014-05-02</a>
+                                            <a href="/posts/new_md/doc194/"><i class="far fa-calendar"></i> 2014-09-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/05/02*
-[番号] 技術ノート KGTN 2014050201
-[現象] [GGH4.X] クライアント印刷機能で，プリンタ名が日本語を含みかつUPD (Universal Printer Driver) を使用して印刷すると，プリンタにドキュメントが出力されない．
-[説明] この問題は弊社でも現象を確認しており，GraphOn社にも報告しております．この問題が解決されるまで，以下の方法で対応をお願いします．
-日本語を含まないプリンタ名に変更する． Preview PDF へ印刷し，クライアント側に表示されたPDFファイルを改めてプリンタへ印刷する． プリンタドライバとして WPD (Windows Printer Driver) を使用する．
-補足１ この問題は，クライアント側のプリンタへ出力するプログラム pdfprint.exe へのパラメタの文字列 （プリンタ名と中間ファイル名） が短いことに起因しております． GraphOn社もこの原因を認識しており，GGH4.Xの将来のビルドで修正される見込みです．
-補足２ この問題は GGH4.8.2 Patch1 (4.8.2.22090) で修正されました．なお，この修正はサーバー側およびクライアント側で行われておりますので，それぞれのプログラムをアップグレードする必要があります．
-ファイル KGTN2014050201.pdf [(68.6 KB)] [kitasp 技術センター, 2015/11/04 14:47]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2692/" class="btn btn-template-main">続きを読む</a>
+2014/09/19*
+[番号] 技術ノート KGTN 2014091901
+[現象] [GGH4.X] リモートデスクトップ接続 （クライアント） を特定ユーザーにのみ公開したい．
+[説明] 基本的には，リモートデスクトップ接続 （クライアント） のプログラム mstsc.exe にセキュリティ設定を行うことで，特定ユーザーにのみ公開することが可能です．ただ mstsc.exe は C:WindowsSystem32mstsc.exe にあるため，そのままセキュリティ設定を行うことは出来ません．下記の例では， C:GraphOnmstsc というフォルダを作成し，そこにコピーしセキュリティ設定を行います．
+ フォルダ C:GraphOnmstsc を作成する． フォルダ C:GraphOnmstscja-JP を作成する． プログラム C:WindowsSystem32mstsc.exe を C:GraphOnmstsc にコピーする． ファイル C:WindowsSystem32ja-JPmstsc.exe.mui を C:GraphOnmstscja-JP にコピーする． コピーした mstsc.exe のプロパティを開く． [セキュリティ] タブをクリックする. [詳細設定] ボタンをクリックする. [アクセス許可の変更] ボタンをクリックする． [このオブジェクトの親から継承可能なアクセス許可を含める] ボックスのチェックを外す. アクセス許可エントリ中の Users の行をクリックする． [削除] ボタンをクリックする. [追加] ボタンをクリックする. [詳細設定] ボタンをクリックする． [検索] ボタンをクリックする． ユーザーまたはグループを選択する. [OK] ボタンをクリックする. ユーザーまたはグループの選択・ダイアログの [OK] ボタンをクリックする. [オブジェクト] タブで必要な [許可] を選択する． [OK] ボタンをクリックする.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc194/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -363,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/problematic_md/doc252/">
+                                      <a href="/posts/new_md/doc198/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -371,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc252/">[GGW3.2.1/GGH4.X] Internet Explorer の脆弱性 （2963983） への当面の対応方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc198/">[GGW3.2.1] プロセス （アプリケーション） の起動と終了の情報がAPSログに記録されるが，それぞれ CreateProcess() の成功と WaitForSingleObject() からの戻りのタイミングで記録しているのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -384,17 +381,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/problematic_md/doc252/"><i class="far fa-calendar"></i> 2014-05-02</a>
+                                            <a href="/posts/new_md/doc198/"><i class="far fa-calendar"></i> 2014-09-19</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2014/05/02
-[番号] 技術ノート KGTN 2014043001
-[現象] [GGW3.2.1/GGH4.X] Internet Explorer の脆弱性 （2963983） への当面の対応方法は？
-[説明] マイクロソフト社から幾つかの回避策が提案されておりますが，適用条件や副作用もあり，残念ながら十分とは言えません．実際，GraphOn社に回避策 「VGX.DLL の登録解除」 の適用の可否を確認したところ，下記の回答がありました．
-Unregistering the dll has not been tested by GraphOn. We test for compatibility of MS Windows updates regularly and would provide patches for any incompatibilities and/or security vulnerabilities found in the product. We would recommend that your customer test this.  VGX.DLL の登録解除による副作用が正確には分からないこと等から，このような回答 （自己責任での適用） をせざるを得ない状況です．従って，マイクロソフト社が対応するまでの 「暫定」 対策としては，次の運用回避方法が妥当な対策だと考えます．
- GGのログオンページに限り IE を使用する． 他のページについては IE 以外のブラウザ （例： Google Chrome） を使用する．  補　足 大手新聞社のニュースによればマイクロソフト社は月次の更新プログラムで修正したい意向で，その通りであれば5月14日に本件の更新プログラムがリリースされます．</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc252/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">*技術ノート
+2014/09/19*
+[番号] 技術ノート KGTN 2014091701
+[現象] [GGW3.2.1] プロセス （アプリケーション） の起動と終了の情報がAPSログに記録されるが，それぞれ CreateProcess() の成功と WaitForSingleObject() からの戻りのタイミングで記録しているのか？
+[説明] いいえ． PsSetCreateProcessNotifyRoutine() の通知のタイミングでプロセスの生成と消滅の情報をAPSログに記録しています．詳細については，下記ページをご覧下さい．
+http://msdn.microsoft.com/en-us/library/windows/hardware/ff559951%28v=vs.85%29.aspx PsSetCreateProcessNotifyRoutine routine
+ファイル KGTN2014091701.pdf [(57.1 KB)] [kitasp 技術センター, 2014/09/19 15:53]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc198/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -404,7 +402,7 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/problematic_md/doc253/">
+                                      <a href="/posts/new_md/doc201/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -412,7 +410,7 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc253/">[GGH4.X] GGH4.8でクライアントフレーム機能を利用しているが，デスクトップの背景を指定しても白色になる．</a></h2>
+                                    <h2><a href="/posts/new_md/doc201/">[ETC] きっと どこでも アプリの申請書の項目 「コンピュータ名」 に testServer を指定したが，この場合 testServer.kitcloud.net でしかアクセス出来ないということか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -425,16 +423,18 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/problematic_md/doc253/"><i class="far fa-calendar"></i> 2014-04-25</a>
+                                            <a href="/posts/new_md/doc201/"><i class="far fa-calendar"></i> 2014-09-12</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2014/04/25
-[番号] 技術ノート KGTN 2014042501
-[現象] [GGH4.X] GGH4.8でクライアントフレーム機能を利用しているが，デスクトップの背景を指定しても白色になる．
-[説明] 現在のクライアントフレーム機能では，透過表示のサポートと絡んで，背景は白色のみとなります．GraphOn社に確認したところ， 「2014年中にはクライアントフレームの背景表示を実装したい」 との回答がありました．
-ファイル KGTN2014042501.pdf [(45.6 KB)] [kitasp 技術センター, 2014/05/02 15:20]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc253/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">*技術ノート
+2014/09/12*
+[番号] 技術ノート KGTN 2014091101
+[現象] [ETC] きっと &ldquo;どこでも&rdquo; アプリの申請書の項目 「コンピュータ名」 に testServer を指定したが，この場合 testServer.kitcloud.net でしかアクセス出来ないということか？
+[説明] いいえ，使用したいドメインでCNAMEレコード（別名）を定義することで，そのドメイン名 （FQDN） でアクセスすることが出来ます．例えば， demoServer.kitasp.net でアクセスしたい場合は，ドメイン kitasp.net で以下のCNAMEレコートを定義します．
+kitasp.net IN SOA &hellip; demoServer IN CNAME testServer.kitcloud.net.
+ファイル KGTN2014091101.pdf [(50.1 KB)] [kitasp 技術センター, 2014/09/12 15:10]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc201/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -444,7 +444,7 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/problematic_md/doc256/">
+                                      <a href="/posts/new_md/doc202/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -452,7 +452,7 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc256/">[GGH4.X] Windows Server 2012 R2 の環境で IE11 を起動すると，スクロールボタンやマウスホイールによるスクロール操作が動作しない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc202/">[ETC] きっと どこでも アプリの申請書の項目 「コンピュータ名」 にはFQDN （完全修飾ドメイン名） で書けば良いのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -465,16 +465,17 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/problematic_md/doc256/"><i class="far fa-calendar"></i> 2014-04-25</a>
+                                            <a href="/posts/new_md/doc202/"><i class="far fa-calendar"></i> 2014-09-12</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2014/04/25
-[番号] 技術ノート KGTN 2014042102
-[現象] [GGH4.X] Windows Server 2012 R2 の環境で IE11 を起動すると，スクロールボタンやマウスホイールによるスクロール操作が動作しない．
-[説明] 技術ノート KGTN 2014041101 を参照して下さい．スクロール操作が動作しない件は，この技術ノートの内容と同じ原因です．
-ファイル KGTN2014042102.pdf [(43.3 KB)] [kitasp 技術センター, 2014/04/25 16:21]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc256/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">*技術ノート
+2014/09/12*
+[番号] 技術ノート KGTN 2014091001
+[現象] [ETC] きっと &ldquo;どこでも&rdquo; アプリの申請書の項目 「コンピュータ名」 にはFQDN （完全修飾ドメイン名） で書けば良いのか？
+[説明] きっと &ldquo;どこでも&rdquo; アプリのサーバは，ドメイン名 kitcloud.net の直下に置かれます．従って，ホスト名のみを指定して下さい．
+ファイル KGTN2014091001.pdf [(44.4 KB)] [kitasp 技術センター, 2014/09/12 15:08]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc202/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -484,7 +485,7 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/problematic_md/doc255/">
+                                      <a href="/posts/new_md/doc204/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -492,7 +493,7 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc255/">[GGH4.X] プリンタドライバが UPD の場合，ページ数が多いと全てのページが印刷されないことがある．</a></h2>
+                                    <h2><a href="/posts/new_md/doc204/">[ETC] きっと どこでも アプリの申請書の項目 「送信元IPアドレス」 には何を記入すれば良いのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -505,16 +506,17 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/problematic_md/doc255/"><i class="far fa-calendar"></i> 2014-04-25</a>
+                                            <a href="/posts/new_md/doc204/"><i class="far fa-calendar"></i> 2014-09-12</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2014/04/25
-[番号] 技術ノート KGTN 2014042301
-[現象] [GGH4.X] プリンタドライバが UPD の場合，ページ数が多いと全てのページが印刷されないことがある．
-[説明] 弊社およびGraphOn社でも，この現象を確認しております．この問題が解決されるまでの間， Preview PDFまたは WPD を使用することで，この問題を運用回避して下さい．
-ファイル KGTN2014042301.pdf [(48 KB)] [kitasp 技術センター, 2014/04/25 18:27]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc255/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">*技術ノート
+2014/09/12*
+[番号] 技術ノート KGTN 2014090901
+[現象] [ETC] きっと &ldquo;どこでも&rdquo; アプリの申請書の項目 「送信元IPアドレス」 には何を記入すれば良いのか？
+[説明] きっと &ldquo;どこでも&rdquo; アプリでは，セキュリティを高めるためアクセス元のIPアドレスを限定することが出来ます．利用する拠点が限られており，かつその拠点から特定のIPアドレスでアクセスする場合は，送信元IPアドレスにそのIPアドレスを指定して下さい．IPアドレスが固定されないプロバイダ等からの利用では，送信元IPアドレスは空欄のままで結構です．
+ファイル KGTN2014090901.pdf [(47.2 KB)] [kitasp 技術センター, 2014/09/12 15:06]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc204/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -524,7 +526,7 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/problematic_md/doc257/">
+                                      <a href="/posts/new_md/doc205/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -532,7 +534,7 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc257/">[Windows] Windows Server と Internet Explorer (IE) の対応は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc205/">[GGH4.8] GGH4.8.2の環境で Excel2003/2007 や Adobe Reader XI を利用すると，印刷画面でサーバ側のプリンタが表示されない． Word2003/2007 や GGH4.8.1 では，この現象は発生しない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -545,16 +547,17 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/problematic_md/doc257/"><i class="far fa-calendar"></i> 2014-04-25</a>
+                                            <a href="/posts/new_md/doc205/"><i class="far fa-calendar"></i> 2014-09-06</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2014/04/25
-[番号] 技術ノート KGTN 2014042101
-[現象] [Windows] Windows Server と Internet Explorer (IE) の対応は？
-[説明] Windows Server と Internet Explorer (IE) の対応状況は，下記の通りです （ウィキペディアより） ．
-ファイル KGTN2014042101.pdf [(45.1 KB)] [kitasp 技術センター, 2014/04/25 16:20]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc257/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">*技術ノート
+2014/09/06*
+[番号] 技術ノート KGTN 2014090301
+[現象] [GGH4.8] GGH4.8.2の環境で Excel2003/2007 や Adobe Reader XI を利用すると，印刷画面でサーバ側のプリンタが表示されない． Word2003/2007 や GGH4.8.1 では，この現象は発生しない．
+[説明] サーバOSが WS2003 または　WS2003R2 の場合にこの現象が発生し， WS2008 や WS2008R2 の場合は発生しないようです （技術的な調査を継続中です） ．現時点では以下の対応が考えられます．
+ サーバOSを WS2008, WS2008R2, WS2012, WS2012R2 に切り替える． GGH4.8.1 へダウングレードする． Excel 2010 または Excel 2013 を利用する．  ファイル KGTN2014090301.pdf [(53.8 KB)] [kitasp 技術センター, 2014/09/12 15:04]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc205/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -564,7 +567,7 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/problematic_md/doc254/">
+                                      <a href="/posts/new_md/doc2054/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -572,7 +575,7 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc254/">[Windows] Windows のシステムプログラム csrss.exe のファイル名は何の略なのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2054/">[GGH4.X-5.X] GGW3.2ではリソースを修正することでエラーメッセージを日本語化することが出来たが，GGH4.X (GGH5.X) では該当するリソースが存在しない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -585,16 +588,17 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/problematic_md/doc254/"><i class="far fa-calendar"></i> 2014-04-25</a>
+                                            <a href="/posts/new_md/doc2054/"><i class="far fa-calendar"></i> 2014-09-06</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2014/04/25
-[番号] 技術ノート KGTN 2014042401
-[現象] [Windows] Windows のシステムプログラム csrss.exe のファイル名は何の略なのか？
-[説明] csrss は Client/Server Runtime Subsystem の略称で，Win32サブシステムのユーザーモード側です．
-ファイル KGTN2014042401.pdf [(43.1 KB)] [kitasp 技術センター, 2014/04/25 18:29]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc254/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">*技術ノート
+2014/09/06*
+[番号] 技術ノート KGTN 2014082901
+[現象] [GGH4.X-5.X] GGW3.2ではリソースを修正することでエラーメッセージを日本語化することが出来たが，GGH4.X (GGH5.X) では該当するリソースが存在しない．
+[説明] GraphOn社より，以下のコメントがありました．
+In GO-Global version 3.2, string resources were stored in resource DLLs and could be edited using Microsoft Visual Studio. This is not the case in GO-Global 4. In GO-Global 4, string resources are compiled into DLLs and cannot be edited using Microsoft Visual Studio. As a result, it is not possible for partners to localize GOGlobal 4 on their own.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2054/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -604,7 +608,7 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/problematic_md/doc261/">
+                                      <a href="/posts/new_md/doc208/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -612,7 +616,7 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc261/">[GGFU] OpenSSL の脆弱性 （CVE-2014-0160, Heartbeat overflow issue） に関して， GO-Global for Unix についてはどうか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc208/">[GGH4.X] CADアプリケーションの評価のため，とりあえずワード上で図形を移動してパフォーマンスをみたいが構わないか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -625,16 +629,17 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/problematic_md/doc261/"><i class="far fa-calendar"></i> 2014-04-18</a>
+                                            <a href="/posts/new_md/doc208/"><i class="far fa-calendar"></i> 2014-09-06</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2014/04/18
-[番号] 技術ノート KGTN 2014041502
-[現象] [GGFU] OpenSSL の脆弱性 （CVE-2014-0160, Heartbeat overflow issue） に関して， GO-Global for Unix についてはどうか？
-[説明] 2.2.15またはそれ以前のバージョンについては，影響を受けません．2.2.16 またはそれ以降のバージョンについては，Linux版以外については影響を受けません．Linux版については，ディストリビューションに含まれる OpenSSL を使用するため，そのディストリビューションの影響に従います．
-GO-Global for UNIX version 2.2.15 and earlier are not vulnerable on all supported platforms. GOGlobal for UNIX version 2.2.16 and later are not vulnerable on all non-Linux platforms. On Linux, GO-Global for UNIX version 2.2.16 and later use the operating system's version of OpenSSL. Some supported Linux distributions may be vulnerable.</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc261/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">*技術ノート
+2014/09/06*
+[番号] 技術ノート KGTN 2014090302
+[現象] [GGH4.X] CADアプリケーションの評価のため，とりあえずワード上で図形を移動してパフォーマンスをみたいが構わないか？
+[説明] GGは他の製品と異なりアプリケーションの描画命令に依存して処理を行います．CADアプリケーションが行う描画処理 （描画命令の呼び出し） とワードが行う描画処理 （描画命令の呼び出し） が異なると，描画に要する時間等も大きく異なる可能性があります．このため，パフォーマンスの評価に当たっては，実際に使用するアプリケーションで評価 （計測） するようにして下さい．
+ファイル KGTN2014090302.pdf [(49 KB)] [kitasp 技術センター, 2014/09/06 17:14]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc208/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -644,7 +649,7 @@ GO-Global for UNIX version 2.2.15 and earlier are not vulnerable on all supporte
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/problematic_md/doc266/">
+                                      <a href="/posts/new_md/doc207/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -652,7 +657,7 @@ GO-Global for UNIX version 2.2.15 and earlier are not vulnerable on all supporte
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc266/">[GGH4.X] ActiveXクライアントを使用する場合，URLでパラメタ （パスワードなど） を与える時に使用出来ない文字は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc207/">[GGH4.X] レジストリ （HKCUEUDC932SystemDefaultEudcFont） を修正して個別ユーザの外字ファイルを指定したが，その内容が反映されない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -665,16 +670,17 @@ GO-Global for UNIX version 2.2.15 and earlier are not vulnerable on all supporte
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/problematic_md/doc266/"><i class="far fa-calendar"></i> 2014-04-18</a>
+                                            <a href="/posts/new_md/doc207/"><i class="far fa-calendar"></i> 2014-09-06</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2014/04/18
-[番号] 技術ノート KGTN 2014040201
-[現象] [GGH4.X] ActiveXクライアントを使用する場合，URLでパラメタ （パスワードなど） を与える時に使用出来ない文字は？
-[説明] 下記の文字 （左側） はパラメタに直接指定出来ませんので，URLエンコーディングした文字列 （右側） を指定する必要があります．
-ファイル KGTN2014040201.pdf [(45.6 KB)] [kitasp 技術センター, 2014/04/18 21:37]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc266/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">*技術ノート
+2014/09/06*
+[番号] 技術ノート KGTN 2014090303
+[現象] [GGH4.X] レジストリ （HKCUEUDC932SystemDefaultEudcFont） を修正して個別ユーザの外字ファイルを指定したが，その内容が反映されない．
+[説明] GGのアプリケーション配信機能 （APS） が HKU.DEFAULT932SystemDefaultEudcFont の環境の下で動作するため，個別ユーザの外字ファイルを指定しても無視されます．これは現時点でのGGの仕様です．
+ファイル KGTN2014090303.pdf [(52.6 KB)] [kitasp 技術センター, 2014/09/06 17:18]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc207/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -684,7 +690,7 @@ GO-Global for UNIX version 2.2.15 and earlier are not vulnerable on all supporte
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/problematic_md/doc263/">
+                                      <a href="/posts/new_md/doc2334/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -692,7 +698,7 @@ GO-Global for UNIX version 2.2.15 and earlier are not vulnerable on all supporte
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc263/">[GGH4.X] GGH4.8.1.20215 の環境でクライアントフレーム機能を利用すると，しばしば一時的にフリーズする．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2334/">[GGH4.X-5.X] GGH4.X-5.X のクライアントはGGW3.2.1のクライアントと共存可能ということだが，２つのクライアントをインストールすればどちらのバージョンのサーバにも自由に接続出来るということか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -705,16 +711,17 @@ GO-Global for UNIX version 2.2.15 and earlier are not vulnerable on all supporte
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/problematic_md/doc263/"><i class="far fa-calendar"></i> 2014-04-18</a>
+                                            <a href="/posts/new_md/doc2334/"><i class="far fa-calendar"></i> 2014-08-22</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2014/04/18
-[番号] 技術ノート KGTN 2014041001
-[現象] [GGH4.X] GGH4.8.1.20215 の環境でクライアントフレーム機能を利用すると，しばしば一時的にフリーズする．
-[説明] この現象はGGH4.8.0またはそれ以前のバージョンでは発生せず，GGH4.8.1の環境でIEのウインドウをドラッグする等の操作で一時的にフリーズする現象が発生します．クライアントフレームを利用する場合は，当面GGH4.8.0をご利用下さい．なお，この件についてはGraphOｎ社に報告済みです．
-ファイル KGTN2014041001.pdf [(45.7 KB)] [kitasp 技術センター, 2014/04/18 21:43]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc263/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">*技術ノート
+2014/08/22*
+[番号] 技術ノート KGTN 2014081801
+[現象] [GGH4.X-5.X] GGH4.X-5.X のクライアントはGGW3.2.1のクライアントと共存可能ということだが，２つのクライアントをインストールすればどちらのバージョンのサーバにも自由に接続出来るということか？
+[説明] GGH4.X-5.X のクライアントとGGW3.2.1のクライアントは同一マシン上で共存可能ですが，それぞれのクライアントは対応するバージョンのGGサーバに 「限り」 接続することが出来ます． 従って，GGH4.X-5.X のクライアントを起動した場合は，必ずGGH4.X-5.X のGGサーバにアクセスする必要があります．GGW3.2.1のGGサーバにアクセスした場合は，バージョン不一致のエラーが発生します．
+ファイル KGTN2014081801.pdf [(51.6 KB)] [kitasp 技術センター, 2016/10/04 16:16]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2334/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -784,7 +791,7 @@ GO-Global for UNIX version 2.2.15 and earlier are not vulnerable on all supporte
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

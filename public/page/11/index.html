@@ -409,27 +409,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc92/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2668/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc92/">[GGH6.X] バージョン6ホスト機能 （サーバー機能） のインストーラーで Customize を選択すると，どのようなカスタマイズが出来るのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2668/">[GGH6.X] Windows Server 2016 &#43; ATOK Pro 2 &#43; GGH6.0 の環境で、GGクライアントのオプション -kb でログオン時のIMEをATOKにしたい。</a></h4>
                             <p class="author-category">
                             
                             日付 2019-07-12
                             </p>
                             <p class="intro">*技術ノート
 2019/07/12*
-[番号] 技術ノート KGTN 2019061703
-[現象] [GGH6.X] バージョン6ホスト機能 （サーバー機能） のインストーラーで Customize を選択すると，どのようなカスタマイズが出来るのか？
-[説明] Customize を選択した場合，インストール先のフォルダー指定，インストールする機能 （ホスト・ウエッブ・ライセンス関連） を選択することが出来ます．特別な事情がない限り，カスタマイズを選択することなく，既定のインストールを行って下さい．
-ファイル KGTN2019061703.pdf [(273 KB)] [kitasp 技術センター, 2019/07/12 09:53]
-KGTN2019061703.jpg
-表示 [(34.3 KB)] [kitasp 技術センター, 2019/07/12 09:54]</p>
+[番号] 技術ノート KGTN 2019071101
+[現象] [GGH6.X] Windows Server 2016 + ATOK Pro 2 + GGH6.0 の環境で、GGクライアントのオプション -kb でログオン時のIMEをATOKにしたい。
+[説明] バージョン6.0の英文の Administrator Guide の148～153ページにクライアントのキーボードとIMEの設定方法の説明があります。オプション -kb で指定するパラメタは GGII (GO-Global Input Identifiers) と呼ばれる8桁の16進数で、Microsoft IME のGGIIは次のレジストリにある 00000411 です。
+HKLMSYSTEMCurrentControlSetControlKeyboard Layouts00000411
+ATOK Pro 2 に切り替えるには、このレジストリに別の値で ATOK Pro 2 が登録されている必要がありますが、 Windows Server 2016 の環境に適合する方法で ATOK Pro 2 をインストールした場合、それが登録されないためオプション -kb でログオン時に ATOK Pro 2 に切り替えることは出来ません。なお、次のコントロールパネルで 「ユーザー単位に」 既定のIMEを ATOK Pro 2 にすることは可能です。
+ファイル KGTN2019071101.pdf [(108 KB)] [kitasp 技術センター, 2019/07/12 10:21]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc92/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2668/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -448,27 +448,29 @@ KGTN2019061703.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc115/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc59/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc115/">[GGH6.X] バージョン6ホスト機能 （サーバー機能） のインストーラーのサイズは同じか？</a></h4>
+                            <h4><a href="/posts/new_md/doc59/">[GGH6.X] バージョン5ホスト機能 （サーバー機能） がインストールされたサーバーをバージョン6へアップグレードする場合，単純にバージョン6のインストーラーを実行すれば良いのか？</a></h4>
                             <p class="author-category">
                             
                             日付 2019-07-12
                             </p>
                             <p class="intro">*技術ノート
 2019/07/12*
-[番号] 技術ノート KGTN 2019061701
-[現象] [GGH6.X] バージョン6ホスト機能 （サーバー機能） のインストーラーのサイズは同じか？
-[説明] バージョン5のホスト機能の最新版が約210MB，バージョン6のホスト機能の最新版が約233MBです．若干インストーラーのファイルサイズが大きくなっておりますが，基本的には同程度のファイルサイズです．
-ファイル KGTN2019061701.pdf [(74.2 KB)] [kitasp 技術センター, 2019/07/12 09:45]
-KGTN2019061701.jpg
-表示 [(26.9 KB)] [kitasp 技術センター, 2019/07/12 09:45]</p>
+[番号] 技術ノート KGTN 2019061901
+[現象] [GGH6.X] バージョン5ホスト機能 （サーバー機能） がインストールされたサーバーをバージョン6へアップグレードする場合，単純にバージョン6のインストーラーを実行すれば良いのか？
+[説明] いいえ，次の理由により単純にバージョン6のインストーラーを実行するだけでアップグレードすることは出来ません．
+・バージョン6のライセンスファイルが必要 ・バージョン6で設定ファイルのパス等の変更
+このため，次の手順でバージョン6へのアップグレードを行って下さい．
+ クラスターマネージャーの設定をスクリーンショット等で採取 ライセンスファイルをバージョン6へアップグレード バージョン6のライセンスファイルを入手 バージョン5のGGをアンインストール 再起動 バージョン6のGGをインストール ライセンスファイルをインストール (フォルダー: C:Program FilesGraphOnGO-GlobalLicensing) 再起動 アドミンコンソール （従来のクラスターマネージャー） で上記1の設定を反映  ファイル KGTN2019061901.pdf [(252 KB)] [kitasp 技術センター, 2019/07/12 09:59]
+KGTN2019061901.jpg
+表示 [(35 KB)] [kitasp 技術センター, 2019/07/12 10:00]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc115/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc59/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -487,31 +489,27 @@ KGTN2019061701.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc103/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc126/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc103/">[GGH6.X] バージョン6ホスト機能 （サーバー機能） のインストーラーの操作手順は従来と同じか？</a></h4>
+                            <h4><a href="/posts/new_md/doc126/">[GGH6.X] バージョン6の Admin Console （アドミンコンソール） は，どのようなプログラムなのか？</a></h4>
                             <p class="author-category">
                             
                             日付 2019-07-12
                             </p>
                             <p class="intro">*技術ノート
 2019/07/12*
-[番号] 技術ノート KGTN 2019061702
-[現象] [GGH6.X] バージョン6ホスト機能 （サーバー機能） のインストーラーの操作手順は従来と同じか？
-[説明] いいえ．バージョン6のインストーラーは，操作手順が簡素化されました．メディアの中に含まれる日本語のドキュメントに従って操作を行って下さい．
-バージョン5のインストーラーの画面
-バージョン6のインストーラーの画面
-ファイル KGTN2019061702.pdf [(405 KB)] [kitasp 技術センター, 2019/07/12 09:48]
-KGTN2019061702-1.jpg
-表示 [(31.5 KB)] [kitasp 技術センター, 2019/07/12 09:48]
-KGTN2019061702-2.jpg
-表示 [(40 KB)] [kitasp 技術センター, 2019/07/12 09:51]</p>
+[番号] 技術ノート KGTN 2019061405
+[現象] [GGH6.X] バージョン6の Admin Console （アドミンコンソール） は，どのようなプログラムなのか？
+[説明] バージョン5またはそれ以前のバージョンのクラスターマネージャーとほぼ同じプログラムで，バージョン6で呼称が変わりました．機能の主な変更点は，ライセンスと保守期限を確認する Licenses タブが追加です．
+ファイル KGTN2019061405.pdf [(48.2 KB)] [kitasp 技術センター, 2019/07/12 09:43]
+KGTN2019061405.jpg
+表示 [(21.1 KB)] [kitasp 技術センター, 2019/07/12 09:43]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc103/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc126/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -530,31 +528,25 @@ KGTN2019061702-2.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc48/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc159/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc48/">[GGH6.X] バージョン6ホスト機能 （サーバー機能） のコントロールパネルの 「プログラムと機能」 での名称はバージョン5と同じか？</a></h4>
+                            <h4><a href="/posts/new_md/doc159/">[GGH6.X] バージョン6の GO-Global App と GO-Global Web App は，バージョン5のクライアントと本質的に違うのか？</a></h4>
                             <p class="author-category">
                             
                             日付 2019-07-12
                             </p>
                             <p class="intro">*技術ノート
 2019/07/12*
-[番号] 技術ノート KGTN 2019061902
-[現象] [GGH6.X] バージョン6ホスト機能 （サーバー機能） のコントロールパネルの 「プログラムと機能」 での名称はバージョン5と同じか？
-[説明] はい，バージョン6もバージョン5もプログラムの名称は GO-Global Host です．
-バージョン6の情報
-バージョン5の情報
-ファイル KGTN2019061902.pdf [(120 KB)] [kitasp 技術センター, 2019/07/12 10:03]
-KGTN2019061902-1.jpg
-表示 [(53.4 KB)] [kitasp 技術センター, 2019/07/12 10:03]
-KGTN2019061902-2.jpg
-表示 [(36.4 KB)] [kitasp 技術センター, 2019/07/12 10:03]</p>
+[番号] 技術ノート KGTN 2019061401
+[現象] [GGH6.X] バージョン6の GO-Global App と GO-Global Web App は，バージョン5のクライアントと本質的に違うのか？
+[説明] いいえ．バージョン5では単に GO-Global Client と呼ばれ，その中にはデスクトップ用クライアントとブラウザ用クライアントが含まれておりました．バージョン6では，デスクトップ用のクライアントを GO-Global App ，ブラウザ用クライアントを GO-Global Web App と呼ぶようになりました．日本語では，どちらのバージョンでも単にデスクトップ用クライアントとブラウザ用クライアントと呼んで頂いて結構です．
+ファイル KGTN2019061401.pdf [(32.1 KB)] [kitasp 技術センター, 2019/07/12 09:22]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc48/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc159/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

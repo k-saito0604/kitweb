@@ -409,30 +409,31 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1897/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1725/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1897/">ヘルプウィンドウを表示したウインドウを閉じると，下記のように画面描画が崩れる．</a></h4>
+                            <h4><a href="/posts/new_md/doc1725/">エンタープライズオプションのGMCheck （GMCheckRaw） のセッション情報の取得に時間がかかる．</a></h4>
                             <p class="author-category">
                             
-                            日付 2009-08-05
+                            日付 2010-06-17
                             </p>
                             <p class="intro">*技術ノート
-2009/08/05*
-[番号] 技術ノート KGTN 2009080501
-[現象] ヘルプウィンドウを表示したウインドウを閉じると，下記のように画面描画が崩れる．
-[説明] 「画面描画が崩れる」 ということが問題ではなく，
- 親ウィンドウをオープン 2) 子ウィンドウをオープン 3) ヘルプウィンドウをオープン 4) 子ウインドウをクリック （選択）  した時に，下記のように子ウインドウが最上位に上がって来ない事が本質的な問題です．
-本件の場合は
-Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnShowHelp.Click &lsquo;&mdash; kitASP &mdash; Help.ShowHelp(Nothing, &ldquo;C:¥WINDOWS¥Help¥ieeula.chm&rdquo;) Help.ShowHelp(New Control(), &ldquo;C:¥WINDOWS¥Help¥ieeula.chm&rdquo;) &lsquo;&mdash; End Sub
-と修正し，子ウインドウが選択された時に最上位に上がって来るようにします．この修正により，「画面描画が崩れる」 という現象は解消します．
-一般に，GO-Global for Windows は標準的なウインドウ管理を前提として最適化されておりますので，特殊なウインドウ管理 （本件の場合は選択されても最上位に上がって来ない） を行うとその前提が崩れ，結果的に画面が乱れることがあります．
-ファイル KGTN2009080501.pdf [(867 KB)] [kitasp 技術センター, 2009/08/05 09:33]</p>
+2010/06/17*
+[番号] 技術ノート KGTN 2010061801
+[現象] エンタープライズオプションのGMCheck （GMCheckRaw） のセッション情報の取得に時間がかかる．
+[説明] GMCheck はセッション情報を収集する時に，クライアントのIPアドレスからホスト名を得ようとします （逆引き） ．参照しているネームサーバ （DNS） がこの問い合わせに応答しない場合， GMCCheck はタイムアウト時間が経過するまで待ちますので，結果的にセッション情報の取得に時間がかかります．対応方法としては，
+逆引きを正しく設定する． ダミーのサーバを用意し 「存在しない」 という回答を返す．
+等が考えられます．
+参　考 逆引きの状況の確認には，コマンド nslookup をGGサーバ上で実行して下さい．
+逆引きがある場合 名前:
+逆引きが無い場合 &hellip; Non-existent domain
+逆引きの応答がない場合 &hellip; No response from server
+ファイル KGTN2010061801.pdf [(72.4 KB)] [kitasp 技術センター, 2010/06/18 07:18]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1897/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1725/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -451,29 +452,27 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2589/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1730/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2589/">[GGW3.2/GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc1730/">認証局Thawte の 「CA ルート証明書」 を入手する方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2009-06-10
+                            日付 2010-06-16
                             </p>
                             <p class="intro">*技術ノート
-2009/06/10*
-[番号] 技術ノート KGTN 2009060902
-[現象] [GGW3.2/GGH4.X-5.X] GO-Global for Windows のバージョン情報の詳細を知りたい．
-[説明] GO-Global for Windowsは，
-[メジャー番号] . [マイナー番号] . [サービスパック] . [ビルド]
-という複数の番号で一意的に識別され，ソフトウエアが管理されています．メジャー番号　は内部構造の主要な変更を指し，マイナー番号 は内部構造の主要な変更はないものの主要な機能の追加や変更を指します．サービスパック は小規模な仕様の変更や累積的なバグ修正を指します．一般的な意味でのソフトウエアのバージョン番号は，
-[メジャー番号] . [マイナー番号] . [サービスパック]
-までで，弊社の製品出荷もこのバージョン番号を基本として行います．出荷のタイミングによって，同一バージョン内で細かな修正等が行われた場合は，同一バージョン番号で ビルド が異なることがあります．
-ファイル KGTN2009060902.pdf [(63.6 KB)] [kitasp 技術センター, 2016/05/27 11:55]</p>
+2010/06/16*
+[番号] 技術ノート KGTN 2010061603
+[現象] 認証局Thawte の 「CA ルート証明書」 を入手する方法は？
+[説明] 認証局Thawte は，下記のページで 「CA ルート証明書」 を配布しています （2010年6月16日現在） ．
+https://www.thawte.com/roots/
+このページで名前・会社名・メールアドレス・電話番号を入力し，利用条件に同意すると （Accept ボタンをクリックすると） ，各 「CA ルート証明書」 を含んだファイル thawte-roots.zip をダウンロードすることができます．
+ファイル KGTN2010061603.pdf [(50.4 KB)] [kitasp 技術センター, 2010/06/16 12:59]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2589/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1730/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -492,25 +491,25 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1899/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1731/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1899/">Windowsの修正プログラムを適用したいが，もし適用した場合サポートされるのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1731/">電子証明書 （xxx.CER） の状態に 「この証明書は有効期限切れかまだ有効ではありません。」 とある．</a></h4>
                             <p class="author-category">
                             
-                            日付 2009-06-10
+                            日付 2010-06-16
                             </p>
                             <p class="intro">*技術ノート
-2009/06/10*
-[番号] 技術ノート KGTN 2009060901
-[現象] Windowsの修正プログラムを適用したいが，もし適用した場合サポートされるのか？
-[説明] GO-Global for Windows は，マイクロソフト社が 「完全にテストを行った修正プログラム」 つまり 更新プログラム のみをサポートします．それ以前の修正プログラム （Hotfix） は，マイクロソフト社による完全なテストが行なわれていないため，GraphOn社および弊社は互換性やインストールに関し何らかの問題が発生してもサポートを行うことは出来ません．自己責任で適用する場合も，マイクロソフト社の情報 「運用環境への適用を行う前に、検証環境での十分なテストと、データのバックアップを採取することを強くお勧めいたします」 に従って作業をなさることを強くお勧めします．
-ファイル KGTN2009060901.pdf [(56.3 KB)] [kitasp 技術センター, 2009/06/10 09:18]</p>
+2010/06/16*
+[番号] 技術ノート KGTN 2010061602
+[現象] 電子証明書 （xxx.CER） の状態に 「この証明書は有効期限切れかまだ有効ではありません。」 とある．
+[説明] GraphOn社および弊社は製品として xxx.CER というファイル （証明書） は配布しておりません．配布していないファイルについてお問い合せを頂いてもお答えすることは出来ませんが，内容を見たところ 「証明書のパス」 に GraphOn Corporation が最上位に位置しており，異常な証明書です．正しい証明書は， GraphOn Corporation の上位に認証局 （CA） が存在します．
+ファイル KGTN2010061602.pdf [(68.5 KB)] [kitasp 技術センター, 2010/06/16 10:34]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1899/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1731/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -529,25 +528,25 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1898/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1732/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1898/">修正プログラム（例：KB956807）を GO</a></h4>
+                            <h4><a href="/posts/new_md/doc1732/">電子証明書の詳細に 「失効状態: 失効サーバーがオフラインのため、失効の関数は失効を確認できませんでした。」 という情報がある．</a></h4>
                             <p class="author-category">
                             
-                            日付 2009-06-10
+                            日付 2010-06-16
                             </p>
                             <p class="intro">*技術ノート
-2009/06/10*
-[番号] 技術ノート KGTN 2009040701
-[現象] 修正プログラム（例：KB956807）を GO-Global サーバへ適用して構わないか？
-[説明] 修正プログラムの情報の中に 「この修正プログラムは、ここで説明する問題が発生しているシステムにのみ適用してください。この修正プログラムは、今後さらにテストを行う場合があります。したがって、この問題で深刻な影響を受けていない場合は、この修正プログラムが含まれる次のソフトウェア更新プログラムがリリースされるまで待つことを推奨します」 とあるものは，動作保証も如何なる情報の提供も出来ません．ソフトウェア更新プログラムがリリースされた段階で，GraphOn社より互換性情報および （必要であれば） 互換アップデートが提供されます．
-ファイル KGTN2009040701.pdf [(55.6 KB)] [kitasp 技術センター, 2009/06/10 09:21]</p>
+2010/06/16*
+[番号] 技術ノート KGTN 2010061601
+[現象] 電子証明書の詳細に 「失効状態: 失効サーバーがオフラインのため、失効の関数は失効を確認できませんでした。」 という情報がある．
+[説明] IE の設定で 「サーバーの証明書失効を確認する」 の項目が有効になっており，かつその環境からインターネットへの接続が制限されている場合に，お問い合せの情報が表示されます．インターネットへの接続を許可するか，または 「サーバーの証明書失効を確認する」 の項目を無効にして下さい （参考：KGTN#2010061501） ．
+ファイル KGTN2010061601.pdf [(132 KB)] [kitasp 技術センター, 2010/06/16 10:11]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1898/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1732/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

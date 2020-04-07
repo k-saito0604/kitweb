@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1483/">
+                                      <a href="/posts/new_md/doc1339/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1483/">[GGH4.0] Ver4.0のクライアントで， Ver3.2.1 のサーバを利用できるか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1339/">Windows 7 の環境でActiveXクライアントを削除するため GGAXDelete.exe を起動したが，ファイルが削除されない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,21 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1483/"><i class="far fa-calendar"></i> 2011-02-01</a>
+                                            <a href="/posts/new_md/doc1339/"><i class="far fa-calendar"></i> 2011-08-18</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/02/01*
-[番号] 技術ノート KGTN 2011020101
-[現象] [GGH4.0] Ver4.0のクライアントで， Ver3.2.1 のサーバを利用できるか？
-[説明] いいえ，クライアント印刷機能・クライアントドライブ機能を始めてとして，アーキテクチャの変更がありますので，Ver4.0 と Ver3.2.1 は相互に互換性がありません．なお，Ver4.0 と Ver3.2.1 のクライアントは，同じクライアントPCに共存 （インストール） することが出来ます．
-ファイル KGTN2011020101.pdf [(44.4 KB)] [kitasp 技術センター, 2011/02/01 09:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1483/" class="btn btn-template-main">続きを読む</a>
+2011/08/18*
+[番号] 技術ノート KGTN 2011081801
+[現象] Windows 7 の環境でActiveXクライアントを削除するため GGAXDelete.exe を起動したが，ファイルが削除されない．
+[説明] Windows 7 の環境では，アカウントの種類が 「管理者」 であっても ActiveXクライアントを削除することは出来ず，GGAXDelete.exe のログに以下のような記録が残ります．
+FILE DELETE INFORMATION clipc.dll (FAILED) cplc.dll (FAILED) cs.dll (FAILED) dc.dll (FAILED) filec.dll (FAILED) ggw.exe (FAILED) GGXP.inf (FAILED) ieg.dll (FAILED) pbr.dll (FAILED) printc.dll (FAILED) QuickPDFDLL.dll (FAILED) sc.dll (FAILED) scres.dll (FAILED) sndc.dll (FAILED) upc.dll (FAILED) 0/15 File(s) Deleted.
+ActiveXクライアントを削除するには，以下の手順で操作を行って下さい．
+コマンドプロンプトを「管理者として実行」として起動 「ユーザー アカウント制御」 で 「はい」 を選択 その中で （DOS窓の中で） GGAXDelete.exe を実行
+または
+GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「ユーザー アカウント制御」 で 「はい」 を選択</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1339/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +364,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1481/">
+                                      <a href="/posts/new_md/doc1340/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +372,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1481/">次のエラーがAPSログに記録されたが，どのような原因が考えられるか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1340/">クライアントに高性能なグラフィックアダプタが搭載されているが，GGの環境でもその効果はあるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,17 +385,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1481/"><i class="far fa-calendar"></i> 2011-02-01</a>
+                                            <a href="/posts/new_md/doc1340/"><i class="far fa-calendar"></i> 2011-08-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/02/01*
-[番号] 技術ノート KGTN 2010110102
-[現象] 次のエラーがAPSログに記録されたが，どのような原因が考えられるか？
-230 &hellip; aps (10004) CS: An unknown error occurred while creating the transport server. 231 &hellip; aps (10004) CS: Failed to create the transport server. 232 &hellip; aps (10004) CS: Failed to accept a connection from a client at IP address xx.xx.xx.xx. 233 &hellip; aps (10004) CS_ConnectionStartThread::run ()
-[説明] この記録は， 「IPアドレスxx.xx.xx.xx を持つ機器がGGサーバに接続して来たが，その後GGのプロトコルを話さなかったので，接続処理でエラーになった」 ということを意味します．よくある事例では，ロードバランサのヘルスチェック機能 （TCP/IPレベル） によるGGサーバのポート監視があります．ロードバランサでGGサーバのヘルスチェックを行う場合は，ICMP （PING） による監視を行って下さい．どうしてもTCP/IPによる監視を行いたい場合は，エンタープライズオプションの GGHelthCheck をご利用下さい．詳細については，技術ノート KGTN#2011013101 をご覧下さい．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1481/" class="btn btn-template-main">続きを読む</a>
+2011/08/11*
+[番号] 技術ノート KGTN 2011081103
+[現象] クライアントに高性能なグラフィックアダプタが搭載されているが，GGの環境でもその効果はあるか？
+[説明] 高性能なグラフィックアダプタは，想定されたハードウエア環境で最大限のパフォーマンスが得られるように設計されております．GGの環境では，描画エンジンの仮想ディスプレイアダプタ，さらにサーバとクライアント間にネットワークが介在し，これらはそのような環境と比べればパフォーマンスが低いため，残念ながらその効果は期待できません．
+ファイル KGTN2011081103.pdf [(49.6 KB)] [kitasp 技術センター, 2011/08/11 10:42]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1340/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -401,7 +405,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1484/">
+                                      <a href="/posts/new_md/doc1342/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -409,7 +413,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1484/">サービス GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1342/">クライアントドライブ機能を利用してサーバ側からクライアント側へファイルをコピーした時，ネットワーク上を流れるデータの量がファイルサイズより大きい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -422,18 +426,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1484/"><i class="far fa-calendar"></i> 2011-01-31</a>
+                                            <a href="/posts/new_md/doc1342/"><i class="far fa-calendar"></i> 2011-08-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/01/31*
-[番号] 技術ノート KGTN 2011013102
-[現象] サービス GO-Global License Manager の停止状態が続くと，APSのサービスが停止する．
-[説明] ggw-3.2.1.4446 またはそれ以降では，サービス GO-Global License Manager の停止から約10分でAPSが停止します．この10分間は，新たなユーザのログオンは出来ませんが，ログオン中のユーザがアプリケーションを起動することは出来ます．
-注　意 APS が停止するのは，ログオンしているユーザが存在している場合に限ります．誰もログオンしていない場合は，APS は停止しません （ggw-3.2.1.4466で確認） ．
-ファイル KGTN2011013102.pdf [(50.9 KB)] [kitasp 技術センター, 2011/01/31 11:17]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1484/" class="btn btn-template-main">続きを読む</a>
+2011/08/11*
+[番号] 技術ノート KGTN 2011081101
+[現象] クライアントドライブ機能を利用してサーバ側からクライアント側へファイルをコピーした時，ネットワーク上を流れるデータの量がファイルサイズより大きい．
+[説明] FTPやWWWを使用してファイルをダウンロードする場合は， （正確さを欠く表現になりますが） ファイルがストレートにサーバ側からクライアント側へコピーされます．GGのクライアントドライブ機能を利用してファイルをダウンロードする場合は， Windows API の内部処理に従ってコピーされますので，ファイルが定められたサイズに分割され，それに管理情報等も付加されクライアントへ送信されます．さらに大きなファイルでは，コピーのアニメーションを表示するAPIもクライアントへ送信されます．このような処理が行われるため，実際のファイルサイズより大きいデータ量がネットワーク上を流れます．なお，ネットワーク機材のデータ圧縮機能等も，このような仕組みにより十分に働かない場合があります．
+ファイル KGTN2011081101.pdf [(55.2 KB)] [kitasp 技術センター, 2011/08/11 09:37]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1342/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -443,7 +446,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1485/">
+                                      <a href="/posts/new_md/doc1341/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -451,7 +454,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1485/">サービス GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1341/">画面の解像度の設定は，クライアントの 「画面のプロパティ」 で設定するのか？　それともサーバの 「画面のプロパティ」 （GO-Global Display Driver） で設定するのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -464,18 +467,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1485/"><i class="far fa-calendar"></i> 2011-01-31</a>
+                                            <a href="/posts/new_md/doc1341/"><i class="far fa-calendar"></i> 2011-08-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/01/31*
-[番号] 技術ノート KGTN 2011013103
-[現象] サービス GO-Global License Manager を停止させて，すぐに開始したが何か問題はあるか？
-[説明] サービス GO-Global License Manager （ライセンスサーバ） が停止すると，新たなユーザはログオン出来ませんが，ログオン中のユーザは 「約10分間」 そのまま利用することが出来ます．その間にライセンスサーバを開始すると，新たなユーザがログオン出来るようになります．但し，数分間はライセンスの利用状況の回復処理が行われますので， それが完了するまでは lmtools 等で表示されるライセンスの利用状況と，実際の状況と整合しないことがあります．
-注　意 ライセンスの利用状況の回復処理が行われている間に，ライセンス数を超えるユーザがログオン出来ないように，クラスタマネージャで適切なユーザ数を設定するようにして下さい （Maximum sessions on this server） ．
-ファイル KGTN2011013103.pdf [(56.7 KB)] [kitasp 技術センター, 2011/01/31 10:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1485/" class="btn btn-template-main">続きを読む</a>
+2011/08/11*
+[番号] 技術ノート KGTN 2011081102
+[現象] 画面の解像度の設定は，クライアントの 「画面のプロパティ」 で設定するのか？　それともサーバの 「画面のプロパティ」 （GO-Global Display Driver） で設定するのか？
+[説明] サーバの 「画面のプロパティ」 で表示される GO-Global Display Driver は，アプリケーションが描画した内容を正しく認識するための特殊なドライバです．従って，解像度の設定はクライアントの 「画面のプロパティ」 で設定して下さい．
+ファイル KGTN2011081102.pdf [(46.2 KB)] [kitasp 技術センター, 2011/08/11 10:11]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1341/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -485,7 +487,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1486/">
+                                      <a href="/posts/new_md/doc1343/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -493,7 +495,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1486/">正式ライセンスを一時的にデモライセンスに入れ替えた場合，副作用等は発生しないのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1343/">[GGH4.0] Automatically update clients を有効にしたが，クライアントがアップデートされない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -506,17 +508,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1486/"><i class="far fa-calendar"></i> 2011-01-30</a>
+                                            <a href="/posts/new_md/doc1343/"><i class="far fa-calendar"></i> 2011-08-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/01/30*
-[番号] 技術ノート KGTN 2011013002
-[現象] 正式ライセンスを一時的にデモライセンスに入れ替えた場合，副作用等は発生しないのか？
-[説明] デモライセンスはユーザ数が無制限ですので，クラスタマネージャでユーザ数を制限する必要があります．その点を除けば，副作用等は一切ありません．
-ファイル KGTN2011013002.pdf [(44.7 KB)] [kitasp 技術センター, 2011/01/30 15:50]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1486/" class="btn btn-template-main">続きを読む</a>
+2011/08/08*
+[番号] 技術ノート KGTN 2011080801
+[現象] [GGH4.0] Automatically update clients を有効にしたが，クライアントがアップデートされない．
+[説明] 仕様なのか不具合なのか未だ明確になっておりませんが，クライアントのアップデートは GO-Global Update Client というサービスが行い， 4.0.1.10784 の環境では適用　（アップデート）　までに1〜2時間を要します．
+補足１ 行われている処理を調べたところ，接続時に一括してダウンロードし直ちにアップデートする方式ではなく，GGのセッションを通して新しいクライアント （ファイル） を少しずつダウンロードされ，全てのファイルが揃ったところで下記のダイアログを表示されます．ユーザが現在のセッションを終了し，次回ログオンした時，この新しいクライアント （ファイル） が適用されます．なお，ダウンロード中のファイルは %TEMP%¥updates の下に保存されます．実験では，無操作の状態で約１分後からダウンロードが開始します．
+補足２ サービス GO-Global Update Client が開始していない場合は，新しいクライアント （ファイル） のダウンロードおよびインストールは行われません．
+ファイル KGTN2011080801.pdf [(91.2 KB)] [kitasp 技術センター, 2011/08/08 12:19]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1343/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -526,7 +530,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2539/">
+                                      <a href="/posts/new_md/doc1344/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -534,7 +538,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2539/">[GGW3.2.1,GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc1344/">[GGH4.0] Windows クライアントをインストールすると，サービスが追加されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -547,22 +551,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2539/"><i class="far fa-calendar"></i> 2011-01-28</a>
+                                            <a href="/posts/new_md/doc1344/"><i class="far fa-calendar"></i> 2011-08-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/01/28*
-[番号] 技術ノート KGTN 2011012802
-[現象] [GGW3.2.1,GGH4.X-5.X] GG上で動作するアプリケーションを全て終了させるプログラムを作りたい．終了しないアプリケーションは，タイムアウト時間経過後に強制終了させたい．
-[説明] 以下のテストプログラムで，GG上で動作するアプリケーションが終了し，かつ自分人身が最後に終了することを確認しました．なお，プログラム名は GGLogout.exe とし，自分自身に WM_CLOSE を送信しないようにしています．
-タイムアウト時間経過後は，下記の関数により 「ウインドウハンドルに対応付く」 プロセスを強制終了させます．なお，TerminateProcess関数によりプロセスが強制終了された場合は，メモリリーク等が発生する可能性があります．
-ファイル KGTN2011012802.pdf [(74.7 KB)] [kitasp 技術センター, 2016/06/17 16:14]
-KGTN2011012802-1.jpg
-表示 [(16.1 KB)] [kitasp 技術センター, 2016/06/17 16:14]
-KGTN2011012802-2.jpg
-表示 [(12.5 KB)] [kitasp 技術センター, 2016/06/17 16:14]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2539/" class="btn btn-template-main">続きを読む</a>
+2011/08/08*
+[番号] 技術ノート KGTN 2011080802
+[現象] [GGH4.0] Windows クライアントをインストールすると，サービスが追加されるのか？
+[説明] 3.2系ではサービスは追加されませんでしたが，4.0系からGO-Global Update Client というサービスが追加されます．これは，クライアントの自動更新機能 （オプション Automatically update clinets で設定） の処理を行うためのサービスです．
+ファイル KGTN2011080802.pdf [(49.8 KB)] [kitasp 技術センター, 2011/08/08 11:08]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1344/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -572,7 +571,7 @@ KGTN2011012802-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1488/">
+                                      <a href="/posts/new_md/doc2383/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -580,7 +579,7 @@ KGTN2011012802-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1488/">GG上で動作するアプリケーションを全て終了させるプログラムを作りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2383/">[GGH4.X-5.X] Automatic Client Updates は，どのクライアントについて働くのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -593,17 +592,20 @@ KGTN2011012802-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1488/"><i class="far fa-calendar"></i> 2011-01-28</a>
+                                            <a href="/posts/new_md/doc2383/"><i class="far fa-calendar"></i> 2011-08-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/01/28*
-[番号] 技術ノート KGTN 2011012801
-[現象] GG上で動作するアプリケーションを全て終了させるプログラムを作りたい．
-[説明] 以下のテストプログラムで，GG上で動作するアプリケーションが終了し，かつ自分人身が最後に終了することを3.2.1 系で確認しました．なお，プログラム名は GGLogout.exe とし，自分自身に WM_CLOSE を送信しないようにしています．
-ファイル KGTN2011012801.pdf [(54.3 KB)] [kitasp 技術センター, 2011/01/28 12:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1488/" class="btn btn-template-main">続きを読む</a>
+2011/08/08*
+[番号] 技術ノート KGTN 2011080803
+[現象] [GGH4.X-5.X] Automatic Client Updates は，どのクライアントについて働くのか？
+[説明] Windows クライアントについてのみAutomatic Client Updates が働きます．GGのプロトコルを介して新しいバージョンのWindowsクライアントのファイルがサーバからクライアントへ送信され，全てのファイルが揃うと次のダイアログが表示されます （注：セッションが空いている時にファイルを少しずつ送信するため，揃うまで1～2時間かかることがあります） ．
+このダイアログが表示された後，次回Windows クライアントが起動された時に，新しいWindows クライアントで立ち上がります．
+ファイル KGTN2011080803.pdf [(64.2 KB)] [kitasp 技術センター, 2016/08/25 15:07]
+KGTN2011080803.jpg
+表示 [(7.17 KB)] [kitasp 技術センター, 2016/08/25 15:07]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2383/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -613,7 +615,7 @@ KGTN2011012802-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1489/">
+                                      <a href="/posts/new_md/doc1345/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -621,7 +623,7 @@ KGTN2011012802-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1489/">TCP/IPレベルでコネクションの切断が認識されない場合，GGサーバはどのタイミングでコネクションの切断を認識するのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1345/">GO-Global はAPI Wrapping 方式で， Terminal Service はScreen Scraping 方式だそうだが，具体的にどう違うのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -634,18 +636,20 @@ KGTN2011012802-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1489/"><i class="far fa-calendar"></i> 2011-01-27</a>
+                                            <a href="/posts/new_md/doc1345/"><i class="far fa-calendar"></i> 2011-08-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/01/27*
-[番号] 技術ノート KGTN 2010091603
-[現象] TCP/IPレベルでコネクションの切断が認識されない場合，GGサーバはどのタイミングでコネクションの切断を認識するのか？
-[説明] クライアントからサーバへ定期的 （30秒間隔） にGGのPINGパケットを送信しておりますので，GGサーバはこのパケットが （続けて2回） 届かなかった時，コネクションの切断が発生したと認識します．このケースでは，以下のメッセージがAPSログに記録されます．
-CS: Keep-alive signal was not received. Closing the connection.
-ファイル KGTN2010091603.pdf [(52.3 KB)] [kitasp 技術センター, 2011/01/27 10:53]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1489/" class="btn btn-template-main">続きを読む</a>
+2011/08/02*
+[番号] 技術ノート KGTN 2011080201
+[現象] GO-Global はAPI Wrapping 方式で， Terminal Service はScreen Scraping 方式だそうだが，具体的にどう違うのか？
+[説明]
+ 各方式の概要 API Wrapping 方式では，サーバ上で実行される描画命令を捕まえて，それに対応する仮想的な描画命令をクライアントへ転送し，その命令を受け取ったクライアントが画面に描画します．  Screen Scraping 方式では，サーバ上で描画された画面を監視し，決められた間隔で画面の差分を検出し，その差分をクライアントへ転送し，そしてクライアントが画面に反映します．
+画面再現のタイミングについて API Wrapping 方式では，描画命令を捕まえて 「逐次」 クライアントへ転送し画面を再現します．つまり同期して画面の再現を行う仕組みで，ネットワークが混雑した状況等に於いても，アプリケーションが描画した通りの順序でクライアントの画面を再現します．この同期描画により，ユーザは描画 （画面の再現） に違和感を感じることはありません．  Screen Scraping 方式では，描画された画面を 「決められた間隔で」 差分を検出し，それをクライアントへ転送し画面を再現します．つまり非同期に画面の再現を行う仕組みで，ネットワークが混雑した状況等では，アプリケーションが描画した順序とは無関係にクライアントの画面を再現します．この非同期描画により，ユーザは描画 （画面の再現） に違和感を感じることがあります．
+CPUの使用率について API Wrapping 方式では，アプリケーションの描画処理に同期して，クライアントで画面の描画を行いますので，その処理の分だけCPUの使用率が通常よりも 「高く」 なる傾向があります．  Screen Scraping 方式では，アプリケーションの描画処理とは関係なく 「決められた間隔で」 差分を検出し，その差分をクライアントへ転送し，そして画面に反映しますので，その処理の分だけCPUの使用率が通常よりも 「長く」 なる傾向があります．
+ファイル KGTN2011080201.pdf [(62.8 KB)] [kitasp 技術センター, 2011/08/02 15:12]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1345/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -655,7 +659,7 @@ CS: Keep-alive signal was not received. Closing the connection.
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1492/">
+                                      <a href="/posts/new_md/doc1346/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -663,7 +667,7 @@ CS: Keep-alive signal was not received. Closing the connection.
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1492/">[GGW3.2] ggw</a></h2>
+                                    <h2><a href="/posts/new_md/doc1346/">[GGH4.0] セッション再接続機能を利用し，クライアントAからクライアントBへセッションを引き継いだ場合，クライアントのドライブはどう表示されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -676,19 +680,17 @@ CS: Keep-alive signal was not received. Closing the connection.
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1492/"><i class="far fa-calendar"></i> 2011-01-26</a>
+                                            <a href="/posts/new_md/doc1346/"><i class="far fa-calendar"></i> 2011-07-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/01/26*
-[番号] 技術ノート KGTN 2011011201
-[現象] [GGW3.2] ggw-3.2.1.4389を使用しているが， &ldquo;VISIBLE = FALSE&rdquo; の状態で最小化，もしくは最小化の解除を行うと，その後の表示で画面が乱れる （例： ウインドウが透明な状態になる） ．
-[説明] この現象は CASE#27283　としてGraphOn社が確認しており， ggw-3.2.1.4420 で修正されております．なお，クライアント側の修正を伴っているため，サーバ側だけでなくクライアント側のアップデートも必要です．
-参考１ 本事象に関するリリースノートは以下の通りです．
-3.2.1.4420 (6/19/2009)  Issues fixed since 3.2.1.4389   Ticket 27283 / Bug 7002 Painting issues in a custom application when opened in a maximized state.
-NOTE: The Windows Client, the ActiveX Control, and the Netscape Plug-in for Windows must be updated for this fix.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1492/" class="btn btn-template-main">続きを読む</a>
+2011/07/29*
+[番号] 技術ノート KGTN 2011072903
+[現象] [GGH4.0] セッション再接続機能を利用し，クライアントAからクライアントBへセッションを引き継いだ場合，クライアントのドライブはどう表示されるのか？
+[説明] GGH-4.0.1.10357 の仕様では，ファイルアクセスのダイアログ等を開いた場合，セッションを引き継いだ後のクライアント （つまりクライアントB） のドライブが表示されます．
+ファイル KGTN2011072903.pdf [(45.8 KB)] [kitasp 技術センター, 2011/07/29 14:03]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1346/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -698,7 +700,7 @@ NOTE: The Windows Client, the ActiveX Control, and the Netscape Plug-in for Wind
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1494/">
+                                      <a href="/posts/new_md/doc1348/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -706,7 +708,7 @@ NOTE: The Windows Client, the ActiveX Control, and the Netscape Plug-in for Wind
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1494/">クライアント側でGGのウインドウを操作したいが，注意すべき点は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1348/">[GGH4.0] GO-Global iPad Client のサイズと対応している環境は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -719,21 +721,17 @@ NOTE: The Windows Client, the ActiveX Control, and the Netscape Plug-in for Wind
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1494/"><i class="far fa-calendar"></i> 2011-01-21</a>
+                                            <a href="/posts/new_md/doc1348/"><i class="far fa-calendar"></i> 2011-07-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/01/21*
-[番号] 技術ノート KGTN 2011012102
-[現象] クライアント側でGGのウインドウを操作したいが，注意すべき点は？
-[説明] GGがクライアント上に表示するウインドウは，GGサーバで実行されるアプリケーションのウインドウです．クライアント側で 「WindowsのAPIを使用して」 そのウインドウを操作した場合，GGサーバ上で動作するアプリケーションは操作内容を知りませんので，操作後に画面が崩れる等の現象が発生します．従って，原則としてクライアント側で 「WindowsのAPIを使用して」 ウインドウ操作を行うことは出来ません．
-参　考1 ウインドウを最小化する・ウインドウを隠す等の単純な操作を行う場合，技術ノート KGTN#2010031501，KGTN#2010090205，KGTN#2009080501 を参考に，Zオーダーが狂わないような処理を行って下さい．幾つかのユーザ様から，このような方法で 「期待した通りの動作を実現できた」 という報告があります．
-参　考2 以下のようなコードで，GGが表示するウインドウの 「非表示・表示」 が動作しているようです．
-void CGGTest_SendMessageDlg::OnBnClickedOk() { //&mdash; ::MessageBox(NULL,_T(&ldquo;STEP1&rdquo;),_T(&ldquo;GGTest_SendMessage&rdquo;),MB_OK); EnumWindows(EnumWindowsProc1,0); ::MessageBox(NULL,_T(&ldquo;STEP2&rdquo;),_T(&ldquo;GGTest_SendMessage&rdquo;),MB_OK); EnumWindows(EnumWindowsProc2,0); //&mdash; }
-BOOL CALLBACK EnumWindowsProc1(HWND hwnd,LPARAM lParam) { TCHAR tBufC^1024^,tBufT^1024^,tBufX^1024^; //&mdash; ::GetClassName(hwnd,tBufC,(sizeof(tBufC)/sizeof(tBufC^0^))); ::GetWindowText(hwnd,tBufT,(sizeof(tBufT)/sizeof(tBufT^0^))); _stprintf_s(tBufX,_T(&quot;'%s&rsquo; - &lsquo;%s&rsquo;&quot;),tBufC,tBufT); if(_tcslen(tBufT) &gt; 0) { if(_tcsicmp(tBufC,_T(&ldquo;DisplayClientWindowClass&rdquo;)) 0) { ::MessageBox(NULL,tBufX,_T(&ldquo;GGTest_SendMessage#11&rdquo;),MB_OK); ::ShowWindow(hwnd,SW_HIDE); } } //&mdash; return(TRUE); }
-BOOL CALLBACK EnumWindowsProc2(HWND hwnd,LPARAM lParam) { TCHAR tBufC[1024],tBufT[1024],tBufX[1024]; //&mdash; ::GetClassName(hwnd,tBufC,(sizeof(tBufC)/sizeof(tBufC[0]))); ::GetWindowText(hwnd,tBufT,(sizeof(tBufT)/sizeof(tBufT[0]))); _stprintf_s(tBufX,_T(&quot;'%s&rsquo; - &lsquo;%s&rsquo;&quot;),tBufC,tBufT); if(_tcslen(tBufT) &gt; 0) { if(_tcsicmp(tBufC,_T(&ldquo;DisplayClientWindowClass&rdquo;)) 0) { ::MessageBox(NULL,tBufX,_T(&ldquo;GGTest_SendMessage#21&rdquo;),MB_OK); ::ShowWindow(hwnd,SW_SHOW); ::PostMessage(hwnd,WM_PAINT,0,0); ::SetForegroundWindow(hwnd); } } //&mdash; return(TRUE); }</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1494/" class="btn btn-template-main">続きを読む</a>
+2011/07/08*
+[番号] 技術ノート KGTN 2011070803
+[現象] [GGH4.0] GO-Global iPad Client のサイズと対応している環境は？
+[説明] 2011年7月8日時点でApple App Store から入手できるGO-Global iPad Client (Ver 4.1.0.10533) は，サイズが3.1MB，動作環境がiOS 4.2 またはそれ以降です．
+ファイル KGTN2011070803.pdf [(45.9 KB)] [kitasp 技術センター, 2011/07/08 09:47]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1348/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -803,7 +801,7 @@ BOOL CALLBACK EnumWindowsProc2(HWND hwnd,LPARAM lParam) { TCHAR tBufC[1024],tBuf
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

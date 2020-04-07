@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2581/">
+                                      <a href="/posts/new_md/doc535/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2581/">[GGW3.2.1/GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc535/">[ExPack] 拡張パックの GGAPSManager とはどんなツールなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,18 +340,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2581/"><i class="far fa-calendar"></i> 2013-03-26</a>
+                                            <a href="/posts/new_md/doc535/"><i class="far fa-calendar"></i> 2013-08-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/26*
-[番号] 技術ノート KGTN 2013032701
-[現象] [GGW3.2.1/GGH4.X-5.X] GGサーバのセッション構成 （生成） の詳細は？
-[説明] 弊社が得ている情報および弊社の実験等から，以下の手順でセッションが構成 （生成） されます．
- APS (Application Publishing Service) がクライアントとの TCP/IP のコネクションを確立． 圧縮の有無および暗号化のレベルを調整． APSがクライアント向けにセッションを生成． APSが ggse.sys （システム拡張ドライバ） にセッションの生成を通知． ggse.sys がセッションのためのセッション空間 （マルチユーザ環境） を配置． ggse.sys がセッション空間上でWin32サブシステムのインスタンスを初期化． Win32サブシステムが ggdd.dll を呼び出し，仮想ディスプレイ・ディバイスを生成．   クライアントのディスプレイの解像度と色深度を仮想ディスプレイ・ディバイスに設定． 9) APSが logon.exe を起動． 10) logon.exe がユーザ名とパスワードを受け取り （通常の） 認証処理を実行． 11) 認証後のセキュリティ コンテキストの下でアプリケーションを実行．
-ファイル KGTN2013032701.pdf [(70.5 KB)] [kitasp 技術センター, 2016/05/27 14:05]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2581/" class="btn btn-template-main">続きを読む</a>
+2013/08/16*
+[番号] 技術ノート KGTN 2013081601
+[現象] [ExPack] 拡張パックの GGAPSManager とはどんなツールなのか？
+[説明] GMSessionMonitor と共に GGサーバ上で動作させるプログラム （サービス） で， APS (GO-Global Application Publishing Service) の状態を監視します．サーバ再起動時，設定ファイルで指定した秒数後に APS を開始させます．障害等で APS が停止状態になった場合， APS を自動的に開始します．また GMSessionMonitor の情報を参照し， 「接続出来ない」 や 「情報が更新されない」 等の異常な状況が検出された場合， APS を自動的に再起動します．以上のように，GGサーバの高可用性に役立つツールです．
+設定ファイルと起動パラメタ 設定ファイルGGAPSManager.ini の default セクションで，以下のパラメタを設定して下さい．
+  設定項目 説明 serviceName サービスの名称で &quot;GO-Global APS Manager&quot; を指定 loglevel ログの出力レベル，通常は1を指定し，障害時は4を指定 logFile ログファイルのフルパス sqlFile データベースファイル（サーバの最新情報）のフルパス delayedStart サーバ再起動からAPSを開始するまでの時間（秒） maxStartTime APSの開始に要する最大時間（秒） maxStopTime APSの停止に要する最大時間（秒）  stopGraceTime APSの自動再起動までの猶予時間（秒），-1 は自動再起動機能オフ showStatusTime APSの状態を記録する間隔（秒）</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc535/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -361,7 +361,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc612/">
+                                      <a href="/posts/new_md/doc537/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -369,7 +369,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc612/">[GGH4.5] ActiveXクライアントの環境で，ブラウザを閉じてもセッションが残るようにしたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc537/">[ExPack] Windows Vista &#43; Adobe Reader 8.0 &#43; GGSpoolPDF では正常に動作するが， Windows 7 (32bit) &#43; Adobe Reader XI (11) &#43; GGSpoolPDF の環境では Adobe Reader のプロセスが残る．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -382,17 +382,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc612/"><i class="far fa-calendar"></i> 2013-03-24</a>
+                                            <a href="/posts/new_md/doc537/"><i class="far fa-calendar"></i> 2013-08-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/24*
-[番号] 技術ノート KGTN 2013032501
-[現象] [GGH4.5] ActiveXクライアントの環境で，ブラウザを閉じてもセッションが残るようにしたい．
-[説明] GGW3.2.1では，ActiveXクライアントの環境でブラウザを閉じるとセッションも終了しましたが （デフォルトの設定の場合） ，GGH4.5の場合は logon.html の処理が以下のようになっておりますので，デフォルトの設定でブラウザを閉じてもセッションは維持されます．
-ファイル KGTN2013032501.pdf [(50.8 KB)] [kitasp 技術センター, 2013/03/25 08:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc612/" class="btn btn-template-main">続きを読む</a>
+2013/08/15*
+[番号] 技術ノート KGTN 2013080601
+[現象] [ExPack] Windows Vista + Adobe Reader 8.0 + GGSpoolPDF では正常に動作するが， Windows 7 (32bit) + Adobe Reader XI (11) + GGSpoolPDF の環境では Adobe Reader のプロセスが残る．
+[説明] GGSpoolPDF は Adobe Reader 8.0 向けにデザインされており， Adobe Reader XI の仕様が変更されたため， Adobe Reader のプロセスが残るという現象が発生しました．Adobe Reader 8.0 は，PDFファイルを表示したウインドウに WM_CLOSE を送信することで，印刷終了後にプロセスが終了します． Adobe Reader XI は，PDFファイルを表示したウインドウに WM_CLOSE を送信することでそのウインドウは閉じますが，親のウインドウは （自動的に） 閉じないため，結果としてプロセスが終了せずに残ります．
+次期リリースでは，PDFファイルを表示したウインドウだけでなく，その親のウインドウに対しても WM_CLOSE を送信するように修正を行い， Adobe Reader XI のプロセスが残らないようにする予定です．
+補　足 GGSpoolPDF の次期リリースは，2013年10月31日を予定しております．これよりも前に検証等をご希望の場合は，弊社技術支援センターまでお知らせ下さい．可能であれば，RC版 （出荷候補版） 等をご提供致します．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc537/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -402,7 +403,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc93/">
+                                      <a href="/posts/new_md/doc538/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -410,7 +411,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc93/">[GGH4.X] SSLの設定で 56</a></h2>
+                                    <h2><a href="/posts/new_md/doc538/">[ExPack] 技術ノート KGTN#2013080601 の説明に 「親のウインドウに対しても WM_CLOSE を送信する」 とあるが，ローカルで起動された Adobe Reader XI のウインドウを閉じる可能性はないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -423,19 +424,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc93/"><i class="far fa-calendar"></i> 2013-03-22</a>
+                                            <a href="/posts/new_md/doc538/"><i class="far fa-calendar"></i> 2013-08-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/22*
-[番号] 技術ノート KGTN 2013032201
-[現象] [GGH4.X] SSLの設定で 56-bit DES よりも高いエンクリプションが表示されない．
-[説明] GGは，標準機能で56-bit DES をサポートします．56bit-DES よりも高いエンクリプション （128-bit RC4, 168-bit 3DES, 256-bit AES） を利用なさりたい場合は，通常のライセンスに加え 「高度暗号化オプション」 が必要となります．
-ファイル KGTN2013032201.pdf [(199 KB)] [kitasp 技術センター, 2015/06/17 13:13]
-KGTN2013032201.jpg
-表示 [(75.3 KB)] [kitasp 技術センター, 2015/06/17 15:47]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc93/" class="btn btn-template-main">続きを読む</a>
+2013/08/15*
+[番号] 技術ノート KGTN 2013080602
+[現象] [ExPack] 技術ノート KGTN#2013080601 の説明に 「親のウインドウに対しても WM_CLOSE を送信する」 とあるが，ローカルで起動された Adobe Reader XI のウインドウを閉じる可能性はないのか？
+[説明] WM_CLOSE を送信する候補のウインドウのプロセスIDを調べ （GetWindowThreadProcessId関数） ，その親のプロセスを順に辿り （PROCESSENTRY32 構造体の th32ParentProcessID を参照）， Adobe Reader XI を起動した GGSpoolPDF のプロセスIDが現れた場合に限り WM_CLOSE を送信します．従って，ローカルで起動されたAdobe Reader XI のウインドウを閉じる可能性はありません．
+ファイル KGTN2013080602.pdf [(57.9 KB)] [kitasp 技術センター, 2013/08/15 11:40]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc538/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -445,7 +444,7 @@ KGTN2013032201.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc613/">
+                                      <a href="/posts/new_md/doc301/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -453,7 +452,7 @@ KGTN2013032201.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc613/">[GGH4.5] 他のGGサーバ上で動作するライセンスサーバを参照するように設定したが，APSログにライセンス・エラーが記録されてクライアントから接続出来ない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc301/">[SDK] エンタープライズオプションのGGSessionMonitor がGGサーバ上で生成する SQLite3 テーブルの定義を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -466,19 +465,17 @@ KGTN2013032201.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc613/"><i class="far fa-calendar"></i> 2013-03-19</a>
+                                            <a href="/posts/new_md/doc301/"><i class="far fa-calendar"></i> 2013-08-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/19*
-[番号] 技術ノート KGTN 2013031903
-[現象] [GGH4.5] 他のGGサーバ上で動作するライセンスサーバを参照するように設定したが，APSログにライセンス・エラーが記録されてクライアントから接続出来ない．
-[説明] ライセンスサーバとライセンス・エラーが記録されるGGサーバが同じLAN上にあれば，ライセンスサーバが動作するWindowsのファイアウォールに起因する問題です．セキュリティ上の心配が要らない環境であれば，ファイアウォールを無効化することで問題が解消します．
-ファイアウォールを無効化出来ない場合は，以下のようにライセンスファイルに使用するポート番号を指定して下さい．次にこの２つのポート番号で受信出来るように，ライセンスサーバのファイアウォールの設定を変更して下さい．これで問題が解消します．
-SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM port=5678 ← デーモンが使用するポート INCREMENT session blm 4.0 31-dec-2012 5 99E82D1B9A64 HOSTID=ANY INCREMENT any_app blm 4.0 31-dec-2012 uncounted D1D222D031C4 HOSTID=ANY
-ファイル KGTN2013031903.pdf [(59.4 KB)] [kitasp 技術センター, 2013/03/19 13:41]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc613/" class="btn btn-template-main">続きを読む</a>
+2013/08/15*
+[番号] 技術ノート KGTN 2012062601
+[現象] [SDK] エンタープライズオプションのGGSessionMonitor がGGサーバ上で生成する SQLite3 テーブルの定義を知りたい．
+[説明] 将来変更 （拡張） される可能性はありますが，現時点では以下の通りです．
+CREATE TABLE IF NOT EXISTS server_tbl ( -- サーバ情報 serverName text, -- サーバのホスト名 serverAddress text, -- サーバのIPアドレス maxSessions integer, -- 最大セッション数 sessionCount integer, -- 現在のセッション数 cpuUsage integer, -- CPUの負荷 （未使用） memoryUsage integer, -- メモリの負荷 （未使用） availability text, -- 利用可否フラグ　（YES/NO） checkTime text, -- 最終チェック日時 tickCount integer -- データ登録時の GetTickCount() の値 *1 ); CREATE TABLE IF NOT EXISTS session_tbl ( -- 現在のセッション情報 sessionID integer, -- セッションID sessionName text UNIQUE, -- セッション名 userName text, -- ユーザ名 startTime text, -- セッション開始日時 clientCount integer, -- 接続クライアント数 （0/1） clientID integer, -- クライアントID serverName text, -- サーバのホスト名 clientName text, -- クライアントのホスト名 clientAddress text, -- クライアントのIPアドレス tickCount integer, -- データ登録時の GetTickCount() の値 *2 tickDiff integer -- サーバとの時間差 （内部処理用） *2 ); CREATE TABLE IF NOT EXISTS user_tbl ( -- セッションの履歴情報 seqid text, -- シーケンスID （一意性あり） -- YYYYMMDD-HHMMSS-NN （NN: 00→01→02) logDate text, -- 記録日時 operation text, -- 操作： INSERT,REPLACE,UPDATE,DELETE sessionID integer, -- セッションID sessionName text, -- セッション名 userName text, -- ユーザ名 startTime text, -- セッション開始日時 clientCount integer, -- 接続クライアント数 （0/1） clientID integer, -- クライアントID serverName text, -- サーバのホスト名 clientName text, -- クライアントのホスト名 clientAddress text, -- クライアントのIPアドレス endTime text -- セッション終了日時 ); CREATE TABLE IF NOT EXISTS appn_tbl ( -- 現在のアプリケーション情報 *2 applicationID integer, -- アプリケーションID pid integer, -- プロセスID applicationName text, -- アプリケーション名 path text, -- アプリケーションのパス args text, -- アプリケーションのコマンドライン sessionID integer, -- セッションID sessionName text, -- セッション名 userName text, -- ユーザ名 startTime text, -- セッション開始日時 tickCount integer, -- アプリケーション起動時の GetTickCount() の値 tickDiff integer -- サーバとの時間差 （内部処理用） ); CREATE TABLE IF NOT EXISTS appl_tbl ( -- アプリケーションの履歴情報 *2 seqid text, -- シーケンスID （一意性あり） -- YYYYMMDD-HHMMSS-NN （NN: 00→01→02) logDate text, -- 記録日時 operation text, -- 記録内容： APP:START, APP:END applicationID integer, -- アプリケーションID pid integer, -- プロセスID applicationName text, -- アプリケーション名 path text, -- アプリケーションのパス args text, -- アプリケーションのコマンドライン sessionID integer, -- セッションID sessionName text, -- セッション名 userName text, -- ユーザ名 startTime text, -- セッション開始日時 endTime text, -- セッション終了日時 elapsedTime integer -- プロセスの実行時間（秒） );  *1 - 1.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc301/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -488,7 +485,7 @@ SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc191/">
+                                      <a href="/posts/new_md/doc540/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -496,7 +493,7 @@ SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc191/">[iPad/Android] iPad および Android クライアントで接続先のGGサーバを散らす方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc540/">[GGH4.X] クラスタマネージャの設定項目 Maximum sessions per user は，どのファイルのどの項目に記録されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -509,17 +506,17 @@ SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc191/"><i class="far fa-calendar"></i> 2013-03-18</a>
+                                            <a href="/posts/new_md/doc540/"><i class="far fa-calendar"></i> 2013-08-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/18*
-[番号] 技術ノート KGTN 2013031901
-[現象] [iPad/Android] iPad および Android クライアントで接続先のGGサーバを散らす方法は？
-[説明] iOS クライアントのバージョン4.8 から URL Scheme がサポートされましたので，この機能を利用することで接続先のGGサーバを散らすことが出来ます （技術ノート KGTN#2014012401 を参照） ． Android クライアントについては，バージョン5 から URL Scheme がサポートされる見込みです．
-ファイル KGTN2013031901.pdf [(49.6 KB)] [kitasp 技術センター, 2014/10/03 19:46]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc191/" class="btn btn-template-main">続きを読む</a>
+2013/08/09*
+[番号] 技術ノート KGTN 2013080901
+[現象] [GGH4.X] クラスタマネージャの設定項目 &ldquo;Maximum sessions per user&rdquo; は，どのファイルのどの項目に記録されるのか？
+[説明] ファイル DefaultWorkspaceProperties.xml の下記項目に記録されます．
+ファイル KGTN2013080901.pdf [(50.7 KB)] [kitasp 技術センター, 2013/08/09 11:16]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc540/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -529,7 +526,7 @@ SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc616/">
+                                      <a href="/posts/new_md/doc539/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -537,7 +534,7 @@ SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc616/">[GGW3.2.1/GGH4.5] シリアル・リダイレクション機能 （クライアント・シリアル機能） を使用する場合の注意点は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc539/">[GGH4.X] ログオン時に Connection failed. Access to the host was denied というメッセージが表示されログオンに失敗する．APSログを確認すると AS: Function NativeCreateProcess() failed with situationID 3995, ntStatus 3221225496, dwGLE 0 という記録がある．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -550,17 +547,18 @@ SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc616/"><i class="far fa-calendar"></i> 2013-03-15</a>
+                                            <a href="/posts/new_md/doc539/"><i class="far fa-calendar"></i> 2013-08-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/15*
-[番号] 技術ノート KGTN 2013031504
-[現象] [GGW3.2.1/GGH4.5] シリアル・リダイレクション機能 （クライアント・シリアル機能） を使用する場合の注意点は？
-[説明] GGは，シリアルポートに対する ReadFile, WriteFile, etc&hellip; をサポートします．物理的にケーブルが繋がってはいませんので，細かな制御等は動作しないとお考え下さい．実験で正常に動作した場合でも，シリアルポートに接続するディバイス （例：ハンディーターミナル） が通信タイムアウト時間を小さく設定している場合は，ネットワークの一時的な遅延でも通信エラーが発生します．このような場合は，ディバイス側で通信タイムアウト処理を行わない，通信タイムアウト時間を長くする等の対応が必要になります．
-ファイル KGTN2013031504.pdf [(57.1 KB)] [kitasp 技術センター, 2013/03/15 12:08]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc616/" class="btn btn-template-main">続きを読む</a>
+2013/08/09*
+[番号] 技術ノート KGTN 2013080902
+[現象] [GGH4.X] ログオン時に &ldquo;Connection failed. Access to the host was denied&rdquo; というメッセージが表示されログオンに失敗する．APSログを確認すると &ldquo;AS: Function NativeCreateProcess() failed with situationID 3995, ntStatus 3221225496, dwGLE 0&rdquo; という記録がある．
+[説明] &ldquo;ntStatus 3221225496&rdquo; の内容は STATUS_CONFLICTING_ADDRESSES （アドレス範囲の矛盾） で，ログオン処理でプロセスを生成しようとした時に，Windows側でメモリの異常を検出したことを意味します．サーバを再起動し最初のログオンからこのエラーが発生する場合は，サーバの再起動処理が安定する前にGO-Globalのサービス （GGAPS） が開始され，不安定な状況で不正なメモリが GGAPS に渡された可能性が高いと考えられます．そして，ログオン処理でこのメモリを実際に使おうとした時に，WindowsのAPIがこのエラーを検出するというシナリオになります．対応としては， GGAPS のスタートアップの種類を 「自動（遅延開始）」 にするか，それでも早過ぎる場合はスクリプト等で3〜5分後に GGAPS を開始して下さい．
+補　足 拡張パック （有償製品） に， GGAPS を遅延開始し，それでも接続に失敗する場合は GGAPS を自動的に再起動する監視プログラム GGAPSManager を追加する予定です （リリース予定は2013年12月下旬） ．
+ファイル KGTN2013080902.pdf [(76.8 KB)] [kitasp 技術センター, 2013/08/09 13:33]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc539/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -570,7 +568,7 @@ SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc96/">
+                                      <a href="/posts/new_md/doc541/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -578,7 +576,7 @@ SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc96/">[GGW3.2.1/GGH4.X] GG向けにアプリケーションを開発するが，どのような点に注意すべきか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc541/">[ExPack] GGCSLib2 でクライアント側でアプリケーションを起動しているが，セッション再接続を行うとアプリケーションが起動出来なくなる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -591,18 +589,17 @@ SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc96/"><i class="far fa-calendar"></i> 2013-03-15</a>
+                                            <a href="/posts/new_md/doc541/"><i class="far fa-calendar"></i> 2013-08-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/15*
-[番号] 技術ノート KGTN 2013031403
-[現象] [GGW3.2.1/GGH4.X] GG向けにアプリケーションを開発するが，どのような点に注意すべきか？
-[説明] GG上で動作するアプリケーションは，１台のサーバ上で複数並行して動作しますので，マルチユーザ対応でなければなりません．例えば，以下のような点に配慮する必要があります．
- ユーザ固有の情報 （ファイルやレジストリ） を固定位置に配置しない． → 同じファイルに複数のユーザがアクセスすると不整合や解放待ちが発生します． ビジーループ等のCPU負荷が高い処理を行わない． → １ユーザの利用でもCPU負荷が100%近くになります． 過度に頻繁な画面更新を行わない． → クライアントへ送信する画面更新データの通信量が著しく増加します． 過度に凝った画面デザインにしない． → １つの操作毎に描画処理が増え （平均的な） CPU負荷や通信量が増加します． デスクトップの存在を前提とした処理を行わない． → GGの環境にはデスクトップという概念がありません．  さらに，以下のような点についても配慮する必要があります．
-タスクトレイの機能を利用しない． → GGの環境ではタスクトレイが無いため操作出来ません． ※ GGH5.X からデスクトップの表示機能が実装されますので，タスクトレイが利用可能となる見込みです． 一般的でない画面制御をしない． → アクティブなウインドウをZオーダーの最上位以外に配置すると描画が乱れます．  ファイル KGTN2013031403.pdf [(68.1 KB)] [kitasp 技術センター, 2015/06/17 13:10]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc96/" class="btn btn-template-main">続きを読む</a>
+2013/08/05*
+[番号] 技術ノート KGTN 2013080501
+[現象] [ExPack] GGCSLib2 でクライアント側でアプリケーションを起動しているが，セッション再接続を行うとアプリケーションが起動出来なくなる．
+[説明] GGCSLib2 が使用しているAPIがセッション再接続をサポートしていないため，このような現象が発生します．回避方法としては，クライアント側でアプリケーションを起動する単機能のプログラムを作成し，現在GGCSLib2 でクライアント側でアプリケーションを起動している箇所で，作成したプログラムを実行（CreateProcess 関数を使用してプログラムを起動しプログラムの終了を待つ） するようにして下さい．
+ファイル KGTN2013080501.pdf [(50.8 KB)] [kitasp 技術センター, 2013/08/05 09:40]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc541/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -612,7 +609,7 @@ SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc617/">
+                                      <a href="/posts/new_md/doc542/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -620,7 +617,7 @@ SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc617/">[iPad] iPad クライアントをインストールしたが，GGサーバに接続するまでの手順は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc542/">クラスタマネージャで Disconnected sessions terminate に Immediately を設定しているにも関わらず， Connected Clients = 0 の状態でセッションが残る．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -633,20 +630,21 @@ SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc617/"><i class="far fa-calendar"></i> 2013-03-15</a>
+                                            <a href="/posts/new_md/doc542/"><i class="far fa-calendar"></i> 2013-07-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/15*
-[番号] 技術ノート KGTN 2013031503
-[現象] [iPad] iPad クライアントをインストールしたが，GGサーバに接続するまでの手順は？
-[説明]
-  ホスト （GGサーバ） の追加 Host List の右の + をクリック
-  ホスト （GGサーバ） 情報の登録 Host IP Address: ホストのIPアドレスを入力 User Name: ログオンするアカウントのユーザ名を入力 Password: ログオンするアカウントのパスワードを入力 最後に Add ボタンをクリック
-  ホスト （GGサーバ） への接続 Connect ボタンをクリック
-  ファイル KGTN2013031503.pdf [(145 KB)] [kitasp 技術センター, 2013/03/15 10:45]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc617/" class="btn btn-template-main">続きを読む</a>
+2013/07/28*
+[番号] 技術ノート KGTN 2010091607
+[現象] クラスタマネージャで Disconnected sessions terminate に Immediately を設定しているにも関わらず， Connected Clients = 0 の状態でセッションが残る．
+[説明] 弊社の試験環境で一度だけ，この現象が発生しました．再現性がなく現時点では原因等が不明ですが，万一この現象が発生した場合はDisconnected sessions terminate に After 1 minutes を設定することで，セッションが約１分で切断されるようになります．
+補足１ クライアントのLANケーブルを抜いた状況で発生することが分かり， SessionTimeoutBrokenConnection というレジストリの値 （予期せぬコネクション断が発生した時，この値の時間だけセッションが維持される） がImmediately が設定されている時に限り作用し，セッションが維持されていました．従って，以下のように0を設定することで，１〜3分以内にセッションが切断されるようになります （注：より正確に言えば，1〜3分以内とはWindowsのTCP/IPが切断を認識するまでの時間を指します．GGの処理については，TCP/IPが切断を認識した直後にセッションを直ちに終了させます）．
+HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥AppServer SessionTimeoutBrokenConnection REG_DWORD 0
+補足２ GGサーバがGGH4.Xの場合は， 「補足１のレジストリではなく」 下記の設定ファイルの項目の値を変更して下さい．
+[設定ファイルのパス] C:¥ProgramData¥GraphOn¥HostProperties.xml
+[変更する項目] 0ファイル KGTN2010091607.pdf [(75.2 KB)] [kitasp 技術センター, 2013/07/29 07:47]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc542/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -656,7 +654,7 @@ SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc619/">
+                                      <a href="/posts/new_md/doc544/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -664,7 +662,7 @@ SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc619/">[GGH4.5] クライアントの環境として Windows RT のサポートの予定は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc544/">[ExPack] GGCSLib2 のサンプル版のインストール方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -677,17 +675,28 @@ SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc619/"><i class="far fa-calendar"></i> 2013-03-14</a>
+                                            <a href="/posts/new_md/doc544/"><i class="far fa-calendar"></i> 2013-07-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/14*
-[番号] 技術ノート KGTN 2013031502
-[現象] [GGH4.5] クライアントの環境として Windows RT のサポートの予定は？
-[説明] 現時点では，クライアントの環境として Windows RT をサポートする予定はありません．
-ファイル KGTN2013031502.pdf [(41.1 KB)] [kitasp 技術センター, 2013/03/15 08:17]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc619/" class="btn btn-template-main">続きを読む</a>
+2013/07/26*
+[番号] 技術ノート KGTN 2013072401
+[現象] [ExPack] GGCSLib2 のサンプル版のインストール方法は？
+[説明] 以下の手順でインストールして下さい．
+[はじめに] 配布フォルダ GGCSLib2 には，以下の４つのサブフォルダが含まれています．
+各サブフォルダの内容は，次の通りです．
+Client &hellip; クライアント側のプラグイン Sample &hellip; サンプルプログラムのソースコード （プロジェクト） Server_x64 &hellip; サーバ側のプラグイン （64ビット版） Server_x86 &hellip; サーバ側のプラグイン （32ビット版）
+[サーバ側の設定] 配布フォルダ GGCSLib2 を C:¥TEMP へコピーして下さい．OSが64ビットの場合は，フォルダ C:¥TEMP¥GGCSLib2¥Server_x64 を開いて下さい．OSが32ビットの場合は，フォルダ C:¥TEMP¥GGCSLib2¥Server_x86 を開いて下さい．
+フォルダの中にある Copy.bat をダブルクリックして実行して下さい．
+フォルダ C:¥GraphOn¥DLL を開いて下さい．
+フォルダの中にある ServerPluginsPath.reg をダブルクリックして実行して下さい．レジストリエディタが表示する確認ダイアログは，以下のスクリーンショットの赤枠の方を選択して下さい．
+サンプルプログラム C:¥GrapOn¥DLL¥GGCSLib2T.exe をクラスタマネージャで登録して下さい．以上で，サーバ側の環境設定は完了しました．
+[クライアント側の設定] 配布フォルダ GGCSLib2 を C:¥TEMP へコピーして下さい．フォルダ C:¥TEMP¥GGCSLib2¥Client を開いて下さい．
+フォルダの中にある Copy.bat をダブルクリックして実行して下さい．
+フォルダ C:¥GraphOn¥DLL を開いて下さい．
+フォルダの中にあるClientPluginsPath(WOW6432Node).reg をダブルクリックして実行して下さい．レジストリエディタが表示する確認ダイアログは，以下のスクリーンショットの赤枠の方を選択して下さい．以上で，クライアント側の環境設定は完了しました．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc544/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -697,7 +706,7 @@ SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc327/">
+                                      <a href="/posts/new_md/doc543/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -705,7 +714,7 @@ SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc327/">[GGH4.X] GG 環境で画像を表示すると色深度が浅く （低く） 表示される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc543/">[GGH4.X] GGW3.2.1で動作している機能が，GGH4.0.1では動作しなくなった．GGH4.6で確認すると動作しているが，GGH4.0.1の不具合か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -718,17 +727,18 @@ SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc327/"><i class="far fa-calendar"></i> 2013-03-13</a>
+                                            <a href="/posts/new_md/doc543/"><i class="far fa-calendar"></i> 2013-07-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/03/13*
-[番号] 技術ノート KGTN 2013031302
-[現象] [GGH4.X] GG 環境で画像を表示すると色深度が浅く （低く） 表示される．
-[説明] GGH4.X では，既定の色深度が16 ビットに設定されており，色深度が深い （高い） 画像は減色されて表示 されます．オリジナル通りの画像を表示させたい場合は，以下のようにログオンのパラメタを追加して下さい （色深度を32ビットに設定） ．
- Windowsクライアント &hellip;ggw.exe -h -mx 32 ActiveXクライアント http:///logon.html?maxbpp=32  ファイル KGTN2013031302.pdf [(51.1 KB)] [kitasp 技術センター, 2014/02/21 20:56]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc327/" class="btn btn-template-main">続きを読む</a>
+2013/07/26*
+[番号] 技術ノート KGTN 2013072601
+[現象] [GGH4.X] GGW3.2.1で動作している機能が，GGH4.0.1では動作しなくなった．GGH4.6で確認すると動作しているが，GGH4.0.1の不具合か？
+[説明] GGH4.0はGGH4.X系の最初のバージョンで，GGW3.2.1でサポートしていた機能 （技術的に移行可能な機能） のうち，時間的な制約等で積み残した （移行を見送った） 機能があります．積み残した機能の大半はGGH4.5で移行されましたので，お問合せの機能も積み残された機能に該当すると考えられます．
+2013年7月現在，GGH4.0およびGGH4.5は通常サポート　（Mainstream Maintenance） が終了しておりますので，GGH4.6へバージョンアップなさることを強くお勧めします．
+ファイル KGTN2013072601.pdf [(51.5 KB)] [kitasp 技術センター, 2013/07/26 20:44]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc543/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -798,7 +808,7 @@ SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート DAEMON BLM 
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

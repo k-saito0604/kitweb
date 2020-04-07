@@ -409,27 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1615/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1471/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1615/">GGサーバがクライアントへパケットを送信中にコネクションの切断が発生した場合，APSログにはどのような記録が残るのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1471/">インストール及び起動確認まで行ったが， RDP による通信テストを行いたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-09-16
+                            日付 2011-02-08
                             </p>
                             <p class="intro">*技術ノート
-2010/09/16*
-[番号] 技術ノート KGTN 2010091605
-[現象] GGサーバがクライアントへパケットを送信中にコネクションの切断が発生した場合，APSログにはどのような記録が残るのか？
-[説明] APSログに，下記のようなメッセージが記録されます．
-CS: I/O event (Connection reset by peer). Stack Trace: CS_ConnectionChannel::flush() CS: A request (ID: 1) was not completed. Stack Trace: CS_BridgeRouter::requestReceived CS: Client disconnected. &hellip; A client at IP address xxx.xxx.xxx.xxx disconnected from session Administrator on server.
-&ldquo;Connection reset by peer&rdquo; はコネクションの切断を意味し， &ldquo;A request (ID: nnn) was not completed&rdquo; はクライアント側への要求 （描画命令など） が失敗したことを意味します．
-ファイル KGTN2010091605.pdf [(55.4 KB)] [kitasp 技術センター, 2010/09/16 11:44]</p>
+2011/02/08*
+[番号] 技術ノート KGTN 2011020801
+[現象] インストール及び起動確認まで行ったが， RDP による通信テストを行いたい．
+[説明] RDP （Remote Desktop Protocol） はターミナルサービス （リモート デスクトップ） の通信プロトコルですが，GGはターミナルサービス機能を使用しておりませんので RDP による通信は行いません．GGが使用する通信プロトコルは，高度に効率的な圧縮技術を備えた Rapid-X （RXP） プロトコルで，これはGraphOn社の特許技術に基づいています．GGの各クライアントは，この Rapid-X を使用してGGサーバとの通信を行います．
+ファイル KGTN2011020801.pdf [(51 KB)] [kitasp 技術センター, 2011/02/08 15:31]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1615/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1471/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -448,26 +446,25 @@ CS: I/O event (Connection reset by peer). Stack Trace: CS_ConnectionChannel::flu
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1614/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1473/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1614/">エンタープライズオプションのGMCheckRawで，クライアントが接続していないセッション （Connected Clients = 0） を強制終了したい．</a></h4>
+                            <h4><a href="/posts/new_md/doc1473/">[GGW3.2.1] Idle Timeout のカウントダウンが停止する問題があったが，解決されたのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-09-16
+                            日付 2011-02-07
                             </p>
                             <p class="intro">*技術ノート
-2010/09/16*
-[番号] 技術ノート KGTN 2010091606
-[現象] エンタープライズオプションのGMCheckRawで，クライアントが接続していないセッション （Connected Clients = 0） を強制終了したい．
-[説明] GMCheckRaw 1.7.6 またはそれ以降では，以下のコマンドでクライアントが接続していないセッションを強制終了させることが出来ます．
-GMCheckRaw ?s -kn ZERO
-ファイル KGTN2010091606.pdf [(50.5 KB)] [kitasp 技術センター, 2010/09/16 13:15]</p>
+2011/02/07*
+[番号] 技術ノート KGTN 2011020701
+[現象] [GGW3.2.1] Idle Timeout のカウントダウンが停止する問題があったが，解決されたのか？
+[説明] 3.2.1.4446または，それ以降で Idle Timeout のカウントダウンが停止する問題は解消されております．これは，環境によって WM_TIMER イベントが通知されない現象が発生するためで，別スレッドを生成し経過時間をチェックする方式に処理が変更されました．以下は，GraphOn社のコメントです．
+When there is no mouse cursor on the window of the GO-Global client, the &ldquo;session timeout&rdquo; countdown stops. On some systems, logon&rsquo;s session event processor does not get the WM_TIMER message, so the dialog is not updated with the correct time. Instead of using the WM_TIMER message, we now create a thread that will sleep for the necessary tick count and then post our own message to the dialog.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1614/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1473/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -486,26 +483,26 @@ GMCheckRaw ?s -kn ZERO
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1616/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1472/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1616/">セッション再接続が行われた時，APSログに何か記録が残るのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1472/">[GGW3.2.1] Universal Printer Driver を使用した場合，何ページくらい印刷出来るのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-09-16
+                            日付 2011-02-07
                             </p>
                             <p class="intro">*技術ノート
-2010/09/16*
-[番号] 技術ノート KGTN 2010091604
-[現象] セッション再接続が行われた時，APSログに何か記録が残るのか？
-[説明] APSログに，下記のようなメッセージが記録されます．
-AS: A client at IP address xxx.xxx.xxx.xxx reconnected to the session.
-ファイル KGTN2010091604.pdf [(57.2 KB)] [kitasp 技術センター, 2010/09/16 11:19]</p>
+2011/02/07*
+[番号] 技術ノート KGTN 2011020702
+[現象] [GGW3.2.1] Universal Printer Driver を使用した場合，何ページくらい印刷出来るのか？
+[説明] ドキュメントの種類やハードウエア環境に依存して，印刷出来るページ数は大きく異なりますので，一般論で印刷可能なページ数を示すことは出来ません．ある実験では， 「7,000ページは印刷できたが，7,200ページは印刷出来なかった」 という報告があります．
+参　考 Universal Printer Driver が使用するPDFエンジン PDF-XChange 3 のメーカーのコメントは以下の通りです．
+The varies very much depending on the hardware you have (e.g. Disk space, Ram and Processor etc) and of course the files themselves. The type of content and compression/optimization will also have some bearing. We are aware of many clients creating in excess of 20,000 pages</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1616/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1472/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -524,28 +521,27 @@ AS: A client at IP address xxx.xxx.xxx.xxx reconnected to the session.
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1618/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1474/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1618/">GG上でアプリケーションを利用していたが，突然キーボードやマウス操作が出来なくなった．</a></h4>
+                            <h4><a href="/posts/new_md/doc1474/">GGのアプリケーションを利用していると，時々遅くなることがある．また，時々コネクションが切断されることもある．何を調べれば良いか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-09-15
+                            日付 2011-02-04
                             </p>
                             <p class="intro">*技術ノート
-2010/09/15*
-[番号] 技術ノート KGTN 2010091501
-[現象] GG上でアプリケーションを利用していたが，突然キーボードやマウス操作が出来なくなった．
-[説明] 考えられる主な原因は，以下の２つです．
-GGのクライアント〜サーバ間のネットワーク障害 GGのクライアントのメモリ不足等によるスワップの多発
-参　考 １．通常のネットワーク障害ではコネクションの切断が認識されセッションが切断されますが，クライアント〜サーバ間にロードバランサ等が介在している場合，この障害によりコネクションの切断が認識されない （Windowsレベル） 事例が幾つか報告されております．
-２．スワップが多発した事例では， Windows Vista をメモリ1GBのマシンで利用していたケースがあります．このような場合は，タスクマネージャでリソースの使用状況 （パフォーマンスのタブ） を確認して下さい．もし，タスクマネージャがすぐに起動しない場合は，恐らくスワップが多発しています．
-ファイル KGTN2010091501.pdf [(56 KB)] [kitasp 技術センター, 2010/09/15 14:39]</p>
+2011/02/04*
+[番号] 技術ノート KGTN 2011020402
+[現象] GGのアプリケーションを利用していると，時々遅くなることがある．また，時々コネクションが切断されることもある．何を調べれば良いか？
+[説明] ネットワークの障害かどうか切り分けるために，コマンド プロンプト （DOS窓） で以下のコマンドを実行して下さい．
+ping ?n 10000 &lt;GGサーバのIPアドレス&gt;
+正常な環境では 「要求がタイムアウトしました」 というメッセージは記録されませんが，ネットワークに障害があると下記のように時々 「要求がタイムアウトしました」 が記録されます．この事例では，クライアントPCが接続されたハブが老朽化し，不安定になっていました．
+ファイル KGTN2011020402.pdf [(141 KB)] [kitasp 技術センター, 2011/02/04 11:35]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1618/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1474/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

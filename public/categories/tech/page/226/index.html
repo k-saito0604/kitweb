@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1567/">
+                                      <a href="/posts/new_md/doc1418/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1567/">クライアントドライブ機能を使い，サーバからクライアントへファイルをコピーするとセッションが切れることがある．また，セッションが切れない場合でも，クライアント側でファイルがロックされ削除が出来ない等の現象が発生することもある．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1418/">[WS2008] Windows Server 2008 の環境で，一般ユーザが IE を起動しようとすると失敗する．なお， Firefox は正常に起動する．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,21 +340,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1567/"><i class="far fa-calendar"></i> 2010-11-01</a>
+                                            <a href="/posts/new_md/doc1418/"><i class="far fa-calendar"></i> 2011-03-18</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/11/01*
-[番号] 技術ノート KGTN 2009091501
-[現象] クライアントドライブ機能を使い，サーバからクライアントへファイルをコピーするとセッションが切れることがある．また，セッションが切れない場合でも，クライアント側でファイルがロックされ削除が出来ない等の現象が発生することもある．
-[説明] ファイルサイズが19MBを越えると 「セッションが切れる」 「０バイトのファイルが作成される」 「ファイルがロックされる」 「コピーしたファイルの正しいファイルサイズが得られない」 という現象が発生します．この問題は，回線速度やファイルの内容 （テキスト・バイナリ） に依存せず，ファイルサイズのみに依存して発生します．ファイルがロックされた場合は，ActiveXクライアントではIEを閉じることで，Windowsクライアントはggw.exeを終了させることでロックが解除されます．本件はGraphOn社も障害として認識しており，将来のバージョンで修正する予定です．
-補足１ クライアントドライブ機能でファイルをコピーする場合，FTPのような専用のファイル転送プロトコルでコピーが行われる訳ではなく，Windows内部の低レベルのファイルコピー処理をフックして，サーバとクライアント間でファイルのコピー処理が行われます．このような仕組みにより， Windowsの遅延書き込み機能等の極めて低レベルな処理もGGのセッションの中で行われ，サーバとクライアント間でエラー等のイベントが正常に伝わらず，それぞれが相手方からのイベントを待ち続けて，タイムアウトによるセッション断や継続的なファイルのロックが発生したものと推測します．なお，本補足事項は弊社の独自調査による結果 （GraphOn社にも報告済） を元に記載しています．
-補足２ セッション断については，Windowsがプログレスダイアログを表示するケースで発生することが分かっております．DOS窓を開きcopyコマンドでコピーを行った場合は，セッション断やファイルのロックは発生しません．なお，本補足事項は弊社の独自調査による結果 （GraphOn社にも報告済） を元に記載しています．
-補足3 なぜ発生したのか&hellip;　クライアントドライブ機能のサーバ側とクライアント側で，それぞれが相手からのイベントを待っている状態にあり，処理が完結しないためセッション断やファイルロック等が発生していると推測されます．
-補足4 どうすれば発生しないのか&hellip;　「ファイルの大きさで対応する」 ことが妥当だと考えますが，しかし明確な根拠を持ったファイルの大きさを示すことは困難です．恐らく Windows 内部のキャッシュの空き等に依存しているため， 正確には分かりませんが，実測値で19MB以下であれば大丈夫のようです．なお，GraphOn社には全て状況を報告しており，その情報を試験＆分析作業を行っております． 補足5 GraphOn社のコメント&hellip; We have done some more testing and the issue with the filelock did not occur with a filesize of 20,001KB. It did occur with a filesize of 20,041KB.
-20MB （= 20,480KＢ） は20,041KBを越えますので，運用回避を行う場合のファイルサイズは 「19MB以下」 となります．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1567/" class="btn btn-template-main">続きを読む</a>
+2011/03/18*
+[番号] 技術ノート KGTN 2011031801
+[現象] [WS2008] Windows Server 2008 の環境で，一般ユーザが IE を起動しようとすると失敗する．なお， Firefox は正常に起動する．
+[説明] Windows Server 2008 の環境で一般ユーザが IE を起動する場合は，以下の手順で UAC （User Accounts Control = ユーザーアカウント制御） を無効にして下さい．
+[コントロールパネル] を開く． [ユーザー アカウント] を開く． [ユーザーアカウント制御の有効化または無効化] をクリックする． [ユーザアカウント制御 （UAC） を使ってコンピュータの保護に役立たせる] のチェックを外す． [OK] ボタンをクリックする． サーバを再起動する．
+この件に関するGraphOn社の情報を以下に引用します．
+With Windows Server 2008, launching Internet Explorer through GO-Global will crash Internet Explorer. To avoid this, disable User Accounts Control　Panel (UAC) on the GO-Global Server.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1418/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -364,7 +362,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1568/">
+                                      <a href="/posts/new_md/doc1419/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -372,7 +370,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1568/">モジュール msvcr90.dll でエラーが発生し， aps.exe が開始しない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1419/">[GGW3.2] Windows Server 2008 の環境で，GraphOn社の技術ノート Article C00046 に従って Explorer.exe を登録したところ，ログオン時に 「無効なディスプレイの設定です」 というダイアログが表示される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -385,19 +383,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1568/"><i class="far fa-calendar"></i> 2010-10-31</a>
+                                            <a href="/posts/new_md/doc1419/"><i class="far fa-calendar"></i> 2011-03-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/31*
-[番号] 技術ノート KGTN 2010110101
-[現象] モジュール msvcr90.dll でエラーが発生し， aps.exe が開始しない．
-エラー発生アプリケーション aps.exe、バージョン 4.0.0.8685 エラー発生モジュール msvcr90.dll、バージョン 9.0.30729.4148 エラー発生アドレス 0x000375b4
-[説明] 弊社ではこの現象を再現することが出来ませんでしたが，発生した環境では16文字以上あったコンピュータ名を15文字以下に短くすることで，この現象が発生しなくなったという報告がありました． KB226144 にありますように，NetBIOS ドメイン名が15文字以下になるようにサーバ環境を設定して下さい．
-http://support.microsoft.com/kb/226144/ja NetBIOS ドメイン名 フィールドに、15 文字の長さ制限 Windows 2000
-ファイル KGTN2010110101.pdf [(61.7 KB)] [kitasp 技術センター, 2010/11/01 08:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1568/" class="btn btn-template-main">続きを読む</a>
+2011/03/17*
+[番号] 技術ノート KGTN 2011031702
+[現象] [GGW3.2] Windows Server 2008 の環境で，GraphOn社の技術ノート Article C00046 に従って Explorer.exe を登録したところ，ログオン時に 「無効なディスプレイの設定です」 というダイアログが表示される．
+[説明] Explorer.exe が必要としている情報が不足しているのが原因です．GGサーバのコンソールで，一度ログオンすることでこの現象は解消します．または，このダイアログでOKボタンを押下することで，次回ログオン時からダイアログは表示されなくなります．AD環境等では，構成済みプロファイルを作成することで，事前にこの問題を回避することが出来ます．
+ファイル KGTN2011031702.pdf [(117 KB)] [kitasp 技術センター, 2011/03/17 12:49]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1419/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -407,7 +403,7 @@ http://support.microsoft.com/kb/226144/ja NetBIOS ドメイン名 フィール�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1570/">
+                                      <a href="/posts/new_md/doc1420/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -415,7 +411,7 @@ http://support.microsoft.com/kb/226144/ja NetBIOS ドメイン名 フィール�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1570/">Windows Update （更新プログラム） KB981957 は互換性が無く，互換アップデートが必要となったが，今後も同様のことが頻繁に発生するのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1420/">[GGW3.2] Windows Server 2008 の環境で，修復が必要なUSBディスクをサーバに挿すと，ログオン中のGGの全てのセッションに修復を確認するダイアログが表示される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -428,18 +424,17 @@ http://support.microsoft.com/kb/226144/ja NetBIOS ドメイン名 フィール�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1570/"><i class="far fa-calendar"></i> 2010-10-29</a>
+                                            <a href="/posts/new_md/doc1420/"><i class="far fa-calendar"></i> 2011-03-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/29*
-[番号] 技術ノート KGTN 2010102901
-[現象] Windows Update （更新プログラム） KB981957 は互換性が無く，互換アップデートが必要となったが，今後も同様のことが頻繁に発生するのか？
-[説明] GraphOn社の認識では，KB981957 のような互換性の無い更新プログラムは非常に稀なケースとのことです．本件に関するGraphOn社のコメントは，下記の通りです．
-Most likely, this is the extremely rare result of a recent Microsoft Windows Update: 981957
-ファイル KGTN2010102901.pdf [(55.7 KB)] [kitasp 技術センター, 2010/10/29 09:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1570/" class="btn btn-template-main">続きを読む</a>
+2011/03/17*
+[番号] 技術ノート KGTN 2011031701
+[現象] [GGW3.2] Windows Server 2008 の環境で，修復が必要なUSBディスクをサーバに挿すと，ログオン中のGGの全てのセッションに修復を確認するダイアログが表示される．
+[説明] これは Windows の機能に絡む現象で，運用回避 （サーバにUSBディスクを挿さない） で対応をお願いします．誤って挿してしまった場合は， 「閉じる」 ボタンをクリックして下さい．
+ファイル KGTN2011031701.pdf [(54.6 KB)] [kitasp 技術センター, 2011/03/17 10:50]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1420/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -449,7 +444,7 @@ Most likely, this is the extremely rare result of a recent Microsoft Windows Upd
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1572/">
+                                      <a href="/posts/new_md/doc1421/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -457,7 +452,7 @@ Most likely, this is the extremely rare result of a recent Microsoft Windows Upd
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1572/">3.2.1.4474 （3.2.1 Patch 4 R2） と 3.2.1.4466 （3.2.1 Patch 4） の差異は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1421/">[GGW3.2.1] WS2003 SP1 から SP2 にバージョンアップするが， GGEvtFix が適用されているかどうか確認する方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -470,18 +465,18 @@ Most likely, this is the extremely rare result of a recent Microsoft Windows Upd
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1572/"><i class="far fa-calendar"></i> 2010-10-27</a>
+                                            <a href="/posts/new_md/doc1421/"><i class="far fa-calendar"></i> 2011-03-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/27*
-[番号] 技術ノート KGTN 2010102703
-[現象] 3.2.1.4474 （3.2.1 Patch 4 R2） と 3.2.1.4466 （3.2.1 Patch 4） の差異は？
-[説明] 互換アップデート （KB981957対応） が適用されているかどうか，という点のみです． 以下のファイルが KB981957 に対応したものに置き換わっています．
-GGDD.DLL ：仮想ディスプレイドライバ ggse.sys ：システム拡張ドライバ VBM_WIN32K.sys ：VBM for WIN32K.sys
-ファイル KGTN2010102703.pdf [(48 KB)] [kitasp 技術センター, 2010/10/27 12:14]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1572/" class="btn btn-template-main">続きを読む</a>
+2011/03/16*
+[番号] 技術ノート KGTN 2011031601
+[現象] [GGW3.2.1] WS2003 SP1 から SP2 にバージョンアップするが， GGEvtFix が適用されているかどうか確認する方法は？
+[説明] GGEvtFix は，GGW3.2.0の環境でイベントのメッセージが正しく表示されないという問題を解消するために，弊社で作成したサポートツールです．従って， GGW3.2.1 の環境ではインストールする必要はありません．既にインストールされている場合は，レジストリエディタで下記のレジストリを削除して下さい．
+HKLM¥SYSTEM¥CurrentControlSet¥Services¥Eventlog¥ （次行へ続く） Application¥GO-Global Application Publishing Service
+ファイル KGTN2011031601.pdf [(59.7 KB)] [kitasp 技術センター, 2011/03/16 12:05]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1421/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -491,7 +486,7 @@ GGDD.DLL ：仮想ディスプレイドライバ ggse.sys ：システム拡張�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1573/">
+                                      <a href="/posts/new_md/doc1422/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -499,7 +494,7 @@ GGDD.DLL ：仮想ディスプレイドライバ ggse.sys ：システム拡張�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1573/">3.2.1.4474 （3.2.1 Patch 4 R2） をインストールしたところ，APSログやクラスタマネージャのバージョン情報が 3.2.1.4466 のままになる．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1422/">DocuWorks のプリンタをデフォルトプリンタに設定してGGにログオンすると，ダイアログ Connecting to session... が表示されたままになる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -512,17 +507,17 @@ GGDD.DLL ：仮想ディスプレイドライバ ggse.sys ：システム拡張�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1573/"><i class="far fa-calendar"></i> 2010-10-27</a>
+                                            <a href="/posts/new_md/doc1422/"><i class="far fa-calendar"></i> 2011-03-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/27*
-[番号] 技術ノート KGTN 2010102702
-[現象] 3.2.1.4474 （3.2.1 Patch 4 R2） をインストールしたところ，APSログやクラスタマネージャのバージョン情報が 3.2.1.4466 のままになる．
-[説明] 3.2.1.4474 （3.2.1 Patch 4 R2） は， 3.2.1.4466 （3.2.1 Patch 4） に互換アップデート （KB981957対応） を適用したものなので，APSログやクラスタマネージャのバージョン情報はベースとなる 3.2.1.4466 になります．
-ファイル KGTN2010102702.pdf [(42.9 KB)] [kitasp 技術センター, 2010/10/27 09:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1573/" class="btn btn-template-main">続きを読む</a>
+2011/03/11*
+[番号] 技術ノート KGTN 2011031101
+[現象] DocuWorks のプリンタをデフォルトプリンタに設定してGGにログオンすると，ダイアログ &ldquo;Connecting to session&hellip;&rdquo; が表示されたままになる．
+[説明] GGサーバの画面に &ldquo;DocuWorks Printer - Failed to load resource module.&rdquo; という確認ダイアログが表示され， 「その確認待ちの状態にあるため」 ログオンが止まったような状態になります．これはDocuWorks の動作がGGの環境に適合していないためで， DocuWorks のプリンタをデフォルトプリンタから外すことで正常にログオンが出来るようになります．
+ファイル KGTN2011031101.pdf [(61 KB)] [kitasp 技術センター, 2011/03/11 09:40]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1422/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -532,7 +527,7 @@ GGDD.DLL ：仮想ディスプレイドライバ ggse.sys ：システム拡張�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1571/">
+                                      <a href="/posts/new_md/doc1423/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -540,7 +535,7 @@ GGDD.DLL ：仮想ディスプレイドライバ ggse.sys ：システム拡張�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1571/">GGUX （GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1423/">SkyPDF for GO-Global で帳票の一部 （ヘッダ部分） のみ印刷されるという現象が発生したが，どんな原因が考えられるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -553,18 +548,19 @@ GGDD.DLL ：仮想ディスプレイドライバ ggse.sys ：システム拡張�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1571/"><i class="far fa-calendar"></i> 2010-10-27</a>
+                                            <a href="/posts/new_md/doc1423/"><i class="far fa-calendar"></i> 2011-03-10</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/27*
-[番号] 技術ノート KGTN 2010102801
-[現象] GGUX （GO-Global for UNIX） は，クライアントとして Firefox 3 をサポートするとあるが， Firefox 3.6 はサポートしないのか？
-[説明] 最新のGGUXでは，Firefox 3 以降をサポートしております．GraphOn社のコメントは，下記の通りです．
-We provided support for Firefox 3 and above in the 2.2.9 release of GGUX.　This changed was to the .xpi file&rsquo;s install.rdf file. You will notice the change to this line of code.
-&amp;lt;em:maxVersion&amp;gt;3.*&amp;lt;/em:maxVersion&amp;gt;  ファイル KGTN2010102801.pdf [(51.9 KB)] [kitasp 技術センター, 2010/10/28 08:56]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1571/" class="btn btn-template-main">続きを読む</a>
+2011/03/10*
+[番号] 技術ノート KGTN 2011031005
+[現象] SkyPDF for GO-Global で帳票の一部 （ヘッダ部分） のみ印刷されるという現象が発生したが，どんな原因が考えられるのか？
+[説明] SkyPDF for GO-Global を開発したスカイコム社から，以下のコメントを得ました．
+帳票の一部のみ印刷されるという事例は過去に１件も無い． サーバ側からクライアント側へPDFを転送する処理もこのような現象を発生させるとは考えに難い． 可能性としては， Adobe Reader が物理プリンタへ出力している時に， Spooler で何か問題が発生したことが考えられる （メモリ不足やスプーラーの不安定など） ．
+弊社もこれまでの経験および発生した現象から，このコメントの通りだと考えます．
+ファイル KGTN2011031005.pdf [(57.6 KB)] [kitasp 技術センター, 2011/03/10 14:46]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1423/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -574,7 +570,7 @@ We provided support for Firefox 3 and above in the 2.2.9 release of GGUX.　This
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1574/">
+                                      <a href="/posts/new_md/doc1425/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -582,7 +578,7 @@ We provided support for Firefox 3 and above in the 2.2.9 release of GGUX.　This
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1574/">ハードウエアロードバランサで接続先のGGサーバを動的に振り分けているが，このような環境でクライアントプリンタ機能の Cache clinet printers を使用して構わないか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1425/">レジストリ中のGGサーバの設定値 SessionTimeoutBrokenConnection の初期値4320の意味は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -595,18 +591,17 @@ We provided support for Firefox 3 and above in the 2.2.9 release of GGUX.　This
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1574/"><i class="far fa-calendar"></i> 2010-10-26</a>
+                                            <a href="/posts/new_md/doc1425/"><i class="far fa-calendar"></i> 2011-03-10</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/26*
-[番号] 技術ノート KGTN 2010102701
-[現象] ハードウエアロードバランサで接続先のGGサーバを動的に振り分けているが，このような環境でクライアントプリンタ機能の Cache clinet printers を使用して構わないか？
-[説明] トータルのユーザ数 （クライアント数） にも依存しますが，一般にはハードウエアロードバランサで接続先のGGサーバを散らす環境では，クライアントプリンタ機能の Cache clinet printers を使用することは極めて危険です．
-例えば，2,000人のユーザがいた場合，各GGサーバには2,000人のユーザがログオンする可能性があり，各ユーザが異なるクライアントから接続すると，少なくとも2,000台のプリンタがGGサーバ上に作成され保持されます．各プリンタはCPUやメモリを消費しますので，過度にプリンタの数が多いと Print Spooler や Windows 自体が不安定になります．このようなことから，ハードウエアロードバランサで接続先のGGサーバを散らす環境では，クライアントプリンタ機能の Cache clinet printers を使用しないようにして下さい．
-ファイル KGTN2010102701.pdf [(57.5 KB)] [kitasp 技術センター, 2010/10/27 08:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1574/" class="btn btn-template-main">続きを読む</a>
+2011/03/10*
+[番号] 技術ノート KGTN 2011031004
+[現象] レジストリ中のGGサーバの設定値 SessionTimeoutBrokenConnection の初期値4320の意味は？
+[説明] 4320 = 60分×24時間×3日 ということで，3日間までセッションを維持するという意味です．弊社としては 「SessionTimeoutBrokenConnection の初期値は0が望ましい」 と考えておりますが，しかしGraphOn社では 「この初期値を変える考えは無い」 とのことでした．
+ファイル KGTN2011031004.pdf [(47.2 KB)] [kitasp 技術センター, 2011/03/10 11:00]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1425/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -616,7 +611,7 @@ We provided support for Firefox 3 and above in the 2.2.9 release of GGUX.　This
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1577/">
+                                      <a href="/posts/new_md/doc1426/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -624,7 +619,7 @@ We provided support for Firefox 3 and above in the 2.2.9 release of GGUX.　This
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1577/">以下のような記録がAPSログにあるが，どのような問題が発生しているのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1426/">ログオン時に dom¥user というように，ドメイン名を明示的に付加しないとログオンに失敗するユーザが存在する．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -637,18 +632,17 @@ We provided support for Firefox 3 and above in the 2.2.9 release of GGUX.　This
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1577/"><i class="far fa-calendar"></i> 2010-10-22</a>
+                                            <a href="/posts/new_md/doc1426/"><i class="far fa-calendar"></i> 2011-03-10</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/22*
-[番号] 技術ノート KGTN 2010102201
-[現象] 以下のような記録がAPSログにあるが，どのような問題が発生しているのか？
-204 : aps (1312) Invalid environment. 217 : aps (1312) Failed to execute logon request #%d because of an inter-process communication problem. 218 : Logon4 on Go-global02, Logon (1312) Memory allocation failure.
-[説明] サーバの再起動から数時間経過 かつ ユーザの利用が殆ど無い状況で，プロセス間通信のエラーやメモリ割り当てエラーが発生していますので，OS （Windows） 自体またはハードウエアに問題があると推測されます．先ずハードウエアの診断ツールでチェックし，異常が発見されない場合は，OS （Windows） を再インストール（ドライブのイメージがある場合は，そのイメージの復元） するのが最善の策だと思われます．
-ファイル KGTN2010102201.pdf [(63.1 KB)] [kitasp 技術センター, 2010/10/22 11:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1577/" class="btn btn-template-main">続きを読む</a>
+2011/03/10*
+[番号] 技術ノート KGTN 2011031003
+[現象] ログオン時に dom¥user というように，ドメイン名を明示的に付加しないとログオンに失敗するユーザが存在する．
+[説明] ユーザ user がローカルとドメインの両方に存在する状況で，ログオン時に単に user を指定するとローカル上のアカウントが採用されますので，ドメイン上の user のパスワードを指定した場合はログオンに失敗します （注：パスワードが同じ場合はログオンに成功しますが，しかしローカルユーザとしてログオンすることになります） ．このようなケースでドメイン上の user でログオンしたい場合は， dom¥user というようにドメイン名を付加して下さい．詳細については管理者ガイド （または Administrator Guide） をご覧下さい．
+ファイル KGTN2011031003.pdf [(50.5 KB)] [kitasp 技術センター, 2011/03/10 10:28]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1426/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -658,7 +652,7 @@ We provided support for Firefox 3 and above in the 2.2.9 release of GGUX.　This
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1576/">
+                                      <a href="/posts/new_md/doc1427/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -666,7 +660,7 @@ We provided support for Firefox 3 and above in the 2.2.9 release of GGUX.　This
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1576/">複数のライセンスサーバを配置した環境で，クライアント毎にライセンスをチェックアウト （獲得） するサーバを指定することが出来るか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1427/">管理者ガイドの○△の箇所を理解できるように修正して欲しい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -679,17 +673,17 @@ We provided support for Firefox 3 and above in the 2.2.9 release of GGUX.　This
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1576/"><i class="far fa-calendar"></i> 2010-10-22</a>
+                                            <a href="/posts/new_md/doc1427/"><i class="far fa-calendar"></i> 2011-03-10</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/22*
-[番号] 技術ノート KGTN 2010102202
-[現象] 複数のライセンスサーバを配置した環境で，クライアント毎にライセンスをチェックアウト （獲得） するサーバを指定することが出来るか？
-[説明] GGは，ライセンスファイルまたは環境変数で指定されたライセンスサーバから，ライセンスをチェックアウトします．従って，クライアント毎にチェックアウトするサーバを指定することは出来ません．
-ファイル KGTN2010102202.pdf [(42.8 KB)] [kitasp 技術センター, 2010/10/22 13:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1576/" class="btn btn-template-main">続きを読む</a>
+2011/03/10*
+[番号] 技術ノート KGTN 2011031002
+[現象] 管理者ガイドの○△の箇所を理解できるように修正して欲しい．
+[説明] 管理者ガイドは，GraphOn社が作成した Administrator Guide の日本語版という位置付けですので，そのようなご希望があっても反映することは出来ません．このようなケースでは，必要な情報を 「技術ノート」 としてご提供しておりますので，そちらをご覧頂くようお願い致します．
+ファイル KGTN2011031002.pdf [(49 KB)] [kitasp 技術センター, 2011/03/10 09:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1427/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -699,7 +693,7 @@ We provided support for Firefox 3 and above in the 2.2.9 release of GGUX.　This
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1575/">
+                                      <a href="/posts/new_md/doc1428/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -707,7 +701,7 @@ We provided support for Firefox 3 and above in the 2.2.9 release of GGUX.　This
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1575/">複数のライセンスサーバを配置した環境で，１台目のライセンスサーバが停止した時，他のライセンスサーバからライセンスをチェックアウト （獲得） するように設定できないか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1428/">[GGH4.0] 4.0.0.9306/9307 でログオンの耐久試験を行ったところ， Conection failed. Acces to the host was denied. というエラーが数回発生した．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -720,18 +714,18 @@ We provided support for Firefox 3 and above in the 2.2.9 release of GGUX.　This
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1575/"><i class="far fa-calendar"></i> 2010-10-22</a>
+                                            <a href="/posts/new_md/doc1428/"><i class="far fa-calendar"></i> 2011-03-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/22*
-[番号] 技術ノート KGTN 2010102203
-[現象] 複数のライセンスサーバを配置した環境で，１台目のライセンスサーバが停止した時，他のライセンスサーバからライセンスをチェックアウト （獲得） するように設定できないか？
-[説明] GGサーバの環境変数 LM_LICENSE_FILE に複数のライセンスサーバをセミコロンで並べると，最初のサーバからライセンスをチェックアウト出来ない場合，後続するサーバからライセンスをチェックアウトするようになります．下記の設定例では， 192.47.214.1 → 192.47.214.2 → 192.47.214.3 という順序でチェックアウトを試みます．
-変数　値 LM_LICENSE_FILE 27001@192.47.214.1;27001@192.47.214.2;27001@192.47.214.3
-ファイル KGTN2010102203.pdf [(53.7 KB)] [kitasp 技術センター, 2010/10/22 13:27]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1575/" class="btn btn-template-main">続きを読む</a>
+2011/03/09*
+[番号] 技術ノート KGTN 2011031001
+[現象] [GGH4.0] 4.0.0.9306/9307 でログオンの耐久試験を行ったところ， &ldquo;Conection failed. Acces to the host was denied.&rdquo; というエラーが数回発生した．
+[説明] この問題は4.0.0系で発生するもので，4.0.1系で解消しております．GraphOn社のリリースノートには記載がありませんが，以下のコメントを得ております．
+There was a problem when upgrading to 4.0.0.9306 that could have caused Access was Denied. It is fixed in 4.0.1.
+ファイル KGTN2011031001.pdf [(53.9 KB)] [kitasp 技術センター, 2011/03/10 07:09]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1428/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -801,7 +795,7 @@ We provided support for Firefox 3 and above in the 2.2.9 release of GGUX.　This
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

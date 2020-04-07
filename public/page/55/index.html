@@ -409,25 +409,28 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2263/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2284/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2263/">[GGH5.X] IE にActiveXクライアントがインストールされているかどうかを判断するページのサンプルが欲しい．</a></h4>
+                            <h4><a href="/posts/new_md/doc2284/">[GGH4.X-5.X] どんな方法でも構わないので，プログラムウインドウからユーザーのパスワードを変更する方法を教えて欲しい．</a></h4>
                             <p class="author-category">
                             
                             日付 2016-10-05
                             </p>
                             <p class="intro">*技術ノート
 2016/10/05*
-[番号] 技術ノート KGTN 2016092904
-[現象] [GGH5.X] IE にActiveXクライアントがインストールされているかどうかを判断するページのサンプルが欲しい．
-[説明] 以下に IE にActiveXクライアントがインストールされているかどうかで，リダイレクト先を変えるサンプルを示します．
-&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta content=&quot;text/html;shift_jis&quot; http-equiv=&quot;Content-Type&quot;&gt; &lt;title&gt;GO-Global&lt;/title&gt; &lt;script language=javascript&gt; RAPIDX_ROOT_ID = &quot;Ieg.IEGCtrl&quot;; if(isActiveXControlInstalled()) { // ActiveX クライアントあり location.href=&quot;http://192.168.102.89:8089/logon.html&quot;; } else { // ActiveX クライアントなし location.href=&quot;http://192.168.102.89/goglobal/logon.html&quot;; } function isActiveXControlInstalled(){ axobj = null; try { axobj = new ActiveXObject(RAPIDX_ROOT_ID); } catch(e) {} if (axobj) { axobj = null; return true; } return false; } &lt;/script&gt; &lt;/head&gt; &lt;body&gt; GO-Global へ接続しています． &lt;/body&gt; &lt;/html&gt;  ファイル KGTN2016092904.</p>
+[番号] 技術ノート KGTN 2016091301
+[現象] [GGH4.X-5.X] どんな方法でも構わないので，プログラムウインドウからユーザーのパスワードを変更する方法を教えて欲しい．
+[説明] マイクロソフト社が提供する Sysinternals の PsExec.exe / PsExec64.exe を利用する方法があります （*1）．以下の２つのファイルを作成して，拡張子が .vbs のファイルをクラスターマネージャーで登録して下さい．なお，このサンプルでは，２つのファイルおよび PsExec64.exe を C:kitASP に配置し，ドメインの管理者アカウントとパスワードはそれぞれ gg-ad0Administrator と password です．処理内容やパスワードが分からないようにするには， VC++ 等でアプリケーションを作成し，その中で下記の &ldquo;psexec64 &hellip;&rdquo; のコマンドラインを実行することをお勧めします．
+chaangePassword.bat
+cd C:kitASP psexec64 -u gg-ad0Administrator -p password net user %username% * /domain exit  changePassword.vbs
+Set WshShell = WScript.CreateObject(&quot;WScript.Shell&quot;) Call WshShell.Run( &quot;cmd.exe /c C:kitASPchaangePassword&quot;, 0, True )  *1 https://technet.microsoft.com/ja-jp/sysinternals/pxexec
+ファイル KGTN2016091301.pdf [(214 KB)] [kitasp 技術センター, 2016/10/05 15:26]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2263/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2284/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,27 +449,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2282/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2266/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2282/">[GGH5.X] IIS をインストールせずにGGのインストールを行った． IIS の設定は後からでも出来るのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2266/">[GGH4.X-5.X] アプリケーションをサーバー上で実行した時の画面とクライアントからGGを介して実行した時の画面を比べると，ウインドウの幅が異なる．</a></h4>
                             <p class="author-category">
                             
                             日付 2016-10-05
                             </p>
                             <p class="intro">*技術ノート
 2016/10/05*
-[番号] 技術ノート KGTN 2016091401
-[現象] [GGH5.X] IIS をインストールせずにGGのインストールを行った． IIS の設定は後からでも出来るのか？
-[説明] IIS が標準的にインストールされていれば，GGを上書きインストール （Repair or Update） することで IIS に仮想ディレクトリ goglobal が作成されます．
-ファイル KGTN2016091401.pdf [(135 KB)] [kitasp 技術センター, 2016/10/05 15:32]
-KGTN2016091401.jpg
-表示 [(30.2 KB)] [kitasp 技術センター, 2016/10/05 15:32]</p>
+[番号] 技術ノート KGTN 2016092801
+[現象] [GGH4.X-5.X] アプリケーションをサーバー上で実行した時の画面とクライアントからGGを介して実行した時の画面を比べると，ウインドウの幅が異なる．
+[説明] GGは，サーバー上で実行されるアプリケーションの画面 （ビットマップ） を転送するのではなく，サーバー上で呼び出された描画命令を （仮想化して） クライアント側へ転送し，クライアント側でその描画命令を実行して実際に画面に表示します．従って，クライアントの Windows 環境によっては，サーバー側とクライアント側では微妙にウインドウの幅が異なる等の差異が出る場合があります．このようなケースでは，通常クライアント上でそのアプリケーションを直接実行した時と同じ幅になります．
+ファイル KGTN2016092801.pdf [(107 KB)] [kitasp 技術センター, 2016/10/05 16:49]
+KGTN2016092801.jpg
+表示 [(22.4 KB)] [kitasp 技術センター, 2016/10/05 16:49]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2282/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2266/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,42 +488,25 @@ KGTN2016091401.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2267/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2269/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2267/">[GGH5.X] logon.html のパラメタの一覧を知りたい．</a></h4>
+                            <h4><a href="/posts/new_md/doc2269/">[GGH4.X-5.X] アプリケーションを直接起動した場合，クライアント印刷機能の Printers ダイアログ （Printers Applet） を開く方法は？</a></h4>
                             <p class="author-category">
                             
                             日付 2016-10-05
                             </p>
                             <p class="intro">*技術ノート
 2016/10/05*
-[番号] 技術ノート KGTN 2016092701
-[現象] [GGH5.X] logon.html のパラメタの一覧を知りたい．
-[説明] GGH5.X の logon.html の主なパラメタの名称と意味は次の通りです．
- user ログオンするアカウントのユーザーID
-password ログオンするアカウントのパスワード
-host ログオンするサーバーのホスト名またはIPアドレス
-port ログオンするサーバーのポート番号 （既定値は491）
-app 直接起動する時のアプリケーションの名前
-args 直接起動する時のアプリケーションの引数
-compression プロトコルの圧縮機能の有効/無効 （true/false）
-printerconfig クライアント印刷機能の設定 （none: 使用しない， default: 既定のプリンターのみ使用， all: 全てのプリンターを使用）
-clientframe 枠 （ウインドウ） の中で実行 （true/false）
-autoreconnect 自動再接続機能の試行回数 （既定値は5）
-desktop デスクトップ表示機能の有効/無効 （true/false）
-multimonitor マルチモニター機能の有効/無効 （true/false）
-width 枠の幅
-height 枠の高さ
-autoclose 自動的にブラウザを閉じるかどうか （true/false）
-maxbpp 最大色深度 （8/16/24/32）
-quantize 画像の圧縮機能の有効/無効 （true/false）
-keyboard キーボードの指定，keyboard=ClientSideIME でクライアント側のIMEを使用</p>
+[番号] 技術ノート KGTN 2016092601
+[現象] [GGH4.X-5.X] アプリケーションを直接起動した場合，クライアント印刷機能の Printers ダイアログ （Printers Applet） を開く方法は？
+[説明] クライアント印刷機能の Printers ダイアログは，アプリケーションの直接起動時には利用することが出来ません．クライアント印刷機能の Printers ダイアログを利用する場合は，必ず Program Window を使用して下さい．
+ファイル KGTN2016092601.pdf [(53 KB)] [kitasp 技術センター, 2016/10/05 16:43]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2267/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2269/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -539,25 +525,28 @@ keyboard キーボードの指定，keyboard=ClientSideIME でクライアント
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2326/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2296/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2326/">[GGH5.X] Windows Server 2012 R2 &#43; GGH5.X の環境に32ビットのアプリケーションをインストールしようとしたところ，インストーラーが 「サポート対象外の環境」 でエラーとなる．</a></h4>
+                            <h4><a href="/posts/new_md/doc2296/">[GGH4.X-5.X] クラスターマネージャーのセッションタブでIPアドレスが空欄のセッションがあるが，このセッションはどのような状態にあるのか？</a></h4>
                             <p class="author-category">
                             
                             日付 2016-10-05
                             </p>
                             <p class="intro">*技術ノート
 2016/10/05*
-[番号] 技術ノート KGTN 2016082501
-[現象] [GGH5.X] Windows Server 2012 R2 + GGH5.X の環境に32ビットのアプリケーションをインストールしようとしたところ，インストーラーが 「サポート対象外の環境」 でエラーとなる．
-[説明] Windows Server 2012 R2 には，多くの32ビットのアプリケーションが動作するWoW64 エミュレーション環境（アプリケーションの実行環境） が実装されておりますが，アプリケーションのインストーラーの処理に関しては効果がありません．このような場合は，アプリケーションを32ビットのWindowsにインストールして，インストールされたファイルやレジストリを Windows Server 2012 R2 の環境にコピーすることで，動作するかどうか試す方法が考えられます．より確実な方法としては，そのアプリケーションのみ Windows Server 2003 + GGH4.8 の環境で実行する方法も考えられます．なお，そのアプリケーションのベンダーに Windows Server 2012 R2 にインストール出来るバージョンがあるかどうかを，先ず確認なさることをお勧めします．
-ファイル KGTN2016082501.pdf [(56.7 KB)] [kitasp 技術センター, 2016/10/05 10:11]</p>
+[番号] 技術ノート KGTN 2016090702
+[現象] [GGH4.X-5.X] クラスターマネージャーのセッションタブでIPアドレスが空欄のセッションがあるが，このセッションはどのような状態にあるのか？
+[説明] クラスターマネージャーのセッションタブでIPアドレスが空欄のセッションは，ユーザーが Disconnect （セッションを残してクライアントを切断） したか，またはネットワーク障害での切断やGGにログオンしたブラウザを強制的に閉じた場合などに発生します．
+このようなセッションを 「自動的に」 終了させたい場合は， [Host Options] → [Session Shutdown] → [Disconnected sessions terminate] で Immediately (直ちに終了) または After ? minutes （?分経過後に終了） を設定して下さい．
+ファイル KGTN2016090702.pdf [(125 KB)] [kitasp 技術センター, 2016/10/05 11:21]
+KGTN2016090702.jpg
+表示 [(21.8 KB)] [kitasp 技術センター, 2016/10/05 11:21]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2326/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2296/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

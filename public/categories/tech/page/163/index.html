@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc882/">
+                                      <a href="/posts/new_md/doc777/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc882/">[GGH4.X] WS2008 (64bit) の環境で Office 2000 を利用できるか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc777/">[GGH4.5] クライアントクリップボード機能で，サーバ側の EXCEL のセルをコピーし，クライアント側の EXCELに貼り付けると，セルの色や文字の装飾等が反映されない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,18 +340,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc882/"><i class="far fa-calendar"></i> 2012-10-15</a>
+                                            <a href="/posts/new_md/doc777/"><i class="far fa-calendar"></i> 2012-11-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/10/15*
-[番号] 技術ノート KGTN 2012100502
-[現象] [GGH4.X] WS2008 (64bit) の環境で Office 2000 を利用できるか？
-[説明] マイクロソフト社の情報によれば，64ビット環境でサポートされるのは Office XP, Office 2003, Office 2007 またはそれ以降のバージョンに限られます．弊社での実験およびインターネット上の情報では， Office 2000 のインストール直後は動作しますが，時間とともに 「ワードが立ち上がらない」 等の障害が発生します．従って，自己責任であっても Office 2000 の利用は困難です．
-補　足 ある事例では，アンチウイルスソフトの 「カスペルスキー」 をアンインストールすることで， Office 2000 が動作するようになりました．
-ファイル KGTN2012100502.pdf [(59.3 KB)] [kitasp 技術センター, 2012/10/15 10:04]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc882/" class="btn btn-template-main">続きを読む</a>
+2012/11/29*
+[番号] 技術ノート KGTN 2012112601
+[現象] [GGH4.5] クライアントクリップボード機能で，サーバ側の EXCEL のセルをコピーし，クライアント側の EXCELに貼り付けると，セルの色や文字の装飾等が反映されない．
+[説明] クライアントクリップボード機能で，クライアント側の EXCEL のセルをコピーし，サーバ側の EXCEL に貼り付けると，セルの色や文字の装飾等も反映されます．しかし，サーバ側の EXCEL のセルをコピーし，クライアント側の EXCEL に貼り付けると，セルの色や文字の装飾等が反映されません．現時点では，既知の問題 （制限事項） になります．
+補　足 両方向で 「形式を選択して貼り付け」 を選択した時，表示されるデータ形式は以下のスクリーンショットの通りです．クライアント側からサーバ側へ貼り付ける場合は，ワークシートオブジェクトを始めとして多種のデータ形式が転送されていますが，サーバ側からクライアント側へ貼り付ける場合は，ビットマップとテキストのみが転送されています．より詳細に言えば，
+CF_TEXT (1) CF_UNICODETEXT (13) CF_OEMTEXT (7) CF_BITMAP (2) CF_DIB (8) CF_DIBV5 (17) CF_LOCALE (16) DataObject (49161)
+のデータ形式が転送されています．これらのデータ形式には，セルの色や文字の装飾等の情報が含まれないため，貼り付けた時にセルの色や文字の装飾等が反映されません．
+ファイル KGTN2012112601.pdf [(104 KB)] [kitasp 技術センター, 2012/11/30 08:59]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc777/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -361,7 +363,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc881/">
+                                      <a href="/posts/new_md/doc2585/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -369,7 +371,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc881/">[GGH4.X] クライアントにプリンタドライバをインストールすることなく印刷したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2585/">[GGH4.X-5.X] クライアント印刷機能で，デフォルトプリンタに関する内部情報の実例を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -382,18 +384,21 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc881/"><i class="far fa-calendar"></i> 2012-10-15</a>
+                                            <a href="/posts/new_md/doc2585/"><i class="far fa-calendar"></i> 2012-11-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/10/15*
-[番号] 技術ノート KGTN 2012101501
-[現象] [GGH4.X] クライアントにプリンタドライバをインストールすることなく印刷したい．
-[説明] クライアントにインストールするプリンタドライバの主な役割は，サーバ上で生成されクライアントへ転送された印刷ジョブ （スプールファイル） を物理的なプリンタへ出力することです．従って，プリンタドライバ無しに印刷することは出来ません．
-補　足 クライアント上に Adobe Reader がインストールされている環境に於いて，サーバで印刷したドキュメントをPDFとして表示させる機能 （クライアント印刷機能の一部） があります．このPDFをファイルに保存することで，クライアントで自由に （言い換えればGGとは関係無く） 印刷することが出来ます．
-ファイル KGTN2012101501.pdf [(52.9 KB)] [kitasp 技術センター, 2012/10/15 11:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc881/" class="btn btn-template-main">続きを読む</a>
+2012/11/29*
+[番号] 技術ノート KGTN 2012112901
+[現象] [GGH4.X-5.X] クライアント印刷機能で，デフォルトプリンタに関する内部情報の実例を知りたい．
+[説明] クライアントのコンピュータ名がSATELLITE-B450 ，クライアントIDが 2f0d55dc-134c-11e2-81e3-e89d87262d24 ，ログオン時のアカウントが Administrator ，デフォルトプリンタが DocuCentre-IV C4475 の場合，デフォルトプリンタの情報はサーバ側の以下のパス （ファイル） に保持されます．
+APPDATAGraphOnPrintersSATELLITE-B450{2f0d55dc-134c-11e2-81e3-e89d87262d24}.xml
+このファイルの内容は以下の通りで， dafault がプリンタ名， defaultlocation がプリンタのロケーション （1: クライアント側， 2: サーバ側） を指します．
+ファイル KGTN2012112901.pdf [(77.8 KB)] [kitasp 技術センター, 2016/05/27 13:51]
+KGTN2012112901.jpg
+表示 [(14.7 KB)] [kitasp 技術センター, 2016/05/27 13:51]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2585/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -403,7 +408,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc886/">
+                                      <a href="/posts/new_md/doc354/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -411,7 +416,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc886/">[GGH4.X] GGのログオン画面無しでGG上のアプリケーションを利用したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc354/">[GGH4.X] クライアント印刷機能で，これまでクライアント側のデフォルトプリンタがGG環境でもデフォルトプリンタになっていたが，突然特定のプリンタがGG上のデフォルトプリンタになるようになった．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -424,17 +429,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc886/"><i class="far fa-calendar"></i> 2012-10-12</a>
+                                            <a href="/posts/new_md/doc354/"><i class="far fa-calendar"></i> 2012-11-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/10/12*
-[番号] 技術ノート KGTN 2012101201
-[現象] [GGH4.X] GGのログオン画面無しでGG上のアプリケーションを利用したい．
-[説明] ActiveXクライアント，Windowsクライアント，iPadクライアント，etc&hellip; では，ログオン情報 （ユーザIDとパスワード） をパラメタで指定することが出来ますので， 「管理者が事前に設定することで」 ログオン画面無しでユーザがGG上のアプリケーションを利用することが出来ます．
-ファイル KGTN2012101201.pdf [(45.7 KB)] [kitasp 技術センター, 2012/10/12 09:14]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc886/" class="btn btn-template-main">続きを読む</a>
+2012/11/29*
+[番号] 技術ノート KGTN 2012112903
+[現象] [GGH4.X] クライアント印刷機能で，これまでクライアント側のデフォルトプリンタがGG環境でもデフォルトプリンタになっていたが，突然特定のプリンタがGG上のデフォルトプリンタになるようになった．
+[説明] GGサーバ上にデフォルトプリンタ情報が記録されていない場合，クライアント側のデフォルトプリンタがGG環境でもデフォルトプリンタになります．GGサーバ上にデフォルトプリンタ情報が記録されていいる場合， 「クライアント側のデフォルトプリンタに関わりなく」 記録されているプリンタがGG環境のデフォルトプリンタになります．つまり，プログラムウインドウの Printers 画面で Set Default が実行され （下記画面参照） ，デフォルトプリンタが記録されたのが原因です．ログオンスクリプト等で，次のデフォルトプリンタ情報を削除して下さい．
+%APPDATA%GraphOnPrinters{}.xml
+補　足 クライアントプリンタが初期状態でログオンさせるには，例えば以下のようなログオンスクリプトを実行して下さい．
+echo off del/q %APPDATA%GraphOnPrinters%CLIENTCOMPUTERNAME%{*}.xml exit
+ファイル KGTN2012112903.pdf [(75.6 KB)] [kitasp 技術センター, 2014/02/07 16:23]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc354/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -444,7 +452,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc885/">
+                                      <a href="/posts/new_md/doc355/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -452,7 +460,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc885/">[GGH4.X] クライアントの種類 （Windows,iPad,Android,etc...）で，利用できるアプリケーションを分けたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc355/">[GGH4.X] クライアント印刷機能で，プリンタドライバを変更した時の内部情報の実例を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -465,17 +473,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc885/"><i class="far fa-calendar"></i> 2012-10-12</a>
+                                            <a href="/posts/new_md/doc355/"><i class="far fa-calendar"></i> 2012-11-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/10/12*
-[番号] 技術ノート KGTN 2012101202
-[現象] [GGH4.X] クライアントの種類 （Windows,iPad,Android,etc&hellip;）で，利用できるアプリケーションを分けたい．
-[説明] 先ず，GGにはクライアントの種類を識別する機能はありませんので，技術ノート KGTN#2012101104 にあるような方法で識別する必要があります．次に， PW はアクセス権 （セキュリティ設定） で利用できるアプリケーションを分けることが可能ですが，クライアントの種類とアクセス権は関連付けることは出来ませんので， PW の機能を利用することは出来ません．従って， 1) クライアントの種類の情報を得て， 2) データベース等を参照して， 3) 該当するアプリケーションを表示する， といった処理を行う 「自前の」 プログラム・ウインドウのようなアプリケーションを作成する必要があります．
-ファイル KGTN2012101202.pdf [(56 KB)] [kitasp 技術センター, 2012/10/12 09:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc885/" class="btn btn-template-main">続きを読む</a>
+2012/11/29*
+[番号] 技術ノート KGTN 2012112902
+[現象] [GGH4.X] クライアント印刷機能で，プリンタドライバを変更した時の内部情報の実例を知りたい．
+[説明] クライアントのコンピュータ名がSATELLITE-B450 ，クライアントIDが 2f0d55dc-134c-11e2-81e3-e89d87262d24 ，ログオン時のアカウントが Administrator ，デフォルトプリンタが DocuCentre-IV C4475 の場合，プリンタドライバの設定 （変更） の情報はサーバ側の以下のパス （ファイル） に保持されます．
+%APPDATA%GraphOnPrintersSATELLITE-B450{2f0d55dc-134c-11e2-81e3-e89d87262d24}DocuCentre-IV C4475.xml
+このファイルの内容は以下の通りで， driver がプリンタドライバの名称を指します．
+ファイル KGTN2012112902.pdf [(72.8 KB)] [kitasp 技術センター, 2014/02/07 16:19]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc355/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -485,7 +495,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc884/">
+                                      <a href="/posts/new_md/doc353/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -493,7 +503,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc884/">[GGW3.2.1/GGH4.X] 同時5ユーザのライセンスで動作するGGサーバで，6台目のクライアントがログオンしようとした時，どうなるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc353/">[GGH4.X] クライアント印刷機能を利用する場合，お勧めの設定は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -506,17 +516,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc884/"><i class="far fa-calendar"></i> 2012-10-12</a>
+                                            <a href="/posts/new_md/doc353/"><i class="far fa-calendar"></i> 2012-11-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/10/12*
-[番号] 技術ノート KGTN 2012101203
-[現象] [GGW3.2.1/GGH4.X] 同時5ユーザのライセンスで動作するGGサーバで，6台目のクライアントがログオンしようとした時，どうなるのか？
-[説明] ライセンス数超過になりますので，その内容のメッセージが書かれたエラーダイアログが表示され，ログオンすることは出来ません．
-ファイル KGTN2012101203.pdf [(44.7 KB)] [kitasp 技術センター, 2012/10/12 09:46]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc884/" class="btn btn-template-main">続きを読む</a>
+2012/11/29*
+[番号] 技術ノート KGTN 2012112905
+[現象] [GGH4.X] クライアント印刷機能を利用する場合，お勧めの設定は？
+[説明] Universal Printer Driver と Windows Printer Driver の選択については，印刷するドキュメントの種類やプリンタの機種等に依存するため，一般論としてお勧めはありません．運用については，クライアントプリンタの構成については -ac all で全てのプリンタを構成し，さらに下記のログオンスクリプトで過去の設定をログオン時に初期化するのがお勧めです．
+echo off del/q %APPDATA%GraphOnPrinters%CLIENTCOMPUTERNAME%{*}.xml exit
+これにより， 「プリンタドライバがあるのに構成されない」 「想定外のプリンタがデフォルトプリンタになった」 等の問題を回避することが出来ます．
+ファイル KGTN2012112905.pdf [(60.3 KB)] [kitasp 技術センター, 2014/02/07 16:26]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc353/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -526,7 +538,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc883/">
+                                      <a href="/posts/new_md/doc778/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -534,7 +546,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc883/">[GGW3.2.1/GGH4.X] １台のGGサーバで，同時何ユーザまで利用できるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc778/">[iPad] iPad Client は iPad mini でも動作するのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -547,17 +559,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc883/"><i class="far fa-calendar"></i> 2012-10-12</a>
+                                            <a href="/posts/new_md/doc778/"><i class="far fa-calendar"></i> 2012-11-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/10/12*
-[番号] 技術ノート KGTN 2012101204
-[現象] [GGW3.2.1/GGH4.X] １台のGGサーバで，同時何ユーザまで利用できるのか？
-[説明] GGの負荷は軽いため， （大雑把に言えば） 同時に動作するアプリケーションが必要とするCPUとメモリの総和と，サーバのスペックによって同時ユーザ数が決まります．さまざまな事例を参考にすれば，重たいアプリケーションでは同時10〜15ユーザ，軽いアプリケーションでは同時20〜30ユーザがひとつの目安です．なお，１人のユーザが多数のアプリケーションを同時に利用すれば，当然のことながらユーザ数は減ります．
-ファイル KGTN2012101204.pdf [(50.4 KB)] [kitasp 技術センター, 2012/10/12 10:00]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc883/" class="btn btn-template-main">続きを読む</a>
+2012/11/29*
+[番号] 技術ノート KGTN 2012112904
+[現象] [iPad] iPad Client は iPad mini でも動作するのか？
+[説明] はい， iPad Client は iPad mini の環境でも動作します．
+ファイル KGTN2012112904.pdf [(39.1 KB)] [kitasp 技術センター, 2012/11/29 13:45]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc778/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -567,7 +579,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc893/">
+                                      <a href="/posts/new_md/doc779/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -575,7 +587,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc893/">[ExPack] GGのライセンスサーバはMACアドレスを参照しているが，拡張パック （GGSessionMonitor） は何を参照しているのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc779/">[GGH4.5] アプリケーションのファイルのダイアログを閉じた時等に，そのダイアログの残像がデスクトップに残る．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -588,17 +600,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc893/"><i class="far fa-calendar"></i> 2012-10-11</a>
+                                            <a href="/posts/new_md/doc779/"><i class="far fa-calendar"></i> 2012-11-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/10/11*
-[番号] 技術ノート KGTN 2012101102
-[現象] [ExPack] GGのライセンスサーバはMACアドレスを参照しているが，拡張パック （GGSessionMonitor） は何を参照しているのか？
-[説明] 拡張パック （GGSessionMonitor） は，コンピュータSIDを参照します．従って，コンピュータ名の変更やマザーボードの交換等ではリホストは不要で，Windowを再インストールした時のみリホストが必要となります．
-ファイル KGTN2012101102.pdf [(49 KB)] [kitasp 技術センター, 2012/10/11 09:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc893/" class="btn btn-template-main">続きを読む</a>
+2012/11/27*
+[番号] 技術ノート KGTN 2012112701
+[現象] [GGH4.5] アプリケーションのファイルのダイアログを閉じた時等に，そのダイアログの残像がデスクトップに残る．
+[説明] クライアントが Windows 7 等の環境に於いて， &ldquo;Aero テーマ&rdquo; が設定されている時に発生する現象です．GGを利用する場合は，必ず &ldquo;ベーシックテーマ&rdquo; を設定して下さい．
+ファイル KGTN2012112701.pdf [(68.2 KB)] [kitasp 技術センター, 2012/11/27 09:47]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc779/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -608,7 +620,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc890/">
+                                      <a href="/posts/new_md/doc782/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -616,7 +628,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc890/">[ExPack] 拡張パックでコンピュータSID縛りをしているのは GGSessionMonitor だけか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc782/">[iPad] iPad Client で Bluetooth キーボードは使用出来るのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -629,17 +641,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc890/"><i class="far fa-calendar"></i> 2012-10-11</a>
+                                            <a href="/posts/new_md/doc782/"><i class="far fa-calendar"></i> 2012-11-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/10/11*
-[番号] 技術ノート KGTN 2012101103
-[現象] [ExPack] 拡張パックでコンピュータSID縛りをしているのは GGSessionMonitor だけか？
-[説明] 現時点では，その通りです．将来，予告なく変更する可能性はあります．
-ファイル KGTN2012101103.pdf [(45.6 KB)] [kitasp 技術センター, 2012/10/11 10:03]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc890/" class="btn btn-template-main">続きを読む</a>
+2012/11/22*
+[番号] 技術ノート KGTN 2012112202
+[現象] [iPad] iPad Client で Bluetooth キーボードは使用出来るのか？
+[説明] ロジクール社のTablet Keyboard For iPad で検証を行ったところ，特に問題なく動作しました．注意すべき点は，使用に先立ち iPad 側のキーボードを有効な状態にする必要があります．この状態では，以下のスクリーンショットのように，画面最下段に特殊文字を入力するためのキーが表示されます．なお，ここに表示された特殊キーは （ハードウエア） キーボードから入力することは出来ません．
+ファイル KGTN2012112202.pdf [(71.2 KB)] [kitasp 技術センター, 2012/11/22 11:27]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc782/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -649,7 +661,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc888/">
+                                      <a href="/posts/new_md/doc783/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -657,7 +669,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc888/">[GGH4.X] ActiveXクライアントをインストールすると，何れかのドライブの直下に eula.???.txt や install.res.???.dll といったファイルが作成される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc783/">[GGW3.2.1/GGH4.5] GGサーバのIPアドレスを変更する場合，他に何か作業は必要か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -670,17 +682,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc888/"><i class="far fa-calendar"></i> 2012-10-11</a>
+                                            <a href="/posts/new_md/doc783/"><i class="far fa-calendar"></i> 2012-11-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/10/11*
-[番号] 技術ノート KGTN 2012101106
-[現象] [GGH4.X] ActiveXクライアントをインストールすると，何れかのドライブの直下に eula.???.txt や install.res.???.dll といったファイルが作成される．
-[説明] eula.???.txt や install.res.???.dll といったファイルは，GGのActiveXクライアントそれ自体が作成したファイルではなく，ActiveXクライアントに含まれる VC++ のランタイム （再頒布可能パッケージ） が作成したファイルです．これ自体は特に有害なものではありませんが，気になる場合は VC++ のランタイム （再頒布可能パッケージ） を含まないActiveXクライアントを準備しておりますので，お問い合わせ下さい．なお，VC++ のランタイムを含まないActiveXクライアントを利用する場合，別途 VC++ のランタイムをインストールする必要があります．
-ファイル KGTN2012101106.pdf [(52.8 KB)] [kitasp 技術センター, 2012/10/11 12:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc888/" class="btn btn-template-main">続きを読む</a>
+2012/11/21*
+[番号] 技術ノート KGTN 2012112201
+[現象] [GGW3.2.1/GGH4.5] GGサーバのIPアドレスを変更する場合，他に何か作業は必要か？
+[説明] GG (APS) レベルでは，特段作業は必要ありません．もし問題等が発生した場合は，他のソフトウエアを確認して下さい．
+ファイル KGTN2012112201.pdf [(45 KB)] [kitasp 技術センター, 2012/11/22 07:41]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc783/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -690,7 +702,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc887/">
+                                      <a href="/posts/new_md/doc784/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -698,7 +710,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc887/">[GGH4.X] クライアントの種類 （Windows, iPad, iPhone, Android, etc...） を識別する方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc784/">[GGW3.2.1/GGH4.5] GGのインストールは Sysprep の前か？後か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -711,18 +723,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc887/"><i class="far fa-calendar"></i> 2012-10-11</a>
+                                            <a href="/posts/new_md/doc784/"><i class="far fa-calendar"></i> 2012-11-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/10/11*
-[番号] 技術ノート KGTN 2012101104
-[現象] [GGH4.X] クライアントの種類 （Windows, iPad, iPhone, Android, etc&hellip;） を識別する方法は？
-[説明] GO-Global for Windows という製品は，クライアントの種類に関わりなく Windows のアプリケーションを利用可能にするソフトウエアですので，少なくともユーザレベルでクライアントの種類を識別することは出来ません．現在のGGの仕様でこれに近いことを行うとすれば，例えば以下の方法が考えられます．
-クライアントの種類毎にGGサーバを分ける． クライアントの種類毎にログオンするアカウントを分ける． コンピュータ名にルールを設け，コンピュータ名でクライアントの種類が識別出来るようにする． GGサーバ上に専用のアプリケーションを用意し，ログオン時にクライアントの種類を選択させる．
-ファイル KGTN2012101104.pdf [(58.2 KB)] [kitasp 技術センター, 2012/10/12 04:29]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc887/" class="btn btn-template-main">続きを読む</a>
+2012/11/15*
+[番号] 技術ノート KGTN 2012111501
+[現象] [GGW3.2.1/GGH4.5] GGのインストールは Sysprep の前か？後か？
+[説明] GGのインストールは Sysprep (System Preparation Utility) を適用した後に行わねばなりません．GGを含んだサーバのイメージを作成し，それを （他のマシンに） コピーして Sysprep を適用する手順は行ってはなりません．
+ファイル KGTN2012111501.pdf [(46.7 KB)] [kitasp 技術センター, 2012/11/15 13:25]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc784/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -792,7 +803,7 @@
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1776/">
+                                      <a href="/posts/new_md/doc1615/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1776/">アカウント User1 でクライアントへログオンし，そこからGGサーバへアカウント User2 でログオンした．GG上のアプリケーションで印刷したところ，印刷ジョブのユーザは User１ でなく User2 になった．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1615/">GGサーバがクライアントへパケットを送信中にコネクションの切断が発生した場合，APSログにはどのような記録が残るのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,18 +340,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1776/"><i class="far fa-calendar"></i> 2010-04-26</a>
+                                            <a href="/posts/new_md/doc1615/"><i class="far fa-calendar"></i> 2010-09-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/04/26*
-[番号] 技術ノート KGTN 2010042601
-[現象] アカウント User1 でクライアントへログオンし，そこからGGサーバへアカウント User2 でログオンした．GG上のアプリケーションで印刷したところ，印刷ジョブのユーザは User１ でなく User2 になった．
-[説明] GG上で実行されるアプリケーションは，GGへログオンする時に指定されたアカウントで実行されます．従って，この例では User2 のアカウントでアプリケーションが実行されますので，印刷ジョブのユーザ （所有者） も User2 になります．
-補　足 「クライアント印刷機能を使用し」 クライアント側のプリンタへ出力する場合は，印刷ジョブのユーザ （所有者） は User1 になります．
-ファイル KGTN2010042601.pdf [(46.7 KB)] [kitasp 技術センター, 2010/04/26 09:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1776/" class="btn btn-template-main">続きを読む</a>
+2010/09/16*
+[番号] 技術ノート KGTN 2010091605
+[現象] GGサーバがクライアントへパケットを送信中にコネクションの切断が発生した場合，APSログにはどのような記録が残るのか？
+[説明] APSログに，下記のようなメッセージが記録されます．
+CS: I/O event (Connection reset by peer). Stack Trace: CS_ConnectionChannel::flush() CS: A request (ID: 1) was not completed. Stack Trace: CS_BridgeRouter::requestReceived CS: Client disconnected. &hellip; A client at IP address xxx.xxx.xxx.xxx disconnected from session Administrator on server.
+&ldquo;Connection reset by peer&rdquo; はコネクションの切断を意味し， &ldquo;A request (ID: nnn) was not completed&rdquo; はクライアント側への要求 （描画命令など） が失敗したことを意味します．
+ファイル KGTN2010091605.pdf [(55.4 KB)] [kitasp 技術センター, 2010/09/16 11:44]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1615/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -361,7 +362,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1774/">
+                                      <a href="/posts/new_md/doc1614/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -369,7 +370,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1774/">クライアント印刷機能とは，どんな機能で設定方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1614/">エンタープライズオプションのGMCheckRawで，クライアントが接続していないセッション （Connected Clients = 0） を強制終了したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -382,19 +383,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1774/"><i class="far fa-calendar"></i> 2010-04-26</a>
+                                            <a href="/posts/new_md/doc1614/"><i class="far fa-calendar"></i> 2010-09-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/04/26*
-[番号] 技術ノート KGTN 2010042603
-[現象] クライアント印刷機能とは，どんな機能で設定方法は？
-[説明] クライアント印刷機能は，簡単に言えば 「クライアントに接続されたプリンタをGGサーバ上で選択出来るようにする機能」 で，以下のような手順で処理されます．
-GGサーバ上に対応するプリンタ （オートクリエイトプリンタと呼ばれます） がログオン時に作成され， そのプリンタに印刷することでスプールファイルが生成され， スプールファイルは自動的にクライアントへ転送され， クライアント側のプリンタの印刷ジョブとして登録され， 最終的に実際に印刷される．
-設定等については管理者ガイドの 「クライアントの印刷処理」 または 英文の　Administrator Guide の &ldquo;Client Printing&rdquo; をご覧下さい．
-ファイル KGTN2010042603.pdf [(54.8 KB)] [kitasp 技術センター, 2010/04/26 12:08]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1774/" class="btn btn-template-main">続きを読む</a>
+2010/09/16*
+[番号] 技術ノート KGTN 2010091606
+[現象] エンタープライズオプションのGMCheckRawで，クライアントが接続していないセッション （Connected Clients = 0） を強制終了したい．
+[説明] GMCheckRaw 1.7.6 またはそれ以降では，以下のコマンドでクライアントが接続していないセッションを強制終了させることが出来ます．
+GMCheckRaw ?s -kn ZERO
+ファイル KGTN2010091606.pdf [(50.5 KB)] [kitasp 技術センター, 2010/09/16 13:15]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1614/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -404,7 +404,7 @@ GGサーバ上に対応するプリンタ （オートクリエイトプリン�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1771/">
+                                      <a href="/posts/new_md/doc1616/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -412,7 +412,7 @@ GGサーバ上に対応するプリンタ （オートクリエイトプリン�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1771/">クライアント印刷機能の設定項目 Cache client printers の使い方は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1616/">セッション再接続が行われた時，APSログに何か記録が残るのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -425,17 +425,18 @@ GGサーバ上に対応するプリンタ （オートクリエイトプリン�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1771/"><i class="far fa-calendar"></i> 2010-04-26</a>
+                                            <a href="/posts/new_md/doc1616/"><i class="far fa-calendar"></i> 2010-09-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/04/26*
-[番号] 技術ノート KGTN 2010042606
-[現象] クライアント印刷機能の設定項目 Cache client printers の使い方は？
-[説明] 原則的には Cache client printers の設定は無効にして下さい．この機能を有効にする必要があるのは，プリンタのプロパティの項目で，既定値以外の値を毎回設定せねばならないケースです． Cache client printers を有効にすることにより，サーバ側に作成されるオートクリエイトプリンタがログオフ後も保持されますので，ログオンの度に既定値以外の値を設定する必要が無くなります．
-ファイル KGTN2010042606.pdf [(49.1 KB)] [kitasp 技術センター, 2010/04/26 14:46]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1771/" class="btn btn-template-main">続きを読む</a>
+2010/09/16*
+[番号] 技術ノート KGTN 2010091604
+[現象] セッション再接続が行われた時，APSログに何か記録が残るのか？
+[説明] APSログに，下記のようなメッセージが記録されます．
+AS: A client at IP address xxx.xxx.xxx.xxx reconnected to the session.
+ファイル KGTN2010091604.pdf [(57.2 KB)] [kitasp 技術センター, 2010/09/16 11:19]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1616/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -445,7 +446,7 @@ GGサーバ上に対応するプリンタ （オートクリエイトプリン�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1773/">
+                                      <a href="/posts/new_md/doc1618/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -453,7 +454,7 @@ GGサーバ上に対応するプリンタ （オートクリエイトプリン�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1773/">クライアント印刷機能の設定項目 Windows folder の意味は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1618/">GG上でアプリケーションを利用していたが，突然キーボードやマウス操作が出来なくなった．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -466,17 +467,20 @@ GGサーバ上に対応するプリンタ （オートクリエイトプリン�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1773/"><i class="far fa-calendar"></i> 2010-04-26</a>
+                                            <a href="/posts/new_md/doc1618/"><i class="far fa-calendar"></i> 2010-09-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/04/26*
-[番号] 技術ノート KGTN 2010042604
-[現象] クライアント印刷機能の設定項目 Windows folder の意味は？
-[説明] 英文の　Administrator Guide の説明には 「Windows folder は Microsoft Windows の出荷時に含まれるプリンタドライバを保持しています．このオプションを有効にすることにより，これらのドライバが自動的にインストールされます」 とあります．実際の機能 （動作） はこの説明通りですが，出荷時に含まれていないプリンタドライバをインストールした時も，このオプションが有効でないとインストールされたプリンタドライバが参照されませんので， 「Universal Driver のみを使用する場合を除き」 通常は有効にして下さい．
-ファイル KGTN2010042604.pdf [(54.6 KB)] [kitasp 技術センター, 2010/04/26 14:01]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1773/" class="btn btn-template-main">続きを読む</a>
+2010/09/15*
+[番号] 技術ノート KGTN 2010091501
+[現象] GG上でアプリケーションを利用していたが，突然キーボードやマウス操作が出来なくなった．
+[説明] 考えられる主な原因は，以下の２つです．
+GGのクライアント〜サーバ間のネットワーク障害 GGのクライアントのメモリ不足等によるスワップの多発
+参　考 １．通常のネットワーク障害ではコネクションの切断が認識されセッションが切断されますが，クライアント〜サーバ間にロードバランサ等が介在している場合，この障害によりコネクションの切断が認識されない （Windowsレベル） 事例が幾つか報告されております．
+２．スワップが多発した事例では， Windows Vista をメモリ1GBのマシンで利用していたケースがあります．このような場合は，タスクマネージャでリソースの使用状況 （パフォーマンスのタブ） を確認して下さい．もし，タスクマネージャがすぐに起動しない場合は，恐らくスワップが多発しています．
+ファイル KGTN2010091501.pdf [(56 KB)] [kitasp 技術センター, 2010/09/15 14:39]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1618/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -486,7 +490,7 @@ GGサーバ上に対応するプリンタ （オートクリエイトプリン�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1772/">
+                                      <a href="/posts/new_md/doc1619/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -494,7 +498,7 @@ GGサーバ上に対応するプリンタ （オートクリエイトプリン�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1772/">クライアント印刷機能の設定項目で Universal Driver と Windows folder のみを有効にした場合の動作は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1619/">VBScriptで以下のコードを実行すると， ActiveX component can&#39;t create object というエラーが発生する．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -507,19 +511,20 @@ GGサーバ上に対応するプリンタ （オートクリエイトプリン�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1772/"><i class="far fa-calendar"></i> 2010-04-26</a>
+                                            <a href="/posts/new_md/doc1619/"><i class="far fa-calendar"></i> 2010-09-10</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/04/26*
-[番号] 技術ノート KGTN 2010042605
-[現象] クライアント印刷機能の設定項目で Universal Driver と Windows folder のみを有効にした場合の動作は？
-[説明] この設定では Universal Driver がプリンタドライバとして選択されますので （注： print.ini 中に過去の構成情報がある場合を除きます） ， Windows folder を有効にしても意味はありません．この設定に加え Use as fallback が有効な場合は，
-Windows folder に該当するプリンタドライバがあれば，そのドライバを使用する． 該当するプリンタドライバが無ければ，Universal Driver を使用する．
-という動作になりますので，この場合はWindows folder を有効にする意味があります．
-ファイル KGTN2010042605.pdf [(53.7 KB)] [kitasp 技術センター, 2010/04/26 14:26]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1772/" class="btn btn-template-main">続きを読む</a>
+2010/09/10*
+[番号] 技術ノート KGTN 2010091001
+[現象] VBScriptで以下のコードを実行すると， &ldquo;ActiveX component can&rsquo;t create object&rdquo; というエラーが発生する．
+Set objShell = WScript.CreateObject(&ldquo;Shell.Application&rdquo;) &hellip; For Each objWindow in objShell.Windows
+[説明] デスクトップ （Windows Shell） の機能を使用しているため，このエラーが発生します．以下の方法で，セッションの開始時に explorer.exe を起動することで，このエラーを回避することが出来ます．
+レジストリエディタを起動する． HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Processes へ位置付ける． DWORD値を作成する． 名前を explorer.exe ，値を 0 にする． HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Run¥LocalMachine へ位置付ける． DWORD値を作成する． 名前を explorer.exe ，値を 0 にする． レジストリエディタを終了する．
+注　意 この方法によってエラーは発生しなくなりますが，各セッションで explorer.exe を起動するため，パフォーマンス （メモリや速度） が低下します．また， HKLM¥SOFTWARE¥Microsoft¥Windows¥CurrentVersion¥Run に登録されたプログラムが自動的に起動されるようになりますので，不要なプロセスを削除して下さい．適用に当たっては，事前に十分な検証を行うようにして下さい．
+ファイル KGTN2010091001.pdf [(64.4 KB)] [kitasp 技術センター, 2010/09/10 09:32]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1619/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -529,7 +534,7 @@ Windows folder に該当するプリンタドライバがあれば，そのド�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1775/">
+                                      <a href="/posts/new_md/doc1621/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -537,7 +542,7 @@ Windows folder に該当するプリンタドライバがあれば，そのド�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1775/">昨日までクライアント印刷機能が正常に動作していたのに，今日突然印刷出来なくなった．障害復旧のために，先ず何を行うべきか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1621/">GG標準のログオン画面で，認証に3回失敗すると The user had as many failed logon attempts as are allowed というメッセージが表示されるが，この回数やメッセージを変更することは可能か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -550,17 +555,19 @@ Windows folder に該当するプリンタドライバがあれば，そのド�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1775/"><i class="far fa-calendar"></i> 2010-04-26</a>
+                                            <a href="/posts/new_md/doc1621/"><i class="far fa-calendar"></i> 2010-09-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/04/26*
-[番号] 技術ノート KGTN 2010042602
-[現象] 昨日までクライアント印刷機能が正常に動作していたのに，今日突然印刷出来なくなった．障害復旧のために，先ず何を行うべきか？
-[説明] クライアント印刷を行う場合，さまざまなソフトウエアがその処理に絡みますので，どのソフトウエアが原因となっているのかを切り分けることは容易ではありません．しかし，最初に行うべきことは，クライアント印刷が出来なくなたクライアントとサーバの両方を再起動することです．Windows は，一時的でもメモリ不足が発生すると，その後の動作が不安定になり，予期せぬ障害を引き起こすことがあります．このような経緯で発生した障害は原因を特定することが非常に困難ですので，先ず再起動を行うことでその可能性を確認することが重要です．
-ファイル KGTN2010042602.pdf [(56.4 KB)] [kitasp 技術センター, 2010/04/26 11:01]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1775/" class="btn btn-template-main">続きを読む</a>
+2010/09/09*
+[番号] 技術ノート KGTN 2010090901
+[現象] GG標準のログオン画面で，認証に3回失敗すると &ldquo;The user had as many failed logon attempts as are allowed&rdquo; というメッセージが表示されるが，この回数やメッセージを変更することは可能か？
+[説明] 変更することは出来ません．しかし， Active Directory でユーザ認証を行うケースでは，ASPやPHPでログオン画面を作成することで，これらをカスタマイズすることが可能です．処理の概要は，以下の通りです．
+GGにログオンするための専用ログオン画面を表示 専用ログオン画面でユーザが UserID/Password を入力 入力された UserID/Password をLDAPサーバ （ADサーバ） に問い合わせてチェック 成功した場合は，その情報をActiveXクライアントへ渡してGGへログオン 失敗した場合は，スクリプトでエラー画面を表示
+なお，エンタープライズオプションには，ASPで記述した専用ログオン画面のサンプルが含まれています．
+ファイル KGTN2010090901.pdf [(55.8 KB)] [kitasp 技術センター, 2010/09/09 12:22]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1621/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -570,7 +577,7 @@ Windows folder に該当するプリンタドライバがあれば，そのド�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1777/">
+                                      <a href="/posts/new_md/doc1620/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -578,7 +585,7 @@ Windows folder に該当するプリンタドライバがあれば，そのド�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1777/">APSログに以下のエラーが記録されていた．print.ini を削除したところ問題が解消したが， print.ini 中の ClientID の重複と考えて良いか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1620/">KGTN#2010090901 の内容は理解したが，GG標準のログオン画面の The user had as many failed logon attempts as are allowed というメッセージを自己責任でも変更出来ないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -591,18 +598,19 @@ Windows folder に該当するプリンタドライバがあれば，そのド�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1777/"><i class="far fa-calendar"></i> 2010-04-22</a>
+                                            <a href="/posts/new_md/doc1620/"><i class="far fa-calendar"></i> 2010-09-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/04/22*
-[番号] 技術ノート KGTN 2010042201
-[現象] APSログに以下のエラーが記録されていた．print.ini を削除したところ問題が解消したが， print.ini 中の ClientID の重複と考えて良いか？
-pw (???) Function InitializePrinters in the print component DLL, file ggprints.dll, failed to build an installed printers&rsquo; information list (PCE3).
-[説明] ClientID の重複の可能性もありますが，その他に過去に構成出来たが 「現在構成出来ない」 プリンタがあり， print.ini を削除したことで 「現在構成出来ない」 プリンタが構成対象がら外れた可能性も考えられます．この場合は， 「現在構成出来ない」 プリンタがデフォルトプリンタに設定され，かつGGサーバにログオンした時点でこのエラーが発生する可能性があります．この時は，そのプリンタのドライバのバージョンの整合性 （サーバ側とクライアント側） 等をチェックして下さい．
-ファイル KGTN2010042201.pdf [(58.4 KB)] [kitasp 技術センター, 2010/04/22 12:03]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1777/" class="btn btn-template-main">続きを読む</a>
+2010/09/09*
+[番号] 技術ノート KGTN 2010090902
+[現象] KGTN#2010090901 の内容は理解したが，GG標準のログオン画面の &ldquo;The user had as many failed logon attempts as are allowed&rdquo; というメッセージを自己責任でも変更出来ないのか？
+[説明] 絶対にお勧めはしませんが，自己責任ということを十分にご理解の上であれば，以下の手順でメッセージを修正することが 「技術的には」 可能です．
+ResourceHacker を起動 GGサーバ側の gglocress.dll というファイルをオープン String Table -&gt; 1240 -&gt; 1033 -&gt; 19825 にアクセス 文字列 （エラーメッセージ） を編集 スクリプトをコンパイル ファイルを保存
+直接的間接的を問わず，この手順を行った結果については，如何なる保証もサポートも行いません．
+ファイル KGTN2010090902.pdf [(64.1 KB)] [kitasp 技術センター, 2010/09/09 12:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1620/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -612,7 +620,7 @@ pw (???) Function InitializePrinters in the print component DLL, file ggprints.d
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1778/">
+                                      <a href="/posts/new_md/doc1623/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -620,7 +628,7 @@ pw (???) Function InitializePrinters in the print component DLL, file ggprints.d
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1778/">これまではクライアント印刷機能が正常に動作していたが，他の拠点のクライアントが同じGGサーバを利用するようになってクライアント印刷機能で障害が起きるようになった．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1623/">GG上で動作するアプリケーションが特定の操作でハングアップするが，どのように調べるべきか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -633,17 +641,21 @@ pw (???) Function InitializePrinters in the print component DLL, file ggprints.d
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1778/"><i class="far fa-calendar"></i> 2010-04-20</a>
+                                            <a href="/posts/new_md/doc1623/"><i class="far fa-calendar"></i> 2010-09-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/04/20*
-[番号] 技術ノート KGTN 2010042002
-[現象] これまではクライアント印刷機能が正常に動作していたが，他の拠点のクライアントが同じGGサーバを利用するようになってクライアント印刷機能で障害が起きるようになった．
-[説明] このような状況で最も考えられることは，他の拠点のクライアントのプリンタに問題があるか，または同一機種のプリンタが使用されていてもドライバのバージョンに差異があると思われます．クライアント印刷では，１つのプリンタについて複数バージョンのドライバの混在は出来ませんので，GGサーバを利用する全拠点のドライバのバージョンを揃えるようにして下さい．ドライバのバージョンを揃えることが困難な場合は，ユニバーサルプリンタドライバ （UPD） を使用して下さい．
-ファイル KGTN2010042002.pdf [(51.4 KB)] [kitasp 技術センター, 2010/04/20 10:30]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1778/" class="btn btn-template-main">続きを読む</a>
+2010/09/08*
+[番号] 技術ノート KGTN 2010090801
+[現象] GG上で動作するアプリケーションが特定の操作でハングアップするが，どのように調べるべきか？
+[説明] 以下のような手順で情報を採取して下さい．
+レベル4のAPSログとスクリーンショットの採取 → 発生している問題の状況を確認するために必要不可欠な情報です．
+Server Options → Resource limits → Minimum available physical / virtual memory を2倍に設定 → メモリ不足で現象が発生している可能性も考えられますので，各メモリを2倍に増やして改善するかどうか確認します．
+最新のビルドで状況が改善するかどうか試験 → 最新のビルドで修正されている可能性もあります．また，GraphOn社へ報告する場合も，最新のビルドでの状況を必ず求められますので，このためにも必要です．
+問題が発生するプロセス （.EXE） のメモリダンプの採取 → ADPlus で現象発生時のプロセス （.EXE） のメモリダンプを採取します （最低3回） ．
+ファイル KGTN2010090801.pdf [(61.5 KB)] [kitasp 技術センター, 2010/09/08 11:43]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1623/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -653,7 +665,7 @@ pw (???) Function InitializePrinters in the print component DLL, file ggprints.d
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1782/">
+                                      <a href="/posts/new_md/doc1622/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -661,7 +673,7 @@ pw (???) Function InitializePrinters in the print component DLL, file ggprints.d
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1782/">設定情報をINIファイルに保存するアプリケーションがあるが，GGにログオンするユーザ毎にこのINIファイルを切り替えたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1622/">「Gmail から」 および 「Gmailへ」 EXEファイルを送ろうとするとエラーになる．ZIPで圧縮しても同様にエラーになる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -674,20 +686,19 @@ pw (???) Function InitializePrinters in the print component DLL, file ggprints.d
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1782/"><i class="far fa-calendar"></i> 2010-04-19</a>
+                                            <a href="/posts/new_md/doc1622/"><i class="far fa-calendar"></i> 2010-09-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/04/19*
-[番号] 技術ノート KGTN 2010041901
-[現象] 設定情報をINIファイルに保存するアプリケーションがあるが，GGにログオンするユーザ毎にこのINIファイルを切り替えたい．
-[説明] GGの 「INIファイルマップ機能」 を利用することで，アプリケーションが参照するINIファイルを自動的に切り替えることが出来ます．以下の例では， TERATERM.INI という設定ファイルへの参照が，各ユーザのプロファイルの下の Application Data¥TERATERM.INI へ自動的に切り替わります．
-各ユーザのプロファイルの下にApplication Data¥TERATERM.INI という設定ファイルを作成する． レジストリエディタでHKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥Compatibility¥INIFilePaths へ位置づける． 新規 → 文字列 でキーを作成する． キーの名前をTERATERM.INI にする． キーの値を %USERPROFILE%¥Application Data¥TERATERM.INI にする レジストリエディタを閉じる
-つまり，キーの名前で INI ファイルのファイル名を指定し，キーの値で参照させたいファイルのパスを指定します．
-注　意 「INIファイルマップ機能」 は，アプリケーションがINIファイル用の関数GetPrivateProfileString 等を使用している場合にのみ有効です．アプリケーションが 「これらの関数を使わず」 自前でINIファイルにアクセスしている場合は， 「INIファイルマップ機能」 は適用されません．
-ファイル KGTN2010041901.pdf [(65.6 KB)] [kitasp 技術センター, 2010/04/19 12:08]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1782/" class="btn btn-template-main">続きを読む</a>
+2010/09/08*
+[番号] 技術ノート KGTN 2010090802
+[現象] 「Gmail から」 および 「Gmailへ」 EXEファイルを送ろうとするとエラーになる．ZIPで圧縮しても同様にエラーになる．
+[説明] これはGmailの仕様で，以下の方法で回避することが可能です．
+添付ファイルを送信する時 &hellip; 拡張子をLZHに変更する． 添付ファイルを受信する時 &hellip; 拡張子をLZHから元々の拡張子に変更する．
+ファイル自体がEXE （実行ファイル） であっても，拡張子をLZHへ変更することで送受信することが出来ます．
+ファイル KGTN2010090802.pdf [(46.6 KB)] [kitasp 技術センター, 2010/09/08 14:12]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1622/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -697,7 +708,7 @@ pw (???) Function InitializePrinters in the print component DLL, file ggprints.d
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1783/">
+                                      <a href="/posts/new_md/doc1625/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -705,7 +716,7 @@ pw (???) Function InitializePrinters in the print component DLL, file ggprints.d
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1783/">ユーザのログオフ操作と強制ログオフコマンド GMCheckRaw </a></h2>
+                                    <h2><a href="/posts/new_md/doc1625/">GGをインストールすることによって，Windows のシステムファイルが書き換わる （置き換わる） ことはあるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -718,21 +729,17 @@ pw (???) Function InitializePrinters in the print component DLL, file ggprints.d
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1783/"><i class="far fa-calendar"></i> 2010-04-16</a>
+                                            <a href="/posts/new_md/doc1625/"><i class="far fa-calendar"></i> 2010-09-03</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/04/16*
-[番号] 技術ノート KGTN 2010041401
-[現象] ユーザのログオフ操作と強制ログオフコマンド GMCheckRaw -kn all が同じタイミングで行われた時，セッションが終了しないことがある．
-[説明] ユーザのログオフ操作と強制ログオフコマンドが同じタイミングで行われた時，GG内部の通信路の排他制御の問題等により，セッションが終了しないことが確認されております．ユーザ側ではログオフ操作が行われておりますので，見かけ上は正常に操作が終了します．強制ログオフコマンド側では処理の完了待ちの状態になりますが， GMCheckRaw はマルチスレッドで実装されておりますので，30秒後にタイムアウトが発生しコマンドが終了します．この状態でセッションは終了せずに残りますが，それぞれの要求がクリアされますので，この直後に改めて強制ログオフコマンド GMCheckRaw -kn all を実行することで，残ったセッションを終了させることが出来ます．
-補足１ 本件はGraphOn社に報告済 （CASE#9006） で，GraphOn社ではAPSログおよびADPlusによるダンプファイルをもとに解析作業を進めております．
-補足２ 「本現象発生時に GMCheckRaw でリトライ出来ないか？」 というお問い合せについて &hellip; 本現象発生時は，GMCheckRaw から見た場合，セッションの終了要求がいつまでも完了しない状態にあり， GMCheckRaw の別スレッドでこの状態を検知し，タイムアウトとしてプログラムを終了させております．従って， GMCheckRaw 内部でリトライ機能を追加実装することは技術的に困難で，リトライ機能を実装するとすれば，GMCheckRaw の上位にプログラムを作成し，そのプログラムがタイムアウトかどうかを判断し，タイムアウトであれば GMCheckRaw を新たに呼び出してリトライすることになります．一般的な運用を考えた場合，GMCheckRaw を呼び出すスクリプトがあると思われますので，技術的にはそのスクリプトでリトライする方が単純 （上位に新たなプロセスが増えない） で，かつ管理がし易いのではないかと考えます．
-補足３ GMCheckRaw 内部でデッドロックしている可能性はないのか？ &hellip; APSへの要求は全て同期型のAPIで行うようになっており，本件は SMI_DestroySession というセッションを切断するAPIの応答待ちの状態にあります．従って， GMCheckRaw 内部でのデッドロックではありません．
-APIの応答待ちの通信路を一旦切って，改めて通信路を作成して要求を再送することは出来ないのか？ &hellip; GraphOn社が提供するAPI （SDK） は，１つのプロセスから１度だけ通信路を作成出来るようになっております．従って，このような方法で要求を再送することは出来ません．
-ファイル KGTN2010041401.pdf [(80.5 KB)] [kitasp 技術センター, 2010/04/16 15:46]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1783/" class="btn btn-template-main">続きを読む</a>
+2010/09/03*
+[番号] 技術ノート KGTN 2010090301
+[現象] GGをインストールすることによって，Windows のシステムファイルが書き換わる （置き換わる） ことはあるか？
+[説明] いいえ，GGはWindows のシステムファイルを書き換える （置き換える） ことはありません．
+ファイル KGTN2010090301.pdf [(40 KB)] [kitasp 技術センター, 2010/09/03 13:50]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1625/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -802,7 +809,7 @@ APIの応答待ちの通信路を一旦切って，改めて通信路を作成�
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

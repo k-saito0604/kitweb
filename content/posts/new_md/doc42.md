@@ -1,5 +1,5 @@
 ﻿+++
-title = "[GGH4.X"
+title = "[GGH4.X-5.X] GGが表示するダイアログボックス Sign In の情報 （内容） をクライアント側のプログラムで参照する方法を知りたい．"
 date = "2015-07-09"
 tags = ["技術ノート"]
 categories = ["tech"]
@@ -33,8 +33,8 @@ IPアドレス間違い等によるダイアログボックスはクラス "#327
 
 ### ファイル
 
- 
- 
+
+
 
 
 [KGTN2015062401.jpg](http://techreport.kitasp.net/attachments/download/2135/KGTN2015062401.jpg)
@@ -46,10 +46,3 @@ IPアドレス間違い等によるダイアログボックスはクラス "#327
 [KGTN2015062401.pdf](http://techreport.kitasp.net/attachments/download/2146/KGTN2015062401.pdf)
  [(137 KB)] [kitasp 技術センター, 2015/07/09
 16:05]
-
-
- 
-
-
- 
-

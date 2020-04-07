@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/problematic_md/doc273/">
+                                      <a href="/posts/new_md/doc178/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc273/">[GGH4.X] UPD を使って印刷すると，ドキュメントの内容が用紙に収まらず切れてしまう．</a></h2>
+                                    <h2><a href="/posts/new_md/doc178/">[GGH4.X] GGH4.8.2 (21020) は GGH4.8.1 (20079～20832) とどのような点が違うのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,58 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/problematic_md/doc273/"><i class="far fa-calendar"></i> 2014-04-04</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">技術ノート 2014/04/04
-[番号] 技術ノート KGTN 2014032404
-[現象] [GGH4.X] UPD を使って印刷すると，ドキュメントの内容が用紙に収まらず切れてしまう．
-[説明] GGH4.8.1Patch1 から，用紙印刷時のスケーリングを指定するオプションが追加されました．GGの設定ファイル HostProperties.xml を下記のようにプロパティを追加 （編集） することで，用紙に収まるようにスケーリングすることが出来ます．もしこの設定でも収まらない場合は，オフセットの値を調整して下さい．
-　&lt;property id=&quot;EnablePrintOptions&quot; group=&quot;Miscellaneous&quot; type=&quot;BOOL&quot;&gt; &lt;value&gt;true&lt;/value&gt; &lt;/property&gt; &lt;property id=&quot;PrintOptions&quot; group=&quot;Miscellaneous&quot; type=&quot;STRING&quot;&gt; &lt;value&gt;-printermargins -xoffset 50 -yoffset 30&lt;/value&gt; &lt;/property&gt;  ファイル KGTN2014032404.pdf [(135 KB)] [kitasp 技術センター, 2014/04/04 15:42]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc273/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1930/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1930/">[GGH4.X] UPDのエンジンは，GGH4.7では Adobe PDF Library だったが，GGH4.8では違うのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1930/"><i class="far fa-calendar"></i> 2014-04-04</a>
+                                            <a href="/posts/new_md/doc178/"><i class="far fa-calendar"></i> 2014-08-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/04/04*
-[番号] 技術ノート KGTN 2014032101
-[現象] [GGH4.X] UPDのエンジンは，GGH4.7では Adobe PDF Library だったが，GGH4.8では違うのか？
-[説明] GGH4.7までは Adobe PDF Library を使用していましが，GGH4.8から VeryPDF を使用するようになりました．これは Adobe PDF Library のロイヤリティや機能等に起因した変更ですが，運用レベルでは縦書き等もサポートされ特に影響はありません．
-補　足 UPDのエンジンの変更と関連して，印刷のスケーリングやオフセット等を調整する機能が GGH4.8.1 Patch1 に実装されました．
-I should mention that there is a difference between the way the UPD worked in version 4.7 and the way it works in version 4.8. In versions 4.x to 4.7, the client was configured (hard coded) to always scale the PDF document to fit within the printable area of the printer.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1930/" class="btn btn-template-main">続きを読む</a>
+2014/08/08*
+[番号] 技術ノート KGTN 2014072502
+[現象] [GGH4.X] GGH4.8.2 (21020) は GGH4.8.1 (20079～20832) とどのような点が違うのか？
+[説明] 以下の8つが，主な変更点です．
+ Windows Server 2012 (R2) 環境での Microsoft Office 2013 のサポート Windows Server 2012 (R2) 環境での DirectX を使用するアプリケーションのサポート アンチウイルスソフト （Norton Antivirus, Symantec Endpoint Protection, etc&hellip;） のサポート サーバ環境での IE11 のサポート セッション開始処理の高速化 NPAPIを使用しない新しい Google Chrome 拡張 （クライアント） の提供 Mozilla Firefox 31 (ESR) のサポート （Windows環境） UPDの環境で全てのページが印刷されない問題への対応 (CASE#14815)  ファイル KGTN2014072502.pdf [(60.8 KB)] [kitasp 技術センター, 2014/11/09 16:03]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc178/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -401,7 +360,7 @@ I should mention that there is a difference between the way the UPD worked in ve
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc190/">
+                                      <a href="/posts/new_md/doc215/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -409,7 +368,7 @@ I should mention that there is a difference between the way the UPD worked in ve
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc190/">[GGH4.X] WS2008R2の環境で外字は表示されるが，正常に印刷されない．マイクロソフト社のパッチ KB979580 を適用しても改善しない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc215/">[GGH4.X] GGはポート番号491を使用するが，これを他のポート番号 （443） に変更したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -422,17 +381,18 @@ I should mention that there is a difference between the way the UPD worked in ve
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc190/"><i class="far fa-calendar"></i> 2014-04-04</a>
+                                            <a href="/posts/new_md/doc215/"><i class="far fa-calendar"></i> 2014-08-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/04/04*
-[番号] 技術ノート KGTN 2014032403
-[現象] [GGH4.X] WS2008R2の環境で外字は表示されるが，正常に印刷されない．マイクロソフト社のパッチ KB979580 を適用しても改善しない．
-[説明] この問題はGraphOn社でも認識しており，将来のビルドで修正 （機能追加） される見込みです．
-This feature request is being targeted for a release in Q4 2014 or Q1 2015. This support case is being closed, but the ECR (14321) will remain open.  ファイル KGTN2014032403.pdf [(56.8 KB)] [kitasp 技術センター, 2014/10/03 19:49]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc190/" class="btn btn-template-main">続きを読む</a>
+2014/08/08*
+[番号] 技術ノート KGTN 2014080701
+[現象] [GGH4.X] GGはポート番号491を使用するが，これを他のポート番号 （443） に変更したい．
+[説明] 【サーバ側：サーバ向け】 クラスタマネージャを起動し， Host Options → Security → Connections → Port の値を，491から443へ変更して下さい．なお，この変更を反映させるには，サーバの再起動 （またはサービス GO-Global Application Publishing Service の再起動） が必要です．
+【サーバ側：クライアント向け - ActiveX】 &lt;GGのインストールフォルダ&gt;GO-GlobalWeblogon.html をテキストエディタ （メモ帳）　で開き，下記の hostPort パラメタを491から443に変更して下さい．
+ファイル KGTN2014080701.pdf [(73.4 KB)] [kitasp 技術センター, 2014/08/08 14:29]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc215/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -442,7 +402,7 @@ This feature request is being targeted for a release in Q4 2014 or Q1 2015. This
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/problematic_md/doc269/">
+                                      <a href="/posts/new_md/doc213/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -450,7 +410,7 @@ This feature request is being targeted for a release in Q4 2014 or Q1 2015. This
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc269/">[GGH4.X] クライアントプリンタ （UPDを使用） へ印刷したが，プリンタから帳票が出力されない．何を調べれば良いか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc213/">[GGH4.X] GO-Global for Windows Ver4.X のパラメータ情報を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -463,220 +423,23 @@ This feature request is being targeted for a release in Q4 2014 or Q1 2015. This
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/problematic_md/doc269/"><i class="far fa-calendar"></i> 2014-04-04</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">技術ノート 2014/04/04
-[番号] 技術ノート KGTN 2014032701
-[現象] [GGH4.X] クライアントプリンタ （UPDを使用） へ印刷したが，プリンタから帳票が出力されない．何を調べれば良いか？
-[説明] UPD でPDF ファイルが作製され，それがクライアント側へ転送されているかどうかを確認するため，出力先のプリンタとして Preview PDF (from ???) を選択して下さい．印刷ボタンをクリックして，クライアント側の画面に印刷内容の PDF ファイルが表示されれば， UPD の機能は正常に動作していると考えられます．従って，出力先のプリンタのアクセス権が適切かどうか，出力サイズと用紙 （トレイ） のサイズに矛盾が無いかなど，出力に絡む環境をチェックして下さい．なお，PDFファイルは印刷領域の大きさは保持していますが，出力する用紙の種類 （A4,B4,&hellip;） は保持していないため，状況によっては印刷内容に対応する適切な用紙が見つからない等の現象が発生こともあります．
-ファイル KGTN2014032701.pdf [(60.8 KB)] [kitasp 技術センター, 2014/04/04 15:49]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc269/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/problematic_md/doc272/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc272/">[GGH4.X] クライアント側のデフォルトプリンタに印刷したい．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/problematic_md/doc272/"><i class="far fa-calendar"></i> 2014-04-04</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">技術ノート 2014/04/04
-[番号] 技術ノート KGTN 2014032601
-[現象] [GGH4.X] クライアント側のデフォルトプリンタに印刷したい．
-[説明] 以下の条件をすべて満たす時，クライアント側のデフォルトプリンタがGGの環境でもデフォルトプリンタになります．
- クラスタマネージャで [Host Options] → [Client Access] → [Printers] → [Universal Printer Driver] にチェックが入っていること GGにログオンし [PW] → [Printers] → [Set Default] を設定していないこと （注：設定すると特定のプリンタがデフォルトプリンタになるため）  上記２が設定されている場合は， [PW] → [Printers] → [Reset Printers] を実行することで，デフォルトプリンタ情報をクリアして下さい．
-ファイル KGTN2014032601.pdf [(52.2 KB)] [kitasp 技術センター, 2014/04/04 15:45]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc272/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/problematic_md/doc274/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc274/">[GGH4.X] セキュリティソフトウエアのESETの製品の利用実績はあるか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/problematic_md/doc274/"><i class="far fa-calendar"></i> 2014-04-04</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">技術ノート 2014/04/04
-[番号] 技術ノート KGTN 2014032402
-[現象] [GGH4.X] セキュリティソフトウエアのESETの製品の利用実績はあるか？
-[説明] セキュリティソフトウエアのESETの製品の利用実績はありません．限られた情報しかありませんので正確でない可能性もありますが，GGのサービス APS が開始しない現象が発生するようです．
-ファイル KGTN2014032402.pdf [(43.9 KB)] [kitasp 技術センター, 2014/04/04 15:37]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc274/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/problematic_md/doc271/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc271/">[GGH4.X] 同一アカウントを使用する環境で，複数のクライアントで同時にログオンしたい．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/problematic_md/doc271/"><i class="far fa-calendar"></i> 2014-04-04</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">技術ノート 2014/04/04
-[番号] 技術ノート KGTN 2014032602
-[現象] [GGH4.X] 同一アカウントを使用する環境で，複数のクライアントで同時にログオンしたい．
-[説明] クラスタマネージャの [Host Options] → [Session Startup] → [Resource limits] → [Maximum sessions per user] のチェックを外すことで，同一アカウントでの同時接続数の制限を解除することが出来ます．
-ファイル KGTN2014032602.pdf [(47.4 KB)] [kitasp 技術センター, 2014/04/04 15:47]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc271/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/problematic_md/doc275/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc275/">[GGW3.2.1/GGH4.X] GG上で動作するアプリケーションで，ユーザ名を参照する方法は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/problematic_md/doc275/"><i class="far fa-calendar"></i> 2014-04-04</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">技術ノート 2014/04/04
-[番号] 技術ノート KGTN 2014032401
-[現象] [GGW3.2.1/GGH4.X] GG上で動作するアプリケーションで，ユーザ名を参照する方法は？
-[説明] ユーザ名は環境変数 USERNAME の値で得ることが出来ます．なお，セッション名は環境変数 USERSESSION で，一意なセッションIDは環境変数 RXPSESSIONID で得ることが出来ます．
-ファイル KGTN2014032401.pdf [(45.5 KB)] [kitasp 技術センター, 2014/04/04 15:36]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc275/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1954/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1954/">[GGH4.X</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1954/"><i class="far fa-calendar"></i> 2014-03-20</a>
+                                            <a href="/posts/new_md/doc213/"><i class="far fa-calendar"></i> 2014-08-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/03/20*
-[番号] 技術ノート KGTN 2014031901
-[現象] [GGH4.X-5.X] プログラム・ウインドウを介さずにアプリケーションを直接起動した場合，アプリケーションを閉じてもセッションが終了しない．
-[説明] プログラム・ウインドウを使用する場合は，メニューの File → Sign Out を選択することで，セッション中のプロセスの状況に関わりなくセッションが終了します．他方，プログラム・ウインドウを介さずにアプリケーションを直接起動した場合は，セッション中の 「GGに登録されたシステムプロセスを除く」 全てのプロセスが終了した時点でセッションが終了します．このため，起動したアプリケーションに関連するプロセスが，起動したアプリケーションの終了後も実行状態にある場合 （常駐プロセスとして残るなど） ，セッションが終了しません．このような場合は，起動したアプリケーションの終了後も実行状態にあるプロセスを，下記のレジストリの設定内容でシステムプロセスとして登録 （追加） してください．なお，実行状態にあるプロセスは，クラスターマネージャーの Processes タブで確認することが出来ます．
-[HKEY_LOCAL_MACHINESOFTWAREGraphOnGO-GlobalSystemProcesses] &quot;&lt;実行状態にあるプロセスのファイル名&gt;&quot;=dword:00000000  ファイル KGTN2014031901.pdf [(106 KB)] [kitasp 技術センター, 2017/11/24 16:37]
-KGTN2014031901.jpg
-表示 [(27.7 KB)] [kitasp 技術センター, 2017/11/24 16:37]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1954/" class="btn btn-template-main">続きを読む</a>
+2014/08/08*
+[番号] 技術ノート KGTN 2014080801
+[現象] [GGH4.X] GO-Global for Windows Ver4.X のパラメータ情報を知りたい．
+[説明] GO-Global for Windows Ver4.X の暗号関連のパラメータ情報は下記の通りです．
+１．暗号機能 / Cryptographic Capabilities
+暗号機能は認証，デジタル署名又は複製することを防止されたプログラムの実行以外の目的を有するか． The cryptographic capabilities are for purposes other than certification, digital signature, or execution of a copy-protected program.
+[X] YES [ ] NO
+暗号機能は本製品に搭載されているものか．1* The cryptographic capabilities are self-contained in the product
+[ ] YES [X] No
+暗号機能は次のいずれかに該当するものか． The cryptographic strength exceeds the following:
+　A. 対称アルゴリズムを用いたものであって，アルゴリズムの鍵の長さが56ビットを超えるもの Symmetric algorithms with key length exceeding 56 bit</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc213/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -686,7 +449,7 @@ KGTN2014031901.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2450/">
+                                      <a href="/posts/new_md/doc216/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -694,7 +457,7 @@ KGTN2014031901.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2450/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc216/">[GGH4.X] クラスタマネージャで Transport = TCP を設定していたが，いつの間にか SSL に変わっていた．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -707,18 +470,274 @@ KGTN2014031901.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2450/"><i class="far fa-calendar"></i> 2014-03-20</a>
+                                            <a href="/posts/new_md/doc216/"><i class="far fa-calendar"></i> 2014-08-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/03/20*
-[番号] 技術ノート KGTN 2014031806
-[現象] [GGH4.X-5.X] GGサーバとGGライセンスサーバ間にファイアウォールがあるが，どのポート番号を通過させれば良いのか？
-[説明] ライセンスファイルがデフォルトの内容 （ポート番号を指定しない設定） では，ポート番号が動的に設定されるため，ライセンスファイルでポート番号を明示的に指定する必要があります．以下のライセンスファイルの設定では，GGライセンスサーバ側の TCP 27001 と 27501 を通過させる必要があります．
-SERVER 27001 DAEMON blm port=27501
-ファイル KGTN2014031806.pdf [(55 KB)] [kitasp 技術センター, 2016/08/01 11:38]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2450/" class="btn btn-template-main">続きを読む</a>
+2014/08/08*
+[番号] 技術ノート KGTN 2014073101
+[現象] [GGH4.X] クラスタマネージャで Transport = TCP を設定していたが，いつの間にか SSL に変わっていた．
+[説明] この問題は 4.8.1.19863 で修正されております．2014年7月末時点で， 4.8.1.20444 またはそれ以降にアップグレードすることで問題が解消します．
+This sounds similar to a known issue fixed in a later release of 4.8.1 (ECR#12257). Please upgrade to 4.8.2 or 4.8.1.20444. [ECR#12257] Proxy host spontaneously changes transport host property to SSL. This issue applies to both the host and proxy host and was fixed in version 4.8.1.19863.  ファイル KGTN2014073101.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc216/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc228/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc228/">[GGH4.X] ActiveXクライアントをダウンロードするページで，バージョン情報はどこで確認出来るのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc228/"><i class="far fa-calendar"></i> 2014-06-28</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2014/06/28*
+[番号] 技術ノート KGTN 2014062008
+[現象] [GGH4.X] ActiveXクライアントをダウンロードするページで，バージョン情報はどこで確認出来るのか？
+[説明] ActiveXクライアントをダウンロードを管理しているウェッブサーバ上のドキュメントルートで，下記のファイルをチェックして下さい．
+ version.js &hellip; ファイルの中にバージョン情報が記載 Pluginsgg-activex.cab &hellip; このファイルの中の GGXP.inf というファイルの中にバージョン情報が記載  ファイル KGTN2014062008.pdf [(234 KB)] [kitasp 技術センター, 2014/06/28 11:41]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc228/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc222/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc222/">[GGH4.X] クライアントプリンタ （プロキシプリンタ） の DEVMODE 情報を保持するファイルの名称の規則を知りたい．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc222/"><i class="far fa-calendar"></i> 2014-06-28</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2014/06/28*
+[番号] 技術ノート KGTN 2014062601
+[現象] [GGH4.X] クライアントプリンタ （プロキシプリンタ） の DEVMODE 情報を保持するファイルの名称の規則を知りたい．
+[説明] クライアントプリンタ （プロキシプリンタ） の DEVMODE 情報を保持するファイルは，以下の規則でファイル名が設定されます．下段の例では &ldquo;SATELLITE-B450&rdquo; がクライアントのコンピュータ名， &ldquo;70a22038-3e85-11e2-ac20-e89d87262d24&rdquo; がクライアントID， &ldquo;KONICA MINOLTA C360Seriesテスト&rdquo; がプリンタの名称です．
+{}.xml
+SATELLITE-B450{70a22038-3e85-11e2-ac20-e89d87262d24}KONICA MINOLTA C360Seriesテスト.xml
+ファイル KGTN2014062601.pdf [(50.2 KB)] [kitasp 技術センター, 2014/06/28 11:56]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc222/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc227/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc227/">[GGH4.X] クライアント印刷機能について知りたい．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc227/"><i class="far fa-calendar"></i> 2014-06-28</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2014/06/28*
+[番号] 技術ノート KGTN 2014062301
+[現象] [GGH4.X] クライアント印刷機能について知りたい．
+[説明] GGは，サーバ上で動作するアプリケーションから，クライアント側に存在するプリンタへ直接印刷する機能を提供しており，この機能のことをクライアント印刷機能と呼びます．GGは既定の設定で，ログオン時にクライアント側の既定のプリンタ （通常使うプリンタ） を自動的に検出し，それをサーバ上に登録します （プロキシプリンタと呼ばれます） ．アプリケーション上でこのプリンタへ印刷することにより，クライアント側のプリンタへ直接印刷されます．
+利用可能なプリンタは -ac パラメタまたは printerconfig パラメタで指定します．この値が all の場合はクライアント側の全てのプリンタが利用可能で， default の場合はクライアント側の既定のプリンタが利用可能です． none の場合は，クライアント側のプリンタは利用できません．パラメタ指定の書式は，以下の通りです．
+[ActiveXクライアント] http://hostname/goglobal/logon.html?printerconfig=all
+[Windowsクライアント] &ldquo;C:Program FilesGraphOnGO-GlobalClientgg-client.exe&rdquo; -ac all
+なお，URLや gg-client.exe のパスは，ご利用の環境にあわせて読み替えて下さい．
+ファイル KGTN2014062301.pdf [(61.3 KB)] [kitasp 技術センター, 2014/06/28 11:44]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc227/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc223/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc223/">[GGH4.X] クライアント印刷機能のプロキシプリンタの名称をカスタマイズしたい．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc223/"><i class="far fa-calendar"></i> 2014-06-28</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2014/06/28*
+[番号] 技術ノート KGTN 2014062303
+[現象] [GGH4.X] クライアント印刷機能のプロキシプリンタの名称をカスタマイズしたい．
+[説明] 既定の設定では，クライアント印刷機能のプロキシプリンタの名称は (from が設定されます．この接尾辞は，以下のレジストリの値 （文字列） を変更することで，カスタマイズすることが出来ます．
+HKLMSoftwareGraphOnGO-GlobalAppServerPrinterNameFormat
+指定する文字列には以下の特殊文字を入力することで，ユーザ名等を設定することが出来ます．
+ %U ユーザ名 例：Administrator %I クライアントのIPアドレス 例：192.168.102.11 %M クライアントの一意的なID (GUID) 例：800fb6b5770-ed9e-11df-82ae-000874b1cdb1 %C クライアントのコンピュータ名 例：GG-Client01 %S セッションID 例：3
+ ファイル KGTN2014062303.pdf [(93.9 KB)] [kitasp 技術センター, 2014/06/28 11:51]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc223/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc224/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc224/">[GGH4.X] クライアント印刷機能を利用する場合，サーバ側の設定は？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc224/"><i class="far fa-calendar"></i> 2014-06-28</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2014/06/28*
+[番号] 技術ノート KGTN 2014062302
+[現象] [GGH4.X] クライアント印刷機能を利用する場合，サーバ側の設定は？
+[説明] クライアント印刷機能を有効にするのは，クラスタマネージャで以下の項目を設定する必要があります．
+Host Options → Client Access → Printers → Universal Printer Driver ユニバーサル・プリンタドライバを使用する場合 → Windows Printer Drivers Windowsプリンタドライバを使用する場合
+なお，設定項目 Automatically install drivers は，Windowsに標準添付されたプリンタドライバを自動インストールする機能ですので，通常は有効にする必要はありません．
+ファイル KGTN2014062302.pdf [(81.1 KB)] [kitasp 技術センター, 2014/06/28 11:47]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc224/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc220/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc220/">[GGH4.X] ワコムタブレット Intuos は， 仮想USB機能等を利用してサーバ上のアプリケーションから利用できるか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc220/"><i class="far fa-calendar"></i> 2014-06-28</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2014/06/28*
+[番号] 技術ノート KGTN 2014062603
+[現象] [GGH4.X] ワコムタブレット Intuos は， 仮想USB機能等を利用してサーバ上のアプリケーションから利用できるか？
+[説明] ワコムタブレット Intuos のサポートソフトウエアは，デスクトップ （Win32サブシステム） を通してタブレット機能を提供しますので，GGが動作する （別の） Win32サブシステムからそれらの情報を利用することは出来ません．
+ファイル KGTN2014062603.pdf [(45.6 KB)] [kitasp 技術センター, 2014/06/28 12:01]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc220/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -788,7 +807,7 @@ SERVER 27001 DAEMON blm port=27501
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

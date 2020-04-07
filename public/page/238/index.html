@@ -409,27 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1693/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1543/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1693/">プラグイン LaunchBrowser を使ってファイルをダウンロードさせるサーバ側のプログラムはないのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1543/">[GGH4.0] クライアントドライブ機能を使い，サーバ側からクライアント側へ大きなファイルをコピーしている時，「コピーしています...」 ダイアログの 「キャンセル」 ボタンを押下出来るか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-07-22
+                            日付 2010-11-19
                             </p>
                             <p class="intro">*技術ノート
-2010/07/22*
-[番号] 技術ノート KGTN 2010072202
-[現象] プラグイン LaunchBrowser を使ってファイルをダウンロードさせるサーバ側のプログラムはないのか？
-[説明] サーバ側のプログラムの処理の概要とVC++2008 でのサンプルコードを以下に示します．
-ファイル選択ダイアログを表示 選択されたファイルをウエッブサーバのドキュメントフォルダへコピー そのファイルをダウンロードするURLを生成 LaunchBrowserI.dll をロード LaunchBrowser のアドレスを取得 LaunchBrowser( , &lt;URLの長さを保持するDWORD変数のポインタ&gt;)　をコール FreeLibrary でLaunchBrowserI.dll を開放
-void CGMFileDownloadDlg::OnBnClickedOk() { TCHAR tFilePath[nBufferSize+1],tFileCopy[nBufferSize+1],tFileName[nBufferSize+1]; TCHAR tBuf[nBufferSize+1]; char cBuf[nBufferSize+1]; DWORD dTemp; size_t CharactersConverted = 0;
-m_filePath.GetWindowTextW(tFilePath,(sizeof(tFilePath)/sizeof(tFilePath[0]))); GetFileTitle(tFilePath,tFileName,nBufferSize); _stprintf_s(tFileCopy,_T(&quot;%s¥¥%s&quot;),opt_copyDir,tFileName); CopyFile(tFilePath,tFileCopy,FALSE); _stprintf_s(tBuf,opt_downloadURL,tFileName); //--- HMODULE hMod = NULL; LaunchBrowser func = NULL; if(!hMod) { hMod = LoadLibrary(_T (&quot;LaunchBrowserI.dll&quot;)); } if(hMod) { func = (LaunchBrowser)GetProcAddress(hMod,&quot;LaunchBrowser&quot;); } _stprintf_s(tBuf,opt_downloadURL,tFileName); wcstombs_s(&amp;CharactersConverted,cBuf,sizeof(cBuf),tBuf,_TRUNCATE); dTemp = strlen(cBuf); (*func)((LPTSTR)cBuf,&amp;dTemp); FreeLibrary(hMod); }  ファイル KGTN2010072202.</p>
+2010/11/19*
+[番号] 技術ノート KGTN 2010111903
+[現象] [GGH4.0] クライアントドライブ機能を使い，サーバ側からクライアント側へ大きなファイルをコピーしている時，「コピーしています&hellip;」 ダイアログの 「キャンセル」 ボタンを押下出来るか？
+[説明] はい， 「キャンセル」 ボタンを押下することは可能で，コピー処理は直ちに強制終了します．
+ファイル KGTN2010111903.pdf [(43.9 KB)] [kitasp 技術センター, 2010/11/19 14:26]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1693/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1543/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -448,28 +446,25 @@ m_filePath.GetWindowTextW(tFilePath,(sizeof(tFilePath)/sizeof(tFilePath[0]))); G
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1696/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1545/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1696/">GGのプラグイン LaunchBrowser の目的は？</a></h4>
+                            <h4><a href="/posts/new_md/doc1545/">[GGH4.0] クライアントドライブ機能を使い，例えばサーバ側からクライアント側へ100MBのファイルをコピーしている時，GG上で利用しているアプリケーションが固まったりしないのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-07-21
+                            日付 2010-11-19
                             </p>
                             <p class="intro">*技術ノート
-2010/07/21*
-[番号] 技術ノート KGTN 2010072103
-[現象] GGのプラグイン LaunchBrowser の目的は？
-[説明] GO-Global for Windows Ver3.X にはサーバ側のドライブだけでなくクライアント側のドライブにアクセスできる機能 「クライアントドライブ機能」 がありますが，制限事項として19MBを越えるファイルをコピーすることが出来ません （参考 KGTN#2009091501） ．そこで，19MBを越える大きなファイルをダウンロードする方法として，ブラウザのファイルダウンロード機能を利用する方法が考えられますが，利用者にダウンロードの度にブラウザを起動して，ダウンロードサイトのURLを入力させるのは現実的ではありません．この問題を解決するために，プラグイン LaunchBrowser を作成しました．サーバ側で動作するアプリケーションが下記のようなコードを呼び出すことで，利用者の介在無しに
- クライアント側のブラウザが自動的に起動され， 2) 引数で指定したURLへ自動的にアクセスします．  Private Declare Function LaunchBrowser Lib _ &ldquo;C:¥GraphOn¥DLL¥LaunchBrowserI.dll&rdquo; _ (ByVal lpBuffer As String, nSize As Long) As Long &hellip; sUrl = lLen = Len(sUrl) Ret = LaunchBrowser(sUrl, lLen)
-プラグイン LaunchBrowser とウエッブサーバを利用することで，例えば100MBを越える大きなファイルも効率的にダウンロードすることが可能になります．
-参　考 本技術ノートに関連する情報として，以下の技術ノートがあります．
-KGTN#2010061403 GGのプラグイン LaunchBrowser で，クライアント側のブラウザを起動する時のインタフェースは？ KGTN#2010061404 GGのプラグイン LaunchBrowser で障害が発生した場合の切り分けは？ KGTN#2010063001 プラグイン LaunchBrowser を使って，他のプログラムを起動したい． KGTN#2010063002 プラグイン LaunchBrowser をインストールしたクライアントでGGサーバを利用している時， 「例えば」 クライアントのメモ帳を開きキーボードを押下すると &ldquo;コンポーネントが見つかりません - cs.</p>
+2010/11/19*
+[番号] 技術ノート KGTN 2010111901
+[現象] [GGH4.0] クライアントドライブ機能を使い，例えばサーバ側からクライアント側へ100MBのファイルをコピーしている時，GG上で利用しているアプリケーションが固まったりしないのか？
+[説明] サーバやクライアントのコンピュータのスペック，ネットワークの帯域幅，同時利用ユーザ数等に依存しますので一般論としてお答えすることは困難ですが，弊社の実験では100MBのファイルをコピー中でも IE を使いヤフー等のページを閲覧することが出来ました．
+ファイル KGTN2010111901.pdf [(50.4 KB)] [kitasp 技術センター, 2010/11/19 10:27]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1696/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1545/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -488,26 +483,27 @@ KGTN#2010061403 GGのプラグイン LaunchBrowser で，クライアント側�
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1697/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1548/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1697/">GO</a></h4>
+                            <h4><a href="/posts/new_md/doc1548/">[GGH4.0] Universal Printer Driver が有効 かつ クライアント印刷機能のパラメタ autoConfigPrinters が all であるにも関わらず，構成されないプリンタが存在する．どのような原因が考えられるか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-07-21
+                            日付 2010-11-18
                             </p>
                             <p class="intro">*技術ノート
-2010/07/21*
-[番号] 技術ノート KGTN 2010072102
-[現象] GO-Global Windows Host 4.0 がサポートするサーバOSは？
-[説明] 以下のサーバOS環境をサポートします．
-■64ビット環境 Windows Server 2008 R2 Standard or Enterprise Edition (x64) Windows Server 2008 Standard or Enterprise Edition with Service Pack 2 (x64)
-■32ビット環境 Windows Server 2008 Standard or Enterprise Edition with Service Pack 2 (x86) Windows Server 2003 R2 Standard or Enterprise Edition (x86) Windows Server 2003 Standard or Enterprise Edition with Service Pack 2 (x86)</p>
+2010/11/18*
+[番号] 技術ノート KGTN 2010111803
+[現象] [GGH4.0] Universal Printer Driver が有効 かつ クライアント印刷機能のパラメタ autoConfigPrinters が all であるにも関わらず，構成されないプリンタが存在する．どのような原因が考えられるか？
+[説明] 以下の条件が満たされると，そのプリンタは構成されません．
+過去に通常のプリンタドライバで構成されたことがある． その後，通常のプリンタドライバがアンインストール （削除） された．
+上記1で，そのプリンタは通常のプリンタドライバで構成するように MappedPrinterDrivers.xml に記録されているため，GGはそれに従い構成を試みます．しかし，上記2でドライバが削除されているため，構成処理が失敗します．対応としては，そのプリンタのドライバをサーバにインストールして下さい．
+ファイル KGTN2010111803.pdf [(55.6 KB)] [kitasp 技術センター, 2010/11/18 13:40]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1697/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1548/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -526,29 +522,26 @@ KGTN#2010061403 GGのプラグイン LaunchBrowser で，クライアント側�
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1699/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1550/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1699/">Windows Server 2008 の環境で，エクスプローラーを使ってクライアントドライブへファイルをコピー出来ない．</a></h4>
+                            <h4><a href="/posts/new_md/doc1550/">[GGH4.0] クライアント印刷機能の Universal Printer Driver が有効な場合，プリンタのリストに Preview PDF (from xxx) が自動的に付加されるが，これを削ることは出来ないのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-07-21
+                            日付 2010-11-18
                             </p>
                             <p class="intro">*技術ノート
-2010/07/21*
-[番号] 技術ノート KGTN 2010072002
-[現象] Windows Server 2008 の環境で，エクスプローラーを使ってクライアントドライブへファイルをコピー出来ない．
-[説明] Windows Server 2008 の環境では，エクスプローラーはサポートされません．
-補足1 下記のページの方法で， Windows NT 4.0 の File Manager をGGに登録すると，操作性は良くありませんがファイルのコピーが出来ることを確認しました．
-http://people.ee.ethz.ch/‾davidsch/vistafm/{.external}
-なお，この実験はサーバのUACをオフにして，クライアントのIEを 「管理者として実行」 で起動しました．その他については，継続調査中です．
-補足2 CopyFile関数でサーバ側のファイルをクライアント側へコピーするプログラムを作成 （VC++ 2008 を使用） したところ，ファイルは正しくコピーされました．従って， 「エクスプローラーでなく」 CopyFile関数でファイルをコピーする場合は，コピー出来ないという問題は発生しません．なお，クライアント側からサーバ側へコピーする場合は，0バイトのファイルが作成されます．
-ファイル KGTN2010072002.pdf [(61.7 KB)] [kitasp 技術センター, 2010/07/21 09:24]</p>
+2010/11/18*
+[番号] 技術ノート KGTN 2010111801
+[現象] [GGH4.0] クライアント印刷機能の Universal Printer Driver が有効な場合，プリンタのリストに Preview PDF (from xxx) が自動的に付加されるが，これを削ることは出来ないのか？
+[説明] Ver4.0系では， Preview PDF (from xxx) は自動的に付加されます．従って，これを削ることは出来ませんが， Ver4.0.1でクライアントプリンタを削る機能が追加される見込みです．GraphOn社のコメントは以下の通りです．
+If the UPD is enabled in the Cluster Manager, Preview PDF will always be configured. In 4.0.1 we will have a UI where users can remove client printers and that will include being able to remove Preview PDF.
+ファイル KGTN2010111801.pdf [(69 KB)] [kitasp 技術センター, 2010/11/18 11:31]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1699/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1550/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

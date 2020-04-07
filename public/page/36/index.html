@@ -409,25 +409,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2070/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2039/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2070/">[GGH5.X/ExPack] GGEasyMonitor の振分け機能を利用しているが，現用系でネットワーク障害が発生し一部のGGサーバーへの振分けが出来なくなった．この場合，待機系で振分けを行うように切り替わるのではないか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2039/">[GGH5.X] GGのバージョン （ビルド） を戻す方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2017-05-25
+                            日付 2017-07-27
                             </p>
                             <p class="intro">*技術ノート
-2017/05/25*
-[番号] 技術ノート KGTN 2017052302
-[現象] [GGH5.X/ExPack] GGEasyMonitor の振分け機能を利用しているが，現用系でネットワーク障害が発生し一部のGGサーバーへの振分けが出来なくなった．この場合，待機系で振分けを行うように切り替わるのではないか？
-[説明] ネットワーク障害で GGEasyMonitor （現用系） が一部のGGサーバーとの通信が出来なくなっても，他のGGサーバーおよびクライアント （GGEasyLogon） と通信が正常に出来ていれば，現用系の振分け機能が使用されます．なお，現用系がすべてのGGサーバーと通信が出来ていても，クライアントとの通信が出来ない場合は，クライアント （GGEasyLogon） は待機系の振分け機能を利用するように切り替えます．
-ファイル KGTN2017052302.pdf [(35.5 KB)] [kitasp 技術センター, 2017/05/25 10:03]</p>
+2017/07/27*
+[番号] 技術ノート KGTN 2017070301
+[現象] [GGH5.X] GGのバージョン （ビルド） を戻す方法は？
+[説明] 以下の手順で，GGのバージョン （ビルド） を戻してください．
+ ライセンスファイル （下記パス） のバックアップ C:Program FilesGraphOnGO-GlobalPrograms*.lic コントロールパネル → [プログラムのアンインストール] → [GO-Global Host] を右クリック [アンインストール] を選択 &ldquo;GO-Global Host をアンインストールしますか？&rdquo; → [はい] を選択 &ldquo;GO-Global Host: The setup must update files &hellip;&rdquo; → [OK] を選択 &ldquo;GO-Global Host: You must restart your system &hellip;&rdquo; → [Yes] を選択 再起動 通常のGGのインストール 上記１でバックアップしたライセンスファイルの復元 再起動 クラスターマネージャーでアプリケーションの登録ほか  障害等の対応で同じビルドを再インストールする場合も，この手順で行ってください．
+ファイル KGTN2017070301.pdf [(43.9 KB)] [kitasp 技術センター, 2017/07/27 16:44]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2070/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2039/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,27 +447,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2068/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2023/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2068/">[GGH5.X/ExPack] GGEasyMonitor の振分け機能を利用する場合，現用系と待機系の切り替えはどのような仕組みで行われるのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2023/">[GGH5.X] GGのホスト （サーバー） 用のソフトウエアの最新版を入手したが，GGのクライアント用ソフトウエアの最新版はどこから入手出来るのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2017-05-25
+                            日付 2017-07-27
                             </p>
                             <p class="intro">*技術ノート
-2017/05/25*
-[番号] 技術ノート KGTN 2017052401
-[現象] [GGH5.X/ExPack] GGEasyMonitor の振分け機能を利用する場合，現用系と待機系の切り替えはどのような仕組みで行われるのか？
-[説明] GGEasyMonitor の振分け機能は，現用系と待機系それぞれが独立して動作します．クライアント端末の GGEasyLogon の接続先で最初に指定された振分けサーバーが現用系として使用され，それに接続出来ない時に２番目の振分けサーバーが待機系として使用されます．下記の GGEasyLogon の設定例では， 192.168.1.51 が現用系， 192.168.1.61 が待機系という扱いになります．
-ファイル KGTN2017052401.pdf [(69.6 KB)] [kitasp 技術センター, 2017/05/25 10:06]
-KGTN2017052401.jpg
-表示 [(14.4 KB)] [kitasp 技術センター, 2017/05/25 10:06]</p>
+2017/07/27*
+[番号] 技術ノート KGTN 2017072604
+[現象] [GGH5.X] GGのホスト （サーバー） 用のソフトウエアの最新版を入手したが，GGのクライアント用ソフトウエアの最新版はどこから入手出来るのか？
+[説明] GGのホスト （サーバー） 用のソフトウエアをインストールすると，次のフォルダーにクライアント用ソフトウエアが配置されています．
+C:Program FilesGraphOnGO-GlobalWebClients  ファイル KGTN2017072604.pdf [(33.4 KB)] [kitasp 技術センター, 2017/07/27 17:15]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2068/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2023/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,31 +484,27 @@ KGTN2017052401.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2078/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2031/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2078/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2031/">[GGH5.X] Microsoft Office 365 (Microsoft Office 2016) のパワーポイントで，スライドショーやアニメーションのプレビューが動作しない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2017-05-24
+                            日付 2017-07-27
                             </p>
                             <p class="intro">*技術ノート
-2017/05/24*
-[番号] 技術ノート KGTN 2017051002
-[現象] [GGH4.X-5.X] Ver3.2の頃にあったクライアントプリンターの設定情報 （通常使うプリンターや用紙の方向等） のアップロード機能 （クライアント側 → サーバー側） が Ver4.X系およびVer5.X系で機能しない．
-[説明] 技術ノート KGTN#2016091404 の内容と関連して，通常使うプリンターや各プリンターの設定情報は，サーバー側ですべて管理するようになりました．これらの情報は，プログラムウインドウの [File] → [Printers] で設定を行ってください．
- Printers画面の 「Add」 をクリックします． Add Printer画面で追加するプリンターを選択し 「Add」 をクリックします．  Printers画面で削除するプリンターを選択し 「Remove」 をクリックします．
-Printers画面で設定するプリンターを選択し 「Set Default」 をクリックします．
- Printers画面で設定するプリンターを選択し 「Edit」 をクリックします． プロパティ画面で必要な設定をします．  ファイル KGTN2017051002.pdf [(863 KB)] [kitasp 技術センター, 2017/05/24 17:15]
-KGTN2017051002-1.jpg
-表示 [(12.7 KB)] [kitasp 技術センター, 2017/05/24 17:15]
-KGTN2017051002-2.jpg
-表示 [(8.02 KB)] [kitasp 技術センター, 2017/05/24 17:15]</p>
+2017/07/27*
+[番号] 技術ノート KGTN 2017071301
+[現象] [GGH5.X] Microsoft Office 365 (Microsoft Office 2016) のパワーポイントで，スライドショーやアニメーションのプレビューが動作しない．
+[説明] パワーポイントのスライドショーやアニメーションのプレビューが動作しない問題は，現時点では制限事項となります．なお，スライドショーを選択した直後にフリーズ状態になった場合は， Ctrl + Alt + Del でタスクマネージャーを選択し， PowerPoint のタスクを×で強制終了してください．
+ファイル KGTN2017071301.pdf [(712 KB)] [kitasp 技術センター, 2017/07/27 16:58]
+KGTN2017071301.jpg
+表示 [(25.8 KB)] [kitasp 技術センター, 2017/07/27 16:58]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2078/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2031/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -528,37 +523,25 @@ KGTN2017051002-2.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2081/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2030/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2081/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2030/">[GGH5.X] Microsoft Office 365 (Microsoft Office 2016) のパワーポイントを使用する場合，色深度を16ビットに下げるとパフォーマンスが向上するか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2017-05-24
+                            日付 2017-07-27
                             </p>
                             <p class="intro">*技術ノート
-2017/05/24*
-[番号] 技術ノート KGTN 2017050901
-[現象] [GGH4.X-5.X/Windows] Belarc Advisor のレポートを採取する手順は？
-[説明] 以下の手順で Belarc Advisor のインストールを行ってください．インストール後にレポートが表示されます．
-&lt;STEP#1&gt; ブラウザで https://www.belarc.com/products_belarc_advisor を開き，&ldquo;DOWNLOAD A FREE COPY OF BELARC ADVISOR&rdquo; をクリックします．
-&lt;STEP#2&gt; 「実行」 をクリックします．
-&lt;STEP#3&gt; 「I Agree」 をクリックします．
-&lt;STEP#4&gt; 「Install」 をクリックします．
-&lt;STEP#5&gt; 「Yes」 をクリックします．なお，この画面が続けて表示された場合は，同様に 「Yes」 をクリックしてください．
-&lt;STEP#6&gt; 「OK」 をクリックします．
-&lt;STEP#7&gt; 情報収集処理が開始します （数分掛かることがあります） ．
-&lt;STEP#8&gt; 収集した情報がブラウザ上に表示されます．
-&lt;STEP#9&gt; [ファイル] → [名前を付けて保存] で，空なフォルダーに採取した情報を保存します．
-&lt;STEP#10&gt; 保存したフォルダーをZIP等で圧縮してお送りください．
-ファイル KGTN2017050901.pdf [(1.76 MB)] [kitasp 技術センター, 2017/05/24 17:02]
-KGTN2017050901-1.jpg
-表示 [(21.1 KB)] [kitasp 技術センター, 2017/05/24 17:02]</p>
+2017/07/27*
+[番号] 技術ノート KGTN 2017071302
+[現象] [GGH5.X] Microsoft Office 365 (Microsoft Office 2016) のパワーポイントを使用する場合，色深度を16ビットに下げるとパフォーマンスが向上するか？
+[説明] 環境に依存する可能性もありますが，弊社の検証環境では色深度が16ビットでも32ビットでも体感的なパフォーマンスは殆ど差がありません．なお，パフォーマンスを向上させるには，パワーポイントのウインドウを最大化せずに，必要最小限のサイズにすることをお勧めします．
+ファイル KGTN2017071302.pdf [(37.4 KB)] [kitasp 技術センター, 2017/07/27 17:03]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2081/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2030/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

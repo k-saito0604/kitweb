@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1645/">
+                                      <a href="/posts/new_md/doc1494/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1645/">エンタープライズオプションの GMCheckRaw を起動すると，瞬間的にCPUの使用率が上昇するが，どの程度の値が妥当なのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1494/">クライアント側でGGのウインドウを操作したいが，注意すべき点は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,21 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1645/"><i class="far fa-calendar"></i> 2010-08-25</a>
+                                            <a href="/posts/new_md/doc1494/"><i class="far fa-calendar"></i> 2011-01-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/25*
-[番号] 技術ノート KGTN 2010082501
-[現象] エンタープライズオプションの GMCheckRaw を起動すると，瞬間的にCPUの使用率が上昇するが，どの程度の値が妥当なのか？
-[説明] GMCheckRaw の試験に使用しているマシンは CPU: Pentimu4 2.8GHz + MEM: 1GB で，この環境では平均すると30%前後，高い場合でも約50%です．
-ファイル KGTN2010082501.pdf [(49.8 KB)] [kitasp 技術センター, 2010/08/25 09:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1645/" class="btn btn-template-main">続きを読む</a>
+2011/01/21*
+[番号] 技術ノート KGTN 2011012102
+[現象] クライアント側でGGのウインドウを操作したいが，注意すべき点は？
+[説明] GGがクライアント上に表示するウインドウは，GGサーバで実行されるアプリケーションのウインドウです．クライアント側で 「WindowsのAPIを使用して」 そのウインドウを操作した場合，GGサーバ上で動作するアプリケーションは操作内容を知りませんので，操作後に画面が崩れる等の現象が発生します．従って，原則としてクライアント側で 「WindowsのAPIを使用して」 ウインドウ操作を行うことは出来ません．
+参　考1 ウインドウを最小化する・ウインドウを隠す等の単純な操作を行う場合，技術ノート KGTN#2010031501，KGTN#2010090205，KGTN#2009080501 を参考に，Zオーダーが狂わないような処理を行って下さい．幾つかのユーザ様から，このような方法で 「期待した通りの動作を実現できた」 という報告があります．
+参　考2 以下のようなコードで，GGが表示するウインドウの 「非表示・表示」 が動作しているようです．
+void CGGTest_SendMessageDlg::OnBnClickedOk() { //&mdash; ::MessageBox(NULL,_T(&ldquo;STEP1&rdquo;),_T(&ldquo;GGTest_SendMessage&rdquo;),MB_OK); EnumWindows(EnumWindowsProc1,0); ::MessageBox(NULL,_T(&ldquo;STEP2&rdquo;),_T(&ldquo;GGTest_SendMessage&rdquo;),MB_OK); EnumWindows(EnumWindowsProc2,0); //&mdash; }
+BOOL CALLBACK EnumWindowsProc1(HWND hwnd,LPARAM lParam) { TCHAR tBufC^1024^,tBufT^1024^,tBufX^1024^; //&mdash; ::GetClassName(hwnd,tBufC,(sizeof(tBufC)/sizeof(tBufC^0^))); ::GetWindowText(hwnd,tBufT,(sizeof(tBufT)/sizeof(tBufT^0^))); _stprintf_s(tBufX,_T(&quot;'%s&rsquo; - &lsquo;%s&rsquo;&quot;),tBufC,tBufT); if(_tcslen(tBufT) &gt; 0) { if(_tcsicmp(tBufC,_T(&ldquo;DisplayClientWindowClass&rdquo;)) 0) { ::MessageBox(NULL,tBufX,_T(&ldquo;GGTest_SendMessage#11&rdquo;),MB_OK); ::ShowWindow(hwnd,SW_HIDE); } } //&mdash; return(TRUE); }
+BOOL CALLBACK EnumWindowsProc2(HWND hwnd,LPARAM lParam) { TCHAR tBufC[1024],tBufT[1024],tBufX[1024]; //&mdash; ::GetClassName(hwnd,tBufC,(sizeof(tBufC)/sizeof(tBufC[0]))); ::GetWindowText(hwnd,tBufT,(sizeof(tBufT)/sizeof(tBufT[0]))); _stprintf_s(tBufX,_T(&quot;'%s&rsquo; - &lsquo;%s&rsquo;&quot;),tBufC,tBufT); if(_tcslen(tBufT) &gt; 0) { if(_tcsicmp(tBufC,_T(&ldquo;DisplayClientWindowClass&rdquo;)) 0) { ::MessageBox(NULL,tBufX,_T(&ldquo;GGTest_SendMessage#21&rdquo;),MB_OK); ::ShowWindow(hwnd,SW_SHOW); ::PostMessage(hwnd,WM_PAINT,0,0); ::SetForegroundWindow(hwnd); } } //&mdash; return(TRUE); }</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1494/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +364,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1644/">
+                                      <a href="/posts/new_md/doc1495/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +372,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1644/">エンタープライズオプションの GMService のログファイルの出力先を変更したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1495/">データセンターにGGサーバを設置するが，SSL-VPN経由でクライアントPCからGGサーバにアクセスできるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,18 +385,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1644/"><i class="far fa-calendar"></i> 2010-08-25</a>
+                                            <a href="/posts/new_md/doc1495/"><i class="far fa-calendar"></i> 2011-01-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/25*
-[番号] 技術ノート KGTN 2010082502
-[現象] エンタープライズオプションの GMService のログファイルの出力先を変更したい．
-[説明] GMService のログファイルは，デフォルトの設定でGMServiceが 置かれたフォルダ中に作成されます．別のフォルダに作成したい場合は，下記のように設定ファイル GMService.ini 中でフォルダを指定して下さい．
-[default] logDir = C:¥TEMP
-ファイル KGTN2010082502.pdf [(48.5 KB)] [kitasp 技術センター, 2010/08/25 09:36]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1644/" class="btn btn-template-main">続きを読む</a>
+2011/01/21*
+[番号] 技術ノート KGTN 2011012101
+[現象] データセンターにGGサーバを設置するが，SSL-VPN経由でクライアントPCからGGサーバにアクセスできるか？
+[説明] SSL-VPNの環境が，クライアントPC 〜 GGサーバ間でポート番号491 （TCP） の通信路を提供する機能があれば，そのSSL-VPN環境を介してアクセス可能です．なお，RTT （ラウンドトリップタイム） は最悪でも500ms以下 （出来れば100ms以下） でなければなりません．
+ファイル KGTN2011012101.pdf [(47.4 KB)] [kitasp 技術センター, 2011/01/21 12:04]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1495/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -402,7 +405,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1642/">
+                                      <a href="/posts/new_md/doc1496/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -410,7 +413,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1642/">エンタープライズオプションのGMCheckRaw で，クライアントのコンピュータ名を得る方法はないのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1496/">Ver4.0系のログオン時のパラメタ clientframe の機能を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -423,18 +426,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1642/"><i class="far fa-calendar"></i> 2010-08-25</a>
+                                            <a href="/posts/new_md/doc1496/"><i class="far fa-calendar"></i> 2011-01-20</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/25*
-[番号] 技術ノート KGTN 2010082504
-[現象] エンタープライズオプションのGMCheckRaw で，クライアントのコンピュータ名を得る方法はないのか？
-[説明] Rel#1.07.05 またはこれ以降で，セッション情報の中にクライアントのコンピュータ名が設定されます．従来との互換性を維持するため，以下の設定項目 sessionInfoNew が指定されている時にのみ，この機能が有効になり，IPアドレスの後にクライアントのコンピュータ名が加わります．
-sessionInfoNew = GG_Servers(gms_ii).Add_sessionInfo(&quot;%08d, %s, %s, %s, %d, %s, %s, &lsquo;%s&rsquo;&quot;) → （実行結果） GG_Servers(gms_ii).Add_sessionInfo(&ldquo;00000002, Administrator on Pe800a, Administrator, Running, 1, 2010-08-25 09:44:54, 192.168.102.176, &lsquo;GG-MNGR.2F&rsquo;&quot;)
-ファイル KGTN2010082504.pdf [(58.9 KB)] [kitasp 技術センター, 2010/08/25 13:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1642/" class="btn btn-template-main">続きを読む</a>
+2011/01/20*
+[番号] 技術ノート KGTN 2010072901
+[現象] Ver4.0系のログオン時のパラメタ clientframe の機能を知りたい．
+[説明] パラメタ clientframe の値が空またはfalseの場合は，従来の通りです．この値が true の場合は，ログオン直後に背景となるウインドウ （bounding window） が表示され，GG上のアプリケーションのウインドウはこの中に表示されます．アプリケーションが 「クライアント側で動いているのか，サーバ側で動いているのか」 を利用者に意識させい時などに役立ちます．
+ファイル KGTN2010072901.pdf [(225 KB)] [kitasp 技術センター, 2011/01/21 07:42]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1496/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -444,7 +446,7 @@ sessionInfoNew = GG_Servers(gms_ii).Add_sessionInfo(&quot;%08d, %s, %s, %s, %d, 
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1641/">
+                                      <a href="/posts/new_md/doc1497/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -452,7 +454,7 @@ sessionInfoNew = GG_Servers(gms_ii).Add_sessionInfo(&quot;%08d, %s, %s, %s, %d, 
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1641/">エンタープライズオプションのGMCheckRaw を GMService から起動する時の推奨パラメタは？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1497/">APSログに CS: A request (ID: ???) was not completed. という記録が残っていたが，どういう事象が発生したのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -465,19 +467,17 @@ sessionInfoNew = GG_Servers(gms_ii).Add_sessionInfo(&quot;%08d, %s, %s, %s, %d, 
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1641/"><i class="far fa-calendar"></i> 2010-08-25</a>
+                                            <a href="/posts/new_md/doc1497/"><i class="far fa-calendar"></i> 2011-01-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/25*
-[番号] 技術ノート KGTN 2010082505
-[現象] エンタープライズオプションのGMCheckRaw を GMService から起動する時の推奨パラメタは？
-[説明] GMCheckRaw の再起動を GMService に任せるという前提を置けば，以下の設定が基本となります．
-args = -i C:¥GraphOn¥bin¥GMCheck.ini -s -rs 86400 -w 10 -to 10 ?batch
--rs 86400 24時間監視を続ける -w 10 10秒間隔で監視する -to 10 接続不良の場合は10秒経過した時点でエラーとする
-ファイル KGTN2010082505.pdf [(55.3 KB)] [kitasp 技術センター, 2010/08/25 14:29]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1641/" class="btn btn-template-main">続きを読む</a>
+2011/01/19*
+[番号] 技術ノート KGTN 2011011902
+[現象] APSログに &ldquo;CS: A request (ID: ???) was not completed.&rdquo; という記録が残っていたが，どういう事象が発生したのか？
+[説明] &ldquo;CS: A request (ID: ???) was not completed.&rdquo; は，GGサーバ〜GGクライアント間で通信中にセッションが切断され，描画処理等が完結しなかったことを意味します．ネットワーク障害だけでなく， （アプリケーションが描画している状況で） ActiveXクライアントを実行しているブラウザ （IE） が閉じられた時にも記録されます．従って，このメッセージは 「エラー」 ではなく 「情報」 とお考え頂いて結構です．
+ファイル KGTN2011011902.pdf [(57.1 KB)] [kitasp 技術センター, 2011/01/19 14:56]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1497/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -487,7 +487,7 @@ args = -i C:¥GraphOn¥bin¥GMCheck.ini -s -rs 86400 -w 10 -to 10 ?batch
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1648/">
+                                      <a href="/posts/new_md/doc1498/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -495,7 +495,7 @@ args = -i C:¥GraphOn¥bin¥GMCheck.ini -s -rs 86400 -w 10 -to 10 ?batch
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1648/">Microsoft Authenticode のPFXファイルの入手方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1498/">データ実行防止 （DEP） の設定で，ライセンスマネージャ lmgrd.exe を対象から除外した場合，副作用等は発生しないか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -508,17 +508,17 @@ args = -i C:¥GraphOn¥bin¥GMCheck.ini -s -rs 86400 -w 10 -to 10 ?batch
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1648/"><i class="far fa-calendar"></i> 2010-08-23</a>
+                                            <a href="/posts/new_md/doc1498/"><i class="far fa-calendar"></i> 2011-01-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/23*
-[番号] 技術ノート KGTN 2010082302
-[現象] Microsoft Authenticode のPFXファイルの入手方法は？
-[説明] Thawte社のコードサイニング認証を利用した場合，証明書は申請に使用したPCに直接インストールされます．PFXファイルを入手するには， 「IE8 → ツール → インターネット オプション → コンテンツ → 証明書 → 個人」 にインストールされた証明書をエクスポートします． 「秘密キーのエクスポート」 および　「証明パスにある証明書の付加」 方法は，以下の画面を参考にして下さい．
-ファイル KGTN2010082302.pdf [(338 KB)] [kitasp 技術センター, 2010/08/23 11:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1648/" class="btn btn-template-main">続きを読む</a>
+2011/01/19*
+[番号] 技術ノート KGTN 2011011901
+[現象] データ実行防止 （DEP） の設定で，ライセンスマネージャ lmgrd.exe を対象から除外した場合，副作用等は発生しないか？
+[説明] ライセンスマネージャ lmgrd.exe をDEP の対象から外しても，副作用等はありません．
+ファイル KGTN2011011901.pdf [(44.2 KB)] [kitasp 技術センター, 2011/01/19 14:32]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1498/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -528,7 +528,7 @@ args = -i C:¥GraphOn¥bin¥GMCheck.ini -s -rs 86400 -w 10 -to 10 ?batch
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1649/">
+                                      <a href="/posts/new_md/doc1499/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -536,7 +536,7 @@ args = -i C:¥GraphOn¥bin¥GMCheck.ini -s -rs 86400 -w 10 -to 10 ?batch
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1649/">Microsoft Authenticode のPFXファイルをSPCとPVKファイルに分離する方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1499/">FlexLM （FLEXnet Publisher） が正常に動作しているかどうかチェックしたいが，その方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -549,20 +549,21 @@ args = -i C:¥GraphOn¥bin¥GMCheck.ini -s -rs 86400 -w 10 -to 10 ?batch
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1649/"><i class="far fa-calendar"></i> 2010-08-23</a>
+                                            <a href="/posts/new_md/doc1499/"><i class="far fa-calendar"></i> 2011-01-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/23*
-[番号] 技術ノート KGTN 2010082301
-[現象] Microsoft Authenticode のPFXファイルをSPCとPVKファイルに分離する方法は？
-[説明] 以下の手順 （バッチ） でPFXファイルをSPCとPVKファイルに分離することが出来ます．
-C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nocerts -nodes -out Cert.pem .¥pvk -in Cert.pem -topvk -out Cert.pvk
-C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nokeys -out Cert_Certs.pem C:¥OpenSSL¥bin¥openssl crl2pkcs7 -nocrl -certfile Cert_Certs.pem -outform DER -out Cert.spc
-この情報はコードサイニングに関する内容ですので，通常のGGサーバ利用では必要ありません．
-ファイル KGTN2010082301.pdf [(49.6 KB)] [kitasp 技術センター, 2010/08/23 10:53]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1649/" class="btn btn-template-main">続きを読む</a>
+2011/01/14*
+[番号] 技術ノート KGTN 2011011402
+[現象] FlexLM （FLEXnet Publisher） が正常に動作しているかどうかチェックしたいが，その方法は？
+[説明] FlexLM （FLEXnet Publisher） 関連のツール lmutil を使用することで，動作状況をチェックすることが出来ます．以下は，起動するコマンドラインとその結果です．
+C:¥GraphOn¥FlexLM&gt; lmutil lmstat -a
+lmutil - Copyright (c) 1989-2010 Flexera Software, Inc. All Rights Reserved. Flexible License Manager status on Sun 12/14/2008 09:39
+[Detecting lmgrd processes&hellip;] License server status: 27000@pe800A License file(s) on pe800A: C:¥GraphOn¥GO-Global Server¥Programs¥license.lic:
+pe800A: license server UP (MASTER) v11.6  Vendor daemon status (on pe800A):
+blm: UP v10.8 Feature usage info:  Users of session: (Total of 50 licenses issued; Total of 0 licenses in use)</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1499/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -572,7 +573,7 @@ C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nokeys -out Cert_Certs.pem C:¥Op
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1647/">
+                                      <a href="/posts/new_md/doc1500/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -580,7 +581,7 @@ C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nokeys -out Cert_Certs.pem C:¥Op
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1647/">規模の大きなネットワーク型ストレージを使用する場合の注意点は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1500/">月次処理で大量の印刷を行いたいが，どのような点に注意すべきか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -593,20 +594,23 @@ C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nokeys -out Cert_Certs.pem C:¥Op
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1647/"><i class="far fa-calendar"></i> 2010-08-23</a>
+                                            <a href="/posts/new_md/doc1500/"><i class="far fa-calendar"></i> 2011-01-13</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/23*
-[番号] 技術ノート KGTN 2010082303
-[現象] 規模の大きなネットワーク型ストレージを使用する場合の注意点は？
-[説明] SAN (Storage Area Network) 等のネットワーク型ストレージは，パフォーマンスや耐故障性等を十分に考慮して設計・導入が行われると思いますが，以下の点についても考慮しておく必要があります．
-論理ディスクに非常に負荷がかかる処理が走った場合，最終的には物理ディスクへ高い負荷がかかります．この結果，その物理ディスクを使用する全ての論理ディスクへのアクセスが遅延することになります．最初に負荷を掛けたマシンが Unix Server でも， （論理ディスクを介して） 同じ物理ディスクへアクセスする Windows Server のパフォーマンスが大幅に低下することもあります．このような状況では，Windows や GO-Global の問題と認識される可能性が高く，それらを詳しく調べても原因が分からず，問題の解決までに多くの時間を費やすことになります．ストレージの設計に当たっては，物理ディスクと論理ディスクの関係についても考慮することが肝要です．
-補　足 ディスクの集約度が高いシステムでは，以下のような問題についても考慮する必要があります．
-アレイコントローラが共通の場合，I/O処理が追い付かずに他サーバに影響を与える． 多くのサーバがFCケーブルに集線されている場合，アクセスが集中するとサーバ間で影響を及ぼしあう． キャッシュメモリがシステムで共通な場合，キャッシュを使い切ると急激にI/Oスループットが低下し，システム全体に影響を与える．
-ファイル KGTN2010082303.pdf [(71.3 KB)] [kitasp 技術センター, 2010/08/24 08:30]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1647/" class="btn btn-template-main">続きを読む</a>
+2011/01/13*
+[番号] 技術ノート KGTN 2010120301
+[現象] 月次処理で大量の印刷を行いたいが，どのような点に注意すべきか？
+[説明] GGのクライアント印刷機能では，印刷のスプールファイルをメモリに展開し，それを圧縮してクライアントへ転送します． 「大量の印刷」 が１回のジョブ （ドキュメント） で行われる場合，スプールファイルが巨大 （例えば数百MB〜数GB） になるため，その圧縮処理に時間がかかりますし，圧縮したスプールファイルの転送にも時間がかかります．ユーザから見ると 「印刷ボタンを押したのに反応がない」 という現象になりますので，一般にはこのような運用は避けた方が良いでしょう．従って，以下のような方法が考えられます．
+大量の印刷を複数のジョブに分割する （つまり印刷を分けて行う） ． サーバ側のネットワークプリンタへ印刷する （スプールファイルの圧縮や転送が発生しない） ． 弊社製品 「きっとプリント」 を使用する．
+補　足 通常の印刷処理では，以下の手順でドキュメントが （サーバ側の） 物理的なプリンタへ出力されます．
+スプールファイルの生成 物理的なプリンタへの出力
+クライアント印刷機能の処理では，以下の手順でドキュメントが （クライアント側の） 物理的なプリンタへ出力されます．
+サーバ側でのスプールファイルの生成 サーバ側でのスプールファイルの圧縮 サーバ側からクライアント側へのスプールファイルの転送 クライアント側でのスプールファイルの伸張 クライアント側でのスプールファイルの生成 物理的なプリンタへの出力
+上記2および4で 「スプールファイル全体」 をメモリ上に展開して処理を行いますので，印刷できる帳票のサイズが利用可能なメモリの大きさの制約を受けます．上記3では，大きなスプールファイル （正確には圧縮されたスプールファイル） がサーバ側からクライアント側へネットワーク （LANやWAN） を介して転送されますので，回線の状況等に依存して長く時間がかかります．
+ファイル KGTN2010120301.pdf [(66.3 KB)] [kitasp 技術センター, 2011/01/13 16:58]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1500/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -616,7 +620,7 @@ C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nokeys -out Cert_Certs.pem C:¥Op
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1650/">
+                                      <a href="/posts/new_md/doc1501/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -624,7 +628,7 @@ C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nokeys -out Cert_Certs.pem C:¥Op
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1650/">クライアントドライブ機能で，サーバ側からクライアント側へファイルをコピーする時，クライアント側のディスクの空き容量が少ない場合は，常に0バイトのファイルが作成されるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1501/">[GGW3.2] レンタルサーバにGGをインストールしたが，どのような手順で確認すれば良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -637,17 +641,23 @@ C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nokeys -out Cert_Certs.pem C:¥Op
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1650/"><i class="far fa-calendar"></i> 2010-08-20</a>
+                                            <a href="/posts/new_md/doc1501/"><i class="far fa-calendar"></i> 2011-01-06</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/20*
-[番号] 技術ノート KGTN 2010082002
-[現象] クライアントドライブ機能で，サーバ側からクライアント側へファイルをコピーする時，クライアント側のディスクの空き容量が少ない場合は，常に0バイトのファイルが作成されるのか？
-[説明] Ver3.2系では，クライアント側のディスクの空き容量が少ない時，0バイトのファイルが作成されます．
-ファイル KGTN2010082002.pdf [(42.1 KB)] [kitasp 技術センター, 2010/08/20 16:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1650/" class="btn btn-template-main">続きを読む</a>
+2011/01/06*
+[番号] 技術ノート KGTN 2011010701
+[現象] [GGW3.2] レンタルサーバにGGをインストールしたが，どのような手順で確認すれば良いか？
+[説明] レンタルサーバのサービス （仕様や環境など） によってチェックする内容は変わりますが，一般的には以下の手順で確認するのが良いでしょう．
+サービス &ldquo;GO-Global Application Publishing Service&rdquo; の状態が 「開始」 になっていること．
+そのサーバ内からGGへログオン出来ること． 2.1) &lt;GGのインストールディレクトリ&gt;¥GO-Global Server¥Programs にある ggw.exe をダブルクリック． 2.2) Server Address に localhost を入力． 2.3) Connect ボタンをクリック． 2.4) ログオンダイアログが表示され，かつログオンできることを確認．
+クライアントからGGサーバへ （ネットワークレベルで） 接続出来ること． 3.1) クライアントでDOS窓をオープン． 3.2) telnet &lt;GGサーバのIPアドレス&gt; 491 を実行． 3.3) 接続されることを確認 （接続中の状態が続かないことを確認） ．
+  クライアントからGGのクライアントを介してGGサーバへログオン出来ること．
+補　足 上記3.3でポート番号491へ接続出来ない場合は，レンタルサーバ側のファイアウォール等で491へのアクセスが拒否されています．このような場合は，GGサーバの待ち受けポートを491から443へ変更して下さい （注： クラスタマネージャでポート番号を変更することに加え，ログオン用HTMLで明示的にポート番号443を指定する必要もあります）．
+上記3.2で使用する telnet コマンドが無い環境では，ターミナルエミュレータ &ldquo;Tera Term&rdquo; 等をインストールして下さい．
+ファイル KGTN2011010701.pdf [(70 KB)] [kitasp 技術センター, 2011/01/07 08:45]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1501/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -657,7 +667,7 @@ C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nokeys -out Cert_Certs.pem C:¥Op
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1651/">
+                                      <a href="/posts/new_md/doc1504/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -665,7 +675,7 @@ C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nokeys -out Cert_Certs.pem C:¥Op
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1651/">クライアント側で動作するアプリケーションがアラートダイアログを表示した後，その確認ボタンを押下すると，アラート画面上にGG画面上でフォーカスを持つボタンが表示される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1504/">[GGW3.2] aps (1320) CS: The client did not initiate the handshake operation. という記録がAPSログにあるが，何が起きたのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -678,17 +688,17 @@ C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nokeys -out Cert_Certs.pem C:¥Op
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1651/"><i class="far fa-calendar"></i> 2010-08-20</a>
+                                            <a href="/posts/new_md/doc1504/"><i class="far fa-calendar"></i> 2011-01-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/20*
-[番号] 技術ノート KGTN 2010082001
-[現象] クライアント側で動作するアプリケーションがアラートダイアログを表示した後，その確認ボタンを押下すると，アラート画面上にGG画面上でフォーカスを持つボタンが表示される．
-[説明] アラートダイアログが表示された時に，そのダイアログがアクティブかどうか確認して下さい．最上位に表示されながらアクティブでない場合は，GGは自分のウインドウが未だ最上位にあると判断し処理を行いますので，このような状況が発生します．対応としては，ダイアログを最上位に表示する時，そのダイアログをアクティブな状態にして下さい．
-ファイル KGTN2010082001.pdf [(47.8 KB)] [kitasp 技術センター, 2010/08/20 16:36]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1651/" class="btn btn-template-main">続きを読む</a>
+2011/01/05*
+[番号] 技術ノート KGTN 2011010401
+[現象] [GGW3.2] &ldquo;aps (1320) CS: The client did not initiate the handshake operation.&rdquo; という記録がAPSログにあるが，何が起きたのか？
+[説明] GGサーバの通信ポート （通常491） に対して，TCP/IPレベルの接続はあったものの，相手方がGGのプロトコル （Rapid-X） を話さなかったことを意味します．通常は，ハードウエア・ロードバランサのヘルスチェック機能 （TCP/IP） が利用されて場合などで，この記録が残ります．なお，以下の後続の情報も併せて記録されます．
+3 2010-12-04 12:45:42.062 aps (1320) CS: The client did not initiate the handshake operation. 4 2010-12-04 12:45:42.203 aps (1320) CS: Failed to create the transport server. 5 2010-12-04 12:45:42.296 aps (1320) CS: Failed to accept a connection from a client at IP address 127.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1504/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -698,7 +708,7 @@ C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nokeys -out Cert_Certs.pem C:¥Op
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1654/">
+                                      <a href="/posts/new_md/doc1503/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -706,7 +716,7 @@ C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nokeys -out Cert_Certs.pem C:¥Op
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1654/">3.2.1.4466 の readme.txt のサーバ環境に 32bit / 64bit の記述がない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1503/">サーバを再起動する時，セッションが有無に関係なく無条件に行って良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -719,18 +729,18 @@ C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nokeys -out Cert_Certs.pem C:¥Op
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1654/"><i class="far fa-calendar"></i> 2010-08-19</a>
+                                            <a href="/posts/new_md/doc1503/"><i class="far fa-calendar"></i> 2011-01-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/19*
-[番号] 技術ノート KGTN 2010081904
-[現象] 3.2.1.4466 の readme.txt のサーバ環境に 32bit / 64bit の記述がない．
-[説明] オペレーティングシステムのリストの中には記述されておりませんが，その直前に 「以下の32ビット Windows オペレーティングシステムを何れかを必要とする」という記述があります．
-The GO-Global Server requires one of the following 32-bit Windows operating systems:
- Windows Server 2008 Standard or Enterprise Edition with Service Packs 1 and 2 Windows Server 2003 Standard or Enterprise Edition with Service Packs 1 and 2 Windows Server 2003 R2 Standard or Enterprise Edition Windows XP Professional with Service Packs 2 and 3.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1654/" class="btn btn-template-main">続きを読む</a>
+2011/01/05*
+[番号] 技術ノート KGTN 2011010501
+[現象] サーバを再起動する時，セッションが有無に関係なく無条件に行って良いか？
+[説明] GGの仕様上は，サーバが再起動される時に全てのセッションを終了させますので，特に問題はありません．但し，サーバが高負荷な時や不安定な時に予期せぬ事象が発生する可能性もゼロとは言えませんので，再起動の前にエンタープライズオプションの GMCheckRaw でセッションを強制終了 （GMCheckRaw ?kn ALL） させることをお勧めします．
+補　足 サーバが高負荷な時に， GMCheckRaw によるセッションを強制終了 （GMCheckRaw ?kn ALL） が保留されるケースが稀に発生します．セッションを強制終了を行った後に，通常の GMCheckRaw で sessionCount がゼロかどうか確認し，ゼロでない場合は再度セッションの強制終了を行って下さい （これが面倒な場合は，10秒間隔で2〜3回セッションの強制終了を行って下さい） ．
+ファイル KGTN2011010501.pdf [(61.6 KB)] [kitasp 技術センター, 2011/01/05 11:01]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1503/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -800,7 +810,7 @@ The GO-Global Server requires one of the following 32-bit Windows operating syst
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

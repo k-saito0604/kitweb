@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1374/">
+                                      <a href="/posts/new_md/doc1251/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1374/">Ver4.0系は，従来のクライアント機能の 「サウンド」 をサポートしないのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1251/">[GGH4.0] Windows Client でクライアントフレームを使用しているが，フレームの背景が減色されて表示される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,19 +340,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1374/"><i class="far fa-calendar"></i> 2011-05-19</a>
+                                            <a href="/posts/new_md/doc1251/"><i class="far fa-calendar"></i> 2011-10-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/05/19*
-[番号] 技術ノート KGTN 2010092405
-[現象] Ver4.0系は，従来のクライアント機能の 「サウンド」 をサポートしないのか？
-[説明] はい，Ver4.0系はオーディオ・リダイレクション （Audio Redirection） をサポートしません．クライアント側で鳴るのは，ビープ音のみとなります．本件に関するGraphOn 社の情報 （Release Notes.txt） は，以下の通りです．
-The Sound option has been removed from the Client Access tab of the Cluster Manager&rsquo;s Host Options dialog, and only beeps play on the client computer.
-補　足 いいえ，オーディオ・リダイレクション （Audio Redirection） は， GGH-4.0.1.9787 からサポートされています．
-Sound Redirection GO-Global redirects sounds to the client computer when applications use PlaySound, sndPlaySound, or waveOut.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1374/" class="btn btn-template-main">続きを読む</a>
+2011/10/21*
+[番号] 技術ノート KGTN 2011102109
+[現象] [GGH4.0] Windows Client でクライアントフレームを使用しているが，フレームの背景が減色されて表示される．
+[説明] Windows Client の標準設定では，色深度が16ビットおよびイメージ圧縮が有効という環境で表示されます．表示のパフォーマンスに問題が無い場合は，以下のパラメタで減色無しにフレームの背景を表示させることが出来ます （&quot;-qt 0 -mx 32&rdquo; を指定） ．
+gg-client.exe -h 192.168.102.82 &hellip; -f -geometry 1024x768 -qt 0 -mx 32
+ファイル KGTN2011102109.pdf [(54.2 KB)] [kitasp 技術センター, 2011/10/21 14:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1251/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -362,7 +361,7 @@ Sound Redirection GO-Global redirects sounds to the client computer when applica
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1377/">
+                                      <a href="/posts/new_md/doc1254/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -370,7 +369,7 @@ Sound Redirection GO-Global redirects sounds to the client computer when applica
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1377/">[GGW3.2.1] 3.2.1 Patch5 (4482) で修正された内容を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1254/">[GGH4.0] Windows Client でクライアントフレームを表示したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -383,17 +382,19 @@ Sound Redirection GO-Global redirects sounds to the client computer when applica
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1377/"><i class="far fa-calendar"></i> 2011-05-13</a>
+                                            <a href="/posts/new_md/doc1254/"><i class="far fa-calendar"></i> 2011-10-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/05/13*
-[番号] 技術ノート KGTN 2011051301
-[現象] [GGW3.2.1] 3.2.1 Patch5 (4482) で修正された内容を知りたい．
-[説明] 統合Windows認証かつキャッシュパスワード時に，ユーザ名を変更出来ない点を制限事項としました． (Bug#7116) ログオンが集中した時に，ライセンスサーバでFlexLM - Bad encryption handshake with vendor daemon. (Error code: -33) が発生する問題を改善しました． (Bug#8400) HyperV仮想マシン環境での安定性が向上しました．(Bug#8952) アイドルタイムアウトの設定で disconnect 時の処理を改良しました．(Bug#9525) Microsoft XPS Document Writer をNPDでサポートしない点を制限事項としました．詳細は，技術ノートKGTN#2010041601をご覧下さい． (Bug# 9661) 3.2.1 Patch3およびPatch4で Cache client printers が動作しない問題を修正しました．詳細は，技術ノートKGTN# 2010051001をご覧下さい． (Bug# 9870) 3.2.1 Patch5 リリース時点までの Windows Update に対応しました．
-ファイル KGTN2011051301.pdf [(66.2 KB)] [kitasp 技術センター, 2011/05/13 10:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1377/" class="btn btn-template-main">続きを読む</a>
+2011/10/21*
+[番号] 技術ノート KGTN 2011102105
+[現象] [GGH4.0] Windows Client でクライアントフレームを表示したい．
+[説明] Windows Client gg-client.exe にパラメタ ?f を指定することで，クライアントフレームが表示されます．クライアントフレームのサイズを指定する場合は，パラメタ ?f の後に -geometry を指定して下さい．例えば，以下のようにパラメタを指定します．
+gg-client.exe -h 192.168.102.82 -u Administrator -p Password -f -geometry 1024x768
+補　足 管理者ガイド （ADMINISTRATOR GUIDE） に -geometry=800x600 という例がありますが， （少なくとも現状では） このパラメタ指定は誤りです．上記の説明の書式で指定して下さい．
+ファイル KGTN2011102105.pdf [(58.8 KB)] [kitasp 技術センター, 2011/10/21 13:00]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1254/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -403,7 +404,7 @@ Sound Redirection GO-Global redirects sounds to the client computer when applica
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1376/">
+                                      <a href="/posts/new_md/doc1256/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -411,7 +412,7 @@ Sound Redirection GO-Global redirects sounds to the client computer when applica
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1376/">Parallels Virtuozzo 環境でGGは動作するのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1256/">[GGH4.0] クライアントプリンタ名のカスタマイズ （Client Printer Naming Customization） で，プリンタ名の前に文字列を入れたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -424,18 +425,17 @@ Sound Redirection GO-Global redirects sounds to the client computer when applica
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1376/"><i class="far fa-calendar"></i> 2011-05-13</a>
+                                            <a href="/posts/new_md/doc1256/"><i class="far fa-calendar"></i> 2011-10-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/05/13*
-[番号] 技術ノート KGTN 2011051302
-[現象] Parallels Virtuozzo 環境でGGは動作するのか？
-[説明] GGはWindowsの標準カーネルを前提として実装されております． Windowsの環境に手を加え，独自の方法で仮想化を行った Parallels Virtuozzo の環境はサポートしません． readme.txt の内容を以下に引用します．
-GO-Global does not support Parallels Virtuozzo.
-ファイル KGTN2011051302.pdf [(49.7 KB)] [kitasp 技術センター, 2011/05/13 10:36]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1376/" class="btn btn-template-main">続きを読む</a>
+2011/10/21*
+[番号] 技術ノート KGTN 2011102103
+[現象] [GGH4.0] クライアントプリンタ名のカスタマイズ （Client Printer Naming Customization） で，プリンタ名の前に文字列を入れたい．
+[説明] 管理者ガイドに &ldquo;Administrators can choose from the following tokens to create a suffix to the printer string name&rdquo; とあり，クライアントプリンタ名のカスタマイズで可能な設定は，サフィックス （接尾辞） に限られます．従って，プリンタ名の前に入れたい文字列を後ろに移す等，運用での対応をお願いします．
+ファイル KGTN2011102103.pdf [(49.5 KB)] [kitasp 技術センター, 2011/10/21 10:24]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1256/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -445,7 +445,7 @@ GO-Global does not support Parallels Virtuozzo.
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1379/">
+                                      <a href="/posts/new_md/doc1257/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -453,7 +453,7 @@ GO-Global does not support Parallels Virtuozzo.
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1379/">3.2.1 Patch2 (4420) までは Cache client printers が正常に動作していたが， 3.2.1 Patch3 (4446) および 3.2.1 Patch4 (4466) では正常に動作しない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1257/">[GGH4.0] クライアントプリンタ名のカスタマイズ （Client Printer Naming Customization） を行ったが，設定内容が反映されない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -466,17 +466,17 @@ GO-Global does not support Parallels Virtuozzo.
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1379/"><i class="far fa-calendar"></i> 2011-05-12</a>
+                                            <a href="/posts/new_md/doc1257/"><i class="far fa-calendar"></i> 2011-10-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/05/12*
-[番号] 技術ノート KGTN 2010051001
-[現象] 3.2.1 Patch2 (4420) までは Cache client printers が正常に動作していたが， 3.2.1 Patch3 (4446) および 3.2.1 Patch4 (4466) では正常に動作しない．
-[説明] 3.2.1 Patch2 (4420) までは Cache client printers が有効な場合，ログアウト時にオートクリエイトプリンタが削除されず，かつ次回ログオン時も 「再構成されることなく」 そのオートクリエイトプリンタが使用されました．しかし， 3.2.1 Patch3 (4446) および 3.2.1 Patch4 (4466) ではログアウト時にオートクリエイトプリンタは削除されないものの，次回ログオン時にそのオートクリエイトプリンタ削除され再構成されます．GraphOn社も現象を確認しており，現時点では 3.2.1 Patch5 で対応する予定です （注：確定ではありません） ．
-補足１ 自己責任という条件が付きますが&hellip; 3.2.1 Patch4 (4466) の環境に 3.2.1 Patch2 (4420) のggprints.dll をコピーすることで，Cache client printers が正常なケースと同じように （つまり再構成されない） 動作しました．幾つかのユーザ様の追試でも， 「特に問題なく動作している」 という情報を頂いております．また，GraphOn社からも 「テストは行っていないが，古いビルドの ggprints.dll を使用しても，他の問題を引き起こす可能性はない」 というコメントを得ています （コメントの原文は以下の通りです） ．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1379/" class="btn btn-template-main">続きを読む</a>
+2011/10/21*
+[番号] 技術ノート KGTN 2011102102
+[現象] [GGH4.0] クライアントプリンタ名のカスタマイズ （Client Printer Naming Customization） を行ったが，設定内容が反映されない．
+[説明] クライアントプリンタ名のカスタマイズを行った後に，サービス GO-Global Application Publishing Service を再起動して下さい．再起動後のログオンで，設定内容が反映されます．
+ファイル KGTN2011102102.pdf [(49.3 KB)] [kitasp 技術センター, 2011/10/21 10:08]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1257/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -486,7 +486,7 @@ GO-Global does not support Parallels Virtuozzo.
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1381/">
+                                      <a href="/posts/new_md/doc1252/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -494,7 +494,7 @@ GO-Global does not support Parallels Virtuozzo.
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1381/">[iPad</a></h2>
+                                    <h2><a href="/posts/new_md/doc1252/">[GGH4.0] スクロール表示が遅い．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -507,18 +507,18 @@ GO-Global does not support Parallels Virtuozzo.
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1381/"><i class="far fa-calendar"></i> 2011-05-11</a>
+                                            <a href="/posts/new_md/doc1252/"><i class="far fa-calendar"></i> 2011-10-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/05/11*
-[番号] 技術ノート KGTN 2011051106
-[現象] [iPad-Client] オンスクリーン ツールバーを表示させるには？
-[説明] １本の指でタップしその指を押し続けることで，オンスクリーン ツールバーが表示されます．
-Ａと表示されたボタンは 「キーボード・トグルボタン」 で，これをクリックすることでタッチスクリーン・キーボードが表示されます． 長方形の中に矢印があるボタンは 「オートズーム・トグルボタン」 で，オートズーム機能の有効/無効を切り替えます． Doneと表示されたボタンは 「だんボタン」 で，セッションを閉じて初期画面へ戻ります．
-ファイル KGTN2011051106.pdf [(66.3 KB)] [kitasp 技術センター, 2011/05/11 12:05]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1381/" class="btn btn-template-main">続きを読む</a>
+2011/10/21*
+[番号] 技術ノート KGTN 2011102107
+[現象] [GGH4.0] スクロール表示が遅い．
+[説明] スクロール表示が遅いと感じる場合は，サーバ側で次の設定を試して下さい．
+Internet Explorer → [ツール] → [インターネット オプション] → [詳細設定] → [ブラウズ] [スムーズスクロールを使用する] のチェックを外す （無効にする） ． [適用] ボタンをクリックする．
+ファイル KGTN2011102107.pdf [(55.6 KB)] [kitasp 技術センター, 2011/10/21 14:00]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1252/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -528,7 +528,7 @@ GO-Global does not support Parallels Virtuozzo.
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1382/">
+                                      <a href="/posts/new_md/doc302/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -536,7 +536,7 @@ GO-Global does not support Parallels Virtuozzo.
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1382/">[iPad</a></h2>
+                                    <h2><a href="/posts/new_md/doc302/">[GGH4.X] クライアントドライブとして認識されるディバイス （ドライブ） を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -549,17 +549,17 @@ GO-Global does not support Parallels Virtuozzo.
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1382/"><i class="far fa-calendar"></i> 2011-05-11</a>
+                                            <a href="/posts/new_md/doc302/"><i class="far fa-calendar"></i> 2011-10-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/05/11*
-[番号] 技術ノート KGTN 2011051105
-[現象] [iPad-Client] タッチキーボードを表示させるには？
-[説明] ひとつの方法は，３本の指を同時にタップします．もうひとつの方法は，１本の指でタップしその指を押し続け， 「オンスクリーン ツールバー」 が表示されたら，ツールバーの Ａ をタップします．経験的には，後者の方法がより安定してタッチキーボードを表示させることが出来ます．
-ファイル KGTN2011051105.pdf [(45.4 KB)] [kitasp 技術センター, 2011/05/11 11:45]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1382/" class="btn btn-template-main">続きを読む</a>
+2011/10/21*
+[番号] 技術ノート KGTN 2011102108
+[現象] [GGH4.X] クライアントドライブとして認識されるディバイス （ドライブ） を知りたい．
+[説明] GGH4.X は，クライアントドライブとしてハードディスク・ドライブおよびUSBディスク・ドライブをサポートします．フロッピーディスク, CD-ROM, DVD-ROM 等のリムーバブルディスク （つまりアクセスに時間を要するディバイス） はサポートしません．なお，弊社の検証では，内蔵SDカード・ドライブは認識されました．
+GO-Global allows users to access USB drives. Removable drives such a floppy disks, CD ROMs, and DVD-ROMs are not supported as client drives.  ファイル KGTN2011102108.pdf [(54.9 KB)] [kitasp 技術センター, 2014/03/07 19:00]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc302/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -569,7 +569,7 @@ GO-Global does not support Parallels Virtuozzo.
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1383/">
+                                      <a href="/posts/new_md/doc1260/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -577,7 +577,7 @@ GO-Global does not support Parallels Virtuozzo.
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1383/">[iPad</a></h2>
+                                    <h2><a href="/posts/new_md/doc1260/">[GGW3.2.1/WS2003] ctfmon.exe の自動起動のエントリを削除した場合，どうなるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -590,17 +590,23 @@ GO-Global does not support Parallels Virtuozzo.
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1383/"><i class="far fa-calendar"></i> 2011-05-11</a>
+                                            <a href="/posts/new_md/doc1260/"><i class="far fa-calendar"></i> 2011-10-20</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/05/11*
-[番号] 技術ノート KGTN 2011051103
-[現象] [iPad-Client] マウスのドラッグ操作を行いたい．
-[説明] ドラック操作を行いたい位置をタップし，指を押した状態を維持して下さい．スクリーンの一番上の部分に 「オンスクリーン ツールバー」 が表示されたら，その指を離さずに移動して下さい．ドラギング中は Dragging&hellip; という表示が画面上に現れます．
-ファイル KGTN2011051103.pdf [(45.7 KB)] [kitasp 技術センター, 2011/05/11 11:38]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1383/" class="btn btn-template-main">続きを読む</a>
+2011/10/20*
+[番号] 技術ノート KGTN 2011101901
+[現象] [GGW3.2.1/WS2003] ctfmon.exe の自動起動のエントリを削除した場合，どうなるのか？
+[説明] ctfmon.exe はMicrosoft Text Services で，GGの設定から自動起動のエントリを削除した場合，コントロールパネルの [テキストサービスと入力言語] の [高度なテキストサービスをオフにする] の設定に依存して動作が異なります．
+・ [高度なテキストサービスをオフにする]　が無効な場合 かな漢字変換は可能ですが，IMEツールバー （言語バー） が表示されません．
+・ [高度なテキストサービスをオフにする]　が有効な場合 かな漢字変換は可能で，かつIMEツールバー （言語バー） も表示されます．
+補足１ [高度なテキストサービスをオフにする]　が有効な場合でも，手動で ctfmon.exe を起動すると ctfmon.exe のスタートアップが有効になり，これ以降 ctfmon.exe が自動的に起動されます．これを解除するには， msconfig コマンドでスタートアップ項目の ctfmon を無効にして下さい （注意：スタートアップ項目に複数の ctfmon が存在することがあります．その場合は，全ての ctfmon を無効にして下さい） ．
+補足２ msconfig コマンドでスタートアップ項目の ctfmon を有効にした場合は，次のレジストリが登録されます．
+HKCU¥Software¥Microsoft¥Windows¥CurrentVersion¥Run ctfmon.exe REG_SZ C:¥WINDOWS¥system32¥ctfmon.exe
+逆に ctfmon を無効にした場合は，このレジストリが削除されます．
+補足３ GraphOn社に照会していますが，以下のレジストリは機能していないと考えられます．もし機能していれば，[高度なテキストサービスをオフにする] を有効しても ctfmon.exe は起動すると考えられますが，実際には起動しませんので， （恐らく） 上記補足２のレジストリで起動されているものと推測されます．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1260/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -610,7 +616,7 @@ GO-Global does not support Parallels Virtuozzo.
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1384/">
+                                      <a href="/posts/new_md/doc1259/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -618,7 +624,7 @@ GO-Global does not support Parallels Virtuozzo.
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1384/">[iPad</a></h2>
+                                    <h2><a href="/posts/new_md/doc1259/">[Windows] Windows Client を自動的にクライアントへインストールする方法はないか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -631,17 +637,18 @@ GO-Global does not support Parallels Virtuozzo.
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1384/"><i class="far fa-calendar"></i> 2011-05-11</a>
+                                            <a href="/posts/new_md/doc1259/"><i class="far fa-calendar"></i> 2011-10-20</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/05/11*
-[番号] 技術ノート KGTN 2011051104
-[現象] [iPad-Client] マウスのスクロール操作を行いたい．
-[説明] 人差し指と中指で同時にタップし，指を離さずに下方向または上方向に移動させて下さい． Scrolling Down&hellip;　または Scrolling Up&hellip; という表示が画面上に現れ，指を離すまでスクロールが行われます．
-ファイル KGTN2011051104.pdf [(43.8 KB)] [kitasp 技術センター, 2011/05/11 11:10]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1384/" class="btn btn-template-main">続きを読む</a>
+2011/10/20*
+[番号] 技術ノート KGTN 2011102001
+[現象] [Windows] Windows Client を自動的にクライアントへインストールする方法はないか？
+[説明] Active Directory環境であれば，グループ・ポリシーで MSI ファイルをインストールすることが可能ですが，一般にはアプリケーションを Windows マシンへ自動的にインストールする方法はありません． 従って， Windows Client を自動的にクライアントへインストールする方法はありません．もし Active Directory環境であれば，例えば下記の記事を参考にして下さい．
+MSIファイルをActive Directoryのグループ・ポリシーでインストールする http://www.atmarkit.co.jp/fwin2k/win2ktips/963msiaddeploy/msiaddeploy.html
+ファイル KGTN2011102001.pdf [(51.5 KB)] [kitasp 技術センター, 2011/10/20 14:28]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1259/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -651,7 +658,7 @@ GO-Global does not support Parallels Virtuozzo.
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1385/">
+                                      <a href="/posts/new_md/doc1263/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -659,7 +666,7 @@ GO-Global does not support Parallels Virtuozzo.
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1385/">[iPad</a></h2>
+                                    <h2><a href="/posts/new_md/doc1263/">[GGH4.0] Windows Server 2008 (x64) でGG の評価をしたいが，物理メモリはどれくらい必要か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -672,17 +679,17 @@ GO-Global does not support Parallels Virtuozzo.
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1385/"><i class="far fa-calendar"></i> 2011-05-11</a>
+                                            <a href="/posts/new_md/doc1263/"><i class="far fa-calendar"></i> 2011-10-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/05/11*
-[番号] 技術ノート KGTN 2011051102
-[現象] [iPad-Client] マウスの右クリック操作を行いたい．
-[説明] 人差し指と中指を同時にタップして下さい （two-finger tap） ．右クリック位置は，タップした人差し指の位置（left finger） になります．なお，左手で操作する場合は，中指の位置になります．
-ファイル KGTN2011051102.pdf [(42.3 KB)] [kitasp 技術センター, 2011/05/11 10:46]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1385/" class="btn btn-template-main">続きを読む</a>
+2011/10/19*
+[番号] 技術ノート KGTN 2011101902
+[現象] [GGH4.0] Windows Server 2008 (x64) でGG の評価をしたいが，物理メモリはどれくらい必要か？
+[説明] Windows Server 2008 (x64) をインストールする場合， （マイクロソフト社の推奨システム要件に準じて） GG の評価には物理メモリ2GB 以上が必要です．
+ファイル KGTN2011101902.pdf [(45.7 KB)] [kitasp 技術センター, 2011/10/19 10:35]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1263/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -692,7 +699,7 @@ GO-Global does not support Parallels Virtuozzo.
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1386/">
+                                      <a href="/posts/new_md/doc1261/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -700,7 +707,7 @@ GO-Global does not support Parallels Virtuozzo.
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1386/">[GGH4.0.1] 4.0.1.10357 で修正された内容を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1261/">[GGW3.2.1] GO-Global ActiveX Client.msi は，どのような利用を想定しているのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -713,17 +720,18 @@ GO-Global does not support Parallels Virtuozzo.
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1386/"><i class="far fa-calendar"></i> 2011-05-10</a>
+                                            <a href="/posts/new_md/doc1261/"><i class="far fa-calendar"></i> 2011-10-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/05/10*
-[番号] 技術ノート KGTN 2011051001
-[現象] [GGH4.0.1] 4.0.1.10357 で修正された内容を知りたい．
-[説明] x86環境でGetComputerName関数でクライアントのコンピュータ名が得られない問題が修正されました． (Bug#10849) ダイアログが他のクライアントへ表示される問題が修正されました． (Bug#6102/Case#23715) Oracle database へ接続出来ない問題が修正されました．(Bug#11349/Case#22724) セッション再接続時にアプリケーションの別のインスタンスが起動される問題が修正されました．(Bug#11415/Case#23160) 4.0.1環境でアプリケーションが起動されない問題が修正されました． (Bug#11446/Cases#23113, 23335, 23597, 24105) アプリケーションが起動されない問題が修正されました．(Bug#11450/Case#23245) 4.0.1 Patch1環境でアプリケーションが起動されない問題が修正されました．(Bug#11474/Case#22864) System Extensions Driver の初期化に失敗する問題が修正されました．(Bug#11511/Case#23509) APS （Application Publishing Service） のメモリが枯渇する問題が修正されました．(Bug#11512 /Case#23570) 状況によってセッションが切断される問題が修正されました．(Bug#11535/Case#23412) Windows Update KB2506223 に対応しました （x86） ． Windows Update KB2506014 がインストールされたx64環境でGGのブートに失敗する問題が修正されました．
-ファイル KGTN2011051001.pdf [(54.4 KB)] [kitasp 技術センター, 2011/05/10 13:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1386/" class="btn btn-template-main">続きを読む</a>
+2011/10/19*
+[番号] 技術ノート KGTN 2011101904
+[現象] [GGW3.2.1] GO-Global ActiveX Client.msi は，どのような利用を想定しているのか？
+[説明] Ver3.2.1 の GO-Global ActiveX Client.msi （以下MSIと省略） は，特定のソリューションとして提供されるものではなく，大抵は以下のようなシナリオで利用されます．
+ドメインの管理者がグループ・ポリシー・オブジェクトを介してMSIを配布＆インストール エンドユーザが MSI を直接実行しインストール
+ファイル KGTN2011101904.pdf [(52.6 KB)] [kitasp 技術センター, 2011/10/19 13:19]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1261/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -793,7 +801,7 @@ GO-Global does not support Parallels Virtuozzo.
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

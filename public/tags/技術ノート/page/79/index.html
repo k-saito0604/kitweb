@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2636/">
+                                      <a href="/posts/new_md/doc2558/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2636/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2558/">[GGH5.X] Windows Server 2008 R2 Datacenter &#43; GGH5.X の環境でBSODが発生したので，原因を調査して欲しい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,24 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2636/"><i class="far fa-calendar"></i> 2016-02-05</a>
+                                            <a href="/posts/new_md/doc2558/"><i class="far fa-calendar"></i> 2016-05-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/02/05*
-[番号] 技術ノート KGTN 2016020201
-[現象] [GGH4.X-5.X] 同じアカウントで複数のクライアントからログオンした場合，アプリケーションの動作はどのようになるのか？
-[説明] GG向けに作成されたアプリケーションであれば，環境変数 USERSESSION を利用して同一アカウントでもそれぞれ異なるセッションとして認識し，相互に影響を与えることなく動作します．
-IE を始めとする一般のアプリケーションでは，ユーザーのみを認識しセッションを認識しませんので，例えばユーザー１がお気に入りを登録すると，ユーザー２にもその登録内容が直ちに反映されます．これはWindowsの仕様によるもので，コンソールや RDS の環境で （時間を分けて） 同じアカウントでアクセスした場合と同様です．
-１台のGGサーバー上で同じアカウントでの複数ログオンを禁止したい場合は，クラスターマネージャーの設定項目 Maximum sessions per user の値に１を設定して下さい．
-また，複数サーバーの環境で同じアカウントでの複数ログオンを禁止したい場合は，拡張パックの GGEasyMonitor を使用し， singleLogon 機能を有効にして下さい．
-ファイル KGTN2016020201.pdf [(154 KB)] [kitasp 技術センター, 2016/02/05 15:19]
-KGTN2016020201-1.jpg
-表示 [(18 KB)] [kitasp 技術センター, 2016/02/05 15:19]
-KGTN2016020201-2.jpg
-表示 [(28.3 KB)] [kitasp 技術センター, 2016/02/05 15:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2636/" class="btn btn-template-main">続きを読む</a>
+2016/05/27*
+[番号] 技術ノート KGTN 2016051901
+[現象] [GGH5.X] Windows Server 2008 R2 Datacenter + GGH5.X の環境でBSODが発生したので，原因を調査して欲しい．
+[説明] GGH5.Xは以下の環境のみをサポートしており，Windows Server 2008 R2 Datacenter の環境はサポートしておりません．GGH5.X がサポートする Windows Server 2012 R2 Datacenter 等の環境をご利用頂き，その環境の下でBSODが発生した場合に限りGraphOn社にて解析を行います．
+Microsoft Windows Server 2008 R2 Datacenter is not a supported OS for GO-Global: http://www.graphon.com/customer-support/system-requirements Once if you are able to reproduce the BSOD on a supported OS, we can reopen this case. We'll need steps to reproduce, Support Request Wizard logs, memory dumps, and license file (valid maintenance is required).</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2558/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -367,7 +360,7 @@ KGTN2016020201-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2637/">
+                                      <a href="/posts/new_md/doc2561/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -375,7 +368,7 @@ KGTN2016020201-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2637/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2561/">[GGH5.X] アップグレード時に Error 1935.An error occurred during the installation of assembly component {4F6D20F0-CCE5-1492-A01F-C8B3B9A1E18E}. というエラーが発生した．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -388,17 +381,20 @@ KGTN2016020201-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2637/"><i class="far fa-calendar"></i> 2016-02-05</a>
+                                            <a href="/posts/new_md/doc2561/"><i class="far fa-calendar"></i> 2016-05-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/02/05*
-[番号] 技術ノート KGTN 2016012201
-[現象] [GGH4.X-5.X/ExPack] 拡張パックに含まれるソフトウエア GGEasyMonitor の振分け機能がサポートする IE のバージョンは？
-[説明] GGEasyMonitor の振分け機能は，GGのログオン用ウエッブページ logon.html の機能をフルに利用しますので，必ず IE10 または IE11 をご利用下さい．それ以前のバージョンの IE では， logon.html 中に記述された Javascript 等が上手く動作せず，ログオン出来ない可能性があります．このような場合は，他のブラウザ（Google Chrome の最新版など） を使用するか，または GGEasyMonitor をサポートする GGEasyLogon （バージョン5.1.1またはそれ以降） を使用して下さい．
-ファイル KGTN2016012201.pdf [(60.8 KB)] [kitasp 技術センター, 2016/02/05 15:09]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2637/" class="btn btn-template-main">続きを読む</a>
+2016/05/27*
+[番号] 技術ノート KGTN 2016050101
+[現象] [GGH5.X] アップグレード時に &ldquo;Error 1935.An error occurred during the installation of assembly component {4F6D20F0-CCE5-1492-A01F-C8B3B9A1E18E}.&rdquo; というエラーが発生した．
+[説明] このエラーはGGのインストール処理に起因する問題ではなく， Windows 環境に起因する問題です．原因はマイクロソフト社の知識ベース KB946927 等にありますが，対応としては
+ GGのアンインストール GGのインストール  を行って下さい．
+ファイル KGTN2016050101.pdf [(64.9 KB)] [kitasp 技術センター, 2016/05/27 16:45]
+KGTN2016050101.jpg
+表示 [(7.33 KB)] [kitasp 技術センター, 2016/05/27 16:45]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2561/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -408,7 +404,7 @@ KGTN2016020201-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2638/">
+                                      <a href="/posts/new_md/doc2563/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -416,7 +412,7 @@ KGTN2016020201-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2638/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2563/">[iOS/Android] Ver5.0.1 のモバイルクライアントのタッチ操作とコツを知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -429,20 +425,23 @@ KGTN2016020201-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2638/"><i class="far fa-calendar"></i> 2016-02-05</a>
+                                            <a href="/posts/new_md/doc2563/"><i class="far fa-calendar"></i> 2016-05-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/02/05*
-[番号] 技術ノート KGTN 2016011801
-[現象] [GGH4.X-5.X/ExPack] 拡張パックに含まれるソフトウエア GGEasyMonitor の振分け処理のパフォーマンスはどれくらいか？
-[説明] 振分けサーバー （CPUはAMD Phenom II X6 1090T 3.2GHZ / 6core） のパフォーマンスを Apache JMeter で計測した結果は，以下の通りです．
-セッション数2000の状況で５万回の単純振分け， singleLogon = NO
- スレッド数 平均応答時間 90%Line応答時間 エラー発生率 平均振分け効率 50 38ms 20ms 0.00% 1064.0/秒 100 74ms 36ms 0.00% 1129.2/秒 200 151ms 85ms 0.00% 1113.7/秒
- セッション数2000の状況で１万回の拡張振分け ， singleLogon = YES, 新規ログオン時
- スレッド数 平均応答時間 90%Line応答時間 エラー発生率 平均振分け効率 25 411ms 474ms 0.00% 58.9/秒 50 810ms 943ms 0.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2638/" class="btn btn-template-main">続きを読む</a>
+2016/05/27*
+[番号] 技術ノート KGTN 2016042002
+[現象] [iOS/Android] Ver5.0.1 のモバイルクライアントのタッチ操作とコツを知りたい．
+[説明] マウス操作に対応するタッチ操作は，以下の通りです．
+  左クリック １本指 （人差し指） で軽く１回叩く．
+  ダブルクリック １本指 （人差し指） で軽く２回叩く．
+  ドラッグ＆ドロップ １本指 （人差し指） で軽く触れて，そのまま指を動かし，そして指を離す．
+  右クリック ２本指 （人差し指と中指） で軽く１回叩く． 注） ２本の指は 「指１本分くらい」 離して下さい．左側の指の位置がクリック位置となります．
+  右ドラッグ＆ドロップ ２本指 （人差し指と中指） で軽く触れて，そのまま指を動かし，そして指を離す． 注） ２本の指は 「指１本分くらい」 離して下さい．左側の指の位置がクリック位置となります． [　必ず事前に操作対象を左クリックで選択して下さい．操作対象が選択されていない場合，および操作対象上で触れていない場合はホイール回転 （スクロール） として処理されます．]{.underline}
+  ホイール回転 （前方） ２本指 （人差し指と中指） で触れて，そのまま指を上方向へ動かし，そして指を離す． 注） ２本の指は 「指１本分くらい」 離して下さい．２本指で触れた後にゆっくりと指を動かして下さい． 上手く動作しない場合は，操作対象のウインドウを左クリックし，ウインドウにフォーカスを移動させて下さい．
+  ホイール回転 （後方） ２本指 （人差し指と中指） で触れて，そのまま指を下方向へ動かし，そして指を離す． 注） ２本の指は 「指１本分くらい」 離して下さい．２本指で触れた後にゆっくりと指を動かして下さい． 上手く動作しない場合は，操作対象のウインドウを左クリックし，ウインドウにフォーカスを移動させて下さい．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2563/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -452,7 +451,7 @@ KGTN2016020201-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2644/">
+                                      <a href="/posts/new_md/doc2567/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -460,7 +459,7 @@ KGTN2016020201-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2644/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2567/">[iOS] iOSクライアント Ver5.0.1 の環境で Auto Connect を利用すると，直近の接続先以外のサーバーへ接続する．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -473,17 +472,17 @@ KGTN2016020201-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2644/"><i class="far fa-calendar"></i> 2016-01-15</a>
+                                            <a href="/posts/new_md/doc2567/"><i class="far fa-calendar"></i> 2016-05-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/01/15*
-[番号] 技術ノート KGTN 2016011502
-[現象] [GGH4.X-5.X/ExPack] 拡張パックに含まれるソフトウエア GGEasyMonitor で，クライアントのIPアドレスを表示して欲しい．
-[説明] セッション情報の取得に使用しているソフトウエア （SDK） でクライアントのIPアドレスを参照する場合，毎回クライアントPCへのIPアドレスの問合せが発生します．この問合せにはクライアント当たり数秒を要しますので，多数のクライアント （セッション） の情報を高頻度で更新する GGEasyMonitor の仕様では，それを行うことが技術的に困難です．お手数ですが，クライアントのIPアドレスを知りたい場合は，クラスタ・マネージャの併用をお願いします．
-ファイル KGTN2016011502.pdf [(59.3 KB)] [kitasp 技術センター, 2016/01/15 17:36]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2644/" class="btn btn-template-main">続きを読む</a>
+2016/05/27*
+[番号] 技術ノート KGTN 2016041303
+[現象] [iOS] iOSクライアント Ver5.0.1 の環境で Auto Connect を利用すると，直近の接続先以外のサーバーへ接続する．
+[説明] この現象は，Ver5.0.1の初期のiOSクライアント （5.0.1.22931～5.0.1.22998） の不具合です．将来リリースされるビルドで修正される見込みです．
+ファイル KGTN2016041303.pdf [(49.6 KB)] [kitasp 技術センター, 2016/05/27 15:35]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2567/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -493,7 +492,7 @@ KGTN2016020201-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2645/">
+                                      <a href="/posts/new_md/doc2559/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -501,7 +500,7 @@ KGTN2016020201-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2645/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2559/">[iOS] iPhone / iPad の画面をパソコン （Windows） に取り込みたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -514,18 +513,23 @@ KGTN2016020201-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2645/"><i class="far fa-calendar"></i> 2016-01-15</a>
+                                            <a href="/posts/new_md/doc2559/"><i class="far fa-calendar"></i> 2016-05-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/01/15*
-[番号] 技術ノート KGTN 2016011501
-[現象] [GGH4.X-5.X/ExPack] 拡張パックに含まれるソフトウエア GGEasyMonitor が使用するメモリの量は？
-[説明] 弊社試験環境に於いて，タスクマネージャで表示された GGEasyMonitor (Ver2.0.5) のメモリの量 （合計物理メモリ） は，以下の通りです．
- セッション数 メモリの使用量 100 18MB 500 18MB 1000 22MB 2000 26MB
- ファイル KGTN2016011501.pdf [(54.2 KB)] [kitasp 技術センター, 2016/01/15 17:30]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2645/" class="btn btn-template-main">続きを読む</a>
+2016/05/27*
+[番号] 技術ノート KGTN 2016051101
+[現象] [iOS] iPhone / iPad の画面をパソコン （Windows） に取り込みたい．
+[説明] 弊社で実績のある方法は， &ldquo;Apowersoft iPhone録画究極&rdquo; および &ldquo;AirPlay&rdquo; を使用する方法です．
+  Apowersoft iPhone録画究極 を起動します   iPhone / iPad の AirPlay をタップし，TV画面のアイコンをクリック，さらにミラーリングをオンにします．   パソコン上に iPad / iPhone の画面が表示されます．   ファイル KGTN2016051101.pdf [(176 KB)] [kitasp 技術センター, 2016/05/27 16:55]
+KGTN2016051101-1.jpg
+表示 [(11.7 KB)] [kitasp 技術センター, 2016/05/27 16:55]
+KGTN2016051101-2.jpg
+表示 [(25.4 KB)] [kitasp 技術センター, 2016/05/27 16:55]
+KGTN2016051101-3.jpg
+表示 [(13 KB)] [kitasp 技術センター, 2016/05/27 16:55]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2559/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -535,7 +539,7 @@ KGTN2016020201-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2648/">
+                                      <a href="/posts/new_md/doc2564/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -543,7 +547,7 @@ KGTN2016020201-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2648/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2564/">[iOS] Ver5.0.1 のiOSクライアントの実用性 （操作性） はどうなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -556,17 +560,21 @@ KGTN2016020201-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2648/"><i class="far fa-calendar"></i> 2016-01-15</a>
+                                            <a href="/posts/new_md/doc2564/"><i class="far fa-calendar"></i> 2016-05-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/01/15*
-[番号] 技術ノート KGTN 2016010801
-[現象] [GGH4.X-5.X/ExPack] 従来の拡張パックと新しい拡張パック （Ver2.0） は，どのような点が違うのか？
-[説明] 新しい拡張パック （Ver2.0） では，従来の拡張パックから監視コンソール　（通称GGEO）　が削除され，新たに GGEasyMonitor が追加されました． GGEasyMonitor は，データベース・ソフトウエア無しにGGサーバーやセッションの監視，およびログオン先の振分け （負荷分散） 等を行うことが出来ます．また，GPLベースのネットワーク監視ソフトウエア Zabbix をご利用の場合は， GGEasyMonitorConnectionCheck を使用することで， Zabbix 上でGGサーバーの監視を行うことも出来ます．
-ファイル KGTN2016010801.pdf [(61 KB)] [kitasp 技術センター, 2016/01/15 17:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2648/" class="btn btn-template-main">続きを読む</a>
+2016/05/27*
+[番号] 技術ノート KGTN 2016042001
+[現象] [iOS] Ver5.0.1 のiOSクライアントの実用性 （操作性） はどうなのか？
+[説明] 描画周りの負荷および操作の複雑さという観点から，GoogleマップとGoogle ストリートビューで実用性を確認してみました． iPad mini を使用しましたが，この旧モデルのタブレットでも十分実用的という印象を受けました （ネットワークはLANおよびLTE） ．なお，タッチ操作についても，特にストレスを感じること（操作に困難を感じること） はありませんでした．
+ファイル KGTN2016042001.pdf [(527 KB)] [kitasp 技術センター, 2016/05/27 15:58]
+KGTN2016042001-1.jpg
+表示 [(61.9 KB)] [kitasp 技術センター, 2016/05/27 15:58]
+KGTN2016042001-2.jpg
+表示 [(68.6 KB)] [kitasp 技術センター, 2016/05/27 15:58]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2564/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -576,7 +584,7 @@ KGTN2016020201-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2649/">
+                                      <a href="/posts/new_md/doc2569/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -584,7 +592,7 @@ KGTN2016020201-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2649/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2569/">[iOS] Ver5.0.1のiOSクライアントの環境でURLスキームを利用するとクライアントが異常終了する．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -597,22 +605,17 @@ KGTN2016020201-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2649/"><i class="far fa-calendar"></i> 2015-12-25</a>
+                                            <a href="/posts/new_md/doc2569/"><i class="far fa-calendar"></i> 2016-05-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/12/25*
-[番号] 技術ノート KGTN 2015121501
-[現象] [GGH4.X-5.X] セッション数がライセンス数を超えた場合，どのようなメッセージが表示されるのか？
-[説明] クラスタマネージャの Maximum sessions on this host （最大セッション数） がライセンス数よりも大きい場合は，エラーメッセージが表示されることなく接続が終了します． Maximum sessions on this host がライセンス数と同じか，または小さい場合は下記のダイアログが表示されます． [参考] Maximum sessions on this host = 10 の設定例 iOS での画面 Android での画面 ファイル KGTN2015121501.pdf [(168 KB)] [kitasp 技術センター, 2015/12/25 16:58]
-KGTN2015121501-1.jpg
-表示 [(5.55 KB)] [kitasp 技術センター, 2015/12/25 16:58]
-KGTN2015121501-2.jpg
-表示 [(11.2 KB)] [kitasp 技術センター, 2015/12/25 16:58]
-KGTN2015121501-3.jpg
-表示 [(28 KB)] [kitasp 技術センター, 2015/12/25 16:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2649/" class="btn btn-template-main">続きを読む</a>
+2016/05/27*
+[番号] 技術ノート KGTN 2016041302
+[現象] [iOS] Ver5.0.1のiOSクライアントの環境でURLスキームを利用するとクライアントが異常終了する．
+[説明] この現象は，Ver5.0.1の初期のiOSクライアント （5.0.1.22931） の不具合です．ビルド 5.0.1.22998 またはそれ以降のクライアントで，URLスキームを利用するとクライアントが異常終了する問題が修正されております．
+ファイル KGTN2016041302.pdf [(48.5 KB)] [kitasp 技術センター, 2016/05/27 15:34]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2569/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -622,7 +625,7 @@ KGTN2015121501-3.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2650/">
+                                      <a href="/posts/new_md/doc2592/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -630,7 +633,7 @@ KGTN2015121501-3.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2650/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2592/">[Android] Androidクライアントで文字入力をしようとすると，IMEのウインドウでアプリケーションの入力フィールドが見えなくなってしまう．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -643,21 +646,22 @@ KGTN2015121501-3.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2650/"><i class="far fa-calendar"></i> 2015-12-25</a>
+                                            <a href="/posts/new_md/doc2592/"><i class="far fa-calendar"></i> 2016-04-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/12/25*
-[番号] 技術ノート KGTN 2015122201
-[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で，同一ユーザーの複数ログオンは禁止出来るのか？
-[説明] 設定ファイル GGEasyMonitor.ini で，以下の設定を行うことで同一ユーザーの複数ログオンを禁止することが出来ます．
-; singleLogon : 多重ログオンの禁止の有無 (YES/NO) singleLogon = YES
-ログオン時に同一ユーザーのセッションが存在する場合は，以下のような画面が表示されます．なお，同一ユーザーの判定はユーザー名 （の文字列） で行いますので，ADが無い環境でも動作します．また，ネットワーク障害等による一時的なコネクションの切断が発生した場合は，非接続状態 （サスペンド状態） の同一ユーザーのセッションが１つ存在する場合に限り，そのセッションに再接続することが出来ます．
-ファイル KGTN2015122201.pdf [(117 KB)] [kitasp 技術センター, 2015/12/25 17:03]
-KGTN2015122201.jpg
-表示 [(21.7 KB)] [kitasp 技術センター, 2015/12/25 17:03]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2650/" class="btn btn-template-main">続きを読む</a>
+2016/04/11*
+[番号] 技術ノート KGTN 2016040702
+[現象] [Android] Androidクライアントで文字入力をしようとすると，IMEのウインドウでアプリケーションの入力フィールドが見えなくなってしまう．
+[説明] Androidクライアント 5.0.1 またはそれ以降では，タブレットの回転に応じてウインドウを自動的に再配置する機能が実装されましたので，文字入力を行う場合は （その時点で） タブレットを縦向きにして下さい．
+操作中に回転
+ファイル KGTN2016040702.pdf [(196 KB)] [kitasp 技術センター, 2016/04/11 10:27]
+KGTN2016040702-1.jpg
+表示 [(22.8 KB)] [kitasp 技術センター, 2016/04/11 10:27]
+KGTN2016040702-2.jpg
+表示 [(26.6 KB)] [kitasp 技術センター, 2016/04/11 10:27]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2592/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -667,7 +671,7 @@ KGTN2015122201.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2651/">
+                                      <a href="/posts/new_md/doc2591/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -675,7 +679,7 @@ KGTN2015122201.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2651/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2591/">[Android] Androidクライアントの更新方法についての考え方を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -688,18 +692,21 @@ KGTN2015122201.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2651/"><i class="far fa-calendar"></i> 2015-12-25</a>
+                                            <a href="/posts/new_md/doc2591/"><i class="far fa-calendar"></i> 2016-04-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/12/25*
-[番号] 技術ノート KGTN 2015121701
-[現象] [GGH4.X-5.X] 評価版 （評価ライセンス） から，製品版 （正式ライセンス） に切り替える時，GGの再インストールは必要か？
-[説明] 評価版も製品版もプログラムは同じですので，GGの再インストールは必要ありません．お勧めのライセンスファイルの切り替え手順は以下の通りです．
-1.評価ライセンスファイルを削除する （または拡張子を .lic から .licX に変更する） ． 2.正式ライセンスファイルをコピーする． 3.サーバーを再起動する．
-ファイル KGTN2015121701.pdf [(56.6 KB)] [kitasp 技術センター, 2015/12/25 16:59]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2651/" class="btn btn-template-main">続きを読む</a>
+2016/04/11*
+[番号] 技術ノート KGTN 2016040703
+[現象] [Android] Androidクライアントの更新方法についての考え方を知りたい．
+[説明] Google Play では，アプリケーションのダウングレード （古いバージョンに戻す） は考慮されておりませんので， Androidクライアントの利用に当たっては以下の点についてご配慮下さい．
+１．「アプリを自動更新しない」 を選択する． ２．テスト用マシンで手動更新し動作試験を行う． ３．正常動作を確認した後，運用マシンで手動更新を行う．
+さらに，必要に応じてAndroidクライアントのバックアップやリストアを行って下さい．
+４．&ldquo;Apk管理&rdquo; 等でAndroidクライアントのバックアップを行う． ５．状況に応じてバックアップからの復元 （ダウングレード） を行う．
+バックアップを作成されない場合は，以降にリリースされるAndroidクライアントでの修正を待つことになります．
+ファイル KGTN2016040703.pdf [(59 KB)] [kitasp 技術センター, 2016/04/11 10:28]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2591/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -709,7 +716,7 @@ KGTN2015122201.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2652/">
+                                      <a href="/posts/new_md/doc2593/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -717,7 +724,7 @@ KGTN2015122201.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2652/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2593/">[Android] Androidクライアントを 5.0.1.22973 (2016/03/30) へアップグレードしたところ設定が消えた．また機種によっては起動直後に異常終了が発生した．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -730,18 +737,18 @@ KGTN2015122201.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2652/"><i class="far fa-calendar"></i> 2015-12-25</a>
+                                            <a href="/posts/new_md/doc2593/"><i class="far fa-calendar"></i> 2016-04-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2015/12/25*
-[番号] 技術ノート KGTN 2015121401
-[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyMonitor は，GGサーバーが１台では導入する意味が無いと考えて良いか？
-[説明] いいえ，GGサーバーが１台であっても以下の点で GGEasyMonitor を導入する意味があります．
-1.監視機能により，GGサーバーの動作状況を外部 （スマホ等） から監視することが出来るようになります． 2.振分け機能により，GGサーバーの異常時にブラウザにエラーが表示されるようになります． 3.振分け機能により，iPad/iPhoneクライアントにアカウント情報を登録することなく接続出来るようになります． 4.ログ機能により，GGサーバーの動作状況やセッション数の推移が記録されるようになります．
-ファイル KGTN2015121401.pdf [(65.4 KB)] [kitasp 技術センター, 2015/12/25 16:12]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2652/" class="btn btn-template-main">続きを読む</a>
+2016/04/11*
+[番号] 技術ノート KGTN 2016040701
+[現象] [Android] Androidクライアントを 5.0.1.22973 (2016/03/30) へアップグレードしたところ設定が消えた．また機種によっては起動直後に異常終了が発生した．
+[説明] Androidクライアント 5.0.1 は，これまでのクライアントの延長上ではなく，全面的な書き換えが行われ全く新しいクライアントになりました．このため，残念ながら従来の設定を維持することが困難となりました．ご不便をおかけしますが，再度接続先の設定等を行って頂くようお願いいたします．
+機種によって起動直後にクライアントが異常終了する問題は，GraphOn社および弊社でも確認しており，可能な限り早急に修正する予定です．ご迷惑をお掛し大変申し訳ございませんが，今しばらくお待ちいただきますようお願いいたします．
+ファイル KGTN2016040701.pdf [(62.8 KB)] [kitasp 技術センター, 2016/04/11 10:23]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2593/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -811,7 +818,7 @@ KGTN2015122201.jpg
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

@@ -409,40 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc936/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc825/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc936/">[GGH5.X] バージョン5.0を利用しているが，最新ビルドへのアップグレードの方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc825/">[GGH5.X-6.X] クライアント側IME機能を使用した時，２回エンターキーを押さないとGG上のアプリケーションに文字を入力出来ない．</a></h4>
                             <p class="author-category">
                             
                             日付 2018-10-04
                             </p>
                             <p class="intro">*技術ノート
 2018/10/04*
-[番号] 技術ノート KGTN 2018082401
-[現象] [GGH5.X] バージョン5.0を利用しているが，最新ビルドへのアップグレードの方法は？
-[説明] GGサーバー上で最新ビルドのインストーラー （HOST） を起動し，次の操作を行って下さい．
-1.&ldquo;Next&gt;&rdquo; をクリックします．
-2.&ldquo;Repair or Update&rdquo; を選択し &ldquo;Next&gt;&rdquo; をクリックします．
-3.&ldquo;Install&rdquo; をクリックします．
-4.&ldquo;OK&rdquo; をクリックします．
-5.&ldquo;Skip&rdquo; をクリックします （ライセンスファイルは既にあるため） ．
-6.&ldquo;Finish&rdquo; をクリックします．
-7.&ldquo;Yes&rdquo; をクリックします （サーバーを再起動します） ．
-8.再起動後にクラスターマネージャーが正常に表示されることを確認します．
-ファイル KGTN2018082401.pdf [(258 KB)] [kitasp 技術センター, 2018/10/04 10:46]
-KGTN2018082401-1.jpg
-表示 [(17.9 KB)] [kitasp 技術センター, 2018/10/04 10:46]
-KGTN2018082401-2.jpg
-表示 [(22.1 KB)] [kitasp 技術センター, 2018/10/04 10:46]
-KGTN2018082401-3.jpg
-表示 [(15.6 KB)] [kitasp 技術センター, 2018/10/04 10:46]
-KGTN2018082401-4.jpg</p>
+[番号] 技術ノート KGTN 2018091201
+[現象] [GGH5.X-6.X] クライアント側IME機能を使用した時，２回エンターキーを押さないとGG上のアプリケーションに文字を入力出来ない．
+[説明] クライアント側IMEを使用した場合でも，サーバー側のIMEが起動しているため，それぞれのIMEで文字を確定させるため２回エンターキーを押下する必要があります．バージョン6からは， 「クライアントIME使用時に限り」 サーバー側のIMEが起動されないようになりますので，１回エンターキーを押下するだけでGG上のアプリケーションに文字を入力出来るようになります．
+ファイル KGTN2018091201.pdf [(35.1 KB)] [kitasp 技術センター, 2018/10/04 13:07]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc936/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc825/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -461,25 +446,27 @@ KGTN2018082401-4.jpg</p>
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc925/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc991/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc925/">[GGH6.0] バージョン6.0で動画表示のパフォーマンスを向上させる設定は？</a></h4>
+                            <h4><a href="/posts/new_md/doc991/">[GGH5.X-6.X] サーバーをリプレイスするので，その移行期間に使用するユーザー数およびサーバーが限定されない評価用ライセンスを発行して欲しい．</a></h4>
                             <p class="author-category">
                             
                             日付 2018-10-04
                             </p>
                             <p class="intro">*技術ノート
 2018/10/04*
-[番号] 技術ノート KGTN 2018082402
-[現象] [GGH6.0] バージョン6.0で動画表示のパフォーマンスを向上させる設定は？
-[説明] パフォーマンス自動調整機能を有効にすることで，動画表示のパフォーマンスが向上します．この設定方法は，次の通りです．
-1. サービスGO-Global Application Publishing Service を停止する． 2. C:ProgramDataGraphOnGO-GlobalHostProperties.xml をテキストエディタで開く． 3. 文字列 ClientProcessingBatch を探す． 4. 次の行にある値 0 を 1 に変更する． 5. 文字列 ClientProcessingThrottleV2 を探す． 6. 次の行にある値 0 を 1 に変更する． 7. ファイルを上書き保存する． 8. レジストリエディタを起動する． 9. HKEY_LOCAL_MACHINESOFTWAREGraphOnGOGlobalAppServer へ位置づける． 10. 新規 → DWORD (32 ビット) 値 を選択する． 11. 名前を ClientOffscreenSurfaces に変更する． 12. 値が 0 であることを確認する． 13. レジストリエディタを閉じる． 14. サービスGO-Global Application Publishing Service を開始する．  補　足 パフォーマンス自動調整機能が無効な場合，ホストからクライアントへ描画命令が送信され，クライアントはその描画命令に従い画面を更新します．動画を表示するアプリケーションの場合は，描画命令を送信するよりも，ホスト上で描画結果を待ちその画像データをクライアントへ送信し，クライアントがその画像データで画面を更新した方が効率的です．パフォーマンス自動調整機能を有効にする上記設定が行われると，アプリケーションの処理内容に応じて，より効率の良い方式が自動的に選択されます．なお，動画ではフレームが間引かれても問題ありませんが，一般のアプリケーションの描画では間引かれると画面が乱れる可能性がありますので，パフォーマンス自動調整機能の既定の設定は無効になっております．</p>
+[番号] 技術ノート KGTN 2018081701
+[現象] [GGH5.X-6.X] サーバーをリプレイスするので，その移行期間に使用するユーザー数およびサーバーが限定されない評価用ライセンスを発行して欲しい．
+[説明] GraphOn社では，過去にユーザー数およびサーバーが限定されない評価用ライセンスを発行しておりましたが，この評価用ライセンスが悪用された事例が発生したため，現在は 「ユーザー数およびサーバーが限定されない評価用ライセンス」 を発行しておりません．サーバーの移行期に評価用ライセンスが必要な場合は，営業担当者にその理由と下記の情報をお知らせ下さい．
+　* ホストID （MACアドレス） * ホスト名 * 同時ユーザー数 * 有効日数 （発行日からの日数となります）
+GraphOn社が認めれば，上記の条件で評価用ライセンスが発行されます．
+ファイル KGTN2018081701.pdf [(39.7 KB)] [kitasp 技術センター, 2018/10/04 09:55]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc925/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc991/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -498,25 +485,31 @@ KGTN2018082401-4.jpg</p>
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1047/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc836/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1047/">[GGH6.0LA] APSが開始しているにもかかわらず， Admin Console がAPSと通信出来ない．</a></h4>
+                            <h4><a href="/posts/new_md/doc836/">[GGH5.X-6.X] サービス APS の停止および開始の方法は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2018-08-09
+                            日付 2018-10-04
                             </p>
                             <p class="intro">*技術ノート
-2018/08/09*
-[番号] 技術ノート KGTN 2018080901
-[現象] [GGH6.0LA] APSが開始しているにもかかわらず， Admin Console がAPSと通信出来ない．
-[説明] 原因は調査中ですが，設定ファイル hostproperties.xml を次のように修正することで，この問題の発生を回避することが出来ます．
-&lt;property id=&quot;UpdateServer&quot; group=&quot;HostCompatibility&quot; type=&quot;STRING&quot;&gt; &lt;value&gt;127.0.0.1&lt;/value&gt;  ファイル KGTN2018080901.pdf [(36.6 KB)] [kitasp 技術センター, 2018/08/09 16:28]</p>
+2018/10/04*
+[番号] 技術ノート KGTN 2018091001
+[現象] [GGH5.X-6.X] サービス APS の停止および開始の方法は？
+[説明] 「サービス」 の画面を開き，名前の中から 「GO-Global Application Publishing Service」 を見つけ，それを開いて下さい．開いたダイアログの中のボタン 「停止」 をクリックすることでAPSが停止します．ボタン 「開始」 をクリックすることでAPSが開始します．
+「サービス」 の画面
+「GO-Global Application Publishing Service」 の画面
+ファイル KGTN2018091001.pdf [(471 KB)] [kitasp 技術センター, 2018/10/04 12:59]
+KGTN2018091001-1.jpg
+表示 [(31.7 KB)] [kitasp 技術センター, 2018/10/04 12:59]
+KGTN2018091001-2.jpg
+表示 [(14.5 KB)] [kitasp 技術センター, 2018/10/04 12:59]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1047/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc836/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -535,25 +528,27 @@ KGTN2018082401-4.jpg</p>
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1091/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc914/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1091/">[DemoLicense] GGの評価用ライセンスの内容と発行条件について知りたい．</a></h4>
+                            <h4><a href="/posts/new_md/doc914/">[GGH5.X-6.X] ビルトイン Administrator で IE11 を使用すると名前付きのウインドウの名前が認識されない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2018-07-20
+                            日付 2018-10-04
                             </p>
                             <p class="intro">*技術ノート
-2018/07/20*
-[番号] 技術ノート KGTN 2018071301
-[現象] [DemoLicense] GGの評価用ライセンスの内容と発行条件について知りたい．
-[説明] 基本となる評価用ライセンスは，GGサーバーを特定しない （NON-NODE LOCKED） 同時3ユーザーのライセンスで，有効期限は発行日から１ヶ月間です．案件の内容および評価に使用するサーバーのMACアドレスおよびホスト名が提示された場合は，そのGGサーバーに限り有効 （NODE LOCKED） な希望する同時ユーザー数のライセンスを発行することが可能です．このライセンスについても有効期限は原則として発行日から１ヶ月間です．
-ファイル KGTN2018071301.pdf [(37.2 KB)] [kitasp 技術センター, 2018/07/20 16:13]</p>
+2018/10/04*
+[番号] 技術ノート KGTN 2018082403
+[現象] [GGH5.X-6.X] ビルトイン Administrator で IE11 を使用すると名前付きのウインドウの名前が認識されない．
+[説明] この現象の原因は IE11 のウインドウ管理の方法が変更されたためです．ポリシー [ユーザー アカウント制御: ビルトイン Administrator アカウントのための管理者承認モードを使用する] を有効にすることで，ウインドウの名前が認識されるようになります．詳細については，マイクロソフト社の知識ベース KB2909974 を参照して下さい．
+https://support.microsoft.com/ja-jp/help/2909974 Internet Explorer 11 をビルトイン Administrator で使用すると、名前付きのウインドウの名前が認識されない
+[状況] マイクロソフトでは、この問題について現在調査中です。詳細については、わかりしだいこの資料に掲載する予定です。 （最終更新日: 2016/09/29）
+ファイル KGTN2018082403.pdf [(52 KB)] [kitasp 技術センター, 2018/10/04 10:55]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1091/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc914/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

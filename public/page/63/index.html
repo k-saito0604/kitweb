@@ -409,27 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2431/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2360/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2431/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2360/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振り分け機能は，既定値の設定で http://:8089/logon.html でアクセス出来ると聞いたが， IIS の設定を見るとポート番号8089の設定が存在しない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-08-01
+                            日付 2016-08-25
                             </p>
                             <p class="intro">*技術ノート
-2016/08/01*
-[番号] 技術ノート KGTN 2016070801
-[現象] [GGH4.X-5.X] GGEasyMonitor をインストールし，&ldquo;1) サービスを開始&rdquo; をクリックしたが，ログファイルも生成されず動作していないようだ．
-[説明] 設定ファイルの内容に関わらず，ログファイルは必ず生成されます．ログファイルが生成されないのであれば， GGEasyMonitor が必要とするランタイムがインストールされていないのが原因です．&ldquo;5) ランタイムのインストール&rdquo; をクリックし，ランタイムをインストールして下さい．正常にインストールされたのを確認後，改めて &ldquo;1) サービスを開始&rdquo; をクリックして下さい．
-ファイル KGTN2016070801.pdf [(133 KB)] [kitasp 技術センター, 2016/08/01 13:17]
-KGTN2016070801.jpg
-表示 [(27.6 KB)] [kitasp 技術センター, 2016/08/01 13:17]</p>
+2016/08/25*
+[番号] 技術ノート KGTN 2016081603
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振り分け機能は，既定値の設定で http://:8089/logon.html でアクセス出来ると聞いたが， IIS の設定を見るとポート番号8089の設定が存在しない．
+[説明] GGEasyMonitor は，内部に独自のウエッブサーバー機能を持っており，外部の IIS の機能は使用しません．このため， IIS の設定には GGEasyMonitor 用のポート番号8089や8080の設定は存在しません （登録されません）．
+ファイル KGTN2016081603.pdf [(62.2 KB)] [kitasp 技術センター, 2016/08/25 17:23]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2431/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2360/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -448,25 +446,35 @@ KGTN2016070801.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2433/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2359/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2433/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2359/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor を利用する場合，各サーバーのファイアウォールの設定はどうすれば良いのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-08-01
+                            日付 2016-08-25
                             </p>
                             <p class="intro">*技術ノート
-2016/08/01*
-[番号] 技術ノート KGTN 2016070703
-[現象] [GGH4.X-5.X] GGW3.2.1の拡張パック （監視・振分け機能） と比較して， GGEasyMonitor は何か機能が追加されているのか？
-[説明] GGW3.2.1の拡張パック （監視・振分け機能：EO2） と GGEasyMonitor は，基本的な設計思想が異なります． EO2 では，GGの機能のみならずWindowsサーバー自体の監視も行う自己完結型の製品となっておりました．GGEasyMonitor では，GGの機能のみを監視対象とし，Windowsサーバーの監視は Zabbix 等の専用ツールに任せる分業型の製品となっております．なお， Zabbix 等の監視ツールで，GGサーバーの状況を監視するためのソフトウエア （GGEasyMonitoraConnectionCheck） も含まれております．
-ファイル KGTN2016070703.pdf [(61.6 KB)] [kitasp 技術センター, 2016/08/01 13:13]</p>
+2016/08/25*
+[番号] 技術ノート KGTN 2016081701
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor を利用する場合，各サーバーのファイアウォールの設定はどうすれば良いのか？
+[説明] インストールするサーバーのファイアウォールがWindows標準の 「セキュリティが強化されたWindowsファイアウォール」 であれば， GGEasyMonitor のインストーラーが必要な受信の規則を登録しますので，設定の追加等は必要ありません．他のファイアウォール （ソフトウエア） をご利用の場合は，プログラム C:kitASPGGEasyMonitorGGEasyMonitor.exe に対して，TCPの全ポートの受信の許可を与えて下さい．参考までに， 「セキュリティが強化されたWindowsファイアウォール」 の設定画面の一部を以下に示します．
+ファイル KGTN2016081701.pdf [(470 KB)] [kitasp 技術センター, 2016/08/25 17:29]
+KGTN2016081701-1.jpg
+表示 [(53 KB)] [kitasp 技術センター, 2016/08/25 17:29]
+KGTN2016081701-2.jpg
+表示 [(21.9 KB)] [kitasp 技術センター, 2016/08/25 17:29]
+KGTN2016081701-3.jpg
+表示 [(23.6 KB)] [kitasp 技術センター, 2016/08/25 17:29]
+KGTN2016081701-4.jpg
+表示 [(22.7 KB)] [kitasp 技術センター, 2016/08/25 17:29]
+KGTN2016081701-5.jpg
+表示 [(21.1 KB)] [kitasp 技術センター, 2016/08/25 17:29]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2433/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2359/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,27 +493,27 @@ KGTN2016070801.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2434/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1929/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2434/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc1929/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitorClientInfo とはどんなツールなのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-08-01
+                            日付 2016-08-25
                             </p>
                             <p class="intro">*技術ノート
-2016/08/01*
-[番号] 技術ノート KGTN 2016070702
-[現象] [GGH4.X-5.X] GGEasyMonitor でユーザーの存在チェック （二重ログオンのチェック） を行いたい．
-[説明] 現時点での最新バージョン （2.1.0） には，ユーザーの存在チェックを行う専用のインタフェースは用意されておりません．しかしながら，振分け機能のページにアクセスし，応答内容 （下記文字列） をチェックすることで，ユーザーの存在チェックを行うことは技術的に可能です．
-＊　このユーザーは、ただいま利用中です。 ＊　サーバーに接続中です&hellip; ＊　サーバーに再接続中です&hellip;
-なお，専用のインタフェースの提供をご希望の場合は，その内容によっては個別に対応出来る可能性がありますので，お問合せ下さい．
-ファイル KGTN2016070702.pdf [(62.7 KB)] [kitasp 技術センター, 2016/08/01 13:12]</p>
+2016/08/25*
+[番号] 技術ノート KGTN 2016081201
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitorClientInfo とはどんなツールなのか？
+[説明] GGのグローバル・ログオンスクリプトから起動されることを想定したプログラムで，セッションの環境変数から下記の情報を得て所定のファイルに記録します．記録された情報は， GGEasyMonitor が参照し，クライアント情報の表示に利用されます．
+・ユーザーID ・セッションID ・クライアントのコンピューター名 ・クライアントのIPアドレス ・クライアントのネットワークアドレス ・セッションの開始日 ・セッションの開始時刻
+設定ファイル 設定ファイル GGEasyMonitorClientInfo.ini の default セクションで，以下のパラメタを設定して下さい．
+  設定項目 説明 logLevel ログの出力レベル，通常は1を指定し，障害時は4を指定 logd ログファイルを作成するフォルダ （省略可） loop 情報取得の回数 （既定値は1，無限ループは0を指定） sleep 情報取得の間隔 （単位は秒，既定値は10） includeDomain ユーザーIDにドメイン名を踏む希有 （YES/NO，既定値はNO） adServer このサーバーはADサーバー （YES/NO，既定値はNO） dataPath 採取した情報を保存するiniファイルのフルパス ※ Users に書き込み権限を与えて下さい．   記録内容 採取した情報は dataPath で指定したiniファイルに，以下の形式で記録されます．クライアントのネットワークアドレス （サーバー側） には，設定ファイル HostProperties.xml の NetworkAddressEnvVarEnabled に true が設定された場合に限り，正しいアドレスがセットされます．それ以外の場合は，クライアントのIPアドレス （クライアント側） がセットされます （注：バージョン2.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2434/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1929/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -524,27 +532,25 @@ KGTN2016070801.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2436/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2361/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2436/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc2361/">[GGH5.X] GGH5X-SystemProcess-Setup.exe とはどんなツールなのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-08-01
+                            日付 2016-08-25
                             </p>
                             <p class="intro">*技術ノート
-2016/08/01*
-[番号] 技術ノート KGTN 2016070701
-[現象] [GGH4.X-5.X] 2台のGGサーバーに GGEasyMonitor をインストールし，それぞれが振分け処理を行うようにすることが可能か？
-[説明] 2台のGGサーバーを Server1 (192.168.102.98) / Server2 (192.168.102.148) とすると， Server1 に GGEasyMonitor のエージェントとサーバー機能を設定し，さらに Server2 にも GGEasyMonitor のエージェントとサーバー機能を設定します．各サーバーの設定内容 （サンプル） は，次のようになります，
-SERVER1
-[default] ; ★あり - 構成によって変更等が必要な項目 ; ★なし - 必要がない限り変更等が不要な項目
-; ＊ログ関連＊ ; logd : ログの出力フォルダ ; logLevel : 一般のログ出力レベル ; logLevelNet : 通信関連のログ出力レベル ; logLevelWeb : 監視画面のログ出力レベル ; logLevelCbk : 振分け機能のログ出力レベル ; logd = Logs logLevel = 4 logLevelNet = 4 logLevelWeb = 4 logLevelCbk = 4</p>
+2016/08/25*
+[番号] 技術ノート KGTN 2016081601
+[現象] [GGH5.X] GGH5X-SystemProcess-Setup.exe とはどんなツールなのか？
+[説明] 常駐型のプロセス JpnIME.exe や rundll32.exe 等がセッション中で動作している場合，明示的にサインアウトを行わないとセッションが終了しません． GGH5X-SystemProcess-Setup.exe は，これらの常駐型のプロセスを例外扱い （システムプロセスとして登録） することで，セッションを終了させる設定を行うプログラムです．
+ファイル KGTN2016081601.pdf [(58.4 KB)] [kitasp 技術センター, 2016/08/25 17:20]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2436/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2361/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

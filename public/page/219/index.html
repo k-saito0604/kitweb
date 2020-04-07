@@ -409,26 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1484/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1342/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1484/">サービス GO</a></h4>
+                            <h4><a href="/posts/new_md/doc1342/">クライアントドライブ機能を利用してサーバ側からクライアント側へファイルをコピーした時，ネットワーク上を流れるデータの量がファイルサイズより大きい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-01-31
+                            日付 2011-08-11
                             </p>
                             <p class="intro">*技術ノート
-2011/01/31*
-[番号] 技術ノート KGTN 2011013102
-[現象] サービス GO-Global License Manager の停止状態が続くと，APSのサービスが停止する．
-[説明] ggw-3.2.1.4446 またはそれ以降では，サービス GO-Global License Manager の停止から約10分でAPSが停止します．この10分間は，新たなユーザのログオンは出来ませんが，ログオン中のユーザがアプリケーションを起動することは出来ます．
-注　意 APS が停止するのは，ログオンしているユーザが存在している場合に限ります．誰もログオンしていない場合は，APS は停止しません （ggw-3.2.1.4466で確認） ．
-ファイル KGTN2011013102.pdf [(50.9 KB)] [kitasp 技術センター, 2011/01/31 11:17]</p>
+2011/08/11*
+[番号] 技術ノート KGTN 2011081101
+[現象] クライアントドライブ機能を利用してサーバ側からクライアント側へファイルをコピーした時，ネットワーク上を流れるデータの量がファイルサイズより大きい．
+[説明] FTPやWWWを使用してファイルをダウンロードする場合は， （正確さを欠く表現になりますが） ファイルがストレートにサーバ側からクライアント側へコピーされます．GGのクライアントドライブ機能を利用してファイルをダウンロードする場合は， Windows API の内部処理に従ってコピーされますので，ファイルが定められたサイズに分割され，それに管理情報等も付加されクライアントへ送信されます．さらに大きなファイルでは，コピーのアニメーションを表示するAPIもクライアントへ送信されます．このような処理が行われるため，実際のファイルサイズより大きいデータ量がネットワーク上を流れます．なお，ネットワーク機材のデータ圧縮機能等も，このような仕組みにより十分に働かない場合があります．
+ファイル KGTN2011081101.pdf [(55.2 KB)] [kitasp 技術センター, 2011/08/11 09:37]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1484/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1342/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -447,26 +446,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1485/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1341/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1485/">サービス GO</a></h4>
+                            <h4><a href="/posts/new_md/doc1341/">画面の解像度の設定は，クライアントの 「画面のプロパティ」 で設定するのか？　それともサーバの 「画面のプロパティ」 （GO-Global Display Driver） で設定するのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-01-31
+                            日付 2011-08-11
                             </p>
                             <p class="intro">*技術ノート
-2011/01/31*
-[番号] 技術ノート KGTN 2011013103
-[現象] サービス GO-Global License Manager を停止させて，すぐに開始したが何か問題はあるか？
-[説明] サービス GO-Global License Manager （ライセンスサーバ） が停止すると，新たなユーザはログオン出来ませんが，ログオン中のユーザは 「約10分間」 そのまま利用することが出来ます．その間にライセンスサーバを開始すると，新たなユーザがログオン出来るようになります．但し，数分間はライセンスの利用状況の回復処理が行われますので， それが完了するまでは lmtools 等で表示されるライセンスの利用状況と，実際の状況と整合しないことがあります．
-注　意 ライセンスの利用状況の回復処理が行われている間に，ライセンス数を超えるユーザがログオン出来ないように，クラスタマネージャで適切なユーザ数を設定するようにして下さい （Maximum sessions on this server） ．
-ファイル KGTN2011013103.pdf [(56.7 KB)] [kitasp 技術センター, 2011/01/31 10:52]</p>
+2011/08/11*
+[番号] 技術ノート KGTN 2011081102
+[現象] 画面の解像度の設定は，クライアントの 「画面のプロパティ」 で設定するのか？　それともサーバの 「画面のプロパティ」 （GO-Global Display Driver） で設定するのか？
+[説明] サーバの 「画面のプロパティ」 で表示される GO-Global Display Driver は，アプリケーションが描画した内容を正しく認識するための特殊なドライバです．従って，解像度の設定はクライアントの 「画面のプロパティ」 で設定して下さい．
+ファイル KGTN2011081102.pdf [(46.2 KB)] [kitasp 技術センター, 2011/08/11 10:11]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1485/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1341/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,25 +483,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1486/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1343/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1486/">正式ライセンスを一時的にデモライセンスに入れ替えた場合，副作用等は発生しないのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1343/">[GGH4.0] Automatically update clients を有効にしたが，クライアントがアップデートされない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-01-30
+                            日付 2011-08-08
                             </p>
                             <p class="intro">*技術ノート
-2011/01/30*
-[番号] 技術ノート KGTN 2011013002
-[現象] 正式ライセンスを一時的にデモライセンスに入れ替えた場合，副作用等は発生しないのか？
-[説明] デモライセンスはユーザ数が無制限ですので，クラスタマネージャでユーザ数を制限する必要があります．その点を除けば，副作用等は一切ありません．
-ファイル KGTN2011013002.pdf [(44.7 KB)] [kitasp 技術センター, 2011/01/30 15:50]</p>
+2011/08/08*
+[番号] 技術ノート KGTN 2011080801
+[現象] [GGH4.0] Automatically update clients を有効にしたが，クライアントがアップデートされない．
+[説明] 仕様なのか不具合なのか未だ明確になっておりませんが，クライアントのアップデートは GO-Global Update Client というサービスが行い， 4.0.1.10784 の環境では適用　（アップデート）　までに1〜2時間を要します．
+補足１ 行われている処理を調べたところ，接続時に一括してダウンロードし直ちにアップデートする方式ではなく，GGのセッションを通して新しいクライアント （ファイル） を少しずつダウンロードされ，全てのファイルが揃ったところで下記のダイアログを表示されます．ユーザが現在のセッションを終了し，次回ログオンした時，この新しいクライアント （ファイル） が適用されます．なお，ダウンロード中のファイルは %TEMP%¥updates の下に保存されます．実験では，無操作の状態で約１分後からダウンロードが開始します．
+補足２ サービス GO-Global Update Client が開始していない場合は，新しいクライアント （ファイル） のダウンロードおよびインストールは行われません．
+ファイル KGTN2011080801.pdf [(91.2 KB)] [kitasp 技術センター, 2011/08/08 12:19]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1486/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1343/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -522,30 +522,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2539/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1344/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2539/">[GGW3.2.1,GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc1344/">[GGH4.0] Windows クライアントをインストールすると，サービスが追加されるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2011-01-28
+                            日付 2011-08-08
                             </p>
                             <p class="intro">*技術ノート
-2011/01/28*
-[番号] 技術ノート KGTN 2011012802
-[現象] [GGW3.2.1,GGH4.X-5.X] GG上で動作するアプリケーションを全て終了させるプログラムを作りたい．終了しないアプリケーションは，タイムアウト時間経過後に強制終了させたい．
-[説明] 以下のテストプログラムで，GG上で動作するアプリケーションが終了し，かつ自分人身が最後に終了することを確認しました．なお，プログラム名は GGLogout.exe とし，自分自身に WM_CLOSE を送信しないようにしています．
-タイムアウト時間経過後は，下記の関数により 「ウインドウハンドルに対応付く」 プロセスを強制終了させます．なお，TerminateProcess関数によりプロセスが強制終了された場合は，メモリリーク等が発生する可能性があります．
-ファイル KGTN2011012802.pdf [(74.7 KB)] [kitasp 技術センター, 2016/06/17 16:14]
-KGTN2011012802-1.jpg
-表示 [(16.1 KB)] [kitasp 技術センター, 2016/06/17 16:14]
-KGTN2011012802-2.jpg
-表示 [(12.5 KB)] [kitasp 技術センター, 2016/06/17 16:14]</p>
+2011/08/08*
+[番号] 技術ノート KGTN 2011080802
+[現象] [GGH4.0] Windows クライアントをインストールすると，サービスが追加されるのか？
+[説明] 3.2系ではサービスは追加されませんでしたが，4.0系からGO-Global Update Client というサービスが追加されます．これは，クライアントの自動更新機能 （オプション Automatically update clinets で設定） の処理を行うためのサービスです．
+ファイル KGTN2011080802.pdf [(49.8 KB)] [kitasp 技術センター, 2011/08/08 11:08]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2539/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1344/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

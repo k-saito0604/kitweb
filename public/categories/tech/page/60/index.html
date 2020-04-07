@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2375/">
+                                      <a href="/posts/new_md/doc2329/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2375/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2329/">[GGH5.X/ExPack] GGのSDK (Session Manager API) を購入した場合，どのようなサポートが提供されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,20 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2375/"><i class="far fa-calendar"></i> 2016-08-08</a>
+                                            <a href="/posts/new_md/doc2329/"><i class="far fa-calendar"></i> 2016-08-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/08/08*
-[番号] 技術ノート KGTN 2016080303
-[現象] [GGH4.X-5.X] １ヶ月前に非互換な更新プログラムの情報を得て，本日それらの更新プログラムを除外して Windows Update を行ったが，その直後からGG （サービス GGAPS） が開始しなくなった．
-[説明] Windowsの更新プログラムは毎月新たなものがリリースされますので，タイミングによって （非互換な情報を得てから） 数日～１ヶ月で新たな非互換な更新プログラムが加わる可能性があります． Windows Update を行った直後からGGが開始しなくなったといことですから，この状況に該当すると思われます．このような場合は，以下の手順で対応をお願いします．
-1.　サーバーを再起動 2.　更新プログラムを全て適用 （必須ではありませんが出来るだけ適用して下さい） 3.　サーバーを再起動 4.　最新のGGを上書きインストール （Repair or Update を選択） 5.　サーバーを再起動
-ファイル KGTN2016080303.pdf [(96.5 KB)] [kitasp 技術センター, 2016/08/25 16:40]
-KGTN2016080303.jpg
-表示 [(13.2 KB)] [kitasp 技術センター, 2016/08/25 16:40]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2375/" class="btn btn-template-main">続きを読む</a>
+2016/08/26*
+[番号] 技術ノート KGTN 2016082202
+[現象] [GGH5.X/ExPack] GGのSDK (Session Manager API) を購入した場合，どのようなサポートが提供されるのか？
+[説明] GraphOn社はSDK (Session Manager API) を製品として販売しておりませんので，それを購入することは出来ません．GGのセッション情報に直接アクセスする必要がある場合は，弊社開発のセッション情報取得SDK（サンプルコードと実行環境） をご用意しております．このサンプルコードは， GGEasyMonitor のアルゴリズムをベースとしており，ネットワーク障害等の異常時にも対応した実用的なソースコードです．
+ファイル KGTN2016082202.pdf [(62.2 KB)] [kitasp 技術センター, 2016/10/04 17:32]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2329/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -363,7 +360,7 @@ KGTN2016080303.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2384/">
+                                      <a href="/posts/new_md/doc2002/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -371,7 +368,7 @@ KGTN2016080303.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2384/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2002/">[GGH5.X/ExPack] ざっくり言って Session Manager API の SDK の使い勝手はどうなのか?</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -384,18 +381,17 @@ KGTN2016080303.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2384/"><i class="far fa-calendar"></i> 2016-08-08</a>
+                                            <a href="/posts/new_md/doc2002/"><i class="far fa-calendar"></i> 2016-08-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/08/08*
-[番号] 技術ノート KGTN 2016080402
-[現象] [GGH4.X-5.X] 更新プログラムを適用したところGGが開始しなくなったが，この原因は何か？
-[説明] GGは独自のマルチユーザー環境を構築し，その上で複数のセッションを並行して実行しますが，この機能を実装するためにWindowsの低レベルのAPI （Application Programming Interface） を使用しています．更新プログラムの中には，このAPIのエントリーポイントを変更するものがあり，そうした場合にGGが動作しなくなります （Windowsの内部的な仕様変更に伴う現象です） ．
-GraphOn社では，月次の更新プログラムがリリースされた時にチェックを行い，エントリーポイントの変更が発生していれば，それに対応した新しいビルド （またはパッチ） をリリースします．
-ファイル KGTN2016080402.pdf [(60 KB)] [kitasp 技術センター, 2016/08/08 17:41]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2384/" class="btn btn-template-main">続きを読む</a>
+2016/08/26*
+[番号] 技術ノート KGTN 2016082203
+[現象] [GGH5.X/ExPack] ざっくり言って Session Manager API の SDK の使い勝手はどうなのか?
+[説明] GGW3.2 および GGH4.X の初期のバージョンの頃は，不具合が多くそれを回避するアルゴリズムを考えることが大変でした．GGH4.X の比較的新しいバージョンおよび GGH5.X では，比較的素直にアルゴリズムを組み立てることが出来ます． GGEasyMonitor で不具合 (問題点) を回避した処理としてはクライアントのコンピューター名および IP アドレスの取得があります．SDK の API でその機能が提供されておりますが，1台のクライアントからの情報の取得に数秒を要するため，現実的な時間で情報を採取することが困難でした．このため，弊社では別の方法 (アルゴリズム) で，クライアントの情報を採取するように変更しました．
+ファイル KGTN2016082203.pdf [(47.9 KB)] [kitasp 技術センター, 2017/09/01 16:21]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2002/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -405,7 +401,7 @@ GraphOn社では，月次の更新プログラムがリリースされた時に�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2385/">
+                                      <a href="/posts/new_md/doc2348/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -413,7 +409,7 @@ GraphOn社では，月次の更新プログラムがリリースされた時に�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2385/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2348/">[GGH5.X/ExPack] 拡張パック GGEasyMonitor が使用しているSDKとはどのようなものなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -426,17 +422,17 @@ GraphOn社では，月次の更新プログラムがリリースされた時に�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2385/"><i class="far fa-calendar"></i> 2016-08-08</a>
+                                            <a href="/posts/new_md/doc2348/"><i class="far fa-calendar"></i> 2016-08-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/08/08*
-[番号] 技術ノート KGTN 2016080401
-[現象] [GGH4.X-5.X] Windows Server 2008 R2 および Windows Server 2012 R2 の２つの環境でGGを試したいが，マルチブート （デュアルブート） 環境で構築して構わないか？
-[説明] 技術的にはマルチブート （デュアルブート） 環境でGGサーバーを構築することが出来ると思いますが，しかしながらパーティション管理やインストールの複雑さ等の別の問題 （GGの検証に関係のない問題） が発生する可能性がありますので，お勧めできません．リムーバブルケース等を使用してHDを交換するか，または仮想マシンの利用を推奨します．
-ファイル KGTN2016080401.pdf [(57.3 KB)] [kitasp 技術センター, 2016/08/08 17:36]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2385/" class="btn btn-template-main">続きを読む</a>
+2016/08/26*
+[番号] 技術ノート KGTN 2016082201
+[現象] [GGH5.X/ExPack] 拡張パック GGEasyMonitor が使用しているSDKとはどのようなものなのか？
+[説明] GGEasyMonitor が使用しているSDKは Session Manager API と呼ばれるもので，アバウトに言えばクラスター・マネージャーの機能を実装するのに必要な機能を提供する開発ツールです．セッション情報 （一覧） を取得する処理のアウトラインは，次の通りです．
+// APS に接続 SMI_Initialize(...); // サーバー情報の取得 SMI_EnumerateServer(...); SMI_GetServerInfo(...); SMI_GetServerMetrics(...); // セッション情報の取得 SMI_EnumerateSessions(...); while(...) { SMI_GetSessionInfo(...); SMI_EnumerateSessions(...); } // 終了処理 SMI_Shutdown();  ファイル KGTN2016082201.pdf [(65.4 KB)] [kitasp 技術センター, 2016/08/26 13:49]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2348/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -446,7 +442,7 @@ GraphOn社では，月次の更新プログラムがリリースされた時に�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2386/">
+                                      <a href="/posts/problematic_md/doc2351/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -454,7 +450,7 @@ GraphOn社では，月次の更新プログラムがリリースされた時に�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2386/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/problematic_md/doc2351/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor のバージョン2.2.0をインストールしたが，クライアントの名前やアドレスに * が表示される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -467,18 +463,20 @@ GraphOn社では，月次の更新プログラムがリリースされた時に�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2386/"><i class="far fa-calendar"></i> 2016-08-08</a>
+                                            <a href="/posts/problematic_md/doc2351/"><i class="far fa-calendar"></i> 2016-08-26</a>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/08/08*
-[番号] 技術ノート KGTN 2016080304
-[現象] [GGH4.X-5.X] 更新プログラムを手動でダウンロードして，それらをまとめてインストールした．この後に最新のGGを上書きインストールしたが，GGが開始しない．
-[説明] 手動でダウンロードした更新プログラムの中に，特定のユーザーまたはマシン向けに限定リリースされた更新プログラムが含まれていたと考えられます．このような限定リリースされた更新プログラムは，GraphOn社では入手できませんので，非互換であってもサポートすることが困難です．このような場合は，Windowsを再インストールするか，または適用した更新プログラムを１つずつ削除＆再起動して，GGが開始するかどうか確認して下さい．
-補　足 適用する更新プログラムが同じであっても，それらを適用する順番によってWindowsが異なる状況になることがあり，これによってGGが開始しない場合があります．このようなことから， 「手動更新ではなく」 自動更新で Windows Update を行うことを推奨します．
-ファイル KGTN2016080304.pdf [(60.2 KB)] [kitasp 技術センター, 2016/08/08 17:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2386/" class="btn btn-template-main">続きを読む</a>
+                                    <p class="intro">技術ノート 2016/08/26
+[番号] 技術ノート KGTN 2016081902
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor のバージョン2.2.0をインストールしたが，クライアントの名前やアドレスに &ldquo;*&rdquo; が表示される．
+[説明] クライアント情報を取得するため，以下の設定作業を行って下さい．
+[GGの設定ファイルの修正] サーバー側から見たクライアントのIPアドレスを得るため， HostProperties.xml　の下記の項目に true を設定して下さい．なお，この作業はサービス GGAPS を停止した状態で行って下さい．
+&lt;property id=&quot;NetworkAddressEnvVarEnabled&quot; group=&quot;ClientAccess&quot; type=&quot;BOOL&quot;&gt; &lt;value&gt;true&lt;/value&gt; &lt;/property&gt;  [グローバル・ログオンスクリプトの登録] クライアントの情報を取得し，それらの情報を作業ファイル （GGEasyMonitorClientInfo-Data.ini） に記録するため， logon-gem-ci.bat をグローバル・ログオンスクリプトとして登録して下さい．次に，管理者権限で GGEasyMonitor-Files.bat を実行し，作業ファイルに必要なアクセス権を設定して下さい．
+ファイル KGTN2016081902.pdf [(75.5 KB)] [kitasp 技術センター, 2016/08/26 13:23]
+KGTN2016081902.jpg
+表示 [(11 KB)] [kitasp 技術センター, 2016/08/26 13:23]</p>
+                                    <p class="read-more"><a href="/posts/problematic_md/doc2351/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -488,7 +486,7 @@ GraphOn社では，月次の更新プログラムがリリースされた時に�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2389/">
+                                      <a href="/posts/new_md/doc2345/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -496,7 +494,7 @@ GraphOn社では，月次の更新プログラムがリリースされた時に�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2389/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2345/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で，ユーザーIDを指定しない時に表示されるログオン画面がURLで指定したパラメタを引き継がない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -509,18 +507,17 @@ GraphOn社では，月次の更新プログラムがリリースされた時に�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2389/"><i class="far fa-calendar"></i> 2016-08-08</a>
+                                            <a href="/posts/new_md/doc2345/"><i class="far fa-calendar"></i> 2016-08-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/08/08*
-[番号] 技術ノート KGTN 2016080203
-[現象] [GGH4.X-5.X] Windowsサーバーでポートフォワードをする方法は？
-[説明] Windowsサーバーのポートフォワード機能 （Portproxy） は，以下のコマンドで設定することが出来ます．この設定に加え，Windowsファイアウォールに待受けポートへの接続を許可する受信の規則を追加して下さい．
-netsh interface portproxy add v4tov4 listenport=491 listenaddress=0.0.0.0 connectport=491 connectaddress=192.168.102.89  https://msdn.microsoft.com/ja-jp/library/cc776297(v=ws.10).aspx#BKMK_1
-ファイル KGTN2016080203.pdf [(61.5 KB)] [kitasp 技術センター, 2016/08/08 15:21]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2389/" class="btn btn-template-main">続きを読む</a>
+2016/08/26*
+[番号] 技術ノート KGTN 2016082301
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で，ユーザーIDを指定しない時に表示されるログオン画面がURLで指定したパラメタを引き継がない．
+[説明] GGEasyMonitor が表示するログオン画面がURLで指定したパラメタを引き継がない問題は，バージョン2.2.1で修正されております． GGEasyMonitor バージョン2.2.1またはそれ以降へのアップグレードをお願いします．
+ファイル KGTN2016082301.pdf [(54 KB)] [kitasp 技術センター, 2016/08/26 13:54]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2345/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -530,7 +527,7 @@ netsh interface portproxy add v4tov4 listenport=491 listenaddress=0.0.0.0 connec
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2392/">
+                                      <a href="/posts/new_md/doc2330/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -538,7 +535,7 @@ netsh interface portproxy add v4tov4 listenport=491 listenaddress=0.0.0.0 connec
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2392/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2330/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor をバージョン2.1.Xから2.2.Xへアップグレードする手順は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -551,19 +548,20 @@ netsh interface portproxy add v4tov4 listenport=491 listenaddress=0.0.0.0 connec
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2392/"><i class="far fa-calendar"></i> 2016-08-08</a>
+                                            <a href="/posts/new_md/doc2330/"><i class="far fa-calendar"></i> 2016-08-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/08/08*
-[番号] 技術ノート KGTN 2016080202
-[現象] [GGH4.X-5.X] 拡張パックの GGEasyMonitor で振り分けを行うが，GGサーバーが３台の場合，グローバルIPアドレスは幾つ必要か？
-[説明] GGEasyMonitor の振り分け機能を何れかのGGサーバーに配置する場合，GGサーバーの台数分のグローバルIPアドレスが必要です （本件の場合は3個） ．グローバルIPアドレスがGGサーバーの台数分用意出来ない場合は，Windowsサーバーやルーター等のポートフォワード機能を使用して，１つのグローバルIPアドレスとGGサーバーの台数分のポート番号＋ GGEasyMonitor （振り分け機能）のポート番号で運用する方法が考えられます．Windowsサーバーのポートフォワード機能を利用する場合は，3台のGGサーバーのうち１台をポートフォワード兼用とすることで，グローバルIPアドレス１個で3台のGGサーバーを運用することも （技術的には） 可能です．他には，クライアントからVPNでGGサーバーの （ローカル） ネットワークへアクセスする方法も考えられます．
-Windowsサーバーのポートフォワード機能 （Portproxy） は，以下のコマンドで設定することが出来ます．この設定に加え，Windowsファイアウォールに待受けポートへの接続を許可する受信の規則を追加して下さい．
-netsh interface portproxy add v4tov4 listenport=8491 listenaddress=0.0.0.0 connectport=491 connectaddress=192.168.102.89  https://msdn.microsoft.com/ja-jp/library/cc776297(v=ws.10).aspx#BKMK_1
-ファイル KGTN2016080202.pdf [(73.8 KB)] [kitasp 技術センター, 2016/08/08 15:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2392/" class="btn btn-template-main">続きを読む</a>
+2016/08/26*
+[番号] 技術ノート KGTN 2016081903
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor をバージョン2.1.Xから2.2.Xへアップグレードする手順は？
+[説明] GGEasyMonitor バージョン2.1.Xから2.2.Xへのアップグレードの手順は，次の通りです．
+ 設定ファイル GGEasyMonitor.ini のバックアップ スタートメニューの &ldquo;2) サービスを停止&quot;の実行 スタートメニューの &ldquo;6) アンインストール&quot;の実行 バージョン2.2.X のインストール バックアップした設定ファイル GGEasyMonitor.ini のコピー （復元） 下記の設定作業 （クライアント情報の採取関連の設定） の実行 スタートメニューの &ldquo;1) サービスを開始&quot;の実行  [設定作業：GGの設定ファイルの修正] サーバー側から見たクライアントのIPアドレスを得るため， HostProperties.xml　の下記の項目に true を設定して下さい．なお，この作業はサービス GGAPS を停止した状態で行って下さい．
+&lt;property id=&quot;NetworkAddressEnvVarEnabled&quot; group=&quot;ClientAccess&quot; type=&quot;BOOL&quot;&gt; &lt;value&gt;true&lt;/value&gt; &lt;/property&gt;  [設定作業：グローバル・ログオンスクリプトの登録] クライアントの情報を取得し，それらの情報を作業ファイル （GGEasyMonitorClientInfo-Data.ini） に記録するため， logon-gem-ci.bat をグローバル・ログオンスクリプトとして登録して下さい．次に，管理者権限で GGEasyMonitor-Files.bat を実行し，作業ファイルに必要なアクセス権を設定して下さい．
+補　足 GGEasyMonitor バージョン2.2.Xで追加された主なファイルおよびリリースノートは次の通りです．
+ GGEasyMonitorClientInfo.exe クライアントの情報を採取するプログラム GGEasyMonitorClientInfo.ini クライアントの情報を採取するプログラムの設定ファイル GGEasyMonitorClientInfo-Data.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2330/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -573,7 +571,7 @@ netsh interface portproxy add v4tov4 listenport=8491 listenaddress=0.0.0.0 conne
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2395/">
+                                      <a href="/posts/new_md/doc2347/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -581,7 +579,7 @@ netsh interface portproxy add v4tov4 listenport=8491 listenaddress=0.0.0.0 conne
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2395/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2347/">[GGH5.X/ExPack] 振分け機能でデスクトップを表示する場合のURLは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -594,17 +592,18 @@ netsh interface portproxy add v4tov4 listenport=8491 listenaddress=0.0.0.0 conne
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2395/"><i class="far fa-calendar"></i> 2016-08-08</a>
+                                            <a href="/posts/new_md/doc2347/"><i class="far fa-calendar"></i> 2016-08-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/08/08*
-[番号] 技術ノート KGTN 2016073001
-[現象] [GGH4.X-5.X] １台のライセンスサーバーを複数のGGサーバーが利用する構成で，ウエッブサーバーはどこに配置すれば良いのか？
-[説明] ウエッブサーバーの役割は，GGのクライアント （ソフトウエア） の配布と，ログオンページ （logon.html） の提供で，ライセンスサーバーとは全く関係がありません．従って，ライセンスサーバーに配置することも，１台のGGサーバーに配置することも，全てのGGサーバーに配置することも出来ます．運用に合せて配置する場所 （サーバー） を選択して下さい．
-ファイル KGTN2016073001.pdf [(53.9 KB)] [kitasp 技術センター, 2016/08/08 14:14]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2395/" class="btn btn-template-main">続きを読む</a>
+2016/08/26*
+[番号] 技術ノート KGTN 2016082204
+[現象] [GGH5.X/ExPack] 振分け機能でデスクトップを表示する場合のURLは？
+[説明] 下記のようにURLに &amp;desktop=true を追加して下さい．
+http://192.168.102.89:8089/logon.html?user=Administrator&amp;password=pass&amp;desktop=true  &ldquo;http://192.168.102.89:8089/logon.html?desktop=true&rdquo; の場合 （ユーザー名を指定しない場合） は，GGEasyMonitor バージョン2.2.1以前ではデスクトップ表示のパラメタが機能しません．
+ファイル KGTN2016082204.pdf [(58.8 KB)] [kitasp 技術センター, 2016/08/26 13:53]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2347/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -614,7 +613,7 @@ netsh interface portproxy add v4tov4 listenport=8491 listenaddress=0.0.0.0 conne
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2388/">
+                                      <a href="/posts/new_md/doc2342/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -622,7 +621,7 @@ netsh interface portproxy add v4tov4 listenport=8491 listenaddress=0.0.0.0 conne
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2388/">[GGH5.X] GGのWindowsクライアントを構成するファイルの入手方法は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2342/">[GGH5.X/GGEasyLogon] GGEasyLogon で GGEasyMonitor の振分け機能を利用した時，多重ログオンのエラーメッセージは，ブラウザが起動されその中に表示されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -635,19 +634,19 @@ netsh interface portproxy add v4tov4 listenport=8491 listenaddress=0.0.0.0 conne
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2388/"><i class="far fa-calendar"></i> 2016-08-08</a>
+                                            <a href="/posts/new_md/doc2342/"><i class="far fa-calendar"></i> 2016-08-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/08/08*
-[番号] 技術ノート KGTN 2016080301
-[現象] [GGH5.X] GGのWindowsクライアントを構成するファイルの入手方法は？
-[説明] GGのWindowsクライアントのインストーラー （gg-client.windows-5.x.x.xxxxx.exe） を何れかのクライアントPCで実行し，GGクライアントのフォルダ （C:Program Files (x86)GraphOnGO-GlobalClient） の内容をコピーして下さい．
-ファイル KGTN2016080301.pdf [(163 KB)] [kitasp 技術センター, 2016/08/08 15:22]
-KGTN2016080301.jpg
-表示 [(34.1 KB)] [kitasp 技術センター, 2016/08/08 15:22]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2388/" class="btn btn-template-main">続きを読む</a>
+2016/08/26*
+[番号] 技術ノート KGTN 2016082401
+[現象] [GGH5.X/GGEasyLogon] GGEasyLogon で GGEasyMonitor の振分け機能を利用した時，多重ログオンのエラーメッセージは，ブラウザが起動されその中に表示されるのか？
+[説明] いいえ， GGEasyLogon が表示するダイアログ中にエラーメッセージが表示されます．
+ファイル KGTN2016082401.pdf [(230 KB)] [kitasp 技術センター, 2016/08/26 14:06]
+KGTN2016082401.jpg
+表示 [(49.1 KB)] [kitasp 技術センター, 2016/08/26 14:06]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2342/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -657,7 +656,7 @@ KGTN2016080301.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2387/">
+                                      <a href="/posts/new_md/doc2343/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -665,7 +664,7 @@ KGTN2016080301.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2387/">[GGH5.X] GG関連のサービス名の一覧を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2343/">[GGH5.X/GGEasyLogon] GGEasyMonitor で振分けを行う場合， GGEasyLogon の設定項目のサーバーに @ を指定して構わないか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -678,26 +677,19 @@ KGTN2016080301.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2387/"><i class="far fa-calendar"></i> 2016-08-08</a>
+                                            <a href="/posts/new_md/doc2343/"><i class="far fa-calendar"></i> 2016-08-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/08/08*
-[番号] 技術ノート KGTN 2016080302
-[現象] [GGH5.X] GG関連のサービス名の一覧を知りたい．
-[説明] GG関連のサービスの一覧 （サービス名） は次の通りです．
-・GGAPS （アプリケーション配信機能） ・GGLicenseManager （ライセンスサーバー） ・GGEasyMonitor-Service （拡張パック） ・GGUpdateClient （クライアント側の更新サービス）
-ファイル KGTN2016080302.pdf [(146 KB)] [kitasp 技術センター, 2016/08/08 15:27]
-KGTN2016080302-1.jpg
-表示 [(24.8 KB)] [kitasp 技術センター, 2016/08/08 15:27]
-KGTN2016080302-2.jpg
-表示 [(24.9 KB)] [kitasp 技術センター, 2016/08/08 15:27]
-KGTN2016080302-3.jpg
-表示 [(25.3 KB)] [kitasp 技術センター, 2016/08/08 15:27]
-KGTN2016080302-4.jpg
-表示 [(22.5 KB)] [kitasp 技術センター, 2016/08/08 15:27]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2387/" class="btn btn-template-main">続きを読む</a>
+2016/08/26*
+[番号] 技術ノート KGTN 2016082303
+[現象] [GGH5.X/GGEasyLogon] GGEasyMonitor で振分けを行う場合， GGEasyLogon の設定項目のサーバーに @ を指定して構わないか？
+[説明] はい，サーバーに @ が指定された場合は，名前解決が行われます．
+ファイル KGTN2016082303.pdf [(59.6 KB)] [kitasp 技術センター, 2016/08/26 14:00]
+KGTN2016082303.jpg
+表示 [(20 KB)] [kitasp 技術センター, 2016/08/26 14:00]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2343/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -707,7 +699,7 @@ KGTN2016080302-4.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2374/">
+                                      <a href="/posts/new_md/doc2344/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -715,7 +707,7 @@ KGTN2016080302-4.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2374/">[GGW3.2.1/GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2344/">[GGH5.X/GGEasyLogon] 運用でパスワードは手入力と決まっているため GGEasyLogon を利用出来ない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -728,20 +720,21 @@ KGTN2016080302-4.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2374/"><i class="far fa-calendar"></i> 2016-08-08</a>
+                                            <a href="/posts/new_md/doc2344/"><i class="far fa-calendar"></i> 2016-08-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2016/08/08*
-[番号] 技術ノート KGTN 2016080403
-[現象] [GGW3.2.1/GGH4.X-5.X] GGのサービス （GGAPS） で 「サービス固有のエラーコード3687」 が発生した．
-[説明] GGは独自のマルチユーザー環境を構築し，その上で複数のセッションを並行して実行しますが，この機能を実装するためにWindowsの低レベルのAPI （Application Programming Interface） を使用しています．更新プログラムの中には，このAPIのエントリーポイントを変更するものがあり，そうした場合にGGが動作しなくなります （Windowsの内部的な仕様変更に伴う現象です） ． 「サービス固有のエラーコード3687」 は，通常この状況が発生したことを意味し，最新の更新プログラムをサポートするGGの最新ビルドを上書きインストール （アップデート） することで解決します．
-GGW3.2系の場合は，既にサポートが終了した製品ですので，最新の更新プログラムに対応したビルドは提供されておりません．このため，正常に動作していた後にインストールされた更新プログラムを （ひとつずつ） 全てアンインストールして下さい．
-ファイル KGTN2016080403.pdf [(81.7 KB)] [kitasp 技術センター, 2016/08/25 16:44]
-KGTN2016080403.jpg
-表示 [(11.2 KB)] [kitasp 技術センター, 2016/08/25 16:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2374/" class="btn btn-template-main">続きを読む</a>
+2016/08/26*
+[番号] 技術ノート KGTN 2016082302
+[現象] [GGH5.X/GGEasyLogon] 運用でパスワードは手入力と決まっているため GGEasyLogon を利用出来ない．
+[説明] GGEasyLogon の接続先の設定画面でパスワードを空欄にして下さい．GGサーバーヘ接続後に，パスワードの入力を促すダイアログが表示されます．
+ファイル KGTN2016082302.pdf [(193 KB)] [kitasp 技術センター, 2016/08/26 13:57]
+KGTN2016082302-1.jpg
+表示 [(17.7 KB)] [kitasp 技術センター, 2016/08/26 13:57]
+KGTN2016082302-2.jpg
+表示 [(35.1 KB)] [kitasp 技術センター, 2016/08/26 13:57]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2344/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -811,7 +804,7 @@ KGTN2016080403.jpg
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

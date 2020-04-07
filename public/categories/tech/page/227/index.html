@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1578/">
+                                      <a href="/posts/new_md/doc1429/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1578/">ファイルの同一性をチェックしたいが，チェックサムを計算するお勧めのツールは？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1429/">GGNetworkCheck とはどんなツールなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,18 +340,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1578/"><i class="far fa-calendar"></i> 2010-10-21</a>
+                                            <a href="/posts/new_md/doc1429/"><i class="far fa-calendar"></i> 2011-03-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/21*
-[番号] 技術ノート KGTN 2010102002
-[現象] ファイルの同一性をチェックしたいが，チェックサムを計算するお勧めのツールは？
-[説明] マイクロソフト社が提供するファイル チェックサム整合性検証ユーティリティ FCIV をご利用下さい．詳細については，下記ページをご覧下さい．
-http://support.microsoft.com/kb/841290/ja 可用性と ファイル チェックサム整合性検証 ユーティリティの説明
-ファイル KGTN2010102002.pdf [(48 KB)] [kitasp 技術センター, 2010/10/21 13:12]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1578/" class="btn btn-template-main">続きを読む</a>
+2011/03/08*
+[番号] 技術ノート KGTN 2011030201
+[現象] GGNetworkCheck とはどんなツールなのか？
+[説明] GGのサーバ側とクライアント側で動作させるプログラムで，クライアント側主導でTCP/IPのヘルスチェック （接続性確認） を行います．クライアント側は所定の秒数でPINGメッセージを送信し （ログに記録も残します） ，サーバ側はPINGメッセージを受信するとログに記録するとともに，応答メッセージをクライアント側に送信します．クライアント側は応答メッセージを受信すると，その情報をログに記録します．所定秒数内に相手からのメッセージが届かない，またはTCP/IPレベルでコネクションが切断された場合は，エラーとしてログに記録されます．この２つのログ （クライアント側とサーバ側） を付き合わせることで，ネットワークの状況を確認することが出来ます．
+GGNetworkCheck は， GMService との併用で自動監視が出来るように，コンソールアプリケーションとして作成されています．GGNetworkCheck は，１つのプログラムの中にサーバ機能とクライアント機能の両方を持っており，逆方向のヘルスチェックも簡単に行うことが出来ます．さらに，サーバ機能は 「多」 クライアントからの同時アクセスも可能な実装になっています．
+設定ファイル 設定ファイル GGNetworkCheck.ini の default セクションで，以下のパラメタを設定して下さい．
+設定項目 説明 mode S = サーバとして起動 / C = クライアントとして起動 host サーバのIPアドレス（IPv4 / IPv6） port サーバの待受けポートの番号 interval ヘルスチェックの間隔（秒） repeat ヘルスチェックの回数（注：-1は無限回） sleep コネクション切断後の再チェックまでの間隔（秒） clTimeout クライアント時の送受信のタイムアウト時間（秒） svTimeout サーバ時の送受信タイムアウト時間（秒） 注：clTimeout +5秒以上を指定すること logd ログを保存するフォルダ（絶対パス） prefix 送信メッセージの先頭に付加する文字列 clTimeAdj ログに記録されるクライアント時間の微調整（±3600秒まで） svTimeAdj ログに記録されるサーバ時間の微調整（±3600秒まで） 設定項目は，下記のコマンドの引数で上書きすることが出来ます．
+設定項目 説明 -s サーバとして起動 -c クライアントとして起動 -h address サーバのIPアドレス（IPv4/IPv6） -hp port サーバの待受けポートの番号 -i sec コネクション切断後の再チェックまでの間隔（秒） -r times ヘルスチェックの回数（注：-1は無限回） -l dir ログを保存するフォルダ（絶対パス） -x msg 送信メッセージの先頭に付加する文字列 同じ設定ファイルGGNetworkCheck.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1429/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -361,7 +363,7 @@ http://support.microsoft.com/kb/841290/ja 可用性と ファイル チェック
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1579/">
+                                      <a href="/posts/new_md/doc1432/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -369,7 +371,7 @@ http://support.microsoft.com/kb/841290/ja 可用性と ファイル チェック
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1579/">１台のライセンスサーバで同時500ユーザを運用したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1432/">[GGW3.2.1] コマンド プロンプト （DOS窓） のウインドウを開くことなくバッチを実行したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -382,19 +384,20 @@ http://support.microsoft.com/kb/841290/ja 可用性と ファイル チェック
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1579/"><i class="far fa-calendar"></i> 2010-10-21</a>
+                                            <a href="/posts/new_md/doc1432/"><i class="far fa-calendar"></i> 2011-03-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/21*
-[番号] 技術ノート KGTN 2010102004
-[現象] １台のライセンスサーバで同時500ユーザを運用したい．
-[説明] GGが使用しているライセンスサーバは，業界で広く使用されている FlexLM （FlexNet） です．一般的な意味でのクライアント上で動作するアプリケーションのライセンス管理であれば，同時500ユーザでも処理可能かもしれませんが，GGの場合は１つのサーバ上で同時に （例えば） 25ユーザのライセンス管理が発生するため （つまりログオンやアプリケーションの起動），ライセンスのクライアント （GGサーバ） からライセンスサーバへの要求が処理されない可能性があります．これはFlexLMの仕様に起因する問題で，技術ノート KGTN# 2010032802 で報告している通りです．
-これ以外にも，クライアントのダウンや （クライアントに近いところで） ネットワーク障害が発生した場合，それに割り当てられたライセンスが回収されず， 「ライセンスサーバが再起動されるまで」 同時ユーザ数が減る可能性があります．また基本的なことですが，このライセンスサーバがダウンした場合，利用していた同時500ユーザのセッション全てが利用出来なくなります．
-このようなことから，安定運用を最優先に考えるなら，ライセンス管理を１台のサーバに集約させるのではなく，各GGサーバにライセンスサーバに同居させることを強くお勧めします． 実際，同時数千ユーザの案件では，初期段階では管理面から集約方式を検討されておりましたが，最終段階では運用面から分散方式に変更され，現時点で約10ヶ月間安定的に運用されております．
-ファイル KGTN2010102004.pdf [(67.8 KB)] [kitasp 技術センター, 2010/10/21 13:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1579/" class="btn btn-template-main">続きを読む</a>
+2011/03/01*
+[番号] 技術ノート KGTN 2011030103
+[現象] [GGW3.2.1] コマンド プロンプト （DOS窓） のウインドウを開くことなくバッチを実行したい．
+[説明] 下記のバッチをアプリケーションとして登録すると，3.2.1系ではコマンド プロンプトのウインドウが表示されます．
+[FILE: myNotePad.bat] ECHO OFF NOTEPAD EXIT
+コマンド プロンプトのウインドウを非表示にするには，以下のWSHのプログラムをアプリケーションとして登録し，そのプログラムからバッチを起動するようにします．
+[FILE: myNotePad.vbs] Set WshShell = WScript.CreateObject(&ldquo;WScript.Shell&rdquo;) ' Call WshShell.Run( &ldquo;cmd.exe /c C:¥GraphOn¥BAT¥myNotePad.bat&rdquo;, 0, True ) ← 同期実行 Call WshShell.Run( &ldquo;cmd.exe /c C:¥GraphOn¥BAT¥myNotePad.bat&rdquo;, 0, False ) ← 非同期実行
+ファイル KGTN2011030103.pdf [(55.6 KB)] [kitasp 技術センター, 2011/03/01 10:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1432/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -404,7 +407,7 @@ http://support.microsoft.com/kb/841290/ja 可用性と ファイル チェック
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1581/">
+                                      <a href="/posts/new_md/doc1433/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -412,7 +415,7 @@ http://support.microsoft.com/kb/841290/ja 可用性と ファイル チェック
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1581/">2010年10月の Windows Update を適用したところ， APS が開始しない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1433/">[GGW3.2] ggw-3.2.1.xxxx の環境で互換性の無い更新プログラム （Windows Update） があるが， ggw-3.2.0.yyyy の環境ではどうなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -425,17 +428,17 @@ http://support.microsoft.com/kb/841290/ja 可用性と ファイル チェック
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1581/"><i class="far fa-calendar"></i> 2010-10-20</a>
+                                            <a href="/posts/new_md/doc1433/"><i class="far fa-calendar"></i> 2011-03-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/20*
-[番号] 技術ノート KGTN 2010101401
-[現象] 2010年10月の Windows Update を適用したところ， APS が開始しない．
-[説明] 2010年10月12日にリリースされたKB981957 （Vulnerabilitiesin Windows kernel-mode drivers could allow elevation of privilege） に関して，32ビット版のWindows環境において3.2系および4.0系でWin32k.sys の互換性がありません （つまりAPSが開始しません） ．GraphOn社は，現在 KB981957 に対応する互換アップデートを作成中ですが，これがリリースされるまでの間 KB981957 をアンインストールし，サーバを再起動することで暫定対応をお願いします．
-参　考 GraphOn would like to inform you that Windows Update KB981957 released Tuesday, October 12, 2010 by Microsoft is incompatible with GO-Global versions 3.2 and 4.0 on the 32-bit versions of Windows. Specifically, on Windows Server 2008 x86, Windows Vista x86, Windows Server2003 x86 and Windows XP x86, the Application Publishing Service (APS) does not start, and the APS log reports an incompatibility with Win32k.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1581/" class="btn btn-template-main">続きを読む</a>
+2011/03/01*
+[番号] 技術ノート KGTN 2011030102
+[現象] [GGW3.2] ggw-3.2.1.xxxx の環境で互換性の無い更新プログラム （Windows Update） があるが， ggw-3.2.0.yyyy の環境ではどうなのか？
+[説明] 互換性の無い更新プログラム （Windows Update） は，それが Windows のカーネルを書き換えるためで，従って過去の ggw-3.2.0.yyyy の環境でも互換性はありません．
+ファイル KGTN2011030102.pdf [(44.1 KB)] [kitasp 技術センター, 2011/03/01 10:07]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1433/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -445,7 +448,7 @@ http://support.microsoft.com/kb/841290/ja 可用性と ファイル チェック
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2022/">
+                                      <a href="/posts/new_md/doc1434/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -453,7 +456,7 @@ http://support.microsoft.com/kb/841290/ja 可用性と ファイル チェック
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2022/">[GGW3.2.1/GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc1434/">GGをバージョンアップしたところ，遅く感じる．CPUの使用率も90%を超えている．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -466,21 +469,17 @@ http://support.microsoft.com/kb/841290/ja 可用性と ファイル チェック
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2022/"><i class="far fa-calendar"></i> 2010-10-20</a>
+                                            <a href="/posts/new_md/doc1434/"><i class="far fa-calendar"></i> 2011-03-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/20*
-[番号] 技術ノート KGTN 2010102003
-[現象] [GGW3.2.1/GGH4.X-5.X] GGサーバーとライセンスサーバーを分離する時，GGサーバーのライセンス絡みの設定はどうすべきか？
-[説明] 外部のライセンスサーバーを参照する方法として、以下の２つの設定があります。
-ライセンスファイルに USE_SERVER 行を記述する方法 環境変数 LM_LICENSE_FILE でライセンスサーバーを直接指定する方法
-パフォーマンスおよび障害発生時の切り分けの容易さから，弊社では上記2の設定をお勧めします．具体的な設定例 （サンプル） は，以下の通りです．
-変数　値 LM_LICENSE_FILE　27001@192.47.214.1 ← @
-なお，GGサーバー上ではライセンスサーバー機能を使用しませんので，サービス GO-Global License Manager を停止してください．さらに，ライセンスサーバー上ではGGサーバーの機能を使用しませんので，サービス GO-Global Application Publishing Service を停止してください．
-ファイル KGTN2010102003.pdf [(47.3 KB)] [kitasp 技術センター, 2017/08/25 16:04]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2022/" class="btn btn-template-main">続きを読む</a>
+2011/03/01*
+[番号] 技術ノート KGTN 2011030101
+[現象] GGをバージョンアップしたところ，遅く感じる．CPUの使用率も90%を超えている．
+[説明] タスクマネージャの 「プロセス」 タブを表示し，CPU使用率が高い順にプロセス （イメージ名） を並べて下さい．これによって，どのプロセスがCPUを消費し，その結果としてサーバが遅くなる現象を招いているか分かります．
+ファイル KGTN2011030101.pdf [(45.3 KB)] [kitasp 技術センター, 2011/03/01 09:15]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1434/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -490,7 +489,7 @@ http://support.microsoft.com/kb/841290/ja 可用性と ファイル チェック
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1582/">
+                                      <a href="/posts/new_md/doc1431/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -498,7 +497,7 @@ http://support.microsoft.com/kb/841290/ja 可用性と ファイル チェック
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1582/">アイドルタイムアウトが発生したが，各プロセスの終了からクライアントの切断までに数分を要した．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1431/">以下の条件でクライアントのOSを Windows 7 へ移行できるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -511,17 +510,21 @@ http://support.microsoft.com/kb/841290/ja 可用性と ファイル チェック
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1582/"><i class="far fa-calendar"></i> 2010-10-20</a>
+                                            <a href="/posts/new_md/doc1431/"><i class="far fa-calendar"></i> 2011-03-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/20*
-[番号] 技術ノート KGTN 2010102001
-[現象] アイドルタイムアウトが発生したが，各プロセスの終了からクライアントの切断までに数分を要した．
-[説明] アイドルタイムアウトが発生した時，GGはセッション中の各プロセスを強制終了させますが，プロセスが大きなメモリ （例えば1.5GB） を使用している場合，そのメモリ （仮想メモリ） の開放等に時間がかかることがあり，このような状況ではクライアントの切断までに数分を要することになります．
-ファイル KGTN2010102001.pdf [(47 KB)] [kitasp 技術センター, 2010/10/20 09:42]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1582/" class="btn btn-template-main">続きを読む</a>
+2011/03/01*
+[番号] 技術ノート KGTN 2011022502
+[現象] 以下の条件でクライアントのOSを Windows 7 へ移行できるか？
+●シナリオ１ サーバ ggw-3.2.1.4420 クライアント ggw-3.2.0.4203 ●シナリオ2 サーバ ggw-3.2.1.4420 クライアント ggw-3.2.1.4420 ●シナリオ3 サーバ ggw-3.2.1.4420 クライアント ggw-3.2.1.4474 ●シナリオ4 サーバ ggw-3.2.1.4474 クライアント ggw-3.2.1.4474
+[説明] ●シナリオ1 クライアントが ggw-3.2.0.4203 で，技術ノートKGTN#2011022301により Windows 7 はサポートしておりませんので移行は出来ません．
+●シナリオ2 クライアントが ggw-3.2.1.4420 で，技術ノートKGTN#2011022301により Windows 7 はサポートしておりませんので移行は出来ません．
+●シナリオ3 クライアントがggw-3.2.1.4474 で，技術ノート KGTN#2011022301 によりWindows 7 はサポートしております ので移行は可能です．なお，サーバがggw-3.2.1.4420 ですので，それ以降で修正された問題等は，そのま ま残ります．また，互換性の無いWindows Update （更新ブログラム） は適用することが出来ません．
+●シナリオ4 クライアントが ggw-3.2.1.4474 で，技術ノートKGTN#2011022301により Windows 7 はサポートしておりますので移行は可能です．
+参　考 Ver3.2系では，クライアントとサーバは 「接続性に関して」 それぞれ後方互換性があります．従って，Ver3.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1431/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -531,7 +534,7 @@ http://support.microsoft.com/kb/841290/ja 可用性と ファイル チェック
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1583/">
+                                      <a href="/posts/new_md/doc1430/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -539,7 +542,7 @@ http://support.microsoft.com/kb/841290/ja 可用性と ファイル チェック
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1583/">PW （Program Window） でアプリケーションのアイコンを変更したが （Change Icon） ，幾つかのユーザで変更したアイコンが表示されず，元々のアイコンが表示される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1430/">以下の条件でサーバのGGをバージョンアップ出来るか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -552,20 +555,19 @@ http://support.microsoft.com/kb/841290/ja 可用性と ファイル チェック
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1583/"><i class="far fa-calendar"></i> 2010-10-18</a>
+                                            <a href="/posts/new_md/doc1430/"><i class="far fa-calendar"></i> 2011-03-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/18*
-[番号] 技術ノート KGTN 2010101801
-[現象] PW （Program Window） でアプリケーションのアイコンを変更したが （Change Icon） ，幾つかのユーザで変更したアイコンが表示されず，元々のアイコンが表示される．
-[説明] アイコンを変更する場合 （Change Icon） ，指定するファイルのアクセス権 （セキュリティ） をプログラムのアクセス権と同じに設定して下さい．異なる場合，アイコンを含むファイルにアクセスすることが出来ず，その結果元々のアイコンが表示される可能性があります．
-注　意 ログオンし PW が表示された状態で，アイコンを含むファイルのアクセス権を変更した場合，その変更内容は直ちに反映されません．ログアウト→ログオンした時点で，変更内容が反映されます．
-参　考 以下のような手順で，アイコンを設定する方法もあります．
-表示したいアイコンを含むプログラムを Resource Hacker で開く． ツリーの中の Icon Group の下にあるアイコンを選ぶ． 右クリックで 「保存する」 を選択し ?.ico へ保存する． ?.ico のセキュリティに Everyone：読み取りと実行 を設定する． クラスタマネージャのChange Icon でそのアイコンファイル （???.ico） を設定する．
-ファイル KGTN2010101801.pdf [(76.9 KB)] [kitasp 技術センター, 2010/10/18 12:50]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1583/" class="btn btn-template-main">続きを読む</a>
+2011/03/01*
+[番号] 技術ノート KGTN 2011022503
+[現象] 以下の条件でサーバのGGをバージョンアップ出来るか？
+●現状 サーバ ggw-3.2.1.4420 クライアント ggw-3.2.0.4203 ●希望 サーバ ggw-3.2.1.4474 クライアント ggw-3.2.0.4203
+[説明] 3.2系は，サーバとクライアント間で下位互換性と上位互換性がありますので，希望の構成で利用することが出来ます．但し， ggw-3.2.0.4203 → ggw-3.2.1.4474 で修正された項目のうち，クライアントのアップデートが必要な項目は反映されません．
+参　考 Ver3.2系では，クライアントとサーバは 「接続性に関して」 それぞれ後方互換性があります．従って，Ver3.2系内ではバージョンが異なるクライアントとサーバを組み合わせて利用することが可能ですが，しかし組み合わせによって修正内容が 「反映される／反映されない」 と言った機能的な問題が発生しますので，本番運用に当たっては十分な事前検証をお願いします．
+2.3 Backward Compatible Client and Server （3.2系のリリースノートより） This allows a client to connect to a GO-Global Server when the major and minor versions of the client and server match but the service pack or build numbers do not.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1430/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -575,7 +577,7 @@ http://support.microsoft.com/kb/841290/ja 可用性と ファイル チェック
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc348/">
+                                      <a href="/posts/new_md/doc1436/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -583,7 +585,7 @@ http://support.microsoft.com/kb/841290/ja 可用性と ファイル チェック
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc348/">[GGW3.2.1/GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc1436/">[GGW3.2.1] 3.2.1.4420で 「ロードバランサのヘルスチェック機能 （TCP/IPレベル） に対応しました」 とあるが，どういうことなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -596,21 +598,19 @@ http://support.microsoft.com/kb/841290/ja 可用性と ファイル チェック
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc348/"><i class="far fa-calendar"></i> 2010-10-14</a>
+                                            <a href="/posts/new_md/doc1436/"><i class="far fa-calendar"></i> 2011-02-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/14*
-[番号] 技術ノート KGTN 2010101402
-[現象] [GGW3.2.1/GGH4.X-6.X] プログラム・ウインドウの背景色・文字色・ウインドウの状態をログオン時に設定したい．
-[説明] ログオンスクリプトで，レジストリを直接編集することでプログラム・ウインドウの背景色・文字色・ウインドウの状態を設定することが出来ますが，拡張パックに含まれるプログラム GGPwTool でも簡単に設定することが出来ます．GGPwTool の設定情報は，下記のように全体設定と個別設定の２つの設定情報があり，個別の設定情報の値が優先します．
- ALLUSERSPROFILEGraphOnGGPwTool.ini （全体設定） USERPROFILEApplication DataGGPwTool.ini （個別設定）  GGPwTool.ini 中で設定できる項目は，以下の通りです．
-[default] LV_ColorBackground=#804000　← 背景色 LV_ColorForeground=#FFFFFF　← 文字色 WinPlaceShowState=3　← ウインドウの状態（1 = 通常，3 = 最大化） LV_StylesBasic=#50000101　← アイコンの状態（#50000100 = Large, #50000102 = Small, #50000101 = Details, #50000104 = List）
-GGPwTool は，以下のようにログオンスクリプトから起動して下さい．
-echo off C:GraphOnBINGGPwTool.exe exit
-ファイル KGTN2010101402.pdf [(47.8 KB)] [kitasp 技術センター, 2019/04/25 18:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc348/" class="btn btn-template-main">続きを読む</a>
+2011/02/28*
+[番号] 技術ノート KGTN 2011022804
+[現象] [GGW3.2.1] 3.2.1.4420で 「ロードバランサのヘルスチェック機能 （TCP/IPレベル） に対応しました」 とあるが，どういうことなのか？
+[説明] GGは一斉ログオン等の高負荷時にも対応するため，GGのポートに接続要求があった時点でセッション用のメモリを確保します．ハードウエア・ロードバランサのヘルスチェック機能 （TCP/IPレベル） でGGを監視すると，頻繁にメモリの確保＆開放が行われるため状況によっては問題を引き起こしていました．3.2.1.4420では，ハードウエア・ロードバランサによる監視も想定した処理を行うように変更されました．
+備　考 この件に関する情報は英文のリリースノートにはありませんが，下記のように 3.2.1 Patch2 (4420) で実装されております．
+It looks like it was inadvertently left out of the Release Notes, but it was verified as fixed in 3.2.1 Patch2.
+ファイル KGTN2011022804.pdf [(65.2 KB)] [kitasp 技術センター, 2011/02/28 14:09]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1436/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -620,7 +620,7 @@ echo off C:GraphOnBINGGPwTool.exe exit
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2261/">
+                                      <a href="/posts/new_md/doc1438/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -628,7 +628,7 @@ echo off C:GraphOnBINGGPwTool.exe exit
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2261/">[GGW3.2.1] PW （Program Window） の 「閉じる」 ボタンが押下された時，確認を行ってからウインドウを閉じるように出来ないか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1438/">[GGW3.2.1] APSログに CS: I/O event (socketAvailable ...) というエラーが記録される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -641,19 +641,18 @@ echo off C:GraphOnBINGGPwTool.exe exit
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2261/"><i class="far fa-calendar"></i> 2010-10-14</a>
+                                            <a href="/posts/new_md/doc1438/"><i class="far fa-calendar"></i> 2011-02-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/14*
-[番号] 技術ノート KGTN 2010101501
-[現象] [GGW3.2.1] PW （Program Window） の 「閉じる」 ボタンが押下された時，確認を行ってからウインドウを閉じるように出来ないか？
-[説明] 現在のGGでは，設定等で 「確認を行ってからPWのウインドウを閉じる」 や 「閉じるボタンを消す」 ことは出来ません．なお，将来リリース予定の Ver4.0.1 では， 「確認を行ってからPWのウインドウを閉じる」 機能が実装される見込みです．
-参　考 We do plan to help resolve this issue in our 4.0.1 RC release as follows, in this release, when they try to close the program windows, the users will be asked.
-&ldquo;Are you sure you want to close the GO-Global program window?&rdquo;
-ファイル KGTN2010101501.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2261/" class="btn btn-template-main">続きを読む</a>
+2011/02/27*
+[番号] 技術ノート KGTN 2011022802
+[現象] [GGW3.2.1] APSログに &ldquo;CS: I/O event (socketAvailable &hellip;)&rdquo; というエラーが記録される．
+191 2011-02-22 18:47:11.405 aps (1560) CS: I/O event (socketAvailable &ndash; conflict between ioctlsocket and select).
+[説明] この記録は， 「通常の意味でのエラーではなく」 TCP/Pの通信に関する正常系での参考情報です．従って，このメッセージは無視して頂いて結構です．
+ファイル KGTN2011022802.pdf [(52.5 KB)] [kitasp 技術センター, 2011/02/28 07:29]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1438/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -663,7 +662,7 @@ echo off C:GraphOnBINGGPwTool.exe exit
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1584/">
+                                      <a href="/posts/new_md/doc1437/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -671,7 +670,7 @@ echo off C:GraphOnBINGGPwTool.exe exit
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1584/">GGは，クライアント側のIMEを意識しているのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1437/">[GGW3.2.1] APSログに RS: Error getting port for printer というエラーが記録される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -684,17 +683,18 @@ echo off C:GraphOnBINGGPwTool.exe exit
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1584/"><i class="far fa-calendar"></i> 2010-10-14</a>
+                                            <a href="/posts/new_md/doc1437/"><i class="far fa-calendar"></i> 2011-02-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/14*
-[番号] 技術ノート KGTN 2010101403
-[現象] GGは，クライアント側のIMEを意識しているのか？
-[説明] GGサーバに複数のIMEがインストールされている場合，GGはクライアント側で使用しているIMEと同じものがあるかどうかチェックします．もし存在する場合は，クライアント側と同じIMEを選択します．存在しない場合は，GGがインストールされた時に設定されていたIME （フォールバックIME） を選択します．
-ファイル KGTN2010101403.pdf [(44.1 KB)] [kitasp 技術センター, 2010/10/14 13:13]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1584/" class="btn btn-template-main">続きを読む</a>
+2011/02/27*
+[番号] 技術ノート KGTN 2011022803
+[現象] [GGW3.2.1] APSログに &ldquo;RS: Error getting port for printer&rdquo; というエラーが記録される．
+6406 2011-02-24 17:29:45.784 USER on server, APP (8028) RS: Error getting port for printer &ldquo;90LBPR_103-751@90W7PRUSER&rdquo;; Failed to open registry key.
+[説明] このエラーは，クライアントプリンタのポートの情報が得られなかったことを意味します．セキュリティの問題でレジストリを開くことが出来なかったか，またはプリンタドライバの問題等でレジストリが存在しなかったことが考えられます．他の （異なる機種の） プリンタを試して，同じ現象が発生すれば前者の可能性が高く，同じ現象が発生しなければ後者の可能性が高いと考えられます．また，同じプリンタを異なるユーザで試して，現象が発生しなければ，ユーザ （アカウント） に依存した問題だと考えられます．
+ファイル KGTN2011022803.pdf [(61.3 KB)] [kitasp 技術センター, 2011/02/28 07:47]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1437/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -704,7 +704,7 @@ echo off C:GraphOnBINGGPwTool.exe exit
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1585/">
+                                      <a href="/posts/new_md/doc1439/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -712,7 +712,7 @@ echo off C:GraphOnBINGGPwTool.exe exit
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1585/">GGクライアントからGGサーバへの接続 （TCP/IP） に時間がかかることがある．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1439/">[GGW3.2.1] 印刷時に拡張子BPFのファイルがオープン出来ないというエラーがAPSログに記録される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -725,19 +725,18 @@ echo off C:GraphOnBINGGPwTool.exe exit
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1585/"><i class="far fa-calendar"></i> 2010-10-13</a>
+                                            <a href="/posts/new_md/doc1439/"><i class="far fa-calendar"></i> 2011-02-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/10/13*
-[番号] 技術ノート KGTN 201011301
-[現象] GGクライアントからGGサーバへの接続 （TCP/IP） に時間がかかることがある．
-[説明] このような現象は，さまざまな要因が考えられますので，多数の試験を行い原因を絞り込むことが大切です．
-GGサーバの指定をコンピュータ名からIPアドレスに変更してみる （名前解決に関する問題かどうか） ． GGクライアントからGGサーバへ継続的にPINGを送信してみる （ネットワークに関する問題かどうか） ． GGサーバで動作するタスクやアプリケーションをチェックする （サーバの負荷に関する問題かどうか） ．
-特定の時間帯に遅くなる等パターンが分かっている場合は，その時間帯に絡みそうなネットワークやサーバの処理を重点的にチェックするのが良いでしょう．例えば，アンチウイルスソフトが共有ディスクを定期的にスキャンする設定になっており，その処理でネットワークの帯域が広く占有され，その結果GGクライアント〜GGサーバ間の接続障害を引き起こした事例もあります．
-ファイル KGTN2010101301.pdf [(60.4 KB)] [kitasp 技術センター, 2010/10/13 14:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1585/" class="btn btn-template-main">続きを読む</a>
+2011/02/27*
+[番号] 技術ノート KGTN 2011022801
+[現象] [GGW3.2.1] 印刷時に拡張子BPFのファイルがオープン出来ないというエラーがAPSログに記録される．
+89 2011-02-22 18:33:33.049 user on server, xxx (1260) RS: Error printing document - Failed to open temporary file &ldquo;C:¥Users¥user¥AppData¥Local¥Temp¥57210312128.bpf&rdquo;.
+[説明] 拡張子 .bpf のファイルは，クライアント印刷機能 （Native Driver） で印刷が行われた時に，サーバ側に一時的に作成されるスプールファイルです．このファイルのオープンに失敗したということですから，恐らくサーバのセキュリティ絡みの問題だと思われます （アクセス権が不十分でTempフォルダにファイルを作成出来ない等） ．
+ファイル KGTN2011022801.pdf [(61.1 KB)] [kitasp 技術センター, 2011/02/28 07:19]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1439/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -807,7 +806,7 @@ GGサーバの指定をコンピュータ名からIPアドレスに変更して�
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

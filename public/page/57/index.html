@@ -409,25 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2345/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2286/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2345/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で，ユーザーIDを指定しない時に表示されるログオン画面がURLで指定したパラメタを引き継がない．</a></h4>
+                            <h4><a href="/posts/new_md/doc2286/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で，ブラウザ Chrome に対応したPOSTメソッドが無い理由は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-08-26
+                            日付 2016-10-05
                             </p>
                             <p class="intro">*技術ノート
-2016/08/26*
-[番号] 技術ノート KGTN 2016082301
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で，ユーザーIDを指定しない時に表示されるログオン画面がURLで指定したパラメタを引き継がない．
-[説明] GGEasyMonitor が表示するログオン画面がURLで指定したパラメタを引き継がない問題は，バージョン2.2.1で修正されております． GGEasyMonitor バージョン2.2.1またはそれ以降へのアップグレードをお願いします．
-ファイル KGTN2016082301.pdf [(54 KB)] [kitasp 技術センター, 2016/08/26 13:54]</p>
+2016/10/05*
+[番号] 技術ノート KGTN 2016091004
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で，ブラウザ Chrome に対応したPOSTメソッドが無い理由は？
+[説明] IE や Firefox のプラグインでは，パラメタを object (param) タグやembed タグで渡すため，URL欄からパラメタを消し去ることが出来ます．一方， Chrome のプラグインでは，下記のようにパラメタをURLで渡さねばならないため，POSTメソッドを使用してもURL欄からパラメタを消し去ることが出来ません．このような理由で， Chrome に対応したPOSTメソッドの作成を断念しました．
+chrome-extension://kkehppgllpkfohejllckommnpfeomhnc/main.html?user=Administrator&amp;password=pass &amp;h=192.168.102.89&amp;version=5.0.2.23352  ファイル KGTN2016091004.pdf [(65.1 KB)] [kitasp 技術センター, 2016/10/05 15:17]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2345/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2286/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,28 +446,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2330/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2287/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2330/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor をバージョン2.1.Xから2.2.Xへアップグレードする手順は？</a></h4>
+                            <h4><a href="/posts/new_md/doc2287/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で，ブラウザ Firefox でアクセスした時のPOST後の画面を見たい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-08-26
+                            日付 2016-10-05
                             </p>
                             <p class="intro">*技術ノート
-2016/08/26*
-[番号] 技術ノート KGTN 2016081903
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor をバージョン2.1.Xから2.2.Xへアップグレードする手順は？
-[説明] GGEasyMonitor バージョン2.1.Xから2.2.Xへのアップグレードの手順は，次の通りです．
- 設定ファイル GGEasyMonitor.ini のバックアップ スタートメニューの &ldquo;2) サービスを停止&quot;の実行 スタートメニューの &ldquo;6) アンインストール&quot;の実行 バージョン2.2.X のインストール バックアップした設定ファイル GGEasyMonitor.ini のコピー （復元） 下記の設定作業 （クライアント情報の採取関連の設定） の実行 スタートメニューの &ldquo;1) サービスを開始&quot;の実行  [設定作業：GGの設定ファイルの修正] サーバー側から見たクライアントのIPアドレスを得るため， HostProperties.xml　の下記の項目に true を設定して下さい．なお，この作業はサービス GGAPS を停止した状態で行って下さい．
-&lt;property id=&quot;NetworkAddressEnvVarEnabled&quot; group=&quot;ClientAccess&quot; type=&quot;BOOL&quot;&gt; &lt;value&gt;true&lt;/value&gt; &lt;/property&gt;  [設定作業：グローバル・ログオンスクリプトの登録] クライアントの情報を取得し，それらの情報を作業ファイル （GGEasyMonitorClientInfo-Data.ini） に記録するため， logon-gem-ci.bat をグローバル・ログオンスクリプトとして登録して下さい．次に，管理者権限で GGEasyMonitor-Files.bat を実行し，作業ファイルに必要なアクセス権を設定して下さい．
-補　足 GGEasyMonitor バージョン2.2.Xで追加された主なファイルおよびリリースノートは次の通りです．
- GGEasyMonitorClientInfo.exe クライアントの情報を採取するプログラム GGEasyMonitorClientInfo.ini クライアントの情報を採取するプログラムの設定ファイル GGEasyMonitorClientInfo-Data.</p>
+2016/10/05*
+[番号] 技術ノート KGTN 2016091003
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で，ブラウザ Firefox でアクセスした時のPOST後の画面を見たい．
+[説明] ブラウザ Firefox でアクセスした時のPOST後の画面は次の通りです （開発中の画面で将来変更される可能性があります） ．ブラウザのURL欄にユーザーIDやパスワード等のパラメタは一切表示されません．
+ファイル KGTN2016091003.pdf [(129 KB)] [kitasp 技術センター, 2016/10/05 15:15]
+KGTN2016091003.jpg
+表示 [(28.7 KB)] [kitasp 技術センター, 2016/10/05 15:15]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2330/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2287/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -486,26 +485,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2347/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2315/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2347/">[GGH5.X/ExPack] 振分け機能でデスクトップを表示する場合のURLは？</a></h4>
+                            <h4><a href="/posts/new_md/doc2315/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor はデータベースとして MSXML を使用しているそうだが，排他制御は大丈夫なのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-08-26
+                            日付 2016-10-05
                             </p>
                             <p class="intro">*技術ノート
-2016/08/26*
-[番号] 技術ノート KGTN 2016082204
-[現象] [GGH5.X/ExPack] 振分け機能でデスクトップを表示する場合のURLは？
-[説明] 下記のようにURLに &amp;desktop=true を追加して下さい．
-http://192.168.102.89:8089/logon.html?user=Administrator&amp;password=pass&amp;desktop=true  &ldquo;http://192.168.102.89:8089/logon.html?desktop=true&rdquo; の場合 （ユーザー名を指定しない場合） は，GGEasyMonitor バージョン2.2.1以前ではデスクトップ表示のパラメタが機能しません．
-ファイル KGTN2016082204.pdf [(58.8 KB)] [kitasp 技術センター, 2016/08/26 13:53]</p>
+2016/10/05*
+[番号] 技術ノート KGTN 2016083001
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor はデータベースとして MSXML を使用しているそうだが，排他制御は大丈夫なのか？
+[説明] GGEasyMonitor のデータベース関連の処理はオブジェクト化されており， MSXML が管理するデータにアクセスする部分はミューテックスで排他制御が行われております．従って，多数のスレッドがデータベース処理を要求する状況であっても， MSXML のデータへ複数のスレッドが同時にアクセスすることはありません．
+ファイル KGTN2016083001.pdf [(57.3 KB)] [kitasp 技術センター, 2016/10/05 10:38]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2347/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2315/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -524,27 +522,25 @@ http://192.168.102.89:8089/logon.html?user=Administrator&amp;password=pass&amp;d
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2342/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2311/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2342/">[GGH5.X/GGEasyLogon] GGEasyLogon で GGEasyMonitor の振分け機能を利用した時，多重ログオンのエラーメッセージは，ブラウザが起動されその中に表示されるのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2311/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor をカスタマイズして，ユーザーの存在チェック機能を実装してもらう場合，どのようなインターフェースが提供されるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-08-26
+                            日付 2016-10-05
                             </p>
                             <p class="intro">*技術ノート
-2016/08/26*
-[番号] 技術ノート KGTN 2016082401
-[現象] [GGH5.X/GGEasyLogon] GGEasyLogon で GGEasyMonitor の振分け機能を利用した時，多重ログオンのエラーメッセージは，ブラウザが起動されその中に表示されるのか？
-[説明] いいえ， GGEasyLogon が表示するダイアログ中にエラーメッセージが表示されます．
-ファイル KGTN2016082401.pdf [(230 KB)] [kitasp 技術センター, 2016/08/26 14:06]
-KGTN2016082401.jpg
-表示 [(49.1 KB)] [kitasp 技術センター, 2016/08/26 14:06]</p>
+2016/10/05*
+[番号] 技術ノート KGTN 2016083003
+[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor をカスタマイズして，ユーザーの存在チェック機能を実装してもらう場合，どのようなインターフェースが提供されるのか？
+[説明] ユーザーの存在チェック機能は，振分け処理の機能を拡張する形で実装する予定です．基本的な問合せ （GETメソッド） とその結果 （HTML） の形式は次の通りです．
+振分け（既存機能） ： http://&lt;振分けサーバー&gt;/logon.html?user=Administrator&amp;... ユーザーの存在チェック ： http://&lt;振分けサーバー&gt;/userCheck.html?user=Administrator &lt;html&gt; &lt;head&gt;GGEasyMonitor&lt;/head&gt; &lt;body&gt;Administrator : YES&lt;/body&gt; ← 存在する場合は YES，存在しない場合は NO &lt;/html&gt;  ファイル KGTN2016083003.pdf [(64.1 KB)] [kitasp 技術センター, 2016/10/05 10:41]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2342/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2311/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

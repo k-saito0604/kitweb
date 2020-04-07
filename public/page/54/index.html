@@ -409,25 +409,28 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2311/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2226/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2311/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor をカスタマイズして，ユーザーの存在チェック機能を実装してもらう場合，どのようなインターフェースが提供されるのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2226/">[Windows/PowerShell] 複数のGGサーバー （ワークグループ） に複数のアカウントを一括登録したい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-10-05
+                            日付 2016-11-02
                             </p>
                             <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016083003
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor をカスタマイズして，ユーザーの存在チェック機能を実装してもらう場合，どのようなインターフェースが提供されるのか？
-[説明] ユーザーの存在チェック機能は，振分け処理の機能を拡張する形で実装する予定です．基本的な問合せ （GETメソッド） とその結果 （HTML） の形式は次の通りです．
-振分け（既存機能） ： http://&lt;振分けサーバー&gt;/logon.html?user=Administrator&amp;... ユーザーの存在チェック ： http://&lt;振分けサーバー&gt;/userCheck.html?user=Administrator &lt;html&gt; &lt;head&gt;GGEasyMonitor&lt;/head&gt; &lt;body&gt;Administrator : YES&lt;/body&gt; ← 存在する場合は YES，存在しない場合は NO &lt;/html&gt;  ファイル KGTN2016083003.pdf [(64.1 KB)] [kitasp 技術センター, 2016/10/05 10:41]</p>
+2016/11/02*
+[番号] 技術ノート KGTN 2016102501
+[現象] [Windows/PowerShell] 複数のGGサーバー （ワークグループ） に複数のアカウントを一括登録したい．
+[説明] 以下にスクリプトのサンプルを示します．
+ファイル： hostList.ps1
+# 処理の対象とするサーバー $hostList = @( &quot;192.168.102.60&quot;, &quot;192.168.102.72&quot;, &quot;192.168.102.110&quot; )  ファイル： userList.ps1
+# 追加するアカウント $userList = @( @(&quot;wguser9025&quot;,&quot;Pass.Word&quot;), @(&quot;wguser9026&quot;,&quot;Pass.Word&quot;), @(&quot;wguser9027&quot;,&quot;Pass.Word&quot;) )  ファイル： addUserList.ps1
+# ホスト情報およびユーザー情報の設定 Try { . (&quot;.hostList.ps1&quot;) . (&quot;.userList.ps1&quot;) } Catch { Write-Host &quot;インクルードファイルが見つかりません。&quot; Exit 1001 } # アカウントの追加（本体） Function addUser ([string]$user,[string]$pass) { # 共通 [bool]$myError = $false $hostname = hostname # アカウント作成 try { [ADSI]$Computer = &quot;WinNT://$hostname,computer&quot; $NewUser = $Computer.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2311/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2226/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,25 +449,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2305/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2251/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2305/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor をバージョン2.1.Xから2.2.Xへアップグレードする場合，GGの設定ファイル HostProperties.xml の修正やログオンスクリプトの設定が必須なのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2251/">[Windows] VC&#43;&#43; でソフトウェアを開発しているが，アプリケーションを起動しその結果 （コンソール出力） を文字列として得るサンプルが欲しい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-10-05
+                            日付 2016-11-02
                             </p>
                             <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016083104
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor をバージョン2.1.Xから2.2.Xへアップグレードする場合，GGの設定ファイル HostProperties.xml の修正やログオンスクリプトの設定が必須なのか？
-[説明] いいえ，GGの設定ファイル HostProperties.xml の修正やログオンスクリプトの設定は，監視画面にクライアントの情報 （IPアドレスやコンピューター名など） を表示する時に必要なもので，それらが &ldquo;*&rdquo; 表示でも構わなければ修正や設定の作業は必要ありません．
-ファイル KGTN2016083104.pdf [(58 KB)] [kitasp 技術センター, 2016/10/05 10:54]</p>
+2016/11/02*
+[番号] 技術ノート KGTN 2016100701
+[現象] [Windows] VC++ でソフトウェアを開発しているが，アプリケーションを起動しその結果 （コンソール出力） を文字列として得るサンプルが欲しい．
+[説明] 下記にパイプを使用したサンプルを示します．
+int gglib_ExecAndRedirect(TCHAR *tCmd, TCHAR *tOutbuf, DWORD *dOutbuf) { HANDLE hOutput; HANDLE hStdOutputWritePipe,hStdOutput,hStdError; ::CreatePipe(&amp;hOutput,&amp;hStdOutputWritePipe,NULL,0); ::DuplicateHandle( GetCurrentProcess(), hStdOutputWritePipe, GetCurrentProcess(), &amp;hStdOutput, 0, TRUE, DUPLICATE_SAME_ACCESS); ::DuplicateHandle( GetCurrentProcess(), hStdOutput, GetCurrentProcess(), &amp;hStdError, 0, TRUE, DUPLICATE_SAME_ACCESS); ::CloseHandle(hStdOutputWritePipe); //--- PROCESS_INFORMATION pi; STARTUPINFO si; TCHAR tCmdCopy[1024]; ZeroMemory(&amp;si,sizeof(STARTUPINFO)); si.cb = sizeof(STARTUPINFO); si.dwFlags = STARTF_USESTDHANDLES|STARTF_USESHOWWINDOW; si.hStdInput = GetStdHandle(STD_INPUT_HANDLE); si.hStdOutput = hStdOutput; si.hStdError = hStdError; si.wShowWindow = SW_HIDE; _tcscpy_s(tCmdCopy,tCmd); if(::CreateProcess(NULL,tCmdCopy,NULL,NULL,TRUE, CREATE_NEW_CONSOLE,NULL,NULL,&amp;si,&amp;pi) == 0) { ::CloseHandle(hStdOutput); ::CloseHandle(hStdError); ::CloseHandle(hOutput); hOutput = INVALID_HANDLE_VALUE; return(-1); } ::CloseHandle(pi.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2305/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2251/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -483,25 +486,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2309/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2270/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2309/">[GGH5.X/ExPack] 拡張パックの GGSessionManager でセッションを強制終了した場合，無条件にプロセスを殺すような処理が行われるのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2270/">[GGH4.X-5.X/ExPack] 拡張パックの GGEasyPassword で実行するコマンドを編集したい．</a></h4>
                             <p class="author-category">
                             
                             日付 2016-10-05
                             </p>
                             <p class="intro">*技術ノート
 2016/10/05*
-[番号] 技術ノート KGTN 2016083005
-[現象] [GGH5.X/ExPack] 拡張パックの GGSessionManager でセッションを強制終了した場合，無条件にプロセスを殺すような処理が行われるのか？
-[説明] いいえ，関数 TerminateProcess() のようなリスクを伴う強制的な終了処理が行われる訳ではありません．クラスターマネージャーを操作して，セッションを終了させる場合と同様に，正常な手順を踏んでセッションを終了させます．以下に，セッションの強制終了時のAPSログを示します．ログの130行目に &ldquo;Successfully unloaded user profile&rdquo; という文言も見えます．
-121 GGSessionManager (5512) Attempting to terminate session 2. ... 125 Administrator on Ggh50-lic, aps (5512) Session ID 2: Process #3952 (C:Program FilesGraphOnGO-GlobalProgramspw.exe) stopped in session &quot;Administrator on Ggh50-lic&quot;. ... 130 Logon2 on Ggh50-lic, Logon (928) Successfully unloaded user profile. ... 132 Administrator on Ggh50-lic, aps (5512) Session ID 2: Process #928 (?</p>
+[番号] 技術ノート KGTN 2016092103
+[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyPassword で実行するコマンドを編集したい．
+[説明] 設定ファイル GGEasyPassword.ini をメモ帳等で開き，項目 command の値 （暗号化されたコマンド） を削除して新しいコマンドを入力して下さい．次に，設定ファイルを保存後に， GGEasyPassword を起動して，コマンドを暗号化して下さい （起動するだけで自動的に暗号化されます） ．
+ファイル KGTN2016092103.pdf [(54.9 KB)] [kitasp 技術センター, 2016/10/05 16:42]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2309/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2270/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -520,27 +523,28 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2278/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2283/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2278/">[GGH5.X/ExPaxck] 拡張パックの GGEasyPassword の設定ファイルでパスワード変更のコマンドを指定するが，そのコマンドにドメイン管理者のユーザーIDとパスワードを指定するので心配だ．</a></h4>
+                            <h4><a href="/posts/new_md/doc2283/">[GGH4.X-5.X/ExPack] 拡張パックの GGEasyPassword とはどんなツールなのか？</a></h4>
                             <p class="author-category">
                             
                             日付 2016-10-05
                             </p>
                             <p class="intro">*技術ノート
 2016/10/05*
-[番号] 技術ノート KGTN 2016091403
-[現象] [GGH5.X/ExPaxck] 拡張パックの GGEasyPassword の設定ファイルでパスワード変更のコマンドを指定するが，そのコマンドにドメイン管理者のユーザーIDとパスワードを指定するので心配だ．
-[説明] パスワード変更のコマンドを指定する項目 command が平文の場合，自動的に暗号化され （再） 保存されます．従って，メモ帳等で設定直後に一度 GGEasyPassword を起動することで，ドメイン管理者のユーザーIDおよびパスワードを暗号化することが可能です．
-設定ファイル（メモ帳等で設定直後）
-command = psexec64 -u gg-ad0Administrator -p pass net user %s %s /domain  設定ファイル（GGEasyPassword を起動後）
-command =$$948BA1440B96D29CD39B75085D03612FCDA67ADA4ACDB14B9210CE39ED6EDD3E81 …  ファイル KGTN2016091403.pdf [(62.9 KB)] [kitasp 技術センター, 2016/10/05 16:27]</p>
+[番号] 技術ノート KGTN 2016091302
+[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyPassword とはどんなツールなのか？
+[説明] プログラム・ウインドウから起動するツールで，ログオン中のドメインアカウントのパスワードを変更します．処理の内容は，次の通りです．
+ 「現在のパスワード」の確認 「新しいパスワード」への変更 「新しいパスワード」の反映の確認  [ボタン] 実行 ： 現在のパスワードを新しいパスワードに変更します． 中止 ： プログラムを終了します．
+パスワードを変更するコマンドは，設定ファイル GGEasyPassword.ini 中の項目 command で指定します．特に必要がなければ，以下のサンプル設定をご利用下さい． はドメイン管理者のアカウント， はドメイン管理者のパスワードで置き換えて下さい．この項目は GGEasyPassword が起動されると，自動的に暗号化されますので，パスワードを指定してもセキュリティ的に特に問題はありません．念のため，設定後に GGEasyPassword を起動して，この項目 （値） が暗号化されたことを確認して下さい．
+command = psexec64 -u &lt;domainadmin&gt; -p &lt;password&gt; net user %s %s /domain  補　足 設定ファイル GGEasyPassword.ini の内容は，次の通りです．
+[default] logLevel = 1 ← ログレベル（9 を指定するとログが記録されます） logd = %USERPROFILE%Documents ← ログの出力先（フォルダ） timeout = 30 ← コマンド実行のタイムアウト時間（秒） command = psexec64 -u gg-ad0Administrator -p xxx net user %s %s /domain ← パスワード変更のコ マンド，最初の%s がユーザーID，次の%s が新しいパスワードで置き換えられます．なお，設定後の最初の 起動でこのコマンド（文字列）が自動的に暗号化されます．  「実行」 によって下記エラーメッセージが表示された場合は，項目 command で指定したコマンドに誤りがあります．サンプル設定をお使いの場合は，ドメイン管理者のユーザーIDおよびパスワードをご確認下さい．</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2278/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2283/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

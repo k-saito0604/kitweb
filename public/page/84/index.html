@@ -409,26 +409,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2681/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2630/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2681/">[GGH5.X] クラスターマネージャーでアプリケーションを登録しようとしたところ， Installed Applications に過去に登録したアプリケーションが表示されない （またはコマンドプロンプトのみが表示される） ．</a></h4>
+                            <h4><a href="/posts/new_md/doc2630/">[GGH4.X-5.X] アプリケーションの動作が遅い．</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-11-04
+                            日付 2016-02-05
                             </p>
                             <p class="intro">*技術ノート
-2015/11/04*
-[番号] 技術ノート KGTN 2015102601
-[現象] [GGH5.X] クラスターマネージャーでアプリケーションを登録しようとしたところ， Installed Applications に過去に登録したアプリケーションが表示されない （またはコマンドプロンプトのみが表示される） ．
-[説明] これは GGH5.0 の環境で，ライセンスファイルが有効でない場合 （ex. 評価用ライセンスが失効） に発生する現象です．以下の手順を行うことで，この問題が解決します．
-1.有効なライセンスファイルをインストール （コピー） する． 2.サービス GO-Global License Manager を再起動 （開始） する． 3.サービス GO-Global Application Publishing Service を再起動する．
-ファイル KGTN2015102601.pdf [(60.8 KB)] [kitasp 技術センター, 2015/11/04 17:05]</p>
+2016/02/05*
+[番号] 技術ノート KGTN 2016020208
+[現象] [GGH4.X-5.X] アプリケーションの動作が遅い．
+[説明] アプリケーションの動作が遅いと感じられる場合，先ず以下の情報を採取してお送り下さい．
+1.サーバーのマシンスペック 2.クライアントのマシンスペック 3.アプリケーションの情報 （名称や遅いと感じる機能） 4.サーバーとクライアント間のネットワーク情報 （回線速度，往復遅延時間，パケットロス） 5.動作状況でのサーバー側でのタスクマネージャーのパフォーマンスグラフ（CPUとイーサーネット） 6.アプリケーションの動作状況が分かる動画
+ファイル KGTN2016020208.pdf [(52.7 KB)] [kitasp 技術センター, 2016/02/05 15:32]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2681/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2630/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -447,32 +447,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2682/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2633/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2682/">[GGW3.2.1] セッション数 （ライセンス数） 絡みの問題が発生した場合，どのような情報を採取すれば良いのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2633/">[GGH4.X-5.X] サーバーがマルウェア （ウイルス） に感染した場合，クライアントへ感染する可能性はあるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-11-04
+                            日付 2016-02-05
                             </p>
                             <p class="intro">*技術ノート
-2015/11/04*
-[番号] 技術ノート KGTN 2015102201
-[現象] [GGW3.2.1] セッション数 （ライセンス数） 絡みの問題が発生した場合，どのような情報を採取すれば良いの か？
-[説明] １． 各サーバーのクラスターマネージャーのセッション数 各サーバー上でクラスターマネージャーを起動し，サーバー一覧の中の自サーバーを選択して下さい．この 時のセッション一覧のスクリーンショットを撮って下さい．セッション数が多い場合は，複数に分けて撮って下さ い．下記の例では，サーバー上に２つのセッションが存在します．
-２． 各サーバーのライセンスサーバーのセッション数 各サーバーのライセンスファイルと同じフォルダにある lmtools.exe を起動し， Server Status → Perform Status Enquiry のボタンをクリックして下さい．下に表示される文字列のスクリーンショットを撮って下さい．文 字列の &ldquo;Users of session:&rdquo; の行が実際に使用されているライセンス数です．下記の例では，５つのライセン スのうち，２つのライセンスが使用されています．
-３．各サーバーのログオン確認 各サーバーのライセンスファイルと同じフォルダにある ggw.exe を起動し，自サーバーへログオンして下さい． ログオンが成功してプログラム・ウインドウが表示されるかどうか確認して下さい．プログラム・ウインドウが表示さ れない場合は，エラーメッセージのスクリーンショットを撮って下さい．
-４．通常の方法でのログオンの試行とメッセージ 通常の方法 （振り分けサーバー） でのログオンを試行し，正常にログオン出来るかどうかを確認して下さい． エラーメッセージが表示される場合は，エラーメッセージのスクリーンショットとブラウザのログオンページのソー スコートを保存して下さい．ソースコードを見ることで，どのような順序で各サーバーに接続しようとしたかが分 かります．
-ファイル KGTN2015102201.pdf [(169 KB)] [kitasp 技術センター, 2015/11/04 17:00]
-KGTN2015102201-1.jpg
-表示 [(21.9 KB)] [kitasp 技術センター, 2015/11/04 17:00]
-KGTN2015102201-2.jpg
-表示 [(28.8 KB)] [kitasp 技術センター, 2015/11/04 17:00]</p>
+2016/02/05*
+[番号] 技術ノート KGTN 2016020203
+[現象] [GGH4.X-5.X] サーバーがマルウェア （ウイルス） に感染した場合，クライアントへ感染する可能性はあるのか？
+[説明] GGのクライアント機能 （ドライブおよびクリップボード） の設定が無効であれば，サーバーとクライアント間の通信内容はキーボードやマウス操作の情報および画面の描画情報に限られますので，サーバー上のマルウェアがクライアント側へ感染することはありません．
+ファイル KGTN2016020203.pdf [(75 KB)] [kitasp 技術センター, 2016/02/05 15:24]
+KGTN2016020203.jpg
+表示 [(11.5 KB)] [kitasp 技術センター, 2016/02/05 15:26]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2682/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2633/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -491,27 +486,25 @@ KGTN2015102201-2.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2685/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2631/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2685/">[GGW3.2] GGサーバーの最大セッション数を確認する方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc2631/">[GGH4.X-5.X] デスクトップ上にあるファイルをメールに添付したいが，ファイル選択ダイアログに表示されない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-11-04
+                            日付 2016-02-05
                             </p>
                             <p class="intro">*技術ノート
-2015/11/04*
-[番号] 技術ノート KGTN 2015101402
-[現象] [GGW3.2] GGサーバーの最大セッション数を確認する方法は？
-[説明] GGサーバー上でクラスターマネージャーを起動し， Tools → Server Options → Session Startup → Resource limits → Maximum sessions on this host で最大セッション数を確認することが出来ます （下記の例では50） ．なお，この値はそのGGサーバー上で許容する最大のセッション数のことで，ライセンスサーバー上の空きライセンス数がこの値未満であれば，実際にはこの空きライセンス数が最大のセッション数となります．
-ファイル KGTN2015101402.pdf [(80.5 KB)] [kitasp 技術センター, 2015/11/04 15:48]
-KGTN2015101402.jpg
-表示 [(21.6 KB)] [kitasp 技術センター, 2015/11/04 15:48]</p>
+2016/02/05*
+[番号] 技術ノート KGTN 2016020207
+[現象] [GGH4.X-5.X] デスクトップ上にあるファイルをメールに添付したいが，ファイル選択ダイアログに表示されない．
+[説明] デスクトップの実体は， C:UsersDesktop というフォルダです．GG上で動作するアプリケーションは，クライアント側の C: ドライブを参照することが出来ませんので，ファイル選択ダイアログで （クライアント側の） デスクトップにアクセスすることは出来ません．この問題を解決するには，GGのクライアントドライブ機能を有効にし，クライアントの C: ドライブをサーバー側のM: ドライブに対応付け，ファイル選択ダイアログで M:UsersDesktop を選択する方法が考えられます．
+ファイル KGTN2016020207.pdf [(57.3 KB)] [kitasp 技術センター, 2016/02/05 15:31]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2685/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2631/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -530,25 +523,26 @@ KGTN2015101402.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2688/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2632/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2688/">[USB] USB over network をクライアントとサーバーにインストールすれば，RDS のセッション上でワコムのペンタブレット等が利用できるようになるのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2632/">[GGH4.X-5.X] ブラウザのパスワード保存機能を利用した場合，他の利用者にそれを使われてしまう可能性はないのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2015-11-04
+                            日付 2016-02-05
                             </p>
                             <p class="intro">*技術ノート
-2015/11/04*
-[番号] 技術ノート KGTN 2015100501
-[現象] [USB] USB over network をクライアントとサーバーにインストールすれば，RDS のセッション上でワコムのペンタブレット等が利用できるようになるのか？
-[説明] 残念ながら，そのようには動作しません． USB over network を利用することでクライアント側に接続したペンタブレットがサーバー側にリダイレクトされますが，それは単に物理的なディバイスレベルで機能します （つまりサーバーのUSBポートに物理的にペンタブレットを接続した状態） ．このため，ペンタブレットの操作はRDS のセッションには反映されず，サーバーのコンソールに反映されます．期待する動作を実現するには，RDSのセッションにペンタブレットを関連付ける機能を持った製品の利用が必要となります．
-ファイル KGTN2015100501.pdf [(59.4 KB)] [kitasp 技術センター, 2015/11/04 15:42]</p>
+2016/02/05*
+[番号] 技術ノート KGTN 2016020206
+[現象] [GGH4.X-5.X] ブラウザのパスワード保存機能を利用した場合，他の利用者にそれを使われてしまう可能性はないのか？
+[説明] これはGGの環境に特化した内容ではなく，パソコンの利用に関する一般的な内容です．利用者A・B・C　と１台のパソコンがある環境で，各利用者が同じアカウント Administrator で１台のパソコンを利用するのであれば，保存したパスワード等は他の利用者に使われてしまいます．利用者A・B・C　にそれぞれ個別のアカウント UserA・UserB・UserC を割り当てれば，保存したパスワード等が他の利用者に使われてしまうことはありません．
+つまり，アカウントを共用するのであれば，利用者がパスワード等を保存しないことが必要不可欠です．パスワードを保存するのであれば，利用者毎に異なるアカウントを割り当てることが必須です．
+ファイル KGTN2016020206.pdf [(55.2 KB)] [kitasp 技術センター, 2016/02/05 15:31]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2688/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2632/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

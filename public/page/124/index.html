@@ -409,25 +409,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc400/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc461/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc400/">[GGH4.X] アプリケーションの印刷処理で，GGサーバ上にプリンタが存在すればそのプリンタに出力され，存在しなければPDF変換されてクライアントに転送されると考えて良いか？</a></h4>
+                            <h4><a href="/posts/new_md/doc461/">[ETC] GGサーバのセッション数の推移をウエッブで簡単に見たい．</a></h4>
                             <p class="author-category">
                             
                             日付 2014-01-29
                             </p>
                             <p class="intro">*技術ノート
 2014/01/29*
-[番号] 技術ノート KGTN 2014012009
-[現象] [GGH4.X] アプリケーションの印刷処理で，GGサーバ上にプリンタが存在すればそのプリンタに出力され，存在しなければPDF変換されてクライアントに転送されると考えて良いか？
-[説明] アプリケーションの印刷画面ではプリンタを指定せねばなりませんので， 「プリンタが存在しなければ」 という状況はあり得ません．GGのクライアント印刷機能が有効な場合，ログオン時にクライアントPC上に存在するプリンタに対応するプリンタ （プロキシプリンタ） がGGサーバ上に自動的に作成されます．この時，そのプリンタのドライバがGGサーバ上に存在しなければ，ユニバーサルプリンタドライバ （スプールファイルがPDF形式） が設定されます．アプリケーションの印刷画面でプロキシプリンタが選択されると，GGサーバ上でスプールファイルが生成され，GGの通信路を介してクライアントへ転送され，クライアントPC上のプリンタに蓄積されます．
-ファイル KGTN2014012009.pdf [(52.5 KB)] [kitasp 技術センター, 2014/01/29 16:50]</p>
+[番号] 技術ノート KGTN 2013120503
+[現象] [ETC] GGサーバのセッション数の推移をウエッブで簡単に見たい．
+[説明] 特定の数値データの推移をウエッブで簡単に見たい場合は， MRTG （Multi Router Traffic Grapher） を利用するのが便利です．下記ページを参考に，パフォーマンスカウンタ （GO-Global Host, Active Sessions） を参照することで，GGサーバのセッション数の推移をグラフ化することが出来ます
+http://www.putise.com/performance/netowrk-bottleneck-mrtg http://shirokuma-industry.com/wordpress/?p=93
+ファイル KGTN2013120503.pdf [(55.8 KB)] [kitasp 技術センター, 2014/01/29 13:57]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc400/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc461/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,25 +447,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc438/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc456/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc438/">[GGH4.X] クライアントの環境として Windows CE や Windows Phone をサポートしているのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc456/">[ETC] アンチウイルスソフトで障害が発生した事例はあるか？</a></h4>
                             <p class="author-category">
                             
                             日付 2014-01-29
                             </p>
                             <p class="intro">*技術ノート
 2014/01/29*
-[番号] 技術ノート KGTN 2013121903
-[現象] [GGH4.X] クライアントの環境として Windows CE や Windows Phone をサポートしているのか？
-[説明] GGH4.Xがサポートするモバイル環境は iOS および Android で， Windows CE や Windows Phone はサポートしておりません．
-ファイル KGTN2013121903.pdf [(43.1 KB)] [kitasp 技術センター, 2014/01/29 14:42]</p>
+[番号] 技術ノート KGTN 2013120603
+[現象] [ETC] アンチウイルスソフトで障害が発生した事例はあるか？
+[説明] 1) ある大規模案件でサーバーが急にダウンする現象が発生し，古いパターンファイルに戻すと発生しなくなったという事例があります．さらに数ヶ月後に問題のパターンファイルのサイズが小さくなったので試したところ，現象は発生せず　「一時的なパターンファイルの不具合」　だったという報告がありました．
+  上記1と同じ案件ですが，仮想サーバに移行した後にサーバがランダムにハングアップした事例があります．メーカーに問い合わせると，アンチウイルスソフトのディスクI/O周りに不具合があり，それに対するパッチが提供されたという報告がありました．
+  上記1および2とは異なる案件ですが，特定のアプリケーションのメモリの使用量が異常に増えたという事例があります．これ以外にもAPSログに &ldquo;PW.EXEに接続出来ない&rdquo; 等に異常な記録がありました．アンチウイルスソフトを無効状態に変更すると，これらの異常な現象が全て解消したという報告がありました．
+ファイル KGTN2013120603.pdf [(59 KB)] [kitasp 技術センター, 2014/01/29 14:05]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc438/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc456/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -483,25 +486,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc393/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc484/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc393/">[GGH4.X] クラスタマネージャで Automatically update clients を有効にしているにも関わらず，クライアントのアップグレード （バージョンアップ） が行われない．</a></h4>
+                            <h4><a href="/posts/new_md/doc484/">[ETC] 操作や現象をビデオに撮りたいが，お勧めのツールは？</a></h4>
                             <p class="author-category">
                             
                             日付 2014-01-29
                             </p>
                             <p class="intro">*技術ノート
 2014/01/29*
-[番号] 技術ノート KGTN 2014012301
-[現象] [GGH4.X] クラスタマネージャで Automatically update clients を有効にしているにも関わらず，クライアントのアップグレード （バージョンアップ） が行われない．
-[説明] Windowsクライアントのインストール先がデフォルト値でない場合，アップグレード （バージョンアップ） が行われないという既知の問題があります．Windowsクライアントのアンインストール → Windowsクライアントのインストール （既定値） を行って下さい．
-The automatic client update feature is not supported if the client modifies the client installer to install the client in a location other than the default location. Please install the client in the default client location.  ファイル KGTN2014012301.pdf [(49.3 KB)] [kitasp 技術センター, 2014/01/29 17:08]</p>
+[番号] 技術ノート KGTN 2013112106
+[現象] [ETC] 操作や現象をビデオに撮りたいが，お勧めのツールは？
+[説明] 弊社で主に使用しているソフトウエアは &ldquo;AG-デスクトップレコーダー&rdquo; です．インストールが不要で，下記の設定で利用すれば，比較的高品質なビデオを高圧縮 （ファイルサイズが小さい） で得ることが出来ます．
+http://www.vector.co.jp/magazine/softnews/110608/n1106081.html http://t-ishii.la.coocan.jp/download/AGDRec.html
+ファイル KGTN2013112106.pdf [(112 KB)] [kitasp 技術センター, 2014/01/29 11:32]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc393/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc484/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -520,26 +524,26 @@ The automatic client update feature is not supported if the client modifies the 
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc479/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc458/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc479/">[GGH4.X] クラスタマネージャに登録していないアプリケーションを起動したい．</a></h4>
+                            <h4><a href="/posts/new_md/doc458/">[ETC] 本番運用に向けて負荷試験を行うが，何か注意すべき点はあるか？</a></h4>
                             <p class="author-category">
                             
                             日付 2014-01-29
                             </p>
                             <p class="intro">*技術ノート
 2014/01/29*
-[番号] 技術ノート KGTN 2013112603
-[現象] [GGH4.X] クラスタマネージャに登録していないアプリケーションを起動したい．
-[説明] Windowsクライアントのパラメタ （-a） またはActiveXクライアントのパラメタ （app） で，実行プログラムの絶対パスを指定することで，クラスタマネージャに登録していないアプリケーションを起動することが出来ます．
-例： http://&lt;ウエッブサーバ&gt;/logon.html?user=Test&amp;password=Pass&amp;app=C:AppsTeraPad.exe
-ファイル KGTN2013112603.pdf [(50.2 KB)] [kitasp 技術センター, 2014/01/29 11:55]</p>
+[番号] 技術ノート KGTN 2013120601
+[現象] [ETC] 本番運用に向けて負荷試験を行うが，何か注意すべき点はあるか？
+[説明] 一般に業務レベルでの負荷試験は実施されますが，運用レベルの負荷試験は見落としがちです．例えば，
+ 全サーバーの再起動 全サーバの更新プログラムの適用 全サーバのウイルススキャン 全サーバのアンチウイルスソフトのパターンファイル更新  は，ネットワークやディスク等に大きな負荷が掛かるため，致命的な遅延を引き起こす可能性があります （これらは実際に大規模案件で発生しました） ．このような現象が見られた場合は，サーバを幾つかのグループに分けて，グループ単位でそれらを実施するように運用を見直す必要があります．
+ファイル KGTN2013120601.pdf [(55.7 KB)] [kitasp 技術センター, 2014/01/29 14:00]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc479/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc458/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

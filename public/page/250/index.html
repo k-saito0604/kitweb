@@ -409,27 +409,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1825/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1665/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1825/">クライアントプリンタ機能を利用しているが，クライアント側のプリンタxyzに問題がありPW （プログラムウインドウ） の初期化に失敗しているようだ．何をすべきか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1665/">Program Window の背景色をログオン時に設定したいが，レジストリのどこを変更すれば良いのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-03-17
+                            日付 2010-08-10
                             </p>
                             <p class="intro">*技術ノート
-2010/03/17*
-[番号] 技術ノート KGTN 2010031702
-[現象] クライアントプリンタ機能を利用しているが，クライアント側のプリンタxyzに問題がありPW （プログラムウインドウ） の初期化に失敗しているようだ．何をすべきか？
-[説明] クライアント側のプリンタxyzが構成されないように （クライアントプリンタとして初期化されないように） ，以下の作業を行って下さい．
-クライアント側のプリンタxyz以外のプリンタをデフォルトプリンタとして設定します． クライアント側のプリンタ情報 print.ini を削除します． （GGMInfo.EXEで削除） GGサーバへログオンし，正常にログオン出来ることを確認して下さい．
-この作業後は，クライアント側のプリンタxyzをデフォルトプリンタに設定し，かつその状態でGGサーバへログオンしない限り，正常にログオン出来るようになります．
-ファイル KGTN2010031702.pdf [(51.5 KB)] [kitasp 技術センター, 2010/03/17 13:27]</p>
+2010/08/10*
+[番号] 技術ノート KGTN 2010081003
+[現象] Program Window の背景色をログオン時に設定したいが，レジストリのどこを変更すれば良いのか？
+[説明] 以下のレジストリ （キー） が Program Window の背景色を保持していますので，この値を変更して下さい．
+[HKEY_CURRENT_USER¥Software¥GraphOn¥Bridges¥1.0.0¥ProgramWindow¥Settings¥Standard] &ldquo;LV_ColorBackground&quot;=dword:00804000
+ファイル KGTN2010081003.pdf [(51.5 KB)] [kitasp 技術センター, 2010/08/10 12:25]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1825/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1665/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -448,25 +447,28 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1826/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1667/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1826/">始業時等で発生する同時ログオンは１サーバ当たり何ユーザくらい大丈夫なのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1667/">Windows Server のイメージは，GGサーバとDBサーバで共通にして良いか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-03-17
+                            日付 2010-08-09
                             </p>
                             <p class="intro">*技術ノート
-2010/03/17*
-[番号] 技術ノート KGTN 2010031701
-[現象] 始業時等で発生する同時ログオンは１サーバ当たり何ユーザくらい大丈夫なのか？
-[説明] 弊社および幾つかのユーザ様の負荷試験 （GO-Global for Windows 3.2.1系） では，30ユーザ以上の同時ログオンでも問題なく動作しております．同時ログオンで考えるべきポイントは，
- メモリに余裕があるか （スワップが頻発しないか） ， 2) CPUが過負荷ではないか （プロファイルのロードやログオンスクリプトの実行で負荷が過度に高くなっていないか） ， 3) ネットワーク環境に問題がないか （同時ログオン時に帯域不足やエラーが発生していないか） 等があります．これらは実際の運用環境に依存しますので，本番運用前に負荷試験等を行うようにして下さい．  ファイル KGTN2010031701.pdf [(56.5 KB)] [kitasp 技術センター, 2010/03/17 09:13]</p>
+2010/08/09*
+[番号] 技術ノート KGTN 2010080903
+[現象] Windows Server のイメージは，GGサーバとDBサーバで共通にして良いか？
+[説明] GGサーバとDBサーバはその機能の差異により，プロセッサやメモリの割り当ての戦略が異なりますので，全く同じイメージ共通して使用することは出来ません．Windows Server 2003 では，以下のように異なります．
+[GGサーバ] プロセッサのスケジュール = 「プログラム」 のパフォーマンスを優先 システムメモリの割り当て = 「プログラム」 のパフォーマンスを優先
+[DBサーバ] プロセッサのスケジュール = 「バックグラウンド サービス」 のパフォーマンスを優先 システムメモリの割り当て = 「システム キャッシュ」 のパフォーマンスを優先
+その他，レジストリ中のパフォーマンスチューニング項目もGGサーバとDBサーバでは異なります．
+ファイル KGTN2010080903.pdf [(49.4 KB)] [kitasp 技術センター, 2010/08/09 10:44]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1826/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1667/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,25 +487,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1828/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1666/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1828/">アンチウイルスソフト ○○○ がインストールされたサーバで，特定のアプリケーションが動作しない．</a></h4>
+                            <h4><a href="/posts/new_md/doc1666/">業務アプリでデータファイルを作成し，別のアプリケーションで開こうとすると 「使用中のファイル」 のダイアログが表示されることがある．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-03-16
+                            日付 2010-08-09
                             </p>
                             <p class="intro">*技術ノート
-2010/03/16*
-[番号] 技術ノート KGTN 2010031603
-[現象] アンチウイルスソフト ○○○ がインストールされたサーバで，特定のアプリケーションが動作しない．
-[説明] アンチウイルスソフトもGGもアプリケーションの挙動を監視しておりますので，アンチウイルスソフトの製品によっては，競合等により特定のアプリケーションが動作しない等の問題が発生する可能性もゼロではありません．さらに，アンチウイルスソフトは非常に高頻度でアップデートが行われるため，問題点を特定することは非常に困難です．このようなことから，GG環境で実績のあるアンチウイルスソフトを利用するのが，最善の策だと考えます．実績のあるアンチウイルスソフトの名称等については，代理店 （弊社営業） までお問い合わせ下さい．
-ファイル KGTN2010031603.pdf [(53.8 KB)] [kitasp 技術センター, 2010/03/16 10:40]</p>
+2010/08/09*
+[番号] 技術ノート KGTN 2010072302
+[現象] 業務アプリでデータファイルを作成し，別のアプリケーションで開こうとすると 「使用中のファイル」 のダイアログが表示されることがある．
+[説明] 監査ソフトウエアやアンチウイルスソフトウエアを使用している場合，データファイルが作成された直後にそれらのソフトウエアがファイルをオープンしチェックを行いますので，その処理に時間がかかると別のアプリケーションがファイルを開こうとした時 「使用中のファイル」 のダイアログが表示されることがあります．対応は，1) もう一度別のアプリケーションでファイルを開き直すか， 2) 監査ソフトウエアやアンチウイルスソフトウエアの設定を変更し，データファイルをチェック対象から除外して下さい．
+ファイル KGTN2010072302.pdf [(52.1 KB)] [kitasp 技術センター, 2010/08/09 11:29]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1828/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1666/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -522,25 +524,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1827/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1670/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1827/">ファイアウォール機能を持つアンチウイルスソフトがインストールされたサーバで，GGをバージョンをアップしたところクライアントから接続出来なくなった．</a></h4>
+                            <h4><a href="/posts/new_md/doc1670/">Ver3.2系のクライアントドライブ機能で，クライアント側へのコピーで，警告メッセージ等が表示される場合はあるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-03-16
+                            日付 2010-08-08
                             </p>
                             <p class="intro">*技術ノート
-2010/03/16*
-[番号] 技術ノート KGTN 2010031602
-[現象] ファイアウォール機能を持つアンチウイルスソフトがインストールされたサーバで，GGをバージョンをアップしたところクライアントから接続出来なくなった．
-[説明] ファイアウォール機能を持つアンチウイルスソフトは， （一部例外があるかもしれませんが） インストール時に外部からの接続を許可するプログラム （サービス） を指定するようになっております．GGをバージョンアップした場合，プログラムが新しくなりますので 「許可したプログラム以外」 と判断され，外部からの接続が拒絶されることが考えられます．アンチウイルスソフトの設定を変更して，バージョンアップしたGGへの接続を許可するか，またはアンチウイルスソフトを一旦アンインストールして，さらに改めてインストールして下さい．
-ファイル KGTN2010031602.pdf [(49.6 KB)] [kitasp 技術センター, 2010/03/16 13:29]</p>
+2010/08/08*
+[番号] 技術ノート KGTN 2010080902
+[現象] Ver3.2系のクライアントドライブ機能で，クライアント側へのコピーで，警告メッセージ等が表示される場合はあるのか？
+[説明] 3.2.1 Patch4 (4466) およびそれ以降では，ファイルの上書き時に 「ファイルの上書きの確認」 ダイアログが表示されますが，それ以前のVer3.2系および他の条件 （アクセス権限が無い等） では，警告メッセージ等は表示されません．
+備　考 アーキテクチャが変更されたVer4.0系のクライアントドライブ機能では，「ファイルの上書きの確認」 ダイアログ以外のメッセージも表示されます．
+ファイル KGTN2010080902.pdf [(50.6 KB)] [kitasp 技術センター, 2010/08/09 08:44]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1827/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1670/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

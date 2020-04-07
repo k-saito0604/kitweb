@@ -409,26 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1842/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1685/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1842/">GGのバージョンを3.1.1系から3.2.1系に上げたところ，ActiveXクライアントでバージョン不一致のエラーが表示される．</a></h4>
+                            <h4><a href="/posts/new_md/doc1685/">Ver4.0系を Windows 7 (x86) にインストールしたところ，APS が正常に起動しない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-03-04
+                            日付 2010-07-27
                             </p>
                             <p class="intro">*技術ノート
-2010/03/04*
-[番号] 技術ノート KGTN 2010030404
-[現象] GGのバージョンを3.1.1系から3.2.1系に上げたところ，ActiveXクライアントでバージョン不一致のエラーが表示される．
-[説明] ログオンに使用するGGのウエッブサイトの設定が正しければ，新しいActiveXクライアントがダウンロードされ，自動的に3.2.1系のActiveXクライアントにバージョンアップされます．バージョンアップされない場合は，アクセス中のlooseactivexlogon.html のソースコードを確認して下さい．OBJECTタグの中のCODEBASEの値が下記のように 3,2,1,???? となっているのが正しい状態で，もし3,1,1,???? となっている場合はログオンに使用するウエッブサイトが別に管理 （設定） されていますので，そちらのファイルを3.2.1系のものにアップデートして下さい．
-3,2,1,???? となっているにもかかわらずActiveXクライアントがバージョンアップされない場合は，ログオン時のクライアント側のユーザの権限が不足していることが考えられます．この場合は，一旦 Administrator でログオンして，ActiveXクライアントのバージョンアップを行って下さい．これでもActiveXクライアントのバージョンアップが正常に行われない場合は，ActiveX を管理するフォルダ （Downloaded Program Files フォルダ） で不整合等が発生していると思われますので，弊社のメンテナンスツールGGMInfo.EXE で強制的に古いActiveXクライアントを削除して下さい．この後に改めてログオンすることで，新しいActiveXクライアントがダウンロードされるようになります．
-ファイル KGTN2010030404.pdf [(71.1 KB)] [kitasp 技術センター, 2010/03/04 14:34]</p>
+2010/07/27*
+[番号] 技術ノート KGTN 2010072801
+[現象] Ver4.0系を Windows 7 (x86) にインストールしたところ，APS が正常に起動しない．
+[説明] Ver4.0系がサポートする Windows 7 は 64ビット (x64) 環境のみです．従って，問題は 「APS が正常に起動しない」 ことではなく， 「Windows 7 の32ビット (x32) 環境にインストール出来てしまう」 ことです．本件は，既にGraphOn社へ報告しており，将来のリリースで改善される予定です．
+ファイル KGTN2010072801.pdf [(47.6 KB)] [kitasp 技術センター, 2010/07/28 08:20]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1842/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1685/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -447,25 +446,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1843/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1690/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1843/">Microsoft Office 2007 の動作状況は？</a></h4>
+                            <h4><a href="/posts/new_md/doc1690/">Ver4.0系では，Universal Printer Driver (UPD) のエンジンとして， PDF-Xchange を使用しているのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-03-04
+                            日付 2010-07-26
                             </p>
                             <p class="intro">*技術ノート
-2010/03/04*
-[番号] 技術ノート KGTN 2010030403
-[現象] Microsoft Office 2007 の動作状況は？
-[説明] Microsoft Office 2007 は統合製品であり，かつそれを構成する単体製品 （ワードやエクセルなど） も非常に高機能であるため，単純に 「Microsoft Office 2007 はGG上で動作します」 と言うことは技術的に困難です．現実的なコメントとしては，GraphOn社のオンラインデモサイトでこれらの製品が実際に動作しており，弊社の技術的な実験でも正常に起動しかつ特に不都合なく利用出来ております．
-ファイル KGTN2010030403.pdf [(173 KB)] [kitasp 技術センター, 2010/03/04 13:13]</p>
+2010/07/26*
+[番号] 技術ノート KGTN 2010072601
+[現象] Ver4.0系では，Universal Printer Driver (UPD) のエンジンとして， PDF-Xchange を使用しているのか？
+[説明] いいえ，Ver4.0系では Adobe PDF Library を使用しています．プリンタとして &ldquo;Preview PDF&rdquo; を選択すると，クライアント上でPDFが表示されますので，そこで印刷を行うことでプリンタのオプション機器 （設定） 等を指定することが可能になりました．Ver3.2系で Cache client printers をご利用の場合は，この機能を利用することで対応して下さい．
+ファイル KGTN2010072601.pdf [(52.1 KB)] [kitasp 技術センター, 2010/07/26 14:13]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1843/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1690/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -484,28 +483,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1847/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1689/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1847/">GGのウエッブサーバとしてApacheを利用する場合の注意点は？</a></h4>
+                            <h4><a href="/posts/new_md/doc1689/">Ver4.0系のアドオン GO‐Global Portal は，どのような方式でロードバランス機能を実装しているのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-03-03
+                            日付 2010-07-26
                             </p>
                             <p class="intro">*技術ノート
-2010/03/03*
-[番号] 技術ノート KGTN 2010030302
-[現象] GGのウエッブサーバとしてApacheを利用する場合の注意点は？
-[説明] Apacheの設定ファイル httpd.conf の中のDocumentRoot とDirectoryIndex を設定すれば，GG標準のログオン画面が表示されるようになります．設定の内容は以下の通りで，DocumentRoot でGGのWebフォルダを指定し，DirectoryIndex でデフォルトのドキュメントをlogon.html にします．
-DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Global Server/Web&rdquo; DirectoryIndex &ldquo;logon.html&rdquo;
-その他については，Apache の一般的な設定ですので，Apache のドキュメント等をご覧下さい．
-参　考 Apache （Apache HTTP Server） は実績もあり非常に良いウエッブサーバですが，脆弱性が発見された場合，それを修正するには &ldquo;Apache HTTP サーバプロジェクト&rdquo; が提供するパッチ等を入手し適用する必要があります．IIS （Internet Information Server） の場合は Windows Update を適用するだけで自動的に修正されますので，メンテナンスの観点からは IIS の方が手間がかからず便利です．
-ファイル KGTN2010030302.pdf [(65.7 KB)] [kitasp 技術センター, 2010/03/03 12:17]</p>
+2010/07/26*
+[番号] 技術ノート KGTN 2010072701
+[現象] Ver4.0系のアドオン GO‐Global Portal は，どのような方式でロードバランス機能を実装しているのか？
+[説明] GO‐Global Portal は未だリリースされておりませんので詳細は分かりませんが，GGサーバの設定項目にサーバ・セッション・メモリ・プロセッサの重み付けの項目が追加されていますので，Ver3.2系までのリレーサーバとは異なり柔軟なサーバ選択が可能だと思われます．
+100100100100ファイル KGTN2010072701.pdf [(57.4 KB)] [kitasp 技術センター, 2010/07/27 08:19]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1847/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1689/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -524,25 +520,25 @@ DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Glob
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1852/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1692/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1852/">GGがサポートしているSSLサーバ証明書は？</a></h4>
+                            <h4><a href="/posts/new_md/doc1692/">GGサーバのC:ドライブのディスク容量は，どれくらいにすべきか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-03-02
+                            日付 2010-07-23
                             </p>
                             <p class="intro">*技術ノート
-2010/03/02*
-[番号] 技術ノート KGTN 2010030201
-[現象] GGがサポートしているSSLサーバ証明書は？
-[説明] GGのSSL機能は，暗号化および証明書生成のツールとしてデファクトスタンダードな OpenSSL ツールキットを使用して実装されています．個別の認証局およびSSLサーバ証明書に関する情報は弊社では分かりかねますが，敢えて言えば Apache + mod_ssl （OpenSSLを使用） に対応したSSLサーバ証明書であれば正しく動作する可能性が高いと考えられます．詳細については，各認証局へお問い合わせ下さい．
-ファイル KGTN2010030201.pdf [(51.3 KB)] [kitasp 技術センター, 2010/03/02 09:05]</p>
+2010/07/23*
+[番号] 技術ノート KGTN 2010072301
+[現象] GGサーバのC:ドライブのディスク容量は，どれくらいにすべきか？
+[説明] 弊社の標準環境では Windows Server 2003 のC:ドライブに24GB割り当てております．大規模案件の事例では，コストの問題 （FCディスクを使用） 等から24GBより若干少ない容量を割り当てています （ログレベルは4を設定） ．従って，標準的な利用では24GB〜32GBあれば十分だと思われますが，しかし安定運用を考えるならば，この容量の1.5〜2倍の容量を割り当てて下さい．大規模案件の事例では，アンチウイルスソフトの頻繁なアップデートファイルのダウンロード＆インストール等でディスクの断片化が進み，パフォーマンスに影響を与えるようになりました．想定される容量の1.5〜2倍を割り当てておけば，デフラグ処理等も含めパフォーマンスの低下を低く抑えることが出来ます．
+ファイル KGTN2010072301.pdf [(58.3 KB)] [kitasp 技術センター, 2010/07/23 14:02]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1852/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1692/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

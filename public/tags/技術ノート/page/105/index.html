@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc223/">
+                                      <a href="/posts/new_md/doc158/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc223/">[GGH4.X] クライアント印刷機能のプロキシプリンタの名称をカスタマイズしたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc158/">[Windows] Windows Server 2003 のサーバーをリプレイスするが，新サーバーへプリンタードライバーを移す方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,20 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc223/"><i class="far fa-calendar"></i> 2014-06-28</a>
+                                            <a href="/posts/new_md/doc158/"><i class="far fa-calendar"></i> 2014-11-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/06/28*
-[番号] 技術ノート KGTN 2014062303
-[現象] [GGH4.X] クライアント印刷機能のプロキシプリンタの名称をカスタマイズしたい．
-[説明] 既定の設定では，クライアント印刷機能のプロキシプリンタの名称は (from が設定されます．この接尾辞は，以下のレジストリの値 （文字列） を変更することで，カスタマイズすることが出来ます．
-HKLMSoftwareGraphOnGO-GlobalAppServerPrinterNameFormat
-指定する文字列には以下の特殊文字を入力することで，ユーザ名等を設定することが出来ます．
- %U ユーザ名 例：Administrator %I クライアントのIPアドレス 例：192.168.102.11 %M クライアントの一意的なID (GUID) 例：800fb6b5770-ed9e-11df-82ae-000874b1cdb1 %C クライアントのコンピュータ名 例：GG-Client01 %S セッションID 例：3
- ファイル KGTN2014062303.pdf [(93.9 KB)] [kitasp 技術センター, 2014/06/28 11:51]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc223/" class="btn btn-template-main">続きを読む</a>
+2014/11/21*
+[番号] 技術ノート KGTN 2014112101
+[現象] [Windows] Windows Server 2003 のサーバーをリプレイスするが，新サーバーへプリンタードライバーを移す方法は？
+[説明] Microsoft Print Migrator 3.1 （以下 MPM と省略） を入手し，以下の手順で作業を行って下さい．
+ 現サーバー上で MPM を起動し Actions → Backup でプリンタードライバー等をバックアップする． 生成された CAB ファイルを新サーバーへコピーする． 新サーバー上で MPM を起動し Actions → Restore でプリンタードライバー等をリストアする． ※リストア時に上記２の CAB ファイルを指定する．  ファイル KGTN2014112101.pdf [(59.5 KB)] [kitasp 技術センター, 2014/11/21 16:42]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc158/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -363,7 +360,7 @@ HKLMSoftwareGraphOnGO-GlobalAppServerPrinterNameFormat
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc224/">
+                                      <a href="/posts/new_md/doc168/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -371,7 +368,7 @@ HKLMSoftwareGraphOnGO-GlobalAppServerPrinterNameFormat
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc224/">[GGH4.X] クライアント印刷機能を利用する場合，サーバ側の設定は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc168/">[GGH4.X] Windowsクライアントを使用しているが，拡張パックの pdfprint.exe (GGPdfPrint) をインストールする手順は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -384,19 +381,19 @@ HKLMSoftwareGraphOnGO-GlobalAppServerPrinterNameFormat
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc224/"><i class="far fa-calendar"></i> 2014-06-28</a>
+                                            <a href="/posts/new_md/doc168/"><i class="far fa-calendar"></i> 2014-11-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/06/28*
-[番号] 技術ノート KGTN 2014062302
-[現象] [GGH4.X] クライアント印刷機能を利用する場合，サーバ側の設定は？
-[説明] クライアント印刷機能を有効にするのは，クラスタマネージャで以下の項目を設定する必要があります．
-Host Options → Client Access → Printers → Universal Printer Driver ユニバーサル・プリンタドライバを使用する場合 → Windows Printer Drivers Windowsプリンタドライバを使用する場合
-なお，設定項目 Automatically install drivers は，Windowsに標準添付されたプリンタドライバを自動インストールする機能ですので，通常は有効にする必要はありません．
-ファイル KGTN2014062302.pdf [(81.1 KB)] [kitasp 技術センター, 2014/06/28 11:47]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc224/" class="btn btn-template-main">続きを読む</a>
+2014/11/14*
+[番号] 技術ノート KGTN 2014111401
+[現象] [GGH4.X] Windowsクライアントを使用しているが，拡張パックの pdfprint.exe (GGPdfPrint) をインストールする手順は？
+[説明] サーバー側とクライアント側，それぞれで作業を行って頂く必要があります．先ず，拡張パックのActiveXクライアント gg-activex.cab をダブルクリックし， pdfprint.exe と pdfprint.ini を選択し，それを作業フォルダへコピー （ドラッグ＆ドロップ） して下さい．
+[サーバー側] &lt;GGのインストールフォルダ&gt;UpdatesWindows に pdfprint.exe と pdfprint.ini を上書きコピーして下さい．この作業は，GGの再インストールやアップグレードを行った時も必ず行って下さい．この作業が行われない場合は，GGのクライアント自動更新機能により標準の pdfprint.exe に戻ることになります．
+[クライアント側] &lt;GGクライアントのインストールフォルダ&gt;Client に pdfprint.exe と pdfprint.ini を上書きコピーして下さい．この作業は，GGの再インストールやアップグレードを行った時も原則として行って下さい （注： GGのクライアント自動更新機能でインストールすることも出来ますが，少なくとも再インストールの直後は標準の pdfprint.exe に戻ります） ．
+ファイル KGTN2014111401.pdf [(58.5 KB)] [kitasp 技術センター, 2014/11/14 16:20]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc168/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -406,7 +403,7 @@ Host Options → Client Access → Printers → Universal Printer Driver ユニ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc220/">
+                                      <a href="/posts/new_md/doc169/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -414,7 +411,7 @@ Host Options → Client Access → Printers → Universal Printer Driver ユニ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc220/">[GGH4.X] ワコムタブレット Intuos は， 仮想USB機能等を利用してサーバ上のアプリケーションから利用できるか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc169/">[GGH4.X] 標準のActiveXクライアントから拡張パックのActiveXクライアントへ切り替える手順は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -427,17 +424,20 @@ Host Options → Client Access → Printers → Universal Printer Driver ユニ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc220/"><i class="far fa-calendar"></i> 2014-06-28</a>
+                                            <a href="/posts/new_md/doc169/"><i class="far fa-calendar"></i> 2014-11-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/06/28*
-[番号] 技術ノート KGTN 2014062603
-[現象] [GGH4.X] ワコムタブレット Intuos は， 仮想USB機能等を利用してサーバ上のアプリケーションから利用できるか？
-[説明] ワコムタブレット Intuos のサポートソフトウエアは，デスクトップ （Win32サブシステム） を通してタブレット機能を提供しますので，GGが動作する （別の） Win32サブシステムからそれらの情報を利用することは出来ません．
-ファイル KGTN2014062603.pdf [(45.6 KB)] [kitasp 技術センター, 2014/06/28 12:01]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc220/" class="btn btn-template-main">続きを読む</a>
+2014/11/14*
+[番号] 技術ノート KGTN 2014111301
+[現象] [GGH4.X] 標準のActiveXクライアントから拡張パックのActiveXクライアントへ切り替える手順は？
+[説明] サーバー側とクライアント側，それぞれで作業を行って頂く必要があります．
+[サーバー側] 標準のActiveXクライアント &lt;GGのインストールフォルダ&gt;Webpluginsgg-activex.cab を，拡張パックのActiveXクライアントで置き換えて下さい．GGサーバーとログオン用ウエッブサーバーを分離している場合は，ログオン用ウエッブサーバー上の標準のActiveXクライアントを置き換えて下さい．
+[クライアント側] IE のインターネットオプションで標準のActiveXクライアントを削除して下さい．
+ [ツール] → [インターネットオプション] → [プログラム] → [アドオンの管理] [表示] を &ldquo;すべてのアドオン&rdquo; に設定 [名前] の中の &ldquo;GO-Global 4&rdquo; をダブルクリック [削除] をクリック &ldquo;ユーザーアカウント制御&rdquo; のダイアログで [はい] をクリック &ldquo;詳細情報&rdquo; のダイアログで [閉じる] をクリック &ldquo;アドオンの管理&rdquo; のダイアログで [閉じる] をクリック &ldquo;インターネットオプション&rdquo; のダイアログで [OK] をクリック  この後に一旦 IE を閉じて，通常のログオンの手順で操作を行って下さい．拡張パックのActiveXクライアントのダウンロードとインストールが行われます．上記４で削除ボタンをクリックすることが出来ない場合は， IE を閉じて GGAXDelete4G （ActiveXクライアントの削除ツール） を使って，ActiveXクライアントを削除して下さい．
+ファイル KGTN2014111301.pdf [(63.6 KB)] [kitasp 技術センター, 2014/11/14 16:16]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc169/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -447,7 +447,7 @@ Host Options → Client Access → Printers → Universal Printer Driver ユニ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc221/">
+                                      <a href="/posts/new_md/doc2602/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -455,7 +455,7 @@ Host Options → Client Access → Printers → Universal Printer Driver ユニ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc221/">[GGH4.X] ワコムタブレット Intuos は，クライアント側で使用できるか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2602/">[GGH4.X-5.X] APSログとは，どのような情報を記録したログなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -468,17 +468,17 @@ Host Options → Client Access → Printers → Universal Printer Driver ユニ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc221/"><i class="far fa-calendar"></i> 2014-06-28</a>
+                                            <a href="/posts/new_md/doc2602/"><i class="far fa-calendar"></i> 2014-11-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/06/28*
-[番号] 技術ノート KGTN 2014062602
-[現象] [GGH4.X] ワコムタブレット Intuos は，クライアント側で使用できるか？
-[説明] ワコムタブレット Intuos をクライアント側のUSBポートに接続した場合，タブレット機能 （ペン） およびタッチパネル機能ともに利用することが出来ます．GGクライアント～サーバ間はマウス情報としてデータの受け渡しが行われますので，ペンの筆圧等の情報は無視されます．
-ファイル KGTN2014062602.pdf [(47.5 KB)] [kitasp 技術センター, 2014/06/28 11:59]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc221/" class="btn btn-template-main">続きを読む</a>
+2014/11/09*
+[番号] 技術ノート KGTN 2014102703
+[現象] [GGH4.X-5.X] APSログとは，どのような情報を記録したログなのか？
+[説明] APSログは Application Publishing Service （アプリケーション配信サービス） のログで，レベル４を指定することで，セッションが突然切断された等の障害を解析する時に必要となる情報 （環境情報・システム情報・セッション情報など） が記録されております．この情報は主にGraphOn社および弊社が利用することを前提としており，サポート依頼時には障害発生時を含むAPSログ （ファイル） を必ずお送りください．なお，APSログは，標準設定でフォルダ &lt;GGのインストールフォルダー&gt;Log に作成されます．
+ファイル KGTN2014102703.pdf [(67.1 KB)] [kitasp 技術センター, 2016/04/08 17:16]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2602/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -488,7 +488,7 @@ Host Options → Client Access → Printers → Universal Printer Driver ユニ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc230/">
+                                      <a href="/posts/new_md/doc173/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -496,7 +496,7 @@ Host Options → Client Access → Printers → Universal Printer Driver ユニ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc230/">[GGH4.X] Printers ダイアログにある各ボタンの機能は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc173/">[GGH4.X] GGのセッションは SSL 3.0 の脆弱性 「POODLE」 の影響はあるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -509,24 +509,17 @@ Host Options → Client Access → Printers → Universal Printer Driver ユニ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc230/"><i class="far fa-calendar"></i> 2014-06-20</a>
+                                            <a href="/posts/new_md/doc173/"><i class="far fa-calendar"></i> 2014-11-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/06/20*
-[番号] 技術ノート KGTN 2014062007
-[現象] [GGH4.X] Printers ダイアログにある各ボタンの機能は？
-[説明] Printers ダイアログにある各ボタンの機能は，以下の通りです．
-Add ボタン クライアント側のプリンタをGG上で使用する場合，このボタンをクリックしプリンタを追加します．なお，クライアント上の既定のプリンタ （通常使うプリンタ） は，ログオン時に自動的に追加されます．
-Remove ボタン GG上で使わないプリンタがある場合，そのプリンタを選択しこのボタンをクリックします．この操作によりGG上に削除情報が記録され，以後 Printers ダイアログに表示されなくなります．
-Edit ボタン プリンタの既定のレイアウトや用紙/品質を設定する場合，プリンタを選択しこのボタンをクリックします．
-Test Page ボタン テストページ印刷をしたい場合，プリンタを選択しこのボタンをクリックします．
-Set Default ボタン 既定のプリンタ （通常使うプリンタ） を変更する場合，新しい既定のプリンタを選択しこのボタンをクリックします．
-Driver&hellip; ボタン プリンタのドライバの種類 （ユニバーサル・プリンタドライバとWindowsプリンタドライバ） を変更する場合，プリンタを選択しこのボタンをクリックします．
-Reset Printers ボタン プリンタの追加削除および編集情報 （プリンタの既定のレイアウトや用紙/品質の設定） をリセットし，初期状態に戻す時にクリックします．
-ファイル KGTN2014062007.pdf [(78.5 KB)] [kitasp 技術センター, 2014/06/20 17:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc230/" class="btn btn-template-main">続きを読む</a>
+2014/11/09*
+[番号] 技術ノート KGTN 2014110401
+[現象] [GGH4.X] GGのセッションは SSL 3.0 の脆弱性 「POODLE」 の影響はあるのか？
+[説明] GGのセッションは SSL 2.0 を使用しておりますので，脆弱性 POODLE （Padding Oracle On Downgraded Legacy Encryption） の影響はありません．なお，GGのVer.5から TLS 1.2 がサポートされる見込みです．
+ファイル KGTN2014110401.pdf [(46.4 KB)] [kitasp 技術センター, 2014/11/09 16:30]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc173/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -536,7 +529,7 @@ Reset Printers ボタン プリンタの追加削除および編集情報 （プ
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc233/">
+                                      <a href="/posts/new_md/doc174/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -544,7 +537,7 @@ Reset Printers ボタン プリンタの追加削除および編集情報 （プ
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc233/">[GGH4.X] クライアント印刷機能でクライアント側のプリンタのドライバの種類を変更したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc174/">[GGH4.X] IE8 でActiveXクライアントを使用する場合の操作 （ダウンロード関連） は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -557,18 +550,21 @@ Reset Printers ボタン プリンタの追加削除および編集情報 （プ
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc233/"><i class="far fa-calendar"></i> 2014-06-20</a>
+                                            <a href="/posts/new_md/doc174/"><i class="far fa-calendar"></i> 2014-11-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/06/20*
-[番号] 技術ノート KGTN 2014062004
-[現象] [GGH4.X] クライアント印刷機能でクライアント側のプリンタのドライバの種類を変更したい．
-[説明] クライアント側のプリンタのドライバを変更する場合は，以下の手順で行います．
- Printers ダイアログでドライバを変更したいプリンタを選択する． Driver&hellip; ボタンをクリックする． Select Printer Driver ダイアログで設定したいプリンタドライバの種類をクリックする． ・ユニバーサル・プリンタドライバに変更したい → Universal Printer Driver を選択 ・Windowsプリンタドライバに変更したい → 下段のラジオボタンを選択およびコンボボックスの▼を クリックしドライバを選択 OK ボタンをクリックする．  なお，Windowsプリンタドライバに変更したい時，コンボボックスに適切なプリンタドライバが表示されない場合は，管理者に連絡しそのプリンタドライバのインストールを依頼して下さい．
-ファイル KGTN2014062004.pdf [(56.9 KB)] [kitasp 技術センター, 2014/06/20 17:24]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc233/" class="btn btn-template-main">続きを読む</a>
+2014/11/09*
+[番号] 技術ノート KGTN 2014102801
+[現象] [GGH4.X] IE8 でActiveXクライアントを使用する場合の操作 （ダウンロード関連） は？
+[説明] １．GGのウエッブサーバにアクセスし， 「&lsquo;GO-Global&rsquo; アドオンをインストールしようとしています」 というメッセージが表示されたら，そのメッセージの領域 （黄色い部分） をクリックします．
+２．「このコンピューター上のすべてのユーザーにこのアドオンをインストールする」 というメッセージが表示されたら，そのメッセージの部分をクリックします．
+３．プログラム名 GO-Global の 「ユーザー アカウント制御」 のダイアログが表示されたら， 「はい」 をクリックします．
+４．名前 GO-Global の 「Internet Explorer セキュリティ」 のダイアログが表示されたら， 「許可する」 をクリックします．
+５．GGのActiveXクライアントがダウンロードされ起動されると，下記のようにGGのログオンダイアログが表示されます．
+ファイル KGTN2014102801.pdf [(191 KB)] [kitasp 技術センター, 2014/11/09 16:15]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc174/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -578,7 +574,7 @@ Reset Printers ボタン プリンタの追加削除および編集情報 （プ
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc231/">
+                                      <a href="/posts/new_md/doc176/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -586,7 +582,7 @@ Reset Printers ボタン プリンタの追加削除および編集情報 （プ
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc231/">[GGH4.X] クライアント印刷機能でプリンタを削除 （Remove） したところ，それ以降ログオン時に Printers ダイアログにそのプリンタが現れなくなった．</a></h2>
+                                    <h2><a href="/posts/new_md/doc176/">[GGH4.X] IE8 ～ IE11 でActiveXクライアントを使用する場合の 「インターネット オプション」 の設定は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -599,17 +595,21 @@ Reset Printers ボタン プリンタの追加削除および編集情報 （プ
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc231/"><i class="far fa-calendar"></i> 2014-06-20</a>
+                                            <a href="/posts/new_md/doc176/"><i class="far fa-calendar"></i> 2014-11-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/06/20*
-[番号] 技術ノート KGTN 2014062006
-[現象] [GGH4.X] クライアント印刷機能でプリンタを削除 （Remove） したところ，それ以降ログオン時に Printers ダイアログにそのプリンタが現れなくなった．
-[説明] クライアント印刷機能でプリンタを削除 （Remove） すると，その情報がプリンタ情報として記録され，以後ログオン時に Printers ダイアログにそのプリンタが現れなくなります．このような場合は，以下の手順で初期状態に戻すことが出来ます．
- Printers ダイアログの Reset Printers ボタンをクリックする． セッションを終了させる （サインオフ） ．  ファイル KGTN2014062006.pdf [(55.7 KB)] [kitasp 技術センター, 2014/06/20 17:29]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc231/" class="btn btn-template-main">続きを読む</a>
+2014/11/09*
+[番号] 技術ノート KGTN 2014102701
+[現象] [GGH4.X] IE8 ～ IE11 でActiveXクライアントを使用する場合の 「インターネット オプション」 の設定は？
+[説明] IE のバージョンにより画面の内容が若干異なりますが，以下の内容を参考に設定を行って下さい．
+１．インターネットオプションを開きます．
+２．インターネットゾーンのセキュリティのレベルを 「中高」 に設定します．
+必要に応じて 「レベルのカスタマイズ」 ボタンをクリックして，下記赤枠の通りに設定されているかどうか確認してください．
+３．インターネットゾーンのプライバシーを「中」に設定します．
+ファイル KGTN2014102701.pdf [(522 KB)] [kitasp 技術センター, 2014/11/09 16:09]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc176/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -619,7 +619,7 @@ Reset Printers ボタン プリンタの追加削除および編集情報 （プ
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc232/">
+                                      <a href="/posts/new_md/doc175/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -627,7 +627,7 @@ Reset Printers ボタン プリンタの追加削除および編集情報 （プ
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc232/">[GGH4.X] クライアント印刷機能で既定のプリンタ （通常使うプリンタ） を変更したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc175/">[GGH4.X] IE9 ～ IE11 でActiveXクライアントを使用する場合の操作 （ダウンロード関連） は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -640,18 +640,21 @@ Reset Printers ボタン プリンタの追加削除および編集情報 （プ
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc232/"><i class="far fa-calendar"></i> 2014-06-20</a>
+                                            <a href="/posts/new_md/doc175/"><i class="far fa-calendar"></i> 2014-11-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/06/20*
-[番号] 技術ノート KGTN 2014062005
-[現象] [GGH4.X] クライアント印刷機能で既定のプリンタ （通常使うプリンタ） を変更したい．
-[説明] クライアント印刷機能で既定のプリンタ （通常使うプリンタ） を変更する場合は，以下の手順で行います．
- Printers ダイアログで既定のプリンタにしたいプリンタを選択する． Set Default ボタンをクリックする．  なお，本操作によってクライアント側のプリンタフォルダの既定のプリンタが変更されることはありません．
-ファイル KGTN2014062005.pdf [(55 KB)] [kitasp 技術センター, 2014/06/20 17:26]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc232/" class="btn btn-template-main">続きを読む</a>
+2014/11/09*
+[番号] 技術ノート KGTN 2014102702
+[現象] [GGH4.X] IE9 ～ IE11 でActiveXクライアントを使用する場合の操作 （ダウンロード関連） は？
+[説明] IE のバージョンにより画面の内容が若干異なりますが，以下の内容を参考に操作を行って下さい．
+１．GGのウエッブサーバにアクセスし， 「アドオン &lsquo;GO-Global&rsquo; をインストールしようとしています」 というメッセージが表示されたら 「インストール」 をクリックします．
+２．プログラム名 GO-Global の 「ユーザー アカウント制御」 のダイアログが表示されたら， 「はい」 をクリックします．
+３．名前 GO-Global の 「Internet Explorer セキュリティ」 のダイアログが表示されたら， 「許可する」 をクリックします．
+４．GGのActiveXクライアントがダウンロードされ起動されると，下記のようにGGのログオンダイアログが表示されます．
+ファイル KGTN2014102702.pdf [(146 KB)] [kitasp 技術センター, 2014/11/09 16:11]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc175/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -661,7 +664,7 @@ Reset Printers ボタン プリンタの追加削除および編集情報 （プ
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc235/">
+                                      <a href="/posts/new_md/doc146/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -669,7 +672,7 @@ Reset Printers ボタン プリンタの追加削除および編集情報 （プ
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc235/">[GGH4.X] クライアント印刷機能の Printers ダイアログ （Printers Applet） に表示されている内容の意味は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc146/">[GGH4.X] 拡張パックの pdfprint.exe (GGPdfPrint) とはどんなツールなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -682,18 +685,27 @@ Reset Printers ボタン プリンタの追加削除および編集情報 （プ
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc235/"><i class="far fa-calendar"></i> 2014-06-20</a>
+                                            <a href="/posts/new_md/doc146/"><i class="far fa-calendar"></i> 2014-11-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/06/20*
-[番号] 技術ノート KGTN 2014062002
-[現象] [GGH4.X] クライアント印刷機能の Printers ダイアログ （Printers Applet） に表示されている内容の意味は？
-[説明] Printer の列は利用可能なプリンタの名称です．プリンタの名称に括弧が付いていないプリンタはサーバ側のプリンタで，括弧が付いているプリンタはクライアント側のプリンタです （括弧の中の文字列はクライアントのコンピュータ名です） ． Driver の列はそのプリンタに設定されているプリンタドライバの種類です． Universal Remote Printer の場合は，ユニバーサル・プリンタドライバが設定されています．それ以外の場合は，表示されている文字列のWindowsプリンタドライバが設定されています．
-下記の例では Canon LBP5960 はクライアント側のプリンタで，ユニバーサル・プリンタドライバが設定されています． DocuCentre-IV C4475 はサーバ側とクライアント側にそれぞれプリンタが存在し，サーバ側はWindowsプリンタドライバ （FX DocuCentre-IV C4475 用のドライバ） ，クライアント側はユニバーサル・プリンタドライバが設定されています．なお，既定のプリンタは，クライアント側のDocuCentre-IV C4475 です．
-ファイル KGTN2014062002.pdf [(64 KB)] [kitasp 技術センター, 2014/06/20 17:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc235/" class="btn btn-template-main">続きを読む</a>
+2014/11/09*
+[番号] 技術ノート KGTN 2014103101
+[現象] [GGH4.X] 拡張パックの pdfprint.exe (GGPdfPrint) とはどんなツールなのか？
+[説明] UPDで生成されたPDFファイルは，クライアント側の pdfprint.exe でプリンターへ出力 （印刷） されます．GGに添付される pdfprint.exe はVeryPDF社の製品で，プリンターへ出力するという標準的な機能のみを提供します．弊社開発の pdfprint.exe (GGPdfPrint) は Adobe Reader を印刷エンジンとして使用し，GGの利用環境を意識した柔軟な機能を提供します．また，カラー/白黒・両面印刷等の設定は，クライアント側のプリンターの設定値がそのまま適用されます．
+pdfprint.exe (GGPdfPrint) の動作は設定ファイル pdfprint.ini の内容によって決まりますが，この設定ファイルを各ユーザーの　&ldquo;マイ ドキュメント&rdquo;　にコピーし修正することで，ユーザー毎に異なる動作をさせることが可能です （注：マイドキュメントに設定ファイルが無い場合は， pdfprint.exe と同じフォルダーにある設定ファイルが使用されます） ．設定ファイルの内容は，以下の通りです．
+2014年11月現在，標準の設定 （viewerPath とviewerArg2） で動作を確認しているプログラムは Adobe Reader XI です． Adobe Reader の動作状況 （起動・印刷・終了） の認識は，プログラムの動作に強く依存しておりますので，他バージョンでの動作は保証することが出来ません．
+設定ファイル 設定ファイル pdfprint.ini の default セクションで，以下のパラメーターを設定して下さい．
+設定項目
+説明
+logLevel
+ログの出力レベル （通常は0で，障害の調査時は4を指定）
+workTime
+印刷処理のタイムアウト時間 （既定値は60秒） ※タイムアウト発生時に延長確認のダイアログが表示されます．
+viewerPath
+Adobe Reader の本体のフルパス （既定値は &ldquo;.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc146/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -703,7 +715,7 @@ Reset Printers ボタン プリンタの追加削除および編集情報 （プ
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc234/">
+                                      <a href="/posts/new_md/doc186/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -711,7 +723,7 @@ Reset Printers ボタン プリンタの追加削除および編集情報 （プ
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc234/">[GGH4.X] クライアント印刷機能の Printers ダイアログ （Printers Applet） に表示されないプリンタがある．</a></h2>
+                                    <h2><a href="/posts/new_md/doc186/">[GGH4.X] Android クライアントで，クライアントのサウンド機能を実装する予定は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -724,17 +736,17 @@ Reset Printers ボタン プリンタの追加削除および編集情報 （プ
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc234/"><i class="far fa-calendar"></i> 2014-06-20</a>
+                                            <a href="/posts/new_md/doc186/"><i class="far fa-calendar"></i> 2014-10-24</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2014/06/20*
-[番号] 技術ノート KGTN 2014062003
-[現象] [GGH4.X] クライアント印刷機能の Printers ダイアログ （Printers Applet） に表示されないプリンタがある．
-[説明] 既定の設定では，サーバ側のプリンタとクライアント側の既定のプリンタ （通常使うプリンタ） のみが表示されます．クライアント側の既定のプリンタ以外のプリンタを追加する場合は，以下の手順で行います．
- Printers ダイアログの Add ボタンをクリックする． 追加したいクライアント側のプリンタを選択し Add ボタンをクリックする．  ファイル KGTN2014062003.pdf [(50.3 KB)] [kitasp 技術センター, 2014/06/20 17:21]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc234/" class="btn btn-template-main">続きを読む</a>
+2014/10/24*
+[番号] 技術ノート KGTN 2014101001
+[現象] [GGH4.X] Android クライアントで，クライアントのサウンド機能を実装する予定は？
+[説明] 2014年10月現在， Android クライアントで，クライアントのサウンド機能を実装する予定はありません．
+ファイル KGTN2014101001.pdf [(39.3 KB)] [kitasp 技術センター, 2014/10/24 17:59]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc186/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -804,7 +816,7 @@ Reset Printers ボタン プリンタの追加削除および編集情報 （プ
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

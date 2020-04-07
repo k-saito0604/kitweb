@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1409/">
+                                      <a href="/posts/new_md/doc2189/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1409/">[GGC] GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc2189/">[GGW3.2/GGH4.X-5.X] セッションがたまに切れるが，何か簡単に試せることはないか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1409/"><i class="far fa-calendar"></i> 2011-03-31</a>
+                                            <a href="/posts/new_md/doc2189/"><i class="far fa-calendar"></i> 2011-10-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/03/31*
-[番号] 技術ノート KGTN 2011033105
-[現象] [GGC] GO-Global Cloud でVer3系のライセンスを使用できるか？
-[説明] いいえ，Ver4系 （GO-Global Cloud） のライセンスとVer3系のライセンスは互換性がありません．
-ファイル KGTN2011033105.pdf [(40.7 KB)] [kitasp 技術センター, 2011/03/31 15:01]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1409/" class="btn btn-template-main">続きを読む</a>
+2011/10/05*
+[番号] 技術ノート KGTN 2009051501
+[現象] [GGW3.2/GGH4.X-5.X] セッションがたまに切れるが，何か簡単に試せることはないか？
+[説明] GO-Global for Windows はデフォルトの設定で， （クライアント～サーバ間に張られる GO-Global for Windows のコネクション上のプロトコルで） クライアントからサーバへ30秒毎にPINGを送信しています（以降，ICMPのPINGと区別するためにGG-PINGと表記します）．30秒以内にサーバから応答があればコネクションが正常と判断し，それを越えて応答がなければコネクションが失われたと判断します （注：応答を受信した直後にコネクションが切れた場合は，それから29秒後にGG-PINGが送信されますので，59秒後にコネクションが切れたと判断します） ．このGG-PINGの機能を以下の設定で無効にすることができます．
+[HKEY_LOCAL_MACHINESOFTWAREGraphOnBridges1.0.0AppServer] SessionVerification REG_DWORD 0
+設定を変更した場合は，必ずサーバを再起動して下さい．GG-PINGの機能を無効にしてもセッションが切れる場合は，TCP/IPレベルで実際にコネクションが切れているものと推測されます．
+補　足 TCP/IPレベルでセッションが切断されているかどうかを確認するには，弊社開発の GGNetworkCheck をご利用下さい．このツールは，GG のサーバ側とクライアント側で動作させるプログラムで，クライアント側主導でTCP/IP のヘルスチェック （接続性確認） を行います．クライアント側は所定の秒数でPING メッセージを送信し （ログに記録も残します） ，サーバ側はPING メッセージを受信するとログに記録するとともに，応答メッセージをクライアント側に送信します．クライアント側は応答メッセージを受信すると，その情報をログに記録します．所定秒数内に相手からのメッセージが届かない，またはTCP/IP レベルでコネクションが切断された場合は，エラーとしてログに記録されます．この２つのログ （クライアント側とサーバ側） を付き合わせることで，ネットワークの状況を確認することが出来ます．GGのプロトコルを使用せずにチェックを行いますので，万一GG上で問題が発生したとしても，ネットワークの状況を確実に把握することが可能です．詳細は，技術ノート KGTN#2011030201 をご覧下さい．
+ファイル KGTN2009051501.pdf [(84 KB)] [kitasp 技術センター, 2017/04/06 17:22]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2189/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +363,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1410/">
+                                      <a href="/posts/new_md/doc1282/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +371,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1410/">[GGC] GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1282/">[iPad Client] iPad クライアントの解像度を縦置き状態に変更したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,17 +384,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1410/"><i class="far fa-calendar"></i> 2011-03-31</a>
+                                            <a href="/posts/new_md/doc1282/"><i class="far fa-calendar"></i> 2011-10-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/03/31*
-[番号] 技術ノート KGTN 2011033104
-[現象] [GGC] GO-Global Cloud をVM環境で利用できるか？
-[説明] はい，VM （仮想マシン） 環境で使用することが可能です．
-ファイル KGTN2011033104.pdf [(40.2 KB)] [kitasp 技術センター, 2011/03/31 14:56]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1410/" class="btn btn-template-main">続きを読む</a>
+2011/10/05*
+[番号] 技術ノート KGTN 2011092702
+[現象] [iPad Client] iPad クライアントの解像度を縦置き状態に変更したい．
+[説明] 標準状態では，iPad クライアントの解像度は横向き状態 （つまり1024x768）　になります． 現在，縦置き状態 （つまり768x1024） に設定出来るかどうかGraphOn社へ問い合わせ中です． β版では縦向き表示が可能でしたが， IOS SDK の互換性の問題から正式リリース版では横向き状態のみをサポートします．
+補　足 iPadクライアントのリリース版が縦向き表示をサポートしていない理由は，以下の通りです．
+ファイル KGTN2011092702.pdf [(64.3 KB)] [kitasp 技術センター, 2011/10/05 12:21]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1282/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -401,7 +405,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1411/">
+                                      <a href="/posts/new_md/doc1279/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -409,7 +413,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1411/">[GGC] GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1279/">GG上で利用したいアプリケーションがあるが，環境変数が不足しており動作しない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -422,18 +426,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1411/"><i class="far fa-calendar"></i> 2011-03-31</a>
+                                            <a href="/posts/new_md/doc1279/"><i class="far fa-calendar"></i> 2011-10-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/03/31*
-[番号] 技術ノート KGTN 2011033103
-[現象] [GGC] GO-Global Cloud の環境を作成する場合，必要なコンポーネントは？
-[説明] GO-Global Cloud 製品スイートは，以下のソフトウエアから構成されています．
-GO-Global Host GO-Global Cloud Server GO-Global Cloud Client
-ファイル KGTN2011033103.pdf [(44.6 KB)] [kitasp 技術センター, 2011/03/31 14:51]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1411/" class="btn btn-template-main">続きを読む</a>
+2011/10/05*
+[番号] 技術ノート KGTN 2011100504
+[現象] GG上で利用したいアプリケーションがあるが，環境変数が不足しており動作しない．
+[説明] そのGGサーバを利用する全てのユーザに共通な環境変数であれば， Windows の [システムのプロパティ]　→ [詳細設定] → [環境変数] → [システム環境変数] （Windows Server 2003 の場合）　で定義するのが良いでしょう．設定する内容については，そのアプリケーションのドキュメント等をご覧下さい．
+ファイル KGTN2011100504.pdf [(48.9 KB)] [kitasp 技術センター, 2011/10/05 14:34]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1279/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -443,7 +446,7 @@ GO-Global Host GO-Global Cloud Server GO-Global Cloud Client
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1412/">
+                                      <a href="/posts/new_md/doc1286/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -451,7 +454,7 @@ GO-Global Host GO-Global Cloud Server GO-Global Cloud Client
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1412/">[GGC] GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1286/">[GGH4.0] APSログに AS: The license is missing. という記録がありログオン出来ない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -464,17 +467,20 @@ GO-Global Host GO-Global Cloud Server GO-Global Cloud Client
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1412/"><i class="far fa-calendar"></i> 2011-03-31</a>
+                                            <a href="/posts/new_md/doc1286/"><i class="far fa-calendar"></i> 2011-10-03</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/03/31*
-[番号] 技術ノート KGTN 2011033102
-[現象] [GGC] GO-Global Cloud がサポートするOSの環境は？
-[説明] Windows Server 2003 (x86) と Windows Server 2008 (x86/x64) です．将来的には， Red Hat Linux もサポートする予定です．
-ファイル KGTN2011033102.pdf [(41.8 KB)] [kitasp 技術センター, 2011/03/31 14:42]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1412/" class="btn btn-template-main">続きを読む</a>
+2011/10/03*
+[番号] 技術ノート KGTN 2011100301
+[現象] [GGH4.0] APSログに &ldquo;AS: The license is missing.&rdquo; という記録がありログオン出来ない．
+[説明] このエラーメッセージは，GGがライセンスファイルを見つけられなかった時に記録されます．正しいパスにライセンスファイル license.lic が存在しないか，または存在してもアクセス出来ないことが原因として考えられます．
+補　足 状況を確認するために， &lt;GGのインストールフォルダ&gt;¥Programs¥lmtools.exe を起動して，以下の操作を行って下さい．
+&ldquo;Server Status&rdquo; タブをクリックする． &ldquo;Perform Status Enquiry&rdquo; ボタンをクリックする． ボタンの下方に表示されたメッセージをファイルに保存する．
+保存したファイル （ライセンスに関する情報が記録されています） をメールでお送り下さい．
+ファイル KGTN2011100301.pdf [(59.5 KB)] [kitasp 技術センター, 2011/10/03 10:28]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1286/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -484,7 +490,7 @@ GO-Global Host GO-Global Cloud Server GO-Global Cloud Client
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1414/">
+                                      <a href="/posts/new_md/doc1285/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -492,7 +498,7 @@ GO-Global Host GO-Global Cloud Server GO-Global Cloud Client
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1414/">Ajax を利用しているアプリケーションがフリーズすることがある．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1285/">[GGH4.0] Windows Server 2008 R2 で，従来のターミナル サービス （TS） がリモート デスクトップ サービス （RDS） に変わったが，GGはこの RDS を使用していないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -505,19 +511,17 @@ GO-Global Host GO-Global Cloud Server GO-Global Cloud Client
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1414/"><i class="far fa-calendar"></i> 2011-03-31</a>
+                                            <a href="/posts/new_md/doc1285/"><i class="far fa-calendar"></i> 2011-10-03</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/03/31*
-[番号] 技術ノート KGTN 2011033101
-[現象] Ajax を利用しているアプリケーションがフリーズすることがある．
-[説明] この現象は 「GGの環境とは無関係に」 以下のような条件で発生することが，インターネット上で報告されています．
-Ajax プログラム実行中にクライアントを切断する． コールバック関数を呼び出せなくなりフリーズする．
-対策は，非同期通信を行わないなど幾つかの方法があるようです．詳細については，インターネット上の情報を参照して下さい．
-ファイル KGTN2011033101.pdf [(50.5 KB)] [kitasp 技術センター, 2011/03/31 09:41]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1414/" class="btn btn-template-main">続きを読む</a>
+2011/10/03*
+[番号] 技術ノート KGTN 2011100302
+[現象] [GGH4.0] Windows Server 2008 R2 で，従来のターミナル サービス （TS） がリモート デスクトップ サービス （RDS） に変わったが，GGはこの RDS を使用していないのか？
+[説明] 従来と同じように，リモート デスクトップ サービス （RDS） を使用しておりません． 実際，サービス Remote Desktop Services を無効にしても，GGでログインおよびアプリケーションの起動等が可能です．
+ファイル KGTN2011100302.pdf [(51.9 KB)] [kitasp 技術センター, 2011/10/03 13:20]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1285/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -527,7 +531,7 @@ Ajax プログラム実行中にクライアントを切断する． コール�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1415/">
+                                      <a href="/posts/new_md/doc1288/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -535,7 +539,7 @@ Ajax プログラム実行中にクライアントを切断する． コール�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1415/">GGのシリアルポート・リダイレクションを試すために，周辺機器をクロスケーブルで接続したが，アプリケーションを起動しても動作しない．GGサーバに直接ケーブルを接続しても動作しない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1288/">GGのプラグイン LaunchBrowser で，クライアント側のブラウザを起動する時のインタフェースは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -548,19 +552,21 @@ Ajax プログラム実行中にクライアントを切断する． コール�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1415/"><i class="far fa-calendar"></i> 2011-03-30</a>
+                                            <a href="/posts/new_md/doc1288/"><i class="far fa-calendar"></i> 2011-09-30</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/03/30*
-[番号] 技術ノート KGTN 2011033001
-[現象] GGのシリアルポート・リダイレクションを試すために，周辺機器をクロスケーブルで接続したが，アプリケーションを起動しても動作しない．GGサーバに直接ケーブルを接続しても動作しない．
-[説明] クロスケーブルにも種類があり，異なる種類のケーブルを使用すると動作しません．サンワサプライの場合，
-ストレート全結線 インターリンク用結線 クロス系結線
-の３種類のケーブルがあり，2および3がクロスケーブルですが，結線の内容が異なります．クロスケーブル （リバースケーブル） を必要とする周辺機器を接続する場合は，通常3のケーブルを使用します．
-ファイル KGTN2011033001.pdf [(55.2 KB)] [kitasp 技術センター, 2011/03/30 11:03]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1415/" class="btn btn-template-main">続きを読む</a>
+2011/09/30*
+[番号] 技術ノート KGTN 2010061403
+[現象] GGのプラグイン LaunchBrowser で，クライアント側のブラウザを起動する時のインタフェースは？
+[説明] LaunchBrowser のインタフェースは下記のようになっています （VBの例） ．
+Private Declare Function LaunchBrowser Lib _ &ldquo;C:¥GraphOn¥DLL¥LaunchBrowserI.dll&rdquo; _ (ByVal lpBuffer As String, nSize As Long) As Long &hellip; sUrl = Text1.Text lLen = Len(sUrl) Ret = LaunchBrowser(sUrl, lLen)
+関数LaunchBrowser の最初の引数はURLを含む文字列で，２番目の引数はその文字列の長さです．ブラウザのパスが標準以外の場合は，クライアント側の LaunchBrowser.ini の設定項目 browserPath を修正して，ブラウザのパスを変更して下さい
+[default] logLevel=1 browserPath=C:¥Program Files¥Internet Explorer¥iexplore.exe
+注　意 LaunchBrowser は， Ver3.2.1の環境で 「エンタープライズオプションをご利用のユーザ様に限り」 ご提供可能な，非サポートのプログラムです．
+ファイル KGTN2010061403.pdf [(65.9 KB)] [kitasp 技術センター, 2011/09/30 11:10]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1288/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -570,7 +576,7 @@ Ajax プログラム実行中にクライアントを切断する． コール�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1416/">
+                                      <a href="/posts/new_md/doc1287/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -578,7 +584,7 @@ Ajax プログラム実行中にクライアントを切断する． コール�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1416/">UI （ユーザインタフェース） を持つプログラムを，GGのシステムプロセスとして登録した場合，どのような影響が出るのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1287/">プラグイン LaunchBrowser を使って，他のプログラムを起動したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -591,17 +597,22 @@ Ajax プログラム実行中にクライアントを切断する． コール�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1416/"><i class="far fa-calendar"></i> 2011-03-29</a>
+                                            <a href="/posts/new_md/doc1287/"><i class="far fa-calendar"></i> 2011-09-30</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/03/29*
-[番号] 技術ノート KGTN 2011032901
-[現象] UI （ユーザインタフェース） を持つプログラムを，GGのシステムプロセスとして登録した場合，どのような影響が出るのか？
-[説明] （当該プログラムを除く） &ldquo;UIを持ちかつシステムプロセスでないプログラム&rdquo; のプロセスが全て終了した時，そのプログラムがシステムプロセスとして登録されていると，ユーザの操作無しに強制的に終了させられます．これ以外の動作上の差異はありません．
-ファイル KGTN2011032901.pdf [(47.6 KB)] [kitasp 技術センター, 2011/03/29 11:49]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1416/" class="btn btn-template-main">続きを読む</a>
+2011/09/30*
+[番号] 技術ノート KGTN 2010063001
+[現象] プラグイン LaunchBrowser を使って，他のプログラムを起動したい．
+[説明] プラグイン LaunchBrowser の設定ファイルLaunchBrowser.ini に，下記の書式で起動したいプログラムを指定して下さい．
+[default] logLevel=1 browserPath=C:¥Program Files¥Internet Explorer¥iexplore.exe browserPath^1^=C:¥GraphOn¥BIN¥SAMPLE.EXE browserPath^2^=C:¥Program Files¥Microsoft Office¥Office¥EXCEL.EXE
+サーバ側から起動する時の文字列 （URL） の先頭に [1] を付加すると browserPath^1^ のプログラムが起動され，同様に [2] を付加すると browserPath^2^ のプログラムが起動されます．例えば，
+[2]C:¥DATA¥SAMPLE.XLS
+を指定すると，クライアント側の C:¥DATA¥SAMPLE.XLS というファイルが開きます．なお，指定可能なプログラムは，[1] 〜 [9] の９個です．
+注　意 LaunchBrowser は， Ver3.2.1の環境で 「エンタープライズオプションをご利用のユーザ様に限り」 ご提供可能な，非サポートのプログラムです．
+ファイル KGTN2010063001.pdf [(85.1 KB)] [kitasp 技術センター, 2011/09/30 11:16]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1287/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -611,7 +622,7 @@ Ajax プログラム実行中にクライアントを切断する． コール�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1417/">
+                                      <a href="/posts/new_md/doc1289/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -619,7 +630,7 @@ Ajax プログラム実行中にクライアントを切断する． コール�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1417/">[GGW3.2.1] ログオンスクリプトと次のレジストリで指定するプログラムは，どちらが先に起動されるのか？HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Run¥LocalMachine</a></h2>
+                                    <h2><a href="/posts/new_md/doc1289/">[GGW3.2.1] クライアントとして MacOS 10.7 (Lion) の環境はサポートされているのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -632,18 +643,17 @@ Ajax プログラム実行中にクライアントを切断する． コール�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1417/"><i class="far fa-calendar"></i> 2011-03-18</a>
+                                            <a href="/posts/new_md/doc1289/"><i class="far fa-calendar"></i> 2011-09-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/03/18*
-[番号] 技術ノート KGTN 2011031802
-[現象] [GGW3.2.1] ログオンスクリプトと次のレジストリで指定するプログラムは，どちらが先に起動されるのか？HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Run¥LocalMachine
-[説明] プログラムの （大まかな） 起動の順番は，以下の通りです．
-Logon.exe ログオンスクリプト pw.exe &hellip;¥System¥Run¥LocalMachine で指定されたプログラム ggw.exe ?a で指定されたプログラム
-ファイル KGTN2011031802.pdf [(53.2 KB)] [kitasp 技術センター, 2011/03/18 14:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1417/" class="btn btn-template-main">続きを読む</a>
+2011/09/29*
+[番号] 技術ノート KGTN 2011081104
+[現象] [GGW3.2.1] クライアントとして MacOS 10.7 (Lion) の環境はサポートされているのか？
+[説明] 3.2.1 Patch 5 (4482) で動作したという報告はありますが，しかし MacOS 10.7 (Lion) の環境は正式にはサポートされておりません． いいえ， 3.2.1 Patch 6 で対応の予定です．何らかの理由で MacOS 10.7 (Lion) の環境での事前検証をご希望の場合は，弊社営業担当者へお問い合わせ下さい．
+ファイル KGTN2011081104.pdf [(49.7 KB)] [kitasp 技術センター, 2011/09/29 11:04]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1289/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -653,7 +663,7 @@ Logon.exe ログオンスクリプト pw.exe &hellip;¥System¥Run¥LocalMachine
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1418/">
+                                      <a href="/posts/new_md/doc1290/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -661,7 +671,7 @@ Logon.exe ログオンスクリプト pw.exe &hellip;¥System¥Run¥LocalMachine
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1418/">[WS2008] Windows Server 2008 の環境で，一般ユーザが IE を起動しようとすると失敗する．なお， Firefox は正常に起動する．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1290/">[GGW3.2.1] リレーサーバ環境では Maximum sessions per user が働くが，独立サーバでは1を設定していても同一ユーザでログオン出来る．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -674,19 +684,18 @@ Logon.exe ログオンスクリプト pw.exe &hellip;¥System¥Run¥LocalMachine
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1418/"><i class="far fa-calendar"></i> 2011-03-18</a>
+                                            <a href="/posts/new_md/doc1290/"><i class="far fa-calendar"></i> 2011-09-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/03/18*
-[番号] 技術ノート KGTN 2011031801
-[現象] [WS2008] Windows Server 2008 の環境で，一般ユーザが IE を起動しようとすると失敗する．なお， Firefox は正常に起動する．
-[説明] Windows Server 2008 の環境で一般ユーザが IE を起動する場合は，以下の手順で UAC （User Accounts Control = ユーザーアカウント制御） を無効にして下さい．
-[コントロールパネル] を開く． [ユーザー アカウント] を開く． [ユーザーアカウント制御の有効化または無効化] をクリックする． [ユーザアカウント制御 （UAC） を使ってコンピュータの保護に役立たせる] のチェックを外す． [OK] ボタンをクリックする． サーバを再起動する．
-この件に関するGraphOn社の情報を以下に引用します．
-With Windows Server 2008, launching Internet Explorer through GO-Global will crash Internet Explorer. To avoid this, disable User Accounts Control　Panel (UAC) on the GO-Global Server.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1418/" class="btn btn-template-main">続きを読む</a>
+2011/09/28*
+[番号] 技術ノート KGTN 2011092801
+[現象] [GGW3.2.1] リレーサーバ環境では &ldquo;Maximum sessions per user&rdquo; が働くが，独立サーバでは1を設定していても同一ユーザでログオン出来る．
+[説明] 独立サーバ （いわゆる通常のサーバ） の 3.2.1.4466 で検証しましたが， &ldquo;Maximum sessions per user&rdquo; に1を設定 （チェックボックスを有効） すると，同一ユーザIDで最初のセッションはログオン出来ましたが，次のセッションでは下記のダイアログが表示されログオンに失敗しました．この動作は，GGの想定された仕様の通りです．
+もし本当にログオン出来たとすれば，最初のログオンはローカルのアカウント，次のログオンはドメインのアカウント等ではないでしょうか？　同じ文字列のユーザIDでも，ローカルのアカウントとドメインのアカウントは異なるアカウントです．
+ファイル KGTN2011092801.pdf [(56.4 KB)] [kitasp 技術センター, 2011/09/28 09:16]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1290/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -696,7 +705,7 @@ With Windows Server 2008, launching Internet Explorer through GO-Global will cra
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1419/">
+                                      <a href="/posts/new_md/doc229/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -704,7 +713,7 @@ With Windows Server 2008, launching Internet Explorer through GO-Global will cra
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1419/">[GGW3.2] Windows Server 2008 の環境で，GraphOn社の技術ノート Article C00046 に従って Explorer.exe を登録したところ，ログオン時に 「無効なディスプレイの設定です」 というダイアログが表示される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc229/">[WS2008] IEを利用した時， Rundll32 でエラーが起きる．何か参考になる情報はないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -717,17 +726,19 @@ With Windows Server 2008, launching Internet Explorer through GO-Global will cra
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1419/"><i class="far fa-calendar"></i> 2011-03-17</a>
+                                            <a href="/posts/new_md/doc229/"><i class="far fa-calendar"></i> 2011-09-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/03/17*
-[番号] 技術ノート KGTN 2011031702
-[現象] [GGW3.2] Windows Server 2008 の環境で，GraphOn社の技術ノート Article C00046 に従って Explorer.exe を登録したところ，ログオン時に 「無効なディスプレイの設定です」 というダイアログが表示される．
-[説明] Explorer.exe が必要としている情報が不足しているのが原因です．GGサーバのコンソールで，一度ログオンすることでこの現象は解消します．または，このダイアログでOKボタンを押下することで，次回ログオン時からダイアログは表示されなくなります．AD環境等では，構成済みプロファイルを作成することで，事前にこの問題を回避することが出来ます．
-ファイル KGTN2011031702.pdf [(117 KB)] [kitasp 技術センター, 2011/03/17 12:49]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1419/" class="btn btn-template-main">続きを読む</a>
+2011/09/28*
+[番号] 技術ノート KGTN 2011092802
+[現象] [WS2008] IEを利用した時， Rundll32 でエラーが起きる．何か参考になる情報はないのか？
+[説明] GraphOn社のコメントは以下の通りで，ウイルスやスパイウエア （アドウエア） 等の問題 （影響） だと推測しています．詳細は，引用中のサイトの情報をご覧下さい．
+We don't believe this issue is related to GG. We have seen this error on google search and many posts pointed to this issue as a virus or Ad ware issue. They resolved the issue be using spyware removal programs. See below.  http://www.vistax64.com/vista-security/151705-rundll32-error-ie.html
+補足１ 問題点を明確にするために，以下の内容をチェックして下さい．これらの設定内容で改善しない場合は，GGW3.2系は EOL 状態にありますので，運用回避 （エラーを無視する） をお願いします．
+ UACの有効/無効で状況が変わるかどうか？ DEP （データ実行防止） を 「無効」 または 「IEを除外」 して状況が変わるかどうか？ ログオンユーザが Administrator （ローカルアカウント） で状況が変わるかどうか？ コンテンツを変えて状況が変わるかどうか （表示するコンテンツに依存するかどうか） ？ Windows Server 2008 インストール直後の環境 （イメージ） で現象が発生するかどうか？  なお，現行バージョン GGH4.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc229/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -797,7 +808,7 @@ With Windows Server 2008, launching Internet Explorer through GO-Global will cra
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1660/">
+                                      <a href="/posts/new_md/doc357/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1660/">SkyPDF for GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc357/">[GGH4.X] クライアントプリンタ機能の Universal Printer Driver と Windows Printer Driver は，スプールファイルの流れ （印刷ジョブの流れ） は同じか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1660/"><i class="far fa-calendar"></i> 2010-08-18</a>
+                                            <a href="/posts/new_md/doc357/"><i class="far fa-calendar"></i> 2010-12-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/18*
-[番号] 技術ノート KGTN 2010081804
-[現象] SkyPDF for GO-Global （GG-SkyPDF） の処理の流れを知りたい．
-[説明] クライアント印刷機能では，サーバ側のSkyPDF （ドライバ） に対して印刷が行われ，その中間データがGGのセッションを通してクライアント側の SkyPDF （プリンタポート） へ転送されます．中間データを受け取ったクライアント側の SkyPDF はその内容をPDFファイルに出力し，さらにPDFビュアー （Acrobat Reader） を起動し，PDFファイルを物理的なプリンタへ出力します．
-ファイル KGTN2010081804.pdf [(118 KB)] [kitasp 技術センター, 2010/08/18 13:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1660/" class="btn btn-template-main">続きを読む</a>
+2010/12/15*
+[番号] 技術ノート KGTN 2010121502
+[現象] [GGH4.X] クライアントプリンタ機能の Universal Printer Driver と Windows Printer Driver は，スプールファイルの流れ （印刷ジョブの流れ） は同じか？
+[説明] いいえ，異なります． Universal Printer Driver では，Ver3.2系と同じようにサーバ側でスプールファイルが生成され，それがまとめてクライアントへ転送され，クライアントは受け取ったスプールファイル （正確にはPDFファイル） を Adobe PDF Library を使って物理的なプリンタへ出力します． Windows Printer Driver では，サーバ側でスプールファイルが生成されると同時に， 「並行して」 クライアントの物理的なプリンタへ （スプールファイルが） 転送＆蓄積されます．
+参　考 Excel のシート500ページ分を印刷した時の，各処理のタイミングとデータ量は以下の通りです．なお，ドキュメントの種類や内容，プリンタの機種やドライバのバージョンに依存しますので，単なる一例としてご理解下さい．
+[Universal Printer Driver]
+ サーバ側プリンタの処理のタイミングとスプールファイルの大きさ 00:00 ～ 00:01, 11.6MB ネットワーク上のデータ量 1.3MB クライアント側プリンタの処理のタイミングとスプールファイルの大きさ 00:01 ～ 00:20, 237MB　（注：PDFファイルの印刷に時間がかかります）  [Windows Printer Driver]
+ サーバ側プリンタの処理のタイミングとスプールファイルの大きさ 00:00 ～ 00:04, 8.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc357/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +363,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1662/">
+                                      <a href="/posts/new_md/doc1514/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +371,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1662/">SkyPDF for GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1514/">[GGH4.0] クライアント印刷機能で大きな印刷ジョブを流した場合，GGW3.2と同じような感じなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,18 +384,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1662/"><i class="far fa-calendar"></i> 2010-08-17</a>
+                                            <a href="/posts/new_md/doc1514/"><i class="far fa-calendar"></i> 2010-12-13</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/17*
-[番号] 技術ノート KGTN 2010081201
-[現象] SkyPDF for GO-Global （GG-SkyPDF） を素直にインストールし，メモ帳で印刷したところ，ファイル保存のダイアログが表示される．
-[説明] この現象は， 「サーバ側の印刷ダイアログでSkyPDF for GO-Global が選択され」 かつ 「サーバ側で生成されたPDFファイルがクライアント側の SkyPDF for GO-Global へ再出力された」 場合に発生します．
-クライアント側の SkyPDF for GO-Global の設定ファイル C:¥Program Files¥SkyCom¥GGSkyPDF Pro Driver¥skyinfo.ini を開き， PRINTERNAME=&rdquo;&rdquo; を設定して下さい （つまり PRINTERNAME の値を default から空に変更します） ．これにより，出力先のプリンタを選択するダイアログが表示されるようになります （注：デスクトップの状況により他のウインドウの後ろに表示される場合があります） ．
-ファイル KGTN2010081201.pdf [(126 KB)] [kitasp 技術センター, 2010/08/17 12:46]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1662/" class="btn btn-template-main">続きを読む</a>
+2010/12/13*
+[番号] 技術ノート KGTN 2010121302
+[現象] [GGH4.0] クライアント印刷機能で大きな印刷ジョブを流した場合，GGW3.2と同じような感じなのか？
+[説明] GGW3.2では 「サーバ側でのスプールファイルの生成 → スプールファイルの転送 → クライアント側でのスプールファイルの生成」 という順序でクライアント印刷が行われておりましたが，GGH4.0では 「サーバ側でのスプールファイルの生成」 と 「クライアント側でのスプールファイルの生成」 が並行して行われます．また，アプリケーションの印刷ダイアログ （の印刷中のダイアログ） はすぐに印刷終了の状態になり，バックグラウンドで上記のスプールファイルの処理が進行します．
+印刷の方式の違いから，GGW3.2では &ldquo;RS: Exception occurred in PRINT_EndDoc.&rdquo; が発生する4,684ページの印刷 （スプールファイルは2.24GB） も，GGH4.0では印刷することが出来ました．
+サーバ側のプリンタ （4,684ページを印刷）
+クライアント側のプリンタ （スプールファイルのサイズ2.24GB）
+ファイル KGTN2010121302.pdf [(207 KB)] [kitasp 技術センター, 2010/12/13 14:17]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1514/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -402,7 +407,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1663/">
+                                      <a href="/posts/new_md/doc1515/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -410,7 +415,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1663/">SkyPDF for GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1515/">[GGW3.2] クライアント印刷機能で大きな印刷ジョブを流した場合，どれくらい時間がかかるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -423,17 +428,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1663/"><i class="far fa-calendar"></i> 2010-08-17</a>
+                                            <a href="/posts/new_md/doc1515/"><i class="far fa-calendar"></i> 2010-12-13</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/17*
-[番号] 技術ノート KGTN 2010081202
-[現象] SkyPDF for GO-Global （GG-SkyPDF） のクライアント側設定ファイルskyinfo.ini のPRINTERNAME に誤ったプリンタ名を指定した場合，動作はどのようになるのか？
-[説明] C:¥Program Files¥SkyCom¥GGSkyPDF Pro Driver¥skyinfo.ini （クライアント側の設定ファイル） で PRINTERNAME=&quot;存在しないプリンタ名&rdquo; を指定した場合，空が指定された時と同様に下記のような 「プリンタ選択ダイアログ」 が表示されます．
-ファイル KGTN2010081202.pdf [(86.7 KB)] [kitasp 技術センター, 2010/08/17 12:23]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1663/" class="btn btn-template-main">続きを読む</a>
+2010/12/13*
+[番号] 技術ノート KGTN 2010121301
+[現象] [GGW3.2] クライアント印刷機能で大きな印刷ジョブを流した場合，どれくらい時間がかかるのか？
+[説明] 印刷するドキュメントの内容・プリンタドライバの種類や処理・サーバ/クライアントのCPUパワー・ネットワークの帯域などに大きく依存しますので，一般論で議論することは出来ません．ひとつのサンプルとして，弊社での実験結果を以下に示します．
+サーバのスペック： Intel Pentium4 2.80GHz クライアントのスペック： Intel Core2 Duo 2.00GHz アプリケーション： Excel 2000 の表1,000ページ分 ネットワーク： 100Mbps プリンタ （ドライバ） ： EPSON LASER LP-8600
+ サーバ側の印刷時間： 538秒，　クライアント側への印刷時間： 60秒， スプールファイル： 487MB サーバ側の印刷時間： 535秒，　クライアント側への印刷時間： 60秒， スプールファイル： 487MB サーバ側の印刷時間： 540秒，　クライアント側への印刷時間： 62秒， スプールファイル： 487MB *) スプールファイルの転送時は100Mbpsの12.5%の帯域を使用  ここで言う 「サーバ側の印刷時間」 とは，印刷ボタンを押下してサーバ側でスプールファイルが生成されるまでの時間です． 「クライアント側への印刷時間」 とは，サーバ側のスプールファイルがプリンタのフォルダから消え，クライアント側のプリンタのフォルダにスプールファイルが生成されるまでの時間です．
+ファイル KGTN2010121301.pdf [(59.7 KB)] [kitasp 技術センター, 2010/12/13 11:21]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1515/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -443,7 +450,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1661/">
+                                      <a href="/posts/new_md/doc1512/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -451,7 +458,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1661/">環境変数 CLIENTCOMPUTERADDRESS の値が ::1 になる．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1512/">[GGW3.2] クライアント印刷機能で大きな印刷ジョブを行ったが，印刷されずAPSログに RS: Exception occurred in PRINT_EndDoc. という記録があった．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -464,17 +471,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1661/"><i class="far fa-calendar"></i> 2010-08-17</a>
+                                            <a href="/posts/new_md/doc1512/"><i class="far fa-calendar"></i> 2010-12-13</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/17*
-[番号] 技術ノート KGTN 2010081801
-[現象] 環境変数 CLIENTCOMPUTERADDRESS の値が ::1 になる．
-[説明] クライアントが IPv4 と IPv6 の両方のアドレスを持つ時，環境変数 CLIENTCOMPUTERADDRESS の値が ::1 になります．これは現時点での制限事項 （既知の問題） で，対症療法として &ldquo;Microsoft TCP/IP version 6&rdquo; を削除することで，この問題を回避することが出来ます．
-ファイル KGTN2010081801.pdf [(160 KB)] [kitasp 技術センター, 2010/08/18 08:27]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1661/" class="btn btn-template-main">続きを読む</a>
+2010/12/13*
+[番号] 技術ノート KGTN 2010121001
+[現象] [GGW3.2] クライアント印刷機能で大きな印刷ジョブを行ったが，印刷されずAPSログに &ldquo;RS: Exception occurred in PRINT_EndDoc.&rdquo; という記録があった．
+[説明] クライアントプリンタへ印刷を行った場合，サーバ側の対応するプリンタにスプールファイルが蓄積されます．スプールファイルは印刷を行ったユーザのTEMPフォルダ （環境変数の%TEMP%） に作成され，そのファイルがクライアント側へ転送されます．そしてクライアント側でスプールファイルとして蓄積され，物理的なプリンタへ出力されます． &ldquo;RS: Exception occurred in PRINT_EndDoc.&rdquo; という記録は，スプールファイルがTEMPフォルダに作成されたものの，ファイルサイズが大きくメモリへ展開することが出来なかったことを意味します （つまりクライアント側へのスプールファイルの転送に失敗） ．対応については，技術ノートKGTN#2010120301 をご覧下さい．
+参　考 GraphOn社のコメントは以下の通りです． GO-Global was unable to allocate enough memory for the file. Without the necessary memory buffer, we can&rsquo;t forward the file to the client. It looks like whenever this allocation fails, we do not clean up the .bpf.
+ファイル KGTN2010121001.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1512/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -484,7 +492,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1664/">
+                                      <a href="/posts/new_md/doc1516/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -492,7 +500,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1664/">SkyPDF for GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1516/">ロードバランサでGGサーバを監視する場合， PING によるヘルスチェック機能しか方法が無いのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -505,17 +513,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1664/"><i class="far fa-calendar"></i> 2010-08-11</a>
+                                            <a href="/posts/new_md/doc1516/"><i class="far fa-calendar"></i> 2010-12-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/11*
-[番号] 技術ノート KGTN 2010081101
-[現象] SkyPDF for GO-Global （GG-SkyPDF） がサポートするPDFビュアーは？
-[説明] SkyPDF for GO-Global が生成するPDFファイルは，基本的にはPDFビュアーを選びません．しかし，PDFビュアーを起動する時のパラメタは，製品やバージョンによって異なりますので， SkyPDF for GO-Global の標準設定では Adobe Reader 9 または Adobe Reader 8 のみをサポートします．
-ファイル KGTN2010081101.pdf [(49.5 KB)] [kitasp 技術センター, 2010/08/11 13:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1664/" class="btn btn-template-main">続きを読む</a>
+2010/12/08*
+[番号] 技術ノート KGTN 2010120601
+[現象] ロードバランサでGGサーバを監視する場合， PING によるヘルスチェック機能しか方法が無いのか？
+[説明] ロードバランサのTCP/IPによるヘルスチェック機能では，単に 「APSが開始状態にあるか？」 ということを確認するだけで， 「実際にログインできる状態にあるか？」 ということは確認できません （ハンドルの枯渇等ではコネクト出来るがログイン出来ない状態が発生します） ．技術ノートKGTN#2010120302 の内容も考慮すると，サーバの負荷を高めてまでTCP/IPによるヘルスチェック機能を行うことは得策ではありません．
+エンタープライズオプションの GMCheckRaw では， 「実際にログインできる状態にあるか？」 ということを確認することが出来ますので， PING 以上の監視を行うのであれば，これを使用することをお勧めします．一般には GMCheckRaw とロードバランサが直に連携を行うことは出来ませんが，しかし高機能なロードバランサでは Windowsのアプリケーションを利用する （あるいはデータを参照する） ことが出来ますので，GMCheckRawが必要な情報を出力するように設定することで （あるいはアプリケーションで加工することで） 連携を行うことが可能です．
+参　考 UNIXのinetd （デーモン） と類似したプログラムを使用することで，特定のポートにアクセスがあった時，GMCheckRaw を実行しその結果 （文字列） を返すことが出来ます．サンプル等を用意しておりますので，必要な場合は弊社技術支援センターまでお問い合せ下さい （サポート対象外ですが，ソースコードが付属します） ．
+ファイル KGTN2010120601.pdf [(71.2 KB)] [kitasp 技術センター, 2010/12/08 09:58]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1516/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -525,7 +535,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1665/">
+                                      <a href="/posts/new_md/doc1519/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -533,7 +543,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1665/">Program Window の背景色をログオン時に設定したいが，レジストリのどこを変更すれば良いのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1519/">仮想サーバ上でGGを運用する場合，どのMAC アドレスでライセンスを申請すべきか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -546,18 +556,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1665/"><i class="far fa-calendar"></i> 2010-08-10</a>
+                                            <a href="/posts/new_md/doc1519/"><i class="far fa-calendar"></i> 2010-12-06</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/10*
-[番号] 技術ノート KGTN 2010081003
-[現象] Program Window の背景色をログオン時に設定したいが，レジストリのどこを変更すれば良いのか？
-[説明] 以下のレジストリ （キー） が Program Window の背景色を保持していますので，この値を変更して下さい．
-[HKEY_CURRENT_USER¥Software¥GraphOn¥Bridges¥1.0.0¥ProgramWindow¥Settings¥Standard] &ldquo;LV_ColorBackground&quot;=dword:00804000
-ファイル KGTN2010081003.pdf [(51.5 KB)] [kitasp 技術センター, 2010/08/10 12:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1665/" class="btn btn-template-main">続きを読む</a>
+2010/12/06*
+[番号] 技術ノート KGTN 2010120603
+[現象] 仮想サーバ上でGGを運用する場合，どのMAC アドレスでライセンスを申請すべきか？
+[説明] 基本的には技術ノートKGTN#2010022407 の通りですが，各GGサーバ上でライセンスサーバが動作している環境であれば，APSがコネクションを受け付ける 「接続」 の （ネットワークアダプタの） MACアドレスを指定するのが良いでしょう．
+ファイル KGTN2010120603.pdf [(47.2 KB)] [kitasp 技術センター, 2010/12/06 10:58]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1519/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -567,7 +576,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1667/">
+                                      <a href="/posts/new_md/doc1520/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -575,7 +584,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1667/">Windows Server のイメージは，GGサーバとDBサーバで共通にして良いか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1520/">物理メモリが2GBを超えるサーバで Windows Server 2003 の完全メモリダンプを採取出来ないが，その制限は何に由来するのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -588,20 +597,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1667/"><i class="far fa-calendar"></i> 2010-08-09</a>
+                                            <a href="/posts/new_md/doc1520/"><i class="far fa-calendar"></i> 2010-12-06</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/09*
-[番号] 技術ノート KGTN 2010080903
-[現象] Windows Server のイメージは，GGサーバとDBサーバで共通にして良いか？
-[説明] GGサーバとDBサーバはその機能の差異により，プロセッサやメモリの割り当ての戦略が異なりますので，全く同じイメージ共通して使用することは出来ません．Windows Server 2003 では，以下のように異なります．
-[GGサーバ] プロセッサのスケジュール = 「プログラム」 のパフォーマンスを優先 システムメモリの割り当て = 「プログラム」 のパフォーマンスを優先
-[DBサーバ] プロセッサのスケジュール = 「バックグラウンド サービス」 のパフォーマンスを優先 システムメモリの割り当て = 「システム キャッシュ」 のパフォーマンスを優先
-その他，レジストリ中のパフォーマンスチューニング項目もGGサーバとDBサーバでは異なります．
-ファイル KGTN2010080903.pdf [(49.4 KB)] [kitasp 技術センター, 2010/08/09 10:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1667/" class="btn btn-template-main">続きを読む</a>
+2010/12/06*
+[番号] 技術ノート KGTN 2010120602
+[現象] 物理メモリが2GBを超えるサーバで Windows Server 2003 の完全メモリダンプを採取出来ないが，その制限は何に由来するのか？
+[説明] 色々と調査しましたが，そのことに関する情報は見つかりませんでした．恐らく，以下のクラッシュダンプファイル作成の処理に絡む制限だと思われます．
+KeBugCheckEx 関数がダンプ情報を 「ページファイルが占有しているディスクセクタ」 へ直接書き出す． 次回ブート時にページファイル中にダンプ情報が存在するかどうかチェックする． 存在した場合 Savedump プロセスにより，その情報を所定のパスにダンプファイルとして書き出す．
+なお，上記１で 「ページファイルが占有しているディスクセクタ」 へ直接書き出す理由は，ファイルシステムやドライバが破損している可能性があるためです．
+ファイル KGTN2010120602.pdf [(61.5 KB)] [kitasp 技術センター, 2010/12/06 10:24]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1520/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -611,7 +619,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1666/">
+                                      <a href="/posts/new_md/doc1518/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -619,7 +627,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1666/">業務アプリでデータファイルを作成し，別のアプリケーションで開こうとすると 「使用中のファイル」 のダイアログが表示されることがある．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1518/">現行システムから新システムへの移行を計画中しているが，移行期に２つのシステムが並行して動作することになる．その期間限定でライセンスファイルの二重発行は可能か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -632,17 +640,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1666/"><i class="far fa-calendar"></i> 2010-08-09</a>
+                                            <a href="/posts/new_md/doc1518/"><i class="far fa-calendar"></i> 2010-12-06</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/09*
-[番号] 技術ノート KGTN 2010072302
-[現象] 業務アプリでデータファイルを作成し，別のアプリケーションで開こうとすると 「使用中のファイル」 のダイアログが表示されることがある．
-[説明] 監査ソフトウエアやアンチウイルスソフトウエアを使用している場合，データファイルが作成された直後にそれらのソフトウエアがファイルをオープンしチェックを行いますので，その処理に時間がかかると別のアプリケーションがファイルを開こうとした時 「使用中のファイル」 のダイアログが表示されることがあります．対応は，1) もう一度別のアプリケーションでファイルを開き直すか， 2) 監査ソフトウエアやアンチウイルスソフトウエアの設定を変更し，データファイルをチェック対象から除外して下さい．
-ファイル KGTN2010072302.pdf [(52.1 KB)] [kitasp 技術センター, 2010/08/09 11:29]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1666/" class="btn btn-template-main">続きを読む</a>
+2010/12/06*
+[番号] 技術ノート KGTN 2010120604
+[現象] 現行システムから新システムへの移行を計画中しているが，移行期に２つのシステムが並行して動作することになる．その期間限定でライセンスファイルの二重発行は可能か？
+[説明] ユーザ様都合によるライセンスファイルの二重発行は出来ません．
+ファイル KGTN2010120604.pdf [(43.8 KB)] [kitasp 技術センター, 2010/12/06 11:08]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1518/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -652,7 +660,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1670/">
+                                      <a href="/posts/new_md/doc1517/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -660,7 +668,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1670/">Ver3.2系のクライアントドライブ機能で，クライアント側へのコピーで，警告メッセージ等が表示される場合はあるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1517/">現行システムでは１台当り同時20ユーザだが，それを新システムでは１台当り同時5ユーザ×4台にしたい．このようなライセンスの分割は可能か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -673,18 +681,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1670/"><i class="far fa-calendar"></i> 2010-08-08</a>
+                                            <a href="/posts/new_md/doc1517/"><i class="far fa-calendar"></i> 2010-12-06</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/08*
-[番号] 技術ノート KGTN 2010080902
-[現象] Ver3.2系のクライアントドライブ機能で，クライアント側へのコピーで，警告メッセージ等が表示される場合はあるのか？
-[説明] 3.2.1 Patch4 (4466) およびそれ以降では，ファイルの上書き時に 「ファイルの上書きの確認」 ダイアログが表示されますが，それ以前のVer3.2系および他の条件 （アクセス権限が無い等） では，警告メッセージ等は表示されません．
-備　考 アーキテクチャが変更されたVer4.0系のクライアントドライブ機能では，「ファイルの上書きの確認」 ダイアログ以外のメッセージも表示されます．
-ファイル KGTN2010080902.pdf [(50.6 KB)] [kitasp 技術センター, 2010/08/09 08:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1670/" class="btn btn-template-main">続きを読む</a>
+2010/12/06*
+[番号] 技術ノート KGTN 2010120605
+[現象] 現行システムでは１台当り同時20ユーザだが，それを新システムでは１台当り同時5ユーザ×4台にしたい．このようなライセンスの分割は可能か？
+[説明] ユーザ様都合によるライセンスファイルの分割は出来ません．
+ファイル KGTN2010120605.pdf [(42 KB)] [kitasp 技術センター, 2010/12/06 11:37]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1517/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -694,7 +701,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1671/">
+                                      <a href="/posts/new_md/doc1523/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -702,7 +709,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1671/">Ver3.2系のクライアントドライブ機能で，書き込み権限の無いクライアント側のフォルダへコピーすると，エラーにならず正常終了する．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1523/">GGサーバの監視に，ロードバランサのヘルスチェック機能でポート番号491へコネクトして良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -715,18 +722,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1671/"><i class="far fa-calendar"></i> 2010-08-08</a>
+                                            <a href="/posts/new_md/doc1523/"><i class="far fa-calendar"></i> 2010-12-03</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/08*
-[番号] 技術ノート KGTN 2010080901
-[現象] Ver3.2系のクライアントドライブ機能で，書き込み権限の無いクライアント側のフォルダへコピーすると，エラーにならず正常終了する．
-[説明] 弊社およびGraphOn 社で現象を確認しました．この動作は，技術ノートKGTN#2009091501 の問題と関連し ており，Ver3.2 系での制限事項 （既知の問題） となります．
-備　考 アーキテクチャが変更されたVer4.0系のクライアントドライブ機能では，このような場合は 「??? をコピーできません。アクセスできません。」 というWindowsのエラーダイアログが表示されます．
-ファイル KGTN2010080901.pdf [(53.5 KB)] [kitasp 技術センター, 2010/08/09 08:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1671/" class="btn btn-template-main">続きを読む</a>
+2010/12/03*
+[番号] 技術ノート KGTN 2010120302
+[現象] GGサーバの監視に，ロードバランサのヘルスチェック機能でポート番号491へコネクトして良いか？
+[説明] ロードバランサのヘルスチェック機能でポート番号491へコネクトするような監視は，原則として行わないようにして下さい．安全確実な監視方法として，エンタープライズオプションの GMCheck （GMCheckRaw） による監視を行うことを強くお勧めします．
+参　考 GGはログオンが集中した時でも処理をさばけるように，TCP/IPレベルのコネクト要求があった時点で，ログオン処理 （の前処理） を開始します．ロードバランサのヘルスチェック機能でポート番号491へコネクトされた場合もこのログオン処理が行われ，実際にはログオンされませんので，ログオフ処理 （の一部） も続けて行われることになります．つまり，１回の監視でログオン処理とログオフ処理が行われ，さらに頻繁に繰り返されることでサーバに負荷を与えることになります．このようなことから，ロードバランサのヘルスチェック機能でポート番号491を監視すべきではありません．
+ファイル KGTN2010120302.pdf [(59.6 KB)] [kitasp 技術センター, 2010/12/03 11:38]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1523/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -796,7 +803,7 @@
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

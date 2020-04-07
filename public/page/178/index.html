@@ -409,25 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1035/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc932/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1035/">GraphOn社の Release Notes にある BUG#8700 （CASE#3875） の機能は，どの処理について FlexLM のライセンス・チェックアウトを再試行するのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc932/">[GGW3.2.1] クライアント印刷に失敗し，APSログを見ると RS: Client Printer Port not found on server. という記録があった．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-05-22
+                            日付 2012-09-05
                             </p>
                             <p class="intro">*技術ノート
-2012/05/22*
-[番号] 技術ノート KGTN 2010081802
-[現象] GraphOn社の Release Notes にある BUG#8700 （CASE#3875） の機能は，どの処理について FlexLM のライセンス・チェックアウトを再試行するのか？
-[説明] ログオンが過度に集中した時，この &ldquo;FlexLM - Bad encryption handshake with vendor daemon. (Error code: -33)&rdquo; というエラーが発生しましたので，ログオン処理に関して FlexLM のライセンス・チェックアウトを再試行します （注： PWでのアプリケーション起動処理では，再試行は行われません） ．
-補足１ [Tickets 5677 and 3875 / Bug 8400] Intermittent license error: FlexLM - Bad encryption handshake with vendor daemon. (Error code: -33) As a workaround, we now attempt the license checkout again after an interval.</p>
+2012/09/05*
+[番号] 技術ノート KGTN 2012090501
+[現象] [GGW3.2.1] クライアント印刷に失敗し，APSログを見ると &ldquo;RS: Client Printer Port not found on server.&rdquo; という記録があった．
+[説明] GGW3.2.1では，クライアントがログオンしたタイミングで，クライアントプリンタ （オートクリエイトプリンタ） をサーバのプリンタフォルダに作成します．クライアントプリンタには， Windows Printer Driver 用の Client Printer Port， Universal Printer Driver 用の PDF-Xchange というポートが作成されますが，APSログはこのポートが作成されていなかったことを意味します．原因としては， Windows が一時的に不安定な状態となり，クライアントプリンタが正しく生成出来ない状況が発生した等が考えられ，通常 Windows を再起動することで問題が解消します．
+ファイル KGTN2012090501.pdf [(56.6 KB)] [kitasp 技術センター, 2012/09/05 13:19]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1035/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc932/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,26 +446,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1037/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc933/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1037/">[Session] 同一のGGサーバ上で 「A部門は最大3ユーザ，B部門は最大7ユーザ」 というようなログオン管理は可能か？</a></h4>
+                            <h4><a href="/posts/new_md/doc933/">[Session] Windowsの監視系ツールで，GGセッションの生成 （ログオン） と消滅 （ログオフ） の情報を採取出来ない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-05-18
+                            日付 2012-08-31
                             </p>
                             <p class="intro">*技術ノート
-2012/05/18*
-[番号] 技術ノート KGTN 2012051401
-[現象] [Session] 同一のGGサーバ上で 「A部門は最大3ユーザ，B部門は最大7ユーザ」 というようなログオン管理は可能か？
-[説明] GGサーバは 「最大20セッション，同一アカウントは最大2セッション」 というように，サーバ全体でのセッション管理 （ログオン管理） のみを行います．従って， お問い合わせの例ではA部門とB部門でサーバを分けるか，またはログオン最初に起動されるアプリケーションを作成し， （各部門について） 所定以下のユーザ数であれば PW を起動し，そうでなければエラーメッセージを表示して終了する方法が考えられます．
-補　足 GGサーバがGGクライアントからの接続要求を受け付ける時，認証情報は渡されませんので，先ずその時点でアカウントを見て拒否することは技術的に困難です．次にGGサーバは認証情報をGGクライアントに要求し Winlogon を行いますが，ここに切り口が用意されておりませんので，この時点でもアカウントを見て拒否することは出来ません．ログオンが完了すると， （初期アプリケーションが指定されていれば） 初期アプリケーションが起動されますので，この専用アプリケーションの中で他セッションの情報を参照し，許容数未満でなければエラーを表示してログオフすることが出来ます．なお，ログオンユーザでは他セッションの情報を直接参照することは出来ませんので （セキュリティの問題） ，サービス等でセッション情報を別途提供する必要があります．
-ファイル KGTN2012051401.pdf [(66.9 KB)] [kitasp 技術センター, 2012/05/18 12:30]</p>
+2012/08/31*
+[番号] 技術ノート KGTN 2012083101
+[現象] [Session] Windowsの監視系ツールで，GGセッションの生成 （ログオン） と消滅 （ログオフ） の情報を採取出来ない．
+[説明] GGは１つのWin32サブシステムの上でマルチユーザ環境を構築しているため，一般的なWindowsの監視系ツールでログオフの情報を採取することは出来ません．GGのエンタープライズオプションに含まれるツール GGSessionMonitor を使用することで，ログオンおよびログオフ （セッション再接続を含む） 等のセッション情報を採取することが出来ます．
+ファイル KGTN2012083101.pdf [(53 KB)] [kitasp 技術センター, 2012/08/31 09:44]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1037/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc933/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -484,25 +483,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1038/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc934/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1038/">[Android Client] iPhone 向けのクライアントはリリースされたが， Android 2.3 向けのクライアントはリリースされないのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc934/">[Linux Client] CentOS/GNOME の環境でGGを利用しているが，タスクバーに表示されるアプリケーションの情報が文字化けする．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-05-15
+                            日付 2012-08-29
                             </p>
                             <p class="intro">*技術ノート
-2012/05/15*
-[番号] 技術ノート KGTN 2012051601
-[現象] [Android Client] iPhone 向けのクライアントはリリースされたが， Android 2.3 向けのクライアントはリリースされないのか？
-[説明] 「Android 2.3 系はスマートフォン，Android 3.X 系はタブレット」 というように分かれており，ユーザインタフェースも異なります． Android 4.X 系では，スマートフォンとタブレットのユーザインタフェースが統合され，どちらの環境でも動作します． Android Client は，現時点では Android 2.3 をサポートする予定はありませんが，スマートフォン側が Android 4.X 系へバージョンアップされれば Android Client を利用出来るようになります．
-ファイル KGTN2012051601.pdf [(48.7 KB)] [kitasp 技術センター, 2012/05/16 04:18]</p>
+2012/08/29*
+[番号] 技術ノート KGTN 2012082901
+[現象] [Linux Client] CentOS/GNOME の環境でGGを利用しているが，タスクバーに表示されるアプリケーションの情報が文字化けする．
+[説明] アプリケーションのウインドウのタイトルは文字化けしませんので，GGクライアントの動作自体の問題ではなく，ウインドウマネージャの仕様に起因する問題 （制限事項） となります．この問題を解決するには，GNOME自体に手を入れて修正 （カスタマイズ） するか，またはGraphOn社が提供するウインドウマネージャ （IceWMベース） をご利用下さい．
+ファイル KGTN2012082901.pdf [(51.2 KB)] [kitasp 技術センター, 2012/08/29 12:51]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1038/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc934/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -521,25 +520,28 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1040/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc935/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1040/">[iPad/iPhone] Auto</a></h4>
+                            <h4><a href="/posts/new_md/doc935/">[GGW3.2.1] クライアントドライブ機能は，ファイルの内容によって圧縮率等が異なるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-05-01
+                            日付 2012-08-27
                             </p>
                             <p class="intro">*技術ノート
-2012/05/01*
-[番号] 技術ノート KGTN 2012050103
-[現象] [iPad/iPhone] Auto-Rotate （自動回転） 機能は，単に画像を回転させているだけか？
-[説明] いいえ．セッションをシャドウイングして確認すると分りますが，ウインドウが描画領域にフィットするように，ウインドウのサイズも自動的に変更されます．
-ファイル KGTN2012050103.pdf [(46.3 KB)] [kitasp 技術センター, 2012/05/01 10:58]</p>
+2012/08/27*
+[番号] 技術ノート KGTN 2011121204
+[現象] [GGW3.2.1] クライアントドライブ機能は，ファイルの内容によって圧縮率等が異なるのか？
+[説明] 圧縮率を確認するために， 1) 圧縮した20MBのファイル (ZIP.BIN) ， 2) 中身がゼロで埋められた20MBのファイル (FSUTIL.DAT) の２つのファイルでコピーして比較しました．
+ZIP.BINは既に圧縮されており，圧縮効果が出ないことから，ファイルコピー処理で実際に転送されるデータ量 （受信バイト数） は 20MB でした．FSUTIL.DAT は中身が全てゼロで圧縮効果が非常に高く出ることから，ファイルコピー処理で実際に転送されるデータ量 （受信バイト数） は 0.12MB (120KB) でした．このことから，クライアントドライブ機能には圧縮・解凍ツールと類似した機能が組み込まれており，既に圧縮されているファイルについては （当然のことながら） その効果は出ませんが，テキストファイル等では効果的な圧縮と伸張が行われ，通信量が大きく削減されます．
+補足１ プロトコルアナライザーで解析したところ， ZIP.BIN に関しては （圧縮効果が出ないことから） ファイルの内容を加工することなく長さ 566バイト （プロトコルのヘッダ等を含みます） のパケットに分割して，転送が行われていることを確認しました．
+補足２ テキストデータのみを含む11MBのExcelファイル （xls形式） で確認したところ，受信バイト数は2MB，最大使用帯域は10% (100Mbps) でした．この Excel ファイルを zip で圧縮すると 1.64MB であることから，一般的なデータファイルであれば，受信バイト数は zip圧縮したファイルサイズ＋プロトコルのオーバーヘッド と推測することが出来ると思われます．
+ファイル KGTN2011121204.pdf [(74.5 KB)] [kitasp 技術センター, 2012/08/27 10:26]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1040/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc935/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

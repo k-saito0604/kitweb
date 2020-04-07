@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2163/">
+                                      <a href="/posts/new_md/doc2123/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2163/">[GGH5.X/Windows] 現実に即した負荷試験を行いたいが，お勧めの手順を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2123/">[GGH5.X] クライアントサウンド機能を使用してラジオを聞きたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2163/"><i class="far fa-calendar"></i> 2017-04-07</a>
+                                            <a href="/posts/new_md/doc2123/"><i class="far fa-calendar"></i> 2017-04-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/04/07*
-[番号] 技術ノート KGTN 2017030601
-[現象] [GGH5.X/Windows] 現実に即した負荷試験を行いたいが，お勧めの手順を知りたい．
-[説明] 現実に即した負荷試験ということであれば，できるだけ多くの利用者 （端末） に参加して頂くことが大切です．これにより，GGサーバーだけでなくネットワークにも適切 （妥当） な負荷が掛かり，試験結果の信頼性が高まります．負荷試験の手順は，試験結果の評価が出来るように，例えば次のようなシナリオ （午前9時スタート） で実施することをお勧めします．
- 09:00 ～ 09:05 「ログオン → 30秒待機 → ログオフ」，この繰り返し 09:05 ～ 09:10 「ログオン → ブラウザを起動」 ※評価が出来るように待機 09:10 ～ 09:15 「ウエッブページにアクセス → 10秒待機」，この繰り返し ※ネットサーフィンをしているような操作 09:15 ～ 09:20 「通常利用するアプリケーションを起動」 ※評価が出来るように待機 5.09:20 ～ 09:30 「アプリケーションを自由に利用」，その後ログオフ  ファイル KGTN2017030601.pdf [(62.6 KB)] [kitasp 技術センター, 2017/04/07 13:48]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2163/" class="btn btn-template-main">続きを読む</a>
+2017/04/28*
+[番号] 技術ノート KGTN 2017041701
+[現象] [GGH5.X] クライアントサウンド機能を使用してラジオを聞きたい．
+[説明] クラスターマネージャーで Client Access → Sound にチェックを入れてください．なお，クライアント側の環境は Windows 7 または Windows 10 で， [サーバー側の環境にサウンド・カードが必要]{.underline} です （スピーカーは不要です） ．
+On Windows 7 and later, the GO-Global host supports a virtual audio device that creates a private mixer for every GO-Global session. These components mix the audio played by applications running in the GO-Global session and encode it in Ogg Vorbis format. The host streams the Ogg Vorbis data to the client, and the client plays the audio.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2123/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2132/">
+                                      <a href="/posts/new_md/doc2116/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2132/">[GGH5.X] GGPDFPrint の機能とインストール手順を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2116/">[GGH5.X] クライアント側のIMEを使用した場合，アプリケーションによるIMEの制御処理は機能するか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,25 +381,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2132/"><i class="far fa-calendar"></i> 2017-04-07</a>
+                                            <a href="/posts/new_md/doc2116/"><i class="far fa-calendar"></i> 2017-04-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/04/07*
-[番号] 技術ノート KGTN 2017031801
-[現象] [GGH5.X] GGPDFPrint の機能とインストール手順を知りたい．
-[説明] GGPDFPrint は，GGクライアントに組み込まれた UPD （Universal Printer Driver） の印刷エンジンを置き換えるソフトウエアで，この機能によりドキュメントを Adobe Reader を使用して印刷するようになります （Adobe Reader の手動操作は必要ありません） ．さらに， [マイ ドキュメント] にログを出力する機能もあるため， UPD による印刷の諸問題の調査に利用することができます．
-インストールの手順は，次の通りです．
-&lt;STEP#1&gt; GGPDFPrint-Setup.exe を入手し，ダブルクリックして起動します．
-&lt;STEP#2&gt; GGのデスクトップクライアント （シングルユーザー） 版のインストーラー以外の方法でGGのクライアントがインストールされている場合は， [参照] ボタンをクリックして，そのインストール先のフォルダーを選択します．その後， [次へ] をクリックします．
-選択したフォルダーにGGクライアントがない場合は， [次へ] をクリックした直後に次のメッセージが表示されます．再度， [参照] をクリックし，正しいフォルダーを指定してください．
-選択したフォルダーに既に GGPDFPrint がインストールされている場合は， [次へ] をクリックした直後に次のメッセージが表示されます．インストールを中断してください．
-&lt;STEP#3&gt; [インストール] をクリックします．
-&lt;STEP#4&gt; [完了] をクリックします．
-&lt;STEP#5&gt; [スタート] → [すべてのプログラム] → [GGPDFPrint] を選択してください．
-Windows 7 Windows 10 &lt;STEP#6&gt; [1.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2132/" class="btn btn-template-main">続きを読む</a>
+2017/04/28*
+[番号] 技術ノート KGTN 2017042401
+[現象] [GGH5.X] クライアント側のIMEを使用した場合，アプリケーションによるIMEの制御処理は機能するか？
+[説明] サーバー側のIMEを使用する場合は，クライアントから送信される情報は物理的なキーのコード （スキャンコードと仮想キーコード） で，サーバー側のIMEはそのキーのコードを解釈して文字コードへ変換し出力します．
+他方，クライアント側のIMEを使用する場合は，クライアントから送信される情報は 「キーのコードではなく」 文字コードで，サーバー側のIMEはその文字コードをそのまま出力します．
+このような仕組みであるため，サーバー上のアプリケーションでIMEの制御を行っても，それが出力される文字コードへ反映されることはありません （つまり，結果的にアプリケーションによるIMEの制御処理は機能しません） ．
+ファイル KGTN2017042401.pdf [(37.6 KB)] [kitasp 技術センター, 2017/05/08 11:56]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2116/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -409,7 +403,7 @@ Windows 7 Windows 10 &lt;STEP#6&gt; [1.</p>
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2147/">
+                                      <a href="/posts/new_md/doc2129/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -417,7 +411,7 @@ Windows 7 Windows 10 &lt;STEP#6&gt; [1.</p>
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2147/">[GGH5.X] GGを簡単かつ安価に試すクラウド環境はあるか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2129/">[GGH5.X] IE のActiveXクライアントのアンインストールの方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -430,19 +424,19 @@ Windows 7 Windows 10 &lt;STEP#6&gt; [1.</p>
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2147/"><i class="far fa-calendar"></i> 2017-04-07</a>
+                                            <a href="/posts/new_md/doc2129/"><i class="far fa-calendar"></i> 2017-04-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/04/07*
-[番号] 技術ノート KGTN 2017032201
-[現象] [GGH5.X] GGを簡単かつ安価に試すクラウド環境はあるか？
-[説明] さくらインターネットの 「さくらのVPS for Windows Server」 の W2G にGGをインストールし，１ユーザーで Microsoft Office 等が利用できることを確認した事績があります．
-ファイル KGTN2017032201.pdf [(48.9 KB)] [kitasp 技術センター, 2017/04/07 17:16]
-KGTN2017032201.jpg
-表示 [(14.4 KB)] [kitasp 技術センター, 2017/04/07 17:16]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2147/" class="btn btn-template-main">続きを読む</a>
+2017/04/27*
+[番号] 技術ノート KGTN 2017040701
+[現象] [GGH5.X] IE のActiveXクライアントのアンインストールの方法は？
+[説明] バージョン5.0より，IE のActiveXクライアントのインストール方法は，インストーラーを使用する方法に変更されております．このため，アンインストール方法も，一般のアプリケーションと同じように，コントロールパネルの「プログラムのアンインストールまたは変更」 でアンインストールを行ってください．
+ファイル KGTN2017040701.pdf [(311 KB)] [kitasp 技術センター, 2017/04/27 17:56]
+KGTN2017040701.jpg
+表示 [(25.9 KB)] [kitasp 技術センター, 2017/04/27 17:57]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2129/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -452,7 +446,7 @@ KGTN2017032201.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2138/">
+                                      <a href="/posts/new_md/doc2117/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -460,7 +454,7 @@ KGTN2017032201.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2138/">[GGH5.X] GGサーバー上で CubePDF Utility は動作するのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2117/">[GGH5.X] アンチウイルスソフト Sophos Endpoint Security and Control for Windows に関する情報を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -473,22 +467,19 @@ KGTN2017032201.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2138/"><i class="far fa-calendar"></i> 2017-04-07</a>
+                                            <a href="/posts/new_md/doc2117/"><i class="far fa-calendar"></i> 2017-04-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/04/07*
-[番号] 技術ノート KGTN 2017020802
-[現象] [GGH5.X] GGサーバー上で CubePDF Utility は動作するのか？
-[説明] Windows Server 2012 R2 + GO-Global 5.0.2.23814 + cubepdf-utility-0.4.1b-x64 という環境で動作確認を行ったところ，下記のようにPDFファイルを開き，幾つかのページを削除し，そのファイルを保存することが出来ました．
-CubePDF Utility をGGサーバーにインストールする場合，必ず64bitネイティブ版を使用してください ( [32ビット版ではPDFファイルの内容が表示されません]{.underline} ）．さらに，インストール直後に CubeWidget をアンインストールしてください （ [アンインストールしない場合，このプログラムが常駐しセッションが終了しません]{.underline} ） ．
-ファイル KGTN2017020802.pdf [(292 KB)] [kitasp 技術センター, 2017/04/07 11:46]
-KGTN2017020802-1.jpg
-表示 [(39.8 KB)] [kitasp 技術センター, 2017/04/07 11:47]
-KGTN2017020802-2.jpg
-表示 [(20.4 KB)] [kitasp 技術センター, 2017/04/11 14:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2138/" class="btn btn-template-main">続きを読む</a>
+2017/04/27*
+[番号] 技術ノート KGTN 2017041101
+[現象] [GGH5.X] アンチウイルスソフト Sophos Endpoint Security and Control for Windows に関する情報を知りたい．
+[説明] Sophos Endpoint Security and Control for Windows のバージョン 10.6.4 がインストールされた環境で，ログオンに2～3分を要し，その後フリーズするという報告があります．この問題は，次の方法で解消する可能性があります．
+  レジストリ HKLMSOFTWAREGraphOnGO-GlobalAppServerSandBox DWORD 0 を追加する．
+  サーバーを再起動する．
+ Run Regedit on the host computer and add the following DWORD registry value: [HKEY_LOCAL_MACHINESOFTWAREGraphOnGO-GlobalAppServerSandBox] = 0 Restart the host computer    ファイル KGTN2017041101.pdf [(39.9 KB)] [kitasp 技術センター, 2017/05/08 11:55]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2117/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -498,7 +489,7 @@ KGTN2017020802-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2182/">
+                                      <a href="/posts/new_md/doc2128/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -506,7 +497,7 @@ KGTN2017020802-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2182/">[GGH5.X] GGサーバー上で HO_Cad 2.70 は動作するのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2128/">[GGH5.X] サーバー側で使用可能なPDF生成ソフトウエアは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -519,19 +510,22 @@ KGTN2017020802-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2182/"><i class="far fa-calendar"></i> 2017-04-07</a>
+                                            <a href="/posts/new_md/doc2128/"><i class="far fa-calendar"></i> 2017-04-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2017/04/07*
-[番号] 技術ノート KGTN 2017020804
-[現象] [GGH5.X] GGサーバー上で HO_Cad 2.70 は動作するのか？
-[説明] Windows Server 2012 R2 + GO-Global 5.0.2.23814 + ho_cad_2_70 という環境で動作確認を行ったところ，下記のように起動しました （注：操作等については弊社では分かりませんので確認しておりません） ．
-ファイル KGTN2017020804.pdf [(163 KB)] [kitasp 技術センター, 2017/04/07 11:52]
-KGTN2017020804.jpg
-表示 [(30.2 KB)] [kitasp 技術センター, 2017/04/07 11:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2182/" class="btn btn-template-main">続きを読む</a>
+2017/04/27*
+[番号] 技術ノート KGTN 2017041102
+[現象] [GGH5.X] サーバー側で使用可能なPDF生成ソフトウエアは？
+[説明] PDFファイルの出力先を指定するダイアログを，Windows カーネルの中で表示するPDF生成ソフトウエアは使用することが出来ません．簡単な試験で動作を確認したPDF生成ソフトウエアは，次の通りです．
+Foxit Reader 8 https://www.foxit.co.jp/products/foxit-reader
+Bullzip PDF Printer http://www.bullzip.com/products/pdf/info.php
+PrimoPDF http://www.primopdf.com/
+ファイル KGTN2017041102.pdf [(628 KB)] [kitasp 技術センター, 2017/04/27 18:00]
+KGTN2017041102.jpg
+表示 [(28.3 KB)] [kitasp 技術センター, 2017/04/27 18:00]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2128/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -541,7 +535,7 @@ KGTN2017020804.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2183/">
+                                      <a href="/posts/new_md/doc2174/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -549,7 +543,7 @@ KGTN2017020804.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2183/">[GGH5.X] GGサーバー上で Jw_cad は動作するのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2174/">[GGH4.X-5.X] GGEasyDefaultPrinter は，どのようなソフトウエアなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -562,19 +556,19 @@ KGTN2017020804.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2183/"><i class="far fa-calendar"></i> 2017-04-07</a>
+                                            <a href="/posts/new_md/doc2174/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
 2017/04/07*
-[番号] 技術ノート KGTN 2017020803
-[現象] [GGH5.X] GGサーバー上で Jw_cad は動作するのか？
-[説明] Windows Server 2012 R2 + GO-Global 5.0.2.23814 + jww802 という環境で動作確認を行ったところ，下記のように図面を開くことができました （注：操作等については弊社では分かりませんので確認しておりません） ．
-ファイル KGTN2017020803.pdf [(226 KB)] [kitasp 技術センター, 2017/04/07 11:49]
-KGTN2017020803.jpg
-表示 [(40.8 KB)] [kitasp 技術センター, 2017/04/07 11:50]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2183/" class="btn btn-template-main">続きを読む</a>
+[番号] 技術ノート KGTN 2017022301
+[現象] [GGH4.X-5.X] GGEasyDefaultPrinter は，どのようなソフトウエアなのか？
+[説明] GGEasyDefaultPrinter は， 「プログラム・ウインドウの Printers アプレットを使用することなく」 デフォルトプリンター （通常使うプリンター） を設定するためのツールです．
+ファイル KGTN2017022301.pdf [(66 KB)] [kitasp 技術センター, 2017/04/07 13:05]
+KGTN2017022301.jpg
+表示 [(11 KB)] [kitasp 技術センター, 2017/04/07 13:05]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2174/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -584,7 +578,7 @@ KGTN2017020803.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2184/">
+                                      <a href="/posts/new_md/doc2171/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -592,7 +586,7 @@ KGTN2017020803.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2184/">[GGH5.X] GGサーバー側にPDFファイルを生成できるソフトウエアは？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2171/">[GGH4.X-5.X] クライアントフレームを使用しない時は， [ALT] &#43; [TAB] でローカルアプリケーションに加え，GG上で動作するアプリケーションの切り替えが出来る．しかし，クライアントフレームを使用すると，クライアントフレームへの切り替えは出来るが，GG上で動作するアプリケーションの切り替えが出来ない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -605,22 +599,18 @@ KGTN2017020803.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2184/"><i class="far fa-calendar"></i> 2017-04-07</a>
+                                            <a href="/posts/new_md/doc2171/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
 2017/04/07*
-[番号] 技術ノート KGTN 2017020801
-[現象] [GGH5.X] GGサーバー側にPDFファイルを生成できるソフトウエアは？
-[説明] PDF生成ソフトウエアの中には，PDFファイルの生成先を指定するダイアログをカーネルの中で表示するものがあり，このようなソフトウエアは使用することが出来ません．GGのセッションの中でPDFファイルの生成先を指定するダイアログを表示する製品として， Foxit Reader 8 があります．
-下記の例は， foxit-reader_8.1.2.1123_jp を既定の設定でサーバー側にインストールし，サーバー側のプリンター Foxit Reader PDF Printer へ印刷した時のものです．
-ファイル KGTN2017020801.pdf [(371 KB)] [kitasp 技術センター, 2017/04/07 11:41]
-KGTN2017020801-1.jpg
-表示 [(45 KB)] [kitasp 技術センター, 2017/04/07 11:41]
-KGTN2017020801-2.jpg
-表示 [(40.5 KB)] [kitasp 技術センター, 2017/04/07 11:41]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2184/" class="btn btn-template-main">続きを読む</a>
+[番号] 技術ノート KGTN 2017022701
+[現象] [GGH4.X-5.X] クライアントフレームを使用しない時は， [ALT] + [TAB] でローカルアプリケーションに加え，GG上で動作するアプリケーションの切り替えが出来る．しかし，クライアントフレームを使用すると，クライアントフレームへの切り替えは出来るが，GG上で動作するアプリケーションの切り替えが出来ない．
+[説明] クライアントフレームを使用しない時は， （GGの擬装機能により） GG上で動作するアプリケーションもローカルのタスクバーに現れます．このため， [ALT] + [TAB] でローカルアプリケーションと同じレベルでアプリケーションの切り替えが出来ます．
+クライアントフレームを使用する場合は，クライアントフレームのみがローカルのタスクバーに現れますので， [ALT] + [TAB] ではクライアントフレームへの切り替えのみが可能です．これは， Windows およびGGの仕様に基づいた動作です．なお，同様の理由で， [ALT] + [PRT SC] でクライアントフレーム中のアプリケーションのスクリーンショットを撮ることは出来ません．
+ファイル KGTN2017022701.pdf [(56.6 KB)] [kitasp 技術センター, 2017/04/07 13:11]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2171/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -630,7 +620,7 @@ KGTN2017020801-2.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2153/">
+                                      <a href="/posts/new_md/doc2172/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -638,7 +628,7 @@ KGTN2017020801-2.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2153/">[GGH5.X] Mozilla Firefox 52 をインストールしたが，GGの Firefox クライアントが動作しない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2172/">[GGH4.X-5.X] 特定ユーザーのみタスクマネージャーが起動できるようにしたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -651,20 +641,22 @@ KGTN2017020801-2.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2153/"><i class="far fa-calendar"></i> 2017-04-07</a>
+                                            <a href="/posts/new_md/doc2172/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
 2017/04/07*
-[番号] 技術ノート KGTN 2017031401
-[現象] [GGH5.X] Mozilla Firefox 52 をインストールしたが，GGの Firefox クライアントが動作しない．
-[説明] GGの Firefox クライアントが公式にサポートする環境は， Mozilla Firefox 38 (ESR) です．弊社の試験では，Mozilla Firefox 52 (ESR) / Win32 で動作することを確認しております．
-https://ftp.mozilla.org/pub/firefox/releases/52.0esr/win32/ja/
-ファイル KGTN2017031401.pdf [(148 KB)] [kitasp 技術センター, 2017/04/07 14:54]
-KGTN2017031401.jpg
-表示 [(35.4 KB)] [kitasp 技術センター, 2017/04/07 14:54]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2153/" class="btn btn-template-main">続きを読む</a>
+[番号] 技術ノート KGTN 2017022402
+[現象] [GGH4.X-5.X] 特定ユーザーのみタスクマネージャーが起動できるようにしたい．
+[説明] Administrator のみタスクマネージャーを起動するスクリプトとその登録方法を以下に示します．
+ファイル： tm.vbs （DOS窓を表示しないためのラッパー）
+Set WshShell = WScript.CreateObject(&quot;WScript.Shell&quot;) Call WshShell.Run( &quot;cmd.exe /c C:kitASPAPPtm.bat&quot;, 0, False )  ファイル： tm.bat （IF文でユーザーIDを判断）
+echo off IF &quot;%username%&quot; == &quot;Administrator&quot; ( goto OK ) else ( goto NG ) :OK C:WindowsSystem32Taskmgr.exe :NG exit  アプリケーション登録 （tm.vbs を登録しタスクマネージャーのアイコンを指定）
+ファイル KGTN2017022402.pdf [(73.8 KB)] [kitasp 技術センター, 2017/04/07 13:10]
+KGTN2017022402.jpg
+表示 [(9.68 KB)] [kitasp 技術センター, 2017/04/07 13:10]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2172/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -674,7 +666,7 @@ KGTN2017031401.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2176/">
+                                      <a href="/posts/new_md/doc2175/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -682,7 +674,7 @@ KGTN2017031401.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2176/">[GGH5.X] Windowsの関数 SetDefaultPrinter でデフォルトプリンタを変更したいが，引数で存在するプリンターを  の形式で指定するとエラーとなる．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2175/">[GGH4.X-5.X] 端末のブラウザを利用した時と比べ，GG上のブラウザのスクロールがスムーズでない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -695,20 +687,17 @@ KGTN2017031401.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2176/"><i class="far fa-calendar"></i> 2017-04-07</a>
+                                            <a href="/posts/new_md/doc2175/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
 2017/04/07*
-[番号] 技術ノート KGTN 2017021501
-[現象] [GGH5.X] Windowsの関数 SetDefaultPrinter でデフォルトプリンタを変更したいが，引数で存在するプリンターを の形式で指定するとエラーとなる．
-[説明] GG環境で関数 SetDefaultPrinter を使ってデフォルトプリンタを変更する場合は，次の形式でプリンターを指定してください．
-[サーバー側のプリンター] 形式： 例１： &ldquo;Foxit Reader PDF Printer&rdquo; 例２： &ldquo;Microsoft XPS Document Writer&rdquo;
-[クライアント側のプリンター] 形式： (from ) 例１： &quot; Preview PDF (from WIN10-ISUMI1)&rdquo; 例２： &quot; FX DocuCentre-IV 1号機 (from WIN10-ISUMI1)&rdquo;
-なお，クライアント名は環境変数 CLIENTCOMPUTERNAME から得ることができます．
-ファイル KGTN2017021501.pdf [(62.4 KB)] [kitasp 技術センター, 2017/04/07 13:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2176/" class="btn btn-template-main">続きを読む</a>
+[番号] 技術ノート KGTN 2017022201
+[現象] [GGH4.X-5.X] 端末のブラウザを利用した時と比べ，GG上のブラウザのスクロールがスムーズでない．
+[説明] 端末のブラウザを利用する場合は，スクロールによる画面の差分を画面上に直接描画するだけで済みます．他方，GG上のブラウザを利用する場合は，サーバー上でスクロールによる画面の更新処理を行うとともに，その更新処理に対応する描画命令をネットワーク経由で端末側へ送信し，それを受信した端末は描画命令を解釈し画面にスクロール結果を描画します．このような複雑な仕組みにより，残念ながら端末のブラウザと同等のスクロール速度を得ることはできません．なお，著しく遅い場合は，GGサーバーと端末間のネットワークの応答時間や回線速度がボトルネックになっている場合がありますので，回線品質を確認してください．
+ファイル KGTN2017022201.pdf [(59.9 KB)] [kitasp 技術センター, 2017/04/07 13:03]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2175/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -718,7 +707,7 @@ KGTN2017031401.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2167/">
+                                      <a href="/posts/new_md/doc336/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -726,7 +715,7 @@ KGTN2017031401.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2167/">[GGH5.X] クライアント・クリップボード機能 （クリップボード共有） で，文字データのみのコピー＆ペーストを行いたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc336/">[GGH5.X-6.X] クライアント・クリップボード機能 （クリップボード共有） で，文字データのみのコピー＆ペーストを行いたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -739,18 +728,18 @@ KGTN2017031401.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2167/"><i class="far fa-calendar"></i> 2017-04-07</a>
+                                            <a href="/posts/new_md/doc336/"><i class="far fa-calendar"></i> 2017-04-07</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
 2017/04/07*
 [番号] 技術ノート KGTN 2017030101
-[現象] [GGH5.X] クライアント・クリップボード機能 （クリップボード共有） で，文字データのみのコピー＆ペーストを行いたい．
+[現象] [GGH5.X-6.X] クライアント・クリップボード機能 （クリップボード共有） で，文字データのみのコピー＆ペーストを行いたい．
 [説明] Windows 上のクリップボード機能は，コピーされる側は 「可能な」 すべての形式のデータをクリップボードに記録します．ペーストされる側は，クリップボードに記録された様々なデータ形式の中から， 「自分の処理に適合する」 データ形式を選び自分の中に取り込みます．つまり，文字データのみをクリップボードに記録というような概念は，一般的なアプリケーションには存在しません．このような仕組みにより，コピー＆ペーストで文字データだけでなく，ファイル等のコピーが可能となっております．
 GG環境でもこの仕組みが適用され，文字データだけでなく画像データもコピー＆ペーストが出来ます （制限することは出来ません） ．しかしながら，セキュリティ上の問題となるファイルのペーストについては， 「サーバーとクライアント間では」 出来ないようになっております．
-ファイル KGTN2017030101.pdf [(59.9 KB)] [kitasp 技術センター, 2017/04/07 13:13]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2167/" class="btn btn-template-main">続きを読む</a>
+ファイル KGTN2017030101.pdf [(44.5 KB)] [kitasp 技術センター, 2020/03/23 14:31]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc336/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -820,7 +809,7 @@ GG環境でもこの仕組みが適用され，文字データだけでなく画
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

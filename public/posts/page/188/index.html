@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1134/">
+                                      <a href="/posts/new_md/doc1035/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1134/">[GGW3.2.1/GGH4.0] 英文のリリースノートに書かれている ISSUES FIXED の詳細を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1035/">GraphOn社の Release Notes にある BUG#8700 （CASE#3875） の機能は，どの処理について FlexLM のライセンス・チェックアウトを再試行するのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1134/"><i class="far fa-calendar"></i> 2012-01-18</a>
+                                            <a href="/posts/new_md/doc1035/"><i class="far fa-calendar"></i> 2012-05-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/18*
-[番号] 技術ノート KGTN 2012011802
-[現象] [GGW3.2.1/GGH4.0] 英文のリリースノートに書かれている ISSUES FIXED の詳細を知りたい．
-[説明] 通常のサポートでは，GraphOn社は ISSUES FIXED の詳細に関する情報を提供しておりません．当然のことながら，GraphOn社の開発チームのデータベースの中には詳細な情報がありますが，顧客固有の情報やノウハウに関する情報等を含んでおり，それを単純に公開することは困難です．もし詳細情報を公開するとすれば，それらの情報を含まないように整理し，さらに外部の人間が分るように噛み砕いて説明する必要があります．しかしこの作業が出来るのはその件に絡んだ開発担当者だけであり，日々のGGの開発作業・保守作業の中から，その資料を作成する時間を確保することは非常に困難な状況にあります．このような厳しい事情があることを，ぜひご理解ください．なお，どうしても情報が必要な場合は，プロフェッショナルサービスとして対応させて頂きます．
-ファイル KGTN2012011802.pdf [(62.8 KB)] [kitasp 技術センター, 2012/01/18 13:07]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1134/" class="btn btn-template-main">続きを読む</a>
+2012/05/22*
+[番号] 技術ノート KGTN 2010081802
+[現象] GraphOn社の Release Notes にある BUG#8700 （CASE#3875） の機能は，どの処理について FlexLM のライセンス・チェックアウトを再試行するのか？
+[説明] ログオンが過度に集中した時，この &ldquo;FlexLM - Bad encryption handshake with vendor daemon. (Error code: -33)&rdquo; というエラーが発生しましたので，ログオン処理に関して FlexLM のライセンス・チェックアウトを再試行します （注： PWでのアプリケーション起動処理では，再試行は行われません） ．
+補足１ [Tickets 5677 and 3875 / Bug 8400] Intermittent license error: FlexLM - Bad encryption handshake with vendor daemon. (Error code: -33) As a workaround, we now attempt the license checkout again after an interval.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1035/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1133/">
+                                      <a href="/posts/new_md/doc1037/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1133/">[GGW3.2.1] ActiveX クライアントにHTML （OBJECTタグ） でユーザIDとパスワードを渡しているが，ユーザがソースコードを表示させるとパスワードが分ってしまう．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1037/">[Session] 同一のGGサーバ上で 「A部門は最大3ユーザ，B部門は最大7ユーザ」 というようなログオン管理は可能か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,19 +381,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1133/"><i class="far fa-calendar"></i> 2012-01-18</a>
+                                            <a href="/posts/new_md/doc1037/"><i class="far fa-calendar"></i> 2012-05-18</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/18*
-[番号] 技術ノート KGTN 2012010605
-[現象] [GGW3.2.1] ActiveX クライアントにHTML （OBJECTタグ） でユーザIDとパスワードを渡しているが，ユーザがソースコードを表示させるとパスワードが分ってしまう．
-[説明] ActiveX クライアントおよびブラウザの仕様で渡したパスワードを完全に隠すことは出来ませんが，しかし以下の設定を行うことによりユーザがソースコードを表示を出来ないようにすることが可能です．
-この設定により，ActiveX クライアントに制御が移った直後にブラウザ （IE） が自動的に閉じられるため，ユーザがソースコードを表示させることは出来ません．
-補　足 Windows Vista および Windows 7 の環境では， UAC （ユーザーアカウント制御） を無効にするか，またはブラウザ （IE） を 「管理者として実行」 する必要があります．この条件に合致しない場合は，ブラウザ （IE） は自動的に閉じられず，開いたまま （表示されたまま） となります．このような場合は，右クリック （コンテキストメニュー） を禁止する等の方法で対応して下さい．
-ファイル KGTN2012010605.pdf [(67.2 KB)] [kitasp 技術センター, 2012/01/19 08:17]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1133/" class="btn btn-template-main">続きを読む</a>
+2012/05/18*
+[番号] 技術ノート KGTN 2012051401
+[現象] [Session] 同一のGGサーバ上で 「A部門は最大3ユーザ，B部門は最大7ユーザ」 というようなログオン管理は可能か？
+[説明] GGサーバは 「最大20セッション，同一アカウントは最大2セッション」 というように，サーバ全体でのセッション管理 （ログオン管理） のみを行います．従って， お問い合わせの例ではA部門とB部門でサーバを分けるか，またはログオン最初に起動されるアプリケーションを作成し， （各部門について） 所定以下のユーザ数であれば PW を起動し，そうでなければエラーメッセージを表示して終了する方法が考えられます．
+補　足 GGサーバがGGクライアントからの接続要求を受け付ける時，認証情報は渡されませんので，先ずその時点でアカウントを見て拒否することは技術的に困難です．次にGGサーバは認証情報をGGクライアントに要求し Winlogon を行いますが，ここに切り口が用意されておりませんので，この時点でもアカウントを見て拒否することは出来ません．ログオンが完了すると， （初期アプリケーションが指定されていれば） 初期アプリケーションが起動されますので，この専用アプリケーションの中で他セッションの情報を参照し，許容数未満でなければエラーを表示してログオフすることが出来ます．なお，ログオンユーザでは他セッションの情報を直接参照することは出来ませんので （セキュリティの問題） ，サービス等でセッション情報を別途提供する必要があります．
+ファイル KGTN2012051401.pdf [(66.9 KB)] [kitasp 技術センター, 2012/05/18 12:30]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1037/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -403,7 +402,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1135/">
+                                      <a href="/posts/new_md/doc1038/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -411,7 +410,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1135/">[iPad Client] iPad Client は GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1038/">[Android Client] iPhone 向けのクライアントはリリースされたが， Android 2.3 向けのクライアントはリリースされないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -424,17 +423,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1135/"><i class="far fa-calendar"></i> 2012-01-18</a>
+                                            <a href="/posts/new_md/doc1038/"><i class="far fa-calendar"></i> 2012-05-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/18*
-[番号] 技術ノート KGTN 2012011803
-[現象] [iPad Client] iPad Client は GO-Global for UNIX をサポートしているのか？
-[説明] 少なくとも現在リリースされている iPad Client は GO-Global for UNIX をサポートしておりません．今後のことについては未だ明確な情報がありませんが，GraphOn社が公開している資料 &ldquo;Mobile client initiative positioning paper&rdquo; には以下の記述があります．
-ファイル KGTN2012011803.pdf [(72.6 KB)] [kitasp 技術センター, 2012/01/18 11:42]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1135/" class="btn btn-template-main">続きを読む</a>
+2012/05/15*
+[番号] 技術ノート KGTN 2012051601
+[現象] [Android Client] iPhone 向けのクライアントはリリースされたが， Android 2.3 向けのクライアントはリリースされないのか？
+[説明] 「Android 2.3 系はスマートフォン，Android 3.X 系はタブレット」 というように分かれており，ユーザインタフェースも異なります． Android 4.X 系では，スマートフォンとタブレットのユーザインタフェースが統合され，どちらの環境でも動作します． Android Client は，現時点では Android 2.3 をサポートする予定はありませんが，スマートフォン側が Android 4.X 系へバージョンアップされれば Android Client を利用出来るようになります．
+ファイル KGTN2012051601.pdf [(48.7 KB)] [kitasp 技術センター, 2012/05/16 04:18]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1038/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -444,7 +443,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1138/">
+                                      <a href="/posts/new_md/doc1040/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -452,7 +451,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1138/">[GGW3.2.1/GGH4.0] 印刷時に指定した用紙サイズと異なる用紙に出力される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1040/">[iPad/iPhone] Auto-Rotate （自動回転） 機能は，単に画像を回転させているだけか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -465,17 +464,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1138/"><i class="far fa-calendar"></i> 2012-01-17</a>
+                                            <a href="/posts/new_md/doc1040/"><i class="far fa-calendar"></i> 2012-05-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/17*
-[番号] 技術ノート KGTN 2012011701
-[現象] [GGW3.2.1/GGH4.0] 印刷時に指定した用紙サイズと異なる用紙に出力される．
-[説明] これはGGの問題ではなく，介在するプリンタドライバ等の機能 （設定） に起因して発生します．プリンタドライバ （注：PDFクリエーターやPDFリーダーを含みます，またプリンタ本体やアプリケーションにもこの機能がある可能性があります） の中には，原稿サイズに関わりなく自動的に出力用紙サイズ （トレイ） や印刷方向を決める機能を備えているものがあり，これが機能した時に 「印刷時に指定した用紙サイズ （原稿サイズ） と異なる用紙に出力される」 という現象が発生します．対応としては，技術的に考えれば原稿サイズと出力用紙サイズを一致させることは可能だと考えられますので， （印刷に絡む全ての） プリンタドライバやプリンタ本体等の機能 （設定） を確認し調整して下さい．
-ファイル KGTN2012011701.pdf [(55.3 KB)] [kitasp 技術センター, 2012/01/17 11:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1138/" class="btn btn-template-main">続きを読む</a>
+2012/05/01*
+[番号] 技術ノート KGTN 2012050103
+[現象] [iPad/iPhone] Auto-Rotate （自動回転） 機能は，単に画像を回転させているだけか？
+[説明] いいえ．セッションをシャドウイングして確認すると分りますが，ウインドウが描画領域にフィットするように，ウインドウのサイズも自動的に変更されます．
+ファイル KGTN2012050103.pdf [(46.3 KB)] [kitasp 技術センター, 2012/05/01 10:58]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1040/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -485,7 +484,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1140/">
+                                      <a href="/posts/new_md/doc1039/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -493,7 +492,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1140/">[GGW3.2.1/GGH4.0] GGはカレンダー （閏年） に依存して，問題が起きることはないのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1039/">[iPad/iPhone] ウインドウの端が切れたように表示された．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -506,17 +505,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1140/"><i class="far fa-calendar"></i> 2012-01-13</a>
+                                            <a href="/posts/new_md/doc1039/"><i class="far fa-calendar"></i> 2012-05-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/13*
-[番号] 技術ノート KGTN 2012011302
-[現象] [GGW3.2.1/GGH4.0] GGはカレンダー （閏年） に依存して，問題が起きることはないのか？
-[説明] GGはアプリケーションを配信するミドルウエアであり，カレンダー （閏年） に影響を受けるような処理は行っておりません．なお，GG上で動作するアプリケーション （配信するアプリケーション） の動作については，それぞれのアプリケーションの仕様等をご確認下さい．
-ファイル KGTN2012011302.pdf [(48.1 KB)] [kitasp 技術センター, 2012/01/13 12:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1140/" class="btn btn-template-main">続きを読む</a>
+2012/05/01*
+[番号] 技術ノート KGTN 2012050104
+[現象] [iPad/iPhone] ウインドウの端が切れたように表示された．
+[説明] ドラッグ操作を行った時や回転操作を行った時に，画面が乱れることがあります．これは既知の問題で，ウインドウの 「最小化→復元」 操作を行うことで解消します．
+ファイル KGTN2012050104.pdf [(45 KB)] [kitasp 技術センター, 2012/05/01 11:11]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1039/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -526,7 +525,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1139/">
+                                      <a href="/posts/new_md/doc1041/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -534,7 +533,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1139/">[GGW3.2.1/GGH4.0] GGは問題 （障害） 毎のパッチファイルが存在するのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1041/">[iPhone] クライアントとして iPhone がサポートされても日本語入力が難しいのでは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -547,17 +546,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1139/"><i class="far fa-calendar"></i> 2012-01-13</a>
+                                            <a href="/posts/new_md/doc1041/"><i class="far fa-calendar"></i> 2012-05-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/13*
-[番号] 技術ノート KGTN 2012011303
-[現象] [GGW3.2.1/GGH4.0] GGは問題 （障害） 毎のパッチファイルが存在するのか？
-[説明] いいえ，GGには問題 （障害） 毎のパッチファイルは存在しません．GGは低レベルな場所でアプリケーションの動作 （APIの呼び出し） を監視し，その情報を元にクライアント上で画面を再現します．このような仕組みのため，修正の大半はアプリケーションの動作を監視する部分が絡み，問題毎のパッチファイルを提供することは技術的に困難です．
-ファイル KGTN2012011303.pdf [(50.3 KB)] [kitasp 技術センター, 2012/01/13 14:14]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1139/" class="btn btn-template-main">続きを読む</a>
+2012/05/01*
+[番号] 技術ノート KGTN 2012050102
+[現象] [iPhone] クライアントとして iPhone がサポートされても日本語入力が難しいのでは？
+[説明] iPhone4S であれば Siri （音声アシスタント機能） を使用することが出来ますので，日本語入力もそれほど難しくはありません．なお，Auto-Zoom機能をオフにしておいた方が使い勝手が良いようです．
+ファイル KGTN2012050102.pdf [(103 KB)] [kitasp 技術センター, 2012/05/01 09:36]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1041/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -567,7 +566,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1141/">
+                                      <a href="/posts/new_md/doc1042/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -575,7 +574,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1141/">[WS2008] GGのシステムファイル （ggse.sys） を手動でコピーする時の注意点は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1042/">[iPhone] iPhone で動作するクライアントはないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -588,19 +587,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1141/"><i class="far fa-calendar"></i> 2012-01-13</a>
+                                            <a href="/posts/new_md/doc1042/"><i class="far fa-calendar"></i> 2012-04-30</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/13*
-[番号] 技術ノート KGTN 2012011301
-[現象] [WS2008] GGのシステムファイル （ggse.sys） を手動でコピーする時の注意点は？
-[説明] UAC （ユーザーアカウント制御） が有効な環境でシステムファイルをコピーする時は，以下の手順で作業を行って下さい．
-ユーザ Administrator でコンソールにログオンする． エクスプローラ を 「管理者として実行」 で起動する． 古い ggse.sys を ggse.sys_ へリネームする． 新しい ggse.sys をコピーする． サーバを再起動する．
-ユーザ Administrator でコンソールにログオンしても，通常の利用では 「管理者権限未満」 の権限で実行されます．管理者として作業を行う場合は，必ず 「管理者として実行」 を行う必要があります．
-ファイル KGTN2012011301.pdf [(58.4 KB)] [kitasp 技術センター, 2012/01/13 11:45]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1141/" class="btn btn-template-main">続きを読む</a>
+2012/04/30*
+[番号] 技術ノート KGTN 2012050101
+[現象] [iPhone] iPhone で動作するクライアントはないのか？
+[説明] これまでの iOS 向けクライアントは iPad 上のみで動作しましたが， iOS Clinet 4.1.3.12332 から iPhone 上でも動作するようになりました．設定画面等が若干異なりますが，大半のコードは iPad と iPhone で共通で，従って基本的な仕様は同じです．なお，このリリースより自動ローテート機能が （再） 実装されました．
+ファイル KGTN2012050101.pdf [(169 KB)] [kitasp 技術センター, 2012/05/01 08:07]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1042/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -610,7 +607,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1142/">
+                                      <a href="/posts/new_md/doc2336/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -618,7 +615,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1142/">[GGH4.0] クライアント印刷機能が有効の時，クライアントプリンタはどのように表示されるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2336/">[Excel] 登録したアプリケーションのうち， Excel だけ異常な動作 （終了してもプロセスが残る等） をする．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -631,17 +628,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1142/"><i class="far fa-calendar"></i> 2012-01-11</a>
+                                            <a href="/posts/new_md/doc2336/"><i class="far fa-calendar"></i> 2012-04-25</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/11*
-[番号] 技術ノート KGTN 2012011101
-[現象] [GGH4.0] クライアント印刷機能が有効の時，クライアントプリンタはどのように表示されるのか？
-[説明] GGの標準設定 （デフォルトの設定） では， プリンタ名 + (from クライアントのコンピュータ名) という名称が設定されます．下記の例では，リスト末尾の2台のプリンタが VOSTRO-1000 というクライアントに接続されたプリンタということを示しています．
-ファイル KGTN2012011101.pdf [(78.4 KB)] [kitasp 技術センター, 2012/01/11 10:30]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1142/" class="btn btn-template-main">続きを読む</a>
+2012/04/25*
+[番号] 技術ノート KGTN 2012042501
+[現象] [Excel] 登録したアプリケーションのうち， Excel だけ異常な動作 （終了してもプロセスが残る等） をする．
+[説明] Excel に限り異常な動作をするという事例が幾つかあります．先ず， 「Office およびコンピューターを Microsoft Update を使って更新する」 で最新の Office 更新プログラムをインストールし，さらにGGを最新ビルドにアップグレードすることで改善するかどうか確認して下さい．改善しない場合， Windows → Excel (Office) → GG という手順で再インストールをお願いします．報告のあった事例では，すべてこの方法で Excel が正常に動作しました．
+ファイル KGTN2012042501.pdf [(61.7 KB)] [kitasp 技術センター, 2016/10/04 16:02]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2336/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -651,7 +648,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1143/">
+                                      <a href="/posts/new_md/doc1043/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -659,7 +656,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1143/">[GGH4.0] ターミナルローミング （異なる端末からの再接続） のための機能はあるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1043/">[GGW3.2.1/GGH4.0] エクスプローラ上でアクセス可能な記憶域は，すべてクライアントドライブ機能でアクセス可能だと考えて良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -672,18 +669,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1143/"><i class="far fa-calendar"></i> 2012-01-06</a>
+                                            <a href="/posts/new_md/doc1043/"><i class="far fa-calendar"></i> 2012-04-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/06*
-[番号] 技術ノート KGTN 2012010606
-[現象] [GGH4.0] ターミナルローミング （異なる端末からの再接続） のための機能はあるのか？
-[説明] Dynamic Display Resize 機能 画面の解像度が異なるクライアントからセッション再接続した時，自動的に画面の解像度を調整する機能が実装されました．これにより，画面の解像度が異なるクライアント間の移動が容易になりました．
-Simplified Client Printing and Management 機能 ログオン時ではなく印刷時にクライアントプリンタを構成する機能が実装されました．これにより，セッション再接続後は，その端末のプリントフォルダに存在するプリンタへ印刷することが可能になりました．また，プリンタアプレット （下記画面） を使用することでクライアントプリンタの構成を柔軟に変更することが可能となり，さらにユニバーサル・プリンタドライバに Adobe PDF Library を採用することで，移動先のプリンタのドライバが無い時でも，このユニバーサル・プリンタドライバで高品位な印刷が可能になりました．
-ファイル KGTN2012010606.pdf [(185 KB)] [kitasp 技術センター, 2012/01/06 13:17]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1143/" class="btn btn-template-main">続きを読む</a>
+2012/04/16*
+[番号] 技術ノート KGTN 2012041601
+[現象] [GGW3.2.1/GGH4.0] エクスプローラ上でアクセス可能な記憶域は，すべてクライアントドライブ機能でアクセス可能だと考えて良いか？
+[説明] いいえ．例えば， iPhone はエクスプローラ上でポータブルディバイスとして認識されアクセス可能ですが，USBマスストレージ （という認識） ではありませんので，ドライブレターを持ちません．GGのクライアントドライブ機能は，ドライブレターを持つ記憶域のみをサポートしますので，このような記憶域 （ドライブレターを持たない記憶域） についてはアクセスすることが出来ません．
+ファイル KGTN2012041601.pdf [(102 KB)] [kitasp 技術センター, 2012/04/16 11:57]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1043/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -693,7 +689,7 @@ Simplified Client Printing and Management 機能 ログオン時ではなく印�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1978/">
+                                      <a href="/posts/new_md/doc1044/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -701,7 +697,7 @@ Simplified Client Printing and Management 機能 ログオン時ではなく印�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1978/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc1044/">[GGH4.0] GGH4.0でクライアント印刷機能を利用する時，外字の印刷は出来るのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -714,20 +710,22 @@ Simplified Client Printing and Management 機能 ログオン時ではなく印�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1978/"><i class="far fa-calendar"></i> 2012-01-06</a>
+                                            <a href="/posts/new_md/doc1044/"><i class="far fa-calendar"></i> 2012-04-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/06*
-[番号] 技術ノート KGTN 2011090209
-[現象] [GGH4.X-5.X] Universal Printer Driver を使用すると， [プリンタの設定] 画面でプリンタ固有の細かい設定が出来ない．
-[説明] 出力先プリンタの細かい設定を行いたい場合は， Preview PDF を選択しクライアント側でPDFファイルを表示させ，その中の印刷機能でプリンタ固有の細かい設定 （両面印刷機能，ステープル機能など） を行って下さい．
-補　足 Windows Printer Drivers (Native Driver) でも，両面印刷やソーター等の機能を指定出来ない場合があります．通常，プリンタドライバが標準的な印刷の枠組みを超えた （独自の） 方法でオプション機器等のプリンタの情報を得ていることに起因し，GGサーバとGGクライアントが同一ネットワーク上に存在すれば，プリンタとプリンタドライバが直接通信出来るため問題は発生しませんが，異なるネットワーク上に存在する場合は通信が出来ず，その結果オプション機器等が見えない （選択出来ない）　状況が発生します．このような場合も，上記説明の方法 （クライアントでPDFを表示し，PDFビュアーで印刷） で対応して下さい．また，プリンタによっては，
-   機能を制限して標準的な印刷の枠組みでオプション機器等を設定出来るドライバ 2) オプション機器等を別途手動で設定できるドライバ
-が用意されていることもあります．
-ファイル KGTN2011090209.pdf [(52.4 KB)] [kitasp 技術センター, 2017/11/24 14:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1978/" class="btn btn-template-main">続きを読む</a>
+2012/04/11*
+[番号] 技術ノート KGTN 2012012302
+[現象] [GGH4.0] GGH4.0でクライアント印刷機能を利用する時，外字の印刷は出来るのか？
+[説明] 弊社の標準環境 （Server: Windows Server 2003, Client: Windows 7, Printer: Fuji Xerox DocuCentre-II C4300, GG: 4.0.1.10784） で確認したところ，
+サーバ側での印刷 Windows Driver を使用してのクライアント側での印刷 Universal Driver を使用してのクライアント側での印刷
+それぞれの環境で，外字が正しく印刷されました．
+補足１ サーバが Windows Server 2008 かつ Universal Driver の時に限り，外字が正しく印刷されない現象を確認しております．この件について，何か新たな情報が分り次第，本技術ノートに反映します．なお，GGH4.0.1.Patch4 でもこの現象は発生します． (2012-02-06)
+補足２ (2012-01-25) GraphOn社も Windows Server 2008 + Adobe PDF Library + GG (UPD) の環境に依存したフォントの埋め込みに関する問題だと推測しています．
+(2012-02-24) GraphOn社での再現試験が成功し，本件は開発チームへエスカレーションされました．なお，GGH4.0.1.Patch5 でもこの現象は発生します． (2012-04-11)
+ファイル KGTN2012012302.pdf [(147 KB)] [kitasp 技術センター, 2012/04/11 13:14]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1044/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -797,7 +795,7 @@ Simplified Client Printing and Management 機能 ログオン時ではなく印�
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

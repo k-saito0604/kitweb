@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1679/">
+                                      <a href="/posts/new_md/doc1531/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1679/">Ver4.0系でもVer3.2系と同様に，SSLは標準状態で56</a></h2>
+                                    <h2><a href="/posts/new_md/doc1531/">ライセンスサーバの 3台冗長構成 （Three-Server Redundancy） の問題が解決したGGのバージョンは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1679/"><i class="far fa-calendar"></i> 2010-07-28</a>
+                                            <a href="/posts/new_md/doc1531/"><i class="far fa-calendar"></i> 2010-12-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/28*
-[番号] 技術ノート KGTN 2010072807
-[現象] Ver4.0系でもVer3.2系と同様に，SSLは標準状態で56-bit DES しか利用できないのか？
-[説明] はい， Administrator Guide (P35) で言及されておりますように，特別なライセンス （高度暗号化オプション） がインストールされていない環境では，56-bit DES のみが利用できます．
-ファイル KGTN2010072807.pdf [(46.3 KB)] [kitasp 技術センター, 2010/07/28 14:31]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1679/" class="btn btn-template-main">続きを読む</a>
+2010/12/01*
+[番号] 技術ノート KGTN 2010120102
+[現象] ライセンスサーバの 3台冗長構成 （Three-Server Redundancy） の問題が解決したGGのバージョンは？
+[説明] 弊社では lmgrd.exe のバージョンが11.6で現象が発生しないことを確認しており，それに対応するGGのバージョンは3.2.1系になります．
+補足１ lmgrd.exe のバージョンが10.8 （ggw-3.1.1.3548等） および ライセンスファイルに PRIMARY_IS_MASTER を記述した環境で実験を行ったところ，約１日の繰り返しでは現象は発生しませんでした．ただ，発生の確率が下がっただけということも考えられますので，どうしても適用なさりたい場合は自己の責任においてご利用下さい．
+補足2 lmgrd.exe のバージョンが11.6 （ggw-3.2.1.xxxx） の環境では， PRIMARY_IS_MASTER の記述な無くても問題の現象は発生しておりませんが，しかしライセンスサーバの切り替わり （マスタサーバの移動） を確実にするためにPRIMARY_IS_MASTER の記述を強く推奨します．
+ファイル KGTN2010120102.pdf [(61.9 KB)] [kitasp 技術センター, 2010/12/01 14:49]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1531/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +362,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1684/">
+                                      <a href="/posts/new_md/doc1533/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +370,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1684/">Ver4.0系の Windows Client はAdobe PDF Library を含んでいるが， PDFビュアー （Adobe Reader） は不要なのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1533/">SessionTimeoutBrokenConnection を 0 に変更したが，セッションが切断されない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,17 +383,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1684/"><i class="far fa-calendar"></i> 2010-07-28</a>
+                                            <a href="/posts/new_md/doc1533/"><i class="far fa-calendar"></i> 2010-11-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/28*
-[番号] 技術ノート KGTN 2010072802
-[現象] Ver4.0系の Windows Client はAdobe PDF Library を含んでいるが， PDFビュアー （Adobe Reader） は不要なのか？
-[説明] いいえ，印刷ダイアログで Preview PDF をプリンタとして選択する時，PDFビュアーがクライアント側にインストールされている必要があります．インストールされていない場合， &ldquo;In order to preview documents, a PDF viewer must be installed on your computer.&rdquo; というエラーダイアログが表示されます．
-ファイル KGTN2010072802.pdf [(50.2 KB)] [kitasp 技術センター, 2010/07/28 09:46]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1684/" class="btn btn-template-main">続きを読む</a>
+2010/11/26*
+[番号] 技術ノート KGTN 2010112601
+[現象] SessionTimeoutBrokenConnection を 0 に変更したが，セッションが切断されない．
+[説明] SessionTimeoutBrokenConnection を 0 にした状況で 「IEを閉じる」 または 「Windowsクライアントをタスクマネージャで強制終了させる」 を行った時，セッションが切断されるのは，クライアントからの通信が途絶えたと認識された時です．従って，これらのプログラムの終了から 「数秒〜１分程度」 経過した時点でセッションが消滅します．
+ファイル KGTN2010112601.pdf [(52.6 KB)] [kitasp 技術センター, 2010/11/26 13:10]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1533/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -401,7 +403,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1681/">
+                                      <a href="/posts/new_md/doc1532/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -409,7 +411,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1681/">Ver4.0系のActiveXクライアントのCABファイルが，約10MBになったが何が変わったのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1532/">ライセンスサーバを 3台冗長構成 （Three-Server Redundancy） にする場合，ライセンスファイルに何か追加する必要があるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -422,19 +424,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1681/"><i class="far fa-calendar"></i> 2010-07-28</a>
+                                            <a href="/posts/new_md/doc1532/"><i class="far fa-calendar"></i> 2010-11-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/28*
-[番号] 技術ノート KGTN 2010072805
-[現象] Ver4.0系のActiveXクライアントのCABファイルが，約10MBになったが何が変わったのか？
-[説明] Ver3.2系のCABファイル （ggw-activex.cab） は約2MBですので，Ver4.0系のCABファイル （同じファイル名） は約5倍になりました．大きくなった主な理由は，クライアントプリンタ機能の仕様変更に伴い， Adobe PDF Library がActiveXクライアントに加えられたためです．
-備考1 ビルド 4.0.0.7757 のCABファイル （ggw-activex.cab） の署名関連の情報は，以下の通りです．
-デジタル署名 ? 署名時刻 2010年7月13日 6:13:00， 有効期限 2011年11月13日 (Thawte) 副署名 - 署名時刻 2010年7月13日 6:13:00， 有効期限 2012年06月15日 (VeriSign)
-ファイル KGTN2010072805.pdf [(56.1 KB)] [kitasp 技術センター, 2010/07/28 13:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1681/" class="btn btn-template-main">続きを読む</a>
+2010/11/26*
+[番号] 技術ノート KGTN 2010112602
+[現象] ライセンスサーバを 3台冗長構成 （Three-Server Redundancy） にする場合，ライセンスファイルに何か追加する必要があるのか？
+[説明] プライマリライセンスサーバが常にマスターとして動作するようにキーワード PRIMARY_IS_MASTER を記述する必要があります．
+SERVER pat 17003456 27001 PRIMARY_IS_MASTER SERVER lee 17004355 27001 SERVER terry 17007ea8 27001
+参　考 PRIMARY_IS_MASTER - Used with license servers configured for three-server redundancy to indicate how master control is transferred between the primary and secondary servers. If this is set and the primary server goes down, when the primary server comes back up again, it will always become the master.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1532/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -444,7 +445,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1683/">
+                                      <a href="/posts/new_md/doc1534/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -452,7 +453,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1683/">Ver4.0系の高負荷時 （例：オンライン開始時） の挙動はどうか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1534/">Windows Server 2008 上で動作するVer3.2.1系 （ggw-3.2.1.4466等） で，セッションが残ることがある．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -465,17 +466,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1683/"><i class="far fa-calendar"></i> 2010-07-28</a>
+                                            <a href="/posts/new_md/doc1534/"><i class="far fa-calendar"></i> 2010-11-25</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/28*
-[番号] 技術ノート KGTN 2010072803
-[現象] Ver4.0系の高負荷時 （例：オンライン開始時） の挙動はどうか？
-[説明] エンタープライズオプションの負荷試験ツール GMLogonTest で，１秒間隔で25ログオンの試験を繰り返しましたが， 「ログオンに失敗する」 「セッションが消える」 「アプリケーションがハングアップする」 等の現象は発生しませんでした （環境： OS ? Windows Server 2003, CPU - Pentium4 2.8GHz，MEM ? 1GB） ．唯一発生した問題は，高負荷時にクラスタマネージャのホスト一覧から自サーバが消え，セッション一覧が表示されないという現象でした．クラスタマネージャを閉じて，新たに起動すればセッションが正しく表示されますので，とりあえず運用回避で対応が可能です．
-ファイル KGTN2010072803.pdf [(59.4 KB)] [kitasp 技術センター, 2010/07/28 10:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1683/" class="btn btn-template-main">続きを読む</a>
+2010/11/25*
+[番号] 技術ノート KGTN 2010112502
+[現象] Windows Server 2008 上で動作するVer3.2.1系 （ggw-3.2.1.4466等） で，セッションが残ることがある．
+HKLM¥GraphOn¥Bridges¥1.0.0¥AppServer SessionTimeoutBrokenConnection　REG_DWORD 0
+補　足 本現象は， SessionTimeoutBrokenConnection &gt; 0 であれば Windows Server 2008 だけでなく Windows Server 2003 でも同様に発生します．従って， SessionTimeoutBrokenConnection という項目が追加されたことによる仕様変更と推測しています （GraphOn社へ確認中） ．
+[説明]
+ファイル KGTN2010112502.pdf [(71.6 KB)] [kitasp 技術センター, 2010/11/25 14:45]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1534/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -485,7 +488,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1686/">
+                                      <a href="/posts/new_md/doc1536/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -493,7 +496,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1686/">Ver4.0系でのクライアントプリンタの処理 （UPD/WPDのドライバ選択） について知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1536/">SessionVerification を 0 に変更したところ，セッションが切断されなくなった．切断の原因として，どんなことが考えられるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -506,20 +509,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1686/"><i class="far fa-calendar"></i> 2010-07-27</a>
+                                            <a href="/posts/new_md/doc1536/"><i class="far fa-calendar"></i> 2010-11-24</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/27*
-[番号] 技術ノート KGTN 2010072704
-[現象] Ver4.0系でのクライアントプリンタの処理 （UPD/WPDのドライバ選択） について知りたい．
-[説明] Ver3.2系では，クライアント側にプリンタ情報 print.ini を配置し，この情報に従って 「クライアント （ユーザ） 単位に」 クライアントプリンタが構成されていました．Ver4.0系では，サーバ側にプリンタ情報 MappedPrinterDrivers.xml を配置し，この情報に従って 「サーバ単位に」 クライアントプリンタが構成されるようになりました．
-Universal Printer Driver と Windows Printer Drivers の選択は，次のアルゴリズムで行われます．
-MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver sources でUniversal Printer Driver が選択されていれば， UPD で構成する． Driver sources でWindows Printer Driver のみが選択されていれば， WPD で構成する． どちらも選択されていない場合は，WPD で構成する．
-つまり，簡単にまとめると，以下のようになります．
-MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver sources でUniversal Printer Driver が選択されていれば， UPD で構成する． Driver sources でUniversal Printer Driver が選択されていなければ， WPD で構成する．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1686/" class="btn btn-template-main">続きを読む</a>
+2010/11/24*
+[番号] 技術ノート KGTN 2010112501
+[現象] SessionVerification を 0 に変更したところ，セッションが切断されなくなった．切断の原因として，どんなことが考えられるか？
+[説明] SessionVerification が 1 の場合，GGクライアントは30秒毎にPING （要求） パケットをGGサーバへ送信し，GGサーバはこの30秒毎のパケットを受信すると，PING （応答） パケットをGGクライアントへ送信します．GGクライアントおよびGGサーバは，30秒毎のPING （要求または応答） パケットが続けて2回相手から届かなかった時，通信障害が発生していると認識しセッションを切断します．
+従って，原因としては 1) OS （Windows） の問題等によりPINGパケットを送信出来なかった， 2) CPUの過負荷やスワップアウトの多発等によりPINGパケットの送信に著しく時間を要した， 3) クライアント〜サーバ間のネットワーク （機材） で障害が発生しPINGパケットが配送されなかった，などが考えられます．
+参　考 ある案件では，特定のシステムのみセッションの切断が発生し，上記3が原因と推測されました．しかし，大規模なシステムということもあり，サービス開始までに障害の原因を特定することが出来なかったため，暫定処置として SessionVerification を 0 に設定して運用を開始しました．既に半年以上運用されておりますが，特に問題等は発生しておりません （注意： あくまでも事例の紹介であり， SessionVerification を 0 に設定しての運用を勧めるものではありません） ．
+ファイル KGTN2010112501.pdf [(67.3 KB)] [kitasp 技術センター, 2010/11/25 03:47]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1536/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -529,7 +531,7 @@ MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1688/">
+                                      <a href="/posts/new_md/doc1538/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -537,7 +539,7 @@ MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1688/">Ver4.0系では，クライアントプリンタの構成がPW (Program Window) の処理で行われるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1538/">SessionVerification を 0 に設定した場合，ユーザが誤ってログオフした時，セッションが終了せずに残り続けたりしないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -550,17 +552,19 @@ MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1688/"><i class="far fa-calendar"></i> 2010-07-27</a>
+                                            <a href="/posts/new_md/doc1538/"><i class="far fa-calendar"></i> 2010-11-24</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/27*
-[番号] 技術ノート KGTN 2010072702
-[現象] Ver4.0系では，クライアントプリンタの構成がPW (Program Window) の処理で行われるのか？
-[説明] いいえ，クライアントプリンタの構成は PW の起動と並行して行われます．この仕組みの変更により， PW の初期化完了までの時間が非常に短くなりました．これと絡んで，サーバ側でデフォルトプリンタを変更されても，クライアント側のデフォルトプリンタが変更されない仕様になりました．
-ファイル KGTN2010072702.pdf [(47.5 KB)] [kitasp 技術センター, 2010/07/27 09:30]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1688/" class="btn btn-template-main">続きを読む</a>
+2010/11/24*
+[番号] 技術ノート KGTN 2010112402
+[現象] SessionVerification を 0 に設定した場合，ユーザが誤ってログオフした時，セッションが終了せずに残り続けたりしないのか？
+[説明] サーバ側およびクライアント側それぞれでネットワークの切断が認識されない障害が発生した時 （例えば中間に介在するネットワーク機材の障害等） ， SessionVerification を 1 に設定することでGGレベルで障害を検出することが出来ます．
+ご質問の 「SessionVerification を 0 に設定した状況で，ユーザが誤ってログオフした時」 は，GGクライアントがログオフを認識し，その事象をGGサーバに通知しますので，セッションは正しく切断されます．レベル4のAPSログには，例えば以下のような情報が記録されます．
+111 2010-10-24 12:04:43.125 User01 on Server, iexplore (936) CS: Client disconnected. &hellip; 129 2010-10-24 12:04:44.750 User01 on Server, aps (936) Session &ldquo;User001 on Server&rdquo; stopped.
+ファイル KGTN2010112402.pdf [(63.1 KB)] [kitasp 技術センター, 2010/11/24 12:15]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1538/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -570,7 +574,7 @@ MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1687/">
+                                      <a href="/posts/new_md/doc1537/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -578,7 +582,7 @@ MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1687/">Ver4.0系は，Ver3.2系と比べアプリケーションの起動や動作の速度はどうなのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1537/">SessionVerification を 0 に設定してもセッションが切断されるが，GG側で何とかならないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -591,18 +595,18 @@ MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1687/"><i class="far fa-calendar"></i> 2010-07-27</a>
+                                            <a href="/posts/new_md/doc1537/"><i class="far fa-calendar"></i> 2010-11-24</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/27*
-[番号] 技術ノート KGTN 2010072703
-[現象] Ver4.0系は，Ver3.2系と比べアプリケーションの起動や動作の速度はどうなのか？
-[説明] 多ユーザ＆高負荷時の試験は未だ実施しておりませんが，多くのケースではVer4.0系の体感速度は向上しております．また，クライアントドライブのフォルダ参照についても，体感速度が向上しております （注： LAN環境ではローカルドライブよりも表示が若干遅い程度です） ．
-備考1 エンタープライズオプションの GMLogonTest で試験したところ，ビットマップの描画が若干遅く感じられ，ウインドウの上下関係が異なる現象が見られました （継続調査中） ．
-ファイル KGTN2010072703.pdf [(56.7 KB)] [kitasp 技術センター, 2010/07/27 10:17]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1687/" class="btn btn-template-main">続きを読む</a>
+2010/11/24*
+[番号] 技術ノート KGTN 2010112403
+[現象] SessionVerification を 0 に設定してもセッションが切断されるが，GG側で何とかならないのか？
+[説明] SessionVerification を 0 に設定してもセッションが切断されるということは，ネットワーク通信のインフラである TCP/IP レベルで障害が発生していますので，それを利用するGG側で何とかすること （例えばセッションが切断され難くする等） は技術的に不可能です．
+参　考 （技術ノート KGTN#2010022401 から引用） 予期せぬセッションの切断が （ネットワークレベルの問題で） 比較的頻繁に発生し，かつ原因が分からない場合は，「ネットワーク機材のオートネゴシエーションの不整合」 「ルーター間のパラメタの不整合」 「電圧低下や熱暴走等によるネットワーク機材の不安定動作」 等も考えられます．あらゆる可能性を考えて，原因の調査を行って下さい．
+ファイル KGTN2010112403.pdf [(58.6 KB)] [kitasp 技術センター, 2010/11/24 13:23]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1537/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -612,7 +616,7 @@ MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1685/">
+                                      <a href="/posts/new_md/doc1539/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -620,7 +624,7 @@ MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1685/">Ver4.0系を Windows 7 (x86) にインストールしたところ，APS が正常に起動しない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1539/">予期せぬセッションの切断が発生したが，ログレベルを推奨値の４よりも大きな値に設定することで，より詳しい情報を採取出来ないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -633,17 +637,17 @@ MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1685/"><i class="far fa-calendar"></i> 2010-07-27</a>
+                                            <a href="/posts/new_md/doc1539/"><i class="far fa-calendar"></i> 2010-11-24</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/27*
-[番号] 技術ノート KGTN 2010072801
-[現象] Ver4.0系を Windows 7 (x86) にインストールしたところ，APS が正常に起動しない．
-[説明] Ver4.0系がサポートする Windows 7 は 64ビット (x64) 環境のみです．従って，問題は 「APS が正常に起動しない」 ことではなく， 「Windows 7 の32ビット (x32) 環境にインストール出来てしまう」 ことです．本件は，既にGraphOn社へ報告しており，将来のリリースで改善される予定です．
-ファイル KGTN2010072801.pdf [(47.6 KB)] [kitasp 技術センター, 2010/07/28 08:20]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1685/" class="btn btn-template-main">続きを読む</a>
+2010/11/24*
+[番号] 技術ノート KGTN 2010112401
+[現象] 予期せぬセッションの切断が発生したが，ログレベルを推奨値の４よりも大きな値に設定することで，より詳しい情報を採取出来ないのか？
+[説明] GGの通信は Windows の TCP/IP　（WinSock） を利用しておりますので，ネットワーク障害の細かな情報についてはGG側で把握することは出来ません．従って，ログレベルを推奨値の４よりも大きな値にしても，さらに詳しい情報が採取されることはなく，逆に非常に多量のログが記録されますので，サーバが高負荷になり，障害発生の引き金を引く可能性もあります．このようなことから，ログレベルは推奨値の４を設定して下さい．
+ファイル KGTN2010112401.pdf [(53.7 KB)] [kitasp 技術センター, 2010/11/24 11:44]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1539/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -653,7 +657,7 @@ MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1690/">
+                                      <a href="/posts/new_md/doc1540/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -661,7 +665,7 @@ MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1690/">Ver4.0系では，Universal Printer Driver (UPD) のエンジンとして， PDF</a></h2>
+                                    <h2><a href="/posts/new_md/doc1540/">[GGH4.0] クライアントドライブ機能で [ごみ箱] が利用できるそうだが， [ごみ箱] に移されたファイルの書き戻しも出来るのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -674,17 +678,17 @@ MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1690/"><i class="far fa-calendar"></i> 2010-07-26</a>
+                                            <a href="/posts/new_md/doc1540/"><i class="far fa-calendar"></i> 2010-11-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/26*
-[番号] 技術ノート KGTN 2010072601
-[現象] Ver4.0系では，Universal Printer Driver (UPD) のエンジンとして， PDF-Xchange を使用しているのか？
-[説明] いいえ，Ver4.0系では Adobe PDF Library を使用しています．プリンタとして &ldquo;Preview PDF&rdquo; を選択すると，クライアント上でPDFが表示されますので，そこで印刷を行うことでプリンタのオプション機器 （設定） 等を指定することが可能になりました．Ver3.2系で Cache client printers をご利用の場合は，この機能を利用することで対応して下さい．
-ファイル KGTN2010072601.pdf [(52.1 KB)] [kitasp 技術センター, 2010/07/26 14:13]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1690/" class="btn btn-template-main">続きを読む</a>
+2010/11/22*
+[番号] 技術ノート KGTN 2010112202
+[現象] [GGH4.0] クライアントドライブ機能で [ごみ箱] が利用できるそうだが， [ごみ箱] に移されたファイルの書き戻しも出来るのか？
+[説明] はい， [ごみ箱] に移されたファイルは 「元の場所」 が記録されておりますので，クライアントドライブの元のフォルダへ書き戻すことが可能です．さらに [ごみ箱] を空にしていなければ，ログオフ → ログオンしても [ごみ箱] 中のファイルを書き戻すことが出来ます．
+ファイル KGTN2010112202.pdf [(44.6 KB)] [kitasp 技術センター, 2010/11/22 11:37]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1540/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -694,7 +698,7 @@ MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1689/">
+                                      <a href="/posts/new_md/doc1541/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -702,7 +706,7 @@ MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1689/">Ver4.0系のアドオン GO‐Global Portal は，どのような方式でロードバランス機能を実装しているのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1541/">[GGH4.0] クライアントドライブ機能を使い，サーバ側からクライアント側へ100MBのファイルをコピーし，その直後にファイルを削除しようとしたところ，エラー表示もなく削除もされない．さらに，クライアント側のエクスプローラーでも削除を試みたが，使用中で削除出来ない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -715,17 +719,17 @@ MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1689/"><i class="far fa-calendar"></i> 2010-07-26</a>
+                                            <a href="/posts/new_md/doc1541/"><i class="far fa-calendar"></i> 2010-11-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/26*
-[番号] 技術ノート KGTN 2010072701
-[現象] Ver4.0系のアドオン GO‐Global Portal は，どのような方式でロードバランス機能を実装しているのか？
-[説明] GO‐Global Portal は未だリリースされておりませんので詳細は分かりませんが，GGサーバの設定項目にサーバ・セッション・メモリ・プロセッサの重み付けの項目が追加されていますので，Ver3.2系までのリレーサーバとは異なり柔軟なサーバ選択が可能だと思われます．
-100100100100ファイル KGTN2010072701.pdf [(57.4 KB)] [kitasp 技術センター, 2010/07/27 08:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1689/" class="btn btn-template-main">続きを読む</a>
+2010/11/22*
+[番号] 技術ノート KGTN 2010112201
+[現象] [GGH4.0] クライアントドライブ機能を使い，サーバ側からクライアント側へ100MBのファイルをコピーし，その直後にファイルを削除しようとしたところ，エラー表示もなく削除もされない．さらに，クライアント側のエクスプローラーでも削除を試みたが，使用中で削除出来ない．
+[説明] クライアント側にあるファイルをGG上のエクスプローラーで削除を行った場合，そのファイルは 「単に削除されるだけでなく」 サーバ側の [ごみ箱] に移されます．大きなファイルを削除した場合，この大きなファイルがクライアント側からサーバ側の [ごみ箱] へコピーされるため，削除が完了するまでに時間がかかります．従って，クライアント側にあるファイルを削除する場合は，削除が完了するまで待つか，またはクライアントのエクスプローラー等で削除するようにして下さい．
+ファイル KGTN2010112201.pdf [(48.9 KB)] [kitasp 技術センター, 2010/11/22 10:59]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1541/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -795,7 +799,7 @@ MappedPrinterDrivers.xml に構成情報があれば，それに従う． Driver
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

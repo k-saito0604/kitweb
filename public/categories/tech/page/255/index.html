@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1884/">
+                                      <a href="/posts/new_md/doc1719/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1884/">セッションを終了した後も特定のプロセスが残り，再接続してもその画面が表示される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1719/">Windows Server 2008 環境で動作するGGサーバで @ 等の入力が出来ない （異なる文字がエコーバックされる） ．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,19 +340,22 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1884/"><i class="far fa-calendar"></i> 2009-12-24</a>
+                                            <a href="/posts/new_md/doc1719/"><i class="far fa-calendar"></i> 2010-06-24</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/12/24*
-[番号] 技術ノート KGTN 2009122402
-[現象] セッションを終了した後も特定のプロセスが残り，再接続してもその画面が表示される．
-[説明] 本質的にはそのプログラムの問題を解消すべきですが，以下のレジストリを登録することで 「残るプロセス」 を強制的に終了させることが出来ます．
-[HKEY_LOCAL_MACHINE¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Processes] &ldquo;&ldquo;=dword:00000000
-技術的な背景は，指定されたプロセスがセッション維持の条件から除外され，これにより当該プロセスの存在の有無に関係なくセッションが終了されるようになります．
-ファイル KGTN2009122402.pdf [(61.3 KB)] [kitasp 技術センター, 2009/12/24 17:39]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1884/" class="btn btn-template-main">続きを読む</a>
+2010/06/24*
+[番号] 技術ノート KGTN 2009122401
+[現象] Windows Server 2008 環境で動作するGGサーバで &ldquo;@&rdquo; 等の入力が出来ない （異なる文字がエコーバックされる） ．
+[説明] これは Windows Server 2008 でキーボードの処理が変更されたために発生する問題で，下記のレジストリを登録することで問題が解消します．
+[HKEY_LOCAL_MACHINE¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout] &ldquo;Fallback Layout Text&quot;=&quot;Japanese&rdquo;
+この件はGraphOn社でも確認しており，今後のリリースで修正される予定です．
+補足１ 3.2.1 Patch4 (4466) およびそれ以降では，本問題は解消されております．
+Bug 8997 On Japanese Windows Server 2008, users are unable to logon to an account with a password including &ldquo;@,=,‾,etc&hellip;&quot;.
+補足２ Windows Server 2008 のインストール時に，標準的な106キーボードが接続されていることが前提となります．それ以外の環境では，下記のレジストリの Layout Text の値を上記Fallback Layout Text へセットして下さい．
+[HKEY_LOCAL_MACHINE¥SYSTEM¥CurrentControlSet¥Control¥Keyboard Layouts¥00000411] &ldquo;Layout Display Name&quot;=&rdquo;@C:¥¥Windows¥¥system32¥¥input.dll,-5061&rdquo; &ldquo;Layout File&quot;=&quot;KBDJPN.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1719/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -362,7 +365,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1885/">
+                                      <a href="/posts/new_md/doc1722/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -370,7 +373,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1885/">APSログに下記の記録があるが，問題ないのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1722/">GMCheckRaw のトレース機能はどんな時に使うのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -383,17 +386,22 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1885/"><i class="far fa-calendar"></i> 2009-12-17</a>
+                                            <a href="/posts/new_md/doc1722/"><i class="far fa-calendar"></i> 2010-06-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/12/17*
-[番号] 技術ノート KGTN 2009121801
-[現象] APSログに下記の記録があるが，問題ないのか？ aps (????) AS: Failed to validate strong encryption (FlexLM -5: &ldquo;No such feature exists.&quot;).
-[説明] この記録は，ライセンスファイル内に高度暗号化オプション （GO-Global for Windows のオプション機能です） を有効にする情報がないという意味で，障害を意味するものではありません．従って，この記録は無視していただいて結構です．
-ファイル KGTN2009121801.pdf [(55.6 KB)] [kitasp 技術センター, 2009/12/18 06:21]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1885/" class="btn btn-template-main">続きを読む</a>
+2010/06/22*
+[番号] 技術ノート KGTN 2010062201
+[現象] GMCheckRaw のトレース機能はどんな時に使うのか？
+[説明] Rel#1.07.01 で実装されたGMCheckRaw のトレース機能は，同プログラムとGG （APS） の通信のタイムスタンプを記録することで， 「どの処理の周辺に問題があるのか」 を突き止める時に役立ちます．例えば，GMCheckRaw コマンドを入力してから，ログファイルに
+2010-06-22 13:49:02.656 -&gt; checkServer
+が出力されるまでに5秒かかったとすれば，プロセスの生成に約5秒かかったことになりますので，Windows やハードウエアに問題があると推測されます．
+また， SMI_Initializeの呼出し前後の時間をチェックすることで，GGサーバへの接続に要する時間を確認することが出来ます．30秒かかったとすれば，CPUの過負荷，プロセス間通信の一時的障害，ネットワーク障害や設定ミス，Windowsの異常等が考えられます．
+2010-06-22 13:49:02.656 &gt; SMI_Initialize SMI_Initializeの呼出し前 2010-06-22 13:49:04.312 SMI_Initialize SMI_Initializeの呼出し後
+これ以外にもローレベルな情報を採取することが出来ますので， 「正常値と比較することで」 問題解析の手掛かりとして役立てることが出来ます．
+ファイル KGTN2010062201.pdf [(69.6 KB)] [kitasp 技術センター, 2010/06/22 14:05]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1722/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -403,7 +411,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1888/">
+                                      <a href="/posts/new_md/doc1723/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -411,7 +419,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1888/">NIC交換時の print.ini の取り扱いについて知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1723/">Ver3.1系とVer3.2系の差異は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -424,20 +432,22 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1888/"><i class="far fa-calendar"></i> 2009-12-08</a>
+                                            <a href="/posts/new_md/doc1723/"><i class="far fa-calendar"></i> 2010-06-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/12/08*
-[番号] 技術ノート KGTN 2009111201
-[現象] NIC交換時の print.ini の取り扱いについて知りたい．
-[説明]
- 背景 print.ini 中の ClientID は，クライアント印刷機能に於いて 「クライアントおよびユーザ」 を一意に識別するための情報です．ClientID は５つのパートから構成され，最後の項目にはクライアントのMACアドレス (Physical Address) が設定されます．  ClientIDの例 [Client Data] PreviewState=0900000009 ClientID=0fa2d4ea-ee84-11dd-9015-0012f07d7b3f
- NIC交換時の対応 〜 再生成 ClientIDを積極的に管理していない場合は，print.ini を削除して下さい．これにより，新しいNICのMACアドレスが設定されたClientIDが生成されます．
-  NIC交換時の対応 〜 引継ぎ ClientIDを積極的に管理している （あるいは利用している） 場合は，print.ini を削除することなくそのまま使用しても構いません．これにより，クライアント印刷機能はNIC交換後も従来のClientIDを使用します．但し，新しいNICのMACアドレスとClientID中のMACアドレスが不整合な状態になりますので，障害発生時の調査等で注意が必要です．
-  ファイル KGTN2009111201.pdf [(62.3 KB)] [kitasp 技術センター, 2009/12/08 14:01]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1888/" class="btn btn-template-main">続きを読む</a>
+2010/06/21*
+[番号] 技術ノート KGTN 2010062101
+[現象] Ver3.1系とVer3.2系の差異は？
+[説明] Ver3.1系からVer3.2系への大きな変更点は以下の通りです．
+Automatic Windows Update and Hotfix Compatibility Ver3.1系では Windows Update の度にGraphOn社が提供する互換アップデートの適用が必要でしたが，Ver3.2系では原則として互換アップデートの適用は不要となりました．
+Backward Compatible Client and Server Ver3.1系では新しいビルドがリリースされる度に，クライアントも更新する必要がありました．Ver3.2系では後方互換性があるため，新しいビルドがリリースされても，クライアントを必ずしも更新する必要はありません．
+Time Zone Redirection Ver3.2系では，設定でクライアント側のタイムゾーンを使用することができます．
+Client-Side Password Caching Ver3.1系ではサーバ側にパスワードをキャッシュすることが出来ましたが，Ver3.2系ではそれに加えクライアント側にもパスワードをキャッシュすることが出来るようになりました．これにより， Active Directory を使用しない環境でもパスワードキャッシュ機能を利用することができます．
+End of Support for Windows 2000 Server Ver3.1系では Windows 2000 Server と Windows 2003 Server をサポートしておりましたが，Ver3.2系では Windows 2003 Server と Windows 2008 Server （3.2.1系） をサポートします．
+ファイル KGTN2010062101.pdf [(66.3 KB)] [kitasp 技術センター, 2010/06/21 12:57]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1723/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -447,7 +457,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1886/">
+                                      <a href="/posts/new_md/doc362/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -455,7 +465,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1886/">外字を表示する場合，外字エディタの起動は不要か？</a></h2>
+                                    <h2><a href="/posts/new_md/doc362/">[Windows] Windows のインストール作業を依頼したいが，マシン （サーバ） を3台送る必要があるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -468,17 +478,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1886/"><i class="far fa-calendar"></i> 2009-12-08</a>
+                                            <a href="/posts/new_md/doc362/"><i class="far fa-calendar"></i> 2010-06-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/12/08*
-[番号] 技術ノート KGTN 2009070802
-[現象] 外字を表示する場合，外字エディタの起動は不要か？
-[説明] Windows Server 2003 SP1/SP2 の環境に於いて，ggw-3.1.1/ggw-3.2.X では外字エディタを起動することなく外字を表示することができます．
-ファイル KGTN2009070802.pdf [(41.9 KB)] [kitasp 技術センター, 2009/12/08 14:04]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1886/" class="btn btn-template-main">続きを読む</a>
+2010/06/17*
+[番号] 技術ノート KGTN 2010061704
+[現象] [Windows] Windows のインストール作業を依頼したいが，マシン （サーバ） を3台送る必要があるのか？
+[説明] 3台のマシンが同じであれば，1台のみお送り下さい．以下の手順でインストール作業を行います．
+ 予備インストール（数回） &hellip; インストールツールやマシンの癖をチェック 1回目のインストールおよびイメージのバックアップ 2回目のインストールおよびイメージのバックアップ 3回目のインストールおよびイメージのバックアップ  上記2～4で気になる事象が発生した場合はその記録 （情報） を残し，再度ゼロからインストールを行います．
+ファイル KGTN2010061704.pdf [(52.1 KB)] [kitasp 技術センター, 2014/02/07 15:39]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc362/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -488,7 +499,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1893/">
+                                      <a href="/posts/new_md/doc1727/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -496,7 +507,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1893/">キー操作 [Windows key] &#43; [D] でデスクトップが表示されない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1727/">ActiveX クライアントのデジタル署名に関するエラーが発生した．CABファイルを送れば良いのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -509,17 +520,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1893/"><i class="far fa-calendar"></i> 2009-11-18</a>
+                                            <a href="/posts/new_md/doc1727/"><i class="far fa-calendar"></i> 2010-06-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/11/18*
-[番号] 技術ノート KGTN 2009111801
-[現象] キー操作 [Windows key] + [D] でデスクトップが表示されない．
-[説明] GO-Global for Windows ではデスクトップではなくアプリケーションを配信するため，デスクトップという概念がなく，従ってキー操作 [Windows key] + [D] でデスクトップが表示されない等の現象が発生します．これは，現時点での仕様 （制限事項） になります．
-ファイル KGTN2009111801.pdf [(46 KB)] [kitasp 技術センター, 2009/11/18 14:21]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1893/" class="btn btn-template-main">続きを読む</a>
+2010/06/17*
+[番号] 技術ノート KGTN 2010061703
+[現象] ActiveX クライアントのデジタル署名に関するエラーが発生した．CABファイルを送れば良いのか？
+[説明] デジタル署名に関するエラーは環境に依存して発生しますので，CABファイルだけでなく，以下のCABファイルのプロパティのスクリーンショットも必要です．
+デジタル署名 デジタル署名 → 詳細 デジタル署名 → 詳細 → 証明書の表示 （全般） デジタル署名 → 詳細 → 証明書の表示 → 証明のパス デジタル署名 → 詳細 → 証明書の表示 （全般）　→ 副署名 → 詳細　（全般） デジタル署名 → 詳細 → 証明書の表示 （全般）　→ 副署名 → 詳細 → 証明書の表示 （全般） デジタル署名 → 詳細 → 証明書の表示 （全般）　→ 副署名 → 詳細 → 証明書の表示 → 証明のパス
+ファイル KGTN2010061703.pdf [(46.6 KB)] [kitasp 技術センター, 2010/06/17 12:09]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1727/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -529,7 +541,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1894/">
+                                      <a href="/posts/new_md/doc1728/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -537,7 +549,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1894/">クライアントプリンタ機能の処理手順の詳細について知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1728/">ActiveX クライアントの署名と副署名 （タイムスタンプ） の証明書の有効期間が異なるが，問題ないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -550,20 +562,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1894/"><i class="far fa-calendar"></i> 2009-11-12</a>
+                                            <a href="/posts/new_md/doc1728/"><i class="far fa-calendar"></i> 2010-06-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/11/12*
-[番号] 技術ノート KGTN 2009110501
-[現象] クライアントプリンタ機能の処理手順の詳細について知りたい．
-[説明]
- 用語 「クライアントプリンタが構成される」 GO-Global for Windowsサーバ （以下GGサーバと略します） がクライアント側にあるプリンタを認識して，GGサーバ上にそのプリンタに対応するオートクリエイトプリンタが作成されること．この処理が正常に行われると，クライアント側の &ldquo;print.ini&rdquo; ファイルにそのプリンタに対応するセクションが作成され，設定情報等が記録されます．  セクションの例 [EPSON LP-900] PrinterName=EPSON LP-900 PortName=LPT1: DriverName=EPSON LP-900 PrintProcessor=WinPrint Datatype=RAW DefaultPrinter=Yes Orientation=010001 PaperSize=090009 PaperLength=9A0BA5 PaperWidth=34083C Scale=640064 Copies=010001 DefaultSource=070108 PrintQuality=2C012D Color=010001 Duplex=010001 YResolution=2C012D TTOption=000000 Collate=000000
- 構成されるプリンタ autoconfigprinters = &ldquo;all&rdquo; の場合は，クライアント側の全てのプリンタが構成されます． autoconfigprinters = &ldquo;default&rdquo; の場合は，クライアント側のデフォルトプリンタおよび &ldquo;print.ini&rdquo; ファイル中に構成されたことがあるプリンタが構成されます．これに加え，PW (Program Window) の画面で手動操作で指定したプリンタを構成することが出来ます．なお，GGサーバ上にプリンタドライバが無い等の理由でオートクリエイトプリンタを作成出来ない場合は，そのプリンタは構成されません．
-  構成されるタイミング ログオン時のPWの初期化処理の中で各クライアントプリンタが構成されます．これに加え，PWの画面で手動操作でクライアントプリンタが設定された時もクライアントプリンタが構成されます．
-  ドライバの選択 CM (Cluster Manager) の画面で &ldquo;Windows folder&rdquo; が選択された設定では，プリンタの基本ドライバである &ldquo;Native Printer Driver&rdquo; が選択されます．CMの画面で &ldquo;Universal Driver&rdquo; が選択された設定では，プリンタの種類に依存しない &ldquo;Universal Printer Driver&rdquo; が選択されます．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1894/" class="btn btn-template-main">続きを読む</a>
+2010/06/17*
+[番号] 技術ノート KGTN 2010061702
+[現象] ActiveX クライアントの署名と副署名 （タイムスタンプ） の証明書の有効期間が異なるが，問題ないのか？
+[説明] ActiveX クライアントの署名の証明書はGraphOn社 （または弊社） に発行されたものであり，タイムスタンプの副署名の証明書は認証局 （CA） 自身に発行されたものなので，当然のことながら有効期間は異なります．
+ファイル KGTN2010061702.pdf [(45.1 KB)] [kitasp 技術センター, 2010/06/17 11:21]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1728/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -573,7 +582,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1895/">
+                                      <a href="/posts/new_md/doc1726/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -581,7 +590,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1895/">クライアントドライブ機能を使い，サーバ側からクライアント側へファイルをコピーするとセッションが切れることがある．また，セッションが切れない場合でも，クライアント側でファイルがロックされ削除が出来ない等の現象が発生することもある．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1726/">ActiveXクライアントのインストールに失敗し，インターネット オプションで IEGCtrl Class は表示されるが削除ボタンが押せない状況．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -594,20 +603,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1895/"><i class="far fa-calendar"></i> 2009-10-20</a>
+                                            <a href="/posts/new_md/doc1726/"><i class="far fa-calendar"></i> 2010-06-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/10/20*
-[番号] 技術ノート KGTN 2009092001
-[現象] クライアントドライブ機能を使い，サーバ側からクライアント側へファイルをコピーするとセッションが切れることがある．また，セッションが切れない場合でも，クライアント側でファイルがロックされ削除が出来ない等の現象が発生することもある．
-[説明] クライアントドライブ機能を使い，サーバ側からクライアント側へファイルをコピーする場合，ファイルサイズが19MBを越えると以下の現象が発生することがあります．
-・ セッションが切断される （SessionVerification = 0 の場合は発生しません）． ・ クライアント側にファイルサイズが0バイトのファイルが作成される． ・ クライアント側にコピーされたファイルがロックされた状態になる． ・ クライアント側にコピーされたファイルの正しいファイルサイズが得られない．
-この問題は，回線速度やファイルの内容 （テキスト・バイナリ） に依存せず，ファイルサイズのみに依存して発生します．ファイルがロックされた場合は，ActiveXクライアントではIEを閉じることで，Windowsクライアントはggw.exeを終了させることでロックが解除されます．
-クライアントドライブ機能でファイルをコピーする場合，FTPのような専用のファイル転送プロトコルでコピーが行われる訳ではなく，Windows内部の低レベルのファイルコピー処理をフックして，サーバとクライアント間でファイルのコピー処理が行われます．このような仕組みにより， Windowsの遅延書き込み機能等の極めて低レベルな処理もGGのセッションの中で行われ，サーバとクライアント間でエラー等のイベントが正常に伝わらず，それぞれが相手方からのイベントを待ち続けて，タイムアウトによるセッション断や継続的なファイルのロックが発生したものと推測されます．
-ファイル KGTN2009092001.pdf [(70.9 KB)] [kitasp 技術センター, 2009/10/21 05:50]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1895/" class="btn btn-template-main">続きを読む</a>
+2010/06/17*
+[番号] 技術ノート KGTN 2010061705
+[現象] ActiveXクライアントのインストールに失敗し，インターネット オプションで IEGCtrl Class は表示されるが削除ボタンが押せない状況．
+[説明] マシンや失敗した状況が分かりませんので，的確なアドバイスはできませんが，とりあえず以下の作業を行って下さい．
+マシンを再起動する． ユーザ Administrator でログオンする． IEGCtrl Class の削除を試みる． GGサーバのページへアクセスし，ActiveXクライアントのインストールを試みる． 状況が改善しないなら，IEを閉じ GGMInfo.exe でActiveXクライアントを削除する． マシンを再起動する． GGサーバのページへアクセスし，ActiveXクライアントのインストールを試みる．
+ファイル KGTN2010061705.pdf [(52.7 KB)] [kitasp 技術センター, 2010/06/17 13:57]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1726/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -617,7 +624,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1896/">
+                                      <a href="/posts/new_md/doc1729/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -625,7 +632,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1896/">Program Window (pw.exe) はログオン時にどんな処理を行っているのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1729/">Windows の System Pages, System Paged Pool, Paged Pool の意味を知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -638,20 +645,21 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1896/"><i class="far fa-calendar"></i> 2009-10-15</a>
+                                            <a href="/posts/new_md/doc1729/"><i class="far fa-calendar"></i> 2010-06-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/10/15*
-[番号] 技術ノート KGTN 2009101501
-[現象] Program Window (pw.exe) はログオン時にどんな処理を行っているのか？
-[説明] Program Window （以下PWと略します） の起動時には，以下の処理が行われます．
- グループポリシの適用 ネットワークディバイスのリストア クライアントドライブのマウント ログオンスクリプトの実行 クライアントプリンタの初期化 初期アプリケーションの起動 （指定されている場合のみ）  ログオン処理が完了した時点で，PWはGG本体へ完了通知を送信し，GG本体はその完了通知を受信することで正常にログオンが行われたと判断します（注：PWからの完了通知を1分以内に受信することで正常と判断します）．
-下記の記録がAPSログにある場合は，ログオン処理が１分以内に完了しなかったことを示します．一般的に考えられる原因としては，a) 存在しないネットワークドライブやネットワークプリンタが指定された場合， b) サーバの高負荷やネットワーク障害で上記の処理に通常よりも多くの時間がかかった場合，などがあります．
-The Program Window failed to signal completion of its basic initializations within 1 minute(s)
-ファイル KGTN2009101501.pdf [(63.8 KB)] [kitasp 技術センター, 2009/10/15 11:51]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1896/" class="btn btn-template-main">続きを読む</a>
+2010/06/17*
+[番号] 技術ノート KGTN 2010061701
+[現象] Windows の System Pages, System Paged Pool, Paged Pool の意味を知りたい．
+[説明] これらは Windows のメモリ管理に関連する単語 （またはレジストリのキー） で，マイクロソフト社のサイトで検索しましたが，適切かつ十分な情報は見つかりませんでした．どうしても知りたいということであれば，マイクロソフト社へお問い合せ下さい．なお，関連するマイクロソフト社のページの幾つかを紹介します．
+http://support.microsoft.com/kb/247904/ja ページ アドレス プールとシステム PTE のメモリ領域の設定方法
+http://support.microsoft.com/kb/312362/ja サーバーがシステム ページ プールからメモリを割り当てることができない
+http://technet.microsoft.com/ja-jp/library/aa995755(EXCHG.65).aspx /Userva と SystemPages の構成
+http://technet.microsoft.com/ja-jp/windows/ee424287.aspx Windows の限界に挑む: ページ プールと非ページ プール
+ファイル KGTN2010061701.pdf [(64.6 KB)] [kitasp 技術センター, 2010/06/17 10:47]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1729/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -661,7 +669,7 @@ The Program Window failed to signal completion of its basic initializations with
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1897/">
+                                      <a href="/posts/new_md/doc1725/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -669,7 +677,7 @@ The Program Window failed to signal completion of its basic initializations with
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1897/">ヘルプウィンドウを表示したウインドウを閉じると，下記のように画面描画が崩れる．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1725/">エンタープライズオプションのGMCheck （GMCheckRaw） のセッション情報の取得に時間がかかる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -682,22 +690,23 @@ The Program Window failed to signal completion of its basic initializations with
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1897/"><i class="far fa-calendar"></i> 2009-08-05</a>
+                                            <a href="/posts/new_md/doc1725/"><i class="far fa-calendar"></i> 2010-06-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/08/05*
-[番号] 技術ノート KGTN 2009080501
-[現象] ヘルプウィンドウを表示したウインドウを閉じると，下記のように画面描画が崩れる．
-[説明] 「画面描画が崩れる」 ということが問題ではなく，
- 親ウィンドウをオープン 2) 子ウィンドウをオープン 3) ヘルプウィンドウをオープン 4) 子ウインドウをクリック （選択）  した時に，下記のように子ウインドウが最上位に上がって来ない事が本質的な問題です．
-本件の場合は
-Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnShowHelp.Click &lsquo;&mdash; kitASP &mdash; Help.ShowHelp(Nothing, &ldquo;C:¥WINDOWS¥Help¥ieeula.chm&rdquo;) Help.ShowHelp(New Control(), &ldquo;C:¥WINDOWS¥Help¥ieeula.chm&rdquo;) &lsquo;&mdash; End Sub
-と修正し，子ウインドウが選択された時に最上位に上がって来るようにします．この修正により，「画面描画が崩れる」 という現象は解消します．
-一般に，GO-Global for Windows は標準的なウインドウ管理を前提として最適化されておりますので，特殊なウインドウ管理 （本件の場合は選択されても最上位に上がって来ない） を行うとその前提が崩れ，結果的に画面が乱れることがあります．
-ファイル KGTN2009080501.pdf [(867 KB)] [kitasp 技術センター, 2009/08/05 09:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1897/" class="btn btn-template-main">続きを読む</a>
+2010/06/17*
+[番号] 技術ノート KGTN 2010061801
+[現象] エンタープライズオプションのGMCheck （GMCheckRaw） のセッション情報の取得に時間がかかる．
+[説明] GMCheck はセッション情報を収集する時に，クライアントのIPアドレスからホスト名を得ようとします （逆引き） ．参照しているネームサーバ （DNS） がこの問い合わせに応答しない場合， GMCCheck はタイムアウト時間が経過するまで待ちますので，結果的にセッション情報の取得に時間がかかります．対応方法としては，
+逆引きを正しく設定する． ダミーのサーバを用意し 「存在しない」 という回答を返す．
+等が考えられます．
+参　考 逆引きの状況の確認には，コマンド nslookup をGGサーバ上で実行して下さい．
+逆引きがある場合 名前:
+逆引きが無い場合 &hellip; Non-existent domain
+逆引きの応答がない場合 &hellip; No response from server
+ファイル KGTN2010061801.pdf [(72.4 KB)] [kitasp 技術センター, 2010/06/18 07:18]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1725/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -707,7 +716,7 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2589/">
+                                      <a href="/posts/new_md/doc1730/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -715,7 +724,7 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2589/">[GGW3.2/GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc1730/">認証局Thawte の 「CA ルート証明書」 を入手する方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -728,21 +737,19 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2589/"><i class="far fa-calendar"></i> 2009-06-10</a>
+                                            <a href="/posts/new_md/doc1730/"><i class="far fa-calendar"></i> 2010-06-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2009/06/10*
-[番号] 技術ノート KGTN 2009060902
-[現象] [GGW3.2/GGH4.X-5.X] GO-Global for Windows のバージョン情報の詳細を知りたい．
-[説明] GO-Global for Windowsは，
-[メジャー番号] . [マイナー番号] . [サービスパック] . [ビルド]
-という複数の番号で一意的に識別され，ソフトウエアが管理されています．メジャー番号　は内部構造の主要な変更を指し，マイナー番号 は内部構造の主要な変更はないものの主要な機能の追加や変更を指します．サービスパック は小規模な仕様の変更や累積的なバグ修正を指します．一般的な意味でのソフトウエアのバージョン番号は，
-[メジャー番号] . [マイナー番号] . [サービスパック]
-までで，弊社の製品出荷もこのバージョン番号を基本として行います．出荷のタイミングによって，同一バージョン内で細かな修正等が行われた場合は，同一バージョン番号で ビルド が異なることがあります．
-ファイル KGTN2009060902.pdf [(63.6 KB)] [kitasp 技術センター, 2016/05/27 11:55]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2589/" class="btn btn-template-main">続きを読む</a>
+2010/06/16*
+[番号] 技術ノート KGTN 2010061603
+[現象] 認証局Thawte の 「CA ルート証明書」 を入手する方法は？
+[説明] 認証局Thawte は，下記のページで 「CA ルート証明書」 を配布しています （2010年6月16日現在） ．
+https://www.thawte.com/roots/
+このページで名前・会社名・メールアドレス・電話番号を入力し，利用条件に同意すると （Accept ボタンをクリックすると） ，各 「CA ルート証明書」 を含んだファイル thawte-roots.zip をダウンロードすることができます．
+ファイル KGTN2010061603.pdf [(50.4 KB)] [kitasp 技術センター, 2010/06/16 12:59]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1730/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -812,7 +819,7 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

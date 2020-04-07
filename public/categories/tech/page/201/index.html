@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1268/">
+                                      <a href="/posts/new_md/doc1164/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1268/">[Network] 実効速度3Mbpsの回線で，何セッション利用できるか知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1164/">[DNS] IEの インターネット オプション でプロキシサーバを設定してGGを利用している．接続先のGGサーバのAレコードを変更して接続したところ，旧サーバへ接続される．クライアント上でPINGを実行すると，新サーバの応答が得られる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,24 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1268/"><i class="far fa-calendar"></i> 2011-10-13</a>
+                                            <a href="/posts/new_md/doc1164/"><i class="far fa-calendar"></i> 2011-12-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/13*
-[番号] 技術ノート KGTN 2011101303
-[現象] [Network] 実効速度3Mbpsの回線で，何セッション利用できるか知りたい．
-[説明] １つのセッションが使用する帯域幅は，アプリケーションの処理の内容，操作内容，操作の速さ等に依存するため，一般論として 「約○○bps使用」 と決めることは出来ません．従って，実際の運用に近いシナリオで操作を行い，１つのセッションが使用する帯域幅を求めて下さい．なお，計測時の操作者がアプリケーションの操作に不慣れな場合，画面の変化が緩やかになり，１つのセッションが使用する帯域幅が下がります （マクロ等で操作をシミュレートする場合は，逆に帯域幅が上がることがあります） ．できる限り，運用時と同じ速度で操作が出来る人を選んで下さい．１つのセッションが使用するおおよその帯域幅が分れば， 「実効速度÷１つのセッションが使用する帯域幅」 で目安となるセッション数が分ります．
-ファイル KGTN2011101303.pdf [(57.8 KB)] [kitasp 技術センター, 2011/10/13 10:43]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1268/" class="btn btn-template-main">続きを読む</a>
+2011/12/22*
+[番号] 技術ノート KGTN 2011122001
+[現象] [DNS] IEの &ldquo;インターネット オプション&rdquo; でプロキシサーバを設定してGGを利用している．接続先のGGサーバのAレコードを変更して接続したところ，旧サーバへ接続される．クライアント上でPINGを実行すると，新サーバの応答が得られる．
+[説明] 先ず，PINGコマンドはTCP/IPでなくICMPで通信を行い， &ldquo;web-based ping&rdquo; というような特殊なツールを除きプロキシサーバを利用しません．つまり，PINGコマンドは （GGサーバの） 名前解決をクライアント上で行います．他方， &ldquo;インターネット オプション&rdquo; でプロキシサーバが設定された環境では，GGに入力されたGGサーバの名前はプロキシサーバ上で解決されます．PINGコマンドとGGクライアントでは，名前解決が行われる場所 （リゾルバ） が異なりますので，このような現象が発生します．プロキシサーバが参照しているネームサーバ上で， （GGサーバの） 名前解決がどうなるか確認して下さい．
+基本的なことですが，DNSのAレコードを変更しても，その内容が直ちに反映されることはありません．出来る限り早く反映させるにはゾーンや各レコードの TTL (Time-To-Live) に短い値を設定する必要があります．これ以上の細かい内容については，GGのサポートの範囲を超えますので，書籍やインターネット上の情報を参照して下さい．
+補足１ DNSの浸透問題 （変更した設定内容が期待通りに直ちに反映されない問題） は，さまざまな要素が絡み理解が難しいのですが，下記のページ （ブログ） で詳しく説明されています．
+なぜ 「DNSの浸透」 は問題視されるのか 1〜6 http://www.geekpage.jp/blog/?id=2011/10/27/1/1
+補足２ 東京と大阪にGGサーバがそれぞれ１台あり，障害発生時に 東京→大阪 というようにGGサーバを切り替えたいのであれば，IPアドレスとして
+;
+を指定することで （２つのIPアドレスをセミコロンで区切って並べる） ，東京のGGサーバへアクセス出来ない時は自動的に大阪のGGサーバへアクセスします．なお，東京のGGサーバへのアクセスが失敗した後に大阪のGGサーバへアクセスしますので，その分ログオンに要する時間が多少長くなります． *1 GGW3.2.1 と GGH4.0 それぞれで機能します．
+補足３ 障害発生時に準リアルタイムにGGサーバを切り替えたい場合， DNS の機能を利用して行うことは技術的に無理があります （コストを考えなければ IP Anycast を利用する方法があります） ．現実的には，ActiveX クライアントを使用し，専用のウエッブページで接続先のIPアドレスを動的に切り替える方法が考えられます．
+ファイル KGTN2011122001.pdf [(92.7 KB)] [kitasp 技術センター, 2011/12/22 13:11]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1164/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +367,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1270/">
+                                      <a href="/posts/new_md/doc1163/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +375,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1270/">[Network] 理論値11Mbpsの回線で，何セッション利用できるか知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1163/">[GGH4.0] クライアントドライブ機能を有効にすると，GGへのログオンが30秒くらい遅くなる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,17 +388,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1270/"><i class="far fa-calendar"></i> 2011-10-13</a>
+                                            <a href="/posts/new_md/doc1163/"><i class="far fa-calendar"></i> 2011-12-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/13*
-[番号] 技術ノート KGTN 2011101302
-[現象] [Network] 理論値11Mbpsの回線で，何セッション利用できるか知りたい．
-[説明] 通信回線の理論値の速度と実効速度は様々な要因が影響し，多くの場合乖離しますので， 「何セッション利用できるか」 と尋ねられても，ざっくりとした値でも提示することは出来ません．従って，実際の環境で実効速度を計測することが必要不可欠です．なお，実効速度は時間帯等によって大きく変動することがありますので，その辺のことも十分に考慮して下さい．計測した時の実効速度は速かったが，実際に利用する時間帯の実効速度は遅かったという事例もあります．
-ファイル KGTN2011101302.pdf [(55.7 KB)] [kitasp 技術センター, 2011/10/13 10:14]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1270/" class="btn btn-template-main">続きを読む</a>
+2011/12/22*
+[番号] 技術ノート KGTN 2011122202
+[現象] [GGH4.0] クライアントドライブ機能を有効にすると，GGへのログオンが30秒くらい遅くなる．
+[説明] サーバ側およびクライアント側のアンチウイルスソフトを無効にすることで，この現象が発生しなくなった事例があります．さらに，改めてそれぞれのアンチウイルスソフトを有効にしたところ，この現象は再現 （再発） しませんでした．このようなことから詳しい原因を特定できませんでしたが，アンチウイルスソフトがGGのクライアントドライブ機能を受け持つDLLを掴んでいたことが原因として考えられます．対応としては， 「GGがインストールされたフォルダを」 アンチウイルスソフトがスキャンする対象から除外する方法が妥当だと思います．
+ファイル KGTN2011122202.pdf [(51.7 KB)] [kitasp 技術センター, 2011/12/22 21:31]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1163/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -401,7 +408,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1272/">
+                                      <a href="/posts/new_md/doc383/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -409,7 +416,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1272/">[GGW3.2.1] HTMLの img タグで画像のサイズが指定されている場合，ページ内の画像が多いと表示が極めて遅い．さらにページをスクロールしても，再描画に時間がかかる．</a></h2>
+                                    <h2><a href="/posts/new_md/doc383/">[GGW3.2.1/GGH4.X] GGH4.Xをインストールしたサーバを，GGW3.2.1へ戻す時の手順は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -422,18 +429,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1272/"><i class="far fa-calendar"></i> 2011-10-12</a>
+                                            <a href="/posts/new_md/doc383/"><i class="far fa-calendar"></i> 2011-12-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/12*
-[番号] 技術ノート KGTN 2011101202
-[現象] [GGW3.2.1] HTMLの img タグで画像のサイズが指定されている場合，ページ内の画像が多いと表示が極めて遅い．さらにページをスクロールしても，再描画に時間がかかる．
-[説明] この現象は，IE （Internet Explorer） とGGW3.2.1の描画処理の相互作用によって発生する問題で， Firefox 7.0.1 等では発生しません．HTMLの img タグで画像のサイズが指定されている場合，IEが細かい単位で描画を行うため，GGは非常に多数の描画命令を１つずつクライアントへ送信します．この結果，サーバ側およびクライアント側それぞれの CPU 負荷が高まり，結果的に描画に非常に多くの時間を要することになります．この問題を解決するには，GGW3.2.1のアーキテクチャをそのものを変更する必要があり， GGH4.0 で対応しております．なお，GGW3.2.1の環境では，対症療法になりますが，以下の方法が考えられます．
-ブラウザに FireFox 7.0.1 等を使用する． ASP等で動的に縮小 （拡大） 画像を生成し，その画像を （サイズ指定せずに） 表示する．
-ファイル KGTN2011101202.pdf [(63.2 KB)] [kitasp 技術センター, 2011/10/12 12:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1272/" class="btn btn-template-main">続きを読む</a>
+2011/12/22*
+[番号] 技術ノート KGTN 2011122301
+[現象] [GGW3.2.1/GGH4.X] GGH4.Xをインストールしたサーバを，GGW3.2.1へ戻す時の手順は？
+[説明] 必ず以下の手順でGGH4.XのアンインストールとGGW3.2.1の再インストールを行って下さい．これ以外の手順でGGW3.2.1の再インストールを行った場合，GG上でアプリケーションが正常に動作しない等の問題が発生します．
+ GGH4.Xをアンインストールする． 次の２つのファイルが存在すれは，それらを削除する． C:WindowsSystem32redirector.dll C:WindowsSystem32snds.dl サーバを再起動する． GGW3.2.1をインストールする． サーバを再起動する．  なお，上記１でライセンスファイルも削除されますので，事前にライセンスファイルを待避 （コピー） して下さい．
+There are two files from 4.0.1 that do not get cleaned up and need to be removed. Go to C:WindowsSystem32 and remove redirector.dll and snds.dll. Then reboot the system.  ファイル KGTN2011122301.pdf [(60.1 KB)] [kitasp 技術センター, 2014/01/29 17:31]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc383/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -443,7 +450,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1273/">
+                                      <a href="/posts/new_md/doc1165/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -451,7 +458,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1273/">[WS2008] Windows Update を適用しようとするとエラー 80072F8F が発生する．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1165/">[GGW3.2.1] Program Window (PW) からアプリケーションを起動しようとしたところ，エラーメッセージ  is inaccessible. Please direct your system administrator to log file for details. が表示された．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -464,17 +471,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1273/"><i class="far fa-calendar"></i> 2011-10-12</a>
+                                            <a href="/posts/new_md/doc1165/"><i class="far fa-calendar"></i> 2011-12-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/12*
-[番号] 技術ノート KGTN 2011101201
-[現象] [WS2008] Windows Update を適用しようとするとエラー 80072F8F が発生する．
-[説明] そのマシン （サーバ） の日付と時刻が正しくないことが考えられます．正しい日付と時刻を設定して，再度Windows Update を適用して下さい．
-ファイル KGTN2011101201.pdf [(43.4 KB)] [kitasp 技術センター, 2011/10/12 10:16]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1273/" class="btn btn-template-main">続きを読む</a>
+2011/12/22*
+[番号] 技術ノート KGTN 2011122201
+[現象] [GGW3.2.1] Program Window (PW) からアプリケーションを起動しようとしたところ，エラーメッセージ &quot; is inaccessible. Please direct your system administrator to log file for details.&rdquo; が表示された．
+[説明] 文字化けした文字列は，レジストリの中に記録されたアプリケーションの登録情報から取得します．この障害が続くようであれば，レジストリが壊れている可能性があります．暫くして正常にアプリケーションが起動出来た時は，問題が発生した時点でアンチウイルスソフト等が該当するレジストリにアクセス中で，GGが正しく読み取れなかった可能性が考えられます．
+ファイル KGTN2011122201.pdf [(57.2 KB)] [kitasp 技術センター, 2011/12/22 10:04]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1165/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -484,7 +491,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1277/">
+                                      <a href="/posts/new_md/doc1162/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -492,7 +499,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1277/">[GGH4.0] システム環境変数に新たな変数を追加したが，GGのセッション上にその変数が存在しない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1162/">[GGW3.2.1] Windows Server 2008 (32bit) &#43; GGW3.2.1 の環境で，クライアント印刷が出来ない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -505,18 +512,23 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1277/"><i class="far fa-calendar"></i> 2011-10-06</a>
+                                            <a href="/posts/new_md/doc1162/"><i class="far fa-calendar"></i> 2011-12-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/06*
-[番号] 技術ノート KGTN 2011100601
-[現象] [GGH4.0] システム環境変数に新たな変数を追加したが，GGのセッション上にその変数が存在しない．
-[説明] システム環境変数の新規・編集・削除を行った場合は，サービス GO-Global Application Publishing Service を再起動するか，またはサーバの再起動を行ってください．この再起動の後に，新規・編集・削除の内容がGGの環境に反映されます．
-補　足 GGW3.2.1では，サービス GO-Global Application Publishing Service の再起動やサーバの再起動は不要でした．しかし，このような処理を行うと logon.exe は変更前の環境変数を保持し，変更後に起動された pw.exe は変更後の環境変数を保持するという特殊な状況が発生します． GGH4.0 では，システム環境変数の変更に当たって，一貫性やパフォーマンスの観点から，サービスやサーバの再起動を前提としました．
-ファイル KGTN2011100601.pdf [(60.5 KB)] [kitasp 技術センター, 2011/10/06 11:42]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1277/" class="btn btn-template-main">続きを読む</a>
+2011/12/22*
+[番号] 技術ノート KGTN 2011122003
+[現象] [GGW3.2.1] Windows Server 2008 (32bit) + GGW3.2.1 の環境で，クライアント印刷が出来ない．
+[説明] 弊社でも２つの試験環境でクライアント印刷が出来ない （サーバー側のプリンタにジョブが生成されるがクライアント側へ転送されない，しかしテスト印刷は正しくクライアント側へ印刷出来る） 問題を確認しております．既にGraphOn社へ報告済みで，新たな情報が届き次第，この技術ノートを更新します． このような場合は， （通常） 印刷出来ないアカウントの print.ini を消すことで問題が解消します．
+[Windows 7 または Windows Vista] %USERPROFILE%¥AppData¥Local¥print.ini を消す．
+[Windows XP など] %USERPROFILE%¥Local Settings¥Application Data¥print.ini を消す．
+なお，この現象および解消方法はWindows Server 2008 (32bit) だけでなく Windows Server 2003 の環境でも適用されます．
+補　足 上記の方法で問題が解消せず，かつ現象が発生するGGサーバで 「過去に GGH4.0 をインストールしたことがある場合」 は，以下の作業を行って下さい．
+GGW3.2.1 をアンインストールし再起動する． 次の２つのファイル （過去のGGH4.0のファイル） を削除する． C:¥Windows¥System32¥redirector.dll C:¥Windows¥System32¥snds.dl GGW3.2.1 をインストールする．
+なお，上記１でライセンスファイルも削除されますので，事前にライセンスファイルを待避 （コピー） して下さい．
+ファイル KGTN2011122003.pdf [(73.3 KB)] [kitasp 技術センター, 2011/12/23 01:47]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1162/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -526,7 +538,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1278/">
+                                      <a href="/posts/new_md/doc1167/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -534,7 +546,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1278/">[GGH4.0] セッション再接続機能を利用し，クライアントAからクライアントBへセッションを引き継いだ場合，環境変数 CLIENTCOMPUTERNAME と CLIENTCOMPUTERADDRESS の値は引き継いだ方の値になるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1167/">[DNS] マスターサーバでの変更を，直ちにスレイブサーバへ反映させたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -547,20 +559,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1278/"><i class="far fa-calendar"></i> 2011-10-06</a>
+                                            <a href="/posts/new_md/doc1167/"><i class="far fa-calendar"></i> 2011-12-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/06*
-[番号] 技術ノート KGTN 2011072902
-[現象] [GGH4.0] セッション再接続機能を利用し，クライアントAからクライアントBへセッションを引き継いだ場合，環境変数 CLIENTCOMPUTERNAME と CLIENTCOMPUTERADDRESS の値は引き継いだ方の値になるのか？
-[説明] GGH-4.0.1.10357 の仕様では，セッションを引き継ぐ前のクライアント （つまりクライアントA） の環境変数 CLIENTCOMPUTERNAME と CLIENTCOMPUTERADDRESS の値が引き継がれます．現在，GraphOn社にクライアントBの各値が設定される動作になるよう，機能要求を行っている状況です．
-補足１ GGH-4.0.1.10784 (Patch 3) で環境変数 CLIENTCOMPUTERNAME と CLIENTCOMPUTERADDRESS の値が，再接続したクライアント （つまりクライアントB） の値になるように仕様が変更されました．
-補足２ コマンドプロンプト （DOS窓） 等を引き継いだ場合は，そのプロセス固有の環境変数の中に引き継ぐ前のCLIENTCOMPUTERNAME と CLIENTCOMPUTERADDRESS の値が保持されていますので，引き継ぐ前の値になります．GGの互換性機能を使用し GetClientComputerName関数 でクライアントのコンピュータ名を得る場合についても同様です．
-補足３ コマンドプロンプト （DOS窓） 等から新たなプロセスを生成した場合， GGH-4.0.1.10784 (Patch 3) では引き継ぐ前の値が CLIENTCOMPUTERNAME と CLIENTCOMPUTERADDRESS に設定されますが， 次期リリースより 2011年12月またはそれ以降のリリースで引き継いだ後の値が設定されるように仕様が変更されます （GraphOn社の内部ビルド 11051 で動作を確認しました） ．これは， Ver3.2.1 の仕様に合わせるための仕様変更です．
-ファイル KGTN2011072902.pdf [(69.1 KB)] [kitasp 技術センター, 2011/10/06 09:42]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1278/" class="btn btn-template-main">続きを読む</a>
+2011/12/21*
+[番号] 技術ノート KGTN 2011122101
+[現象] [DNS] マスターサーバでの変更を，直ちにスレイブサーバへ反映させたい．
+[説明] 幾つかの方法がありますが， 「比較的手間がかからず障害発生時の切り分けが容易」 という基準で考えれば，rsync を利用してマスターサーバから各スレイブサーバへゾーンファイルを転送する方法がお勧めです．スレイブサーバは新しいゾーンファイルが転送されて来たかを常にチェックし，届いていればその新しいゾーンファイルの再読み込みを行います．下記ページに，具体的な情報が紹介されていますので，ご覧下さい．
+スレーブ・サーバのゾーン転送とセキュリティ http://www.atmarkit.co.jp/flinux/rensai/bind905/bind905b.html
+ファイル KGTN2011122101.pdf [(62.5 KB)] [kitasp 技術センター, 2011/12/21 09:41]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1167/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -570,7 +580,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1281/">
+                                      <a href="/posts/new_md/doc1166/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -578,7 +588,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1281/">[GGH4.0] GGW3.2.1 から GGH4.0 へバージョンアップするに当たり，○○の資料を提供して欲しい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1166/">[Windows] Microsoft Windows Services for UNIX (SFU) は，通常の Windows 環境で動作するアプリケーション群ではないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -591,17 +601,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1281/"><i class="far fa-calendar"></i> 2011-10-05</a>
+                                            <a href="/posts/new_md/doc1166/"><i class="far fa-calendar"></i> 2011-12-21</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2011100503
-[現象] [GGH4.0] GGW3.2.1 から GGH4.0 へバージョンアップするに当たり，○○の資料を提供して欲しい．
-[説明] GraphOn社が提供している情報，弊社の技術ノート，および過去事例の中に該当する資料があれば，GGの通常サポートの中でご提供します．該当する資料が無い場合は，残念ながらご希望に沿うことは出来ません．とうしても必要な場合は，代理店の各種サポートサービス，または弊社プロフェッショナルサービスのご利用をご検討下さい．
-ファイル KGTN2011100503.pdf [(52.4 KB)] [kitasp 技術センター, 2011/10/05 13:41]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1281/" class="btn btn-template-main">続きを読む</a>
+2011/12/21*
+[番号] 技術ノート KGTN 2011121402
+[現象] [Windows] Microsoft Windows Services for UNIX (SFU) は，通常の Windows 環境で動作するアプリケーション群ではないのか？
+[説明] いいえ，Microsoft Windows Services for UNIX (SFU) の機能は Win32 サブシステム (Windows) 上で動作するのではなく，ラッパーを通してNTカーネル上で Interix と呼ばれるUNIX/POSIX環境を提供するサブシステム （Interixサブシステム） 上で動作します． GO-Global for Windows は，Windows 上で動作するアプリケーションを対象としておりますので （赤枠の範囲） ，UNIX上で実行されるSFUの機能 （青枠の範囲で実行される機能） は動作の対象となりません．
+ファイル KGTN2011121402.pdf [(93.6 KB)] [kitasp 技術センター, 2011/12/21 13:17]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1166/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -611,7 +621,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1283/">
+                                      <a href="/posts/new_md/doc2339/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -619,7 +629,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1283/">[GGH4.0] Ver4.0 のサービスGO</a></h2>
+                                    <h2><a href="/posts/new_md/doc2339/">[GGH4.X-5.X] クライアント側パスワードキャッシュ機能 （Cache passwords on the client） が GGW3.2 と異なる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -632,17 +642,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1283/"><i class="far fa-calendar"></i> 2011-10-05</a>
+                                            <a href="/posts/new_md/doc2339/"><i class="far fa-calendar"></i> 2011-12-20</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2011100502
-[現象] [GGH4.0] Ver4.0 のサービスGO-Global Update Client がサーバ上で見つからない．
-[説明] Ver4.0 のサービスGO-Global Update Client は，クライアント側の GO-Global Client を更新するための機能を担っており，クライアント側の Windows 上で動作します．従って，通常はサーバ側にこのサービスは存在しません．但し，サーバ側で GO-Global Client をインストールした場合は， （当然のことながら） このサービスが存在します．
-ファイル KGTN2011100502.pdf [(48.5 KB)] [kitasp 技術センター, 2011/10/05 10:37]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1283/" class="btn btn-template-main">続きを読む</a>
+2011/12/20*
+[番号] 技術ノート KGTN 2011122004
+[現象] [GGH4.X-5.X] クライアント側パスワードキャッシュ機能 （Cache passwords on the client） が GGW3.2 と異なる．
+[説明] GGW3.2 ではクライアント側パスワードキャッシュ機能を有効にすると，それ以降はログオンダイアログが表示されず，他のアカウント （ユーザ） でログオンすることが出来ませんでした．この問題を解消するために，GGH4.X-5.X ではログオンダイアログが常に表示されるように仕様が変更されました．ログオンダイアログでユーザ名とパスワードを入力し，さらに &ldquo;Remember me on this computer&rdquo; にチェックを入れてログオンすると，次回から同じ状態でログオンダイアログが表示されるようになります．ここで単に Sing In ボタンをクリックするだけでログオンすることが出来ます．ユーザ名とパスワードを変更すれば，他のアカウント （ユーザ） でログオンすることも出来ます．さらに， &ldquo;Remember me on this computer&rdquo; のチェックを外せば，クライアント側に保持された認証情報を消去することが出来ます．
+補　足 認証情報は，フォルダ USERPROFILEAppDataRoamingGraphOnGO-Global 中の接続先毎のファイルに暗号化されて記録されます．
+ファイル KGTN2011122004.pdf [(81.4 KB)] [kitasp 技術センター, 2016/10/04 15:41]
+KGTN2011122004.jpg
+表示 [(9.27 KB)] [kitasp 技術センター, 2016/10/04 15:41]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2339/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -652,7 +665,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1284/">
+                                      <a href="/posts/new_md/doc1168/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -660,7 +673,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1284/">[GGW3.1.1] Ver3.1.1 のサービスGO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1168/">[iPad Client] iPad Client は接続先サーバを設定画面で指定せねばならないが，ブラウザから動的に指定する方法なないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -673,19 +686,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1284/"><i class="far fa-calendar"></i> 2011-10-05</a>
+                                            <a href="/posts/new_md/doc1168/"><i class="far fa-calendar"></i> 2011-12-20</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2011100501
-[現象] [GGW3.1.1] Ver3.1.1 のサービスGO-Global Update Client の機能は？
-[説明] Ver3.1.1 では， Windows のシステムファイルwin32k.sys, ntoskrnl.exe, ntdll.dll, user32.dll, gdi32.dll 用のカスタムインタフェースが存在し，これらのシステムファイルが更新された時，常にGGのカスタムインタフェース （VBMファイルとして提供） も更新する必要があります． （Ver3.1.1の） GO-Global Update Client は，これらのシステムファイルが更新されたかどうかを監視し，更新された場合はそれに対応するVBMファイルが存在するかどうかを調べ，存在すればカスタムインタフェースを更新する処理を行います．
-しかしながら実際の運用では，Windows の新しいシステムファイルがリリースされた時，GraphOn社は互換アップデートでこのVBMファイルを提供しており， （互換アップデートの） インストーラーがVBMファイルをインストールする機能を持っているため， GO-Global Update Client が有意に働く状況は発生しません．このようなことから， GO-Global Update Client を無効化することをお勧めしております．
-注　意 上記の理由および自動互換アップデート機能の実装により， Ver3.2.1 には GO-Global Update Client は存在しません．また Ver4.0 に存在する GO-Global Update Client は，サービス名は同じですが， 「クライアント側のモジュールを更新する機能」 で，全く内容が異なるサービスです．
-ファイル KGTN2011100501.pdf [(67.5 KB)] [kitasp 技術センター, 2011/10/05 09:00]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1284/" class="btn btn-template-main">続きを読む</a>
+2011/12/20*
+[番号] 技術ノート KGTN 2011122002
+[現象] [iPad Client] iPad Client は接続先サーバを設定画面で指定せねばならないが，ブラウザから動的に指定する方法なないのか？
+[説明] 現状では接続先サーバを iPad Client の設定画面で指定するしか方法がありません．ただ，過去にも同じようなご要望がありましたので，GraphOn社へ iPad URL Scheme のサポートを依頼しております （実装時期等は未定です） ．これが実装されると，動的に接続先等を指定できるようになります．
+ファイル KGTN2011122002.pdf [(52.5 KB)] [kitasp 技術センター, 2011/12/20 09:10]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1168/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -695,7 +706,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2189/">
+                                      <a href="/posts/new_md/doc2642/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -703,7 +714,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2189/">[GGW3.2/GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc2642/">[GGH4.X-5.X] Throttle と Batching を有効にする方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -716,20 +727,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2189/"><i class="far fa-calendar"></i> 2011-10-05</a>
+                                            <a href="/posts/new_md/doc2642/"><i class="far fa-calendar"></i> 2011-12-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2009051501
-[現象] [GGW3.2/GGH4.X-5.X] セッションがたまに切れるが，何か簡単に試せることはないか？
-[説明] GO-Global for Windows はデフォルトの設定で， （クライアント～サーバ間に張られる GO-Global for Windows のコネクション上のプロトコルで） クライアントからサーバへ30秒毎にPINGを送信しています（以降，ICMPのPINGと区別するためにGG-PINGと表記します）．30秒以内にサーバから応答があればコネクションが正常と判断し，それを越えて応答がなければコネクションが失われたと判断します （注：応答を受信した直後にコネクションが切れた場合は，それから29秒後にGG-PINGが送信されますので，59秒後にコネクションが切れたと判断します） ．このGG-PINGの機能を以下の設定で無効にすることができます．
-[HKEY_LOCAL_MACHINESOFTWAREGraphOnBridges1.0.0AppServer] SessionVerification REG_DWORD 0
-設定を変更した場合は，必ずサーバを再起動して下さい．GG-PINGの機能を無効にしてもセッションが切れる場合は，TCP/IPレベルで実際にコネクションが切れているものと推測されます．
-補　足 TCP/IPレベルでセッションが切断されているかどうかを確認するには，弊社開発の GGNetworkCheck をご利用下さい．このツールは，GG のサーバ側とクライアント側で動作させるプログラムで，クライアント側主導でTCP/IP のヘルスチェック （接続性確認） を行います．クライアント側は所定の秒数でPING メッセージを送信し （ログに記録も残します） ，サーバ側はPING メッセージを受信するとログに記録するとともに，応答メッセージをクライアント側に送信します．クライアント側は応答メッセージを受信すると，その情報をログに記録します．所定秒数内に相手からのメッセージが届かない，またはTCP/IP レベルでコネクションが切断された場合は，エラーとしてログに記録されます．この２つのログ （クライアント側とサーバ側） を付き合わせることで，ネットワークの状況を確認することが出来ます．GGのプロトコルを使用せずにチェックを行いますので，万一GG上で問題が発生したとしても，ネットワークの状況を確実に把握することが可能です．詳細は，技術ノート KGTN#2011030201 をご覧下さい．
-ファイル KGTN2009051501.pdf [(84 KB)] [kitasp 技術センター, 2017/04/06 17:22]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2189/" class="btn btn-template-main">続きを読む</a>
+2011/12/19*
+[番号] 技術ノート KGTN 2011121902
+[現象] [GGH4.X-5.X] Throttle と Batching を有効にする方法は？
+[説明] 1)　サービス &ldquo;GO-Global Application Publishing Service&rdquo; を停止して下さい．
+2)　設定ファイル ALLUSERSPROFILEApplication DataGraphOnHostProperties.xmlの内容を以下のように変更して下さい．
+&lt;property id=&quot;ClientProcessingBatch&quot; group=&quot;Miscellaneous&quot; type=&quot;UINT32&quot;&gt; &lt;value&gt;1&lt;/value&gt; ← 1 をセットする． &lt;/property&gt; &lt;property id=&quot;ClientProcessingThrottle&quot; group=&quot;Miscellaneous&quot; type=&quot;UINT32&quot;&gt; &lt;value&gt;1&lt;/value&gt; ← 1 をセットする． &lt;/property&gt;  3)　サービス &ldquo;GO-Global Application Publishing Service&rdquo; を開始して下さい．
+補　足 アプリケーションが比較的頻繁にハングアップする （アプリケーションが操作出来なくなる） 場合は，このThrottle と Batching を有効にして状況が改善するかどうか試してみる価値があります．実際，見掛けは小さく単純な画面を持つアプリケーションでしたが，このThrottle と Batching を有効にして状況が改善した事例があります．
+ファイル KGTN2011121902.pdf [(76.2 KB)] [kitasp 技術センター, 2016/02/05 11:42]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2642/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -799,7 +810,7 @@
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

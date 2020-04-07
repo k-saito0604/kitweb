@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc551/">
+                                      <a href="/posts/new_md/doc444/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc551/">[Gateway] Gateway サーバが管理しているアイテムの情報は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc444/">[Windows] Windows 7, Windows 8, Windows 8.1 の環境で，回復パーティションを削除したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc551/"><i class="far fa-calendar"></i> 2013-06-20</a>
+                                            <a href="/posts/new_md/doc444/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/06/20*
-[番号] 技術ノート KGTN 2013062003
-[現象] [Gateway] Gateway サーバが管理しているアイテムの情報は？
-[説明] GG4.6の Gateway サーバが管理しているアイテム情報は，以下の通りです．
-create table portalitems ( itemType varchar(31) not null, id int8 not null, groupId varchar(255), groupName varchar(255), iconEncoded varchar(255), iconListId varchar(255), iconThumbnailId varchar(255), iconTileId varchar(255), itemUrl varchar(255), name varchar(255), shortcutType varchar(255), owner_id int8, parent_id int8, primary key (id) );  ファイル KGTN2013062003.pdf [(45.2 KB)] [kitasp 技術センター, 2013/06/20 10:51]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc551/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013121201
+[現象] [Windows] Windows 7, Windows 8, Windows 8.1 の環境で，回復パーティションを削除したい．
+[説明] Diskpart コマンドを使用することで，回復パーティション等を削除することが可能です．下記ページをご覧下さい．なお，非常に危険なコマンドですので，何が起きるか予測できない方は，使用すべきではありません．
+Diskpart コマンド ライン ユーティリティの説明 http://support.microsoft.com/kb/300415/ja
+ファイル KGTN2013121201.pdf [(50.4 KB)] [kitasp 技術センター, 2014/01/29 14:29]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc444/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +361,7 @@ create table portalitems ( itemType varchar(31) not null, id int8 not null, grou
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc552/">
+                                      <a href="/posts/new_md/doc376/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +369,7 @@ create table portalitems ( itemType varchar(31) not null, id int8 not null, grou
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc552/">[Gateway] Gateway サーバが管理しているセッションの情報は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc376/">[Windows] Windows Server 2008 R2 や Windows Server 2012 のサービス一覧で，スタートアップの種類が 「手動 （トリガー開始）」 と表示されたものがあるが，これは何なのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,17 +382,17 @@ create table portalitems ( itemType varchar(31) not null, id int8 not null, grou
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc552/"><i class="far fa-calendar"></i> 2013-06-20</a>
+                                            <a href="/posts/new_md/doc376/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/06/20*
-[番号] 技術ノート KGTN 2013062002
-[現象] [Gateway] Gateway サーバが管理しているセッションの情報は？
-[説明] GG4.6の Gateway サーバが管理しているセッション情報は，以下の通りです．
-create table session_users ( id bigint generated by default as identity, OS varchar(255), clientId integer not null, clientName varchar(255), credentials varchar(255), hostId bigint, hostName varchar(255), ipAddress varchar(255), meetingId bigint, peerIP varchar(255), port smallint not null, receivedBytes bigint, sentBytes bigint, startTime timestamp, userInstanceName varchar(255), version varchar(255), session_id bigint, primary key (id) ); create table sessions ( id bigint generated by default as identity, hostId bigint, hostUsername varchar(255), hostname varchar(255), isHostAdmin smallint not null, name varchar(255), owner varchar(255), sessionId integer not null, sessionUUID varchar(255), startTime timestamp, status integer not null, workspaceId bigint, workspaceInstanceName varchar(255), workspaceName varchar(255), primary key (id) );  ファイル KGTN2013062002.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc552/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2014012011
+[現象] [Windows] Windows Server 2008 R2 や Windows Server 2012 のサービス一覧で，スタートアップの種類が 「手動 （トリガー開始）」 と表示されたものがあるが，これは何なのか？
+[説明] 従来の Windows では，サービスはサーバーの起動で開始され，シャットダウンで終了していました．Windows Server 2008 R2 や Windows Server 2012 の 「トリガースタートサービス」 機能により，そのサービスが関連する環境 （状態） が有効になった時に， 「手動 （トリガー開始）」 のサービスが開始されるようになりました．
+ファイル KGTN2014012011.pdf [(52.4 KB)] [kitasp 技術センター, 2014/01/31 14:06]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc376/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -401,7 +402,7 @@ create table session_users ( id bigint generated by default as identity, OS varc
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc553/">
+                                      <a href="/posts/new_md/doc497/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -409,7 +410,7 @@ create table session_users ( id bigint generated by default as identity, OS varc
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc553/">[Gateway] Gateway サーバが管理しているホストの情報は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc497/">[Windows] Windows Server 2012 と Windows Server 2012 R2 の違いは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -422,17 +423,17 @@ create table session_users ( id bigint generated by default as identity, OS varc
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc553/"><i class="far fa-calendar"></i> 2013-06-20</a>
+                                            <a href="/posts/new_md/doc497/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/06/20*
-[番号] 技術ノート KGTN 2013062001
-[現象] [Gateway] Gateway サーバが管理しているホストの情報は？
-[説明] GG4.6の Gateway サーバが管理しているホスト情報は，以下の通りです．
-create table host_settings ( id bigint generated by default as identity, autoAuthenticate smallint, autoUpdate smallint, listWorkspaces smallint, maxUsersAllowed integer, password varchar(255), passwordEnabled smallint, rememberMeEnabled smallint, rememberPassword smallint, primary key (id) ); create table hosts ( id bigint generated by default as identity, OS varchar(255), address varchar(255), baseSessionID integer, cpuUsage integer, cpuWeight integer, credentials varchar(255), displayName varchar(255), hardwareid bigint, hostWeight integer, isSetUserLimit smallint, encrypt_key varchar(255), lastSessionStartTime timestamp, listWorkspaces smallint, loadDataTimestamp timestamp, maxCpu integer, maxMem integer, maxSessions integer, memWeight integer, memoryUsage integer, name varchar(255), owner varchar(255), proxyHostID bigint, role integer, sessionWeight integer, smiAddress varchar(255), smiPort integer, smiTransport varchar(255), state varchar(255), totalSessionCount integer, userLimit integer, uuid varchar(255), defaultWorkspace_id bigint, settings_id bigint, primary key (id) );  ファイル KGTN2013062001.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc553/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013111301
+[現象] [Windows] Windows Server 2012 と Windows Server 2012 R2 の違いは？
+[説明] Windows Server 20012 は Windows Server 2008 R2 の後継OSで，クラウドに最適化されたプラットフォームという位置付けです． Windows Server 2012 R2 は Windows Server 2012 の後継OSで，クラウド・プラットフォームとして 「サーバー・ストレージ・ネットワーク」 の各分野で大幅に機能強化を行った製品という位置付けです．提供される仮想マシンは，レガシなハードウェア要素を持つ世代 1 (Generation 1) と，レガシなハードウェア要素を持たない世代 2 (Generation 2) の２種類があります．世代 2 仮想マシンは，64 ビット版の Windows 8 以降または Windows Server 2012 以降のみをゲスト OS としてサポートします．
+ファイル KGTN2013111301.pdf [(50.5 KB)] [kitasp 技術センター, 2014/01/29 10:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc497/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -442,7 +443,7 @@ create table host_settings ( id bigint generated by default as identity, autoAut
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2000/">
+                                      <a href="/posts/new_md/doc399/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -450,7 +451,7 @@ create table host_settings ( id bigint generated by default as identity, autoAut
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2000/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc399/">[Windows] Windows Server 2012 の IE10 には Flash Player が同梱されているはずなのに使えない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -463,21 +464,17 @@ create table host_settings ( id bigint generated by default as identity, autoAut
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2000/"><i class="far fa-calendar"></i> 2013-06-19</a>
+                                            <a href="/posts/new_md/doc399/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/06/19*
-[番号] 技術ノート KGTN 2013061901
-[現象] [GGH4.X-5.X] GGH4.X-5.X で，ログオン時に &ldquo;Connection failed. Access to the host was denied&rdquo; というメッセージが表示されたが，これはどのような障害なのか？
-[説明] このメッセージは，GGがログオン時に使用するWindowsのAPIの呼び出しで，エラーが発生したことを意味します．具体的には，非サポートの更新プログラムが適用された場合など，Windowsレベルで何等かの障害が発生したことが考えられます．エラーの詳細情報は，APSログに以下のような情報が記録されます．
- 1432 2013-04-12 09:19:12.174 Logon237 on Client001, aps (556) Failed to create logon session process during session startup for client at address 192.168.11.112 ([NTSTATUS-1073741800]{.underline}, WLE0).
- 上記の下線の部分の -1073741800 がNTSTATUSエラーコードで，この場合は
-STATUS_CONFLICTING_ADDRESSES = アドレス範囲の矛盾
-を意味します．この情報が問題を解決する大切な手掛かりとなります．
-ファイル KGTN2013061901.pdf [(48.7 KB)] [kitasp 技術センター, 2017/10/10 10:08]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2000/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2014012010
+[現象] [Windows] Windows Server 2012 の IE10 には Flash Player が同梱されているはずなのに使えない．
+[説明] Windows Server 2012 にはFlash Player が同梱されていますが，しかしインストールされていません．サーバー マネージャの機能の追加で 「デスクトップ エクスペリエンス」 をインストールして下さい．
+ファイル KGTN2014012010.pdf [(44.5 KB)] [kitasp 技術センター, 2014/01/29 16:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc399/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -487,7 +484,7 @@ STATUS_CONFLICTING_ADDRESSES = アドレス範囲の矛盾
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc555/">
+                                      <a href="/posts/new_md/doc413/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -495,7 +492,7 @@ STATUS_CONFLICTING_ADDRESSES = アドレス範囲の矛盾
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc555/">[GGH4.7] GGH4.7のホスト機能は，32ビット環境をサポートするのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc413/">[Windows] Windows Server 2012 のインストール作業を行っているが， Windows Update のファイルのダウンロードが始まらない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -508,17 +505,17 @@ STATUS_CONFLICTING_ADDRESSES = アドレス範囲の矛盾
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc555/"><i class="far fa-calendar"></i> 2013-06-17</a>
+                                            <a href="/posts/new_md/doc413/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/06/17*
-[番号] 技術ノート KGTN 2013061701
-[現象] [GGH4.7] GGH4.7のホスト機能は，32ビット環境をサポートするのか？
-[説明] はい，GGH4.6と同様に32ビット環境をサポートします．GGH4.7のホスト機能がサポートするサーバ環境は，以下の通りです．
-ファイル KGTN2013061701.pdf [(59.8 KB)] [kitasp 技術センター, 2013/06/17 10:57]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc555/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2014011701
+[現象] [Windows] Windows Server 2012 のインストール作業を行っているが， Windows Update のファイルのダウンロードが始まらない．
+[説明] Windows Server 2012 の Windows Update （更新プログラムの適用） 画面は，ダウンロードの進行状況が長く 0% が続き，突然 99% 前後になるようです．なお，タスクマネージャでイーサネットのスループット画面では，殆ど帯域を使用していないように見えますが，十分待てばダウンロードが完了します （Background Intelligent Transfer Service が使用している帯域は表示されない？） ．
+ファイル KGTN2014011701.pdf [(53.5 KB)] [kitasp 技術センター, 2014/01/29 16:22]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc413/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -528,7 +525,7 @@ STATUS_CONFLICTING_ADDRESSES = アドレス範囲の矛盾
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc557/">
+                                      <a href="/posts/new_md/doc494/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -536,7 +533,7 @@ STATUS_CONFLICTING_ADDRESSES = アドレス範囲の矛盾
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc557/">[GGH4.6] Google Chrome のプラグイン （クライアント） は，どのプラットフォームでも利用できるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc494/">[Windows] Windows にインストールされている更新プログラム （Windows Update） の一覧を得たい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -549,17 +546,17 @@ STATUS_CONFLICTING_ADDRESSES = アドレス範囲の矛盾
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc557/"><i class="far fa-calendar"></i> 2013-06-13</a>
+                                            <a href="/posts/new_md/doc494/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/06/13*
-[番号] 技術ノート KGTN 2013061301
-[現象] [GGH4.6] Google Chrome のプラグイン （クライアント） は，どのプラットフォームでも利用できるのか？
-[説明] いいえ，現時点ではGoogle Chrome のプラグインは Windows 7 の環境のみインストールすることが出来ます． Windows 8 等ではプラグインのインストール時に 「このアプリケーションはこのパソコンではサポートされません．インストールは無効になりました．」 というメッセージが表示されます．
-ファイル KGTN2013061301.pdf [(46.5 KB)] [kitasp 技術センター, 2013/06/13 10:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc557/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013111304
+[現象] [Windows] Windows にインストールされている更新プログラム （Windows Update） の一覧を得たい．
+[説明] 管理者権限でコマンドプロンプトを起動し，コマンド &ldquo;systeminfo&rdquo; を実行して下さい．表示される項目 「ホットフィックス」 に更新プログラムの一覧が表示されます．
+ファイル KGTN2013111304.pdf [(81.9 KB)] [kitasp 技術センター, 2014/01/29 11:02]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc494/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -569,7 +566,7 @@ STATUS_CONFLICTING_ADDRESSES = アドレス範囲の矛盾
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc561/">
+                                      <a href="/posts/new_md/doc460/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -577,7 +574,7 @@ STATUS_CONFLICTING_ADDRESSES = アドレス範囲の矛盾
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc561/">[GGH4.6] GGH4.5と比較して，GGH4.6の大きな違いは何か？</a></h2>
+                                    <h2><a href="/posts/new_md/doc460/">[Windows] WS2008R2 の更新プログラムのファイルは，どこに置かれているのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -590,18 +587,17 @@ STATUS_CONFLICTING_ADDRESSES = アドレス範囲の矛盾
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc561/"><i class="far fa-calendar"></i> 2013-06-12</a>
+                                            <a href="/posts/new_md/doc460/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/06/12*
-[番号] 技術ノート KGTN 2013041001
-[現象] [GGH4.6] GGH4.5と比較して，GGH4.6の大きな違いは何か？
-[説明] GGW3.2系およびGGH4.0系の感覚で言えば，GGH4.6 は GGH4.5.1 に相当する内容で，アーキテクチャ等の変更はありません．細かなバグフィックス等を除けば，以下の内容が主な変更点です．
-Internet Explorer 10.0 のサポート Google Chrome のサポート Mozilla Firefox 17 (ESR)　のサポート iOS クライアントでの印刷機能のサポート Ubuntu 12.04 LTS クライアントのサポート ライセンス管理の変更
-ファイル KGTN2013041001.pdf [(55 KB)] [kitasp 技術センター, 2013/06/12 09:45]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc561/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013120504
+[現象] [Windows] WS2008R2 の更新プログラムのファイルは，どこに置かれているのか？
+[説明] フォルダC:WindowsSoftwareDistributionDownload の中に置かれています．
+ファイル KGTN2013120504.pdf [(43.2 KB)] [kitasp 技術センター, 2014/01/29 13:59]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc460/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -611,7 +607,7 @@ Internet Explorer 10.0 のサポート Google Chrome のサポート Mozilla Fir
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc560/">
+                                      <a href="/posts/new_md/doc412/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -619,7 +615,7 @@ Internet Explorer 10.0 のサポート Google Chrome のサポート Mozilla Fir
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc560/">[GGH4.6] クラスタマネージャ （CM） を起動する時，ライセンスファイルのチェックを行っているのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc412/">[Windows] ワークグループの環境で Windows Server 2012 のサーバー群を管理したいが，サーバー マネージャで管理するサーバーを追加したところ 「WinRM のネゴシエート認証エラー」 が発生する．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -632,17 +628,19 @@ Internet Explorer 10.0 のサポート Google Chrome のサポート Mozilla Fir
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc560/"><i class="far fa-calendar"></i> 2013-06-12</a>
+                                            <a href="/posts/new_md/doc412/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/06/12*
-[番号] 技術ノート KGTN 2013061202
-[現象] [GGH4.6] クラスタマネージャ （CM） を起動する時，ライセンスファイルのチェックを行っているのか？
-[説明] クラスタマネージャ （CM） は起動された直後に，ライセンスのチェックアウトとチェックイン （ライセンスの獲得と開放） を行っています．従って，ライセンスサーバが存在しない （アクセス出来ない） ，ライセンスファイルが不正等の場合は， CM は正常に起動しません．
-ファイル KGTN2013061202.pdf [(44.5 KB)] [kitasp 技術センター, 2013/06/12 11:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc560/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2014011702
+[現象] [Windows] ワークグループの環境で Windows Server 2012 のサーバー群を管理したいが，サーバー マネージャで管理するサーバーを追加したところ 「WinRM のネゴシエート認証エラー」 が発生する．
+[説明] この問題を解決するには幾つかの方法がありますが，管理するサーバーをWinRM のローカル コンピューターで信頼されたホストの一覧に追加するのが一番簡単です． Windows PowerShell で以下のコマンドを実行して下さい （この例で管理するサーバーは 192.168.102.101 と 192.168.102.102） ．
+winrm s winrm/config/client '@{TrustedHosts=&quot;192.168.102.101,192.168.102.102&quot;}'  より詳しい情報については，下記ページをご覧下さい．
+http://technet.microsoft.com/ja-jp/windows/ps_tips11.aspx ヒント: Windows PowerShell でリモート コマンドを有効にして使用する
+ファイル KGTN2014011702.pdf [(62.4 KB)] [kitasp 技術センター, 2014/01/29 16:31]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc412/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -652,7 +650,7 @@ Internet Explorer 10.0 のサポート Google Chrome のサポート Mozilla Fir
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc562/">
+                                      <a href="/posts/new_md/doc498/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -660,7 +658,7 @@ Internet Explorer 10.0 のサポート Google Chrome のサポート Mozilla Fir
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc562/">[GGW3.2.1] GGW3.2.1のサポートの終了時期は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc498/">[Windows] 基本認証とNTLM認証の違いは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -673,17 +671,17 @@ Internet Explorer 10.0 のサポート Google Chrome のサポート Mozilla Fir
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc562/"><i class="far fa-calendar"></i> 2013-06-12</a>
+                                            <a href="/posts/new_md/doc498/"><i class="far fa-calendar"></i> 2014-01-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/06/12*
-[番号] 技術ノート KGTN 2013061201
-[現象] [GGW3.2.1] GGW3.2.1のサポートの終了時期は？
-[説明] 原則通りであれば GGH4.5 がリリースされた時点で， GGW3.2.1のサポートは終了 （EOL） になります．しかしながらGGW3.2.1の利用者が多い等の理由から，経営的判断で2013年6月12日時点でもサポートは継続しております．他方GGH4.0については，GGH4.6がリリースされましたので，原則通りに2013年9月30日にサポートが終了します．このことから，GGW3.2.1もGGH4.7またはGGH4.8がリリースされた時点でサポート終了のアナウンスが発表される可能性が高いと推測されます．
-ファイル KGTN2013061201.pdf [(66.8 KB)] [kitasp 技術センター, 2013/06/12 09:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc562/" class="btn btn-template-main">続きを読む</a>
+2014/01/29*
+[番号] 技術ノート KGTN 2013111202
+[現象] [Windows] 基本認証とNTLM認証の違いは？
+[説明] マイクロソフト社の 「HTTP 認証の理解」 の説明を以下に引用します．
+基本認証：基本認証では、クライアントのユーザー名とパスワードを含む Base64 エンコード文字列が送 信されます。 Base64 は暗号化の形式ではありません。クリア テキストでのユーザー名とパスワードの送 信と同じであると考えてください。 リソースを保護する必要がある場合は、基本認証以外の認証方式の 使用を検討してください。 NTLM 認証：NTLM (NT LAN Manager) 認証もチャレンジ レスポンス方式の認証ですが、ダイジェスト認 証よりもセキュリティが強化されています。 NTLM 認証では、エンコードされていないユーザー名とパスワ ードではなく、Windows 資格情報を使用してチャレンジ データが変換されます。 NTLM 認証では、クラ イアントとサーバー間で複数のメッセージ交換を行う必要があります。 認証を正常に完了するため、サー バーおよび介在するすべてのプロキシが永続的な接続をサポートしている必要があります。  ファイル KGTN2013111202.pdf [(62.7 KB)] [kitasp 技術センター, 2014/01/29 10:49]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc498/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -693,7 +691,7 @@ Internet Explorer 10.0 のサポート Google Chrome のサポート Mozilla Fir
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc564/">
+                                      <a href="/posts/new_md/doc377/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -701,7 +699,7 @@ Internet Explorer 10.0 のサポート Google Chrome のサポート Mozilla Fir
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc564/">[Gateway] GGH4.6のWindows版 Gateway は， Tomcat を使用しているのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc377/">[GGW3.2.1] 下記のソースコードをGG上のIE8 で実行すると，空なポップアップウインドウが表示され，そこに表示されるべき内容が別のウインドウに表示される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -714,17 +712,17 @@ Internet Explorer 10.0 のサポート Google Chrome のサポート Mozilla Fir
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc564/"><i class="far fa-calendar"></i> 2013-06-10</a>
+                                            <a href="/posts/new_md/doc377/"><i class="far fa-calendar"></i> 2013-11-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/06/10*
-[番号] 技術ノート KGTN 2013061002
-[現象] [Gateway] GGH4.6のWindows版 Gateway は， Tomcat を使用しているのか？
-[説明] はい，標準のインストールで &ldquo;C:¥Program Files¥GraphOn¥GO-Global¥Tomcat&rdquo; に Tomcat がインストールされます．
-ファイル KGTN2013061002.pdf [(119 KB)] [kitasp 技術センター, 2013/06/10 10:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc564/" class="btn btn-template-main">続きを読む</a>
+2013/11/08*
+[番号] 技術ノート KGTN 2013110801
+[現象] [GGW3.2.1] 下記のソースコードをGG上のIE8 で実行すると，空なポップアップウインドウが表示され，そこに表示されるべき内容が別のウインドウに表示される．
+[File: 1.html] &lt;html&gt; &lt;head&gt; &lt;title&gt;main&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;title&gt;main&lt;/title&gt; &lt;form action=&quot;./2.html&quot; method=&quot;post&quot; target = &quot;NewWin&quot;&gt; &lt;input title=&quot;open pop-up&quot; onclick=&quot;window.open('','NewWin','width=860, height=200');&quot; type=&quot;submit&quot; value=&quot;pop-up&quot;&gt; &lt;/form&gt; &lt;/body&gt; &lt;/html&gt; [File: 2.html] &lt;html&gt; &lt;head&gt; &lt;title&gt;pop-up&lt;/title&gt; &lt;/head&gt; &lt;body&gt; pop-up &lt;/body&gt; &lt;/html&gt;  [説明] この現象は，最新の更新プログラム （Windows Update） を全て適用することで解消します．更新プログラムを適用できる場合はこの方法を，更新プログラムを適用出来ない場合は補足２のソースコードの修正を行って下さい．
+補足１ 更新プログラムを適用していない WS2008SP2 の環境で，デフォルトでインストールされている IE7 で再現試験を行ったところ，問題の現象は発生しませんでした．手動で IE8 （更新プログラム未適用） をインストールし再現試験を行ったところ，問題の現象が発生するようになりました．さらに更新プログラム KB2879017　（Windows Server 2008 用Internet Explorer 8 の累積的なセキュリティ更新プログラム） を適用し再現試験を行ったところ，問題の現象は発生しなくなりました．これらのことから， IE8 にはデスクトップ上では顕在化しない不具合があり，それがデスクトップを持たないGG環境上で顕在化したと思われます．そして IE8 の更新プログラムでこの不具合が修正されたため，GG環境上でも正常に動作するようになったと考えられます．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc377/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -794,7 +792,7 @@ Internet Explorer 10.0 のサポート Google Chrome のサポート Mozilla Fir
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

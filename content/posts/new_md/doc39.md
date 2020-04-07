@@ -1,5 +1,5 @@
 ﻿+++
-title = "[GGH4.X"
+title = "[GGH4.X-5.X] GGの利用がセキュリティ上望ましいことが分かる情報を知りたい．"
 date = "2015-07-09"
 tags = ["技術ノート"]
 categories = ["tech"]

@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1676/">
+                                      <a href="/posts/new_md/doc1528/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1676/">GGクライアントは Windows NT 環境をサポートするのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1528/">Mac OS X Client （3.2.1系） がサポートするコマンドラインの引数は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1676/"><i class="far fa-calendar"></i> 2010-08-04</a>
+                                            <a href="/posts/new_md/doc1528/"><i class="far fa-calendar"></i> 2010-12-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/04*
-[番号] 技術ノート KGTN 2010080401
-[現象] GGクライアントは Windows NT 環境をサポートするのか？
-[説明] Ver3.2系は Windows NT 4.0 環境をサポートします．Ver4.0系は Windows NT をサポートしません．
-ファイル KGTN2010080401.pdf [(38.1 KB)] [kitasp 技術センター, 2010/08/04 12:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1676/" class="btn btn-template-main">続きを読む</a>
+2010/12/02*
+[番号] 技術ノート KGTN 2010120201
+[現象] Mac OS X Client （3.2.1系） がサポートするコマンドラインの引数は？
+[説明] 以下の引数のみをサポートします．これ以外の引数を指定した場合は，その動作については保証されません．
+Argument Description -h The IP address of the GO-Global Server. -u The client&rsquo;s network user name. -p The client?s network password. Please note that if you specify a password on the command-line, the password may be visible to other users running process reporting tools such as ps. To protect the user?s password, use -p - to request the password at startup.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1528/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1675/">
+                                      <a href="/posts/new_md/doc1525/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1675/">エンタープライズオプションのサーバ監視機能では，各サーバで採取した情報を共有フォルダにコピーせずに，HTTP/POSTでDB登録サーバへ送っているが，なぜそのような仕様なのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1525/">「GMCheckRaw(1620)SC: Failed to obtain session infomation.」 というメッセージがAPSログに多数記録されているが，このエラーが原因でGGにログイン出来なかった可能性はないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,17 +381,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1675/"><i class="far fa-calendar"></i> 2010-08-04</a>
+                                            <a href="/posts/new_md/doc1525/"><i class="far fa-calendar"></i> 2010-12-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/04*
-[番号] 技術ノート KGTN 2010080402
-[現象] エンタープライズオプションのサーバ監視機能では，各サーバで採取した情報を共有フォルダにコピーせずに，HTTP/POSTでDB登録サーバへ送っているが，なぜそのような仕様なのか？
-[説明] 共有フォルダを使用する方式も考えましたが，ドメインのセキュリティ等 （認証など） の問題が絡むため，インストールや障害時の対応等が難しく，総合的に判断してHTTP/POST 方式に変更しました．この方式であれば，クライアント〜サーバ間はTCP/IP の接続性のみをチェックすれば良く，障害発生時の切り分けも容易になります．
-ファイル KGTN2010080402.pdf [(56.9 KB)] [kitasp 技術センター, 2010/08/04 12:43]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1675/" class="btn btn-template-main">続きを読む</a>
+2010/12/02*
+[番号] 技術ノート KGTN 2010120204
+[現象] 「GMCheckRaw(1620)SC: Failed to obtain session infomation.」 というメッセージがAPSログに多数記録されているが，このエラーが原因でGGにログイン出来なかった可能性はないのか？
+[説明] GMCheckRaw がGGサーバの情報を採取する時は，通常のGGのログインと同じ手順を踏みますので，このメッセージが記録された状況では，GGサーバへのログインも失敗します．このような仕組み，およびこれまでの GMCheckRaw の動作実績から， 「GMCheckRawが原因でログイン出来ない」 可能性は考えられません．但し，過度な監視間隔 （例：1秒間隔） かつ元々のCPU負荷が高い場合は，GGサーバが過負荷となり，その結果ログインに失敗する可能性もゼロとは言えません．
+ファイル KGTN2010120204.pdf [(59.8 KB)] [kitasp 技術センター, 2010/12/02 14:48]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1525/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -401,7 +401,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1674/">
+                                      <a href="/posts/new_md/doc1527/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -409,7 +409,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1674/">電子帳票アプリケーション NEOSS のレポート一覧の画面で，スクロールバーのボックスをクリックしてページ単位でスクロールする時， ggw</a></h2>
+                                    <h2><a href="/posts/new_md/doc1527/">エンタープライズオプションの GMCheckRaw で 「GMCheckRaw(1620)SC: Failed to obtain session infomation.」 というメッセージがAPSログに多数記録されている．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -422,18 +422,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1674/"><i class="far fa-calendar"></i> 2010-08-04</a>
+                                            <a href="/posts/new_md/doc1527/"><i class="far fa-calendar"></i> 2010-12-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/08/04*
-[番号] 技術ノート KGTN 2010052003
-[現象] 電子帳票アプリケーション NEOSS のレポート一覧の画面で，スクロールバーのボックスをクリックしてページ単位でスクロールする時， ggw-3.1.1 に比較して ggw-3.2.X の描画が遅い．
-[説明] ggw-3.1.1 から ggw-3.2.0 へのメジャーバージョンアップで，描画処理の高速化が行われました．多くのアプリケーションではパフォーマンスが向上しましたが，アプリケーションの中には特殊な処理を行うことで描画のパフォーマンスを図っている製品があり，このようなアプリケーションではGGの描画処理の高速化と馴染まず，描画のパフォーマンスが逆に低下しました （注： 現在確認されているアプリケーションは１製品） ．本件の描画の差異を確認したところ，この事例と類似しており，同じ状況が発生しているものと推測されます．なお，スクロールバーのスクロールサムをドラッグする操作では，描画のパフォーマンス低下は見られません．
-参　考 下のスクリーンショットは，スクロールバーのボックスをクリックしてページ単位でスクロールさせた直後の状況ですが，レポートのリストを行単位に消して，その後に新たなリストを行単位に描画しています．この辺の処理が，リスト表示が遅くなる原因ではないかと思われます．ちなみに，GGを介さなくてもリスト表示に絡むチラツキ （消去→描画） を確認することが出来ます （注： エクスプローラー等ではこのような現象は見られません） ．
-ファイル KGTN2010052003.pdf [(228 KB)] [kitasp 技術センター, 2010/08/05 08:16]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1674/" class="btn btn-template-main">続きを読む</a>
+2010/12/02*
+[番号] 技術ノート KGTN 2010120203
+[現象] エンタープライズオプションの GMCheckRaw で 「GMCheckRaw(1620)SC: Failed to obtain session infomation.」 というメッセージがAPSログに多数記録されている．
+[説明] このメッセージの意味は， 「GMCheckRaw がGGサーバ上のセッション情報を得ようとしたが，その情報が得られなかった」 ということです． GMCheckRaw が監視対象のGGサーバ上で動作している環境では，GGサーバが過負荷な状況，OS （Windows） で何らかの障害が発生した状況，などが発生したと考えられます．このメッセージが継続的かつ多数記録されている場合は， Windows で何らかの障害が発生した （GMCheckRawまたはAPSが正常に動作出来ない） 可能性が高いと思われます．
+ファイル KGTN2010120203.pdf [(58.3 KB)] [kitasp 技術センター, 2010/12/02 14:21]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1527/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -443,7 +442,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1677/">
+                                      <a href="/posts/new_md/doc1526/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -451,7 +450,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1677/">Ver4.0系で Universal Printer Driver が生成するPDFはどこに置かれているのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1526/">エンタープライズオプションの GMCheckRaw で 「GMCheckRaw.exe -h server1 -m ログオフしてください -mi aaaa」 を実行すると，全てのセッションにメッセージが送信される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -464,17 +463,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1677/"><i class="far fa-calendar"></i> 2010-07-29</a>
+                                            <a href="/posts/new_md/doc1526/"><i class="far fa-calendar"></i> 2010-12-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/29*
-[番号] 技術ノート KGTN 2010072903
-[現象] Ver4.0系で Universal Printer Driver が生成するPDFはどこに置かれているのか？
-[説明] 環境変数 TMP （ユーザー環境変数） が示すフォルダの下にPDFが生成されます．
-ファイル KGTN2010072903.pdf [(42.2 KB)] [kitasp 技術センター, 2010/07/29 14:23]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1677/" class="btn btn-template-main">続きを読む</a>
+2010/12/02*
+[番号] 技術ノート KGTN 2010120202
+[現象] エンタープライズオプションの GMCheckRaw で 「GMCheckRaw.exe -h server1 -m &ldquo;ログオフしてください&rdquo; -mi aaaa」 を実行すると，全てのセッションにメッセージが送信される．
+[説明] GMCheckRaw の引数 ?mi は， GmcheckRaw のセッション一覧で表示される最初の項目 （つまりセッションID） を参照し，その中の値 （10進数） を指定して下さい．本件では，不正なセッションIDが指定されたため，暗黙のセッション （全てのセッション） にメッセージが送信されました．
+参　考 メッセージを送信するセッションの指定方法には，以下の3つのバリエーションがあります．
+-mi セッションID -mn セッション名 -mu ユーザID
+ファイル KGTN2010120202.pdf [(56.8 KB)] [kitasp 技術センター, 2010/12/02 14:24]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1526/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -484,7 +485,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1678/">
+                                      <a href="/posts/new_md/doc1529/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -492,7 +493,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1678/">Ver4.0系で clientframe 機能の背景の画像を変更したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1529/">ライセンスサーバが 3台冗長構成 （Three-Server Redundancy） の場合，GGサーバ側のライセンス関連の設定はどうするのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -505,17 +506,22 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1678/"><i class="far fa-calendar"></i> 2010-07-28</a>
+                                            <a href="/posts/new_md/doc1529/"><i class="far fa-calendar"></i> 2010-12-02</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/28*
-[番号] 技術ノート KGTN 2010072902
-[現象] Ver4.0系で clientframe 機能の背景の画像を変更したい．
-[説明] ログオンユーザの壁紙 （画面のプロパティ→背景） を変更することで， clientframe 機能の背景を変更することが出来ます．
-ファイル KGTN2010072902.pdf [(42.5 KB)] [kitasp 技術センター, 2010/07/29 08:20]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1678/" class="btn btn-template-main">続きを読む</a>
+2010/12/02*
+[番号] 技術ノート KGTN 2010120104
+[現象] ライセンスサーバが 3台冗長構成 （Three-Server Redundancy） の場合，GGサーバ側のライセンス関連の設定はどうするのか？
+[説明] ライセンスファイルを編集する方法と環境変数を編集する方法の2つがあります．
+ライセンスファイルを編集する方法 SERVER行以外を削除し，サーバ行の直後にUSE_SERVER行を追加します．
+【編集前】 SERVER server1 0016E6D253C0 27001 PRIMARY_IS_MASTER SERVER server2 0016E6D25430 27001 SERVER server3 0016E6D25CF8 27001 DAEMON blm INCREMENT session blm 3.2 permanent &hellip;
+【編集後】 SERVER server1 0016E6D253C0 27001 PRIMARY_IS_MASTER SERVER server2 0016E6D25430 27001 SERVER server3 0016E6D25CF8 27001 USE_SERVER
+環境変数を編集する方法 環境変数 LM_LICENSE_FILE に3台のサーバの情報を ポート番号@サーバ名 の形式でセミコロンで区切って並べます．上記の例を環境変数に設定する場合は，以下のようになります．
+27001@server1;27001@server2;27001@server3;
+ファイル KGTN2010120104.pdf [(60 KB)] [kitasp 技術センター, 2010/12/02 09:13]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1529/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -525,7 +531,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1682/">
+                                      <a href="/posts/new_md/doc1530/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -533,7 +539,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1682/">Ver4.0系では， コマンド プロンプト （cmd.exe） をアプリケーションとして利用できるか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1530/">ライセンスサーバの 3台冗長構成 （Three-Server Redundancy） で発生した問題とは，どのような現象なのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -546,17 +552,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1682/"><i class="far fa-calendar"></i> 2010-07-28</a>
+                                            <a href="/posts/new_md/doc1530/"><i class="far fa-calendar"></i> 2010-12-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/28*
-[番号] 技術ノート KGTN 2010072804
-[現象] Ver4.0系では， コマンド プロンプト （cmd.exe） をアプリケーションとして利用できるか？
-[説明] はい，Ver3.2系と同様に cmd.exe をアプリケーションとして登録することで，サーバ上の コマンド プロンプト を利用することが出来ます．
-ファイル KGTN2010072804.pdf [(42.6 KB)] [kitasp 技術センター, 2010/07/28 12:08]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1682/" class="btn btn-template-main">続きを読む</a>
+2010/12/01*
+[番号] 技術ノート KGTN 2010120101
+[現象] ライセンスサーバの 3台冗長構成 （Three-Server Redundancy） で発生した問題とは，どのような現象なのか？
+[説明] ライセンスファイル （= ライセンスサーバの構成） が以下の条件で，発生した現象を時系列で説明します．
+SERVER server1 17003456 27001 SERVER server2 17004355 27001 SERVER server3 17007ea8 27001
+１．正常な状態 （マスタサーバはserver1） server1: license server UP (MASTER) v10.8 server2: license server UP v10.8 server3: license server UP v10.8
+２．server1 で障害が発生した直後の状態 （マスタサーバ不在の状態） server1: License server machine is down or not responding. server2: license server UP v10.8 server3: license server UP v10.8</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1530/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -566,7 +574,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1679/">
+                                      <a href="/posts/new_md/doc1531/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -574,7 +582,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1679/">Ver4.0系でもVer3.2系と同様に，SSLは標準状態で56</a></h2>
+                                    <h2><a href="/posts/new_md/doc1531/">ライセンスサーバの 3台冗長構成 （Three-Server Redundancy） の問題が解決したGGのバージョンは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -587,17 +595,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1679/"><i class="far fa-calendar"></i> 2010-07-28</a>
+                                            <a href="/posts/new_md/doc1531/"><i class="far fa-calendar"></i> 2010-12-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/28*
-[番号] 技術ノート KGTN 2010072807
-[現象] Ver4.0系でもVer3.2系と同様に，SSLは標準状態で56-bit DES しか利用できないのか？
-[説明] はい， Administrator Guide (P35) で言及されておりますように，特別なライセンス （高度暗号化オプション） がインストールされていない環境では，56-bit DES のみが利用できます．
-ファイル KGTN2010072807.pdf [(46.3 KB)] [kitasp 技術センター, 2010/07/28 14:31]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1679/" class="btn btn-template-main">続きを読む</a>
+2010/12/01*
+[番号] 技術ノート KGTN 2010120102
+[現象] ライセンスサーバの 3台冗長構成 （Three-Server Redundancy） の問題が解決したGGのバージョンは？
+[説明] 弊社では lmgrd.exe のバージョンが11.6で現象が発生しないことを確認しており，それに対応するGGのバージョンは3.2.1系になります．
+補足１ lmgrd.exe のバージョンが10.8 （ggw-3.1.1.3548等） および ライセンスファイルに PRIMARY_IS_MASTER を記述した環境で実験を行ったところ，約１日の繰り返しでは現象は発生しませんでした．ただ，発生の確率が下がっただけということも考えられますので，どうしても適用なさりたい場合は自己の責任においてご利用下さい．
+補足2 lmgrd.exe のバージョンが11.6 （ggw-3.2.1.xxxx） の環境では， PRIMARY_IS_MASTER の記述な無くても問題の現象は発生しておりませんが，しかしライセンスサーバの切り替わり （マスタサーバの移動） を確実にするためにPRIMARY_IS_MASTER の記述を強く推奨します．
+ファイル KGTN2010120102.pdf [(61.9 KB)] [kitasp 技術センター, 2010/12/01 14:49]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1531/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -607,7 +617,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1684/">
+                                      <a href="/posts/new_md/doc1533/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -615,7 +625,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1684/">Ver4.0系の Windows Client はAdobe PDF Library を含んでいるが， PDFビュアー （Adobe Reader） は不要なのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1533/">SessionTimeoutBrokenConnection を 0 に変更したが，セッションが切断されない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -628,17 +638,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1684/"><i class="far fa-calendar"></i> 2010-07-28</a>
+                                            <a href="/posts/new_md/doc1533/"><i class="far fa-calendar"></i> 2010-11-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/28*
-[番号] 技術ノート KGTN 2010072802
-[現象] Ver4.0系の Windows Client はAdobe PDF Library を含んでいるが， PDFビュアー （Adobe Reader） は不要なのか？
-[説明] いいえ，印刷ダイアログで Preview PDF をプリンタとして選択する時，PDFビュアーがクライアント側にインストールされている必要があります．インストールされていない場合， &ldquo;In order to preview documents, a PDF viewer must be installed on your computer.&rdquo; というエラーダイアログが表示されます．
-ファイル KGTN2010072802.pdf [(50.2 KB)] [kitasp 技術センター, 2010/07/28 09:46]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1684/" class="btn btn-template-main">続きを読む</a>
+2010/11/26*
+[番号] 技術ノート KGTN 2010112601
+[現象] SessionTimeoutBrokenConnection を 0 に変更したが，セッションが切断されない．
+[説明] SessionTimeoutBrokenConnection を 0 にした状況で 「IEを閉じる」 または 「Windowsクライアントをタスクマネージャで強制終了させる」 を行った時，セッションが切断されるのは，クライアントからの通信が途絶えたと認識された時です．従って，これらのプログラムの終了から 「数秒〜１分程度」 経過した時点でセッションが消滅します．
+ファイル KGTN2010112601.pdf [(52.6 KB)] [kitasp 技術センター, 2010/11/26 13:10]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1533/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -648,7 +658,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1681/">
+                                      <a href="/posts/new_md/doc1532/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -656,7 +666,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1681/">Ver4.0系のActiveXクライアントのCABファイルが，約10MBになったが何が変わったのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1532/">ライセンスサーバを 3台冗長構成 （Three-Server Redundancy） にする場合，ライセンスファイルに何か追加する必要があるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -669,19 +679,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1681/"><i class="far fa-calendar"></i> 2010-07-28</a>
+                                            <a href="/posts/new_md/doc1532/"><i class="far fa-calendar"></i> 2010-11-26</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/28*
-[番号] 技術ノート KGTN 2010072805
-[現象] Ver4.0系のActiveXクライアントのCABファイルが，約10MBになったが何が変わったのか？
-[説明] Ver3.2系のCABファイル （ggw-activex.cab） は約2MBですので，Ver4.0系のCABファイル （同じファイル名） は約5倍になりました．大きくなった主な理由は，クライアントプリンタ機能の仕様変更に伴い， Adobe PDF Library がActiveXクライアントに加えられたためです．
-備考1 ビルド 4.0.0.7757 のCABファイル （ggw-activex.cab） の署名関連の情報は，以下の通りです．
-デジタル署名 ? 署名時刻 2010年7月13日 6:13:00， 有効期限 2011年11月13日 (Thawte) 副署名 - 署名時刻 2010年7月13日 6:13:00， 有効期限 2012年06月15日 (VeriSign)
-ファイル KGTN2010072805.pdf [(56.1 KB)] [kitasp 技術センター, 2010/07/28 13:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1681/" class="btn btn-template-main">続きを読む</a>
+2010/11/26*
+[番号] 技術ノート KGTN 2010112602
+[現象] ライセンスサーバを 3台冗長構成 （Three-Server Redundancy） にする場合，ライセンスファイルに何か追加する必要があるのか？
+[説明] プライマリライセンスサーバが常にマスターとして動作するようにキーワード PRIMARY_IS_MASTER を記述する必要があります．
+SERVER pat 17003456 27001 PRIMARY_IS_MASTER SERVER lee 17004355 27001 SERVER terry 17007ea8 27001
+参　考 PRIMARY_IS_MASTER - Used with license servers configured for three-server redundancy to indicate how master control is transferred between the primary and secondary servers. If this is set and the primary server goes down, when the primary server comes back up again, it will always become the master.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1532/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -691,7 +700,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1683/">
+                                      <a href="/posts/new_md/doc1534/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -699,7 +708,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1683/">Ver4.0系の高負荷時 （例：オンライン開始時） の挙動はどうか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1534/">Windows Server 2008 上で動作するVer3.2.1系 （ggw-3.2.1.4466等） で，セッションが残ることがある．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -712,17 +721,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1683/"><i class="far fa-calendar"></i> 2010-07-28</a>
+                                            <a href="/posts/new_md/doc1534/"><i class="far fa-calendar"></i> 2010-11-25</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/28*
-[番号] 技術ノート KGTN 2010072803
-[現象] Ver4.0系の高負荷時 （例：オンライン開始時） の挙動はどうか？
-[説明] エンタープライズオプションの負荷試験ツール GMLogonTest で，１秒間隔で25ログオンの試験を繰り返しましたが， 「ログオンに失敗する」 「セッションが消える」 「アプリケーションがハングアップする」 等の現象は発生しませんでした （環境： OS ? Windows Server 2003, CPU - Pentium4 2.8GHz，MEM ? 1GB） ．唯一発生した問題は，高負荷時にクラスタマネージャのホスト一覧から自サーバが消え，セッション一覧が表示されないという現象でした．クラスタマネージャを閉じて，新たに起動すればセッションが正しく表示されますので，とりあえず運用回避で対応が可能です．
-ファイル KGTN2010072803.pdf [(59.4 KB)] [kitasp 技術センター, 2010/07/28 10:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1683/" class="btn btn-template-main">続きを読む</a>
+2010/11/25*
+[番号] 技術ノート KGTN 2010112502
+[現象] Windows Server 2008 上で動作するVer3.2.1系 （ggw-3.2.1.4466等） で，セッションが残ることがある．
+HKLM¥GraphOn¥Bridges¥1.0.0¥AppServer SessionTimeoutBrokenConnection　REG_DWORD 0
+補　足 本現象は， SessionTimeoutBrokenConnection &gt; 0 であれば Windows Server 2008 だけでなく Windows Server 2003 でも同様に発生します．従って， SessionTimeoutBrokenConnection という項目が追加されたことによる仕様変更と推測しています （GraphOn社へ確認中） ．
+[説明]
+ファイル KGTN2010112502.pdf [(71.6 KB)] [kitasp 技術センター, 2010/11/25 14:45]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1534/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -792,7 +803,7 @@
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

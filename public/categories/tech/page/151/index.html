@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc749/">
+                                      <a href="/posts/new_md/doc35/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc749/">[VM] GGサーバを仮想化するに当たり，ディスクの集約についての考え方を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc35/">[GGH4.X-5.X] Mac OS X Client は，日本語キーボードをサポートしているのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,18 +340,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc749/"><i class="far fa-calendar"></i> 2012-12-25</a>
+                                            <a href="/posts/new_md/doc35/"><i class="far fa-calendar"></i> 2013-03-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/25*
-[番号] 技術ノート KGTN 2012122502
-[現象] [VM] GGサーバを仮想化するに当たり，ディスクの集約についての考え方を知りたい．
-[説明] GGの事例およびGGとは関係の無い一般的な事例でディスクの集約絡みの障害が幾つも報告されており，「これなら絶対に大丈夫」 というような設計方法は未だありません．障害を経験した案件等では，新システムの設計に当たり，以下のような対策を行っています．
-ファイバーチャネル等をより太く （速く） する． 物理ディスクの数を増やす （アクセスを散らす） ． キャッシュを増やす （SSDを利用する） ． 運用に則した事前確認試験等を行うことで設計の精度を上げる． その他
-ファイル KGTN2012122502.pdf [(58.6 KB)] [kitasp 技術センター, 2012/12/25 11:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc749/" class="btn btn-template-main">続きを読む</a>
+2013/03/01*
+[番号] 技術ノート KGTN 2011082201
+[現象] [GGH4.X-5.X] Mac OS X Client は，日本語キーボードをサポートしているのか？
+[説明] いいえ，管理者ガイド （Admin Guide） の通り U.S. / French / German の各キーボードのみをサポートします．しかしながら， GGH4.5.0.13063 またはそれ以降の環境ではクライアント側IME機能がサポートされておりますので，この機能を利用することで Mac OS X のかな漢字変換をそのまま利用することが出来ます．クライアント側IME機能は，以下のようにパラメタ ClientSideIME を指定することで有効となります．
+コマンドラインの場合 /Applications/GO-Global.app/Contents/MacOS/GO-Global -h 192.168.102.81 -kb ClientSideIME dummy ハイパーリンクの場合 http://192.168.102.81/logon.html?keyboard=ClientSideIME  補　足 キーボードのマッピングファイル （Client Keyboard Mapping Files） を修正する方法もあります （非推奨） ．この英語用のファイルは /etc/gg-client/kbd/us.kbm にありますので，これを弊社が作成した日本語用のファイル ja.kbm で置き換えることで，英数字や記号等を正しく入力出来るようになります．なお ALT-半角/全角 は， 「英数」 「かな」 キーに対応付いています．
+上記説明のパス /etc/gg-client/kbd/us.kbm が存在しない場合は， /etc/GO-Global/kbd/us.kbm と読み替えて下さい．以下は，実行するコマンドのサンプルです．
+　# cd /etc/GO-Global/kbd # mv us.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc35/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -361,7 +362,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc750/">
+                                      <a href="/posts/new_md/doc97/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -369,7 +370,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc750/">[VM] GGサーバを仮想化するに当たり，物理サーバと仮想サーバの関係 （サイジング） を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc97/">[GGH4.X] ActiveXクライアントで，ユーザID・パスワード・直接起動するアプリケーションを指定する方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -382,17 +383,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc750/"><i class="far fa-calendar"></i> 2012-12-25</a>
+                                            <a href="/posts/new_md/doc97/"><i class="far fa-calendar"></i> 2013-03-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/25*
-[番号] 技術ノート KGTN 2012122501
-[現象] [VM] GGサーバを仮想化するに当たり，物理サーバと仮想サーバの関係 （サイジング） を知りたい．
-[説明] WS2003 (32bit) の事例では，１仮想サーバ当たりメモリ4GB・CPU2コア（4スレッド） という前提で，その倍数＋αで物理サーバを選択しました．物理サーバが決まっている場合は，逆に割り算で収容可能な仮想サーバの台数が決まることになります．WS2008R2 (64bit) の事例は未だありませんが，物理サーバでの数値 （スペック） をベースに，同様に計算することが出来ると思います．
-ファイル KGTN2012122501.pdf [(51.3 KB)] [kitasp 技術センター, 2012/12/25 10:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc750/" class="btn btn-template-main">続きを読む</a>
+2013/03/01*
+[番号] 技術ノート KGTN 2013030101
+[現象] [GGH4.X] ActiveXクライアントで，ユーザID・パスワード・直接起動するアプリケーションを指定する方法は？
+[説明] logon.html にパラメタを渡すことで，ユーザID （user） ・パスワード （password） ・直接起動するアプリケーション （app） を指定することが出来ます．以下のサンプルを参考にして下さい．なお，パラメタの値に英数字以外 （つまり日本語） が使用された場合は，エンコード等の影響で正しく認識されない可能性があります．
+http://192.168.102.1/logon.html?user=Administrator&amp;password=PassP&amp;app=Excel
+ファイル KGTN2013030101.pdf [(56.7 KB)] [kitasp 技術センター, 2015/06/17 12:35]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc97/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -402,7 +404,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc751/">
+                                      <a href="/posts/new_md/doc655/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -410,7 +412,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc751/">[Tool] GGNetworkCheck のサーバ機能を WS2008 で利用しようとしたが，クライアントから接続出来ない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc655/">[Windows] Windows 8 のマシンでGGクライアントを利用しているが，最近不安定になった．何をすれば良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -423,18 +425,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc751/"><i class="far fa-calendar"></i> 2012-12-20</a>
+                                            <a href="/posts/new_md/doc655/"><i class="far fa-calendar"></i> 2013-03-01</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/20*
-[番号] 技術ノート KGTN 2012122101
-[現象] [Tool] GGNetworkCheck のサーバ機能を WS2008 で利用しようとしたが，クライアントから接続出来ない．
-[説明] クライアント側から接続出来ない場合は， WS2008 の &ldquo;Windows ファイアウォール&rdquo; が機能し，外部 （クライアント） からの接続が遮断されていると考えられます．以下の手順で， GGNetworkCheck への接続を許可して下さい．
-[スタート] → [設定] → [コントロールパネル] → [Windowsファイアウォール] を開く． [設定の変更] をクリックする． [例外] タブをクリックする． [プログラムの追加] ボタンをクリックする． [参照] ボタンをクリックし GGNetworkCheck.exe を選択する． [スコープの変更] ボタンをクリックする． &ldquo;任意のコンピュータ&rdquo; を選択する． [OK] ボタンをクリックする． &ldquo;プログラムの追加&rdquo; の [OK] ボタンをクリックする． &ldquo;Windowsファイアウォールの設定&rdquo; の [OK] ボタンをクリックする．
-ファイル KGTN2012122101.pdf [(102 KB)] [kitasp 技術センター, 2012/12/21 07:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc751/" class="btn btn-template-main">続きを読む</a>
+2013/03/01*
+[番号] 技術ノート KGTN 2013030102
+[現象] [Windows] Windows 8 のマシンでGGクライアントを利用しているが，最近不安定になった．何をすれば良いか？
+[説明] 「最近不安定になった」 だけでは問題点が分かりませんが，もしGGサーバおよびネットワークに問題が無いのであれば， Windows 8 の新機能 「リフレッシュ」 または 「リセット」 を行うことをお考え下さい． 「リフレッシュ」機能は，個人用ファイルや設定を保持した状態で Windows の再インストールを行います． Windows 自体に問題があり不安定になった場合は，この 「リフレッシュ」 機能を行うことで改善する可能性があります． なお，デスクトップ・アプリケーション等は削除されますので，再インストールする必要があります （例：GGの Windows Client） ．
+ファイル KGTN2013030102.pdf [(52 KB)] [kitasp 技術センター, 2013/03/01 14:29]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc655/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -444,7 +445,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc752/">
+                                      <a href="/posts/new_md/doc657/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -452,7 +453,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc752/">[VM] P2V (Physical to Virtual) ツールの適用実績があるか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc657/">[GGH4.5] Windows 8 の環境にWindowsクライアントをインストール出来るか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -465,18 +466,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc752/"><i class="far fa-calendar"></i> 2012-12-18</a>
+                                            <a href="/posts/new_md/doc657/"><i class="far fa-calendar"></i> 2013-02-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/18*
-[番号] 技術ノート KGTN 2012022202
-[現象] [VM] P2V (Physical to Virtual) ツールの適用実績があるか？
-[説明] P2V (Physical to Virtual) ツールを適用してGGをご利用のユーザ様が存在するかもしれませんが、しかし弊社にはそのような情報は入っておりません．海外の事例についても， GraphOn社には特に情報は入っておりません．なお，GraphOn社に 「何か役立つ情報を持っているか？」 と問い合わせたところ，P2Vを使用した経験が無いため，それに関する情報は無いとのことでした．
-補　足 日本国内の大規模ユーザ様で P2V での移行を行おうとした事例があります．現行本番サーバに P2V を適用するところまではスムーズに作業が進みましたが，移行したサーバを起動したところドライバや監視ツールに絡むエラーが非常に多く発生しました．サーバ構築に熟練した技術者がエラーの解消を試み，約１日を要してエラーが発生しない状況にすることが出来ました （注：ドライバや監視ツールを削除する度にサーバの再起動が必要です．さらにディスクドライバではRAID，ネットワークドライバではTeamingが絡むので非常に厄介です） ．しかし，この作業は経験と勘と運を頼りにしており，再度同じ作業を行っても同じサーバが構築出来る可能性は極めて低いと考えられます．つまり偶然構築出来たサーバで，かつメーカーのサポートも受けられない状況ではあまりにリスクが高く，結局 P2V での移行を断念しました．
-ファイル KGTN2012022202.pdf [(76.2 KB)] [kitasp 技術センター, 2012/12/19 06:20]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc752/" class="btn btn-template-main">続きを読む</a>
+2013/02/28*
+[番号] 技術ノート KGTN 2013022804
+[現象] [GGH4.5] Windows 8 の環境にWindowsクライアントをインストール出来るか？
+[説明] はい， Windows 8 のデスクトップで IE を起動することで， Windows 7 等と同様にWindowsクライアントをインストールすることが出来ます．なお，ショートカットはデスクトップに （自動的に） 作成されず，スタート画面にピン留めされます．このショートカットにパラメタを指定する場合は，以下のパス （環境等により異なる場合があります） のショートカット GO-Global のプロパティを編集して下さい．
+C:¥ProgramData¥Microsoft¥Windows¥Start Menu¥Programs¥GraphOn GO-Global 4
+ファイル KGTN2013022804.pdf [(52.2 KB)] [kitasp 技術センター, 2013/02/28 14:37]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc657/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -486,7 +487,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc753/">
+                                      <a href="/posts/new_md/doc660/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -494,7 +495,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc753/">[GGH4.X] SSLサーバ証明書に関する技術ノートの一覧を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc660/">[GGH4.5] サーバ環境として Windows Server 2012 をサポートしているか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -507,17 +508,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc753/"><i class="far fa-calendar"></i> 2012-12-13</a>
+                                            <a href="/posts/new_md/doc660/"><i class="far fa-calendar"></i> 2013-02-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/13*
-[番号] 技術ノート KGTN 2012121301
-[現象] [GGH4.X] SSLサーバ証明書に関する技術ノートの一覧を知りたい．
-[説明] 2012-12-13 現在で，以下の技術ノートがあります．
-KGTN2010010701: SSLの設定を行ったところ，APSログに下記のエラーが記録され，クライアントからの接続が出来ない&hellip; KGTN2010030201: GGがサポートしているSSLサーバ証明書は？ KGTN2010030202: ベリサイン社のテスト用セキュア・サーバID （SSLサーバ証明書） で試すことが出来るか？ KGTN2010030203: SSLサーバ証明書をクラスタマネージャのどこで設定するのか？ KGTN2010030204: SSLサーバ証明書とは具体的に何なのか？ KGTN2010031801: クラスタマネージャで Transport = SSL を設定すると， Windows Vista お &hellip; KGTN2010041301: GG用にOpenSSLで作成されたSSL証明書 server.crt をIISで使用する場合の手順は &hellip; KGTN2010061101: ActiveXクライアントのプロパティ 「デジタル署名」 を見たところ，証明書の有効期限が2004/ &hellip; KGTN2010061501: IE （Internet Explorer） が電子証明書の失効リストをチェックしないようにしたい． KGTN2010061601: 電子証明書の詳細に 「失効状態: 失効サーバーがオフラインのため、失効の関数は失効を確認できませ&hellip; KGTN2010061602: 電子証明書 （xxx.CER） の状態に 「この証明書は有効期限切れかまだ有効ではありません。」 と &hellip; KGTN2010061603: 認証局Thawte の 「CA ルート証明書」 を入手する方法は？ KGTN2010061702: ActiveX クライアントの署名と副署名 （タイムスタンプ） の証明書の有効期間が異なるが，問題な &hellip; KGTN2010072807: Ver4.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc753/" class="btn btn-template-main">続きを読む</a>
+2013/02/28*
+[番号] 技術ノート KGTN 2013022803
+[現象] [GGH4.5] サーバ環境として Windows Server 2012 をサポートしているか？
+[説明] 現時点で最新の GGH4.5 は，サーバ環境として Windows Server 2012 をサポートしておりません．後継のバージョン （時期未定） でサポートする予定です．
+ファイル KGTN2013022803.pdf [(41.2 KB)] [kitasp 技術センター, 2013/02/28 10:47]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc660/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -527,7 +528,7 @@ KGTN2010010701: SSLの設定を行ったところ，APSログに下記のエラ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc754/">
+                                      <a href="/posts/new_md/doc661/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -535,7 +536,7 @@ KGTN2010010701: SSLの設定を行ったところ，APSログに下記のエラ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc754/">[GGH4.X] 評価版のSSLサーバ証明書を入手しGGサーバに登録したが，クライアントからの接続時に警告画面が表示される．</a></h2>
+                                    <h2><a href="/posts/new_md/doc661/">[GGH4.5] タブレットタイプの Windows 8 端末で，GGクライアントを利用できるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -548,17 +549,17 @@ KGTN2010010701: SSLの設定を行ったところ，APSログに下記のエラ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc754/"><i class="far fa-calendar"></i> 2012-12-13</a>
+                                            <a href="/posts/new_md/doc661/"><i class="far fa-calendar"></i> 2013-02-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/13*
-[番号] 技術ノート KGTN 2012121302
-[現象] [GGH4.X] 評価版のSSLサーバ証明書を入手しGGサーバに登録したが，クライアントからの接続時に警告画面が表示される．
-[説明] SSLサーバ証明書は 「サーバの出所を証明するデジタル証明書」 で，その発行に当たってはサーバの管理組織 （法人） の登記簿謄本の提出，責任者の電話確認など細かなチェックが行われ，それにパスして初めてSSLサーバ証明書が発行されます．評価版のSSLサーバ証明書は，そのようなチェックが行われないため，形式的に正しい証明書が発行されるものの，その出所が証明されません．このため，クライアントからの接続時に警告画面が表示されます．
-ファイル KGTN2012121302.pdf [(53.7 KB)] [kitasp 技術センター, 2012/12/13 12:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc754/" class="btn btn-template-main">続きを読む</a>
+2013/02/28*
+[番号] 技術ノート KGTN 2013022802
+[現象] [GGH4.5] タブレットタイプの Windows 8 端末で，GGクライアントを利用できるか？
+[説明] GraphOn社は，タブレットタイプの Windows 8 端末をサポートしておりません．自己責任ということであれば，技術ノート KGTN#2013022704 の問題 （半角英大文字を入力しても半角英小文字になる） を除き，特に致命的な問題は発生しておりません．
+ファイル KGTN2013022802.pdf [(46.2 KB)] [kitasp 技術センター, 2013/02/28 10:25]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc661/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -568,7 +569,7 @@ KGTN2010010701: SSLの設定を行ったところ，APSログに下記のエラ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc755/">
+                                      <a href="/posts/new_md/doc659/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -576,7 +577,7 @@ KGTN2010010701: SSLの設定を行ったところ，APSログに下記のエラ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc755/">[GGH4.5] GGH4.5は，クライアントの環境として Windows 8 をサポートするのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc659/">[GGW3.2.1] クライアントプリンタ機能を有効にしているGGサーバに接続すると，クライアント側のデフォルトプリンタが変更されることがある．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -589,17 +590,18 @@ KGTN2010010701: SSLの設定を行ったところ，APSログに下記のエラ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc755/"><i class="far fa-calendar"></i> 2012-12-11</a>
+                                            <a href="/posts/new_md/doc659/"><i class="far fa-calendar"></i> 2013-02-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/11*
-[番号] 技術ノート KGTN 2012121201
-[現象] [GGH4.5] GGH4.5は，クライアントの環境として Windows 8 をサポートするのか？
-[説明] キーボードおよびマウスを利用する場合は， GGH4.5 はクライアントの環境として Windows 8 をサポートします．タッチパネルを利用する場合は，GGH4.5 はクライアントの環境として Windows 8 をサポートしません．現時点では，タッチパネルのサポートについては未だ何も決まっておりません．もしユーザ数の多いニーズ （案件） があれば，ぜひお知らせ下さい．
-ファイル KGTN2012121201.pdf [(48 KB)] [kitasp 技術センター, 2012/12/12 07:15]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc755/" class="btn btn-template-main">続きを読む</a>
+2013/02/28*
+[番号] 技術ノート KGTN 2010040101
+[現象] [GGW3.2.1] クライアントプリンタ機能を有効にしているGGサーバに接続すると，クライアント側のデフォルトプリンタが変更されることがある．
+[説明] クライアントプリンタ機能が有効な場合，GGはクライアント側のデフォルトプリンタをサーバ側でもデフォルトプリンタとして設定しようと試みます．成功した場合はその通りになりますが，プリンタドライバが無い等の理由で設定出来なかった場合は，過去に設定したプリンタ （つまり print.ini 中で設定されているデフォルトプリンタ） をデフォルトプリンタとして設定します．GGの仕様上，クライアント側のデフォルトプリンタとサーバ側のデフォルトプリンタを一致させますので，この時にクライアント側のデフォルトプリンタが，サーバ側で設定されたプリンタに変更されます．
+補　足 対応としては，クラスタマネージャで &ldquo;Universal Driver&rdquo; および &ldquo;Use as fallback&rdquo; にチェックを入れるか （設定に失敗したプリンタがUPDとして設定されるようになる） ，またはGGサーバ上に使用する全てのプリンタのドライバをインストールして下さい．
+ファイル KGTN2010040101.pdf [(56.1 KB)] [kitasp 技術センター, 2013/02/28 11:13]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc659/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -609,7 +611,7 @@ KGTN2010010701: SSLの設定を行ったところ，APSログに下記のエラ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc763/">
+                                      <a href="/posts/new_md/doc656/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -617,7 +619,7 @@ KGTN2010010701: SSLの設定を行ったところ，APSログに下記のエラ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc763/">[GGH4.X] GGH4.X のクライアントクリップボード機能に関する技術ノートの一覧を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc656/">[GGW3.2.1] プログラムウインドウの初期化 （クライアントプリンタの構成） で遅延が発生した場合，GGはどのような処理を行うのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -630,18 +632,20 @@ KGTN2010010701: SSLの設定を行ったところ，APSログに下記のエラ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc763/"><i class="far fa-calendar"></i> 2012-12-10</a>
+                                            <a href="/posts/new_md/doc656/"><i class="far fa-calendar"></i> 2013-02-28</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/10*
-[番号] 技術ノート KGTN 2012121004
-[現象] [GGH4.X] GGH4.X のクライアントクリップボード機能に関する技術ノートの一覧を知りたい．
-[説明] 2012-12-10 現在で，以下の技術ノートがあります．
-KGTN2012030501: [GGW3.2.1/GGH4.0] Client Clipboard （クライアント・クリップボード &hellip; KGTN2012052903: [GGH4.0] 単一方向のみペーストできるクライアントクリップボード機能はないのか？ KGTN2012072406: [GGH4.1/Clipboard] クライアントクリップボード機能に関して，どのような点が面倒なの &hellip; KGTN2012101606: [GGH4.X] ClipboardDirection でクリップボードの方向性を指定した時，無効な &hellip; KGTN2012110702: [GGH4.X] クライアント・クリップボード機能で，クライアント側のアプリケーションでコピーした画 &hellip; KGTN2012111301: [GGH4.X] GGH4.5のクライアント・クリップボード機能で，クライアント側で画像をコピーする &hellip; KGTN2012111405: [GGH4.5] GGH4.5のクライアント・クリップボード機能で，クライアント側からサーバ側への画 &hellip; KGTN2012112601: [GGH4.5] クライアントクリップボード機能で，サーバ側の EXCEL のセルをコピーし，クライ &hellip;
-ファイル KGTN2012121004.pdf [(58.1 KB)] [kitasp 技術センター, 2012/12/10 12:01]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc763/" class="btn btn-template-main">続きを読む</a>
+2013/02/28*
+[番号] 技術ノート KGTN 2013021903
+[現象] [GGW3.2.1] プログラムウインドウの初期化 （クライアントプリンタの構成） で遅延が発生した場合，GGはどのような処理を行うのか？
+[説明] プログラムウインドウの初期化 （クライアントプリンタの構成） で遅延が発生した場合，GGは以下の処理を行います．
+クライアントプリンタの構成を開始し１分を経過． クライアントの画面に &ldquo;GO-Global failed to launch the Program Window for your session&rdquo; を表示． &ldquo;The Program Window failed to signal completion of its basic initializations within 1 minute(s) after being launched as process #???&rdquo; をAPSログに記録． 上記2のダイアログでユーザが &ldquo;OK&rdquo; ボタンをクリック． PW.EXE のプロセスを強制終了． PW.EXE が終了したためセッションが終了 （通常の処理）． TCP/IPレベルでコネクションを切断 （サーバ側契機）．
+なお，クライアント側の障害でクライアントプリンタの構成が遅延した時，障害発生の状況により上記2のダイアログが表示されないことがあります （注：プロセッサやメモリの過負荷等で，サーバ側からのダイアログ表示要求を受け取ることが困難な場合） ．
+補　足 プログラムウインドウの初期化のタイムアウトは，クライアントプリンタの構成の遅延だけでなく，ネットワークドライブのマウントやログオンスクリプトの遅延でも発生します．なお，ログオンスクリプトの実行中に強制終了させることは危険なため （注：GGはその処理内容が分からないため強制終了して良いのか判断出来ません） ，GGはログオンスクリプトの終了を待ってタイムアウトのダイアログを表示します．
+ファイル KGTN2013021903.pdf [(72.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc656/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -651,7 +655,7 @@ KGTN2012030501: [GGW3.2.1/GGH4.0] Client Clipboard （クライアント・ク�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc764/">
+                                      <a href="/posts/new_md/doc667/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -659,7 +663,7 @@ KGTN2012030501: [GGW3.2.1/GGH4.0] Client Clipboard （クライアント・ク�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc764/">[GGH4.X] GGH4.X のクライアントドライブ機能に関する技術ノートの一覧を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc667/">[GGH4.5] Internet Explorer 10 でActiveXクライアントは動作するか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -672,17 +676,17 @@ KGTN2012030501: [GGW3.2.1/GGH4.0] Client Clipboard （クライアント・ク�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc764/"><i class="far fa-calendar"></i> 2012-12-10</a>
+                                            <a href="/posts/new_md/doc667/"><i class="far fa-calendar"></i> 2013-02-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/10*
-[番号] 技術ノート KGTN 2012121003
-[現象] [GGH4.X] GGH4.X のクライアントドライブ機能に関する技術ノートの一覧を知りたい．
-[説明] 2012-12-10 現在で，以下の技術ノートがあります．
-KGTN2010111702: [GGH4.0] サーバのみにインストールされたアプリケーションで，クライアントドライブにファイル &hellip; KGTN2010111901: [GGH4.0] クライアントドライブ機能を使い，例えばサーバ側からクライアント側へ100MBのファ &hellip; KGTN2010111902: [GGH4.0] クライアントドライブ機能を使い，サーバ側からクライアント側へ100MBのファイルを &hellip; KGTN2010111903: [GGH4.0] クライアントドライブ機能を使い，サーバ側からクライアント側へ大きなファイルをコピー &hellip; KGTN2010111904: [GGH4.0] クライアントドライブ機能を使い，クライアント側のドライブ間でファイルをコピーした場 &hellip; KGTN2010112201: [GGH4.0] クライアントドライブ機能を使い，サーバ側からクライアント側へ100MBのファイルを &hellip; KGTN2010112202: [GGH4.0] クライアントドライブ機能で [ごみ箱] が利用できるそうだが， [ごみ箱] に移さ &hellip; KGTN2011022504: [GGH4.0] クライアントドライブ機能で FD, CD-ROM, DVD-ROM 等が表示されな &hellip; KGTN2011102108: [GGH4.0] クライアントドライブとして認識されるディバイス （ドライブ） を知りたい． KGTN2011111801: [GGH4.0] GGがUSBディスク （クライアントドライブ） を認識するタイミングは？ KGTN2011120601: [GGH4.0] クライアントドライブ機能のファイルコピーの速度は速くなったのか？ KGTN2011120703: [GGH4.0] 無操作タイムアウト （アイドルタイムアウト） に関して，クライアントドライブ機能で &hellip; KGTN2011122202: [GGH4.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc764/" class="btn btn-template-main">続きを読む</a>
+2013/02/27*
+[番号] 技術ノート KGTN 2013022701
+[現象] [GGH4.5] Internet Explorer 10 でActiveXクライアントは動作するか？
+[説明] Windows 7 の環境でInternet Explorer 10 (10.0.9200.16521) を試験したところ，特に問題なくActiveXクライアント （4.5.0.13211） が動作しました．
+ファイル KGTN2013022701.pdf [(43.1 KB)] [kitasp 技術センター, 2013/02/27 09:41]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc667/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -692,7 +696,7 @@ KGTN2010111702: [GGH4.0] サーバのみにインストールされたアプリ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc765/">
+                                      <a href="/posts/new_md/doc664/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -700,7 +704,7 @@ KGTN2010111702: [GGH4.0] サーバのみにインストールされたアプリ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc765/">[GGH4.X] GGH4.X のクライアント印刷機能に関する技術ノートの一覧を知りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc664/">[GGH4.5] Windows 8 の 「スタート」 で 「Internet Explorer」 を起動して，ActiveXクライアントでGGサーバに接続しようとしたが，ログオン画面が表示されず接続出来ない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -713,17 +717,17 @@ KGTN2010111702: [GGH4.0] サーバのみにインストールされたアプリ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc765/"><i class="far fa-calendar"></i> 2012-12-10</a>
+                                            <a href="/posts/new_md/doc664/"><i class="far fa-calendar"></i> 2013-02-27</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/12/10*
-[番号] 技術ノート KGTN 2012121002
-[現象] [GGH4.X] GGH4.X のクライアント印刷機能に関する技術ノートの一覧を知りたい．
-[説明] 2012-12-10 現在で，以下の技術ノートがあります．
-KGTN2010030902: [GGW3.2.1/GGH4.X] キャノンの CAPT （Canon Advanced Print &hellip; KGTN2010111701: [GGH4.0] クライアントが異なる複数のGGサーバに同時にログオンする時，クライアント印刷機能に &hellip; KGTN2010111801: [GGH4.0] クライアント印刷機能の Universal Printer Driver が有効な &hellip; KGTN2010111802: [GGH4.0] クライアント印刷機能の Universal Printer Driver と Wi &hellip; KGTN2010111803: [GGH4.0] Universal Printer Driver が有効 かつ クライアント印刷機 &hellip; KGTN2010121302: [GGH4.0] クライアント印刷機能で大きな印刷ジョブを流した場合，GGW3.2と同じような感じな &hellip; KGTN2011040401: [GGH4.0] 4.0.1.10097 で，クライアント印刷機能の設定画面に Windows Pr &hellip; KGTN2011081902: [GGH4.0] クライアント印刷機能で Universal Driver (UPD) を使用する場 &hellip; KGTN2011120603: [GGW3.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc765/" class="btn btn-template-main">続きを読む</a>
+2013/02/27*
+[番号] 技術ノート KGTN 2013022705
+[現象] [GGH4.5] Windows 8 の 「スタート」 で 「Internet Explorer」 を起動して，ActiveXクライアントでGGサーバに接続しようとしたが，ログオン画面が表示されず接続出来ない．
+[説明] Windows 8 の Internet Explorer には，スタート画面で起動するストアアプリ版 （Metro版） の IE と，デスクトップ画面で起動するデスクトップ版の IE があります．ストアアプリ版の IE はウエッブ閲覧向けに最適化されており，アドオン等を実行することは出来ません．このため，ストアアプリ版の IE ではGGサーバに接続することは出来ません．GGサーバに接続する場合は，デスクトップ版の IE を利用するか，またはストアアプリ版 （Metro版） の IE を起動し 「ページツール」 （スパナのアイコン） をクリックし 「デスクトップで表示する」 を選択して下さい．
+ファイル KGTN2013022705.pdf [(59.2 KB)] [kitasp 技術センター, 2013/02/27 14:46]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc664/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -793,7 +797,7 @@ KGTN2010030902: [GGW3.2.1/GGH4.X] キャノンの CAPT （Canon Advanced Print &
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

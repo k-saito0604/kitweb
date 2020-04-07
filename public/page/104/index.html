@@ -409,25 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc208/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc156/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc208/">[GGH4.X] CADアプリケーションの評価のため，とりあえずワード上で図形を移動してパフォーマンスをみたいが構わないか？</a></h4>
+                            <h4><a href="/posts/new_md/doc156/">[GGH4.X] GGはアプリケーションのメモリ確保要求に対しカーネル空間からメモリを割り当てるそうだが，アプリケーションがそのメモリを二重解放した場合，BSODが発生するのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2014-09-06
+                            日付 2014-11-28
                             </p>
                             <p class="intro">*技術ノート
-2014/09/06*
-[番号] 技術ノート KGTN 2014090302
-[現象] [GGH4.X] CADアプリケーションの評価のため，とりあえずワード上で図形を移動してパフォーマンスをみたいが構わないか？
-[説明] GGは他の製品と異なりアプリケーションの描画命令に依存して処理を行います．CADアプリケーションが行う描画処理 （描画命令の呼び出し） とワードが行う描画処理 （描画命令の呼び出し） が異なると，描画に要する時間等も大きく異なる可能性があります．このため，パフォーマンスの評価に当たっては，実際に使用するアプリケーションで評価 （計測） するようにして下さい．
-ファイル KGTN2014090302.pdf [(49 KB)] [kitasp 技術センター, 2014/09/06 17:14]</p>
+2014/11/28*
+[番号] 技術ノート KGTN 2014112801
+[現象] [GGH4.X] GGはアプリケーションのメモリ確保要求に対しカーネル空間からメモリを割り当てるそうだが，アプリケーションがそのメモリを二重解放した場合，BSODが発生するのか？
+[説明] アプリケーションの単純なミス等によるメモリの二重解放ではBSODは発生しません．例えば，次のようなコードでBSODが発生することはありません．
+int *pi = new int; delete pi; delete pi; int *qi = (int*)malloc(sizeof(int)*10); free(qi); free(qi); FILE *fp = fopen(...); fclose(fp); fclose(fp);  ファイル KGTN2014112801.pdf [(49.8 KB)] [kitasp 技術センター, 2014/11/28 19:58]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc208/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc156/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,25 +446,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc207/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc157/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc207/">[GGH4.X] レジストリ （HKCUEUDC932SystemDefaultEudcFont） を修正して個別ユーザの外字ファイルを指定したが，その内容が反映されない．</a></h4>
+                            <h4><a href="/posts/new_md/doc157/">[GGH4.X] アプリケーションの印刷ダイアログにサーバー側のプリンターが表示されない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2014-09-06
+                            日付 2014-11-28
                             </p>
                             <p class="intro">*技術ノート
-2014/09/06*
-[番号] 技術ノート KGTN 2014090303
-[現象] [GGH4.X] レジストリ （HKCUEUDC932SystemDefaultEudcFont） を修正して個別ユーザの外字ファイルを指定したが，その内容が反映されない．
-[説明] GGのアプリケーション配信機能 （APS） が HKU.DEFAULT932SystemDefaultEudcFont の環境の下で動作するため，個別ユーザの外字ファイルを指定しても無視されます．これは現時点でのGGの仕様です．
-ファイル KGTN2014090303.pdf [(52.6 KB)] [kitasp 技術センター, 2014/09/06 17:18]</p>
+2014/11/28*
+[番号] 技術ノート KGTN 2014112701
+[現象] [GGH4.X] アプリケーションの印刷ダイアログにサーバー側のプリンターが表示されない．
+[説明] クラスタマネージャの Host Options → Client Access → Printers の両項目にチェックが入っていない場合，印刷機能が全て無効となります．サーバー側のプリンターのみを使用する場合でも Windows Printer Drivers または Universal Printer Driver にチェックを入れて下さい．なお，サーバー側のプリンターは設定に関わりなく Windows Printer Driver （専用のプリンタードライバー） を使用します．
+If UPD and WPD (Windows Printer Driver) is NOT selected then when the user connects no printers will be shown. This includes client side printers, network printers and printers connect to the actual server. This completely turns off printing.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc207/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc157/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -483,25 +483,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2334/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc153/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2334/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc153/">[GGH4.X] クライアント印刷機能を利用しない場合の設定は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2014-08-22
+                            日付 2014-11-28
                             </p>
                             <p class="intro">*技術ノート
-2014/08/22*
-[番号] 技術ノート KGTN 2014081801
-[現象] [GGH4.X-5.X] GGH4.X-5.X のクライアントはGGW3.2.1のクライアントと共存可能ということだが，２つのクライアントをインストールすればどちらのバージョンのサーバにも自由に接続出来るということか？
-[説明] GGH4.X-5.X のクライアントとGGW3.2.1のクライアントは同一マシン上で共存可能ですが，それぞれのクライアントは対応するバージョンのGGサーバに 「限り」 接続することが出来ます． 従って，GGH4.X-5.X のクライアントを起動した場合は，必ずGGH4.X-5.X のGGサーバにアクセスする必要があります．GGW3.2.1のGGサーバにアクセスした場合は，バージョン不一致のエラーが発生します．
-ファイル KGTN2014081801.pdf [(51.6 KB)] [kitasp 技術センター, 2016/10/04 16:16]</p>
+2014/11/28*
+[番号] 技術ノート KGTN 2014112601
+[現象] [GGH4.X] クライアント印刷機能を利用しない場合の設定は？
+[説明] クラスタマネージャで Host Options → Client Access → Printers の各項目のチェックを外して下さい．この設定により，クライアント側のプリンターが印刷ダイアログ等に表示されないようになります．なお，サーバー側のプリンターは，この設定に関わりなく印刷ダイアログに表示されます．もしサーバー側のプリンターが一覧に表示されない場合は，そのプリンターのアクセス権等をチェックして下さい．
+補　足 上記の設定では，サーバー側のプリンターも利用出来なくなります．サーバー側のプリンターを利用したい場合は， Windows Printer Drivers のチェックを入れて下さい．この設定だけではクライアント側のプリンターも利用出来ますので，ActiveXクライアントのログオン用URLにパラメタ printerconfig=none （Windowsクライアントの場合は -ac none） を指定し，クライアント側のプリンターを除外して下さい．
+If UPD and WPD (Windows Printer Driver) is NOT selected then when the user connects no printers will be shown. This includes client side printers, network printers and printers connect to the actual server. This completely turns off printing.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2334/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc153/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -520,25 +521,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2577/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc155/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2577/">[GGH4.X</a></h4>
+                            <h4><a href="/posts/new_md/doc155/">[GGH4.X] 透かしのあるPDFファイルをGG上で表示し，それをクライアント側のプリンターへ出力すると透かしが正常に印刷されない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2014-08-22
+                            日付 2014-11-28
                             </p>
                             <p class="intro">*技術ノート
-2014/08/22*
-[番号] 技術ノート KGTN 2014082201
-[現象] [GGH4.X-5.X] WS2012 (R2) にGGと Office と業務アプリケーションをインストールするが，どのような順序でインストールするのが良いのか知りたい．
-[説明] 下記の手順で作業を行うことをお勧めします．
- WS2012 (R2) をインストール 役割や機能の追加 更新プログラムの適用 （適用可能な更新プログラムが無くなるまで繰り返し行う） Office のインストール （IMEの環境が変わるためGGよりも先にインストールする） ディスクイメージのバックアップ GGのインストール GGの動作確認 業務アプリケーションのインストール GGの動作確認 アンチウイルスソフトウエアのインストール GGの動作確認  ファイル KGTN2014082201.pdf [(60 KB)] [kitasp 技術センター, 2016/05/27 14:12]</p>
+2014/11/28*
+[番号] 技術ノート KGTN 2014112802
+[現象] [GGH4.X] 透かしのあるPDFファイルをGG上で表示し，それをクライアント側のプリンターへ出力すると透かしが正常に印刷されない．
+[説明] この現象は，GGのクライアントに組み込まれたPDFファイルの印刷エンジン pdfprint.exe の仕様に起因する制限事項になります．この問題を解消するには，以下の方法があります．
+ Windows Printer Drivers （専用のプリンタードライバー） を使用する． Preview PDF で表示させて印刷する （クライアント側のAdobe Reader で印刷する） ． PDFファイルをクライアント側へコピーして印刷する．  出荷時期は未定ですが，GGのクライアントに組み込まれたPDFファイルの印刷エンジンではなく，クライアント側の Adobe Reader で自動的に印刷するツールを拡張パックの機能として提供する予定です．
+ファイル KGTN2014112802.pdf [(56 KB)] [kitasp 技術センター, 2014/11/28 20:01]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2577/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc155/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

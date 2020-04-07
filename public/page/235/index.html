@@ -409,25 +409,28 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1660/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc357/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1660/">SkyPDF for GO</a></h4>
+                            <h4><a href="/posts/new_md/doc357/">[GGH4.X] クライアントプリンタ機能の Universal Printer Driver と Windows Printer Driver は，スプールファイルの流れ （印刷ジョブの流れ） は同じか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-08-18
+                            日付 2010-12-15
                             </p>
                             <p class="intro">*技術ノート
-2010/08/18*
-[番号] 技術ノート KGTN 2010081804
-[現象] SkyPDF for GO-Global （GG-SkyPDF） の処理の流れを知りたい．
-[説明] クライアント印刷機能では，サーバ側のSkyPDF （ドライバ） に対して印刷が行われ，その中間データがGGのセッションを通してクライアント側の SkyPDF （プリンタポート） へ転送されます．中間データを受け取ったクライアント側の SkyPDF はその内容をPDFファイルに出力し，さらにPDFビュアー （Acrobat Reader） を起動し，PDFファイルを物理的なプリンタへ出力します．
-ファイル KGTN2010081804.pdf [(118 KB)] [kitasp 技術センター, 2010/08/18 13:02]</p>
+2010/12/15*
+[番号] 技術ノート KGTN 2010121502
+[現象] [GGH4.X] クライアントプリンタ機能の Universal Printer Driver と Windows Printer Driver は，スプールファイルの流れ （印刷ジョブの流れ） は同じか？
+[説明] いいえ，異なります． Universal Printer Driver では，Ver3.2系と同じようにサーバ側でスプールファイルが生成され，それがまとめてクライアントへ転送され，クライアントは受け取ったスプールファイル （正確にはPDFファイル） を Adobe PDF Library を使って物理的なプリンタへ出力します． Windows Printer Driver では，サーバ側でスプールファイルが生成されると同時に， 「並行して」 クライアントの物理的なプリンタへ （スプールファイルが） 転送＆蓄積されます．
+参　考 Excel のシート500ページ分を印刷した時の，各処理のタイミングとデータ量は以下の通りです．なお，ドキュメントの種類や内容，プリンタの機種やドライバのバージョンに依存しますので，単なる一例としてご理解下さい．
+[Universal Printer Driver]
+ サーバ側プリンタの処理のタイミングとスプールファイルの大きさ 00:00 ～ 00:01, 11.6MB ネットワーク上のデータ量 1.3MB クライアント側プリンタの処理のタイミングとスプールファイルの大きさ 00:01 ～ 00:20, 237MB　（注：PDFファイルの印刷に時間がかかります）  [Windows Printer Driver]
+ サーバ側プリンタの処理のタイミングとスプールファイルの大きさ 00:00 ～ 00:04, 8.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1660/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc357/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,26 +449,28 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1662/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1514/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1662/">SkyPDF for GO</a></h4>
+                            <h4><a href="/posts/new_md/doc1514/">[GGH4.0] クライアント印刷機能で大きな印刷ジョブを流した場合，GGW3.2と同じような感じなのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-08-17
+                            日付 2010-12-13
                             </p>
                             <p class="intro">*技術ノート
-2010/08/17*
-[番号] 技術ノート KGTN 2010081201
-[現象] SkyPDF for GO-Global （GG-SkyPDF） を素直にインストールし，メモ帳で印刷したところ，ファイル保存のダイアログが表示される．
-[説明] この現象は， 「サーバ側の印刷ダイアログでSkyPDF for GO-Global が選択され」 かつ 「サーバ側で生成されたPDFファイルがクライアント側の SkyPDF for GO-Global へ再出力された」 場合に発生します．
-クライアント側の SkyPDF for GO-Global の設定ファイル C:¥Program Files¥SkyCom¥GGSkyPDF Pro Driver¥skyinfo.ini を開き， PRINTERNAME=&rdquo;&rdquo; を設定して下さい （つまり PRINTERNAME の値を default から空に変更します） ．これにより，出力先のプリンタを選択するダイアログが表示されるようになります （注：デスクトップの状況により他のウインドウの後ろに表示される場合があります） ．
-ファイル KGTN2010081201.pdf [(126 KB)] [kitasp 技術センター, 2010/08/17 12:46]</p>
+2010/12/13*
+[番号] 技術ノート KGTN 2010121302
+[現象] [GGH4.0] クライアント印刷機能で大きな印刷ジョブを流した場合，GGW3.2と同じような感じなのか？
+[説明] GGW3.2では 「サーバ側でのスプールファイルの生成 → スプールファイルの転送 → クライアント側でのスプールファイルの生成」 という順序でクライアント印刷が行われておりましたが，GGH4.0では 「サーバ側でのスプールファイルの生成」 と 「クライアント側でのスプールファイルの生成」 が並行して行われます．また，アプリケーションの印刷ダイアログ （の印刷中のダイアログ） はすぐに印刷終了の状態になり，バックグラウンドで上記のスプールファイルの処理が進行します．
+印刷の方式の違いから，GGW3.2では &ldquo;RS: Exception occurred in PRINT_EndDoc.&rdquo; が発生する4,684ページの印刷 （スプールファイルは2.24GB） も，GGH4.0では印刷することが出来ました．
+サーバ側のプリンタ （4,684ページを印刷）
+クライアント側のプリンタ （スプールファイルのサイズ2.24GB）
+ファイル KGTN2010121302.pdf [(207 KB)] [kitasp 技術センター, 2010/12/13 14:17]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1662/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1514/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -484,25 +489,27 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1663/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1515/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1663/">SkyPDF for GO</a></h4>
+                            <h4><a href="/posts/new_md/doc1515/">[GGW3.2] クライアント印刷機能で大きな印刷ジョブを流した場合，どれくらい時間がかかるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-08-17
+                            日付 2010-12-13
                             </p>
                             <p class="intro">*技術ノート
-2010/08/17*
-[番号] 技術ノート KGTN 2010081202
-[現象] SkyPDF for GO-Global （GG-SkyPDF） のクライアント側設定ファイルskyinfo.ini のPRINTERNAME に誤ったプリンタ名を指定した場合，動作はどのようになるのか？
-[説明] C:¥Program Files¥SkyCom¥GGSkyPDF Pro Driver¥skyinfo.ini （クライアント側の設定ファイル） で PRINTERNAME=&quot;存在しないプリンタ名&rdquo; を指定した場合，空が指定された時と同様に下記のような 「プリンタ選択ダイアログ」 が表示されます．
-ファイル KGTN2010081202.pdf [(86.7 KB)] [kitasp 技術センター, 2010/08/17 12:23]</p>
+2010/12/13*
+[番号] 技術ノート KGTN 2010121301
+[現象] [GGW3.2] クライアント印刷機能で大きな印刷ジョブを流した場合，どれくらい時間がかかるのか？
+[説明] 印刷するドキュメントの内容・プリンタドライバの種類や処理・サーバ/クライアントのCPUパワー・ネットワークの帯域などに大きく依存しますので，一般論で議論することは出来ません．ひとつのサンプルとして，弊社での実験結果を以下に示します．
+サーバのスペック： Intel Pentium4 2.80GHz クライアントのスペック： Intel Core2 Duo 2.00GHz アプリケーション： Excel 2000 の表1,000ページ分 ネットワーク： 100Mbps プリンタ （ドライバ） ： EPSON LASER LP-8600
+ サーバ側の印刷時間： 538秒，　クライアント側への印刷時間： 60秒， スプールファイル： 487MB サーバ側の印刷時間： 535秒，　クライアント側への印刷時間： 60秒， スプールファイル： 487MB サーバ側の印刷時間： 540秒，　クライアント側への印刷時間： 62秒， スプールファイル： 487MB *) スプールファイルの転送時は100Mbpsの12.5%の帯域を使用  ここで言う 「サーバ側の印刷時間」 とは，印刷ボタンを押下してサーバ側でスプールファイルが生成されるまでの時間です． 「クライアント側への印刷時間」 とは，サーバ側のスプールファイルがプリンタのフォルダから消え，クライアント側のプリンタのフォルダにスプールファイルが生成されるまでの時間です．
+ファイル KGTN2010121301.pdf [(59.7 KB)] [kitasp 技術センター, 2010/12/13 11:21]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1663/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1515/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -521,25 +528,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1661/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1512/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1661/">環境変数 CLIENTCOMPUTERADDRESS の値が ::1 になる．</a></h4>
+                            <h4><a href="/posts/new_md/doc1512/">[GGW3.2] クライアント印刷機能で大きな印刷ジョブを行ったが，印刷されずAPSログに RS: Exception occurred in PRINT_EndDoc. という記録があった．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-08-17
+                            日付 2010-12-13
                             </p>
                             <p class="intro">*技術ノート
-2010/08/17*
-[番号] 技術ノート KGTN 2010081801
-[現象] 環境変数 CLIENTCOMPUTERADDRESS の値が ::1 になる．
-[説明] クライアントが IPv4 と IPv6 の両方のアドレスを持つ時，環境変数 CLIENTCOMPUTERADDRESS の値が ::1 になります．これは現時点での制限事項 （既知の問題） で，対症療法として &ldquo;Microsoft TCP/IP version 6&rdquo; を削除することで，この問題を回避することが出来ます．
-ファイル KGTN2010081801.pdf [(160 KB)] [kitasp 技術センター, 2010/08/18 08:27]</p>
+2010/12/13*
+[番号] 技術ノート KGTN 2010121001
+[現象] [GGW3.2] クライアント印刷機能で大きな印刷ジョブを行ったが，印刷されずAPSログに &ldquo;RS: Exception occurred in PRINT_EndDoc.&rdquo; という記録があった．
+[説明] クライアントプリンタへ印刷を行った場合，サーバ側の対応するプリンタにスプールファイルが蓄積されます．スプールファイルは印刷を行ったユーザのTEMPフォルダ （環境変数の%TEMP%） に作成され，そのファイルがクライアント側へ転送されます．そしてクライアント側でスプールファイルとして蓄積され，物理的なプリンタへ出力されます． &ldquo;RS: Exception occurred in PRINT_EndDoc.&rdquo; という記録は，スプールファイルがTEMPフォルダに作成されたものの，ファイルサイズが大きくメモリへ展開することが出来なかったことを意味します （つまりクライアント側へのスプールファイルの転送に失敗） ．対応については，技術ノートKGTN#2010120301 をご覧下さい．
+参　考 GraphOn社のコメントは以下の通りです． GO-Global was unable to allocate enough memory for the file. Without the necessary memory buffer, we can&rsquo;t forward the file to the client. It looks like whenever this allocation fails, we do not clean up the .bpf.
+ファイル KGTN2010121001.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1661/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1512/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

@@ -409,25 +409,30 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1855/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1695/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1855/">サーバに複数のLANポートがある場合，どのMACアドレスでライセンスを申請すべきか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1695/">エンタープライズオプションのプログラム GMFileProc の目的は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-02-24
+                            日付 2010-07-21
                             </p>
                             <p class="intro">*技術ノート
-2010/02/24*
-[番号] 技術ノート KGTN 2010022407
-[現象] サーバに複数のLANポートがある場合，どのMACアドレスでライセンスを申請すべきか？
-[説明] 技術的には，実際に使用するLANポートのMACアドレスであれば，何れでも構いません．敢えて言えば，サーバの機能上，より重要な役割を持っているLANポートのMACアドレスで申請するのが良いでしょう．
-ファイル KGTN2010022407.pdf [(45.8 KB)] [kitasp 技術センター, 2010/02/24 11:23]</p>
+2010/07/21*
+[番号] 技術ノート KGTN 2010072104
+[現象] エンタープライズオプションのプログラム GMFileProc の目的は？
+[説明] GGサーバの状態を管理する方法として，セッション監視SDKの GMCheck でGGサーバの情報を取得し，その情報を直接DBへ登録する処理が考えられます．正常系のみを考えれば，この方式は単純で効率も良いのですが，大規模案件では想定外の様々な障害が発生しますので，このような方式では問題点の切り分けが難しいという大きな欠点があります （例: 多くのGGサーバがDBのレコードを更新するため，DBで異常が発生した場合，その契機の発見が難しい） ．
+このようなことから，障害発生時に確実に問題点を発見できるように，以下のような処理を行います．
+セッション監視SDKの GMCheck 等でGGサーバの状態をファイルに記録 状態が記録されたファイルをDB登録用共有フォルダへコピー 共有フォルダ中のファイルを順にDBへ登録 登録が完了したファイルをバックアップフォルダへ移動
+各時点でのGGサーバの状態はファイルに記録され，そのファイルの情報は１箇所でDBへ反映され，さらにバックアップフォルダへ保存されますので，障害発生後にファイルを解析することで問題点を発見することが可能になります．プログラム GMFileProc は，この処理の中でファイルの管理を行うプログラムで，以下のような機能を受け持ちます．
+DB登録用共有フォルダ中のファイルを順にピックアップ ピックアップしたファイルをDB登録用プログラムを呼び出してDBへ情報を登録 登録が完了したファイルをバックアップフォルダへ移動 バックアップフォルダ中の古いファイルを削除 OSの異常等に備えて処理した内容をトレースログやイベントログに記録
+これ以外にも，ネットワークやサーバが過負荷でファイルが滞留した時に備え，古いファイルをスキップする等の機能も持っています．
+ファイル KGTN2010072104.pdf [(73 KB)] [kitasp 技術センター, 2010/07/21 14:44]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1855/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1695/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,26 +451,26 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1853/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1700/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1853/">特定のアプリケーションで予期せぬセッションの切断が発生する事例はないか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1700/">GMFileProc の設定情報 progBefore と progAfter は，どのようなシナリオで使うのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-02-24
+                            日付 2010-07-20
                             </p>
                             <p class="intro">*技術ノート
-2010/02/24*
-[番号] 技術ノート KGTN 2010022409
-[現象] 特定のアプリケーションで予期せぬセッションの切断が発生する事例はないか？
-[説明] 過去に１件事例があります．そのアプリケーションは，データの読み込み時に進行状況を表示するため，過度に頻繁に情報 （文字列） を表示していました．これにより非常に多くの表示要求がサーバからクライアントへ送信され，その結果クライアントとサーバ間のPING （到達確認） の送受信に遅延が発生し，最終的に通信障害と認識されセッションが切断されました．
-ggw-3.2.1.4420またはそれ以降では，サーバからクライアントへ要求が送信されている場合，PING （到達確認） を送信しないように仕様が変更され，この問題は解消しました．
-参　考 When a large amount of data was sent from the server to the client, the reply to the client&rsquo;s ping request could take longer than 30 seconds to be returned to the client. When this happened, the client would erroneously assume that it could not communicate with the server, and it would close the connection.</p>
+2010/07/20*
+[番号] 技術ノート KGTN 2010072001
+[現象] GMFileProc の設定情報 progBefore と progAfter は，どのようなシナリオで使うのか？
+[説明] ファイルの内容をデータベースに登録するような処理では，設定情報progPathで指定するプログラムがファイル毎にDBへの接続を繰り返します．DBへの接続は負荷の高い処理ですので，以下のように progBefore と progAfter を利用することで，１回のDB接続で処理をさせることが可能になります．
+progBefore ： データを蓄積する作業ファイルをクリア progPath ： 登録するデータを作業ファイルに追加 progAfter ： DBへ接続後，作業ファイルの内容を連続してDBへ登録
+ファイル KGTN2010072001.pdf [(51.9 KB)] [kitasp 技術センター, 2010/07/20 09:34]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1853/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1700/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -484,25 +489,25 @@ ggw-3.2.1.4420またはそれ以降では，サーバからクライアントへ
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1864/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1701/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1864/">GO</a></h4>
+                            <h4><a href="/posts/new_md/doc1701/">プラグイン LaunchBrowser を使ってファイルをダウンロードさせたいが，ウエッブサーバのドキュメント外に置かれたファイルをダウンロードさせることは可能か？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-02-23
+                            日付 2010-07-15
                             </p>
                             <p class="intro">*技術ノート
-2010/02/23*
-[番号] 技術ノート KGTN 2010022301
-[現象] GO-Global for Windows Ver3.2系は，Windows Server 2008 R2 （64ビット） をサポートするのか？
-[説明] 現行バージョンでは Windows Server 2008 R2 （64ビット） をサポートしませんが，次期メジャーバージョン &ldquo;GO-Global for Windows Ver.4&rdquo; ではサポートする予定です．なお，リリース時期等については未定です．
-ファイル KGTN2010022301.pdf [(42.6 KB)] [kitasp 技術センター, 2010/02/23 09:25]</p>
+2010/07/15*
+[番号] 技術ノート KGTN 2010071501
+[現象] プラグイン LaunchBrowser を使ってファイルをダウンロードさせたいが，ウエッブサーバのドキュメント外に置かれたファイルをダウンロードさせることは可能か？
+[説明] CGI （スクリプト） を利用することで可能です．PHPのサンプルを以下に示します．
+// // Example: // 1) http://localhost/gm_download.php?file=gg-explorer.exe // 2) http://localhost/gm_download.php?file=12345.dat // $fileDir = &ldquo;C:¥¥GraphOn¥¥BIN¥¥&rdquo;; $fileName = $_GET[&ldquo;file&rdquo;]; //- //- $fileNameA is &ldquo;actual file name&rdquo; //- $fileNameA = &ldquo;XXX.EXE&rdquo;; // $fileName; //- $filePath = $fileDir . $fileName; if((file_exists($filePath) != TRUE)||(is_dir($filePath) == TRUE)) { exit(&ldquo;File not found! - ¥&rdquo;&rdquo; . $fileName . &ldquo;¥&rdquo;&quot;); } $fileLength = filesize($filePath); header(&ldquo;Content-Disposition: attachment; filename=$fileNameA&rdquo;); header(&ldquo;Content-Length:$fileLength&rdquo;); header(&ldquo;Content-Type: application/octet-stream&rdquo;); readfile($filePath); ?</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1864/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1701/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -521,26 +526,25 @@ ggw-3.2.1.4420またはそれ以降では，サーバからクライアントへ
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1863/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1705/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1863/">Windows Updateの適用方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc1705/">クライアントドライブ機能において，受け取り側 （クライアント） のドライブに十分な容量が無い時，コピーを行うと0バイトのファイルが作成される．また，この時警告ダイアログは表示されない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-02-23
+                            日付 2010-07-12
                             </p>
                             <p class="intro">*技術ノート
-2010/02/23*
-[番号] 技術ノート KGTN 2010022302
-[現象] Windows Updateの適用方法は？
-[説明] Windows Update の適用は，原則として以下の手順で行って下さい．
-IE を起動． &ldquo;Windows Update&rdquo; を選択． &ldquo;高速&rdquo; を選択． &ldquo;更新プログラムのインストール&rdquo; を実行． &ldquo;今すぐ再起動&rdquo; を選択 （サーバを再起動） ． 上記1〜5を適用可能な更新プログラムが無くなるまで繰り返し実行．
-ファイル KGTN2010022302.pdf [(46.3 KB)] [kitasp 技術センター, 2010/02/23 11:54]</p>
+2010/07/12*
+[番号] 技術ノート KGTN 2010071201
+[現象] クライアントドライブ機能において，受け取り側 （クライアント） のドライブに十分な容量が無い時，コピーを行うと0バイトのファイルが作成される．また，この時警告ダイアログは表示されない．
+[説明] 弊社およびGraphOn社で現象を確認しました．この動作は，技術ノート KGTN#2009091501 の問題と関連しており，Ver3.2 系での制限事項 （既知の問題） となります．
+ファイル KGTN2010071201.pdf [(50.2 KB)] [kitasp 技術センター, 2010/07/12 09:43]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1863/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1705/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

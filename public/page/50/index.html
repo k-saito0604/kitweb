@@ -409,27 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2236/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2216/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2236/">[Windows/PowerShell] PowerShell を使用してローカルとリモートのコンピューター名を取得したい．</a></h4>
+                            <h4><a href="/posts/new_md/doc2216/">[Windows/PowerShell/ExPack] PowerShell でプロファイル中にマイドキュメント等のフォルダーを作るバッチを生成したい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-11-02
+                            日付 2016-12-15
                             </p>
                             <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101813
-[現象] [Windows/PowerShell] PowerShell を使用してローカルとリモートのコンピューター名を取得したい．
-[説明] 以下に PowerShell での実行例 （最初はローカル，２番目はリモート） を示します．
-ファイル KGTN2016101813.pdf [(112 KB)] [kitasp 技術センター, 2016/11/02 15:17]
-KGTN2016101813.jpg
-表示 [(22.3 KB)] [kitasp 技術センター, 2016/11/02 15:17]</p>
+2016/12/15*
+[番号] 技術ノート KGTN 2016120602
+[現象] [Windows/PowerShell/ExPack] PowerShell でプロファイル中にマイドキュメント等のフォルダーを作るバッチを生成したい．
+[説明] ローカルアカウントで Windows PowerShell を 「管理者として実行する」 で起動し，その中で下記のコマンドを実行して下さい．
+# # プロファイルに各種フォルダーを作成するバッチを生成するスクリプト # # 設定情報 $FilePrefix = &quot;GenMakeProfileFolder&quot; # 生成するファイルのプリフィックス $HomeFolder = &quot;C:HOME&quot; # プロファイルのホームフォルダー $FolderList = # 生成するフォルダーのリスト @( &quot;Documents&quot;, &quot;Favorites&quot;, &quot;Downloads&quot; ) # ホスト情報およびユーザー情報の設定など Try { . (&quot;.ConfconfUserList.ps1&quot;) } Catch { Write-Host &quot;インクルードファイルが見つかりません。&quot; Exit 1001 } # 引数のチェック if($Args.Length -ne 0) { Write-Host &quot;Usage: genProfileFolderList.ps1&quot; Exit 1002 } # 既存ファイルの削除 if ((Test-Path &quot;$FilePrefix.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2236/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2216/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -448,25 +446,27 @@ KGTN2016101813.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2232/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2210/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2232/">[Windows/PowerShell] PowerShell を使用して複数のリモートコンピューターでコマンドを実行し，その実行結果を得る方法は？</a></h4>
+                            <h4><a href="/posts/new_md/doc2210/">[Windows/PowerShell/ExPack] ワークグループ環境＆複数のGGサーバーでNAS上にマイドキュメントやお気に入りを配置した運用環境の構築手順は？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-11-02
+                            日付 2016-12-15
                             </p>
                             <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101902
-[現象] [Windows/PowerShell] PowerShell を使用して複数のリモートコンピューターでコマンドを実行し，その実行結果を得る方法は？
-[説明] 以下に，各リモートコンピューターからコンピューター名とIPアドレス （文字列） を得るサンプルを示します．
-$hostList = @(&quot;192.168.102.60&quot;,&quot;192.168.102.72&quot;,&quot;192.168.102.110&quot;) Function hostInfo ($ipAddr) { $hostName = [Net.Dns]::GetHostName() $hostAddr = [Net.Dns]::GetHostAddresses('') | Where-Object -FilterScript { ($_.AddressFamily -Eq &quot;InterNetwork&quot;) } | select -ExpandProperty IPAddressToString return &quot;hostName: {0,-16}, hostAddr: {1,-16}&quot; -f $hostName,$hostAddr } $ii = 0 ForEach($target In $hostList) { $ret = Invoke-Command $target -ScriptBlock ${function:hostInfo} -ArgumentList $target ++$ii &quot;[{0}] {1}&quot; -f $ii,$ret }  ファイル KGTN2016101902.</p>
+2016/12/15*
+[番号] 技術ノート KGTN 2016120603
+[現象] [Windows/PowerShell/ExPack] ワークグループ環境＆複数のGGサーバーでNAS上にマイドキュメントやお気に入りを配置した運用環境の構築手順は？
+[説明] ここで記述する内容は，他の情報 （技術ノート，PowerShell，Batch，NAS，etc&hellip;） を前提としており，閉じた内容でないことをご理解下さい．また， PowerShell をリモート実行出来る環境が構築されていることも前提としています．
+[STEP#0] ・管理サーバー・GGサーバー・NASのホスト名およびIPアドレスを決める （採取する） ． ・スクリプト genProfileFolderList.ps1 に設定情報をセットする． ・スクリプト genProfileSymbolicLinkList.ps1 に設定情報をセットする．
+# 設定情報 $FilePrefix = &quot;GenMakeProfileFolder&quot; # 生成するファイルのプリフィックス $HomeFolder = &quot;C:HOME&quot; # プロファイルのホームフォルダー $FolderList = # 生成するフォルダーのリスト @( &quot;Documents&quot;, &quot;Favorites&quot;, &quot;Downloads&quot; )  スクリプト genProfileFolderList.ps1 の設定情報
+# 設定情報 $FilePrefix = &quot;GenMakeProfileSymbolicLink&quot; # 生成するファイルのプリフィックス $HomeFolder = &quot;C:Users&quot; # プロファイルのホームフォルダー $NASAddr = &quot;192.168.0.2&quot; # NAS のアドレス $FolderList = # 生成するフォルダーのリスト @( &quot;Documents&quot;, &quot;Favorites&quot;, &quot;Downloads&quot; )  スクリプト genProfileSymbolicLinkList.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2232/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2210/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,25 +485,25 @@ $hostList = @(&quot;192.168.102.60&quot;,&quot;192.168.102.72&quot;,&quot;192.16
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2231/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2212/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2231/">[Windows/PowerShell] PowerShell を使用して複数のリモートコンピューターにアカウントを作りたい．</a></h4>
+                            <h4><a href="/posts/new_md/doc2212/">[Windows/PowerShell/ExPack] 技術ノート KGTN#2016120603 の環境で NAS のIPアドレスを間違えた．IPアドレスを修正するには，どのような作業をすれば良いのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-11-02
+                            日付 2016-12-15
                             </p>
                             <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101903
-[現象] [Windows/PowerShell] PowerShell を使用して複数のリモートコンピューターにアカウントを作りたい．
-[説明] 以下に，各リモートコンピューターにアカウントを作成するサンプルを示します．
-$hostList = @(&quot;192.168.102.60&quot;,&quot;192.168.102.72&quot;,&quot;192.168.102.110&quot;) $argUser = &quot;wguser9012&quot; $argPass = &quot;Pass.Word&quot; Function addUser ([string]$user,[string]$pass) { # 共通 [bool]$myError = $false $hostname = hostname # アカウント作成 try { [ADSI]$Computer = &quot;WinNT://$hostname,computer&quot; $NewUser = $Computer.Create(&quot;User&quot;,$user) [void]$NewUser.SetPassword($pass) [void]$NewUser.SetInfo() Write-Host &quot;addUser: Create = OK (&quot; $hostname &quot;)&quot; } catch { $myError = $true Write-Host &quot;addUser: Create = NG (&quot; $hostname &quot;)&quot; } # RDS の利用設定 if($myError -eq $false) { try { $Group = $Computer.</p>
+2016/12/15*
+[番号] 技術ノート KGTN 2016120903
+[現象] [Windows/PowerShell/ExPack] 技術ノート KGTN#2016120603 の環境で NAS のIPアドレスを間違えた．IPアドレスを修正するには，どのような作業をすれば良いのか？
+[説明] 先ず，正しいNASのIPアドレスを genProfileSymbolicLinkList.ps1 を設定し，バッチファイルを生成して下さい．次に，このバッチファイルを各GGサーバー上で （管理者権限で） 実行して下さい．この手順で，プロファイル中のシンボリックリンクの先が，正しいNAS上のフォルダーを指すようになります．
+ファイル KGTN2016120903.pdf [(58.1 KB)] [kitasp 技術センター, 2016/12/15 11:22]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2231/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2212/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -522,27 +522,25 @@ $hostList = @(&quot;192.168.102.60&quot;,&quot;192.168.102.72&quot;,&quot;192.16
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2234/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2214/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2234/">[Windows/PowerShell] PowerShell を使用して複数のリモートコンピューターのホスト名を取得したい．</a></h4>
+                            <h4><a href="/posts/new_md/doc2214/">[Windows/PowerShell/ExPack] 技術ノート KGTN#2016120603 の環境で NAS　がダウンした場合，GGの利用はどうなるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2016-11-02
+                            日付 2016-12-15
                             </p>
                             <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101814
-[現象] [Windows/PowerShell] PowerShell を使用して複数のリモートコンピューターのホスト名を取得したい．
-[説明] 以下に PowerShell での実行例を示します．
-ファイル KGTN2016101814.pdf [(77.1 KB)] [kitasp 技術センター, 2016/11/02 15:20]
-KGTN2016101814.jpg
-表示 [(7.91 KB)] [kitasp 技術センター, 2016/11/02 15:20]</p>
+2016/12/15*
+[番号] 技術ノート KGTN 2016120902
+[現象] [Windows/PowerShell/ExPack] 技術ノート KGTN#2016120603 の環境で NAS　がダウンした場合，GGの利用はどうなるのか？
+[説明] ログオン時およびアプリケーション利用時に 「ダウン中の」 NAS にアクセスするため，ログオンに時間がかかります （タイムアウトを待つため） ．アプリケーションについても，同じ理由でマイドキュメントやお気に入りにアクセスする度に時間がかかります．
+ファイル KGTN2016120902.pdf [(51.4 KB)] [kitasp 技術センター, 2016/12/15 11:20]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2234/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2214/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

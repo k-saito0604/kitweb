@@ -409,25 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2146/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2036/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2146/">[GGH6.X] GG上で動作するブラウザ IE でベーシック認証を行うページにアクセスすると、認証ダイアログが表示されずに認証エラーとなる。</a></h4>
+                            <h4><a href="/posts/new_md/doc2036/">[GGH5.X] APSログでのセッション終了の情報の読み方は？</a></h4>
                             <p class="author-category">
                             
                             日付 2020-01-24
                             </p>
                             <p class="intro">*技術ノート
 2020/01/24*
-[番号] 技術ノート KGTN 2019110701
-[現象] [GGH6.X] GG上で動作するブラウザ IE でベーシック認証を行うページにアクセスすると、認証ダイアログが表示されずに認証エラーとなる。
-[説明] この問題はGraphOn社でも確認しております。当面の回避策として、 IE 以外のブラウザをご利用ください。
-ファイル KGTN2019110701.pdf [(38 KB)] [kitasp 技術センター, 2020/01/24 12:13]</p>
+[番号] 技術ノート KGTN 2019112702
+[現象] [GGH5.X] APSログでのセッション終了の情報の読み方は？
+[説明] セッション終了時に記録されるログのうち、主な記録とその意味は次の通りです。これらの記録を見つけることでセッションの終了を判断することが出来ます。セッション開始からの経緯は、セッションの管理番号を示す文字列 Session ID 88 （この例の場合） を検索することで、関連する主な情報を見つけることが出来ます。
+(1) user001 on GGSV01, aps (2512) Session ID 88: Process #10272 (...Logon.exe) stopped in session &quot;user001 on GGSV01&quot;. // セッション(管理番号88)を実行するプロセス Logon.exe が終了したという情報です。 (2) gg-client (2512) AS: Closing the connection to a client at address 192.47.212.9 with code 101. // セッション(管理番号88)から192.47.212.9 の端末が切断されたという情報です。 (3) user001 on GGSV01, aps (2512) Session ID 88: Session &quot;user001 on GGSV01&quot; stopped.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2146/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2036/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,30 +446,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1668/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2047/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1668/">[GGH6.X] Windows 10 の既定のブラウザが IE から Edge へ変わるのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2047/">[GGH5.X] APSログでのセッション開始の情報の読み方は？</a></h4>
                             <p class="author-category">
                             
                             日付 2020-01-24
                             </p>
                             <p class="intro">*技術ノート
 2020/01/24*
-[番号] 技術ノート KGTN 2020011001
-[現象] [GGH6.X] Windows 10 の既定のブラウザが IE から Edge へ変わるのか？
-[説明] マイクロソフト社はアーキテクチャーが古いブラウザ IE に代わる新しいアーキテクチャーのブラウザ Edge をリリースしましたが、機能的な問題等から移行が進んでいない状況が続いておりました。この間に、Web標準準拠で拡張機能なども豊富な Chrome がシェアを大きく伸ばしました。
-Webブラウザシェアランキング(2019年11月)：日本国内
-このため、マイクロソフト社は Chrome と同じレンダリングエンジン （描画処理を行うプログラム） を採用した Chromium版Edge を開発し、2020年1月15日の更新プログラムで配布する予定です。この更新プログラムが適用されますと、 Chromium版Edge が既定のブラウザとなります。
-GGへの影響 （クライアント側） についてですが、バージョン6は現行の Edge での動作は保証されておりますが、新しい Chromium版Edge については実際にリリースされてからでないと動作の可否が分かりません。GraphOn社からの情報および弊社での検証結果が分かり次第、 Chromium版Edge でのGGクライアントの動作状況をお知らせします。仮に、 Chromium版Edge 環境で動作しなかった場合は、GraphOn社が対応するまでの間 IE や Chrome をご使用頂くか、またはデスクトップ・クライアント （ブラウザを使用しないGGクライアント） をご使用ください。
-ファイル KGTN2020011001.pdf [(62.9 KB)] [kitasp 技術センター, 2020/01/24 13:11]
-KGTN2020011001.jpg
-表示 [(22.7 KB)] [kitasp 技術センター, 2020/01/24 13:11]</p>
+[番号] 技術ノート KGTN 2019112701
+[現象] [GGH5.X] APSログでのセッション開始の情報の読み方は？
+[説明] セッション開始時に記録されるログのうち、主な記録とその意味は次の通りです。これらの記録を見つけることでセッションの開始を判断することが出来ます。これ以降のログの解析は、セッションの管理番号を示す文字列 Session ID 88 （この例の場合） を検索することで、関連する主な情報を見つけることが出来ます。
+(1) aps (2512) CS: A client at IP address 192.47.212.9 established a TCP connection to the host using 56-bit DES encryption. // 192.47.212.9 の端末からアクセスがあったという情報です。 (2) Logon88 on GGSV01, aps (2512) Session ID 88: Session &quot;Logon88 on GGSV01&quot; started. // セッション(管理番号88)が生成されたという情報です。 (3) user001 on GGSV01, aps (2512) Session ID 88: User user001 logged on to session &quot;Logon88 on GGSV01&quot;, and the session was renamed to &quot;user001 on GGSV01&quot;.</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1668/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2047/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -488,25 +483,25 @@ KGTN2020011001.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc891/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2014/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc891/">[GGH6.X] Windows 10 の既定のブラウザが IE から Edge へ変わるのか？ その場合、いつ切り替わるのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2014/">[GGH5.X] APSログに GGEasyMonitorConnectionCheck と書かれた行が多数あるが、これはどんな情報なのか？</a></h4>
                             <p class="author-category">
                             
                             日付 2020-01-24
                             </p>
                             <p class="intro">*技術ノート
 2020/01/24*
-[番号] 技術ノート KGTN 2020011701
-[現象] [GGH6.X] Windows 10 の既定のブラウザが IE から Edge へ変わるのか？ その場合、いつ切り替わるのか？
-[説明] はい、その通りです。しかしながら、国税庁の確定申告のシステムが Microsoft Internet Explorer 11 と従来の Microsoft Edge のみをサポートすることから、確定申告の期限3月15日を過ぎた4月1日以降に新しい Chromium版Microsoft Edge の配信が行われるように延期されました。
-ファイル KGTN2020011701.pdf [(40.4 KB)] [kitasp 技術センター, 2020/01/24 13:22]</p>
+[番号] 技術ノート KGTN 2019112704
+[現象] [GGH5.X] APSログに GGEasyMonitorConnectionCheck と書かれた行が多数あるが、これはどんな情報なのか？
+[説明] 拡張パックの GGEasyMonitor のサポートプログラムの記録で、接続性の確認を行った時にこの記録が出力されます （この記録は無視して頂いて結構です） 。
+GGEasyMonitorConnectionCheck (2512) Failed to set connection options. GGEasyMonitorConnectionCheck (35460) SC: Failed to set connection options. GGEasyMonitorConnectionCheck (2512) Disconnected from .  ファイル KGTN2019112704.pdf [(39.7 KB)] [kitasp 技術センター, 2020/01/24 12:37]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc891/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2014/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -525,25 +520,26 @@ KGTN2020011001.jpg
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1959/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2003/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1959/">[GGH6.X] Windows環境向け専用クライアントには、どのような種類のクライアントがあるのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc2003/">[GGH5.X] APSログに The initial latency quality... と書かれた行があるが、これはどんな情報なのか？</a></h4>
                             <p class="author-category">
                             
                             日付 2020-01-24
                             </p>
                             <p class="intro">*技術ノート
 2020/01/24*
-[番号] 技術ノート KGTN 2019120501
-[現象] [GGH6.X] Windows環境向け専用クライアントには、どのような種類のクライアントがあるのか？
-[説明] Windows環境向けのクライアントには、シングルユーザー版とオールユーザー版の２種類があります。シングルユーザー版は、管理者権限の有無に関係なくインストール可能で、そのユーザーのみで利用できるクライアントがインストールされます。オールユーザー版は、従来Windowsクライアントと呼ばれたもので、管理者権限を持つユーザーがインストールすることで、すべてのユーザーで利用できるクライアントがインストールされます。
-ファイル KGTN2019120501.pdf [(36.9 KB)] [kitasp 技術センター, 2020/01/24 12:50]</p>
+[番号] 技術ノート KGTN 2019112705
+[現象] [GGH5.X] APSログに&quot;The initial latency quality&hellip;&rdquo; と書かれた行があるが、これはどんな情報なのか？
+[説明] この情報は、クライアント（端末）とサーバー間のネットワーク品質を示しています。記録は aps (??) Session ID ??: The initial latency quality for client # is という形式で、品質名称とネットワークの遅延時間は次の通りです。
+ 品質名称 遅延時間 Poor 120ms～ Fair 50ms～120ms Good 20ms～50ms Excellent 20ms以下
+ ファイル KGTN2019112705.pdf [(45.2 KB)] [kitasp 技術センター, 2020/01/24 12:42]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1959/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2003/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

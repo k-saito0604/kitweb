@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc180/">
+                                      <a href="/posts/new_md/doc1016/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc180/">[GGW3.2.1/GGH4.X] 新規に作成したアカウントでアプリケーションを起動すると文字化けが発生する．コンソールでログオンすると，それ以降アプリケーションの文字化けが解消する．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1016/">[GGH4.0] クライアント上の特定のパスをGG上のクライアントドライブとして割り当てたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,18 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc180/"><i class="far fa-calendar"></i> 2012-01-31</a>
+                                            <a href="/posts/new_md/doc1016/"><i class="far fa-calendar"></i> 2012-06-18</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/31*
-[番号] 技術ノート KGTN 2012013101
-[現象] [GGW3.2.1/GGH4.X] 新規に作成したアカウントでアプリケーションを起動すると文字化けが発生する．コンソールでログオンすると，それ以降アプリケーションの文字化けが解消する．
-[説明] GGにはデスクトップという概念がありませんので，新規に作成したアカウントでGGにログオンした場合，デスクトップに関連する情報 （レジストリ・フォルダ・ファイルなど） が作成されません．アプリケーションがデスクトップに関連する情報を利用するような仕様で作成されている場合，それらが存在しないため文字化けが発生します （注：アプリケーションによってはエラーダイアログの表示等もあります） ．コンソールでログオンすると，その時にデスクトップに関連する情報が作成されるため，それ以降GGでログオンすると文字化けが解消します．
-技術的な背景は上記の通りで，対応としては 1) コンソールで一度ログオンする （または構成済みユーザプロファイルを使用する） ， 2) アプリケーションが参照する情報 （レジストリ・フォルダ・ファイルなど） を突き止め，アカウントにそれらの情報を登録 （作成） する， 3) アプリケーションを修正しデスクトップに関連する情報を利用しないようにする， などが考えられます．
-ファイル KGTN2012013101.pdf [(55.8 KB)] [kitasp 技術センター, 2014/11/09 15:51]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc180/" class="btn btn-template-main">続きを読む</a>
+2012/06/18*
+[番号] 技術ノート KGTN 2012061802
+[現象] [GGH4.0] クライアント上の特定のパスをGG上のクライアントドライブとして割り当てたい．
+[説明] クライアント上の特定のパスをGG上のクライアントドライブとして割り当てたいという気持ちは分らないでもありませんが，しかし運用レベルで考えれば 「GGにログオンする全てのクライアントPCについて，必ず特定のパス （より詳しく言えば同じ役割を持つパス） が存在すること」 が保証されませんので，そのような機能を製品として実装することは困難です．
+ファイル KGTN2012061802.pdf [(49.2 KB)] [kitasp 技術センター, 2012/06/18 12:11]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1016/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -361,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1117/">
+                                      <a href="/posts/new_md/doc1017/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -369,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1117/">[APP] ログオンするユーザによってアプリケーション （の表示） が文字化けする．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1017/">[GGW3.2.1] GGW3.2.1 の今後のサポートについて知りたい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -382,17 +381,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1117/"><i class="far fa-calendar"></i> 2012-01-30</a>
+                                            <a href="/posts/new_md/doc1017/"><i class="far fa-calendar"></i> 2012-06-18</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/30*
-[番号] 技術ノート KGTN 2012013002
-[現象] [APP] ログオンするユーザによってアプリケーション （の表示） が文字化けする．
-[説明] これまでの経験では，アプリケーション中でロケール設定が行われていないと，このような現象が発生します． アプリケーション中でロケール設定 setlocale(LC_ALL, &ldquo;Japanese&rdquo;);　等を行って下さい．
-ファイル KGTN2012013002.pdf [(46.7 KB)] [kitasp 技術センター, 2012/01/30 10:16]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1117/" class="btn btn-template-main">続きを読む</a>
+2012/06/18*
+[番号] 技術ノート KGTN 2012061801
+[現象] [GGW3.2.1] GGW3.2.1 の今後のサポートについて知りたい．
+[説明] GGW3.2.1 は，現時点では Mainstream Maintenance Phase (20-Jun-07〜) にありますが，近日中にExtended Maintenance Phase へ移行の予定です．このようなことから， 「新しいパッチはリリースされない」 と非公式な連絡が入っております．
+ファイル KGTN2012061801.pdf [(51.1 KB)] [kitasp 技術センター, 2012/06/18 09:05]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1017/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -402,7 +401,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2337/">
+                                      <a href="/posts/new_md/doc1018/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -410,7 +409,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2337/">[GGW3.2.1/GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc1018/">[VM/AD] Active Directory サーバ （ドメインコントローラー） を仮想環境に配置すると危険だと聞いたが本当か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -423,18 +422,19 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2337/"><i class="far fa-calendar"></i> 2012-01-30</a>
+                                            <a href="/posts/new_md/doc1018/"><i class="far fa-calendar"></i> 2012-06-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/30*
-[番号] 技術ノート KGTN 2012013001
-[現象] [GGW3.2.1/GGH4.X-5.X] ActiveXクライアントで inbrowserprocess = false, autoclosebrowser = true にしているが，ブラウザ （IE） が閉じない．
-[説明] ブラウザを 「管理者として実行」 するか，またはウエッブサーバーのURLを信頼済みサイト （インターネットオプション → セキュリティ → 信頼済みサイト） として登録して下さい．
-補　足 GGH4.Xでは， logon.html に下記のコードを追加することでブラウザを閉じることも出来ます．なお，将来のIE （IE11の後継ブラウザ） では，その仕様次第ですので機能しなくなる可能性があります．
-else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT&gt;'); } //--- 追加（ここから） --- if ((bAutoCloseBrowser == &quot;true&quot; )&amp;&amp;(bInBrowser == &quot;false&quot;)) { (window.open('','_self').opener=window).close(); } //--- 追加（ここまで） ---  ファイル KGTN2012013001.pdf [(87.4 KB)] [kitasp 技術センター, 2016/10/04 16:00]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2337/" class="btn btn-template-main">続きを読む</a>
+2012/06/15*
+[番号] 技術ノート KGTN 2012061501
+[現象] [VM/AD] Active Directory サーバ （ドメインコントローラー） を仮想環境に配置すると危険だと聞いたが本当か？
+[説明] Active Directory サーバ （ドメインコントローラー） は非常に重要なサーバで，仮想環境に配置する場合は多くの点に注意する必要があります．下記のマイクロソフト社のページに詳しい情報が掲載されております．
+仮想ホスト環境で Active Directory ドメイン コントローラーをホストする場合の考慮事項 http://support.microsoft.com/kb/888794/ja
+仮想化ドメイン コントローラーの展開に関する考慮事項 http://technet.microsoft.com/ja-jp/library/dd348449(v=ws.10).aspx
+ファイル KGTN2012061501.pdf [(61.7 KB)] [kitasp 技術センター, 2012/06/15 09:38]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1018/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -444,7 +444,7 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1116/">
+                                      <a href="/posts/new_md/doc1019/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -452,7 +452,7 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1116/">[GGW3.2.1] サービス GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1019/">[GGH4.0/Multi-monitor] GGH4.0の環境かつマルチモニタ有効 （-mm 1） で，色深度が32ビットのプライマリモニタから，色深度が16ビットのセカンダリモニタへアプリケーション （のウインドウ） を移動すると画面が乱れる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -465,18 +465,17 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1116/"><i class="far fa-calendar"></i> 2012-01-30</a>
+                                            <a href="/posts/new_md/doc1019/"><i class="far fa-calendar"></i> 2012-06-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/30*
-[番号] 技術ノート KGTN 2012013003
-[現象] [GGW3.2.1] サービス GO-Global Application Publishing Service が正常に停止しないことがある．
-[説明] アプリケーションの動作と絡んで，メモリが解放されない等の理由でサービス GO-Global Application Publishing Service が正常に停止しないことがあります．これは既知の問題で，サーバを再起動することで対応をお願いします．GGH4.0については，アーキテクチャの変更等もあり，現時点ではこのような報告はありません．
-補　足 利用中のセッションを全て強制終了させたい場合は，エンタープライズオプションの GMCheckRaw の利用をご検討下さい．個別セッション （ユーザID または セッションIDを指定） の強制終了，全セッションの強制終了，セッション一覧の取得等が可能です．
-ファイル KGTN2012013003.pdf [(63.9 KB)] [kitasp 技術センター, 2012/01/30 11:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1116/" class="btn btn-template-main">続きを読む</a>
+2012/06/14*
+[番号] 技術ノート KGTN 2012061401
+[現象] [GGH4.0/Multi-monitor] GGH4.0の環境かつマルチモニタ有効 （-mm 1） で，色深度が32ビットのプライマリモニタから，色深度が16ビットのセカンダリモニタへアプリケーション （のウインドウ） を移動すると画面が乱れる．
+[説明] プライマリモニタの色深度が32ビットですので，アプリケーションはその環境に合わせた動作を行います．このアプリケーション （のウインドウ） を色深度が16ビットのセカンダリモニタへ移動した場合，環境が異なりますので画面が乱れるという現象が発生します．対応策としては，
+ プライマリモニタとセカンダリモニタの色深度を合わせる， 2) GGクライアントの画像圧縮機能を有効にする （Windowsクライアントの ?c オプションを指定，色深度が自動的に下がります） の２つが考えられます．  ファイル KGTN2012061401.pdf [(62 KB)] [kitasp 技術センター, 2012/06/14 09:58]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1019/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -486,7 +485,7 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1115/">
+                                      <a href="/posts/new_md/doc2678/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -494,7 +493,7 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1115/">[iPad/Android] iPad Client およびAndroid Client のオートズーム機能を有効にしているが，コンテキストメニューがズームされない時がある．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2678/">[GGH4.X-5.X] １つのクライアントから，複数のGGサーバへ同じアカウントで同時にログオン可能か？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -507,18 +506,17 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1115/"><i class="far fa-calendar"></i> 2012-01-30</a>
+                                            <a href="/posts/new_md/doc2678/"><i class="far fa-calendar"></i> 2012-06-12</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/30*
-[番号] 技術ノート KGTN 2012012701
-[現象] [iPad/Android] iPad Client およびAndroid Client のオートズーム機能を有効にしているが，コンテキストメニューがズームされない時がある．
-[説明] 仕様上は （ダイアログと同様に） コンテキストメニューも自動的にズームされるはずですが，しかし状況によってはズームされないことがあるようです．アプリケーションが 「GraphOn社が想定していない方法」 でコンテキストメニューを表示している可能性があり，現在GraphOn社で調査中です．新たな情報が入り次第，この技術ノートに反映します．
-補　足 以下のように，GraphOn社からほぼ正反対の情報が届いており，それらを整理するように依頼しております．
-ファイル KGTN2012012701.pdf [(66.7 KB)] [kitasp 技術センター, 2012/01/30 13:48]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1115/" class="btn btn-template-main">続きを読む</a>
+2012/06/12*
+[番号] 技術ノート KGTN 2012061202
+[現象] [GGH4.X-5.X] １つのクライアントから，複数のGGサーバへ同じアカウントで同時にログオン可能か？
+[説明] １台のクライアントPCから，同時に・同じアカウントで・複数のGGサーバへログオンすることが可能です．プロファイルの制御については， Windows （Active Directory） の動作に従います．なお，マイ ドキュメントを使用しない場合 （またはマイドキュメントの内容を破棄して構わない場合） は，移動ユーザープロファイルでなく，固定ユーザープロファイルの利用もご検討下さい．プロファイルの書き戻し等で発生する問題を回避することが可能で，これを利用して同時数千ユーザのシステムを運用している大規模案件もあります．
+ファイル KGTN2012061202.pdf [(60.6 KB)] [kitasp 技術センター, 2015/12/16 11:51]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2678/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -528,7 +526,7 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1119/">
+                                      <a href="/posts/new_md/doc2646/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -536,7 +534,7 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1119/">[GGH4.0] GGH4.0 をアンインストールする場合，コントロールパネルから 「削除」 を実行するだけで良いのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc2646/">[GGH4.X-6.X] ロードバランサ （ハードウエア） がある環境で，セッション再接続時に同じGGサーバへ接続させる方法は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -549,18 +547,17 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1119/"><i class="far fa-calendar"></i> 2012-01-27</a>
+                                            <a href="/posts/new_md/doc2646/"><i class="far fa-calendar"></i> 2012-06-12</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/27*
-[番号] 技術ノート KGTN 2012012704
-[現象] [GGH4.0] GGH4.0 をアンインストールする場合，コントロールパネルから 「削除」 を実行するだけで良いのか？
-[説明] Windows の処理の関係で 「削除」 を実行するだけはGGのファイル全てを削除することは出来ません （注：現時点での制限事項になります） ．確実に削除するために，以下の手順を行って下さい．
-コントロールパネルを使い GO-Global Host を削除する， 下記バッチ ggh4_clean.bat を実行する． 再起動する． 下記バッチ ggh4_clean.bat を実行する．
-[ggh4_clean.bat] cd C:¥WINDOWS¥system32 del . rename QtCore4.dll QtCore4.dll rename QtGui4.dll QtGui4.dll rename QtNetwork4.dll QtNetwork4.dll rename cpls.dll cpls.dll rename cs4s3.dll cs4s3.dll rename ggscards.dll ggscards.dll rename GoPrintMon.dll GoPrintMon.dll rename pbr4u.dll pbr4u.dll rename pmu.dll pmu.dll rename redirector.dll redirector.dll rename snds.dll snds.dll rename VBM_UserMode.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1119/" class="btn btn-template-main">続きを読む</a>
+2012/06/12*
+[番号] 技術ノート KGTN 2012061203
+[現象] [GGH4.X-6.X] ロードバランサ （ハードウエア） がある環境で，セッション再接続時に同じGGサーバへ接続させる方法は？
+[説明] ロードバランサ （ハードウエア） の機能に依存しますので事例になりますが， F5 Networks 社の BIG IP がある環境でパーシステンス機能 （接続維持機能，ソースIPアドレス） を利用して，設定した時間内での再接続をGGサーバへ振り分けた案件があります．なお，GGのクライアントはブラウザ （IE等） のセッションとは別のセッションを張りますので，この点にご注意下さい．
+ファイル KGTN2012061203.pdf [(39.8 KB)] [kitasp 技術センター, 2019/09/13 14:24]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2646/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -570,7 +567,7 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1120/">
+                                      <a href="/posts/new_md/doc1020/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -578,7 +575,7 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1120/">[GGH4.0] エンタープライズオプション （GMCheckRaw） は，GGH4.0でも動作するのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1020/">[GGW3.2.1/GGH4.0] GGサーバにログオンしたところ，環境変数 CLIENTCOMPUTERNAME の値が他のクライアントPCのコンピュータ名になっていた．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -591,17 +588,17 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1120/"><i class="far fa-calendar"></i> 2012-01-27</a>
+                                            <a href="/posts/new_md/doc1020/"><i class="far fa-calendar"></i> 2012-06-12</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/27*
-[番号] 技術ノート KGTN 2012012703
-[現象] [GGH4.0] エンタープライズオプション （GMCheckRaw） は，GGH4.0でも動作するのか？
-[説明] GGW3.2.1用のエンタープライズオプション （GMCheckRaw） は， GGH4.0 の環境では動作しません．GGH4.0用エンタープライズオプション （GMCheckRaw） を別途ご用意しております．
-ファイル KGTN2012012703.pdf [(45.2 KB)] [kitasp 技術センター, 2012/01/27 10:17]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1120/" class="btn btn-template-main">続きを読む</a>
+2012/06/12*
+[番号] 技術ノート KGTN 2012061204
+[現象] [GGW3.2.1/GGH4.0] GGサーバにログオンしたところ，環境変数 CLIENTCOMPUTERNAME の値が他のクライアントPCのコンピュータ名になっていた．
+[説明] 他のクライアントPCでログオンしたセッションがGGサーバに残っていて （サスペンド状態） ，この状態で同じアカウントでログオンしたためセッション再接続したものと推測されます．同一アカウントでの利用を止めるか，またはクラスタマネージャの Shared account にそのアカウント名を登録して下さい （このアカウントに関して，セッション再接続機能が無効になります） ．
+ファイル KGTN2012061204.pdf [(56.1 KB)] [kitasp 技術センター, 2012/06/12 11:10]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1020/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -611,7 +608,7 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1118/">
+                                      <a href="/posts/new_md/doc1021/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -619,7 +616,7 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1118/">[VM] Oracle VM VirtualBox でGGサーバを運用しているが，リモートデスクトップで接続出来るもののログオンが完了せずハングアップ状態になった．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1021/">[GGH4.0] GGH4.0にリレーサーバ機能はあるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -632,17 +629,17 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1118/"><i class="far fa-calendar"></i> 2012-01-27</a>
+                                            <a href="/posts/new_md/doc1021/"><i class="far fa-calendar"></i> 2012-06-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/27*
-[番号] 技術ノート KGTN 2012012705
-[現象] [VM] Oracle VM VirtualBox でGGサーバを運用しているが，リモートデスクトップで接続出来るもののログオンが完了せずハングアップ状態になった．
-[説明] リモートデスクトップでの接続ですので，この現象はGGとは関係ありません． Oracle VM VirtualBox マネージャ で確認してもハングアップ状態の場合は， 「仮想マシンの電源オフ」 を行って，改めてサーバを起動して下さい．
-ファイル KGTN2012012705.pdf [(51.4 KB)] [kitasp 技術センター, 2012/01/27 11:04]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1118/" class="btn btn-template-main">続きを読む</a>
+2012/06/11*
+[番号] 技術ノート KGTN 2012061201
+[現象] [GGH4.0] GGH4.0にリレーサーバ機能はあるのか？
+[説明] GGW3.2.1と同様にGGH4.0にもリレーサーバ機能があります．リレーサーバ機能は，TCP/IPレベルではなくプロトコルレベルでセッションの制御を行うため， 「潜在的には」 柔軟な振り分けが可能等のメリットがあります．視点を変えると，リレーサーバ自体のCPUが高負荷となり， 「実質的に」 収容出来るサーバが3台程度，ユーザ数で100ユーザ以下というデメリットもあります．また，障害が発生した場合，リレーサーバとGGサーバ（従属アプリケーションサーバ） のログを付き合わせて調査せねばならず，保守コストも高くなりがちです．これよりもサーバ台数やユーザ数が多い案件では，ハードウエアロードバランサや弊社エンタープライズオプション（あるいは両方の併用） をお考え下さい．
+ファイル KGTN2012061201.pdf [(60.4 KB)] [kitasp 技術センター, 2012/06/12 06:19]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1021/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -652,7 +649,7 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2338/">
+                                      <a href="/posts/new_md/doc1022/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -660,7 +657,7 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2338/">[GGW3.2.1/GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc1022/">[GGH4.0/Multi-monitor] GGH4.0の環境でマルチモニタ有効 （-mm 1） でGGサーバに接続し，プライマリモニタとセカンダリモニタのそれぞれでアプリケーションを表示した状態でセッションをサスペンドし，プライマリモニタしか持たないクライアントで再接続すると，PWを移動すると画面が崩れる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -673,17 +670,18 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2338/"><i class="far fa-calendar"></i> 2012-01-26</a>
+                                            <a href="/posts/new_md/doc1022/"><i class="far fa-calendar"></i> 2012-06-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/26*
-[番号] 技術ノート KGTN 2012012601
-[現象] [GGW3.2.1/GGH4.X-5.X] GGW3.2.1 と GGH4.X-5.X は１台のコンピュータに共存できるのか？
-[説明] サーバ側については異なるバージョンのGGをインストールすることは出来ませんが，クライアント側については GGW3.2.1 と GGH4.X-5.X のクライアントを共存する形でインストールすることが出来ます．なお，ここで言う共存とは， GGW3.2.1 のクライアントで GGW3.2.1 のサーバに接続し， GGH4.X-5.X のクライアントで GGH4.X-5.X のサーバに接続することを意味します （注：異なるバージョンのサーバとクライアントは接続出来ません） ．
-ファイル KGTN2012012601.pdf [(48.1 KB)] [kitasp 技術センター, 2016/10/04 15:43]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2338/" class="btn btn-template-main">続きを読む</a>
+2012/06/08*
+[番号] 技術ノート KGTN 2012060702
+[現象] [GGH4.0/Multi-monitor] GGH4.0の環境でマルチモニタ有効 （-mm 1） でGGサーバに接続し，プライマリモニタとセカンダリモニタのそれぞれでアプリケーションを表示した状態でセッションをサスペンドし，プライマリモニタしか持たないクライアントで再接続すると，PWを移動すると画面が崩れる．
+[説明] この現象は弊社でも確認しており，オプション ?cw 0 （描画の最適化機能を無効） を設定しても状況は変わりません．このような再接続方法が仕様の範囲内かどうかも含め，GraphOn社に問い合せております．何らかの情報が届き次第，この技術ノートに反映します．
+補　足 GraphOn社は如何なる情報も公開しておりませんが，WS2008-SP2の環境に於いては１つのセッションで最大4台のモニタに分けて表示出来ると考えられます．下記 （弊社の試験環境） の 「画面の設定」 画面は，１台目のモニタの解像度が1024x768，2台目のモニタの解像度が1680x1050，3台目と4台目のモニタが存在しない例です （色深度の差異の影響については未調査） ．
+ファイル KGTN2012060702.pdf [(78.1 KB)] [kitasp 技術センター, 2012/06/08 10:33]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1022/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -693,7 +691,7 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1122/">
+                                      <a href="/posts/new_md/doc1023/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -701,7 +699,7 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1122/">[GGH4.0] GGW3.2.1の環境でサービス GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1023/">[iPad Client] iPad Client は iOS5.1 で正常に起動しなかったことがあるが，現在はどうなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -714,18 +712,17 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1122/"><i class="far fa-calendar"></i> 2012-01-25</a>
+                                            <a href="/posts/new_md/doc1023/"><i class="far fa-calendar"></i> 2012-06-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2012/01/25*
-[番号] 技術ノート KGTN 2012012501
-[現象] [GGH4.0] GGW3.2.1の環境でサービス GO-Global Application Publishing Service をスクリプトで開始/停止を行っていたが，GGH4.0ではそのスクリプトが動作しない．
-[説明] サービスの 「表示名」 は GGW3.2.1 も GGH4.0 も GO-Global Application Publishing Service ですが， 「サービス名」 については GGH4.0 では GGAPS に変更されています．従って，スクリプトでは，以下のように GGAPS を指定して下さい （このサンプルはAPSを停止するスクリプトです） ．
-補　足 APSをスクリプトでなくコマンドで停止する場合は，以下のようになります．
-ファイル KGTN2012012501.pdf [(61.8 KB)] [kitasp 技術センター, 2012/01/25 12:30]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1122/" class="btn btn-template-main">続きを読む</a>
+2012/06/04*
+[番号] 技術ノート KGTN 2012060401
+[現象] [iPad Client] iPad Client は iOS5.1 で正常に起動しなかったことがあるが，現在はどうなのか？
+[説明] 2012年6月1日現在，GGの iPad Client および iPhone Client は iOS5.1.1 の環境で正常に起動します．
+ファイル KGTN2012060401.pdf [(42.9 KB)] [kitasp 技術センター, 2012/06/04 10:58]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1023/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -795,7 +792,7 @@ else if (browser.msie) { ... if (browser.msie7up) { document.write( '&lt;/OBJECT
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

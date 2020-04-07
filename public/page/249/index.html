@@ -409,26 +409,28 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1815/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc2057/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1815/">GGのクライアントが動作するシンクライアントの機種は？</a></h4>
+                            <h4><a href="/posts/new_md/doc2057/">[GGW3.2.1/GGH4.X-5.X] クライアント印刷機能の処理の流れを知りたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-03-25
+                            日付 2010-08-18
                             </p>
                             <p class="intro">*技術ノート
-2010/03/25*
-[番号] 技術ノート KGTN 2010032505
-[現象] GGのクライアントが動作するシンクライアントの機種は？
-[説明] Windows XP またはWindows XP Embedded を採用しているシンクライアントであれば，特殊な仕様でない限りGGのクライアントが動作します．但し，シンクライアントの機種の中には，CPUの性能がかなり低かったり，メモリの量が少なかったりするのもがありますので，採用に当たっては実機での事前検証を必ず行うようにして下さい．
-Windows CE についてもサポートしておりますが，製品によってインストールされているコンポーネントが異なりますので，詳細については代理店 （または弊社営業担当） までお問い合わせ下さい．
-ファイル KGTN2010032505.pdf [(52.2 KB)] [kitasp 技術センター, 2010/03/25 11:06]</p>
+2010/08/18*
+[番号] 技術ノート KGTN 2010081803
+[現象] [GGW3.2.1/GGH4.X-5.X] クライアント印刷機能の処理の流れを知りたい．
+[説明] クライアント印刷機能では，サーバ側のプリンタ （ドライバ） に対して印刷が行われ，その中間データがGGのセッションを通してクライアント側のプリンタ （プリンタポート） へ転送されます．中間データを受け取ったクライアント側のプリンタは，その内容を物理的なプリンタへ出力します．中間データの形式は， Windows Printer Driver (WPD) の場合はプリンタのスプールファイル形式， Universal Printer Driver (UPD) の場合はPDFファイル形式となります．UPD で物理的なプリンタで出力する場合， GGW3.2.1 では Adobe Reader を利用して印刷を行い， GGH4.X-5.X ではGGクライアントに含まれる印刷エンジン pdfprint を利用して印刷を行います．
+補　足 WPD を使用する場合は，サーバ側でも物理的なプリンタのドライバを使用するため，クライアント側と同様な印刷ダイアログの詳細画面が表示されます． UPD を使用する場合は，サーバ側ではPDF生成ソフトウエアの印刷ダイアログの （簡易な） 詳細画面が表示されます．このため，印刷ダイアログの詳細画面で細かな設定を行いたい場合は，先ずプリンタ Preview PDF へ印刷し，次にクライアント側に表示されたPDFファイルを Adobe Reader の印刷機能を使用して印刷してください．
+ファイル KGTN2010081803.pdf [(114 KB)] [kitasp 技術センター, 2017/06/28 15:05]
+KGTN2010081803.jpg
+表示 [(17.7 KB)] [kitasp 技術センター, 2017/06/28 15:05]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1815/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc2057/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -447,25 +449,27 @@ Windows CE についてもサポートしておりますが，製品によって
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1814/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc361/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1814/">GGのクライアントが動作するスマートフォン等の環境は？</a></h4>
+                            <h4><a href="/posts/new_md/doc361/">[Windows] Windows を３回インストールしたが，どのイメージを採用すべきか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-03-25
+                            日付 2010-08-18
                             </p>
                             <p class="intro">*技術ノート
-2010/03/25*
-[番号] 技術ノート KGTN 2010032506
-[現象] GGのクライアントが動作するスマートフォン等の環境は？
-[説明] Pocket PC 2003 および Windows Mobile 5 をサポートしております．次メジャーバージョンでは，これらに加え iPhone をサポートする予定です．Android のサポートについては，現時点では未定です．
-ファイル KGTN2010032506.pdf [(48.6 KB)] [kitasp 技術センター, 2010/03/25 11:20]</p>
+2010/08/18*
+[番号] 技術ノート KGTN 2010081601
+[現象] [Windows] Windows を３回インストールしたが，どのイメージを採用すべきか？
+[説明] 基本的な考え方は， 「明らかな異常」 や 「何となく気になる」 事象が発生したイメージを，本番候補のイメージから除外し，残ったものを本番候補のイメージとします． 「明らかな異常」 とは，イベントログにエラーや警告が多い，アプリケーションが異常終了する等，明確に異常な状態が発生する場合です． 「何となく気になる」 とはアプリケーションの起動終了が遅い （気がする） ，再起動時に時間がかかることがある等，明確ではないものの正常ではない状況が （たまに） 発生する場合です．
+本番候補のイメージが決まったら，そのひとつを選び （例えば，新しいイメージから順に選択） ，実運用に近い環境で試験を行います．この試験で特に問題が発生しなければ，これを本番イメージとします． 「明らかな異常」 や 「何となく気になる」 事象が発生した場合は，他の本番候補のイメージで試験を行います．そして問題が発生しなければ，それを本番イメージとします．もし，それでも 「明らかな異常」 や 「何となく気になる」 事象が発生した場合は，
+ Windows インストール直後のイメージ Windows Update 適用直後のイメージ アプリケーションのインストール直後のイメージ GGのインストール直後のイメージ アンチウイルスソフトのインストール直後のイメージ  と言った各ステップでのイメージを一つずつ戻して試験を行い，どの時点から異常になるのかを調べます．例えば， 「5のイメージでは異常だが4のイメージでは正常」 となった場合は，アンチウイルスソフトに絡んで発生する問題と考えられますので，アンチウイルスソフトの設定等を確認します．
+ファイル KGTN2010081601.pdf [(62.8 KB)] [kitasp 技術センター, 2014/02/07 15:45]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1814/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc361/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -484,26 +488,25 @@ Windows CE についてもサポートしておりますが，製品によって
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1818/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1658/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1818/">GGのバージョンアップで 「上書きインストール」 したが，誤ってインストール先のフォルダを変更した．何か問題はあるか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1658/">SkyPDF for GO-Global （GG-SkyPDF） がPDFビュアーを起動する時のコマンドラインを確認したい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-03-25
+                            日付 2010-08-18
                             </p>
                             <p class="intro">*技術ノート
-2010/03/25*
-[番号] 技術ノート KGTN 2010032502
-[現象] GGのバージョンアップで 「上書きインストール」 したが，誤ってインストール先のフォルダを変更した．何か問題はあるか？
-[説明] 「上書きインストール」 の前提は，バージョンアップ前とバージョンアップ後のインストール先フォルダが同じでなければなりません．異なるフォルダが指定された場合は，環境変数やレジストリの値に不整合が発生し，GGが正常に起動しないか，または正常に動作しないことがあります．このような状況になった場合は，以下の手順で修復作業を行って下さい．
-バージョンアップ前のインストール先フォルダの中にあるライセンスファイル license.lic をデスクトップにコピーする． コントロールパネルの 「プログラムの追加と削除」 で &ldquo;GO-Global Server&rdquo; を削除する． サーバを再起動する． 新バージョンのGGをインストールする （再起動はしない） ． デスクトップにコピーしたライセンスファイル license.lic をバージョンアップ後のインストール先フォルダの中の所定のフォルダへコピーする． サーバを再起動する． クラスタマネージャでアプリケーションを登録する． クラスタマネージャでGGサーバの各パラメタを設定する．
-ファイル KGTN2010032502.pdf [(59.8 KB)] [kitasp 技術センター, 2010/03/25 09:53]</p>
+2010/08/18*
+[番号] 技術ノート KGTN 2010081806
+[現象] SkyPDF for GO-Global （GG-SkyPDF） がPDFビュアーを起動する時のコマンドラインを確認したい．
+[説明] SkyPDF for GO-Global （GG-SkyPDF） はPDFビュアーを起動する時，そのコマンドライン （文字列） をOutputDebugString関数で出力しています．マイクロソフト社が提供するツール DebugView を起動することで，その情報を確認することが出来ます．fullcommand = &ldquo;&hellip;&rdquo; と記録される行が，コマンドラインの情報です．
+ファイル KGTN2010081806.pdf [(227 KB)] [kitasp 技術センター, 2010/08/18 14:23]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1818/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1658/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -522,26 +525,25 @@ Windows CE についてもサポートしておりますが，製品によって
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1812/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1660/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1812/">GGは仮想USBをサポートしているのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc1660/">SkyPDF for GO-Global （GG-SkyPDF） の処理の流れを知りたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-03-25
+                            日付 2010-08-18
                             </p>
                             <p class="intro">*技術ノート
-2010/03/25*
-[番号] 技術ノート KGTN 2010032507
-[現象] GGは仮想USBをサポートしているのか？
-[説明] 仮想USBの機能はサポートしておりません．しかし，GraphOn社では，下記の製品をサードパーティ製品として紹介しております．
-USB and COM Port Solutions Company : Intellidriver Inc. Product : USB@nywhere and COM@nywhere URL : http://www.intellidriver.com Description : Allows users to share virtual USB and com devices between many users over the network. Platform : Windows 2000, XP, 2003
-ファイル KGTN2010032507.pdf [(47.6 KB)] [kitasp 技術センター, 2010/03/25 11:39]</p>
+2010/08/18*
+[番号] 技術ノート KGTN 2010081804
+[現象] SkyPDF for GO-Global （GG-SkyPDF） の処理の流れを知りたい．
+[説明] クライアント印刷機能では，サーバ側のSkyPDF （ドライバ） に対して印刷が行われ，その中間データがGGのセッションを通してクライアント側の SkyPDF （プリンタポート） へ転送されます．中間データを受け取ったクライアント側の SkyPDF はその内容をPDFファイルに出力し，さらにPDFビュアー （Acrobat Reader） を起動し，PDFファイルを物理的なプリンタへ出力します．
+ファイル KGTN2010081804.pdf [(118 KB)] [kitasp 技術センター, 2010/08/18 13:02]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1812/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1660/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

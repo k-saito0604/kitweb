@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1821/">
+                                      <a href="/posts/new_md/doc1661/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1821/">クライアントプリンタを Universal Driver （ユニバーサルプリンタドライバ） から Native Driver （通常のプリンタドライバ） に戻したい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1661/">環境変数 CLIENTCOMPUTERADDRESS の値が ::1 になる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,20 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1821/"><i class="far fa-calendar"></i> 2010-03-24</a>
+                                            <a href="/posts/new_md/doc1661/"><i class="far fa-calendar"></i> 2010-08-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/03/24*
-[番号] 技術ノート KGTN 2010032404
-[現象] クライアントプリンタを Universal Driver （ユニバーサルプリンタドライバ） から Native Driver （通常のプリンタドライバ） に戻したい．
-[説明] サーバ側で以下の設定を行います．
-クラスタマネージャを開きます． Tools → Server Options → Client Access を開きます． Printers にチェックを入れます （通常はチェックが入っています） ． Driver sources の中の Windows folder と Clients にチェックを入れます． 上記4以外のチェック （Universal Driver, Driver server, Custom） をすべて外します． &ldquo;OK&rdquo; ボタンをクリックします．
-クライアント側で以下の設定を行います．
-エクスプローラーでC:¥Documents and Settings¥Administrator¥Local Settings¥Application Data を開きます．Administrator 以外のユーザの場合はC:¥Documents and Settings¥¥Local Settings¥Application Data を開いて下さい． ファイル print.ini を削除します． 印刷に使用するプリンタを通常に使うプリンタ （つまりデフォルトプリンタ） に設定します． GGサーバにログオンし，印刷が正常に行われることを確認します．
-ファイル KGTN2010032403.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1821/" class="btn btn-template-main">続きを読む</a>
+2010/08/17*
+[番号] 技術ノート KGTN 2010081801
+[現象] 環境変数 CLIENTCOMPUTERADDRESS の値が ::1 になる．
+[説明] クライアントが IPv4 と IPv6 の両方のアドレスを持つ時，環境変数 CLIENTCOMPUTERADDRESS の値が ::1 になります．これは現時点での制限事項 （既知の問題） で，対症療法として &ldquo;Microsoft TCP/IP version 6&rdquo; を削除することで，この問題を回避することが出来ます．
+ファイル KGTN2010081801.pdf [(160 KB)] [kitasp 技術センター, 2010/08/18 08:27]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1661/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -363,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1822/">
+                                      <a href="/posts/new_md/doc1664/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -371,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1822/">サーバを再起動した直後に 「LMGRD は、エラーが発生したため閉じられました。」 というダイアログ表示された．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1664/">SkyPDF for GO-Global （GG-SkyPDF） がサポートするPDFビュアーは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -384,17 +381,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1822/"><i class="far fa-calendar"></i> 2010-03-24</a>
+                                            <a href="/posts/new_md/doc1664/"><i class="far fa-calendar"></i> 2010-08-11</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/03/24*
-[番号] 技術ノート KGTN 2010032402
-[現象] サーバを再起動した直後に 「LMGRD は、エラーが発生したため閉じられました。」 というダイアログ表示された．
-[説明] このメッセージは，主にライセンスファイル licenselic が無い場合に表示されます．但し，このダイアログは問題発生時には表示されず，次に再起動した直後に表示されますので，正常にGGのログオンが出来る状態であれば無視して頂いて結構です．そうでない場合は，ライセンスファイル licenselic がインストールされているかどうか確認して下さい．もし問題が見つからない場合は，ログファイル license.log を採取してお送り下さい．
-ファイル KGTN2010032402.pdf [(122 KB)] [kitasp 技術センター, 2010/03/24 14:30]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1822/" class="btn btn-template-main">続きを読む</a>
+2010/08/11*
+[番号] 技術ノート KGTN 2010081101
+[現象] SkyPDF for GO-Global （GG-SkyPDF） がサポートするPDFビュアーは？
+[説明] SkyPDF for GO-Global が生成するPDFファイルは，基本的にはPDFビュアーを選びません．しかし，PDFビュアーを起動する時のパラメタは，製品やバージョンによって異なりますので， SkyPDF for GO-Global の標準設定では Adobe Reader 9 または Adobe Reader 8 のみをサポートします．
+ファイル KGTN2010081101.pdf [(49.5 KB)] [kitasp 技術センター, 2010/08/11 13:19]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1664/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -404,7 +401,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1825/">
+                                      <a href="/posts/new_md/doc1665/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -412,7 +409,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1825/">クライアントプリンタ機能を利用しているが，クライアント側のプリンタxyzに問題がありPW （プログラムウインドウ） の初期化に失敗しているようだ．何をすべきか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1665/">Program Window の背景色をログオン時に設定したいが，レジストリのどこを変更すれば良いのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -425,19 +422,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1825/"><i class="far fa-calendar"></i> 2010-03-17</a>
+                                            <a href="/posts/new_md/doc1665/"><i class="far fa-calendar"></i> 2010-08-10</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/03/17*
-[番号] 技術ノート KGTN 2010031702
-[現象] クライアントプリンタ機能を利用しているが，クライアント側のプリンタxyzに問題がありPW （プログラムウインドウ） の初期化に失敗しているようだ．何をすべきか？
-[説明] クライアント側のプリンタxyzが構成されないように （クライアントプリンタとして初期化されないように） ，以下の作業を行って下さい．
-クライアント側のプリンタxyz以外のプリンタをデフォルトプリンタとして設定します． クライアント側のプリンタ情報 print.ini を削除します． （GGMInfo.EXEで削除） GGサーバへログオンし，正常にログオン出来ることを確認して下さい．
-この作業後は，クライアント側のプリンタxyzをデフォルトプリンタに設定し，かつその状態でGGサーバへログオンしない限り，正常にログオン出来るようになります．
-ファイル KGTN2010031702.pdf [(51.5 KB)] [kitasp 技術センター, 2010/03/17 13:27]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1825/" class="btn btn-template-main">続きを読む</a>
+2010/08/10*
+[番号] 技術ノート KGTN 2010081003
+[現象] Program Window の背景色をログオン時に設定したいが，レジストリのどこを変更すれば良いのか？
+[説明] 以下のレジストリ （キー） が Program Window の背景色を保持していますので，この値を変更して下さい．
+[HKEY_CURRENT_USER¥Software¥GraphOn¥Bridges¥1.0.0¥ProgramWindow¥Settings¥Standard] &ldquo;LV_ColorBackground&quot;=dword:00804000
+ファイル KGTN2010081003.pdf [(51.5 KB)] [kitasp 技術センター, 2010/08/10 12:25]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1665/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -447,7 +443,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1826/">
+                                      <a href="/posts/new_md/doc1667/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -455,7 +451,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1826/">始業時等で発生する同時ログオンは１サーバ当たり何ユーザくらい大丈夫なのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1667/">Windows Server のイメージは，GGサーバとDBサーバで共通にして良いか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -468,17 +464,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1826/"><i class="far fa-calendar"></i> 2010-03-17</a>
+                                            <a href="/posts/new_md/doc1667/"><i class="far fa-calendar"></i> 2010-08-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/03/17*
-[番号] 技術ノート KGTN 2010031701
-[現象] 始業時等で発生する同時ログオンは１サーバ当たり何ユーザくらい大丈夫なのか？
-[説明] 弊社および幾つかのユーザ様の負荷試験 （GO-Global for Windows 3.2.1系） では，30ユーザ以上の同時ログオンでも問題なく動作しております．同時ログオンで考えるべきポイントは，
- メモリに余裕があるか （スワップが頻発しないか） ， 2) CPUが過負荷ではないか （プロファイルのロードやログオンスクリプトの実行で負荷が過度に高くなっていないか） ， 3) ネットワーク環境に問題がないか （同時ログオン時に帯域不足やエラーが発生していないか） 等があります．これらは実際の運用環境に依存しますので，本番運用前に負荷試験等を行うようにして下さい．  ファイル KGTN2010031701.pdf [(56.5 KB)] [kitasp 技術センター, 2010/03/17 09:13]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1826/" class="btn btn-template-main">続きを読む</a>
+2010/08/09*
+[番号] 技術ノート KGTN 2010080903
+[現象] Windows Server のイメージは，GGサーバとDBサーバで共通にして良いか？
+[説明] GGサーバとDBサーバはその機能の差異により，プロセッサやメモリの割り当ての戦略が異なりますので，全く同じイメージ共通して使用することは出来ません．Windows Server 2003 では，以下のように異なります．
+[GGサーバ] プロセッサのスケジュール = 「プログラム」 のパフォーマンスを優先 システムメモリの割り当て = 「プログラム」 のパフォーマンスを優先
+[DBサーバ] プロセッサのスケジュール = 「バックグラウンド サービス」 のパフォーマンスを優先 システムメモリの割り当て = 「システム キャッシュ」 のパフォーマンスを優先
+その他，レジストリ中のパフォーマンスチューニング項目もGGサーバとDBサーバでは異なります．
+ファイル KGTN2010080903.pdf [(49.4 KB)] [kitasp 技術センター, 2010/08/09 10:44]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1667/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -488,7 +487,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1828/">
+                                      <a href="/posts/new_md/doc1666/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -496,7 +495,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1828/">アンチウイルスソフト ○○○ がインストールされたサーバで，特定のアプリケーションが動作しない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1666/">業務アプリでデータファイルを作成し，別のアプリケーションで開こうとすると 「使用中のファイル」 のダイアログが表示されることがある．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -509,17 +508,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1828/"><i class="far fa-calendar"></i> 2010-03-16</a>
+                                            <a href="/posts/new_md/doc1666/"><i class="far fa-calendar"></i> 2010-08-09</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/03/16*
-[番号] 技術ノート KGTN 2010031603
-[現象] アンチウイルスソフト ○○○ がインストールされたサーバで，特定のアプリケーションが動作しない．
-[説明] アンチウイルスソフトもGGもアプリケーションの挙動を監視しておりますので，アンチウイルスソフトの製品によっては，競合等により特定のアプリケーションが動作しない等の問題が発生する可能性もゼロではありません．さらに，アンチウイルスソフトは非常に高頻度でアップデートが行われるため，問題点を特定することは非常に困難です．このようなことから，GG環境で実績のあるアンチウイルスソフトを利用するのが，最善の策だと考えます．実績のあるアンチウイルスソフトの名称等については，代理店 （弊社営業） までお問い合わせ下さい．
-ファイル KGTN2010031603.pdf [(53.8 KB)] [kitasp 技術センター, 2010/03/16 10:40]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1828/" class="btn btn-template-main">続きを読む</a>
+2010/08/09*
+[番号] 技術ノート KGTN 2010072302
+[現象] 業務アプリでデータファイルを作成し，別のアプリケーションで開こうとすると 「使用中のファイル」 のダイアログが表示されることがある．
+[説明] 監査ソフトウエアやアンチウイルスソフトウエアを使用している場合，データファイルが作成された直後にそれらのソフトウエアがファイルをオープンしチェックを行いますので，その処理に時間がかかると別のアプリケーションがファイルを開こうとした時 「使用中のファイル」 のダイアログが表示されることがあります．対応は，1) もう一度別のアプリケーションでファイルを開き直すか， 2) 監査ソフトウエアやアンチウイルスソフトウエアの設定を変更し，データファイルをチェック対象から除外して下さい．
+ファイル KGTN2010072302.pdf [(52.1 KB)] [kitasp 技術センター, 2010/08/09 11:29]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1666/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -529,7 +528,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1827/">
+                                      <a href="/posts/new_md/doc1670/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -537,7 +536,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1827/">ファイアウォール機能を持つアンチウイルスソフトがインストールされたサーバで，GGをバージョンをアップしたところクライアントから接続出来なくなった．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1670/">Ver3.2系のクライアントドライブ機能で，クライアント側へのコピーで，警告メッセージ等が表示される場合はあるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -550,17 +549,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1827/"><i class="far fa-calendar"></i> 2010-03-16</a>
+                                            <a href="/posts/new_md/doc1670/"><i class="far fa-calendar"></i> 2010-08-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/03/16*
-[番号] 技術ノート KGTN 2010031602
-[現象] ファイアウォール機能を持つアンチウイルスソフトがインストールされたサーバで，GGをバージョンをアップしたところクライアントから接続出来なくなった．
-[説明] ファイアウォール機能を持つアンチウイルスソフトは， （一部例外があるかもしれませんが） インストール時に外部からの接続を許可するプログラム （サービス） を指定するようになっております．GGをバージョンアップした場合，プログラムが新しくなりますので 「許可したプログラム以外」 と判断され，外部からの接続が拒絶されることが考えられます．アンチウイルスソフトの設定を変更して，バージョンアップしたGGへの接続を許可するか，またはアンチウイルスソフトを一旦アンインストールして，さらに改めてインストールして下さい．
-ファイル KGTN2010031602.pdf [(49.6 KB)] [kitasp 技術センター, 2010/03/16 13:29]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1827/" class="btn btn-template-main">続きを読む</a>
+2010/08/08*
+[番号] 技術ノート KGTN 2010080902
+[現象] Ver3.2系のクライアントドライブ機能で，クライアント側へのコピーで，警告メッセージ等が表示される場合はあるのか？
+[説明] 3.2.1 Patch4 (4466) およびそれ以降では，ファイルの上書き時に 「ファイルの上書きの確認」 ダイアログが表示されますが，それ以前のVer3.2系および他の条件 （アクセス権限が無い等） では，警告メッセージ等は表示されません．
+備　考 アーキテクチャが変更されたVer4.0系のクライアントドライブ機能では，「ファイルの上書きの確認」 ダイアログ以外のメッセージも表示されます．
+ファイル KGTN2010080902.pdf [(50.6 KB)] [kitasp 技術センター, 2010/08/09 08:44]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1670/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -570,7 +570,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1830/">
+                                      <a href="/posts/new_md/doc1671/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -578,7 +578,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1830/">APSログに以下のエラーが記録され正常にログオンできない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1671/">Ver3.2系のクライアントドライブ機能で，書き込み権限の無いクライアント側のフォルダへコピーすると，エラーにならず正常終了する．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -591,17 +591,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1830/"><i class="far fa-calendar"></i> 2010-03-15</a>
+                                            <a href="/posts/new_md/doc1671/"><i class="far fa-calendar"></i> 2010-08-08</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/03/15*
-[番号] 技術ノート KGTN 2010031502
-[現象] APSログに以下のエラーが記録され正常にログオンできない． Logon (????) The Program Window failed to signal completion of its basic initializations within 1 minute(s)
-[説明] このログは，通常 1) ログオンスクリプトが１分以内に処理が完了しない場合， 2) クライアントプリンタの構成が１分以内に完了しない場合に記録されます．前者の場合は，ログオンスクリプトの内容をチェックし，権限不足も含め誤りがないかどうか確認して下さい．後者の場合は，クライアントプリンタのドライバ等に問題がないかどうか確認して下さい．
-ファイル KGTN2010031502.pdf [(54.4 KB)] [kitasp 技術センター, 2010/03/15 14:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1830/" class="btn btn-template-main">続きを読む</a>
+2010/08/08*
+[番号] 技術ノート KGTN 2010080901
+[現象] Ver3.2系のクライアントドライブ機能で，書き込み権限の無いクライアント側のフォルダへコピーすると，エラーにならず正常終了する．
+[説明] 弊社およびGraphOn 社で現象を確認しました．この動作は，技術ノートKGTN#2009091501 の問題と関連し ており，Ver3.2 系での制限事項 （既知の問題） となります．
+備　考 アーキテクチャが変更されたVer4.0系のクライアントドライブ機能では，このような場合は 「??? をコピーできません。アクセスできません。」 というWindowsのエラーダイアログが表示されます．
+ファイル KGTN2010080901.pdf [(53.5 KB)] [kitasp 技術センター, 2010/08/09 08:33]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1671/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -611,7 +612,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1831/">
+                                      <a href="/posts/new_md/doc1673/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -619,7 +620,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1831/">GGのクライアント （ActiveX と Native） が表示するウインドウにメッセージを送りたい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1673/">GGは Windows Update （更新プログラム） の適用を推奨していないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -632,17 +633,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1831/"><i class="far fa-calendar"></i> 2010-03-15</a>
+                                            <a href="/posts/new_md/doc1673/"><i class="far fa-calendar"></i> 2010-08-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/03/15*
-[番号] 技術ノート KGTN 2010031501
-[現象] GGのクライアント （ActiveX と Native） が表示するウインドウにメッセージを送りたい．
-[説明] 以下のテストプログラムで，最小化やリストア等が処理されることを3.2.1系で確認しました．
-ファイル KGTN2010031501.pdf [(49.8 KB)] [kitasp 技術センター, 2010/03/15 11:41]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1831/" class="btn btn-template-main">続きを読む</a>
+2010/08/05*
+[番号] 技術ノート KGTN 2010080501
+[現象] GGは Windows Update （更新プログラム） の適用を推奨していないのか？
+[説明] いいえ，それは完全な誤解で，GGは Windows Update （更新プログラム） の適用を推奨しています．恐らく， 以下のような内容が誤って解釈されたものだと思われます．
+Windows Update （更新プログラム） 自体に不具合がある可能性もありますので，本番サーバに直ちに適用することは非常に危険です．先ず検証サーバに適用し，問題が発生しないことを確認した後，本番サーバに適用するようにして下さい．
+ファイル KGTN2010080501.pdf [(50.8 KB)] [kitasp 技術センター, 2010/08/05 13:22]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1673/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -652,7 +654,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1829/">
+                                      <a href="/posts/new_md/doc1672/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -660,7 +662,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1829/">クライアントドライブ機能でサーバ側からクライアント側へファイルコピーする時，同名のファイルが既にあるとコピーされない （上書きコピーが正常に行われない） ．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1672/">GGは ターミナルサービスに比べCPUの使用率が高い．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -673,17 +675,18 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1829/"><i class="far fa-calendar"></i> 2010-03-15</a>
+                                            <a href="/posts/new_md/doc1672/"><i class="far fa-calendar"></i> 2010-08-05</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/03/15*
-[番号] 技術ノート KGTN 2010031601
-[現象] クライアントドライブ機能でサーバ側からクライアント側へファイルコピーする時，同名のファイルが既にあるとコピーされない （上書きコピーが正常に行われない） ．
-[説明] この現象は 3.2.1.4446 またはそれ以前のビルドで発生する問題で， 3.2.1 Patch4 で修正される予定です．
-ファイル KGTN2010031601.pdf [(44.7 KB)] [kitasp 技術センター, 2010/03/16 08:28]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1829/" class="btn btn-template-main">続きを読む</a>
+2010/08/05*
+[番号] 技術ノート KGTN 2010080502
+[現象] GGは ターミナルサービスに比べCPUの使用率が高い．
+[説明] GGとターミナルサービスの画面転送方式の差異により，瞬間的なCPU使用率はGGの方が高くなりますが，全体的なCPU使用率では同じか，またはGGの方が低い傾向が見られます （同時数千ユーザをご利用頂いているユーザ様からも同じようなレポートを頂いております） ．
+なお，同時1〜2ユーザでのテストと，実運用を想定した例えば同時20ユーザのテストでは，結果が異なる可能性がありますので，必ず実運用に近い条件でテストを行うようにして下さい．さらに，CPU使用率とユーザの体感速度は必ずしも一致しませんので，ユーザの体感速度も含めたテストを行うことをお勧めします．
+ファイル KGTN2010080502.pdf [(52.9 KB)] [kitasp 技術センター, 2010/08/05 13:37]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1672/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -693,7 +696,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1832/">
+                                      <a href="/posts/new_md/doc1676/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -701,7 +704,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1832/">GGを上書きインストールでバージョンアップ （例：3.2.0→3.2.1） し，ActiveXクライアントでログオンしようとしたところバージョン不一致のエラーになる．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1676/">GGクライアントは Windows NT 環境をサポートするのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -714,18 +717,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1832/"><i class="far fa-calendar"></i> 2010-03-12</a>
+                                            <a href="/posts/new_md/doc1676/"><i class="far fa-calendar"></i> 2010-08-04</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/03/12*
-[番号] 技術ノート KGTN 2010031202
-[現象] GGを上書きインストールでバージョンアップ （例：3.2.0→3.2.1） し，ActiveXクライアントでログオンしようとしたところバージョン不一致のエラーになる．
-[説明] GGのバージョンアップは，特に指示が無い限り上書きインストールで行うことが出来ます．上書きインストール＆再起動の後，ActiveXクライアントでログオンしようとするとバージョン不一致になる場合は，ログオンに使用するHTMLおよびActiveXクライアントが，GGの標準インストール以外のフォルダで管理されいるか，または別のサーバで管理されていると考えられます．バージョンアップ後のGGの Web フォルダから，必要なHTMLおよびActiveXクライアントを，別に管理しているフォルダまたはサーバへコピーして下さい．
-注　意 looseactivexlogon.html を元に独自に作成したログオンHTMLを使用している場合は，新しいActiveXクライアントggw-activex.cab をコピーするとともに，新しいlooseactivexlogon.html の OBJECT タグの内容 （下記の赤下線の部分） をログオン用HTMLへ反映して下さい．
-ファイル KGTN2010031202.pdf [(183 KB)] [kitasp 技術センター, 2010/03/12 16:26]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1832/" class="btn btn-template-main">続きを読む</a>
+2010/08/04*
+[番号] 技術ノート KGTN 2010080401
+[現象] GGクライアントは Windows NT 環境をサポートするのか？
+[説明] Ver3.2系は Windows NT 4.0 環境をサポートします．Ver4.0系は Windows NT をサポートしません．
+ファイル KGTN2010080401.pdf [(38.1 KB)] [kitasp 技術センター, 2010/08/04 12:32]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1676/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -795,7 +797,7 @@
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

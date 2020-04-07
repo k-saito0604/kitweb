@@ -409,25 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1596/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1451/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1596/">Windows Server 2008 環境でGPMCを使いフォルダリダイレクトの設定を行おうとしたところ， 「ドキュメント」 が一覧に表示されない．</a></h4>
+                            <h4><a href="/posts/new_md/doc1451/">[GGW-3.2.1] コマンド プロンプト （DOS窓） で，カレントディレクトリをクライアントドライブに変更して，ファイル名を指定して実行したが 「ファイル xxx は見つかりません」 が発生する．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-09-30
+                            日付 2011-02-21
                             </p>
                             <p class="intro">*技術ノート
-2010/09/30*
-[番号] 技術ノート KGTN 2010093002
-[現象] Windows Server 2008 環境でGPMCを使いフォルダリダイレクトの設定を行おうとしたところ， 「ドキュメント」 が一覧に表示されない．
-[説明] マイクロソフト社の知識ベース KB953407によると，原因は日本語版を作成する時に 「ドキュメント」 とすべきところを誤って 「最近使ったファイル」 に翻訳 （ローカライズ ） したとのことです．対応等については，当該知識ベースをご覧下さい．
-ファイル KGTN2010093002.pdf [(50.8 KB)] [kitasp 技術センター, 2010/09/30 14:13]</p>
+2011/02/21*
+[番号] 技術ノート KGTN 2011022101
+[現象] [GGW-3.2.1] コマンド プロンプト （DOS窓） で，カレントディレクトリをクライアントドライブに変更して，ファイル名を指定して実行したが 「ファイル xxx は見つかりません」 が発生する．
+[説明] クライアントドライブにあるファイルを コマンド プロンプト で直接起動することは出来ません．アプリケーションを起動し，クライアントドライブにあるファイルの絶対パスを指定して開いて下さい．これは GGW-3.2.1 の仕様で， GGH-4.0 ではエラーは発生せず正常に起動されます．
+ファイル KGTN2011022101.pdf [(46.9 KB)] [kitasp 技術センター, 2011/02/21 11:28]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1596/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1451/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -446,27 +446,30 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc360/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1452/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc360/">[Windows] サーバを仮想化するに当り，サイジング （集約度） の目安は？</a></h4>
+                            <h4><a href="/posts/new_md/doc1452/">APSログに下記のエラーが記録され，クライアントからの接続が出来ない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-09-29
+                            日付 2011-02-21
                             </p>
                             <p class="intro">*技術ノート
-2010/09/29*
-[番号] 技術ノート KGTN 2010092901
-[現象] [Windows] サーバを仮想化するに当り，サイジング （集約度） の目安は？
-[説明] サーバの機能 （役割） や運用形態に左右されますので一般論として答えることは出来ませんが，ハードウエアベンダーやマイクロソフト社の情報などを参考にすると，4コアを積んだ物理サーバ上では4台の仮想サーバ，8コアを積んだ物理サーバ上では8台の仮想サーバ，16コアを積んだ物理サーバ上では16台の仮想サーバ，&hellip; がひとつの目安になります．
-GGサーバの場合は，始業時の集中ログオンやアプリケーションの利用によるプロセスの頻繁な生成や消滅等があり，バックグランド処理を行うサーバ （DBサーバなど） と比較して高負荷になりがちです．このような点も十分に考慮して，過度な集約を行わないことが肝要です．
-補　足 CPU （コア） だけでなく，物理的なバスやディスクのパフォーマンスも十分に考慮して下さい．仮想サーバも，最終的には物理的なバスやディスクを使用しますので，それらのパフォーマンスがネックとなり， Windows のパフォーマンスが大幅に低下した事例 （SANディスクを使用） もあります．
-ファイル KGTN2010092901.pdf [(62.6 KB)] [kitasp 技術センター, 2014/02/07 16:01]</p>
+2011/02/21*
+[番号] 技術ノート KGTN 2010041504
+[現象] APSログに下記のエラーが記録され，クライアントからの接続が出来ない． aps (???) CS: Failed to load certificate C:¥SSL¥server.crt.
+[説明] 証明書ファイル server.crt の内容が正しくないか，または 「GGの管理者ガイドに基づいて」 OpenSSLで作成されたSSL証明書ではありません．GGの管理者ガイドを参考に，正しいSSL証明書を作成し，そのファイルをクラスタマネージャで設定して下さい．
+補　足 証明書がOpenSSLで認識されるかどうか確認するには，次のコマンドを入力して下さい．
+openssl x509 -in server.crt -text
+認識されれば証明書の内容が表示され，認識されなければエラーが表示されます （以下の画面はエラーの一例です） ．
+このエラーが発生した時は，その証明書をメモ帳で開いて下さい．先頭行に &ldquo;&mdash;&ndash;BEGIN CERTIFICATE&mdash;&ndash;&rdquo; ，末尾行に &ldquo;&mdash;&ndash;END CERTIFICATE&mdash;&ndash;&rdquo; が無い場合は，証明書のフォーマットの誤りか，またはフォーマットは正しいものの （認証機関からメールで届いた） 証明書の保存方法に誤りがあります．
+注　意 フォルダのパスやファイル名は，環境（設定）に合わせて読み替えて下さい．
+ファイル KGTN2010041504.pdf [(101 KB)] [kitasp 技術センター, 2011/02/21 10:21]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc360/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1452/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -485,26 +488,25 @@ GGサーバの場合は，始業時の集中ログオンやアプリケーショ
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1597/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1450/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1597/">ActiveX クライアントをインストールしたが，ログオン画面が表示されない． GGMInfo.exe で全てのモジュールを削除しても状況が改善しない．</a></h4>
+                            <h4><a href="/posts/new_md/doc1450/">クラスタマネージャでセッションを強制終了させようとしてサーバをクリックしたところ， Failed to log you onto SERVER2. This computer (SERVER1) and SERVER2 may be located on different networks. というエラーが表示された．</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-09-28
+                            日付 2011-02-21
                             </p>
                             <p class="intro">*技術ノート
-2010/09/28*
-[番号] 技術ノート KGTN 2010092804
-[現象] ActiveX クライアントをインストールしたが，ログオン画面が表示されない． GGMInfo.exe で全てのモジュールを削除しても状況が改善しない．
-[説明] GGのバージョンが3.2.1.4420またはそれ以降 （Ver3.2系） であれば， GGMInfo.exe のタイムスタンプを確認して下さい．作成日時が2010年9月28日以前であれば，最新の GGMInfo.exe を入手し，全てのモジュールを削除して下さい．
-参　考 3.2.1.4420 からActiveXクライアントに QuickPDFDLL.dll というファイルが追加されましたが，古いGGMInfo.exe では 「全てのモジュールを削除」 しても当該ファイルが残るため，ActiveX クライアントが正常にインストールされません．
-ファイル KGTN2010092804.pdf [(54.8 KB)] [kitasp 技術センター, 2010/09/28 11:24]</p>
+2011/02/21*
+[番号] 技術ノート KGTN 2011022103
+[現象] クラスタマネージャでセッションを強制終了させようとしてサーバをクリックしたところ， &ldquo;Failed to log you onto SERVER2. This computer (SERVER1) and SERVER2 may be located on different networks.&rdquo; というエラーが表示された．
+[説明] このメッセージは， SERVER1 のクラスタマネージャを使用して， SERVER2 上にあるセッションを切断しようとした （注： 正確にはSERVER2へログオンしようとした） ことを意味します．この２つのサーバの管理者 Administrator パスワードが同じであれば SERVER2 へログオンしてセッションを終了させることが出来ますが，この例では SERVER1 と SERVER2 のパスワードが異なるため，GGは SERVER2 へのログオンに失敗し，このエラーメッセージが表示されました．従って， SERVER1 と SERVER2 の管理者のパスワードを同じにするか，または SERVER2 のクラスタマネージャでセッションを終了させて下さい．
+ファイル KGTN2011022103.pdf [(99.7 KB)] [kitasp 技術センター, 2011/02/21 12:55]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1597/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1450/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -523,26 +525,25 @@ GGサーバの場合は，始業時の集中ログオンやアプリケーショ
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1599/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc1455/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1599/">Ver4.0 をインストールしたが， Readme.txt と Release Notes.txt が見あたらない．</a></h4>
+                            <h4><a href="/posts/new_md/doc1455/">[GGH-4.0] 4.0.1.9787 の新機能 Printers Applet （プリンタアプレット） でデフォルトプリンタを設定した場合，次回のログオン時もそのプリンタがデフォルトになるのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2010-09-27
+                            日付 2011-02-18
                             </p>
                             <p class="intro">*技術ノート
-2010/09/27*
-[番号] 技術ノート KGTN 2010092802
-[現象] Ver4.0 をインストールしたが， Readme.txt と Release Notes.txt が見あたらない．
-[説明] 従来のバージョンでは，インストール時の展開フォルダ中に Readme.txt と Release Notes.txt が置かれていましたが，Ver4.0系ではインストールバイナリ中にReadme.txt と Release Notes.txt が存在しません．弊社作成のVer4.0系配布ファイル （CD） 中に，それらのファイルが存在します．
-GraphOn社に 「インストールバイナリ中にReadme.txt と Release Notes.txt を含めるように」 と要望を出しましたが，残念ながら &ldquo;There are no plans to change the way the Release Notes are distributed&rdquo; という回答がありました．
-ファイル KGTN2010092802.pdf [(48.9 KB)] [kitasp 技術センター, 2010/09/28 03:22]</p>
+2011/02/18*
+[番号] 技術ノート KGTN 2011021802
+[現象] [GGH-4.0] 4.0.1.9787 の新機能 Printers Applet （プリンタアプレット） でデフォルトプリンタを設定した場合，次回のログオン時もそのプリンタがデフォルトになるのか？
+[説明] いいえ，GGH-4.0では従来の print.ini のような設定ファイルをクライアント側に持ちませんので，セッションを跨いで設定を引き継ぐことは出来ません．次回ログオン時には，その時点でのクライアント側のデフォルトプリンタがGG上でもデフォルトプリンタとなります．
+ファイル KGTN2011021802.pdf [(48.2 KB)] [kitasp 技術センター, 2011/02/18 10:13]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1599/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc1455/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>

@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1338/">
+                                      <a href="/posts/new_md/doc2587/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1338/">[GGW3.2.1] クライアント印刷機能で Universal Driver (UPD) を使用すると，縦書きで印刷出来ない文字がある．</a></h2>
+                                    <h2><a href="/posts/new_md/doc2587/">[GGW3.2.1/GGH4.X-5.X] ログオンスクリプトの Global と User-specific の両方を使用したいが，適用の順番は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1338/"><i class="far fa-calendar"></i> 2011-08-18</a>
+                                            <a href="/posts/new_md/doc2587/"><i class="far fa-calendar"></i> 2011-11-25</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/08/18*
-[番号] 技術ノート KGTN 2011081901
-[現象] [GGW3.2.1] クライアント印刷機能で Universal Driver (UPD) を使用すると，縦書きで印刷出来ない文字がある．
-[説明] Universal Driver (UPD) のエンジンである PDF-Xchange の仕様により，縦書きはサポートされません．縦書きを行う場合は， Windows Driver （通常のドライバ） または Sky-PDF for GO-Global をご利用下さい．
-ファイル KGTN2011081901.pdf [(52.8 KB)] [kitasp 技術センター, 2011/08/19 08:27]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1338/" class="btn btn-template-main">続きを読む</a>
+2011/11/25*
+[番号] 技術ノート KGTN 2011112502
+[現象] [GGW3.2.1/GGH4.X-5.X] ログオンスクリプトの Global と User-specific の両方を使用したいが，適用の順番は？
+[説明] Global → User-specific の順序で適用 （実行） されます．特別な事情がなければ，以下のようなスクリプトを記述し， Global として適用 （実行） するのが管理や運用の面から一般に利用されている方法です．
+ECHO OFF :COMMON1 ::--- 共通の前処理を記述 --- ECHO COMMON1 &gt;&gt;C:TEMPGLOLBAL.TXT IF &quot;%USERNAME%&quot; == &quot;TestUser&quot; GOTO :USER_TEST IF &quot;%USERNAME%&quot; == &quot;Administrator&quot; GOTO :USER_ADMIN GOTO :USER_OTHER :USER_TEST :: --- TestUser の処理を記述 --- ECHO TestUser &gt;&gt;C:TEMPGLOLBAL.TXT GOTO :COMMON2 :USER_ADMIN :: --- Administrator の処理を記述 --- ECHO Administrator &gt;&gt;C:TEMPGLOLBAL.TXT GOTO :COMMON2 :USER_OTHER :: --- その他の処理を記述 --- ECHO OTHER &gt;&gt;C:TEMPGLOLBAL.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2587/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1339/">
+                                      <a href="/posts/new_md/doc1219/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1339/">Windows 7 の環境でActiveXクライアントを削除するため GGAXDelete.exe を起動したが，ファイルが削除されない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1219/">[Windows2003] GGサーバにユーザがログオンを行った時，下記のエラーが発生した．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,21 +381,20 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1339/"><i class="far fa-calendar"></i> 2011-08-18</a>
+                                            <a href="/posts/new_md/doc1219/"><i class="far fa-calendar"></i> 2011-11-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/08/18*
-[番号] 技術ノート KGTN 2011081801
-[現象] Windows 7 の環境でActiveXクライアントを削除するため GGAXDelete.exe を起動したが，ファイルが削除されない．
-[説明] Windows 7 の環境では，アカウントの種類が 「管理者」 であっても ActiveXクライアントを削除することは出来ず，GGAXDelete.exe のログに以下のような記録が残ります．
-FILE DELETE INFORMATION clipc.dll (FAILED) cplc.dll (FAILED) cs.dll (FAILED) dc.dll (FAILED) filec.dll (FAILED) ggw.exe (FAILED) GGXP.inf (FAILED) ieg.dll (FAILED) pbr.dll (FAILED) printc.dll (FAILED) QuickPDFDLL.dll (FAILED) sc.dll (FAILED) scres.dll (FAILED) sndc.dll (FAILED) upc.dll (FAILED) 0/15 File(s) Deleted.
-ActiveXクライアントを削除するには，以下の手順で操作を行って下さい．
-コマンドプロンプトを「管理者として実行」として起動 「ユーザー アカウント制御」 で 「はい」 を選択 その中で （DOS窓の中で） GGAXDelete.exe を実行
-または
-GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「ユーザー アカウント制御」 で 「はい」 を選択</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1339/" class="btn btn-template-main">続きを読む</a>
+2011/11/22*
+[番号] 技術ノート KGTN 2011112202
+[現象] [Windows2003] GGサーバにユーザがログオンを行った時，下記のエラーが発生した．
+aps (3468) AS: Function APS_IndependentSession::loadUserProfile () ¥ in file APS_IndependentSession.cpp failed at line 3916 (WLE1450).
+[説明] このメッセージの内容から， 1) ユーザがGGサーバへのログオンを試みて， 2) GGがそのユーザのプロファイルをロードしようとしたが， 3) プロファイルのロードに失敗した ことを意味しています． WLE1450 は，その時に発生したエラー （System Error Code） で，その意味は以下の通りです．
+ERROR_NO_SYSTEM_RESOURCES Insufficient system resources exist to complete the requested service.
+このエラーは （大きな） ファイルの読み込み等でリソース （PTE） が不足した場合や，読み込みに失敗して所定の回数試行しても失敗した場合などに返されます．従って，プロファイル全体のサイズが異常に大きい，またはプロファイルの読み込みに失敗した等が考えられます．なお，コンソールやリモートデスクトップ接続でのログオンでも同じ現象が確認される場合は， Windows Server 自体の問題 または Active Directory の問題 （プロファイルを管理しているファイルサーバ周辺の問題も含みます） の可能性が高いと考えられます．
+ファイル KGTN2011112202.pdf [(62.9 KB)] [kitasp 技術センター, 2011/11/22 14:07]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1219/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -405,7 +404,7 @@ GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1340/">
+                                      <a href="/posts/new_md/doc1220/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -413,7 +412,7 @@ GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1340/">クライアントに高性能なグラフィックアダプタが搭載されているが，GGの環境でもその効果はあるか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1220/">[Windows7] Windows XP でGGサーバへログオンすると快適に利用できるが， Windows 7 でGGサーバへログオンすると操作に倍くらいの時間がかかる．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -426,17 +425,24 @@ GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1340/"><i class="far fa-calendar"></i> 2011-08-11</a>
+                                            <a href="/posts/new_md/doc1220/"><i class="far fa-calendar"></i> 2011-11-22</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/08/11*
-[番号] 技術ノート KGTN 2011081103
-[現象] クライアントに高性能なグラフィックアダプタが搭載されているが，GGの環境でもその効果はあるか？
-[説明] 高性能なグラフィックアダプタは，想定されたハードウエア環境で最大限のパフォーマンスが得られるように設計されております．GGの環境では，描画エンジンの仮想ディスプレイアダプタ，さらにサーバとクライアント間にネットワークが介在し，これらはそのような環境と比べればパフォーマンスが低いため，残念ながらその効果は期待できません．
-ファイル KGTN2011081103.pdf [(49.6 KB)] [kitasp 技術センター, 2011/08/11 10:42]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1340/" class="btn btn-template-main">続きを読む</a>
+2011/11/22*
+[番号] 技術ノート KGTN 2011112201
+[現象] [Windows7] Windows XP でGGサーバへログオンすると快適に利用できるが， Windows 7 でGGサーバへログオンすると操作に倍くらいの時間がかかる．
+[説明] 「Windows 7 のネットワークが異常に遅い」 というような報告がネットワーク上に多数あり，これらの情報を参考に設定を変更し改善するかどうか調べて下さい．Google で例えば 「windows7 ネットワーク 遅い」 というキーで探すと，それらの情報が見つかります．代表的な設定としては，以下の３つがあります．
+IPv6を無効にする． http://d.hatena.ne.jp/wonodas/20100516/1274011987
+自動チューニングの設定を高速回線タイプに変更する． http://ymiwa.exblog.jp/13163388/
+SNP （Scalable Networking Pack） を無効にする． http://itpro.nikkeibp.co.jp/article/COLUMN/20100824/351391/
+補足１ IPv6を無効化するに当たって，以下の方法もあります．
+レジストリでIPv6を無効化する． http://www.atmarkit.co.jp/fwin2k/win2ktips/949vistav6rm/vistav6rm.html
+IPv6のトンネルインターフェイスとループバックインターフェイスを無効化する． http://naonao71.wordpress.com/2009/01/05/ipv6%E3%81%AE%E7%84%A1%E5%8A%B9%E5%8C%96%EF%BC%88win2008-or-vista-2/
+補足２ パフォーマンスのチェックのため，GGとウエブ （ブラウザ） を使用して比較をすると，通信する仕組みが大きく異なるため，その結果で 「速い／遅い」 を判断することは出来ません．もし比較をするのであれば，GGとリモートデスクトップ接続を使用するのが良いと思います．もしリモートデスクトップ接続でも同じように遅いのであれば，少なくともGGに依存した問題でないことが分ります．
+ファイル KGTN2011112201.pdf [(70.5 KB)] [kitasp 技術センター, 2011/11/22 11:46]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1220/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -446,7 +452,7 @@ GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1342/">
+                                      <a href="/posts/new_md/doc1221/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -454,7 +460,7 @@ GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1342/">クライアントドライブ機能を利用してサーバ側からクライアント側へファイルをコピーした時，ネットワーク上を流れるデータの量がファイルサイズより大きい．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1221/">[GGH4.0] GGがUSBディスク （クライアントドライブ） を認識するタイミングは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -467,17 +473,19 @@ GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1342/"><i class="far fa-calendar"></i> 2011-08-11</a>
+                                            <a href="/posts/new_md/doc1221/"><i class="far fa-calendar"></i> 2011-11-18</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/08/11*
-[番号] 技術ノート KGTN 2011081101
-[現象] クライアントドライブ機能を利用してサーバ側からクライアント側へファイルをコピーした時，ネットワーク上を流れるデータの量がファイルサイズより大きい．
-[説明] FTPやWWWを使用してファイルをダウンロードする場合は， （正確さを欠く表現になりますが） ファイルがストレートにサーバ側からクライアント側へコピーされます．GGのクライアントドライブ機能を利用してファイルをダウンロードする場合は， Windows API の内部処理に従ってコピーされますので，ファイルが定められたサイズに分割され，それに管理情報等も付加されクライアントへ送信されます．さらに大きなファイルでは，コピーのアニメーションを表示するAPIもクライアントへ送信されます．このような処理が行われるため，実際のファイルサイズより大きいデータ量がネットワーク上を流れます．なお，ネットワーク機材のデータ圧縮機能等も，このような仕組みにより十分に働かない場合があります．
-ファイル KGTN2011081101.pdf [(55.2 KB)] [kitasp 技術センター, 2011/08/11 09:37]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1342/" class="btn btn-template-main">続きを読む</a>
+2011/11/18*
+[番号] 技術ノート KGTN 2011111801
+[現象] [GGH4.0] GGがUSBディスク （クライアントドライブ） を認識するタイミングは？
+[説明] エクスプローラーで &ldquo;マイ コンピュータ&rdquo; を表示した状態で，クライアントにUSBディスクを挿入すると，クライアントでUSBディスクが認識された直後に， （サーバ側で動作する） エクスプローラーの &ldquo;マイ コンピュータ&rdquo; の中にこのUSBディスクが表示されます．従って，クライアントが認識した直後に，追加または削除されたUSBディスクを認識します．
+  USBディスク挿入前　(Serer: WS2003SP2 + GGH4.0.1.10784, Client: WIN7SP1)
+  USBディスク挿入後
+  ファイル KGTN2011111801.pdf [(349 KB)] [kitasp 技術センター, 2011/11/18 09:27]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1221/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -487,7 +495,7 @@ GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1341/">
+                                      <a href="/posts/new_md/doc1222/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -495,7 +503,7 @@ GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1341/">画面の解像度の設定は，クライアントの 「画面のプロパティ」 で設定するのか？　それともサーバの 「画面のプロパティ」 （GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1222/">[GGH4.0] GO-Global Windows Host 4 のハイライトは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -508,17 +516,21 @@ GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1341/"><i class="far fa-calendar"></i> 2011-08-11</a>
+                                            <a href="/posts/new_md/doc1222/"><i class="far fa-calendar"></i> 2011-11-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/08/11*
-[番号] 技術ノート KGTN 2011081102
-[現象] 画面の解像度の設定は，クライアントの 「画面のプロパティ」 で設定するのか？　それともサーバの 「画面のプロパティ」 （GO-Global Display Driver） で設定するのか？
-[説明] サーバの 「画面のプロパティ」 で表示される GO-Global Display Driver は，アプリケーションが描画した内容を正しく認識するための特殊なドライバです．従って，解像度の設定はクライアントの 「画面のプロパティ」 で設定して下さい．
-ファイル KGTN2011081102.pdf [(46.2 KB)] [kitasp 技術センター, 2011/08/11 10:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1341/" class="btn btn-template-main">続きを読む</a>
+2011/11/17*
+[番号] 技術ノート KGTN 2011111701
+[現象] [GGH4.0] GO-Global Windows Host 4 のハイライトは？
+[説明] 従来のGGと比べての GO-Global Windows Host 4 (Ver4.0.1) のハイライトは，以下の通りです．
+64ビット版の Windows Server に対応 ホスト環境として Windows Server 2008 (x64) と Windows Server 2008 R2 を利用出来るようになりました．これにより，32ビット版 Windows Server のメモリ 4GB (2GB+2GB) の制約から解放されます．
+仮想環境上で動作する Windows Server に対応 仮想環境 VMWare Esxi と HyperV 上で動作する Windows Server に対応しました．GraphOn社は検証しておりませんが，ユーザ様から KVM, Xen, VirtualBox, Virtage 等でも動作したとの報告があります．
+アプリケーションの互換性の向上 Windowsとのインタフェースを見直し，より多くのアプリケーションが動作するようになりました．
+新しいアーキテクチャによるクライアント印刷機能 印刷ジョブの生成とクライアント側へのジョブの転送が並行して処理されるようになりました．さらに，ユニバーサル・プリンタドライバに Adobe PDF Library を採用することで，高品位なPDFファイルの出力も可能になりました．
+新しいアーキテクチャによるクライアントドライブ機能 クライアントドライブ機能のアーキテクチャを見直し，ローカルドライブに近い感覚でクライアントドライブへアクセス出来るようになりました．また，20MBを超えるファイルのコピーも可能になりました．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1222/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -528,7 +540,7 @@ GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1343/">
+                                      <a href="/posts/new_md/doc1226/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -536,7 +548,7 @@ GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1343/">[GGH4.0] Automatically update clients を有効にしたが，クライアントがアップデートされない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1226/">[GGH4.0] GGのセッションの中でサポートする Adobe Reader (Acrobat Reader) のバージョンは？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -549,19 +561,17 @@ GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1343/"><i class="far fa-calendar"></i> 2011-08-08</a>
+                                            <a href="/posts/new_md/doc1226/"><i class="far fa-calendar"></i> 2011-11-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/08/08*
-[番号] 技術ノート KGTN 2011080801
-[現象] [GGH4.0] Automatically update clients を有効にしたが，クライアントがアップデートされない．
-[説明] 仕様なのか不具合なのか未だ明確になっておりませんが，クライアントのアップデートは GO-Global Update Client というサービスが行い， 4.0.1.10784 の環境では適用　（アップデート）　までに1〜2時間を要します．
-補足１ 行われている処理を調べたところ，接続時に一括してダウンロードし直ちにアップデートする方式ではなく，GGのセッションを通して新しいクライアント （ファイル） を少しずつダウンロードされ，全てのファイルが揃ったところで下記のダイアログを表示されます．ユーザが現在のセッションを終了し，次回ログオンした時，この新しいクライアント （ファイル） が適用されます．なお，ダウンロード中のファイルは %TEMP%¥updates の下に保存されます．実験では，無操作の状態で約１分後からダウンロードが開始します．
-補足２ サービス GO-Global Update Client が開始していない場合は，新しいクライアント （ファイル） のダウンロードおよびインストールは行われません．
-ファイル KGTN2011080801.pdf [(91.2 KB)] [kitasp 技術センター, 2011/08/08 12:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1343/" class="btn btn-template-main">続きを読む</a>
+2011/11/16*
+[番号] 技術ノート KGTN 2011111604
+[現象] [GGH4.0] GGのセッションの中でサポートする Adobe Reader (Acrobat Reader) のバージョンは？
+[説明] GGH4.0が 「GGのセッションの中で」 サポートする Adobe Reader のバージョンは 8 です．これ以前のバージョンはサポートしません．
+ファイル KGTN2011111604.pdf [(46.7 KB)] [kitasp 技術センター, 2011/11/16 13:30]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1226/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -571,7 +581,7 @@ GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1344/">
+                                      <a href="/posts/new_md/doc1227/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -579,7 +589,7 @@ GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1344/">[GGH4.0] Windows クライアントをインストールすると，サービスが追加されるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1227/">[GGH4.0] GO-Global Windows Host Ver4.0.1 がサポートする32ビットのサーバ環境は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -592,17 +602,18 @@ GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1344/"><i class="far fa-calendar"></i> 2011-08-08</a>
+                                            <a href="/posts/new_md/doc1227/"><i class="far fa-calendar"></i> 2011-11-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/08/08*
-[番号] 技術ノート KGTN 2011080802
-[現象] [GGH4.0] Windows クライアントをインストールすると，サービスが追加されるのか？
-[説明] 3.2系ではサービスは追加されませんでしたが，4.0系からGO-Global Update Client というサービスが追加されます．これは，クライアントの自動更新機能 （オプション Automatically update clinets で設定） の処理を行うためのサービスです．
-ファイル KGTN2011080802.pdf [(49.8 KB)] [kitasp 技術センター, 2011/08/08 11:08]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1344/" class="btn btn-template-main">続きを読む</a>
+2011/11/16*
+[番号] 技術ノート KGTN 2011111603
+[現象] [GGH4.0] GO-Global Windows Host Ver4.0.1 がサポートする32ビットのサーバ環境は？
+[説明] GO-Global Windows Host Ver4.0.1 がサポートする32ビットのサーバ環境は，以下の通りです．
+Windows Server 2008 Standard or Enterprise with Service Pack 2 (x86) Windows Server 2003 R2 Standard or Enterprise Edition (x86) Windows Server 2003 Standard or Enterprise Edition with Service Pack 2 (x86)
+ファイル KGTN2011111603.pdf [(41.8 KB)] [kitasp 技術センター, 2011/11/16 13:15]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1227/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -612,7 +623,7 @@ GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2383/">
+                                      <a href="/posts/new_md/doc1228/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -620,7 +631,7 @@ GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2383/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc1228/">[GGH4.0] GO-Global Windows Host Ver4.0.1 がサポートする64ビットのサーバ環境は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -633,20 +644,18 @@ GGAXDelete.exe を右クリック 「管理者として実行」 を選択 「�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2383/"><i class="far fa-calendar"></i> 2011-08-08</a>
+                                            <a href="/posts/new_md/doc1228/"><i class="far fa-calendar"></i> 2011-11-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/08/08*
-[番号] 技術ノート KGTN 2011080803
-[現象] [GGH4.X-5.X] Automatic Client Updates は，どのクライアントについて働くのか？
-[説明] Windows クライアントについてのみAutomatic Client Updates が働きます．GGのプロトコルを介して新しいバージョンのWindowsクライアントのファイルがサーバからクライアントへ送信され，全てのファイルが揃うと次のダイアログが表示されます （注：セッションが空いている時にファイルを少しずつ送信するため，揃うまで1～2時間かかることがあります） ．
-このダイアログが表示された後，次回Windows クライアントが起動された時に，新しいWindows クライアントで立ち上がります．
-ファイル KGTN2011080803.pdf [(64.2 KB)] [kitasp 技術センター, 2016/08/25 15:07]
-KGTN2011080803.jpg
-表示 [(7.17 KB)] [kitasp 技術センター, 2016/08/25 15:07]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2383/" class="btn btn-template-main">続きを読む</a>
+2011/11/16*
+[番号] 技術ノート KGTN 2011111602
+[現象] [GGH4.0] GO-Global Windows Host Ver4.0.1 がサポートする64ビットのサーバ環境は？
+[説明] GO-Global Windows Host Ver4.0.1 がサポートする64ビットのサーバ環境は，以下の通りです．
+Windows Server 2008 Standard or Enterprise with Service Pack 2 (x64) Windows Server 2008 R2 Standard or Enterprise (x64)
+ファイル KGTN2011111602.pdf [(41.5 KB)] [kitasp 技術センター, 2011/11/16 13:12]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1228/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -656,7 +665,7 @@ KGTN2011080803.jpg
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1345/">
+                                      <a href="/posts/new_md/doc1223/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -664,7 +673,7 @@ KGTN2011080803.jpg
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1345/">GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1223/">[Windows] 物理マシンで動作しているGGサーバを， P2V (Physical to Virtual) ツールを使い仮想マシンへ移行したいが注意点は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -677,20 +686,24 @@ KGTN2011080803.jpg
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1345/"><i class="far fa-calendar"></i> 2011-08-02</a>
+                                            <a href="/posts/new_md/doc1223/"><i class="far fa-calendar"></i> 2011-11-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/08/02*
-[番号] 技術ノート KGTN 2011080201
-[現象] GO-Global はAPI Wrapping 方式で， Terminal Service はScreen Scraping 方式だそうだが，具体的にどう違うのか？
-[説明]
- 各方式の概要 API Wrapping 方式では，サーバ上で実行される描画命令を捕まえて，それに対応する仮想的な描画命令をクライアントへ転送し，その命令を受け取ったクライアントが画面に描画します．  Screen Scraping 方式では，サーバ上で描画された画面を監視し，決められた間隔で画面の差分を検出し，その差分をクライアントへ転送し，そしてクライアントが画面に反映します．
-画面再現のタイミングについて API Wrapping 方式では，描画命令を捕まえて 「逐次」 クライアントへ転送し画面を再現します．つまり同期して画面の再現を行う仕組みで，ネットワークが混雑した状況等に於いても，アプリケーションが描画した通りの順序でクライアントの画面を再現します．この同期描画により，ユーザは描画 （画面の再現） に違和感を感じることはありません．  Screen Scraping 方式では，描画された画面を 「決められた間隔で」 差分を検出し，それをクライアントへ転送し画面を再現します．つまり非同期に画面の再現を行う仕組みで，ネットワークが混雑した状況等では，アプリケーションが描画した順序とは無関係にクライアントの画面を再現します．この非同期描画により，ユーザは描画 （画面の再現） に違和感を感じることがあります．
-CPUの使用率について API Wrapping 方式では，アプリケーションの描画処理に同期して，クライアントで画面の描画を行いますので，その処理の分だけCPUの使用率が通常よりも 「高く」 なる傾向があります．  Screen Scraping 方式では，アプリケーションの描画処理とは関係なく 「決められた間隔で」 差分を検出し，その差分をクライアントへ転送し，そして画面に反映しますので，その処理の分だけCPUの使用率が通常よりも 「長く」 なる傾向があります．
-ファイル KGTN2011080201.pdf [(62.8 KB)] [kitasp 技術センター, 2011/08/02 15:12]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1345/" class="btn btn-template-main">続きを読む</a>
+2011/11/16*
+[番号] 技術ノート KGTN 2011111601
+[現象] [Windows] 物理マシンで動作しているGGサーバを， P2V (Physical to Virtual) ツールを使い仮想マシンへ移行したいが注意点は？
+[説明] 「物理マシンから仮想マシンへの移行コストを削減するため P2Vツール を利用したい」 という話をよく耳にしますが，その方面に詳しい方のお話を総合すると，以下のような点に注意が必要です．
+物理マシンから仮想マシンへの移行は，仕様が異なる別の物理マシンへの起動用HDD （システムドライブ） の付け替えと考えるべき．
+旧いマシンのドライバ・サービス・レジストリ （設定ファイル） を削除し，新しいマシンのドライバやサービス等の導入が必要．しかし，旧いマシンのドライバ・サービス・レジストリ （設定ファイル） を適切に削除することは非常に困難．
+新旧マシンのハードウェア仕様が異なる場合，カーネルの再構築やチップセット用ドライバの再導入も必要．
+（さまざまな事例を通して） ドライバ・サービス・レジストリ （設定ファイル）の残存が悪影響を及ぼし，安定性やパフォーマンスに問題が発生する可能性あり．
+安定性やパフォーマンスに問題が発生しない場合でも，運用を開始して障害が発生した時，その原因調査や解決に要する時間 や工数が増える可能性あり．
+自力で問題解決できるだけの技術が必要．解決できない場合，仮想ベンダの有償サポートを受けて解決する必要あり．
+自力で解決出来たとしても移行コストや期間が 「通常の移行よりも」 増える可能性あり．
+ファイル KGTN2011111601.pdf [(71.4 KB)] [kitasp 技術センター, 2011/11/17 08:24]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1223/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -700,7 +713,7 @@ CPUの使用率について API Wrapping 方式では，アプリケーション
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1346/">
+                                      <a href="/posts/new_md/doc1229/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -708,7 +721,7 @@ CPUの使用率について API Wrapping 方式では，アプリケーション
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1346/">[GGH4.0] セッション再接続機能を利用し，クライアントAからクライアントBへセッションを引き継いだ場合，クライアントのドライブはどう表示されるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1229/">[GGW3.2.1/GGH4.0] 画面の遷移が遅いが，どのようなことが考えられるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -721,17 +734,18 @@ CPUの使用率について API Wrapping 方式では，アプリケーション
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1346/"><i class="far fa-calendar"></i> 2011-07-29</a>
+                                            <a href="/posts/new_md/doc1229/"><i class="far fa-calendar"></i> 2011-11-14</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2011/07/29*
-[番号] 技術ノート KGTN 2011072903
-[現象] [GGH4.0] セッション再接続機能を利用し，クライアントAからクライアントBへセッションを引き継いだ場合，クライアントのドライブはどう表示されるのか？
-[説明] GGH-4.0.1.10357 の仕様では，ファイルアクセスのダイアログ等を開いた場合，セッションを引き継いだ後のクライアント （つまりクライアントB） のドライブが表示されます．
-ファイル KGTN2011072903.pdf [(45.8 KB)] [kitasp 技術センター, 2011/07/29 14:03]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1346/" class="btn btn-template-main">続きを読む</a>
+2011/11/14*
+[番号] 技術ノート KGTN 2011111403
+[現象] [GGW3.2.1/GGH4.0] 画面の遷移が遅いが，どのようなことが考えられるか？
+[説明] 過去の事例ではさまざまな原因があり，さらにそれらが絡み合って発生する場合もあり，可能性を全て列挙することは困難です．代表的な原因として，次のようなことが考えられます．
+ネットワークの遅延や輻輳 &hellip; 例： アクセスラインが夕方になると混雑して遅い． アプリケーションの描画が高負荷 &hellip; 例： 凝った画面で描画オブジェクトが非常に多い． アプリケーションの処理が高負荷 &hellip; 例： 月次処理で大量の帳票を印刷する． ディスクアクセスの遅延 &hellip; 例： ネットワーク上のファイルシステムへのアクセスが集中し遅い． アンチウイルスソフト等の影響 &hellip; 例： 全ファイルのスキャンやアンチウイルスソフトのアップデートなど．
+ファイル KGTN2011111403.pdf [(58.6 KB)] [kitasp 技術センター, 2011/11/14 14:25]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1229/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -801,7 +815,7 @@ CPUの使用率について API Wrapping 方式では，アプリケーション
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

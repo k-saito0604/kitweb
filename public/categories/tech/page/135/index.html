@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc568/">
+                                      <a href="/posts/new_md/doc506/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc568/">[GGH4.X] GGH4.0〜4.5 から GGH4.6 へバージョンアップする場合，上書きインストールではダメなのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc506/">[GGW3.2.1] クライアントプリンタ情報ファイル ClientIdentifiers.ini にプリンタが存在しないにも関わらず，プリンタフォルダにオートクリエイトプリンタ （proxy printer） が存在する．どのような原因が考えられるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc568/"><i class="far fa-calendar"></i> 2013-06-07</a>
+                                            <a href="/posts/new_md/doc506/"><i class="far fa-calendar"></i> 2013-10-31</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/06/07*
-[番号] 技術ノート KGTN 2013060702
-[現象] [GGH4.X] GGH4.0〜4.5 から GGH4.6 へバージョンアップする場合，上書きインストールではダメなのか？
-[説明] GGH4.0〜4.5 に互換アップデートを適用していない場合は， GGH4.6 を上書きインストールして構いません．互換アップデートが適用されている場合は，この互換アップデートとGG本体 （GGH4.0〜4.5） をアンインストールする必要があります．これは互換アップデートの内容に起因する制限で，今後リリースされる互換アップデートでは，この制限は解消される見込みです．
-ファイル KGTN2013060702.pdf [(45.3 KB)] [kitasp 技術センター, 2013/06/07 12:37]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc568/" class="btn btn-template-main">続きを読む</a>
+2013/10/31*
+[番号] 技術ノート KGTN 2013103101
+[現象] [GGW3.2.1] クライアントプリンタ情報ファイル ClientIdentifiers.ini にプリンタが存在しないにも関わらず，プリンタフォルダにオートクリエイトプリンタ （proxy printer） が存在する．どのような原因が考えられるか？
+[説明] GGはセッションを終了させる時，ログオン時に登録したプリンタ情報をクライアントプリンタ情報ファイル ClientIdentifiers.ini からを削除するとともに，ログオン時に生成したオートクリエイトプリンタ （proxy printer） の削除を印刷スプーラサービスに依頼します．クライアントプリンタ情報ファイルの内容が正常であるにも関わらず，オートクリエイトプリンタが削除されていないのであれば，印刷スプーラサービスがこの削除要求を正常に処理出来なかったと考えられます．
+ファイル KGTN2013103101.pdf [(51.2 KB)] [kitasp 技術センター, 2013/10/31 09:50]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc506/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc571/">
+                                      <a href="/posts/new_md/doc505/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc571/">[SSL] GGのSSL機能を試したいが，正式なサーバ証明書を持っていない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc505/">[SDK] エンタープライズオプションの GGSessionMonitor とはどんなツールなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,18 +381,21 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc571/"><i class="far fa-calendar"></i> 2013-06-05</a>
+                                            <a href="/posts/new_md/doc505/"><i class="far fa-calendar"></i> 2013-10-31</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/06/05*
-[番号] 技術ノート KGTN 2013060501
-[現象] [SSL] GGのSSL機能を試したいが，正式なサーバ証明書を持っていない．
-[説明] GGのSSL機能を試したいだけであれば，セキュリティ証明書を無償で発行する認証機関 CAcert を利用する方法があります．発行される証明書は 「正式な証明書として認められませんが」 ，GGサーバおよびGGクライアントに CAcert のルート証明書をインストールすることで，正式な証明書と同等に機能します （GGH4.6で検証しました） ．なお，サーバ証明書の発行に当たっては，コモンネームのドメイン名を事前に取得する必要があります．また既存のドメイン名を利用する場合も，ドメイン名の管理者に事前に連絡して下さい．
-http://www.cacert.org/ http://centos.server-manual.com/centos5_cacert.html http://blog.chibiegg.net/2008/06/29_15_154.htm
-ファイル KGTN2013060501.pdf [(57.1 KB)] [kitasp 技術センター, 2013/06/05 14:10]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc571/" class="btn btn-template-main">続きを読む</a>
+2013/10/31*
+[番号] 技術ノート KGTN 2012071801
+[現象] [SDK] エンタープライズオプションの GGSessionMonitor とはどんなツールなのか？
+[説明] 原則的にはGGサーバ上で動作させるプログラムで，GGのプロトコルを介してGGサーバのセッション情報を収集し，その情報をデータベースに記録します．さらにデータベースの更新時に， HTTP/POST でその情報を外部へ送信することも出来ます．
+設定ファイルと起動パラメタ 設定ファイル GGSessionMonitor.ini の default セクションで，以下のパラメタを設定して下さい．
+  設定項目 説明 loglevel ログの出力レベル，通常は1を指定し，障害時は4を指定 port GGサーバのポート番号（各セクションで未指定時に適用）  cpuUsageCheck CPU使用率計算のパラメタ（変更しないこと） cpuUsageSleep CPU使用率計算のパラメタ（変更しないこと）
+ 個別セクション （GGサーバ単位） で，以下のパラメタを設定して下さい．
+  設定項目 説明 host GGサーバのIPアドレス logFile ログファイル（データベースの更新情報）のパス dbgFile デバッグファイル（デバッグ情報）のパス sqlFile データベースファイル（セッションの最新情報）のパス usrFile データベースファイル（セッションの履歴情報）のパス licFile 拡張パックのライセンスファイルのパス httpPost セッション履歴情報 (user_tbl) の送信先URL  httpPostServer サーバ情報 (server_tbl) の送信先URL httpPostSession セッション最新情報 (session_tbl) の送信先URL
+ 監視対象のGGサーバと監視時間は，起動パラメタで指定して下さい．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc505/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -402,7 +405,7 @@ http://www.cacert.org/ http://centos.server-manual.com/centos5_cacert.html http:
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc2134/">
+                                      <a href="/posts/new_md/doc504/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -410,7 +413,7 @@ http://www.cacert.org/ http://centos.server-manual.com/centos5_cacert.html http:
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2134/">[GGH4.X</a></h2>
+                                    <h2><a href="/posts/new_md/doc504/">エンタープライズオプションの GGHealthCheck はどういう機能を提供するのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -423,19 +426,19 @@ http://www.cacert.org/ http://centos.server-manual.com/centos5_cacert.html http:
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc2134/"><i class="far fa-calendar"></i> 2013-05-23</a>
+                                            <a href="/posts/new_md/doc504/"><i class="far fa-calendar"></i> 2013-10-31</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/05/23*
-[番号] 技術ノート KGTN 2013052301
-[現象] [GGH4.X-5.X] ログオン画面で &ldquo;_&rdquo; のキーを押すと， &ldquo;|&rdquo; が入力される．
-[説明] ログオン画面ではキーボード・マッピングファイルが適用されないため （注：つまり101キーボードとして処理されます） ，一部のキーで入力した文字とは異なる文字がエコーバックされます．この現象は制限事項となりますので，以下の何れかの方法で運用回避をお願いします．
- ユーザIDおよびパスワードに英数字のみを使用する．   ユーザIDおよびパスワードをコマンドラインやハイパーリンクのパラメタで指定する． 3) クライアント側IME機能を使用する （GGH4.5.0.13063またはそれ以降） ． コマンドラインの例：gg-client.exe -h 192.168.102.81 -kb ClientSideIME ハイパーリンクの例: http://192.168.102.81/logon.html?keyboard=ClientSideIME
-補　足 標準的なクライアントPC （Windows 7 + 一般的なキーボードレイアウト） を使用した場合，下記の環境でこの現象が発生しないことを確認しております．なお， 「一般的なキーボードレイアウト」 とは物理的な106キーボード相当という意味です．ノートPC等のキーボードは，これとは異なる内部コードが割り当てられていることが多く，その場合は Windows 7 であっても現象が発生します．
- Windows Server 2003 R2 + GGH4.8.0.18673 Windows Server 2008 R2 + GGH4.8.0.18673 Windows Server 2012 + GGH4.8.0.18673  ファイル KGTN2013052301.pdf [(90.7 KB)] [kitasp 技術センター, 2017/04/27 11:40]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2134/" class="btn btn-template-main">続きを読む</a>
+2013/10/31*
+[番号] 技術ノート KGTN 2011013101
+[現象] エンタープライズオプションの GGHealthCheck はどういう機能を提供するのか？
+[説明] ロードバランサのヘルスチェック機能 （TCP/IPレベル） でGGのポート491を監視した場合，GGは接続要求を検出した時点で様々なリソースを確保します （注：これは一斉ログオン等の高負荷な処理をさばくための仕様です） ．しかし，ロードバランサはGGのプロトコルを喋りませんので，コネクションが切断されるまで，それらのリソースが確保され続けます．一斉ログオン時に，複数台のロードバランサがヘルスチェック機能 （TCP/IPレベル） を行うと，それがパフォーマンスに影響を与える可能性があります．GGHealthCheck は，このような問題 （これ以外にもWindowsの仕様に絡む問題があります） を解決するために作成しました．
+GGHealthCheck は，定期的にGGサーバの稼働状況をチェックし （GMCheckRaw または GGSessionMonitor コマンドを使用します） ，その状況を記録します．ロードバランサのヘルスチェック機能 （TCP/IPレベル） でGGHealthCheck に接続要求があると， 1) 接続要求を受け付け， 2) 文字列 （最大128文字までの半角文字列） の受信を待ち， 3) 受信した文字列の末尾に &ldquo;server = UP&rdquo; という文字列を付加し返信 （送信） し， 4) コネクションを切断します．GGサーバが正常に稼働していない場合は， &ldquo;server = DOWN&rdquo; という文字列を付加します．なお，サーバ機能は 「多」 クライアントからの同時アクセス可能な実装になっています．
+設定ファイル 設定ファイルGGHealthCheck.ini の default セクションで，以下のパラメタを設定して下さい．
+設定項目 説明 mode S = サーバとして起動 （C = クライアントとして起動） host サーバのIPアドレス（IPv4 / IPv6） port サーバの待受けポートの番号 interval ヘルスチェックの間隔（秒） repeat ヘルスチェックの回数（注：-1は無限回） clSleep クライアント時のコネクション切断後の再チェックまでの間隔（秒） svSleep サーバ時のGGサーバを監視する間隔（秒） clTimeout クライアント時の送受信のタイムアウト時間（秒） svTimeout サーバ時の送受信タイムアウト時間（秒） 注：clTimeout +5秒以上を指定すること logd ログを保存するフォルダ（絶対パス） command GMCheckRaw または GGSessionMonitor を起動するコマンド errorCode 9999（固定） 注：クライアント機能は，サーバ機能が正常に動作しているかどうかを確認するためのツールです．通常の運用では， GGHealthCheck のサーバ機能のみを使用し，ロードバランサがこの時のクライアントになります． 設定項目は，下記のコマンドの引数で上書きすることが出来ます．</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc504/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -445,7 +448,7 @@ http://www.cacert.org/ http://centos.server-manual.com/centos5_cacert.html http:
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc572/">
+                                      <a href="/posts/new_md/doc509/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -453,7 +456,7 @@ http://www.cacert.org/ http://centos.server-manual.com/centos5_cacert.html http:
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc572/">[GGH4.X] 現在　GGW3.2.1　を使用しているが， GGH4.X へのバージョンアップを上書きインストールで行って良いか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc509/">[GGH4.X] GGH4.6 と GGH4.7 / GGH4.8 の関係は？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -466,20 +469,17 @@ http://www.cacert.org/ http://centos.server-manual.com/centos5_cacert.html http:
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc572/"><i class="far fa-calendar"></i> 2013-05-22</a>
+                                            <a href="/posts/new_md/doc509/"><i class="far fa-calendar"></i> 2013-10-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/05/22*
-[番号] 技術ノート KGTN 2011120101
-[現象] [GGH4.X] 現在　GGW3.2.1　を使用しているが， GGH4.X へのバージョンアップを上書きインストールで行って良いか？
-[説明] GGW3.2.1では設定情報をレジストリで管理していましたが， GGH4.X ではXMLファイル （テキストファイル） 管理するように仕様が変更されました．このため，以下の （従来行われていた） ２つの方法ではパージョンアップを行うことが出来ません．
-新しいGGの上書きインストール レジストリのバックアップ，旧GGのアンインストール，新GGのインストール，レジストリのリストア
-確実なバージョンアップを行うためには，以下の手順で作業を行って下さい．
-レジストリ HKLM¥SOFTWARE¥GraphOn をバックアップする．*1 ライセンスファイル license.lic （Ver3.2.1用） をバックアップする． *1 現GGをアンインストールする． サーバを再起動する． サーバに異常がないことを確認する． 新しいGGをインストールする． 新しいライセンス （Ver4.X用） をインストールする． サーバを再起動する． サービス GO-Global Aplication Publishing Service が 「開始」 していることを確認する． サービス GO-Global License Service が 「開始」 していることを確認する． クラスタマネージャで試しのアプリケーション　（メモ帳など） を登録する． クライアントから接続し，試しのアプリケーションが起動し正常に動作することを確認する． クラスタマネージャの HOST Options を設定する． *2 クラスタマネージャで各アプリケーションを登録する． *2 クライアントから接続し，各アプリケーションが起動し正常に動作することを確認する．
-*1 何らかの理由で正常にバージョンアップ出来なかった時，元の環境に戻す時に必要となる設定やファイルの採取 （バックアップ） です．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc572/" class="btn btn-template-main">続きを読む</a>
+2013/10/29*
+[番号] 技術ノート KGTN 2013102902
+[現象] [GGH4.X] GGH4.6 と GGH4.7 / GGH4.8 の関係は？
+[説明] GGH4.6 に &ldquo;Windows Server 2012 対応&rdquo; の機能を追加した製品が GGH4.7 で， GGH4.7 で見つかった不具合を修正した製品が GGH4.8 です．従って &ldquo;Windows Server 2012 対応&rdquo; が増えた点を除き，それらに機能的な差異はありません．
+ファイル KGTN2013102902.pdf [(44.1 KB)] [kitasp 技術センター, 2013/10/29 12:45]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc509/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -489,7 +489,7 @@ http://www.cacert.org/ http://centos.server-manual.com/centos5_cacert.html http:
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc573/">
+                                      <a href="/posts/new_md/doc508/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -497,7 +497,7 @@ http://www.cacert.org/ http://centos.server-manual.com/centos5_cacert.html http:
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc573/">[GGW3.2.1/Mac] Mac OS X クライアントを Mac OS X 10.4/10.5/10.6/10.7 の環境で利用していたが， Mac OS X を 10.8 に上げたところ，コネクションが切れるようになった．</a></h2>
+                                    <h2><a href="/posts/new_md/doc508/">[GGH4.X] IE （Internet Explorer） の画面が更新されない．最大化等を行うと画面が更新される．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -510,17 +510,19 @@ http://www.cacert.org/ http://centos.server-manual.com/centos5_cacert.html http:
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc573/"><i class="far fa-calendar"></i> 2013-05-16</a>
+                                            <a href="/posts/new_md/doc508/"><i class="far fa-calendar"></i> 2013-10-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/05/16*
-[番号] 技術ノート KGTN 2013051601
-[現象] [GGW3.2.1/Mac] Mac OS X クライアントを Mac OS X 10.4/10.5/10.6/10.7 の環境で利用していたが， Mac OS X を 10.8 に上げたところ，コネクションが切れるようになった．
-[説明] Mac OS X クライアントの最新版を （再） インストールして下さい．
-ファイル KGTN2013051601.pdf [(41.2 KB)] [kitasp 技術センター, 2013/05/16 09:14]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc573/" class="btn btn-template-main">続きを読む</a>
+2013/10/29*
+[番号] 技術ノート KGTN 2013092703
+[現象] [GGH4.X] IE （Internet Explorer） の画面が更新されない．最大化等を行うと画面が更新される．
+[説明] IEの画面が更新されない問題は，弊社で内容を確認しGraphOn社に報告しております．この現象は，GGクライアントの色深度を24ビットまたは32ビットに設定した場合に発生します．当面の回避方法としては，色深度を16ビット （パラメタ： ?mx 16） に設定して下さい．
+上記の環境に加えオプション -qt 0 を指定した場合，以下の画面のように IE のウインドウの内容が斜めにずれて表示される現象が発生します．この現象についても，当面の回避方法として色深度を16ビット （パラメタ： ?mx 16） に設定して下さい．
+補　足 IE の画面がリフレッシュされない問題と内容が斜めにずれて表示される問題は，GraphOn社内で原因が特定され修正方法も分かっております．スケジュールは未定ですが，次にリリースされるバージョン （ビルド） で，この修正が取り込まれる予定です．
+ファイル KGTN2013092703.pdf [(126 KB)] [kitasp 技術センター, 2013/10/30 07:36]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc508/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -530,7 +532,7 @@ http://www.cacert.org/ http://centos.server-manual.com/centos5_cacert.html http:
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc574/">
+                                      <a href="/posts/new_md/doc511/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -538,7 +540,7 @@ http://www.cacert.org/ http://centos.server-manual.com/centos5_cacert.html http:
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc574/">[GGH4.6/Gateway] Gateway Client (Windows) でアプリケーションを起動した場合，ホーム画面のウインドウの中に表示されるのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc511/">[GGW3.2.1] GGW3.2.1 Patch6 (4510) を使用しているが，メモ帳をシステムプロセスとして登録しているにも関わらず PW を閉じた直後に終了しない．GGW3.2.1 Patch2 (4420) では， PW を閉じた直後に終了した．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -551,17 +553,18 @@ http://www.cacert.org/ http://centos.server-manual.com/centos5_cacert.html http:
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc574/"><i class="far fa-calendar"></i> 2013-05-13</a>
+                                            <a href="/posts/new_md/doc511/"><i class="far fa-calendar"></i> 2013-10-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/05/13*
-[番号] 技術ノート KGTN 2013051301
-[現象] [GGH4.6/Gateway] Gateway Client (Windows) でアプリケーションを起動した場合，ホーム画面のウインドウの中に表示されるのか？
-[説明] いいえ，起動したアプリケーションのウインドウはクライアントのデスクトップ上に表示されます．以下のスクリーンショットのメモ帳は Gateway で起動されたアプリケーションですが，クライアントのデスクトップ上に表示されております．
-ファイル KGTN2013051301.pdf [(76.9 KB)] [kitasp 技術センター, 2013/05/13 10:57]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc574/" class="btn btn-template-main">続きを読む</a>
+2013/10/29*
+[番号] 技術ノート KGTN 2013102201
+[現象] [GGW3.2.1] GGW3.2.1 Patch6 (4510) を使用しているが，メモ帳をシステムプロセスとして登録しているにも関わらず PW を閉じた直後に終了しない．GGW3.2.1 Patch2 (4420) では， PW を閉じた直後に終了した．
+[説明] GGW3.2.1 Patch4 (4466) およびそれ以降では， PW を誤って閉じた時にシステムプロセスとして登録されたアプリケーションのデータが保存出来ないという問題を解消するため，クラスタマネージャの設定項目 Grace period で設定した時間　（分）　だけアプリケーションの終了が猶予されます．例えば Grace period に1分を設定すると， PW を閉じた直後にファイル保存にダイアログが表示され，設定した1分の間にデータを保存することが出来ます．そして PW を閉じてから1分が経過すると， （データが保存されたかどうかに関わらず） アプリケーションが強制終了されます．なお，GGW3.2.1 Patch2 (4420) と同様の動作にしたい場合は，クラスタマネージャの設定項目 Grace period を設定しない （チェックを入れない） ようにして下さい．
+参考のために GraphOn社からの情報を以下に引用します．
+ファイル KGTN2013102201.pdf [(78 KB)] [kitasp 技術センター, 2013/10/29 10:00]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc511/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -571,7 +574,7 @@ http://www.cacert.org/ http://centos.server-manual.com/centos5_cacert.html http:
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc576/">
+                                      <a href="/posts/new_md/doc510/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -579,7 +582,7 @@ http://www.cacert.org/ http://centos.server-manual.com/centos5_cacert.html http:
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc576/">[DEV] GGとは直接関係はないが，マルチモニタ環境で動作するアプリケーションを作成する場合，どのようなAPIを使用すれば良いか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc510/">[GGW3.2.1] 技術ノートKGTN#2013102201の変更点以外に，GGW3.2.1 Patch2 (4420) 〜 GGW3.2.1 Patch6 (4510) 間で動作に影響を与える変更はあるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -592,19 +595,17 @@ http://www.cacert.org/ http://centos.server-manual.com/centos5_cacert.html http:
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc576/"><i class="far fa-calendar"></i> 2013-04-30</a>
+                                            <a href="/posts/new_md/doc510/"><i class="far fa-calendar"></i> 2013-10-29</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/04/30*
-[番号] 技術ノート KGTN 2013043001
-[現象] [DEV] GGとは直接関係はないが，マルチモニタ環境で動作するアプリケーションを作成する場合，どのようなAPIを使用すれば良いか？
-[説明] マルチモニタ環境向けのAPIとして，以下の関数があります．
-EnumDisplayMonitors - モニタを列挙します． GetMonitorInfo ? 個別のモニタの情報を取得します． MonitorEnumProc ? EnumDisplayMonitors が呼び出すコールバック関数です． MonitorFromPoint ? 指定した位置を含むディスプレイのハンドルを返します． MonitorFromRect ? 指定した矩形を最も含むディスプレイのハンドルを返します． MonitorFromWindow - 指定したウインドウを最も含むディスプレイのハンドルを返します．
-http://msdn.microsoft.com/en-us/library/windows/desktop/dd145071(v=vs.85).aspx Multiple Display Monitors
-ファイル KGTN2013043001.pdf [(59.4 KB)] [kitasp 技術センター, 2013/04/30 09:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc576/" class="btn btn-template-main">続きを読む</a>
+2013/10/29*
+[番号] 技術ノート KGTN 2013102901
+[現象] [GGW3.2.1] 技術ノートKGTN#2013102201の変更点以外に，GGW3.2.1 Patch2 (4420) 〜 GGW3.2.1 Patch6 (4510) 間で動作に影響を与える変更はあるのか？
+[説明] GraphOn社の開発担当者が，GGW3.2.1 Patch2 (4420) 〜 GGW3.2.1 Patch6 (4510) 間のソースコードの変更箇所をチェックしたところ，動作に影響を与える変更 （従来と異なる挙動を招く変更） は他にありませんでした．参考のために GraphOn社からの情報を以下に引用します．
+ファイル KGTN2013102901.pdf [(62.8 KB)] [kitasp 技術センター, 2013/10/29 12:40]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc510/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -614,7 +615,7 @@ http://msdn.microsoft.com/en-us/library/windows/desktop/dd145071(v=vs.85).aspx M
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc577/">
+                                      <a href="/posts/new_md/doc512/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -622,7 +623,7 @@ http://msdn.microsoft.com/en-us/library/windows/desktop/dd145071(v=vs.85).aspx M
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc577/">[互換性情報] 2013年4月9日リリースの更新プログラム KB2813170 は，64ビット環境の GGH4.X で互換性がない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc512/">[GGH4.X] GGと XenApp を同一のサーバにインストールして，パフォーマンスの評価等を行って構わないか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -635,21 +636,17 @@ http://msdn.microsoft.com/en-us/library/windows/desktop/dd145071(v=vs.85).aspx M
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc577/"><i class="far fa-calendar"></i> 2013-04-24</a>
+                                            <a href="/posts/new_md/doc512/"><i class="far fa-calendar"></i> 2013-10-24</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/04/24*
-[番号] 技術ノート KGTN 2013041101
-[現象] [互換性情報] 2013年4月9日リリースの更新プログラム KB2813170 は，64ビット環境の GGH4.X で互換性がない．
-[説明] GraphOn社からの情報で，2013年4月9日リリースの更新プログラム KB2813170 が64ビット環境の GGH4.X で互換性がありません．この更新プログラムに対応する互換アップデートがリリースされるまで，以下の暫定対応をお願いします．
-更新プログラム KB2813170 をインストールしない． 更新プログラム KB2813170 をインストールした場合はアンインストールする．
-補足１ 更新プログラム KB2813170 をインストールした場合，サービスGO-Global Application Publishing Service は 「開始」 状態になりますが，ログオンを試みた場合に以下のエラーがAPSログに記録され，ログオンすることが出来ません．
-22 2013-04-15 09:28:20.089
- aps (1108) AS: Function NativeCreateProcess() failed with situationID 3995, ntStatus 3221225712, dwGLE 0.  23 2013-04-15 09:28:20.089
- Logon1 on Win-tsfj3nvf4e7, aps (1108) Failed to create session initializer process during session startup for client at address 192.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc577/" class="btn btn-template-main">続きを読む</a>
+2013/10/24*
+[番号] 技術ノート KGTN 2013102401
+[現象] [GGH4.X] GGと XenApp を同一のサーバにインストールして，パフォーマンスの評価等を行って構わないか？
+[説明] GGと XenApp はリソース （プロセッサやメモリなど） の割り当ての戦略等が異なりますので，同一のサーバにインストールして比較を行った場合，正しい結果が得られない可能性があります．ディスクのイメージを保存する等して，GGと XenApp が同居しない環境で検証を行って下さい．
+ファイル KGTN2013102401.pdf [(48.2 KB)] [kitasp 技術センター, 2013/10/24 10:19]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc512/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -659,7 +656,7 @@ http://msdn.microsoft.com/en-us/library/windows/desktop/dd145071(v=vs.85).aspx M
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc578/">
+                                      <a href="/posts/new_md/doc513/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -667,7 +664,7 @@ http://msdn.microsoft.com/en-us/library/windows/desktop/dd145071(v=vs.85).aspx M
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc578/">[GGH4.6] GGH4.6へアップグレードしたところ， license.log ファイルの記録に異常は見られないのに，ライセンス・エラーが発生する．</a></h2>
+                                    <h2><a href="/posts/new_md/doc513/">[GGW3.2.1] Windows Server 2008 (x86) の環境で GGW3.2.1 Patch4 (4466) を使用しているが，最新の更新プログラム （Windows Update） を適用したい．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -680,17 +677,20 @@ http://msdn.microsoft.com/en-us/library/windows/desktop/dd145071(v=vs.85).aspx M
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc578/"><i class="far fa-calendar"></i> 2013-04-22</a>
+                                            <a href="/posts/new_md/doc513/"><i class="far fa-calendar"></i> 2013-10-18</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/04/22*
-[番号] 技術ノート KGTN 2013042202
-[現象] [GGH4.6] GGH4.6へアップグレードしたところ， license.log ファイルの記録に異常は見られないのに，ライセンス・エラーが発生する．
-[説明] GGH4.6 は，従来の GGH4.0 および GGH4.5 のライセンス・ファイルでは動作しません．ライセンス・ファイルを GGH4.6 用の新しいランセンス・ファイルにアップグレードして下さい．
-ファイル KGTN2013042202.pdf [(45.2 KB)] [kitasp 技術センター, 2013/04/22 13:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc578/" class="btn btn-template-main">続きを読む</a>
+2013/10/18*
+[番号] 技術ノート KGTN 2013101801
+[現象] [GGW3.2.1] Windows Server 2008 (x86) の環境で GGW3.2.1 Patch4 (4466) を使用しているが，最新の更新プログラム （Windows Update） を適用したい．
+[説明] GGW3.2.1 Patch4 には，3.2.1.4466 (Patch4) と 3.2.1.4474 (Patch4 R2) の２つのバージョンがあり，後者については互換アップデート CompatibilityUpdate3.2.1_KB2555917.exe を適用することで，2013-10-18現在で全ての更新プログラムを適用した環境でAPSが開始します．前者については，この互換アップデート CompatibilityUpdate3.2.1_KB2555917.exe を適用してもAPSが開始しませんので，以下の手順で対応をお願いします．
+GGW3.2.1 Patch4 R2 (4474) を上書きインストール 互換アップデート CompatibilityUpdate3.2.1_KB2555917.exe をインストール マシンを再起動
+なお， GGW3.2.1 Patch4 (4466) と GGW3.2.1 Patch4 R2 (4474) の差異は，以下の通りです．
+補　足 更新プログラム （Windows Update） の置き換えとGraphOn社の出荷の履歴は以下の通りです．
+ファイル KGTN2013101801.pdf [(74.9 KB)] [kitasp 技術センター, 2013/10/18 12:46]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc513/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -700,7 +700,7 @@ http://msdn.microsoft.com/en-us/library/windows/desktop/dd145071(v=vs.85).aspx M
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc582/">
+                                      <a href="/posts/new_md/doc350/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -708,7 +708,7 @@ http://msdn.microsoft.com/en-us/library/windows/desktop/dd145071(v=vs.85).aspx M
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc582/">[GGH4.X] GGH4.X は，クライアントの環境として Windows CE をサポートしているか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc350/">[GGH4.X] GGH4.0～4.7 から GGH4.8 へバージョンアップする場合，上書きインストールではダメなのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -721,17 +721,17 @@ http://msdn.microsoft.com/en-us/library/windows/desktop/dd145071(v=vs.85).aspx M
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc582/"><i class="far fa-calendar"></i> 2013-04-18</a>
+                                            <a href="/posts/new_md/doc350/"><i class="far fa-calendar"></i> 2013-10-16</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2013/04/18*
-[番号] 技術ノート KGTN 2013041801
-[現象] [GGH4.X] GGH4.X は，クライアントの環境として Windows CE をサポートしているか？
-[説明] いいえ，GGW3.2系は特定機種で Windows CE の環境 （クライアント） をサポートしておりましたが，GGH4.Xでは Windows CE の環境をサポートしておりません．
-ファイル KGTN2013041801.pdf [(40.4 KB)] [kitasp 技術センター, 2013/04/18 10:59]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc582/" class="btn btn-template-main">続きを読む</a>
+2013/10/16*
+[番号] 技術ノート KGTN 2013101602
+[現象] [GGH4.X] GGH4.0～4.7 から GGH4.8 へバージョンアップする場合，上書きインストールではダメなのか？
+[説明] GGH4.0～4.7 に互換アップデート （2013年4月の &ldquo;KB2813170&rdquo; 向け互換アップデート） が適用されていない場合は， GGH4.8を上書きインストールして構いません．もし適用されている場合は，この互換アップデートとGG本体 （GGH4.0～4.7） をアンインストールする必要があります．これは互換アップデートの内容に起因する制限で，今後リリースされる互換アップデートでは，この制限は解消される見込みです．
+ファイル kgtn2013101602.pdf [(51.2 KB)] [kitasp 技術センター, 2014/02/07 16:42]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc350/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -801,7 +801,7 @@ http://msdn.microsoft.com/en-us/library/windows/desktop/dd145071(v=vs.85).aspx M
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

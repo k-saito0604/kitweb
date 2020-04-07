@@ -319,7 +319,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1692/">
+                                      <a href="/posts/new_md/doc1542/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -327,7 +327,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1692/">GGサーバのC:ドライブのディスク容量は，どれくらいにすべきか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1542/">[GGH4.0] クライアントドライブ機能を使い，クライアント側のドライブ間でファイルをコピーした場合，どのように処理されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -340,17 +340,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1692/"><i class="far fa-calendar"></i> 2010-07-23</a>
+                                            <a href="/posts/new_md/doc1542/"><i class="far fa-calendar"></i> 2010-11-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/23*
-[番号] 技術ノート KGTN 2010072301
-[現象] GGサーバのC:ドライブのディスク容量は，どれくらいにすべきか？
-[説明] 弊社の標準環境では Windows Server 2003 のC:ドライブに24GB割り当てております．大規模案件の事例では，コストの問題 （FCディスクを使用） 等から24GBより若干少ない容量を割り当てています （ログレベルは4を設定） ．従って，標準的な利用では24GB〜32GBあれば十分だと思われますが，しかし安定運用を考えるならば，この容量の1.5〜2倍の容量を割り当てて下さい．大規模案件の事例では，アンチウイルスソフトの頻繁なアップデートファイルのダウンロード＆インストール等でディスクの断片化が進み，パフォーマンスに影響を与えるようになりました．想定される容量の1.5〜2倍を割り当てておけば，デフラグ処理等も含めパフォーマンスの低下を低く抑えることが出来ます．
-ファイル KGTN2010072301.pdf [(58.3 KB)] [kitasp 技術センター, 2010/07/23 14:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1692/" class="btn btn-template-main">続きを読む</a>
+2010/11/19*
+[番号] 技術ノート KGTN 2010111904
+[現象] [GGH4.0] クライアントドライブ機能を使い，クライアント側のドライブ間でファイルをコピーした場合，どのように処理されるのか？
+[説明] クライアントドライブ間であっても，GGサーバがファイルのコピー処理を行います．つまり， 「クライアント → サーバ → クライアント」 という流れでコピー処理が行われます．従って， 「サーバ → クライアント」 のコピーと比較し，約2倍の時間を要します．
+ファイル KGTN2010111904.pdf [(44.2 KB)] [kitasp 技術センター, 2010/11/19 14:40]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1542/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1694/">
+                                      <a href="/posts/new_md/doc1544/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -368,7 +368,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1694/">エンタープライズオプションの GMFileProc をファイル削除ツールとして使って良いか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1544/">[GGH4.0] クライアントドライブ機能を使い，サーバ側からクライアント側へ100MBのファイルをコピーし，その後ファイルの操作を行おうとしたところ，エクスプローラーの画面にフォルダ中のファイルが全て表示されないことがある．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -381,18 +381,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1694/"><i class="far fa-calendar"></i> 2010-07-22</a>
+                                            <a href="/posts/new_md/doc1544/"><i class="far fa-calendar"></i> 2010-11-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/22*
-[番号] 技術ノート KGTN 2010072201
-[現象] エンタープライズオプションの GMFileProc をファイル削除ツールとして使って良いか？
-[説明] GG設定ファイルの progPath の値を空にすることで，ファイルの削除ツール （特定のフォルダをチェックし，所定の日数を経過したファイルを削除） として利用することが出来ます．設定のサンプルは以下の通りで，下線の付いた項目のみが意味を持ちます．
-[default] logLevel = 9 dayDelete = 7 progPath = progArgs = progWait = 3 fileExt = txt fileDir = C:¥GraphOn¥Develop¥KitaQ¥GMFileProc¥export¥GMFileProc¥sample fileBackup = C:¥GraphOn¥Develop¥KitaQ¥GMFileProc¥export¥GMFileProc¥sample¥backup fileMove = N fileTooOld = 3600 traceFile = C:¥GraphOn¥Develop¥KitaQ¥GMFileProc¥export¥GMFileProc¥sample¥trace-%YYYYMMDD%.log repeatSleep = 1 &lsquo;&ndash; progBefore = progBeforeArgs = progAfter = progAfterArgs = &lsquo;&mdash;
-ファイル KGTN2010072201.pdf [(54.9 KB)] [kitasp 技術センター, 2010/07/22 09:07]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1694/" class="btn btn-template-main">続きを読む</a>
+2010/11/19*
+[番号] 技術ノート KGTN 2010111902
+[現象] [GGH4.0] クライアントドライブ機能を使い，サーバ側からクライアント側へ100MBのファイルをコピーし，その後ファイルの操作を行おうとしたところ，エクスプローラーの画面にフォルダ中のファイルが全て表示されないことがある．
+[説明]
+ファイル KGTN2010111902.pdf [(52.4 KB)] [kitasp 技術センター, 2010/11/19 11:58]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1544/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -402,7 +401,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1693/">
+                                      <a href="/posts/new_md/doc1543/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -410,7 +409,7 @@
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1693/">プラグイン LaunchBrowser を使ってファイルをダウンロードさせるサーバ側のプログラムはないのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1543/">[GGH4.0] クライアントドライブ機能を使い，サーバ側からクライアント側へ大きなファイルをコピーしている時，「コピーしています...」 ダイアログの 「キャンセル」 ボタンを押下出来るか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -423,19 +422,17 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1693/"><i class="far fa-calendar"></i> 2010-07-22</a>
+                                            <a href="/posts/new_md/doc1543/"><i class="far fa-calendar"></i> 2010-11-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/22*
-[番号] 技術ノート KGTN 2010072202
-[現象] プラグイン LaunchBrowser を使ってファイルをダウンロードさせるサーバ側のプログラムはないのか？
-[説明] サーバ側のプログラムの処理の概要とVC++2008 でのサンプルコードを以下に示します．
-ファイル選択ダイアログを表示 選択されたファイルをウエッブサーバのドキュメントフォルダへコピー そのファイルをダウンロードするURLを生成 LaunchBrowserI.dll をロード LaunchBrowser のアドレスを取得 LaunchBrowser( , &lt;URLの長さを保持するDWORD変数のポインタ&gt;)　をコール FreeLibrary でLaunchBrowserI.dll を開放
-void CGMFileDownloadDlg::OnBnClickedOk() { TCHAR tFilePath[nBufferSize+1],tFileCopy[nBufferSize+1],tFileName[nBufferSize+1]; TCHAR tBuf[nBufferSize+1]; char cBuf[nBufferSize+1]; DWORD dTemp; size_t CharactersConverted = 0;
-m_filePath.GetWindowTextW(tFilePath,(sizeof(tFilePath)/sizeof(tFilePath[0]))); GetFileTitle(tFilePath,tFileName,nBufferSize); _stprintf_s(tFileCopy,_T(&quot;%s¥¥%s&quot;),opt_copyDir,tFileName); CopyFile(tFilePath,tFileCopy,FALSE); _stprintf_s(tBuf,opt_downloadURL,tFileName); //--- HMODULE hMod = NULL; LaunchBrowser func = NULL; if(!hMod) { hMod = LoadLibrary(_T (&quot;LaunchBrowserI.dll&quot;)); } if(hMod) { func = (LaunchBrowser)GetProcAddress(hMod,&quot;LaunchBrowser&quot;); } _stprintf_s(tBuf,opt_downloadURL,tFileName); wcstombs_s(&amp;CharactersConverted,cBuf,sizeof(cBuf),tBuf,_TRUNCATE); dTemp = strlen(cBuf); (*func)((LPTSTR)cBuf,&amp;dTemp); FreeLibrary(hMod); }  ファイル KGTN2010072202.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1693/" class="btn btn-template-main">続きを読む</a>
+2010/11/19*
+[番号] 技術ノート KGTN 2010111903
+[現象] [GGH4.0] クライアントドライブ機能を使い，サーバ側からクライアント側へ大きなファイルをコピーしている時，「コピーしています&hellip;」 ダイアログの 「キャンセル」 ボタンを押下出来るか？
+[説明] はい， 「キャンセル」 ボタンを押下することは可能で，コピー処理は直ちに強制終了します．
+ファイル KGTN2010111903.pdf [(43.9 KB)] [kitasp 技術センター, 2010/11/19 14:26]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1543/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -445,7 +442,7 @@ m_filePath.GetWindowTextW(tFilePath,(sizeof(tFilePath)/sizeof(tFilePath[0]))); G
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1696/">
+                                      <a href="/posts/new_md/doc1545/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -453,7 +450,7 @@ m_filePath.GetWindowTextW(tFilePath,(sizeof(tFilePath)/sizeof(tFilePath[0]))); G
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1696/">GGのプラグイン LaunchBrowser の目的は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1545/">[GGH4.0] クライアントドライブ機能を使い，例えばサーバ側からクライアント側へ100MBのファイルをコピーしている時，GG上で利用しているアプリケーションが固まったりしないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -466,20 +463,17 @@ m_filePath.GetWindowTextW(tFilePath,(sizeof(tFilePath)/sizeof(tFilePath[0]))); G
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1696/"><i class="far fa-calendar"></i> 2010-07-21</a>
+                                            <a href="/posts/new_md/doc1545/"><i class="far fa-calendar"></i> 2010-11-19</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/21*
-[番号] 技術ノート KGTN 2010072103
-[現象] GGのプラグイン LaunchBrowser の目的は？
-[説明] GO-Global for Windows Ver3.X にはサーバ側のドライブだけでなくクライアント側のドライブにアクセスできる機能 「クライアントドライブ機能」 がありますが，制限事項として19MBを越えるファイルをコピーすることが出来ません （参考 KGTN#2009091501） ．そこで，19MBを越える大きなファイルをダウンロードする方法として，ブラウザのファイルダウンロード機能を利用する方法が考えられますが，利用者にダウンロードの度にブラウザを起動して，ダウンロードサイトのURLを入力させるのは現実的ではありません．この問題を解決するために，プラグイン LaunchBrowser を作成しました．サーバ側で動作するアプリケーションが下記のようなコードを呼び出すことで，利用者の介在無しに
- クライアント側のブラウザが自動的に起動され， 2) 引数で指定したURLへ自動的にアクセスします．  Private Declare Function LaunchBrowser Lib _ &ldquo;C:¥GraphOn¥DLL¥LaunchBrowserI.dll&rdquo; _ (ByVal lpBuffer As String, nSize As Long) As Long &hellip; sUrl = lLen = Len(sUrl) Ret = LaunchBrowser(sUrl, lLen)
-プラグイン LaunchBrowser とウエッブサーバを利用することで，例えば100MBを越える大きなファイルも効率的にダウンロードすることが可能になります．
-参　考 本技術ノートに関連する情報として，以下の技術ノートがあります．
-KGTN#2010061403 GGのプラグイン LaunchBrowser で，クライアント側のブラウザを起動する時のインタフェースは？ KGTN#2010061404 GGのプラグイン LaunchBrowser で障害が発生した場合の切り分けは？ KGTN#2010063001 プラグイン LaunchBrowser を使って，他のプログラムを起動したい． KGTN#2010063002 プラグイン LaunchBrowser をインストールしたクライアントでGGサーバを利用している時， 「例えば」 クライアントのメモ帳を開きキーボードを押下すると &ldquo;コンポーネントが見つかりません - cs.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1696/" class="btn btn-template-main">続きを読む</a>
+2010/11/19*
+[番号] 技術ノート KGTN 2010111901
+[現象] [GGH4.0] クライアントドライブ機能を使い，例えばサーバ側からクライアント側へ100MBのファイルをコピーしている時，GG上で利用しているアプリケーションが固まったりしないのか？
+[説明] サーバやクライアントのコンピュータのスペック，ネットワークの帯域幅，同時利用ユーザ数等に依存しますので一般論としてお答えすることは困難ですが，弊社の実験では100MBのファイルをコピー中でも IE を使いヤフー等のページを閲覧することが出来ました．
+ファイル KGTN2010111901.pdf [(50.4 KB)] [kitasp 技術センター, 2010/11/19 10:27]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1545/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -489,7 +483,7 @@ KGTN#2010061403 GGのプラグイン LaunchBrowser で，クライアント側�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1697/">
+                                      <a href="/posts/new_md/doc1548/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -497,7 +491,7 @@ KGTN#2010061403 GGのプラグイン LaunchBrowser で，クライアント側�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1697/">GO</a></h2>
+                                    <h2><a href="/posts/new_md/doc1548/">[GGH4.0] Universal Printer Driver が有効 かつ クライアント印刷機能のパラメタ autoConfigPrinters が all であるにも関わらず，構成されないプリンタが存在する．どのような原因が考えられるか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -510,18 +504,19 @@ KGTN#2010061403 GGのプラグイン LaunchBrowser で，クライアント側�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1697/"><i class="far fa-calendar"></i> 2010-07-21</a>
+                                            <a href="/posts/new_md/doc1548/"><i class="far fa-calendar"></i> 2010-11-18</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/21*
-[番号] 技術ノート KGTN 2010072102
-[現象] GO-Global Windows Host 4.0 がサポートするサーバOSは？
-[説明] 以下のサーバOS環境をサポートします．
-■64ビット環境 Windows Server 2008 R2 Standard or Enterprise Edition (x64) Windows Server 2008 Standard or Enterprise Edition with Service Pack 2 (x64)
-■32ビット環境 Windows Server 2008 Standard or Enterprise Edition with Service Pack 2 (x86) Windows Server 2003 R2 Standard or Enterprise Edition (x86) Windows Server 2003 Standard or Enterprise Edition with Service Pack 2 (x86)</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1697/" class="btn btn-template-main">続きを読む</a>
+2010/11/18*
+[番号] 技術ノート KGTN 2010111803
+[現象] [GGH4.0] Universal Printer Driver が有効 かつ クライアント印刷機能のパラメタ autoConfigPrinters が all であるにも関わらず，構成されないプリンタが存在する．どのような原因が考えられるか？
+[説明] 以下の条件が満たされると，そのプリンタは構成されません．
+過去に通常のプリンタドライバで構成されたことがある． その後，通常のプリンタドライバがアンインストール （削除） された．
+上記1で，そのプリンタは通常のプリンタドライバで構成するように MappedPrinterDrivers.xml に記録されているため，GGはそれに従い構成を試みます．しかし，上記2でドライバが削除されているため，構成処理が失敗します．対応としては，そのプリンタのドライバをサーバにインストールして下さい．
+ファイル KGTN2010111803.pdf [(55.6 KB)] [kitasp 技術センター, 2010/11/18 13:40]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1548/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -531,7 +526,7 @@ KGTN#2010061403 GGのプラグイン LaunchBrowser で，クライアント側�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1699/">
+                                      <a href="/posts/new_md/doc1550/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -539,7 +534,7 @@ KGTN#2010061403 GGのプラグイン LaunchBrowser で，クライアント側�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1699/">Windows Server 2008 の環境で，エクスプローラーを使ってクライアントドライブへファイルをコピー出来ない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1550/">[GGH4.0] クライアント印刷機能の Universal Printer Driver が有効な場合，プリンタのリストに Preview PDF (from xxx) が自動的に付加されるが，これを削ることは出来ないのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -552,21 +547,18 @@ KGTN#2010061403 GGのプラグイン LaunchBrowser で，クライアント側�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1699/"><i class="far fa-calendar"></i> 2010-07-21</a>
+                                            <a href="/posts/new_md/doc1550/"><i class="far fa-calendar"></i> 2010-11-18</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/21*
-[番号] 技術ノート KGTN 2010072002
-[現象] Windows Server 2008 の環境で，エクスプローラーを使ってクライアントドライブへファイルをコピー出来ない．
-[説明] Windows Server 2008 の環境では，エクスプローラーはサポートされません．
-補足1 下記のページの方法で， Windows NT 4.0 の File Manager をGGに登録すると，操作性は良くありませんがファイルのコピーが出来ることを確認しました．
-http://people.ee.ethz.ch/‾davidsch/vistafm/{.external}
-なお，この実験はサーバのUACをオフにして，クライアントのIEを 「管理者として実行」 で起動しました．その他については，継続調査中です．
-補足2 CopyFile関数でサーバ側のファイルをクライアント側へコピーするプログラムを作成 （VC++ 2008 を使用） したところ，ファイルは正しくコピーされました．従って， 「エクスプローラーでなく」 CopyFile関数でファイルをコピーする場合は，コピー出来ないという問題は発生しません．なお，クライアント側からサーバ側へコピーする場合は，0バイトのファイルが作成されます．
-ファイル KGTN2010072002.pdf [(61.7 KB)] [kitasp 技術センター, 2010/07/21 09:24]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1699/" class="btn btn-template-main">続きを読む</a>
+2010/11/18*
+[番号] 技術ノート KGTN 2010111801
+[現象] [GGH4.0] クライアント印刷機能の Universal Printer Driver が有効な場合，プリンタのリストに Preview PDF (from xxx) が自動的に付加されるが，これを削ることは出来ないのか？
+[説明] Ver4.0系では， Preview PDF (from xxx) は自動的に付加されます．従って，これを削ることは出来ませんが， Ver4.0.1でクライアントプリンタを削る機能が追加される見込みです．GraphOn社のコメントは以下の通りです．
+If the UPD is enabled in the Cluster Manager, Preview PDF will always be configured. In 4.0.1 we will have a UI where users can remove client printers and that will include being able to remove Preview PDF.
+ファイル KGTN2010111801.pdf [(69 KB)] [kitasp 技術センター, 2010/11/18 11:31]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1550/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -576,7 +568,7 @@ http://people.ee.ethz.ch/‾davidsch/vistafm/{.external}
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1698/">
+                                      <a href="/posts/new_md/doc1549/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -584,7 +576,7 @@ http://people.ee.ethz.ch/‾davidsch/vistafm/{.external}
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1698/">Windows Server 2008 の環境で，コンピュータの視覚効果 （テーマ） 等を設定しても，GG上で動作するアプリケーションに反映されない．</a></h2>
+                                    <h2><a href="/posts/new_md/doc1549/">[GGH4.0] クライアント印刷機能の Universal Printer Driver と Windows Printer Drivers の両方が有効な場合，プリンタはどちらのドライバで構成されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -597,17 +589,17 @@ http://people.ee.ethz.ch/‾davidsch/vistafm/{.external}
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1698/"><i class="far fa-calendar"></i> 2010-07-21</a>
+                                            <a href="/posts/new_md/doc1549/"><i class="far fa-calendar"></i> 2010-11-18</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/21*
-[番号] 技術ノート KGTN 2010072101
-[現象] Windows Server 2008 の環境で，コンピュータの視覚効果 （テーマ） 等を設定しても，GG上で動作するアプリケーションに反映されない．
-[説明] コンピュータの視覚効果 （テーマ） 等は，グラフィックチップの能力に頼って画面を描画していますので，ネットワークを介して描画するGG環境では，その機能が要求する十分な描画パフォーマンスを得ることが出来ません．このようなことから，GG環境ではコンピュータの視覚効果 （テーマ） 等の設定は反映されません．
-ファイル KGTN2010072101.pdf [(48.8 KB)] [kitasp 技術センター, 2010/07/21 09:45]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1698/" class="btn btn-template-main">続きを読む</a>
+2010/11/18*
+[番号] 技術ノート KGTN 2010111802
+[現象] [GGH4.0] クライアント印刷機能の Universal Printer Driver と Windows Printer Drivers の両方が有効な場合，プリンタはどちらのドライバで構成されるのか？
+[説明] [プリンタとFAX] → [ファイル] → [サーバーのプロパティ] → [ドライバ] → [インストールされたプリンタドライバ] にそのプリンタのドライバが存在する場合は，通常のプリンタドライバで構成されます．存在しない場合は，ユニバーサル・プリンタドライバで構成されます．
+ファイル KGTN2010111802.pdf [(48.1 KB)] [kitasp 技術センター, 2010/11/18 12:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1549/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -617,7 +609,7 @@ http://people.ee.ethz.ch/‾davidsch/vistafm/{.external}
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1695/">
+                                      <a href="/posts/new_md/doc1547/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -625,7 +617,7 @@ http://people.ee.ethz.ch/‾davidsch/vistafm/{.external}
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1695/">エンタープライズオプションのプログラム GMFileProc の目的は？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1547/">業務開始前のサーバ再起動時に GO-Global Application Publishing Service の開始でタイムアウトが発生することがある．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -638,22 +630,18 @@ http://people.ee.ethz.ch/‾davidsch/vistafm/{.external}
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1695/"><i class="far fa-calendar"></i> 2010-07-21</a>
+                                            <a href="/posts/new_md/doc1547/"><i class="far fa-calendar"></i> 2010-11-18</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/21*
-[番号] 技術ノート KGTN 2010072104
-[現象] エンタープライズオプションのプログラム GMFileProc の目的は？
-[説明] GGサーバの状態を管理する方法として，セッション監視SDKの GMCheck でGGサーバの情報を取得し，その情報を直接DBへ登録する処理が考えられます．正常系のみを考えれば，この方式は単純で効率も良いのですが，大規模案件では想定外の様々な障害が発生しますので，このような方式では問題点の切り分けが難しいという大きな欠点があります （例: 多くのGGサーバがDBのレコードを更新するため，DBで異常が発生した場合，その契機の発見が難しい） ．
-このようなことから，障害発生時に確実に問題点を発見できるように，以下のような処理を行います．
-セッション監視SDKの GMCheck 等でGGサーバの状態をファイルに記録 状態が記録されたファイルをDB登録用共有フォルダへコピー 共有フォルダ中のファイルを順にDBへ登録 登録が完了したファイルをバックアップフォルダへ移動
-各時点でのGGサーバの状態はファイルに記録され，そのファイルの情報は１箇所でDBへ反映され，さらにバックアップフォルダへ保存されますので，障害発生後にファイルを解析することで問題点を発見することが可能になります．プログラム GMFileProc は，この処理の中でファイルの管理を行うプログラムで，以下のような機能を受け持ちます．
-DB登録用共有フォルダ中のファイルを順にピックアップ ピックアップしたファイルをDB登録用プログラムを呼び出してDBへ情報を登録 登録が完了したファイルをバックアップフォルダへ移動 バックアップフォルダ中の古いファイルを削除 OSの異常等に備えて処理した内容をトレースログやイベントログに記録
-これ以外にも，ネットワークやサーバが過負荷でファイルが滞留した時に備え，古いファイルをスキップする等の機能も持っています．
-ファイル KGTN2010072104.pdf [(73 KB)] [kitasp 技術センター, 2010/07/21 14:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1695/" class="btn btn-template-main">続きを読む</a>
+2010/11/18*
+[番号] 技術ノート KGTN 2010111804
+[現象] 業務開始前のサーバ再起動時に GO-Global Application Publishing Service の開始でタイムアウトが発生することがある．
+[説明] これまでの事例では，サーバ再起動時にサーバ自体およびネットワークの過負荷が原因で，このような現象が発生しました．例えば，多数のサーバを同時に再起動するような運用になっており，それらのサーバが一斉にSANディスクにアクセスするためネットワークやディスクが過負荷になり，その結果 Windows の初期化処理が遅くなり， GO-Global Application Publishing Service の開始に30秒以上かかりました．また，別の事例では，アンチウイルスソフトウエアのアップデート処理が最初に高負荷で開始し， GO-Global Application Publishing Service にCPUが殆ど割り当てられずタイムアウトが発生しました．
+対応としては，サーバ再起動時に何が起きているのか見極めて，それに応じた適切なタイミングでGO-Global Application Publishing Service を開始するようにして下さい．
+ファイル KGTN2010111804.pdf [(61.2 KB)] [kitasp 技術センター, 2010/11/18 14:33]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1547/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -663,7 +651,7 @@ DB登録用共有フォルダ中のファイルを順にピックアップ ピ�
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1700/">
+                                      <a href="/posts/new_md/doc1551/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -671,7 +659,7 @@ DB登録用共有フォルダ中のファイルを順にピックアップ ピ�
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1700/">GMFileProc の設定情報 progBefore と progAfter は，どのようなシナリオで使うのか？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1551/">[GGH4.0] サーバのみにインストールされたアプリケーションで，クライアントドライブにファイル （データ） を保存した場合，アイコンはどう表示されるのか？</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -684,18 +672,17 @@ DB登録用共有フォルダ中のファイルを順にピックアップ ピ�
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1700/"><i class="far fa-calendar"></i> 2010-07-20</a>
+                                            <a href="/posts/new_md/doc1551/"><i class="far fa-calendar"></i> 2010-11-17</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/20*
-[番号] 技術ノート KGTN 2010072001
-[現象] GMFileProc の設定情報 progBefore と progAfter は，どのようなシナリオで使うのか？
-[説明] ファイルの内容をデータベースに登録するような処理では，設定情報progPathで指定するプログラムがファイル毎にDBへの接続を繰り返します．DBへの接続は負荷の高い処理ですので，以下のように progBefore と progAfter を利用することで，１回のDB接続で処理をさせることが可能になります．
-progBefore ： データを蓄積する作業ファイルをクリア progPath ： 登録するデータを作業ファイルに追加 progAfter ： DBへ接続後，作業ファイルの内容を連続してDBへ登録
-ファイル KGTN2010072001.pdf [(51.9 KB)] [kitasp 技術センター, 2010/07/20 09:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1700/" class="btn btn-template-main">続きを読む</a>
+2010/11/17*
+[番号] 技術ノート KGTN 2010111702
+[現象] [GGH4.0] サーバのみにインストールされたアプリケーションで，クライアントドライブにファイル （データ） を保存した場合，アイコンはどう表示されるのか？
+[説明] GG上でクライアントドライブにあるファイル （データ） を見た時，そのアプリケーションのアイコンで表示されます．クライアントでそのファイル （データ） を直接見た場合は，白っぽい （空な） ファイルのアイコンが表示されます．
+ファイル KGTN2010111702.pdf [(42.9 KB)] [kitasp 技術センター, 2010/11/17 14:47]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1551/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -705,7 +692,7 @@ progBefore ： データを蓄積する作業ファイルをクリア progPath �
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="/posts/new_md/doc1701/">
+                                      <a href="/posts/new_md/doc1553/">
                                           
                                           <img src="/img/technote.jpg" class="img-responsive" alt="">
                                           
@@ -713,7 +700,7 @@ progBefore ： データを蓄積する作業ファイルをクリア progPath �
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1701/">プラグイン LaunchBrowser を使ってファイルをダウンロードさせたいが，ウエッブサーバのドキュメント外に置かれたファイルをダウンロードさせることは可能か？</a></h2>
+                                    <h2><a href="/posts/new_md/doc1553/">[GGH4.0] GG上のアプリケーションでデフォルトプリンタを変更したが，クライアント側のデフォルトプリンタが変更されない．</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -726,17 +713,17 @@ progBefore ： データを蓄積する作業ファイルをクリア progPath �
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/posts/new_md/doc1701/"><i class="far fa-calendar"></i> 2010-07-15</a>
+                                            <a href="/posts/new_md/doc1553/"><i class="far fa-calendar"></i> 2010-11-15</a>
                                         </p>
                                         
                                     </div>
                                     <p class="intro">*技術ノート
-2010/07/15*
-[番号] 技術ノート KGTN 2010071501
-[現象] プラグイン LaunchBrowser を使ってファイルをダウンロードさせたいが，ウエッブサーバのドキュメント外に置かれたファイルをダウンロードさせることは可能か？
-[説明] CGI （スクリプト） を利用することで可能です．PHPのサンプルを以下に示します．
-// // Example: // 1) http://localhost/gm_download.php?file=gg-explorer.exe // 2) http://localhost/gm_download.php?file=12345.dat // $fileDir = &ldquo;C:¥¥GraphOn¥¥BIN¥¥&rdquo;; $fileName = $_GET[&ldquo;file&rdquo;]; //- //- $fileNameA is &ldquo;actual file name&rdquo; //- $fileNameA = &ldquo;XXX.EXE&rdquo;; // $fileName; //- $filePath = $fileDir . $fileName; if((file_exists($filePath) != TRUE)||(is_dir($filePath) == TRUE)) { exit(&ldquo;File not found! - ¥&rdquo;&rdquo; . $fileName . &ldquo;¥&rdquo;&quot;); } $fileLength = filesize($filePath); header(&ldquo;Content-Disposition: attachment; filename=$fileNameA&rdquo;); header(&ldquo;Content-Length:$fileLength&rdquo;); header(&ldquo;Content-Type: application/octet-stream&rdquo;); readfile($filePath); ?</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1701/" class="btn btn-template-main">続きを読む</a>
+2010/11/15*
+[番号] 技術ノート KGTN 2010111504
+[現象] [GGH4.0] GG上のアプリケーションでデフォルトプリンタを変更したが，クライアント側のデフォルトプリンタが変更されない．
+[説明] Ver3.2系までは，GG上のアプリケーションがデフォルトプリンタを変更すると，それがクライアント側にも反映されましたが，Ver4.0系ではサーバ側 「のみ」 に反映されます．
+ファイル KGTN2010111504.pdf [(41.2 KB)] [kitasp 技術センター, 2010/11/15 13:28]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1553/" class="btn btn-template-main">続きを読む</a>
                                     </p>
                                 </div>
                             </div>
@@ -806,7 +793,7 @@ progBefore ： データを蓄積する作業ファイルをクリア progPath �
             </li>
             
             <li>
-                <a href="/categories/tech">tech (2569)</a>
+                <a href="/categories/tech">tech (2728)</a>
             </li>
             
         </ul>

@@ -409,26 +409,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1065/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc968/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1065/">[GGW3.2.1/GGH4.0] Client Clipboard （クライアント・クリップボード機能） でエラーが記録される．</a></h4>
+                            <h4><a href="/posts/new_md/doc968/">[GGH4.1/Clipboard] クライアントクリップボード機能に関して，どのような点が面倒なのか？</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-03-05
+                            日付 2012-07-24
                             </p>
                             <p class="intro">*技術ノート
-2012/03/05*
-[番号] 技術ノート KGTN 2012030501
-[現象] [GGW3.2.1/GGH4.0] Client Clipboard （クライアント・クリップボード機能） でエラーが記録される．
-[説明] Windows ではさまざまなオブジェクトをクリップボードにコピーすることが出来ますが，GGのクライアント・クリップボード機能では，コピー操作と同時に 「クライアント側からサーバ側へ」 あるいは 「サーバ側からクライアントへ側」 へオブジェクトをコピー （データ転送） する必要があるため，対象となるオブジェクトのサイズが大きい場合や，マシンを跨いでコピーできない形式の場合はエラーとなります．これは GG の仕様 （動作） に基づく制限事項となります．原則的には，文字列や画像等の基本的なデータのみがサポートされるとお考え下さい．
-補　足 クライアント・クリップボード機能では，コピー操作と同時に 「他方のクリップボードへデータをコピーする」 ，表現を変えれば 「他方のクリップボードへデータをペーストする」 という処理が行われます．従って，例えば何気なく Ctrl-C を押下したにも関わらず，その操作の直後に大量のデータが他方のクリップボードへペーストされることがある点にご注意下さい．
-ファイル KGTN2012030501.pdf [(61.8 KB)] [kitasp 技術センター, 2012/03/05 09:58]</p>
+2012/07/24*
+[番号] 技術ノート KGTN 2012072406
+[現象] [GGH4.1/Clipboard] クライアントクリップボード機能に関して，どのような点が面倒なのか？
+[説明] クリップボードのデータ形式は，アプリケーションが RegisterClipboardFormat 関数で自由に定義することが出来ます．このことによりデータ形式の識別子がマシン毎に異なる可能性があり，サーバとクライアント間でデータのコピー＆ペーストを行う時に，データ形式の登録や調整 （対応付け） が必要となります．また，１つの画像データでも複数のデータ形式でクリップボードに保持されるため，それらを全て他方へ転送すると，元のデータの数倍のサイズになり，パフォーマンスに関しても十分に配慮する必要があります．
+ファイル KGTN2012072406.pdf [(60.1 KB)] [kitasp 技術センター, 2012/07/24 11:42]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1065/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc968/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -447,27 +446,25 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1066/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc967/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1066/">[Network] さまざまなネットワーク環境 （回線速度・パケット遅延・パケット損失など） で試験したいが，お勧めのツールは？</a></h4>
+                            <h4><a href="/posts/new_md/doc967/">[GGW3.2.1] クライアント印刷機能で，クライアントからのプリンタドライバのアップロード機能を使用しているが，Windows 7 のクライアントからプリンタドライバがアップロードされない．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-03-02
+                            日付 2012-07-24
                             </p>
                             <p class="intro">*技術ノート
-2012/03/02*
-[番号] 技術ノート KGTN 2012030201
-[現象] [Network] さまざまなネットワーク環境 （回線速度・パケット遅延・パケット損失など） で試験したいが，お勧めのツールは？
-[説明] さまざまなツールがありますが，弊社では Windows 環境で動作する Wlinee を主に使用しています．回線速度・パケット遅延・パケット損失のパラメタを柔軟に設定することが可能で，GGの試験には十分な機能を有しています．
-上記設定画面は，双方向の帯域が 256kbps，パケット損失0%，パケット遅延200ms前後 （RTTは400ms前後） という設定です．なお， Wlinee のダウンロードサイトは以下の通りで，弊社ではこれを Windows Server 2003 R2 にインストールしています．
-http://sourceforge.jp/projects/wlinee/releases/
-ファイル KGTN2012030201.pdf [(222 KB)] [kitasp 技術センター, 2012/03/02 12:49]</p>
+2012/07/24*
+[番号] 技術ノート KGTN 2012072407
+[現象] [GGW3.2.1] クライアント印刷機能で，クライアントからのプリンタドライバのアップロード機能を使用しているが，Windows 7 のクライアントからプリンタドライバがアップロードされない．
+[説明] クライアントからのプリンタドライバのアップロード機能は，クライアントのOS用のプリンタドライバとサーバのOS用のプリンタドライバが同等な場合にのみ機能します．例えば，サーバのOSが Windows 2003 で，クライアントのOSが Windows 7 の場合は，通常異なるプリンタドライバになりますので，プリンタドライバのアップロード機能は働きません．サーバにそのOS用のプリンタドライバをインストールして下さい．なお，この場合サーバにインストールするプリンタドライバのバージョンと，クライアントにインストールされたプリンタドライバが同じバージョン （より正確に言えば同等のアーキテクチャ） である必要があります．
+ファイル KGTN2012072407.pdf [(49.8 KB)] [kitasp 技術センター, 2012/07/24 14:21]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1066/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc967/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -486,25 +483,26 @@ http://sourceforge.jp/projects/wlinee/releases/
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc1067/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc965/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc1067/">[GGW3.2.1/GGH4.0] GGサーバへアクセスするクライアントが，IPマスカレード等で全て同一IPアドレスになるが，このような環境でもセッション再接続機能を利用できるのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc965/">[Tool] GGのツール GGClipboardCheck について知りたい．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-03-01
+                            日付 2012-07-24
                             </p>
                             <p class="intro">*技術ノート
-2012/03/01*
-[番号] 技術ノート KGTN 2012030102
-[現象] [GGW3.2.1/GGH4.0] GGサーバへアクセスするクライアントが，IPマスカレード等で全て同一IPアドレスになるが，このような環境でもセッション再接続機能を利用できるのか？
-[説明] セッション再接続機能は，再接続すべきセッションをユーザIDで判断しますので，IPマスカレード等で全てのクライアントが同一IPアドレスであっても問題ありません．逆に，全てのクライアントが異なるIPアドレスであったとしても，ユーザIDの利用が重複しているとセッション再接続機能を利用することは出来ません．
-ファイル KGTN2012030102.pdf [(47.7 KB)] [kitasp 技術センター, 2012/03/01 14:29]</p>
+2012/07/24*
+[番号] 技術ノート KGTN 2012072501
+[現象] [Tool] GGのツール GGClipboardCheck について知りたい．
+[説明] GGClipboardCheck はクリップボードに保持された各データ形式について，以下の情報を表示するツールです． Auto Update にチェックを入れると，クリップボードの状態に変化があった時に，自動的に情報が更新されます．
+データ形式の識別子 データ形式の名称 データのサイズ
+ファイル KGTN2012072501.pdf [(59.8 KB)] [kitasp 技術センター, 2012/07/25 08:49]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc1067/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc965/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
@@ -523,26 +521,25 @@ http://sourceforge.jp/projects/wlinee/releases/
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="/posts/new_md/doc2603/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
+                                    <a href="/posts/new_md/doc971/" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> 記事を読む</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="/posts/new_md/doc2603/">[GGW3.2.1] クライアント印刷機能利用時に，サーバが 「印刷完了」 と認識するタイミングはいつなのか？</a></h4>
+                            <h4><a href="/posts/new_md/doc971/">[Win32/Clipboard] GGとは関係がないが， GetClipboardFormatName 関数の値が 0 になる．</a></h4>
                             <p class="author-category">
                             
-                            日付 2012-03-01
+                            日付 2012-07-24
                             </p>
                             <p class="intro">*技術ノート
-2012/03/01*
-[番号] 技術ノート KGTN 2012030101
-[現象] [GGW3.2.1] クライアント印刷機能利用時に，サーバが 「印刷完了」 と認識するタイミングはいつなのか？
-[説明] GGW3.2.1のクライアント印刷機能は同期方式で実装されていますので，以下の処理が完了した時点で， 「サーバ上での印刷完了」 となります．
- サーバ側での印刷ジョブの生成 （スプールファイルの作成） スプールファイルをメモリ上で圧縮 圧縮されたスプールファイルをクライアント側へ転送 圧縮されたスプールファイルをメモリ上で伸張 スプールファイルを印刷ジョブ （クライアント側） として投入  なおGGH4.X-5.X の場合は， Windows Printer Driver については非同期方式， Universal Printer Driver についてはGGW3.2.1 と同様の同期方式でクライアント印刷処理が行われます．
-ファイル KGTN2012030101.pdf [(59.6 KB)] [kitasp 技術センター, 2016/04/08 17:15]</p>
+2012/07/24*
+[番号] 技術ノート KGTN 2012072404
+[現象] [Win32/Clipboard] GGとは関係がないが， GetClipboardFormatName 関数の値が 0 になる．
+[説明] GetClipboardFormatName 関数は， RegisterClipboardFormat 関数を使用して登録されたデータ形式に限り，その名前を返します．システム定義のデータ形式 （CF_TEXT, CF_BITMAP など） にいては戻り値が 0 になります．
+ファイル KGTN2012072404.pdf [(51.3 KB)] [kitasp 技術センター, 2012/07/24 10:05]</p>
                             <p class="read-more">
-                              <a href="/posts/new_md/doc2603/" class="btn btn-template-main">続きを読む</a>
+                              <a href="/posts/new_md/doc971/" class="btn btn-template-main">続きを読む</a>
                             </p>
                         </div>
                     </div>
