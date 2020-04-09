@@ -47,12 +47,17 @@
     .item_excerpt b {
       background: pink;
     }
+    .center {
+  text-align: center;
+    }
   </style>
 </head>
 <div class="col-md-12">
-<h1>search</h1>
+<div class="center">
+  <h1>search</h1>
 <h4>検索するワードを入力してください。</h4>
 <input onkeyup="search(this.value)" size="15" autocomplete="off" autofocus placeholder="検索ワード" />
+</div>
 <span id="inputWord"></span> <span id="resultCount"></span>
 <div id="result"></div>
     </div>
