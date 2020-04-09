@@ -84,7 +84,7 @@
     <meta property="og:image:height" content="634">
   
   
-  <meta property="og:updated_time" content="2020-03-26T00:00:00Z">
+  <meta property="og:updated_time" content="2020-03-23T00:00:00Z">
   
 
   
@@ -314,131 +314,6 @@
                     <div class="col-md-9" id="blog-listing-medium">
 
                         
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1701/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1701/">プラグイン LaunchBrowser を使ってファイルをダウンロードさせたいが，ウエッブサーバのドキュメント外に置かれたファイルをダウンロードさせることは可能か？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1701/"><i class="far fa-calendar"></i> 2010-07-15</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/07/15*
-[番号] 技術ノート KGTN 2010071501
-[現象] プラグイン LaunchBrowser を使ってファイルをダウンロードさせたいが，ウエッブサーバのドキュメント外に置かれたファイルをダウンロードさせることは可能か？
-[説明] CGI （スクリプト） を利用することで可能です．PHPのサンプルを以下に示します．
-// // Example: // 1) http://localhost/gm_download.php?file=gg-explorer.exe // 2) http://localhost/gm_download.php?file=12345.dat // $fileDir = &ldquo;C:¥¥GraphOn¥¥BIN¥¥&rdquo;; $fileName = $_GET[&ldquo;file&rdquo;]; //- //- $fileNameA is &ldquo;actual file name&rdquo; //- $fileNameA = &ldquo;XXX.EXE&rdquo;; // $fileName; //- $filePath = $fileDir . $fileName; if((file_exists($filePath) != TRUE)||(is_dir($filePath) == TRUE)) { exit(&ldquo;File not found! - ¥&rdquo;&rdquo; . $fileName . &ldquo;¥&rdquo;&quot;); } $fileLength = filesize($filePath); header(&ldquo;Content-Disposition: attachment; filename=$fileNameA&rdquo;); header(&ldquo;Content-Length:$fileLength&rdquo;); header(&ldquo;Content-Type: application/octet-stream&rdquo;); readfile($filePath); ?</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1701/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1705/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1705/">クライアントドライブ機能において，受け取り側 （クライアント） のドライブに十分な容量が無い時，コピーを行うと0バイトのファイルが作成される．また，この時警告ダイアログは表示されない．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1705/"><i class="far fa-calendar"></i> 2010-07-12</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/07/12*
-[番号] 技術ノート KGTN 2010071201
-[現象] クライアントドライブ機能において，受け取り側 （クライアント） のドライブに十分な容量が無い時，コピーを行うと0バイトのファイルが作成される．また，この時警告ダイアログは表示されない．
-[説明] 弊社およびGraphOn社で現象を確認しました．この動作は，技術ノート KGTN#2009091501 の問題と関連しており，Ver3.2 系での制限事項 （既知の問題） となります．
-ファイル KGTN2010071201.pdf [(50.2 KB)] [kitasp 技術センター, 2010/07/12 09:43]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1705/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1703/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1703/">多数のサーバにGGをインストールするが，クラスタマネージャの設定を簡単に行う方法はないのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1703/"><i class="far fa-calendar"></i> 2010-07-12</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/07/12*
-[番号] 技術ノート KGTN 2010071301
-[現象] 多数のサーバにGGをインストールするが，クラスタマネージャの設定を簡単に行う方法はないのか？
-[説明] クラスタマネージャで設定する項目は，全てレジストリに保持されますので，以下の手順で他サーバへ設定することが出来ます．
-ひな形になるサーバ上でクラスタマネージャの各項目を設定する． レジストリエディタを起動し，以下のレジストリをエクスポートする． HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥AppServer 設定を反映したい各サーバ上でエクスポートしたレジストリ （のファイル） をインポートする．
-なお，上記3でインポートする時は，APSが停止した状態で行って下さい．
-ファイル KGTN2010071301.pdf [(52.8 KB)] [kitasp 技術センター, 2010/07/13 08:04]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1703/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
                         
                         <section class="post">
                             <div class="row">
@@ -744,6 +619,135 @@ http://www.atmarkit.co.jp/fdotnet/vblab/appqa_04/appqa_04_01.html A3サイズの
                             </div>
                         </section>
                         
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1711/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1711/">IIS &#43; ASP でファイルのダウンロード処理を作成したが，少し大きなファイルでもダウンロードに失敗する．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1711/"><i class="far fa-calendar"></i> 2010-07-01</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2010/07/01*
+[番号] 技術ノート KGTN 2010063004
+[現象] IIS + ASP でファイルのダウンロード処理を作成したが，少し大きなファイルでもダウンロードに失敗する．
+[説明] Response.WriteFile 等でダウンロード処理を行うと， IIS の仕様 （制約） により少し大きなファイルでもダウンロードに失敗します．これを回避するには，マイクロソフト社の知識ベース
+http://support.microsoft.com/kb/812406/ja http://support.microsoft.com/kb/812406/en  を参考に，実装方法 （運用方法） を変更して下さい．
+参　考 PHP-5.3.2 （FastSGI） をインストールし試験したところ，以下のコードで約72MBの ggw-3.2.1.4466.exe を十分な速度でダウンロードすることが出来ました．
+$file = &ldquo;ggw-3.2.1.4466.exe&rdquo;; $file_length = filesize($file); header(&ldquo;Content-Disposition: attachment; filename=$file&rdquo;); header(&ldquo;Content-Length:$file_length&rdquo;); header(&ldquo;Content-Type: application/octet-stream&rdquo;); readfile ($file); ?&gt;
+ファイル KGTN2010063004.pdf [(64 KB)] [kitasp 技術センター, 2010/07/01 12:07]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1711/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1710/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1710/">同時ユーザ数が1,000を越えるシステムを構築する場合，負荷分散 （セッション管理） はどのようにすべきか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1710/"><i class="far fa-calendar"></i> 2010-07-01</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2010/07/01*
+[番号] 技術ノート KGTN 2010070201
+[現象] 同時ユーザ数が1,000を越えるシステムを構築する場合，負荷分散 （セッション管理） はどのようにすべきか？
+[説明] 同時数千ユーザの事例等から考えると，ログオンが集中する可能性があるシステムでは， （ハードウエア） ロードバランサをGGサーバの前に設置し，クライアントからの同時かつ多数の接続要求を， 「GGサーバの最大ユーザ数を越えない範囲で」 各GGサーバに散らすのが良い方法です．ネットワーク障害等に備えてGGのセッション再接続機能を使用する場合は，再接続時に同じGGサーバへ再ログオン出来るように，ロードバランサのパーシステント機能を使用して下さい．
+参　考 クライアントからの同時かつ多数の接続要求を Windows Server で受け付けた場合，TCP/IPやリソースの制約等により，さまざまな問題が発生する可能性があります．安定した運用を最優先に考えるなら，その処理に最適化されている （ハードウエア） ロードバランサの利用がお勧めです．
+ファイル KGTN2010070201.pdf [(61.6 KB)] [kitasp 技術センター, 2010/07/02 05:03]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1710/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1714/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1714/">GGServiceMonitor でサービスの監視を行おうとしたところ，GGのライセンスサーバで Service not Found が表示される．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1714/"><i class="far fa-calendar"></i> 2010-06-30</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2010/06/30*
+[番号] 技術ノート KGTN 2010063003
+[現象] GGServiceMonitor でサービスの監視を行おうとしたところ，GGのライセンスサーバで Service not Found が表示される．
+[説明] ライセンスサーバのサービスの 「サービス名」 が異なっているのが原因です．当該サービスのプロパティを開き， 「表示名」 の文字列をコピーし，設定ファイル GGServiceMonitor.ini の項目にペーストして下さい．
+注　意 ggw-3.2.1 Patch4 の場合，サービス名の末尾に空白がありますので，GGServiceMonitor.ini には以下のように設定して下さい．
+[GO-Global License Manager] check = YES serviceName = &ldquo;GO-Global License Manager &quot; maxStartTime = 30 restartInterval = 10 forceRestartInterval = 0 forceRestartSleep = 0 beep = 0
+ファイル KGTN2010063003.pdf [(56.4 KB)] [kitasp 技術センター, 2010/06/30 13:36]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1714/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
                         
 
                         <ul class="pager">
@@ -782,11 +786,11 @@ http://www.atmarkit.co.jp/fdotnet/vblab/appqa_04/appqa_04_01.html A3サイズの
             
             
             <li>
-                <a href="/categories/news">news (2)</a>
+                <a href="/categories/news">news (5)</a>
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2728)</a>
+                <a href="/categories/tech">tech (2725)</a>
             </li>
             
         </ul>

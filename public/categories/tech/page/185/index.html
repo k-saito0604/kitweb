@@ -84,7 +84,7 @@
     <meta property="og:image:height" content="634">
   
   
-  <meta property="og:updated_time" content="2020-03-26T00:00:00Z">
+  <meta property="og:updated_time" content="2020-03-23T00:00:00Z">
   
 
   
@@ -314,133 +314,6 @@
                     <div class="col-md-9" id="blog-listing-medium">
 
                         
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1010/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1010/">[GGH4.0] GO-Global Application Publishing Serviceが開始せず，APSログに Failed to initialize the service because of afailure to communicate with the Sand Box driverというメッセージが残っている．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1010/"><i class="far fa-calendar"></i> 2012-06-21</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2012/06/21*
-[番号] 技術ノート KGTN 2012062101
-[現象] [GGH4.0] &ldquo;GO-Global Application Publishing Service&rdquo; が開始せず，APSログに &ldquo;Failed to initialize the service because of a failure to communicate with the Sand Box driver&rdquo; というメッセージが残っている．
-[説明] GGサーバの環境に依存して発生した問題だと考えられますが， &ldquo;Sand Box driver&rdquo; は将来のための機能で現状では使用しておりませんので，暫定対応として以下の手順で SandBox 機能を無効にして下さい．
-レジストリエディタ regedit を起動する． &ldquo;HKLM¥Software¥GraphOn¥GO-Global¥AppServer&rdquo;　を開く． 新規で &ldquo;DWORD (32ビット)&rdquo; を作成する． 名前を &ldquo;SandBox&rdquo; にする． データを &ldquo;0&rdquo; にする． レジストリエディタを閉じる． サーバを再起動する．
-ファイル KGTN2012062101.pdf [(67.7 KB)] [kitasp 技術センター, 2012/06/21 09:39]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1010/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1009/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1009/">[GGH4.0] iPad Client や Android Client をモバイルで利用中にトンネルに入ってセッションが切れた．このような場合，どのように対応すれば良いか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1009/"><i class="far fa-calendar"></i> 2012-06-21</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2012/06/21*
-[番号] 技術ノート KGTN 2012062002
-[現象] [GGH4.0] iPad Client や Android Client をモバイルで利用中にトンネルに入ってセッションが切れた．このような場合，どのように対応すれば良いか？
-[説明] GGサーバのクラスタマネージャで Host Options → Session Shutdown → Disconnect sessions terminame の設定を Never または After ?? minutes （??はトンネルを通過するまでの時間よりも長い時間）を設定します．この設定によりトンネルを通過している間もセッションがGGサーバ上に保持され，トンネルを出て無線環境が復旧した直後に当該サーバへ接続することで，このセッション （トンネルに入る直前のセッション） に再接続することが出来ます．なお，セッション再接続機能を利用する場合は，必ず１ユーザ１アカウントでの運用を徹底して下さい．１つのアカウントを複数のユーザが共用する場合，それらを識別出来ないため運用上のトラブルが発生する可能性があります．
-補　足 GGクライアントがコネクションの切断を検出した場合は，下記のような 「再接続を行うか？」 というダイアログが表示されます．この場合は，トンネルを出て無線環境が復旧した直後に Yes をクリックすることで自動的に再接続が行われます．
-ファイル KGTN2012062002.pdf [(114 KB)] [kitasp 技術センター, 2012/06/21 13:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1009/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1011/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1011/">[GGH4.0] エンタープライズオプションの GMCheckRaw の仕様が変更されると聞いているが，どのような点が変更されるのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1011/"><i class="far fa-calendar"></i> 2012-06-20</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2012/06/20*
-[番号] 技術ノート KGTN 2012060102
-[現象] [GGH4.0] エンタープライズオプションの GMCheckRaw の仕様が変更されると聞いているが，どのような点が変更されるのか？
-[説明] 詳細については未だ何も決まっておりません．現在の GMCheckRaw は収集した結果をテキストファイルへ出力するため逐次処理する必要があり （他にも技術的な理由があります） ，このことが情報収集間隔をあまり短く出来ない原因のひとつとなっております．新しいGMCheckRaw では，収集した結果をデータベースへ出力すること，そしてそのことを利用してボトルネックとなっている処理を最適化すること等で，情報収集間隔を短くし，かつ収集した情報を柔軟かつ容易に活用出来ることを狙っております．
-補足１ 新しいバージョンは GGSessionMonitor という名称になる予定です．クライアントのコンピュータ名とIPアドレスの収集に時間がかかることがあるため （逆引きが存在しない場合に顕著） ，サーバ情報・セッション情報・クライアント情報の収集はそれぞれ非同期　（並列） に行います．α版での計測では，サーバ情報とセッション情報の採取は 100〜200ms で完了しております．
-補足２ GGSessionMonitor はセッションのヒストリも記録するため，ユーザ （セッション） の ログオン・ログオフ・切断・再接続 といった情報を得ることが出来ます．さらに，セッション・クライアント・時間帯等を絞って利用状況を追跡できるため，APSログの調査等も効率的に行うことが可能となります．
-ファイル KGTN2012060102.pdf [(74.3 KB)] [kitasp 技術センター, 2012/06/20 14:36]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1011/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
                         
                         <section class="post">
                             <div class="row">
@@ -731,6 +604,129 @@
                             </div>
                         </section>
                         
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc2678/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc2678/">[GGH4.X-5.X] １つのクライアントから，複数のGGサーバへ同じアカウントで同時にログオン可能か？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2678/"><i class="far fa-calendar"></i> 2012-06-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2012/06/12*
+[番号] 技術ノート KGTN 2012061202
+[現象] [GGH4.X-5.X] １つのクライアントから，複数のGGサーバへ同じアカウントで同時にログオン可能か？
+[説明] １台のクライアントPCから，同時に・同じアカウントで・複数のGGサーバへログオンすることが可能です．プロファイルの制御については， Windows （Active Directory） の動作に従います．なお，マイ ドキュメントを使用しない場合 （またはマイドキュメントの内容を破棄して構わない場合） は，移動ユーザープロファイルでなく，固定ユーザープロファイルの利用もご検討下さい．プロファイルの書き戻し等で発生する問題を回避することが可能で，これを利用して同時数千ユーザのシステムを運用している大規模案件もあります．
+ファイル KGTN2012061202.pdf [(60.6 KB)] [kitasp 技術センター, 2015/12/16 11:51]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2678/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc2646/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc2646/">[GGH4.X-6.X] ロードバランサ （ハードウエア） がある環境で，セッション再接続時に同じGGサーバへ接続させる方法は？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2646/"><i class="far fa-calendar"></i> 2012-06-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2012/06/12*
+[番号] 技術ノート KGTN 2012061203
+[現象] [GGH4.X-6.X] ロードバランサ （ハードウエア） がある環境で，セッション再接続時に同じGGサーバへ接続させる方法は？
+[説明] ロードバランサ （ハードウエア） の機能に依存しますので事例になりますが， F5 Networks 社の BIG IP がある環境でパーシステンス機能 （接続維持機能，ソースIPアドレス） を利用して，設定した時間内での再接続をGGサーバへ振り分けた案件があります．なお，GGのクライアントはブラウザ （IE等） のセッションとは別のセッションを張りますので，この点にご注意下さい．
+ファイル KGTN2012061203.pdf [(39.8 KB)] [kitasp 技術センター, 2019/09/13 14:24]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2646/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1020/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1020/">[GGW3.2.1/GGH4.0] GGサーバにログオンしたところ，環境変数 CLIENTCOMPUTERNAME の値が他のクライアントPCのコンピュータ名になっていた．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1020/"><i class="far fa-calendar"></i> 2012-06-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2012/06/12*
+[番号] 技術ノート KGTN 2012061204
+[現象] [GGW3.2.1/GGH4.0] GGサーバにログオンしたところ，環境変数 CLIENTCOMPUTERNAME の値が他のクライアントPCのコンピュータ名になっていた．
+[説明] 他のクライアントPCでログオンしたセッションがGGサーバに残っていて （サスペンド状態） ，この状態で同じアカウントでログオンしたためセッション再接続したものと推測されます．同一アカウントでの利用を止めるか，またはクラスタマネージャの Shared account にそのアカウント名を登録して下さい （このアカウントに関して，セッション再接続機能が無効になります） ．
+ファイル KGTN2012061204.pdf [(56.1 KB)] [kitasp 技術センター, 2012/06/12 11:10]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1020/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
                         
 
                         <ul class="pager">
@@ -769,11 +765,11 @@
             
             
             <li>
-                <a href="/categories/news">news (2)</a>
+                <a href="/categories/news">news (5)</a>
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2728)</a>
+                <a href="/categories/tech">tech (2725)</a>
             </li>
             
         </ul>

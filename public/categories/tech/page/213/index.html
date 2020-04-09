@@ -84,7 +84,7 @@
     <meta property="og:image:height" content="634">
   
   
-  <meta property="og:updated_time" content="2020-03-26T00:00:00Z">
+  <meta property="og:updated_time" content="2020-03-23T00:00:00Z">
   
 
   
@@ -314,133 +314,6 @@
                     <div class="col-md-9" id="blog-listing-medium">
 
                         
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2189/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2189/">[GGW3.2/GGH4.X-5.X] セッションがたまに切れるが，何か簡単に試せることはないか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2189/"><i class="far fa-calendar"></i> 2011-10-05</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2009051501
-[現象] [GGW3.2/GGH4.X-5.X] セッションがたまに切れるが，何か簡単に試せることはないか？
-[説明] GO-Global for Windows はデフォルトの設定で， （クライアント～サーバ間に張られる GO-Global for Windows のコネクション上のプロトコルで） クライアントからサーバへ30秒毎にPINGを送信しています（以降，ICMPのPINGと区別するためにGG-PINGと表記します）．30秒以内にサーバから応答があればコネクションが正常と判断し，それを越えて応答がなければコネクションが失われたと判断します （注：応答を受信した直後にコネクションが切れた場合は，それから29秒後にGG-PINGが送信されますので，59秒後にコネクションが切れたと判断します） ．このGG-PINGの機能を以下の設定で無効にすることができます．
-[HKEY_LOCAL_MACHINESOFTWAREGraphOnBridges1.0.0AppServer] SessionVerification REG_DWORD 0
-設定を変更した場合は，必ずサーバを再起動して下さい．GG-PINGの機能を無効にしてもセッションが切れる場合は，TCP/IPレベルで実際にコネクションが切れているものと推測されます．
-補　足 TCP/IPレベルでセッションが切断されているかどうかを確認するには，弊社開発の GGNetworkCheck をご利用下さい．このツールは，GG のサーバ側とクライアント側で動作させるプログラムで，クライアント側主導でTCP/IP のヘルスチェック （接続性確認） を行います．クライアント側は所定の秒数でPING メッセージを送信し （ログに記録も残します） ，サーバ側はPING メッセージを受信するとログに記録するとともに，応答メッセージをクライアント側に送信します．クライアント側は応答メッセージを受信すると，その情報をログに記録します．所定秒数内に相手からのメッセージが届かない，またはTCP/IP レベルでコネクションが切断された場合は，エラーとしてログに記録されます．この２つのログ （クライアント側とサーバ側） を付き合わせることで，ネットワークの状況を確認することが出来ます．GGのプロトコルを使用せずにチェックを行いますので，万一GG上で問題が発生したとしても，ネットワークの状況を確実に把握することが可能です．詳細は，技術ノート KGTN#2011030201 をご覧下さい．
-ファイル KGTN2009051501.pdf [(84 KB)] [kitasp 技術センター, 2017/04/06 17:22]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2189/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1282/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1282/">[iPad Client] iPad クライアントの解像度を縦置き状態に変更したい．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1282/"><i class="far fa-calendar"></i> 2011-10-05</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2011092702
-[現象] [iPad Client] iPad クライアントの解像度を縦置き状態に変更したい．
-[説明] 標準状態では，iPad クライアントの解像度は横向き状態 （つまり1024x768）　になります． 現在，縦置き状態 （つまり768x1024） に設定出来るかどうかGraphOn社へ問い合わせ中です． β版では縦向き表示が可能でしたが， IOS SDK の互換性の問題から正式リリース版では横向き状態のみをサポートします．
-補　足 iPadクライアントのリリース版が縦向き表示をサポートしていない理由は，以下の通りです．
-ファイル KGTN2011092702.pdf [(64.3 KB)] [kitasp 技術センター, 2011/10/05 12:21]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1282/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1279/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1279/">GG上で利用したいアプリケーションがあるが，環境変数が不足しており動作しない．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1279/"><i class="far fa-calendar"></i> 2011-10-05</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2011100504
-[現象] GG上で利用したいアプリケーションがあるが，環境変数が不足しており動作しない．
-[説明] そのGGサーバを利用する全てのユーザに共通な環境変数であれば， Windows の [システムのプロパティ]　→ [詳細設定] → [環境変数] → [システム環境変数] （Windows Server 2003 の場合）　で定義するのが良いでしょう．設定する内容については，そのアプリケーションのドキュメント等をご覧下さい．
-ファイル KGTN2011100504.pdf [(48.9 KB)] [kitasp 技術センター, 2011/10/05 14:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1279/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
                         
                         <section class="post">
                             <div class="row">
@@ -744,6 +617,135 @@ We don't believe this issue is related to GG. We have seen this error on google 
                             </div>
                         </section>
                         
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1293/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1293/">[CASE#23867] 特定のAjaxを使用するアプリケーションで，時々ウインドウ描画等で反応が遅くなる．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1293/"><i class="far fa-calendar"></i> 2011-09-27</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/09/27*
+[番号] 技術ノート KGTN 2011091602
+[現象] [CASE#23867] 特定のAjaxを使用するアプリケーションで，時々ウインドウ描画等で反応が遅くなる．
+[説明] GraphOn社の技術者がこの問題の発生する環境で調査したところ，技術ノート KGTN#2011042101 の説明の通り，アプリケーションが 「少し動いて停止する」 という状況を繰り返していました．状況を詳細に調べると，Windows のシステムファイル &ldquo;jscript.dll&rdquo; の中でこの状況が発生していることが分かりました． &ldquo;jscript.dll&rdquo; は，以下のように Microsoft JavaScript の処理を行うプログラムの一部です．
+GraphOn社の技術者は，さらに &ldquo;jscript.dll&rdquo; のどの部分で問題が発生しているのか解析を試みましたが，（Windows のシステムファイルということで） 解析に必要なシンボルテーブルが提供されていないため，問題箇所を特定することが困難という結論に至りました．
+そこで， GO-Global Ver4.0 では本件の現象が発生しないことから， &ldquo;jscript.dll&rdquo; の調査結果をもとにVer3.2 とVer4.0のアーキテクチャの差異のうち関連がありそうな部分を詳細に検討しました．その結果，以下の描画処理の差異が影響している可能性が高いことが分かりました．
+Ver4.0ではログオン・プロセスの１つのスレッドがクライアントへ描画命令を送信しますが， Ver3.2　ではセッション上で動作する全てプロセスの全てのスレッドが 「並行して」 クライアントへ描画命令を送信することが可能です．このアーキテクチャの差異が，問題の発生に絡んでいると推測されます （例： Ver3.2 の環境では，&ldquo;jscript.dll&rdquo; が並列的な描画を行うと，タイミングにより描画命令の相互干渉が発生し，処理が遅延する． Ver4.0 の環境では，　&ldquo;jscript.dll&rdquo; が並列的な描画を行っても，ログオン・プロセスが描画命令をシリアル化するため相互干渉が発生ぜず，処理が遅延しない） ．
+Ver3.2 でプロセッサ・アフィニティがどのように作用するのか明確ではありませんが，しかし弊社作成のプログラム GGAffinify.exe を使ってIEを実行するCPUを１個に限定することで， 「実質的に」 Ver4.0 と同じように１つのスレッドがクライアントへ描画命令を送信する状況になったと考えられます．従って，本件は Ver3.2 の環境で GGAffinify.exe を利用することが，最善の対応策となります．
+ファイル KGTN2011091602.pdf [(92.2 KB)] [kitasp 技術センター, 2011/09/27 09:43]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1293/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1292/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1292/">[GGW3.2.1] 動作試験や負荷試験のため，同一PC （クライアント） から複数のセッションを張っても良いか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1292/"><i class="far fa-calendar"></i> 2011-09-27</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/09/27*
+[番号] 技術ノート KGTN 2011092701
+[現象] [GGW3.2.1] 動作試験や負荷試験のため，同一PC （クライアント） から複数のセッションを張っても良いか？
+[説明] 同一PCから複数のセッションを張った場合，クライアントプリンタの構成時に障害が発生する可能性があります．従って，原則的には１PC （クライアント） １セッションで試験を行うようにして下さい．さらに，１ユーザID　１セッションの原則も守って下さい．
+ファイル KGTN2011092701.pdf [(48.7 KB)] [kitasp 技術センター, 2011/09/28 08:58]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1292/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1294/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1294/">[GGH4.0] Windows Server 2008 R2 の環境で，GGのパフォーマンス・カウンタを追加出来ない．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1294/"><i class="far fa-calendar"></i> 2011-09-26</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/09/26*
+[番号] 技術ノート KGTN 2011070801
+[現象] [GGH4.0] Windows Server 2008 R2 の環境で，GGのパフォーマンス・カウンタを追加出来ない．
+[説明] Windows Server 2008 R2 の環境に於いて，パフォーマンス・オブジェクト &ldquo;GO-Global Server&rdquo; が存在せず，GGのパフォーマンス・カウンタを追加出来ないのは既知の問題としてGraphOn社の対応リストに登録されています．2011年7月8日時点では， Ver4.1 またはそれ以降で対応予定となっております．
+This is a bug with Windows Server 2008 R2. It is scheduled to be fixed in 4.1, but it is a Priority 2 so we can&rsquo;t guarantee it will be fixed in that release.
+補　足 本件には，２つの問題が内包されています．ひとつは，パフォーマンスカウンタがインストールされないというインストーラーの問題です．もうひとつは，Windows Server 2008 R2 の環境で32ビットのアプリケーションがパフォーマンスカウンタを表示出来ない問題です．
+ファイル KGTN2011070801.pdf [(64.7 KB)] [kitasp 技術センター, 2011/09/26 14:16]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1294/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
                         
 
                         <ul class="pager">
@@ -782,11 +784,11 @@ We don't believe this issue is related to GG. We have seen this error on google 
             
             
             <li>
-                <a href="/categories/news">news (2)</a>
+                <a href="/categories/news">news (5)</a>
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2728)</a>
+                <a href="/categories/tech">tech (2725)</a>
             </li>
             
         </ul>

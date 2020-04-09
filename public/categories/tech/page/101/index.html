@@ -84,7 +84,7 @@
     <meta property="og:image:height" content="634">
   
   
-  <meta property="og:updated_time" content="2020-03-26T00:00:00Z">
+  <meta property="og:updated_time" content="2020-03-23T00:00:00Z">
   
 
   
@@ -314,139 +314,6 @@
                     <div class="col-md-9" id="blog-listing-medium">
 
                         
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc86/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc86/">[Windows] WS2008R2で IE のエラーが発生したが，ダンプファイルの採取方法は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc86/"><i class="far fa-calendar"></i> 2015-06-11</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2015/06/11*
-[番号] 技術ノート KGTN 2015021001
-[現象] [Windows] WS2008R2で IE のエラーが発生したが，ダンプファイルの採取方法は？
-[説明] レジストリに以下の設定を行うことで 「ユーザー モード プロセス ダンプ」 を採取することが出来ます．
-HKLMSOFTWAREMicrosoftWindowsWindows Error ReportingLocalDumps DumpFolder REG_EXPAND_SZ C:DumpFiles DumpCount REG_DWORD 10 (The maximum number of dump files) DumpType REG_DWORD 2 (Full dump)
-詳細については，下記ページをご覧下さい．
-https://msdn.microsoft.com/ja-jp/library/windows/desktop/bb787181.aspx Collecting User-Mode Dumps
-https://msdn.microsoft.com/en-us/library/windows/desktop/bb513638%28v=vs.85%29.aspx WER Settings
-ファイル KGTN2015021001.pdf [(70.6 KB)] [kitasp 技術センター, 2015/06/11 17:10]
-KGTN2015021001.jpg
-表示 [(70.4 KB)] [kitasp 技術センター, 2015/06/17 16:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc86/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc123/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc123/">[Windows] WS2012R2のインストールの応答ファイルで，パーティションのサイズを 「ディスクの残り全部」 にする方法は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc123/"><i class="far fa-calendar"></i> 2015-06-11</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2015/06/11*
-[番号] 技術ノート KGTN 2015030201
-[現象] [Windows] WS2012R2のインストールの応答ファイルで，パーティションのサイズを 「ディスクの残り全部」 にする方法は？
-[説明] 下記のように CreatePartition で Extend = true を指定して下さい．
-&lt;DiskConfiguration&gt; &lt;WillShowUI&gt;OnError&lt;/WillShowUI&gt; &lt;Disk wcm:action=&quot;add&quot;&gt; &lt;DiskID&gt;0&lt;/DiskID&gt; &lt;WillWipeDisk&gt;true&lt;/WillWipeDisk&gt; &lt;CreatePartitions&gt; &lt;CreatePartition wcm:action=&quot;add&quot;&gt; &lt;Order&gt;1&lt;/Order&gt; &lt;Size&gt;350&lt;/Size&gt; &lt;Type&gt;Primary&lt;/Type&gt; &lt;/CreatePartition&gt; &lt;CreatePartition wcm:action=&quot;add&quot;&gt; &lt;Order&gt;2&lt;/Order&gt; &lt;Extend&gt;true&lt;/Extend&gt; &lt;Type&gt;Primary&lt;/Type&gt; &lt;/CreatePartition&gt; &lt;/CreatePartitions&gt;  https://technet.microsoft.com/ja-jp/library/dd744365%28v=ws.10%29.aspx?f=255&amp;MSPPError=-2147217396 Windows SIM を使用して BIOS ベースのハード ディスク パーティションを作成する
-ファイル KGTN2015030201.pdf [(67.3 KB)] [kitasp 技術センター, 2015/06/11 17:29]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc123/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc76/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc76/">[Windows] リモート管理ツール PsExec で，コマンド dir C: を実行させたが 「指定されたファイルが見つかりません」 と表示される．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc76/"><i class="far fa-calendar"></i> 2015-06-11</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2015/06/11*
-[番号] 技術ノート KGTN 2015030902
-[現象] [Windows] リモート管理ツール PsExec で，コマンド dir C: を実行させたが 「指定されたファイルが見つかりません」 と表示される．
-[説明] dir コマンドはコマンド・プロンプトの内部コマンドであるため， PsExec で直接実行しようとするとファイル （コマンド） が見つかりません．コマンド・プロンプトの内部コマンドを実行したい場合は，以下のようにコマンド・プロンプトを介して実行して下さい．
-cmd.exe /c &ldquo;内部コマンド&rdquo;
-ファイル KGTN2015030902.pdf [(58.1 KB)] [kitasp 技術センター, 2015/06/11 17:34]
-KGTN2015030902.jpg
-表示 [(53.3 KB)] [kitasp 技術センター, 2015/06/18 13:48]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc76/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
                         
                         <section class="post">
                             <div class="row">
@@ -748,6 +615,135 @@ KGTN2015013001.jpg
                             </div>
                         </section>
                         
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1997/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1997/">[GGH4.X-5.X] GGEasyLogon は，接続先に１つのGGサーバーしか指定出来ないのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1997/"><i class="far fa-calendar"></i> 2015-01-23</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2015/01/23*
+[番号] 技術ノート KGTN 2015011901
+[現象] [GGH4.X-5.X] GGEasyLogon は，接続先に１つのGGサーバーしか指定出来ないのか？
+[説明] いいえ，複数のGGサーバーのIPアドレスをセミコロンで区切って複数指定することが出来ます．下記の設定例では，先ず 192.168.102.81 のGGサーバーにログオンします．空きセッションが無い場合や通信障害等でログオン出来ない場合は，次のIPアドレス 192.168.102.61 のGGサーバーにログオンします．このサーバーのログオンにも失敗した場合は，エラーダイアログが表示されます （GGのクライアントがエラーを表示します） ．
+本機能は常に指定されたIPアドレスの順に接続を試みますので，負荷分散の機能はありません．クライアント端末毎にIPアドレスの順序を変えることで，疑似的な負荷分散を行わせることは可能です．
+ファイル KGTN2015011901.pdf [(46.4 KB)] [kitasp 技術センター, 2017/10/10 10:37]
+KGTN2015011901.jpg
+表示 [(11.8 KB)] [kitasp 技術センター, 2017/10/10 10:37]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1997/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc132/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc132/">[GGH4.X] 自己責任で構わないので IE7 でActiveXクライアントを利用する方法はないのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc132/"><i class="far fa-calendar"></i> 2015-01-23</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2015/01/23*
+[番号] 技術ノート KGTN 2015012101
+[現象] [GGH4.X] 自己責任で構わないので IE7 でActiveXクライアントを利用する方法はないのか？
+[説明] logon.html が置かれたフォルダにある logon_PluginFunctions.js を以下のように修正 （IE7の認識処理の追加） することで，IE7でActiveXクライアントを利用出来るようになります．なお，このコードは GGH4.8.2 の環境で動作を確認しておりますので，他のバージョンでは修正が必要な場合があります．
+function GetPlatform() { // Browser name string, major version, and agent string var name = navigator.appName; var ver = parseInt(navigator.appVersion); var agent = navigator.userAgent; var platform = navigator.platform; // Microsoft Internet Explorer and version this.msie = (document.documentMode != undefined); this.msie4up = (document.documentMode &gt;= 4); this.msie6up = (document.documentMode &gt;= 6); this.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc132/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc90/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc90/">[GGH4.X-5.X] GGEasyLogon とはどんなツールなのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc90/"><i class="far fa-calendar"></i> 2015-01-16</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2015/01/16*
+[番号] 技術ノート KGTN 2015010801
+[現象] [GGH4.X-5.X] GGEasyLogon とはどんなツールなのか？
+[説明] GGのWindowsクライアントを起動するツール （一般ユーザー向け） で，事前に設定ファイルにGGサーバー毎の接続情報を登録することで，GGサーバーを一覧から選んで 「１クリックで」 接続することが出来ます．接続後は自動的に最小化状態になり，GGサーバーとの接続が終了すると自動的に復元します．
+[ボタン] 接続 ： 選択した接続先にログオンします． 切断 ： ログオン中のセッションを強制切断します． 詳細 ： 接続先の詳細情報 （接続先詳細画面） を表示します． 閉じる ： プログラムを終了します．
+[ボタン] 追加/上書き　： 詳細情報を接続先として登録します． 削除 ： 詳細情報の接続先を削除します． 閉じる ： プログラムを終了します．
+[設定ファイル] 接続先の一覧 （詳細情報） は，同じフォルダにある GGEasyLogon.ini に保持されます．なお，セキュリティーの観点からパスワードは暗号化され，かつ他のクライアント （パソコン） で登録されたパスワードは利用することが出来ません （パスワードを入力し上書きして下さい） ．
+[WS2008R2@192.168.102.81] ‘ 接続先（名称） host = 192.168.102.81 ‘ アドレス port = 491 ‘ ポート番号 user = Administrator ‘ ユーザー名 pass = &lt;Password&gt; ‘ パスワード opts = -qt 0 -mx 32 ‘ その他の起動パラメタ [WS2012R2@192.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc90/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
                         
 
                         <ul class="pager">
@@ -786,11 +782,11 @@ KGTN2015013001.jpg
             
             
             <li>
-                <a href="/categories/news">news (2)</a>
+                <a href="/categories/news">news (5)</a>
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2728)</a>
+                <a href="/categories/tech">tech (2725)</a>
             </li>
             
         </ul>

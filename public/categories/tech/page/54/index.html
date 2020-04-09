@@ -84,7 +84,7 @@
     <meta property="og:image:height" content="634">
   
   
-  <meta property="og:updated_time" content="2020-03-26T00:00:00Z">
+  <meta property="og:updated_time" content="2020-03-23T00:00:00Z">
   
 
   
@@ -314,134 +314,6 @@
                     <div class="col-md-9" id="blog-listing-medium">
 
                         
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2270/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2270/">[GGH4.X-5.X/ExPack] 拡張パックの GGEasyPassword で実行するコマンドを編集したい．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2270/"><i class="far fa-calendar"></i> 2016-10-05</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016092103
-[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyPassword で実行するコマンドを編集したい．
-[説明] 設定ファイル GGEasyPassword.ini をメモ帳等で開き，項目 command の値 （暗号化されたコマンド） を削除して新しいコマンドを入力して下さい．次に，設定ファイルを保存後に， GGEasyPassword を起動して，コマンドを暗号化して下さい （起動するだけで自動的に暗号化されます） ．
-ファイル KGTN2016092103.pdf [(54.9 KB)] [kitasp 技術センター, 2016/10/05 16:42]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2270/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2283/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2283/">[GGH4.X-5.X/ExPack] 拡張パックの GGEasyPassword とはどんなツールなのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2283/"><i class="far fa-calendar"></i> 2016-10-05</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016091302
-[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGEasyPassword とはどんなツールなのか？
-[説明] プログラム・ウインドウから起動するツールで，ログオン中のドメインアカウントのパスワードを変更します．処理の内容は，次の通りです．
- 「現在のパスワード」の確認 「新しいパスワード」への変更 「新しいパスワード」の反映の確認  [ボタン] 実行 ： 現在のパスワードを新しいパスワードに変更します． 中止 ： プログラムを終了します．
-パスワードを変更するコマンドは，設定ファイル GGEasyPassword.ini 中の項目 command で指定します．特に必要がなければ，以下のサンプル設定をご利用下さい． はドメイン管理者のアカウント， はドメイン管理者のパスワードで置き換えて下さい．この項目は GGEasyPassword が起動されると，自動的に暗号化されますので，パスワードを指定してもセキュリティ的に特に問題はありません．念のため，設定後に GGEasyPassword を起動して，この項目 （値） が暗号化されたことを確認して下さい．
-command = psexec64 -u &lt;domainadmin&gt; -p &lt;password&gt; net user %s %s /domain  補　足 設定ファイル GGEasyPassword.ini の内容は，次の通りです．
-[default] logLevel = 1 ← ログレベル（9 を指定するとログが記録されます） logd = %USERPROFILE%Documents ← ログの出力先（フォルダ） timeout = 30 ← コマンド実行のタイムアウト時間（秒） command = psexec64 -u gg-ad0Administrator -p xxx net user %s %s /domain ← パスワード変更のコ マンド，最初の%s がユーザーID，次の%s が新しいパスワードで置き換えられます．なお，設定後の最初の 起動でこのコマンド（文字列）が自動的に暗号化されます．  「実行」 によって下記エラーメッセージが表示された場合は，項目 command で指定したコマンドに誤りがあります．サンプル設定をお使いの場合は，ドメイン管理者のユーザーIDおよびパスワードをご確認下さい．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2283/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2276/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2276/">[GGH4.X-5.X] ActiveXクライアントで http:///goglobal/ だけでなく http:/// でもアクセス出来る． IIS の設定の問題かどうか確認する方法は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2276/"><i class="far fa-calendar"></i> 2016-10-05</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016091405
-[現象] [GGH4.X-5.X] ActiveXクライアントで http://&lt;GGサーバー&gt;/goglobal/{.external} だけでなく http://&lt;GGサーバー&gt;/{.external} でもアクセス出来る． IIS の設定の問題かどうか確認する方法は？
-[説明] IIS の管理画面で &ldquo;Default Web Site&rdquo; を右クリックして， 「エクスプローラー」 を選択して下さい．表示されたエクスプローラーのパスが C:inetpubwwwroot で，かつフォルダの中に logon.html 存在しないことを確認して下さい．この通りであれば， IIS の設定では http://&lt;GGサーバー&gt;/{.external} でGGサーバーにログオンすることは出来ません．それにも関わらず， http://&lt;GGサーバー&gt;/{.external} でGGサーバーにログオン出来るのであれば，他の IIS サーバーにアクセスしているか，またはブラウザのキャッシュの保存されたログオン情報を参照していることが考えられます．何れにしても， IIS やGGの問題ではありません．
-ファイル KGTN2016091405.pdf [(196 KB)] [kitasp 技術センター, 2016/10/05 16:30]
-KGTN2016091405.jpg
-表示 [(45 KB)] [kitasp 技術センター, 2016/10/05 16:30]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2276/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
                         
                         <section class="post">
                             <div class="row">
@@ -748,6 +620,137 @@ KGTN2016092801.jpg
                             </div>
                         </section>
                         
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc2269/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc2269/">[GGH4.X-5.X] アプリケーションを直接起動した場合，クライアント印刷機能の Printers ダイアログ （Printers Applet） を開く方法は？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2269/"><i class="far fa-calendar"></i> 2016-10-05</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2016/10/05*
+[番号] 技術ノート KGTN 2016092601
+[現象] [GGH4.X-5.X] アプリケーションを直接起動した場合，クライアント印刷機能の Printers ダイアログ （Printers Applet） を開く方法は？
+[説明] クライアント印刷機能の Printers ダイアログは，アプリケーションの直接起動時には利用することが出来ません．クライアント印刷機能の Printers ダイアログを利用する場合は，必ず Program Window を使用して下さい．
+ファイル KGTN2016092601.pdf [(53 KB)] [kitasp 技術センター, 2016/10/05 16:43]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2269/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc2296/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc2296/">[GGH4.X-5.X] クラスターマネージャーのセッションタブでIPアドレスが空欄のセッションがあるが，このセッションはどのような状態にあるのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2296/"><i class="far fa-calendar"></i> 2016-10-05</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2016/10/05*
+[番号] 技術ノート KGTN 2016090702
+[現象] [GGH4.X-5.X] クラスターマネージャーのセッションタブでIPアドレスが空欄のセッションがあるが，このセッションはどのような状態にあるのか？
+[説明] クラスターマネージャーのセッションタブでIPアドレスが空欄のセッションは，ユーザーが Disconnect （セッションを残してクライアントを切断） したか，またはネットワーク障害での切断やGGにログオンしたブラウザを強制的に閉じた場合などに発生します．
+このようなセッションを 「自動的に」 終了させたい場合は， [Host Options] → [Session Shutdown] → [Disconnected sessions terminate] で Immediately (直ちに終了) または After ? minutes （?分経過後に終了） を設定して下さい．
+ファイル KGTN2016090702.pdf [(125 KB)] [kitasp 技術センター, 2016/10/05 11:21]
+KGTN2016090702.jpg
+表示 [(21.8 KB)] [kitasp 技術センター, 2016/10/05 11:21]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2296/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc2322/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc2322/">[GGH4.X-5.X] サーバー側のIMEのツールバーを非表示や位置固定にする方法は？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2322/"><i class="far fa-calendar"></i> 2016-10-05</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2016/10/05*
+[番号] 技術ノート KGTN 2016082601
+[現象] [GGH4.X-5.X] サーバー側のIMEのツールバーを非表示や位置固定にする方法は？
+[説明] GGはIMEの処理に直接関与しておりませんので，GGの機能としてIMEのツールバーの非表示や位置定にする機能はありません．IMEに 「ツールバーをタスクトレイに入れる」 等の機能があれば，それを設定することでツールバーが非表示になると思われます．
+あと，サーバー側のIMEを無効にして，かつクライアント側のIMEを使用すれば，サーバー側のIMEのツールバーは表示されません．サーバー側のIMEを無効にする方法とクライアント側IMEを使用する設定は，次の通りです．
+[HKEY_LOCAL_MACHINESOFTWAREGraphOnGO-GlobalSystemRunLocalMachine] &ldquo;ctfmon.exe&quot;=dword:00000000 ← 削除するか ctfmon.exeX 等に名前を変更
+コマンドラインの例： gg-client.exe -h 192.168.102.81 -kb ClientSideIME ハイパーリンクの例： http://192.168.102.81/logon.html?keyboard=ClientSideIME
+ファイル KGTN2016082601.pdf [(141 KB)] [kitasp 技術センター, 2016/10/05 10:26]
+KGTN2016082601.jpg
+表示 [(25.1 KB)] [kitasp 技術センター, 2016/10/05 10:26]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2322/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
                         
 
                         <ul class="pager">
@@ -786,11 +789,11 @@ KGTN2016092801.jpg
             
             
             <li>
-                <a href="/categories/news">news (2)</a>
+                <a href="/categories/news">news (5)</a>
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2728)</a>
+                <a href="/categories/tech">tech (2725)</a>
             </li>
             
         </ul>

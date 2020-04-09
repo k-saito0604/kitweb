@@ -84,7 +84,7 @@
     <meta property="og:image:height" content="634">
   
   
-  <meta property="og:updated_time" content="2020-03-26T00:00:00Z">
+  <meta property="og:updated_time" content="2020-03-23T00:00:00Z">
   
 
   
@@ -314,136 +314,6 @@
                     <div class="col-md-9" id="blog-listing-medium">
 
                         
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1056/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1056/">[GGW3.X/GGH4.X] GGを新しいバージョンに上げる時の手順は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1056/"><i class="far fa-calendar"></i> 2012-03-15</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2012/03/15*
-[番号] 技術ノート KGTN 2012031501
-[現象] [GGW3.X/GGH4.X] GGを新しいバージョンに上げる時の手順は？
-[説明] GGのバージョン番号の１桁目または２桁目が異なるバージョンに上げる場合 （例：3.1.1 → 3.2.1） は，下記の手順で作業を行って下さい．
-現在のクラスタマネージャの各設定画面のスクリーンショットを撮る （あるいはメモに情報を控える） ． ライセンスファイルのコピーを作成する． GGをアンインストールする． サーバを再起動する． 新しいGGをインストールする． 上記２でコピーしたライセンスファイルを所定の場所に置く． サーバを再起動する． 上記１で作成した情報を参照しクラスタマネージャで各設定を行う．
-GGのインストーラーにはマイグレーション機能が実装されており， 「仕様上は」 上書きインストールでバージョンアップが可能です．しかしながら， 「現場レベルでは」 このマイグレーション機能だけでは十分に対応できないケースが発生しており， 「確実なバージョンアップのため」 弊社では上記の手順を推奨しております．
-ファイル KGTN2012031501.pdf [(58 KB)] [kitasp 技術センター, 2012/03/15 10:53]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1056/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1055/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1055/">サーバ当りの同時利用ユーザ数は20〜25が目安だと聞いているが，それはハードウエアがネックなのか？　それともGGの仕様がネックなのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1055/"><i class="far fa-calendar"></i> 2012-03-15</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2012/03/15*
-[番号] 技術ノート KGTN 2010081903
-[現象] サーバ当りの同時利用ユーザ数は20〜25が目安だと聞いているが，それはハードウエアがネックなのか？　それともGGの仕様がネックなのか？
-[説明] 様々な条件が絡みますが，最大のネックはハードウエアでもGGでもなく， Windows Server (32bit) のアーキテクチャに起因します．Windows Server (32bit)　では，最大4GB のアドレス空間を2GBのカーネル空間と2GBのユーザ空間に割り振っています．カーネル空間は，さらに幾つかの役割毎にメモリが割り振られており，その何れかが枯渇するとBSOD （ブルースクリーン） が発生します．従って，これらが枯渇しないようにメモリのチューング等を行いますが，全体のメモリ （カーネル空間） は限られておりますので，同時利用ユーザ数が目立って増えることがありません．
-補　足 Windows Server 2008 R2 (64bit) の環境では，上記のようなメモリ絡みの制約は解消しますが，しかしながらメモリを増やせばユーザ数が増えるというシナリオにはなりません．アプリケーションが動作すればプロセッサを消費しますので，ユーザ数が増えるどこかでプロセッサが過負荷となり，アプリケーションが実用的な速度で動作しなくなります．従って，プロセッサの性能，アプリケーションの負荷，ユーザの利用シナリオなどを十分考慮し，搭載するメモリの量を決定して下さい．
-ファイル KGTN2010081903.pdf [(65 KB)] [kitasp 技術センター, 2012/03/15 11:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1055/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1057/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1057/">[GGW3.2.1] クライアント印刷機能でUniversal Driver のみを指定し，かつ全てのクライアントプリンタを構成する設定 （autoconfigprinters = all） の場合，クライアントのデフォルトプリンタが変更される可能性はあるか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1057/"><i class="far fa-calendar"></i> 2012-03-14</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2012/03/14*
-[番号] 技術ノート KGTN 2012030601
-[現象] [GGW3.2.1] クライアント印刷機能でUniversal Driver のみを指定し，かつ全てのクライアントプリンタを構成する設定 （autoconfigprinters = all） の場合，クライアントのデフォルトプリンタが変更される可能性はあるか？
-[説明] はい，次のようなシナリオでクライアントのデフォルトプリンタが変更されます．
-PrinterA と PrinterB （デフォルトプリンタ） が接続されたクライアントでGGサーバへ接続． GGサーバからログアウト． PrinterB を撤去． PrinterC を接続． PrinterA と PrinterC （デフォルトプリンタ） が接続されたクライアントでGGサーバへ接続．
-GGの仕様では，先ず print.ini の情報に基づきクライアントプリンタを構成し，その次にクライアント上のデフォルトプリンタを構成します （成功した場合はこのプリンタをGG上のデフォルトプリンタとします） ．
-上記５のログオン直前の状態では， print.ini には PrinterB がデフォルトプリンタと記録されていますが，撤去されていますのでGGは PrinterA をデフォルトプリンタとして構成します．この時，クライアント上のデフォルトプリンタも PrinterA に変更されます．次にログオン直前のデフォルトプリンタ PrinterC が構成され，GG上のデフォルトプリンタになります．この結果，クライアント上のデフォルトプリンタが PrinterA で，GG上のデフォルトプリンタが PrinterC になります （それぞれがデフォルトプリンタとして print.ini に記録されます） ．
-このような動作は， 「クライアント上のデフォルトプリンタとGG上のデフォルトプリンタを別々に管理する」 というGraphOn社のオリジナル仕様から， 「クライアント上のデフォルトプリンタとGG上のデフォルトプリンタを一致させる」 という日本向けの仕様 （当時このようなご要望が多数ありました） へ変更された時の制限事項 （例外事項） となります．プリンタの交換が必要になった場合は，技術ノート KGTN#2012030801 の手順で作業を行うようにして下さいD
-ファイル KGTN2012030601.pdf [(70.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1057/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
                         
                         <section class="post">
                             <div class="row">
@@ -748,6 +618,132 @@ PW の &ldquo;File → Printers&rdquo; で表示されるクライアントプ�
                             </div>
                         </section>
                         
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1066/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1066/">[Network] さまざまなネットワーク環境 （回線速度・パケット遅延・パケット損失など） で試験したいが，お勧めのツールは？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1066/"><i class="far fa-calendar"></i> 2012-03-02</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2012/03/02*
+[番号] 技術ノート KGTN 2012030201
+[現象] [Network] さまざまなネットワーク環境 （回線速度・パケット遅延・パケット損失など） で試験したいが，お勧めのツールは？
+[説明] さまざまなツールがありますが，弊社では Windows 環境で動作する Wlinee を主に使用しています．回線速度・パケット遅延・パケット損失のパラメタを柔軟に設定することが可能で，GGの試験には十分な機能を有しています．
+上記設定画面は，双方向の帯域が 256kbps，パケット損失0%，パケット遅延200ms前後 （RTTは400ms前後） という設定です．なお， Wlinee のダウンロードサイトは以下の通りで，弊社ではこれを Windows Server 2003 R2 にインストールしています．
+http://sourceforge.jp/projects/wlinee/releases/
+ファイル KGTN2012030201.pdf [(222 KB)] [kitasp 技術センター, 2012/03/02 12:49]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1066/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1067/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1067/">[GGW3.2.1/GGH4.0] GGサーバへアクセスするクライアントが，IPマスカレード等で全て同一IPアドレスになるが，このような環境でもセッション再接続機能を利用できるのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1067/"><i class="far fa-calendar"></i> 2012-03-01</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2012/03/01*
+[番号] 技術ノート KGTN 2012030102
+[現象] [GGW3.2.1/GGH4.0] GGサーバへアクセスするクライアントが，IPマスカレード等で全て同一IPアドレスになるが，このような環境でもセッション再接続機能を利用できるのか？
+[説明] セッション再接続機能は，再接続すべきセッションをユーザIDで判断しますので，IPマスカレード等で全てのクライアントが同一IPアドレスであっても問題ありません．逆に，全てのクライアントが異なるIPアドレスであったとしても，ユーザIDの利用が重複しているとセッション再接続機能を利用することは出来ません．
+ファイル KGTN2012030102.pdf [(47.7 KB)] [kitasp 技術センター, 2012/03/01 14:29]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1067/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc2603/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc2603/">[GGW3.2.1] クライアント印刷機能利用時に，サーバが 「印刷完了」 と認識するタイミングはいつなのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2603/"><i class="far fa-calendar"></i> 2012-03-01</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2012/03/01*
+[番号] 技術ノート KGTN 2012030101
+[現象] [GGW3.2.1] クライアント印刷機能利用時に，サーバが 「印刷完了」 と認識するタイミングはいつなのか？
+[説明] GGW3.2.1のクライアント印刷機能は同期方式で実装されていますので，以下の処理が完了した時点で， 「サーバ上での印刷完了」 となります．
+ サーバ側での印刷ジョブの生成 （スプールファイルの作成） スプールファイルをメモリ上で圧縮 圧縮されたスプールファイルをクライアント側へ転送 圧縮されたスプールファイルをメモリ上で伸張 スプールファイルを印刷ジョブ （クライアント側） として投入  なおGGH4.X-5.X の場合は， Windows Printer Driver については非同期方式， Universal Printer Driver についてはGGW3.2.1 と同様の同期方式でクライアント印刷処理が行われます．
+ファイル KGTN2012030101.pdf [(59.6 KB)] [kitasp 技術センター, 2016/04/08 17:15]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc2603/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
                         
 
                         <ul class="pager">
@@ -786,11 +782,11 @@ PW の &ldquo;File → Printers&rdquo; で表示されるクライアントプ�
             
             
             <li>
-                <a href="/categories/news">news (2)</a>
+                <a href="/categories/news">news (5)</a>
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2728)</a>
+                <a href="/categories/tech">tech (2725)</a>
             </li>
             
         </ul>

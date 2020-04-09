@@ -84,7 +84,7 @@
     <meta property="og:image:height" content="634">
   
   
-  <meta property="og:updated_time" content="2020-03-26T00:00:00Z">
+  <meta property="og:updated_time" content="2020-03-23T00:00:00Z">
   
 
   
@@ -314,131 +314,6 @@
                     <div class="col-md-9" id="blog-listing-medium">
 
                         
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc478/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc478/">[GGH4.X] IE11 の環境でActiveXクライアントを利用したいが， Incompatible Browser というエラーメッセージが表示される．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc478/"><i class="far fa-calendar"></i> 2014-01-29</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2013112604
-[現象] [GGH4.X] IE11 の環境でActiveXクライアントを利用したいが， &ldquo;Incompatible Browser&rdquo; というエラーメッセージが表示される．
-[説明] 現時点でGGは IE11 をサポートしておりません．サポートしている IE のバージョンは 7.0～10.0 です． なお， IE11 が返す userAgent の情報 （下記参照：Windows7用の IE11 での結果） が MSIE という文字列を含んでいないため， IE と認識されないというのが技術的な背景です．この問題は， IE11 の互換表示設定を行うことで解決します．メニューバー → [ツール] → [互換表示設定] で，ログオン用サイト （URL） を追加して下さい．
-補　足 無保証かつ自己責任という条件をご納得頂けるのであれば，logon_PluginFunctions.js のバックアップを作成し，以下のように修正することで 「互換表示設定無しに」 IE11 上でActiveXクライアントが動作します．
-ファイル KGTN2013112604.pdf [(354 KB)] [kitasp 技術センター, 2014/01/29 11:57]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc478/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc490/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc490/">[GGH4.X] INIファイルのリダイレクト機能 （マッピング機能） を利用したいが，技術ノート KGTN#2010041901 と同じ設定を行えば良いのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc490/"><i class="far fa-calendar"></i> 2014-01-29</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2013112001
-[現象] [GGH4.X] INIファイルのリダイレクト機能 （マッピング機能） を利用したいが，技術ノート KGTN#2010041901 と同じ設定を行えば良いのか？
-[説明] GGH4.5またはそれ以降でINIファイルのリダイレクト機能 （マッピング機能） は実装されていますが，レジストリに設定する内容が若干変更されています．以下の例では， Test_IniFileMapping.ini という設定ファイルへの参照が，各ユーザのプロファイルの下の Test_IniFileMapping.ini へ自動的に切り替わります．
- 各ユーザのプロファイルの下に Test_IniFileMapping.ini という設定ファイルを作成する． レジストリエディタを起動する． HKLMSOFTWAREGraphOnGO-GlobalCompatibilityINIFilePaths へ位置づける． 「新規 → キー」 を選択する． 新しいキーの名前を Test_IniFileMapping.exe （プログラムのファイル名） にする． そのキーの下で 「新規 → 展開可能な文字列値」 を選択する． 名前を Test_IniFileMapping.ini にする． 値を USERPROFILETest_IniFileMapping.ini にする レジストリエディタを閉じる  注　意 「INIファイルマップ機能」 は，アプリケーションがINIファイル用の関数GetPrivateProfileString 等を使用している場合にのみ有効です．アプリケーションが 「これらの関数を使わず」 自前でINIファイルにアクセスしている場合は， 「INIファイルマップ機能」 は適用されません．
-ファイル KGTN2013112001.pdf [(102 KB)] [kitasp 技術センター, 2014/01/29 11:10]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc490/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc388/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc388/">[GGH4.X] iOSクライアントをブラウザ （ウエッブのページ） から起動したい．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc388/"><i class="far fa-calendar"></i> 2014-01-29</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2014012401
-[現象] [GGH4.X] iOSクライアントをブラウザ （ウエッブのページ） から起動したい．
-[説明] iOSクライアントのバージョン4.8から URL Scheme がサポートされましたので，下記コードのハイパーリンク Notepad をクリックすると，IPアドレス 192.168.102.24 （ポート番号 491） にあるGGサーバにアクセスし，ユーザID User （パスワード Password） でログオンし，メモ帳を起動することが出来ます．
-&lt;html&gt; &lt;body&gt; &lt;a href=&quot;rxp://?h=192.168.102.24&amp;hp=491&amp;u=User&amp;p=Password&amp;a=Notepad&quot;&gt;Notepad&lt;/a&gt; &lt;/body&gt; &lt;/html&gt;  ファイル KGTN2014012401.pdf [(56.1 KB)] [kitasp 技術センター, 2014/01/29 17:15]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc388/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
                         
                         <section class="post">
                             <div class="row">
@@ -727,6 +602,129 @@
                             </div>
                         </section>
                         
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc426/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc426/">[GGH4.X] Windows Server 2008 SP1 にGGH4.8をインストールしたところ，ログオン画面が表示されない．APSログを見るとクライアントからの接続要求が記録されているが，CS: Request timeout が発生している．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc426/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2014/01/29*
+[番号] 技術ノート KGTN 2014010804
+[現象] [GGH4.X] Windows Server 2008 SP1 にGGH4.8をインストールしたところ，ログオン画面が表示されない．APSログを見るとクライアントからの接続要求が記録されているが，CS: Request timeout が発生している．
+[説明] GGH4.8は Windows Server 2008 with Service Pack 2 の環境をサポートしますので，以下の手順でバージョンアップ （SP2の適用） を行って下さい．
+ Windows Server 2008 Service Pack 2 をインストール 再起動 GGH4.8を （上書き） インストール 再起動  ファイル KGTN2014010804.pdf [(51 KB)] [kitasp 技術センター, 2014/01/29 15:36]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc426/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc491/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc491/">[GGH4.X] Windows Server 2012 上で動作するGGサーバでは，日本語入力が画面左上に表示される．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc491/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2014/01/29*
+[番号] 技術ノート KGTN 2013111501
+[現象] [GGH4.X] Windows Server 2012 上で動作するGGサーバでは，日本語入力が画面左上に表示される．
+[説明] IMEで文字を入力する時，未確定の文字が画面左上に表示される現象は （現時点での） 制限事項です．
+On Japanese systems, the IME window may not display in the usual location.  ファイル KGTN2013111501.pdf [(49.2 KB)] [kitasp 技術センター, 2014/01/29 11:07]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc491/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc480/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc480/">[GGH4.X] WindowsクライアントおよびActiveXクライアントのパラメタでユーザIDとパスワードを指定すれば，日本語を使用出来ると聞いたがその通りか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc480/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2014/01/29*
+[番号] 技術ノート KGTN 2013112602
+[現象] [GGH4.X] WindowsクライアントおよびActiveXクライアントのパラメタでユーザIDとパスワードを指定すれば，日本語を使用出来ると聞いたがその通りか？
+[説明] GGのログオンダイアログでは，日本語の入力が出来ないため，ユーザIDおよびパスワードに日本語を使用することは出来ません．しかし，WindowsクライアントやActiveXクライアントのパラメタで日本語を含むユーザIDおよびパスワードを指定した場合は，それらが認識されログオンすることが出来ます．但し，ユーザIDが日本語を含む場合は，プロファイルのパスやユーザID （%USERNAME%） 等も日本語を含むことになり，アプリケーションによってはそれらが正しく処理されない等の問題が発生する可能性があります．
+ファイル KGTN2013112602.pdf [(52.9 KB)] [kitasp 技術センター, 2014/01/29 11:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc480/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
                         
 
                         <ul class="pager">
@@ -765,11 +763,11 @@
             
             
             <li>
-                <a href="/categories/news">news (2)</a>
+                <a href="/categories/news">news (5)</a>
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2728)</a>
+                <a href="/categories/tech">tech (2725)</a>
             </li>
             
         </ul>

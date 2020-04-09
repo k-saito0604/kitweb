@@ -15,6 +15,12 @@ var data = [
     body: "Categories"
   },
   {
+    url: "/categories/news/",
+    title: "news",
+    date: "2020-03-26T00:00:00Z",
+    body: "news"
+  },
+  {
     url: "/posts/",
     title: "Posts",
     date: "2020-03-26T00:00:00Z",
@@ -25,12 +31,6 @@ var data = [
     title: "Tags",
     date: "2020-03-26T00:00:00Z",
     body: "Tags"
-  },
-  {
-    url: "/categories/tech/",
-    title: "tech",
-    date: "2020-03-26T00:00:00Z",
-    body: "tech"
   },
   {
     url: "/tags/windowsupdate/",
@@ -105,6 +105,12 @@ var data = [
     body: "[GGH6.X] 専用のライセンスサーバーを配置した環境でGGサーバーのアップグレード（またはリペア）を行おうとするとダイアログ GO-Global License Upgrade Required が表示されエラーとなる。 技術ノート 2020/03/23 [番号] 技術ノート KGTN 2020012201 [現象] [GGH6.X] 専用のライセンスサーバーを配置した環境でGGサーバーのアップグレード（またはリペア）を行おうとするとダイアログ \u0026ldquo;GO-Global License Upgrade Required\u0026rdquo; が表示されエラーとなる。 [説明] フォルダー C:Program FilesGraphOnGO-GlobalLicensing に複数のライセンスファイルが置かれている時、このエラーダイアログが表示されることがあります。正しい１つのライセンスファイルを配置するようにしてください。 ファイル KGTN2020012201.pdf[(42 KB)] [kitasp 技術センター, 2020/03/23 15:23] KGTN2020012201.jpg[(16.5 KB)][kitasp 技術センター, 2020/03/23 15:23]"
   },
   {
+    url: "/categories/tech/",
+    title: "tech",
+    date: "2020-03-23T00:00:00Z",
+    body: "tech"
+  },
+  {
     url: "/tags/%E6%8A%80%E8%A1%93%E3%83%8E%E3%83%BC%E3%83%88/",
     title: "技術ノート",
     date: "2020-03-23T00:00:00Z",
@@ -118,12 +124,6 @@ var data = [
   },
   {
     url: "/tags/news/",
-    title: "news",
-    date: "2020-03-04T00:00:00Z",
-    body: "news"
-  },
-  {
-    url: "/categories/news/",
     title: "news",
     date: "2020-03-04T00:00:00Z",
     body: "news"

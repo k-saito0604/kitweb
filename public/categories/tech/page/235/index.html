@@ -84,7 +84,7 @@
     <meta property="og:image:height" content="634">
   
   
-  <meta property="og:updated_time" content="2020-03-26T00:00:00Z">
+  <meta property="og:updated_time" content="2020-03-23T00:00:00Z">
   
 
   
@@ -314,134 +314,6 @@
                     <div class="col-md-9" id="blog-listing-medium">
 
                         
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1515/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1515/">[GGW3.2] クライアント印刷機能で大きな印刷ジョブを流した場合，どれくらい時間がかかるのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1515/"><i class="far fa-calendar"></i> 2010-12-13</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/12/13*
-[番号] 技術ノート KGTN 2010121301
-[現象] [GGW3.2] クライアント印刷機能で大きな印刷ジョブを流した場合，どれくらい時間がかかるのか？
-[説明] 印刷するドキュメントの内容・プリンタドライバの種類や処理・サーバ/クライアントのCPUパワー・ネットワークの帯域などに大きく依存しますので，一般論で議論することは出来ません．ひとつのサンプルとして，弊社での実験結果を以下に示します．
-サーバのスペック： Intel Pentium4 2.80GHz クライアントのスペック： Intel Core2 Duo 2.00GHz アプリケーション： Excel 2000 の表1,000ページ分 ネットワーク： 100Mbps プリンタ （ドライバ） ： EPSON LASER LP-8600
- サーバ側の印刷時間： 538秒，　クライアント側への印刷時間： 60秒， スプールファイル： 487MB サーバ側の印刷時間： 535秒，　クライアント側への印刷時間： 60秒， スプールファイル： 487MB サーバ側の印刷時間： 540秒，　クライアント側への印刷時間： 62秒， スプールファイル： 487MB *) スプールファイルの転送時は100Mbpsの12.5%の帯域を使用  ここで言う 「サーバ側の印刷時間」 とは，印刷ボタンを押下してサーバ側でスプールファイルが生成されるまでの時間です． 「クライアント側への印刷時間」 とは，サーバ側のスプールファイルがプリンタのフォルダから消え，クライアント側のプリンタのフォルダにスプールファイルが生成されるまでの時間です．
-ファイル KGTN2010121301.pdf [(59.7 KB)] [kitasp 技術センター, 2010/12/13 11:21]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1515/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1512/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1512/">[GGW3.2] クライアント印刷機能で大きな印刷ジョブを行ったが，印刷されずAPSログに RS: Exception occurred in PRINT_EndDoc. という記録があった．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1512/"><i class="far fa-calendar"></i> 2010-12-13</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/12/13*
-[番号] 技術ノート KGTN 2010121001
-[現象] [GGW3.2] クライアント印刷機能で大きな印刷ジョブを行ったが，印刷されずAPSログに &ldquo;RS: Exception occurred in PRINT_EndDoc.&rdquo; という記録があった．
-[説明] クライアントプリンタへ印刷を行った場合，サーバ側の対応するプリンタにスプールファイルが蓄積されます．スプールファイルは印刷を行ったユーザのTEMPフォルダ （環境変数の%TEMP%） に作成され，そのファイルがクライアント側へ転送されます．そしてクライアント側でスプールファイルとして蓄積され，物理的なプリンタへ出力されます． &ldquo;RS: Exception occurred in PRINT_EndDoc.&rdquo; という記録は，スプールファイルがTEMPフォルダに作成されたものの，ファイルサイズが大きくメモリへ展開することが出来なかったことを意味します （つまりクライアント側へのスプールファイルの転送に失敗） ．対応については，技術ノートKGTN#2010120301 をご覧下さい．
-参　考 GraphOn社のコメントは以下の通りです． GO-Global was unable to allocate enough memory for the file. Without the necessary memory buffer, we can&rsquo;t forward the file to the client. It looks like whenever this allocation fails, we do not clean up the .bpf.
-ファイル KGTN2010121001.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1512/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1516/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1516/">ロードバランサでGGサーバを監視する場合， PING によるヘルスチェック機能しか方法が無いのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1516/"><i class="far fa-calendar"></i> 2010-12-08</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/12/08*
-[番号] 技術ノート KGTN 2010120601
-[現象] ロードバランサでGGサーバを監視する場合， PING によるヘルスチェック機能しか方法が無いのか？
-[説明] ロードバランサのTCP/IPによるヘルスチェック機能では，単に 「APSが開始状態にあるか？」 ということを確認するだけで， 「実際にログインできる状態にあるか？」 ということは確認できません （ハンドルの枯渇等ではコネクト出来るがログイン出来ない状態が発生します） ．技術ノートKGTN#2010120302 の内容も考慮すると，サーバの負荷を高めてまでTCP/IPによるヘルスチェック機能を行うことは得策ではありません．
-エンタープライズオプションの GMCheckRaw では， 「実際にログインできる状態にあるか？」 ということを確認することが出来ますので， PING 以上の監視を行うのであれば，これを使用することをお勧めします．一般には GMCheckRaw とロードバランサが直に連携を行うことは出来ませんが，しかし高機能なロードバランサでは Windowsのアプリケーションを利用する （あるいはデータを参照する） ことが出来ますので，GMCheckRawが必要な情報を出力するように設定することで （あるいはアプリケーションで加工することで） 連携を行うことが可能です．
-参　考 UNIXのinetd （デーモン） と類似したプログラムを使用することで，特定のポートにアクセスがあった時，GMCheckRaw を実行しその結果 （文字列） を返すことが出来ます．サンプル等を用意しておりますので，必要な場合は弊社技術支援センターまでお問い合せ下さい （サポート対象外ですが，ソースコードが付属します） ．
-ファイル KGTN2010120601.pdf [(71.2 KB)] [kitasp 技術センター, 2010/12/08 09:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1516/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
                         
                         <section class="post">
                             <div class="row">
@@ -736,6 +608,129 @@ http://support.microsoft.com/kb/244139/ja キーボード操作でメモリ ダ�
                             </div>
                         </section>
                         
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1528/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1528/">Mac OS X Client （3.2.1系） がサポートするコマンドラインの引数は？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1528/"><i class="far fa-calendar"></i> 2010-12-02</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2010/12/02*
+[番号] 技術ノート KGTN 2010120201
+[現象] Mac OS X Client （3.2.1系） がサポートするコマンドラインの引数は？
+[説明] 以下の引数のみをサポートします．これ以外の引数を指定した場合は，その動作については保証されません．
+Argument Description -h The IP address of the GO-Global Server. -u The client&rsquo;s network user name. -p The client?s network password. Please note that if you specify a password on the command-line, the password may be visible to other users running process reporting tools such as ps. To protect the user?s password, use -p - to request the password at startup.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1528/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1525/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1525/">「GMCheckRaw(1620)SC: Failed to obtain session infomation.」 というメッセージがAPSログに多数記録されているが，このエラーが原因でGGにログイン出来なかった可能性はないのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1525/"><i class="far fa-calendar"></i> 2010-12-02</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2010/12/02*
+[番号] 技術ノート KGTN 2010120204
+[現象] 「GMCheckRaw(1620)SC: Failed to obtain session infomation.」 というメッセージがAPSログに多数記録されているが，このエラーが原因でGGにログイン出来なかった可能性はないのか？
+[説明] GMCheckRaw がGGサーバの情報を採取する時は，通常のGGのログインと同じ手順を踏みますので，このメッセージが記録された状況では，GGサーバへのログインも失敗します．このような仕組み，およびこれまでの GMCheckRaw の動作実績から， 「GMCheckRawが原因でログイン出来ない」 可能性は考えられません．但し，過度な監視間隔 （例：1秒間隔） かつ元々のCPU負荷が高い場合は，GGサーバが過負荷となり，その結果ログインに失敗する可能性もゼロとは言えません．
+ファイル KGTN2010120204.pdf [(59.8 KB)] [kitasp 技術センター, 2010/12/02 14:48]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1525/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1527/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1527/">エンタープライズオプションの GMCheckRaw で 「GMCheckRaw(1620)SC: Failed to obtain session infomation.」 というメッセージがAPSログに多数記録されている．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1527/"><i class="far fa-calendar"></i> 2010-12-02</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2010/12/02*
+[番号] 技術ノート KGTN 2010120203
+[現象] エンタープライズオプションの GMCheckRaw で 「GMCheckRaw(1620)SC: Failed to obtain session infomation.」 というメッセージがAPSログに多数記録されている．
+[説明] このメッセージの意味は， 「GMCheckRaw がGGサーバ上のセッション情報を得ようとしたが，その情報が得られなかった」 ということです． GMCheckRaw が監視対象のGGサーバ上で動作している環境では，GGサーバが過負荷な状況，OS （Windows） で何らかの障害が発生した状況，などが発生したと考えられます．このメッセージが継続的かつ多数記録されている場合は， Windows で何らかの障害が発生した （GMCheckRawまたはAPSが正常に動作出来ない） 可能性が高いと思われます．
+ファイル KGTN2010120203.pdf [(58.3 KB)] [kitasp 技術センター, 2010/12/02 14:21]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1527/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
                         
 
                         <ul class="pager">
@@ -774,11 +769,11 @@ http://support.microsoft.com/kb/244139/ja キーボード操作でメモリ ダ�
             
             
             <li>
-                <a href="/categories/news">news (2)</a>
+                <a href="/categories/news">news (5)</a>
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2728)</a>
+                <a href="/categories/tech">tech (2725)</a>
             </li>
             
         </ul>

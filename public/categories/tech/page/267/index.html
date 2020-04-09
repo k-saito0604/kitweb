@@ -84,7 +84,7 @@
     <meta property="og:image:height" content="634">
   
   
-  <meta property="og:updated_time" content="2020-03-26T00:00:00Z">
+  <meta property="og:updated_time" content="2020-03-23T00:00:00Z">
   
 
   
@@ -314,136 +314,6 @@
                     <div class="col-md-9" id="blog-listing-medium">
 
                         
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1848/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1848/">SessionVerification = 0 （KGTN#2010022401を参照） でもセッション断が発生したが，他に考えられる原因はあるか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1848/"><i class="far fa-calendar"></i> 2010-03-02</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/03/02*
-[番号] 技術ノート KGTN 2010030205
-[現象] SessionVerification = 0 （KGTN#2010022401を参照） でもセッション断が発生したが，他に考えられる原因はあるか？
-[説明] 例えば，以下のような原因が考えられます （順不同） ．
-セッションに割り当てられたリソースが不足 → クラスタマネージャで Minimum available physical memory およびMinimum available virtual memory を2〜3倍に増やして状況が改善するかどうか確認する．
-サーバ自体のメモリが不足 → １ユーザのみの利用で現象が発生するかどうか確認する．
-クライアント側でスワップが頻発 → クライアントのメモリ空き容量およびスワップの発生状況を確認する．
-処理が過度に高負荷 → 現象が発生する処理を実行してCPU使用率が100%またはそれに近い状態になり，かつその状態が長く続くかどうか確認する．
-サーバまたはクライアントのマシンが不安定 → 他のサーバおよび他のクライアントで現象が発生するかどうか確認する．
-ネットワークの （一時的） 障害 → PINGコマンドでパケットロスやラウンドトリップタイムを確認する （発生頻度が高い時間帯に繰り返し実施する） ．また，これと併せてAPSログの記録も確認する．
-ファイル KGTN2010030205.pdf [(67.6 KB)] [kitasp 技術センター, 2010/03/02 15:00]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1848/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1849/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1849/">SSLサーバ証明書とは具体的に何なのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1849/"><i class="far fa-calendar"></i> 2010-03-02</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/03/02*
-[番号] 技術ノート KGTN 2010030204
-[現象] SSLサーバ証明書とは具体的に何なのか？
-[説明] SSLサーバ証明書とは，認証局と呼ばれる第三者の組織が， SSL （Secure Socket Layer） の暗号化技術を使用するサーバの身元を保証する，電子的な身分証明書のことです．証明書の情報を参照すると （.crtファイルの場合はダブルクリックします） ，発行先という項目に 「この証明書が保証するドメイン名 （ホスト名）」 が表示されます．SSLサーバ証明書の発行に当たっては，ドメイン名の所有者とSSLサーバ証明書の申請者が同一かつ実在の組織 （および代表者） であることが認証局によって確認されますので，この発行先のドメイン名 （ホスト名） を参照することで，接続先のサーバの正しい身元を確認することが出来ます．
-ファイル KGTN2010030204.pdf [(80.8 KB)] [kitasp 技術センター, 2010/03/02 11:47]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1849/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1850/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1850/">SSLサーバ証明書をクラスタマネージャのどこで設定するのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1850/"><i class="far fa-calendar"></i> 2010-03-02</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/03/02*
-[番号] 技術ノート KGTN 2010030203
-[現象] SSLサーバ証明書をクラスタマネージャのどこで設定するのか？
-[説明] クラスタマネージャでTools → Server Options → Security の順にアクセスし，
- Transport を SSL に変更， 2) Port に 491 または 443 を設定 （通常は491を指定） ， 3) SSL Certificate にSSLサーバ証明書のファイルのパス （拡張子は通常.crt） を設定 します．  注　意 クラスタマネージャで指定するSSLサーバ証明書のファイルは，そのファイルをダブルクリックした時に 「証明書の情報」 が表示されるものでなければなりません． 「このファイルは &ldquo;セキュリティ証明書&rdquo; として使用することは出来ません」 と表示される場合は，証明書の形式や内容に誤りがあり，GGのSSLサーバ証明書として使用することは出来ません．
-ファイル KGTN2010030203.pdf [(98.5 KB)] [kitasp 技術センター, 2010/03/02 10:48]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1850/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
                         
                         <section class="post">
                             <div class="row">
@@ -737,6 +607,130 @@ http://www.nic.ad.jp/ja/topics/2010/20100120-01.html  ファイル KGTN201002240
                             </div>
                         </section>
                         
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1855/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1855/">サーバに複数のLANポートがある場合，どのMACアドレスでライセンスを申請すべきか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1855/"><i class="far fa-calendar"></i> 2010-02-24</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2010/02/24*
+[番号] 技術ノート KGTN 2010022407
+[現象] サーバに複数のLANポートがある場合，どのMACアドレスでライセンスを申請すべきか？
+[説明] 技術的には，実際に使用するLANポートのMACアドレスであれば，何れでも構いません．敢えて言えば，サーバの機能上，より重要な役割を持っているLANポートのMACアドレスで申請するのが良いでしょう．
+ファイル KGTN2010022407.pdf [(45.8 KB)] [kitasp 技術センター, 2010/02/24 11:23]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1855/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1853/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1853/">特定のアプリケーションで予期せぬセッションの切断が発生する事例はないか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1853/"><i class="far fa-calendar"></i> 2010-02-24</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2010/02/24*
+[番号] 技術ノート KGTN 2010022409
+[現象] 特定のアプリケーションで予期せぬセッションの切断が発生する事例はないか？
+[説明] 過去に１件事例があります．そのアプリケーションは，データの読み込み時に進行状況を表示するため，過度に頻繁に情報 （文字列） を表示していました．これにより非常に多くの表示要求がサーバからクライアントへ送信され，その結果クライアントとサーバ間のPING （到達確認） の送受信に遅延が発生し，最終的に通信障害と認識されセッションが切断されました．
+ggw-3.2.1.4420またはそれ以降では，サーバからクライアントへ要求が送信されている場合，PING （到達確認） を送信しないように仕様が変更され，この問題は解消しました．
+参　考 When a large amount of data was sent from the server to the client, the reply to the client&rsquo;s ping request could take longer than 30 seconds to be returned to the client. When this happened, the client would erroneously assume that it could not communicate with the server, and it would close the connection.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1853/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1864/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1864/">GO-Global for Windows Ver3.2系は，Windows Server 2008 R2 （64ビット） をサポートするのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1864/"><i class="far fa-calendar"></i> 2010-02-23</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2010/02/23*
+[番号] 技術ノート KGTN 2010022301
+[現象] GO-Global for Windows Ver3.2系は，Windows Server 2008 R2 （64ビット） をサポートするのか？
+[説明] 現行バージョンでは Windows Server 2008 R2 （64ビット） をサポートしませんが，次期メジャーバージョン &ldquo;GO-Global for Windows Ver.4&rdquo; ではサポートする予定です．なお，リリース時期等については未定です．
+ファイル KGTN2010022301.pdf [(42.6 KB)] [kitasp 技術センター, 2010/02/23 09:25]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1864/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
                         
 
                         <ul class="pager">
@@ -775,11 +769,11 @@ http://www.nic.ad.jp/ja/topics/2010/20100120-01.html  ファイル KGTN201002240
             
             
             <li>
-                <a href="/categories/news">news (2)</a>
+                <a href="/categories/news">news (5)</a>
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2728)</a>
+                <a href="/categories/tech">tech (2725)</a>
             </li>
             
         </ul>

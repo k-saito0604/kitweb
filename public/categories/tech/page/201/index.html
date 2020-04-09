@@ -84,7 +84,7 @@
     <meta property="og:image:height" content="634">
   
   
-  <meta property="og:updated_time" content="2020-03-26T00:00:00Z">
+  <meta property="og:updated_time" content="2020-03-23T00:00:00Z">
   
 
   
@@ -314,137 +314,6 @@
                     <div class="col-md-9" id="blog-listing-medium">
 
                         
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1164/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1164/">[DNS] IEの インターネット オプション でプロキシサーバを設定してGGを利用している．接続先のGGサーバのAレコードを変更して接続したところ，旧サーバへ接続される．クライアント上でPINGを実行すると，新サーバの応答が得られる．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1164/"><i class="far fa-calendar"></i> 2011-12-22</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/12/22*
-[番号] 技術ノート KGTN 2011122001
-[現象] [DNS] IEの &ldquo;インターネット オプション&rdquo; でプロキシサーバを設定してGGを利用している．接続先のGGサーバのAレコードを変更して接続したところ，旧サーバへ接続される．クライアント上でPINGを実行すると，新サーバの応答が得られる．
-[説明] 先ず，PINGコマンドはTCP/IPでなくICMPで通信を行い， &ldquo;web-based ping&rdquo; というような特殊なツールを除きプロキシサーバを利用しません．つまり，PINGコマンドは （GGサーバの） 名前解決をクライアント上で行います．他方， &ldquo;インターネット オプション&rdquo; でプロキシサーバが設定された環境では，GGに入力されたGGサーバの名前はプロキシサーバ上で解決されます．PINGコマンドとGGクライアントでは，名前解決が行われる場所 （リゾルバ） が異なりますので，このような現象が発生します．プロキシサーバが参照しているネームサーバ上で， （GGサーバの） 名前解決がどうなるか確認して下さい．
-基本的なことですが，DNSのAレコードを変更しても，その内容が直ちに反映されることはありません．出来る限り早く反映させるにはゾーンや各レコードの TTL (Time-To-Live) に短い値を設定する必要があります．これ以上の細かい内容については，GGのサポートの範囲を超えますので，書籍やインターネット上の情報を参照して下さい．
-補足１ DNSの浸透問題 （変更した設定内容が期待通りに直ちに反映されない問題） は，さまざまな要素が絡み理解が難しいのですが，下記のページ （ブログ） で詳しく説明されています．
-なぜ 「DNSの浸透」 は問題視されるのか 1〜6 http://www.geekpage.jp/blog/?id=2011/10/27/1/1
-補足２ 東京と大阪にGGサーバがそれぞれ１台あり，障害発生時に 東京→大阪 というようにGGサーバを切り替えたいのであれば，IPアドレスとして
-;
-を指定することで （２つのIPアドレスをセミコロンで区切って並べる） ，東京のGGサーバへアクセス出来ない時は自動的に大阪のGGサーバへアクセスします．なお，東京のGGサーバへのアクセスが失敗した後に大阪のGGサーバへアクセスしますので，その分ログオンに要する時間が多少長くなります． *1 GGW3.2.1 と GGH4.0 それぞれで機能します．
-補足３ 障害発生時に準リアルタイムにGGサーバを切り替えたい場合， DNS の機能を利用して行うことは技術的に無理があります （コストを考えなければ IP Anycast を利用する方法があります） ．現実的には，ActiveX クライアントを使用し，専用のウエッブページで接続先のIPアドレスを動的に切り替える方法が考えられます．
-ファイル KGTN2011122001.pdf [(92.7 KB)] [kitasp 技術センター, 2011/12/22 13:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1164/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1163/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1163/">[GGH4.0] クライアントドライブ機能を有効にすると，GGへのログオンが30秒くらい遅くなる．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1163/"><i class="far fa-calendar"></i> 2011-12-22</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/12/22*
-[番号] 技術ノート KGTN 2011122202
-[現象] [GGH4.0] クライアントドライブ機能を有効にすると，GGへのログオンが30秒くらい遅くなる．
-[説明] サーバ側およびクライアント側のアンチウイルスソフトを無効にすることで，この現象が発生しなくなった事例があります．さらに，改めてそれぞれのアンチウイルスソフトを有効にしたところ，この現象は再現 （再発） しませんでした．このようなことから詳しい原因を特定できませんでしたが，アンチウイルスソフトがGGのクライアントドライブ機能を受け持つDLLを掴んでいたことが原因として考えられます．対応としては， 「GGがインストールされたフォルダを」 アンチウイルスソフトがスキャンする対象から除外する方法が妥当だと思います．
-ファイル KGTN2011122202.pdf [(51.7 KB)] [kitasp 技術センター, 2011/12/22 21:31]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1163/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc383/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc383/">[GGW3.2.1/GGH4.X] GGH4.Xをインストールしたサーバを，GGW3.2.1へ戻す時の手順は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc383/"><i class="far fa-calendar"></i> 2011-12-22</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/12/22*
-[番号] 技術ノート KGTN 2011122301
-[現象] [GGW3.2.1/GGH4.X] GGH4.Xをインストールしたサーバを，GGW3.2.1へ戻す時の手順は？
-[説明] 必ず以下の手順でGGH4.XのアンインストールとGGW3.2.1の再インストールを行って下さい．これ以外の手順でGGW3.2.1の再インストールを行った場合，GG上でアプリケーションが正常に動作しない等の問題が発生します．
- GGH4.Xをアンインストールする． 次の２つのファイルが存在すれは，それらを削除する． C:WindowsSystem32redirector.dll C:WindowsSystem32snds.dl サーバを再起動する． GGW3.2.1をインストールする． サーバを再起動する．  なお，上記１でライセンスファイルも削除されますので，事前にライセンスファイルを待避 （コピー） して下さい．
-There are two files from 4.0.1 that do not get cleaned up and need to be removed. Go to C:WindowsSystem32 and remove redirector.dll and snds.dll. Then reboot the system.  ファイル KGTN2011122301.pdf [(60.1 KB)] [kitasp 技術センター, 2014/01/29 17:31]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc383/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
                         
                         <section class="post">
                             <div class="row">
@@ -746,6 +615,138 @@ KGTN2011122004.jpg
                             </div>
                         </section>
                         
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc384/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc384/">[Windows] Windows Server 2008 の DEP （データ実行防止）　機能を無効化したい．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc384/"><i class="far fa-calendar"></i> 2011-12-19</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/12/19*
+[番号] 技術ノート KGTN 2011121901
+[現象] [Windows] Windows Server 2008 の DEP （データ実行防止）　機能を無効化したい．
+[説明] Windows Server 2008 の DEP （データ実行防止）　機能を無効化するには，下記のコマンドを実行し，サーバを再起動して下さい．
+bcdedit /set nx Alwaysoff
+DEP機能を戻す （有効化する） 時は，下記のコマンドを実行し，サーバを再起動して下さい．
+bcdedit /set nx OptIn
+上記の変更を行った場合は，GGの再インストールを行って下さい．
+補　足 GGW3.2.1 + WS2008 + &ldquo;bcdedit /set nx alwaysoff&rdquo; の環境で，セッションが正常に終了しないという報告がありました．そのような現象が見られた場合は，&ldquo;bcdedit /set nx OptIn&rdquo; を設定して下さい．
+ファイル KGTN2011121901.pdf [(55.7 KB)] [kitasp 技術センター, 2014/01/29 17:29]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc384/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1171/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1171/">[GGW3.2.1/GGH4.0] Program Window (PW) からアプリケーションを起動すると，ウインドウの一部が表示された状態でハングアップする．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1171/"><i class="far fa-calendar"></i> 2011-12-16</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/12/16*
+[番号] 技術ノート KGTN 2011121604
+[現象] [GGW3.2.1/GGH4.0] Program Window (PW) からアプリケーションを起動すると，ウインドウの一部が表示された状態でハングアップする．
+[説明] 通常では考えられない現象ですので，先ず以下の手順で特定の条件に依存するかどうか確認して下さい．
+他のクライアント （パソコン） で同じ現象が再現するかどうか確認する． 他のアカウントで同じ現象が再現するかどうか確認する． 他のアプリケーション （メモ帳など） で同じ現象が再現するかどうか確認する．
+上記の何れかで正常に動作すれば，クライアント・アカウント・アプリケーションに依存して発生する問題だと考えられますので，その周辺に問題がないかどうか調べて下さい．
+上記の何れでも問題が発生する場合は，サーバの一時的な不具合かどうかを確認するために，GGサーバを再起動して現象が再現するかどうか確認して下さい．再現しない場合は，サーバの一時的な不具合だと考えられますので，イベントログやAPSログを確認し，これまでのサーバの稼働状況を確認して下さい （サーバの定期的な再起動が行われておらず，メモリが枯渇した等） ．再現する場合は，GGサーバの本質的な問題だと考えられますので，イベントログやAPSログを確認し，正常ではない記録が残っていないか慎重に調べて下さい．
+調べても分らない場合は，過去に作成したイメージをリストアし，正常に動作するかどうか確認して下さい．正常に動作する場合は，ソフトウエアのインストール （Windows Update やドライバ等のインストール） が問題を引き起こしている可能性が高いと考えられます．正常に動作しない場合は，サーバ環境 （ハードウエアや仮想マシン） やネットワーク環境に起因して問題だと推測されます．
+ファイル KGTN2011121604.pdf [(68.3 KB)] [kitasp 技術センター, 2011/12/16 13:28]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1171/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1174/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1174/">[iPad Client] iPad Client バージョン 4.1.1.11561 で何が変わったのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1174/"><i class="far fa-calendar"></i> 2011-12-16</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/12/16*
+[番号] 技術ノート KGTN 2011121601
+[現象] [iPad Client] iPad Client バージョン 4.1.1.11561 で何が変わったのか？
+[説明] iPad Client バージョン 4.1.1.11561 の大きな変更点は，日本語入力のバグ （日本語入力時にゴミが残る，文字が消せないなど） が修正されたことです．今回のリリースは，このバグを解消することが主な目的でしたので，他に大きな変更点はありません．
+ファイル KGTN2011121601.pdf [(46.1 KB)] [kitasp 技術センター, 2011/12/16 09:09]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1174/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
                         
 
                         <ul class="pager">
@@ -784,11 +785,11 @@ KGTN2011122004.jpg
             
             
             <li>
-                <a href="/categories/news">news (2)</a>
+                <a href="/categories/news">news (5)</a>
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2728)</a>
+                <a href="/categories/tech">tech (2725)</a>
             </li>
             
         </ul>

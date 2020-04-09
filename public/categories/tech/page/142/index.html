@@ -84,7 +84,7 @@
     <meta property="og:image:height" content="634">
   
   
-  <meta property="og:updated_time" content="2020-03-26T00:00:00Z">
+  <meta property="og:updated_time" content="2020-03-23T00:00:00Z">
   
 
   
@@ -314,134 +314,6 @@
                     <div class="col-md-9" id="blog-listing-medium">
 
                         
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2134/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2134/">[GGH4.X-5.X] ログオン画面で _ のキーを押すと， | が入力される．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2134/"><i class="far fa-calendar"></i> 2013-05-23</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2013/05/23*
-[番号] 技術ノート KGTN 2013052301
-[現象] [GGH4.X-5.X] ログオン画面で &ldquo;_&rdquo; のキーを押すと， &ldquo;|&rdquo; が入力される．
-[説明] ログオン画面ではキーボード・マッピングファイルが適用されないため （注：つまり101キーボードとして処理されます） ，一部のキーで入力した文字とは異なる文字がエコーバックされます．この現象は制限事項となりますので，以下の何れかの方法で運用回避をお願いします．
- ユーザIDおよびパスワードに英数字のみを使用する．   ユーザIDおよびパスワードをコマンドラインやハイパーリンクのパラメタで指定する． 3) クライアント側IME機能を使用する （GGH4.5.0.13063またはそれ以降） ． コマンドラインの例：gg-client.exe -h 192.168.102.81 -kb ClientSideIME ハイパーリンクの例: http://192.168.102.81/logon.html?keyboard=ClientSideIME
-補　足 標準的なクライアントPC （Windows 7 + 一般的なキーボードレイアウト） を使用した場合，下記の環境でこの現象が発生しないことを確認しております．なお， 「一般的なキーボードレイアウト」 とは物理的な106キーボード相当という意味です．ノートPC等のキーボードは，これとは異なる内部コードが割り当てられていることが多く，その場合は Windows 7 であっても現象が発生します．
- Windows Server 2003 R2 + GGH4.8.0.18673 Windows Server 2008 R2 + GGH4.8.0.18673 Windows Server 2012 + GGH4.8.0.18673  ファイル KGTN2013052301.pdf [(90.7 KB)] [kitasp 技術センター, 2017/04/27 11:40]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2134/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc572/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc572/">[GGH4.X] 現在　GGW3.2.1　を使用しているが， GGH4.X へのバージョンアップを上書きインストールで行って良いか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc572/"><i class="far fa-calendar"></i> 2013-05-22</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2013/05/22*
-[番号] 技術ノート KGTN 2011120101
-[現象] [GGH4.X] 現在　GGW3.2.1　を使用しているが， GGH4.X へのバージョンアップを上書きインストールで行って良いか？
-[説明] GGW3.2.1では設定情報をレジストリで管理していましたが， GGH4.X ではXMLファイル （テキストファイル） 管理するように仕様が変更されました．このため，以下の （従来行われていた） ２つの方法ではパージョンアップを行うことが出来ません．
-新しいGGの上書きインストール レジストリのバックアップ，旧GGのアンインストール，新GGのインストール，レジストリのリストア
-確実なバージョンアップを行うためには，以下の手順で作業を行って下さい．
-レジストリ HKLM¥SOFTWARE¥GraphOn をバックアップする．*1 ライセンスファイル license.lic （Ver3.2.1用） をバックアップする． *1 現GGをアンインストールする． サーバを再起動する． サーバに異常がないことを確認する． 新しいGGをインストールする． 新しいライセンス （Ver4.X用） をインストールする． サーバを再起動する． サービス GO-Global Aplication Publishing Service が 「開始」 していることを確認する． サービス GO-Global License Service が 「開始」 していることを確認する． クラスタマネージャで試しのアプリケーション　（メモ帳など） を登録する． クライアントから接続し，試しのアプリケーションが起動し正常に動作することを確認する． クラスタマネージャの HOST Options を設定する． *2 クラスタマネージャで各アプリケーションを登録する． *2 クライアントから接続し，各アプリケーションが起動し正常に動作することを確認する．
-*1 何らかの理由で正常にバージョンアップ出来なかった時，元の環境に戻す時に必要となる設定やファイルの採取 （バックアップ） です．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc572/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc573/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc573/">[GGW3.2.1/Mac] Mac OS X クライアントを Mac OS X 10.4/10.5/10.6/10.7 の環境で利用していたが， Mac OS X を 10.8 に上げたところ，コネクションが切れるようになった．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc573/"><i class="far fa-calendar"></i> 2013-05-16</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2013/05/16*
-[番号] 技術ノート KGTN 2013051601
-[現象] [GGW3.2.1/Mac] Mac OS X クライアントを Mac OS X 10.4/10.5/10.6/10.7 の環境で利用していたが， Mac OS X を 10.8 に上げたところ，コネクションが切れるようになった．
-[説明] Mac OS X クライアントの最新版を （再） インストールして下さい．
-ファイル KGTN2013051601.pdf [(41.2 KB)] [kitasp 技術センター, 2013/05/16 09:14]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc573/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
                         
                         <section class="post">
                             <div class="row">
@@ -738,6 +610,135 @@ http://msdn.microsoft.com/en-us/library/windows/desktop/dd145071(v=vs.85).aspx M
                             </div>
                         </section>
                         
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc580/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc580/">[Tool] GGNetworkCheck で同一サーバ間での通信状況をチェックする方法は？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc580/"><i class="far fa-calendar"></i> 2013-04-18</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2013/04/18*
+[番号] 技術ノート KGTN 2013041802
+[現象] [Tool] GGNetworkCheck で同一サーバ間での通信状況をチェックする方法は？
+[説明] 以下の手順で，設定 （操作） を行って下さい．なお，設定ファイル中のサーバのIPアドレスは， （出来るだけ）ローカル・ループバック・アドレスではなく，外部からアクセスする時に使用するIPアドレスを指定して下さい．
+GGNetworkCheck　のフォルダを C:¥GraphOn の下などにコピーする． GGNetworkCheck.ini をメモ帳で開く． （画面１） host = を指定しファイルを保存する． コマンドプロンプトを１つ開き GMNetworkCheck ?s を実行する． （画面２） コマンドプロンプトをもう１つ開き GMNetworkCheck ?c を実行する．（画面３） 通信状況が自動的に記録される． チェックが終了したらそれぞれのコマンドプロンプトで CTRL-C を押し終了させる． GGNetworkCheck　のフォルダに作成されたログ ggnc-yyyymmdd.log を保存する． （画面４および５）
+画面１：GGNetworkCheck.ini
+画面２： GMNetworkCheck ?s
+画面３：GMNetworkCheck ?c
+画面４： ggnc-yyyymmdd.log
+画面５： ggnc-yyyymmdd.log の内容
+ファイル KGTN2013041802.pdf [(686 KB)] [kitasp 技術センター, 2013/04/18 12:37]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc580/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc583/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc583/">[GGH4.X] 互換アップデートを起動したところ， This version of the program is not supported by the Compatibility Update Setup (1). というメッセージが表示された．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc583/"><i class="far fa-calendar"></i> 2013-04-17</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2013/04/17*
+[番号] 技術ノート KGTN 2013041701
+[現象] [GGH4.X] 互換アップデートを起動したところ， &ldquo;This version of the program is not supported by the Compatibility Update Setup (1).&rdquo; というメッセージが表示された．
+[説明] このメッセージは，互換アップデートが対象としているGGのバージョン （ビルド番号も含みます） とは異なることを意味しています．GGサーバのバージョン＋ビルド番号と，互換アップデートが対象としているGGのバージョン＋ビルド番号を確認して下さい．
+ファイル KGTN2013041701.pdf [(75.1 KB)] [kitasp 技術センター, 2013/04/17 09:15]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc583/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc585/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc585/">[GGH4.X] サービス GO-Global Application Publishing Service が 「開始」 していれば，GGサーバが正常に動作していると考えて良いか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc585/"><i class="far fa-calendar"></i> 2013-04-16</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2013/04/16*
+[番号] 技術ノート KGTN 2013041603
+[現象] [GGH4.X] サービス GO-Global Application Publishing Service が 「開始」 していれば，GGサーバが正常に動作していると考えて良いか？
+[説明] いいえ，互換性の無い更新プログラム （Windowsアップデート） が適用され，サービス GO-Global Application Publishing Service は 「開始」 したものの，ログオン時にエラーが発生した事例がありました．従って，GGサーバの正常動作を判断するには，実際にログオン出来るかを確認する必要があります．
+ファイル KGTN2013041603.pdf [(53.2 KB)] [kitasp 技術センター, 2013/04/16 11:09]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc585/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
                         
 
                         <ul class="pager">
@@ -776,11 +777,11 @@ http://msdn.microsoft.com/en-us/library/windows/desktop/dd145071(v=vs.85).aspx M
             
             
             <li>
-                <a href="/categories/news">news (2)</a>
+                <a href="/categories/news">news (5)</a>
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2728)</a>
+                <a href="/categories/tech">tech (2725)</a>
             </li>
             
         </ul>

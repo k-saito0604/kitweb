@@ -84,7 +84,7 @@
     <meta property="og:image:height" content="634">
   
   
-  <meta property="og:updated_time" content="2020-03-26T00:00:00Z">
+  <meta property="og:updated_time" content="2020-03-23T00:00:00Z">
   
 
   
@@ -314,131 +314,6 @@
                     <div class="col-md-9" id="blog-listing-medium">
 
                         
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1811/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1811/">ログオン時のクライアントプリンタの構成の時にセッションがフリーズする．プリンタドライバは統一しており問題は無く，サービス Print Spooler を再起動すると問題は解消する．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1811/"><i class="far fa-calendar"></i> 2010-03-25</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/03/25*
-[番号] 技術ノート KGTN 2010032508
-[現象] ログオン時のクライアントプリンタの構成の時にセッションがフリーズする．プリンタドライバは統一しており問題は無く，サービス Print Spooler を再起動すると問題は解消する．
-[説明] サービス Print Spooler が過負荷になり，クライアントプリンタの構成処理に失敗していると考えられます．タスクマネージャ等でCPU負荷や spoolsv.exe のCPU使用率を監視し，高い使用率が続くようであれば，クライアントプリンタの数を減らすか，またはGGサーバに収容するユーザ数を減らすようにして下さい．クライアントプリンタの数を減らす場合は，以下の手順でクライアントのプリンタ情報を保持するファイル print.ini を削除して下さい．
-エクスプローラーでC:¥Documents and Settings¥Administrator¥Local Settings¥Application Data を開く．Administrator 以外のユーザの場合はC:¥Documents and Settings¥¥Local Settings¥Application Data を開く． ファイル print.ini を削除する．
-この操作が困難な場合は，弊社ツール GGMInfo.exe でprint.ini を削除して下さい．
-ファイル KGTN2010032508.pdf [(64.3 KB)] [kitasp 技術センター, 2010/03/25 16:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1811/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1823/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1823/">GG上で動作するアプリケーションを強制的に終了させるため，クライアントのタスクマネージャでアプリケーションを終了させたところ，アプリケーションが終了したのみならずセッションも切断された．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1823/"><i class="far fa-calendar"></i> 2010-03-24</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/03/24*
-[番号] 技術ノート KGTN 2010032401
-[現象] GG上で動作するアプリケーションを強制的に終了させるため，クライアントのタスクマネージャでアプリケーションを終了させたところ，アプリケーションが終了したのみならずセッションも切断された．
-[説明] この動作は仕様です．GGはサーバ上で動作しているアプリケーションを，あたかもクライアント上で動作しているかのように偽装します．この偽装によって，タスクマネージャでアプリケーションを終了させる操作を行うことが出来ますが，実際に終了処理が行われるプログラムはGGのクライアントであるため，結果的にセッションが切断されます．
-ファイル KGTN2010032401.pdf [(47.6 KB)] [kitasp 技術センター, 2010/03/24 12:12]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1823/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1819/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1819/">GG関連のプロセス aps.exe, lmgrd.exe, blm.exe の正常稼働時のプロセス数の上限と下限を知りたい．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1819/"><i class="far fa-calendar"></i> 2010-03-24</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/03/24*
-[番号] 技術ノート KGTN 2010032501
-[現象] GG関連のプロセス aps.exe, lmgrd.exe, blm.exe の正常稼働時のプロセス数の上限と下限を知りたい．
-[説明] aps.exe は，アプリケーション配信機能の最上位に位置するプロセスで，正常時は１つです．lmgrd.exe は，ライセンス管理ソフトウエアFlexLMのライセンス管理デーモンで，正常時は2つです．blm.exe は，FlexLMのベンダーデーモンで，正常時は1つです．
-ファイル KGTN2010032501.pdf [(47.6 KB)] [kitasp 技術センター, 2010/03/25 07:31]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1819/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
                         
                         <section class="post">
                             <div class="row">
@@ -735,6 +610,129 @@ PW （プログラムウインドウ）で調べる方法
                             </div>
                         </section>
                         
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1830/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1830/">APSログに以下のエラーが記録され正常にログオンできない．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1830/"><i class="far fa-calendar"></i> 2010-03-15</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2010/03/15*
+[番号] 技術ノート KGTN 2010031502
+[現象] APSログに以下のエラーが記録され正常にログオンできない． Logon (????) The Program Window failed to signal completion of its basic initializations within 1 minute(s)
+[説明] このログは，通常 1) ログオンスクリプトが１分以内に処理が完了しない場合， 2) クライアントプリンタの構成が１分以内に完了しない場合に記録されます．前者の場合は，ログオンスクリプトの内容をチェックし，権限不足も含め誤りがないかどうか確認して下さい．後者の場合は，クライアントプリンタのドライバ等に問題がないかどうか確認して下さい．
+ファイル KGTN2010031502.pdf [(54.4 KB)] [kitasp 技術センター, 2010/03/15 14:35]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1830/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1831/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1831/">GGのクライアント （ActiveX と Native） が表示するウインドウにメッセージを送りたい．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1831/"><i class="far fa-calendar"></i> 2010-03-15</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2010/03/15*
+[番号] 技術ノート KGTN 2010031501
+[現象] GGのクライアント （ActiveX と Native） が表示するウインドウにメッセージを送りたい．
+[説明] 以下のテストプログラムで，最小化やリストア等が処理されることを3.2.1系で確認しました．
+ファイル KGTN2010031501.pdf [(49.8 KB)] [kitasp 技術センター, 2010/03/15 11:41]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1831/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1829/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1829/">クライアントドライブ機能でサーバ側からクライアント側へファイルコピーする時，同名のファイルが既にあるとコピーされない （上書きコピーが正常に行われない） ．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1829/"><i class="far fa-calendar"></i> 2010-03-15</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2010/03/15*
+[番号] 技術ノート KGTN 2010031601
+[現象] クライアントドライブ機能でサーバ側からクライアント側へファイルコピーする時，同名のファイルが既にあるとコピーされない （上書きコピーが正常に行われない） ．
+[説明] この現象は 3.2.1.4446 またはそれ以前のビルドで発生する問題で， 3.2.1 Patch4 で修正される予定です．
+ファイル KGTN2010031601.pdf [(44.7 KB)] [kitasp 技術センター, 2010/03/16 08:28]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1829/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
                         
 
                         <ul class="pager">
@@ -773,11 +771,11 @@ PW （プログラムウインドウ）で調べる方法
             
             
             <li>
-                <a href="/categories/news">news (2)</a>
+                <a href="/categories/news">news (5)</a>
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2728)</a>
+                <a href="/categories/tech">tech (2725)</a>
             </li>
             
         </ul>

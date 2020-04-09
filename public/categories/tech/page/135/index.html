@@ -84,7 +84,7 @@
     <meta property="og:image:height" content="634">
   
   
-  <meta property="og:updated_time" content="2020-03-26T00:00:00Z">
+  <meta property="og:updated_time" content="2020-03-23T00:00:00Z">
   
 
   
@@ -314,135 +314,6 @@
                     <div class="col-md-9" id="blog-listing-medium">
 
                         
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc506/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc506/">[GGW3.2.1] クライアントプリンタ情報ファイル ClientIdentifiers.ini にプリンタが存在しないにも関わらず，プリンタフォルダにオートクリエイトプリンタ （proxy printer） が存在する．どのような原因が考えられるか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc506/"><i class="far fa-calendar"></i> 2013-10-31</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2013/10/31*
-[番号] 技術ノート KGTN 2013103101
-[現象] [GGW3.2.1] クライアントプリンタ情報ファイル ClientIdentifiers.ini にプリンタが存在しないにも関わらず，プリンタフォルダにオートクリエイトプリンタ （proxy printer） が存在する．どのような原因が考えられるか？
-[説明] GGはセッションを終了させる時，ログオン時に登録したプリンタ情報をクライアントプリンタ情報ファイル ClientIdentifiers.ini からを削除するとともに，ログオン時に生成したオートクリエイトプリンタ （proxy printer） の削除を印刷スプーラサービスに依頼します．クライアントプリンタ情報ファイルの内容が正常であるにも関わらず，オートクリエイトプリンタが削除されていないのであれば，印刷スプーラサービスがこの削除要求を正常に処理出来なかったと考えられます．
-ファイル KGTN2013103101.pdf [(51.2 KB)] [kitasp 技術センター, 2013/10/31 09:50]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc506/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc505/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc505/">[SDK] エンタープライズオプションの GGSessionMonitor とはどんなツールなのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc505/"><i class="far fa-calendar"></i> 2013-10-31</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2013/10/31*
-[番号] 技術ノート KGTN 2012071801
-[現象] [SDK] エンタープライズオプションの GGSessionMonitor とはどんなツールなのか？
-[説明] 原則的にはGGサーバ上で動作させるプログラムで，GGのプロトコルを介してGGサーバのセッション情報を収集し，その情報をデータベースに記録します．さらにデータベースの更新時に， HTTP/POST でその情報を外部へ送信することも出来ます．
-設定ファイルと起動パラメタ 設定ファイル GGSessionMonitor.ini の default セクションで，以下のパラメタを設定して下さい．
-  設定項目 説明 loglevel ログの出力レベル，通常は1を指定し，障害時は4を指定 port GGサーバのポート番号（各セクションで未指定時に適用）  cpuUsageCheck CPU使用率計算のパラメタ（変更しないこと） cpuUsageSleep CPU使用率計算のパラメタ（変更しないこと）
- 個別セクション （GGサーバ単位） で，以下のパラメタを設定して下さい．
-  設定項目 説明 host GGサーバのIPアドレス logFile ログファイル（データベースの更新情報）のパス dbgFile デバッグファイル（デバッグ情報）のパス sqlFile データベースファイル（セッションの最新情報）のパス usrFile データベースファイル（セッションの履歴情報）のパス licFile 拡張パックのライセンスファイルのパス httpPost セッション履歴情報 (user_tbl) の送信先URL  httpPostServer サーバ情報 (server_tbl) の送信先URL httpPostSession セッション最新情報 (session_tbl) の送信先URL
- 監視対象のGGサーバと監視時間は，起動パラメタで指定して下さい．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc505/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc504/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc504/">エンタープライズオプションの GGHealthCheck はどういう機能を提供するのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc504/"><i class="far fa-calendar"></i> 2013-10-31</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2013/10/31*
-[番号] 技術ノート KGTN 2011013101
-[現象] エンタープライズオプションの GGHealthCheck はどういう機能を提供するのか？
-[説明] ロードバランサのヘルスチェック機能 （TCP/IPレベル） でGGのポート491を監視した場合，GGは接続要求を検出した時点で様々なリソースを確保します （注：これは一斉ログオン等の高負荷な処理をさばくための仕様です） ．しかし，ロードバランサはGGのプロトコルを喋りませんので，コネクションが切断されるまで，それらのリソースが確保され続けます．一斉ログオン時に，複数台のロードバランサがヘルスチェック機能 （TCP/IPレベル） を行うと，それがパフォーマンスに影響を与える可能性があります．GGHealthCheck は，このような問題 （これ以外にもWindowsの仕様に絡む問題があります） を解決するために作成しました．
-GGHealthCheck は，定期的にGGサーバの稼働状況をチェックし （GMCheckRaw または GGSessionMonitor コマンドを使用します） ，その状況を記録します．ロードバランサのヘルスチェック機能 （TCP/IPレベル） でGGHealthCheck に接続要求があると， 1) 接続要求を受け付け， 2) 文字列 （最大128文字までの半角文字列） の受信を待ち， 3) 受信した文字列の末尾に &ldquo;server = UP&rdquo; という文字列を付加し返信 （送信） し， 4) コネクションを切断します．GGサーバが正常に稼働していない場合は， &ldquo;server = DOWN&rdquo; という文字列を付加します．なお，サーバ機能は 「多」 クライアントからの同時アクセス可能な実装になっています．
-設定ファイル 設定ファイルGGHealthCheck.ini の default セクションで，以下のパラメタを設定して下さい．
-設定項目 説明 mode S = サーバとして起動 （C = クライアントとして起動） host サーバのIPアドレス（IPv4 / IPv6） port サーバの待受けポートの番号 interval ヘルスチェックの間隔（秒） repeat ヘルスチェックの回数（注：-1は無限回） clSleep クライアント時のコネクション切断後の再チェックまでの間隔（秒） svSleep サーバ時のGGサーバを監視する間隔（秒） clTimeout クライアント時の送受信のタイムアウト時間（秒） svTimeout サーバ時の送受信タイムアウト時間（秒） 注：clTimeout +5秒以上を指定すること logd ログを保存するフォルダ（絶対パス） command GMCheckRaw または GGSessionMonitor を起動するコマンド errorCode 9999（固定） 注：クライアント機能は，サーバ機能が正常に動作しているかどうかを確認するためのツールです．通常の運用では， GGHealthCheck のサーバ機能のみを使用し，ロードバランサがこの時のクライアントになります． 設定項目は，下記のコマンドの引数で上書きすることが出来ます．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc504/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
                         
                         <section class="post">
                             <div class="row">
@@ -737,6 +608,129 @@ GGW3.2.1 Patch4 R2 (4474) を上書きインストール 互換アップデー�
                             </div>
                         </section>
                         
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc379/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc379/">[GGW3.2.1/GGH4.X] BSOD （ブルースクリーンのメモリダンプ） が発生したが，GG の不具合ではないのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc379/"><i class="far fa-calendar"></i> 2013-10-16</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2013/10/16*
+[番号] 技術ノート KGTN 2013101601
+[現象] [GGW3.2.1/GGH4.X] BSOD （ブルースクリーンのメモリダンプ） が発生したが，GG の不具合ではないのか？
+[説明] GG 上で動作するアプリケーションは，GG のドライバ ggse.sys （GO-Global System Extension Driver） を 介して Windows が管理するメモリの確保や解放を行います．このため，メモリの枯渇や不正な処理が行われてBSOD が発生した場合，表面的な調査で ggse.sys が原因と結論付けた事例が幾つも存在しました （GGW3.2.XおよびGGH4.X） ．しかしながら，弊社またはGraphOn社で詳細に調査を行うと，その何れもがメモリの枯渇やアプリケーションの不正な処理が原因でした．先ず，技術ノート KGTN2013101502 の内容を試してBSODが改善するかどうか確認して下さい．
+ファイル KGTN2013101601.pdf [(58.2 KB)] [kitasp 技術センター, 2014/01/29 17:44]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc379/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc515/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc515/">[GGH4.6] GGH4.6には２つのビルドがあるのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc515/"><i class="far fa-calendar"></i> 2013-10-15</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2013/10/15*
+[番号] 技術ノート KGTN 2013101501
+[現象] [GGH4.6] GGH4.6には２つのビルドがあるのか？
+[説明] GGH4.6にはGGH4.6.0.16538 (2013/04/02) とGGH4.6.0.16652 (2013/04/10) の２つのビルドが存在しますが， kitASPでは新しい方のビルド GGH4.6.0.16652 のみを出荷しております．なお，大きな差異は更新プログラム KB2813170 への対応です．
+ファイル KGTN2013101501.pdf [(41.5 KB)] [kitasp 技術センター, 2013/10/15 12:44]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc515/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc516/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc516/">[GGH4.X] ログオンスクリプトで非同期に処理を行いたい．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc516/"><i class="far fa-calendar"></i> 2013-10-15</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2013/10/15*
+[番号] 技術ノート KGTN 2013101101
+[現象] [GGH4.X] ログオンスクリプトで非同期に処理を行いたい．
+[説明] 以下に非同期実行 （クライアントプリンタの構成状況のチェック） のサンプルコードを示します．
+ファイル KGTN2013101101.pdf [(52.3 KB)] [kitasp 技術センター, 2013/10/15 09:28]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc516/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
                         
 
                         <ul class="pager">
@@ -775,11 +769,11 @@ GGW3.2.1 Patch4 R2 (4474) を上書きインストール 互換アップデー�
             
             
             <li>
-                <a href="/categories/news">news (2)</a>
+                <a href="/categories/news">news (5)</a>
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2728)</a>
+                <a href="/categories/tech">tech (2725)</a>
             </li>
             
         </ul>

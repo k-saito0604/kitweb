@@ -84,7 +84,7 @@
     <meta property="og:image:height" content="634">
   
   
-  <meta property="og:updated_time" content="2020-03-26T00:00:00Z">
+  <meta property="og:updated_time" content="2020-03-23T00:00:00Z">
   
 
   
@@ -314,134 +314,6 @@
                     <div class="col-md-9" id="blog-listing-medium">
 
                         
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1262/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1262/">[Tool] GGNetworkCheck で以下のエラーが記録された．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1262/"><i class="far fa-calendar"></i> 2011-10-19</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/10/19*
-[番号] 技術ノート KGTN 2011101903
-[現象] [Tool] GGNetworkCheck で以下のエラーが記録された．
-C:¥&gt; GGNetworkCheck -c [2011-10-14 11:17:43] INFO: socket(&lsquo;210.196.131.146&rsquo;,&lsquo;7492&rsquo;) -&gt; Connected [2011-10-14 11:17:43] Test#1 CL@11:17:43 -&gt; [2011-10-14 11:17:43] [2011-10-14 11:17:48] Test#1 CL@11:17:48 -&gt; [2011-10-14 11:17:48] ERROR: recv(&lsquo;210.196.131.146&rsquo;,&lsquo;7492&rsquo;) -&gt; Failed
-[説明] 最初の行に Connected と記録されていることから， 210.196.131.146:7492 上で動作するプログラムと接続したことが分ります．次の行で GGNetworkCheck のPINGを送信していますが，最後の行で受信に失敗，つまり相手 （サーバ） が応答を返さなかったことを示しています．接続出来ているにもかかわらず，PINGの応答が無いということは， 210.196.131.146:7492 上で動作するプログラムは GGNetworkCheck 以外のプログラムで，GGのAPS （GGの待ち受けポート） だと推測されます． GGNetworkCheck は，ネットワーク障害を他に依存することなく検出出来るように，サーバ側およびクライアント側それぞれで GGNetworkCheck を使用します．詳細は，技術ノート KGTN#2011030201 をご覧下さい．
-ファイル KGTN2011101903.pdf [(64 KB)] [kitasp 技術センター, 2011/10/19 11:40]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1262/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2208/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2208/">[GGH4.X-5.X] クラスタマネージャの Minimum available physical memory の意味は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2208/"><i class="far fa-calendar"></i> 2011-10-14</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/10/14*
-[番号] 技術ノート KGTN 2011101402
-[現象] [GGH4.X-5.X] クラスタマネージャの Minimum available physical memory の意味は？
-[説明] 利用可能な物理メモリが Minimum available physical memory の値よりも少ない場合および極めて近い場合，新たなセッションの生成が禁止されます （ログオン時に &ldquo;Logon failed. Physical memory requirement as not met.&rdquo; のエラーダイアログが表示されます） ．表面上はログオン時の物理メモリの管理に関する設定ですが，運用上は存在するセッションが利用出来る物理メモリを確保する （減らさないようにする） ための設定となります．従って，サーバが不安定等の現象が発生した場合は，「この値を2倍・4倍に増やす」　「32MB・64MB・128MB増やす」 等を試してみる価値があります．
-補　足 利用可能な物理メモリがMinimum available physical memory の値に近い場合，ログオン時に &ldquo;Connection failed. The server could not create a new session.&rdquo;　のエラーダイアログが表示されることがあります．
-ファイル KGTN2011101402.pdf [(94.6 KB)] [kitasp 技術センター, 2017/02/22 16:44]
-KGTN2011101402.jpg
-表示 [(11.7 KB)] [kitasp 技術センター, 2017/02/22 16:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2208/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2207/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2207/">[GGH4.X-5.X] クラスタマネージャの Minimum available virtual memory の意味は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2207/"><i class="far fa-calendar"></i> 2011-10-14</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/10/14*
-[番号] 技術ノート KGTN 2011101403
-[現象] [GGH4.X-5.X] クラスタマネージャの Minimum available virtual memory の意味は？
-[説明] （合計仮想メモリに対する） 利用可能な仮想メモリの比率が Minimum available virtual memory の値よりも小さい場合および極めて近い場合，新たなセッションの生成が禁止されます （ログオン時に &ldquo;Logon failed. Virtual memory requirement as not met.&rdquo; のエラーダイアログが表示されます） ．表面上はログオン時の仮想メモリの管理に関する設定ですが，運用上は存在するセッションが利用出来る仮想メモリを確保する （減らさないようにする） ための設定となります．従って，サーバが不安定等の現象が発生した場合は，この値を 5%・10%・20%・etc&hellip; 増やして試す価値があります．
-補　足 例えば， Minimum available virtual memory の値が10%の場合は，利用可能な仮想メモリが合計仮想メモリの10%を切ったら，ログオンさせないという意味になります．合計仮想メモリと利用可能な仮想メモリの値は，以下のスクリプトで得ることが出来ます．
-strComputer = &ldquo;.&rdquo; Set objWMIService = GetObject(&ldquo;winmgmts:&rdquo; _ &amp; &ldquo;{impersonationLevel=impersonate}!&rdquo; &amp; strComputer &amp; &ldquo;rootcimv2&rdquo;) Set colSettings = objWMIService.ExecQuery _ (&ldquo;Select * from Win32_OperatingSystem&rdquo;) For Each objOperatingSystem in colSettings Wscript.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2207/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
                         
                         <section class="post">
                             <div class="row">
@@ -735,6 +607,132 @@ strComputer = &ldquo;.&rdquo; Set objWMIService = GetObject(&ldquo;winmgmts:&rdq
                             </div>
                         </section>
                         
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1272/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1272/">[GGW3.2.1] HTMLの img タグで画像のサイズが指定されている場合，ページ内の画像が多いと表示が極めて遅い．さらにページをスクロールしても，再描画に時間がかかる．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1272/"><i class="far fa-calendar"></i> 2011-10-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/10/12*
+[番号] 技術ノート KGTN 2011101202
+[現象] [GGW3.2.1] HTMLの img タグで画像のサイズが指定されている場合，ページ内の画像が多いと表示が極めて遅い．さらにページをスクロールしても，再描画に時間がかかる．
+[説明] この現象は，IE （Internet Explorer） とGGW3.2.1の描画処理の相互作用によって発生する問題で， Firefox 7.0.1 等では発生しません．HTMLの img タグで画像のサイズが指定されている場合，IEが細かい単位で描画を行うため，GGは非常に多数の描画命令を１つずつクライアントへ送信します．この結果，サーバ側およびクライアント側それぞれの CPU 負荷が高まり，結果的に描画に非常に多くの時間を要することになります．この問題を解決するには，GGW3.2.1のアーキテクチャをそのものを変更する必要があり， GGH4.0 で対応しております．なお，GGW3.2.1の環境では，対症療法になりますが，以下の方法が考えられます．
+ブラウザに FireFox 7.0.1 等を使用する． ASP等で動的に縮小 （拡大） 画像を生成し，その画像を （サイズ指定せずに） 表示する．
+ファイル KGTN2011101202.pdf [(63.2 KB)] [kitasp 技術センター, 2011/10/12 12:02]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1272/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1273/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1273/">[WS2008] Windows Update を適用しようとするとエラー 80072F8F が発生する．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1273/"><i class="far fa-calendar"></i> 2011-10-12</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/10/12*
+[番号] 技術ノート KGTN 2011101201
+[現象] [WS2008] Windows Update を適用しようとするとエラー 80072F8F が発生する．
+[説明] そのマシン （サーバ） の日付と時刻が正しくないことが考えられます．正しい日付と時刻を設定して，再度Windows Update を適用して下さい．
+ファイル KGTN2011101201.pdf [(43.4 KB)] [kitasp 技術センター, 2011/10/12 10:16]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1273/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1274/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1274/">[GGW3.2.1] ログオン時にエラーメッセージ ??? is inaccessible が表示された．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1274/"><i class="far fa-calendar"></i> 2011-10-07</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/10/07*
+[番号] 技術ノート KGTN 2011092202
+[現象] [GGW3.2.1] ログオン時にエラーメッセージ &ldquo;??? is inaccessible&rdquo; が表示された．
+[説明] このメッセージは， 1) ログオン時に起動するアプリケーションが指定されていて， かつ 2) ログオンするユーザがそのアプリケーションを実行する権限を持たない時に表示されます．従って，GGに登録されたアプリケーション （上記メッセージの ??? の部分がアプリケーション名です） を参照し，実際に起動されるプログラムのアクセス権 （セキュリティ） を確認して下さい．
+補足１ この問題は，通常アクセス権 （セキュリティ） に起因して発生しますので，どのユーザ （アカウント） で発生したかが重要なポイントになります．さらに，GGサーバ上で直接起動して確認する場合も，必ず問題が発生したユーザで行って下さい．他のユーザで動作確認しても，殆ど意味を持ちません．
+補足２ GGに登録されたMDBファイル （アプリケーション） が削除された場合も，このメッセージが表示されます．GGがユーザのファイルを消すことはありませんので，もしこのような状況が発生した場合は， Windows （のファイルシステム） の障害やユーザ操作でファイルが消されたことが考えられます．
+ファイル KGTN2011092202.pdf [(65.3 KB)] [kitasp 技術センター, 2011/10/07 09:20]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1274/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
                         
 
                         <ul class="pager">
@@ -773,11 +771,11 @@ strComputer = &ldquo;.&rdquo; Set objWMIService = GetObject(&ldquo;winmgmts:&rdq
             
             
             <li>
-                <a href="/categories/news">news (2)</a>
+                <a href="/categories/news">news (5)</a>
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2728)</a>
+                <a href="/categories/tech">tech (2725)</a>
             </li>
             
         </ul>

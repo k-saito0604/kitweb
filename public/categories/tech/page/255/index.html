@@ -84,7 +84,7 @@
     <meta property="og:image:height" content="634">
   
   
-  <meta property="og:updated_time" content="2020-03-26T00:00:00Z">
+  <meta property="og:updated_time" content="2020-03-23T00:00:00Z">
   
 
   
@@ -314,144 +314,6 @@
                     <div class="col-md-9" id="blog-listing-medium">
 
                         
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1719/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1719/">Windows Server 2008 環境で動作するGGサーバで @ 等の入力が出来ない （異なる文字がエコーバックされる） ．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1719/"><i class="far fa-calendar"></i> 2010-06-24</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/06/24*
-[番号] 技術ノート KGTN 2009122401
-[現象] Windows Server 2008 環境で動作するGGサーバで &ldquo;@&rdquo; 等の入力が出来ない （異なる文字がエコーバックされる） ．
-[説明] これは Windows Server 2008 でキーボードの処理が変更されたために発生する問題で，下記のレジストリを登録することで問題が解消します．
-[HKEY_LOCAL_MACHINE¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout] &ldquo;Fallback Layout Text&quot;=&quot;Japanese&rdquo;
-この件はGraphOn社でも確認しており，今後のリリースで修正される予定です．
-補足１ 3.2.1 Patch4 (4466) およびそれ以降では，本問題は解消されております．
-Bug 8997 On Japanese Windows Server 2008, users are unable to logon to an account with a password including &ldquo;@,=,‾,etc&hellip;&quot;.
-補足２ Windows Server 2008 のインストール時に，標準的な106キーボードが接続されていることが前提となります．それ以外の環境では，下記のレジストリの Layout Text の値を上記Fallback Layout Text へセットして下さい．
-[HKEY_LOCAL_MACHINE¥SYSTEM¥CurrentControlSet¥Control¥Keyboard Layouts¥00000411] &ldquo;Layout Display Name&quot;=&rdquo;@C:¥¥Windows¥¥system32¥¥input.dll,-5061&rdquo; &ldquo;Layout File&quot;=&quot;KBDJPN.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1719/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1722/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1722/">GMCheckRaw のトレース機能はどんな時に使うのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1722/"><i class="far fa-calendar"></i> 2010-06-22</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/06/22*
-[番号] 技術ノート KGTN 2010062201
-[現象] GMCheckRaw のトレース機能はどんな時に使うのか？
-[説明] Rel#1.07.01 で実装されたGMCheckRaw のトレース機能は，同プログラムとGG （APS） の通信のタイムスタンプを記録することで， 「どの処理の周辺に問題があるのか」 を突き止める時に役立ちます．例えば，GMCheckRaw コマンドを入力してから，ログファイルに
-2010-06-22 13:49:02.656 -&gt; checkServer
-が出力されるまでに5秒かかったとすれば，プロセスの生成に約5秒かかったことになりますので，Windows やハードウエアに問題があると推測されます．
-また， SMI_Initializeの呼出し前後の時間をチェックすることで，GGサーバへの接続に要する時間を確認することが出来ます．30秒かかったとすれば，CPUの過負荷，プロセス間通信の一時的障害，ネットワーク障害や設定ミス，Windowsの異常等が考えられます．
-2010-06-22 13:49:02.656 &gt; SMI_Initialize SMI_Initializeの呼出し前 2010-06-22 13:49:04.312 SMI_Initialize SMI_Initializeの呼出し後
-これ以外にもローレベルな情報を採取することが出来ますので， 「正常値と比較することで」 問題解析の手掛かりとして役立てることが出来ます．
-ファイル KGTN2010062201.pdf [(69.6 KB)] [kitasp 技術センター, 2010/06/22 14:05]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1722/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1723/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1723/">Ver3.1系とVer3.2系の差異は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1723/"><i class="far fa-calendar"></i> 2010-06-21</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/06/21*
-[番号] 技術ノート KGTN 2010062101
-[現象] Ver3.1系とVer3.2系の差異は？
-[説明] Ver3.1系からVer3.2系への大きな変更点は以下の通りです．
-Automatic Windows Update and Hotfix Compatibility Ver3.1系では Windows Update の度にGraphOn社が提供する互換アップデートの適用が必要でしたが，Ver3.2系では原則として互換アップデートの適用は不要となりました．
-Backward Compatible Client and Server Ver3.1系では新しいビルドがリリースされる度に，クライアントも更新する必要がありました．Ver3.2系では後方互換性があるため，新しいビルドがリリースされても，クライアントを必ずしも更新する必要はありません．
-Time Zone Redirection Ver3.2系では，設定でクライアント側のタイムゾーンを使用することができます．
-Client-Side Password Caching Ver3.1系ではサーバ側にパスワードをキャッシュすることが出来ましたが，Ver3.2系ではそれに加えクライアント側にもパスワードをキャッシュすることが出来るようになりました．これにより， Active Directory を使用しない環境でもパスワードキャッシュ機能を利用することができます．
-End of Support for Windows 2000 Server Ver3.1系では Windows 2000 Server と Windows 2003 Server をサポートしておりましたが，Ver3.2系では Windows 2003 Server と Windows 2008 Server （3.2.1系） をサポートします．
-ファイル KGTN2010062101.pdf [(66.3 KB)] [kitasp 技術センター, 2010/06/21 12:57]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1723/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
                         
                         <section class="post">
                             <div class="row">
@@ -755,6 +617,129 @@ https://www.thawte.com/roots/
                             </div>
                         </section>
                         
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1731/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1731/">電子証明書 （xxx.CER） の状態に 「この証明書は有効期限切れかまだ有効ではありません。」 とある．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1731/"><i class="far fa-calendar"></i> 2010-06-16</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2010/06/16*
+[番号] 技術ノート KGTN 2010061602
+[現象] 電子証明書 （xxx.CER） の状態に 「この証明書は有効期限切れかまだ有効ではありません。」 とある．
+[説明] GraphOn社および弊社は製品として xxx.CER というファイル （証明書） は配布しておりません．配布していないファイルについてお問い合せを頂いてもお答えすることは出来ませんが，内容を見たところ 「証明書のパス」 に GraphOn Corporation が最上位に位置しており，異常な証明書です．正しい証明書は， GraphOn Corporation の上位に認証局 （CA） が存在します．
+ファイル KGTN2010061602.pdf [(68.5 KB)] [kitasp 技術センター, 2010/06/16 10:34]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1731/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1732/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1732/">電子証明書の詳細に 「失効状態: 失効サーバーがオフラインのため、失効の関数は失効を確認できませんでした。」 という情報がある．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1732/"><i class="far fa-calendar"></i> 2010-06-16</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2010/06/16*
+[番号] 技術ノート KGTN 2010061601
+[現象] 電子証明書の詳細に 「失効状態: 失効サーバーがオフラインのため、失効の関数は失効を確認できませんでした。」 という情報がある．
+[説明] IE の設定で 「サーバーの証明書失効を確認する」 の項目が有効になっており，かつその環境からインターネットへの接続が制限されている場合に，お問い合せの情報が表示されます．インターネットへの接続を許可するか，または 「サーバーの証明書失効を確認する」 の項目を無効にして下さい （参考：KGTN#2010061501） ．
+ファイル KGTN2010061601.pdf [(132 KB)] [kitasp 技術センター, 2010/06/16 10:11]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1732/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1734/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1734/">ActiveXクライアント （ggw-activex.cab） の置き換えの手順を知りたい．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1734/"><i class="far fa-calendar"></i> 2010-06-15</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2010/06/15*
+[番号] 技術ノート KGTN 2010061502
+[現象] ActiveXクライアント （ggw-activex.cab） の置き換えの手順を知りたい．
+[説明] 特別な手順はなく，単にファイルの上書きコピーを行って下さい．もし電子証明書絡みのメッセージ等が表示された場合は，IE側の設定に起因していると考えられますので，システムの管理者またはマイクロソフト社へお問い合せ下さい．なお，ActiveXクライアント （ggw-activex.cab） は，特別な処理等は行っておらず，一般的なActiveXコントロールの枠組みに従って実装されております．
+ファイル KGTN2010061502.pdf [(52 KB)] [kitasp 技術センター, 2010/06/15 09:57]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1734/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
                         
 
                         <ul class="pager">
@@ -793,11 +778,11 @@ https://www.thawte.com/roots/
             
             
             <li>
-                <a href="/categories/news">news (2)</a>
+                <a href="/categories/news">news (5)</a>
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2728)</a>
+                <a href="/categories/tech">tech (2725)</a>
             </li>
             
         </ul>

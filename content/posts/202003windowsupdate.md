@@ -2,7 +2,7 @@
 title = "2020年3月のWindows Update互換性情報に関して"
 date = "2020-03-26"
 tags = ["WindowsUpdate"]
-categories=["tech"]
+categories=["news"]
 banner = "img/Windowsupdate.jpg"
 +++
 正規販売代理店技術担当者様 各位いつもお世話になっております。  

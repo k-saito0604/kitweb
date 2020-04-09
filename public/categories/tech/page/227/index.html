@@ -84,7 +84,7 @@
     <meta property="og:image:height" content="634">
   
   
-  <meta property="og:updated_time" content="2020-03-26T00:00:00Z">
+  <meta property="og:updated_time" content="2020-03-23T00:00:00Z">
   
 
   
@@ -314,135 +314,6 @@
                     <div class="col-md-9" id="blog-listing-medium">
 
                         
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1429/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1429/">GGNetworkCheck とはどんなツールなのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1429/"><i class="far fa-calendar"></i> 2011-03-08</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/03/08*
-[番号] 技術ノート KGTN 2011030201
-[現象] GGNetworkCheck とはどんなツールなのか？
-[説明] GGのサーバ側とクライアント側で動作させるプログラムで，クライアント側主導でTCP/IPのヘルスチェック （接続性確認） を行います．クライアント側は所定の秒数でPINGメッセージを送信し （ログに記録も残します） ，サーバ側はPINGメッセージを受信するとログに記録するとともに，応答メッセージをクライアント側に送信します．クライアント側は応答メッセージを受信すると，その情報をログに記録します．所定秒数内に相手からのメッセージが届かない，またはTCP/IPレベルでコネクションが切断された場合は，エラーとしてログに記録されます．この２つのログ （クライアント側とサーバ側） を付き合わせることで，ネットワークの状況を確認することが出来ます．
-GGNetworkCheck は， GMService との併用で自動監視が出来るように，コンソールアプリケーションとして作成されています．GGNetworkCheck は，１つのプログラムの中にサーバ機能とクライアント機能の両方を持っており，逆方向のヘルスチェックも簡単に行うことが出来ます．さらに，サーバ機能は 「多」 クライアントからの同時アクセスも可能な実装になっています．
-設定ファイル 設定ファイル GGNetworkCheck.ini の default セクションで，以下のパラメタを設定して下さい．
-設定項目 説明 mode S = サーバとして起動 / C = クライアントとして起動 host サーバのIPアドレス（IPv4 / IPv6） port サーバの待受けポートの番号 interval ヘルスチェックの間隔（秒） repeat ヘルスチェックの回数（注：-1は無限回） sleep コネクション切断後の再チェックまでの間隔（秒） clTimeout クライアント時の送受信のタイムアウト時間（秒） svTimeout サーバ時の送受信タイムアウト時間（秒） 注：clTimeout +5秒以上を指定すること logd ログを保存するフォルダ（絶対パス） prefix 送信メッセージの先頭に付加する文字列 clTimeAdj ログに記録されるクライアント時間の微調整（±3600秒まで） svTimeAdj ログに記録されるサーバ時間の微調整（±3600秒まで） 設定項目は，下記のコマンドの引数で上書きすることが出来ます．
-設定項目 説明 -s サーバとして起動 -c クライアントとして起動 -h address サーバのIPアドレス（IPv4/IPv6） -hp port サーバの待受けポートの番号 -i sec コネクション切断後の再チェックまでの間隔（秒） -r times ヘルスチェックの回数（注：-1は無限回） -l dir ログを保存するフォルダ（絶対パス） -x msg 送信メッセージの先頭に付加する文字列 同じ設定ファイルGGNetworkCheck.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1429/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1432/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1432/">[GGW3.2.1] コマンド プロンプト （DOS窓） のウインドウを開くことなくバッチを実行したい．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1432/"><i class="far fa-calendar"></i> 2011-03-01</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/03/01*
-[番号] 技術ノート KGTN 2011030103
-[現象] [GGW3.2.1] コマンド プロンプト （DOS窓） のウインドウを開くことなくバッチを実行したい．
-[説明] 下記のバッチをアプリケーションとして登録すると，3.2.1系ではコマンド プロンプトのウインドウが表示されます．
-[FILE: myNotePad.bat] ECHO OFF NOTEPAD EXIT
-コマンド プロンプトのウインドウを非表示にするには，以下のWSHのプログラムをアプリケーションとして登録し，そのプログラムからバッチを起動するようにします．
-[FILE: myNotePad.vbs] Set WshShell = WScript.CreateObject(&ldquo;WScript.Shell&rdquo;) ' Call WshShell.Run( &ldquo;cmd.exe /c C:¥GraphOn¥BAT¥myNotePad.bat&rdquo;, 0, True ) ← 同期実行 Call WshShell.Run( &ldquo;cmd.exe /c C:¥GraphOn¥BAT¥myNotePad.bat&rdquo;, 0, False ) ← 非同期実行
-ファイル KGTN2011030103.pdf [(55.6 KB)] [kitasp 技術センター, 2011/03/01 10:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1432/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1433/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1433/">[GGW3.2] ggw-3.2.1.xxxx の環境で互換性の無い更新プログラム （Windows Update） があるが， ggw-3.2.0.yyyy の環境ではどうなのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1433/"><i class="far fa-calendar"></i> 2011-03-01</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/03/01*
-[番号] 技術ノート KGTN 2011030102
-[現象] [GGW3.2] ggw-3.2.1.xxxx の環境で互換性の無い更新プログラム （Windows Update） があるが， ggw-3.2.0.yyyy の環境ではどうなのか？
-[説明] 互換性の無い更新プログラム （Windows Update） は，それが Windows のカーネルを書き換えるためで，従って過去の ggw-3.2.0.yyyy の環境でも互換性はありません．
-ファイル KGTN2011030102.pdf [(44.1 KB)] [kitasp 技術センター, 2011/03/01 10:07]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1433/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
                         
                         <section class="post">
                             <div class="row">
@@ -742,6 +613,131 @@ It looks like it was inadvertently left out of the Release Notes, but it was ver
                             </div>
                         </section>
                         
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1440/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1440/">[GGH4.0] クライアントドライブ機能で FD, CD-ROM, DVD-ROM 等が表示されない．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1440/"><i class="far fa-calendar"></i> 2011-02-25</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/02/25*
+[番号] 技術ノート KGTN 2011022504
+[現象] [GGH4.0] クライアントドライブ機能で FD, CD-ROM, DVD-ROM 等が表示されない．
+[説明] 4.0系では， FD, CD-ROM, DVD-ROM 等のリームバブルディスクは，クライアントドライブとしてサポートされません． Administrator Guide の内容を以下に引用します．
+GO-Global allows users to access USB drives. Removable drives such a floppy disks, CD ROMs, and DVD-ROMs are not supported as client drives.
+ファイル KGTN2011022504.pdf [(52.3 KB)] [kitasp 技術センター, 2011/02/25 16:15]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1440/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1441/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1441/">「描画オブジェクトが不完全に描画される」 「ウインドウ内の幾つかの描画オブジェクトが表示されない」 等の問題が発生したが，どんな情報を採取すれば良いか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1441/"><i class="far fa-calendar"></i> 2011-02-25</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/02/25*
+[番号] 技術ノート KGTN 2011022501
+[現象] 「描画オブジェクトが不完全に描画される」 「ウインドウ内の幾つかの描画オブジェクトが表示されない」 等の問題が発生したが，どんな情報を採取すれば良いか？
+[説明] クライアントクリップボード機能が 「有効」 であれば，この機能を 「無効」 にして再現するかどうかを確認して下さい．状況が変わらない場合は，クライアント側で動作する ggw.exe の情報をタスクマネージャ （プロセスタブ，表示→列の選択で各項目を選択） か Process Explorer （Performanceタブ） で採取して下さい．あと，ビデオアダプタのメモリの大きさ，画面の解像度と色深度等もお知らせ下さい．
+参　考 本技術ノートに関連するGraphOn社のコメントを引用します．
+It could be some kind of client side memory or graphical handle issue. If the client was running out of memory or handles then painting anomalies like this could occur. We think they could tell if this is the issue by running the task manager on the client and looking at the ggw process.</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1441/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1442/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1442/">[GGW-3.2.1] PW （Program Window） に共有フォルダを配置したい．</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1442/"><i class="far fa-calendar"></i> 2011-02-24</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/02/24*
+[番号] 技術ノート KGTN 2011022406
+[現象] [GGW-3.2.1] PW （Program Window） に共有フォルダを配置したい．
+[説明] アプリケーションとしてエクスプローラー （gg-explorer.exe） を登録し， Command-Line Options に共有フォルダのパスを指定して下さい．ユーザ毎に共有フォルダを変えたい場合は，同じような処理をバッチ等で行うのが良いでしょう （注：具体的な内容については， Windows の利用方法に関することになりますので，GGの技術ノートでは言及しません） ．
+ファイル KGTN2011022406.pdf [(126 KB)] [kitasp 技術センター, 2011/02/24 12:51]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1442/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
                         
 
                         <ul class="pager">
@@ -780,11 +776,11 @@ It looks like it was inadvertently left out of the Release Notes, but it was ver
             
             
             <li>
-                <a href="/categories/news">news (2)</a>
+                <a href="/categories/news">news (5)</a>
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2728)</a>
+                <a href="/categories/tech">tech (2725)</a>
             </li>
             
         </ul>

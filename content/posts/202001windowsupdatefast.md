@@ -2,7 +2,7 @@
 title = "2020年1月のWindows Update 互換性情報についての速報"
 date = "2020-01-15"
 tags = ["WindowsUpdate"]
-categories=["tech"]
+categories=["news"]
 banner = "img/Windowsupdate.jpg"
 +++
 正規販売代理店技術担当者様 各位

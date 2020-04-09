@@ -84,7 +84,7 @@
     <meta property="og:image:height" content="634">
   
   
-  <meta property="og:updated_time" content="2020-03-26T00:00:00Z">
+  <meta property="og:updated_time" content="2020-03-23T00:00:00Z">
   
 
   
@@ -314,131 +314,6 @@
                     <div class="col-md-9" id="blog-listing-medium">
 
                         
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1179/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1179/">APIラッピング方式は，スクリーン・スクレイピング方式に比べ常に描画性能と高いと考えて良いか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1179/"><i class="far fa-calendar"></i> 2011-12-15</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/12/15*
-[番号] 技術ノート KGTN 2011121503
-[現象] APIラッピング方式は，スクリーン・スクレイピング方式に比べ常に描画性能と高いと考えて良いか？
-[説明] APIラッピング方式ではアプリケーションが描画した命令 （API） をクライアントへ 「同期して」 転送し，それを受け取ったクライアントが命令内容に従って物理的な画面に描画します．一方，スクリーン・スクレイピング方式ではアプリケーションが描画した結果 （ビットマップの差分） をクライアントへ 「非同期に」 転送し，それを受け取ったクライアントがビットマップを物理的な画面に描画します．アプリケーションの操作ウインドウのように描画オブジェクトが多数配置された画面等では，サーバ側での描画のタイミングと同期してクライアントで描画が行われるAPIラッピング方式の方がより高い描画性能が得られます．
-APIラッピング方式にも不得意な画面があります．全画面サイズの画像 （ビットマップ） を順に表示するようなケースでは，APIラッピング方式でも画像データをクライアントへ送る必要があり　（１ピクセル単位に描画命令を送るとデータ量やオーバーヘッドが大幅に増加するため） ，この画像データの転送時間がほぼ描画に要する時間となります．従って，APIラッピング方式のメリットが活きる箇所が少なく，スクリーン・スクレイピング方式と同程度の描画性能になると思われます （非同期でビットマップを転送するスクリーン・スクレイピング方式の方が速く感じることもあります） ．敢えて言えば，GGは全ユーザのパフォーマンスが上がるよう通信帯域を管理しておりますので，多数のユーザが全画面サイズの画像 （ビットマップ） を順に表示するようなケースでは，GGの方がトータルの描画性能が高くなる可能性はあります．
-ファイル KGTN2011121503.pdf [(65.2 KB)] [kitasp 技術センター, 2011/12/15 10:22]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1179/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1182/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1182/">[GGW3.2.1] 20MBを超えるファイルをコピーした時， 「ファイルがロックされる等の事象は発生するもののコピー処理は成功する」 と考えて良いか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1182/"><i class="far fa-calendar"></i> 2011-12-14</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/12/14*
-[番号] 技術ノート KGTN 2011121501
-[現象] [GGW3.2.1] 20MBを超えるファイルをコピーした時， 「ファイルがロックされる等の事象は発生するもののコピー処理は成功する」 と考えて良いか？
-[説明] 最初のファイルコピーでは確かにそのような動作を示しますが，しかしその後のファイルコピーでは異常な動作（描画が正しくない，コネクションが切断されるなど） が発生することが確認されております．従って，20MBを超えるファイルコピーについては， 「条件付きであっても」 如何なる動作もお約束出来ません．
-ファイル KGTN2011121501.pdf [(51.1 KB)] [kitasp 技術センター, 2011/12/15 06:47]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1182/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1181/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1181/">[GGW3.2.1] 20MBを超えるファイルを分割してクライアントへコピーすることを考えているが，分割したファイルをクライアント上で結合することは出来るか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1181/"><i class="far fa-calendar"></i> 2011-12-14</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/12/14*
-[番号] 技術ノート KGTN 2011121502
-[現象] [GGW3.2.1] 20MBを超えるファイルを分割してクライアントへコピーすることを考えているが，分割したファイルをクライアント上で結合することは出来るか？
-[説明] ファイルを結合するには，ファイルの内容を読まねばなりませんので，サーバ上で動作するアプリケーションで結合することは技術的に問題があります．従って，以下のような手順でクライアント側で結合する必要があります．
-転送したいファイルを20MB以下のサイズに分割する． 分割したファイルを結合するバッチファイルを作成する． 分割したファイルおよび結合用バッチファイルをクライアントへコピーする． ユーザがクライアント上で結合用バッチファイルを実行する．
-ファイル KGTN2011121502.pdf [(50.1 KB)] [kitasp 技術センター, 2011/12/15 06:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1181/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
                         
                         <section class="post">
                             <div class="row">
@@ -738,6 +613,132 @@ aps (1340) AS: Rejected settings given for editing myTepa (64).
                             </div>
                         </section>
                         
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1189/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1189/">[GGW3.2.1] クライアント印刷機能で -ac allを指定した場合，ログオン時に構成されるプリンタの順序は？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1189/"><i class="far fa-calendar"></i> 2011-12-09</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/12/09*
+[番号] 技術ノート KGTN 2011120751
+[現象] [GGW3.2.1] クライアント印刷機能で &ldquo;-ac all&rdquo; を指定した場合，ログオン時に構成されるプリンタの順序は？
+[説明] GGW3.2.1.4466 で確認したところ， Win32API の EnumeratePrinters() がプリンタを数え上げる順にクライアントプリンタが構成されました．なお， GGH4.0ではこれとは異なる順序で構成されましたので，バージョンアップを前提とすれば 「クライアントプリンタの構成順序は不定」 とお考え下さい．
+補　足 print.ini を空 （[Client Data] 以外のセクションを全て削除） にしてログオンを行うと，構成した順序で print.ini にプリンタのセクションが追加されます．
+ファイル KGTN2011120751.pdf [(54.3 KB)] [kitasp 技術センター, 2011/12/09 13:15]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1189/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1187/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1187/">[GGW3.2.1] 互換アップデートを適用したかどうか分る方法はないか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1187/"><i class="far fa-calendar"></i> 2011-12-09</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/12/09*
+[番号] 技術ノート KGTN 2011120903
+[現象] [GGW3.2.1] 互換アップデートを適用したかどうか分る方法はないか？
+[説明] 互換アップデートのプログラムは，下記のファイル （の最新版） を Windows のシステムフォルダへコピーするのみで，特に適用されたかどうかの情報は記録しておりません．従って，互換アップデートが適用されているかどうかを知る方法はありません．敢えて言えば， 「互換アップデートがリリースされた時期」 と 「下記ファイルの更新日時」 を比較し， 1) 下記ファイルの中に明らかに日付が新しいものがある → より新しい互換アップデートが適用されている可能性が高い， 2) 下記ファイルの中にほぼ同じ日付のものがある → その互換アップデートが適用されている可能性が高い， 3) 下記ファイルの全ての日付が明らかに古い → その互換アップデートが適用されていない可能性が高い と考えることが出来ます．
+C:¥WINDOWS¥system32¥drivers¥VBM_NTOSKRNL.SYS C:¥WINDOWS¥system32¥drivers¥VBM_WIN32K.SYS C:¥WINDOWS¥system32¥drivers¥ggse.sys C:¥WINDOWS¥system32¥GGDD.DLL
+ファイル KGTN2011120903.pdf [(56 KB)] [kitasp 技術センター, 2011/12/09 13:55]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1187/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="/posts/new_md/doc1190/">
+                                          
+                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="/posts/new_md/doc1190/">[GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，マウスポインタの移動も 「操作された」 と判断されるのか？</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1190/"><i class="far fa-calendar"></i> 2011-12-09</a>
+                                        </p>
+                                        
+                                    </div>
+                                    <p class="intro">*技術ノート
+2011/12/09*
+[番号] 技術ノート KGTN 2011120705
+[現象] [GGW3.2.1] 無操作タイムアウト （アイドルタイムアウト） に関して，マウスポインタの移動も 「操作された」 と判断されるのか？
+[説明] Program Window および GG上で動作しているアプリケーションのウインドウ上でマウスポインタを移動し続けると，無操作タイムアウトは発生しません．つまり，マウスポインタの移動も 「操作された」 と判断されます．確認は GGW3.2.1.4482 で行いました．
+補　足 クライアントにインストールされたアプリケーションの副作用等により，無操作タイムアウト機能が正しく動作しないことがあります．過去１件あった事例では， 「GGが表示したウインドウの何れかがアクティブな場合」 に，無操作タイムアウトが発生しませんでした．
+ファイル KGTN2011120705.pdf [(55.4 KB)] [kitasp 技術センター, 2011/12/09 10:52]</p>
+                                    <p class="read-more"><a href="/posts/new_md/doc1190/" class="btn btn-template-main">続きを読む</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
                         
 
                         <ul class="pager">
@@ -776,11 +777,11 @@ aps (1340) AS: Rejected settings given for editing myTepa (64).
             
             
             <li>
-                <a href="/categories/news">news (2)</a>
+                <a href="/categories/news">news (5)</a>
             </li>
             
             <li class="active">
-                <a href="/categories/tech">tech (2728)</a>
+                <a href="/categories/tech">tech (2725)</a>
             </li>
             
         </ul>

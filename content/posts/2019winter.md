@@ -1,8 +1,8 @@
 +++
 title = ""
 date = "2020-12-01"
-tags = ["WindowsUpdate"]
-categories=["tech"]
+tags = [""]
+categories=["news"]
 banner = "img/Windowsupdate.jpg"
 +++
 　令和元年１２月２８日（土）～令和２年１月５日（日）
