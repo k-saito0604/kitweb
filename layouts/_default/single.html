@@ -36,33 +36,9 @@
                           {{ .Content }}
                         </div>
                         {{ if and (.Params.categories) }}
-<!--  {{ $c := index .Params.categories 0 }}
-  <div class="same-category-posts-area">
-    <h2>Posts in "{{ $c }}" category</h2>
-    {{ $cposts := index .Site.Taxonomies.categories (lower $c) }}
-    {{ range first 5 $cposts }}
-    <div class="item same-height-row clearfix">
-      <div class="image same-height-always">
-          <a href="{{ .Permalink }}">
-            {{ if isset .Params "banner" }}
-              <img src="{{ .Params.banner | relURL }}" class="img-responsive" alt="{{ .Title }}">
-            {{ else }}
-              <img src="{{ "img/placeholder.png" | relURL }}" class="img-responsive" alt="{{ .Title }}">
-            {{ end }}
-          </a>
-      </div>
-      <div class="name same-height-always">
-          <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-      </div>
-  </div>
-    {{ end }}
-    {{ if gt (len $cposts) 5 }}
-      <a class="more-btn" href="/categories/{{ lower $c }}/">more ...</a>
-    {{ else }}
-      <a class="more-btn" href="/categories/">other categories</a>
-    {{ end }}-->
-  </div>
-{{ end }}
+
+                        </div>
+                        {{ end }}
                         <!-- /#post-content -->
                         {{ if .Site.DisqusShortname }}
                     <!--    <div id="comments">
