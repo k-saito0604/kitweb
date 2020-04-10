@@ -311,109 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1628/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1628/">「GGサーバのコンソールで実行した結果」 と 「クライアントからGGサーバへログオンし実行した結果」 が異なるが，どのような可能性が考えられるか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
 
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1628/"><i class="far fa-calendar"></i> 2010-09-02</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/09/02*
-[番号] 技術ノート KGTN 2010090202
-[現象] 「GGサーバのコンソールで実行した結果」 と 「クライアントからGGサーバへログオンし実行した結果」 が異なるが，どのような可能性が考えられるか？
-[説明] 以下のような可能性が考えられます．
-描画に関する問題 デスクトップに絡む問題 権限に関する問題
-「描画に関する問題」 は，主にウインドウの描画や上下関係に関して Windows の一般的でない処理が行われた場合です （例：ウインドウが最上位に表示されるもののフォーカスは下位のウインドウに残る） ． 「デスクトップに絡む問題」 は，GG環境はデスクトップを持っておりませんので，デスクトップの存在を前提としたアプリケーション等でエラーになることがあります． 「権限の関する問題」 は，GGのログオン画面を使用せずに，パススルー認証を使用した場合， Windows の仕様に絡んでやや弱い権限 （INTERACTIVE権限を持たない） で実行されるため，処理によってはエラーになることがあります （注：GGのパスワードキャッシュ機能を使用することで回避することが出来ます） ．
-ファイル KGTN2010090202.pdf [(58.9 KB)] [kitasp 技術センター, 2010/09/02 10:37]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1628/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1630/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1630/">GG環境でログオンの度に外字エディタを起動することなく外字を使いたい．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1630/"><i class="far fa-calendar"></i> 2010-09-01</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/09/01*
-[番号] 技術ノート KGTN 2010090103
-[現象] GG環境でログオンの度に外字エディタを起動することなく外字を使いたい．
-[説明] 「制限が付いても構わないので簡単に外字を使いたい」 ということであれば，外字ファイル EUDC.TTE を置き換えることで実現することが出来ます．置き換えの具体的な手順は以下の通りです．
-外字エディタを起動する． コード F040 に適当な文字を作成する． 外字エディタを終了する（文字は保存する）． ← 外字ファイルが作成される サーバを再起動する． コマンド プロンプト を起動する（DOS窓を開く）． C:¥ cd ¥Windows¥Fonts rename eudc.tte xxx copy C:¥Windows¥Fonts¥eudc.tte ← 外字ファイルを置き換える サーバを再起動する． 外字エディタを起動し，そのまま終了する． ← 外字の環境を反映させる サーバを再起動する．
-備　考 Windows Server 2003 SP2 + 外字フォント 「外字神社」 で動作を確認しました．なお，この外字フォントには .euf ファイルが含まれておりませんので，外字エディタでの編集 （ビットマップの表示を含む） は出来ません．
-ファイル KGTN2010090103.pdf [(71.9 KB)] [kitasp 技術センター, 2010/09/02 08:29]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1630/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1632/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1632/">一般ユーザでログオンすると外字エディタが起動出来ない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1632/">一般ユーザでログオンすると外字エディタが起動出来ない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -430,32 +336,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/09/01*
-[番号] 技術ノート KGTN 2010090101
-[現象] 一般ユーザでログオンすると外字エディタが起動出来ない．
-[説明] 一般ユーザが外字エディタを起動しようとすると 「外字エディタを使うには，Winnt¥Fonts フォルダへの書き込みアクセス権が必要です．管理者に問い合わせ，このアクセス権を取得して下さい」 というエラーが表示されます （Windowsの仕様です） ．この内容に従い，フォルダ C:¥Windows¥Fonts の プロパティ → セキュリティ を開き，グループ Users 等に 「変更」 の許可を与えて下さい．この設定により，一般ユーザでも外字エディタを起動出来るようになります．
-この変更により，セキュリティは若干弱まりますが， その範囲はフォント絡みに限定されますので，通常の運用では特に問題にならないと思われます．
-ファイル KGTN2010090101.pdf [(57.8 KB)] [kitasp 技術センター, 2010/09/01 12:50]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1632/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1631/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1631/">外字エディタでフォントのリンク 「指定したフォントにリンクする」 を設定すると，どこに反映されるのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1631/">外字エディタでフォントのリンク 「指定したフォントにリンクする」 を設定すると，どこに反映されるのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -472,33 +362,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/09/01*
-[番号] 技術ノート KGTN 2010090102
-[現象] 外字エディタでフォントのリンク 「指定したフォントにリンクする」 を設定すると，どこに反映されるのか？
-[説明] 設定した内容は以下のレジストリへ反映されます．
-HKCU¥EUDC¥932 [具体例] HKCU¥EUDC¥932 &ldquo;ＭＳ 明朝&quot;=&quot;C:¥¥GAIJI¥¥GaijiJinja_F040_M.tte&rdquo;
-参　考 レジストリエディタでこの設定を追加しただけでは実際に反映されず，外字エディタが起動された時点で反映されます．GG環境では，ログオンの度に外字エディタを起動する必要があります．
-ファイル KGTN2010090102.pdf [(53 KB)] [kitasp 技術センター, 2010/09/02 08:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1631/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1633/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1633/">セッション中で外字エディタを起動しないと外字が表示されない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1633/">セッション中で外字エディタを起動しないと外字が表示されない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -515,34 +388,16 @@ HKCU¥EUDC¥932 [具体例] HKCU¥EUDC¥932 &ldquo;ＭＳ 明朝&quot;=&quot;C:�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/08/31*
-[番号] 技術ノート KGTN 2010083001
-[現象] セッション中で外字エディタを起動しないと外字が表示されない．
-[説明] 以下の環境で試験を行いましたが，外字エディタを起動することなく，メモ帳で外字が表示されました．恐らく，ご利用の Windows 環境 （アプリケーションを含む） に起因している問題だと思われます．
-(1) Windows Server 2003 SP1 (GGサーバ) (a) 3.1.1.3496：外字使用可※ (b) 3.1.1.3511：外字使用可 (c) 3.1.1.3532：外字使用可 (d) 3.1.1.3538：外字使用可 (e) 3.2.0.4226：外字使用可
-(2) Windows Server 2003 SP2 (GGサーバ) (a) 3.1.1.3532：外字使用可 (b) 3.1.1.3538：外字使用可 (c) 3.2.0.4226：外字使用可 (d) 3.2.1.4466：外字使用可
-(3) Windows Server 2003 R2 SP1 (GGサーバ) (a) 3.1.1.3532：外字使用可 (b) 3.1.1.3538：外字使用可 (c) 3.2.0.4226：外字使用可
-(4) Windows Server 2003 R2 SP2 (GGサーバ) (a) 3.1.1.3532：外字使用可 (b) 3.1.1.3538：外字使用可 (c) 3.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1633/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1634/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1634/">Ver3.2系で使用している SkyPDF for GO-Global （GG-SkyPDF） を，Ver4.0系でもそのまま使用することが出来るのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1634/">Ver3.2系で使用している SkyPDF for GO-Global （GG-SkyPDF） を，Ver4.0系でもそのまま使用することが出来るのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -559,32 +414,16 @@ HKCU¥EUDC¥932 [具体例] HKCU¥EUDC¥932 &ldquo;ＭＳ 明朝&quot;=&quot;C:�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/08/26*
-[番号] 技術ノート KGTN 2010081203
-[現象] Ver3.2系で使用している SkyPDF for GO-Global （GG-SkyPDF） を，Ver4.0系でもそのまま使用することが出来るのか？
-[説明] PDFファイルが生成されることは確認しましたが，しかし以下の問題があります．
-印刷直後に 「PDFファイルに名前をつけて保存」 ダイアログが表示される． クライアント側のPDFビュアーで 「Adobe Reader で???を開けませんでした」 というエラーが表示される．
-ファイル KGTN2010081203.pdf [(50.2 KB)] [kitasp 技術センター, 2010/08/26 15:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1634/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1640/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1640/">エンタープライズオプション GMCheckRaw でサーバの稼働状況のみ知りたい （セッション情報は不要だ） ．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1640/">エンタープライズオプション GMCheckRaw でサーバの稼働状況のみ知りたい （セッション情報は不要だ） ．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -601,31 +440,16 @@ HKCU¥EUDC¥932 [具体例] HKCU¥EUDC¥932 &ldquo;ＭＳ 明朝&quot;=&quot;C:�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/08/26*
-[番号] 技術ノート KGTN 2010082603
-[現象] エンタープライズオプション GMCheckRaw でサーバの稼働状況のみ知りたい （セッション情報は不要だ） ．
-[説明] セッション情報が不要な場合は， GMCheckRaw の起動オプションに ?ns を指定して下さい．このオプションが指定されると， GMCheckRaw はGGサーバが管理するセッション情報を参照しないようになります （セッション数が多い時，CPUの負荷が下がります） ．
-ファイル KGTN2010082603.pdf [(50.2 KB)] [kitasp 技術センター, 2010/08/26 11:15]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1640/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1638/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1638/">エンタープライズオプション GMService で起動した GMCheckRaw を強制的に再起動する方法はないのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1638/">エンタープライズオプション GMService で起動した GMCheckRaw を強制的に再起動する方法はないのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -642,32 +466,16 @@ HKCU¥EUDC¥932 [具体例] HKCU¥EUDC¥932 &ldquo;ＭＳ 明朝&quot;=&quot;C:�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/08/26*
-[番号] 技術ノート KGTN 2010082605
-[現象] エンタープライズオプション GMService で起動した GMCheckRaw を強制的に再起動する方法はないのか？
-[説明] GMService 単独でGMCheckRaw を再起動することは出来ませんが， GGServiceMonitor の 「サービスの強制再起動」 機能を利用し， GMService を再起動することで GMCheckRaw を強制的に再起動することが出来ます．
-GGServiceMonitor → 強制再起動 → GMService → 開始・終了 → GMCheckRaw （起動・終了）
-ファイル KGTN2010082605.pdf [(48.1 KB)] [kitasp 技術センター, 2010/08/26 13:57]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1638/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1639/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1639/">エンタープライズオプション GMService の設定項目 restartInterval の機能よく分からない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1639/">エンタープライズオプション GMService の設定項目 restartInterval の機能よく分からない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -684,31 +492,16 @@ GGServiceMonitor → 強制再起動 → GMService → 開始・終了 → GMChe
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/08/26*
-[番号] 技術ノート KGTN 2010082604
-[現象] エンタープライズオプション GMService の設定項目 restartInterval の機能よく分からない．
-[説明] GMService から起動したプログラムが障害等ですぐに終了した場合， GMService はそのプログラムを直ちに再起動します．さらにプログラムが同じ原因で終了すると， GMService はそのプログラムをまた直ちに再起動します．この 「終了〜再起動」 のループが障害が解消されるまで続きますので，サーバの負荷が継続的に高くなる可能性があります．ここで （例えば） restartInterval = 30 を設定しますと，再起動が30秒間隔で行われるようになりますので，サーバの負荷が継続的に高くなることを防ぐことが出来ます．
-ファイル KGTN2010082604.pdf [(55 KB)] [kitasp 技術センター, 2010/08/26 12:14]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1639/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1637/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1637/">クラスタマネージャの （Server Options → Log →） Output level の値と内容を知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1637/">クラスタマネージャの （Server Options → Log →） Output level の値と内容を知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -725,16 +518,59 @@ GGServiceMonitor → 強制再起動 → GMService → 開始・終了 → GMChe
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/08/26*
-[番号] 技術ノート KGTN 2010081001
-[現象] クラスタマネージャの （Server Options → Log →） Output level の値と内容を知りたい．
-[説明] Output level の値と内容は， Administrator Guide の117ページに説明があります．
-0: No output 1: Errors 2: Errors and Events 3: Errors, Events, and Warnings 4: Errors, Events, Warnings, and Diagnostic Messages 5, 6: Errors, Events, Warnings, Diagnostic Messages, and Trace Messages
-実際の運用では，1または4を設定することを推奨します．詳細については，技術ノート KGTN#2010031001 をご覧下さい．
-ファイル KGTN2010081001.pdf [(52.4 KB)] [kitasp 技術センター, 2010/08/26 15:48]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1637/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1636/">クラスタマネージャの （Server Options → Session Startup →） Maximum sessions per user に 1 を設定すると，アプリケーションを複数起動出来ないということか？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1636/"><i class="far fa-calendar"></i> 2010-08-26</a>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1643/">GG上で動作するプログラムで，クライアントのコンピュータ名を得る方法は？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1643/"><i class="far fa-calendar"></i> 2010-08-25</a>
+                                        </p>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -757,80 +593,15 @@ GGServiceMonitor → 強制再起動 → GMService → 開始・終了 → GMChe
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li class="active">
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

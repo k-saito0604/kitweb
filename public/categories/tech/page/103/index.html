@@ -311,105 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc138/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc138/">[GGH4.X] 拡張パックの GGPdfPrint をActiveXクライアントへ組み込む方法は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
 
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc138/"><i class="far fa-calendar"></i> 2015-01-16</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2015/01/16*
-[番号] 技術ノート KGTN 2014122601
-[現象] [GGH4.X] 拡張パックの GGPdfPrint をActiveXクライアントへ組み込む方法は？
-[説明] GGPdfPrint の２つのファイル pdfprint.exe と pdfprint.ini が置かれたフォルダで，下記の内容のファイルInstallAC.vbs を作成し，それを実行して下さい．
-Option Explicit Dim objShell, objFso Dim windir '--- Set objShell = WScript.CreateObject(&quot;WScript.Shell&quot;) Set objFso = CreateObject(&quot;Scripting.FileSystemObject&quot;) windir = objShell.ExpandEnvironmentStrings(&quot;%WINDIR%&quot;) '--- objFso.CopyFile &quot;pdfprint.exe&quot;, windir&amp;&quot;Downloaded Program Filespdfprint.exe&quot;, True objFso.CopyFile &quot;pdfprint.ini&quot;, windir&amp;&quot;Downloaded Program Filespdfprint.ini&quot;, True '--- Set objShell = Nothing Set objFso = Nothing '---  ファイル KGTN2014122601.pdf [(53.4 KB)] [kitasp 技術センター, 2015/01/16 17:24]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc138/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc136/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc136/">[GGH4.X] 拡張パックの GGPdfPrint をWindowsクライアントへ組み込む方法は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc136/"><i class="far fa-calendar"></i> 2015-01-16</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2015/01/16*
-[番号] 技術ノート KGTN 2014122602
-[現象] [GGH4.X] 拡張パックの GGPdfPrint をWindowsクライアントへ組み込む方法は？
-[説明] GGPdfPrint の２つのファイル pdfprint.exe と pdfprint.ini が置かれたフォルダで，下記の内容のファイルInstallNC.vbs を作成し，それを実行して下さい．
-Option Explicit On Error Resume Next Dim objShell, objFso Dim pathX64,pathX86,pathTarget '--- Set objShell = WScript.CreateObject(&quot;WScript.Shell&quot;) Set objFso = CreateObject(&quot;Scripting.FileSystemObject&quot;) pathX64 = objShell.RegRead(&quot;HKLMSOFTWAREWow6432NodeGraphOnGO-Globalclient&quot;) pathX86 = objShell.RegRead(&quot;HKLMSOFTWAREGraphOnGO-Globalclient&quot;) pathTarget = &quot;&quot; If pathX64 &lt;&gt; &quot;&quot; Then ' WScript.Echo pathX64 pathTarget = objFso.GetParentFolderName(pathX64) End If If pathX86 &lt;&gt; &quot;&quot; Then ' WScript.Echo pathX86 pathTarget = objFso.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc136/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc144/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc144/">[GGW3.2.1] サーバー側で Microsoft XPS Document Writer および XPS ビューアーを利用できるか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc144/">[GGW3.2.1] サーバー側で Microsoft XPS Document Writer および XPS ビューアーを利用できるか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -426,31 +336,16 @@ Option Explicit On Error Resume Next Dim objShell, objFso Dim pathX64,pathX86,pa
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2015/01/16*
-[番号] 技術ノート KGTN 2014121102
-[現象] [GGW3.2.1] サーバー側で Microsoft XPS Document Writer および XPS ビューアーを利用できるか？
-[説明] いいえ，GGW3.2.1 では Microsoft XPS Document Writer および XPS ビューアーをサポートしておりません．
-ECR#9661 Microsoft XPS Document Writer does not work if using the XPS driver. This issue is not fixed, but is documented.  ファイル KGTN2014121102.pdf [(48.3 KB)] [kitasp 技術センター, 2015/01/16 16:55]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc144/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc151/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc151/">[GGH4.X] GGRxpConnect とは，どのようなソフトウエアなのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc151/">[GGH4.X] GGRxpConnect とは，どのようなソフトウエアなのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -467,32 +362,16 @@ ECR#9661 Microsoft XPS Document Writer does not work if using the XPS driver. Th
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/12/12*
-[番号] 技術ノート KGTN 2014120401
-[現象] [GGH4.X] GGRxpConnect とは，どのようなソフトウエアなのか？
-[説明] GGRxpConnect は弊社開発のソフトウエアで，本ソフトウエアを Windows PC にインストールすることにより Internet Explorer の環境でGGクライアントを起動するURLスキームが利用出来るようになります．具体的には， IE で rxp://?h=192.168.102.81&amp;hp=491&amp;u=Administrator&amp;p=Password&amp;a=Notepad というURLにアクセスすると，GGのWindowsクライアントが起動し，192.168.102.81のGGサーバーにログオンし，そしてメモ帳 （Notepad） が立ち上がります．GGRxpConnect のインストール手順は，次の通りです．
- Windowsクライアントをインストールする （既にインストールされている場合は不要） ． GGRxpConnect の配布フォルダにある install.bat を管理者として実行する．  このURLスキームで指定可能なパラメタは以下の通りです．
-Host....................: h= ; GG サーバーのアドレス Port....................: hp= ; GG サーバーのポート番号 User....................: u= ; ユーザー名 Password................: p= ; パスワード Application.............: a= ; 起動するアプリケーションの名前 Application Arguments...: r= ; 起動するアプリケーションの引数 Image Compression.......: qt= ; 画像圧縮（0/1） Printer Configuration.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc151/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc152/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc152/">[GGH4.X] アプリケーションの起動パラメタ （引数） をユーザーによって異なる値にしたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc152/">[GGH4.X] アプリケーションの起動パラメタ （引数） をユーザーによって異なる値にしたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -509,36 +388,16 @@ Host....................: h= ; GG サーバーのアドレス Port..............
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/12/12*
-[番号] 技術ノート KGTN 2014120101
-[現象] [GGH4.X] アプリケーションの起動パラメタ （引数） をユーザーによって異なる値にしたい．
-[説明] アプリケーションを起動するバッチファイルを作成し，その処理の中でユーザーに応じたパラメタを指定して下さい （バッチの書き方についてはWindowsの資料等をご覧下さい） ．このバッチファイルをGGに登録する方法とサンプルは，以下の通りです．なお， VBScript を介してバッチを起動する理由は，DOS窓を表示させない （残さない） ためです．
- バッチファイルを起動する VBScript のファイルを作成する． VBScript をクラスタマネージャに登録する．  [File: Test.bat] echo off notepad %USERNAME%.TXT exit
-[File: Test.vbs] Set WshShell = WScript.CreateObject(&ldquo;WScript.Shell&rdquo;) Call WshShell.Run( &ldquo;cmd.exe /c C:GraphOnTest.bat&rdquo;, 0, False )　← バッチファイルを指定
-[クラスタマネージャへの登録]
-ファイル KGTN2014120101.pdf [(88.6 KB)] [kitasp 技術センター, 2014/12/12 16:52]
-KGTN2014120101.jpg
-表示 [(55.8 KB)] [kitasp 技術センター, 2014/12/12 16:55]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc152/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc156/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc156/">[GGH4.X] GGはアプリケーションのメモリ確保要求に対しカーネル空間からメモリを割り当てるそうだが，アプリケーションがそのメモリを二重解放した場合，BSODが発生するのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc156/">[GGH4.X] GGはアプリケーションのメモリ確保要求に対しカーネル空間からメモリを割り当てるそうだが，アプリケーションがそのメモリを二重解放した場合，BSODが発生するのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -555,31 +414,16 @@ KGTN2014120101.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/11/28*
-[番号] 技術ノート KGTN 2014112801
-[現象] [GGH4.X] GGはアプリケーションのメモリ確保要求に対しカーネル空間からメモリを割り当てるそうだが，アプリケーションがそのメモリを二重解放した場合，BSODが発生するのか？
-[説明] アプリケーションの単純なミス等によるメモリの二重解放ではBSODは発生しません．例えば，次のようなコードでBSODが発生することはありません．
-int *pi = new int; delete pi; delete pi; int *qi = (int*)malloc(sizeof(int)*10); free(qi); free(qi); FILE *fp = fopen(...); fclose(fp); fclose(fp);  ファイル KGTN2014112801.pdf [(49.8 KB)] [kitasp 技術センター, 2014/11/28 19:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc156/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc157/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc157/">[GGH4.X] アプリケーションの印刷ダイアログにサーバー側のプリンターが表示されない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc157/">[GGH4.X] アプリケーションの印刷ダイアログにサーバー側のプリンターが表示されない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -596,31 +440,16 @@ int *pi = new int; delete pi; delete pi; int *qi = (int*)malloc(sizeof(int)*10);
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/11/28*
-[番号] 技術ノート KGTN 2014112701
-[現象] [GGH4.X] アプリケーションの印刷ダイアログにサーバー側のプリンターが表示されない．
-[説明] クラスタマネージャの Host Options → Client Access → Printers の両項目にチェックが入っていない場合，印刷機能が全て無効となります．サーバー側のプリンターのみを使用する場合でも Windows Printer Drivers または Universal Printer Driver にチェックを入れて下さい．なお，サーバー側のプリンターは設定に関わりなく Windows Printer Driver （専用のプリンタードライバー） を使用します．
-If UPD and WPD (Windows Printer Driver) is NOT selected then when the user connects no printers will be shown. This includes client side printers, network printers and printers connect to the actual server. This completely turns off printing.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc157/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc153/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc153/">[GGH4.X] クライアント印刷機能を利用しない場合の設定は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc153/">[GGH4.X] クライアント印刷機能を利用しない場合の設定は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -637,32 +466,16 @@ If UPD and WPD (Windows Printer Driver) is NOT selected then when the user conne
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/11/28*
-[番号] 技術ノート KGTN 2014112601
-[現象] [GGH4.X] クライアント印刷機能を利用しない場合の設定は？
-[説明] クラスタマネージャで Host Options → Client Access → Printers の各項目のチェックを外して下さい．この設定により，クライアント側のプリンターが印刷ダイアログ等に表示されないようになります．なお，サーバー側のプリンターは，この設定に関わりなく印刷ダイアログに表示されます．もしサーバー側のプリンターが一覧に表示されない場合は，そのプリンターのアクセス権等をチェックして下さい．
-補　足 上記の設定では，サーバー側のプリンターも利用出来なくなります．サーバー側のプリンターを利用したい場合は， Windows Printer Drivers のチェックを入れて下さい．この設定だけではクライアント側のプリンターも利用出来ますので，ActiveXクライアントのログオン用URLにパラメタ printerconfig=none （Windowsクライアントの場合は -ac none） を指定し，クライアント側のプリンターを除外して下さい．
-If UPD and WPD (Windows Printer Driver) is NOT selected then when the user connects no printers will be shown. This includes client side printers, network printers and printers connect to the actual server. This completely turns off printing.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc153/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc155/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc155/">[GGH4.X] 透かしのあるPDFファイルをGG上で表示し，それをクライアント側のプリンターへ出力すると透かしが正常に印刷されない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc155/">[GGH4.X] 透かしのあるPDFファイルをGG上で表示し，それをクライアント側のプリンターへ出力すると透かしが正常に印刷されない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -679,32 +492,16 @@ If UPD and WPD (Windows Printer Driver) is NOT selected then when the user conne
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/11/28*
-[番号] 技術ノート KGTN 2014112802
-[現象] [GGH4.X] 透かしのあるPDFファイルをGG上で表示し，それをクライアント側のプリンターへ出力すると透かしが正常に印刷されない．
-[説明] この現象は，GGのクライアントに組み込まれたPDFファイルの印刷エンジン pdfprint.exe の仕様に起因する制限事項になります．この問題を解消するには，以下の方法があります．
- Windows Printer Drivers （専用のプリンタードライバー） を使用する． Preview PDF で表示させて印刷する （クライアント側のAdobe Reader で印刷する） ． PDFファイルをクライアント側へコピーして印刷する．  出荷時期は未定ですが，GGのクライアントに組み込まれたPDFファイルの印刷エンジンではなく，クライアント側の Adobe Reader で自動的に印刷するツールを拡張パックの機能として提供する予定です．
-ファイル KGTN2014112802.pdf [(56 KB)] [kitasp 技術センター, 2014/11/28 20:01]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc155/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2576/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2576/">[GGH4.X-5.X] Citrix XenApp や VMware Horizon と比較してパフォーマンスはどうか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2576/">[GGH4.X-5.X] Citrix XenApp や VMware Horizon と比較してパフォーマンスはどうか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -721,14 +518,59 @@ If UPD and WPD (Windows Printer Driver) is NOT selected then when the user conne
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/11/21*
-[番号] 技術ノート KGTN 2014111706
-[現象] [GGH4.X-5.X] Citrix XenApp や VMware Horizon と比較してパフォーマンスはどうか？
-[説明] ある大規模システムのインフラ設計で，数ヶ月に渡り GG と Citrix XenApp と VMware Horizon （サーバーOS環境） の公平な評価 （実運用を想定した業務アプリケーションでの評価） が行われました．CPUやメモリの使用量については，その上で動作するアプリケーションの方が遙かに多く使用するため，３製品に特に大きな差はありませんでした．差が出た点は，ログオン時間とデータ通信量です．GGはセッション毎にWin32サブシステムを生成しないため，他製品よりも早くログオン処理が完了しました．また，GGは定期的に画面を監視して差分を転送するのではなく，描画命令を仮想化してクライアント側へ転送するため，トータルのデータ通信量が少ないという結果になりました （注： 定期的な通信が発生せず，荒い画像を先に送信するようなこともありません） ．このように，GGはGraphOn社の独自の方式で十分な性能を有しております．
-ファイル KGTN2014111706.pdf [(73.2 KB)] [kitasp 技術センター, 2016/05/27 15:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2576/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2617/">[GGH4.X-5.X] GGにセキュリティに関する機能 （クリップボード共有の禁止，スクリーンショットの取得禁止，操作ログの採取など） はあるのか？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2617/"><i class="far fa-calendar"></i> 2014-11-21</a>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2616/">[GGH4.X-5.X] GG上でどのようなアプリケーションが正常に動作しないか？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2616/"><i class="far fa-calendar"></i> 2014-11-21</a>
+                                        </p>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -751,80 +593,15 @@ If UPD and WPD (Windows Printer Driver) is NOT selected then when the user conne
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li class="active">
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

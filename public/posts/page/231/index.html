@@ -311,23 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1471/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1471/">インストール及び起動確認まで行ったが， RDP による通信テストを行いたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1471/">インストール及び起動確認まで行ったが， RDP による通信テストを行いたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -344,31 +336,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/02/08*
-[番号] 技術ノート KGTN 2011020801
-[現象] インストール及び起動確認まで行ったが， RDP による通信テストを行いたい．
-[説明] RDP （Remote Desktop Protocol） はターミナルサービス （リモート デスクトップ） の通信プロトコルですが，GGはターミナルサービス機能を使用しておりませんので RDP による通信は行いません．GGが使用する通信プロトコルは，高度に効率的な圧縮技術を備えた Rapid-X （RXP） プロトコルで，これはGraphOn社の特許技術に基づいています．GGの各クライアントは，この Rapid-X を使用してGGサーバとの通信を行います．
-ファイル KGTN2011020801.pdf [(51 KB)] [kitasp 技術センター, 2011/02/08 15:31]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1471/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1473/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1473/">[GGW3.2.1] Idle Timeout のカウントダウンが停止する問題があったが，解決されたのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1473/">[GGW3.2.1] Idle Timeout のカウントダウンが停止する問題があったが，解決されたのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -385,31 +362,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/02/07*
-[番号] 技術ノート KGTN 2011020701
-[現象] [GGW3.2.1] Idle Timeout のカウントダウンが停止する問題があったが，解決されたのか？
-[説明] 3.2.1.4446または，それ以降で Idle Timeout のカウントダウンが停止する問題は解消されております．これは，環境によって WM_TIMER イベントが通知されない現象が発生するためで，別スレッドを生成し経過時間をチェックする方式に処理が変更されました．以下は，GraphOn社のコメントです．
-When there is no mouse cursor on the window of the GO-Global client, the &ldquo;session timeout&rdquo; countdown stops. On some systems, logon&rsquo;s session event processor does not get the WM_TIMER message, so the dialog is not updated with the correct time. Instead of using the WM_TIMER message, we now create a thread that will sleep for the necessary tick count and then post our own message to the dialog.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1473/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1472/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1472/">[GGW3.2.1] Universal Printer Driver を使用した場合，何ページくらい印刷出来るのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1472/">[GGW3.2.1] Universal Printer Driver を使用した場合，何ページくらい印刷出来るのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -426,32 +388,16 @@ When there is no mouse cursor on the window of the GO-Global client, the &ldquo;
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/02/07*
-[番号] 技術ノート KGTN 2011020702
-[現象] [GGW3.2.1] Universal Printer Driver を使用した場合，何ページくらい印刷出来るのか？
-[説明] ドキュメントの種類やハードウエア環境に依存して，印刷出来るページ数は大きく異なりますので，一般論で印刷可能なページ数を示すことは出来ません．ある実験では， 「7,000ページは印刷できたが，7,200ページは印刷出来なかった」 という報告があります．
-参　考 Universal Printer Driver が使用するPDFエンジン PDF-XChange 3 のメーカーのコメントは以下の通りです．
-The varies very much depending on the hardware you have (e.g. Disk space, Ram and Processor etc) and of course the files themselves. The type of content and compression/optimization will also have some bearing. We are aware of many clients creating in excess of 20,000 pages</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1472/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1474/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1474/">GGのアプリケーションを利用していると，時々遅くなることがある．また，時々コネクションが切断されることもある．何を調べれば良いか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1474/">GGのアプリケーションを利用していると，時々遅くなることがある．また，時々コネクションが切断されることもある．何を調べれば良いか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -468,33 +414,16 @@ The varies very much depending on the hardware you have (e.g. Disk space, Ram an
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/02/04*
-[番号] 技術ノート KGTN 2011020402
-[現象] GGのアプリケーションを利用していると，時々遅くなることがある．また，時々コネクションが切断されることもある．何を調べれば良いか？
-[説明] ネットワークの障害かどうか切り分けるために，コマンド プロンプト （DOS窓） で以下のコマンドを実行して下さい．
-ping ?n 10000 &lt;GGサーバのIPアドレス&gt;
-正常な環境では 「要求がタイムアウトしました」 というメッセージは記録されませんが，ネットワークに障害があると下記のように時々 「要求がタイムアウトしました」 が記録されます．この事例では，クライアントPCが接続されたハブが老朽化し，不安定になっていました．
-ファイル KGTN2011020402.pdf [(141 KB)] [kitasp 技術センター, 2011/02/04 11:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1474/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1475/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1475/">ライセンスが有効にも関わらず，PWでプログラムを起動しようとすると XXX can not be launched because of a licensing problem というエラーが表示される．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1475/">ライセンスが有効にも関わらず，PWでプログラムを起動しようとすると XXX can not be launched because of a licensing problem というエラーが表示される．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -511,31 +440,16 @@ ping ?n 10000 &lt;GGサーバのIPアドレス&gt;
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/02/04*
-[番号] 技術ノート KGTN 2011020401
-[現象] ライセンスが有効にも関わらず，PWでプログラムを起動しようとすると &ldquo;XXX can not be launched because of a licensing problem&rdquo; というエラーが表示される．
-[説明] &ldquo;XXX can not be launched because of a licensing problem&rdquo; というメッセージは，アプリケーション XXX の実体 （実際に起動されるEXEファイル） が存在しない場合にも表示されます．プログラムのパスが実際に存在するかどうか確認して下さい．なお，APSログを参照すると &ldquo;pw (???) Failed to access item path specifier C:¥GraphOn¥BIN¥XXX.exe (WLE2).&rdquo; という内容で，起動しようとしたプログラムのパスが記録されています．
-ファイル KGTN2011020401.pdf [(56.7 KB)] [kitasp 技術センター, 2011/02/04 10:46]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1475/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1478/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1478/">[GGW3.2.1] Universal Printer Driver （UPD） で，5000ページのWordファイルは印刷可能か？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1478/">[GGW3.2.1] Universal Printer Driver （UPD） で，5000ページのWordファイルは印刷可能か？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -552,33 +466,16 @@ ping ?n 10000 &lt;GGサーバのIPアドレス&gt;
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/02/03*
-[番号] 技術ノート KGTN 2011020302
-[現象] [GGW3.2.1] Universal Printer Driver （UPD） で，5000ページのWordファイルは印刷可能か？
-[説明] 画像や罫線等を含まないテキストベースのA4サイズ5,000ページのWordファイルで実験を行いました．クライアント印刷機能のパフォーマンスが分かるように， 「直接プリンタに印刷せずに」 クライアント上でPDFが表示されるまでの時間を計測しました．その結果は，以下の通りです （注： 10回実施しましたが，結果はほぼ同様でした） ．
-12:07:10 -&gt; 12:09:50 WINWORD.EXE がサーバ側スプールに蓄積する時間 12:09:50 -&gt; 12:13:50 pdfServer3.EXE がPDFに変換し，クライアント側へ転送する時間 12:13:50 PDFが表示された時間
-なお，上記２のステップで，ページファイルの使用量が単調増加 （pdfServer3.EXEが使用） し，上記３のステップで増加したメモリが解放されます．PDFを表示する方法については，技術ノートKGTN#2011020301 をご覧下さい．
-ファイル KGTN2011020302.pdf [(63.8 KB)] [kitasp 技術センター, 2011/02/03 14:47]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1478/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1479/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1479/">[GGW3.2.1] Universal Printer Driver （UPD） で，クライアントの画面にPDFを表示させる方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1479/">[GGW3.2.1] Universal Printer Driver （UPD） で，クライアントの画面にPDFを表示させる方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -595,32 +492,16 @@ ping ?n 10000 &lt;GGサーバのIPアドレス&gt;
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/02/03*
-[番号] 技術ノート KGTN 2011020301
-[現象] [GGW3.2.1] Universal Printer Driver （UPD） で，クライアントの画面にPDFを表示させる方法は？
-[説明] Universal Printer Driver のプロパティを開き， &ldquo;Print Preview&rdquo; 機能を有効にします．具体的な方法は，印刷ダイアログを開いた状態で，以下の操作を行って下さい．
-プリンタの 「プロパティボタン」 をクリック Settings タブをクリック タブ中の項目 「General」 をクリック 項目 「Print Preview」 をクリック （有効にする） OK ボタンをクリック 以降は，通常の印刷と同様
-ファイル KGTN2011020301.pdf [(60.7 KB)] [kitasp 技術センター, 2011/02/03 13:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1479/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1476/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1476/">[GGW3.2.1] Universal Printer Driver （UPD） を使ってページ数の多い印刷を行った時，サーバ側でスプールファイルが生成され，それが消えたがプリンタへ印刷されない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1476/">[GGW3.2.1] Universal Printer Driver （UPD） を使ってページ数の多い印刷を行った時，サーバ側でスプールファイルが生成され，それが消えたがプリンタへ印刷されない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -637,33 +518,16 @@ ping ?n 10000 &lt;GGサーバのIPアドレス&gt;
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/02/03*
-[番号] 技術ノート KGTN 2011020304
-[現象] [GGW3.2.1] Universal Printer Driver （UPD） を使ってページ数の多い印刷を行った時，サーバ側でスプールファイルが生成され，それが消えたがプリンタへ印刷されない．
-[説明] Universal Printer Driver （UPD） を使ったクライアント印刷では，以下のような順序で処理が進みます．
-サーバ側でのスプールファイルの生成 PDFエンジンによるPDFファイルの生成 PDFファイルのクライアント側への転送 PDFビュアー （Acrobat Reader） の起動および表示 PDFドキュメントの出力 （クライアント側でのスプールファイルの生成） 物理プリンタへの出力
-サーバ側でスプールファイルが生成されそれが消えた後は，上記２のPDFファイルの生成処理が行われており，印刷ジョブが消えた訳ではありません．なお，このPDFファイルの生成には，大きなドキュメントでは数分〜数十分かかります （注： タスクマネージャで pdfServer3.EXE を見ると，CPUの使用率や使用メモリの増加で処理が進行していることが分かります） ．
-ファイル KGTN2011020304.pdf [(59.2 KB)] [kitasp 技術センター, 2011/02/03 15:56]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1476/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1477/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1477/">[GGW3.2.1] Universal Printer Driver （UPD） を使って，ページ数の多い印刷を行いたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1477/">[GGW3.2.1] Universal Printer Driver （UPD） を使って，ページ数の多い印刷を行いたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -680,35 +544,16 @@ ping ?n 10000 &lt;GGサーバのIPアドレス&gt;
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/02/03*
-[番号] 技術ノート KGTN 2011020303
-[現象] [GGW3.2.1] Universal Printer Driver （UPD） を使って，ページ数の多い印刷を行いたい．
-[説明] 例えば5,000ページのWORDファイルを印刷する場合，通常の設定ではクライアント側のプリンタにスプールが蓄積されるまで印刷処理は完了しません．この段階になるまでには，以下のステップがあります．
-サーバ側でのスプールファイルの生成 PDFエンジンによるPDFの生成 PDFファイルのクライアント側への転送 PDFビュアー （Acrobat Reader） の起動および表示 PDFドキュメントの出力 （クライアント側でのスプールファイルの生成） 物理プリンタへの出力
-上記１〜４までの処理に限れば，弊社の標準環境では10分程度で処理が完了しますので， 「PDFファイルの表示まで」 と 「PDFファイルの物理プリンタへの出力」 を分けることをお勧めします．つまり，
-サーバ側でのスプールファイルの生成 PDFエンジンによるPDFの生成 PDFファイルのクライアント側への転送 PDFビュアー （Acrobat Reader） の起動および表示 PDFファイルの保存 GGログアウト 保存したPDFファイルを印刷 （クライアント側） 物理プリンタへの出力
-という手順になります．これにより，オフラインでPDFを印刷することが出来ますので，GGサーバ間でのネットワーク障害が発生しても，その影響を受けることなく印刷することが出来ます．PDFファイル を表示する方法については，技術ノートKGTN#2011020301 をご覧下さい．
-ファイル KGTN2011020303.pdf [(65.5 KB)] [kitasp 技術センター, 2011/02/03 15:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1477/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1483/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1483/">[GGH4.0] Ver4.0のクライアントで， Ver3.2.1 のサーバを利用できるか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1483/">[GGH4.0] Ver4.0のクライアントで， Ver3.2.1 のサーバを利用できるか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -725,14 +570,7 @@ ping ?n 10000 &lt;GGサーバのIPアドレス&gt;
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/02/01*
-[番号] 技術ノート KGTN 2011020101
-[現象] [GGH4.0] Ver4.0のクライアントで， Ver3.2.1 のサーバを利用できるか？
-[説明] いいえ，クライアント印刷機能・クライアントドライブ機能を始めてとして，アーキテクチャの変更がありますので，Ver4.0 と Ver3.2.1 は相互に互換性がありません．なお，Ver4.0 と Ver3.2.1 のクライアントは，同じクライアントPCに共存 （インストール） することが出来ます．
-ファイル KGTN2011020101.pdf [(44.4 KB)] [kitasp 技術センター, 2011/02/01 09:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1483/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
@@ -755,80 +593,15 @@ ping ?n 10000 &lt;GGサーバのIPアドレス&gt;
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li>
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

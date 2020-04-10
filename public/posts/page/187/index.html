@@ -311,23 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1026/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1026/">クライアント印刷機能が有効な時，サーバ側に自動的に生成されるプリンタ （オートクリエイトプリンタ） の名前は通常Canon BJ-10v-Administrator@GG-MNGR というように可読な書式になるが，幾つかのプリンタについてEPSON LP-900-909c6954-518d-11df-9025-0012f07d7b3f というように16進表記の書式になった．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1026/">クライアント印刷機能が有効な時，サーバ側に自動的に生成されるプリンタ （オートクリエイトプリンタ） の名前は通常Canon BJ-10v-Administrator@GG-MNGR というように可読な書式になるが，幾つかのプリンタについてEPSON LP-900-909c6954-518d-11df-9025-0012f07d7b3f というように16進表記の書式になった．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -344,33 +336,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/05/31*
-[番号] 技術ノート KGTN 2010042701
-[現象] クライアント印刷機能が有効な時，サーバ側に自動的に生成されるプリンタ （オートクリエイトプリンタ） の名前は通常Canon BJ-10v-Administrator@GG-MNGR というように可読な書式になるが，幾つかのプリンタについてEPSON LP-900-909c6954-518d-11df-9025-0012f07d7b3f というように16進表記の書式になった．
-[説明] 標準の設定で 「クライアントのプリンタ名-@コンピュータ名&gt;」 という名前でプリンタが生成されますが，同じユーザ名＆同じコンピュータ名が他にもある場合 「クライアントのプリンタ名-」 という名前でプリンタが生成されます．運用上は問題ありませんが，どうしても16進表記を避けたい場合は，同一のコンピュータ名を持つクライアントのコンピュータ名を一意な名前に変更して下さい．
-補　足 ログオンスクリプト中で EnumPrinterConnections メソッドを使用した場合，１つのプリンタが重複して数え上げられる場合があり，このことが影響しクライアントプリンタの名称が16進表記になることがあります．このような場合は，以下のような処理で対応して下さい （これは Windows の動作に起因する制限事項です） ．
-Set objWin32_Printer = objWMIService.InstancesOf(&ldquo;Win32_Printer&rdquo;) For Each objPrinter In objWin32_Printer &hellip; Next
-ファイル KGTN2010042701.pdf [(79.8 KB)] [kitasp 技術センター, 2012/05/31 14:41]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1026/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1028/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1028/">[GGH4.0] クライアントに複数のディスプレイ （アダプタ） が接続されているが，GGでは各アダプタを個別に認識して表示することは出来ないのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1028/">[GGH4.0] クライアントに複数のディスプレイ （アダプタ） が接続されているが，GGでは各アダプタを個別に認識して表示することは出来ないのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -387,33 +362,16 @@ Set objWin32_Printer = objWMIService.InstancesOf(&ldquo;Win32_Printer&rdquo;) Fo
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/05/30*
-[番号] 技術ノート KGTN 2012052904
-[現象] [GGH4.0] クライアントに複数のディスプレイ （アダプタ） が接続されているが，GGでは各アダプタを個別に認識して表示することは出来ないのか？
-[説明] 現在のGGの仕様では，１つのセッションに１つの仮想ディスプレイアダプタが割り当てられます．このような仕組みのため，クライアントに複数のディスプレイ （アダプタ） が接続されていても，１つのセッションでは１つのディスプレイ （アダプタ） にしか表示することが出来ません．なお，水平スパンモードであれば，複数のディスプレイを１つの （論理的な） ディスプレイとして表示することが出来ます．
-補　足 GraphOn社に 「特定のディスプレイを指定してGGクライアントを起動する方法はあるか？」 と問い合せましたが，GGクライアントはプライマリモニタのみを使用するとの回答がありました．複数のセッションに異なるモニタを割り当てて利用するという方法も， （現在の仕様では） 残念ながら不可能です．
-なお，この回答を受け取った後に 「医療現場やサポートセンター等で複数のモニタを分けて利用したいという要望がある」　というレポートをGraphOn社へ送りました．
-ファイル KGTN2012052904.pdf [(69.7 KB)] [kitasp 技術センター, 2012/05/31 06:50]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1028/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1029/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1029/">[PHP] エンタープライズオプション GMCheckRaw が生成するデータベースへPHP5 でアクセスする方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1029/">[PHP] エンタープライズオプション GMCheckRaw が生成するデータベースへPHP5 でアクセスする方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -430,32 +388,16 @@ Set objWin32_Printer = objWMIService.InstancesOf(&ldquo;Win32_Printer&rdquo;) Fo
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/05/30*
-[番号] 技術ノート KGTN 2012052803
-[現象] [PHP] エンタープライズオプション GMCheckRaw が生成するデータベースへPHP5 でアクセスする方法は？
-[説明] GMCheckRaw は SQLite3 を使用してGGサーバの状態とサーバ上のセッションの状態をテーブル （データベース） に記録します． PHP5 でアクセスするサンプル （画面とソースコード） を以下に示します．
-上記の画面で ipAddress が * のセッションは 「過去にログインされたが，現在はログアウトされた」 セッションです．再度ログインされると，通常の表示に更新されます．
-&amp;lt;!--- session_tbl ---&amp;gt; &quot;SELECT * FROM session_tbl ORDER BY hostName ASC, sessionName ASC&quot; &amp;lt;br/&amp;gt; &amp;lt;table border=&quot;1&quot;&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;th&amp;gt;id&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;sessionName&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;userName&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;ipAddress&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;hostName&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;timeLogged&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;timeChecked&amp;lt;/th&amp;gt; &amp;lt;/tr&amp;gt; &lt;?php //- $db = new PDO(&quot;sqlite:C:/TEMP/GMCheckRaw.db&quot;); $st = $db-&gt;prepare(&quot;SELECT * FROM session_tbl ORDER BY hostName ASC, sessionName ASC&quot;); $st-&gt;execute(); $ii = 0; while($rt = $st-&gt;fetch()) { $ii++; echo &quot;&amp;lt;tr&amp;gt;¥n&quot;; echo &quot; &amp;lt;td align=right&amp;gt;&quot; .</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1029/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1030/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1030/">[GGH4.0/SkyPDF] GGH4.0の環境で SkyPDF for GO-Global は動作するのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1030/">[GGH4.0/SkyPDF] GGH4.0の環境で SkyPDF for GO-Global は動作するのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -472,31 +414,16 @@ Set objWin32_Printer = objWMIService.InstancesOf(&ldquo;Win32_Printer&rdquo;) Fo
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/05/29*
-[番号] 技術ノート KGTN 2012052905
-[現象] [GGH4.0/SkyPDF] GGH4.0の環境で SkyPDF for GO-Global は動作するのか？
-[説明] GGW3.2.1 と GGH4.0 ではクライアント印刷機能のアーキテクチャが全く異なりますので，GGH4.0の環境では SkyPDF for GO-Global を利用することは出来ません． GGH4.0 の新しいユニバーサル・プリンタドライバを利用するか，またはきっとプリントをご利用下さい．
-ファイル KGTN2012052905.pdf [(49.4 KB)] [kitasp 技術センター, 2012/05/29 09:41]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1030/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2619/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2619/">[GGH4.X-5.X] GGの環境で Windows Media Player をスムーズに表示出来るか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2619/">[GGH4.X-5.X] GGの環境で Windows Media Player をスムーズに表示出来るか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -513,32 +440,16 @@ Set objWin32_Printer = objWMIService.InstancesOf(&ldquo;Win32_Printer&rdquo;) Fo
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/05/29*
-[番号] 技術ノート KGTN 2012052906
-[現象] [GGH4.X-5.X] GGの環境で Windows Media Player をスムーズに表示出来るか？
-[説明] GGのプロトコルは，多くのユーザ （セッション） が快適に利用できるように，サーバ側でデータを逐次圧縮し，クライアント側で伸張します．この圧縮・伸張処理は，通常のアプリケーション （つまりリアルタイム性を要求しないアプリケーション） では効果的に働き，多セッションの利用でも高いパフォーマンスが確保されますが，リアルタイム性を要求される処理では逆に遅延という結果をもたらします．圧縮・伸張処理を行わなければこの遅延は低減されますが，逆に通常のアプリケーションのパフォーマンスが大幅に低下します．
-この問題を解決する方法として，クライアント上のアプリケーションを起動するインタフェース （アドオン） をプロフェッショナルサービスで提供しており，この機能を利用することによって動画コンテンツをクライアント側の Windows Media Player で表示することが可能となります．
-ファイル KGTN2012052906.pdf [(67.9 KB)] [kitasp 技術センター, 2016/03/11 15:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2619/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1031/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1031/">[GGH4.0/Smart Card] スマートカード認証は利用できるか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1031/">[GGH4.0/Smart Card] スマートカード認証は利用できるか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -555,31 +466,16 @@ Set objWin32_Printer = objWMIService.InstancesOf(&ldquo;Win32_Printer&rdquo;) Fo
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/05/28*
-[番号] 技術ノート KGTN 2012052902
-[現象] [GGH4.0/Smart Card] スマートカード認証は利用できるか？
-[説明] GGH-4.0.1.12187は，スマートカード認証がサポートされました．詳細は以下の通りです．
-ファイル KGTN2012052902.pdf [(72.6 KB)] [kitasp 技術センター, 2012/05/29 07:46]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1031/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1033/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1033/">[Password] ３台のGGサーバがあるが，そのうちの１台の Administrator のパスワードを変更して問題ないか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1033/">[Password] ３台のGGサーバがあるが，そのうちの１台の Administrator のパスワードを変更して問題ないか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -596,31 +492,16 @@ Set objWin32_Printer = objWMIService.InstancesOf(&ldquo;Win32_Printer&rdquo;) Fo
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/05/28*
-[番号] 技術ノート KGTN 2012052802
-[現象] [Password] ３台のGGサーバがあるが，そのうちの１台の Administrator のパスワードを変更して問題ないか？
-[説明] 技術的には問題は無いと思いますが，しかしその１台のGGサーバと他の２台のGGサーバの管理者 （Administrator） のパスワードが異なるため，それぞれのクラスタマネージャで他方のGGサーバへアクセス出来なくなります （注：１つのクラスタマネージャで全てのGGサーバにアクセスしたい場合は， Administrator のパスワードを揃えておく必要があります） ．
-ファイル KGTN2012052802.pdf [(50.5 KB)] [kitasp 技術センター, 2012/05/28 09:40]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1033/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1034/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1034/">[PHP] Windows Server 2008 (IIS6.0) の環境で FastCGI を使いたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1034/">[PHP] Windows Server 2008 (IIS6.0) の環境で FastCGI を使いたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -637,31 +518,16 @@ Set objWin32_Printer = objWMIService.InstancesOf(&ldquo;Win32_Printer&rdquo;) Fo
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/05/28*
-[番号] 技術ノート KGTN 2012052801
-[現象] [PHP] Windows Server 2008 (IIS6.0) の環境で FastCGI を使いたい．
-[説明] &ldquo;FastCGI for IIS&rdquo; のページで &ldquo;FastCGI 1.5 for IIS 6 and 5.1&rdquo; をインストールすることで，PHP5.3.13等を CGI/FastCGI で利用出来るようになります． http://www.iis.net/download/fastcgi
-ファイル KGTN2012052801.pdf [(122 KB)] [kitasp 技術センター, 2012/05/28 09:23]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1034/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1032/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1032/">[VM] 技術ノート KGTN#2011071101 の補足３を読むと，GGが仮想環境を正式にサポートしていないように思えるが，その認識で間違いないか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1032/">[VM] 技術ノート KGTN#2011071101 の補足３を読むと，GGが仮想環境を正式にサポートしていないように思えるが，その認識で間違いないか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -678,32 +544,16 @@ Set objWin32_Printer = objWMIService.InstancesOf(&ldquo;Win32_Printer&rdquo;) Fo
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/05/28*
-[番号] 技術ノート KGTN 2012052901
-[現象] [VM] 技術ノート KGTN#2011071101 の補足３を読むと，GGが仮想環境を正式にサポートしていないように思えるが，その認識で間違いないか？
-[説明] いいえ，その認識は正しくありません．GGはGraphOn社が検証した仮想環境上で 「ハードウエアサーバの場合と同じように」 動作します．技術ノート KGTN#2011071101 の補足３が意味するところは，次の通りです：
-弊社のこれまでの多くの事例の中で，仮想環境の設計や設定に不具合があった案件が少なからず存在し，それらの仮想環境上では Windows の動作が不安定 （例えば数十秒〜数分止まった状態になる等） になる問題が発生しました．このような場合， 「表面的には」 GGのセッションが切れる等の現象が発生しますが，本質的には仮想環境の設計や設定に起因する問題であるため，GG側でこの問題を解決することは技術的に不可能です．問題を解決するには仮想環境の設計や設定の見直し等を行う必要があり，これは当然のことながらGGのサポートの範囲を大きく逸脱します．補足３の 「仮想環境まで含めたサポートは行わない」 は，このことを意図しております．なお，別途プロフェッショナルサービス （有償サービス） として，仮想環境の問題について助言や調査等を行うことは可能です．
-ファイル KGTN2012052901.pdf [(67.9 KB)] [kitasp 技術センター, 2012/05/29 07:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1032/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2643/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2643/">[GGH4.X-5.X] GGクライアントは，一般にプロキシサーバーを利用できると考えて良いか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2643/">[GGH4.X-5.X] GGクライアントは，一般にプロキシサーバーを利用できると考えて良いか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -720,18 +570,7 @@ Set objWin32_Printer = objWMIService.InstancesOf(&ldquo;Win32_Printer&rdquo;) Fo
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/05/23*
-[番号] 技術ノート KGTN 2011120505
-[現象] [GGH4.X-5.X] GGクライアントは，一般にプロキシサーバーを利用できると考えて良いか？
-[説明] GGクライアントが対応するプロキシサーバーは， 1) ベーシック認証， 2) 通信内容を素通しする （つまり通信内容のチェック等を一切行わない） 製品のみに限られます．GGクライアントは，インターネットオプションの 「プロキシサーバー」 で設定されたプロキシ情報を使用します．推奨する設定は，以下の通りです．
-１．GGのポート番号の変更 GGが利用するポート番号は491ですが，プロキシサーバーは通常491に対応しておりません．このため，クラスタマネージャーでGGのポート番号を443 （HTTPS） に変更します．この変更に伴い，クライアント起動時に以下のパラメタを設定する必要があります．
-デスクトップクライアント&hellip;：-hp 443 ブラウザ系クライアント&hellip;..：&amp;port=443
-インターネットオプションの設定 ポート番号80だけでなく，上記１で変更したポート番号443も設定します．  ファイル KGTN2011120505.pdf [(80.4 KB)] [kitasp 技術センター, 2016/02/05 11:39]
-KGTN2011120505.jpg
-表示 [(10.2 KB)] [kitasp 技術センター, 2016/02/05 11:39]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2643/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
@@ -754,80 +593,15 @@ KGTN2011120505.jpg
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li>
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

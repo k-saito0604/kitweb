@@ -311,108 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2085/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2085/">[GGH4.X-5.X/ExPack] 拡張パックの GGHealthCheck2 とはどんなツールなのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
 
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2085/"><i class="far fa-calendar"></i> 2015-12-17</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2015/12/17*
-[番号] 技術ノート KGTN 2015111101
-[現象] [GGH4.X-5.X/ExPack] 拡張パックの GGHealthCheck2 とはどんなツールなのか？
-[説明] ロードバランサのヘルスチェック機能 （TCP/IPレベル） でGGのポート491を監視した場合，GGは接続要求を検出した時点で様々なリソースを確保します （注：これは一斉ログオン等の高負荷な処理をさばくための仕様です） ．しかし，ロードバランサはGGのプロトコルを喋りませんので，コネクションが切断されるまで，それらのリソースが確保され続けます．一斉ログオン時に，複数台のロードバランサがヘルスチェック機能 （TCP/IPレベル） を行うと，それがパフォーマンスに影響を与える可能性があります． GGHealthCheck2 は，このような問題を解決するために作成しました．
-GGHealthCheck2 は，定期的にGGサーバーの稼働状況を （GGのプロトコルを通して） チェックし，その状況を記録します．ロードバランサのヘルスチェック機能 （TCP/IPレベル） 等により， GGHealthCheck2 の待ち受けポートにアクセスがあると，以下のようなウエッブドキュメントを返します．２行目がGGサーバーの最新の稼働状況を示しており， UP が正常を意味し， DOWN が異常を意味します．
-設定ファイル 設定ファイル GGHealthCheck2.ini の default セクションで，以下のパラメタを設定して下さい．
-  設定項目 説　明 logLevel ログの出力レベル，通常は1を指定し，障害時は4を指定 logd ログファイルを作成するフォルダ（省略可） aps APSのポート番号（既定値は491） interval APS監視の間隔の秒数（既定値は30） timeout APS監視のタイムアウトの秒数（既定値は30） port GGHealthCheck2 の待ち受けポートの番号（既定値は8491）  shutdownSleep shutdown() 実行までの遅延設定（既定値で可） closeSleep closesocket() 実行までの遅延設定（既定値で可）
- 導入方法 インストーラー （GGHealthCheck2-Setup.exe） でのインストールが完了した後，スタートメニューの 「GGHealthCheck2 → 3) フォルダを参照」 を選択し，表示されたフォルダに拡張パックのライセンスファイルをコピーして下さい．次にスタートメニューの 「GGHealthCheck2 → 1) サービスを開始」 を選択し， GGHealthCheck2 のサービスを開始して下さい．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2085/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2664/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2664/">[GGH4.X-5.X] ActiveXクライアントは，サポート対象外の IE7～IE9 の環境で全く動作しないのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2664/"><i class="far fa-calendar"></i> 2015-12-17</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2015/12/17*
-[番号] 技術ノート KGTN 2015111301
-[現象] [GGH4.X-5.X] ActiveXクライアントは，サポート対象外の IE7～IE9 の環境で全く動作しないのか？
-[説明] ActiveXクライアントは，事実上サポート対象外の IE7～IE9 の環境でも動作します．問題になるのは，ActiveXクライアントを起動するウエッブページ （logon.html） の方で，この中の JavaScript を各ブラウザで動作するように修正する必要があります．動的にログオン先等を変更しないのであれば，JavaScript の処理を削った静的なウエッブページに書き換えることで対応が可能です．
-ファイル KGTN2015111301.pdf [(57.4 KB)] [kitasp 技術センター, 2015/12/17 11:39]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2664/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2666/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2666/">[GGH4.X-5.X] Preview PDF で表示されたPDFファイルを印刷すると， Windowsプリンタードライバーで印刷した時に比べ小さく印刷される．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2666/">[GGH4.X-5.X] Preview PDF で表示されたPDFファイルを印刷すると， Windowsプリンタードライバーで印刷した時に比べ小さく印刷される．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -429,37 +336,16 @@ GGHealthCheck2 は，定期的にGGサーバーの稼働状況を （GGのプロ
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2015/12/17*
-[番号] 技術ノート KGTN 2015111201
-[現象] [GGH4.X-5.X] Preview PDF で表示されたPDFファイルを印刷すると， Windowsプリンタードライバーで印刷した時に比べ小さく印刷される．
-[説明] これは，PDFファイルとPDFビューワー （例： Adobe Acrobat Reader DC） の仕様に起因する現象です．同じPDFファイルを Adobe Acrobat Reader DC の印刷画面のパラメタ （ページサイズ処理） を変えて印刷したところ，以下のような結果になりました （右から順に， 「合わせる」 「実際のサイズ」 「カスタム倍率 120%」 を選択） ．
-「合わせる」 では，余白が広く取られており内容が小さく印刷されています． 「実際のサイズ」 では，最小の余白で印刷されています． 「カスタム倍率 120%」 では，拡大印刷され内容の一部が切れています．このように，実際に用紙に印刷される内容の大きさは，PDFビューワーの印刷パラメタによって決まりますので， このパラメタを上手く調整して下さい．
-Adobe Reader XI の印刷画面
-ファイル KGTN2015111201.pdf [(181 KB)] [kitasp 技術センター, 2015/12/17 11:37]
-KGTN2015111201-1.jpg
-表示 [(33.6 KB)] [kitasp 技術センター, 2015/12/17 11:37]
-KGTN2015111201-2.jpg
-表示 [(11 KB)] [kitasp 技術センター, 2015/12/17 11:37]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2666/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2667/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2667/">[GGH4.X-5.X] セッション毎にGGが使用するメモリの量 （ワーキングセット） を知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2667/">[GGH4.X-5.X] セッション毎にGGが使用するメモリの量 （ワーキングセット） を知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -476,33 +362,16 @@ KGTN2015111201-2.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2015/12/17*
-[番号] 技術ノート KGTN 2015111001
-[現象] [GGH4.X-5.X] セッション毎にGGが使用するメモリの量 （ワーキングセット） を知りたい．
-[説明] GGのセッション上で動作するプロセスおよび関連するプロセスのメモリの量 （ワーキングセット） の実測値は以下の通りです．
-logon.exe 約4.5MB remoteClip.exe 約9.2MB pw.exe 約18.5MB ctfmon.exe 約8.6MB JpnIME.exe 約7.8MB
-なお，この値 （合計すると約50MB） は Windows Server 2012 R2 の環境で，GGにログオンした直後にタスクマネージャで表示された結果の平均値です．
-ファイル KGTN2015111101.pdf [(108 KB)] [kitasp 技術センター, 2015/12/17 11:21]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2667/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2133/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2133/">[GGH5.X] GGH5.0で改良されたクライアント・オーディオ機能 （Improved Audio Support） を試したが，クライアント上で音が鳴らない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2133/">[GGH5.X] GGH5.0で改良されたクライアント・オーディオ機能 （Improved Audio Support） を試したが，クライアント上で音が鳴らない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -519,36 +388,16 @@ logon.exe 約4.5MB remoteClip.exe 約9.2MB pw.exe 約18.5MB ctfmon.exe 約8.6MB 
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2015/12/17*
-[番号] 技術ノート KGTN 2015110401
-[現象] [GGH5.X] GGH5.0で改良されたクライアント・オーディオ機能 （Improved Audio Support） を試したが，クライアント上で音が鳴らない．
-[説明] 以下の点について，確認をお願いします．
-[サーバー側の確認事項]
- ディバイスマネージャーの &ldquo;サウンド，ビデオおよびゲームコントローラー&rdquo; に &ldquo;GraphOn Virtual Audio Device (WDM)&rdquo; が登録されていること． クラスタマネージャの Client Access → Sound にチェックが入っていること．  [クライアント側の確認事項]
-  Windows 7 またはそれ以降のバージョンであること．
-  GGH5.Xのクライアントがインストールされていること．
-  Amazonのミュージックの試聴出来ること．
-Improved Audio Support On Windows 7 and later, GO-Global 5 supports a virtual audio device that creates a private mixer for every GO-Global session. These components mix the audio played by applications running in the GO-Global session and encode it in Ogg Vorbis format.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2133/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2671/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2671/">[ExPack] GGEasyMonitor のインターネット環境での監視 （アクティブ・エージェント方式） の構成と設定を知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2671/">[ExPack] GGEasyMonitor のインターネット環境での監視 （アクティブ・エージェント方式） の構成と設定を知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -565,37 +414,16 @@ Improved Audio Support On Windows 7 and later, GO-Global 5 supports a virtual au
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2015/11/04*
-[番号] 技術ノート KGTN 2015102105
-[現象] [ExPack] GGEasyMonitor のインターネット環境での監視 （アクティブ・エージェント方式） の構成と設定を知りたい．
-[説明] GGEasyMonitor のインターネット環境での監視 （アクティブ・エージェント方式） の構成例とその設定内容（抜粋） を以下に示します．
-SERVER1
-[SP_SERVER2] mode = SP name = SERVER2 addr = 115.125.248.169 port =
-SERVER2
-[AA_SERVER1] mode = AA addr = 153.226.202.7 port = 8491
-ファイル KGTN2015102105.pdf [(111 KB)] [kitasp 技術センター, 2015/12/17 10:26]
-KGTN2015102105-1.jpg
-表示 [(33.2 KB)] [kitasp 技術センター, 2015/12/17 10:26]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2671/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2670/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2670/">[ExPack] GGEasyMonitor のインターネット環境での監視 （パッシブ・エージェント方式） の構成と設定を知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2670/">[ExPack] GGEasyMonitor のインターネット環境での監視 （パッシブ・エージェント方式） の構成と設定を知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -612,37 +440,16 @@ KGTN2015102105-1.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2015/11/04*
-[番号] 技術ノート KGTN 2015102106
-[現象] [ExPack] GGEasyMonitor のインターネット環境での監視 （パッシブ・エージェント方式） の構成と設定を知りたい．
-[説明] GGEasyMonitor のインターネット環境での監視 （パッシブ・エージェント方式） の構成例とその設定内容 （抜粋） を以下に示します．
-SERVER1
-[SA_SERVER2] mode = SA name = SERVER2 addr = 115.125.248.169 port = 8491
-SERVER2
-[AP_SERVER1] mode = AP addr = 153.226.202.7 port =
-ファイル KGTN2015102106.pdf [(132 KB)] [kitasp 技術センター, 2015/12/17 10:28]
-KGTN2015102106-1.jpg
-表示 [(27.3 KB)] [kitasp 技術センター, 2015/12/17 10:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2670/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2673/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2673/">[ExPack] GGEasyMonitor のローカルネットワーク上での監視 （アクティブ・エージェント方式） の構成と設定を知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2673/">[ExPack] GGEasyMonitor のローカルネットワーク上での監視 （アクティブ・エージェント方式） の構成と設定を知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -659,37 +466,16 @@ KGTN2015102106-1.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2015/11/04*
-[番号] 技術ノート KGTN 2015102103
-[現象] [ExPack] GGEasyMonitor のローカルネットワーク上での監視 （アクティブ・エージェント方式） の構成と設定を知りたい．
-[説明] GGEasyMonitor のローカルネットワーク上での監視 （アクティブ・エージェント方式） の構成例とその設定内容 （抜粋） を以下に示します．
-SERVER1
-[SP_SERVER1] mode = SP name = SERVER1 addr = 192.168.102.89 port =
-[SP_SERVER2] mode = SP name = SERVER2 addr = 192.168.102.61 port =
-[AA_SERVER1] mode = AA addr = 192.168.102.89 port = 8491
-SERVER2
-[AA_SERVER1] mode = AA addr = 192.168.102.89 port = 8491
-ファイル KGTN2015102103.pdf [(84.3 KB)] [kitasp 技術センター, 2015/12/17 10:20]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2673/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2672/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2672/">[ExPack] GGEasyMonitor のローカルネットワーク上での監視 （パッシブ・エージェント方式） の構成と設定を知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2672/">[ExPack] GGEasyMonitor のローカルネットワーク上での監視 （パッシブ・エージェント方式） の構成と設定を知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -706,37 +492,16 @@ SERVER2
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2015/11/04*
-[番号] 技術ノート KGTN 2015102104
-[現象] [ExPack] GGEasyMonitor のローカルネットワーク上での監視 （パッシブ・エージェント方式） の構成と設定を知りたい．
-[説明] GGEasyMonitor のローカルネットワーク上での監視 （パッシブ・エージェント方式） の構成例とその設定内容（抜粋） を以下に示します．
-SERVER1
-[SA_SERVER1] mode = SA name = SERVER1 addr = 192.168.102.89 port = 8491
-[SA_SERVER2] mode = SA name = SERVER2 addr = 192.168.102.61 port = 8491
-[AP_SERVER1] mode = AP addr = 192.168.102.89 port =
-SERVER2
-[AP_SERVER1] mode = AP addr = 192.168.102.89 port =
-ファイル KGTN2015102104.pdf [(89.1 KB)] [kitasp 技術センター, 2015/12/17 10:24]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2672/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2675/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2675/">[ExPack] GGEasyMonitor の自己監視 （アクティブ・エージェント方式） の構成と設定を知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2675/">[ExPack] GGEasyMonitor の自己監視 （アクティブ・エージェント方式） の構成と設定を知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -753,19 +518,59 @@ SERVER2
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2015/11/04*
-[番号] 技術ノート KGTN 2015102101
-[現象] [ExPack] GGEasyMonitor の自己監視 （アクティブ・エージェント方式） の構成と設定を知りたい．
-[説明] GGEasyMonitor の自己監視 （アクティブ・エージェント方式） の構成例とその設定内容 （抜粋） を以下に示します．
-[default] hostName = SERVER1 hostPort = 8491 apsPort = 491
-[SP_SERVER1] mode = SP name = SERVER addr = 192.168.102.89 port =
-[AA_SERVER1] mode = AA addr = 192.168.102.89 port = 8491
-ファイル KGTN2015102101.pdf [(68.1 KB)] [kitasp 技術センター, 2015/12/17 10:12]
-KGTN2015102101-1.jpg
-表示 [(10.4 KB)] [kitasp 技術センター, 2015/12/17 10:12]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2675/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2674/">[ExPack] GGEasyMonitor の自己監視 （パッシブ・エージェント方式） の構成と設定を知りたい．</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2674/"><i class="far fa-calendar"></i> 2015-11-04</a>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2689/">[ExPack] 拡張パックの GGToolSessionCount とはどんなツールなのか？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2689/"><i class="far fa-calendar"></i> 2015-11-04</a>
+                                        </p>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -788,80 +593,15 @@ KGTN2015102101-1.jpg
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li class="active">
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

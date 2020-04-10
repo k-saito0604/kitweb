@@ -311,23 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2284/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2284/">[GGH4.X-5.X] どんな方法でも構わないので，プログラムウインドウからユーザーのパスワードを変更する方法を教えて欲しい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2284/">[GGH4.X-5.X] どんな方法でも構わないので，プログラムウインドウからユーザーのパスワードを変更する方法を教えて欲しい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -344,34 +336,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016091301
-[現象] [GGH4.X-5.X] どんな方法でも構わないので，プログラムウインドウからユーザーのパスワードを変更する方法を教えて欲しい．
-[説明] マイクロソフト社が提供する Sysinternals の PsExec.exe / PsExec64.exe を利用する方法があります （*1）．以下の２つのファイルを作成して，拡張子が .vbs のファイルをクラスターマネージャーで登録して下さい．なお，このサンプルでは，２つのファイルおよび PsExec64.exe を C:kitASP に配置し，ドメインの管理者アカウントとパスワードはそれぞれ gg-ad0Administrator と password です．処理内容やパスワードが分からないようにするには， VC++ 等でアプリケーションを作成し，その中で下記の &ldquo;psexec64 &hellip;&rdquo; のコマンドラインを実行することをお勧めします．
-chaangePassword.bat
-cd C:kitASP psexec64 -u gg-ad0Administrator -p password net user %username% * /domain exit  changePassword.vbs
-Set WshShell = WScript.CreateObject(&quot;WScript.Shell&quot;) Call WshShell.Run( &quot;cmd.exe /c C:kitASPchaangePassword&quot;, 0, True )  *1 https://technet.microsoft.com/ja-jp/sysinternals/pxexec
-ファイル KGTN2016091301.pdf [(214 KB)] [kitasp 技術センター, 2016/10/05 15:26]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2284/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2266/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2266/">[GGH4.X-5.X] アプリケーションをサーバー上で実行した時の画面とクライアントからGGを介して実行した時の画面を比べると，ウインドウの幅が異なる．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2266/">[GGH4.X-5.X] アプリケーションをサーバー上で実行した時の画面とクライアントからGGを介して実行した時の画面を比べると，ウインドウの幅が異なる．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -388,33 +362,16 @@ Set WshShell = WScript.CreateObject(&quot;WScript.Shell&quot;) Call WshShell.Run
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016092801
-[現象] [GGH4.X-5.X] アプリケーションをサーバー上で実行した時の画面とクライアントからGGを介して実行した時の画面を比べると，ウインドウの幅が異なる．
-[説明] GGは，サーバー上で実行されるアプリケーションの画面 （ビットマップ） を転送するのではなく，サーバー上で呼び出された描画命令を （仮想化して） クライアント側へ転送し，クライアント側でその描画命令を実行して実際に画面に表示します．従って，クライアントの Windows 環境によっては，サーバー側とクライアント側では微妙にウインドウの幅が異なる等の差異が出る場合があります．このようなケースでは，通常クライアント上でそのアプリケーションを直接実行した時と同じ幅になります．
-ファイル KGTN2016092801.pdf [(107 KB)] [kitasp 技術センター, 2016/10/05 16:49]
-KGTN2016092801.jpg
-表示 [(22.4 KB)] [kitasp 技術センター, 2016/10/05 16:49]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2266/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2269/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2269/">[GGH4.X-5.X] アプリケーションを直接起動した場合，クライアント印刷機能の Printers ダイアログ （Printers Applet） を開く方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2269/">[GGH4.X-5.X] アプリケーションを直接起動した場合，クライアント印刷機能の Printers ダイアログ （Printers Applet） を開く方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -431,31 +388,16 @@ KGTN2016092801.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016092601
-[現象] [GGH4.X-5.X] アプリケーションを直接起動した場合，クライアント印刷機能の Printers ダイアログ （Printers Applet） を開く方法は？
-[説明] クライアント印刷機能の Printers ダイアログは，アプリケーションの直接起動時には利用することが出来ません．クライアント印刷機能の Printers ダイアログを利用する場合は，必ず Program Window を使用して下さい．
-ファイル KGTN2016092601.pdf [(53 KB)] [kitasp 技術センター, 2016/10/05 16:43]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2269/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2296/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2296/">[GGH4.X-5.X] クラスターマネージャーのセッションタブでIPアドレスが空欄のセッションがあるが，このセッションはどのような状態にあるのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2296/">[GGH4.X-5.X] クラスターマネージャーのセッションタブでIPアドレスが空欄のセッションがあるが，このセッションはどのような状態にあるのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -472,34 +414,16 @@ KGTN2016092801.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016090702
-[現象] [GGH4.X-5.X] クラスターマネージャーのセッションタブでIPアドレスが空欄のセッションがあるが，このセッションはどのような状態にあるのか？
-[説明] クラスターマネージャーのセッションタブでIPアドレスが空欄のセッションは，ユーザーが Disconnect （セッションを残してクライアントを切断） したか，またはネットワーク障害での切断やGGにログオンしたブラウザを強制的に閉じた場合などに発生します．
-このようなセッションを 「自動的に」 終了させたい場合は， [Host Options] → [Session Shutdown] → [Disconnected sessions terminate] で Immediately (直ちに終了) または After ? minutes （?分経過後に終了） を設定して下さい．
-ファイル KGTN2016090702.pdf [(125 KB)] [kitasp 技術センター, 2016/10/05 11:21]
-KGTN2016090702.jpg
-表示 [(21.8 KB)] [kitasp 技術センター, 2016/10/05 11:21]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2296/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2322/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2322/">[GGH4.X-5.X] サーバー側のIMEのツールバーを非表示や位置固定にする方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2322/">[GGH4.X-5.X] サーバー側のIMEのツールバーを非表示や位置固定にする方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -516,36 +440,16 @@ KGTN2016090702.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016082601
-[現象] [GGH4.X-5.X] サーバー側のIMEのツールバーを非表示や位置固定にする方法は？
-[説明] GGはIMEの処理に直接関与しておりませんので，GGの機能としてIMEのツールバーの非表示や位置定にする機能はありません．IMEに 「ツールバーをタスクトレイに入れる」 等の機能があれば，それを設定することでツールバーが非表示になると思われます．
-あと，サーバー側のIMEを無効にして，かつクライアント側のIMEを使用すれば，サーバー側のIMEのツールバーは表示されません．サーバー側のIMEを無効にする方法とクライアント側IMEを使用する設定は，次の通りです．
-[HKEY_LOCAL_MACHINESOFTWAREGraphOnGO-GlobalSystemRunLocalMachine] &ldquo;ctfmon.exe&quot;=dword:00000000 ← 削除するか ctfmon.exeX 等に名前を変更
-コマンドラインの例： gg-client.exe -h 192.168.102.81 -kb ClientSideIME ハイパーリンクの例： http://192.168.102.81/logon.html?keyboard=ClientSideIME
-ファイル KGTN2016082601.pdf [(141 KB)] [kitasp 技術センター, 2016/10/05 10:26]
-KGTN2016082601.jpg
-表示 [(25.1 KB)] [kitasp 技術センター, 2016/10/05 10:26]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2322/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2314/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2314/">[GGH4.X-5.X] セッション情報取得SDKでアプリケーションを開発する場合，すべてのセッションの情報をまとめて取得出来るのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2314/">[GGH4.X-5.X] セッション情報取得SDKでアプリケーションを開発する場合，すべてのセッションの情報をまとめて取得出来るのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -562,31 +466,16 @@ KGTN2016082601.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016082905
-[現象] [GGH4.X-5.X] セッション情報取得SDKでアプリケーションを開発する場合，すべてのセッションの情報をまとめて取得出来るのか？
-[説明] いいえ，関数 SMI_EnumerateSessions() を使って，すべてのセッションを列挙する必要があります．
-ファイル KGTN2016082905.pdf [(50.5 KB)] [kitasp 技術センター, 2016/10/05 10:38]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2314/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2319/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2319/">[GGH4.X-5.X] セッション情報取得SDKでアプリケーションを開発する場合，どのようなサンプルコードが提供されるのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2319/">[GGH4.X-5.X] セッション情報取得SDKでアプリケーションを開発する場合，どのようなサンプルコードが提供されるのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -603,33 +492,16 @@ KGTN2016082601.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016082901
-[現象] [GGH4.X-5.X] セッション情報取得SDKでアプリケーションを開発する場合，どのようなサンプルコードが提供されるのか？
-[説明] 以下のようなサーバーのセッション数および個別のセッション情報を繰り返し採取するサンプルコードをご提供します． GGEasyMonitor のコードをベースとしておりますので，エラー時の処理等も含まれております．
-ファイル KGTN2016082901.pdf [(63.3 KB)] [kitasp 技術センター, 2016/10/05 10:33]
-KGTN2016082901.jpg
-表示 [(11.4 KB)] [kitasp 技術センター, 2016/10/05 10:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2319/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2320/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2320/">[GGH4.X-5.X] セッション情報取得SDKでアプリケーションを開発する場合，どのような環境が必要か？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2320/">[GGH4.X-5.X] セッション情報取得SDKでアプリケーションを開発する場合，どのような環境が必要か？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -646,33 +518,16 @@ KGTN2016082901.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016082603
-[現象] [GGH4.X-5.X] セッション情報取得SDKでアプリケーションを開発する場合，どのような環境が必要か？
-[説明] 弊社では Microsoft Visual Studio 2010 (Microsoft Visual C++ 2010) を使用しております．試したことはありませんが， Microsoft Visual Studio 2008 (Microsoft Visual C++ 2008) も使用出来ると思います．なお，文字セットは 「Unicode 文字セットを使用する」 を選択して下さい．
-ファイル KGTN2016082603.pdf [(200 KB)] [kitasp 技術センター, 2016/10/05 10:31]
-KGTN2016082603.jpg
-表示 [(45.2 KB)] [kitasp 技術センター, 2016/10/05 10:31]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2320/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2318/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2318/">[GGH4.X-5.X] セッション情報取得SDKでアプリケーションを開発する場合，最初に関数 SMI_Initialize() で APS へ接続すれば良いのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2318/">[GGH4.X-5.X] セッション情報取得SDKでアプリケーションを開発する場合，最初に関数 SMI_Initialize() で APS へ接続すれば良いのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -689,31 +544,16 @@ KGTN2016082603.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016082902
-[現象] [GGH4.X-5.X] セッション情報取得SDKでアプリケーションを開発する場合，最初に関数 SMI_Initialize() で APS へ接続すれば良いのか？
-[説明] 正常時の処理のみを考えるのであれば，直ちに SMI_Initialize() で APS へ接続して構いません．異常時の処理も考えるのであれば，先ずサービス GGAPS が 「開始」 状態にあることを確認し，次に SMI_Initialize() で APS へ接続することをお勧めします．
-ファイル KGTN2016082902.pdf [(57.1 KB)] [kitasp 技術センター, 2016/10/05 10:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2318/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2316/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2316/">[GGH4.X-5.X] セッション情報取得SDKでアプリケーションを開発する場合，最大セッション数と現在利用中のセッション数はどこから得るのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2316/">[GGH4.X-5.X] セッション情報取得SDKでアプリケーションを開発する場合，最大セッション数と現在利用中のセッション数はどこから得るのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -730,14 +570,7 @@ KGTN2016082603.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/10/05*
-[番号] 技術ノート KGTN 2016082904
-[現象] [GGH4.X-5.X] セッション情報取得SDKでアプリケーションを開発する場合，最大セッション数と現在利用中のセッション数はどこから得るのか？
-[説明] 最大セッション数はクラスター・マネージャーで設定する項目ですので，構造体 SMI_SERVER_INFO の中に保持されています．現在利用中のセッション数は設定項目ではありませんので，構造体 SMI_SERVER_METRICS の中に保持されています．
-SMI_SERVER_INFO smi_serverInfo; SMI_SERVER_METRICS smi_serverMetrics; … SMI_GetServerInfo(smi_serverID,SMI_SERVER_INFO_SCHEMA_2,&amp;smi_serverInfo); SMI_GetServerMetrics(smi_serverID,&amp;smi_serverMetrics); iSessionMax = smi_serverInfo.maxSessions; iSessionNow = smi_serverMetrics.totalSessionCount;  ファイル KGTN2016082904.pdf [(55.8 KB)] [kitasp 技術センター, 2016/10/05 10:37]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2316/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
@@ -760,80 +593,15 @@ SMI_SERVER_INFO smi_serverInfo; SMI_SERVER_METRICS smi_serverMetrics; … SMI_Ge
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li>
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

@@ -2,7 +2,7 @@
 title = "2020年1月のWindows Update互換性情報に関して"
 date = "2020-01-30"
 tags = ["WindowsUpdate"]
-categories=["tech"]
+categories=["news"]
 banner = "img/Windowsupdate.jpg"
 +++
 

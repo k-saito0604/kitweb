@@ -311,23 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc705/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc705/">[GGW3.2.1] The Program Window failed to signal completion of its basic initializations within 1 minute(s) が発生したが，どのような箇所を調べれば良いか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc705/">[GGW3.2.1] The Program Window failed to signal completion of its basic initializations within 1 minute(s) が発生したが，どのような箇所を調べれば良いか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -344,33 +336,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/02/13*
-[番号] 技術ノート KGTN 2013021301
-[現象] [GGW3.2.1] &ldquo;The Program Window failed to signal completion of its basic initializations within 1 minute(s)&rdquo; が発生したが，どのような箇所を調べれば良いか？
-[説明] 技術ノート KGTN#2009101501 にありますように，この記録は以下の一連のログオン処理が１分以内に完了しなかったことを示します．
- Windows レベルのログオン グループポリシの適用 ネットワークディバイスのリストア クライアントドライブのマウント ログオンスクリプトの実行 Progream Window (PW) の起動 クライアントプリンタの初期化 初期アプリケーションの起動 （指定されている場合のみ）  処理の遅延が発生する箇所は，認証サーバ（AD）・GGサーバ・GGクライアント・ネットワーク・仮想マシンが考えられますので，どの箇所で遅延が発生しているのか特定する必要があります．
-先ず，発生する時間帯・発生するGGサーバ・発生するGGクライアント・発生するネットワーク（拠点）に何らかのパターンがあるかどうか確認して下さい．ある時間帯に集中して発生するようであれば，認証サーバ・ネットワーク・仮想マシン・アンチウイルスソフト等で問題が発生しているかどうか調べて下さい．あるGGサーバに集中して発生するようであれば，GGサーバのCPUやメモリの負荷等を調べ，パフォーマンスを低下させている原因がないかどうか調べて下さい．あるGGクライアント （機種・OS・プリンタについても注意） に集中して発生するようであれば，GGクライアントのCPUやメモリの負荷等を調べ，パフォーマンスを低下させている原因がないかどうか調べて下さい．あるネットワーク（拠点）に集中して発生するようであれば， PING や弊社ツール GGNetworkCheck を使用してパケットロスや応答遅延が発生していないかどうか調べて下さい．
-ファイル KGTN2013021301.pdf [(74.9 KB)] [kitasp 技術センター, 2013/02/13 09:21]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc705/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc707/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc707/">[GGH4.5/UoN] GG環境で UoN (USB over Network) を使用して，クライアント上のUSBディスクにアクセスする場合，セキュリティ （アクセス権） はどうなるのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc707/">[GGH4.5/UoN] GG環境で UoN (USB over Network) を使用して，クライアント上のUSBディスクにアクセスする場合，セキュリティ （アクセス権） はどうなるのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -387,31 +362,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/02/07*
-[番号] 技術ノート KGTN 2013020701
-[現象] [GGH4.5/UoN] GG環境で UoN (USB over Network) を使用して，クライアント上のUSBディスクにアクセスする場合，セキュリティ （アクセス権） はどうなるのか？
-[説明] USBディスクのファイルシステムがFAT32の場合は，本質的にアクセス権を設定出来ませんので，無条件でアクセス可能です．USBディスクのファイルシステムがNTFSの場合は，デフォルトで &ldquo;Everyoneフルコントロール&rdquo; が設定されるため，無条件でアクセス可能です．明示的にセキュリティ （アクセス権） が設定された場合は，その設定内容に従ってアクセスすることが出来ます．
-ファイル KGTN2013020701.pdf [(47.4 KB)] [kitasp 技術センター, 2013/02/07 12:10]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc707/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2641/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2641/">[GGH4.X-5.X] GGサーバのパラメタ ClientProcessingBatch の詳細について知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2641/">[GGH4.X-5.X] GGサーバのパラメタ ClientProcessingBatch の詳細について知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -428,31 +388,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/02/07*
-[番号] 技術ノート KGTN 2013020601
-[現象] [GGH4.X-5.X] GGサーバのパラメタ ClientProcessingBatch の詳細について知りたい．
-[説明] ClientProcessingBatch = 0 の場合は，サーバはクライアントに対して描画命令を送信します．ClientProcessingBatch = 1 の場合は，サーバ側で 「クライアント画面の描画効率を判断し」 描画命令または画像データ （スクリーンスクレーピング） の何れかを送信します．描画命令を送信するケースでは，さまざまな描画上の最適化が行われるため，アプリケーションによってはこの最適化に馴染まず画面の乱れ等を引き起こすことがあります（主に一般的でない画面上の動作） ．このような場合は， ClientProcessingBatch = 1 を適用することで，この画面の乱れを回避出来る可能性があります．より詳しい内容については，以下のGraphOn社の説明をご覧下さい．
-[ClientProcessingBatch] When ClientProcessingBatch is set to 0, the host updates the client&rsquo;s display by sending primitive drawing commands such as &ldquo;draw rectangle&rdquo;, &ldquo;draw line&rdquo;, &ldquo;draw text,&quot;, etc&hellip; to the client. Alternatively, the host could simply wait and send an image with the final result of the drawing operations to the client.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2641/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc706/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc706/">[GGH4.X] リモートデスクトップ接続 （mstsc.exe） をアプリケーションとして登録し，それを iPad や Android クライアントから利用すると，接続先のデスクトップでキーボード入力が上手く動作しない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc706/">[GGH4.X] リモートデスクトップ接続 （mstsc.exe） をアプリケーションとして登録し，それを iPad や Android クライアントから利用すると，接続先のデスクトップでキーボード入力が上手く動作しない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -469,34 +414,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/02/07*
-[番号] 技術ノート KGTN 2012091202
-[現象] [GGH4.X] リモートデスクトップ接続 （mstsc.exe） をアプリケーションとして登録し，それを iPad や Android クライアントから利用すると，接続先のデスクトップでキーボード入力が上手く動作しない．
-[説明] iPad や Android クライアントはローカルのIMEを利用するため，GGサーバ側から見ると通常のキー操作として認識されません （スキャンコードや仮想キーコードに紐付かない） ．通常のアプリケーションはこの仕様で問題ありませんが，リモートデスクトップ接続ではキーボード入力が動作しないという状況が発生します．
-この問題を回避するには，先ずWindowsのスクリーンキーボード （osk.exe） をGGサーバ上で起動し，その後にリモートデスクトップ接続を行って下さい．スクリーンキーボードを操作することで，接続先のデスクトップでキーボード操作が可能になります．
-補足１ 技術的背景： iPad ?-(GG Clinet) &ndash; GG-Server ?-(mstsc) &ndash; Windows Server という環境で iPad 上で文字を入力した場合，入力した文字はUNICODE （キーコードは Packet） で送信されます． GG-Server/mstsc は，この文字の情報を ローカルで処理することなく Windows Server へ転送するため， Windows Server 上で動作するアプリケーションに入力した文字列が反映されます． RETURN および BS キーは， （Packetでなく） 通常のキーコードで送信され，これが GG-Server 上で処理されます．このため，Windows Server 上で動作するアプリケーションに入力が反映されない状況が発生します．なお，この結果 （GraphOn社に報告済み） は弊社の検証環境で確認出来た内容であり，環境が異なれば別の結果になる可能性があります．
-補足２ この問題をGraphOn社の品質保証チームが確認しました．開発チームで詳細な調査および解析を行い，技術的・営業的に可能な内容であれば修正を行います．
-ファイル KGTN2012091202.pdf [(77.4 KB)] [kitasp 技術センター, 2013/02/08 08:14]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc706/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc709/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc709/">[GGH4.5] Windows Phone 8 用のクライアントはあるか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc709/">[GGH4.5] Windows Phone 8 用のクライアントはあるか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -513,31 +440,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/02/06*
-[番号] 技術ノート KGTN 2013020603
-[現象] [GGH4.5] Windows Phone 8 用のクライアントはあるか？
-[説明] 2013年1月28日の時点で， Windows Phone 8 用クライアントの開発予定はありません．
-ファイル KGTN2013020603.pdf [(38.5 KB)] [kitasp 技術センター, 2013/02/06 12:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc709/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc708/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc708/">[GGH4.5] レジストリの項目 GO-Global¥Loader¥Processes および GO-Global¥System¥Modules を調整して，描画の乱れが改善する可能性はあるか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc708/">[GGH4.5] レジストリの項目 GO-Global¥Loader¥Processes および GO-Global¥System¥Modules を調整して，描画の乱れが改善する可能性はあるか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -554,31 +466,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/02/06*
-[番号] 技術ノート KGTN 2013020604
-[現象] [GGH4.5] レジストリの項目 GO-Global¥Loader¥Processes および GO-Global¥System¥Modules を調整して，描画の乱れが改善する可能性はあるか？
-[説明] これらは，プロセス自体の挙動 （生成や消滅の詳細，クライアント機能の利用の有無，クライアントへ画面を転送するかどうか等） を設定する項目であり，描画に関する調整項目ではありません．
-ファイル KGTN2013020604.pdf [(51.4 KB)] [kitasp 技術センター, 2013/02/06 12:48]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc708/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2547/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2547/">[GGH4.X-5.X] 描画の乱れが発生した場合，これを解消するため何か試すことはないか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2547/">[GGH4.X-5.X] 描画の乱れが発生した場合，これを解消するため何か試すことはないか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -595,34 +492,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/02/06*
-[番号] 技術ノート KGTN 2013020602
-[現象] [GGH4.X-5.X] 描画の乱れが発生した場合，これを解消するため何か試すことはないか？
-[説明] 描画の乱れが発生した場合，以下の内容を試して下さい．
-1)　&ldquo;Aeroテーマ&rdquo; を &ldquo;ベーシックテーマ&rdquo; に変更する． → GGは &ldquo;ベーシックテーマ&rdquo; の利用を前提としております．詳細は技術ノート KGTN#2013012101 をご覧下さい．
-2)　&ldquo;ClientProcessingBatch = 1&rdquo; を試してみる． → &ldquo;ClientProcessingBatch = 1&rdquo; が設定されると，描画処理に &ldquo;スクリーンスクレーピング&rdquo; 方式が併用されるため，GGの描画の最適化機能とアプリケーションの描画処理が馴染まない場合に，状況が改善される可能性があります．詳細は技術ノート KGTN#2013020601 をご覧下さい．
-3)　クライアントフレーム機能を試してみる． → クライアントフレーム機能が有効な場合は，クライアント上で動作するアプリケーションのウインドウとGG上で動作するアプリケーションのウインドウが完全に分離されますので，相互作用で問題が発生している場合に，状況が改善される可能性があります．詳細は技術ノート KGTN#2011090201 をご覧下さい．
-ファイル KGTN2013020602.pdf [(64.6 KB)] [kitasp 技術センター, 2016/06/03 11:56]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2547/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc711/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc711/">[GGH4.5] マウスホバーの表示で文字化けする．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc711/">[GGH4.5] マウスホバーの表示で文字化けする．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -639,31 +518,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/02/04*
-[番号] 技術ノート KGTN 2013020401
-[現象] [GGH4.5] マウスホバーの表示で文字化けする．
-[説明] IE 等で確認したところ，下記のように日本語も問題なく表示されました．恐らく，文字化けを起こしたアプリケーションの処理に何らかの原因があるのではないかと思われます．
-ファイル KGTN2013020401.pdf [(76.2 KB)] [kitasp 技術センター, 2013/02/04 11:26]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc711/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc710/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc710/">[GGW3.2.1/GGH4.5] GGの互換アップデートは，新しい Windows Update （更新プログラム） がリリースされる度に適用せねばならないのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc710/">[GGW3.2.1/GGH4.5] GGの互換アップデートは，新しい Windows Update （更新プログラム） がリリースされる度に適用せねばならないのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -680,31 +544,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/02/04*
-[番号] 技術ノート KGTN 2013020402
-[現象] [GGW3.2.1/GGH4.5] GGの互換アップデートは，新しい Windows Update （更新プログラム） がリリースされる度に適用せねばならないのか？
-[説明] いいえ．新しくリリースされた Windows Update （更新プログラム） の中に， Windows のカーネル （システムの中核となる部分） を修正するものがあった場合にのみ，GGの互換アップデートの適用が必要です．
-ファイル KGTN2013020402.pdf [(44.8 KB)] [kitasp 技術センター, 2013/02/04 12:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc710/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc712/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc712/">[iPad] GGサーバのバージョンを上げたところ， iPad で半角英字を入力するとGG上のアプリケーション上で全角英字に変換されるようになった．FEPは ATOK を使っている．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc712/">[iPad] GGサーバのバージョンを上げたところ， iPad で半角英字を入力するとGG上のアプリケーション上で全角英字に変換されるようになった．FEPは ATOK を使っている．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -721,18 +570,7 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/02/01*
-[番号] 技術ノート KGTN 2013020101
-[現象] [iPad] GGサーバのバージョンを上げたところ， iPad で半角英字を入力するとGG上のアプリケーション上で全角英字に変換されるようになった．FEPは ATOK を使っている．
-[説明] 以下の環境で検証を行いましたが，そのような現象は発生しませんでした．また，iPad クライアントは半角英数字 （のUNICODEを） をGGサーバに送信しており，GGがサーバ上で全角変換をすることはありません．
-Server: WS2008-SP2 (x86) + ATOK2012 + GG4.5.0.13767EB Client: iPad mini (iOS6.1) + GG4.5.0.14966
-補　足 ATOK のツールバーで 「日本語入力オン/オフ = 有効」 の状態にすると， iPad で半角英字を入力するとGG上のアプリケーションで全角英字になることから，何らかの原因でログオンした時点で 「日本語入力オン/オフ = 有効」 になっているのではないかと推測されます．もしそうであれば ATOK の設定等を確認して，ログオンした時点で 「日本語入力オン/オフ = 無効」 になるように設定を変更して下さい．
-2013年2月1日時点で，以下のサイトに参考情報のムービーを公開しております．なお，近い将来削除される可能性があります．
-http://youtu.be/BjQen5-07II JP-002 (ATOK Issue)
-ファイル KGTN2013020101.pdf [(62.7 KB)] [kitasp 技術センター, 2013/02/01 09:42]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc712/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
@@ -755,80 +593,15 @@ http://youtu.be/BjQen5-07II JP-002 (ATOK Issue)
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li>
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

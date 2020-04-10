@@ -311,23 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/problematic_md/doc249/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc249/">[GGW3.2.1] BSODのダンプファイルに ga&#43;0x73c3, ga&#43;0x72ab, ga&#43;0xc071 の記録があったが，BSOD発生のメカニズムを知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/problematic_md/doc249/">[GGW3.2.1] BSODのダンプファイルに ga&#43;0x73c3, ga&#43;0x72ab, ga&#43;0xc071 の記録があったが，BSOD発生のメカニズムを知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -344,33 +336,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2014/06/14
-[番号] 技術ノート KGTN 2014052801
-[現象] [GGW3.2.1] BSODのダンプファイルに &ldquo;ga+0x73c3, ga+0x72ab, ga+0xc071&rdquo; の記録があったが，BSOD発生のメカニズムを知りたい．
-[説明] 技術ノート KGTN#2014050701の説明にありますように，先ず csrss.exe で何らかのエラーが発生し，このことによりハードエラーのポップアップが表示されました*1．ハードエラーのポップアップはサーバ側の画面に表示されるため，ユーザがポップアップのボタンをクリックして消すことは出来ず，その結果トップレベル・ウインドウとして残り続けます．
-ユーザがログオフ操作を行った時，GGはセッション中に存在するトップレベル・ウインドウを数え上げ，そのウインドウを生成したプロセスを強制終了させます．上記ハードエラーのポップアップもこの処理の対象となるため，それを生成したプロセス csrss.exe も強制終了されてしまいます． csrss.exe はシステムの重要なプロセスであるため，Windows の仕様によりBSODが発生します．
-なお，ハードエラーのポップアップが表示された状況とBSODが発生した状況は直接関係が無いため，メモリダンプの中にはハードエラーのポップアップが表示された原因を探る情報は含まれておりません．
-*1: In the crash you reported, the &ldquo;csrss.exe&rdquo; was displaying a hard error dialog.
-ファイル KGTN2014052801.pdf [(80.2 KB)] [kitasp 技術センター, 2014/06/14 19:04]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc249/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/problematic_md/doc246/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc246/">[GGW3.2.1] STOPコード0x50のBSODが発生したが，そのBSODの原因を知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/problematic_md/doc246/">[GGW3.2.1] STOPコード0x50のBSODが発生したが，そのBSODの原因を知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -387,30 +362,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2014/06/14
-[番号] 技術ノート KGTN 2014061103
-[現象] [GGW3.2.1] STOPコード0x50のBSODが発生したが，そのBSODの原因を知りたい．
-[説明] GraphOn社でメモリダンプファイルを解析したところ，下記の内容が分かりました．
-A developer analyzed the memory dump. The crash occurred in logon.exe while the session was running (not during session shutdown). The computer had plenty of available memory at the time of the crash. The crash occurred when the GO-Global display driver tried to access one of its data structures. The data structure had been corrupted. We cannot tell what caused the corruption.</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc246/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/problematic_md/doc251/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc251/">[GGW3.2.1] 技術ノート KGTN#2013110601 の SYMEVENT 関連の情報を得たが，この情報からBSODの原因は分かるか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/problematic_md/doc251/">[GGW3.2.1] 技術ノート KGTN#2013110601 の SYMEVENT 関連の情報を得たが，この情報からBSODの原因は分かるか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -427,30 +388,16 @@ A developer analyzed the memory dump. The crash occurred in logon.exe while the 
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2014/05/16
-[番号] 技術ノート KGTN 2014050701
-[現象] [GGW3.2.1] 技術ノート KGTN#2013110601 の SYMEVENT 関連の情報を得たが，この情報からBSODの原因は分かるか？
-[説明] SYMEVENT 関連の情報をもとにGraphOn社で調査を行ったところ，BSODを引き起こしたと思われる原因が分かりました．
-The issue occurs in version 3.2 when a session closes while the &quot;csrss.exe&quot; process is displaying a dialog box. It is uncommon for &quot;csrss.exe&quot; to display a dialog box, but it does display a dialog box when a hard error (e.g., unhandled access violation) occurs in a process. In the crash you reported, the &quot;csrss.</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc251/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2692/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2692/">[GGH4.X] クライアント印刷機能で，プリンタ名が日本語を含みかつUPD (Universal Printer Driver) を使用して印刷すると，プリンタにドキュメントが出力されない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2692/">[GGH4.X] クライアント印刷機能で，プリンタ名が日本語を含みかつUPD (Universal Printer Driver) を使用して印刷すると，プリンタにドキュメントが出力されない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -467,34 +414,16 @@ The issue occurs in version 3.2 when a session closes while the &quot;csrss.exe&
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/05/02*
-[番号] 技術ノート KGTN 2014050201
-[現象] [GGH4.X] クライアント印刷機能で，プリンタ名が日本語を含みかつUPD (Universal Printer Driver) を使用して印刷すると，プリンタにドキュメントが出力されない．
-[説明] この問題は弊社でも現象を確認しており，GraphOn社にも報告しております．この問題が解決されるまで，以下の方法で対応をお願いします．
-日本語を含まないプリンタ名に変更する． Preview PDF へ印刷し，クライアント側に表示されたPDFファイルを改めてプリンタへ印刷する． プリンタドライバとして WPD (Windows Printer Driver) を使用する．
-補足１ この問題は，クライアント側のプリンタへ出力するプログラム pdfprint.exe へのパラメタの文字列 （プリンタ名と中間ファイル名） が短いことに起因しております． GraphOn社もこの原因を認識しており，GGH4.Xの将来のビルドで修正される見込みです．
-補足２ この問題は GGH4.8.2 Patch1 (4.8.2.22090) で修正されました．なお，この修正はサーバー側およびクライアント側で行われておりますので，それぞれのプログラムをアップグレードする必要があります．
-ファイル KGTN2014050201.pdf [(68.6 KB)] [kitasp 技術センター, 2015/11/04 14:47]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2692/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/problematic_md/doc252/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc252/">[GGW3.2.1/GGH4.X] Internet Explorer の脆弱性 （2963983） への当面の対応方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/problematic_md/doc252/">[GGW3.2.1/GGH4.X] Internet Explorer の脆弱性 （2963983） への当面の対応方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -511,31 +440,16 @@ The issue occurs in version 3.2 when a session closes while the &quot;csrss.exe&
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2014/05/02
-[番号] 技術ノート KGTN 2014043001
-[現象] [GGW3.2.1/GGH4.X] Internet Explorer の脆弱性 （2963983） への当面の対応方法は？
-[説明] マイクロソフト社から幾つかの回避策が提案されておりますが，適用条件や副作用もあり，残念ながら十分とは言えません．実際，GraphOn社に回避策 「VGX.DLL の登録解除」 の適用の可否を確認したところ，下記の回答がありました．
-Unregistering the dll has not been tested by GraphOn. We test for compatibility of MS Windows updates regularly and would provide patches for any incompatibilities and/or security vulnerabilities found in the product. We would recommend that your customer test this.  VGX.DLL の登録解除による副作用が正確には分からないこと等から，このような回答 （自己責任での適用） をせざるを得ない状況です．従って，マイクロソフト社が対応するまでの 「暫定」 対策としては，次の運用回避方法が妥当な対策だと考えます．
- GGのログオンページに限り IE を使用する． 他のページについては IE 以外のブラウザ （例： Google Chrome） を使用する．  補　足 大手新聞社のニュースによればマイクロソフト社は月次の更新プログラムで修正したい意向で，その通りであれば5月14日に本件の更新プログラムがリリースされます．</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc252/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/problematic_md/doc253/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc253/">[GGH4.X] GGH4.8でクライアントフレーム機能を利用しているが，デスクトップの背景を指定しても白色になる．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/problematic_md/doc253/">[GGH4.X] GGH4.8でクライアントフレーム機能を利用しているが，デスクトップの背景を指定しても白色になる．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -552,30 +466,16 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2014/04/25
-[番号] 技術ノート KGTN 2014042501
-[現象] [GGH4.X] GGH4.8でクライアントフレーム機能を利用しているが，デスクトップの背景を指定しても白色になる．
-[説明] 現在のクライアントフレーム機能では，透過表示のサポートと絡んで，背景は白色のみとなります．GraphOn社に確認したところ， 「2014年中にはクライアントフレームの背景表示を実装したい」 との回答がありました．
-ファイル KGTN2014042501.pdf [(45.6 KB)] [kitasp 技術センター, 2014/05/02 15:20]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc253/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/problematic_md/doc256/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc256/">[GGH4.X] Windows Server 2012 R2 の環境で IE11 を起動すると，スクロールボタンやマウスホイールによるスクロール操作が動作しない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/problematic_md/doc256/">[GGH4.X] Windows Server 2012 R2 の環境で IE11 を起動すると，スクロールボタンやマウスホイールによるスクロール操作が動作しない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -592,30 +492,16 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2014/04/25
-[番号] 技術ノート KGTN 2014042102
-[現象] [GGH4.X] Windows Server 2012 R2 の環境で IE11 を起動すると，スクロールボタンやマウスホイールによるスクロール操作が動作しない．
-[説明] 技術ノート KGTN 2014041101 を参照して下さい．スクロール操作が動作しない件は，この技術ノートの内容と同じ原因です．
-ファイル KGTN2014042102.pdf [(43.3 KB)] [kitasp 技術センター, 2014/04/25 16:21]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc256/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/problematic_md/doc255/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc255/">[GGH4.X] プリンタドライバが UPD の場合，ページ数が多いと全てのページが印刷されないことがある．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/problematic_md/doc255/">[GGH4.X] プリンタドライバが UPD の場合，ページ数が多いと全てのページが印刷されないことがある．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -632,30 +518,16 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2014/04/25
-[番号] 技術ノート KGTN 2014042301
-[現象] [GGH4.X] プリンタドライバが UPD の場合，ページ数が多いと全てのページが印刷されないことがある．
-[説明] 弊社およびGraphOn社でも，この現象を確認しております．この問題が解決されるまでの間， Preview PDFまたは WPD を使用することで，この問題を運用回避して下さい．
-ファイル KGTN2014042301.pdf [(48 KB)] [kitasp 技術センター, 2014/04/25 18:27]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc255/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/problematic_md/doc257/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc257/">[Windows] Windows Server と Internet Explorer (IE) の対応は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/problematic_md/doc257/">[Windows] Windows Server と Internet Explorer (IE) の対応は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -672,30 +544,16 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2014/04/25
-[番号] 技術ノート KGTN 2014042101
-[現象] [Windows] Windows Server と Internet Explorer (IE) の対応は？
-[説明] Windows Server と Internet Explorer (IE) の対応状況は，下記の通りです （ウィキペディアより） ．
-ファイル KGTN2014042101.pdf [(45.1 KB)] [kitasp 技術センター, 2014/04/25 16:20]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc257/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/problematic_md/doc254/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc254/">[Windows] Windows のシステムプログラム csrss.exe のファイル名は何の略なのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/problematic_md/doc254/">[Windows] Windows のシステムプログラム csrss.exe のファイル名は何の略なのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -712,13 +570,7 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">技術ノート 2014/04/25
-[番号] 技術ノート KGTN 2014042401
-[現象] [Windows] Windows のシステムプログラム csrss.exe のファイル名は何の略なのか？
-[説明] csrss は Client/Server Runtime Subsystem の略称で，Win32サブシステムのユーザーモード側です．
-ファイル KGTN2014042401.pdf [(43.1 KB)] [kitasp 技術センター, 2014/04/25 18:29]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc254/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
@@ -741,80 +593,15 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li>
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

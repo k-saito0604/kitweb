@@ -311,108 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc918/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc918/">[GGW3.2.1/GGH4.X] マウスのホイールボタンをドラッグして，GG上で動作するアプリケーションの外側でボタンを離したところ，スクロール状態が止まらない．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
 
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc918/"><i class="far fa-calendar"></i> 2012-09-21</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2012/09/21*
-[番号] 技術ノート KGTN 2012090701
-[現象] [GGW3.2.1/GGH4.X] マウスのホイールボタンをドラッグして，GG上で動作するアプリケーションの外側でボタンを離したところ，スクロール状態が止まらない．
-[説明] GO-Global for Windows は，サーバ上で動作するアプリケーションとクライアント上で動作するアプリケーションが，画面上に同じように表示されるルースウインドウ方式を採用しております．ルースウインドウ方式では，画面上でのマウス操作の情報を，状況に応じてサーバ側とクライアント側へ送信する必要があり，サーバ上で動作するアプリケーションのウインドウ上にマウスポインタがあればサーバ側へ，クライアント上で動作するアプリケーションのウインドウ上にマウスポインタがあればクライアント側へマウス操作の情報を送信します．
-GGサーバで動作するアプリケーションのウインドウ上でマウスのホイールボタンをドラッグを開始し，その外側でボタンを離した場合， 「ボタンを離した」 というマウス操作の情報はGGサーバではなく，上記動作仕様に基づいてクライアントへ送信されます．この結果，GGサーバに 「ボタンを離した」 というマウス操作の情報が届きませんので，スクロール状態が止まらないという状況が発生します．しかし，これはGGの処理方式に基づいた正常な動作 （仕様） です．
-スクロール状態を止めるには， GG上で動作するアプリケーションのウインドウ上でマウスのホイールボタンをクリックして下さい．この操作により，サーバ側へ 「ボタンを離した」 というマウス操作の情報が送信され，スクロールが終了します．
-補　足 どうしてもGG上で動作するアプリケーションの外側でマウスのホイールボタンを離したいという場合は，GGのクライアントフレーム機能を併用して下さい （技術ノートKGTN#2011090201参照） ．この機能を利用すると，デスクトップと同じサイズのクライアントフレームが表示され，その中にGG上で動作するアプリケーションのウインドウが表示されますので，アプリケーションのウインドウ外でマウスのホイールボタンを離しても，サーバ側へ 「ボタンを離した」 というマウス操作の情報が送信されます （注：クライアントフレームを移動させ，その外側でマウスのホイールボタンを離した場合は， 「ボタンを離した」 というマウス操作の情報は送信されません） ．なお，クライアントフレームのウインドウタイトルの分だけ，描画領域が若干狭くなります．
-ファイル KGTN2012090701.pdf [(381 KB)] [kitasp 技術センター, 2012/09/22 03:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc918/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc919/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc919/">[GGW3.2.1/GGH4.X] 特定のユーザだけプログラム・ウインドウが操作出来ない．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc919/"><i class="far fa-calendar"></i> 2012-09-21</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2012/09/21*
-[番号] 技術ノート KGTN 2012092101
-[現象] [GGW3.2.1/GGH4.X] 特定のユーザだけプログラム・ウインドウが操作出来ない．
-[説明] プログラム・ウインドウ （PW） が操作出来ない場合，主に 1) ログオンしたアカウントの問題， 2) クライアント側に接続されたプリンタの問題 が考えられます．正常にログオン出来ているアカウントを使い，そのクライアント （パソコン） でログオンして下さい．PWが正常に動作すればアカウントに問題がある可能性が高く， PWが操作出来ない場合はクライアント側に接続されたプリンタに問題がある可能性が高いということになります．
-ファイル KGTN2012092101.pdf [(47.9 KB)] [kitasp 技術センター, 2012/09/21 09:46]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc919/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc922/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc922/">[GGH4.0/ClientFrame] クライアントフレーム機能を使用中に ALT-TAB でタスクを切り替え，その後GGの画面に戻るとキー入力やマウス操作が正しく動作しない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc922/">[GGH4.0/ClientFrame] クライアントフレーム機能を使用中に ALT-TAB でタスクを切り替え，その後GGの画面に戻るとキー入力やマウス操作が正しく動作しない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -429,35 +336,16 @@ GGサーバで動作するアプリケーションのウインドウ上でマウ
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/09/20*
-[番号] 技術ノート KGTN 2011110901
-[現象] [GGH4.0/ClientFrame] クライアントフレーム機能を使用中に ALT-TAB でタスクを切り替え，その後GGの画面に戻るとキー入力やマウス操作が正しく動作しない．
-[説明] 対症療法になりますが，GGの画面 （クライアントフレーム） へ復帰に 「ALT-半角/全角キーを2回押下」 することで解消します． この問題は技術的に複雑な背景があるらしく， GraphOn社は認識しておりますが，どのように解決できるのか技術検討中です．従って，当面は下記の方法で対応をお願いします．
-補足１ 次の操作を行うことで，GG上で動作するアプリケーションへのキー入力が可能になります．
-アプリケーションのウインドウをクリックする （アクティブにします） ． ALTキーを押下する （この時点でキー入力が可能になります） ． キー入力を行う．
-補足２ GGH4.0.1.Patch4 のリリースノートによれば修正されたことになっておりますが，しかし試験を行ったところ未だ問題は解消されておりません．現在，継続調査中です． (2012-02-14)
-補足３ GGH4.5.0.13063 で確認したところ，この問題は解消されております．
-ファイル KGTN2011110901.pdf [(73.6 KB)] [kitasp 技術センター, 2012/09/20 13:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc922/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc920/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc920/">[GGH4.X] GGW3.0 ではユーザー プロファイルの作成は必要なかったのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc920/">[GGH4.X] GGW3.0 ではユーザー プロファイルの作成は必要なかったのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -474,31 +362,16 @@ GGサーバで動作するアプリケーションのウインドウ上でマウ
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/09/20*
-[番号] 技術ノート KGTN 2012091801
-[現象] [GGH4.X] GGW3.0 ではユーザー プロファイルの作成は必要なかったのか？
-[説明] 質問の意図が分りませんが，GGはWindowsのログオン機能を使用しますので，ユーザープロファイルの作成は必要です． Microsoft Office 等では，コンソール （デスクトップ） でログオンした時に必要設定が行われますので， 「GGでのログオンに先立ち」 コンソールでログオンするか，または構成済みユーザープロファイルを作成してそれを適用して下さい．
-ファイル KGTN2012091801.pdf [(48.9 KB)] [kitasp 技術センター, 2012/09/20 14:43]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc920/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc921/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc921/">[GGH4.X] iOS 6.0 で iPad/iPhone クライアントは動作するのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc921/">[GGH4.X] iOS 6.0 で iPad/iPhone クライアントは動作するのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -515,31 +388,16 @@ GGサーバで動作するアプリケーションのウインドウ上でマウ
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/09/20*
-[番号] 技術ノート KGTN 2012092002
-[現象] [GGH4.X] iOS 6.0 で iPad/iPhone クライアントは動作するのか？
-[説明] 既にiPad/iPhone クライアントがインストールされている環境を iOS 6.0 にバージョンアップして確認したところ，特に問題なくGGサーバへアクセスすることが出来ました．
-ファイル KGTN2012092002.pdf [(44.4 KB)] [kitasp 技術センター, 2012/09/20 14:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc921/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc923/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc923/">[GGH4.X] クライアントのコンピュータ名で起動できるアプリケーションを制限したい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc923/">[GGH4.X] クライアントのコンピュータ名で起動できるアプリケーションを制限したい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -556,33 +414,16 @@ GGサーバで動作するアプリケーションのウインドウ上でマウ
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/09/20*
-[番号] 技術ノート KGTN 2012092001
-[現象] [GGH4.X] クライアントのコンピュータ名で起動できるアプリケーションを制限したい．
-[説明] 同一アカウントで，接続するクライアント （端末） によって起動できるアプリケーションを制御したいということであれば， Windows のセキュリティ設定等で実現することは困難です．実現可能性があるシナリオとしては，例えば以下の方法が考えられます．
-自前のアプリケーション・ランチャ （GGのプログラム・ウインドウに近い機能） を作成． ランチャは起動時にクライアントのコンピュータ名を取得． コンピュータ名をキーとして予め設定されたデータベースを検索． 「起動可」 の設定があるアプリケーションをアイコンとして表示． アイコンが選択された時，当該アプリケーションを起動．
-また，クライアント側で起動するアプリケーションを 「事前に」 指定できるのであれば，ActiveXクライアントやWindowsクライアントのパラメタで，起動するアプリケーションを明示的に指定する方法も考えられます．
-ファイル KGTN2012092001.pdf [(56.9 KB)] [kitasp 技術センター, 2012/09/20 09:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc923/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc926/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc926/">[GGH4.5] GGH4.5 のクライアントの動作環境にサーバOSが無い．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc926/">[GGH4.5] GGH4.5 のクライアントの動作環境にサーバOSが無い．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -599,31 +440,16 @@ GGサーバで動作するアプリケーションのウインドウ上でマウ
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/09/18*
-[番号] 技術ノート KGTN 2012091901
-[現象] [GGH4.5] GGH4.5 のクライアントの動作環境にサーバOSが無い．
-[説明] GGW3.2.1およびGGH4.0 ではクライアントの動作環境にサーバOS （WS2003やWS2008） がありましたが，GGH4.5からサーバOS （WS2003やWS2008） が除外されました．これは 「動作しない」 という意味ではなく，「恐らく動作すると思うが，GraphOn社の品質保証チームは （経営判断に基づき） 検証を行っていない」 ということによる除外です．
-ファイル KGTN2012091901.pdf [(48.5 KB)] [kitasp 技術センター, 2012/09/19 07:17]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc926/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2708/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2708/">[GGH4.X] ActiveXクライアントのインストールで， vcredist_x86.exe が起動されたところで止まる．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2708/">[GGH4.X] ActiveXクライアントのインストールで， vcredist_x86.exe が起動されたところで止まる．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -640,32 +466,16 @@ GGサーバで動作するアプリケーションのウインドウ上でマウ
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/09/18*
-[番号] 技術ノート KGTN 2011103101
-[現象] [GGH4.X] ActiveXクライアントのインストールで， vcredist_x86.exe が起動されたところで止まる．
-[説明] ActiveXクライアントをインストールするマシンのセキュリティ設定の内容によっては， vcredist_x86.exe が起動されたところで止まる報告があります． GGH4.X のActiveXクライアントは，実行に必要な Microsoft Visual C++ 再頒布可能パッケージをインストールしますが，クライアントのセキュリティ設定の内容によっては， （GGのActiveXクライアントに限らず） このパッケージのインストールが途中で止まることがあるようです．弊社では， vcredist_x86.exe のインストールを行わないActiveXクライアントを用意しておりますので，代理店または弊社技術支援センターまでお問い合わせ下さい．
-補　足 GraphOn社に確認したところ &ldquo;We have never seen a problem with this. Could you provide more details on what is occurring that points to vcredist_x86.exe as being a problem?&rdquo; ということで，ワールドワイドでそのような報告は無いということでした．インターネット上には，他ソフトウエアで vcredist_x86.exe がインストール出来ないという報告がありますので，本質的にはGG以外の問題だと考えられます．
-ファイル KGTN2011103101.pdf [(69.5 KB)] [kitasp 技術センター, 2015/10/01 11:39]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2708/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc924/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc924/">[iPad/Android Client] PC版のクライアントとiPad/Android版のクライアントのキーボード操作の差異は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc924/">[iPad/Android Client] PC版のクライアントとiPad/Android版のクライアントのキーボード操作の差異は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -682,31 +492,16 @@ GGサーバで動作するアプリケーションのウインドウ上でマウ
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/09/18*
-[番号] 技術ノート KGTN 2012091902
-[現象] [iPad/Android Client] PC版のクライアントとiPad/Android版のクライアントのキーボード操作の差異は？
-[説明] PC版のクライアントはキートップに割り当てられたキーコード （キー番号） を送信しますが，iPad/Android版は物理的なキーボードが無く，かつローカルのIMEを利用するため文字コードを送信します．この差異は通常のアプリケーションでは問題ありませんが，リモート接続を行うクライアント・アプリケーション等ではキーコードを前提としていますので，キーボード操作が出来ないと言った現象が発生します．このような場合は，GGサーバ上に OSK.EXE （スクリーンキーボード） を登録し，そのキーボードを操作して下さい．
-ファイル KGTN2012091902.pdf [(55.6 KB)] [kitasp 技術センター, 2012/09/19 08:53]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc924/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc928/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc928/">[GGH4.5] GO-Global for Windows 4.5 がサポートするサーバOSは？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc928/">[GGH4.5] GO-Global for Windows 4.5 がサポートするサーバOSは？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -723,15 +518,59 @@ GGサーバで動作するアプリケーションのウインドウ上でマウ
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/09/13*
-[番号] 技術ノート KGTN 2012091401
-[現象] [GGH4.5] GO-Global for Windows 4.5 がサポートするサーバOSは？
-[説明] 以下のサーバOS環境をサポートします．
-■64ビット環境 (x64) Windows Server 2008 R2 with Service Pack 1 - Standard or Enterprise Edition Windows Server 2008 with Service Pack 2 - Standard or Enterprise Edition
-■32ビット環境 (x86) Windows Server 2008 with Service Pack 2 - Standard or Enterprise Edition Windows Server 2003 R2 with Service Pack 2 - Standard or Enterprise Edition Windows Server 2003 with Service Pack 2 - Standard or Enterprise Edition</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc928/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc929/">[GGH4.X] Linux クライアントは，マルチモニタ環境 （-mm 1） をサポートしているのか？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc929/"><i class="far fa-calendar"></i> 2012-09-13</a>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc927/">[OS] GGがサポートするクライアント側の Windows 環境は？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc927/"><i class="far fa-calendar"></i> 2012-09-13</a>
+                                        </p>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -754,80 +593,15 @@ GGサーバで動作するアプリケーションのウインドウ上でマウ
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li class="active">
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

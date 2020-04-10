@@ -311,106 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1355/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1355/">エンタープライズオプションの GGServiceMonitor でGGのライセンスマネージャのサービス GO-Global License Manager が見つからない．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
 
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1355/"><i class="far fa-calendar"></i> 2011-06-20</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/06/20*
-[番号] 技術ノート KGTN 2011062002
-[現象] エンタープライズオプションの GGServiceMonitor でGGのライセンスマネージャのサービス GO-Global License Manager が見つからない．
-[説明] GGのライセンスマネージャのサービスの名称の末尾に，半角のスペースがあるためです．お手数ですが，サービス名を以下のように指定して下さい．
-ServiceName = &ldquo;GO-Global License Manager &quot; （名称の末尾に半角のスペース）
-ファイル KGTN2011062002.pdf [(47.6 KB)] [kitasp 技術センター, 2011/06/20 14:26]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1355/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1356/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1356/">エンタープライズオプションの GMService の restartInterval の使い方 （意味） が分らない．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1356/"><i class="far fa-calendar"></i> 2011-06-20</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/06/20*
-[番号] 技術ノート KGTN 2011062001
-[現象] エンタープライズオプションの GMService の restartInterval の使い方 （意味） が分らない．
-[説明] サービスで指定されたプロセスが開始し，例えば20秒後に異常終了したとします． restartInterval の値が30秒の場合は，プロセスは異常終了から10秒後 （30 ? 20秒後） に再度開始されます．プロセスが終了してから （常に） 30秒後に再度開始されるという機能ではありません．
-ファイル KGTN2011062001.pdf [(48.7 KB)] [kitasp 技術センター, 2011/06/20 10:21]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1356/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1359/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1359/">リバースプロキシサーバを使ってGGを運用することは可能か？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1359/">リバースプロキシサーバを使ってGGを運用することは可能か？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -427,31 +336,16 @@ ServiceName = &ldquo;GO-Global License Manager &quot; （名称の末尾に半�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/06/15*
-[番号] 技術ノート KGTN 2011061501
-[現象] リバースプロキシサーバを使ってGGを運用することは可能か？
-[説明] ここで言うリバースプロキシサーバの運用が 「キャッシュ機能を利用してパフォーマンスを向上させたい」 という意味であれば，そのような運用は出来ません．GGのセッション （通信） はウエッブに類似した処理ではなく， Telnet や SSH と類似した処理ですので，キャッシュ機能等は利用できません．検討に当たっては，行いたい運用が 「Telnet でも利用できるか？」 とお考え頂くのが良いでしょう．
-ファイル KGTN2011061501.pdf [(49.8 KB)] [kitasp 技術センター, 2011/06/15 10:08]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1359/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1360/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1360/">下記のエビデンスのように，GGを介さない場合と，GGを介する場合で結果が異なる．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1360/">下記のエビデンスのように，GGを介さない場合と，GGを介する場合で結果が異なる．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -468,31 +362,16 @@ ServiceName = &ldquo;GO-Global License Manager &quot; （名称の末尾に半�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/06/09*
-[番号] 技術ノート KGTN 2011060901
-[現象] 下記のエビデンスのように，GGを介さない場合と，GGを介する場合で結果が異なる．
-[説明] 左の画面は （恐らく） Windows XP 等のクライアントで実行された結果だと推測します．右の画面は （恐らく） Windows Server 2003 上で動作するGG環境で実行された結果だと推測します．異なるOS異なるブラウザで実行した結果に差違があっても，それがGGの問題とは言えません．この例で比較するのであれば，GGサーバのコンソールに直接ログオンし，その環境での実行結果と比較して下さい．
-ファイル KGTN2011060901.pdf [(138 KB)] [kitasp 技術センター, 2011/06/09 12:28]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1360/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1361/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1361/">[GGH4.0] GGW3.2とアーキテクチャが違うとはどういうことか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1361/">[GGH4.0] GGW3.2とアーキテクチャが違うとはどういうことか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -509,32 +388,16 @@ ServiceName = &ldquo;GO-Global License Manager &quot; （名称の末尾に半�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/05/30*
-[番号] 技術ノート KGTN 2011053002
-[現象] [GGH4.0] GGW3.2とアーキテクチャが違うとはどういうことか？
-[説明] さまざまな機能のアーキテクチャが変更されておりますが，根幹部分で言えば Windows とのインタフェースがノウハウの蓄積等により単純化され，x86 および x64 のアプリケーションの互換性がより高まっております．
-GO‐Global Windows Host 4.0 has a simpler interface to the operating system, providing enhanced compatibility with both x86 and x64 applications.
-ファイル KGTN2011053002.pdf [(55.3 KB)] [kitasp 技術センター, 2011/05/30 14:55]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1361/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1362/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1362/">[GGW3.2] PWのアイコンを Auto Arrange → By Name で整列させたが，ログオフ → ログオンするとその順序で並ばない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1362/">[GGW3.2] PWのアイコンを Auto Arrange → By Name で整列させたが，ログオフ → ログオンするとその順序で並ばない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -551,31 +414,16 @@ GO‐Global Windows Host 4.0 has a simpler interface to the operating system, pr
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/05/30*
-[番号] 技術ノート KGTN 2011053001
-[現象] [GGW3.2] PWのアイコンを Auto Arrange → By Name で整列させたが，ログオフ → ログオンするとその順序で並ばない．
-[説明] 弊社の標準環境で確認しましたが，ログオフ → ログオンしてもログオフ直前の順序でアイコンが並びました．もし本当に並ばないのであれば，移動プロファイルの書き戻し処理が正常に行われず，アイコンの情報が失われたと考えられます．移動プロファイルの書き戻しが正しく行われているか，確認をお願いします．
-ファイル KGTN2011053001.pdf [(51.5 KB)] [kitasp 技術センター, 2011/05/30 14:45]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1362/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1365/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1365/">[GGC4.0] GO-Global Cloud に必要なライセンスは？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1365/">[GGC4.0] GO-Global Cloud に必要なライセンスは？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -592,31 +440,16 @@ GO‐Global Windows Host 4.0 has a simpler interface to the operating system, pr
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/05/24*
-[番号] 技術ノート KGTN 2011052406
-[現象] [GGC4.0] GO-Global Cloud に必要なライセンスは？
-[説明] GO-Global Cloud へログオン時はライセンスは必要ありません． GO-Global Cloud を介して GO-Global Server へログオンする時に cloud server license が必要になります．
-ファイル KGTN2011052406.pdf [(50.6 KB)] [kitasp 技術センター, 2011/05/24 15:04]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1365/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1363/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1363/">[GGC4.0] GO-Global Cloud のから GG Server へアクセスする時に必要なことは？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1363/">[GGC4.0] GO-Global Cloud のから GG Server へアクセスする時に必要なことは？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -633,31 +466,16 @@ GO‐Global Windows Host 4.0 has a simpler interface to the operating system, pr
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/05/24*
-[番号] 技術ノート KGTN 2011052408
-[現象] [GGC4.0] GO-Global Cloud のから GG Server へアクセスする時に必要なことは？
-[説明] GO-Global Cloud から GO-Global Server へアクセスする場合は， GG Server に Cloud Connector をインストールする必要があります．インストール時には， GG Cloud のアドレス, ユーザＩＤ （つまりadmin）, パスワード （GG Cloud のインストール時に指定したもの） が必要になります．
-ファイル KGTN2011052408.pdf [(44.9 KB)] [kitasp 技術センター, 2011/05/24 15:31]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1363/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1367/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1367/">[GGC4.0] GO-Global Cloud のインストール時に指定するパスワードは何か？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1367/">[GGC4.0] GO-Global Cloud のインストール時に指定するパスワードは何か？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -674,31 +492,16 @@ GO‐Global Windows Host 4.0 has a simpler interface to the operating system, pr
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/05/24*
-[番号] 技術ノート KGTN 2011052404
-[現象] [GGC4.0] GO-Global Cloud のインストール時に指定するパスワードは何か？
-[説明] インストール時に指定するパスワードは， Cloud サーバ, Apache Tomcat, PostgreSQL の管理者のパスワードになります．
-ファイル KGTN2011052404.pdf [(42.2 KB)] [kitasp 技術センター, 2011/05/24 14:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1367/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1364/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1364/">[GGC4.0] GO-Global Cloud のライセンスがチェックアウトされるタイミングは？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1364/">[GGC4.0] GO-Global Cloud のライセンスがチェックアウトされるタイミングは？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -715,14 +518,59 @@ GO‐Global Windows Host 4.0 has a simpler interface to the operating system, pr
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/05/24*
-[番号] 技術ノート KGTN 2011052407
-[現象] [GGC4.0] GO-Global Cloud のライセンスがチェックアウトされるタイミングは？
-[説明] GO-Global Cloud から GO-Global Server へログオンする時に， GG Server と GG Cloud のライセンスがそれぞれチェックアウトされます．
-ファイル KGTN2011052407.pdf [(41.7 KB)] [kitasp 技術センター, 2011/05/24 15:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1364/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1366/">[GGC4.0] GO-Global Cloud の管理者のユーザIDは？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1366/"><i class="far fa-calendar"></i> 2011-05-24</a>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1368/">[GGC4.0] GO-Global Cloud は，どんなソフトウエアから構成されているのか？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1368/"><i class="far fa-calendar"></i> 2011-05-24</a>
+                                        </p>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -745,80 +593,15 @@ GO‐Global Windows Host 4.0 has a simpler interface to the operating system, pr
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li class="active">
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

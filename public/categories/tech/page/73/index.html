@@ -311,106 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2508/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2508/">[GGH5.X] ActiveXクライアントを利用する場合，従来は http://192.168.102.89/logon.html だったが，Ver5.0では http://192.168.102.89/goglobal/logon.html ではとなっている．仕様が変わったのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
 
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2508/"><i class="far fa-calendar"></i> 2016-06-22</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061502
-[現象] [GGH5.X] ActiveXクライアントを利用する場合，従来は http://192.168.102.89/logon.html だったが，Ver5.0では http://192.168.102.89/goglobal/logon.html ではとなっている．仕様が変わったのか？
-[説明] 従来のインストーラーでは IIS の環境設定 （ログオンページの設定） を行っておりませんでしたが，Ver5.0等のインストーラーではこの設定を自動で行うようになりました．これをトップのページに設定すると他アプリケーションの設定を壊す可能性がありますので，インストーラーは仮想ディレクトリ goglobal を付加しております．
-従来のようにトップのページでの運用を行いたい場合は， IIS の管理画面でWebサイトを追加し，物理パス &lt;GGのインストールフォルダ&gt;GO-GlobalWeb を指定して下さい．
-ファイル KGTN2016061502.pdf [(63.7 KB)] [kitasp 技術センター, 2016/06/22 11:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2508/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2500/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2500/">[GGH5.X] logon.html でアプリケーション名およびその引数を指定する方法は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2500/"><i class="far fa-calendar"></i> 2016-06-22</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061508
-[現象] [GGH5.X] logon.html でアプリケーション名およびその引数を指定する方法は？
-[説明] logon.html の26行目と43行目のコメントを外して （//を削除する） ，下記のように controlArgs.set の第２引数で値を指定して下さい．
-&lt;script language=javascript&gt; // To specify startup parameters, add controlArgs.set() for each parameter. … controlArgs.set([ &quot;app&quot;, &quot;Notepad&quot; ]); ← アプリケーション名 … controlArgs.set([ &quot;args&quot;, &quot;test.txt&quot; ]); ← 引数  ファイル KGTN2016061508.pdf [(56.8 KB)] [kitasp 技術センター, 2016/06/22 11:53]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2500/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2506/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2506/">[GGH5.X] logon.html でサーバーのIPアドレスおよびポート番号を指定する方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2506/">[GGH5.X] logon.html でサーバーのIPアドレスおよびポート番号を指定する方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -427,31 +336,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061504
-[現象] [GGH5.X] logon.html でサーバーのIPアドレスおよびポート番号を指定する方法は？
-[説明] logon.html の27行目と31行目のコメントを外して （//を削除する） ，下記のように controlArgs.set の第２引数で値を指定して下さい．
-&lt;script language=javascript&gt; // To specify startup parameters, add controlArgs.set() for each parameter. … controlArgs.set([ &quot;port&quot;, &quot;443&quot; ]); ← ポート番号 … controlArgs.set([ &quot;host&quot;, &quot;192.168.102.89&quot; ]); ← IP アドレス  ファイル KGTN2016061504.pdf [(57.8 KB)] [kitasp 技術センター, 2016/06/22 11:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2506/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2507/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2507/">[GGH5.X] logon.html でユーザーIDおよびパスワードを指定する方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2507/">[GGH5.X] logon.html でユーザーIDおよびパスワードを指定する方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -468,31 +362,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061503
-[現象] [GGH5.X] logon.html でユーザーIDおよびパスワードを指定する方法は？
-[説明] logon.html の20～21行目のコメントを外して （//を削除する） ，下記のように controlArgs.set の第２引数で値を指定して下さい．
-&lt;script language=javascript&gt; // To specify startup parameters, add controlArgs.set() for each parameter. // controlArgs.set([ &quot;user&quot;, &quot;Administrator&quot; ]); controlArgs.set([ &quot;password&quot;, &quot;myPass&quot; ]); // controlArgs.set([ &quot;embed&quot;, &quot;false&quot; ]);  ファイル KGTN2016061503.pdf [(55.2 KB)] [kitasp 技術センター, 2016/06/22 11:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2507/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2499/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2499/">[GGH5.X] logon.html の内容はVer4.8と同じか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2499/">[GGH5.X] logon.html の内容はVer4.8と同じか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -509,32 +388,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061601
-[現象] [GGH5.X] logon.html の内容はVer4.8と同じか？
-[説明] いいえ，Ver5.0の logon.html は，Ver4.8 の logon.html と全く異なります．Ver5.0 では一般ユーザー向けクライアントがサポートされたため，これに対応するように logon.html の処理も完全に書き換えられました （参考： 処理の本体は logon.js に移っております） ．従って，Ver5.0へアップグレードする時は，ログオン用のウエッブページも必ずアップグレードして下さい．
-なお，GGサーバー上でウエッブサーバー （IIS） の運用が行われている場合は，GGの上書きインストールによって，ウエッブページの内容も自動的にVer5.0へアップグレードされます．
-ファイル KGTN2016061601.pdf [(57.9 KB)] [kitasp 技術センター, 2016/06/22 11:53]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2499/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2489/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2489/">[GGH5.X] logon.html の処理開始時の大まかな流れを知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2489/">[GGH5.X] logon.html の処理開始時の大まかな流れを知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -551,31 +414,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061701
-[現象] [GGH5.X] logon.html の処理開始時の大まかな流れを知りたい．
-[説明] Ver5.0 の logon.html の処理開始時の大まかな流れは，以下の通りです．
- logon.html がロードされる． logon.js がロードされる． version.jp がロードされる． logon.html 中の controlArgs.set() が実行される （パラメタの既定値の設定） ． logon.js 中の init() が実行される （&ldquo;window.onload = init;&rdquo; により） ．  ファイル KGTN2016061701.pdf [(56.2 KB)] [kitasp 技術センター, 2016/06/22 13:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2489/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2488/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2488/">[GGH5.X] Ver4.8 の logon.html では OBJECT タグを document.write で出力しているが，Ver5.0 の logon.html (logon.js) ではそのような箇所が見つからない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2488/">[GGH5.X] Ver4.8 の logon.html では OBJECT タグを document.write で出力しているが，Ver5.0 の logon.html (logon.js) ではそのような箇所が見つからない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -592,32 +440,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061702
-[現象] [GGH5.X] Ver4.8 の logon.html では OBJECT タグを document.write で出力しているが，Ver5.0 の logon.html (logon.js) ではそのような箇所が見つからない．
-[説明] 基本的な処理方式が変更されており，Ver5.0 の logon.js の下記の箇所で等価な処理が行われております．
-// OBJECT タグを作成 var newControl = document.createElement(&quot;object&quot;); newControl.id = RAPIDX_CONTROL_NAME; newControl.name = RAPIDX_CONTROL_NAME; newControl.classid = RAPIDX_PLUGIN_CLASS_ID; newControl.alt = RAPIDX_PLUGIN_NAME; newControl.setAttribute(&quot;codebase&quot;, RAPIDX_PLUGIN_CODEBASE); // 子供（PARAM タグ）を追加 writeURLVars(newControl, &quot;object&quot;); // OBJECT タグを logon.html のフレームに追加 var frame = document.getElementById('controlFrame'); frame.appendChild(newControl);  frame.innerHTML の内容例 （window.alert で出力）
-ファイル KGTN2016061702.pdf [(139 KB)] [kitasp 技術センター, 2016/06/22 13:27]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2488/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2503/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2503/">[GGH5.X] Ver5.0の logon.html でキーボードの種類 （IMEの種類） を明示的に指定する方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2503/">[GGH5.X] Ver5.0の logon.html でキーボードの種類 （IMEの種類） を明示的に指定する方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -634,33 +466,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061507
-[現象] [GGH5.X] Ver5.0の logon.html でキーボードの種類 （IMEの種類） を明示的に指定する方法は？
-[説明] 日本語キーボードを指定する場合は， logon.html の42行目を次のように修正して下さい．
-controlArgs.set([ &quot;keyboard&quot;, &quot;00000411&quot; ]);  英語キーボードを指定する場合は， logon.html の42行目を次のように修正して下さい．
-controlArgs.set([ &quot;keyboard&quot;, &quot; 00000409&quot; ]);  なお，どちらの場合も行頭の &ldquo;//&rdquo; の削除を忘れないで下さい．
-ファイル KGTN2016061507.pdf [(55 KB)] [kitasp 技術センター, 2016/06/22 11:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2503/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2498/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2498/">[GGH5.X] Ver5.0のクライアントのインストーラーはどこにあるのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2498/">[GGH5.X] Ver5.0のクライアントのインストーラーはどこにあるのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -677,32 +492,16 @@ controlArgs.set([ &quot;keyboard&quot;, &quot; 00000409&quot; ]);  なお，ど�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061602
-[現象] [GGH5.X] Ver5.0のクライアントのインストーラーはどこにあるのか？
-[説明] フォルダ &lt;GGのインストールフォルダ&gt;GO-GlobalWebClients の中にあります．
- gg-client.chrome.exe Google Chrome 向けクライアント gg-client.desktop.exe Windows 向けクライアント （一般ユーザー用） gg-client.firefox.exe Mozilla Firefox 31 (ESR) 向けクライアント gg-client.ie.exe Internet Explorer 10.0 and 11.0 (32-bit) 向けクライアント gg-client.linux.deb Ubuntu 12.04 LTS (64-bit) 向けクライアント gg-client.linux.rpm Red Hat Enterprise Linux 5 and 6 (64-bit) 向けクライアント gg-client.mac.dmg Mac OS X 10.6 and later向けクライアント gg-client.windows.exe Windows 向けクライアント （主に組込み用） gg-client.windows.msi Windows 向けクライアント （主にADでの配布用）
- ファイル KGTN2016061602.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2498/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2497/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2497/">[GGH5.X] Windows環境でGGを利用中に操作不能となり，暫くすると利用中のアプリケーションが消えた．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2497/">[GGH5.X] Windows環境でGGを利用中に操作不能となり，暫くすると利用中のアプリケーションが消えた．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -719,16 +518,59 @@ controlArgs.set([ &quot;keyboard&quot;, &quot; 00000409&quot; ]);  なお，ど�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/06/22*
-[番号] 技術ノート KGTN 2016061603
-[現象] [GGH5.X] Windows環境でGGを利用中に操作不能となり，暫くすると利用中のアプリケーションが消えた．
-[説明] ネットワークの障害でサーバーとクライアント間の接続が切れた可能性が考えられます．一時的な接続不良で あれば，Ver5.X のクライアントは自動的に再接続を試みます （約2分間） ．なお，セッション再接続機能が有効となるには，クラスタマネージャで Disconnected sessions terminate の値が Never または After ? minutes に設定されている必要があります （注：この設定はGGサーバーの管理者が行います） ．
-ファイル KGTN2016061603.pdf [(68.3 KB)] [kitasp 技術センター, 2016/06/22 12:02]
-KGTN2016061603.jpg
-表示 [(8.62 KB)] [kitasp 技術センター, 2016/06/22 12:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2497/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2494/">[GGH5.X] Windows環境のVer5.0の一般ユーザー向けクライアントは，従来のクライアントとどのような点が違うのか？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2494/"><i class="far fa-calendar"></i> 2016-06-22</a>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2185/">[GGH5.X] Windows環境のセッション自動再接続機能は，デフォルト値で何回再接続を試みるのか？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2185/"><i class="far fa-calendar"></i> 2016-06-22</a>
+                                        </p>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -751,80 +593,15 @@ KGTN2016061603.jpg
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li class="active">
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

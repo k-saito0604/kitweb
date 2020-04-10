@@ -311,110 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1693/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1693/">プラグイン LaunchBrowser を使ってファイルをダウンロードさせるサーバ側のプログラムはないのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
 
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1693/"><i class="far fa-calendar"></i> 2010-07-22</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/07/22*
-[番号] 技術ノート KGTN 2010072202
-[現象] プラグイン LaunchBrowser を使ってファイルをダウンロードさせるサーバ側のプログラムはないのか？
-[説明] サーバ側のプログラムの処理の概要とVC++2008 でのサンプルコードを以下に示します．
-ファイル選択ダイアログを表示 選択されたファイルをウエッブサーバのドキュメントフォルダへコピー そのファイルをダウンロードするURLを生成 LaunchBrowserI.dll をロード LaunchBrowser のアドレスを取得 LaunchBrowser( , &lt;URLの長さを保持するDWORD変数のポインタ&gt;)　をコール FreeLibrary でLaunchBrowserI.dll を開放
-void CGMFileDownloadDlg::OnBnClickedOk() { TCHAR tFilePath[nBufferSize+1],tFileCopy[nBufferSize+1],tFileName[nBufferSize+1]; TCHAR tBuf[nBufferSize+1]; char cBuf[nBufferSize+1]; DWORD dTemp; size_t CharactersConverted = 0;
-m_filePath.GetWindowTextW(tFilePath,(sizeof(tFilePath)/sizeof(tFilePath[0]))); GetFileTitle(tFilePath,tFileName,nBufferSize); _stprintf_s(tFileCopy,_T(&quot;%s¥¥%s&quot;),opt_copyDir,tFileName); CopyFile(tFilePath,tFileCopy,FALSE); _stprintf_s(tBuf,opt_downloadURL,tFileName); //--- HMODULE hMod = NULL; LaunchBrowser func = NULL; if(!hMod) { hMod = LoadLibrary(_T (&quot;LaunchBrowserI.dll&quot;)); } if(hMod) { func = (LaunchBrowser)GetProcAddress(hMod,&quot;LaunchBrowser&quot;); } _stprintf_s(tBuf,opt_downloadURL,tFileName); wcstombs_s(&amp;CharactersConverted,cBuf,sizeof(cBuf),tBuf,_TRUNCATE); dTemp = strlen(cBuf); (*func)((LPTSTR)cBuf,&amp;dTemp); FreeLibrary(hMod); }  ファイル KGTN2010072202.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1693/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1696/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1696/">GGのプラグイン LaunchBrowser の目的は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1696/"><i class="far fa-calendar"></i> 2010-07-21</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/07/21*
-[番号] 技術ノート KGTN 2010072103
-[現象] GGのプラグイン LaunchBrowser の目的は？
-[説明] GO-Global for Windows Ver3.X にはサーバ側のドライブだけでなくクライアント側のドライブにアクセスできる機能 「クライアントドライブ機能」 がありますが，制限事項として19MBを越えるファイルをコピーすることが出来ません （参考 KGTN#2009091501） ．そこで，19MBを越える大きなファイルをダウンロードする方法として，ブラウザのファイルダウンロード機能を利用する方法が考えられますが，利用者にダウンロードの度にブラウザを起動して，ダウンロードサイトのURLを入力させるのは現実的ではありません．この問題を解決するために，プラグイン LaunchBrowser を作成しました．サーバ側で動作するアプリケーションが下記のようなコードを呼び出すことで，利用者の介在無しに
- クライアント側のブラウザが自動的に起動され， 2) 引数で指定したURLへ自動的にアクセスします．  Private Declare Function LaunchBrowser Lib _ &ldquo;C:¥GraphOn¥DLL¥LaunchBrowserI.dll&rdquo; _ (ByVal lpBuffer As String, nSize As Long) As Long &hellip; sUrl = lLen = Len(sUrl) Ret = LaunchBrowser(sUrl, lLen)
-プラグイン LaunchBrowser とウエッブサーバを利用することで，例えば100MBを越える大きなファイルも効率的にダウンロードすることが可能になります．
-参　考 本技術ノートに関連する情報として，以下の技術ノートがあります．
-KGTN#2010061403 GGのプラグイン LaunchBrowser で，クライアント側のブラウザを起動する時のインタフェースは？ KGTN#2010061404 GGのプラグイン LaunchBrowser で障害が発生した場合の切り分けは？ KGTN#2010063001 プラグイン LaunchBrowser を使って，他のプログラムを起動したい． KGTN#2010063002 プラグイン LaunchBrowser をインストールしたクライアントでGGサーバを利用している時， 「例えば」 クライアントのメモ帳を開きキーボードを押下すると &ldquo;コンポーネントが見つかりません - cs.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1696/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1697/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1697/">GO-Global Windows Host 4.0 がサポートするサーバOSは？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1697/">GO-Global Windows Host 4.0 がサポートするサーバOSは？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -431,32 +336,16 @@ KGTN#2010061403 GGのプラグイン LaunchBrowser で，クライアント側�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/07/21*
-[番号] 技術ノート KGTN 2010072102
-[現象] GO-Global Windows Host 4.0 がサポートするサーバOSは？
-[説明] 以下のサーバOS環境をサポートします．
-■64ビット環境 Windows Server 2008 R2 Standard or Enterprise Edition (x64) Windows Server 2008 Standard or Enterprise Edition with Service Pack 2 (x64)
-■32ビット環境 Windows Server 2008 Standard or Enterprise Edition with Service Pack 2 (x86) Windows Server 2003 R2 Standard or Enterprise Edition (x86) Windows Server 2003 Standard or Enterprise Edition with Service Pack 2 (x86)</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1697/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1699/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1699/">Windows Server 2008 の環境で，エクスプローラーを使ってクライアントドライブへファイルをコピー出来ない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1699/">Windows Server 2008 の環境で，エクスプローラーを使ってクライアントドライブへファイルをコピー出来ない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -473,35 +362,16 @@ KGTN#2010061403 GGのプラグイン LaunchBrowser で，クライアント側�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/07/21*
-[番号] 技術ノート KGTN 2010072002
-[現象] Windows Server 2008 の環境で，エクスプローラーを使ってクライアントドライブへファイルをコピー出来ない．
-[説明] Windows Server 2008 の環境では，エクスプローラーはサポートされません．
-補足1 下記のページの方法で， Windows NT 4.0 の File Manager をGGに登録すると，操作性は良くありませんがファイルのコピーが出来ることを確認しました．
-http://people.ee.ethz.ch/‾davidsch/vistafm/{.external}
-なお，この実験はサーバのUACをオフにして，クライアントのIEを 「管理者として実行」 で起動しました．その他については，継続調査中です．
-補足2 CopyFile関数でサーバ側のファイルをクライアント側へコピーするプログラムを作成 （VC++ 2008 を使用） したところ，ファイルは正しくコピーされました．従って， 「エクスプローラーでなく」 CopyFile関数でファイルをコピーする場合は，コピー出来ないという問題は発生しません．なお，クライアント側からサーバ側へコピーする場合は，0バイトのファイルが作成されます．
-ファイル KGTN2010072002.pdf [(61.7 KB)] [kitasp 技術センター, 2010/07/21 09:24]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1699/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1698/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1698/">Windows Server 2008 の環境で，コンピュータの視覚効果 （テーマ） 等を設定しても，GG上で動作するアプリケーションに反映されない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1698/">Windows Server 2008 の環境で，コンピュータの視覚効果 （テーマ） 等を設定しても，GG上で動作するアプリケーションに反映されない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -518,31 +388,16 @@ http://people.ee.ethz.ch/‾davidsch/vistafm/{.external}
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/07/21*
-[番号] 技術ノート KGTN 2010072101
-[現象] Windows Server 2008 の環境で，コンピュータの視覚効果 （テーマ） 等を設定しても，GG上で動作するアプリケーションに反映されない．
-[説明] コンピュータの視覚効果 （テーマ） 等は，グラフィックチップの能力に頼って画面を描画していますので，ネットワークを介して描画するGG環境では，その機能が要求する十分な描画パフォーマンスを得ることが出来ません．このようなことから，GG環境ではコンピュータの視覚効果 （テーマ） 等の設定は反映されません．
-ファイル KGTN2010072101.pdf [(48.8 KB)] [kitasp 技術センター, 2010/07/21 09:45]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1698/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1695/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1695/">エンタープライズオプションのプログラム GMFileProc の目的は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1695/">エンタープライズオプションのプログラム GMFileProc の目的は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -559,36 +414,16 @@ http://people.ee.ethz.ch/‾davidsch/vistafm/{.external}
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/07/21*
-[番号] 技術ノート KGTN 2010072104
-[現象] エンタープライズオプションのプログラム GMFileProc の目的は？
-[説明] GGサーバの状態を管理する方法として，セッション監視SDKの GMCheck でGGサーバの情報を取得し，その情報を直接DBへ登録する処理が考えられます．正常系のみを考えれば，この方式は単純で効率も良いのですが，大規模案件では想定外の様々な障害が発生しますので，このような方式では問題点の切り分けが難しいという大きな欠点があります （例: 多くのGGサーバがDBのレコードを更新するため，DBで異常が発生した場合，その契機の発見が難しい） ．
-このようなことから，障害発生時に確実に問題点を発見できるように，以下のような処理を行います．
-セッション監視SDKの GMCheck 等でGGサーバの状態をファイルに記録 状態が記録されたファイルをDB登録用共有フォルダへコピー 共有フォルダ中のファイルを順にDBへ登録 登録が完了したファイルをバックアップフォルダへ移動
-各時点でのGGサーバの状態はファイルに記録され，そのファイルの情報は１箇所でDBへ反映され，さらにバックアップフォルダへ保存されますので，障害発生後にファイルを解析することで問題点を発見することが可能になります．プログラム GMFileProc は，この処理の中でファイルの管理を行うプログラムで，以下のような機能を受け持ちます．
-DB登録用共有フォルダ中のファイルを順にピックアップ ピックアップしたファイルをDB登録用プログラムを呼び出してDBへ情報を登録 登録が完了したファイルをバックアップフォルダへ移動 バックアップフォルダ中の古いファイルを削除 OSの異常等に備えて処理した内容をトレースログやイベントログに記録
-これ以外にも，ネットワークやサーバが過負荷でファイルが滞留した時に備え，古いファイルをスキップする等の機能も持っています．
-ファイル KGTN2010072104.pdf [(73 KB)] [kitasp 技術センター, 2010/07/21 14:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1695/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1700/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1700/">GMFileProc の設定情報 progBefore と progAfter は，どのようなシナリオで使うのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1700/">GMFileProc の設定情報 progBefore と progAfter は，どのようなシナリオで使うのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -605,32 +440,16 @@ DB登録用共有フォルダ中のファイルを順にピックアップ ピ�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/07/20*
-[番号] 技術ノート KGTN 2010072001
-[現象] GMFileProc の設定情報 progBefore と progAfter は，どのようなシナリオで使うのか？
-[説明] ファイルの内容をデータベースに登録するような処理では，設定情報progPathで指定するプログラムがファイル毎にDBへの接続を繰り返します．DBへの接続は負荷の高い処理ですので，以下のように progBefore と progAfter を利用することで，１回のDB接続で処理をさせることが可能になります．
-progBefore ： データを蓄積する作業ファイルをクリア progPath ： 登録するデータを作業ファイルに追加 progAfter ： DBへ接続後，作業ファイルの内容を連続してDBへ登録
-ファイル KGTN2010072001.pdf [(51.9 KB)] [kitasp 技術センター, 2010/07/20 09:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1700/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1701/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1701/">プラグイン LaunchBrowser を使ってファイルをダウンロードさせたいが，ウエッブサーバのドキュメント外に置かれたファイルをダウンロードさせることは可能か？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1701/">プラグイン LaunchBrowser を使ってファイルをダウンロードさせたいが，ウエッブサーバのドキュメント外に置かれたファイルをダウンロードさせることは可能か？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -647,31 +466,16 @@ progBefore ： データを蓄積する作業ファイルをクリア progPath �
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/07/15*
-[番号] 技術ノート KGTN 2010071501
-[現象] プラグイン LaunchBrowser を使ってファイルをダウンロードさせたいが，ウエッブサーバのドキュメント外に置かれたファイルをダウンロードさせることは可能か？
-[説明] CGI （スクリプト） を利用することで可能です．PHPのサンプルを以下に示します．
-// // Example: // 1) http://localhost/gm_download.php?file=gg-explorer.exe // 2) http://localhost/gm_download.php?file=12345.dat // $fileDir = &ldquo;C:¥¥GraphOn¥¥BIN¥¥&rdquo;; $fileName = $_GET[&ldquo;file&rdquo;]; //- //- $fileNameA is &ldquo;actual file name&rdquo; //- $fileNameA = &ldquo;XXX.EXE&rdquo;; // $fileName; //- $filePath = $fileDir . $fileName; if((file_exists($filePath) != TRUE)||(is_dir($filePath) == TRUE)) { exit(&ldquo;File not found! - ¥&rdquo;&rdquo; . $fileName . &ldquo;¥&rdquo;&quot;); } $fileLength = filesize($filePath); header(&ldquo;Content-Disposition: attachment; filename=$fileNameA&rdquo;); header(&ldquo;Content-Length:$fileLength&rdquo;); header(&ldquo;Content-Type: application/octet-stream&rdquo;); readfile($filePath); ?</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1701/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1705/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1705/">クライアントドライブ機能において，受け取り側 （クライアント） のドライブに十分な容量が無い時，コピーを行うと0バイトのファイルが作成される．また，この時警告ダイアログは表示されない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1705/">クライアントドライブ機能において，受け取り側 （クライアント） のドライブに十分な容量が無い時，コピーを行うと0バイトのファイルが作成される．また，この時警告ダイアログは表示されない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -688,31 +492,16 @@ progBefore ： データを蓄積する作業ファイルをクリア progPath �
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/07/12*
-[番号] 技術ノート KGTN 2010071201
-[現象] クライアントドライブ機能において，受け取り側 （クライアント） のドライブに十分な容量が無い時，コピーを行うと0バイトのファイルが作成される．また，この時警告ダイアログは表示されない．
-[説明] 弊社およびGraphOn社で現象を確認しました．この動作は，技術ノート KGTN#2009091501 の問題と関連しており，Ver3.2 系での制限事項 （既知の問題） となります．
-ファイル KGTN2010071201.pdf [(50.2 KB)] [kitasp 技術センター, 2010/07/12 09:43]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1705/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1703/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1703/">多数のサーバにGGをインストールするが，クラスタマネージャの設定を簡単に行う方法はないのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1703/">多数のサーバにGGをインストールするが，クラスタマネージャの設定を簡単に行う方法はないのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -729,16 +518,59 @@ progBefore ： データを蓄積する作業ファイルをクリア progPath �
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/07/12*
-[番号] 技術ノート KGTN 2010071301
-[現象] 多数のサーバにGGをインストールするが，クラスタマネージャの設定を簡単に行う方法はないのか？
-[説明] クラスタマネージャで設定する項目は，全てレジストリに保持されますので，以下の手順で他サーバへ設定することが出来ます．
-ひな形になるサーバ上でクラスタマネージャの各項目を設定する． レジストリエディタを起動し，以下のレジストリをエクスポートする． HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥AppServer 設定を反映したい各サーバ上でエクスポートしたレジストリ （のファイル） をインポートする．
-なお，上記3でインポートする時は，APSが停止した状態で行って下さい．
-ファイル KGTN2010071301.pdf [(52.8 KB)] [kitasp 技術センター, 2010/07/13 08:04]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1703/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1704/">無操作タイムアウト （アイドルタイムアウト） の判断に利用されるイベントを知りたい．</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1704/"><i class="far fa-calendar"></i> 2010-07-12</a>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1706/">GGのセッションが切断されたが，原因としてどのようなことが考えられるか？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1706/"><i class="far fa-calendar"></i> 2010-07-09</a>
+                                        </p>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -761,80 +593,15 @@ progBefore ： データを蓄積する作業ファイルをクリア progPath �
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li class="active">
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

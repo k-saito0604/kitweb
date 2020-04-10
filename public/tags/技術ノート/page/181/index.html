@@ -311,23 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc972/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc972/">[Win32/Clipboard] GGとは関係がないが，クリップボードにデータがコピーされた時，それを知る方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc972/">[Win32/Clipboard] GGとは関係がないが，クリップボードにデータがコピーされた時，それを知る方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -344,31 +336,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/07/23*
-[番号] 技術ノート KGTN 2012072403
-[現象] [Win32/Clipboard] GGとは関係がないが，クリップボードにデータがコピーされた時，それを知る方法は？
-[説明] プログラムの初期化処理の中で SetClipboardViewer 関数を実行すると，それ以降クリップボードのデータが変更された時に WM_DRAWCLIPBOARD メッセージが届きます （プログラムがクリップボードビューアとして登録されるため） ．なお，プログラムを終了する時は，そのプログラムをクリップボードビューアのチェインから外すために ChangeClipboardChain 関数を実行する必要があります．
-ファイル KGTN2012072403.pdf [(57.2 KB)] [kitasp 技術センター, 2012/07/24 08:07]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc972/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc976/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc976/">[Win32/Clipboard] GGとは関係がないが，クリップボードのデータ形式 JFIF とは何か？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc976/">[Win32/Clipboard] GGとは関係がないが，クリップボードのデータ形式 JFIF とは何か？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -385,31 +362,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/07/23*
-[番号] 技術ノート KGTN 2012072302
-[現象] [Win32/Clipboard] GGとは関係がないが，クリップボードのデータ形式 JFIF とは何か？
-[説明] JFIF は JPEG File Interchange Format の略で，通常は JPEGファイル と読み替えて構いません．
-ファイル KGTN2012072302.pdf [(44.6 KB)] [kitasp 技術センター, 2012/07/23 13:17]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc976/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc975/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc975/">[Win32/Clipboard] クライアントクリップボード機能は，なぜローカルマシン上のクリップボードより遅いのか．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc975/">[Win32/Clipboard] クライアントクリップボード機能は，なぜローカルマシン上のクリップボードより遅いのか．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -426,31 +388,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/07/23*
-[番号] 技術ノート KGTN 2012072303
-[現象] [Win32/Clipboard] クライアントクリップボード機能は，なぜローカルマシン上のクリップボードより遅いのか．
-[説明] ローカルマシン上のクリップボード操作 （コピー） は，簡単に言えばそのデータを単にクリップボードへコピーするだけです （つまりメモリ上の操作） ．GGのクライアントクリップボード機能 （コピー） は，それに加えクリップボードにコピーしたデータを他方 （クライアントまたはサーバ） へネットワークを介してコピーする必要があります．さらに１つのデータのコピーで，クリップボード上に複数のフォーマットのデータが生成されますので，元のデータの数倍のデータを送信する必要があります．このような技術的背景により，ローカルマシン上のクリップボードよりパフォーマンスが低下します．
-ファイル KGTN2012072303.pdf [(51.7 KB)] [kitasp 技術センター, 2012/07/23 13:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc975/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc977/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc977/">[GGH4.0] ActiveXクライアント （bInBrowser=true） でログオンしたセッションに対してシャドウイングを行った状態で，ユーザがIEを閉じた場合はセッションが消滅し，ユーザが PW で Disconnect を選択した場合はセッションが維持 （非接続状態） される．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc977/">[GGH4.0] ActiveXクライアント （bInBrowser=true） でログオンしたセッションに対してシャドウイングを行った状態で，ユーザがIEを閉じた場合はセッションが消滅し，ユーザが PW で Disconnect を選択した場合はセッションが維持 （非接続状態） される．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -467,32 +414,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/07/20*
-[番号] 技術ノート KGTN 2012072002
-[現象] [GGH4.0] ActiveXクライアント （bInBrowser=true） でログオンしたセッションに対してシャドウイングを行った状態で，ユーザがIEを閉じた場合はセッションが消滅し，ユーザが PW で Disconnect を選択した場合はセッションが維持 （非接続状態） される．
-[説明] ユーザがIEを閉じた場合 （bInBrowser=true） は PW の Sign Out として扱われますので，セッションは消滅します．ユーザが PW で Disconnect を選択した場合は，セッションが維持 （非接続状態） されます．なお，下記のような URL を指定して 「ブラウザ外でGGクライアントを起動」 すると，IEを閉じてもセッションは維持 （接続状態） されます．
-http://192.168.102.85/logon.html?bInBrowser=false
-ファイル KGTN2012072002.pdf [(59.9 KB)] [kitasp 技術センター, 2012/07/20 12:01]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc977/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc979/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc979/">[GGH4.0] GG上からクライアントマシン上のアプリケーションを起動する方法はあるのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc979/">[GGH4.0] GG上からクライアントマシン上のアプリケーションを起動する方法はあるのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -509,34 +440,16 @@ http://192.168.102.85/logon.html?bInBrowser=false
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/07/20*
-[番号] 技術ノート KGTN 2012060101
-[現象] [GGH4.0] GG上からクライアントマシン上のアプリケーションを起動する方法はあるのか？
-[説明] GGW3.2.1では弊社開発のプラグイン LaunchBrowser で，クライアントマシン上のアプリケーションを起動することが可能でした．このプラグインは Component-SDK というGraphOn社作成のライブラリを使用して実装しましたが，GGH4.0では，このライブラリが提供されなくなったためLaunchBrowser を実装することが不可能になりました．
-現在得ている情報では，GraphOn社が Virtual Channel という新たな機能を実装する予定があり，これを使用することでクライアントマシン上のアプリケーションを起動出来るようになるとのことです．新たな情報が入り次第，この技術ノートに反映します．
-補足１ Virtual Channelに関するやや詳しい情報は以下の通りです．なお，このSDKは特定の代理店限定でリリースされますので，弊社ではこのSDKを使用して利用が容易で，かつ使い勝手の良いツールを作成しご提供する予定です．
-補足２ Virtual Channel は，Component-SDK の一部 （コア機能？） という位置付けのようで，GGH4.1.3 でサポートされる見込みです．
-ファイル KGTN2012060101.pdf [(71.8 KB)] [kitasp 技術センター, 2012/07/20 09:24]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc979/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc978/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc978/">[GGW3.2.1/GGH4.0] GG上で動作するメモ帳等で， 1) マウスのホイールボタンを押す， 2) その状態でマウスをクライアントのデスクトップ上 （GGのアプリケーション外） に移動しマウスのホイールボタンを離す， 3) PW をタイトルバーをクリックしてもフリーズした状態になる．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc978/">[GGW3.2.1/GGH4.0] GG上で動作するメモ帳等で， 1) マウスのホイールボタンを押す， 2) その状態でマウスをクライアントのデスクトップ上 （GGのアプリケーション外） に移動しマウスのホイールボタンを離す， 3) PW をタイトルバーをクリックしてもフリーズした状態になる．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -553,31 +466,16 @@ http://192.168.102.85/logon.html?bInBrowser=false
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/07/20*
-[番号] 技術ノート KGTN 2012072001
-[現象] [GGW3.2.1/GGH4.0] GG上で動作するメモ帳等で， 1) マウスのホイールボタンを押す， 2) その状態でマウスをクライアントのデスクトップ上 （GGのアプリケーション外） に移動しマウスのホイールボタンを離す， 3) PW をタイトルバーをクリックしてもフリーズした状態になる．
-[説明]
-ファイル KGTN2012072001.pdf [(51.6 KB)] [kitasp 技術センター, 2012/07/20 10:53]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc978/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc982/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc982/">[GGH4.0] IMEの言語バーが表示されない環境でログオンしたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc982/">[GGH4.0] IMEの言語バーが表示されない環境でログオンしたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -594,32 +492,16 @@ http://192.168.102.85/logon.html?bInBrowser=false
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/07/18*
-[番号] 技術ノート KGTN 2012071802
-[現象] [GGH4.0] IMEの言語バーが表示されない環境でログオンしたい．
-[説明] GGは，GGのセッション上で日本語入力を可能にするため ctfmon.exe をシステムプロセスとして起動します．IMEの言語バーについては，このctfmon.exe に関連する処理の中で表示しているため，GGが直接的に制御することは出来ません．なお， ctfmon.exe の詳細については，マイクロソフト社の知識ベース 282599 をご覧下さい．
-http://support.microsoft.com/kb/282599/ja [OFFXP] CTFMON プログラムの概要と機能
-ファイル KGTN2012071802.pdf [(58 KB)] [kitasp 技術センター, 2012/07/18 10:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc982/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc981/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc981/">[GGH4.0] アプリケーションをPWを介さず起動して （ログオン時にアプリケーションを指定） ，そのアプリケーションの中から PW を起動して構わないか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc981/">[GGH4.0] アプリケーションをPWを介さず起動して （ログオン時にアプリケーションを指定） ，そのアプリケーションの中から PW を起動して構わないか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -636,31 +518,16 @@ http://support.microsoft.com/kb/282599/ja [OFFXP] CTFMON プログラムの概�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/07/18*
-[番号] 技術ノート KGTN 2012071803
-[現象] [GGH4.0] アプリケーションをPWを介さず起動して （ログオン時にアプリケーションを指定） ，そのアプリケーションの中から PW を起動して構わないか？
-[説明] お問い合わせの処理を行っているユーザ様もあると聞いておりますが， PW はクライアントプリンタの構成など特殊な処理を行いますので，自己責任での運用が前提となります．注意すべき点としては，ユーザが PW 中の当該アプリケーション （のアイコン） をクリックすると PW の二重起動が発生しますので，この二重起動を防止する必要があります．ログオン時の 「間接的な PW の起動」 に関して，遅らせる等のタイミングの調整が必要になるかもしれません．当然のことながら，十分な事前検証を行うようにして下さい．
-ファイル KGTN2012071803.pdf [(56.8 KB)] [kitasp 技術センター, 2012/07/18 11:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc981/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc983/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc983/">[GGH4.1] １ユーザ１アカウントで運用しているが，他のクライアントでログオンを試みた時，既存セッションのクライアントを切断し，ログオンを試みたクライアントを接続して欲しい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc983/">[GGH4.1] １ユーザ１アカウントで運用しているが，他のクライアントでログオンを試みた時，既存セッションのクライアントを切断し，ログオンを試みたクライアントを接続して欲しい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -677,33 +544,16 @@ http://support.microsoft.com/kb/282599/ja [OFFXP] CTFMON プログラムの概�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/07/11*
-[番号] 技術ノート KGTN 2012070901
-[現象] [GGH4.1] １ユーザ１アカウントで運用しているが，他のクライアントでログオンを試みた時，既存セッションのクライアントを切断し，ログオンを試みたクライアントを接続して欲しい．
-[説明] お問い合わせの機能は，他のクライアントが勝手にセッション （クライアント） を切断することになりますので，混乱を招く可能性が多分にあります．このようなことから，GGの基本機能として実装することは現状では困難です （多くの案件でこのようなニーズが出て来れば別ですが） ．どうしても　「元のクライアントで切断することなく，別のクライアントで再接続したい」 ということであれば，エンタープライズオプションを拡張することで，特定セッションからクライアントを切断することが技術的に可能です．これを利用することで，例えば以下のような運用を実現することが出来るようになります．
-（別クライアント上で） ウエッブページでクライアントを切断したいセッションを選択 拡張したエンタープライズオプションが接続中のクライアントを強制切断 別クライアントから当該アカウントでログオン セッション再接続
-補　足 セッションの強制終了 （Sign Out） およびセッションの強制切断 （Disconnect） を行うコマンド GGSessionManager をエンタープライズオプションに含める予定です．
-ファイル KGTN2012070901.pdf [(66.8 KB)] [kitasp 技術センター, 2012/07/11 14:45]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc983/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc984/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc984/">[Tool] GGNetworkCheck の最大同時接続数 （サーバ機能） は幾つか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc984/">[Tool] GGNetworkCheck の最大同時接続数 （サーバ機能） は幾つか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -720,14 +570,7 @@ http://support.microsoft.com/kb/282599/ja [OFFXP] CTFMON プログラムの概�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/07/10*
-[番号] 技術ノート KGTN 2012071002
-[現象] [Tool] GGNetworkCheck の最大同時接続数 （サーバ機能） は幾つか？
-[説明] Ver1.0.5 までは64で，Ver1.0.6 からは 256 です．なお，これらは FD_SETSIZE の値です．
-ファイル KGTN2012071002.pdf [(49.7 KB)] [kitasp 技術センター, 2012/07/10 11:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc984/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
@@ -750,80 +593,15 @@ http://support.microsoft.com/kb/282599/ja [OFFXP] CTFMON プログラムの概�
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li>
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

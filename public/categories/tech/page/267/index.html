@@ -311,105 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1851/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1851/">ベリサイン社のテスト用セキュア・サーバID （SSLサーバ証明書） で試すことが出来るか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
 
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1851/"><i class="far fa-calendar"></i> 2010-03-02</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/03/02*
-[番号] 技術ノート KGTN 2010030202
-[現象] ベリサイン社のテスト用セキュア・サーバID （SSLサーバ証明書） で試すことが出来るか？
-[説明] 管理者ガイドに従って、 1) GGサーバにOpenSSLをインストール， 2) OpenSSLを使い証明書署名要求（CSR）を作成， 3) CSRを元にテスト用セキュア・サーバIDを申請， 4) メールで送られて来た証明書 （文字列） をファイル server.crt へ保存， 5) クラスタマネージャで server.crt を指定 したところ特に問題なく動作しました．
-ファイル KGTN2010030202.pdf [(75.7 KB)] [kitasp 技術センター, 2010/03/02 09:56]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1851/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1861/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1861/">APSログに記録された CS: Component not found. の意味は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1861/"><i class="far fa-calendar"></i> 2010-02-24</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/02/24*
-[番号] 技術ノート KGTN 2010022402
-[現象] APSログに記録された &ldquo;CS: Component not found.&rdquo; の意味は？
-[説明] このメッセージ自体は，何らかの具体的な障害を意味するものではありません．サーバからクライアントへメッセージ （処理の要求） を送信した時，それを処理するコンポーネント （画面関連のオブジェクトや管理機能など） が存在しなかったことを意味します．通常は，セッションの強制切断やアプリケーションの強制終了時に記録されますので，無視して頂いて結構です．
-ファイル KGTN2010022402.pdf [(54.2 KB)] [kitasp 技術センター, 2010/02/24 09:17]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1861/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1859/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1859/">APSログに記録された CS: Keep-alive signal was not received. の意味は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1859/">APSログに記録された CS: Keep-alive signal was not received. の意味は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -426,32 +336,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/02/24*
-[番号] 技術ノート KGTN 2010022404
-[現象] APSログに記録された &ldquo;CS: Keep-alive signal was not received.&rdquo; の意味は？
-[説明] このメッセージは，30秒毎にクライアントから送信されるPING （到達確認） がサーバに届いていないことを意味します．約１分間サーバにPINGが届かない場合，GGはそのセッションを強制切断します．
-参　考 この強制切断機能を無効にすることも可能です．技術ノート KGTN 2010022401 を参考に，「SessionVerification の値を 0 に変更」 して下さい．
-ファイル KGTN2010022404.pdf [(53.9 KB)] [kitasp 技術センター, 2010/02/24 09:39]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1859/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1860/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1860/">APSログに記録された CS: Request timeout. の意味は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1860/">APSログに記録された CS: Request timeout. の意味は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -468,32 +362,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/02/24*
-[番号] 技術ノート KGTN 2010022403
-[現象] APSログに記録された &ldquo;CS: Request timeout.&rdquo; の意味は？
-[説明] このメッセージは，サーバからクライアントへメッセージ （処理の要求） を送信しようとした時，送信に失敗したことを意味します．通常は，サーバとクライアント間のどこかでネットワークが切断されていることを意味します．
-参　考 本エラーは，GGレベルではなくWinSockレベルで検出されたものです．
-ファイル KGTN2010022403.pdf [(49.5 KB)] [kitasp 技術センター, 2010/02/24 09:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1860/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1854/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1854/">GGのエンタープライズオプションの message.exe を改造したい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1854/">GGのエンタープライズオプションの message.exe を改造したい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -510,31 +388,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/02/24*
-[番号] 技術ノート KGTN 2010022408
-[現象] GGのエンタープライズオプションの message.exe を改造したい．
-[説明] エンタープライズオプションの message.exe は，クライアントにメッセージを表示するためのサンプルプログラムです．CDの中の GMS¥etc¥message の下に VB6 と VB2008 のプロジェクトファイル等がありますので，必要に応じて修正して頂いて結構です．
-ファイル KGTN2010022408.pdf [(47.9 KB)] [kitasp 技術センター, 2010/02/24 12:12]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1854/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1856/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1856/">GGサーバにVer3.2系をインストールしているが， 自動更新 を 自動 （推奨） に設定して良いか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1856/">GGサーバにVer3.2系をインストールしているが， 自動更新 を 自動 （推奨） に設定して良いか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -551,33 +414,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/02/24*
-[番号] 技術ノート KGTN 2010022406
-[現象] GGサーバにVer3.2系をインストールしているが， &ldquo;自動更新&rdquo; を &ldquo;自動 （推奨）&rdquo; に設定して良いか？
-[説明] Ver3.2系から自動互換アップデート機能が実装されたため，技術的には &ldquo;自動更新&rdquo; を &ldquo;自動 （推奨）&rdquo; に設定することも可能です．ただし，MS10-015 のように Windows Update （更新プログラム） 自体に問題がある可能性もありますので （MS10-015では再起動やブルースクリーンを引き起こします） ，リリースから１週間程度待って適用した方が安全だと思われます．
-参　考 Windows Update の障害等に関する詳細情報は，以下のページで参照することが出来ます．
-http://blogs.technet.com/jpsecurity/default.aspx
-ファイル KGTN2010022406.pdf [(60.3 KB)] [kitasp 技術センター, 2010/02/24 11:14]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1856/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1858/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1858/">GGサーバをDMZ （DeMilitarized Zone） に配置して良いか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1858/">GGサーバをDMZ （DeMilitarized Zone） に配置して良いか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -594,32 +440,16 @@ http://blogs.technet.com/jpsecurity/default.aspx
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/02/24*
-[番号] 技術ノート KGTN 2010022405
-[現象] GGサーバをDMZ （DeMilitarized Zone） に配置して良いか？
-[説明] 技術的には，GGサーバをDMZに配置することは可能です．ただ，DMZへ配置する場合，GGサーバの台数分のグローバルIPが必要になりますが，IPv4グローバルアドレスが枯渇しつつありますので，スケーラビリティの観点から問題になる可能性があります．このようなことから，SSL-VPN （Secure Socket Layer Virtual Private Network） の利用もぜひ一度ご検討下さい．
-参　考 IPv4グローバルアドレスの枯渇時期は，2010年1月20日のJPNICのアナウンスでは，2011年後半と予測されております．
-http://www.nic.ad.jp/ja/topics/2010/20100120-01.html  ファイル KGTN2010022405.pdf [(56.6 KB)] [kitasp 技術センター, 2010/02/24 11:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1858/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1855/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1855/">サーバに複数のLANポートがある場合，どのMACアドレスでライセンスを申請すべきか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1855/">サーバに複数のLANポートがある場合，どのMACアドレスでライセンスを申請すべきか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -636,31 +466,16 @@ http://www.nic.ad.jp/ja/topics/2010/20100120-01.html  ファイル KGTN201002240
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/02/24*
-[番号] 技術ノート KGTN 2010022407
-[現象] サーバに複数のLANポートがある場合，どのMACアドレスでライセンスを申請すべきか？
-[説明] 技術的には，実際に使用するLANポートのMACアドレスであれば，何れでも構いません．敢えて言えば，サーバの機能上，より重要な役割を持っているLANポートのMACアドレスで申請するのが良いでしょう．
-ファイル KGTN2010022407.pdf [(45.8 KB)] [kitasp 技術センター, 2010/02/24 11:23]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1855/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1853/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1853/">特定のアプリケーションで予期せぬセッションの切断が発生する事例はないか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1853/">特定のアプリケーションで予期せぬセッションの切断が発生する事例はないか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -677,32 +492,16 @@ http://www.nic.ad.jp/ja/topics/2010/20100120-01.html  ファイル KGTN201002240
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/02/24*
-[番号] 技術ノート KGTN 2010022409
-[現象] 特定のアプリケーションで予期せぬセッションの切断が発生する事例はないか？
-[説明] 過去に１件事例があります．そのアプリケーションは，データの読み込み時に進行状況を表示するため，過度に頻繁に情報 （文字列） を表示していました．これにより非常に多くの表示要求がサーバからクライアントへ送信され，その結果クライアントとサーバ間のPING （到達確認） の送受信に遅延が発生し，最終的に通信障害と認識されセッションが切断されました．
-ggw-3.2.1.4420またはそれ以降では，サーバからクライアントへ要求が送信されている場合，PING （到達確認） を送信しないように仕様が変更され，この問題は解消しました．
-参　考 When a large amount of data was sent from the server to the client, the reply to the client&rsquo;s ping request could take longer than 30 seconds to be returned to the client. When this happened, the client would erroneously assume that it could not communicate with the server, and it would close the connection.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1853/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1864/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1864/">GO-Global for Windows Ver3.2系は，Windows Server 2008 R2 （64ビット） をサポートするのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1864/">GO-Global for Windows Ver3.2系は，Windows Server 2008 R2 （64ビット） をサポートするのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -719,14 +518,59 @@ ggw-3.2.1.4420またはそれ以降では，サーバからクライアントへ
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/02/23*
-[番号] 技術ノート KGTN 2010022301
-[現象] GO-Global for Windows Ver3.2系は，Windows Server 2008 R2 （64ビット） をサポートするのか？
-[説明] 現行バージョンでは Windows Server 2008 R2 （64ビット） をサポートしませんが，次期メジャーバージョン &ldquo;GO-Global for Windows Ver.4&rdquo; ではサポートする予定です．なお，リリース時期等については未定です．
-ファイル KGTN2010022301.pdf [(42.6 KB)] [kitasp 技術センター, 2010/02/23 09:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1864/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1863/">Windows Updateの適用方法は？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1863/"><i class="far fa-calendar"></i> 2010-02-23</a>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1862/">セッションが切断される問題が発生したが，何を調べれば良いのか？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1862/"><i class="far fa-calendar"></i> 2010-02-23</a>
+                                        </p>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -749,80 +593,15 @@ ggw-3.2.1.4420またはそれ以降では，サーバからクライアントへ
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li class="active">
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

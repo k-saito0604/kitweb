@@ -311,108 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2227/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2227/">[GGH5.X/ExPack] 拡張パックの GGEasyPassword で複数のGGサーバー （ワークグループ） のアカウントのパスワードを変更したい．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
 
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2227/"><i class="far fa-calendar"></i> 2016-11-02</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016102401
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyPassword で複数のGGサーバー （ワークグループ） のアカウントのパスワードを変更したい．
-[説明] 以下に設定のサンプルを示します．
-ファイル： GGEasyPassword.ini
-[default] logLevel = 9 logd = %TEMP% command = psexec64 -u Administrator -p Passwd C:PS1GGEasyPasswordchangePassword.bat %s %s  ファイル： changePassword.bat
-echo off echo パスワードの変更処理を開始しました。 echo しばらくお待ち下さい… :: changePassword.bat &quot;wguser9012&quot; &quot;Passwd&quot; powershell C:PS1GGEasyPasswordchangePassword.ps1 %1 %2 :: --- [EOF] ---  ファイル： changePassword.ps1
-# 引数のチェック if($Args.Length -ne 2) { Write-Host &quot;Usage: changePassword.ps1 &lt;userid&gt; &lt;password&gt;&quot; Exit 1001 } $argUser = $Args[0] # ユーザーID .</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2227/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2252/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2252/">[GGH5.X] logon.html で controlArgs.set([autoclose,true]); を指定しているが，ブラウザが閉じない．もちろん，このサイトは 「信頼済みサイト」 として登録している．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2252/"><i class="far fa-calendar"></i> 2016-11-02</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016100601
-[現象] [GGH5.X] logon.html で &ldquo;controlArgs.set([&ldquo;autoclose&rdquo;,&ldquo;true&rdquo;]);&rdquo; を指定しているが，ブラウザが閉じない．もちろん，このサイトは 「信頼済みサイト」 として登録している．
-[説明] クライアント （IE） の環境によって，URL の末尾にパスワードのパラメタ &ldquo;password=???&rdquo; があると閉じないケースがあるようです．このような場合は &ldquo;http://&hellip;/logon.html?&hellip;&amp;password=???&amp;xxx=xxx&rdquo; というにダミーのパラメタを末尾に付加するか，または &ldquo;http://&hellip;/logon.html?password=??? &amp;&hellip;&rdquo; というようにパスワードのパラメタを先頭に配置して下さい．
-ファイル KGTN2016100601.pdf [(56.1 KB)] [kitasp 技術センター, 2016/11/02 13:45]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2252/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2248/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2248/">[GGH5.X] Windowsクライアントのパラメタ -dfw 0 はActiveXクライアントではどのように指定するのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2248/">[GGH5.X] Windowsクライアントのパラメタ -dfw 0 はActiveXクライアントではどのように指定するのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -429,31 +336,16 @@ echo off echo パスワードの変更処理を開始しました。 echo しば
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101801
-[現象] [GGH5.X] Windowsクライアントのパラメタ -dfw 0 はActiveXクライアントではどのように指定するのか？
-[説明] ActiveXクライアントのログオン用ページ logon.html は，パラメタ -dfw に対応する機能を持っておりません． logon.html を修正して，以下のパラメタ （dragfullwindows） を追加して下さい．
-// controlArgs.set([ &quot;autoclose&quot;, &quot;false&quot; ]); //--- controlArgs.set([ &quot;dragfullwindows&quot;, &quot;0&quot;]); ← 追加 //--- // controlArgs.set([ &quot;printerconfig&quot;, &quot;default&quot; ]);  ファイル KGTN2016101801.pdf [(59.6 KB)] [kitasp 技術センター, 2016/11/02 14:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2248/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2228/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2228/">[GGH5.X] 外字は UPD （ユニバーサル プリンター ドライバー） でも正しく印刷されるのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2228/">[GGH5.X] 外字は UPD （ユニバーサル プリンター ドライバー） でも正しく印刷されるのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -470,33 +362,16 @@ echo off echo パスワードの変更処理を開始しました。 echo しば
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016102002
-[現象] [GGH5.X] 外字は UPD （ユニバーサル プリンター ドライバー） でも正しく印刷されるのか？
-[説明] 以下のように，外字についても UPD による印刷が可能です．
-ファイル KGTN2016102002.pdf [(143 KB)] [kitasp 技術センター, 2016/11/02 15:37]
-KGTN2016102002.jpg
-表示 [(31.1 KB)] [kitasp 技術センター, 2016/11/02 15:37]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2228/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2229/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2229/">[GGH5.X] 外字を利用する場合の設定は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2229/">[GGH5.X] 外字を利用する場合の設定は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -513,33 +388,16 @@ KGTN2016102002.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016102001
-[現象] [GGH5.X] 外字を利用する場合の設定は？
-[説明] 下記マイクロソフト社の文書 （KB977042） の方法３ 「管理者権限を持つユーザーで外字エディターを起動する」 を行うことで外字を使用することが出来ます． Windows Server 2012 R2 や Windows Server 2008 R2 ではデフォルトでは外字エディター （EUDCEDIT.EXE） がインストールされていないため，&ldquo;サーバーマネージャー → 役割と機能の追加 → 機能 → ユーザーインターフェイスとインフラストラクチャ → デスクトップエクスペリエンス&rdquo; を選択してインストールを行って下さい．
-Windows Server 2008 R2 で外字を使用する方法 https://support.microsoft.com/ja-jp/kb/977042  ファイル KGTN2016102001.pdf [(180 KB)] [kitasp 技術センター, 2016/11/02 15:33]
-KGTN2016102001.jpg
-表示 [(40.3 KB)] [kitasp 技術センター, 2016/11/02 15:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2229/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2250/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2250/">[GGW3.2,GGH4.X-5.X] GGの特定バージョン （ビルド） がサポートする IE のバージョンを確認する方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2250/">[GGW3.2,GGH4.X-5.X] GGの特定バージョン （ビルド） がサポートする IE のバージョンを確認する方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -556,33 +414,16 @@ KGTN2016102001.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101401
-[現象] [GGW3.2,GGH4.X-5.X] GGの特定バージョン （ビルド） がサポートする IE のバージョンを確認する方法は？
-[説明] 以下の手順で，GGの特定バージョン （ビルド） がサポートする IE のバージョンを確認することが出来ます．
-1.GGの特定バージョン （ビルド） のCDに含まれる readme.txt （ggw-readme-xxx.txt） を開き， &ldquo;1.2 GO-Global Clients&rdquo; にあるサポート対象の IE （ActiveX Control） のバージョンを確認する． 例１：GGW3.2.1.4466 ⇒ Internet Explorer 6.0 or later 例２：GGH 5.0.2.23352 ⇒ Internet Explorer 10.0 and 11.0 (32-bit)
-2.上記の IE のバージョンに &ldquo;or laler&rdquo; がある場合は， readme.txt （ggw-readme-xxx.txt） の日付を確認し，その日よりも前にリリースされた最新の IE のバージョンを確認する． 例１：GGW3.2.1.4466 ⇒ 2010年4月22日 ⇒ IE8 （2009年3月20日） 例２：該当せず
-3.上記１のバージョンから上記２のバージョンまでがサポート対象の IE となる． 例１：GGW3.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2250/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2233/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2233/">[Windows/IE] Google の検索サイトにアクセスすると 「このWebサイトのセキュリティ証明書には問題があります」 と表示される．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2233/">[Windows/IE] Google の検索サイトにアクセスすると 「このWebサイトのセキュリティ証明書には問題があります」 と表示される．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -599,33 +440,16 @@ KGTN2016102001.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101901
-[現象] [Windows/IE] Google の検索サイトにアクセスすると 「このWebサイトのセキュリティ証明書には問題があります」 と表示される．
-[説明] コンピューターの日付が，Webサイトのセキュリティ証明書の有効期間外に設定されていることが原因だと思われます．コンピューターの日付を確認し，正しい日付を設定して下さい．下記の例は，コンピューターに１年前の日付 2015年10月19日 が設定されていました．
-ファイル KGTN2016101901.pdf [(72.3 KB)] [kitasp 技術センター, 2016/11/02 15:22]
-KGTN2016101901.jpg
-表示 [(12 KB)] [kitasp 技術センター, 2016/11/02 15:22]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2233/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2244/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2244/">[Windows/PowerShell] PowerShell でIPアドレスを得る方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2244/">[Windows/PowerShell] PowerShell でIPアドレスを得る方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -642,33 +466,16 @@ KGTN2016101901.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101804
-[現象] [Windows/PowerShell] PowerShell でIPアドレスを得る方法は？
-[説明] 現実的には，以下のように PowerShell のコマンド Get-NetIPAddress を使う方法と Net.DNS で GetHostAddresses() メソッドを利用する方法があります．速度重視の場合は， .NET の利用をお勧めします．
-(Get-NetIPAddress | Where-Object -FilterScript { ($_.InterfaceAlias -Eq &quot;イーサネット&quot;) -And ($_.AddressFamily -Eq &quot;IPv4&quot;) } | select -ExpandProperty IPAddress) ([Net.Dns]::GetHostAddresses('') | Where-Object -FilterScript { ($_.AddressFamily -Eq &quot;InterNetwork&quot;) } | select -ExpandProperty IPAddressToString)  ファイル KGTN2016101804.pdf [(79 KB)] [kitasp 技術センター, 2016/11/02 14:38]
-KGTN2016101804.jpg
-表示 [(30.8 KB)] [kitasp 技術センター, 2016/11/02 14:38]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2244/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2245/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2245/">[Windows/PowerShell] PowerShell でコンピューター名を得る方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2245/">[Windows/PowerShell] PowerShell でコンピューター名を得る方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -685,33 +492,16 @@ KGTN2016101804.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101803
-[現象] [Windows/PowerShell] PowerShell でコンピューター名を得る方法は？
-[説明] CIM （WMI） から取得する方法，環境変数 $Env:COMPUTERNAME から取得する方法， Net.Dns でGetHostName() メソッドを利用する方法， hostname コマンドから取得する方法があります．これらのコマンドのパフォーマンスはそれほど差異がありませんが，他のコマンド （IPアドレスを得るなど） では .NET のパフォーマンスが最も良いようです．
-ファイル KGTN2016101803.pdf [(91.5 KB)] [kitasp 技術センター, 2016/11/02 14:36]
-KGTN2016101803.jpg
-表示 [(13.6 KB)] [kitasp 技術センター, 2016/11/02 14:36]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2245/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2222/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2222/">[Windows/PowerShell] PowerShell でリモートホストに接続出来ない．もちろん Enable-PSRemoting は実行している．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2222/">[Windows/PowerShell] PowerShell でリモートホストに接続出来ない．もちろん Enable-PSRemoting は実行している．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -728,16 +518,59 @@ KGTN2016101803.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101811
-[現象] [Windows/PowerShell] PowerShell でリモートホストに接続出来ない．もちろん Enable-PSRemoting は実行している．
-[説明] 基本的な設定を行っているにも関わらずリモートホストに接続出来ない場合は，ホストの信頼情報が設定されていない可能性が高いと考えられます．次のコマンドを実行して，信頼情報を設定して下さい．この設定を行ってもエラーが発生する場合は， Microsoft アカウントの使用が考えられます．これに該当する時は，ローカルアカウントに切り替えて下さい．
-Set-Item WSMan:localhostClientTrustedHosts -Value *  ファイル KGTN2016101811.pdf [(157 KB)] [kitasp 技術センター, 2016/12/14 17:47]
-KGTN2016101811.jpg
-表示 [(32.7 KB)] [kitasp 技術センター, 2016/12/14 17:47]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2222/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2239/">[Windows/PowerShell] PowerShell でローカルアカウントのパスワードを変更する方法は？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2239/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2241/">[Windows/PowerShell] PowerShell でローカルアカウントのパスワードを無期限にする方法は？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2241/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                        </p>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -760,80 +593,15 @@ KGTN2016101811.jpg
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li class="active">
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

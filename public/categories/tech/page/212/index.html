@@ -311,109 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1277/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1277/">[GGH4.0] システム環境変数に新たな変数を追加したが，GGのセッション上にその変数が存在しない．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
 
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1277/"><i class="far fa-calendar"></i> 2011-10-06</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/10/06*
-[番号] 技術ノート KGTN 2011100601
-[現象] [GGH4.0] システム環境変数に新たな変数を追加したが，GGのセッション上にその変数が存在しない．
-[説明] システム環境変数の新規・編集・削除を行った場合は，サービス GO-Global Application Publishing Service を再起動するか，またはサーバの再起動を行ってください．この再起動の後に，新規・編集・削除の内容がGGの環境に反映されます．
-補　足 GGW3.2.1では，サービス GO-Global Application Publishing Service の再起動やサーバの再起動は不要でした．しかし，このような処理を行うと logon.exe は変更前の環境変数を保持し，変更後に起動された pw.exe は変更後の環境変数を保持するという特殊な状況が発生します． GGH4.0 では，システム環境変数の変更に当たって，一貫性やパフォーマンスの観点から，サービスやサーバの再起動を前提としました．
-ファイル KGTN2011100601.pdf [(60.5 KB)] [kitasp 技術センター, 2011/10/06 11:42]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1277/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1278/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1278/">[GGH4.0] セッション再接続機能を利用し，クライアントAからクライアントBへセッションを引き継いだ場合，環境変数 CLIENTCOMPUTERNAME と CLIENTCOMPUTERADDRESS の値は引き継いだ方の値になるのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1278/"><i class="far fa-calendar"></i> 2011-10-06</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/10/06*
-[番号] 技術ノート KGTN 2011072902
-[現象] [GGH4.0] セッション再接続機能を利用し，クライアントAからクライアントBへセッションを引き継いだ場合，環境変数 CLIENTCOMPUTERNAME と CLIENTCOMPUTERADDRESS の値は引き継いだ方の値になるのか？
-[説明] GGH-4.0.1.10357 の仕様では，セッションを引き継ぐ前のクライアント （つまりクライアントA） の環境変数 CLIENTCOMPUTERNAME と CLIENTCOMPUTERADDRESS の値が引き継がれます．現在，GraphOn社にクライアントBの各値が設定される動作になるよう，機能要求を行っている状況です．
-補足１ GGH-4.0.1.10784 (Patch 3) で環境変数 CLIENTCOMPUTERNAME と CLIENTCOMPUTERADDRESS の値が，再接続したクライアント （つまりクライアントB） の値になるように仕様が変更されました．
-補足２ コマンドプロンプト （DOS窓） 等を引き継いだ場合は，そのプロセス固有の環境変数の中に引き継ぐ前のCLIENTCOMPUTERNAME と CLIENTCOMPUTERADDRESS の値が保持されていますので，引き継ぐ前の値になります．GGの互換性機能を使用し GetClientComputerName関数 でクライアントのコンピュータ名を得る場合についても同様です．
-補足３ コマンドプロンプト （DOS窓） 等から新たなプロセスを生成した場合， GGH-4.0.1.10784 (Patch 3) では引き継ぐ前の値が CLIENTCOMPUTERNAME と CLIENTCOMPUTERADDRESS に設定されますが， 次期リリースより 2011年12月またはそれ以降のリリースで引き継いだ後の値が設定されるように仕様が変更されます （GraphOn社の内部ビルド 11051 で動作を確認しました） ．これは， Ver3.2.1 の仕様に合わせるための仕様変更です．
-ファイル KGTN2011072902.pdf [(69.1 KB)] [kitasp 技術センター, 2011/10/06 09:42]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1278/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1275/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1275/">[GGW3.2.1] ActiveXクライアントを，IEの環境でウエッブサーバからダウンロード＆インストールした場合と，GO-Global ActiveX Client.msi を起動してインストールした場合では，微妙に情報が異なる．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1275/">[GGW3.2.1] ActiveXクライアントを，IEの環境でウエッブサーバからダウンロード＆インストールした場合と，GO-Global ActiveX Client.msi を起動してインストールした場合では，微妙に情報が異なる．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -430,33 +336,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/10/06*
-[番号] 技術ノート KGTN 2011090802
-[現象] [GGW3.2.1] ActiveXクライアントを，IEの環境でウエッブサーバからダウンロード＆インストールした場合と， &ldquo;GO-Global ActiveX Client.msi&rdquo; を起動してインストールした場合では，微妙に情報が異なる．
-[説明] 本来であればIEを使用してウエッブサーバからダウンロード＆インストールすべきところを，プログラム （GO-Global ActiveX Client.msi） で必要なコンポーネントをインストールしているため，処理の内容に差異があり，情報等が微妙に異なることがあります．クライアントの動作には影響ありませんが，どうしても気になる場合は，IEを使用してActiveXクライアントをインストールして下さい．また，動作の詳細等についてお問い合わせ頂いても，通常のサポートではお答えすることは出来ません．どうしても必要な場合は，プロフェッショナル・サービスをご利用下さい．
-補足１ IEを使用したActiveXクライアントのインストールと， &ldquo;GO-Global ActiveX Client.msi&rdquo; を起動したインストールを同じマシンで行った場合， ActiveXクライアントが削除出来ない，情報が整合しない等の問題が発生する可能性があります （GGに限らず，一般にActiveXの枠組みはデリケートです） ．ActiveXクライアントがどうしても心配な場合は， Windows Client の使用をご検討下さい．
-補足２ ActiveXクライアントが削除出来ない場合は，先ずマシンを再起動し，その直後に弊社ツール GGAXDelete を実行して下さい．マシンの問題が重篤でなければ，この方法によりActiveXクライアントを削除することが出来ます．
-ファイル KGTN2011090802.pdf [(72.7 KB)] [kitasp 技術センター, 2011/10/06 14:53]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1275/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1276/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1276/">提供を受けた Engineering File のバージョンアップはあるのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1276/">提供を受けた Engineering File のバージョンアップはあるのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -473,31 +362,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/10/06*
-[番号] 技術ノート KGTN 2011100602
-[現象] 提供を受けた &ldquo;Engineering File&rdquo; のバージョンアップはあるのか？
-[説明] いいえ，どのような理由であれ &ldquo;Engineering File&rdquo; のバージョンアップはありません． &ldquo;Engineering File&rdquo; は，通常次のGGのリリースの中に取り込まれ，将来その箇所の変更がある場合は，それ以降のリリースの中で修正やバージョンアップが行われます．
-ファイル KGTN2011100602.pdf [(46.5 KB)] [kitasp 技術センター, 2011/10/06 12:56]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1276/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1281/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1281/">[GGH4.0] GGW3.2.1 から GGH4.0 へバージョンアップするに当たり，○○の資料を提供して欲しい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1281/">[GGH4.0] GGW3.2.1 から GGH4.0 へバージョンアップするに当たり，○○の資料を提供して欲しい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -514,31 +388,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2011100503
-[現象] [GGH4.0] GGW3.2.1 から GGH4.0 へバージョンアップするに当たり，○○の資料を提供して欲しい．
-[説明] GraphOn社が提供している情報，弊社の技術ノート，および過去事例の中に該当する資料があれば，GGの通常サポートの中でご提供します．該当する資料が無い場合は，残念ながらご希望に沿うことは出来ません．とうしても必要な場合は，代理店の各種サポートサービス，または弊社プロフェッショナルサービスのご利用をご検討下さい．
-ファイル KGTN2011100503.pdf [(52.4 KB)] [kitasp 技術センター, 2011/10/05 13:41]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1281/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1283/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1283/">[GGH4.0] Ver4.0 のサービスGO-Global Update Client がサーバ上で見つからない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1283/">[GGH4.0] Ver4.0 のサービスGO-Global Update Client がサーバ上で見つからない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -555,31 +414,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2011100502
-[現象] [GGH4.0] Ver4.0 のサービスGO-Global Update Client がサーバ上で見つからない．
-[説明] Ver4.0 のサービスGO-Global Update Client は，クライアント側の GO-Global Client を更新するための機能を担っており，クライアント側の Windows 上で動作します．従って，通常はサーバ側にこのサービスは存在しません．但し，サーバ側で GO-Global Client をインストールした場合は， （当然のことながら） このサービスが存在します．
-ファイル KGTN2011100502.pdf [(48.5 KB)] [kitasp 技術センター, 2011/10/05 10:37]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1283/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1284/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1284/">[GGW3.1.1] Ver3.1.1 のサービスGO-Global Update Client の機能は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1284/">[GGW3.1.1] Ver3.1.1 のサービスGO-Global Update Client の機能は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -596,33 +440,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2011100501
-[現象] [GGW3.1.1] Ver3.1.1 のサービスGO-Global Update Client の機能は？
-[説明] Ver3.1.1 では， Windows のシステムファイルwin32k.sys, ntoskrnl.exe, ntdll.dll, user32.dll, gdi32.dll 用のカスタムインタフェースが存在し，これらのシステムファイルが更新された時，常にGGのカスタムインタフェース （VBMファイルとして提供） も更新する必要があります． （Ver3.1.1の） GO-Global Update Client は，これらのシステムファイルが更新されたかどうかを監視し，更新された場合はそれに対応するVBMファイルが存在するかどうかを調べ，存在すればカスタムインタフェースを更新する処理を行います．
-しかしながら実際の運用では，Windows の新しいシステムファイルがリリースされた時，GraphOn社は互換アップデートでこのVBMファイルを提供しており， （互換アップデートの） インストーラーがVBMファイルをインストールする機能を持っているため， GO-Global Update Client が有意に働く状況は発生しません．このようなことから， GO-Global Update Client を無効化することをお勧めしております．
-注　意 上記の理由および自動互換アップデート機能の実装により， Ver3.2.1 には GO-Global Update Client は存在しません．また Ver4.0 に存在する GO-Global Update Client は，サービス名は同じですが， 「クライアント側のモジュールを更新する機能」 で，全く内容が異なるサービスです．
-ファイル KGTN2011100501.pdf [(67.5 KB)] [kitasp 技術センター, 2011/10/05 09:00]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1284/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2189/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2189/">[GGW3.2/GGH4.X-5.X] セッションがたまに切れるが，何か簡単に試せることはないか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2189/">[GGW3.2/GGH4.X-5.X] セッションがたまに切れるが，何か簡単に試せることはないか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -639,34 +466,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2009051501
-[現象] [GGW3.2/GGH4.X-5.X] セッションがたまに切れるが，何か簡単に試せることはないか？
-[説明] GO-Global for Windows はデフォルトの設定で， （クライアント～サーバ間に張られる GO-Global for Windows のコネクション上のプロトコルで） クライアントからサーバへ30秒毎にPINGを送信しています（以降，ICMPのPINGと区別するためにGG-PINGと表記します）．30秒以内にサーバから応答があればコネクションが正常と判断し，それを越えて応答がなければコネクションが失われたと判断します （注：応答を受信した直後にコネクションが切れた場合は，それから29秒後にGG-PINGが送信されますので，59秒後にコネクションが切れたと判断します） ．このGG-PINGの機能を以下の設定で無効にすることができます．
-[HKEY_LOCAL_MACHINESOFTWAREGraphOnBridges1.0.0AppServer] SessionVerification REG_DWORD 0
-設定を変更した場合は，必ずサーバを再起動して下さい．GG-PINGの機能を無効にしてもセッションが切れる場合は，TCP/IPレベルで実際にコネクションが切れているものと推測されます．
-補　足 TCP/IPレベルでセッションが切断されているかどうかを確認するには，弊社開発の GGNetworkCheck をご利用下さい．このツールは，GG のサーバ側とクライアント側で動作させるプログラムで，クライアント側主導でTCP/IP のヘルスチェック （接続性確認） を行います．クライアント側は所定の秒数でPING メッセージを送信し （ログに記録も残します） ，サーバ側はPING メッセージを受信するとログに記録するとともに，応答メッセージをクライアント側に送信します．クライアント側は応答メッセージを受信すると，その情報をログに記録します．所定秒数内に相手からのメッセージが届かない，またはTCP/IP レベルでコネクションが切断された場合は，エラーとしてログに記録されます．この２つのログ （クライアント側とサーバ側） を付き合わせることで，ネットワークの状況を確認することが出来ます．GGのプロトコルを使用せずにチェックを行いますので，万一GG上で問題が発生したとしても，ネットワークの状況を確実に把握することが可能です．詳細は，技術ノート KGTN#2011030201 をご覧下さい．
-ファイル KGTN2009051501.pdf [(84 KB)] [kitasp 技術センター, 2017/04/06 17:22]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2189/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1282/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1282/">[iPad Client] iPad クライアントの解像度を縦置き状態に変更したい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1282/">[iPad Client] iPad クライアントの解像度を縦置き状態に変更したい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -683,32 +492,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2011092702
-[現象] [iPad Client] iPad クライアントの解像度を縦置き状態に変更したい．
-[説明] 標準状態では，iPad クライアントの解像度は横向き状態 （つまり1024x768）　になります． 現在，縦置き状態 （つまり768x1024） に設定出来るかどうかGraphOn社へ問い合わせ中です． β版では縦向き表示が可能でしたが， IOS SDK の互換性の問題から正式リリース版では横向き状態のみをサポートします．
-補　足 iPadクライアントのリリース版が縦向き表示をサポートしていない理由は，以下の通りです．
-ファイル KGTN2011092702.pdf [(64.3 KB)] [kitasp 技術センター, 2011/10/05 12:21]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1282/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1279/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1279/">GG上で利用したいアプリケーションがあるが，環境変数が不足しており動作しない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1279/">GG上で利用したいアプリケーションがあるが，環境変数が不足しており動作しない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -725,14 +518,59 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/10/05*
-[番号] 技術ノート KGTN 2011100504
-[現象] GG上で利用したいアプリケーションがあるが，環境変数が不足しており動作しない．
-[説明] そのGGサーバを利用する全てのユーザに共通な環境変数であれば， Windows の [システムのプロパティ]　→ [詳細設定] → [環境変数] → [システム環境変数] （Windows Server 2003 の場合）　で定義するのが良いでしょう．設定する内容については，そのアプリケーションのドキュメント等をご覧下さい．
-ファイル KGTN2011100504.pdf [(48.9 KB)] [kitasp 技術センター, 2011/10/05 14:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1279/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1286/">[GGH4.0] APSログに AS: The license is missing. という記録がありログオン出来ない．</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1286/"><i class="far fa-calendar"></i> 2011-10-03</a>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1285/">[GGH4.0] Windows Server 2008 R2 で，従来のターミナル サービス （TS） がリモート デスクトップ サービス （RDS） に変わったが，GGはこの RDS を使用していないのか？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1285/"><i class="far fa-calendar"></i> 2011-10-03</a>
+                                        </p>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -755,80 +593,15 @@
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li class="active">
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

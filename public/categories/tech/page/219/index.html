@@ -311,108 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1345/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1345/">GO-Global はAPI Wrapping 方式で， Terminal Service はScreen Scraping 方式だそうだが，具体的にどう違うのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
 
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1345/"><i class="far fa-calendar"></i> 2011-08-02</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/08/02*
-[番号] 技術ノート KGTN 2011080201
-[現象] GO-Global はAPI Wrapping 方式で， Terminal Service はScreen Scraping 方式だそうだが，具体的にどう違うのか？
-[説明]
- 各方式の概要 API Wrapping 方式では，サーバ上で実行される描画命令を捕まえて，それに対応する仮想的な描画命令をクライアントへ転送し，その命令を受け取ったクライアントが画面に描画します．  Screen Scraping 方式では，サーバ上で描画された画面を監視し，決められた間隔で画面の差分を検出し，その差分をクライアントへ転送し，そしてクライアントが画面に反映します．
-画面再現のタイミングについて API Wrapping 方式では，描画命令を捕まえて 「逐次」 クライアントへ転送し画面を再現します．つまり同期して画面の再現を行う仕組みで，ネットワークが混雑した状況等に於いても，アプリケーションが描画した通りの順序でクライアントの画面を再現します．この同期描画により，ユーザは描画 （画面の再現） に違和感を感じることはありません．  Screen Scraping 方式では，描画された画面を 「決められた間隔で」 差分を検出し，それをクライアントへ転送し画面を再現します．つまり非同期に画面の再現を行う仕組みで，ネットワークが混雑した状況等では，アプリケーションが描画した順序とは無関係にクライアントの画面を再現します．この非同期描画により，ユーザは描画 （画面の再現） に違和感を感じることがあります．
-CPUの使用率について API Wrapping 方式では，アプリケーションの描画処理に同期して，クライアントで画面の描画を行いますので，その処理の分だけCPUの使用率が通常よりも 「高く」 なる傾向があります．  Screen Scraping 方式では，アプリケーションの描画処理とは関係なく 「決められた間隔で」 差分を検出し，その差分をクライアントへ転送し，そして画面に反映しますので，その処理の分だけCPUの使用率が通常よりも 「長く」 なる傾向があります．
-ファイル KGTN2011080201.pdf [(62.8 KB)] [kitasp 技術センター, 2011/08/02 15:12]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1345/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1346/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1346/">[GGH4.0] セッション再接続機能を利用し，クライアントAからクライアントBへセッションを引き継いだ場合，クライアントのドライブはどう表示されるのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1346/"><i class="far fa-calendar"></i> 2011-07-29</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2011/07/29*
-[番号] 技術ノート KGTN 2011072903
-[現象] [GGH4.0] セッション再接続機能を利用し，クライアントAからクライアントBへセッションを引き継いだ場合，クライアントのドライブはどう表示されるのか？
-[説明] GGH-4.0.1.10357 の仕様では，ファイルアクセスのダイアログ等を開いた場合，セッションを引き継いだ後のクライアント （つまりクライアントB） のドライブが表示されます．
-ファイル KGTN2011072903.pdf [(45.8 KB)] [kitasp 技術センター, 2011/07/29 14:03]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1346/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1348/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1348/">[GGH4.0] GO-Global iPad Client のサイズと対応している環境は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1348/">[GGH4.0] GO-Global iPad Client のサイズと対応している環境は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -429,31 +336,16 @@ CPUの使用率について API Wrapping 方式では，アプリケーション
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/07/08*
-[番号] 技術ノート KGTN 2011070803
-[現象] [GGH4.0] GO-Global iPad Client のサイズと対応している環境は？
-[説明] 2011年7月8日時点でApple App Store から入手できるGO-Global iPad Client (Ver 4.1.0.10533) は，サイズが3.1MB，動作環境がiOS 4.2 またはそれ以降です．
-ファイル KGTN2011070803.pdf [(45.9 KB)] [kitasp 技術センター, 2011/07/08 09:47]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1348/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1349/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1349/">[GGH4.0] GO-Global iPad Client の入手方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1349/">[GGH4.0] GO-Global iPad Client の入手方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -470,31 +362,16 @@ CPUの使用率について API Wrapping 方式では，アプリケーション
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/07/08*
-[番号] 技術ノート KGTN 2011070802
-[現象] [GGH4.0] GO-Global iPad Client の入手方法は？
-[説明] Apple App Store から入手することが出来ます．
-ファイル KGTN2011070802.pdf [(104 KB)] [kitasp 技術センター, 2011/07/08 09:29]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1349/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1350/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1350/">エンタープライズオプションの GMCheckRaw は， Windows Server 2008 R2 の環境でも動作するのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1350/">エンタープライズオプションの GMCheckRaw は， Windows Server 2008 R2 の環境でも動作するのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -511,31 +388,16 @@ CPUの使用率について API Wrapping 方式では，アプリケーション
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/07/05*
-[番号] 技術ノート KGTN 2011070503
-[現象] エンタープライズオプションの GMCheckRaw は， Windows Server 2008 R2 の環境でも動作するのか？
-[説明] Windows Server 2008 R2 には， Windows 32 On Windows 64 (WOW64) と呼ばれるエミュレータコンポーネントがあり， GMCheckRaw はこのエミュレーター上で動作します．
-ファイル KGTN2011070503.pdf [(50.8 KB)] [kitasp 技術センター, 2011/07/05 10:57]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1350/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1352/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1352/">GGNetworkCheck は， Windows Server 2008 R2 の環境でも動作するのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1352/">GGNetworkCheck は， Windows Server 2008 R2 の環境でも動作するのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -552,31 +414,16 @@ CPUの使用率について API Wrapping 方式では，アプリケーション
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/07/04*
-[番号] 技術ノート KGTN 2011070501
-[現象] GGNetworkCheck は， Windows Server 2008 R2 の環境でも動作するのか？
-[説明] Windows Server 2008 R2 には， Windows 32 On Windows 64 (WOW64) と呼ばれるエミュレータコンポーネントがあり，他の32ビットアプリと同様 GGNetworkCheck もこのエミュレーター上で動作します．
-ファイル KGTN2011070501.pdf [(50.9 KB)] [kitasp 技術センター, 2011/07/05 08:20]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1352/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1351/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1351/">エンタープライズオプションの GMService は， Windows Server 2008 R2 の環境でも動作するのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1351/">エンタープライズオプションの GMService は， Windows Server 2008 R2 の環境でも動作するのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -593,31 +440,16 @@ CPUの使用率について API Wrapping 方式では，アプリケーション
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/07/04*
-[番号] 技術ノート KGTN 2011070502
-[現象] エンタープライズオプションの GMService は， Windows Server 2008 R2 の環境でも動作するのか？
-[説明] Windows Server 2008 R2 には， Windows 32 On Windows 64 (WOW64) と呼ばれるエミュレータコンポーネントがあり， GMService はこのエミュレーター上で動作します．サービスの 「登録・開始・停止・削除」 も32ビット環境ど同様に動作します．
-ファイル KGTN2011070502.pdf [(53.3 KB)] [kitasp 技術センター, 2011/07/05 08:28]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1351/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1353/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1353/">GGNetworkCheck の下記の下線の記録の意味は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1353/">GGNetworkCheck の下記の下線の記録の意味は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -634,30 +466,16 @@ CPUの使用率について API Wrapping 方式では，アプリケーション
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/06/21*
-[番号] 技術ノート KGTN 2011062102
-[現象] GGNetworkCheck の下記の下線の記録の意味は？
-[2011-06-17 08:25:29] Test#1 CL@08:25:29 -&gt; [2011-06-17 08:25:29] Test#1 CL@08:25:29 -&gt; SV@08:25:29 -&gt; [2011-06-17 08:25:29] Test#1 CL@08:25:29 -&gt; SV@08:25:29 -&gt; CL@08:25:29 (15ms) [2011-06-17 08:25:44] ERROR: recv(&lsquo;127.0.0.1&rsquo;,&lsquo;1457&rsquo;) -&gt; Failed [2011-06-17 08:25:34] Test#1 CL@08:25:34 -&gt; [2011-06-17 08:27:47] INFO: Connection closed (&lsquo;127.0.0.1&rsquo;,&lsquo;1457&rsquo;) [2011-06-17 08:27:48] ERROR: recv(&lsquo;localhost&rsquo;,&lsquo;8491&rsquo;) -&gt; Failed [2011-06-17 08:27:53] CLIENT Timeout = 10sec [2011-06-17 08:27:53] INFO: socket(&lsquo;localhost&rsquo;,&lsquo;8491&rsquo;) -&gt; Connected [2011-06-17 08:27:53] INFO: Connected IPv4 (&lsquo;127.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1353/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1354/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1354/">GGNetworkCheck でネットワークのチェックを行ったところ，下記のようなエラー （切断） が発生した．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1354/">GGNetworkCheck でネットワークのチェックを行ったところ，下記のようなエラー （切断） が発生した．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -674,30 +492,16 @@ CPUの使用率について API Wrapping 方式では，アプリケーション
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/06/20*
-[番号] 技術ノート KGTN 2011062101
-[現象] GGNetworkCheck でネットワークのチェックを行ったところ，下記のようなエラー （切断） が発生した．
-[2011-06-17 08:25:29] Test#1 CL@08:25:29 -&gt; [2011-06-17 08:25:29] Test#1 CL@08:25:29 -&gt; SV@08:25:29 -&gt; [2011-06-17 08:25:29] Test#1 CL@08:25:29 -&gt; SV@08:25:29 -&gt; CL@08:25:29 (15ms) [2011-06-17 08:25:44] ERROR: recv(&lsquo;127.0.0.1&rsquo;,&lsquo;1457&rsquo;) -&gt; Failed [2011-06-17 08:25:34] Test#1 CL@08:25:34 -&gt; [2011-06-17 08:27:47] INFO: Connection closed (&lsquo;127.0.0.1&rsquo;,&lsquo;1457&rsquo;) [2011-06-17 08:27:48] ERROR: recv(&lsquo;localhost&rsquo;,&lsquo;8491&rsquo;) -&gt; Failed [2011-06-17 08:27:53] CLIENT Timeout = 10sec [2011-06-17 08:27:53] INFO: socket(&lsquo;localhost&rsquo;,&lsquo;8491&rsquo;) -&gt; Connected [2011-06-17 08:27:53] INFO: Connected IPv4 (&lsquo;127.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1354/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1357/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1357/">Windows Server 2003 の C:¥Windows¥System32 の下にあるファイルを消したが，暫くすると復活する．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1357/">Windows Server 2003 の C:¥Windows¥System32 の下にあるファイルを消したが，暫くすると復活する．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -714,15 +518,59 @@ CPUの使用率について API Wrapping 方式では，アプリケーション
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/06/20*
-[番号] 技術ノート KGTN 2011061601
-[現象] Windows Server 2003 の C:¥Windows¥System32 の下にあるファイルを消したが，暫くすると復活する．
-[説明] この現象は，Windows ファイル保護機能 （Windows File Protection，略称WFP） が働いたためです．詳細についてはマイクロソフト社の知識ベース KB222193 をご覧下さい．
-http://support.microsoft.com/kb/222193/ja
-ファイル KGTN2011061601.pdf [(54.3 KB)] [kitasp 技術センター, 2011/06/20 09:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1357/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1355/">エンタープライズオプションの GGServiceMonitor でGGのライセンスマネージャのサービス GO-Global License Manager が見つからない．</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1355/"><i class="far fa-calendar"></i> 2011-06-20</a>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1356/">エンタープライズオプションの GMService の restartInterval の使い方 （意味） が分らない．</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1356/"><i class="far fa-calendar"></i> 2011-06-20</a>
+                                        </p>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -745,80 +593,15 @@ http://support.microsoft.com/kb/222193/ja
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li class="active">
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

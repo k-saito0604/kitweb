@@ -311,23 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1260/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1260/">[GGW3.2.1/WS2003] ctfmon.exe の自動起動のエントリを削除した場合，どうなるのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1260/">[GGW3.2.1/WS2003] ctfmon.exe の自動起動のエントリを削除した場合，どうなるのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -344,37 +336,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/10/20*
-[番号] 技術ノート KGTN 2011101901
-[現象] [GGW3.2.1/WS2003] ctfmon.exe の自動起動のエントリを削除した場合，どうなるのか？
-[説明] ctfmon.exe はMicrosoft Text Services で，GGの設定から自動起動のエントリを削除した場合，コントロールパネルの [テキストサービスと入力言語] の [高度なテキストサービスをオフにする] の設定に依存して動作が異なります．
-・ [高度なテキストサービスをオフにする]　が無効な場合 かな漢字変換は可能ですが，IMEツールバー （言語バー） が表示されません．
-・ [高度なテキストサービスをオフにする]　が有効な場合 かな漢字変換は可能で，かつIMEツールバー （言語バー） も表示されます．
-補足１ [高度なテキストサービスをオフにする]　が有効な場合でも，手動で ctfmon.exe を起動すると ctfmon.exe のスタートアップが有効になり，これ以降 ctfmon.exe が自動的に起動されます．これを解除するには， msconfig コマンドでスタートアップ項目の ctfmon を無効にして下さい （注意：スタートアップ項目に複数の ctfmon が存在することがあります．その場合は，全ての ctfmon を無効にして下さい） ．
-補足２ msconfig コマンドでスタートアップ項目の ctfmon を有効にした場合は，次のレジストリが登録されます．
-HKCU¥Software¥Microsoft¥Windows¥CurrentVersion¥Run ctfmon.exe REG_SZ C:¥WINDOWS¥system32¥ctfmon.exe
-逆に ctfmon を無効にした場合は，このレジストリが削除されます．
-補足３ GraphOn社に照会していますが，以下のレジストリは機能していないと考えられます．もし機能していれば，[高度なテキストサービスをオフにする] を有効しても ctfmon.exe は起動すると考えられますが，実際には起動しませんので， （恐らく） 上記補足２のレジストリで起動されているものと推測されます．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1260/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1259/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1259/">[Windows] Windows Client を自動的にクライアントへインストールする方法はないか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1259/">[Windows] Windows Client を自動的にクライアントへインストールする方法はないか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -391,32 +362,16 @@ HKCU¥Software¥Microsoft¥Windows¥CurrentVersion¥Run ctfmon.exe REG_SZ C:¥WI
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/10/20*
-[番号] 技術ノート KGTN 2011102001
-[現象] [Windows] Windows Client を自動的にクライアントへインストールする方法はないか？
-[説明] Active Directory環境であれば，グループ・ポリシーで MSI ファイルをインストールすることが可能ですが，一般にはアプリケーションを Windows マシンへ自動的にインストールする方法はありません． 従って， Windows Client を自動的にクライアントへインストールする方法はありません．もし Active Directory環境であれば，例えば下記の記事を参考にして下さい．
-MSIファイルをActive Directoryのグループ・ポリシーでインストールする http://www.atmarkit.co.jp/fwin2k/win2ktips/963msiaddeploy/msiaddeploy.html
-ファイル KGTN2011102001.pdf [(51.5 KB)] [kitasp 技術センター, 2011/10/20 14:28]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1259/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1263/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1263/">[GGH4.0] Windows Server 2008 (x64) でGG の評価をしたいが，物理メモリはどれくらい必要か？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1263/">[GGH4.0] Windows Server 2008 (x64) でGG の評価をしたいが，物理メモリはどれくらい必要か？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -433,31 +388,16 @@ MSIファイルをActive Directoryのグループ・ポリシーでインスト�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/10/19*
-[番号] 技術ノート KGTN 2011101902
-[現象] [GGH4.0] Windows Server 2008 (x64) でGG の評価をしたいが，物理メモリはどれくらい必要か？
-[説明] Windows Server 2008 (x64) をインストールする場合， （マイクロソフト社の推奨システム要件に準じて） GG の評価には物理メモリ2GB 以上が必要です．
-ファイル KGTN2011101902.pdf [(45.7 KB)] [kitasp 技術センター, 2011/10/19 10:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1263/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1261/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1261/">[GGW3.2.1] GO-Global ActiveX Client.msi は，どのような利用を想定しているのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1261/">[GGW3.2.1] GO-Global ActiveX Client.msi は，どのような利用を想定しているのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -474,32 +414,16 @@ MSIファイルをActive Directoryのグループ・ポリシーでインスト�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/10/19*
-[番号] 技術ノート KGTN 2011101904
-[現象] [GGW3.2.1] GO-Global ActiveX Client.msi は，どのような利用を想定しているのか？
-[説明] Ver3.2.1 の GO-Global ActiveX Client.msi （以下MSIと省略） は，特定のソリューションとして提供されるものではなく，大抵は以下のようなシナリオで利用されます．
-ドメインの管理者がグループ・ポリシー・オブジェクトを介してMSIを配布＆インストール エンドユーザが MSI を直接実行しインストール
-ファイル KGTN2011101904.pdf [(52.6 KB)] [kitasp 技術センター, 2011/10/19 13:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1261/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1262/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1262/">[Tool] GGNetworkCheck で以下のエラーが記録された．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1262/">[Tool] GGNetworkCheck で以下のエラーが記録された．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -516,32 +440,16 @@ MSIファイルをActive Directoryのグループ・ポリシーでインスト�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/10/19*
-[番号] 技術ノート KGTN 2011101903
-[現象] [Tool] GGNetworkCheck で以下のエラーが記録された．
-C:¥&gt; GGNetworkCheck -c [2011-10-14 11:17:43] INFO: socket(&lsquo;210.196.131.146&rsquo;,&lsquo;7492&rsquo;) -&gt; Connected [2011-10-14 11:17:43] Test#1 CL@11:17:43 -&gt; [2011-10-14 11:17:43] [2011-10-14 11:17:48] Test#1 CL@11:17:48 -&gt; [2011-10-14 11:17:48] ERROR: recv(&lsquo;210.196.131.146&rsquo;,&lsquo;7492&rsquo;) -&gt; Failed
-[説明] 最初の行に Connected と記録されていることから， 210.196.131.146:7492 上で動作するプログラムと接続したことが分ります．次の行で GGNetworkCheck のPINGを送信していますが，最後の行で受信に失敗，つまり相手 （サーバ） が応答を返さなかったことを示しています．接続出来ているにもかかわらず，PINGの応答が無いということは， 210.196.131.146:7492 上で動作するプログラムは GGNetworkCheck 以外のプログラムで，GGのAPS （GGの待ち受けポート） だと推測されます． GGNetworkCheck は，ネットワーク障害を他に依存することなく検出出来るように，サーバ側およびクライアント側それぞれで GGNetworkCheck を使用します．詳細は，技術ノート KGTN#2011030201 をご覧下さい．
-ファイル KGTN2011101903.pdf [(64 KB)] [kitasp 技術センター, 2011/10/19 11:40]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1262/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2208/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2208/">[GGH4.X-5.X] クラスタマネージャの Minimum available physical memory の意味は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2208/">[GGH4.X-5.X] クラスタマネージャの Minimum available physical memory の意味は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -558,34 +466,16 @@ C:¥&gt; GGNetworkCheck -c [2011-10-14 11:17:43] INFO: socket(&lsquo;210.196.131
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/10/14*
-[番号] 技術ノート KGTN 2011101402
-[現象] [GGH4.X-5.X] クラスタマネージャの Minimum available physical memory の意味は？
-[説明] 利用可能な物理メモリが Minimum available physical memory の値よりも少ない場合および極めて近い場合，新たなセッションの生成が禁止されます （ログオン時に &ldquo;Logon failed. Physical memory requirement as not met.&rdquo; のエラーダイアログが表示されます） ．表面上はログオン時の物理メモリの管理に関する設定ですが，運用上は存在するセッションが利用出来る物理メモリを確保する （減らさないようにする） ための設定となります．従って，サーバが不安定等の現象が発生した場合は，「この値を2倍・4倍に増やす」　「32MB・64MB・128MB増やす」 等を試してみる価値があります．
-補　足 利用可能な物理メモリがMinimum available physical memory の値に近い場合，ログオン時に &ldquo;Connection failed. The server could not create a new session.&rdquo;　のエラーダイアログが表示されることがあります．
-ファイル KGTN2011101402.pdf [(94.6 KB)] [kitasp 技術センター, 2017/02/22 16:44]
-KGTN2011101402.jpg
-表示 [(11.7 KB)] [kitasp 技術センター, 2017/02/22 16:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2208/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2207/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2207/">[GGH4.X-5.X] クラスタマネージャの Minimum available virtual memory の意味は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2207/">[GGH4.X-5.X] クラスタマネージャの Minimum available virtual memory の意味は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -602,32 +492,16 @@ KGTN2011101402.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/10/14*
-[番号] 技術ノート KGTN 2011101403
-[現象] [GGH4.X-5.X] クラスタマネージャの Minimum available virtual memory の意味は？
-[説明] （合計仮想メモリに対する） 利用可能な仮想メモリの比率が Minimum available virtual memory の値よりも小さい場合および極めて近い場合，新たなセッションの生成が禁止されます （ログオン時に &ldquo;Logon failed. Virtual memory requirement as not met.&rdquo; のエラーダイアログが表示されます） ．表面上はログオン時の仮想メモリの管理に関する設定ですが，運用上は存在するセッションが利用出来る仮想メモリを確保する （減らさないようにする） ための設定となります．従って，サーバが不安定等の現象が発生した場合は，この値を 5%・10%・20%・etc&hellip; 増やして試す価値があります．
-補　足 例えば， Minimum available virtual memory の値が10%の場合は，利用可能な仮想メモリが合計仮想メモリの10%を切ったら，ログオンさせないという意味になります．合計仮想メモリと利用可能な仮想メモリの値は，以下のスクリプトで得ることが出来ます．
-strComputer = &ldquo;.&rdquo; Set objWMIService = GetObject(&ldquo;winmgmts:&rdquo; _ &amp; &ldquo;{impersonationLevel=impersonate}!&rdquo; &amp; strComputer &amp; &ldquo;rootcimv2&rdquo;) Set colSettings = objWMIService.ExecQuery _ (&ldquo;Select * from Win32_OperatingSystem&rdquo;) For Each objOperatingSystem in colSettings Wscript.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2207/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1266/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1266/">[GGW3.2.1] クラスタマネージャの Minimum available physical memory の意味は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1266/">[GGW3.2.1] クラスタマネージャの Minimum available physical memory の意味は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -644,32 +518,16 @@ strComputer = &ldquo;.&rdquo; Set objWMIService = GetObject(&ldquo;winmgmts:&rdq
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/10/14*
-[番号] 技術ノート KGTN 2011101304
-[現象] [GGW3.2.1] クラスタマネージャの Minimum available physical memory の意味は？
-[説明] 利用可能な物理メモリが Minimum available physical memory の値よりも少ない場合および極めて近い場合，新たなセッションの生成が禁止されます （ログオン時に &ldquo;Logon failed. Physical memory requirement as not met.&rdquo; のエラーダイアログが表示されます） ．表面上はログオン時の物理メモリの管理に関する設定ですが，運用上は存在するセッションが利用出来る物理メモリを確保する （減らさないようにする） ための設定となります．従って，サーバが不安定等の現象が発生した場合は，「この値を2倍・4倍に増やす」　「32MB・64MB・128MB増やす」 等を試してみる価値があります．
-補　足 利用可能な物理メモリがMinimum available physical memory の値に近い場合，ログオン時に &ldquo;Connection failed. The server could not create a new session.&rdquo;　のエラーダイアログが表示されることがあります．
-ファイル KGTN2011101304.pdf [(63.1 KB)] [kitasp 技術センター, 2011/10/14 09:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1266/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1267/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1267/">[GGW3.2.1] クラスタマネージャの Minimum available virtual memory の意味は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1267/">[GGW3.2.1] クラスタマネージャの Minimum available virtual memory の意味は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -686,32 +544,16 @@ strComputer = &ldquo;.&rdquo; Set objWMIService = GetObject(&ldquo;winmgmts:&rdq
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/10/14*
-[番号] 技術ノート KGTN 2011101305
-[現象] [GGW3.2.1] クラスタマネージャの Minimum available virtual memory の意味は？
-[説明] 利用可能な仮想メモリが Minimum available virtual memory の値よりも少ない場合および極めて近い場合，新たなセッションの生成が禁止されます （ログオン時に &ldquo;Logon failed. Virtual memory requirement as not met.&rdquo; のエラーダイアログが表示されます） ．表面上はログオン時の仮想メモリの管理に関する設定ですが，運用上は存在するセッションが利用出来る仮想メモリを確保する （減らさないようにする） ための設定となります．従って，サーバが不安定等の現象が発生した場合は，この値を2倍・4倍に増やす，32MB・64MB・128MB・256MB・512MB増やす，等を試してみる価値があります．
-補　足 利用可能な仮想メモリのサイズは，以下のスクリプトで得ることが出来ます．
-strComputer = &ldquo;.&rdquo; Set objWMIService = GetObject(&ldquo;winmgmts:&rdquo; _ &amp; &ldquo;{impersonationLevel=impersonate}!¥¥&rdquo; &amp; strComputer &amp; &ldquo;¥root¥cimv2&rdquo;) Set colSettings = objWMIService.ExecQuery _ (&ldquo;Select * from Win32_OperatingSystem&rdquo;) For Each objOperatingSystem in colSettings Wscript.Echo &ldquo;Available Virtual Memory : &quot; &amp; _ objOperatingSystem.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1267/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1265/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1265/">[GGW3.2.1] ログオン時に ctfmon.exe というプログラムが起動されるが何なのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1265/">[GGW3.2.1] ログオン時に ctfmon.exe というプログラムが起動されるが何なのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -728,14 +570,7 @@ strComputer = &ldquo;.&rdquo; Set objWMIService = GetObject(&ldquo;winmgmts:&rdq
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/10/14*
-[番号] 技術ノート KGTN 2011101401
-[現象] [GGW3.2.1] ログオン時に ctfmon.exe というプログラムが起動されるが何なのか？
-[説明] ctfmon.exe は Microsoft Text Services で， 「ユーザー入力テクノロジをサポートするテキスト入力サービスを提供」 する機能を担っています．日本語入力の環境を整えるために， （GGのシステムが） ログオン時にこのctfmon.exe を自動的に起動しています．
-ファイル KGTN2011101401.pdf [(49.3 KB)] [kitasp 技術センター, 2011/10/14 10:14]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1265/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
@@ -758,80 +593,15 @@ strComputer = &ldquo;.&rdquo; Set objWMIService = GetObject(&ldquo;winmgmts:&rdq
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li>
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

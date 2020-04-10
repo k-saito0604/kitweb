@@ -311,106 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2356/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2356/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor が正常に起動している場合，ログファイルにどのような記録があるのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
 
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2356/"><i class="far fa-calendar"></i> 2016-08-25</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2016/08/25*
-[番号] 技術ノート KGTN 2016081703
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor が正常に起動している場合，ログファイルにどのような記録があるのか？
-[説明] GGEasyMonitor のバージョンや設定ファイルの内容によって，ログファイルに記録される内容は異なりますが，少なくとも以下の内容は記録されます（ログレベルが4の場合）．
-★LOG-yyyymmdd.log★ [2016-08-17 09:22:49] GGEasyMonitor - Ver2.2.0 (Build#20160816-01), … [2016-08-17 09:22:49] FD_SETSIZE = 256 [2016-08-17 09:22:49] INFO: License found [2016-08-17 09:22:49] INFO[SMS]: Started with port '491' ... [2016-08-17 09:22:49] INFO[PAS]: Started with port '8491' ... [2016-08-17 09:22:49] INFO[ACT]: Started ... [2016-08-17 09:22:54] INFO: The Web Server is enabled. (numServer = 4, webPort = '8080') [2016-08-17 09:22:54] INFO[WEB]: Started with port '8080' .</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2356/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2358/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2358/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor が設定したポート番号で待ち受けているかどうか確認する方法は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2358/"><i class="far fa-calendar"></i> 2016-08-25</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2016/08/25*
-[番号] 技術ノート KGTN 2016081702
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor が設定したポート番号で待ち受けているかどうか確認する方法は？
-[説明] 次の内容のバッチファイルを作成し，管理者のコマンドプロンプトで実行して下さい．
-netstat -oan &gt; result.txt tasklist &gt;&gt; result.txt  実行結果は result.txt に記録されますので，その内容で GGEasyMonitor.exe の待受けポートを知ることが出来ます．下記の例では， GGEasyMonitor.exe のPIDが 1972 で，アクティブな接続のうち状態がLISTENING （待受け） かつ PID = 1972 のポート番号は 8080, 8089, 8491 であることを示しています．このことから， GGEasyMonitor がポート番号 8080, 8089, 8491 で接続を待っていることが分かります．
-アクティブな接続 プロトコル ローカル アドレス 外部アドレス 状態 PID TCP 0.0.0.0:80 0.0.0.0:0 LISTENING 4 TCP 0.0.0.0:135 0.0.0.0:0 LISTENING 752 TCP 0.0.0.0:443 0.0.0.0:0 LISTENING 4 TCP 0.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2358/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2340/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2340/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor で振り分けを行う場合，ユーザーは webRxpURL のアドレスへブラウザでアクセスすれば良いのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2340/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor で振り分けを行う場合，ユーザーは webRxpURL のアドレスへブラウザでアクセスすれば良いのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -427,33 +336,16 @@ netstat -oan &gt; result.txt tasklist &gt;&gt; result.txt  実行結果は resul
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/08/25*
-[番号] 技術ノート KGTN 2016081602
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor で振り分けを行う場合，ユーザーは webRxpURL のアドレスへブラウザでアクセスすれば良いのか？
-[説明] いいえ．設定項目 webRxpURL は， 「GGサーバーのログオンページ」 のアドレスですので，このアドレスでは振り分けが行われません．振り分けを行う場合は， http://&lt;hostAddr&gt;:&lt;cbkPort&gt;/logon.html{.external} （つまり GGEasyMonitor の振り分け用ポート） へアクセスする必要があります．
-ファイル KGTN2016081602.pdf [(84.9 KB)] [kitasp 技術センター, 2016/08/25 17:22]
-KGTN2016081602.jpg
-表示 [(15.6 KB)] [kitasp 技術センター, 2016/08/26 14:31]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2340/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2355/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2355/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor のインストールを，GGのインストール前に行って良いか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2355/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor のインストールを，GGのインストール前に行って良いか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -470,31 +362,16 @@ KGTN2016081602.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/08/25*
-[番号] 技術ノート KGTN 2016081704
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor のインストールを，GGのインストール前に行って良いか？
-[説明] GGEasyMonitor と GGが同じサーバーに同居するような構成では，必ずGGを先にインストールして下さい．なお，GGが正常動作していない状況では， GGEasyMonitor の動作確認を効率的に行うことが出来ませんので，GGに正常にログオン出来ることを確認した後に GGEasyMonitor をインストールすることをお勧めします．
-ファイル KGTN2016081704.pdf [(53.9 KB)] [kitasp 技術センター, 2016/08/25 17:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2355/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2352/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2352/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor のバージョン2.2.0は，インストールのどのような部分に変更があるのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2352/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor のバージョン2.2.0は，インストールのどのような部分に変更があるのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -511,36 +388,16 @@ KGTN2016081602.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/08/25*
-[番号] 技術ノート KGTN 2016081901
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor のバージョン2.2.0は，インストールのどのような部分に変更があるのか？
-[説明] GGEasyMonitor のバージョン2.2.0のインストール関連の主な変更点は以下の通りです．
-[ファイルの追加] クライアント情報を採取するため次のファイルが追加されました． ・GGEasyMonitorClientInfo.exe クライアント情報を収集するプログラム ・GGEasyMonitorClientInfo.ini クライアント情報を収集するプログラムの設定ファイル ・GGEasyMonitorClientInfo-Data.ini クライアント情報を保持する作業ファイル ・GGEasyMonitor-Files.bat 作業ファイルのアクセス権を設定するバッチ ・logon-gem-ci.bat ログオンスクリプト ・logon-gem-ci.vbs ログオンスクリプトから起動されるスクリプト
-[必要な設定作業：GGの設定ファイル] サーバー側から見たクライアントのIPアドレスを得るため， HostProperties.xml　の下記の項目に true を設定して下さい．
-&lt;property id=&quot;NetworkAddressEnvVarEnabled&quot; group=&quot;ClientAccess&quot; type=&quot;BOOL&quot;&gt; &lt;value&gt;true&lt;/value&gt; &lt;/property&gt;  [必要な設定作業：クラスターマネージャー] クライアントの情報を取得し作業ファイルに記録するため， logon-gem-ci.bat をグローバル・ログオンスクリプトとして登録して下さい．また，管理者権限で GGEasyMonitor-Files.bat を実行し，作業ファイルに必要なアクセス権を設定して下さい．
-ファイル KGTN2016081901.pdf [(77.8 KB)] [kitasp 技術センター, 2016/08/25 17:46]
-KGTN2016081901.jpg
-表示 [(11 KB)] [kitasp 技術センター, 2016/08/25 17:46]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2352/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2360/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2360/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振り分け機能は，既定値の設定で http://:8089/logon.html でアクセス出来ると聞いたが， IIS の設定を見るとポート番号8089の設定が存在しない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2360/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振り分け機能は，既定値の設定で http://:8089/logon.html でアクセス出来ると聞いたが， IIS の設定を見るとポート番号8089の設定が存在しない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -557,31 +414,16 @@ KGTN2016081901.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/08/25*
-[番号] 技術ノート KGTN 2016081603
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振り分け機能は，既定値の設定で http://:8089/logon.html でアクセス出来ると聞いたが， IIS の設定を見るとポート番号8089の設定が存在しない．
-[説明] GGEasyMonitor は，内部に独自のウエッブサーバー機能を持っており，外部の IIS の機能は使用しません．このため， IIS の設定には GGEasyMonitor 用のポート番号8089や8080の設定は存在しません （登録されません）．
-ファイル KGTN2016081603.pdf [(62.2 KB)] [kitasp 技術センター, 2016/08/25 17:23]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2360/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2359/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2359/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor を利用する場合，各サーバーのファイアウォールの設定はどうすれば良いのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2359/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor を利用する場合，各サーバーのファイアウォールの設定はどうすれば良いのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -598,41 +440,16 @@ KGTN2016081901.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/08/25*
-[番号] 技術ノート KGTN 2016081701
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor を利用する場合，各サーバーのファイアウォールの設定はどうすれば良いのか？
-[説明] インストールするサーバーのファイアウォールがWindows標準の 「セキュリティが強化されたWindowsファイアウォール」 であれば， GGEasyMonitor のインストーラーが必要な受信の規則を登録しますので，設定の追加等は必要ありません．他のファイアウォール （ソフトウエア） をご利用の場合は，プログラム C:kitASPGGEasyMonitorGGEasyMonitor.exe に対して，TCPの全ポートの受信の許可を与えて下さい．参考までに， 「セキュリティが強化されたWindowsファイアウォール」 の設定画面の一部を以下に示します．
-ファイル KGTN2016081701.pdf [(470 KB)] [kitasp 技術センター, 2016/08/25 17:29]
-KGTN2016081701-1.jpg
-表示 [(53 KB)] [kitasp 技術センター, 2016/08/25 17:29]
-KGTN2016081701-2.jpg
-表示 [(21.9 KB)] [kitasp 技術センター, 2016/08/25 17:29]
-KGTN2016081701-3.jpg
-表示 [(23.6 KB)] [kitasp 技術センター, 2016/08/25 17:29]
-KGTN2016081701-4.jpg
-表示 [(22.7 KB)] [kitasp 技術センター, 2016/08/25 17:29]
-KGTN2016081701-5.jpg
-表示 [(21.1 KB)] [kitasp 技術センター, 2016/08/25 17:29]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2359/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1929/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1929/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitorClientInfo とはどんなツールなのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1929/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitorClientInfo とはどんなツールなのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -649,33 +466,16 @@ KGTN2016081701-5.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/08/25*
-[番号] 技術ノート KGTN 2016081201
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitorClientInfo とはどんなツールなのか？
-[説明] GGのグローバル・ログオンスクリプトから起動されることを想定したプログラムで，セッションの環境変数から下記の情報を得て所定のファイルに記録します．記録された情報は， GGEasyMonitor が参照し，クライアント情報の表示に利用されます．
-・ユーザーID ・セッションID ・クライアントのコンピューター名 ・クライアントのIPアドレス ・クライアントのネットワークアドレス ・セッションの開始日 ・セッションの開始時刻
-設定ファイル 設定ファイル GGEasyMonitorClientInfo.ini の default セクションで，以下のパラメタを設定して下さい．
-  設定項目 説明 logLevel ログの出力レベル，通常は1を指定し，障害時は4を指定 logd ログファイルを作成するフォルダ （省略可） loop 情報取得の回数 （既定値は1，無限ループは0を指定） sleep 情報取得の間隔 （単位は秒，既定値は10） includeDomain ユーザーIDにドメイン名を踏む希有 （YES/NO，既定値はNO） adServer このサーバーはADサーバー （YES/NO，既定値はNO） dataPath 採取した情報を保存するiniファイルのフルパス ※ Users に書き込み権限を与えて下さい．   記録内容 採取した情報は dataPath で指定したiniファイルに，以下の形式で記録されます．クライアントのネットワークアドレス （サーバー側） には，設定ファイル HostProperties.xml の NetworkAddressEnvVarEnabled に true が設定された場合に限り，正しいアドレスがセットされます．それ以外の場合は，クライアントのIPアドレス （クライアント側） がセットされます （注：バージョン2.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1929/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2361/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2361/">[GGH5.X] GGH5X-SystemProcess-Setup.exe とはどんなツールなのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2361/">[GGH5.X] GGH5X-SystemProcess-Setup.exe とはどんなツールなのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -692,31 +492,16 @@ KGTN2016081701-5.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/08/25*
-[番号] 技術ノート KGTN 2016081601
-[現象] [GGH5.X] GGH5X-SystemProcess-Setup.exe とはどんなツールなのか？
-[説明] 常駐型のプロセス JpnIME.exe や rundll32.exe 等がセッション中で動作している場合，明示的にサインアウトを行わないとセッションが終了しません． GGH5X-SystemProcess-Setup.exe は，これらの常駐型のプロセスを例外扱い （システムプロセスとして登録） することで，セッションを終了させる設定を行うプログラムです．
-ファイル KGTN2016081601.pdf [(58.4 KB)] [kitasp 技術センター, 2016/08/25 17:20]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2361/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2362/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2362/">[GGH5.X] GGサーバー2台で，技術ノート KGTN#2016070701の例を参考にiniファイルを設定し，１台目のMAXを1に設定したが，2台目以降の接続の振り分けが行われていない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2362/">[GGH5.X] GGサーバー2台で，技術ノート KGTN#2016070701の例を参考にiniファイルを設定し，１台目のMAXを1に設定したが，2台目以降の接続の振り分けが行われていない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -733,14 +518,59 @@ KGTN2016081701-5.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/08/25*
-[番号] 技術ノート KGTN 2016081002
-[現象] [GGH5.X] GGサーバー2台で，技術ノート KGTN#2016070701の例を参考にiniファイルを設定し，１台目のMAXを1に設定したが，2台目以降の接続の振り分けが行われていない．
-[説明] この文章から，どのようなことを期待され，そして実際にどのような結果になったのかということが分かりません．GGサーバーの設定 （IPアドレス，最大セッション数，その他） ，GGサーバーとGGEasyMonitor の関係（GGEasyMonitor の設定ファイル） ，さらにクライアントから接続を行った場合の振り分け先の情報 （時系列）等をお知らせ下さい．また，振り分けを行いログオンが完了した直後の GGEasyMonitor の監視画面のスクリーンショット （ログオン毎に） も併せてお送り下さい．
-ファイル KGTN2016081002.pdf [(60.2 KB)] [kitasp 技術センター, 2016/08/25 17:16]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2362/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2363/">[GGH5.X] 拡張パックの GGEasyMonitor を IE から利用するので，拡張パックに含まれるActiveXクライアントを入手したい．</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2363/"><i class="far fa-calendar"></i> 2016-08-25</a>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2364/">[GGH5.X] 新しいWindowsクライアントを上書きインストールしたが，ログオンしてプログラム・ウインドウでバージョンを確認するとアップグレードされていない．</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2364/"><i class="far fa-calendar"></i> 2016-08-25</a>
+                                        </p>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -763,80 +593,15 @@ KGTN2016081701-5.jpg
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li class="active">
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

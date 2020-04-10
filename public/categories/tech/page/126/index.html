@@ -311,105 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc421/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc421/">[GGH4.X] GGSessionManager でセッションを切断するが，たまに長く時間がかかることがある．この時の遅延した内容 （状況） を調べる方法はないか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
 
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc421/"><i class="far fa-calendar"></i> 2014-01-29</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2014010903
-[現象] [GGH4.X] GGSessionManager でセッションを切断するが，たまに長く時間がかかることがある．この時の遅延した内容 （状況） を調べる方法はないか？
-[説明] GGSessionManager のログレベルを5以上に設定して下さい．この設定により，GGサーバへの接続に時間を要しているのか，セッション一覧の取得に時間を要しているのかが分かります．下記の例では，接続に約0.26秒，サーバ情報の取得に約0.06秒，セッション情報の取得に約0.06秒要していることが分かります．
-2014-01-09 11:34:14.783 Info: -&gt; gg_connectServer('192.168.102.24',491) (in main#331) 2014-01-09 11:34:15.048 Info: &lt;- gg_connectServer('192.168.102.24',491) = 0 (inmain#362) 2014-01-09 11:34:15.064 Info: -&gt; gg_getServerInfo (in main#415) 2014-01-09 11:34:15.126 Info: &lt;- gg_getServerInfo = 0 (in main#449) 2014-01-09 11:34:15.126 Info: -&gt; gg_getSessionInfo (in main#472) 2014-01-09 11:34:15.189 Info: &lt;- gg_getSessionInfo = 0 (in main#518)  ファイル KGTN2014010903.pdf [(52.8 KB)] [kitasp 技術センター, 2014/01/29 15:55]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc421/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc411/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc411/">[GGH4.X] GGSessionManager のセッション強制終了機能は，プログラム・ウインドウに Sign Out の要求を行っているのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc411/"><i class="far fa-calendar"></i> 2014-01-29</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2014011703
-[現象] [GGH4.X] GGSessionManager のセッション強制終了機能は，プログラム・ウインドウに Sign Out の要求を行っているのか？
-[説明] いいえ， APS に対してセッション破棄 （DestroySession） の要求を行っております．ちなみに，セッション強制切断機能は，すべてのクライアントについてクライアント切断 （DisconnectClient） の要求を行っております．
-ファイル KGTN2014011703.pdf [(47.5 KB)] [kitasp 技術センター, 2014/01/29 16:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc411/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc435/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc435/">[GGH4.X] GGSessionMonitor （GMCheckRaw） が正常に動作しない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc435/">[GGH4.X] GGSessionMonitor （GMCheckRaw） が正常に動作しない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -426,32 +336,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2013122501
-[現象] [GGH4.X] GGSessionMonitor （GMCheckRaw） が正常に動作しない．
-[説明] 「正常に動作しない」 という情報だけでは，具体的な現象が分かりませんので，適切なコメントをすることが困難です．
- GGSessionMonitor が起動しない GGSessionMonitor がGGサーバの情報を取得出来ない  上記1)であればWindowsの問題の可能性が高く，上記2)であれば設定ファイルの誤り （GGサーバのIPアドレスの誤りなど） やファイアウォール （アンチウイルスソフト） の影響等が考えられます．
-ファイル KGTN2013122501.pdf [(54.3 KB)] [kitasp 技術センター, 2014/01/29 14:47]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc435/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc477/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc477/">[GGH4.X] GGW3.2.1からGGH4.Xへ段階的にバージョンアップする方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc477/">[GGH4.X] GGW3.2.1からGGH4.Xへ段階的にバージョンアップする方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -468,31 +362,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2013112701
-[現象] [GGH4.X] GGW3.2.1からGGH4.Xへ段階的にバージョンアップする方法は？
-[説明] 先ずサーバの１台 （または数台） をGGH4.Xにバージョンアップし，特定のユーザ （部署） だけバージョンアップしたサーバで試験運用することをお勧めします．もし障害が発生した場合でも，GGW3.2.1とGGH4.Xのクライアントは同じマシンに共存出来ますので，試験運用しているユーザも並行して旧サーバにアクセスすることが可能です．そして，GGH4.Xの環境で正常な運用が出来ると確認された段階で，他のサーバおよび他のユーザを一斉に （あるいは段階的に） バージョンアップして下さい．
-ファイル KGTN2013112701.pdf [(50 KB)] [kitasp 技術センター, 2014/01/29 13:03]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc477/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc394/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc394/">[GGH4.X] GGW3.2.1ではAdobe Reader XI がインストールされた環境でPDFファイルを開こうとするとBSODが発生するそうだが，GGH4.XでもBSODが発生するのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc394/">[GGH4.X] GGW3.2.1ではAdobe Reader XI がインストールされた環境でPDFファイルを開こうとするとBSODが発生するそうだが，GGH4.XでもBSODが発生するのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -509,31 +388,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2014012204
-[現象] [GGH4.X] GGW3.2.1ではAdobe Reader XI がインストールされた環境でPDFファイルを開こうとするとBSODが発生するそうだが，GGH4.XでもBSODが発生するのか？
-[説明] Windows Server 2008 (32bit) + GGH4.8 + Adobe Reader XI の環境で確認しましたが，特に問題なくPDFファイルの内容が表示されました．また，PDFファイルの 「プロパティ→PDF」 による情報参照，エクスプローラーでの縮小版 （中アイコン～特大アイコン） 表示も動作することを確認しました．
-ファイル KGTN2014012204.pdf [(51.6 KB)] [kitasp 技術センター, 2014/01/29 17:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc394/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc473/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc473/">[GGH4.X] GGW3.2.1のクライアントで，GGH4.Xのサーバを利用出来るか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc473/">[GGH4.X] GGW3.2.1のクライアントで，GGH4.Xのサーバを利用出来るか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -550,31 +414,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2013112902
-[現象] [GGH4.X] GGW3.2.1のクライアントで，GGH4.Xのサーバを利用出来るか？
-[説明] GGW3.2.1のクライアントでは，GGH4.Xのサーバを利用することは出来ません．GGH4.Xのサーバを利用するには， （クライアントの） マシンにGGH4.Xのクライアントをインストールする必要があります．なお，GGW3.2.1のクライアントとGGH4.Xのクライアントは，同一のマシンにインストールすることが可能で，かつ同時に利用することが出来ます．
-ファイル KGTN2013112902.pdf [(39.9 KB)] [kitasp 技術センター, 2014/01/29 13:12]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc473/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc405/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc405/">[GGH4.X] GGで障害が発生した際の解析用としてシステムログ等はあるのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc405/">[GGH4.X] GGで障害が発生した際の解析用としてシステムログ等はあるのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -591,31 +440,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2014012005
-[現象] [GGH4.X] GGで障害が発生した際の解析用としてシステムログ等はあるのか？
-[説明] GGのアプリケーション配信機能 （GO-Global Application Publishing Service） の動作状況を記録したAPSログがフォルダ &lt;GGのインストールフォルダ&gt;GO-GlobalLog の下にあります．障害解析に有用な情報を採取するには，ログの出力レベルに4を設定して下さい．GGのアプリケーション配信機能以外で発生した問題については，Windowsのイベントログやパフォーマンスカウンタのログの情報を主に使用します．
-ファイル KGTN2014012005.pdf [(58.4 KB)] [kitasp 技術センター, 2014/01/29 16:43]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc405/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc500/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc500/">[GGH4.X] GGのSSL通信を利用しているが，Linuxクライアントのみセキュリティ警告が表示される．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc500/">[GGH4.X] GGのSSL通信を利用しているが，Linuxクライアントのみセキュリティ警告が表示される．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -632,31 +466,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2013110901
-[現象] [GGH4.X] GGのSSL通信を利用しているが，Linuxクライアントのみセキュリティ警告が表示される．
-[説明] Linuxクライアントで常にセキュリティ警告が表示される問題は，現時点では制限事項になります．
-ファイル KGTN2013110901.pdf [(130 KB)] [kitasp 技術センター, 2014/01/29 10:41]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc500/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc407/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc407/">[GGH4.X] GGのサーバ機能が動作する32ビットOSは？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc407/">[GGH4.X] GGのサーバ機能が動作する32ビットOSは？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -673,31 +492,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2014012003
-[現象] [GGH4.X] GGのサーバ機能が動作する32ビットOSは？
-[説明] マイクロソフト社のサポート状況等を考慮しますと， Windows Server 2008 Service Pack 2 が最も現実的な選択肢となります．
-ファイル KGTN2014012003.pdf [(42.7 KB)] [kitasp 技術センター, 2014/01/29 16:41]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc407/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc467/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc467/">[GGH4.X] GGサーバのポート番号を443に変更したが，GGサーバに接続出来ない．ポート番号443のHTTPS は正常にアクセスできる．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc467/">[GGH4.X] GGサーバのポート番号を443に変更したが，GGサーバに接続出来ない．ポート番号443のHTTPS は正常にアクセスできる．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -714,14 +518,59 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2014/01/29*
-[番号] 技術ノート KGTN 2013120303
-[現象] [GGH4.X] GGサーバのポート番号を443に変更したが，GGサーバに接続出来ない．ポート番号443のHTTPS は正常にアクセスできる．
-[説明] ポート番号443でクライアントからリクエストがある時，自動的に HTTPS のネゴシエーションや暗号化・復号化を行うネットワーク機材 （ロードバランサ） が存在していた事例があります．GGは独自のプロトコル （Rapid-X）を使用するため， HTTPS を前提としたネットワーク機材が介在するとGGサーバに接続することが出来ません．
-ファイル KGTN2013120303.pdf [(48 KB)] [kitasp 技術センター, 2014/01/29 13:24]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc467/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc482/">[GGH4.X] GGサーバのポート番号を443に変更したが，それだけで良いか？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc482/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc462/">[GGH4.X] GGサーバの環境として Windows Server 2012 R2 をサポートしているのか？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc462/"><i class="far fa-calendar"></i> 2014-01-29</a>
+                                        </p>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -744,80 +593,15 @@
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li class="active">
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

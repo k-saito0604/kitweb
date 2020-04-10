@@ -2,7 +2,7 @@
 title = "2019年12月のWindows Update互換性情報に関して"
 date = "2019-12-26"
 tags = ["WindowsUpdate"]
-categories=["tech"]
+categories=["news"]
 banner = "img/Windowsupdate.jpg"
 +++
 正規販売代理店技術担当者様 各位

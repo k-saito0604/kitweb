@@ -311,107 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1715/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1715/">プラグイン LaunchBrowser をインストールしたクライアントでGGサーバを利用している時， 「例えば」 クライアントのメモ帳を開きキーボードを押下すると コンポーネントが見つかりません ? cs.dllが見つからないため、このアプリケーションを開始できませんでした。 というエラーメッセージが表示される．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
 
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1715/"><i class="far fa-calendar"></i> 2010-06-30</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/06/30*
-[番号] 技術ノート KGTN 2010063002
-[現象] プラグイン LaunchBrowser をインストールしたクライアントでGGサーバを利用している時， 「例えば」 クライアントのメモ帳を開きキーボードを押下すると &ldquo;コンポーネントが見つかりません ? cs.dllが見つからないため、このアプリケーションを開始できませんでした。&rdquo; というエラーメッセージが表示される．
-[説明] 次の2つの方法で対応して下さい．
-LaunchBrowser のインストールフォルダ C:¥GraphOnplugins を，システム環境変数 Path に追加する． C:¥GraphOnplugins 中の cs.dll と pbr.dll を C:¥WINDOWS¥system32 の下にコピーする．
-ファイル KGTN2010063002.pdf [(57.8 KB)] [kitasp 技術センター, 2010/06/30 10:20]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1715/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1712/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1712/">開発したアプリケーションで，ローカルドライブのファイルにアクセスすると問題ないが，クライアントドライブのファイルにアクセスするとローカルに比べて非常に遅い．なお，エクスプローラでクライアントドライブのファイルにアクセスした場合は，このような現象は見られない．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1712/"><i class="far fa-calendar"></i> 2010-06-30</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/06/30*
-[番号] 技術ノート KGTN 2010070101
-[現象] 開発したアプリケーションで，ローカルドライブのファイルにアクセスすると問題ないが，クライアントドライブのファイルにアクセスするとローカルに比べて非常に遅い．なお，エクスプローラでクライアントドライブのファイルにアクセスした場合は，このような現象は見られない．
-[説明] クライアントドライブのファイルにアクセスする場合，その処理 （機能） が呼び出すWindowsのAPIを 「ネットワークを介して」 クライアント側へ転送し，クライアント側で実行し，そしてその結果を 「ネットワークを介して」 サーバ側へ返します．１つの処理は多数のAPIを呼び出しますので，その数に比例してネットワークを介した処理が増加し，結果的にローカルドライブに比べ速度が低下することがあります．このような場合は，クライアントドライブにあるファイルを一旦ローカルドライブにコピーし，アプリケーションはコピーしたファイルを参照するのが良い方法です．
-また，ファイルオープンのダイアログでプレビュー機能が実装されているアプリケーションでは，その処理の中でクライアントドライブにあるファイル （の内容） を読むことになりますので，ローカルドライブに比べ速度がかなり低下します．このような場合は，プレビュー機能を使用しないような仕様変更等をご検討下さい．
-ファイル KGTN2010070101.pdf [(58.1 KB)] [kitasp 技術センター, 2010/07/01 08:30]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1712/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1716/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1716/">GMFileProc のファイル処理の手順を知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1716/">GMFileProc のファイル処理の手順を知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -428,34 +336,16 @@ LaunchBrowser のインストールフォルダ C:¥GraphOnplugins を，シス�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/06/29*
-[番号] 技術ノート KGTN 2010062901
-[現象] GMFileProc のファイル処理の手順を知りたい．
-[説明] GMFileProc は，以下の順序でファイルを処理します．
-対象ファイルの抽出 （fileDir, fileExt） 抽出したファイルのフルパスを引数としてプロセスを起動 （progPath, progArgs, フルパス） プロセスの終了待ち （progWait） ファイルをバックアップフォルダへ移動 （fileDir, fileBackup, fileMove） 上記2〜4を抽出したファイル全てについて実行 対象フォルダのファイルを削除 （fileDir, dayDelete） バックアップフォルダのファイルを削除 （fileBackup, dayDelete）
-注： 括弧の中は，処理に関連する GMFileProc.ini ファイル中のパラメタです．
-参　考 GMFileProc.ini の設定のサンプルを以下に示します．GG-StatusLoad.exe は，C:¥SHARE¥GG-Status に置かれた ???.datというファイルを引数に取り，遅くとも30秒以内に処理するようなプログラムです．処理が完了すると，そのファイルは C:¥BACKUP¥GG-Status へ移動されます．さらに，移動されたファイルは （作成日時より） 15日経過した時点で削除されます．
-[default] logLevel = 1 dayDelete = 15 progPath = C:¥GraphOn¥Bin¥GG-StatusLoad.exe progArgs = progWait = 30 fileExt = dat fileDir = C:¥SHARE¥GG-Status fileBackup = C:¥BACKUP¥GG-Status fileMove = Y</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1716/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1717/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1717/">GMFileProc の設定ファイルの内容を知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1717/">GMFileProc の設定ファイルの内容を知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -472,32 +362,16 @@ LaunchBrowser のインストールフォルダ C:¥GraphOnplugins を，シス�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/06/29*
-[番号] 技術ノート KGTN 2010062402
-[現象] GMFileProc の設定ファイルの内容を知りたい．
-[説明] 設定ファイル GMFileProc.ini で指定する項目は以下の通りです．
-logLevel ログの出力レベル （0〜9を指定） dayDelete 保存する日数 （この日数を過ぎると削除される） progPath ファイルを処理するプログラムのパス progArgs ファイルを処理するプログラムの引数 （必要に応じて指定する） progWait プログラムの終了待ち指定 （-1: 無限に待つ， 0: 待たない， n: n 秒待つ） fileExt 処理対象とするファイルの拡張子 fileDir 処理対象とするファイルが置かれたフォルダ fileBackup 処理後に移動するフォルダ （空な場合は移動しない） fileMove Y: 移動する， N: 移動しない
-ファイル KGTN2010062402.pdf [(56.8 KB)] [kitasp 技術センター, 2010/06/29 10:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1717/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1718/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1718/">GMCheckRaw の提供が 「デバッグビルド」 と 「リリースビルド」 の２つになったが，その理由は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1718/">GMCheckRaw の提供が 「デバッグビルド」 と 「リリースビルド」 の２つになったが，その理由は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -514,32 +388,16 @@ logLevel ログの出力レベル （0〜9を指定） dayDelete 保存する日
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/06/28*
-[番号] 技術ノート KGTN 2010062801
-[現象] GMCheckRaw の提供が 「デバッグビルド」 と 「リリースビルド」 の２つになったが，その理由は？
-[説明] これまでのリリースは全て 「リリースビルド」 で，特に問題等は発生しておりません．今回敢えて 「デバッグビルド」 も提供することにした理由は，ある案件で Windows が不安定になり，その影響で GMCheckRaw がエラーになる現象が発生しました．この原因を追及するに当たって，技術的な制約等により GMCheckRaw 側から遡る必要があったため， 「デバッグビルド」 も提供することにしました．
-従って，通常は従来通り 「リリースビルド」 を使用し，万一 GMCheckRaw 絡みでエラーが発生した場合に限り， 「デバッグビルド」 で情報を採取するようにして下さい．
-ファイル KGTN2010062801.pdf [(56.9 KB)] [kitasp 技術センター, 2010/06/28 11:00]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1718/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1721/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1721/">GMCheckRaw のトレース機能を使う時の設定は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1721/">GMCheckRaw のトレース機能を使う時の設定は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -556,35 +414,16 @@ logLevel ログの出力レベル （0〜9を指定） dayDelete 保存する日
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/06/24*
-[番号] 技術ノート KGTN 2010062202
-[現象] GMCheckRaw のトレース機能を使う時の設定は？
-[説明] 設定ファイル GMCheck.ini の各サーバのセクションに以下のキーを追加して下さい．
-traceFile = C:¥TEMP¥%COMPUTERNAME%-%YYYYMMDD%.log traceLevel = 1
-traceFile は，トレースログファイルのフルパスを指定して下さい．パスには環境変数と以下の文字列 （変数） を含めることが出来ます．
-YYYYMMDD ： 年月日に展開 HHMMSS ： 時分秒に展開 HHMM ： 時分に展開
-traceLevel は，ログの出力レベルを指定し，0で出力抑止 （既定値） ， 1で出力になります．
-ファイル KGTN2010062202.pdf [(57.4 KB)] [kitasp 技術センター, 2010/06/24 09:35]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1721/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1720/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1720/">GMCheckRaw の結果を得るには，ファイルを介する方法しかないのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1720/">GMCheckRaw の結果を得るには，ファイルを介する方法しかないのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -601,32 +440,16 @@ traceLevel は，ログの出力レベルを指定し，0で出力抑止 （既�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/06/24*
-[番号] 技術ノート KGTN 2010062401
-[現象] GMCheckRaw の結果を得るには，ファイルを介する方法しかないのか？
-[説明] 設定ファイル GMCheck.ini の中の項目 command に実行可能なプログラムを指定すると，以下の環境変数が設定された環境で指定したプログラムが実行されます．つまり，環境変数を介してGMCheckRaw の結果を得ることが出来ます．
-header footer dateTime hostName ipAddress serverID maxSessions sessionCount availability versionNumber sectionName sessionInfo_0 （セッション情報の数） sessionInfo_1 （最初のセッションの情報） sessionInfo_2 （2番目のセッションの情報） &hellip;
-ファイル KGTN2010062401.pdf [(55.5 KB)] [kitasp 技術センター, 2010/06/24 10:20]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1720/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1719/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1719/">Windows Server 2008 環境で動作するGGサーバで @ 等の入力が出来ない （異なる文字がエコーバックされる） ．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1719/">Windows Server 2008 環境で動作するGGサーバで @ 等の入力が出来ない （異なる文字がエコーバックされる） ．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -643,36 +466,16 @@ header footer dateTime hostName ipAddress serverID maxSessions sessionCount avai
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/06/24*
-[番号] 技術ノート KGTN 2009122401
-[現象] Windows Server 2008 環境で動作するGGサーバで &ldquo;@&rdquo; 等の入力が出来ない （異なる文字がエコーバックされる） ．
-[説明] これは Windows Server 2008 でキーボードの処理が変更されたために発生する問題で，下記のレジストリを登録することで問題が解消します．
-[HKEY_LOCAL_MACHINE¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout] &ldquo;Fallback Layout Text&quot;=&quot;Japanese&rdquo;
-この件はGraphOn社でも確認しており，今後のリリースで修正される予定です．
-補足１ 3.2.1 Patch4 (4466) およびそれ以降では，本問題は解消されております．
-Bug 8997 On Japanese Windows Server 2008, users are unable to logon to an account with a password including &ldquo;@,=,‾,etc&hellip;&quot;.
-補足２ Windows Server 2008 のインストール時に，標準的な106キーボードが接続されていることが前提となります．それ以外の環境では，下記のレジストリの Layout Text の値を上記Fallback Layout Text へセットして下さい．
-[HKEY_LOCAL_MACHINE¥SYSTEM¥CurrentControlSet¥Control¥Keyboard Layouts¥00000411] &ldquo;Layout Display Name&quot;=&rdquo;@C:¥¥Windows¥¥system32¥¥input.dll,-5061&rdquo; &ldquo;Layout File&quot;=&quot;KBDJPN.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1719/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1722/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1722/">GMCheckRaw のトレース機能はどんな時に使うのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1722/">GMCheckRaw のトレース機能はどんな時に使うのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -689,36 +492,16 @@ Bug 8997 On Japanese Windows Server 2008, users are unable to logon to an accoun
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/06/22*
-[番号] 技術ノート KGTN 2010062201
-[現象] GMCheckRaw のトレース機能はどんな時に使うのか？
-[説明] Rel#1.07.01 で実装されたGMCheckRaw のトレース機能は，同プログラムとGG （APS） の通信のタイムスタンプを記録することで， 「どの処理の周辺に問題があるのか」 を突き止める時に役立ちます．例えば，GMCheckRaw コマンドを入力してから，ログファイルに
-2010-06-22 13:49:02.656 -&gt; checkServer
-が出力されるまでに5秒かかったとすれば，プロセスの生成に約5秒かかったことになりますので，Windows やハードウエアに問題があると推測されます．
-また， SMI_Initializeの呼出し前後の時間をチェックすることで，GGサーバへの接続に要する時間を確認することが出来ます．30秒かかったとすれば，CPUの過負荷，プロセス間通信の一時的障害，ネットワーク障害や設定ミス，Windowsの異常等が考えられます．
-2010-06-22 13:49:02.656 &gt; SMI_Initialize SMI_Initializeの呼出し前 2010-06-22 13:49:04.312 SMI_Initialize SMI_Initializeの呼出し後
-これ以外にもローレベルな情報を採取することが出来ますので， 「正常値と比較することで」 問題解析の手掛かりとして役立てることが出来ます．
-ファイル KGTN2010062201.pdf [(69.6 KB)] [kitasp 技術センター, 2010/06/22 14:05]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1722/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1723/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1723/">Ver3.1系とVer3.2系の差異は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1723/">Ver3.1系とVer3.2系の差異は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -735,19 +518,59 @@ Bug 8997 On Japanese Windows Server 2008, users are unable to logon to an accoun
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/06/21*
-[番号] 技術ノート KGTN 2010062101
-[現象] Ver3.1系とVer3.2系の差異は？
-[説明] Ver3.1系からVer3.2系への大きな変更点は以下の通りです．
-Automatic Windows Update and Hotfix Compatibility Ver3.1系では Windows Update の度にGraphOn社が提供する互換アップデートの適用が必要でしたが，Ver3.2系では原則として互換アップデートの適用は不要となりました．
-Backward Compatible Client and Server Ver3.1系では新しいビルドがリリースされる度に，クライアントも更新する必要がありました．Ver3.2系では後方互換性があるため，新しいビルドがリリースされても，クライアントを必ずしも更新する必要はありません．
-Time Zone Redirection Ver3.2系では，設定でクライアント側のタイムゾーンを使用することができます．
-Client-Side Password Caching Ver3.1系ではサーバ側にパスワードをキャッシュすることが出来ましたが，Ver3.2系ではそれに加えクライアント側にもパスワードをキャッシュすることが出来るようになりました．これにより， Active Directory を使用しない環境でもパスワードキャッシュ機能を利用することができます．
-End of Support for Windows 2000 Server Ver3.1系では Windows 2000 Server と Windows 2003 Server をサポートしておりましたが，Ver3.2系では Windows 2003 Server と Windows 2008 Server （3.2.1系） をサポートします．
-ファイル KGTN2010062101.pdf [(66.3 KB)] [kitasp 技術センター, 2010/06/21 12:57]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1723/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc362/">[Windows] Windows のインストール作業を依頼したいが，マシン （サーバ） を3台送る必要があるのか？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc362/"><i class="far fa-calendar"></i> 2010-06-17</a>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1727/">ActiveX クライアントのデジタル署名に関するエラーが発生した．CABファイルを送れば良いのか？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1727/"><i class="far fa-calendar"></i> 2010-06-17</a>
+                                        </p>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -770,80 +593,15 @@ End of Support for Windows 2000 Server Ver3.1系では Windows 2000 Server と W
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li class="active">
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

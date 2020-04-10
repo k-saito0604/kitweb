@@ -311,105 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2211/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2211/">[Windows] シンボリック・リンクの作成と削除の方法は？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
 
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2211/"><i class="far fa-calendar"></i> 2016-12-15</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2016/12/15*
-[番号] 技術ノート KGTN 2016120904
-[現象] [Windows] シンボリック・リンクの作成と削除の方法は？
-[説明] プロファイル中にマイドキュメントのシンボリック・リンクを作成する例と，それを削除する例を以下に示します．del コマンドでもシンボリック・リンクを削除することが出来ますが，しかしリンク先が存在しない場合にタイムアウトを待つことになるため時間を要します．
-mklink /D C:UserslocalUser011Documents 192.168.0.2localUser011Documents rmdir C:UserslocalUser011Documents  ファイル KGTN2016120904.pdf [(54.8 KB)] [kitasp 技術センター, 2016/12/15 11:23]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2211/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2217/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2217/">[Windows/PowerShell/ExPack] PowerShell で複数サーバーの複数アカウントに連続してログオンしたい．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2217/"><i class="far fa-calendar"></i> 2016-12-14</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2016/12/14*
-[番号] 技術ノート KGTN 2016120601
-[現象] [Windows/PowerShell/ExPack] PowerShell で複数サーバーの複数アカウントに連続してログオンしたい．
-[説明] ローカルアカウントで Windows PowerShell を 「管理者として実行する」 で起動し，その中で下記のコマンドを実行して下さい．
-# # GG サーバーに連続ログオンするバッチを生成するスクリプト # # 設定情報 $FilePrefix = &quot;GenRDSrdsLogon&quot; # 生成するファイルのプリフィックス # ホスト情報およびユーザー情報の設定など Try { . (&quot;.ConfconfHostList.ps1&quot;) . (&quot;.ConfconfUserList.ps1&quot;) } Catch { Write-Host &quot;インクルードファイルが見つかりません。&quot; Exit 1001 } # 引数のチェック if($Args.Length -ne 0) { Write-Host &quot;Usage: genRDSLogonList.ps1&quot; Exit 1002 } # 既存ファイルの削除 ForEach($targetH In $hostList) { if ((Test-Path &quot;$FilePrefix-$targetH.bat&quot;) -eq $True) { Remove-Item (&quot;$FilePrefix-$targetH.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2217/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2220/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2220/">[Windows/PowerShell] PowerShell でシンボリックリンクを作成する方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2220/">[Windows/PowerShell] PowerShell でシンボリックリンクを作成する方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -426,31 +336,16 @@ mklink /D C:UserslocalUser011Documents 192.168.0.2localUser011Documents rmdir C:
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/12/14*
-[番号] 技術ノート KGTN 2016120101
-[現象] [Windows/PowerShell] PowerShell でシンボリックリンクを作成する方法は？
-[説明] Ver.5 の環境で，以下のように New-Item &hellip; -ItemType SymbolicLink を実行することでシンボリックリンクを作成することが出来ます．
-New-Item -Path C:Usersuser -Name TechNote -Value 192.168.0.10pubTechNote -ItemType SymbolicLink  ファイル KGTN2016120101.pdf [(53.7 KB)] [kitasp 技術センター, 2016/12/14 17:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2220/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2219/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2219/">[Windows/PowerShell] PowerShell でパスワード入力のダイアログの表示無しに，リモートコンピューターに接続 （Enter-PSSession） する方法を知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2219/">[Windows/PowerShell] PowerShell でパスワード入力のダイアログの表示無しに，リモートコンピューターに接続 （Enter-PSSession） する方法を知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -467,31 +362,16 @@ New-Item -Path C:Usersuser -Name TechNote -Value 192.168.0.10pubTechNote -ItemTy
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/12/14*
-[番号] 技術ノート KGTN 2016113002
-[現象] [Windows/PowerShell] PowerShell でパスワード入力のダイアログの表示無しに，リモートコンピューターに接続 （Enter-PSSession） する方法を知りたい．
-[説明] 以下のスクリプトでパスワード入力のダイアログの表示無しに，リモートコンピューターに接続することが出来ます．
-# 引数のチェック if($Args.Length -ne 3) { Write-Host &quot;Usage: enterPSSession.ps1 &lt;host&gt; &lt;user&gt; &lt;password&gt;&quot; Exit 1002 } $argHost = $Args[0] $argUser = $Args[1] $argPass = $Args[2] $password = ConvertTo-SecureString $argPass -AsPlainText -Force $cred= New-Object System.Management.Automation.PSCredential($argUser,$password) Enter-PSSession $argHost -Credential $cred  ファイル KGTN2016113002.pdf [(58.7 KB)] [kitasp 技術センター, 2016/12/14 17:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2219/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2204/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2204/">[Windows/PowerShell] PowerShell でリモート処理を行う場合に必要な設定は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2204/">[Windows/PowerShell] PowerShell でリモート処理を行う場合に必要な設定は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -508,32 +388,16 @@ New-Item -Path C:Usersuser -Name TechNote -Value 192.168.0.10pubTechNote -ItemTy
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/12/14*
-[番号] 技術ノート KGTN 2016120501
-[現象] [Windows/PowerShell] PowerShell でリモート処理を行う場合に必要な設定は？
-[説明] ローカルアカウントで Windows PowerShell を 「管理者として実行する」 で起動し，その中で下記のコマンドを実行して下さい． Set-ExecutionPolicy Bypass は，状況に応じてセキュリティを高めるRemoteSigned 等に変更して下さい．
-1. Enable-PSRemoting 2. Set-Item WSMan:localhostClientTrustedHosts -Value * 3. Winrm Quickconfig 4. Enter-PSSession &lt;接続先のIP アドレス&gt; 5. Set-ExecutionPolicy Bypass  上記の設定を行ってもリモート接続 （Enter-PSSession） に失敗する場合は，接続先に接続元と同じ管理者アカウントが存在するかどうかを確認して下さい．
-ファイル KGTN2016120501.pdf [(65.7 KB)] [kitasp 技術センター, 2017/02/22 17:00]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2204/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2221/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2221/">[Windows/PowerShell] Windows 10 の環境で PowerShell を使いたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2221/">[Windows/PowerShell] Windows 10 の環境で PowerShell を使いたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -550,33 +414,16 @@ New-Item -Path C:Usersuser -Name TechNote -Value 192.168.0.10pubTechNote -ItemTy
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/12/14*
-[番号] 技術ノート KGTN 2016113001
-[現象] [Windows/PowerShell] Windows 10 の環境で PowerShell を使いたい．
-[説明] スタート → Windows Power Shell → Windows Power Shell，右クリック，その他 → タスクバーにピン留めする で Windows Server 2012 R2 と同様にタスクバーから起動することが出来ます．
-ファイル KGTN2016113001.pdf [(168 KB)] [kitasp 技術センター, 2016/12/14 17:50]
-KGTN2016113001.jpg
-表示 [(38.9 KB)] [kitasp 技術センター, 2016/12/14 17:50]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2221/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2218/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2218/">[Windows] プロファイルを作成するため多数のアカウントでログオンする必要があるが，その作業負荷を軽減する方法はないか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2218/">[Windows] プロファイルを作成するため多数のアカウントでログオンする必要があるが，その作業負荷を軽減する方法はないか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -593,31 +440,16 @@ KGTN2016113001.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/12/14*
-[番号] 技術ノート KGTN 2016120102
-[現象] [Windows] プロファイルを作成するため多数のアカウントでログオンする必要があるが，その作業負荷を軽減する方法はないか？
-[説明] 下記のバッチを利用することで，ホストのIP アドレス・ユーザーID・バスワードを手入力することなくログオンすることが出来ます （ユーザーID は引数で指定しています） ．
-@echo off set HOST=192.168.0.9 set PASS=Pass.Word :: cmdkey /generic:TERMSRV/%HOST% /user:%1 /pass:%PASS% &gt;NUL mstsc /v:%HOST% &gt;NUL timeout 1 &gt;NUL cmdkey /delete:TERMSRV/%HOST% &gt;NUL  ファイル KGTN2016120102.pdf [(57.1 KB)] [kitasp 技術センター, 2016/12/14 17:54]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2218/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2253/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2253/">[GGH4.X] Windowsの証明書インポートウィザードで証明ストアとして 「信頼されたルート証明機関」 を指定するとインポートに失敗する．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2253/">[GGH4.X] Windowsの証明書インポートウィザードで証明ストアとして 「信頼されたルート証明機関」 を指定するとインポートに失敗する．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -634,35 +466,16 @@ KGTN2016113001.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016100301
-[現象] [GGH4.X] Windowsの証明書インポートウィザードで証明ストアとして 「信頼されたルート証明機関」 を指定するとインポートに失敗する．
-[説明] このインポートに失敗する現象は，バージョン5.0またはそれ以降にアップグレードすることで改善されます．
-GGH4.8.2 GGH5.0.2 ファイル KGTN2016100301.pdf [(245 KB)] [kitasp 技術センター, 2016/11/02 13:43]
-KGTN2016100301-1.jpg
-表示 [(28.3 KB)] [kitasp 技術センター, 2016/11/02 13:43]
-KGTN2016100301-2.jpg
-表示 [(29.2 KB)] [kitasp 技術センター, 2016/11/02 13:43]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2253/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2254/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2254/">[GGH4.X] Windowsの証明書インポートウィザードは，GGの環境で利用出来るか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2254/">[GGH4.X] Windowsの証明書インポートウィザードは，GGの環境で利用出来るか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -679,33 +492,16 @@ KGTN2016100301-2.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016093002
-[現象] [GGH4.X] Windowsの証明書インポートウィザードは，GGの環境で利用出来るか？
-[説明] Windows Server 2012 R2 + GGH4.8.2.23274 の環境で確認したところ，下記スクリーンショットの通り正常に証明書をインポートすることが出来ました．
-ファイル KGTN2016093002.pdf [(165 KB)] [kitasp 技術センター, 2016/11/02 13:38]
-KGTN2016093002.jpg
-表示 [(41.2 KB)] [kitasp 技術センター, 2016/11/02 13:38]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2254/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc503/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc503/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能を利用しているが，特定のユーザーを特定のサーバーへ振り分けたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc503/">[GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能を利用しているが，特定のユーザーを特定のサーバーへ振り分けたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -722,15 +518,59 @@ KGTN2016093002.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2016/11/02*
-[番号] 技術ノート KGTN 2016101402
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能を利用しているが，特定のユーザーを特定のサーバーへ振り分けたい．
-[説明] バージョン 2.2.3 より，特定のユーザーを特定のサーバーに振り分けるプライマリーサーバー設定機能が実装されました．設定ファイル GGEasyMonitorUserInfo.ini で，下記のようにユーザーIDと接続先のサーバー （プライマリーサーバー） を指定します．ユーザー名の末尾にはワイルドカード （＊） を指定することが可能です．接続先のサーバー （プライマリーサーバー） が利用出来ない場合は，通常の振り分け処理で接続先のサーバー （代替サーバー） が選択されます．この場合は，代替サーバーへ振り分けるというメッセージが表示されます （次ページのスクリーンショットを参照） ．
-[administrator]　← ユーザーID hostName = GG-SERVER0 ← 接続先のサーバー名 [wguser1*] ← wguser1??? hostName = GG-SERVER1 [wguser2*] ← wguser2??? hostName = GG-SERVER2 [wguser3*] ← wguser3??? hostName = GG-SERVER3  複数の振分け規則が合致する場合は，先に合致する規則 （より上に書かれた規則） が優先します．
-ファイル KGTN2016101402.pdf [(127 KB)] [kitasp 技術センター, 2019/01/22 10:01]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc503/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2227/">[GGH5.X/ExPack] 拡張パックの GGEasyPassword で複数のGGサーバー （ワークグループ） のアカウントのパスワードを変更したい．</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2227/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2252/">[GGH5.X] logon.html で controlArgs.set([autoclose,true]); を指定しているが，ブラウザが閉じない．もちろん，このサイトは 「信頼済みサイト」 として登録している．</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2252/"><i class="far fa-calendar"></i> 2016-11-02</a>
+                                        </p>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -753,80 +593,15 @@ KGTN2016093002.jpg
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li class="active">
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

@@ -311,23 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1695/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1695/">エンタープライズオプションのプログラム GMFileProc の目的は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1695/">エンタープライズオプションのプログラム GMFileProc の目的は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -344,36 +336,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/07/21*
-[番号] 技術ノート KGTN 2010072104
-[現象] エンタープライズオプションのプログラム GMFileProc の目的は？
-[説明] GGサーバの状態を管理する方法として，セッション監視SDKの GMCheck でGGサーバの情報を取得し，その情報を直接DBへ登録する処理が考えられます．正常系のみを考えれば，この方式は単純で効率も良いのですが，大規模案件では想定外の様々な障害が発生しますので，このような方式では問題点の切り分けが難しいという大きな欠点があります （例: 多くのGGサーバがDBのレコードを更新するため，DBで異常が発生した場合，その契機の発見が難しい） ．
-このようなことから，障害発生時に確実に問題点を発見できるように，以下のような処理を行います．
-セッション監視SDKの GMCheck 等でGGサーバの状態をファイルに記録 状態が記録されたファイルをDB登録用共有フォルダへコピー 共有フォルダ中のファイルを順にDBへ登録 登録が完了したファイルをバックアップフォルダへ移動
-各時点でのGGサーバの状態はファイルに記録され，そのファイルの情報は１箇所でDBへ反映され，さらにバックアップフォルダへ保存されますので，障害発生後にファイルを解析することで問題点を発見することが可能になります．プログラム GMFileProc は，この処理の中でファイルの管理を行うプログラムで，以下のような機能を受け持ちます．
-DB登録用共有フォルダ中のファイルを順にピックアップ ピックアップしたファイルをDB登録用プログラムを呼び出してDBへ情報を登録 登録が完了したファイルをバックアップフォルダへ移動 バックアップフォルダ中の古いファイルを削除 OSの異常等に備えて処理した内容をトレースログやイベントログに記録
-これ以外にも，ネットワークやサーバが過負荷でファイルが滞留した時に備え，古いファイルをスキップする等の機能も持っています．
-ファイル KGTN2010072104.pdf [(73 KB)] [kitasp 技術センター, 2010/07/21 14:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1695/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1700/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1700/">GMFileProc の設定情報 progBefore と progAfter は，どのようなシナリオで使うのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1700/">GMFileProc の設定情報 progBefore と progAfter は，どのようなシナリオで使うのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -390,32 +362,16 @@ DB登録用共有フォルダ中のファイルを順にピックアップ ピ�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/07/20*
-[番号] 技術ノート KGTN 2010072001
-[現象] GMFileProc の設定情報 progBefore と progAfter は，どのようなシナリオで使うのか？
-[説明] ファイルの内容をデータベースに登録するような処理では，設定情報progPathで指定するプログラムがファイル毎にDBへの接続を繰り返します．DBへの接続は負荷の高い処理ですので，以下のように progBefore と progAfter を利用することで，１回のDB接続で処理をさせることが可能になります．
-progBefore ： データを蓄積する作業ファイルをクリア progPath ： 登録するデータを作業ファイルに追加 progAfter ： DBへ接続後，作業ファイルの内容を連続してDBへ登録
-ファイル KGTN2010072001.pdf [(51.9 KB)] [kitasp 技術センター, 2010/07/20 09:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1700/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1701/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1701/">プラグイン LaunchBrowser を使ってファイルをダウンロードさせたいが，ウエッブサーバのドキュメント外に置かれたファイルをダウンロードさせることは可能か？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1701/">プラグイン LaunchBrowser を使ってファイルをダウンロードさせたいが，ウエッブサーバのドキュメント外に置かれたファイルをダウンロードさせることは可能か？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -432,31 +388,16 @@ progBefore ： データを蓄積する作業ファイルをクリア progPath �
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/07/15*
-[番号] 技術ノート KGTN 2010071501
-[現象] プラグイン LaunchBrowser を使ってファイルをダウンロードさせたいが，ウエッブサーバのドキュメント外に置かれたファイルをダウンロードさせることは可能か？
-[説明] CGI （スクリプト） を利用することで可能です．PHPのサンプルを以下に示します．
-// // Example: // 1) http://localhost/gm_download.php?file=gg-explorer.exe // 2) http://localhost/gm_download.php?file=12345.dat // $fileDir = &ldquo;C:¥¥GraphOn¥¥BIN¥¥&rdquo;; $fileName = $_GET[&ldquo;file&rdquo;]; //- //- $fileNameA is &ldquo;actual file name&rdquo; //- $fileNameA = &ldquo;XXX.EXE&rdquo;; // $fileName; //- $filePath = $fileDir . $fileName; if((file_exists($filePath) != TRUE)||(is_dir($filePath) == TRUE)) { exit(&ldquo;File not found! - ¥&rdquo;&rdquo; . $fileName . &ldquo;¥&rdquo;&quot;); } $fileLength = filesize($filePath); header(&ldquo;Content-Disposition: attachment; filename=$fileNameA&rdquo;); header(&ldquo;Content-Length:$fileLength&rdquo;); header(&ldquo;Content-Type: application/octet-stream&rdquo;); readfile($filePath); ?</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1701/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1705/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1705/">クライアントドライブ機能において，受け取り側 （クライアント） のドライブに十分な容量が無い時，コピーを行うと0バイトのファイルが作成される．また，この時警告ダイアログは表示されない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1705/">クライアントドライブ機能において，受け取り側 （クライアント） のドライブに十分な容量が無い時，コピーを行うと0バイトのファイルが作成される．また，この時警告ダイアログは表示されない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -473,31 +414,16 @@ progBefore ： データを蓄積する作業ファイルをクリア progPath �
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/07/12*
-[番号] 技術ノート KGTN 2010071201
-[現象] クライアントドライブ機能において，受け取り側 （クライアント） のドライブに十分な容量が無い時，コピーを行うと0バイトのファイルが作成される．また，この時警告ダイアログは表示されない．
-[説明] 弊社およびGraphOn社で現象を確認しました．この動作は，技術ノート KGTN#2009091501 の問題と関連しており，Ver3.2 系での制限事項 （既知の問題） となります．
-ファイル KGTN2010071201.pdf [(50.2 KB)] [kitasp 技術センター, 2010/07/12 09:43]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1705/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1703/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1703/">多数のサーバにGGをインストールするが，クラスタマネージャの設定を簡単に行う方法はないのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1703/">多数のサーバにGGをインストールするが，クラスタマネージャの設定を簡単に行う方法はないのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -514,33 +440,16 @@ progBefore ： データを蓄積する作業ファイルをクリア progPath �
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/07/12*
-[番号] 技術ノート KGTN 2010071301
-[現象] 多数のサーバにGGをインストールするが，クラスタマネージャの設定を簡単に行う方法はないのか？
-[説明] クラスタマネージャで設定する項目は，全てレジストリに保持されますので，以下の手順で他サーバへ設定することが出来ます．
-ひな形になるサーバ上でクラスタマネージャの各項目を設定する． レジストリエディタを起動し，以下のレジストリをエクスポートする． HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥AppServer 設定を反映したい各サーバ上でエクスポートしたレジストリ （のファイル） をインポートする．
-なお，上記3でインポートする時は，APSが停止した状態で行って下さい．
-ファイル KGTN2010071301.pdf [(52.8 KB)] [kitasp 技術センター, 2010/07/13 08:04]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1703/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1704/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1704/">無操作タイムアウト （アイドルタイムアウト） の判断に利用されるイベントを知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1704/">無操作タイムアウト （アイドルタイムアウト） の判断に利用されるイベントを知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -557,31 +466,16 @@ progBefore ： データを蓄積する作業ファイルをクリア progPath �
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/07/12*
-[番号] 技術ノート KGTN 2010071202
-[現象] 無操作タイムアウト （アイドルタイムアウト） の判断に利用されるイベントを知りたい．
-[説明] 無操作タイムアウト （アイドルタイムアウト） の判断は，サーバとクライアント間の通信の有無をもとに行われます （注：死活監視のパケットを除きます） ．従って，キーボード操作・マウス操作・画面描画・ファイルコピー・印刷などがその判断に利用されます．
-ファイル KGTN2010071202.pdf [(45.8 KB)] [kitasp 技術センター, 2010/07/12 10:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1704/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1706/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1706/">GGのセッションが切断されたが，原因としてどのようなことが考えられるか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1706/">GGのセッションが切断されたが，原因としてどのようなことが考えられるか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -598,40 +492,16 @@ progBefore ： データを蓄積する作業ファイルをクリア progPath �
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/07/09*
-[番号] 技術ノート KGTN 2010070601
-[現象] GGのセッションが切断されたが，原因としてどのようなことが考えられるか？
-[説明] 予期せぬGGのセッション断は，以下のような多くの可能性が考えられます．
-ネットワークの問題 事例： ネットワーク機材の不具合，UDPが絡んでのネットワークの輻輳
-ハードウエアの問題 事例： 集約したC:ドライブ装置の過負荷 （Windowsのパフォーマンス低下）
-OS （Windows） の問題 事例： 不適切なチューニング， 連続運用による動作不安定
-アプリケーションの問題 事例： 過度な描画
-クライアントの問題 事例： 実メモリ不足等によるスワップの多発
-その他 事例： 日本〜中国間での利用
-このように，さまざま事象で予期せぬセッション断が発生する可能性がありますので，原因調査に当たっては出来るだけ広範な情報を採取＆蓄積し，そしてそれらを分析して原因を絞り込むようにして下さい．
-補足1 GGは標準状態で，次のアルゴリズムでコネクションの死活監視を行います： クライアントは，サーバとの接続が維持されているかを確認するために，30秒毎にgg-pingパケット （要求） を送信します．サーバは，クライアントからのgg-pingパケットを受け取ると，それに対するgg-pingパケット （応答） をクライアントへ送信します．クライアントとサーバは，それぞれ 「相手からのパケットを2回続けて受信出来ないと」 ，接続が失われたと判断しセッションを強制切断します．
-補足2 コネクションの死活監視 （gg-pingパケットの処理） を無効化することも可能です． サービスGO-Global Application Publishing Service を停止する． レジストリエディタで，以下のレジストリ設定を行う． HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥AppServer SessionVerification REG_DWORD 0 サービスGO-Global Application Publishing Service を開始する．
-ファイル KGTN2010070601.pdf [(82.7 KB)] [kitasp 技術センター, 2010/07/09 20:27]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1706/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc725/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc725/">ログオンの負荷試験を行いたいが，ツール等はないのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc725/">ログオンの負荷試験を行いたいが，ツール等はないのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -648,31 +518,16 @@ OS （Windows） の問題 事例： 不適切なチューニング， 連続運
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/07/08*
-[番号] 技術ノート KGTN 2010070602
-[現象] ログオンの負荷試験を行いたいが，ツール等はないのか？
-[説明] セッション関連の試験を行うため GMLogonTest というツールがあります．このツールは，クライアント側で Windows クライアント （gg-client.exe） を非同期に繰り返し起動するバッチと，サーバ側で負荷の重たい処理を実行し終了する （ログアウトする） アプリケーションから構成されます． 「ログオン処理 → 高負荷な処理 →ログアウト」 を行うセッションを複数並行して行うことにより，擬似的に負荷試験を行うことが可能です．
-ファイル KGTN2010070602.pdf [(43.8 KB)] [kitasp 技術センター, 2018/11/29 15:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc725/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc714/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc714/">負荷試験用ツール GMLogonTest の使い方は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc714/">負荷試験用ツール GMLogonTest の使い方は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -689,33 +544,16 @@ OS （Windows） の問題 事例： 不適切なチューニング， 連続運
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/07/08*
-[番号] 技術ノート KGTN 2010070701
-[現象] 負荷試験用ツール GMLogonTest の使い方は？
-[説明] 以下の手順で，サーバ側 （試験用アプリケーションの登録） とクライアント側 （試験用ログオンバッチの設定と実行） のインストール作業を行って下さい．
-【サーバ側】
- GMLogonTest (Server Side) 中の Install.bat を実行します． &ldquo;ユーザー アカウント制御&rdquo; のダイアログで 「はい」 を選択します． &ldquo;レジストリ エディター&rdquo; のダイアログでは 「はい」 （続行） を選択します． 実行完了後サービス GGAPS を再起動します．  【クライアント側】
- Windowsクライアントをインストールします． GMLogonTest (Client Side) をデスクトップにコピーします． GMLogonTest_wait_sub.bat をメモ帳で開き下記の項目を設定 （変更） します． set host=GGサーバのIPアドレスまたはホスト名 set user=試験に使用するアカウントのID set pass=試験に使用するアカウントのパスワード set app=GMLogonTest set GGDIR=Windows Client がインストールされたフォルダ GMLogonTest_sub.bat をダブルクリックして実行します． 正常にログオン出来て，かつ画像が表示され，数秒後に全て終了することを確認して下さい． GMLogonTest.bat をメモ帳で開き下記の項目を設定 （変更） します． set loop=ログオンの回数 set wait=ログオンの間隔 （秒） GMLogonTest.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc714/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1707/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1707/">GGのプラグイン （機能拡張） のファイルの中に， ServerPluginsPath.reg と ClientPluginsPath.reg というファイルがあるが，これは何か？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1707/">GGのプラグイン （機能拡張） のファイルの中に， ServerPluginsPath.reg と ClientPluginsPath.reg というファイルがあるが，これは何か？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -732,17 +570,7 @@ OS （Windows） の問題 事例： 不適切なチューニング， 連続運
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/07/06*
-[番号] 技術ノート KGTN 2010061402
-[現象] GGのプラグイン （機能拡張） のファイルの中に， ServerPluginsPath.reg と ClientPluginsPath.reg というファイルがあるが，これは何か？
-[説明] GGのプラグインを実行するには，GGサーバおよびGGクライアントにプラグインが配置されたフォルダを教える必要があります． ServerPluginsPath.reg はGGサーバにこのフォルダを教えるレジストリファイルで，ClientPluginsPath.reg はGGクライアントにこのフォルダを教えるレジストリファイルです．それぞれの環境で，ダブルクリックして実行して下さい．下記の設定とは異なるパスにプラグインを配置する場合は，メモ帳等でパス情報を修正して下さい．
-[ServerPluginsPath.reg] [HKEY_LOCAL_MACHINE¥SOFTWARE¥GraphOn¥Bridges¥1.0.0] &ldquo;ServerPluginsPath&quot;=&quot;C:¥¥GraphOn¥¥GO-Global Server¥¥Programs¥¥plugins&rdquo;
-[ClientPluginsPath.reg] [HKEY_LOCAL_MACHINE¥SOFTWARE¥GraphOn¥Bridges¥1.0.0] &ldquo;ClientPluginsPath&quot;=&quot;C:¥¥GraphOn¥¥plugins&rdquo;
-補　足 プラグインのインストールバッチ Install.bat を走らせると自動的に設定されます．従って，通常はこれらのregファイルをインポートする必要はありません．
-ファイル KGTN2010061402.pdf [(62.6 KB)] [kitasp 技術センター, 2010/07/06 14:51]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1707/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
@@ -765,80 +593,15 @@ OS （Windows） の問題 事例： 不適切なチューニング， 連続運
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li>
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

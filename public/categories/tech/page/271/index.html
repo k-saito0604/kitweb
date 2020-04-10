@@ -311,113 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1896/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1896/">Program Window (pw.exe) はログオン時にどんな処理を行っているのか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
 
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1896/"><i class="far fa-calendar"></i> 2009-10-15</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2009/10/15*
-[番号] 技術ノート KGTN 2009101501
-[現象] Program Window (pw.exe) はログオン時にどんな処理を行っているのか？
-[説明] Program Window （以下PWと略します） の起動時には，以下の処理が行われます．
- グループポリシの適用 ネットワークディバイスのリストア クライアントドライブのマウント ログオンスクリプトの実行 クライアントプリンタの初期化 初期アプリケーションの起動 （指定されている場合のみ）  ログオン処理が完了した時点で，PWはGG本体へ完了通知を送信し，GG本体はその完了通知を受信することで正常にログオンが行われたと判断します（注：PWからの完了通知を1分以内に受信することで正常と判断します）．
-下記の記録がAPSログにある場合は，ログオン処理が１分以内に完了しなかったことを示します．一般的に考えられる原因としては，a) 存在しないネットワークドライブやネットワークプリンタが指定された場合， b) サーバの高負荷やネットワーク障害で上記の処理に通常よりも多くの時間がかかった場合，などがあります．
-The Program Window failed to signal completion of its basic initializations within 1 minute(s)
-ファイル KGTN2009101501.pdf [(63.8 KB)] [kitasp 技術センター, 2009/10/15 11:51]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1896/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1897/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1897/">ヘルプウィンドウを表示したウインドウを閉じると，下記のように画面描画が崩れる．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1897/"><i class="far fa-calendar"></i> 2009-08-05</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2009/08/05*
-[番号] 技術ノート KGTN 2009080501
-[現象] ヘルプウィンドウを表示したウインドウを閉じると，下記のように画面描画が崩れる．
-[説明] 「画面描画が崩れる」 ということが問題ではなく，
- 親ウィンドウをオープン 2) 子ウィンドウをオープン 3) ヘルプウィンドウをオープン 4) 子ウインドウをクリック （選択）  した時に，下記のように子ウインドウが最上位に上がって来ない事が本質的な問題です．
-本件の場合は
-Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnShowHelp.Click &lsquo;&mdash; kitASP &mdash; Help.ShowHelp(Nothing, &ldquo;C:¥WINDOWS¥Help¥ieeula.chm&rdquo;) Help.ShowHelp(New Control(), &ldquo;C:¥WINDOWS¥Help¥ieeula.chm&rdquo;) &lsquo;&mdash; End Sub
-と修正し，子ウインドウが選択された時に最上位に上がって来るようにします．この修正により，「画面描画が崩れる」 という現象は解消します．
-一般に，GO-Global for Windows は標準的なウインドウ管理を前提として最適化されておりますので，特殊なウインドウ管理 （本件の場合は選択されても最上位に上がって来ない） を行うとその前提が崩れ，結果的に画面が乱れることがあります．
-ファイル KGTN2009080501.pdf [(867 KB)] [kitasp 技術センター, 2009/08/05 09:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1897/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2589/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2589/">[GGW3.2/GGH4.X-5.X] GO-Global for Windows のバージョン情報の詳細を知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2589/">[GGW3.2/GGH4.X-5.X] GO-Global for Windows のバージョン情報の詳細を知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -434,35 +336,16 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2009/06/10*
-[番号] 技術ノート KGTN 2009060902
-[現象] [GGW3.2/GGH4.X-5.X] GO-Global for Windows のバージョン情報の詳細を知りたい．
-[説明] GO-Global for Windowsは，
-[メジャー番号] . [マイナー番号] . [サービスパック] . [ビルド]
-という複数の番号で一意的に識別され，ソフトウエアが管理されています．メジャー番号　は内部構造の主要な変更を指し，マイナー番号 は内部構造の主要な変更はないものの主要な機能の追加や変更を指します．サービスパック は小規模な仕様の変更や累積的なバグ修正を指します．一般的な意味でのソフトウエアのバージョン番号は，
-[メジャー番号] . [マイナー番号] . [サービスパック]
-までで，弊社の製品出荷もこのバージョン番号を基本として行います．出荷のタイミングによって，同一バージョン内で細かな修正等が行われた場合は，同一バージョン番号で ビルド が異なることがあります．
-ファイル KGTN2009060902.pdf [(63.6 KB)] [kitasp 技術センター, 2016/05/27 11:55]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2589/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1899/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1899/">Windowsの修正プログラムを適用したいが，もし適用した場合サポートされるのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1899/">Windowsの修正プログラムを適用したいが，もし適用した場合サポートされるのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -479,31 +362,16 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2009/06/10*
-[番号] 技術ノート KGTN 2009060901
-[現象] Windowsの修正プログラムを適用したいが，もし適用した場合サポートされるのか？
-[説明] GO-Global for Windows は，マイクロソフト社が 「完全にテストを行った修正プログラム」 つまり 更新プログラム のみをサポートします．それ以前の修正プログラム （Hotfix） は，マイクロソフト社による完全なテストが行なわれていないため，GraphOn社および弊社は互換性やインストールに関し何らかの問題が発生してもサポートを行うことは出来ません．自己責任で適用する場合も，マイクロソフト社の情報 「運用環境への適用を行う前に、検証環境での十分なテストと、データのバックアップを採取することを強くお勧めいたします」 に従って作業をなさることを強くお勧めします．
-ファイル KGTN2009060901.pdf [(56.3 KB)] [kitasp 技術センター, 2009/06/10 09:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1899/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1898/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1898/">修正プログラム（例：KB956807）を GO-Global サーバへ適用して構わないか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1898/">修正プログラム（例：KB956807）を GO-Global サーバへ適用して構わないか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -520,31 +388,16 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2009/06/10*
-[番号] 技術ノート KGTN 2009040701
-[現象] 修正プログラム（例：KB956807）を GO-Global サーバへ適用して構わないか？
-[説明] 修正プログラムの情報の中に 「この修正プログラムは、ここで説明する問題が発生しているシステムにのみ適用してください。この修正プログラムは、今後さらにテストを行う場合があります。したがって、この問題で深刻な影響を受けていない場合は、この修正プログラムが含まれる次のソフトウェア更新プログラムがリリースされるまで待つことを推奨します」 とあるものは，動作保証も如何なる情報の提供も出来ません．ソフトウェア更新プログラムがリリースされた段階で，GraphOn社より互換性情報および （必要であれば） 互換アップデートが提供されます．
-ファイル KGTN2009040701.pdf [(55.6 KB)] [kitasp 技術センター, 2009/06/10 09:21]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1898/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1900/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1900/">セッションのシャドウイングを行おうとすると，以下のエラーメッセージが表示される</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1900/">セッションのシャドウイングを行おうとすると，以下のエラーメッセージが表示される</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -561,31 +414,16 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2009/05/14*
-[番号] 技術ノート KGTN 2009051401
-[現象] セッションのシャドウイングを行おうとすると，以下のエラーメッセージが表示される： &ldquo;The version of your client is not compatible with the versions of the other clients that are connected to this session.&rdquo;
-[説明] セッションのシャドウイングを行う場合，GO-Global for Windows サーバと各クライアントのビルド番号が一致していることが必要です．このエラーメッセージはビルド番号が一致していないことを示していますので，GO-Global for Windows サーバと各クライアントのバージョンが一致するように，バージョンアップ等を行って下さい．
-ファイル KGTN2009051401.pdf [(45.5 KB)] [kitasp 技術センター, 2009/05/14 11:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1900/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1901/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1901/">GO-Global for Windows は，本当にターミナルサービスを利用していないのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1901/">GO-Global for Windows は，本当にターミナルサービスを利用していないのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -602,32 +440,16 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2009/05/08*
-[番号] 技術ノート KGTN 2009042801
-[現象] GO-Global for Windows は，本当にターミナルサービスを利用していないのか？
-[説明] ターミナルサービスはコアエンジンによってその機能が提供されますが，その構成要素である termsrv.dllを削除すると，下記のスクリーンショットのようにリモートデスクトップ接続ではアクセス出来なくなります （Windows Server 2008 の例） ．しかし，この環境でもGO-Global クライアントは削除前と同様に正常にアクセス出来て，かつ登録されたアプリケーションを利用することができます．このことから，GO-Global for Windows はターミナルサービスを利用していないことが分かります．
-参　考 termsrv.dll ? 「すべてのターミナル サービス機能およびリモートデスクトップ機能に必要となる、中心的なターミナル サーバーのサービス」 を提供するシステムファイルです．
-ファイル KGTN2009042801.pdf [(145 KB)] [kitasp 技術センター, 2009/05/08 13:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1901/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1904/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1904/">アンチウイルスソフトをインストールするタイミングが分からない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1904/">アンチウイルスソフトをインストールするタイミングが分からない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -644,33 +466,16 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2009/04/30*
-[番号] 技術ノート KGTN 2009043001
-[現象] アンチウイルスソフトをインストールするタイミングが分からない．
-[説明] アンチウイルスソフトはさまざまな製品やバージョンがありますので，ここでは原則的な考え方のみをご説明します．
-アンチウイルスソフトはシステム全体に影響を与える可能性がありますので，問題が発生した場合 「何が原因か？」 ということを切り分け易いように，1) GO-Global for Windowsサーバを全て構築，2) 動作が正しいことを確認，3) アンチウイルスソフトをインストール， 4) サーバ単体での最終動作確認 を行います．ステップ4で問題が発生した場合は，アンチウイルスソフトによって引き起こされた可能性が高いので，これに関連しそうな部分を重点的に調査します．
-参　考 アンチウイルスソフトのウイルススキャン等によってアプリケーションの起動や動作が遅くなった場合は，当該アプリケーションをウイルススキャンから除外する等のチューニングを行います．
-ファイル KGTN2009043001.pdf [(56.7 KB)] [kitasp 技術センター, 2009/04/30 14:39]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1904/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1903/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1903/">ウエッブサーバ用のロードバランサの死活監視機能（TCP/IPレベル）を利用して良いか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1903/">ウエッブサーバ用のロードバランサの死活監視機能（TCP/IPレベル）を利用して良いか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -687,34 +492,16 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2009/04/30*
-[番号] 技術ノート KGTN 2009050101
-[現象] ウエッブサーバ用のロードバランサの死活監視機能（TCP/IPレベル）を利用して良いか？
-[説明] 現在の GO-Global for Windows の仕様として，ロードバランサの死活監視機能（TCP/IPレベル）の利用を想定しておりません．従って，このような死活監視を行われた場合，その結果や GO-Global for Windows の動作について如何なる保証もサポートも行いません．GO-Global for Windows サーバの監視を行う場合は，
-ロードバランサの死活監視機能 （ICMPレベル）， &ldquo;GO-Global Application Publishing Service&rdquo; の監視 （サービスレベル） エンタープライズオプションのGMCheckによる監視 （プロトコルレベル）
-の何れかを行って下さい．
-参　考 GraphOn社にロードバランサの死活監視機能（TCP/IPレベル）のサポートを依頼しておりますが，実装の可能性および実装の時期については未定です．従って，現時点ではこれを前提としたシステム設計等は行わないようにして下さい．
-ファイル KGTN2009050101.pdf [(56.1 KB)] [kitasp 技術センター, 2009/05/01 07:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1903/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1905/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1905/">正常に動作しているが，APSログに CS: Component not found. 等のログが記録されている．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1905/">正常に動作しているが，APSログに CS: Component not found. 等のログが記録されている．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -731,14 +518,59 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2009/04/27*
-[番号] 技術ノート KGTN 2009042701
-[現象] 正常に動作しているが，APSログに &ldquo;CS: Component not found.&rdquo; 等のログが記録されている．
-[説明] &ldquo;CS: &hellip;&rdquo; と記録されたログはGGの通信処理の内部ログで，エラーと記録されても想定内の事象で，一般的な意味でエラー （障害） が発生している訳ではありません．従って，正常に動作している限り，これらのログは無視して頂いて構いません．なお，GraphOn社にAPSログに記録する文言を見直すように依頼しておりますが，作業工数のみならず修正に伴う不具合発生の可能性も否定できないため，現時点では将来の課題という状況です．
-ファイル KGTN2009042701.pdf [(54.5 KB)] [kitasp 技術センター, 2009/04/27 11:14]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1905/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2140/">[GGW3.2.1/GGH4.X-5.X] 正式ライセンスが正しくインストールされたかどうかの確認方法を知りたい．</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2140/"><i class="far fa-calendar"></i> 2009-04-24</a>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1910/">Disconnected sessions terminate = Immediately の設定にもかかわらず，ggw-3.2.1系でセッションが終了せずに残ることがある．</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1910/"><i class="far fa-calendar"></i> 2009-04-24</a>
+                                        </p>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -761,80 +593,15 @@ Private Sub btnShowHelp_Click(ByVal sender As System.Object, ByVal e As System.E
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li class="active">
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

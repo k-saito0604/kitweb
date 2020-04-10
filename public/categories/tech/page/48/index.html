@@ -311,117 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2155/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2155/">[GGH5.X] 特定ユーザーが 「コントロール パネル」 を利用出来ないようにしたい．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
 
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2155/"><i class="far fa-calendar"></i> 2017-04-07</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2017/04/07*
-[番号] 技術ノート KGTN 2017031102
-[現象] [GGH5.X] 特定ユーザーが 「コントロール パネル」 を利用出来ないようにしたい．
-[説明] 「コントロール パネル」 を利用出来ないグループを作成し，そのグループにその特定ユーザーを加えます．そして， C:WindowsSystem32control.exe のセキュリティで &ldquo;そのグループ = 拒否&rdquo; を設定してください．なお， Control.exe の所有者を Administrator に変更した後に，この設定を行ってください．
-グループの登録とユーザーの追加
-Control.exe のセキュリティ設定
-実行結果
-ファイル KGTN2017031102.pdf [(285 KB)] [kitasp 技術センター, 2017/04/07 14:42]
-KGTN2017031102-1.jpg
-表示 [(10.8 KB)] [kitasp 技術センター, 2017/04/07 14:42]
-KGTN2017031102-2.jpg
-表示 [(16.9 KB)] [kitasp 技術センター, 2017/04/07 14:42]
-KGTN2017031102-3.jpg
-表示 [(55.5 KB)] [kitasp 技術センター, 2017/04/07 14:42]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2155/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2170/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2170/">[GGW3.2/GGH4.X-5.X] 限られたユーザーによる試験運用では，目立ったトラブルは発生しなかった．これから本番運用に入るが，この結果から大きなトラブルが発生しないと考えて良いか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2170/"><i class="far fa-calendar"></i> 2017-04-07</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2017/04/07*
-[番号] 技術ノート KGTN 2017022801
-[現象] [GGW3.2/GGH4.X-5.X] 限られたユーザーによる試験運用では，目立ったトラブルは発生しなかった．これから本番運用に入るが，この結果から大きなトラブルが発生しないと考えて良いか？
-[説明] 本番運用に入ると，GG （の機能） 以外の部分に存在する問題が顕在化し，その問題によって大きなトラブルが引き起こされることがあります．そのような事例を２件ご紹介します．
-[不定期にGGサーバーの接続が切れる] 本番運用サーバーに入ってから，不定期にGGサーバーの接続が切れるという問題が発生しました．さまざまなチェックを行っても，さらにGGサーバー （マシン） を交換してもこの現象が続き，非常に大きな問題となりました．約半年後に分かった原因は，サーバールームの近くに大きなカラーコピーが２台設置されており，その２台のカラーコピーが同時に使われた時に電圧低下が発生し，それによってハブが不安定となり，GGの接続が切れるというものでした．ブラウザ （HTTP/HTTPS） では，セッションの接続と切断を繰り返しますので，ハブが不安定でも障害が目立ちませんが，GGやRDSでは常時セッションが接続されている必要がありますので，ハブが不安定だと接続が切断されることになります．
-[不定期にGGサーバーのリソースが枯渇する] 本番運用サーバーに入ってから，不定期にGGサーバーのリソースが枯渇するという問題が発生しました．問題が発生した時点でのユーザーの利用状況を調べたところ，毎回あるユーザーが使用していることが判明しました．そこで，そのユーザーにヒアリングを行ったところ，巨大な Excel のシートを開いていることが分かりました．GGサーバーでは，多くのユーザーが同時にログオンしアプリケーションを使用しますので，１人のユーザーでも巨大なデータ処理等を行うとリソースの枯渇を招くことがあります．
-このように，問題の原因がGG以外の部分に存在することも多く，そのような場合にGGに範囲を絞って調査を行うと，いつまでの原因が分からないという状況に陥ります．色々と調べても原因が特定できない場合は，可能な限り調査範囲を広げて，あらゆる可能性を考えてください．
-ファイル KGTN2017022801.pdf [(77.3 KB)] [kitasp 技術センター, 2017/04/07 13:12]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2170/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2193/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2193/">[GGH4.X-5.X] クライアントフレーム機能をマルチディスプレイ環境で利用したい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2193/">[GGH4.X-5.X] クライアントフレーム機能をマルチディスプレイ環境で利用したい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -438,31 +336,16 @@ KGTN2017031102-3.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2017/03/07*
-[番号] 技術ノート KGTN 2017012501
-[現象] [GGH4.X-5.X] クライアントフレーム機能をマルチディスプレイ環境で利用したい．
-[説明] クライアントフレーム機能は，１つのウインドウ （クライアントフレーム） の中にアプリケーションのウインドウを表示する機能ですので，複数のディスプレイに複数のウインドウ （クライアントフレーム） を表示することは出来ません．
-ファイル KGTN2017012501.pdf [(46.8 KB)] [kitasp 技術センター, 2017/03/07 16:47]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2193/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2197/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2197/">[GGH5.X/ExPack] GGサーバーの自己監視 （GGEasyMonitor） のサンプルは？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2197/">[GGH5.X/ExPack] GGサーバーの自己監視 （GGEasyMonitor） のサンプルは？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -479,31 +362,16 @@ KGTN2017031102-3.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2017/03/07*
-[番号] 技術ノート KGTN 2017011602
-[現象] [GGH5.X/ExPack] GGサーバーの自己監視 （GGEasyMonitor） のサンプルは？
-[説明] GGEasyMonitor によるGGサーバーの自己監視のサンプルは次の通りです．
-; ＊ログ関連＊ logd = Logs logLevel = 4 logLevelNet = 4 logLevelWeb = 4 logLevelCbk = 4 ; ＊通信関連＊ hostName = WS2012R2-ISUMI1 hostAddr = 192.168.0.103 hostPort = 8491 avSleep = 3 avTimeout = 60 pvSleep = 3 pvTimeout = 60 updateInterval = 3 updateTimeout = 10 bufferSize = 10 maxTempError = 10 ; ＊APS 関連＊ apsPort = 491 sessionInfo = YES rxpAddr = 192.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2197/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2194/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2194/">[GGH5.X/ExPack] 拡張パックの GGEasyLog は，どのようなソフトウエアなのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2194/">[GGH5.X/ExPack] 拡張パックの GGEasyLog は，どのようなソフトウエアなのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -520,44 +388,16 @@ KGTN2017031102-3.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2017/03/07*
-[番号] 技術ノート KGTN 2017012301
-[現象] [GGH5.X/ExPack] 拡張パックの GGEasyLog は，どのようなソフトウエアなのか？
-[説明] GGEasyLog はアプリケーション （.EXE） のラッパー・プログラムで，これを介してアプリケーションが起動されると，アプリケーションの起動日時・終了日時・ユーザーID・クライアント端末の名前・クライアント端末のIPアドレスがログに記録されます．環境設定および動作例を以下に示します．
-[設定ファイル]
-ログを記録するアプリケーションの名称とプログラム（.EXE）のパスを登録します．
-[アプリケーション登録]
-クラスターマネージャーでは，実行パスに GGEasyLog を指定し，コマンドラインのオプションで ?app を指定します．アイコンを本来のアプリケーションのアイコンに変更します．
-[アプリケーションの起動]
-GGにログオン後，登録したアプリケーションを起動します． 先ず，GGEasyLog が起動され， GGEasyLog はログに起動日時を記録し，次にアプリケーション （この例ではIE） を起動します．この時タスクバーには，ラッパーの GGEasyLog は現れません．
-[アプリケーションの終了]
-アプリケーションを閉じます． GGEasyLog はアプリケーションの終了を認識し，終了日時を記録します．
-[ログ]
-Start行 が開始日時， Ended行 が終了日時です． App はアプリケーションの名称， PID はプロセスID，USER はユーザーID， CNAME はクライアント端末の名前， IPADDR はクライアント端末のIPアドレスです．
-ファイル KGTN2017012301.pdf [(369 KB)] [kitasp 技術センター, 2017/03/07 16:47]
-KGTN2017012301-1.jpg
-表示 [(12.4 KB)] [kitasp 技術センター, 2017/03/07 16:47]
-KGTN2017012301-2.jpg</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2194/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2084/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2084/">[GGH5.X/Windows] Windows Server 2012 (R2) の環境でGGを利用した時， Microsoft IME の予測変換が学習しない （選択した単語が次回に第一候補として表示されない）．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2084/">[GGH5.X/Windows] Windows Server 2012 (R2) の環境でGGを利用した時， Microsoft IME の予測変換が学習しない （選択した単語が次回に第一候補として表示されない）．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -574,32 +414,16 @@ KGTN2017012301-2.jpg</p>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2017/03/07*
-[番号] 技術ノート KGTN 2016122701
-[現象] [GGH5.X/Windows] Windows Server 2012 (R2) の環境でGGを利用した時， Microsoft IME の予測変換が学習しない （選択した単語が次回に第一候補として表示されない）．
-[説明] Windows Server 2012 (R2) の Microsoft IME でこの現象を確認しておりますが，GGは個別のIMEに対して特別な処理を行っておらず，ATOK 2016 では予測変換の学習が働くことから， Windows Server 2012 (R2) の Microsoft IME の機能に関する問題だと思われます．従って，対応としては ATOK 2016 等の他の IME を使用するか，またはクライアント側IMEを使用することが考えられます．
-[なお， Google 日本語入力 も予測変換の学習が働きますが，しかし同一ユーザーがコンソールまたはリモートデスクトップ接続でログオン中の状況に限りGG上で日本語入力が可能となるため，一般的には利用することが出来ません．過去の技術ノートで Google 日本語入力 が代替のIMEの候補としておりましたが，この限られた状況でのみ動作するため，これは適切な内容ではありませんでした． ]{.underline}
-ファイル KGTN2016122701.pdf [(50.6 KB)] [kitasp 技術センター, 2017/05/24 16:43]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2084/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2198/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2198/">[GGH5.X] GG上で Google Chrome を利用する場合の注意点は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2198/">[GGH5.X] GG上で Google Chrome を利用する場合の注意点は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -616,35 +440,16 @@ KGTN2017012301-2.jpg</p>
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2017/03/07*
-[番号] 技術ノート KGTN 2017011601
-[現象] [GGH5.X] GG上で Google Chrome を利用する場合の注意点は？
-[説明] Google Chrome は，使用するタブが増えるとプロセスも増える傾向が見られますので，各ユーザーが幾つのもタブを使用するとリソース不足が発生する可能性が考えられます．以下の例は，４つのサイトを４つのタブで開いた時の IE （上段） と Google Chrome （下段） のプロセスの状況です．
-ファイル KGTN2017011601.pdf [(105 KB)] [kitasp 技術センター, 2017/03/07 16:15]
-KGTN2017011601-1.jpg
-表示 [(10.8 KB)] [kitasp 技術センター, 2017/03/07 16:15]
-KGTN2017011601-2.jpg
-表示 [(16 KB)] [kitasp 技術センター, 2017/03/07 16:15]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2198/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2200/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2200/">[GGH5.X] GG上で実行されるアプリケーションのフォントの品質が良くない．アンチエイリアス機能を有効にする方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2200/">[GGH5.X] GG上で実行されるアプリケーションのフォントの品質が良くない．アンチエイリアス機能を有効にする方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -661,34 +466,16 @@ KGTN2017011601-2.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2017/03/07*
-[番号] 技術ノート KGTN 2017010401
-[現象] [GGH5.X] GG上で実行されるアプリケーションのフォントの品質が良くない．アンチエイリアス機能を有効にする方法は？
-[説明] GGの既定の設定では，アンチエイリアス機能が無効 （ClearType が無効） になっております．サービス GO-Global Application Publishing Service を停止し，設定ファイル DefaultWorkspaceProperties.xml (*1) をテキストエディタで開き，項目 clearType の値を true に変更 （上書き保存） して下さい．これにより，アンチエイリアス機能が有効 （ClearType が有効） になります．
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; &lt;workspaceproperties version=&quot;1.0&quot;&gt; &lt;property id=&quot;SessionVerification&quot; group=&quot;Miscellaneous&quot; type=&quot;BOOL&quot;&gt; &lt;value&gt;true&lt;/value&gt; &lt;/property&gt; &lt;property id=&quot;clearType&quot; group=&quot;Miscellaneous&quot; type=&quot;BOOL&quot;&gt; &lt;value&gt;false&lt;/value&gt; ← true を指定する &lt;/property&gt;  *1 C:ProgramDataGraphOnDefaultWorkspaceProperties.xml
-ファイル KGTN2017010401.pdf [(90.1 KB)] [kitasp 技術センター, 2017/03/07 15:52]
-KGTN2017010401.jpg
-表示 [(13.4 KB)] [kitasp 技術センター, 2017/03/07 15:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2200/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2195/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2195/">[GGH5.X] クラスターマネージャーの Session Shutdown にある Action の Disconnect と Log off の違いは？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2195/">[GGH5.X] クラスターマネージャーの Session Shutdown にある Action の Disconnect と Log off の違いは？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -705,41 +492,16 @@ KGTN2017010401.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2017/03/07*
-[番号] 技術ノート KGTN 2017011901
-[現象] [GGH5.X] クラスターマネージャーの Session Shutdown にある Action の Disconnect と Log off の違いは？
-[説明] Session Shutdown の条件が満たされた時， Log off ではセッションが強制終了されます． Disconnect ではクライアントとの接続が切断されるだけでセッション自体は残ります． 詳細については，下記の例をご覧下さい．
-[Log Off の場合]
-無操作が約１分経過後 （セッションが強制終了）
-[Disconnect の場合]
-無操作が約１分経過後 （クライアントを切断するのみ，セッションが残る）
-ファイル KGTN2017011901.pdf [(168 KB)] [kitasp 技術センター, 2017/03/07 16:27]
-KGTN2017011901-1.jpg
-表示 [(10.8 KB)] [kitasp 技術センター, 2017/03/07 16:27]
-KGTN2017011901-2.jpg
-表示 [(12.1 KB)] [kitasp 技術センター, 2017/03/07 16:27]
-KGTN2017011901-3.jpg
-表示 [(11.2 KB)] [kitasp 技術センター, 2017/03/07 16:27]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2195/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2199/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2199/">[GGH5.X] 二要素認証を行いたいが，最初の認証機能からGGへログオン情報を渡す方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2199/">[GGH5.X] 二要素認証を行いたいが，最初の認証機能からGGへログオン情報を渡す方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -756,21 +518,59 @@ KGTN2017011901-3.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2017/03/07*
-[番号] 技術ノート KGTN 2017011101
-[現象] [GGH5.X] 二要素認証を行いたいが，最初の認証機能からGGへログオン情報を渡す方法は？
-[説明] GGへログオン情報を渡す方法として，次の３つインターフェイスがあります．
-１．専用クライアントのパラメタでログオン情報を渡す方法
-gg-client.exe -h &lt;GG サーバー&gt; -u &lt;ユーザーID&gt; -p &lt;パスワード&gt;  ２．GGEasyLogon のアカウント情報ダイアログにログオン情報を渡す方法
-３．GGEasyMonitor のログオン画面にログオン情報を渡す
-ファイル KGTN2017011101.pdf [(90.5 KB)] [kitasp 技術センター, 2017/03/07 16:13]
-KGTN2017011101-1.jpg
-表示 [(9.48 KB)] [kitasp 技術センター, 2017/03/07 16:13]
-KGTN2017011101-2.jpg
-表示 [(11.9 KB)] [kitasp 技術センター, 2017/03/07 16:13]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2199/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2192/">[GGH5.X] 設定ファイル HostProperties.xml の項目 DesktopColor の機能と値の設定方法について知りたい．</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2192/"><i class="far fa-calendar"></i> 2017-03-07</a>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2196/">[Windows] IPv6 を無効にする方法は？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2196/"><i class="far fa-calendar"></i> 2017-03-07</a>
+                                        </p>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -793,80 +593,15 @@ KGTN2017011101-2.jpg
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li class="active">
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

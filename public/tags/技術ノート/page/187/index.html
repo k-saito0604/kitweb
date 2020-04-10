@@ -311,23 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1032/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1032/">[VM] 技術ノート KGTN#2011071101 の補足３を読むと，GGが仮想環境を正式にサポートしていないように思えるが，その認識で間違いないか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1032/">[VM] 技術ノート KGTN#2011071101 の補足３を読むと，GGが仮想環境を正式にサポートしていないように思えるが，その認識で間違いないか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -344,32 +336,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/05/28*
-[番号] 技術ノート KGTN 2012052901
-[現象] [VM] 技術ノート KGTN#2011071101 の補足３を読むと，GGが仮想環境を正式にサポートしていないように思えるが，その認識で間違いないか？
-[説明] いいえ，その認識は正しくありません．GGはGraphOn社が検証した仮想環境上で 「ハードウエアサーバの場合と同じように」 動作します．技術ノート KGTN#2011071101 の補足３が意味するところは，次の通りです：
-弊社のこれまでの多くの事例の中で，仮想環境の設計や設定に不具合があった案件が少なからず存在し，それらの仮想環境上では Windows の動作が不安定 （例えば数十秒〜数分止まった状態になる等） になる問題が発生しました．このような場合， 「表面的には」 GGのセッションが切れる等の現象が発生しますが，本質的には仮想環境の設計や設定に起因する問題であるため，GG側でこの問題を解決することは技術的に不可能です．問題を解決するには仮想環境の設計や設定の見直し等を行う必要があり，これは当然のことながらGGのサポートの範囲を大きく逸脱します．補足３の 「仮想環境まで含めたサポートは行わない」 は，このことを意図しております．なお，別途プロフェッショナルサービス （有償サービス） として，仮想環境の問題について助言や調査等を行うことは可能です．
-ファイル KGTN2012052901.pdf [(67.9 KB)] [kitasp 技術センター, 2012/05/29 07:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1032/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2643/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2643/">[GGH4.X-5.X] GGクライアントは，一般にプロキシサーバーを利用できると考えて良いか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2643/">[GGH4.X-5.X] GGクライアントは，一般にプロキシサーバーを利用できると考えて良いか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -386,35 +362,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/05/23*
-[番号] 技術ノート KGTN 2011120505
-[現象] [GGH4.X-5.X] GGクライアントは，一般にプロキシサーバーを利用できると考えて良いか？
-[説明] GGクライアントが対応するプロキシサーバーは， 1) ベーシック認証， 2) 通信内容を素通しする （つまり通信内容のチェック等を一切行わない） 製品のみに限られます．GGクライアントは，インターネットオプションの 「プロキシサーバー」 で設定されたプロキシ情報を使用します．推奨する設定は，以下の通りです．
-１．GGのポート番号の変更 GGが利用するポート番号は491ですが，プロキシサーバーは通常491に対応しておりません．このため，クラスタマネージャーでGGのポート番号を443 （HTTPS） に変更します．この変更に伴い，クライアント起動時に以下のパラメタを設定する必要があります．
-デスクトップクライアント&hellip;：-hp 443 ブラウザ系クライアント&hellip;..：&amp;port=443
-インターネットオプションの設定 ポート番号80だけでなく，上記１で変更したポート番号443も設定します．  ファイル KGTN2011120505.pdf [(80.4 KB)] [kitasp 技術センター, 2016/02/05 11:39]
-KGTN2011120505.jpg
-表示 [(10.2 KB)] [kitasp 技術センター, 2016/02/05 11:39]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2643/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1035/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1035/">GraphOn社の Release Notes にある BUG#8700 （CASE#3875） の機能は，どの処理について FlexLM のライセンス・チェックアウトを再試行するのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1035/">GraphOn社の Release Notes にある BUG#8700 （CASE#3875） の機能は，どの処理について FlexLM のライセンス・チェックアウトを再試行するのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -431,31 +388,16 @@ KGTN2011120505.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/05/22*
-[番号] 技術ノート KGTN 2010081802
-[現象] GraphOn社の Release Notes にある BUG#8700 （CASE#3875） の機能は，どの処理について FlexLM のライセンス・チェックアウトを再試行するのか？
-[説明] ログオンが過度に集中した時，この &ldquo;FlexLM - Bad encryption handshake with vendor daemon. (Error code: -33)&rdquo; というエラーが発生しましたので，ログオン処理に関して FlexLM のライセンス・チェックアウトを再試行します （注： PWでのアプリケーション起動処理では，再試行は行われません） ．
-補足１ [Tickets 5677 and 3875 / Bug 8400] Intermittent license error: FlexLM - Bad encryption handshake with vendor daemon. (Error code: -33) As a workaround, we now attempt the license checkout again after an interval.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1035/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1037/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1037/">[Session] 同一のGGサーバ上で 「A部門は最大3ユーザ，B部門は最大7ユーザ」 というようなログオン管理は可能か？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1037/">[Session] 同一のGGサーバ上で 「A部門は最大3ユーザ，B部門は最大7ユーザ」 というようなログオン管理は可能か？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -472,32 +414,16 @@ KGTN2011120505.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/05/18*
-[番号] 技術ノート KGTN 2012051401
-[現象] [Session] 同一のGGサーバ上で 「A部門は最大3ユーザ，B部門は最大7ユーザ」 というようなログオン管理は可能か？
-[説明] GGサーバは 「最大20セッション，同一アカウントは最大2セッション」 というように，サーバ全体でのセッション管理 （ログオン管理） のみを行います．従って， お問い合わせの例ではA部門とB部門でサーバを分けるか，またはログオン最初に起動されるアプリケーションを作成し， （各部門について） 所定以下のユーザ数であれば PW を起動し，そうでなければエラーメッセージを表示して終了する方法が考えられます．
-補　足 GGサーバがGGクライアントからの接続要求を受け付ける時，認証情報は渡されませんので，先ずその時点でアカウントを見て拒否することは技術的に困難です．次にGGサーバは認証情報をGGクライアントに要求し Winlogon を行いますが，ここに切り口が用意されておりませんので，この時点でもアカウントを見て拒否することは出来ません．ログオンが完了すると， （初期アプリケーションが指定されていれば） 初期アプリケーションが起動されますので，この専用アプリケーションの中で他セッションの情報を参照し，許容数未満でなければエラーを表示してログオフすることが出来ます．なお，ログオンユーザでは他セッションの情報を直接参照することは出来ませんので （セキュリティの問題） ，サービス等でセッション情報を別途提供する必要があります．
-ファイル KGTN2012051401.pdf [(66.9 KB)] [kitasp 技術センター, 2012/05/18 12:30]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1037/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1038/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1038/">[Android Client] iPhone 向けのクライアントはリリースされたが， Android 2.3 向けのクライアントはリリースされないのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1038/">[Android Client] iPhone 向けのクライアントはリリースされたが， Android 2.3 向けのクライアントはリリースされないのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -514,31 +440,16 @@ KGTN2011120505.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/05/15*
-[番号] 技術ノート KGTN 2012051601
-[現象] [Android Client] iPhone 向けのクライアントはリリースされたが， Android 2.3 向けのクライアントはリリースされないのか？
-[説明] 「Android 2.3 系はスマートフォン，Android 3.X 系はタブレット」 というように分かれており，ユーザインタフェースも異なります． Android 4.X 系では，スマートフォンとタブレットのユーザインタフェースが統合され，どちらの環境でも動作します． Android Client は，現時点では Android 2.3 をサポートする予定はありませんが，スマートフォン側が Android 4.X 系へバージョンアップされれば Android Client を利用出来るようになります．
-ファイル KGTN2012051601.pdf [(48.7 KB)] [kitasp 技術センター, 2012/05/16 04:18]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1038/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1040/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1040/">[iPad/iPhone] Auto-Rotate （自動回転） 機能は，単に画像を回転させているだけか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1040/">[iPad/iPhone] Auto-Rotate （自動回転） 機能は，単に画像を回転させているだけか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -555,31 +466,16 @@ KGTN2011120505.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/05/01*
-[番号] 技術ノート KGTN 2012050103
-[現象] [iPad/iPhone] Auto-Rotate （自動回転） 機能は，単に画像を回転させているだけか？
-[説明] いいえ．セッションをシャドウイングして確認すると分りますが，ウインドウが描画領域にフィットするように，ウインドウのサイズも自動的に変更されます．
-ファイル KGTN2012050103.pdf [(46.3 KB)] [kitasp 技術センター, 2012/05/01 10:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1040/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1039/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1039/">[iPad/iPhone] ウインドウの端が切れたように表示された．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1039/">[iPad/iPhone] ウインドウの端が切れたように表示された．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -596,31 +492,16 @@ KGTN2011120505.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/05/01*
-[番号] 技術ノート KGTN 2012050104
-[現象] [iPad/iPhone] ウインドウの端が切れたように表示された．
-[説明] ドラッグ操作を行った時や回転操作を行った時に，画面が乱れることがあります．これは既知の問題で，ウインドウの 「最小化→復元」 操作を行うことで解消します．
-ファイル KGTN2012050104.pdf [(45 KB)] [kitasp 技術センター, 2012/05/01 11:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1039/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1041/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1041/">[iPhone] クライアントとして iPhone がサポートされても日本語入力が難しいのでは？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1041/">[iPhone] クライアントとして iPhone がサポートされても日本語入力が難しいのでは？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -637,31 +518,16 @@ KGTN2011120505.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/05/01*
-[番号] 技術ノート KGTN 2012050102
-[現象] [iPhone] クライアントとして iPhone がサポートされても日本語入力が難しいのでは？
-[説明] iPhone4S であれば Siri （音声アシスタント機能） を使用することが出来ますので，日本語入力もそれほど難しくはありません．なお，Auto-Zoom機能をオフにしておいた方が使い勝手が良いようです．
-ファイル KGTN2012050102.pdf [(103 KB)] [kitasp 技術センター, 2012/05/01 09:36]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1041/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1042/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1042/">[iPhone] iPhone で動作するクライアントはないのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1042/">[iPhone] iPhone で動作するクライアントはないのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -678,31 +544,16 @@ KGTN2011120505.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/04/30*
-[番号] 技術ノート KGTN 2012050101
-[現象] [iPhone] iPhone で動作するクライアントはないのか？
-[説明] これまでの iOS 向けクライアントは iPad 上のみで動作しましたが， iOS Clinet 4.1.3.12332 から iPhone 上でも動作するようになりました．設定画面等が若干異なりますが，大半のコードは iPad と iPhone で共通で，従って基本的な仕様は同じです．なお，このリリースより自動ローテート機能が （再） 実装されました．
-ファイル KGTN2012050101.pdf [(169 KB)] [kitasp 技術センター, 2012/05/01 08:07]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1042/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2336/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2336/">[Excel] 登録したアプリケーションのうち， Excel だけ異常な動作 （終了してもプロセスが残る等） をする．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2336/">[Excel] 登録したアプリケーションのうち， Excel だけ異常な動作 （終了してもプロセスが残る等） をする．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -719,14 +570,7 @@ KGTN2011120505.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2012/04/25*
-[番号] 技術ノート KGTN 2012042501
-[現象] [Excel] 登録したアプリケーションのうち， Excel だけ異常な動作 （終了してもプロセスが残る等） をする．
-[説明] Excel に限り異常な動作をするという事例が幾つかあります．先ず， 「Office およびコンピューターを Microsoft Update を使って更新する」 で最新の Office 更新プログラムをインストールし，さらにGGを最新ビルドにアップグレードすることで改善するかどうか確認して下さい．改善しない場合， Windows → Excel (Office) → GG という手順で再インストールをお願いします．報告のあった事例では，すべてこの方法で Excel が正常に動作しました．
-ファイル KGTN2012042501.pdf [(61.7 KB)] [kitasp 技術センター, 2016/10/04 16:02]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2336/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
@@ -749,80 +593,15 @@ KGTN2011120505.jpg
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li>
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

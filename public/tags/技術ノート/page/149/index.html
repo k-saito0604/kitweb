@@ -311,23 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc645/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc645/">[GGH4.5] APSログに記録されるプロセスの終了順序と，アプリケーションのプロセスの構成が合致しない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc645/">[GGH4.5] APSログに記録されるプロセスの終了順序と，アプリケーションのプロセスの構成が合致しない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -344,31 +336,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/03/05*
-[番号] 技術ノート KGTN 2013030503
-[現象] [GGH4.5] APSログに記録されるプロセスの終了順序と，アプリケーションのプロセスの構成が合致しない．
-[説明] GGがアプリケーションに終了を要求する場合，アプリケーションに WM_CLOSE メッセージを送信します．WM_CLOSE を受信したアプリケーションは， 「アプリケーションのロジックに従って」 構成するプロセスに終了要求を行います．終了要求を受け取ったプロセスは， 「プロセスのロジックに従って」 自分自身を終了させます．つまり，プロセスの終了順序は，アプリケーション （プロセス） のロジックとして実装されており，GGは一切関与しません．APSログに記録されるプロセスの終了情報は，Windowsレベルで 「プロセスが終了した」 ことを検知した時に記録されます．
-ファイル KGTN2013030503.pdf [(51.4 KB)] [kitasp 技術センター, 2013/03/05 10:55]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc645/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc646/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc646/">[GGH4.5] APSログの AS: Failed to start another session for xxx who already has the maximum of 1 running. の意味は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc646/">[GGH4.5] APSログの AS: Failed to start another session for xxx who already has the maximum of 1 running. の意味は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -385,31 +362,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/03/05*
-[番号] 技術ノート KGTN 2013030502
-[現象] [GGH4.5] APSログの &ldquo;AS: Failed to start another session for xxx who already has the maximum of 1 running.&rdquo; の意味は？
-[説明] クラスタマネージャの設定が &ldquo;Maximum sessions per user: 1&rdquo; で，同一ユーザIDで２人目がログオンを試みた時に記録されます．２人目のセッションではそのことを伝えるダイアログが表示され，ログオンすることは出来ません．１人目のセッションでは何も通知されず，そのまま利用することが出来ます （セッションは切断されません） ．
-ファイル KGTN2013030502.pdf [(53 KB)] [kitasp 技術センター, 2013/03/05 10:32]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc646/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc644/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc644/">[GGH4.5] GGのログを syslog に渡すことが出来るか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc644/">[GGH4.5] GGのログを syslog に渡すことが出来るか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -426,31 +388,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/03/05*
-[番号] 技術ノート KGTN 2013030504
-[現象] [GGH4.5] GGのログを syslog に渡すことが出来るか？
-[説明] GGのログレベルを4に設定するとWindowsのイベントログに主な情報が記録されますので， Ntsyslog 等のツールを利用することで （そのイベントログを） syslog へ転送出来ると思います．これ以上の内容については，インターネット上の情報等を参照して下さい．特にご要望があれば，弊社プロフェッショナル・サービス （有償） で調査することも可能です．
-ファイル KGTN2013030504.pdf [(50.6 KB)] [kitasp 技術センター, 2013/03/05 12:01]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc644/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc641/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc641/">[GGW3.2.1/GGH4.5] あるアプリケーションがリソースの枯渇を招き， ggse.sys がメモリの獲得に失敗してBSODが発生した．BSODが発生しないように ggse.sys を修正して欲しい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc641/">[GGW3.2.1/GGH4.5] あるアプリケーションがリソースの枯渇を招き， ggse.sys がメモリの獲得に失敗してBSODが発生した．BSODが発生しないように ggse.sys を修正して欲しい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -467,31 +414,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/03/05*
-[番号] 技術ノート KGTN 2013030602
-[現象] [GGW3.2.1/GGH4.5] あるアプリケーションがリソースの枯渇を招き， ggse.sys がメモリの獲得に失敗してBSODが発生した．BSODが発生しないように ggse.sys を修正して欲しい．
-[説明] 技術的な背景は割愛しますが，仮に ggse.sys でBSODが発生しないようになっても 「リソースの枯渇」 という状況は変わりませんので，結局はWindows がハングアップ状態になる，他のプロセスがBSODを引き起こす， etc&hellip; と言った状況が発生し，サーバの再起動が必要になります．よって， ggse.sys の修正は本質的な問題の解決とはなりません．本質的な問題の解決には，リソースの枯渇を招いたアプリケーションの動作を調査し，問題点 （プログラム自体や設定ファイルの内容など） を解決する必要があります．技術的に 「リソースの枯渇」が妥当な結果であれば，定期的にサーバの再起動を行う等の運用方法の見直しが必要となります．
-ファイル KGTN2013030602.pdf [(59.3 KB)] [kitasp 技術センター, 2013/03/06 08:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc641/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc642/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc642/">[Windows] GGとは関係がないが， PC (Windows 8) の無線LANが突然繋がらなくなった．PC (Windows 7) の無線LANは問題なく接続出来ている．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc642/">[Windows] GGとは関係がないが， PC (Windows 8) の無線LANが突然繋がらなくなった．PC (Windows 7) の無線LANは問題なく接続出来ている．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -508,31 +440,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/03/05*
-[番号] 技術ノート KGTN 2013030601
-[現象] [Windows] GGとは関係がないが， PC (Windows 8) の無線LANが突然繋がらなくなった．PC (Windows 7) の無線LANは問題なく接続出来ている．
-[説明] 弊社でも同じ現象が発生しました．PC (Windows 8) の無線LANが突然切断状態になり，再接続を試みても，ファイアウォールを無効にしても，アクセスポイントを変更しても，さらに再起動しても繋がらなくなりました．この状況でも PC (Windows 7) やiPadの無線LANは正常に動作していました．可能な限り調査をしましたが結局原因は分かりませんでした．しかし，翌朝になるとこの問題は解消していました．インターネット上にもこのような報告がありますので， Windows 8 の 「インターネットへの接続性」のチェックに何か不具合 （必要以上にチェックが厳しい？） があるのかもしれません．
-ファイル KGTN2013030601.pdf [(56.5 KB)] [kitasp 技術センター, 2013/03/06 05:31]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc642/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc643/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc643/">[Windows] GGとは関係がないが， Windows 8 のリフレッシュ機能を実行した場合，インストールしたアプリケーションはどうなるのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc643/">[Windows] GGとは関係がないが， Windows 8 のリフレッシュ機能を実行した場合，インストールしたアプリケーションはどうなるのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -549,32 +466,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/03/05*
-[番号] 技術ノート KGTN 2013030505
-[現象] [Windows] GGとは関係がないが， Windows 8 のリフレッシュ機能を実行した場合，インストールしたアプリケーションはどうなるのか？
-[説明] ストア版のアプリケーションは復元されますが，デスクトップ版のアプリケーションは削除されます．削除されたアプリケーションは，デスクトップ上に作成された 「削除されたアプリケーション」 というファイルで確認することが出来ます．なお，この 「削除されたアプリケーション」 の中にプレインストールに含まれるドライバが存在することがあり，このような場合は削除されたドライバを入手しインストールする必要があります （リフレッシュ機能で失われるドライバがある点に注意して下さい） ．
-補　足 上記説明の通りリフレッシュ機能にも欠点がありますので，安全確実という点では 「Windows 7 のファイルの回復」 機能の利用がお勧めです．
-ファイル KGTN2013030505.pdf [(50.8 KB)] [kitasp 技術センター, 2013/03/05 14:33]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc643/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc149/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc149/">[GGH4.X] Windows 8/8.1 をタッチパネルで使用しているが， keyboard=ClientSideIME で文字を入力すると大文字が小文字に変換される．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc149/">[GGH4.X] Windows 8/8.1 をタッチパネルで使用しているが， keyboard=ClientSideIME で文字を入力すると大文字が小文字に変換される．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -591,32 +492,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/03/04*
-[番号] 技術ノート KGTN 2013022704
-[現象] [GGH4.X] Windows 8/8.1 をタッチパネルで使用しているが， &ldquo;keyboard=ClientSideIME&rdquo; で文字を入力すると大文字が小文字に変換される．
-[説明] &ldquo;keyboard=ClientSideIME&rdquo; の設定では，クライアント側から直接サーバー側へ文字コードが直接送信されますので，クライアント側の問題ではないかと思われます．弊社およびGraphOn社の検証では，そのような現象は発生せず正常に動作しました．
-なお，GGH4.Xはクライアントの環境として Windows 8/8.1 をサポートしますが，タッチパネルについてはマウスやキーボードの操作に相当する機能についてのみ動作します （ドライバの機能によっては動作しない可能性もあります） ．
-ファイル KGTN2013022704.pdf [(56.3 KB)] [kitasp 技術センター, 2015/01/16 16:34]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc149/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc386/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc386/">[GGW3.2.1] BSOD （ブルースクリーンのメモリダンプ） が発生したが，GGの不具合ではないのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc386/">[GGW3.2.1] BSOD （ブルースクリーンのメモリダンプ） が発生したが，GGの不具合ではないのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -633,35 +518,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/03/04*
-[番号] 技術ノート KGTN 2011010201
-[現象] [GGW3.2.1] BSOD （ブルースクリーンのメモリダンプ） が発生したが，GGの不具合ではないのか？
-[説明] Ver3.2.1系は同時数千ユーザの案件を始めとして数多くのシステムでご利用頂いておりますが，GG自体の原因でBSODが発生した事例はありません．BSODが発生した事例では，利用ユーザ数や起動アプリケーションが過多な状況が発生し，Windowsレベルでメモリが枯渇し，Windowsの動作が不安定となり，最終的にBSODに陥ったケースが大半です．従って，BSODが発生した場合は，ダンプファイルを解析して，メモリの枯渇 （メモリに十分な余裕がない状況） が発生していないかどうか確認して下さい．
-補足１ 定期的な再起動を行っていない場合は，技術ノート KGTN#2010012202 をご覧下さい．
-補足２ メモリダンプは，必ず完全メモリダンプ （それが不可能な場合はカーネルメモリダンプ） で採取して下さい．ミニダンプでは，発生状況が分かる情報が含まれていないため，原因の調査を行うことは困難です．
-補足３ GG上で動作するアプリケーションは，GGのドライバ ggse.sys （GO-Global System Extension Driver） を介して Windows が管理するメモリの確保や解放を行います．このため，メモリの枯渇や不正な処理が行われてBSODが発生した場合，表面的な調査で ggse.sys が原因と結論付けた事例が幾つも存在しました．しかしながら，弊社で詳細に調査すると，その何れもがメモリの枯渇やアプリケーションの不正な処理が原因でした．
-補足４ 特定のアプリケーションでバージョンアップ後にBSODが発生するようになった場合は，新バージョンの処理に何らかの問題があり，それがGGのマルチユーザ環境で顕在化した可能性が高いと考えられます．アプリケーションの設定等を変更しても改善しない場合は，旧バージョンに戻し新バージョンのアップデートが出るのを待つ等の対応が最善の策だと思われます．
-ファイル KGTN2011010201.pdf [(81.5 KB)] [kitasp 技術センター, 2014/01/29 17:19]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc386/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc650/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc650/">[Mac OS X] GGとは関係がないが， Mac OS X &#43; Parallels Desktop の環境で動作する Windows 7 （その上で動作するアプリケーション） が一時的にフリーズすることがある．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc650/">[Mac OS X] GGとは関係がないが， Mac OS X &#43; Parallels Desktop の環境で動作する Windows 7 （その上で動作するアプリケーション） が一時的にフリーズすることがある．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -678,31 +544,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/03/04*
-[番号] 技術ノート KGTN 2013030405
-[現象] [Mac OS X] GGとは関係がないが， Mac OS X + Parallels Desktop の環境で動作する Windows 7 （その上で動作するアプリケーション） が一時的にフリーズすることがある．
-[説明] 一般的な回答ではありませんが，弊社で発生した事例では Time Machine 機能を 「切」 にすることで問題が解消しました．
-ファイル KGTN2013030405.pdf [(52.6 KB)] [kitasp 技術センター, 2013/03/04 11:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc650/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc649/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc649/">[Mac OS X] Mac OS X クライアントで，GGサーバにログイン出来るが，アプリケーションを起動するとセッションが切れる．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc649/">[Mac OS X] Mac OS X クライアントで，GGサーバにログイン出来るが，アプリケーションを起動するとセッションが切れる．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -719,15 +570,7 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2013/03/04*
-[番号] 技術ノート KGTN 2013030406
-[現象] [Mac OS X] Mac OS X クライアントで，GGサーバにログイン出来るが，アプリケーションを起動するとセッションが切れる．
-発生頻度と発生時間帯の傾向はどうか？ 他のアプリケーション （メモ帳） で現象が発生するかどうか？ 他のクライアント （マシン） で現象が発生するかどうか？ 再起動して現象が改善するかどうか？ その他，参考になる情報は何でも （例：コピー機が動作している時にセッションが切れ易い）
-[説明] Mac OS X クライアントだけでなく Windows クライアントも含め，GG上でアプリケーションを起動するとセッションが切断されるという現象は，過去に１件も報告がありません．問題点を明確にするために，以下の情報を採取して下さい．
-ファイル KGTN2013030406.pdf [(53.6 KB)] [kitasp 技術センター, 2013/03/04 13:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc649/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
@@ -750,80 +593,15 @@
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li>
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

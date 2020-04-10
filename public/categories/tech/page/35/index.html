@@ -311,113 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2037/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2037/">[GGH4.X-5.X] マイクロソフト社 (Windows Sysinternals) のツール PsPing を使って，GGサーバー (TCP:491) の応答時間を確認して良いか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
 
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2037/"><i class="far fa-calendar"></i> 2017-07-27</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2017/07/27*
-[番号] 技術ノート KGTN 2017070601
-[現象] [GGH4.X-5.X] マイクロソフト社 (Windows Sysinternals) のツール PsPing を使って，GGサーバー (TCP:491) の応答時間を確認して良いか？
-[説明] いいえ．GGはログオンが集中した時でも処理をさばけるように，TCP/IPレベルのコネクト要求があった時点で，ログオン処理 （の前処理） を開始します．ロードバランサのヘルスチェック機能でポート番号491へコネクトされた場合もこのログオン処理が行われ，実際にはログオンされませんので，ログオフ処理 （の一部） も続けて行われることになります．つまり，１回の応答時間の確認でログオン処理とログオフ処理が行われ，さらに頻繁に繰り返されることでサーバーに負荷を与えることになります．このようなことから， PsPing でポート番号491にアクセスすることはお勧めできません．弊社では，このような目的で使用するツール GGNetworkCheck を用意しております．
-ファイル KGTN2017070601.pdf [(47.2 KB)] [kitasp 技術センター, 2017/07/27 16:45]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2037/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2034/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2034/">[GGH5.X/hopTo] スマホの環境で，プログラムウインドウの Sign Out を簡単に選択したい．</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc2034/"><i class="far fa-calendar"></i> 2017-07-27</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2017/07/27*
-[番号] 技術ノート KGTN 2017071001
-[現象] [GGH5.X/hopTo] スマホの環境で，プログラムウインドウの &ldquo;Sign Out&rdquo; を簡単に選択したい．
-[説明] hopTo でプログラムウインドウ （C:Program FilesGraphOnGO-GlobalProgramspw.exe） にボタン &ldquo;Sign Out&rdquo; を作り，ショートカット &ldquo;ALT-F, T&rdquo; を定義してください．
-ファイル KGTN2017071001.pdf [(934 KB)] [kitasp 技術センター, 2017/07/27 16:51]
-KGTN2017071001-1.jpg
-表示 [(17.3 KB)] [kitasp 技術センター, 2017/07/27 16:51]
-KGTN2017071001-2.jpg
-表示 [(11.3 KB)] [kitasp 技術センター, 2017/07/27 16:52]
-KGTN2017071001-3.jpg
-表示 [(21.4 KB)] [kitasp 技術センター, 2017/07/27 16:52]
-KGTN2017071001-4.jpg
-表示 [(11.6 KB)] [kitasp 技術センター, 2017/07/27 16:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2034/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2035/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2035/">[GGH5.X] Dell PowerEdge T130 &#43; Windows Server 2012 R2 の環境で desktop=true を指定してログオンした時，ログオフ時にBSODが発生する．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2035/">[GGH5.X] Dell PowerEdge T130 &#43; Windows Server 2012 R2 の環境で desktop=true を指定してログオンした時，ログオフ時にBSODが発生する．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -434,31 +336,16 @@ KGTN2017071001-4.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2017/07/27*
-[番号] 技術ノート KGTN 2017070801
-[現象] [GGH5.X] Dell PowerEdge T130 + Windows Server 2012 R2 の環境で desktop=true を指定してログオンした時，ログオフ時にBSODが発生する．
-[説明] この問題はGraphOn社でも認識しており， 5.0.2 Patch 4 で修正される予定です．このパッチ版のリリースは，現時点では９月上旬を見込んでいます．
-ファイル KGTN2017070801.pdf [(38.6 KB)] [kitasp 技術センター, 2017/07/27 16:46]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2035/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2027/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2027/">[GGH5.X] GGH5.0.2 Patch 3 release (Version 5.0.2.25148) の主な変更点を知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2027/">[GGH5.X] GGH5.0.2 Patch 3 release (Version 5.0.2.25148) の主な変更点を知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -475,32 +362,16 @@ KGTN2017071001-4.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2017/07/27*
-[番号] 技術ノート KGTN 2017072601
-[現象] [GGH5.X] GGH5.0.2 Patch 3 release (Version 5.0.2.25148) の主な変更点を知りたい．
-[説明] 5.0.2.24304 からの主な変更点は次の通りです．
-●　DPI非対応アプリケーションへの高解像度ディスプレイ対応 ※クライアント側に5K以上のモニターと新しいクライアント （ソフトウエア） が必要です． ●　Desktopクライアントインストール時に Chrome のアドオンのページが開く問題の修正 ※サイレントモード cmd /c gg-client.desktop.exe /s /v&rdquo;/qn での起動が必要です． ●　ホスト機能の Windows 10 Creators Update (OS Build 15063) への対応 ●　サービス GGAPS が稀にメモリを大量消費する問題の修正
-●　Windows 10 環境での更新プログラム KB4025342 のサポート ●　環境によりアップグレード時にディスプレイ・ドライバーが開始しない問題の修正 ●　Windows 10 Creators Update 環境での Norton AntiVirus のサポート ●　Windows 10 Creators Update 環境での Avast Antivirus のサポート ●　Windows 10 Creators Update 環境での Symantec Endpoint Protection 14 のサポート ●　Windows 10 Creators Update 環境でクライアント・サウンドが動作しない問題の修正 ●　Sophos Anti-Virus がインストールされた環境でログオンダイアログの表示までに２分要する問題の修正 ●　F-Secure Server Security　/ F-Secure DeepGuard がインストールされた環境でクライアントの接続時にクラッシュする問題の修正</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2027/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2026/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2026/">[GGH5.X] GGが使用している OpenSSL のバージョンを知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2026/">[GGH5.X] GGが使用している OpenSSL のバージョンを知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -517,31 +388,16 @@ KGTN2017071001-4.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2017/07/27*
-[番号] 技術ノート KGTN 2017072602
-[現象] [GGH5.X] GGが使用している OpenSSL のバージョンを知りたい．
-[説明] GGH5.0.2.23814 またはそれ以降のビルドでは， OpenSSL 1.0.2j を使用しています．
-ファイル KGTN2017072602.pdf [(29.1 KB)] [kitasp 技術センター, 2017/07/27 17:13]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2026/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2039/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2039/">[GGH5.X] GGのバージョン （ビルド） を戻す方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2039/">[GGH5.X] GGのバージョン （ビルド） を戻す方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -558,32 +414,16 @@ KGTN2017071001-4.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2017/07/27*
-[番号] 技術ノート KGTN 2017070301
-[現象] [GGH5.X] GGのバージョン （ビルド） を戻す方法は？
-[説明] 以下の手順で，GGのバージョン （ビルド） を戻してください．
- ライセンスファイル （下記パス） のバックアップ C:Program FilesGraphOnGO-GlobalPrograms*.lic コントロールパネル → [プログラムのアンインストール] → [GO-Global Host] を右クリック [アンインストール] を選択 &ldquo;GO-Global Host をアンインストールしますか？&rdquo; → [はい] を選択 &ldquo;GO-Global Host: The setup must update files &hellip;&rdquo; → [OK] を選択 &ldquo;GO-Global Host: You must restart your system &hellip;&rdquo; → [Yes] を選択 再起動 通常のGGのインストール 上記１でバックアップしたライセンスファイルの復元 再起動 クラスターマネージャーでアプリケーションの登録ほか  障害等の対応で同じビルドを再インストールする場合も，この手順で行ってください．
-ファイル KGTN2017070301.pdf [(43.9 KB)] [kitasp 技術センター, 2017/07/27 16:44]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2039/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2023/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2023/">[GGH5.X] GGのホスト （サーバー） 用のソフトウエアの最新版を入手したが，GGのクライアント用ソフトウエアの最新版はどこから入手出来るのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2023/">[GGH5.X] GGのホスト （サーバー） 用のソフトウエアの最新版を入手したが，GGのクライアント用ソフトウエアの最新版はどこから入手出来るのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -600,31 +440,16 @@ KGTN2017071001-4.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2017/07/27*
-[番号] 技術ノート KGTN 2017072604
-[現象] [GGH5.X] GGのホスト （サーバー） 用のソフトウエアの最新版を入手したが，GGのクライアント用ソフトウエアの最新版はどこから入手出来るのか？
-[説明] GGのホスト （サーバー） 用のソフトウエアをインストールすると，次のフォルダーにクライアント用ソフトウエアが配置されています．
-C:Program FilesGraphOnGO-GlobalWebClients  ファイル KGTN2017072604.pdf [(33.4 KB)] [kitasp 技術センター, 2017/07/27 17:15]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2023/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2031/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2031/">[GGH5.X] Microsoft Office 365 (Microsoft Office 2016) のパワーポイントで，スライドショーやアニメーションのプレビューが動作しない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2031/">[GGH5.X] Microsoft Office 365 (Microsoft Office 2016) のパワーポイントで，スライドショーやアニメーションのプレビューが動作しない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -641,33 +466,16 @@ C:Program FilesGraphOnGO-GlobalWebClients  ファイル KGTN2017072604.pdf [(33.
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2017/07/27*
-[番号] 技術ノート KGTN 2017071301
-[現象] [GGH5.X] Microsoft Office 365 (Microsoft Office 2016) のパワーポイントで，スライドショーやアニメーションのプレビューが動作しない．
-[説明] パワーポイントのスライドショーやアニメーションのプレビューが動作しない問題は，現時点では制限事項となります．なお，スライドショーを選択した直後にフリーズ状態になった場合は， Ctrl + Alt + Del でタスクマネージャーを選択し， PowerPoint のタスクを×で強制終了してください．
-ファイル KGTN2017071301.pdf [(712 KB)] [kitasp 技術センター, 2017/07/27 16:58]
-KGTN2017071301.jpg
-表示 [(25.8 KB)] [kitasp 技術センター, 2017/07/27 16:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2031/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2030/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2030/">[GGH5.X] Microsoft Office 365 (Microsoft Office 2016) のパワーポイントを使用する場合，色深度を16ビットに下げるとパフォーマンスが向上するか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2030/">[GGH5.X] Microsoft Office 365 (Microsoft Office 2016) のパワーポイントを使用する場合，色深度を16ビットに下げるとパフォーマンスが向上するか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -684,31 +492,16 @@ KGTN2017071301.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2017/07/27*
-[番号] 技術ノート KGTN 2017071302
-[現象] [GGH5.X] Microsoft Office 365 (Microsoft Office 2016) のパワーポイントを使用する場合，色深度を16ビットに下げるとパフォーマンスが向上するか？
-[説明] 環境に依存する可能性もありますが，弊社の検証環境では色深度が16ビットでも32ビットでも体感的なパフォーマンスは殆ど差がありません．なお，パフォーマンスを向上させるには，パワーポイントのウインドウを最大化せずに，必要最小限のサイズにすることをお勧めします．
-ファイル KGTN2017071302.pdf [(37.4 KB)] [kitasp 技術センター, 2017/07/27 17:03]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2030/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2028/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2028/">[GGH5.X] エクスプローラーを使用して，サーバー側からクライアント側へファイルをコピーしたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2028/">[GGH5.X] エクスプローラーを使用して，サーバー側からクライアント側へファイルをコピーしたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -725,19 +518,59 @@ KGTN2017071301.jpg
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2017/07/27*
-[番号] 技術ノート KGTN 2017072001
-[現象] [GGH5.X] エクスプローラーを使用して，サーバー側からクライアント側へファイルをコピーしたい．
-[説明] &lt;STEP#1&gt; クラスターマネージャーで [Tools] → [Host Options&hellip;] → [Client Access] を開き， [Drives] にチェックを入れてください．これにより，サーバー側からクライアント側のドライブへアクセス出来るようになります．
-&lt;STEP#2&gt; GGサーバーへログオンし，エクスプローラーを起動します．サーバー側のドライブは環境通りのドライブレターで，クライアント側のドライブは M: から始まるドライブレターとなります．例えば，クライアント側の C: ドライブは，ドライブレターが M: ，名前が Client C: となり， C: ドライブから M: ドライブへファイルをコピーすると，サーバー側の C: ドライブから，クライアント側の C: ドライブへファイルがコピーされます．
-ファイル KGTN2017072001.pdf [(722 KB)] [kitasp 技術センター, 2017/07/27 17:09]
-KGTN2017072001-1.jpg
-表示 [(11.7 KB)] [kitasp 技術センター, 2017/07/27 17:10]
-KGTN2017072001-2.jpg
-表示 [(39.2 KB)] [kitasp 技術センター, 2017/07/27 17:10]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2028/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2038/">[GGH5.X] クライアントドライブ機能で，クライアント側からサーバー側へのみコピー可能というような設定は可能か？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2038/"><i class="far fa-calendar"></i> 2017-07-27</a>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2024/">[GGH5.X] 客先のマシンに手持ちの GGH5.0.0.22626 をインストールしたところ，GGのサービス （APS） が開始しない．</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc2024/"><i class="far fa-calendar"></i> 2017-07-27</a>
+                                        </p>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -760,80 +593,15 @@ KGTN2017072001-2.jpg
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li class="active">
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

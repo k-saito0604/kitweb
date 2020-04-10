@@ -311,109 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1561/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1561/">クラスタマネージャでサーバ一覧には表示されるのに，サーバをクリックするとエラーになるのは何故か？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
 
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/new_md/doc1561/"><i class="far fa-calendar"></i> 2010-11-09</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">*技術ノート
-2010/11/09*
-[番号] 技術ノート KGTN 2010110902
-[現象] クラスタマネージャでサーバ一覧には表示されるのに，サーバをクリックするとエラーになるのは何故か？
-[説明] 各GGサーバは，自分のサーバの存在を知らせるために， UDP 491 でブロードキャストを行っております．クラスタマネージャのサーバ一覧は，この UDP 491 のブロードキャストを受信して，それらをサーバのリストの形にしたものです．
-サーバ一覧の中の特定のサーバがクリックされると，そこで初めてクラスタマネージャは選択されたサーバと TCP 491 で通信を行います．通信開始に当たっては，GGレベルのログオン処理が行われるため， TCP/IP レベルのネットワーク障害等に加え，バージョン不一致やライセンス失効でもエラーが発生します．
-ファイル KGTN2010110902.pdf [(51.1 KB)] [kitasp 技術センター, 2010/11/09 11:09]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1561/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/problematic_md/doc295/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/problematic_md/doc295/">[GGW3.2.1/GGH4.X] 2台のGGサーバでライセンスを融通したいが，何か良い方法はないか？</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          
-                                          
-                                          in <a href="/categories/tech">tech</a>
-                                          
-                                          
-
-                                        </p>
-                                        
-                                        <p class="date-comments">
-                                            <a href="/posts/problematic_md/doc295/"><i class="far fa-calendar"></i> 2010-11-05</a>
-                                        </p>
-                                        
-                                    </div>
-                                    <p class="intro">技術ノート 2010/11/05
-[番号] 技術ノート KGTN 2010110501
-[現象] [GGW3.2.1/GGH4.X] 2台のGGサーバでライセンスを融通したいが，何か良い方法はないか？
-[説明] デフォルトのインストールでは，GGサーバは同じサーバのライセンスファイルのみを参照します．以下の設定を行うことで，自分が管理するライセンスが全て使用された時，他のサーバからライセンスを獲得するように試みます．
-  各サーバのライセンスファイル license.lic のSERVER行にポート番号27001を明示的に指定する． 例： SERVER GG-SERVER 000C29F4D999 27001
-  各サーバのシステム環境変数 LM_LICENSE_FILE に， 「27001@GGサーバのIPアドレス」 をセミコロンで区切って並べる．ライセンスを獲得する順序は左から右で，各サーバの設定内容には注意する． 例： LM_LICENSE_FILE = 27001@192.168.102.21;27001@192.168.102.22;
-  技術ノート KGTN#2010041502 を参考に，レジストリ BLM_LICENSE_FILE の値を空にする．
-  各GGサーバを再起動し，ライセンスがシステム環境変数 LM_LICENSE_FILE で指定した通りに獲得されるかどうかチェックする （lmtools の Server Status で確認する） ．
-  ファイル KGTN2010110501.pdf [(68.3 KB)] [kitasp 技術センター, 2014/03/14 19:18]</p>
-                                    <p class="read-more"><a href="/posts/problematic_md/doc295/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1562/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1562/">GGが使用するポート番号を知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1562/">GGが使用するポート番号を知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -430,32 +336,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/11/04*
-[番号] 技術ノート KGTN 2010110403
-[現象] GGが使用するポート番号を知りたい．
-[説明] GGがデフォルトで使用するポート番号は， IANA （Internet Assigned Numbers Authority） がGGのために割り当てた （WELL KNOWN PORT NUMBERS） 491です．
-http://www.iana.org/assignments/port-numbers go-login 491/tcp go-login 491/udp
-ファイル KGTN2010110403.pdf [(47.3 KB)] [kitasp 技術センター, 2010/11/04 14:06]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1562/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1564/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1564/">GG上のアプリケーションとしてICAクライアントをホスティングしたところ， 「GG → ICAクライアント → アプリケーション」 という環境で画面が乱れることがある．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1564/">GG上のアプリケーションとしてICAクライアントをホスティングしたところ， 「GG → ICAクライアント → アプリケーション」 という環境で画面が乱れることがある．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -472,32 +362,16 @@ http://www.iana.org/assignments/port-numbers go-login 491/tcp go-login 491/udp
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/11/04*
-[番号] 技術ノート KGTN 2010110401
-[現象] GG上のアプリケーションとしてICAクライアントをホスティングしたところ， 「GG → ICAクライアント → アプリケーション」 という環境で画面が乱れることがある．
-[説明] GraphOn社の製品もCitrix社の製品もサーバサイド・コンピューティングの環境を提供するソフトウエアですが，その実装方式が大きく異なります．GraphOn社の製品は API Wrapping 方式で実装されており，サーバ側で描画されると，そのAPIの内容が時系列的にかつ忠実にクライアント側へ転送され，クライアントの画面上で再現 （描画） されます．Citrix社の製品は Screen Scraping 方式で実装されており，サーバ側で描画されると，その内容が直ちにクライアント側へ転送されることはなく，グラフィック・メモリ領域を一定間隔で監視する機能によってユーザ・インターフェイス画面情報の変化が検出され， （描画の時系列とは直接関係のない） この画面情報の差分がクライアント側へ送信され，クライアントの画面上で変化があった部分のみが描画されます．
-「GG → ICAクライアント → アプリケーション」 という環境では，アプリケーションが描画したAPIの内容および時系列がCitrix社の製品によって失われるため，アプリケーションの描画処理の内容によっては，GGのクライアント上で忠実に再現されないことがあります．このような現象が発生した場合は，GG側で対処することは困難で，アプリケーションのソースコードに Sleep() 関数を挿入する等の調整を行うことで，描画が正しく再現出来る可能性があります （過去に１件だけ事例があり，試行錯誤で約１ヶ月を要しました） ．調整が困難か，または調整を行っても描画が正しく再現されない場合は，現象が発生するウインドウを手動操作で 「最小化 → 復元」 して再描画させる等の運用回避を行って下さい．
-ファイル KGTN2010110401.pdf [(71.8 KB)] [kitasp 技術センター, 2010/11/04 12:00]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1564/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1563/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1563/">タッチパネルの付いた Windows XP のパソコンがあるが，GGクライアントでタッチパネルを利用できるか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1563/">タッチパネルの付いた Windows XP のパソコンがあるが，GGクライアントでタッチパネルを利用できるか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -514,31 +388,16 @@ http://www.iana.org/assignments/port-numbers go-login 491/tcp go-login 491/udp
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/11/04*
-[番号] 技術ノート KGTN 2010110402
-[現象] タッチパネルの付いた Windows XP のパソコンがあるが，GGクライアントでタッチパネルを利用できるか？
-[説明] タッチパネルがマウスのように見えるインタフェース （ドライバ） を持っていれば，GGクライアントはタッチパネルをマウスとして認識しますので，使用することが出来ます．
-ファイル KGTN2010110402.pdf [(43.1 KB)] [kitasp 技術センター, 2010/11/04 13:51]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1563/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1565/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1565/">クライアントドライブ機能を使い，サーバ側からクライアント側へファイルをコピーした時，クライアント側でファイルがロックされ削除できない等の現象が発生することがある．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1565/">クライアントドライブ機能を使い，サーバ側からクライアント側へファイルをコピーした時，クライアント側でファイルがロックされ削除できない等の現象が発生することがある．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -555,31 +414,16 @@ http://www.iana.org/assignments/port-numbers go-login 491/tcp go-login 491/udp
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/11/02*
-[番号] 技術ノート KGTN 2009091502
-[現象] クライアントドライブ機能を使い，サーバ側からクライアント側へファイルをコピーした時，クライアント側でファイルがロックされ削除できない等の現象が発生することがある．
-[説明] サイズが19MBを超えるファイルについては，クライアントドライブ機能の動作は保障できません．この問題は回線速度やファイルの内容 （テキスト・バイナリ） に依存せず，ファイルサイズのみに依存して発生します．ファイルがロックされた場合は，Windowsクライアントでは ggw.exe を終了させることでロックが解除されます．本件はGraphOn社も障害として認識しており，バージョンアップで修正しております．
-ファイル KGTN2009091502.pdf [(54.3 KB)] [kitasp 技術センター, 2010/11/02 16:20]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1565/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1566/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1566/">Ver3.2.1 &#43; Visio 2003 の環境では図面が2回描画されるが， Ver4.0 &#43; Visio 2010 ではどうなのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1566/">Ver3.2.1 &#43; Visio 2003 の環境では図面が2回描画されるが， Ver4.0 &#43; Visio 2010 ではどうなのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -596,31 +440,16 @@ http://www.iana.org/assignments/port-numbers go-login 491/tcp go-login 491/udp
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/11/01*
-[番号] 技術ノート KGTN 2010110103
-[現象] Ver3.2.1 + Visio 2003 の環境では図面が2回描画されるが， Ver4.0 + Visio 2010 ではどうなのか？
-[説明] Ver4.0 + Visio 2010 試用版で確認したところ，図面は1回描画されるのみで，ちらつき等は発生しませんでした．また，Ver4.0ではクライアントドライブ機能がアーキテクチャレベルで見直しが行われたため，Visioファイルのクライアントドライブからの読み込み，クライアントドライブへの保存が大幅に速くなりました．
-ファイル KGTN2010110103.pdf [(47.4 KB)] [kitasp 技術センター, 2010/11/01 14:30]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1566/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1567/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1567/">クライアントドライブ機能を使い，サーバからクライアントへファイルをコピーするとセッションが切れることがある．また，セッションが切れない場合でも，クライアント側でファイルがロックされ削除が出来ない等の現象が発生することもある．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1567/">クライアントドライブ機能を使い，サーバからクライアントへファイルをコピーするとセッションが切れることがある．また，セッションが切れない場合でも，クライアント側でファイルがロックされ削除が出来ない等の現象が発生することもある．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -637,35 +466,16 @@ http://www.iana.org/assignments/port-numbers go-login 491/tcp go-login 491/udp
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/11/01*
-[番号] 技術ノート KGTN 2009091501
-[現象] クライアントドライブ機能を使い，サーバからクライアントへファイルをコピーするとセッションが切れることがある．また，セッションが切れない場合でも，クライアント側でファイルがロックされ削除が出来ない等の現象が発生することもある．
-[説明] ファイルサイズが19MBを越えると 「セッションが切れる」 「０バイトのファイルが作成される」 「ファイルがロックされる」 「コピーしたファイルの正しいファイルサイズが得られない」 という現象が発生します．この問題は，回線速度やファイルの内容 （テキスト・バイナリ） に依存せず，ファイルサイズのみに依存して発生します．ファイルがロックされた場合は，ActiveXクライアントではIEを閉じることで，Windowsクライアントはggw.exeを終了させることでロックが解除されます．本件はGraphOn社も障害として認識しており，将来のバージョンで修正する予定です．
-補足１ クライアントドライブ機能でファイルをコピーする場合，FTPのような専用のファイル転送プロトコルでコピーが行われる訳ではなく，Windows内部の低レベルのファイルコピー処理をフックして，サーバとクライアント間でファイルのコピー処理が行われます．このような仕組みにより， Windowsの遅延書き込み機能等の極めて低レベルな処理もGGのセッションの中で行われ，サーバとクライアント間でエラー等のイベントが正常に伝わらず，それぞれが相手方からのイベントを待ち続けて，タイムアウトによるセッション断や継続的なファイルのロックが発生したものと推測します．なお，本補足事項は弊社の独自調査による結果 （GraphOn社にも報告済） を元に記載しています．
-補足２ セッション断については，Windowsがプログレスダイアログを表示するケースで発生することが分かっております．DOS窓を開きcopyコマンドでコピーを行った場合は，セッション断やファイルのロックは発生しません．なお，本補足事項は弊社の独自調査による結果 （GraphOn社にも報告済） を元に記載しています．
-補足3 なぜ発生したのか&hellip;　クライアントドライブ機能のサーバ側とクライアント側で，それぞれが相手からのイベントを待っている状態にあり，処理が完結しないためセッション断やファイルロック等が発生していると推測されます．
-補足4 どうすれば発生しないのか&hellip;　「ファイルの大きさで対応する」 ことが妥当だと考えますが，しかし明確な根拠を持ったファイルの大きさを示すことは困難です．恐らく Windows 内部のキャッシュの空き等に依存しているため， 正確には分かりませんが，実測値で19MB以下であれば大丈夫のようです．なお，GraphOn社には全て状況を報告しており，その情報を試験＆分析作業を行っております． 補足5 GraphOn社のコメント&hellip; We have done some more testing and the issue with the filelock did not occur with a filesize of 20,001KB. It did occur with a filesize of 20,041KB.
-20MB （= 20,480KＢ） は20,041KBを越えますので，運用回避を行う場合のファイルサイズは 「19MB以下」 となります．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1567/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1568/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1568/">モジュール msvcr90.dll でエラーが発生し， aps.exe が開始しない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1568/">モジュール msvcr90.dll でエラーが発生し， aps.exe が開始しない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -682,33 +492,16 @@ http://www.iana.org/assignments/port-numbers go-login 491/tcp go-login 491/udp
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/10/31*
-[番号] 技術ノート KGTN 2010110101
-[現象] モジュール msvcr90.dll でエラーが発生し， aps.exe が開始しない．
-エラー発生アプリケーション aps.exe、バージョン 4.0.0.8685 エラー発生モジュール msvcr90.dll、バージョン 9.0.30729.4148 エラー発生アドレス 0x000375b4
-[説明] 弊社ではこの現象を再現することが出来ませんでしたが，発生した環境では16文字以上あったコンピュータ名を15文字以下に短くすることで，この現象が発生しなくなったという報告がありました． KB226144 にありますように，NetBIOS ドメイン名が15文字以下になるようにサーバ環境を設定して下さい．
-http://support.microsoft.com/kb/226144/ja NetBIOS ドメイン名 フィールドに、15 文字の長さ制限 Windows 2000
-ファイル KGTN2010110101.pdf [(61.7 KB)] [kitasp 技術センター, 2010/11/01 08:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1568/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1570/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1570/">Windows Update （更新プログラム） KB981957 は互換性が無く，互換アップデートが必要となったが，今後も同様のことが頻繁に発生するのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1570/">Windows Update （更新プログラム） KB981957 は互換性が無く，互換アップデートが必要となったが，今後も同様のことが頻繁に発生するのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -725,15 +518,59 @@ http://support.microsoft.com/kb/226144/ja NetBIOS ドメイン名 フィール�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/10/29*
-[番号] 技術ノート KGTN 2010102901
-[現象] Windows Update （更新プログラム） KB981957 は互換性が無く，互換アップデートが必要となったが，今後も同様のことが頻繁に発生するのか？
-[説明] GraphOn社の認識では，KB981957 のような互換性の無い更新プログラムは非常に稀なケースとのことです．本件に関するGraphOn社のコメントは，下記の通りです．
-Most likely, this is the extremely rare result of a recent Microsoft Windows Update: 981957
-ファイル KGTN2010102901.pdf [(55.7 KB)] [kitasp 技術センター, 2010/10/29 09:11]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1570/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1572/">3.2.1.4474 （3.2.1 Patch 4 R2） と 3.2.1.4466 （3.2.1 Patch 4） の差異は？</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1572/"><i class="far fa-calendar"></i> 2010-10-27</a>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        
+
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1573/">3.2.1.4474 （3.2.1 Patch 4 R2） をインストールしたところ，APSログやクラスタマネージャのバージョン情報が 3.2.1.4466 のままになる．</a></h5>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          
+                                          
+                                          in <a href="/categories/tech">tech</a>
+                                          
+                                          
+
+                                        </p>
+                                        
+                                        <p class="date-comments">
+                                            <a href="/posts/new_md/doc1573/"><i class="far fa-calendar"></i> 2010-10-27</a>
+                                        </p>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -756,80 +593,15 @@ Most likely, this is the extremely rare result of a recent Microsoft Windows Upd
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li class="active">
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

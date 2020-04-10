@@ -311,23 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc2587/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc2587/">[GGW3.2.1/GGH4.X-5.X] ログオンスクリプトの Global と User-specific の両方を使用したいが，適用の順番は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc2587/">[GGW3.2.1/GGH4.X-5.X] ログオンスクリプトの Global と User-specific の両方を使用したいが，適用の順番は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -344,31 +336,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/11/25*
-[番号] 技術ノート KGTN 2011112502
-[現象] [GGW3.2.1/GGH4.X-5.X] ログオンスクリプトの Global と User-specific の両方を使用したいが，適用の順番は？
-[説明] Global → User-specific の順序で適用 （実行） されます．特別な事情がなければ，以下のようなスクリプトを記述し， Global として適用 （実行） するのが管理や運用の面から一般に利用されている方法です．
-ECHO OFF :COMMON1 ::--- 共通の前処理を記述 --- ECHO COMMON1 &gt;&gt;C:TEMPGLOLBAL.TXT IF &quot;%USERNAME%&quot; == &quot;TestUser&quot; GOTO :USER_TEST IF &quot;%USERNAME%&quot; == &quot;Administrator&quot; GOTO :USER_ADMIN GOTO :USER_OTHER :USER_TEST :: --- TestUser の処理を記述 --- ECHO TestUser &gt;&gt;C:TEMPGLOLBAL.TXT GOTO :COMMON2 :USER_ADMIN :: --- Administrator の処理を記述 --- ECHO Administrator &gt;&gt;C:TEMPGLOLBAL.TXT GOTO :COMMON2 :USER_OTHER :: --- その他の処理を記述 --- ECHO OTHER &gt;&gt;C:TEMPGLOLBAL.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc2587/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1219/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1219/">[Windows2003] GGサーバにユーザがログオンを行った時，下記のエラーが発生した．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1219/">[Windows2003] GGサーバにユーザがログオンを行った時，下記のエラーが発生した．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -385,34 +362,16 @@ ECHO OFF :COMMON1 ::--- 共通の前処理を記述 --- ECHO COMMON1 &gt;&gt;C:T
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/11/22*
-[番号] 技術ノート KGTN 2011112202
-[現象] [Windows2003] GGサーバにユーザがログオンを行った時，下記のエラーが発生した．
-aps (3468) AS: Function APS_IndependentSession::loadUserProfile () ¥ in file APS_IndependentSession.cpp failed at line 3916 (WLE1450).
-[説明] このメッセージの内容から， 1) ユーザがGGサーバへのログオンを試みて， 2) GGがそのユーザのプロファイルをロードしようとしたが， 3) プロファイルのロードに失敗した ことを意味しています． WLE1450 は，その時に発生したエラー （System Error Code） で，その意味は以下の通りです．
-ERROR_NO_SYSTEM_RESOURCES Insufficient system resources exist to complete the requested service.
-このエラーは （大きな） ファイルの読み込み等でリソース （PTE） が不足した場合や，読み込みに失敗して所定の回数試行しても失敗した場合などに返されます．従って，プロファイル全体のサイズが異常に大きい，またはプロファイルの読み込みに失敗した等が考えられます．なお，コンソールやリモートデスクトップ接続でのログオンでも同じ現象が確認される場合は， Windows Server 自体の問題 または Active Directory の問題 （プロファイルを管理しているファイルサーバ周辺の問題も含みます） の可能性が高いと考えられます．
-ファイル KGTN2011112202.pdf [(62.9 KB)] [kitasp 技術センター, 2011/11/22 14:07]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1219/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1220/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1220/">[Windows7] Windows XP でGGサーバへログオンすると快適に利用できるが， Windows 7 でGGサーバへログオンすると操作に倍くらいの時間がかかる．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1220/">[Windows7] Windows XP でGGサーバへログオンすると快適に利用できるが， Windows 7 でGGサーバへログオンすると操作に倍くらいの時間がかかる．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -429,38 +388,16 @@ ERROR_NO_SYSTEM_RESOURCES Insufficient system resources exist to complete the re
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/11/22*
-[番号] 技術ノート KGTN 2011112201
-[現象] [Windows7] Windows XP でGGサーバへログオンすると快適に利用できるが， Windows 7 でGGサーバへログオンすると操作に倍くらいの時間がかかる．
-[説明] 「Windows 7 のネットワークが異常に遅い」 というような報告がネットワーク上に多数あり，これらの情報を参考に設定を変更し改善するかどうか調べて下さい．Google で例えば 「windows7 ネットワーク 遅い」 というキーで探すと，それらの情報が見つかります．代表的な設定としては，以下の３つがあります．
-IPv6を無効にする． http://d.hatena.ne.jp/wonodas/20100516/1274011987
-自動チューニングの設定を高速回線タイプに変更する． http://ymiwa.exblog.jp/13163388/
-SNP （Scalable Networking Pack） を無効にする． http://itpro.nikkeibp.co.jp/article/COLUMN/20100824/351391/
-補足１ IPv6を無効化するに当たって，以下の方法もあります．
-レジストリでIPv6を無効化する． http://www.atmarkit.co.jp/fwin2k/win2ktips/949vistav6rm/vistav6rm.html
-IPv6のトンネルインターフェイスとループバックインターフェイスを無効化する． http://naonao71.wordpress.com/2009/01/05/ipv6%E3%81%AE%E7%84%A1%E5%8A%B9%E5%8C%96%EF%BC%88win2008-or-vista-2/
-補足２ パフォーマンスのチェックのため，GGとウエブ （ブラウザ） を使用して比較をすると，通信する仕組みが大きく異なるため，その結果で 「速い／遅い」 を判断することは出来ません．もし比較をするのであれば，GGとリモートデスクトップ接続を使用するのが良いと思います．もしリモートデスクトップ接続でも同じように遅いのであれば，少なくともGGに依存した問題でないことが分ります．
-ファイル KGTN2011112201.pdf [(70.5 KB)] [kitasp 技術センター, 2011/11/22 11:46]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1220/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1221/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1221/">[GGH4.0] GGがUSBディスク （クライアントドライブ） を認識するタイミングは？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1221/">[GGH4.0] GGがUSBディスク （クライアントドライブ） を認識するタイミングは？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -477,33 +414,16 @@ IPv6のトンネルインターフェイスとループバックインターフ�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/11/18*
-[番号] 技術ノート KGTN 2011111801
-[現象] [GGH4.0] GGがUSBディスク （クライアントドライブ） を認識するタイミングは？
-[説明] エクスプローラーで &ldquo;マイ コンピュータ&rdquo; を表示した状態で，クライアントにUSBディスクを挿入すると，クライアントでUSBディスクが認識された直後に， （サーバ側で動作する） エクスプローラーの &ldquo;マイ コンピュータ&rdquo; の中にこのUSBディスクが表示されます．従って，クライアントが認識した直後に，追加または削除されたUSBディスクを認識します．
-  USBディスク挿入前　(Serer: WS2003SP2 + GGH4.0.1.10784, Client: WIN7SP1)
-  USBディスク挿入後
-  ファイル KGTN2011111801.pdf [(349 KB)] [kitasp 技術センター, 2011/11/18 09:27]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1221/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1222/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1222/">[GGH4.0] GO-Global Windows Host 4 のハイライトは？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1222/">[GGH4.0] GO-Global Windows Host 4 のハイライトは？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -520,35 +440,16 @@ IPv6のトンネルインターフェイスとループバックインターフ�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/11/17*
-[番号] 技術ノート KGTN 2011111701
-[現象] [GGH4.0] GO-Global Windows Host 4 のハイライトは？
-[説明] 従来のGGと比べての GO-Global Windows Host 4 (Ver4.0.1) のハイライトは，以下の通りです．
-64ビット版の Windows Server に対応 ホスト環境として Windows Server 2008 (x64) と Windows Server 2008 R2 を利用出来るようになりました．これにより，32ビット版 Windows Server のメモリ 4GB (2GB+2GB) の制約から解放されます．
-仮想環境上で動作する Windows Server に対応 仮想環境 VMWare Esxi と HyperV 上で動作する Windows Server に対応しました．GraphOn社は検証しておりませんが，ユーザ様から KVM, Xen, VirtualBox, Virtage 等でも動作したとの報告があります．
-アプリケーションの互換性の向上 Windowsとのインタフェースを見直し，より多くのアプリケーションが動作するようになりました．
-新しいアーキテクチャによるクライアント印刷機能 印刷ジョブの生成とクライアント側へのジョブの転送が並行して処理されるようになりました．さらに，ユニバーサル・プリンタドライバに Adobe PDF Library を採用することで，高品位なPDFファイルの出力も可能になりました．
-新しいアーキテクチャによるクライアントドライブ機能 クライアントドライブ機能のアーキテクチャを見直し，ローカルドライブに近い感覚でクライアントドライブへアクセス出来るようになりました．また，20MBを超えるファイルのコピーも可能になりました．</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1222/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1226/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1226/">[GGH4.0] GGのセッションの中でサポートする Adobe Reader (Acrobat Reader) のバージョンは？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1226/">[GGH4.0] GGのセッションの中でサポートする Adobe Reader (Acrobat Reader) のバージョンは？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -565,31 +466,16 @@ IPv6のトンネルインターフェイスとループバックインターフ�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/11/16*
-[番号] 技術ノート KGTN 2011111604
-[現象] [GGH4.0] GGのセッションの中でサポートする Adobe Reader (Acrobat Reader) のバージョンは？
-[説明] GGH4.0が 「GGのセッションの中で」 サポートする Adobe Reader のバージョンは 8 です．これ以前のバージョンはサポートしません．
-ファイル KGTN2011111604.pdf [(46.7 KB)] [kitasp 技術センター, 2011/11/16 13:30]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1226/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1227/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1227/">[GGH4.0] GO-Global Windows Host Ver4.0.1 がサポートする32ビットのサーバ環境は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1227/">[GGH4.0] GO-Global Windows Host Ver4.0.1 がサポートする32ビットのサーバ環境は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -606,32 +492,16 @@ IPv6のトンネルインターフェイスとループバックインターフ�
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/11/16*
-[番号] 技術ノート KGTN 2011111603
-[現象] [GGH4.0] GO-Global Windows Host Ver4.0.1 がサポートする32ビットのサーバ環境は？
-[説明] GO-Global Windows Host Ver4.0.1 がサポートする32ビットのサーバ環境は，以下の通りです．
-Windows Server 2008 Standard or Enterprise with Service Pack 2 (x86) Windows Server 2003 R2 Standard or Enterprise Edition (x86) Windows Server 2003 Standard or Enterprise Edition with Service Pack 2 (x86)
-ファイル KGTN2011111603.pdf [(41.8 KB)] [kitasp 技術センター, 2011/11/16 13:15]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1227/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1228/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1228/">[GGH4.0] GO-Global Windows Host Ver4.0.1 がサポートする64ビットのサーバ環境は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1228/">[GGH4.0] GO-Global Windows Host Ver4.0.1 がサポートする64ビットのサーバ環境は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -648,32 +518,16 @@ Windows Server 2008 Standard or Enterprise with Service Pack 2 (x86) Windows Ser
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/11/16*
-[番号] 技術ノート KGTN 2011111602
-[現象] [GGH4.0] GO-Global Windows Host Ver4.0.1 がサポートする64ビットのサーバ環境は？
-[説明] GO-Global Windows Host Ver4.0.1 がサポートする64ビットのサーバ環境は，以下の通りです．
-Windows Server 2008 Standard or Enterprise with Service Pack 2 (x64) Windows Server 2008 R2 Standard or Enterprise (x64)
-ファイル KGTN2011111602.pdf [(41.5 KB)] [kitasp 技術センター, 2011/11/16 13:12]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1228/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1223/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1223/">[Windows] 物理マシンで動作しているGGサーバを， P2V (Physical to Virtual) ツールを使い仮想マシンへ移行したいが注意点は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1223/">[Windows] 物理マシンで動作しているGGサーバを， P2V (Physical to Virtual) ツールを使い仮想マシンへ移行したいが注意点は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -690,38 +544,16 @@ Windows Server 2008 Standard or Enterprise with Service Pack 2 (x64) Windows Ser
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/11/16*
-[番号] 技術ノート KGTN 2011111601
-[現象] [Windows] 物理マシンで動作しているGGサーバを， P2V (Physical to Virtual) ツールを使い仮想マシンへ移行したいが注意点は？
-[説明] 「物理マシンから仮想マシンへの移行コストを削減するため P2Vツール を利用したい」 という話をよく耳にしますが，その方面に詳しい方のお話を総合すると，以下のような点に注意が必要です．
-物理マシンから仮想マシンへの移行は，仕様が異なる別の物理マシンへの起動用HDD （システムドライブ） の付け替えと考えるべき．
-旧いマシンのドライバ・サービス・レジストリ （設定ファイル） を削除し，新しいマシンのドライバやサービス等の導入が必要．しかし，旧いマシンのドライバ・サービス・レジストリ （設定ファイル） を適切に削除することは非常に困難．
-新旧マシンのハードウェア仕様が異なる場合，カーネルの再構築やチップセット用ドライバの再導入も必要．
-（さまざまな事例を通して） ドライバ・サービス・レジストリ （設定ファイル）の残存が悪影響を及ぼし，安定性やパフォーマンスに問題が発生する可能性あり．
-安定性やパフォーマンスに問題が発生しない場合でも，運用を開始して障害が発生した時，その原因調査や解決に要する時間 や工数が増える可能性あり．
-自力で問題解決できるだけの技術が必要．解決できない場合，仮想ベンダの有償サポートを受けて解決する必要あり．
-自力で解決出来たとしても移行コストや期間が 「通常の移行よりも」 増える可能性あり．
-ファイル KGTN2011111601.pdf [(71.4 KB)] [kitasp 技術センター, 2011/11/17 08:24]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1223/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1229/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1229/">[GGW3.2.1/GGH4.0] 画面の遷移が遅いが，どのようなことが考えられるか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1229/">[GGW3.2.1/GGH4.0] 画面の遷移が遅いが，どのようなことが考えられるか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -738,15 +570,7 @@ Windows Server 2008 Standard or Enterprise with Service Pack 2 (x64) Windows Ser
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2011/11/14*
-[番号] 技術ノート KGTN 2011111403
-[現象] [GGW3.2.1/GGH4.0] 画面の遷移が遅いが，どのようなことが考えられるか？
-[説明] 過去の事例ではさまざまな原因があり，さらにそれらが絡み合って発生する場合もあり，可能性を全て列挙することは困難です．代表的な原因として，次のようなことが考えられます．
-ネットワークの遅延や輻輳 &hellip; 例： アクセスラインが夕方になると混雑して遅い． アプリケーションの描画が高負荷 &hellip; 例： 凝った画面で描画オブジェクトが非常に多い． アプリケーションの処理が高負荷 &hellip; 例： 月次処理で大量の帳票を印刷する． ディスクアクセスの遅延 &hellip; 例： ネットワーク上のファイルシステムへのアクセスが集中し遅い． アンチウイルスソフト等の影響 &hellip; 例： 全ファイルのスキャンやアンチウイルスソフトのアップデートなど．
-ファイル KGTN2011111403.pdf [(58.6 KB)] [kitasp 技術センター, 2011/11/14 14:25]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1229/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
@@ -769,80 +593,15 @@ Windows Server 2008 Standard or Enterprise with Service Pack 2 (x64) Windows Ser
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li>
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     

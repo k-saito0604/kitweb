@@ -311,23 +311,15 @@
 
                     
 
-                    <div class="col-md-9" id="blog-listing-medium">
+                    <div class="col-md-12" id="blog-listing-medium">
 
                         
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1641/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1641/">エンタープライズオプションのGMCheckRaw を GMService から起動する時の推奨パラメタは？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1641/">エンタープライズオプションのGMCheckRaw を GMService から起動する時の推奨パラメタは？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -344,33 +336,16 @@
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/08/25*
-[番号] 技術ノート KGTN 2010082505
-[現象] エンタープライズオプションのGMCheckRaw を GMService から起動する時の推奨パラメタは？
-[説明] GMCheckRaw の再起動を GMService に任せるという前提を置けば，以下の設定が基本となります．
-args = -i C:¥GraphOn¥bin¥GMCheck.ini -s -rs 86400 -w 10 -to 10 ?batch
--rs 86400 24時間監視を続ける -w 10 10秒間隔で監視する -to 10 接続不良の場合は10秒経過した時点でエラーとする
-ファイル KGTN2010082505.pdf [(55.3 KB)] [kitasp 技術センター, 2010/08/25 14:29]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1641/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1648/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1648/">Microsoft Authenticode のPFXファイルの入手方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1648/">Microsoft Authenticode のPFXファイルの入手方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -387,31 +362,16 @@ args = -i C:¥GraphOn¥bin¥GMCheck.ini -s -rs 86400 -w 10 -to 10 ?batch
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/08/23*
-[番号] 技術ノート KGTN 2010082302
-[現象] Microsoft Authenticode のPFXファイルの入手方法は？
-[説明] Thawte社のコードサイニング認証を利用した場合，証明書は申請に使用したPCに直接インストールされます．PFXファイルを入手するには， 「IE8 → ツール → インターネット オプション → コンテンツ → 証明書 → 個人」 にインストールされた証明書をエクスポートします． 「秘密キーのエクスポート」 および　「証明パスにある証明書の付加」 方法は，以下の画面を参考にして下さい．
-ファイル KGTN2010082302.pdf [(338 KB)] [kitasp 技術センター, 2010/08/23 11:58]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1648/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1649/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1649/">Microsoft Authenticode のPFXファイルをSPCとPVKファイルに分離する方法は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1649/">Microsoft Authenticode のPFXファイルをSPCとPVKファイルに分離する方法は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -428,34 +388,16 @@ args = -i C:¥GraphOn¥bin¥GMCheck.ini -s -rs 86400 -w 10 -to 10 ?batch
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/08/23*
-[番号] 技術ノート KGTN 2010082301
-[現象] Microsoft Authenticode のPFXファイルをSPCとPVKファイルに分離する方法は？
-[説明] 以下の手順 （バッチ） でPFXファイルをSPCとPVKファイルに分離することが出来ます．
-C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nocerts -nodes -out Cert.pem .¥pvk -in Cert.pem -topvk -out Cert.pvk
-C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nokeys -out Cert_Certs.pem C:¥OpenSSL¥bin¥openssl crl2pkcs7 -nocrl -certfile Cert_Certs.pem -outform DER -out Cert.spc
-この情報はコードサイニングに関する内容ですので，通常のGGサーバ利用では必要ありません．
-ファイル KGTN2010082301.pdf [(49.6 KB)] [kitasp 技術センター, 2010/08/23 10:53]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1649/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1647/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1647/">規模の大きなネットワーク型ストレージを使用する場合の注意点は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1647/">規模の大きなネットワーク型ストレージを使用する場合の注意点は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -472,34 +414,16 @@ C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nokeys -out Cert_Certs.pem C:¥Op
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/08/23*
-[番号] 技術ノート KGTN 2010082303
-[現象] 規模の大きなネットワーク型ストレージを使用する場合の注意点は？
-[説明] SAN (Storage Area Network) 等のネットワーク型ストレージは，パフォーマンスや耐故障性等を十分に考慮して設計・導入が行われると思いますが，以下の点についても考慮しておく必要があります．
-論理ディスクに非常に負荷がかかる処理が走った場合，最終的には物理ディスクへ高い負荷がかかります．この結果，その物理ディスクを使用する全ての論理ディスクへのアクセスが遅延することになります．最初に負荷を掛けたマシンが Unix Server でも， （論理ディスクを介して） 同じ物理ディスクへアクセスする Windows Server のパフォーマンスが大幅に低下することもあります．このような状況では，Windows や GO-Global の問題と認識される可能性が高く，それらを詳しく調べても原因が分からず，問題の解決までに多くの時間を費やすことになります．ストレージの設計に当たっては，物理ディスクと論理ディスクの関係についても考慮することが肝要です．
-補　足 ディスクの集約度が高いシステムでは，以下のような問題についても考慮する必要があります．
-アレイコントローラが共通の場合，I/O処理が追い付かずに他サーバに影響を与える． 多くのサーバがFCケーブルに集線されている場合，アクセスが集中するとサーバ間で影響を及ぼしあう． キャッシュメモリがシステムで共通な場合，キャッシュを使い切ると急激にI/Oスループットが低下し，システム全体に影響を与える．
-ファイル KGTN2010082303.pdf [(71.3 KB)] [kitasp 技術センター, 2010/08/24 08:30]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1647/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1650/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1650/">クライアントドライブ機能で，サーバ側からクライアント側へファイルをコピーする時，クライアント側のディスクの空き容量が少ない場合は，常に0バイトのファイルが作成されるのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1650/">クライアントドライブ機能で，サーバ側からクライアント側へファイルをコピーする時，クライアント側のディスクの空き容量が少ない場合は，常に0バイトのファイルが作成されるのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -516,31 +440,16 @@ C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nokeys -out Cert_Certs.pem C:¥Op
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/08/20*
-[番号] 技術ノート KGTN 2010082002
-[現象] クライアントドライブ機能で，サーバ側からクライアント側へファイルをコピーする時，クライアント側のディスクの空き容量が少ない場合は，常に0バイトのファイルが作成されるのか？
-[説明] Ver3.2系では，クライアント側のディスクの空き容量が少ない時，0バイトのファイルが作成されます．
-ファイル KGTN2010082002.pdf [(42.1 KB)] [kitasp 技術センター, 2010/08/20 16:52]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1650/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1651/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1651/">クライアント側で動作するアプリケーションがアラートダイアログを表示した後，その確認ボタンを押下すると，アラート画面上にGG画面上でフォーカスを持つボタンが表示される．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1651/">クライアント側で動作するアプリケーションがアラートダイアログを表示した後，その確認ボタンを押下すると，アラート画面上にGG画面上でフォーカスを持つボタンが表示される．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -557,31 +466,16 @@ C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nokeys -out Cert_Certs.pem C:¥Op
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/08/20*
-[番号] 技術ノート KGTN 2010082001
-[現象] クライアント側で動作するアプリケーションがアラートダイアログを表示した後，その確認ボタンを押下すると，アラート画面上にGG画面上でフォーカスを持つボタンが表示される．
-[説明] アラートダイアログが表示された時に，そのダイアログがアクティブかどうか確認して下さい．最上位に表示されながらアクティブでない場合は，GGは自分のウインドウが未だ最上位にあると判断し処理を行いますので，このような状況が発生します．対応としては，ダイアログを最上位に表示する時，そのダイアログをアクティブな状態にして下さい．
-ファイル KGTN2010082001.pdf [(47.8 KB)] [kitasp 技術センター, 2010/08/20 16:36]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1651/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1654/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1654/">3.2.1.4466 の readme.txt のサーバ環境に 32bit / 64bit の記述がない．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1654/">3.2.1.4466 の readme.txt のサーバ環境に 32bit / 64bit の記述がない．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -598,32 +492,16 @@ C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nokeys -out Cert_Certs.pem C:¥Op
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/08/19*
-[番号] 技術ノート KGTN 2010081904
-[現象] 3.2.1.4466 の readme.txt のサーバ環境に 32bit / 64bit の記述がない．
-[説明] オペレーティングシステムのリストの中には記述されておりませんが，その直前に 「以下の32ビット Windows オペレーティングシステムを何れかを必要とする」という記述があります．
-The GO-Global Server requires one of the following 32-bit Windows operating systems:
- Windows Server 2008 Standard or Enterprise Edition with Service Packs 1 and 2 Windows Server 2003 Standard or Enterprise Edition with Service Packs 1 and 2 Windows Server 2003 R2 Standard or Enterprise Edition Windows XP Professional with Service Packs 2 and 3.</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1654/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1655/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1655/">SkyPDF for GO-Global （GG-SkyPDF） の設定ファイル skyinfo.ini 中の VIEWERARGS = /t /n /s /h の意味は？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1655/">SkyPDF for GO-Global （GG-SkyPDF） の設定ファイル skyinfo.ini 中の VIEWERARGS = /t /n /s /h の意味は？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -640,32 +518,16 @@ The GO-Global Server requires one of the following 32-bit Windows operating syst
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/08/19*
-[番号] 技術ノート KGTN 2010081902
-[現象] SkyPDF for GO-Global （GG-SkyPDF） の設定ファイル skyinfo.ini 中の VIEWERARGS = &ldquo;/t /n /s /h&rdquo; の意味は？
-[説明] これらはPDFビュアー （Adobe Reader 8/9） の起動パラメタで，それぞれの意味 （機能） は以下の通りです．
-/t &hellip; 出力先のプリンタを指定する /n &hellip; Adobe Reader を新たなインスタンスで起動する /s &hellip; スプラッシュ画面を表示しない /h &hellip; Adobe Reader を最小化状態で起動する
-ファイル KGTN2010081902.pdf [(55.7 KB)] [kitasp 技術センター, 2010/08/19 09:14]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1655/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1653/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1653/">Ver4.0系は，サーバ環境として Windows Server 2003 (32bit) および Windows Server 2008 (32bit) をサポートするのか？</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1653/">Ver4.0系は，サーバ環境として Windows Server 2003 (32bit) および Windows Server 2008 (32bit) をサポートするのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -682,31 +544,16 @@ The GO-Global Server requires one of the following 32-bit Windows operating syst
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/08/19*
-[番号] 技術ノート KGTN 2010081905
-[現象] Ver4.0系は，サーバ環境として Windows Server 2003 (32bit) および Windows Server 2008 (32bit) をサポートするのか？
-[説明] Ver4.0系でサポートするサーバ環境は以下の通りです．
- Windows Server 2008 Standard or Enterprise with Service Pack 2 (x86 and x64) Windows Server 2008 R2 Standard or Enterprise (x64) Windows Server 2003 R2 Standard or Enterprise Edition (x86) Windows Server 2003 Standard or Enterprise Edition with Service Pack 2 (x86)  ファイル KGTN2010081905.pdf [(53.6 KB)] [kitasp 技術センター, 2010/08/19 12:57]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1653/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
                         
+
                         <section class="post">
                             <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="/posts/new_md/doc1652/">
-                                          
-                                          <img src="/img/technote.jpg" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="/posts/new_md/doc1652/">Windows Server 2003 でデータ実行防止を無効化 （起動時オプションを /Execute に変更） する理由を知りたい．</a></h2>
+                                <div class="col-md-12">
+                                    <h5><a href="/posts/new_md/doc1652/">Windows Server 2003 でデータ実行防止を無効化 （起動時オプションを /Execute に変更） する理由を知りたい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -723,16 +570,7 @@ The GO-Global Server requires one of the following 32-bit Windows operating syst
                                         </p>
                                         
                                     </div>
-                                    <p class="intro">*技術ノート
-2010/08/19*
-[番号] 技術ノート KGTN 2010081906
-[現象] Windows Server 2003 でデータ実行防止を無効化 （起動時オプションを /Execute に変更） する理由を知りたい．
-[説明] 過去の幾つかの事例で，問題の無いプログラムがデータ実行防止機能により動作しないことがありました．このようなことから，セキュリティの高い環境に置かれるサーバに関しては，原則としてデータ実行防止機能を無効化しております．
-参　考 データ実行防止機能の詳細については，下記ページに詳しい解説があります．本件については 「DEPの問題点と回避策」 辺りが特に参考になります．
-Windows XP SP2で採用されたDEPの仕組み http://www.atmarkit.co.jp/fsys/kaisetsu/045dep/dep.html
-ファイル KGTN2010081906.pdf [(65.5 KB)] [kitasp 技術センター, 2010/08/19 13:51]</p>
-                                    <p class="read-more"><a href="/posts/new_md/doc1652/" class="btn btn-template-main">続きを読む</a>
-                                    </p>
+
                                 </div>
                             </div>
                         </section>
@@ -755,80 +593,15 @@ Windows XP SP2で採用されたDEPの仕組み http://www.atmarkit.co.jp/fsys/k
 
                     
 
-                    <div class="col-md-3">
+    
 
                         
 
-                        
-
-
-
-
-<div class="panel panel-default sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">カテゴリー</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="nav nav-pills nav-stacked">
-            
-            
-            <li>
-                <a href="/categories/news">news (5)</a>
-            </li>
-            
-            <li>
-                <a href="/categories/tech">tech (2725)</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<div class="panel sidebar-menu">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">タグ</h3>
-    </div>
-
-    <div class="panel-body">
-        <ul class="tag-cloud">
-            
-            
-            <li>
-                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
-            </li>
-            
-            <li>
-                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
-            </li>
-            
-            <li>
-                <a href="/tags/%e6%8a%80%e8%a1%93%e3%83%8e%e3%83%bc%e3%83%88"><i class="fas fa-tags"></i> 技術ノート</a>
-            </li>
-            
-        </ul>
-    </div>
-
-</div>
-
-
-
-
-
+      
 
                         
 
-                    </div>
+  
                     
 
                     
