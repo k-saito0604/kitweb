@@ -9,6 +9,8 @@
     <script defer src="/__/firebase/5.3.1/firebase-auth.js"></script>
     <script defer src="/__/firebase/init.js"></script>
     <script src="/js/config.js"></script>
+    <script src="{{ "js/config.js" | relURL }}"></script>
+
     <style type="text/css">
       .hide{ display:none; }
     </style>
@@ -21,28 +23,18 @@
       <main>
         <div class="general-content-wrapper max-width downloads">
             <div class="general-content">
-    <h1>kitPortal</h1><br>
+    <h1>download</h1><br>
     <h4>...Please wait</h4>
     <div id="info"></div>
     <form>
       <button type="button" onclick="location.href='/sign-in'">サインイン</button>
-      <button type="button" id="logout" class="hide">ログアウト</button>
+      <button type="button" id="logout" class="hide" onclick="location.href='/download'">ログアウト</button>
     </form>
-    <script>
-      // Initialize Firebase
-        // Initialize Firebase
 
-        firebase.initializeApp(config);
-      </script>
       <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
       <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-auth.js"></script>
       <script src="/js/config.js"></script>
-      <script>
-        // Initialize Firebase
-          // Initialize Firebase
 
-          firebase.initializeApp(config);
-        </script>
     <script>
       firebase.auth().onAuthStateChanged( (user) => {
         let logout = document.getElementById("logout");
@@ -556,6 +548,12 @@
         }
       });
     </script>
+        <script>
+          // Initialize Firebase
+            // Initialize Firebase
+    
+            firebase.initializeApp(config);
+          </script>
   </main>
   </body>
 </html>
