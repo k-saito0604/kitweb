@@ -2,7 +2,7 @@
 title = "2019年11月のWindows Update互換性情報に関して"
 date = "2019-11-29"
 tags = ["WindowsUpdate"]
-categories=["tech"]
+categories=["news"]
 banner = "img/Windowsupdate.jpg"
 +++
 

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>docs portal</title>
+    <script defer src="/__/firebase/5.3.1/firebase-app.js"></script>
+    <script defer src="/__/firebase/5.3.1/firebase-storage.js"></script>
+    <script defer src="/__/firebase/5.3.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+    <script src="/js/config.js"></script>
+    <style type="text/css">
+      .hide{ display:none; }
+    </style>
+    <link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+
+
+  </head>
+  <body>
+    <div class="heading">
+      <main>
+        <div class="general-content-wrapper max-width downloads">
+            <div class="general-content">
+    <h1>kitPortal</h1><br>
+    <h4>...Please wait</h4>
+    <div id="info"></div>
+    <form>
+      <button type="button" onclick="location.href='/sign-in'">サインイン</button>
+      <button type="button" id="logout" class="hide">ログアウト</button>
+    </form>
+    <script>
+      // Initialize Firebase
+        // Initialize Firebase
+
+        firebase.initializeApp(config);
+      </script>
+      <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-auth.js"></script>
+      <script src="/js/config.js"></script>
+      <script>
+        // Initialize Firebase
+          // Initialize Firebase
+
+          firebase.initializeApp(config);
+        </script>
+    <script>
+      firebase.auth().onAuthStateChanged( (user) => {
+        let logout = document.getElementById("logout");
+
+        //-----------------------------------
+        // ログインチェック
+        //-----------------------------------
+        if(! user) {
+          showMessage('Not Login', 'ログインしていません');
+          logout.classList.add("hide");
+          return(false);
+        }
+
+        //-----------------------------------
+        // ログイン者への処理
+        //-----------------------------------
+        // ログインメッセージ
+        showMessage('Login Complete!', `${user.email}さんがログインしています。`);
+
+        // ログアウトボタンを表示
+        logout.classList.remove("hide");
+
+        // ログアウトボタンを押下
+        logout.addEventListener("click", ()=>{
+          firebase.auth().signOut().then(()=>{
+            console.log("ログアウトしました");
+          })
+          .catch( (error)=>{
+            console.log(`ログアウト時にエラーが発生しました (${error})`);
+          });
+        });
+      });
+
+      /**
+       * メッセージ表示
+       **/
+      function showMessage(title, msg){
+        document.querySelector('h4').innerText = title;
+        document.querySelector('#info').innerText = msg;
+      }
+    </script>
+
+
+    <h3>ファイルアップロード</h3>
+   <div id="imageFirestore" class="image"></div>
+    <div id="imageFirebaseAuthentication" class="image"></div>
+    <progress value="0" max="100" id="uploader">0%</progress>
+    <input type="file" value="upload" id="fileButton" />
+
+    <script>
+
+  //  firebase.initializeApp(config);
+
+    var uploader = document.getElementById('uploader');
+    var fileButton = document.getElementById('fileButton');
+
+      fileButton.addEventListener('change',function(e){
+        //get file
+      var file = e.target.files[0];
+      var storageRef = firebase.storage().ref('test/'+ file.name);
+      var task = storageRef.put(file);
+
+      task.on('state_changed',
+        function progress(snapshot) {
+          var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          uploader.value = percentage;
+        },
+        function error(err){
+          alert('エラーが発生しました');
+        },
+        function complete(){
+          alert('アップロードしました');
+        },
+      );
+    });
+    </script>
+    <br>
+<!--    <ul>
+        <li id="filename1">お客様</li>
+        <li id="filename2">FirebaseAuthentication</li>
+    </ul>
+-->
+
+<!--        <center><h2> 【代理店専用】<h2> -->
+<!--		<h3>ダウンロードしてコンテンツを利用するには、<a href="https://www.kitasp.com/login" style="color:red">ログイン</a> をして下さい </h3></center>-->
+          <h2>Windows Update</h2>
+           <ul>
+            <li><p class="download-link"rel="nofollow">2020年1月のWindows Update互換性情報(2020/01/30)<a id=filename1> </a></p></li>
+            <li><p class="download-link"rel="nofollow">2019年12月のWindows Update互換性情報(2019/12/26)<a id=filename2> </a></p></li>
+            <li><p class="download-link"rel="nofollow">2019年11月のWindows Update互換性情報(2019/11/29)<a id=filename3> </a></p></li>
+            <li><p class="download-link"rel="nofollow">2019年10月のWindows Update互換性情報(2019/10/25)<a id=filename4> </a></p></li>
+            <li><p class="download-link"rel="nofollow">2019年9月のWindows Update互換性情報(2019/09/27)<a id=filename5> </a></p></li>
+            <li><p class="download-link"rel="nofollow">2019年8月のWindows Update互換性情報(2019/08/25)<a id=filename6> </a></p></li>
+            <li><p class="download-link"rel="nofollow">2019年7月のWindows Update互換性情報(2019/07/25)<a id=filename7> </a></p></li>
+            <li><p class="download-link"rel="nofollow">2019年6月のWindows Update互換性情報(2019/06/26)<a id=filename8> </a></p></li>
+            <li><p class="download-link"rel="nofollow">2019年5月のWindows Update互換性情報(2019/05/29)<a id=filename9> </a></p></li>
+            <li><p class="download-link"rel="nofollow">2019年4月のWindows Update互換性情報(2019/04/24)<a id=filename10> </a></p></li>
+            <li><p class="download-link"rel="nofollow">2019年3月のWindows Update互換性情報(2019/03/29)<a id=filename11> </a></p></li>
+            <li><p class="download-link"rel="nofollow">2019年2月のWindows Update互換性情報(2019/02/22)<a id=filename12> </a></p></li>
+            <li><p class="download-link"rel="nofollow">2019年1月のWindows Update互換性情報(2019/01/25)<a id=filename13> </a></p></li>
+        </ul>
+        <h2>セミナー資料</h2>
+        <ul class="dlm-downloads">
+            <li><p class="download-link"rel="nofollow">1)GO-Global for Windows セミナー(2019/10/08)
+              <a id=filename14> </a>
+            </p>
+            </li>
+            <li><p class="download-link"rel="nofollow">2)GO-Global for Windows_V6_201905(2019/10/08)
+              <a id=filename15> </a></p>
+            </li>
+            <li>
+                <p class="download-link"rel="nofollow">
+                3)GO-Global for Windows サーバサイジングに伴うヒアリング項目についてのおさらい(2019/10/08)
+              <a id=filename16> </a></p>
+            </li>
+            <li>
+                <p class="download-link"rel="nofollow">
+                4)GO-Global for Windows_ログ収集ツール_GGezSRW(2019/10/08)
+                <a id=filename17> </a></p>
+            </li>
+            <li>
+                <p class="download-link"rel="nofollow">
+                  5)きっとエイエスピーの新ホームページのご案内(2019/10/08)
+                  <a id=filename18> </a>
+                </p>
+            </li>
+                <li>
+                  <p class="download-link"rel="nofollow">
+                  6)GO-Global for Windows_アカデミックパックについて(2019/10/08)
+                  <a id=filename30> </a>
+                  </p>
+            </li>
+        </ul>
+        <h2>ソフトウェア</h2>
+        <ul class="dlm-downloads">
+            <li>
+                <p class="download-link"rel="nofollow">
+                GGEasyLogon_6.2.3(2019/04/11)
+                <a id=filename19> </a>
+                </p>
+            </li>
+        </ul>
+            <h2>ドキュメント</h2>
+            <ul class="dlm-downloads">
+                <li>
+                    <p class="download-link"rel="nofollow">
+                    GO-Global for Windows_印刷処理について(2019/10/01)
+                    <a id=filename20> </a>
+                  </p>
+                </li>
+                <li>
+                    <p class="download-link"rel="nofollow">
+                    GO-Global for Windows_IMEの仕様について(2019/09/05)
+                    <a id=filename21> </a>
+                    </p>
+                </li>
+                <li>
+                <p class="download-link"rel="nofollow">
+                    GO-Global for Windows_ライセンスガイド(2019/04/22)
+                <a id=filename22> </a>
+              </p>
+                </li>
+                <li>
+                    <p class="download-link"rel="nofollow">
+                    GO-Global製品バージョン別機能マトリックス(2019/04/22)
+                    <a id=filename23> </a>
+                  </p>
+                </li>
+                <li>
+                    <p class="download-link"rel="nofollow">
+                    GGEasyMonitor(拡張パック)_構築ガイド(2019/04/22)
+                    <a id=filename24> </a>
+                  </p>
+                </li>
+                <li>
+                    <p class="download-link"rel="nofollow">
+                    GO-Global_構築ガイド(2019/04/18)
+                    <a id=filename25> </a>
+                  </p>
+                </li>
+            </ul>
+        <h2>代理店向け発行書類</h2>
+        <ul class="dlm-downloads">
+            <li>
+                <p class="download-link"rel="nofollow">
+                ライセンス・キー発行依頼書
+                (2019/09/25)
+                <a id=filename26> </a>
+              </p>
+            </li>
+            <li>
+                <p class="download-link"rel="nofollow">
+                保守申込書
+                (2019/09/25)
+                <a id=filename27> </a>
+                </p>
+            </li>
+            <li>
+                <p class="download-link" rel="nofollow">
+                バージョンアップ・ライセンスキー発行依頼書
+                (2019/09/25)
+                <a id=filename28> </a>
+              </p>
+            </li>
+            <li>
+                <p class="download-link"rel="nofollow">
+                GO-Global 評価版ライセンス申請書
+                (2019/09/25)
+                <a id=filename29></a>
+              </p>
+            </li>
+        </ul>
+		        </div>
+    </div>
+<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        try {
+          var app = firebase.app();
+          var storage = firebase.storage();
+          var storageRef = storage.ref();
+        //document.getElementById('bucket').innerHTML = 'Bucket: ' + storageRef.bucket;
+          var imagesRef = storageRef.child('user');
+          var imgFirestoreRef1 = imagesRef.child('2020年1月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef2 = imagesRef.child('2019年12月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef3 = imagesRef.child('2019年11月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef4 = imagesRef.child('2019年10月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef5 = imagesRef.child('2019年9月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef6 = imagesRef.child('2019年8月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef7 = imagesRef.child('2019年7月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef8 = imagesRef.child('2019年6月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef9 = imagesRef.child('2019年5月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef10 = imagesRef.child('2019年4月のWindows-Update互換性情報についてのお知らせ.pdf');
+          var imgFirestoreRef11 = imagesRef.child('2019年3月のWindows-Update互換性情報.pdf');
+          var imgFirestoreRef12 = imagesRef.child('2019年2月のWindows Update互換性情報.pdf');
+          var imgFirestoreRef13 = imagesRef.child('2019年1月のWindows Update互換性情報.pdf');
+          var imgFirestoreRef14 = imagesRef.child('1GO-Global-for-Windows-セミナー.pdf');
+          var imgFirestoreRef15 = imagesRef.child('2GO-Global-for-Windows_V6_201905.pdf');
+          var imgFirestoreRef16 = imagesRef.child('3GO-Global-for-Windows-サーバサイジングに伴うヒアリング項目についてのおさらい_20190905.pdf');
+          var imgFirestoreRef17 = imagesRef.child('4GO-Global-for-Windows_ログ収集ツール_GGezSRW_20190903.pdf');
+          var imgFirestoreRef18 = imagesRef.child('5きっとエイエスピーの新ホームページのご案内.pdf');
+          var imgFirestoreRef19 = imagesRef.child('GGEasyLogon-Setup-SingleUser-6.2.3-20190201_02.zip');
+          var imgFirestoreRef20 = imagesRef.child('GGfW_印刷処理について_20191001.pdf');
+          var imgFirestoreRef21 = imagesRef.child('GGfW_IMEの仕様について_20190905.pdf');
+          var imgFirestoreRef22 = imagesRef.child('GO-Global-for-Windows_ライセンスガイド_20190422.pdf');
+          var imgFirestoreRef23 = imagesRef.child('GO-Global製品バージョン別機能マトリックス.pdf');
+          var imgFirestoreRef24 = imagesRef.child('GGEasyMonitor_構築ガイド.pdf');
+          var imgFirestoreRef25 = imagesRef.child('GO-Global_構築ガイド.pdf');
+          var imgFirestoreRef26 = imagesRef.child('ライセンス・キー発行依頼書_GG.xlsx');
+          var imgFirestoreRef27 = imagesRef.child('保守申込書_GG.xlsx');
+          var imgFirestoreRef28 = imagesRef.child('バージョンアップ・ライセンス・キー発行依頼書.xlsx');
+          var imgFirestoreRef29 = imagesRef.child('GO-Global評価版ライセンス申請書.xlsx');
+          var imgFirestoreRef30 = imagesRef.child('6GO-Global-for-Windows_アカデミックパックについて.pdf');
+
+          // ファイルのURLを取得する
+          imgFirestoreRef1.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename1').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef2.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename2').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef3.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename3').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef4.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename4').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef5.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename5').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef6.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename6').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef7.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename7').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef8.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename8').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef9.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename9').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef10.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename10').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef11.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename11').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef12.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename12').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+
+          imgFirestoreRef13.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename13').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef14.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename14').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef15.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename15').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef16.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename16').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef17.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename17').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef18.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename18').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef19.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename19').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef20.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename20').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef21.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename21').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef22.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename22').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef23.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename23').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef24.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename24').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef25.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename25').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef26.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename26').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef27.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename27').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef28.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename28').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef29.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename29').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          imgFirestoreRef30.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirestore");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename30').innerHTML = '<a href="' + url + '">' + "Download" + '</a>';
+          }).catch(function(error) {
+//            document.getElementById('filename1').innerHTML = error.message;
+            console.log(error);
+          });
+          // ファイルのURLを取得する
+          imgFirebaseAuthRef.getDownloadURL().then(function(url){
+            var image = document.getElementById("imageFirebaseAuthentication");
+            image.style.backgroundImage = "url("+url+")";
+            document.getElementById('filename100').innerHTML = '<a href="' + url + '">' + imgFirebaseAuthRef.name + '</a>';
+          }).catch(function(error) {
+            document.getElementById('filename100').innerHTML = error.message;
+            console.log(error);
+          });
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </main>
+  </body>
+</html>
