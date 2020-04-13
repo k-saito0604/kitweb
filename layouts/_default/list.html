@@ -14,7 +14,8 @@
         </header>
 
         {{ partial "breadcrumbs.html" . }}
-
+        {{ $items := .Site.Taxonomies.categories.tech }}
+        <h3>({{ len $items }}件)</h3>
         <div id="content">
             <div class="container">
                 <div class="row">
