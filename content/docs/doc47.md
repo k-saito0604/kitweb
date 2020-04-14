@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH5.X] デスクトップ機能を利用した場合，一般ユーザーも再起動やシャットダウンが出来てしまうのか？"
 date = "2015-07-09"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

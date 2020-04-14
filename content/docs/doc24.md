@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Microsoft Azure] Microsoft Azureの環境で hopTo Work を利用する場合， Azure RemoteApp サービスに hopTo Work Agent をインストールするのか？"
 date = "2015-07-30"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

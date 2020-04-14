@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Mac OS X] MacBook Air （JISキーボード） を使用しているが，ログオン画面で _ のキーを押すと， | が入力される．"
 date = "2013-03-14"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

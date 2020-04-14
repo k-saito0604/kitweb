@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH4.X] Windows Vista / Windows 7 のクライアントで，個人設定で 「Aero のテーマ」 を選択すると，GGが表示するウインドウをドラッグした時等に反応が遅くなる．"
 date = "2010-05-12"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

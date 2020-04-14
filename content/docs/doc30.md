@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Microsoft Azure] Microsoft Azure の仮想マシンに，仮想ネットワークの静的な （プライベート） IPアドレスを割り当てる方法は？"
 date = "2015-07-30"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Microsoft Azure] Microsoft Azure のポータルに， PowerShell のコマンドを入力する場所が見つからない．"
 date = "2015-07-30"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

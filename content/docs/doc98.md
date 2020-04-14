@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGW3.2.1/GGH4.X] ネットワーク障害時に，確実にセッションを終了させるお勧めの設定は？"
 date = "2010-09-17"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

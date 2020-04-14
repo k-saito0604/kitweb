@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Windows] Windows のインストールDVDのISOイメージをUSBディスクに書き，それを使ってインストールしたい．"
 date = "2015-06-11"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

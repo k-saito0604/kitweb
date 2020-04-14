@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Windows] WS2008R2で IE のエラーが発生したが，ダンプファイルの採取方法は？"
 date = "2015-06-11"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

@@ -1,8 +1,8 @@
 ﻿+++
 title = "[hopTo] hopTo Work の評価用ライセンスを送って欲しい．"
 date = "2015-07-30"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

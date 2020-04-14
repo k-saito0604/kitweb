@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH4.X] GGの接続画面でコンピューター名を指定したが，ログオン画面が表示されない．"
 date = "2015-06-11"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

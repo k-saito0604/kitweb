@@ -1,8 +1,8 @@
 +++
 title = "[GGH5.X] APS が開始しない．ログを見ると A Bug Check (BSOD) was detected ... という記録がある．"
 date = "2015-09-02"
-tags = ["技術ノート"]
-categories=["tech"]
+ttags = ["技術ノート"]
+tcategories=["tech"]
 banner = "img/technote.jpg"
 +++
 --------------------------------------------------------------------------------------------------

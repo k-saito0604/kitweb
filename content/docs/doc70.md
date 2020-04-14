@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH5.X] 現在GGH5.0.1を使用しているが，サーバー側をGGH5.0.2へアップグレードした場合，クライアント側も同じバージョンに上げねばならないのか？"
 date = "2019-07-12"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Windows] WS2008R2 (Windows Server 2008 R2) で PING を送っても応答が無い．"
 date = "2015-06-11"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

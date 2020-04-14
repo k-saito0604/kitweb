@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH5.X] Android クライアントで，サーバーのデスクトップを利用する方法は？"
 date = "2015-06-12"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

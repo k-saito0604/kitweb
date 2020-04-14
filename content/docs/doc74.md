@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Windows] リモート管理ツール PsExec で，サーバーの再起動を含むバッチ処理を実行したところ，再起動後も PsExec が終了しない．"
 date = "2015-06-11"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

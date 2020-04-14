@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH4.X-5.X] WS2012R2 の環境で，サーバー上にセッションが残る．"
 date = "2015-07-09"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

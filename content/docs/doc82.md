@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Windows] Windows Server 2012 R2 のインストールをカスタマイズしたいが， Windows Server 2008 R2 用の Windows　システム イメージ マネージャー (Windows SIM) を使えば良いのか？"
 date = "2015-06-11"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

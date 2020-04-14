@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH4.X] iOSクライアントの印刷機能は， AirPrint 用のプリンタが構成されるのか？"
 date = "2013-04-11"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

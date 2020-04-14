@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Windows 10] IE (Internet Explorer) がスタート画面に見つからない．"
 date = "2015-07-30"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

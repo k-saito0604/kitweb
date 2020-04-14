@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Windows] Windows System Image Manager (Windows SIM) の入手方法は？"
 date = "2015-06-11"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

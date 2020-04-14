@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH6.X] バージョン6のライセンスのアップグレードやリホストの考え方は？"
 date = "2019-07-12"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

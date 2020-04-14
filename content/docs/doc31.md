@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Microsoft Azure] Microsoft Azure の仮想マシンは，静的なグローバルIPアドレスの割り当てを受けることが可能なのか？"
 date = "2015-07-30"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

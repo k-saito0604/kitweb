@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGW3.2.1/GGH4.X-5.X] クラスタマネージャーが異常終了した場合，利用中のセッションにどのような影響があるか？　またGGサーバーの通信等に何か影響を与える可能性があるか？"
 date = "2015-07-09"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

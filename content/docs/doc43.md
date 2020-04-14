@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Android] NEXUS 7 (2012/2013) のバッテリーが空になったが，それ以降充電が出来ない．"
 date = "2015-07-09"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

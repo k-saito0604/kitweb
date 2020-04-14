@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH4.X] GGH4.8.2. 21020～ GGH4.8.2.21477 の主な変更点 （修正点） は？"
 date = "2015-01-16"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

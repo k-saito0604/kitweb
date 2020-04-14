@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Windows] WS2012R2やWS2008R2の環境で，エクスプローラーおよび共通ファイル・ダイアログの 「ネットワーク」 アイコンを非表示にしたい．"
 date = "2015-07-09"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

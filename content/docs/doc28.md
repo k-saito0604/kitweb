@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Microsoft Azure] Microsoft Azure の仮想マシンを Windows Server 2012 R2 で作ったが，言語が英語で設定されている．"
 date = "2015-07-30"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

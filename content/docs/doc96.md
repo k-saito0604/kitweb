@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGW3.2.1/GGH4.X] GG向けにアプリケーションを開発するが，どのような点に注意すべきか？"
 date = "2013-03-15"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

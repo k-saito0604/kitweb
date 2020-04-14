@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Windows] Windows　システム イメージ マネージャー (Windows SIM) を使用して WS2012R2 をインストールしたが，リモートデスクトップで接続出来ない．"
 date = "2015-06-11"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

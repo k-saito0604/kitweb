@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Windows] C:ドライブが存在しない Windows Server 2012 R2 の環境を構築出来るか？"
 date = "2015-06-11"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

@@ -1,8 +1,8 @@
 ﻿+++
 title = "[hopTo] RDS のインストール時に 「リモート処理を使用してサーバーに接続できません」 と表示される．"
 date = "2015-07-30"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

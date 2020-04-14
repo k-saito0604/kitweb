@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH4.X] ActiveXクライアントの環境で，ユーザー名とパスワードをクライアント側 （IE） で入力し，その情報を元にGGサーバーへログオンする方法を知りたい．"
 date = "2015-06-12"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

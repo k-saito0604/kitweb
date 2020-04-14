@@ -1,8 +1,8 @@
 +++
 title = "[GGH5.X-6.X] クライアントの自動更新機能 （Automatic Client Updates） は，どのクライアント （ソフトウエア） で機能するのか？"
 date = "2019-07-12"
-tags = ["技術ノート"]
-categories=["tech"]
+ttags = ["技術ノート"]
+tcategories=["tech"]
 banner = "img/technote.jpg"
 +++
 

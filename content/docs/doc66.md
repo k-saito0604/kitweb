@@ -1,8 +1,8 @@
 ﻿+++
 title = "[hopTo Work 2.0] iOS環境での hopTo Work 2.0 の 「アプリケーションを起動する画面」 を見たい．"
 date = "2015-06-12"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

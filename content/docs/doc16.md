@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Windows 10] Windows 10 を試したいが，無償アップグレード （予約） のダウンロードが始まらない．"
 date = "2015-07-30"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

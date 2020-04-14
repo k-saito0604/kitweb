@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH4.X-5.X] 更新プログラム KB3058515 を適用後，ActiveXクライアントのインストールで 「このWebサイトのアドオンは実行できませんでした」 と表示され，インストール処理が失敗する．"
 date = "2015-07-09"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Windows] リモート管理ツール PsExec で，コマンド dir C: を実行させたが 「指定されたファイルが見つかりません」 と表示される．"
 date = "2015-06-11"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

@@ -1,8 +1,8 @@
 ﻿+++
 title = "[hopTo Work 2.0] hopTo Work 2.0 のサーバーを構築するが，新たに専用のサーバーを１台用意すれば良いのか？"
 date = "2015-06-12"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

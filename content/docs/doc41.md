@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Windows] WS2012R2やWS2008R2の環境で，ユーザーがファイル共有機能を利用してクライアントPCへファイルをダウンロード （コピー） 出来ないようにしたい．"
 date = "2015-07-09"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

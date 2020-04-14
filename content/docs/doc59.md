@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH6.X] バージョン5ホスト機能 （サーバー機能） がインストールされたサーバーをバージョン6へアップグレードする場合，単純にバージョン6のインストーラーを実行すれば良いのか？"
 date = "2019-07-12"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

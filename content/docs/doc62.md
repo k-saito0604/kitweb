@@ -1,8 +1,8 @@
 ﻿+++
 title = "[hopTo Work] hopTo Work 2.0 は，Android の環境でどの日本語入力ソフトウエアをサポートするのか？"
 date = "2015-06-12"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

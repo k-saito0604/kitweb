@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH4.X] GGH4.8.2のサーバー側およびクライアント側のシステム要件は？"
 date = "2014-11-21"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

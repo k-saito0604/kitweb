@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH4.X/Android] Androidクライアントで，ソフトキーボードとBluetoothキーボードを併用したい．"
 date = "2015-06-12"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

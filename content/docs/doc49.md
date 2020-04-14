@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH4.X-5.X] ショートカットをアプリケーションとして登録する方法は？"
 date = "2015-07-09"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

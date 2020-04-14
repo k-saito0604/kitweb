@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH4.X] ActiveXクライアントで，ユーザID・パスワード・直接起動するアプリケーションを指定する方法は？"
 date = "2013-03-01"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

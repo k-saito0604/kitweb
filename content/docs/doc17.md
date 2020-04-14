@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Windows 10] Windows 10 のブラウザを起動してGGにアクセスすると，プラグインのインストール画面が表示される．この手順でインストールを行ってもGGサーバーに接続出来ない．"
 date = "2015-07-30"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

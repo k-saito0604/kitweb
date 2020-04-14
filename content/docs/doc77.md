@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Windows] リモート管理ツール PsExec を利用したいが，管理対象のサーバーで必要なネットワーク設定は？"
 date = "2015-06-11"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

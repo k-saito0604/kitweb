@@ -1,8 +1,8 @@
 +++
 title = "[GGH4.X-6X] Adobe Reader DC 等でPDFファイルが正しく開かないことがある．"
 date = "2020-03-23"
-tags = ["技術ノート"]
-categories=["tech"]
+ttags = ["技術ノート"]
+tcategories=["tech"]
 banner = "img/technote.jpg"
 +++
 

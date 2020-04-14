@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH4.X-5.X] GGEasyLogon とはどんなツールなのか？"
 date = "2015-01-16"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

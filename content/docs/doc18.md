@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Windows 10] GGEasyLogon は， Windows 10 の環境で動作するのか？"
 date = "2015-07-30"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

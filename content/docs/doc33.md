@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH4.X/GGH5.X] Mac OS X クライアントでログインしクライアントドライブにアクセスした場合，日本語名のフォルダが文字化けする．"
 date = "2015-07-30"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

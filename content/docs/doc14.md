@@ -1,8 +1,8 @@
 +++
 title = "[hopTo Work] MAX (Mobile App eXperience) の設定はどこに保存されているのか？"
 date = "2015-07-30"
-tags = ["技術ノート"]
-categories=["tech"]
+ttags = ["技術ノート"]
+tcategories=["tech"]
 banner = "img/technote.jpg"
 +++
 -----------------------------------------------------------------------------

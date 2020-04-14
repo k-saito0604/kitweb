@@ -22,9 +22,9 @@ var data = [
   },
   {
     url: "/posts/",
-    title: "Posts",
+    title: "post",
     date: "2020-03-26T00:00:00Z",
-    body: "Posts"
+    body: "post"
   },
   {
     url: "/tags/",
@@ -106,18 +106,30 @@ var data = [
   },
   {
     url: "/docs/",
-    title: "Docs",
+    title: "document",
     date: "2020-03-23T00:00:00Z",
-    body: "Docs"
+    body: "document"
   },
   {
-    url: "/categories/tech/",
+    url: "/tcategories/",
+    title: "Tcategories",
+    date: "2020-03-23T00:00:00Z",
+    body: "Tcategories"
+  },
+  {
+    url: "/tcategories/tech/",
     title: "tech",
     date: "2020-03-23T00:00:00Z",
     body: "tech"
   },
   {
-    url: "/tags/%E6%8A%80%E8%A1%93%E3%83%8E%E3%83%BC%E3%83%88/",
+    url: "/ttags/",
+    title: "Ttags",
+    date: "2020-03-23T00:00:00Z",
+    body: "Ttags"
+  },
+  {
+    url: "/ttags/%E6%8A%80%E8%A1%93%E3%83%8E%E3%83%BC%E3%83%88/",
     title: "技術ノート",
     date: "2020-03-23T00:00:00Z",
     body: "技術ノート"

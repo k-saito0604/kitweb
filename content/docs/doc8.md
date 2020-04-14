@@ -1,8 +1,8 @@
 +++
 title = "[Microsoft Azure, hopTo] 仮想マシンのイメージの中に Windows Server Remote Desktop Session Host - Windows Server 2012 R2 があるが，これを使うと hopTo サーバーを簡単に作成できるのか？"
 date = "2015-09-02"
-tags = ["技術ノート"]
-categories=["tech"]
+ttags = ["技術ノート"]
+tcategories=["tech"]
 banner = "img/technote.jpg"
 +++
 

@@ -1,8 +1,8 @@
 ﻿+++
 title = "[Windows 10] コントロールパネルに Windows Update （更新プログラムの確認） が無い．"
 date = "2015-07-30"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH5.X] HostProperties.xml の内容は GGH4.8 → GGH5.0 でどう変ったのか？"
 date = "2015-06-12"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

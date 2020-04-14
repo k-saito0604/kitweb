@@ -1,8 +1,8 @@
 +++
 title = "[GGH6.X] 専用のライセンスサーバーを配置した環境でGGサーバーのアップグレード（またはリペア）を行おうとするとダイアログ GO-Global License Upgrade Required が表示されエラーとなる。"
 date = "2020-03-23"
-tags = ["技術ノート"]
-categories=["tech"]
+ttags = ["技術ノート"]
+tcategories=["tech"]
 banner = "img/technote.jpg"
 +++
 

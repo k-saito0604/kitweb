@@ -1,8 +1,8 @@
 +++
 title = "[GGH4.X-6.X] GGをインストールした状態でGGサーバーのWindowsをメジャーバージョンアップしたが、その後GGが正常に動作しない。"
 date = "2020-03-23"
-tags = ["技術ノート"]
-categories=["tech"]
+ttags = ["技術ノート"]
+tcategories=["tech"]
 banner = "img/technote.jpg"
 +++
 

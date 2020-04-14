@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH4.X-5.X] GGが表示するダイアログボックス Sign In の情報 （内容） をクライアント側のプログラムで参照する方法を知りたい．"
 date = "2015-07-09"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 

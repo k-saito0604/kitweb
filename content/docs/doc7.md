@@ -1,8 +1,8 @@
 +++
 title = "[Microsoft Azure] Azure RemoteApp は，そのサーバーのデスクトップに管理者権限でアクセスできるか？"
 date = "2015-09-02"
-tags = ["技術ノート"]
-categories=["tech"]
+ttags = ["技術ノート"]
+tcategories=["tech"]
 banner = "img/technote.jpg"
 +++
 

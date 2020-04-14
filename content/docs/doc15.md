@@ -1,8 +1,8 @@
 ﻿+++
 title = "[GGH5.X] クライアント印刷機能で PreviewPDF は動作するのに，プリンターへの印刷が出来ないパソコンがある．"
 date = "2019-07-12"
-tags = ["技術ノート"]
-categories = ["tech"]
+ttags = ["技術ノート"]
+tcategories = ["tech"]
 banner = "img/technote.jpg"
 +++
 
