@@ -35,13 +35,13 @@
                             </div>-->
                         </div>
                         <div class="content">
-                            <div class="col-md-6 ">
-                            <p>{{ .Date.Format .Site.Params.date_format }} <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+                            <div class="col-md-12 ">
+                            <p>{{ .Params.Tags }}{{ .Date.Format .Site.Params.date_format }} <a href="{{ .Permalink }}">{{ .Title }}</a></p>
                              </div>
-                             <div class="col-md-6">
+                          <!--   <div class="col-md-6">
                              <p>{{ .Summary }}<a href="{{ .Permalink }}">{{ i18n "continueReading" }}</a></p>
                              </div>
-                          <!--<a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
+                          <a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
                             <p class="author-category">
                             {{ with .Params.author }}
                             {{ i18n "authorBy" }} <a href="#">{{ . }}</a>
