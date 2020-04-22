@@ -16,11 +16,11 @@
 
             <div class="row">
                 {{ $posts2 := .Paginate (.Site.Taxonomies.categories.news) }}
-                {{ range first 2 $posts2.Pages }}
-                <div class="col-md-6 col-sm-6">
+                {{ range first 5 $posts2.Pages }}
+                <div class="col-md-12 col-sm-12">
                     <div class="box-image-text blog">
                         <div class="top">
-                            <div class="image" style="overflow:hidden">
+<!--                        <div class="image" style="overflow:hidden">
                                 {{ if isset .Params "banner" }}
                                 <img src="{{ .Params.banner | relURL }}" class="img-responsive" alt="" >
                                 {{ else }}
@@ -32,22 +32,24 @@
                                 <p class="buttons">
                                     <a href="{{ .Permalink }}" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> {{ i18n "readMore" }}</a>
                                 </p>
-                            </div>
+                            </div>-->
                         </div>
-
                         <div class="content">
-                            <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                            <div class="col-md-6 ">
+                            <p>{{ .Date.Format .Site.Params.date_format }} <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+                             </div>
+                             <div class="col-md-6">
+                             <p>{{ .Summary }}<a href="{{ .Permalink }}">{{ i18n "continueReading" }}</a></p>
+                             </div>
+                          <!--<a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
                             <p class="author-category">
                             {{ with .Params.author }}
                             {{ i18n "authorBy" }} <a href="#">{{ . }}</a>
                             {{ end }}
-                            {{ i18n "publishedOn" }} {{ .Date.Format .Site.Params.date_format }}
-                            </p>
-                            <p class="intro">{{ .Summary }}</p>
-                            <p class="read-more">
-                              <a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
-                            </p>
+                            </p>-->
                         </div>
+                            
+                        
                     </div>
                     <!-- /.box-image-text -->
 
