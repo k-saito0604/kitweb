@@ -5,7 +5,6 @@ tags = ["WindowsUpdate"]
 categories=["news"]
 banner = "img/Windowsupdate.jpg"
 +++
-
 正規販売代理店技術担当者様 各位いつもお世話になっております。  
 きっとエイエスピー 技術支援センターでございます。  
 <!--more-->

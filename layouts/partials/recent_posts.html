@@ -5,62 +5,41 @@
 
         <div class="col-md-12">
             <div class="heading text-center">
-                <h2>{{ .Site.Params.recent_posts.title | markdownify }}</h2>
+                <h4>{{ .Site.Params.recent_posts.title | markdownify }}</h4>
             </div>
-
             <p class="lead">
               {{ .Site.Params.recent_posts.subtitle | markdownify }}
             </p>
-
             <!-- *** BLOG HOMEPAGE *** -->
-
             <div class="row">
-                {{ $posts2 := .Paginate (.Site.Taxonomies.categories.news) }}
-                {{ range first 5 $posts2.Pages }}
-                <div class="col-md-12 col-sm-12">
-                    <div class="box-image-text blog">
-                        <div class="top">
-<!--                        <div class="image" style="overflow:hidden">
-                                {{ if isset .Params "banner" }}
-                                <img src="{{ .Params.banner | relURL }}" class="img-responsive" alt="" >
-                                {{ else }}
-                                <img src="{{ "img/placeholder.png" | relURL }}" class="img-responsive" alt="">
-                                {{ end }}
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
-                                    <a href="{{ .Permalink }}" class="btn btn-template-transparent-primary"><i class="fas fa-link"></i> {{ i18n "readMore" }}</a>
-                                </p>
-                            </div>-->
+                {{ $pposts := .Paginate (.Site.Taxonomies.categories.news) }}
+                {{ range first 5 $pposts.Pages }}
+                <div class="col-md-12">
+                    <div class="recent_posts">
+                    <div class="content">
+                        <div class="col-md-3">
+                        <p>{{ .Params.Tags }}</p>
                         </div>
-                        <div class="content">
-                            <div class="col-md-12 ">
-                            <p>{{ .Params.Tags }}{{ .Date.Format .Site.Params.date_format }} <a href="{{ .Permalink }}">{{ .Title }}</a></p>
-                             </div>
-                          <!--   <div class="col-md-6">
-                             <p>{{ .Summary }}<a href="{{ .Permalink }}">{{ i18n "continueReading" }}</a></p>
-                             </div>
-                          <a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
-                            <p class="author-category">
-                            {{ with .Params.author }}
-                            {{ i18n "authorBy" }} <a href="#">{{ . }}</a>
-                            {{ end }}
-                            </p>-->
+                        <div class="col-md-3">
+                        <p>{{ .Date.Format .Site.Params.date_format }}</p>
                         </div>
-                            
+                        <div class="col-md-6">
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        </div> 
+                    </div>
+                </div>
+                </div>
                         
+                    {{ end }}           
                     </div>
                     <!-- /.box-image-text -->
 
                 </div>
-                {{ end }}
+                
 
             </div>
             <!-- /.row -->
-
             <!-- *** BLOG HOMEPAGE END *** -->
-
         </div>
     </div>
     <!-- /.container -->

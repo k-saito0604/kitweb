@@ -11,30 +11,29 @@
             <p class="lead">
               {{ .Site.Params.recent_posts2.subtitle | markdownify }}
             </p>
-
             <!-- *** BLOG HOMEPAGE *** -->
-
             <div class="row">
                 {{ $cposts := index .Site.Taxonomies.tcategories.tech }}
                 {{ range first 5 $cposts.Pages }}
                 <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="box-image-text blog">
-
                         <div class="content">
-                            <p>{{ .Params.Tags }}{{ .Date.Format .Site.Params.date_format }} <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+                            <div class="col-md-2">
+                            <p>{{ .Date.Format .Site.Params.date_format }}</p>
+                            </div>
+                            <div class="col-md-10">
+                             <a href="{{ .Permalink }}">{{ .Title }}</a>
                         </div>
+                    
                     </div>
+                    
                     <!-- /.box-image-text -->
 
                 </div>
                 {{ end }}
-                
-
             </div>
             <!-- /.row -->
 
             <!-- *** BLOG HOMEPAGE END *** -->
-
         </div>
     </div>
     <!-- /.container -->
