@@ -1,0 +1,155 @@
+// Is null or empty prototype
+String.isNullOrEmpty = function(value) {
+    return !(typeof value === "string" && value.length > 0);
+}
+
+// Mobile support
+function isPhoneProbably()
+{
+    var probablyPhone = (
+        (/mobile|android|webos|iphone|ipad|ipod|blackberry|bb|iemobile|windows phone/).test
+        (navigator.userAgent.toLowerCase())
+        && 'ontouchstart' in document.documentElement
+    );
+    return probablyPhone;
+}
+
+jQuery(document).ready(
+    function() {
+        var offset = 250;
+        var duration = 300;
+
+        // Toggle back to top
+        jQuery(window).scroll(
+            function() {
+                if (jQuery(this).scrollTop() > offset)
+                {
+                    jQuery('#back-to-top').fadeIn(duration);
+                }
+                else
+                {
+                    jQuery('#back-to-top').fadeOut(duration);
+                }
+            }
+        );
+
+        // Go to top
+        jQuery('#back-to-top').click(
+            function(event) {
+                event.preventDefault();
+                jQuery('html, body').animate({scrollTop: 0}, duration);
+                return false;
+            }
+        );
+
+        // Toggle mobile menu
+        jQuery('#nav-toggle').click(
+            function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                jQuery(".header").toggleClass('nav-open');
+                if (jQuery(".header").hasClass('nav-open'))
+                {
+                    jQuery('#nav').fadeIn(duration);
+                }
+                else
+                {
+                    jQuery('#nav').fadeOut(duration);
+                }
+            }
+        );
+        // Toogle nav menu sub items on click, only on mobile
+        jQuery('.header-nav-list > li').click(
+            function(e) {
+                //e.preventDefault();
+                //e.stopPropagation();
+
+                jQuery(this).toggleClass('active');
+                jQuery(this).siblings().removeClass('active');
+            }
+        );
+        
+        // Header search toggle
+            jQuery('.header-search button').click(
+            function(e) {
+                var input = jQuery(this).prev();
+                if (!input.hasClass('open')) {
+                    jQuery('.header-search input').addClass('open');
+                    e.preventDefault();
+                } else if (input.val() === undefined || input.val().length == 0) {
+                    e.preventDefault();
+                }
+            }
+        );
+
+        jQuery('.carousel-container').slick({
+            autoplay: true,
+            autoplaySpeed: 6000,
+            arrows: false,
+            dots: false,
+        });
+
+        jQuery('.imagefill').imagefill();
+        
+//      jQuery('.faq .toggle').on('click', function() {
+//          var currentItem = jQuery(this).parent().parent();
+        jQuery('.faq .faq-q').on('click', function() {
+            var currentItem = jQuery(this).parent();
+        if (currentItem.hasClass('open')) {
+                currentItem.toggleClass('open');
+            } else {
+                jQuery('.faq .faq-item').removeClass('open');
+                currentItem.addClass('open');
+            }
+        });
+        
+        function resizeFunctionIntrouductionItems(currentWindowWidth, previousWindowWidth) {
+            jQuery('.function-introduction .function-introduction-item').css('height', '');
+            // At some point we don't want it
+            if (currentWindowWidth <= 425) {
+                return;
+            }
+            
+            var heights = jQuery('.function-introduction .function-introduction-item').map(function ()
+                {
+                    return jQuery(this).height();
+                }).get();
+            maxHeight = Math.max.apply(null, heights);
+            jQuery('.function-introduction .function-introduction-item').css('height', maxHeight);
+        }
+        resizeFunctionIntrouductionItems(9999, 9999);
+        
+        // Trigger functions on resize
+        var globalResizeTimer = null;
+        var previousWindowWidth = jQuery(window).width();
+        function globalResizeTrigger() {
+            if (globalResizeTimer != null) {
+                window.clearTimeout(globalResizeTimer);
+            }
+            globalResizeTimer = window.setTimeout(function() {
+                var currentWindowWidth = jQuery(window).width();
+                if (currentWindowWidth != previousWindowWidth) {
+                    resizeFunctionIntrouductionItems(currentWindowWidth, previousWindowWidth);
+                    previousWindowWidth = currentWindowWidth;
+                }
+            }, 200);
+        }
+        window.addEventListener('resize', globalResizeTrigger);
+    }
+);
+
+// Show all mobile-hidden elements
+function showMobileHiddenElements()
+{
+    var probablyPhone = isPhoneProbably();
+    if (probablyPhone == true)
+    {
+        var elList = document.getElementsByClassName('mobile-hidden');
+        while (elList.length > 0)
+        {
+            elList[0].classList.remove('mobile-hidden');
+        }
+    }
+}
+document.addEventListener("DOMContentLoaded", showMobileHiddenElements);
