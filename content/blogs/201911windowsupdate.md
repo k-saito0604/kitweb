@@ -1,8 +1,8 @@
 +++
 title = "互換性情報に関して"
 date = "2019-11-29"
-tags = ["Windows"]
-categories=["blog"]
+btags = ["Windows"]
+bcategories=["blog"]
 banner = "img/Windowsupdate.jpg"
 +++
 
