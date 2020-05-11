@@ -9,12 +9,6 @@ var data = [
     body: "Bcategories"
   },
   {
-    url: "/tcategories/blog/",
-    title: "blog",
-    date: "2020-04-22T00:00:00Z",
-    body: "blog"
-  },
-  {
     url: "/bcategories/blog/",
     title: "blog",
     date: "2020-04-22T00:00:00Z",
@@ -27,52 +21,22 @@ var data = [
     body: "blog"
   },
   {
-    url: "/blog/",
-    title: "Blogs",
-    date: "2020-04-22T00:00:00Z",
-    body: "Blogs"
-  },
-  {
     url: "/btags/",
     title: "Btags",
     date: "2020-04-22T00:00:00Z",
     body: "Btags"
   },
   {
-    url: "/tcategories/",
-    title: "Tcategories",
-    date: "2020-04-22T00:00:00Z",
-    body: "Tcategories"
-  },
-  {
-    url: "/posts/2020/04/22/test/",
+    url: "/blogs/test/",
     title: "test",
     date: "2020-04-22T00:00:00Z",
     body: "test test"
-  },
-  {
-    url: "/ttags/",
-    title: "Ttags",
-    date: "2020-04-22T00:00:00Z",
-    body: "Ttags"
   },
   {
     url: "/",
     title: "きっとエイエスピーはGlaphOn社GO-Globalの総代理店",
     date: "2020-04-22T00:00:00Z",
     body: "きっとエイエスピーはGlaphOn社GO-Globalの総代理店"
-  },
-  {
-    url: "/blogs/test/",
-    title: "テストドキュメント",
-    date: "2020-04-22T00:00:00Z",
-    body: "テストドキュメント てすと"
-  },
-  {
-    url: "/ttags/%E3%83%96%E3%83%AD%E3%82%B0/",
-    title: "ブログ",
-    date: "2020-04-22T00:00:00Z",
-    body: "ブログ"
   },
   {
     url: "/btags/%E3%83%96%E3%83%AD%E3%82%B0/",
@@ -109,12 +73,6 @@ var data = [
     title: "Tags",
     date: "2020-03-26T00:00:00Z",
     body: "Tags"
-  },
-  {
-    url: "/tags/windows/",
-    title: "Windows",
-    date: "2020-03-26T00:00:00Z",
-    body: "Windows"
   },
   {
     url: "/tags/windowsupdate/",
@@ -189,10 +147,22 @@ var data = [
     body: "document"
   },
   {
+    url: "/tcategories/",
+    title: "Tcategories",
+    date: "2020-03-23T00:00:00Z",
+    body: "Tcategories"
+  },
+  {
     url: "/tcategories/tech/",
     title: "tech",
     date: "2020-03-23T00:00:00Z",
     body: "tech"
+  },
+  {
+    url: "/ttags/",
+    title: "Ttags",
+    date: "2020-03-23T00:00:00Z",
+    body: "Ttags"
   },
   {
     url: "/ttags/%E6%8A%80%E8%A1%93%E3%83%8E%E3%83%BC%E3%83%88/",
@@ -447,10 +417,10 @@ var data = [
     body: "2019年11月のWindows Update互換性情報に関して 正規販売代理店技術担当者様 各位いつもお世話になっております。 きっとエイエスピー 技術支援センターでございます。 2019年11月のWindows Update互換性情報についてのお知らせをお送りいたします。 ダウンロードページの「2019年11月のWindows Update互換性情報についてのお知らせ.pdf」をご覧ください。 ご不明な点がございましたらお問い合わせくださいませ。よろしくお願いいたします。"
   },
   {
-    url: "/categories/blog/",
-    title: "blog",
+    url: "/btags/windows/",
+    title: "Windows",
     date: "2019-11-29T00:00:00Z",
-    body: "blog"
+    body: "Windows"
   },
   {
     url: "/blogs/201911windowsupdate/",
