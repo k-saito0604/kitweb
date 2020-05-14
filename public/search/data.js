@@ -16605,18 +16605,6 @@ var data = [
     body: "シンクライアント導入事例、医療、教育、BCP、ISV等に広く導入"
   },
   {
-    url: "/blogs/test/",
-    title: "タイトル",
-    date: "0001-01-01T00:00:00Z",
-    body: "タイトル 本文書いてね"
-  },
-  {
-    url: "/btags/%E3%83%96%E3%83%AD%E3%82%B0/",
-    title: "ブログ",
-    date: "0001-01-01T00:00:00Z",
-    body: "ブログ"
-  },
-  {
     url: "/adaptation-facility-4/",
     title: "中小企業のBCP対策を低コストで簡単に素早く実現した導入事例",
     date: "0001-01-01T00:00:00Z",
