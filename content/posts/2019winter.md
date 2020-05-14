@@ -2,7 +2,7 @@
 title = ""
 date = "2020-12-01"
 tags = ["お知らせ"]
-categories=["news"]
+categories="news"
 banner = "img/Windowsupdate.jpg"
 +++
 

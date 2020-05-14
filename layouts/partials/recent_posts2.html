@@ -16,16 +16,16 @@
                 {{ $cposts := index .Site.Taxonomies.tcategories.tech }}
                 {{ range first 5 $cposts.Pages }}
                 <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="recent_posts">    
+                     
                     <div class="content">
                         
-                            <div class="col-md-2">
+                            <div class="col-md-2 col-sm-2">
                             <p>{{ .Date.Format .Site.Params.date_format }}</p>
                             </div>
-                            <div class="col-md-10">
+                            <div class="col-md-12 col-sm-12">
                              <a href="{{ .Permalink }}">{{ .Title }}</a>
+                             <br><br>
                         </div>
-                    </div>
                     </div>
                     
                     <!-- /.box-image-text -->
