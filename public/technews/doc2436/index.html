@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>[GGH4.X-5.X] 2台のGGサーバーに GGEasyMonitor をインストールし，それぞれが振分け処理を行うようにすることが可能か？</title>
+  <meta name="author" content="kitasp" />
+  
+  
+  
+  
+  <meta name="keywords" content="devows, hugo, go">
+  
+  
+  <meta name="description" content="きっとエイエスピーのホームページ">
+
+  <meta name="generator" content="Hugo 0.68.1" />
+
+  
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+
+  
+  <link href="/js/slick.css" rel="stylesheet">
+  <link href="/js/slick-theme.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+  
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="きっとエイエスピーはGlaphOn社GO-Globalの総代理店">
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:locale" content="ja_jp">
+  <meta property="og:site_name" content="きっとエイエスピーはGlaphOn社GO-Globalの総代理店">
+  <meta property="og:title" content="[GGH4.X-5.X] 2台のGGサーバーに GGEasyMonitor をインストールし，それぞれが振分け処理を行うようにすることが可能か？">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/technews/doc2436/" />
+  <meta property="og:description" content="きっとエイエスピーのホームページ">
+  <meta property="og:image" content="img/technote.jpg">
+  <meta property="og:image:type" content="image/jpg">
+  
+  
+  
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="288">
+  
+  
+  <meta property="og:updated_time" content="2016-08-01T00:00:00Z">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:title" content="[GGH4.X-5.X] 2台のGGサーバーに GGEasyMonitor をインストールし，それぞれが振分け処理を行うようにすることが可能 …">
+  
+  <meta name="twitter:image" content="img/technote.jpg">
+  
+  <meta name="twitter:description" content="きっとエイエスピーのホームページ">
+  
+
+  <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-storage.js"></script>
+  <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-auth.js"></script>
+  <script defer src="https://www.gstatic.com/firebase/init.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+  <script src="/js/config.js"></script>
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="500">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/logo-small.png" alt="[GGH4.X-5.X] 2台のGGサーバーに GGEasyMonitor をインストールし，それぞれが振分け処理を行うようにすることが可能か？ logo" class="hidden-xs hidden-sm">
+                    <img src="/img/logo-small.png" alt="[GGH4.X-5.X] 2台のGGサーバーに GGEasyMonitor をインストールし，それぞれが振分け処理を行うようにすることが可能か？ logo" class="visible-xs visible-sm">
+                    <span class="sr-only">[GGH4.X-5.X] 2台のGGサーバーに GGEasyMonitor をインストールし，それぞれが振分け処理を行うようにすることが可能か？ - ホームへ戻る</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">ナビゲーションの切り替え</span>
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  <div class = "topbotton">
+                    
+                    <a class="fas fa-search" href="/search">ページを検索する</a>
+                    <a href="/contact" class="btn-square-shadow-ora">問い合わせ</a>
+                    <a href="https://gitbook.kitasp.com/" class="btn-square-shadow">技術サイト</a>
+                  </div>
+                  
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a class="dropdown-toggle" href="/function-introduction/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">GO-Globalとは</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a href="/web-separation">web分離</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/work-style-reform">働き方改革</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/thin-client">シンクライアント</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/lift-shift">アプリクラウド化</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/telework">テレワーク導入</a>
+                        </li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a class="dropdown-toggle" href="/case-study" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">導入事例</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a href="/adaptation-facility-1">医療現場</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-2">ISV</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-3">中小企業</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-4">BCP対策</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-5">教育現場</a>
+                        </li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a class="dropdown-toggle" href="/posts/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">お知らせ</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a href="/support-schedule/">対応スケジュール</a>
+                        </li>
+                      
+                        <li>
+                          <a href="https://portal.kitasp.com/downloads/">Download</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/news/">News</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/technews/">Tech news</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/blogs/">Blog</a>
+                        </li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/faq/">FAQ</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/partners-list/">代理店一覧</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a class="dropdown-toggle" href="/company-infomation/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">会社概要</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a href="/representative-greetings/">代表挨拶</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/philosophy/">理念</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/history/">沿革</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/privacy-policy/">プライバシーポリシー</a>
+                        </li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                </span>
+                    </div>
+                </form>
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+            
+                <h1>[GGH4.X-5.X] 2台のGGサーバーに GGEasyMonitor をインストールし，それぞれが振分け処理を行うようにすることが可能か？　</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+                  
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        
+                          <p class="text-muted text-uppercase mb-small text-right">
+                            
+                            
+                            2016-08-01
+                          </p>
+                        
+                      
+                        <div id="post-content">
+                          <hr>
+<p>*技術ノート</p>
+<p>2016/08/01*</p>
+<p>[番号]
+技術ノート KGTN 2016070701</p>
+<p>[現象]
+[GGH4.X-5.X] 2台のGGサーバーに GGEasyMonitor
+をインストールし，それぞれが振分け処理を行うようにすることが可能か？</p>
+<p>[説明]
+2台のGGサーバーを Server1 (192.168.102.98) / Server2 (192.168.102.148)
+とすると， Server1 に GGEasyMonitor
+のエージェントとサーバー機能を設定し，さらに Server2 にも GGEasyMonitor
+のエージェントとサーバー機能を設定します．各サーバーの設定内容
+（サンプル） は，次のようになります，</p>
+<p><img src="http://techreport.kitasp.net/attachments/download/2801/KGTN2016070701-1.jpg" alt=""></p>
+<p><img src="http://techreport.kitasp.net/attachments/download/2802/KGTN2016070701-2.jpg" alt=""></p>
+<p>SERVER1</p>
+<p>[default]
+; ★あり - 構成によって変更等が必要な項目
+; ★なし - 必要がない限り変更等が不要な項目</p>
+<p>; ＊ログ関連＊
+; logd : ログの出力フォルダ
+; logLevel : 一般のログ出力レベル
+; logLevelNet : 通信関連のログ出力レベル
+; logLevelWeb : 監視画面のログ出力レベル
+; logLevelCbk : 振分け機能のログ出力レベル
+; logd = Logs
+logLevel = 4
+logLevelNet = 4
+logLevelWeb = 4
+logLevelCbk = 4</p>
+<p>; ＊通信関連＊
+; hostName : ★コンピューター名
+; hostAddr : ★IPアドレス
+; hostPort : ★サーバー/エージェントの待受けポートの番号
+; avSleep : アクティブ時の送信間隔（秒）
+; avTimeout : アクティブ時のタイムアウト時間（秒）
+; pvSleep : 未使用
+; pvTimeout : パッシブ時のタイムアウト時間（秒）
+; updateInterval : ★エージェントの送信間隔（秒）
+; updateTimeout : ★更新タイムアウトの時間（秒）
+; bufferSize : ★送受信バッファのサイズ（MB）
+; maxTempError : 一時的なエラーを無視する回数
+hostName = SERVER1
+hostAddr = 192.168.102.98
+hostPort = 8491
+avSleep = 3
+avTimeout = 60
+pvSleep = 3
+pvTimeout = 60
+updateInterval = 3
+updateTimeout = 10
+bufferSize = 10
+maxTempError = 10</p>
+<p>; ＊APS関連＊
+; apsPort : APSのポート番号（GGサーバーの待受けポート）
+; sessionInfo : セッション・リストの採取の有無（YES/NO）
+; rxpAddr : ★GGサーバーのIPアドレス（外部向け）
+; rxpPort : ★GGサーバーのポート番号（外部向け）
+apsPort = 491
+sessionInfo = YES
+rxpAddr = 192.168.102.98
+rxpPort = 491</p>
+<p>; ＊ウエッブ機能関連＊
+; webPort : ★監視画面のポート番号
+; webAutoRefresh : 監視画面の更新間隔（秒）
+; webNumSessions : セッション一覧でのページ当りの行数
+; webRefURL : ★監視画面のリフレッシュ用URL
+; webRxpURL : ★GGサーバーのログオンページ
+; webAuth : ★監視画面の認証情報（:）
+; webCss : スタイルシートの情報（原則として修正不可）
+webPort = 8080
+webAutoRefresh = 10
+webNumSessions = 25
+webRefURL = <a href="http://192.168.102.98:8080/">http://192.168.102.98:8080/</a>
+webRxpURL = <a href="http://192.168.102.98/goglobal/logon.html">http://192.168.102.98/goglobal/logon.html</a>
+webAuth = admin:password
+webCss = <!-- raw HTML omitted --></p>
+<p>; ＊振分け機能関連＊
+; cbkDisable : 振分け機能「停止中」 (YES/NO)
+; cbkPort : ★振分け機能のポート番号
+; cbkMaxHost : ★接続候補のGGサーバーの数
+; cbkRefTime : 振分けまでの遅延時間
+; cbkRxpURL : GGサーバーのログオンページ
+; : この値に &ldquo;?host=&lt;GGサーバー&gt;&rdquo; が付加される。
+; : 省略時は webRxpURL の値が使用される。
+; cbksingleLogon : 多重ログオンの禁止の有無 (YES/NO)
+; cbkLogonPage : ユーザーID未指定時にログオンページを表示 (YES/NO)
+cbkDisable = NO
+cbkPort = 8089
+cbkMaxHost = 1
+cbkRefTime = 3
+cbkRxpURL =
+cbkSingleLogon = YES
+cbkLogonPage = YES</p>
+<p>; ＊サーバー機能関連＊
+; [セクション名] : SA_コンピューター名 or SP_コンピューター名
+; mode : ★SA = アクティブサーバー, SP = パッシブサーバー
+; name : ★相手のコンピューター名
+; addr : ★相手（GGEasyMonitorのエージェント機能）のIPアドレス
+; port : ★相手（GGEasyMonitorのエージェント機能）のポート番号
+; updateTimeout : ★更新タイムアウトの時間（秒）
+[SP_SERVER1]
+mode = SP
+name = SERVER1
+addr = 192.168.102.98
+port =</p>
+<p>[SP_SERVER2]
+mode = SP
+name = SERVER1
+addr = 192.168.102.148
+port =</p>
+<p>; ＊エージェント機能関連＊
+; [セクション名] : AA_コンピューター名 or AP_コンピューター名
+; mode : ★AA = アクティブエージェント, AP = パッシブエージェント
+; addr : ★相手（GGEasyMonitorのサーバー機能）のIPアドレス
+; port : ★相手（GGEasyMonitorのサーバー機能）のポート番号
+; sessionList : セッション・リストの送信の有無（YES/NO）
+[AA_SERVER1]
+mode = AA
+addr = 192.168.102.98
+port = 8491
+sessionList = YES</p>
+<p>[AA_SERVER2]
+mode = AA
+addr = 192.168.102.148
+port = 8491
+sessionList = YES</p>
+<p>; [EOF]</p>
+<p><img src="http://techreport.kitasp.net/attachments/download/2803/KGTN2016070701-3.jpg" alt=""></p>
+<p>SERVER2</p>
+<p>[default]
+; ★あり - 構成によって変更等が必要な項目
+; ★なし - 必要がない限り変更等が不要な項目</p>
+<p>; ＊ログ関連＊
+; logd : ログの出力フォルダ
+; logLevel : 一般のログ出力レベル
+; logLevelNet : 通信関連のログ出力レベル
+; logLevelWeb : 監視画面のログ出力レベル
+; logLevelCbk : 振分け機能のログ出力レベル
+; logd = Logs
+logLevel = 4
+logLevelNet = 4
+logLevelWeb = 4
+logLevelCbk = 4</p>
+<p>; ＊通信関連＊
+; hostName : ★コンピューター名
+; hostAddr : ★IPアドレス
+; hostPort : ★サーバー/エージェントの待受けポートの番号
+; avSleep : アクティブ時の送信間隔（秒）
+; avTimeout : アクティブ時のタイムアウト時間（秒）
+; pvSleep : 未使用
+; pvTimeout : パッシブ時のタイムアウト時間（秒）
+; updateInterval : ★エージェントの送信間隔（秒）
+; updateTimeout : ★更新タイムアウトの時間（秒）
+; bufferSize : ★送受信バッファのサイズ（MB）
+; maxTempError : 一時的なエラーを無視する回数
+hostName = SERVER2
+hostAddr = 192.168.102.148
+hostPort = 8491
+avSleep = 3
+avTimeout = 60
+pvSleep = 3
+pvTimeout = 60
+updateInterval = 3
+updateTimeout = 10
+bufferSize = 10
+maxTempError = 10</p>
+<p>; ＊APS関連＊
+; apsPort : APSのポート番号（GGサーバーの待受けポート）
+; sessionInfo : セッション・リストの採取の有無（YES/NO）
+; rxpAddr : ★GGサーバーのIPアドレス（外部向け）
+; rxpPort : ★GGサーバーのポート番号（外部向け）
+apsPort = 491
+sessionInfo = YES
+rxpAddr = 192.168.102.148
+rxpPort = 491</p>
+<p>; ＊ウエッブ機能関連＊
+; webPort : ★監視画面のポート番号
+; webAutoRefresh : 監視画面の更新間隔（秒）
+; webNumSessions : セッション一覧でのページ当りの行数
+; webRefURL : ★監視画面のリフレッシュ用URL
+; webRxpURL : ★GGサーバーのログオンページ
+; webAuth : ★監視画面の認証情報（:）
+; webCss : スタイルシートの情報（原則として修正不可）
+webPort = 8080
+webAutoRefresh = 10
+webNumSessions = 25
+webRefURL = <a href="http://192.168.102.148:8080/">http://192.168.102.148:8080/</a>
+webRxpURL = <a href="http://192.168.102.148/goglobal/logon.html">http://192.168.102.148/goglobal/logon.html</a>
+webAuth = admin:password
+webCss = <!-- raw HTML omitted --></p>
+<p>; ＊振分け機能関連＊
+; cbkDisable : 振分け機能「停止中」 (YES/NO)
+; cbkPort : ★振分け機能のポート番号
+; cbkMaxHost : ★接続候補のGGサーバーの数
+; cbkRefTime : 振分けまでの遅延時間
+; cbkRxpURL : GGサーバーのログオンページ
+; : この値に &ldquo;?host=&lt;GGサーバー&gt;&rdquo; が付加される。
+; : 省略時は webRxpURL の値が使用される。
+; cbksingleLogon : 多重ログオンの禁止の有無 (YES/NO)
+; cbkLogonPage : ユーザーID未指定時にログオンページを表示 (YES/NO)
+cbkDisable = NO
+cbkPort = 8089
+cbkMaxHost = 1
+cbkRefTime = 3
+cbkRxpURL =
+cbkSingleLogon = YES
+cbkLogonPage = YES</p>
+<p>; ＊サーバー機能関連＊
+; [セクション名] : SA_コンピューター名 or SP_コンピューター名
+; mode : ★SA = アクティブサーバー, SP = パッシブサーバー
+; name : ★相手のコンピューター名
+; addr : ★相手（GGEasyMonitorのエージェント機能）のIPアドレス
+; port : ★相手（GGEasyMonitorのエージェント機能）のポート番号
+; updateTimeout : ★更新タイムアウトの時間（秒）
+[SP_SERVER1]
+mode = SP
+name = SERVER2
+addr = 192.168.102.98
+port =</p>
+<p>[SP_SERVER2]
+mode = SP
+name = SERVER2
+addr = 192.168.102.148
+port =</p>
+<p>; ＊エージェント機能関連＊
+; [セクション名] : AA_コンピューター名 or AP_コンピューター名
+; mode : ★AA = アクティブエージェント, AP = パッシブエージェント
+; addr : ★相手（GGEasyMonitorのサーバー機能）のIPアドレス
+; port : ★相手（GGEasyMonitorのサーバー機能）のポート番号
+; sessionList : セッション・リストの送信の有無（YES/NO）
+[SERVER1]
+mode = AA
+addr = 192.168.102.98
+port = 8491
+sessionList = YES</p>
+<p>[SERVER2]
+mode = AA
+addr = 192.168.102.148
+port = 8491
+sessionList = YES</p>
+<p>; [EOF]</p>
+<h3 id="ファイル">ファイル</h3>
+<p><a href="http://techreport.kitasp.net/attachments/download/2800/KGTN2016070701.pdf">KGTN2016070701.pdf</a>
+[(325 KB)] [kitasp 技術センター, 2016/08/01
+12:05]</p>
+<p><a href="http://techreport.kitasp.net/attachments/download/2801/KGTN2016070701-1.jpg">KGTN2016070701-1.jpg</a></p>
+<p><a href="http://techreport.kitasp.net/attachments/2801/KGTN2016070701-1.jpg" title="表示">表示</a>
+[(21.6 KB)] [kitasp 技術センター, 2016/08/01
+12:05]</p>
+<p><a href="http://techreport.kitasp.net/attachments/download/2802/KGTN2016070701-2.jpg">KGTN2016070701-2.jpg</a></p>
+<p><a href="http://techreport.kitasp.net/attachments/2802/KGTN2016070701-2.jpg" title="表示">表示</a>
+[(28.9 KB)] [kitasp 技術センター, 2016/08/01
+12:05]</p>
+<p><a href="http://techreport.kitasp.net/attachments/download/2803/KGTN2016070701-3.jpg">KGTN2016070701-3.jpg</a></p>
+<p><a href="http://techreport.kitasp.net/attachments/2803/KGTN2016070701-3.jpg" title="表示">表示</a>
+[(28.8 KB)] [kitasp 技術センター, 2016/08/01
+12:05]</p>
+
+                        </div>
+                        
+                        
+                        
+                    
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">検索</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="https://cse.google.com/cse?cx=004221574702554897620:tgludhvdjca" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="検索">
+                <input type="hidden" name="sitesearch" value="/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">カテゴリー</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            
+            <li>
+                <a href="/categories/news">news (8)</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">タグ</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            
+            <li>
+                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
+            </li>
+            
+            <li>
+                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        
+    <div class="col-md-12">
+        <footer id="footer">
+        <div class="footer-nav-wrapper">        
+        <div class="container">
+            <div class="col-md-3 col-sm-3">
+                <div class="footer-nav-column">
+                    <div class="footer-nav-column-title"></div>
+                    <div class="footer-nav-column-content">
+                    <a href="/go-global/">GO-Globalとは</a>
+                    <ul class="footer-nav-list">
+                        <li>
+                            <a href="/web-separation/">WEB分離</a>
+                        </li>
+                        <li>
+                            <a href="/work-style-reform/">働き方改革</a>
+                        </li>
+                        <li>
+                            <a href="/thin-client/">シンクライアント</a>
+                        </li>
+                        <li>
+                            <a href="/lift-shift/">アプリケーションクラウド化</a>
+                        </li>
+                        <li>
+                            <a href="/telework/">テレワーク導入</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="hidden-md hidden-lg hidden-sm">
+        <div class="col-md-3 col-sm-3">
+            <div class="footer-nav-column">
+            <div class="footer-nav-column-content">
+                <a href="/case-study/">導入事例</a>
+                <ul class="footer-nav-list">
+                    <li>
+                        <a href="/adaptation-facility-1/">医療現場</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-2/">ISV</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-3/">中小企業</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-4/">BCP対策</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-5/">教育現場</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <hr class="hidden-md hidden-lg hidden-sm">
+                <div class="col-md-3 col-sm-3">
+                    <div class="footer-nav-column">
+                        <div class="footer-nav-column-title"></div>
+                        <div class="footer-nav-column-content">
+                            <a href="/post/">お知らせ</a>
+                            <ul class="footer-nav-list">
+                                <li>
+                                    <a href="/support-schedule/">対応スケジュール</a>
+                                </li>
+                                <li>
+                                    <a href="/news/">Download</a>
+                                </li>
+                                <li>
+                                    <a href="/categories/news/">サイトニュース</a>
+                                </li>
+                                <li>
+                                    <a href="/categories/tech-news/">技術ニュース</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="hidden-md hidden-lg hidden-sm">
+        
+                </div>
+        
+        
+        <div class="col-md-3 col-sm-3">
+            <div class="footer-nav-column">
+        <div class="footer-nav-column-content">
+            <a href="/faq/">FAQ</a><br>
+            <a href="/partners-list/">代理店一覧</a><br>
+            <a href="/contact/">問合せフォーム</a><br>
+            <a href="/technical-site/">技術サイト</a><br>
+            <br>
+            <hr class="hidden-md hidden-lg hidden-sm">
+            <a href="/company-information/">企業概要</a>
+            <ul class="footer-nav-list">
+                <li>
+                    <a href="/representative-greetings/">代表あいさつ</a>
+                </li>
+                <li>
+                    <a href="/philosophy/">理念</a>
+                </li>
+                <li>
+                    <a href="/history/">沿革</a>
+                </li>
+                <li>
+                    <a href="/privacy-policy/">個人情報保護方針</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+    </div>
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+           <p style="text-align:center;">Copyright © 2020 KitASP Corp. All Rights Reserved</p>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/js/jquery.zoom.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+<script src="/js/hpneo.gmaps.js"></script>
+<script src="/js/gmaps.init.js"></script>
+<script src="/js/front.js"></script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<script src="/js/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
+<script src="/js/slick.min.js"></script>
+
+
+
+  </body>
+</html>
