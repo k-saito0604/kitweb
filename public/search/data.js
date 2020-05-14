@@ -3,48 +3,6 @@
 
 var data = [
   {
-    url: "/bcategories/",
-    title: "Bcategories",
-    date: "2020-04-22T00:00:00Z",
-    body: "Bcategories"
-  },
-  {
-    url: "/bcategories/blog/",
-    title: "blog",
-    date: "2020-04-22T00:00:00Z",
-    body: "blog"
-  },
-  {
-    url: "/blogs/",
-    title: "blog",
-    date: "2020-04-22T00:00:00Z",
-    body: "blog"
-  },
-  {
-    url: "/btags/",
-    title: "Btags",
-    date: "2020-04-22T00:00:00Z",
-    body: "Btags"
-  },
-  {
-    url: "/blogs/test/",
-    title: "test",
-    date: "2020-04-22T00:00:00Z",
-    body: "test test"
-  },
-  {
-    url: "/",
-    title: "きっとエイエスピーはGlaphOn社GO-Globalの総代理店",
-    date: "2020-04-22T00:00:00Z",
-    body: "きっとエイエスピーはGlaphOn社GO-Globalの総代理店"
-  },
-  {
-    url: "/btags/%E3%83%96%E3%83%AD%E3%82%B0/",
-    title: "ブログ",
-    date: "2020-04-22T00:00:00Z",
-    body: "ブログ"
-  },
-  {
     url: "/posts/202003windowsupdate/",
     title: "2020年3月のWindows Update互換性情報に関して",
     date: "2020-03-26T00:00:00Z",
@@ -79,6 +37,12 @@ var data = [
     title: "WindowsUpdate",
     date: "2020-03-26T00:00:00Z",
     body: "WindowsUpdate"
+  },
+  {
+    url: "/",
+    title: "きっとエイエスピーはGlaphOn社GO-Globalの総代理店",
+    date: "2020-03-26T00:00:00Z",
+    body: "きっとエイエスピーはGlaphOn社GO-Globalの総代理店"
   },
   {
     url: "/docs/doc2168/",
@@ -415,6 +379,30 @@ var data = [
     title: "2019年11月のWindows Update互換性情報に関して",
     date: "2019-11-29T00:00:00Z",
     body: "2019年11月のWindows Update互換性情報に関して 正規販売代理店技術担当者様 各位いつもお世話になっております。 きっとエイエスピー 技術支援センターでございます。 2019年11月のWindows Update互換性情報についてのお知らせをお送りいたします。 ダウンロードページの「2019年11月のWindows Update互換性情報についてのお知らせ.pdf」をご覧ください。 ご不明な点がございましたらお問い合わせくださいませ。よろしくお願いいたします。"
+  },
+  {
+    url: "/bcategories/",
+    title: "Bcategories",
+    date: "2019-11-29T00:00:00Z",
+    body: "Bcategories"
+  },
+  {
+    url: "/bcategories/blog/",
+    title: "blog",
+    date: "2019-11-29T00:00:00Z",
+    body: "blog"
+  },
+  {
+    url: "/blogs/",
+    title: "blog",
+    date: "2019-11-29T00:00:00Z",
+    body: "blog"
+  },
+  {
+    url: "/btags/",
+    title: "Btags",
+    date: "2019-11-29T00:00:00Z",
+    body: "Btags"
   },
   {
     url: "/btags/windows/",
@@ -16615,6 +16603,18 @@ var data = [
     title: "シンクライアント導入事例、医療、教育、BCP、ISV等に広く導入",
     date: "0001-01-01T00:00:00Z",
     body: "シンクライアント導入事例、医療、教育、BCP、ISV等に広く導入"
+  },
+  {
+    url: "/blogs/test/",
+    title: "タイトル",
+    date: "0001-01-01T00:00:00Z",
+    body: "タイトル 本文書いてね"
+  },
+  {
+    url: "/btags/%E3%83%96%E3%83%AD%E3%82%B0/",
+    title: "ブログ",
+    date: "0001-01-01T00:00:00Z",
+    body: "ブログ"
   },
   {
     url: "/adaptation-facility-4/",

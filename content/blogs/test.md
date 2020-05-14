@@ -1,8 +1,8 @@
 +++
-title = "test"
-date = "2020-04-22"
+title = "タイトル"
+date = "日付"
 btags = ["ブログ"]
 bcategories=["blog"]
 banner = "img/technote.jpg"
 +++
-test
+本文書いてね
