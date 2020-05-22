@@ -104,6 +104,7 @@
   {{ end }}
   <meta name="twitter:description" content="{{ $description_plain | truncate 200 }}">
   {{ with .Param "twitter_author" }}<meta name="twitter:creator" content="@{{ . }}">{{ end }}
+  <meta name="robots" content="noindex">
 <!--firebase-->
   <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-app.js"></script>
   <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-storage.js"></script>
