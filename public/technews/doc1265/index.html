@@ -139,8 +139,6 @@
                 <ul class="nav navbar-nav navbar-right">
                   
                   <div class = "topbotton">
-                    
-
                     <a href="/contact" class="btn-square-shadow-ora">問い合わせ</a>
                     <a href="https://gitbook.kitasp.com/" class="btn-square-shadow">技術サイト</a>
                     <a href="https://www.kitasp.com/" class="btn-square-shadow-old">会社概要</a><br>
