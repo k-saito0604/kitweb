@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,25 +285,17 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2010/04/08*</p>
-
 <p>[番号]
 技術ノート KGTN 2010040703</p>
-
 <p>[現象]
 起動したいアプリケーション名に空白がある場合，Javaクライアント
 （Signed） ではどのように指定すれば良いのか？</p>
-
 <p>[説明]
 SignedのJava
 クライアントの場合は，空白を含むアプリケーション名をそのまま指定して下さい．</p>
-
 <p>var debug = false;
 var applet = new Object();
 applet.code = &ldquo;com.graphon.ggw.Logon&rdquo;;
@@ -318,18 +310,15 @@ applet.vspace = &ldquo;0&rdquo;;
 applet.hspace = &ldquo;0&rdquo;;
 applet.width = &ldquo;1000&rdquo;;
 applet.height = &ldquo;630&rdquo;;
-createAppletTag( applet, [&ldquo;host&rdquo;, &ldquo;&rdquo;, &ldquo;user&rdquo;, &ldquo;&rdquo;, &ldquo;password&rdquo;,
-&ldquo;&rdquo;, &ldquo;application&rdquo;, &ldquo;Notepad 001&rdquo;, &ldquo;args&rdquo;, &ldquo;&rdquo;,
-&ldquo;desktopcolor&rdquo;, &ldquo;&rdquo;, &ldquo;compression&rdquo;, &ldquo;true&rdquo;, &ldquo;hostport&rdquo;, &ldquo;&rdquo;]
+createAppletTag( applet, [&ldquo;host&rdquo;, &ldquo;&quot;, &ldquo;user&rdquo;, &ldquo;&quot;, &ldquo;password&rdquo;,
+&ldquo;&quot;, &ldquo;application&rdquo;, &ldquo;Notepad 001&rdquo;, &ldquo;args&rdquo;, &ldquo;&quot;,
+&ldquo;desktopcolor&rdquo;, &ldquo;&quot;, &ldquo;compression&rdquo;, &ldquo;true&rdquo;, &ldquo;hostport&rdquo;, &ldquo;&quot;]
 );</p>
-
 <p>Windows XP SP3 + Java 6 Standard Edition + IE8 / FireFox 3.6.3 / Opera
 10.51 / Safari 4.0.5 / Google Chrome 4.1 で動作を確認しました．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/131/KGTN2010040703.pdf">KGTN2010040703.pdf</a>
- [(72 KB)] [kitasp 技術センター, 2010/04/08
+[(72 KB)] [kitasp 技術センター, 2010/04/08
 13:39]</p>
 
                         </div>

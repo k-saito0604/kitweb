@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,45 +285,30 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2013/10/31*</p>
-
 <p>[番号]
 技術ノート KGTN 2012071801</p>
-
 <p>[現象]
 [SDK] エンタープライズオプションの GGSessionMonitor
 とはどんなツールなのか？</p>
-
 <p>[説明]
 原則的にはGGサーバ上で動作させるプログラムで，GGのプロトコルを介してGGサーバのセッション情報を収集し，その情報をデータベースに記録します．さらにデータベースの更新時に，
 HTTP/POST でその情報を外部へ送信することも出来ます．</p>
-
 <p>設定ファイルと起動パラメタ
 設定ファイル GGSessionMonitor.ini の default
 セクションで，以下のパラメタを設定して下さい．</p>
-
-<hr />
-
+<hr>
 <pre><code> 設定項目                              説明
  loglevel       ログの出力レベル，通常は1を指定し，障害時は4を指定
    port        GGサーバのポート番号（各セクションで未指定時に適用）
 </code></pre>
-
 <p>cpuUsageCheck        CPU使用率計算のパラメタ（変更しないこと）
-   cpuUsageSleep        CPU使用率計算のパラメタ（変更しないこと）</p>
-
-<hr />
-
+cpuUsageSleep        CPU使用率計算のパラメタ（変更しないこと）</p>
+<hr>
 <p>個別セクション （GGサーバ単位） で，以下のパラメタを設定して下さい．</p>
-
-<hr />
-
+<hr>
 <pre><code>  設定項目                              説明
     host                        GGサーバのIPアドレス
    logFile          ログファイル（データベースの更新情報）のパス
@@ -333,31 +318,21 @@ HTTP/POST でその情報を外部へ送信することも出来ます．</p>
    licFile              拡張パックのライセンスファイルのパス
   httpPost           セッション履歴情報 (user_tbl) の送信先URL
 </code></pre>
-
 <p>httpPostServer           サーバ情報 (server_tbl) の送信先URL
-   httpPostSession     セッション最新情報 (session_tbl) の送信先URL</p>
-
-<hr />
-
+httpPostSession     セッション最新情報 (session_tbl) の送信先URL</p>
+<hr>
 <p>監視対象のGGサーバと監視時間は，起動パラメタで指定して下さい．</p>
-
-<hr />
-
+<hr>
 <pre><code>設定項目                       説明
 </code></pre>
-
 <p>-sec server      個別セクション名（GGサーバの指定）
-    -rep time    監視を行う時間（秒），-1 指定時は制限無し</p>
-
-<hr />
-
+-rep time    監視を行う時間（秒），-1 指定時は制限無し</p>
+<hr>
 <p>データベースファイルや外部通知機能等の詳細については，技術ノートKGTN#2012062601〜2012062603,
 KGTN#2012070201, KGTN#2012070501, KGTN#2012070601 を参照して下さい．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/943/KGTN2012071801.pdf">KGTN2012071801.pdf</a>
- [(75.2 KB)] [kitasp 技術センター, 2013/10/31
+[(75.2 KB)] [kitasp 技術センター, 2013/10/31
 14:45]</p>
 
                         </div>

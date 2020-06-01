@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,56 +285,38 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2015/11/04*</p>
-
 <p>[番号]
 技術ノート KGTN 2015100201</p>
-
 <p>[現象]
 [ExPack] 拡張パックの GGToolSessionCount とはどんなツールなのか？</p>
-
 <p>[説明]
 GGサーバー上で動作させるプログラム （コンソールアプリケーション）
 で，クラスタマネージャーで設定された最大セッション数と実行時に存在するセッションの数を標準出力へ表示します．Zabbix
 などのサーバー監視ツールで，GGサーバーの最大セッション数および現在のセッション数を参照したい時に，このツールを利用することが出来ます．</p>
-
 <pre><code>R:PUBETC&gt;GGToolSessionCount
 SessionNow = 2, SessionMax = 45 現在のセッション数は 2 ，最大セッション数は 45
 R:PUBETC&gt;GGToolSessionCount
 SessionNow = -1, SessionMax = 45 APS が停止している場合は -1 が表示されます．
 </code></pre>
-
 <p>設定
 設定ファイルGGToolSessionCount.ini の default
 セクションで，以下のパラメタを設定して下さい．</p>
-
-<hr />
-
+<hr>
 <p>設定項目                            説明</p>
-
 <p>debug                               ログの出力レベル，通常は1を指定し，障害時は4を指定</p>
-
 <p>logd                                ログを出力するフォルダー
-                                      既定値は実行ファイルが置かれたフォルダー</p>
-
+既定値は実行ファイルが置かれたフォルダー</p>
 <p>serviceName                         APSのサービス名
-                                      既定値は &ldquo;GGAPS&rdquo;</p>
-
+既定値は &ldquo;GGAPS&rdquo;</p>
 <p>formatString                        現在のセッション数と最大セッション数を出力する時の書式
-                                      既定値は &ldquo;SessionNow = %d, SessionMax = %d&rdquo;</p>
-
-<hr />
-
+既定値は &ldquo;SessionNow = %d, SessionMax = %d&rdquo;</p>
+<hr>
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2281/KGTN2015100201.pdf">KGTN2015100201.pdf</a>
- [(79.2 KB)] [kitasp 技術センター, 2015/11/04
+[(79.2 KB)] [kitasp 技術センター, 2015/11/04
 15:24]</p>
 
                         </div>

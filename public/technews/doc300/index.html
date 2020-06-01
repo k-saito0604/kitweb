@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,38 +285,27 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2013/03/11*</p>
-
 <p>[番号]
 技術ノート KGTN 2013030701</p>
-
 <p>[現象]
 [GGH4.X] GG上のアプリケーションは セッション 0
 で実行されるが，GGのセッション毎に異なる
 （Windowsの）セッションIDを割り当てることは可能か？</p>
-
 <p>[説明]
 下記のレジストリ設定を行うことで， ProcessIdToSessionId() API
 がGG内部のセッションID （環境変数 %RXPSESSIONID% の値）
 を返すようになります．</p>
-
 <p>HKLMGraphOnGO-GlobalLoaderProcesses
 REG_DWORD 0x00000040</p>
-
 <p>GGH4.8.1.20079
 では，64ビット版Windows上で32ビット・アプリケーションおよび64ビット・アプリケーションそれぞれで動作することを確認しました．なお，
 Administrator Guide に書かれた値 0x00000080 は誤りです．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1611/KGTN2013030701.pdf">KGTN2013030701.pdf</a>
- [(61.2 KB)] [kitasp 技術センター, 2014/03/07
+[(61.2 KB)] [kitasp 技術センター, 2014/03/07
 19:32]</p>
 
                         </div>

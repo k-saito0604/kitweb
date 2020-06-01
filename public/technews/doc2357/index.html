@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,33 +285,23 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2019/09/13*</p>
-
 <p>[番号]
 技術ノート KGTN 2019080701</p>
-
 <p>[現象]
 [GGH6.X/ExPack] 拡張パックの GGEasyCreateSession
 とはどんなツールなのか？</p>
-
 <p>[説明]
 コマンドラインで指定したGGサーバーに指定したユーザーのセッションを生成
 （キャッシュ）
 するツールです。セッションの生成が完了すると直ちにセッションを切断しGGサーバー上に未接続状態のセッションを残します。その後、利用者が同GGサーバーに同ユーザーで接続した時、通常のログオンよりも高速
 （短時間） にGGサーバーが利用出来るようになります。</p>
-
 <p>設定ファイルと起動パラメタ
 設定ファイル GGEasyCreateSession.ini の default
 セクションで，以下のパラメタを設定して下さい。</p>
-
-<hr />
-
+<hr>
 <pre><code>           設定項目                                                              説　明
 
            logLevel                                        ログの出力レベル，通常は1を指定し，障害時は4を指定
@@ -335,28 +325,20 @@
 
           sessionWait                                       セッション生成処理後の待ち時間(秒)、既定値は１秒
 </code></pre>
-
-<hr />
-
+<hr>
 <p>起動パラメタ （コマンドライン・パラメタ） は次の通りです。</p>
-
-<hr />
-
+<hr>
 <pre><code>  設定項目                             説　明
 </code></pre>
-
-<p>-h <address>    GGサーバーのIPアドレス（設定ファイルより優先する）
-    -pn <port>     GGサーバーのポート番号（設定ファイルより優先する）
-    -u <userid>                        ユーザーID
-   -p <password>                       パスワード
-         -kb                        キーボードレイアウト</p>
-
-<hr />
-
+<p>-h <!-- raw HTML omitted -->    GGサーバーのIPアドレス（設定ファイルより優先する）
+-pn <!-- raw HTML omitted -->     GGサーバーのポート番号（設定ファイルより優先する）
+-u <!-- raw HTML omitted -->                        ユーザーID
+-p <!-- raw HTML omitted -->                       パスワード
+-kb                        キーボードレイアウト</p>
+<hr>
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4389/KGTN2019080701.pdf">KGTN2019080701.pdf</a>
- [(56.9 KB)] [kitasp 技術センター, 2019/11/05
+[(56.9 KB)] [kitasp 技術センター, 2019/11/05
 13:30]</p>
 
                         </div>

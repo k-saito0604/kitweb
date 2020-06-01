@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,25 +285,17 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2013/02/28*</p>
-
 <p>[番号]
 技術ノート KGTN 2013021903</p>
-
 <p>[現象]
 [GGW3.2.1] プログラムウインドウの初期化 （クライアントプリンタの構成）
 で遅延が発生した場合，GGはどのような処理を行うのか？</p>
-
 <p>[説明]
 プログラムウインドウの初期化 （クライアントプリンタの構成）
 で遅延が発生した場合，GGは以下の処理を行います．</p>
-
 <p>クライアントプリンタの構成を開始し１分を経過．
 クライアントの画面に &ldquo;GO-Global failed to launch the Program Window for
 your session&rdquo; を表示．
@@ -314,20 +306,16 @@ initializations within 1 minute(s) after being launched as process
 PW.EXE のプロセスを強制終了．
 PW.EXE が終了したためセッションが終了 （通常の処理）．
 TCP/IPレベルでコネクションを切断 （サーバ側契機）．</p>
-
 <p>なお，クライアント側の障害でクライアントプリンタの構成が遅延した時，障害発生の状況により上記2のダイアログが表示されないことがあります
 （注：プロセッサやメモリの過負荷等で，サーバ側からのダイアログ表示要求を受け取ることが困難な場合）
 ．</p>
-
 <p>補　足
 プログラムウインドウの初期化のタイムアウトは，クライアントプリンタの構成の遅延だけでなく，ネットワークドライブのマウントやログオンスクリプトの遅延でも発生します．なお，ログオンスクリプトの実行中に強制終了させることは危険なため
 （注：GGはその処理内容が分からないため強制終了して良いのか判断出来ません）
 ，GGはログオンスクリプトの終了を待ってタイムアウトのダイアログを表示します．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1209/KGTN2013021903.pdf">KGTN2013021903.pdf</a>
- [(72.9 KB)] [kitasp 技術センター, 2013/02/28
+[(72.9 KB)] [kitasp 技術センター, 2013/02/28
 14:54]</p>
 
                         </div>

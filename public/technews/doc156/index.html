@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,24 +285,16 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2014/11/28*</p>
-
 <p>[番号]
 技術ノート KGTN 2014112801</p>
-
 <p>[現象]
 [GGH4.X]
 GGはアプリケーションのメモリ確保要求に対しカーネル空間からメモリを割り当てるそうだが，アプリケーションがそのメモリを二重解放した場合，BSODが発生するのか？</p>
-
 <p>[説明]
 アプリケーションの単純なミス等によるメモリの二重解放ではBSODは発生しません．例えば，次のようなコードでBSODが発生することはありません．</p>
-
 <pre><code>int *pi = new int;
 delete pi;
 delete pi;
@@ -315,11 +307,9 @@ FILE *fp = fopen(...);
 fclose(fp);
 fclose(fp);
 </code></pre>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1796/KGTN2014112801.pdf">KGTN2014112801.pdf</a>
- [(49.8 KB)] [kitasp 技術センター, 2014/11/28
+[(49.8 KB)] [kitasp 技術センター, 2014/11/28
 19:58]</p>
 
                         </div>

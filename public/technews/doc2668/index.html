@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,31 +285,22 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2019/07/12*</p>
-
 <p>[番号]
 技術ノート KGTN 2019071101</p>
-
 <p>[現象]
 [GGH6.X] Windows Server 2016 + ATOK Pro 2 + GGH6.0
 の環境で、GGクライアントのオプション -kb
 でログオン時のIMEをATOKにしたい。</p>
-
 <p>[説明]
 バージョン6.0の英文の Administrator Guide
 の148～153ページにクライアントのキーボードとIMEの設定方法の説明があります。オプション
 -kb で指定するパラメタは GGII (GO-Global Input Identifiers)
 と呼ばれる8桁の16進数で、Microsoft IME のGGIIは次のレジストリにある
 00000411 です。</p>
-
 <p>HKLMSYSTEMCurrentControlSetControlKeyboard Layouts00000411</p>
-
 <p>ATOK Pro 2 に切り替えるには、このレジストリに別の値で ATOK Pro 2
 が登録されている必要がありますが、 Windows Server 2016
 の環境に適合する方法で ATOK Pro 2
@@ -317,19 +308,14 @@
 でログオン時に ATOK Pro 2
 に切り替えることは出来ません。なお、次のコントロールパネルで
 「ユーザー単位に」 既定のIMEを ATOK Pro 2 にすることは可能です。</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/4323/KGTN2019071101.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/4323/KGTN2019071101.jpg" alt=""></p>
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4322/KGTN2019071101.pdf">KGTN2019071101.pdf</a>
- [(108 KB)] [kitasp 技術センター, 2019/07/12
+[(108 KB)] [kitasp 技術センター, 2019/07/12
 10:21]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4323/KGTN2019071101.jpg">KGTN2019071101.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/4323/KGTN2019071101.jpg" title="表示">表示</a>
- [(26.3 KB)] [kitasp 技術センター, 2019/07/12
+[(26.3 KB)] [kitasp 技術センター, 2019/07/12
 10:21]</p>
 
                         </div>

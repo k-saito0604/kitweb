@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,47 +285,37 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2011/02/07*</p>
-
 <p>[番号]
 技術ノート KGTN 2011020702</p>
-
 <p>[現象]
 [GGW3.2.1] Universal Printer Driver
 を使用した場合，何ページくらい印刷出来るのか？</p>
-
 <p>[説明]
 ドキュメントの種類やハードウエア環境に依存して，印刷出来るページ数は大きく異なりますので，一般論で印刷可能なページ数を示すことは出来ません．ある実験では，
 「7,000ページは印刷できたが，7,200ページは印刷出来なかった」
 という報告があります．</p>
-
 <p>参　考
 Universal Printer Driver が使用するPDFエンジン PDF-XChange 3
 のメーカーのコメントは以下の通りです．</p>
-
 <p>The varies very much depending on the hardware you have (e.g. Disk
 space, Ram and Processor etc) and of course the files themselves. The
 type of content and compression/optimization will also have some
-bearing. We are aware of many clients creating in excess of 20,000 pages
-- but then the above is a factor.</p>
-
-<pre><code>K&gt; In 32bit Windows, this limit depends on the memory which &quot;pdfServer3.exe&quot; 
-  K&gt; can allocate (ie. 2GB). Correct?
-</code></pre>
-
+bearing. We are aware of many clients creating in excess of 20,000 pages</p>
+<ul>
+<li>
+<p>but then the above is a factor.</p>
+<p>K&gt; In 32bit Windows, this limit depends on the memory which &ldquo;pdfServer3.exe&rdquo;
+K&gt; can allocate (ie. 2GB). Correct?</p>
+</li>
+</ul>
 <p>Its a little more complex - but your calculation would certainly be
 approximately right.</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/472/KGTN2011020702.pdf">KGTN2011020702.pdf</a>
- [(62.5 KB)] [kitasp 技術センター, 2011/02/07
+[(62.5 KB)] [kitasp 技術センター, 2011/02/07
 12:40]</p>
 
                         </div>

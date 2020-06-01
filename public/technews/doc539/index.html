@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,24 +285,17 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2013/08/09*</p>
-
 <p>[番号]
 技術ノート KGTN 2013080902</p>
-
 <p>[現象]
 [GGH4.X] ログオン時に &ldquo;Connection failed. Access to the host was
 denied&rdquo;
 というメッセージが表示されログオンに失敗する．APSログを確認すると &ldquo;AS:
 Function NativeCreateProcess() failed with situationID 3995, ntStatus
 3221225496, dwGLE 0&rdquo; という記録がある．</p>
-
 <p>[説明]
 &ldquo;ntStatus 3221225496&rdquo; の内容は STATUS_CONFLICTING_ADDRESSES
 （アドレス範囲の矛盾）
@@ -312,17 +305,14 @@ Function NativeCreateProcess() failed with situationID 3995, ntStatus
 GGAPS のスタートアップの種類を 「自動（遅延開始）」
 にするか，それでも早過ぎる場合はスクリプト等で3〜5分後に GGAPS
 を開始して下さい．</p>
-
 <p>補　足
 拡張パック （有償製品） に， GGAPS
 を遅延開始し，それでも接続に失敗する場合は GGAPS
 を自動的に再起動する監視プログラム GGAPSManager を追加する予定です
 （リリース予定は2013年12月下旬） ．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1362/KGTN2013080902.pdf">KGTN2013080902.pdf</a>
- [(76.8 KB)] [kitasp 技術センター, 2013/08/09
+[(76.8 KB)] [kitasp 技術センター, 2013/08/09
 13:33]</p>
 
                         </div>

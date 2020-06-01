@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,29 +285,22 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p><em>技術ノート
 2014/03/14</em></p>
-
 <p>[番号]
 技術ノート KGTN 2014031402</p>
-
 <p>[現象]
 [GGH4.X]
 2台のライセンスサーバを使用する場合，GGサーバの設定はどのようにするのか？</p>
-
 <p>[説明]
 GGサーバのライセンスサーバは使用しないため，サービス GO-Global License
 Manager を停止し，かつスタートアップを 「手動」
 にします．次にシステム環境変数 LM_LICENSE_FILE に
-<LicenseServer1のポート番号><code>&lt;LicenseServer1のIPアドレス&gt;;&lt;LicenseServer1のポート番号&gt;</code><LicenseServer1のIPアドレス>
+&lt;LicenseServer1のポート番号&gt;<code>&lt;LicenseServer1のIPアドレス&gt;;&lt;LicenseServer1のポート番号&gt;</code>&lt;LicenseServer1のIPアドレス&gt;
 を設定し，サーバを再起動して下さい
 （注：設定変更時に必ずサーバの再起動を行って下さい）
 ．以下に，設定のサンプルと lmtools の結果を示します．</p>
-
 <pre><code>LM_LICENSE_FILE = 27000@192.168.102.61;27000@192.168.102.86
 -------- 6 ユーザがログオンした状態
 Status
@@ -340,11 +333,9 @@ Users of gateway: (Total of 5 licenses issued; Total of 0 licenses in use)
 
 Users of any_app: (Uncounted, node-locked)
 </code></pre>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1622/KGTN2014031402.pdf">KGTN2014031402.pdf</a>
- [(65.8 KB)] [kitasp 技術センター, 2014/03/14
+[(65.8 KB)] [kitasp 技術センター, 2014/03/14
 19:37]</p>
 
                         </div>

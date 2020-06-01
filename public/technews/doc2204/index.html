@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,41 +285,30 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2016/12/14*</p>
-
 <p>[番号]
 技術ノート KGTN 2016120501</p>
-
 <p>[現象]
 [Windows/PowerShell] PowerShell
 でリモート処理を行う場合に必要な設定は？</p>
-
 <p>[説明]
 ローカルアカウントで Windows PowerShell を 「管理者として実行する」
 で起動し，その中で下記のコマンドを実行して下さい． Set-ExecutionPolicy
 Bypass は，状況に応じてセキュリティを高めるRemoteSigned
 等に変更して下さい．</p>
-
 <pre><code>1. Enable-PSRemoting
 2. Set-Item WSMan:localhostClientTrustedHosts -Value *
 3. Winrm Quickconfig
 4. Enter-PSSession &lt;接続先のIP アドレス&gt;
 5. Set-ExecutionPolicy Bypass
 </code></pre>
-
 <p>上記の設定を行ってもリモート接続 （Enter-PSSession）
 に失敗する場合は，接続先に接続元と同じ管理者アカウントが存在するかどうかを確認して下さい．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3235/KGTN2016120501.pdf">KGTN2016120501.pdf</a>
- [(65.7 KB)] [kitasp 技術センター, 2017/02/22
+[(65.7 KB)] [kitasp 技術センター, 2017/02/22
 17:00]</p>
 
                         </div>

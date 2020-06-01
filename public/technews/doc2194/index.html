@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,97 +285,63 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2017/03/07*</p>
-
 <p>[番号]
 技術ノート KGTN 2017012301</p>
-
 <p>[現象]
 [GGH5.X/ExPack] 拡張パックの GGEasyLog
 は，どのようなソフトウエアなのか？</p>
-
 <p>[説明]
 GGEasyLog はアプリケーション （.EXE）
 のラッパー・プログラムで，これを介してアプリケーションが起動されると，アプリケーションの起動日時・終了日時・ユーザーID・クライアント端末の名前・クライアント端末のIPアドレスがログに記録されます．環境設定および動作例を以下に示します．</p>
-
 <p>[設定ファイル]</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3259/KGTN2017012301-1.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3259/KGTN2017012301-1.jpg" alt=""></p>
 <p>ログを記録するアプリケーションの名称とプログラム（.EXE）のパスを登録します．</p>
-
 <p>[アプリケーション登録]</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3260/KGTN2017012301-2.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3260/KGTN2017012301-2.jpg" alt=""></p>
 <p>クラスターマネージャーでは，実行パスに GGEasyLog
 を指定し，コマンドラインのオプションで ?app
 を指定します．アイコンを本来のアプリケーションのアイコンに変更します．</p>
-
 <p>[アプリケーションの起動]</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3261/KGTN2017012301-3.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3261/KGTN2017012301-3.jpg" alt=""></p>
 <p>GGにログオン後，登録したアプリケーションを起動します． 先ず，GGEasyLog
 が起動され， GGEasyLog はログに起動日時を記録し，次にアプリケーション
 （この例ではIE） を起動します．この時タスクバーには，ラッパーの
 GGEasyLog は現れません．</p>
-
 <p>[アプリケーションの終了]</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3262/KGTN2017012301-4.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3262/KGTN2017012301-4.jpg" alt=""></p>
 <p>アプリケーションを閉じます． GGEasyLog
 はアプリケーションの終了を認識し，終了日時を記録します．</p>
-
 <p>[ログ]</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3263/KGTN2017012301-5.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3263/KGTN2017012301-5.jpg" alt=""></p>
 <p>Start行 が開始日時， Ended行 が終了日時です． App
 はアプリケーションの名称， PID はプロセスID，USER はユーザーID， CNAME
 はクライアント端末の名前， IPADDR はクライアント端末のIPアドレスです．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3258/KGTN2017012301.pdf">KGTN2017012301.pdf</a>
- [(369 KB)] [kitasp 技術センター, 2017/03/07
+[(369 KB)] [kitasp 技術センター, 2017/03/07
 16:47]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3259/KGTN2017012301-1.jpg">KGTN2017012301-1.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3259/KGTN2017012301-1.jpg" title="表示">表示</a>
- [(12.4 KB)] [kitasp 技術センター, 2017/03/07
+[(12.4 KB)] [kitasp 技術センター, 2017/03/07
 16:47]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3260/KGTN2017012301-2.jpg">KGTN2017012301-2.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3260/KGTN2017012301-2.jpg" title="表示">表示</a>
- [(9.96 KB)] [kitasp 技術センター, 2017/03/07
+[(9.96 KB)] [kitasp 技術センター, 2017/03/07
 16:47]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3261/KGTN2017012301-3.jpg">KGTN2017012301-3.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3261/KGTN2017012301-3.jpg" title="表示">表示</a>
- [(9.59 KB)] [kitasp 技術センター, 2017/03/07
+[(9.59 KB)] [kitasp 技術センター, 2017/03/07
 16:47]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3262/KGTN2017012301-4.jpg">KGTN2017012301-4.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3262/KGTN2017012301-4.jpg" title="表示">表示</a>
- [(55.6 KB)] [kitasp 技術センター, 2017/03/07
+[(55.6 KB)] [kitasp 技術センター, 2017/03/07
 16:47]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3263/KGTN2017012301-5.jpg">KGTN2017012301-5.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3263/KGTN2017012301-5.jpg" title="表示">表示</a>
- [(14 KB)] [kitasp 技術センター, 2017/03/07
+[(14 KB)] [kitasp 技術センター, 2017/03/07
 16:47]</p>
 
                         </div>

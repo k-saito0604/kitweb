@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,24 +285,17 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p><em>技術ノート
 2014/05/16</em></p>
-
 <p>[番号]
 技術ノート KGTN 2014050701</p>
-
 <p>[現象]
 [GGW3.2.1] 技術ノート KGTN#2013110601 の SYMEVENT
 関連の情報を得たが，この情報からBSODの原因は分かるか？</p>
-
 <p>[説明]
 SYMEVENT
 関連の情報をもとにGraphOn社で調査を行ったところ，BSODを引き起こしたと思われる原因が分かりました．</p>
-
 <pre><code>The issue occurs in version 3.2 when a session closes while the &quot;csrss.exe&quot; process is displaying
 a dialog box. It is uncommon for &quot;csrss.exe&quot; to display a dialog box, but it does display a dialog
 box when a hard error (e.g., unhandled access violation) occurs in a process. In the crash you
@@ -315,7 +308,6 @@ version 4.0.1 and later, the logon process does not terminate &quot;csrss.exe&qu
 version 3.2 can work around the issue by making the registry change described below.
 HKLMSYSTEMCurrentControlSetControlWindowsErrorMode REG_DWORD 2
 </code></pre>
-
 <p>何らかの原因でWindowsのハードエラーが発生し， csrss.exe
 がダイアログボックスを表示したと思われます（通常 csrss.exe
 がダイアログボックスを表示することはありません）
@@ -327,14 +319,11 @@ csrss.exe のダイアログボックスが存在すると csrss.exe
 「常にイベント ログにエラーをログし、ハード エラーに [ok]
 を返します。ポップアップは表示されません」 という動作になります
 （マイクロソフト社の知識ベース KB128642 より） ．</p>
-
 <p>HKLMSYSTEMCurrentControlSetControlWindowsErrorMode REG_DWORD
 2</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1675/KGTN2014050701.pdf">KGTN2014050701.pdf</a>
- [(76.7 KB)] [kitasp 技術センター, 2014/05/16
+[(76.7 KB)] [kitasp 技術センター, 2014/05/16
 17:57]</p>
 
                         </div>

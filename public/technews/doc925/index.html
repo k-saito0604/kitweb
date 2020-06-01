@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,23 +285,15 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2018/10/04*</p>
-
 <p>[番号]
 技術ノート KGTN 2018082402</p>
-
 <p>[現象]
 [GGH6.0] バージョン6.0で動画表示のパフォーマンスを向上させる設定は？</p>
-
 <p>[説明]
 パフォーマンス自動調整機能を有効にすることで，動画表示のパフォーマンスが向上します．この設定方法は，次の通りです．</p>
-
 <pre><code>1. サービスGO-Global Application Publishing Service を停止する．
 2. C:ProgramDataGraphOnGO-GlobalHostProperties.xml をテキストエディタで開く．
 3. 文字列 ClientProcessingBatch を探す．
@@ -317,14 +309,11 @@
 13. レジストリエディタを閉じる．
 14. サービスGO-Global Application Publishing Service を開始する．
 </code></pre>
-
 <p>補　足
 パフォーマンス自動調整機能が無効な場合，ホストからクライアントへ描画命令が送信され，クライアントはその描画命令に従い画面を更新します．動画を表示するアプリケーションの場合は，描画命令を送信するよりも，ホスト上で描画結果を待ちその画像データをクライアントへ送信し，クライアントがその画像データで画面を更新した方が効率的です．パフォーマンス自動調整機能を有効にする上記設定が行われると，アプリケーションの処理内容に応じて，より効率の良い方式が自動的に選択されます．なお，動画ではフレームが間引かれても問題ありませんが，一般のアプリケーションの描画では間引かれると画面が乱れる可能性がありますので，パフォーマンス自動調整機能の既定の設定は無効になっております．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4140/KGTN2018082402.pdf">KGTN2018082402.pdf</a>
- [(59.7 KB)] [kitasp 技術センター, 2018/10/04
+[(59.7 KB)] [kitasp 技術センター, 2018/10/04
 10:54]</p>
 
                         </div>

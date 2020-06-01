@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,55 +285,42 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2011/01/06*</p>
-
 <p>[番号]
 技術ノート KGTN 2011010701</p>
-
 <p>[現象]
 [GGW3.2]
 レンタルサーバにGGをインストールしたが，どのような手順で確認すれば良いか？</p>
-
 <p>[説明]
 レンタルサーバのサービス （仕様や環境など）
 によってチェックする内容は変わりますが，一般的には以下の手順で確認するのが良いでしょう．</p>
-
 <p>サービス &ldquo;GO-Global Application Publishing Service&rdquo; の状態が 「開始」
 になっていること．</p>
-
 <p>そのサーバ内からGGへログオン出来ること．
-2.1) <GGのインストールディレクトリ>¥GO-Global Server¥Programs にある
+2.1) &lt;GGのインストールディレクトリ&gt;¥GO-Global Server¥Programs にある
 ggw.exe をダブルクリック．
 2.2) Server Address に localhost を入力．
 2.3) Connect ボタンをクリック．
 2.4) ログオンダイアログが表示され，かつログオンできることを確認．</p>
-
 <p>クライアントからGGサーバへ （ネットワークレベルで） 接続出来ること．
 3.1) クライアントでDOS窓をオープン．
-3.2) telnet <GGサーバのIPアドレス> 491 を実行．
+3.2) telnet &lt;GGサーバのIPアドレス&gt; 491 を実行．
 3.3) 接続されることを確認 （接続中の状態が続かないことを確認） ．</p>
-
-<p>4)
-クライアントからGGのクライアントを介してGGサーバへログオン出来ること．</p>
-
+<ol start="4">
+<li></li>
+</ol>
+<p>クライアントからGGのクライアントを介してGGサーバへログオン出来ること．</p>
 <p>補　足
 上記3.3でポート番号491へ接続出来ない場合は，レンタルサーバ側のファイアウォール等で491へのアクセスが拒否されています．このような場合は，GGサーバの待ち受けポートを491から443へ変更して下さい
 （注：
 クラスタマネージャでポート番号を変更することに加え，ログオン用HTMLで明示的にポート番号443を指定する必要もあります）．</p>
-
 <p>上記3.2で使用する telnet コマンドが無い環境では，ターミナルエミュレータ
 &ldquo;Tera Term&rdquo; 等をインストールして下さい．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/447/KGTN2011010701.pdf">KGTN2011010701.pdf</a>
- [(70 KB)] [kitasp 技術センター, 2011/01/07
+[(70 KB)] [kitasp 技術センター, 2011/01/07
 08:45]</p>
 
                         </div>

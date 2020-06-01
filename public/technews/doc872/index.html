@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,34 +285,25 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2012/10/19*</p>
-
 <p>[番号]
 技術ノート KGTN 2012070601</p>
-
 <p>[現象]
 [SDK] エンタープライズオプションの GGSessionMonitor
 に情報を外部に通知する機能はないのか？</p>
-
 <p>[説明]
 サーバ情報 （server_tbl），セッション情報
 （session_tbl），セッション履歴情報 （user_tbl）
 をHTTP/POSTで送信する機能があります．サーバ情報は１秒間隔で送信され，セッション情報およびはセッション履歴情報は更新事象発生時に送信されます．GGSessionMonitor.ini
 の設定例と受信側のサンプル （PHPで記述） を以下に示します．</p>
-
 <p>[File: GGSessionMonitor.ini]
 [default]
 logLevel = 4
 port = 491
 cpuUsageCheck = 3
 cpuUsageSleep = 100</p>
-
 <p>[gsm450]
 host = 192.168.102.104
 logFile = gsm413-%YYYYMMDD%-log.txt
@@ -326,86 +317,15 @@ httpPostServer = <a href="http://192.168.102.29/gsmPostH.php">http://192.168.102
 httpPostSession = <a href="http://192.168.102.29/gsmPostS.php">http://192.168.102.29/gsmPostS.php</a>
 &lsquo;&mdash; user_tbl &mdash; セッション履歴情報の送信先
 httpPost = <a href="http://192.168.102.29/gsmPost.php">http://192.168.102.29/gsmPost.php</a></p>
-
-<p>[File: gsmPostH.php]
-<html>
-<body>
-$fp = fopen(&ldquo;C:/TEMP/gsmPostServer.txt&rdquo;, &ldquo;a+&rdquo;);
-fprintf($fp,&ldquo;&mdash; gsmPostServer &mdash;¥r¥n&rdquo;);
-fprintf($fp,&ldquo;serverName = %s¥r¥n&rdquo;,$_POST[&lsquo;serverName&rsquo;]);
-fprintf($fp,&ldquo;serverAddress = %s¥r¥n&rdquo;,$_POST[&lsquo;serverAddress&rsquo;]);
-fprintf($fp,&ldquo;maxSessions = %s¥r¥n&rdquo;,$_POST[&lsquo;maxSessions&rsquo;]);
-fprintf($fp,&ldquo;sessionCount = %s¥r¥n&rdquo;,$_POST[&lsquo;sessionCount&rsquo;]);
-fprintf($fp,&ldquo;processCount = %s¥r¥n&rdquo;,$_POST[&lsquo;processCount&rsquo;]);
-fprintf($fp,&ldquo;cpuUsage = %s¥r¥n&rdquo;,$_POST[&lsquo;cpuUsage&rsquo;]);
-fprintf($fp,&ldquo;memoryUsage = %s¥r¥n&rdquo;,$_POST[&lsquo;memoryUsage&rsquo;]);
-fprintf($fp,&ldquo;availability = %s¥r¥n&rdquo;,$_POST[&lsquo;availability&rsquo;]);
-fprintf($fp,&ldquo;checkTime = %s¥r¥n&rdquo;,$_POST[&lsquo;checkTime&rsquo;]);
-fclose($fp);
-?&gt;
-</body>
-</html></p>
-
-<p>[File: gsmPostS.php]
-<html>
-<body>
-$sc = (int)$_POST[&lsquo;sessionCount&rsquo;];
-$fp = fopen(&ldquo;C:/TEMP/gsmPostSession.txt&rdquo;, &ldquo;a+&rdquo;);
-fprintf($fp,&ldquo;&mdash; gsmPostSession &mdash;¥r¥n&rdquo;);
-if($sc &gt; 0) {
-for($ii = 0; $ii fprintf($fp,&rdquo;[Session#%d]¥r¥n&rdquo;,($ii+1));
-$fm = sprintf(&ldquo;sessionID%d&rdquo;,($ii+1));
-fprintf($fp,&ldquo;sessionID = %s¥r¥n&rdquo;,$_POST[$fm]);
-$fm = sprintf(&ldquo;sessionName%d&rdquo;,($ii+1));
-fprintf($fp,&ldquo;sessionName = %s¥r¥n&rdquo;,$_POST[$fm]);
-$fm = sprintf(&ldquo;userName%d&rdquo;,($ii+1));
-fprintf($fp,&ldquo;userName = %s¥r¥n&rdquo;,$_POST[$fm]);
-$fm = sprintf(&ldquo;startTime%d&rdquo;,($ii+1));
-fprintf($fp,&ldquo;startTime = %s¥r¥n&rdquo;,$_POST[$fm]);
-$fm = sprintf(&ldquo;clientID%d&rdquo;,($ii+1));
-fprintf($fp,&ldquo;clientID = %s¥r¥n&rdquo;,$_POST[$fm]);
-$fm = sprintf(&ldquo;serverName%d&rdquo;,($ii+1));
-fprintf($fp,&ldquo;serverName = %s¥r¥n&rdquo;,$_POST[$fm]);
-$fm = sprintf(&ldquo;clientName%d&rdquo;,($ii+1));
-fprintf($fp,&ldquo;clientName = %s¥r¥n&rdquo;,$_POST[$fm]);
-$fm = sprintf(&ldquo;clientAddress%d&rdquo;,($ii+1));
-fprintf($fp,&ldquo;clientAddress = %s¥r¥n&rdquo;,$_POST[$fm]);
-}
-}
-else {
-fprintf($fp,&rdquo;*NONE*¥r¥n&rdquo;);
-}
-fclose($fp);
-?&gt;
-</body>
-</html></p>
-
-<p>[File: gsmPost.php]
-<html>
-<body>
-$fp = fopen(&ldquo;C:/TEMP/gsmPost.txt&rdquo;, &ldquo;a+&rdquo;);
-fprintf($fp,&ldquo;&mdash; gsmPost &mdash;¥r¥n&rdquo;);
-fprintf($fp,&ldquo;seqid = %s¥r¥n&rdquo;,$_POST[&lsquo;seqid&rsquo;]);
-fprintf($fp,&ldquo;operation = %s¥r¥n&rdquo;,$_POST[&lsquo;operation&rsquo;]);
-fprintf($fp,&ldquo;sessionName = %s¥r¥n&rdquo;,$_POST[&lsquo;sessionName&rsquo;]);
-fprintf($fp,&ldquo;userName = %s¥r¥n&rdquo;,$_POST[&lsquo;userName&rsquo;]);
-fprintf($fp,&ldquo;startTime = %s¥r¥n&rdquo;,$_POST[&lsquo;startTime&rsquo;]);
-fprintf($fp,&ldquo;clientCount = %s¥r¥n&rdquo;,$_POST[&lsquo;clientCount&rsquo;]);
-fprintf($fp,&ldquo;clientID = %s¥r¥n&rdquo;,$_POST[&lsquo;clientID&rsquo;]);
-fprintf($fp,&ldquo;serverName = %s¥r¥n&rdquo;,$_POST[&lsquo;serverName&rsquo;]);
-fprintf($fp,&ldquo;clientName = %s¥r¥n&rdquo;,$_POST[&lsquo;clientName&rsquo;]);
-fprintf($fp,&ldquo;clientCount = %s¥r¥n&rdquo;,$_POST[&lsquo;clientCount&rsquo;]);
-fprintf($fp,&ldquo;clientAddress = %s¥r¥n&rdquo;,$_POST[&lsquo;clientAddress&rsquo;]);
-fprintf($fp,&ldquo;endTime = %s¥r¥n&rdquo;,$_POST[&lsquo;endTime&rsquo;]);
-fclose($fp);
-?&gt;
-</body>
-</html></p>
-
+<p>[File: gsmPostH.php]</p>
+<!-- raw HTML omitted -->
+<p>[File: gsmPostS.php]</p>
+<!-- raw HTML omitted -->
+<p>[File: gsmPost.php]</p>
+<!-- raw HTML omitted -->
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/939/KGTN2012070601.pdf">KGTN2012070601.pdf</a>
- [(80 KB)] [kitasp 技術センター, 2012/10/19
+[(80 KB)] [kitasp 技術センター, 2012/10/19
 10:10]</p>
 
                         </div>

@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,21 +285,14 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2011/11/29*</p>
-
 <p>[番号]
 技術ノート KGTN 2011113001</p>
-
 <p>[現象]
 [Windows] パフォーマンスカウンタの Memory¥Pages/sec
 に大きい値が記録されている時があるが，物理メモリが不足しているのか？</p>
-
 <p>[説明]
 このカウンタは 「メモリ上に存在しないデータが要求され，ディスクからの
 read / write　が発生した頻度 （１秒間毎） 」
@@ -307,18 +300,15 @@ read / write　が発生した頻度 （１秒間毎） 」
 だけでなく，アプリケーションの実行モジュール読込みやデータファイルの
 read / write 等でもこの値が増加しますので， Memory¥Pages/sec
 の値が大きいことが直ちに物理メモリの不足を意味するものではありません．</p>
-
 <p>参　考
 サイズの大きな （あるいは重たい） アプリケーションを初めて起動した時は，
 Memory¥Pages/sec の値は一時的に大きな値 （例えば 7,000）
 になります．この後，アプリケーションを終了し改めて起動すると，
 （状況にもよりますが）
 アプリケーションの実行モジュールやデータファイルがメモリにキャッシュされているため大きな値にはなりません．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/713/KGTN2011113001.pdf">KGTN2011113001.pdf</a>
- [(61.6 KB)] [kitasp 技術センター, 2011/11/30
+[(61.6 KB)] [kitasp 技術センター, 2011/11/30
 08:26]</p>
 
                         </div>

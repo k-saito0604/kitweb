@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,21 +285,14 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2015/12/17*</p>
-
 <p>[番号]
 技術ノート KGTN 2015111101</p>
-
 <p>[現象]
 [GGH4.X-5.X/ExPack] 拡張パックの GGHealthCheck2
 とはどんなツールなのか？</p>
-
 <p>[説明]
 ロードバランサのヘルスチェック機能 （TCP/IPレベル）
 でGGのポート491を監視した場合，GGは接続要求を検出した時点で様々なリソースを確保します
@@ -308,22 +301,17 @@
 （TCP/IPレベル）
 を行うと，それがパフォーマンスに影響を与える可能性があります．
 GGHealthCheck2 は，このような問題を解決するために作成しました．</p>
-
 <p>GGHealthCheck2 は，定期的にGGサーバーの稼働状況を
 （GGのプロトコルを通して）
 チェックし，その状況を記録します．ロードバランサのヘルスチェック機能
 （TCP/IPレベル） 等により， GGHealthCheck2
 の待ち受けポートにアクセスがあると，以下のようなウエッブドキュメントを返します．２行目がGGサーバーの最新の稼働状況を示しており，
 UP が正常を意味し， DOWN が異常を意味します．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3635/KGTN2015111101-1.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3635/KGTN2015111101-1.jpg" alt=""></p>
 <p>設定ファイル
 設定ファイル GGHealthCheck2.ini の default
 セクションで，以下のパラメタを設定して下さい．</p>
-
-<hr />
-
+<hr>
 <pre><code> 設定項目                            説　　明
  logLevel       ログの出力レベル，通常は1を指定し，障害時は4を指定
    logd              ログファイルを作成するフォルダ（省略可）
@@ -332,12 +320,9 @@ UP が正常を意味し， DOWN が異常を意味します．</p>
   timeout            APS監視のタイムアウトの秒数（既定値は30）
    port        GGHealthCheck2 の待ち受けポートの番号（既定値は8491）
 </code></pre>
-
 <p>shutdownSleep        shutdown() 実行までの遅延設定（既定値で可）
-    closeSleep        closesocket() 実行までの遅延設定（既定値で可）</p>
-
-<hr />
-
+closeSleep        closesocket() 実行までの遅延設定（既定値で可）</p>
+<hr>
 <p>導入方法
 インストーラー （GGHealthCheck2-Setup.exe）
 でのインストールが完了した後，スタートメニューの 「GGHealthCheck2 → 3)
@@ -345,25 +330,18 @@ UP が正常を意味し， DOWN が異常を意味します．</p>
 を選択し，表示されたフォルダに拡張パックのライセンスファイルをコピーして下さい．次にスタートメニューの
 「GGHealthCheck2 → 1) サービスを開始」 を選択し， GGHealthCheck2
 のサービスを開始して下さい．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3636/KGTN2015111101-2.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3636/KGTN2015111101-2.jpg" alt=""></p>
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3634/KGTN2015111101.pdf">KGTN2015111101.pdf</a>
- [(206 KB)] [kitasp 技術センター, 2017/05/24
+[(206 KB)] [kitasp 技術センター, 2017/05/24
 16:20]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3635/KGTN2015111101-1.jpg">KGTN2015111101-1.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3635/KGTN2015111101-1.jpg" title="表示">表示</a>
- [(22.8 KB)] [kitasp 技術センター, 2017/05/24
+[(22.8 KB)] [kitasp 技術センター, 2017/05/24
 16:21]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3636/KGTN2015111101-2.jpg">KGTN2015111101-2.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3636/KGTN2015111101-2.jpg" title="表示">表示</a>
- [(12.2 KB)] [kitasp 技術センター, 2017/05/24
+[(12.2 KB)] [kitasp 技術センター, 2017/05/24
 16:21]</p>
 
                         </div>

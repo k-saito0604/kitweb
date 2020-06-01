@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,43 +285,40 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2014/01/29*</p>
-
 <p>[番号]
 技術ノート KGTN 2013121901</p>
-
 <p>[現象]
 [GGH4.X] ActiveXクライアントをインストール中に IE でエラー
 （Win32の例外） が発生した．何をすべきか？</p>
-
 <p>[説明]
 一般にプログラムのインストール中にシステムレベルのエラーが発生した場合，どのような状況になっているのか推測出来ません．とりあえず，その時のデスクトップのスクリーンショットを採取し，
 （関連するファイルがロックされた状態になっている可能性がありますので）
 マシンを再起動して下さい．そして，以下の手順でActiveXクライアントを再度インストールして下さい．</p>
-
-<p>1) ActiveXクライアントを通常の手順でインストール
+<ol>
+<li>
+<p>ActiveXクライアントを通常の手順でインストール
 　A. 正常にインストールが完了しログオンに成功 → 正常
 　B. システムレベルのエラーが再度発生 → Windowsの障害
 　C. 正常にインストールが完了しログオンに失敗 → 下記2へ</p>
-
-<p>2) GGAXDelete4 または GGAXDelete4G でActiveXクライアントを強制削除</p>
-
-<p>3) ActiveXクライアントを通常の手順でインストール
+</li>
+<li>
+<p>GGAXDelete4 または GGAXDelete4G でActiveXクライアントを強制削除</p>
+</li>
+<li>
+<p>ActiveXクライアントを通常の手順でインストール
 　A. 正常にインストールが完了しログオンに成功 → 正常
 　B. 正常にインストールが完了しログオンに失敗 → 下記4へ</p>
-
-<p>4) GGAXDelete4 または GGAXDelete4G でActiveXクライアントを強制コピー</p>
-
+</li>
+<li>
+<p>GGAXDelete4 または GGAXDelete4G でActiveXクライアントを強制コピー</p>
+</li>
+</ol>
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1461/KGTN2013121901.pdf">KGTN2013121901.pdf</a>
- [(57 KB)] [kitasp 技術センター, 2014/01/29
+[(57 KB)] [kitasp 技術センター, 2014/01/29
 14:38]</p>
 
                         </div>

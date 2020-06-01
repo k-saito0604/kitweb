@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,27 +285,19 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2020/01/24*</p>
-
 <p>[番号]
 技術ノート KGTN 2019120601</p>
-
 <p>[現象]
 [GGH6.X]
 バージョン4.8からバージョン6.0へのアップグレードを考えているが、先にクライアント
 （ソフトウエア） をバージョン6.0へアップグレードすることは可能か？</p>
-
 <p>[説明]
 バージョン6.0のクライアントは下位互換性があるため、端末側を先にアップグレードすることが可能です。但しブラウザ系のクライアントでは、ログオンするページのコンテンツ
 （HTML）
 がバージョン4.8とバージョン6.0では異なるため、単純にクライアントをアップグレードするだけでは上手く動作しません。バージョン6.0用のウエッブサーバーを別途用意する必要があり、その運用は次のようになります。</p>
-
 <ol>
 <li>バージョン6.0のクライアント機能をインストールする。</li>
 <li>バージョン6.0のログオンページ （移行期用） へアクセスする。</li>
@@ -313,32 +305,23 @@
 <li>バージョン6.0のサーバー機能をインストールする。</li>
 <li>バージョン6.0のログオンページ（本番用）へアクセスする。</li>
 </ol>
-
 <p>利用者にとってみると 「移行前のログオンページ → 移行期のログオンページ →
 移行前と同じログオンページ」
 とアクセスするページが変わり、操作上の負担が大きくなります。</p>
-
 <p>この問題を回避するには、ログオンページに依存しないWindowsの専用クライアントと弊社開発のログオンプログラム
 GGEasyLogon
 を使用する方法があります。この方法では、ブラウザを立ち上げることなく、下記画面から接続先のサーバーやユーザーを選んでワンクリックでGGサーバーへログオンすることが出来ます。</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/4441/KGTN2019120601.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/4441/KGTN2019120601.jpg" alt=""></p>
 <p>ブラウザからの機能が必須でなければ、この GGEasyLogon
 の利用をご検討ください。</p>
-
 <p>[※上記内容は、バージョン4.8からバージョン5.0へのアップグレードについても同様です。]{.underline}</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4440/KGTN2019120601.pdf">KGTN2019120601.pdf</a>
- [(61.3 KB)] [kitasp 技術センター, 2020/01/24
+[(61.3 KB)] [kitasp 技術センター, 2020/01/24
 12:53]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4441/KGTN2019120601.jpg">KGTN2019120601.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/4441/KGTN2019120601.jpg" title="表示">表示</a>
- [(19 KB)] [kitasp 技術センター, 2020/01/24
+[(19 KB)] [kitasp 技術センター, 2020/01/24
 12:53]</p>
 
                         </div>

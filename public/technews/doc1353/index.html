@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,20 +285,13 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2011/06/21*</p>
-
 <p>[番号]
 技術ノート KGTN 2011062102</p>
-
 <p>[現象]
 GGNetworkCheck の下記の下線の記録の意味は？</p>
-
 <p>[2011-06-17 08:25:29] Test#1 CL@08:25:29 -&gt;
 [2011-06-17 08:25:29] Test#1 CL@08:25:29 -&gt; SV@08:25:29 -&gt;
 [2011-06-17 08:25:29] Test#1 CL@08:25:29 -&gt; SV@08:25:29 -&gt;
@@ -317,31 +310,22 @@ Connected
 [2011-06-17 08:27:53] Test#1 CL@08:27:53 -&gt; SV@08:27:53 -&gt;
 CL@08:27:53 (32ms)
 [2011-06-17 08:27:58] Test#1 CL@08:27:58 -&gt;</p>
-
 <p>[説明]
 順を追って説明します．</p>
-
 <p>[2011-06-17 08:25:44] ERROR: recv(&lsquo;127.0.0.1&rsquo;,&lsquo;1457&rsquo;) -&gt; Failed
 [2011-06-17 08:27:47] INFO: Connection closed (&lsquo;127.0.0.1&rsquo;,&lsquo;1457&rsquo;)</p>
-
 <p>クライアントからのPINGメッセージの受信に失敗し，そしてソケットが閉じられたことを意味します．この処理は続けて行われますので，2分3秒も要しているのは明らかな異常です．</p>
-
 <p>[2011-06-17 08:27:48] ERROR: recv(&lsquo;localhost&rsquo;,&lsquo;8491&rsquo;) -&gt; Failed
 [2011-06-17 08:27:53] <strong>CLIENT</strong> Timeout = 10sec</p>
-
 <p>サーバからの応答メッセージの受信に失敗したため，クライアントは再度コネクションを張ろうとしましたがWinSockの初期化にも失敗しました
 （下線部の意味） ．</p>
-
 <p>[2011-06-17 08:27:53] INFO: socket(&lsquo;localhost&rsquo;,&lsquo;8491&rsquo;) -&gt;
 Connected
 [2011-06-17 08:27:53] INFO: Connected IPv4 (&lsquo;127.0.0.1&rsquo;,&lsquo;2620&rsquo;)</p>
-
 <p>クライアントは再試行によってコネクションを張ることが出来ました．サーバ側もクライアントからの接続要求を正常に受け付けました．以後，正常にクライアント〜サーバ間の通信が行われました．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/577/KGTN2011062102.pdf">KGTN2011062102.pdf</a>
- [(62.2 KB)] [kitasp 技術センター, 2011/06/21
+[(62.2 KB)] [kitasp 技術センター, 2011/06/21
 11:28]</p>
 
                         </div>

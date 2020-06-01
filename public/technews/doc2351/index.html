@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,54 +285,40 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p><em>技術ノート
 2016/08/26</em></p>
-
 <p>[番号]
 技術ノート KGTN 2016081902</p>
-
 <p>[現象]
 [GGH5.X/ExPack] 拡張パックの GGEasyMonitor
 のバージョン2.2.0をインストールしたが，クライアントの名前やアドレスに
 &ldquo;*&rdquo; が表示される．</p>
-
 <p>[説明]
 クライアント情報を取得するため，以下の設定作業を行って下さい．</p>
-
 <p>[GGの設定ファイルの修正]
 サーバー側から見たクライアントのIPアドレスを得るため，
 HostProperties.xml　の下記の項目に true
 を設定して下さい．なお，この作業はサービス GGAPS
 を停止した状態で行って下さい．</p>
-
 <pre><code>&lt;property id=&quot;NetworkAddressEnvVarEnabled&quot; group=&quot;ClientAccess&quot; type=&quot;BOOL&quot;&gt;
 &lt;value&gt;true&lt;/value&gt;
 &lt;/property&gt;
 </code></pre>
-
 <p>[グローバル・ログオンスクリプトの登録]
 クライアントの情報を取得し，それらの情報を作業ファイル
 （GGEasyMonitorClientInfo-Data.ini） に記録するため， logon-gem-ci.bat
 をグローバル・ログオンスクリプトとして登録して下さい．次に，管理者権限で
 GGEasyMonitor-Files.bat
 を実行し，作業ファイルに必要なアクセス権を設定して下さい．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2964/KGTN2016081902.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/2964/KGTN2016081902.jpg" alt=""></p>
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2963/KGTN2016081902.pdf">KGTN2016081902.pdf</a>
- [(75.5 KB)] [kitasp 技術センター, 2016/08/26
+[(75.5 KB)] [kitasp 技術センター, 2016/08/26
 13:23]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2964/KGTN2016081902.jpg">KGTN2016081902.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2964/KGTN2016081902.jpg" title="表示">表示</a>
- [(11 KB)] [kitasp 技術センター, 2016/08/26
+[(11 KB)] [kitasp 技術センター, 2016/08/26
 13:23]</p>
 
                         </div>

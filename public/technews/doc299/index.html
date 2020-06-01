@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,37 +285,29 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p><em>技術ノート
 2014/03/07</em></p>
-
 <p>[番号]
 技術ノート KGTN 2014030301</p>
-
 <p>[現象]
 [GGW3.2] クライアントプリンタが構成されない．APSログに &ldquo;pw (???) RS:
-Error registering port for printer &ldquo;Printer &hellip;&rdquo;; Failed to create
+Error registering port for printer &ldquo;Printer &hellip;&quot;; Failed to create
 registry key.&rdquo; という記録が多数ある．</p>
-
 <p>[説明]
 GGW3.2系では，クラスタマネージャで 「デフォルトプリンタのみを構成」
 を設定した場合，デフォルトプリンタに設定されたプリンタの情報が記録
 （蓄積）
 され，ログオン時にそれらのプリンタが全て構成されます．クライアント数およびプリンタ数が多い環境では，構成されるプリンタの数が多数になり，サーバ上に生成されるプロキシプリンタ
 （オートクリエイトプリンタ） が増え，その結果リソース不足が発生し &ldquo;pw
-(???) RS: Error registering port for printer &ldquo;Printer &hellip;&rdquo;; Failed to
+(???) RS: Error registering port for printer &ldquo;Printer &hellip;&quot;; Failed to
 create registry key.&rdquo;
 というエラーが発生することがあります．対応としては，GGサーバ上にあるプロキシプリンタを全て削除して下さい．さらに，
 （万全を期すなら） クライアント上の print.ini
 を削除して，蓄積されたデフォルトプリンタの情報をクリアして下さい．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1612/KGTN2014030301.pdf">KGTN2014030301.pdf</a>
- [(58.1 KB)] [kitasp 技術センター, 2014/03/07
+[(58.1 KB)] [kitasp 技術センター, 2014/03/07
 19:34]</p>
 
                         </div>

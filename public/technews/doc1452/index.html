@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,47 +285,33 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2011/02/21*</p>
-
 <p>[番号]
 技術ノート KGTN 2010041504</p>
-
 <p>[現象]
 APSログに下記のエラーが記録され，クライアントからの接続が出来ない．
 aps (???) CS: Failed to load certificate C:¥SSL¥server.crt.</p>
-
 <p>[説明]
 証明書ファイル server.crt の内容が正しくないか，または
 「GGの管理者ガイドに基づいて」
 OpenSSLで作成されたSSL証明書ではありません．GGの管理者ガイドを参考に，正しいSSL証明書を作成し，そのファイルをクラスタマネージャで設定して下さい．</p>
-
 <p>補　足
 証明書がOpenSSLで認識されるかどうか確認するには，次のコマンドを入力して下さい．</p>
-
 <p>openssl x509 -in server.crt -text</p>
-
 <p>認識されれば証明書の内容が表示され，認識されなければエラーが表示されます
 （以下の画面はエラーの一例です） ．</p>
-
 <p>このエラーが発生した時は，その証明書をメモ帳で開いて下さい．先頭行に
 &ldquo;&mdash;&ndash;BEGIN CERTIFICATE&mdash;&ndash;&rdquo; ，末尾行に &ldquo;&mdash;&ndash;END
 CERTIFICATE&mdash;&ndash;&rdquo;
 が無い場合は，証明書のフォーマットの誤りか，またはフォーマットは正しいものの
 （認証機関からメールで届いた） 証明書の保存方法に誤りがあります．</p>
-
 <p>注　意
 フォルダのパスやファイル名は，環境（設定）に合わせて読み替えて下さい．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/140/KGTN2010041504.pdf">KGTN2010041504.pdf</a>
- [(101 KB)] [kitasp 技術センター, 2011/02/21
+[(101 KB)] [kitasp 技術センター, 2011/02/21
 10:21]</p>
 
                         </div>

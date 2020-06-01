@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,21 +285,14 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2009/04/24*</p>
-
 <p>[番号]
 技術ノート KGTN 2009041601</p>
-
 <p>[現象]
 Disconnected sessions terminate = Immediately
 の設定にもかかわらず，ggw-3.2.1系でセッションが終了せずに残ることがある．</p>
-
 <p>[説明]
 ggw-3.2.0.4226から，ネットワーク障害等でセッションが切断された場合に，自動的に
 （明示的なログオン認証無しに）
@@ -308,7 +301,6 @@ sessions terminate =
 Immediately場合に有効に機能しなかったことから，ggw-3.2.1系よりSessionTimeoutBrokenConnectionというレジストリが追加され，前記の設定にかかわりなく所定の時間だけセッションが維持されるようになりました．この結果，
 Disconnected sessions terminate = Immediately
 の設定にもかかわらず，ggw-3.2.1系でセッションが終了せずに残る状況が発生することがあります．この機能を無効にする場合は，下記の設定を行って下さい．</p>
-
 <p>GO-Global Application Publishing Service サービスを停止します．
 レジストリエディタ （regedit.exe） を起動します．
 HKEY_LOCAL_MACHINE を展開します．
@@ -317,11 +309,9 @@ SessionTimeoutBrokenConnection を右クリックし 「修正」 を選択し�
 値のデータ項目に 0 を入力し，OKボタンをクリックします．
 レジストリエディタを閉じます．
 GO-Global Application Publishing Service サービスを開始します．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/12/KGTN2009041601.pdf">KGTN2009041601.pdf</a>
- [(71.1 KB)] [kitasp 技術センター, 2009/04/24
+[(71.1 KB)] [kitasp 技術センター, 2009/04/24
 09:53]</p>
 
                         </div>

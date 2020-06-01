@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,36 +285,25 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2010/07/01*</p>
-
 <p>[番号]
 技術ノート KGTN 2010063004</p>
-
 <p>[現象]
 IIS + ASP
 でファイルのダウンロード処理を作成したが，少し大きなファイルでもダウンロードに失敗する．</p>
-
 <p>[説明]
 Response.WriteFile 等でダウンロード処理を行うと， IIS の仕様 （制約）
 により少し大きなファイルでもダウンロードに失敗します．これを回避するには，マイクロソフト社の知識ベース</p>
-
 <pre><code>http://support.microsoft.com/kb/812406/ja
 http://support.microsoft.com/kb/812406/en
 </code></pre>
-
 <p>を参考に，実装方法 （運用方法） を変更して下さい．</p>
-
 <p>参　考
 PHP-5.3.2 （FastSGI）
 をインストールし試験したところ，以下のコードで約72MBの
 ggw-3.2.1.4466.exe を十分な速度でダウンロードすることが出来ました．</p>
-
 <p>$file = &ldquo;ggw-3.2.1.4466.exe&rdquo;;
 $file_length = filesize($file);
 header(&ldquo;Content-Disposition: attachment; filename=$file&rdquo;);
@@ -322,11 +311,9 @@ header(&ldquo;Content-Length:$file_length&rdquo;);
 header(&ldquo;Content-Type: application/octet-stream&rdquo;);
 readfile ($file);
 ?&gt;</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/216/KGTN2010063004.pdf">KGTN2010063004.pdf</a>
- [(64 KB)] [kitasp 技術センター, 2010/07/01
+[(64 KB)] [kitasp 技術センター, 2010/07/01
 12:07]</p>
 
                         </div>

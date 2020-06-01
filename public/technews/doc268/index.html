@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,40 +285,36 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p><em>技術ノート
 2014/04/18</em></p>
-
 <p>[番号]
 技術ノート KGTN 2014033101</p>
-
 <p>[現象]
 [GGH4.X] PreView PDF では表示されるのに，クライアント印刷が出来ない．
 考えられる原因は？</p>
-
 <p>[説明]
 PreView PDF で印刷内容が表示されることから，サーバ～クライアント間の UPD
 の処理は問題無いと考えられます．従って，以下のような原因が推測されます．</p>
-
-<p>1) 正しいプリンタを指定してない &hellip; &ldquo;プリンタ名 (from クライアント名)&rdquo;
+<ol>
+<li>
+<p>正しいプリンタを指定してない &hellip; &ldquo;プリンタ名 (from クライアント名)&rdquo;
 のプリンタを指定して下さい．サーバ側のプリンタや類似したプリンタ名のプリンタを指定している可能性が考えられます．</p>
-
-<p>2) 出力先のプリンタの権限が不足している &hellip;
+</li>
+<li>
+<p>出力先のプリンタの権限が不足している &hellip;
 クライアント側へ転送された印刷ジョブ（PDF）が，アクセス権の問題等によりプリンタへ出力出来ない可能性が考えられます．
 Administrator で印刷が可能かどうかチェックして下さい．</p>
-
-<p>3) クライアント側のサービス Print Spooler が停止している &hellip; Print
-Spooler を開始して下さい．なお，このケースでは，APSログに &ldquo;<User> on
-<Host>, gg-client (???) Failed to open client printer: <Printer
-Name>&rdquo; といったメッセージが記録されます．</p>
-
+</li>
+<li>
+<p>クライアント側のサービス Print Spooler が停止している &hellip; Print
+Spooler を開始して下さい．なお，このケースでは，APSログに &ldquo;<!-- raw HTML omitted --> on
+<!-- raw HTML omitted -->, gg-client (???) Failed to open client printer: <!-- raw HTML omitted -->&rdquo; といったメッセージが記録されます．</p>
+</li>
+</ol>
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1653/KGTN2014033101.pdf">KGTN2014033101.pdf</a>
- [(60.7 KB)] [kitasp 技術センター, 2014/04/18
+[(60.7 KB)] [kitasp 技術センター, 2014/04/18
 21:33]</p>
 
                         </div>

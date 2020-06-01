@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,25 +285,17 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2012/07/05*</p>
-
 <p>[番号]
 技術ノート KGTN 2012070501</p>
-
 <p>[現象]
 [SDK] エンタープライズオプション GGSessionMonitor
 のデータベースファイルを PHP で読む方法は？</p>
-
 <p>[説明]
 GGSessionMonitor が作成するデータベースファイルは SQLite3 です． PHP
 のドキュメントを読むと様々な方法がありますが，実際に読むことが出来たサンプルを以下に示します．</p>
-
 <pre><code>&lt;?php
     $db = new PDO(&quot;sqlite:C:/GraphOn/check/gms413-now.db&quot;);
     $st = $db-&gt;prepare(&quot;SELECT * FROM session_tbl ORDER BY sessionName ASC&quot;);
@@ -325,11 +317,9 @@ GGSessionMonitor が作成するデータベースファイルは SQLite3 です
     }
 ?&gt;
 </code></pre>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/937/KGTN2012070501.pdf">KGTN2012070501.pdf</a>
- [(54.8 KB)] [kitasp 技術センター, 2012/07/05
+[(54.8 KB)] [kitasp 技術センター, 2012/07/05
 09:23]</p>
 
                         </div>

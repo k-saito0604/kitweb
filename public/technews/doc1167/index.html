@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,33 +285,23 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2011/12/21*</p>
-
 <p>[番号]
 技術ノート KGTN 2011122101</p>
-
 <p>[現象]
 [DNS] マスターサーバでの変更を，直ちにスレイブサーバへ反映させたい．</p>
-
 <p>[説明]
 幾つかの方法がありますが，
 「比較的手間がかからず障害発生時の切り分けが容易」
 という基準で考えれば，rsync
 を利用してマスターサーバから各スレイブサーバへゾーンファイルを転送する方法がお勧めです．スレイブサーバは新しいゾーンファイルが転送されて来たかを常にチェックし，届いていればその新しいゾーンファイルの再読み込みを行います．下記ページに，具体的な情報が紹介されていますので，ご覧下さい．</p>
-
 <p>スレーブ・サーバのゾーン転送とセキュリティ
 <a href="http://www.atmarkit.co.jp/flinux/rensai/bind905/bind905b.html">http://www.atmarkit.co.jp/flinux/rensai/bind905/bind905b.html</a></p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/768/KGTN2011122101.pdf">KGTN2011122101.pdf</a>
- [(62.5 KB)] [kitasp 技術センター, 2011/12/21
+[(62.5 KB)] [kitasp 技術センター, 2011/12/21
 09:41]</p>
 
                         </div>

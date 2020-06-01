@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,45 +285,33 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2018/11/29*</p>
-
 <p>[番号]
 技術ノート KGTN 2018110101</p>
-
 <p>[現象]
 [GGH5.X-6.X] GGにログオンしようとすると &ldquo;Connection failed. The host
 could not create a new session.&rdquo; というメッセージが表示される．</p>
-
 <p>[説明]
 GGサーバーが新たなセッションを生成しようとした時に， Windows
 レベルでエラーが発生するとこのエラーメッセージが表示されます．次の手順でGGサーバーをチェックして下さい．</p>
-
 <p>最新のAPSログを開きます．
 文字列 &ldquo;A Bug Check (BSOD) was detected from a previous system
 start&hellip;&rdquo; (*1) を探します．
 この文字列があれば C:Windowssystem32DRIVERSDBCM.bin
 を削除しサーバーを再起動します．
 この文字列がなけば，最新の更新プログラムに対応したGGの最新ビルドを上書きインストールします．</p>
-
 <p>*1</p>
-
 <pre><code>aps (???) A Bug Check (BSOD) was detected from a previous system start and GO-Global has
 been disabled. To re-enable GO-Global, delete the C:Windowssystem32DRIVERSDBCM.bin file
 and restart the computer. To prevent a Bug Check from disabling GO-Global, create the DWORD
 registry value [HKEY_LOCAL_MACHINESYSTEMCurrentControlSetServicesggseDBCM_Disabled]
 and set it to 0x00000001. (DiagnosticDBCM bits 0x01ff0000)
 </code></pre>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4209/KGTN2018110101.pdf">KGTN2018110101.pdf</a>
- [(45.4 KB)] [kitasp 技術センター, 2018/11/29
+[(45.4 KB)] [kitasp 技術センター, 2018/11/29
 17:13]</p>
 
                         </div>

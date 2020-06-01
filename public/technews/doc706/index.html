@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,31 +285,22 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2013/02/07*</p>
-
 <p>[番号]
 技術ノート KGTN 2012091202</p>
-
 <p>[現象]
 [GGH4.X] リモートデスクトップ接続 （mstsc.exe）
 をアプリケーションとして登録し，それを iPad や Android
 クライアントから利用すると，接続先のデスクトップでキーボード入力が上手く動作しない．</p>
-
 <p>[説明]
 iPad や Android
 クライアントはローカルのIMEを利用するため，GGサーバ側から見ると通常のキー操作として認識されません
 （スキャンコードや仮想キーコードに紐付かない）
 ．通常のアプリケーションはこの仕様で問題ありませんが，リモートデスクトップ接続ではキーボード入力が動作しないという状況が発生します．</p>
-
 <p>この問題を回避するには，先ずWindowsのスクリーンキーボード （osk.exe）
 をGGサーバ上で起動し，その後にリモートデスクトップ接続を行って下さい．スクリーンキーボードを操作することで，接続先のデスクトップでキーボード操作が可能になります．</p>
-
 <p>補足１
 技術的背景： iPad ?-(GG Clinet) &ndash; GG-Server ?-(mstsc) &ndash; Windows
 Server という環境で iPad 上で文字を入力した場合，入力した文字はUNICODE
@@ -322,14 +313,11 @@ GG-Server 上で処理されます．このため，Windows Server
 上で動作するアプリケーションに入力が反映されない状況が発生します．なお，この結果
 （GraphOn社に報告済み）
 は弊社の検証環境で確認出来た内容であり，環境が異なれば別の結果になる可能性があります．</p>
-
 <p>補足２
 この問題をGraphOn社の品質保証チームが確認しました．開発チームで詳細な調査および解析を行い，技術的・営業的に可能な内容であれば修正を行います．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/993/KGTN2012091202.pdf">KGTN2012091202.pdf</a>
- [(77.4 KB)] [kitasp 技術センター, 2013/02/08
+[(77.4 KB)] [kitasp 技術センター, 2013/02/08
 08:14]</p>
 
                         </div>

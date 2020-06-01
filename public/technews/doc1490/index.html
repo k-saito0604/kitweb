@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,28 +285,19 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2011/01/26*</p>
-
 <p>[番号]
 技術ノート KGTN 2010030301</p>
-
 <p>[現象]
 &ldquo;CS: I/O event (Output buffer full timeout.)&rdquo; は何を意味しているのか？</p>
-
 <p>[説明]
 GraphOn社の開発担当者に確認したところ，このメッセージが記録されたAPSログを過去に見たことが無いということでした．技術的なコメントは以下の通りです．</p>
-
 <p>An output buffer used in either client-server or inter-process
 communication is full. GGW is waiting for the buffer to empty before
 writing more information into it. Unfortunately, the wait times out
 before the buffer is emptied.</p>
-
 <p>つまり，
 「クライアント〜サーバ間の通信またはプロセス間の通信で使用する出力バッファがフルで，GGクライアントはそれが空になるまで
 （送信が完了するまで）
@@ -315,16 +306,13 @@ before the buffer is emptied.</p>
 （切断には至っていないがデータが流れない状態）
 ，サーバからクライアントへ過度に多くのメッセージ （描画命令等）
 が送信され，サーバがクライアントからの応答を受信出来なかった等が考えられます．</p>
-
 <p>参　考
 ある大型案件では，監査系プログラムが何らかの事象を契機として通信を遮断し，その結果
 &ldquo;CS: I/O event (Output buffer full timeout.)&rdquo;
 が記録されたという報告があります．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/77/KGTN2010030301.pdf">KGTN2010030301.pdf</a>
- [(69 KB)] [kitasp 技術センター, 2011/01/27
+[(69 KB)] [kitasp 技術センター, 2011/01/27
 07:18]</p>
 
                         </div>

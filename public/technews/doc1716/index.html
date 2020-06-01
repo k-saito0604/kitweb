@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,23 +285,15 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2010/06/29*</p>
-
 <p>[番号]
 技術ノート KGTN 2010062901</p>
-
 <p>[現象]
 GMFileProc のファイル処理の手順を知りたい．</p>
-
 <p>[説明]
 GMFileProc は，以下の順序でファイルを処理します．</p>
-
 <p>対象ファイルの抽出 （fileDir, fileExt）
 抽出したファイルのフルパスを引数としてプロセスを起動 （progPath,
 progArgs, フルパス）
@@ -310,17 +302,14 @@ progArgs, フルパス）
 上記2〜4を抽出したファイル全てについて実行
 対象フォルダのファイルを削除 （fileDir, dayDelete）
 バックアップフォルダのファイルを削除 （fileBackup, dayDelete）</p>
-
 <p>注： 括弧の中は，処理に関連する GMFileProc.ini
 ファイル中のパラメタです．</p>
-
 <p>参　考
 GMFileProc.ini の設定のサンプルを以下に示します．GG-StatusLoad.exe
 は，C:¥SHARE¥GG-Status に置かれた
 ???.datというファイルを引数に取り，遅くとも30秒以内に処理するようなプログラムです．処理が完了すると，そのファイルは
 C:¥BACKUP¥GG-Status へ移動されます．さらに，移動されたファイルは
 （作成日時より） 15日経過した時点で削除されます．</p>
-
 <p>[default]
 logLevel = 1
 dayDelete = 15
@@ -331,11 +320,9 @@ fileExt = dat
 fileDir = C:¥SHARE¥GG-Status
 fileBackup = C:¥BACKUP¥GG-Status
 fileMove = Y</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/212/KGTN2010062901.pdf">KGTN2010062901.pdf</a>
- [(67 KB)] [kitasp 技術センター, 2010/06/29
+[(67 KB)] [kitasp 技術センター, 2010/06/29
 12:16]</p>
 
                         </div>

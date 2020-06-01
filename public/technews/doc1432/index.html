@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,44 +285,32 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2011/03/01*</p>
-
 <p>[番号]
 技術ノート KGTN 2011030103</p>
-
 <p>[現象]
 [GGW3.2.1] コマンド プロンプト （DOS窓）
 のウインドウを開くことなくバッチを実行したい．</p>
-
 <p>[説明]
 下記のバッチをアプリケーションとして登録すると，3.2.1系ではコマンド
 プロンプトのウインドウが表示されます．</p>
-
 <p>[FILE: myNotePad.bat]
 ECHO OFF
 NOTEPAD
 EXIT</p>
-
 <p>コマンド
 プロンプトのウインドウを非表示にするには，以下のWSHのプログラムをアプリケーションとして登録し，そのプログラムからバッチを起動するようにします．</p>
-
 <p>[FILE: myNotePad.vbs]
 Set WshShell = WScript.CreateObject(&ldquo;WScript.Shell&rdquo;)
-&lsquo; Call WshShell.Run( &ldquo;cmd.exe /c C:¥GraphOn¥BAT¥myNotePad.bat&rdquo;, 0,
+' Call WshShell.Run( &ldquo;cmd.exe /c C:¥GraphOn¥BAT¥myNotePad.bat&rdquo;, 0,
 True ) ← 同期実行
 Call WshShell.Run( &ldquo;cmd.exe /c C:¥GraphOn¥BAT¥myNotePad.bat&rdquo;, 0, False
 ) ← 非同期実行</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/511/KGTN2011030103.pdf">KGTN2011030103.pdf</a>
- [(55.6 KB)] [kitasp 技術センター, 2011/03/01
+[(55.6 KB)] [kitasp 技術センター, 2011/03/01
 10:52]</p>
 
                         </div>

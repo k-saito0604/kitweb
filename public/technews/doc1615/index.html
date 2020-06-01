@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,23 +285,15 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2010/09/16*</p>
-
 <p>[番号]
 技術ノート KGTN 2010091605</p>
-
 <p>[現象]
 GGサーバがクライアントへパケットを送信中にコネクションの切断が発生した場合，APSログにはどのような記録が残るのか？</p>
-
 <p>[説明]
 APSログに，下記のようなメッセージが記録されます．</p>
-
 <p>CS: I/O event (Connection reset by peer).
 Stack Trace: CS_ConnectionChannel::flush()
 CS: A request (ID: 1) was not completed.
@@ -310,15 +302,12 @@ CS: Client disconnected.
 &hellip;
 A client at IP address xxx.xxx.xxx.xxx disconnected from session
 Administrator on server.</p>
-
 <p>&ldquo;Connection reset by peer&rdquo; はコネクションの切断を意味し， &ldquo;A request
 (ID: nnn) was not completed&rdquo; はクライアント側への要求 （描画命令など）
 が失敗したことを意味します．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/319/KGTN2010091605.pdf">KGTN2010091605.pdf</a>
- [(55.4 KB)] [kitasp 技術センター, 2010/09/16
+[(55.4 KB)] [kitasp 技術センター, 2010/09/16
 11:44]</p>
 
                         </div>

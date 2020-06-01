@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,21 +285,14 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2012/05/31*</p>
-
 <p>[番号]
 技術ノート KGTN 2012053101</p>
-
 <p>[現象]
 [EntOpt] エンタープライズオプションの GMCheckRaw と GMService
 の関係は？</p>
-
 <p>[説明]
 技術的には GMCheckRaw と GMService
 は，直接的な関係はありません．運用的には，GGサーバを監視する GMCheckRaw
@@ -309,15 +302,12 @@ GMService で起動します．設定ファイル GMService.ini
 にサーバ監視用のセクションを作成し，そのセクションで GMCheckRaw.exe
 のフルパスとパラメタを指定します． GMService.ini
 の設定例を以下に示します．</p>
-
 <p>[server01]
 prog = C:¥GraphOn¥check¥GMCheckRaw.exe
 args = -i C:¥GraphOn¥check¥GMCheck.ini -s server1 -rs 86400 -w 10 -to 30
 -ll 9 -batch
 forceTerminateTime = 3600</p>
-
 <p>GMCheckRaw の設定ファイル GMCheck.ini の設定例も以下に示します（抜粋）．</p>
-
 <p>[default]
 port = 491
 cpuUsageCheck = 3
@@ -332,11 +322,9 @@ host = 192.168.102.87 ← 監視対象サーバのIPアドレス
 file = C:¥GraphOn¥check¥server1-%YYYYMMDD%.txt
 traceFile = C:¥GraphOn¥check¥server1-%YYYYMMDD%.log
 traceLevel = 9</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/896/KGTN2012053101.pdf">KGTN2012053101.pdf</a>
- [(62.6 KB)] [kitasp 技術センター, 2012/05/31
+[(62.6 KB)] [kitasp 技術センター, 2012/05/31
 12:22]</p>
 
                         </div>

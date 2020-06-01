@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,38 +285,26 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2012/08/23*</p>
-
 <p>[番号]
 技術ノート KGTN 2012082301</p>
-
 <p>[現象]
 [SDK]
 DLLにグローバル変数を定義した場合，DLLを利用するアプリケーション間で共有出来るのか？</p>
-
 <p>[説明]
 DLLのグローバル変数は，それを呼び出したプロセス毎に割り当てられますので，グローバル変数をアプリケーション間で共有することは出来ません．共有する場合は，以下のように共有データセグメントとして定義する必要があります．</p>
-
-<p>#pragma comment(linker,&ldquo;/section:shared,rws&rdquo;)
+<p>#pragma comment(linker,&quot;/section:shared,rws&rdquo;)
 #pragma data_seg(&ldquo;shared&rdquo;)
 int iRequest = 0;
 #pragma data_seg()</p>
-
 <p>詳細については，マイクロソフト社の下記ページをご覧下さい．</p>
-
 <p><a href="http://msdn.microsoft.com/ja-jp/library/h90dkhs0(v=vs.80).aspx">http://msdn.microsoft.com/ja-jp/library/h90dkhs0(v=vs.80).aspx</a>
 DLL 内のデータをアプリケーションまたはほかの DLL と共有する方法</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/985/KGTN2012082301.pdf">KGTN2012082301.pdf</a>
- [(54.4 KB)] [kitasp 技術センター, 2012/08/23
+[(54.4 KB)] [kitasp 技術センター, 2012/08/23
 14:55]</p>
 
                         </div>

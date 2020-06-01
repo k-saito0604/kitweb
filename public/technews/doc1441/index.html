@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,22 +285,15 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2011/02/25*</p>
-
 <p>[番号]
 技術ノート KGTN 2011022501</p>
-
 <p>[現象]
 「描画オブジェクトが不完全に描画される」
 「ウインドウ内の幾つかの描画オブジェクトが表示されない」
 等の問題が発生したが，どんな情報を採取すれば良いか？</p>
-
 <p>[説明]
 クライアントクリップボード機能が 「有効」 であれば，この機能を 「無効」
 にして再現するかどうかを確認して下さい．状況が変わらない場合は，クライアント側で動作する
@@ -308,10 +301,8 @@ ggw.exe の情報をタスクマネージャ
 （プロセスタブ，表示→列の選択で各項目を選択） か Process Explorer
 （Performanceタブ）
 で採取して下さい．あと，ビデオアダプタのメモリの大きさ，画面の解像度と色深度等もお知らせ下さい．</p>
-
 <p>参　考
 本技術ノートに関連するGraphOn社のコメントを引用します．</p>
-
 <p>It could be some kind of client side memory or graphical handle issue.
 If the client was running out of memory or handles then painting
 anomalies like this could occur. We think they could tell if this is the
@@ -319,11 +310,9 @@ issue by running the task manager on the client and looking at the ggw
 process. We see some clipboard stuff in the aps log. Perhaps they could
 try the client with client side components (clip, file, sound) off.
 Also, how much memory do the video cards on the clients have?</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/501/KGTN2011022501.pdf">KGTN2011022501.pdf</a>
- [(66.2 KB)] [kitasp 技術センター, 2011/02/25
+[(66.2 KB)] [kitasp 技術センター, 2011/02/25
 10:31]</p>
 
                         </div>

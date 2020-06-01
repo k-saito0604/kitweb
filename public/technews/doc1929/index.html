@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,25 +285,17 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2016/08/25*</p>
-
 <p>[番号]
 技術ノート KGTN 2016081201</p>
-
 <p>[現象]
 [GGH5.X/ExPack] 拡張パックの GGEasyMonitorClientInfo
 とはどんなツールなのか？</p>
-
 <p>[説明]
 GGのグローバル・ログオンスクリプトから起動されることを想定したプログラムで，セッションの環境変数から下記の情報を得て所定のファイルに記録します．記録された情報は，
 GGEasyMonitor が参照し，クライアント情報の表示に利用されます．</p>
-
 <p>・ユーザーID
 ・セッションID
 ・クライアントのコンピューター名
@@ -311,13 +303,10 @@ GGEasyMonitor が参照し，クライアント情報の表示に利用されま
 ・クライアントのネットワークアドレス
 ・セッションの開始日
 ・セッションの開始時刻</p>
-
 <p>設定ファイル
 設定ファイル GGEasyMonitorClientInfo.ini の default
 セクションで，以下のパラメタを設定して下さい．</p>
-
-<hr />
-
+<hr>
 <pre><code>           設定項目                                       説明
 
            logLevel                ログの出力レベル，通常は1を指定し，障害時は4を指定
@@ -336,9 +325,7 @@ GGEasyMonitor が参照し，クライアント情報の表示に利用されま
            dataPath                   採取した情報を保存するiniファイルのフルパス
                                          ※ Users に書き込み権限を与えて下さい．
 </code></pre>
-
-<hr />
-
+<hr>
 <p>記録内容
 採取した情報は dataPath
 で指定したiniファイルに，以下の形式で記録されます．クライアントのネットワークアドレス
@@ -348,7 +335,6 @@ NetworkAddressEnvVarEnabled に true
 （クライアント側） がセットされます
 （注：バージョン2.2.7またはそれ以降） ．詳細については，技術ノート
 KGTN#2014020703 をご覧ください．</p>
-
 <pre><code>[testuser001#28 on ggh50-lic] 　　　　　　セッション名（独自形式）
 username=testuser001 　　　　　　　　　　　　ユーザー名
 sessionid=28 　　　　　　　　　　　　　　　　　セッションID
@@ -358,11 +344,9 @@ clientnetworkaddress=192.168.102.136 　　クライアントのネットワー�
 sessiondate=2016-08-12 　　　　　　　　　　　セッションの開始日
 sessiontime=09:37:34 　　　　　　　　　　　　セッションの開始時刻
 </code></pre>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3919/KGTN2016081201.pdf">KGTN2016081201.pdf</a>
- [(72.4 KB)] [kitasp 技術センター, 2018/01/26
+[(72.4 KB)] [kitasp 技術センター, 2018/01/26
 14:41]</p>
 
                         </div>

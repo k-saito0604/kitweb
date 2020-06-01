@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,53 +285,38 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2017/04/07*</p>
-
 <p>[番号]
 技術ノート KGTN 2017040401</p>
-
 <p>[現象]
 [GGH5.X/ExPack] 拡張パックの GGEasyFileProc
 とはどのようなツールなのか？</p>
-
 <p>[説明]
 GGEasyFileProc （バージョン1.0.2）
 は，ファイルのバックアップ，ファイルの削除，バックアップファイルの削除を行うツールです．処理の流れは，次の通りです．</p>
-
 <ol>
 <li>設定日数を経過したファイルをバックアップフォルダーへコピー</li>
 <li>設定日数を経過したファイルを削除</li>
 <li>設定日数を経過した 「バックアップフォルダーの」 ファイルを削除</li>
 </ol>
-
 <p>設定ファイル GGEasyFileProc.ini で指定する項目は以下の通りです．</p>
-
-<hr />
-
+<hr>
 <pre><code> 項目名                                          設定内容
 logLevel                                   ログの出力フォルダー
   logp                     ログファイルの名称のプリフィックス （既定値はGEFP）
   logd                                     ログの出力フォルダー
 </code></pre>
-
 <p>repeatSleep                 繰り返しの間隔（単位は分），繰り返さない場合は無指定
-   [section]             セクション名 （処理の単位で，セクション内で下記項目を指定）
-     datDir                     ファイルが置かれたフォルダー （データフォルダー）
-     bakDir                   バックアップ先のフォルダー （バックアップフォルダー）
-     datCopy            コピー対象とするファイルの経過日数，無条件にコピーする場合は無指定
-     datDel         削除対象とするデータフォルダーのファイルの経過日数，削除しない場合は無指定
-     bakDel      削除対象とするバックアップフォルダーのファイルの経過日数，削除しない場合は無指定</p>
-
-<hr />
-
+[section]             セクション名 （処理の単位で，セクション内で下記項目を指定）
+datDir                     ファイルが置かれたフォルダー （データフォルダー）
+bakDir                   バックアップ先のフォルダー （バックアップフォルダー）
+datCopy            コピー対象とするファイルの経過日数，無条件にコピーする場合は無指定
+datDel         削除対象とするデータフォルダーのファイルの経過日数，削除しない場合は無指定
+bakDel      削除対象とするバックアップフォルダーのファイルの経過日数，削除しない場合は無指定</p>
+<hr>
 <p>以下に GGEasyFileProc.ini の設定例を示します．</p>
-
 <pre><code>[default]
 logLevel = 4 ログレベル
 logp = GEFP ログファイルは GEFP-yyyy-mm.dd.log
@@ -344,15 +329,12 @@ datCopy = 1 1 日以上経過したファイルをコピー
 datDel = 1 1 日以上経過したファイルを削除
 bakDel = 30 30 日以上経過したバックアップファイルを削除
 </code></pre>
-
 <p>以下に GGEasyMonitor-Service.ini の設定例 （GGEasyMonitor への組み込み）
 を示します．</p>
-
 <pre><code>[GGEasyFileProc]
 prog = C:kitASPGGEasyMonitorGGEasyFileProc.exe
 args =
 </code></pre>
-
 <ol>
 <li>GGEasyFileProc.exe　と GGEasyFileProc.ini を
 C:kitASPGGEasyMonitor へコピー</li>
@@ -361,11 +343,9 @@ C:kitASPGGEasyMonitor へコピー</li>
 （必要に応じてフォルダーも作成）</li>
 <li>サービス GGEasyMonitor-Service を再起動</li>
 </ol>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3487/KGTN2017040401.pdf">KGTN2017040401.pdf</a>
- [(54.5 KB)] [kitasp 技術センター, 2017/04/27
+[(54.5 KB)] [kitasp 技術センター, 2017/04/27
 17:52]</p>
 
                         </div>

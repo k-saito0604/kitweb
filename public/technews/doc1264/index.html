@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,40 +285,29 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2011/10/14*</p>
-
 <p>[番号]
 技術ノート KGTN 2011101404</p>
-
 <p>[現象]
 [WS2008] Windows Server 2008
 の環境で，ログオンスクリプトの実行が大きく遅延する．</p>
-
 <p>[説明]
 この現象は弊社で確認しており，現在調査中です．ログオンスクリプト中でプロセス
 （プログラム） を起動する部分を start
 コマンドで行うことにより，この現象が解消します．以下に例を示します．</p>
-
 <p>・現象が発生するログオンスクリプト
 echo off
 notepad
 exit</p>
-
 <p>・現象が発生しないログオンスクリプト
 echo off
 start notepad
 exit</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/664/KGTN2011101404.pdf">KGTN2011101404.pdf</a>
- [(52.5 KB)] [kitasp 技術センター, 2011/10/14
+[(52.5 KB)] [kitasp 技術センター, 2011/10/14
 12:36]</p>
 
                         </div>

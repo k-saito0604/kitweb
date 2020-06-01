@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,44 +285,35 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2014/03/07*</p>
-
 <p>[番号]
 技術ノート KGTN 2010122202</p>
-
 <p>[現象]
 [GGW3.2./GGH4.0]
 ユーザへの事前通知無しにセッションシャドウイングを行いたい．</p>
-
 <p>[説明]
 GGの標準設定では，セッションシャドウイングが開始される前にユーザへの事前通知
 &ldquo;Administrator is asking to connect to your session. Do you want to
 allow Administrator to connect to your session and view your application
 and data?&rdquo;
 が行われます．この事前通知は，以下の方法で抑止することが出来ます．</p>
-
-<p>1) サービス GO-Global Application Publishing Service を停止する．
-2) レジストリエディタ regedit を起動する．
-3) HKLMSOFTWAREGraphOnBridges1.0.0AppServer に位置付ける．
-4) [編集] → [新規] → [DWORD 値]
-5) 新たに生成された名前を SessionShadowingNotification に変更する．
-6) この名前の値 （データ） を 0 にする．
-7) レジストリエディタを終了する．
-8) サービス GO-Global Application Publishing Service を開始する．</p>
-
+<ol>
+<li>サービス GO-Global Application Publishing Service を停止する．</li>
+<li>レジストリエディタ regedit を起動する．</li>
+<li>HKLMSOFTWAREGraphOnBridges1.0.0AppServer に位置付ける．</li>
+<li>[編集] → [新規] → [DWORD 値]</li>
+<li>新たに生成された名前を SessionShadowingNotification に変更する．</li>
+<li>この名前の値 （データ） を 0 にする．</li>
+<li>レジストリエディタを終了する．</li>
+<li>サービス GO-Global Application Publishing Service を開始する．</li>
+</ol>
 <p>なお，ユーザへの事前通知を表示する場合は， SessionShadowingNotification
 の値を 1 にして下さい．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1604/KGTN2010122202.pdf">KGTN2010122202.pdf</a>
- [(63.3 KB)] [kitasp 技術センター, 2014/03/07
+[(63.3 KB)] [kitasp 技術センター, 2014/03/07
 18:11]</p>
 
                         </div>

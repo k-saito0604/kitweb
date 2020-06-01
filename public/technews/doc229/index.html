@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,64 +285,50 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2011/09/28*</p>
-
 <p>[番号]
 技術ノート KGTN 2011092802</p>
-
 <p>[現象]
 [WS2008] IEを利用した時， Rundll32
 でエラーが起きる．何か参考になる情報はないのか？</p>
-
 <p>[説明]
 GraphOn社のコメントは以下の通りで，ウイルスやスパイウエア （アドウエア）
 等の問題 （影響）
 だと推測しています．詳細は，引用中のサイトの情報をご覧下さい．</p>
-
 <pre><code>We don't believe this issue is related to GG. We have seen this error on google search and many
 posts pointed to this issue as a virus or Ad ware issue. They resolved the issue be using spyware
 removal programs. See below.
 </code></pre>
-
 <p><a href="http://www.vistax64.com/vista-security/151705-rundll32-error-ie.html">http://www.vistax64.com/vista-security/151705-rundll32-error-ie.html</a></p>
-
 <p>補足１
 問題点を明確にするために，以下の内容をチェックして下さい．これらの設定内容で改善しない場合は，GGW3.2系は
 EOL 状態にありますので，運用回避 （エラーを無視する） をお願いします．</p>
-
-<p>1) UACの有効/無効で状況が変わるかどうか？
-2) DEP （データ実行防止） を 「無効」 または 「IEを除外」
-して状況が変わるかどうか？
-3) ログオンユーザが Administrator （ローカルアカウント）
-で状況が変わるかどうか？
-4) コンテンツを変えて状況が変わるかどうか
-（表示するコンテンツに依存するかどうか） ？
-5) Windows Server 2008 インストール直後の環境 （イメージ）
-で現象が発生するかどうか？</p>
-
+<ol>
+<li>UACの有効/無効で状況が変わるかどうか？</li>
+<li>DEP （データ実行防止） を 「無効」 または 「IEを除外」
+して状況が変わるかどうか？</li>
+<li>ログオンユーザが Administrator （ローカルアカウント）
+で状況が変わるかどうか？</li>
+<li>コンテンツを変えて状況が変わるかどうか
+（表示するコンテンツに依存するかどうか） ？</li>
+<li>Windows Server 2008 インストール直後の環境 （イメージ）
+で現象が発生するかどうか？</li>
+</ol>
 <p>なお，現行バージョン GGH4.X では本現象の発生の報告はありません． GGH4.X
 のアップグレードもご検討下さい．</p>
-
 <p>補足２
 対症療法になりますが，下記のレジストリを追加 （コマンドを実行）
 することでエラーダイアログの表示を抑止することが出来ます．</p>
-
 <pre><code>reg add &quot;HKLMSOFTWAREMicrosoftWindows NTCurrentVersionImage File Execution
     OptionsWerfault.exe&quot; /v Debugger /t REG_SZ /d NUL /f
 reg add &quot;HKLMSOFTWAREWow6432NodeMicrosoftWindows NTCurrentVersionImage File Execution
     OptionsWerfault.exe&quot; /v Debugger /t REG_SZ /d NUL /f
 </code></pre>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1698/KGTN2011092802.pdf">KGTN2011092802.pdf</a>
- [(84.1 KB)] [kitasp 技術センター, 2014/06/20
+[(84.1 KB)] [kitasp 技術センター, 2014/06/20
 17:35]</p>
 
                         </div>

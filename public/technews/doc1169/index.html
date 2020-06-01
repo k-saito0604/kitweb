@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,21 +285,14 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2018/06/26*</p>
-
 <p>[番号]
 技術ノート KGTN 2018062102</p>
-
 <p>[現象]
 [G Suite] G Suite のメール機能 （Gmail）
 で，外部のSMTPサーバーを利用せずに，他の外部のメールアドレスで送信する方法は？</p>
-
 <p>[説明]
 G Suite
 で外部のメールアドレスで送信する場合は，そのメールアドレスの利用環境で指定されたSMTPサーバーを使用すべきですが，
@@ -309,19 +302,15 @@ G Suite
 でその外部のメールアドレスで送信しても構わないという運用方針のようです
 （注： 将来この運用方針が変わる可能性もゼロではありません）
 ．この運用方針を前提としての設定方法は次の通りです．</p>
-
 <p>G Suite のメール機能 （Gmail） の画面で [設定] → [アカウント] →
 [他のメール アドレスを追加]
 を選択し，次に他の外部のメールアドレスを利用するための設定を行います．</p>
-
 <p>STEP#1 &ldquo;自分のメールアドレスを追加&rdquo; 画面1
 ・項目 「名前」 にメールアドレスの横に表示される名前を入力します．
 ・項目 「メール アドレス」 に利用したいメールアドレスを入力します．
 ・項目 「エイリアスとして扱います」 にチェックを入れます．
 ・ボタン 「次のステップ」 をクリックします．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/4081/KGTN2018062102-1.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/4081/KGTN2018062102-1.jpg" alt=""></p>
 <p>STEP#2 &ldquo;自分のメールアドレスを追加&rdquo; 画面2
 ・項目 「SMTPサーバー」 に smtp.gmail.com 入力します．
 ・項目 「ポート番号」 に 587 を入力します．
@@ -333,60 +322,43 @@ G Suite
 ・ボタン 「アカウントを追加」 をクリックします．
 [・*1： G Suite のアカウントが2段階認証の場合は 「アプリ パスワード」
 を生成し，それを使用して下さい．]{.underline}</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/4082/KGTN2018062102-2.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/4082/KGTN2018062102-2.jpg" alt=""></p>
 <p>STEP#3 メールの受信と確認コードの取得
 上記のボタンをクリックした後に，利用したいメールアドレス宛に 「Gmail
 からのご確認 - xxx を差出人としてメールを送信します」
 という件名のメールが届きます．このメールの本文に，確認コードが書かれていますので，このコードを控えます．</p>
-
 <pre><code>ご利用の Gmail アカウントに testUser@test-kitasp.com を追加するリクエストを受け取りました。
 確認コード: 750208794
 </code></pre>
-
 <p>STEP#4 &ldquo;自分のメールアドレスを追加&rdquo; 画面3
 ・項目 「確認コード」 に前ステップで控えた確認コードを入力します．
 ・ボタン 「確認」 をクリックします．
 ・問題が無ければこのウインドウが消え，他の外部のメールアドレスの登録が完了します．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/4083/KGTN2018062102-3.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/4083/KGTN2018062102-3.jpg" alt=""></p>
 <p>STEP#5 &ldquo;新規メッセージ画面&rdquo; または 返信の画面
 ・項目 「From」 の右側の ▼
 をクリックすることで，登録した他の外部のメールアドレスを選択します．
 ・その後は通常通りの操作でメールを送信します．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/4084/KGTN2018062102-4.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/4084/KGTN2018062102-4.jpg" alt=""></p>
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4080/KGTN2018062102.pdf">KGTN2018062102.pdf</a>
- [(140 KB)] [kitasp 技術センター, 2018/06/26
+[(140 KB)] [kitasp 技術センター, 2018/06/26
 11:49]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4081/KGTN2018062102-1.jpg">KGTN2018062102-1.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/4081/KGTN2018062102-1.jpg" title="表示">表示</a>
- [(12.3 KB)] [kitasp 技術センター, 2018/06/26
+[(12.3 KB)] [kitasp 技術センター, 2018/06/26
 11:49]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4082/KGTN2018062102-2.jpg">KGTN2018062102-2.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/4082/KGTN2018062102-2.jpg" title="表示">表示</a>
- [(14.5 KB)] [kitasp 技術センター, 2018/06/26
+[(14.5 KB)] [kitasp 技術センター, 2018/06/26
 11:49]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4083/KGTN2018062102-3.jpg">KGTN2018062102-3.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/4083/KGTN2018062102-3.jpg" title="表示">表示</a>
- [(14.9 KB)] [kitasp 技術センター, 2018/06/26
+[(14.9 KB)] [kitasp 技術センター, 2018/06/26
 11:49]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4084/KGTN2018062102-4.jpg">KGTN2018062102-4.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/4084/KGTN2018062102-4.jpg" title="表示">表示</a>
- [(4.41 KB)] [kitasp 技術センター, 2018/06/26
+[(4.41 KB)] [kitasp 技術センター, 2018/06/26
 11:49]</p>
 
                         </div>

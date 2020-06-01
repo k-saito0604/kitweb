@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,36 +285,25 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2010/11/18*</p>
-
 <p>[番号]
 技術ノート KGTN 2010111803</p>
-
 <p>[現象]
 [GGH4.0] Universal Printer Driver が有効 かつ
 クライアント印刷機能のパラメタ autoConfigPrinters が all
 であるにも関わらず，構成されないプリンタが存在する．どのような原因が考えられるか？</p>
-
 <p>[説明]
 以下の条件が満たされると，そのプリンタは構成されません．</p>
-
 <p>過去に通常のプリンタドライバで構成されたことがある．
 その後，通常のプリンタドライバがアンインストール （削除） された．</p>
-
 <p>上記1で，そのプリンタは通常のプリンタドライバで構成するように
 MappedPrinterDrivers.xml
 に記録されているため，GGはそれに従い構成を試みます．しかし，上記2でドライバが削除されているため，構成処理が失敗します．対応としては，そのプリンタのドライバをサーバにインストールして下さい．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/391/KGTN2010111803.pdf">KGTN2010111803.pdf</a>
- [(55.6 KB)] [kitasp 技術センター, 2010/11/18
+[(55.6 KB)] [kitasp 技術センター, 2010/11/18
 13:40]</p>
 
                         </div>

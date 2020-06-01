@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,26 +285,18 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2010/04/19*</p>
-
 <p>[番号]
 技術ノート KGTN 2010041901</p>
-
 <p>[現象]
 設定情報をINIファイルに保存するアプリケーションがあるが，GGにログオンするユーザ毎にこのINIファイルを切り替えたい．</p>
-
 <p>[説明]
 GGの 「INIファイルマップ機能」
 を利用することで，アプリケーションが参照するINIファイルを自動的に切り替えることが出来ます．以下の例では，
 TERATERM.INI という設定ファイルへの参照が，各ユーザのプロファイルの下の
 Application Data¥TERATERM.INI へ自動的に切り替わります．</p>
-
 <p>各ユーザのプロファイルの下にApplication Data¥TERATERM.INI
 という設定ファイルを作成する．
 レジストリエディタでHKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥Compatibility¥INIFilePaths
@@ -313,21 +305,17 @@ Application Data¥TERATERM.INI へ自動的に切り替わります．</p>
 キーの名前をTERATERM.INI にする．
 キーの値を %USERPROFILE%¥Application Data¥TERATERM.INI にする
 レジストリエディタを閉じる</p>
-
 <p>つまり，キーの名前で INI
 ファイルのファイル名を指定し，キーの値で参照させたいファイルのパスを指定します．</p>
-
 <p>注　意
 「INIファイルマップ機能」
 は，アプリケーションがINIファイル用の関数GetPrivateProfileString
 等を使用している場合にのみ有効です．アプリケーションが
 「これらの関数を使わず」 自前でINIファイルにアクセスしている場合は，
 「INIファイルマップ機能」 は適用されません．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/146/KGTN2010041901.pdf">KGTN2010041901.pdf</a>
- [(65.6 KB)] [kitasp 技術センター, 2010/04/19
+[(65.6 KB)] [kitasp 技術センター, 2010/04/19
 12:08]</p>
 
                         </div>

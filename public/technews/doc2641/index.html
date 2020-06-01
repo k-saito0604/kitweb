@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,21 +285,14 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2013/02/07*</p>
-
 <p>[番号]
 技術ノート KGTN 2013020601</p>
-
 <p>[現象]
 [GGH4.X-5.X] GGサーバのパラメタ ClientProcessingBatch
 の詳細について知りたい．</p>
-
 <p>[説明]
 ClientProcessingBatch = 0
 の場合は，サーバはクライアントに対して描画命令を送信します．ClientProcessingBatch
@@ -308,17 +301,15 @@ ClientProcessingBatch = 0
 の何れかを送信します．描画命令を送信するケースでは，さまざまな描画上の最適化が行われるため，アプリケーションによってはこの最適化に馴染まず画面の乱れ等を引き起こすことがあります（主に一般的でない画面上の動作）
 ．このような場合は， ClientProcessingBatch = 1
 を適用することで，この画面の乱れを回避出来る可能性があります．より詳しい内容については，以下のGraphOn社の説明をご覧下さい．</p>
-
 <p>[ClientProcessingBatch]
 When ClientProcessingBatch is set to 0, the host updates the client&rsquo;s
 display by sending primitive drawing commands such as &ldquo;draw
-rectangle&rdquo;, &ldquo;draw line&rdquo;, &ldquo;draw text,&rdquo;, etc&hellip; to the client.
+rectangle&rdquo;, &ldquo;draw line&rdquo;, &ldquo;draw text,&quot;, etc&hellip; to the client.
 Alternatively, the host could simply wait and send an image with the
 final result of the drawing operations to the client. We refer to this
 latter approach as &ldquo;screen scraping&rdquo;. It is usually much more
 efficient to update the client display using primitive drawing commands,
 but there are times when it is more efficient to &ldquo;screen scraping&rdquo;.</p>
-
 <p>When ClientProcessingBatch is set to 1, the host attempts to determine
 the most efficient means of updating the client display each time
 display data is sent from the host to the client. For example, if the
@@ -327,7 +318,6 @@ modified area of the screen will be less than the bandwidth required to
 send all of the drawing commands that were used to modify the screen,
 the host will send the image instead of the drawing commands, i.e., it
 will &ldquo;screen scrape&rdquo;.</p>
-
 <p>The ClientProcessingBatch option is recommended for applications that
 display a lot of animations or video because it allows the host to skip
 frames and remain responsive to user input even when the application on
@@ -337,22 +327,18 @@ anomalies can occur when part of the screen is updated from the host?s
 frame buffer (screen) and part is updated using drawing commands.
 Because of these anomalies, ClientProcessingBatch is set to 0 by
 default.</p>
-
 <p>The Flash client is slower at processing graphics commands than the
 native client. Therefore, when the Flash client is used, it is more
 often the case that the screen scrape approach is more efficient.
 Therefore, there is a separate setting, ClientProcessingBatchFlash, that
 controls whether the option is enabled when the client is the Flash
 client.</p>
-
 <p>補　足
 画像データ （スクリーンスクレーピング）
 のみを送信するような設定はありません （GraphOn社に確認済） ．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2424/KGTN2013020601.pdf">KGTN2013020601.pdf</a>
- [(76.2 KB)] [kitasp 技術センター, 2016/02/05
+[(76.2 KB)] [kitasp 技術センター, 2016/02/05
 12:02]</p>
 
                         </div>

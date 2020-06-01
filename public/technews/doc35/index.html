@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,21 +285,14 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2013/03/01*</p>
-
 <p>[番号]
 技術ノート KGTN 2011082201</p>
-
 <p>[現象]
 [GGH4.X-5.X] Mac OS X Client
 は，日本語キーボードをサポートしているのか？</p>
-
 <p>[説明]
 いいえ，管理者ガイド （Admin Guide） の通り U.S. / French / German
 の各キーボードのみをサポートします．しかしながら， GGH4.5.0.13063
@@ -307,15 +300,12 @@
 Mac OS X
 のかな漢字変換をそのまま利用することが出来ます．クライアント側IME機能は，以下のようにパラメタ
 ClientSideIME を指定することで有効となります．</p>
-
 <pre><code>コマンドラインの場合
 /Applications/GO-Global.app/Contents/MacOS/GO-Global -h 192.168.102.81 -kb ClientSideIME dummy
 ハイパーリンクの場合
 http://192.168.102.81/logon.html?keyboard=ClientSideIME
 </code></pre>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2101/KGTN2011082201.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/2101/KGTN2011082201.jpg" alt=""></p>
 <p>補　足
 キーボードのマッピングファイル （Client Keyboard Mapping Files）
 を修正する方法もあります （非推奨） ．この英語用のファイルは
@@ -323,25 +313,19 @@ http://192.168.102.81/logon.html?keyboard=ClientSideIME
 にありますので，これを弊社が作成した日本語用のファイル ja.kbm
 で置き換えることで，英数字や記号等を正しく入力出来るようになります．なお
 ALT-半角/全角 は， 「英数」 「かな」 キーに対応付いています．</p>
-
 <p>上記説明のパス /etc/gg-client/kbd/us.kbm が存在しない場合は，
 /etc/GO-Global/kbd/us.kbm
 と読み替えて下さい．以下は，実行するコマンドのサンプルです．</p>
-
 <p>　# cd /etc/GO-Global/kbd
 　# mv us.kbm us.kbm.original
 　# cp /Users/kitASP/Desktop/Mac_OS_X-JA_KBM/ja.kbm us.kbm</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2101/KGTN2011082201.jpg">KGTN2011082201.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2101/KGTN2011082201.jpg" title="表示">表示</a>
- [(65.1 KB)] [kitasp 技術センター, 2015/07/08
+[(65.1 KB)] [kitasp 技術センター, 2015/07/08
 17:10]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2150/KGTN2011082201.pdf">KGTN2011082201.pdf</a>
- [(306 KB)] [kitasp 技術センター, 2015/07/09
+[(306 KB)] [kitasp 技術センター, 2015/07/09
 16:07]</p>
 
                         </div>

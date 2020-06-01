@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,44 +285,31 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2010/07/21*</p>
-
 <p>[番号]
 技術ノート KGTN 2010072002</p>
-
 <p>[現象]
 Windows Server 2008
 の環境で，エクスプローラーを使ってクライアントドライブへファイルをコピー出来ない．</p>
-
 <p>[説明]
 Windows Server 2008 の環境では，エクスプローラーはサポートされません．</p>
-
 <p>補足1
 下記のページの方法で， Windows NT 4.0 の File Manager
 をGGに登録すると，操作性は良くありませんがファイルのコピーが出来ることを確認しました．</p>
-
 <p><a href="http://people.ee.ethz.ch/%E2%80%BEdavidsch/vistafm/">http://people.ee.ethz.ch/‾davidsch/vistafm/</a>{.external}</p>
-
 <p>なお，この実験はサーバのUACをオフにして，クライアントのIEを
 「管理者として実行」 で起動しました．その他については，継続調査中です．</p>
-
 <p>補足2
 CopyFile関数でサーバ側のファイルをクライアント側へコピーするプログラムを作成
 （VC++ 2008 を使用）
 したところ，ファイルは正しくコピーされました．従って，
 「エクスプローラーでなく」
 CopyFile関数でファイルをコピーする場合は，コピー出来ないという問題は発生しません．なお，クライアント側からサーバ側へコピーする場合は，0バイトのファイルが作成されます．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/230/KGTN2010072002.pdf">KGTN2010072002.pdf</a>
- [(61.7 KB)] [kitasp 技術センター, 2010/07/21
+[(61.7 KB)] [kitasp 技術センター, 2010/07/21
 09:24]</p>
 
                         </div>

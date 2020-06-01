@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,96 +285,67 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2015/01/16*</p>
-
 <p>[番号]
 技術ノート KGTN 2015011601</p>
-
 <p>[現象]
 [GGH4.X-5.X] クライアント側の既定のIMEが Microsoft IME
 以外で，かつGGサーバーがWS2012R2の場合，サーバー側IMEの表示が 「EN」
 になり日本語入力が出来ない．</p>
-
 <p>[説明]
 この問題は GGH4.8.2.22090 および GGH5.0.0.21965
 で修正されておりますので，各ビルド （またはそれ以降のビルド）
 へのアップグレードを行うことで改善されます．</p>
-
 <pre><code>CASE#43661 The Fallback Keyboard Layout is not used on Windows 8.1 and Windows Server 2012 R2
 </code></pre>
-
 <p>補　足
 英語版の Windows Server 2012 R2 に Japanese Language Pack
 をインストールした環境につきましては，Windows
 のベースとなる言語が英語ですので，仕様としてサーバー側IMEの表示が 「EN」
 になります．</p>
-
 <p>過去の説明
 下記の情報は暫定的な対処法で，将来リリースされるビルドで解決される見込みです．</p>
-
 <p>方法１：　クライアント側の既定のIMEを Microsoft IME に変更する．</p>
-
 <p>方法２：　クライアント側の既定のIMEのレイアウトコードを得る
 （下記例ではE0210411）．
 サーバー側のレイアウトコード 00000411
 の内容をコピーし，そのレイアウトコードの情報を登録する．
 HKLMSYSTEMCurrentControlSetControlKeyboard LayoutsE0210411</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2104/KGTN2015011601-1.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/2104/KGTN2015011601-1.jpg" alt=""></p>
 <p>過去の補足
 技術的には上記の方法２の通りですが，弊社開発のツール GGKeyboardLayout
 を使用した簡単な設定手順を以下に示します．</p>
-
 <p>１．クライアント側の既定のIMEのレイアウトコードを得る方法</p>
-
 <p>GGKeyboardLayout をクライアント側で起動し， 「環境参照」
 ボタンをクリックして下さい． 「レイアウト情報#1」
 に表示される値が，クライアント側の既定のIMEのレイアウトコードです．下記の例では
 e0200411 が既定のIMEのレイアウトコードになります．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2105/KGTN2015011601-21.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/2105/KGTN2015011601-21.jpg" alt=""></p>
 <p>２．サーバー側に （クライアント側の）
 レイアウトコードの情報を登録する方法</p>
-
 <p>GGKeyboardLayout をサーバー側で起動し，上記１で得た （クライアント側の）
 既定のIMEのレイアウトコードを 「レイアウト情報#1」
 に入力して下さい．そして， 「環境設定」 ボタンをクリックして下さい．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2107/KGTN2015011601-22.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/2107/KGTN2015011601-22.jpg" alt=""></p>
 <p>なお， 「環境設定」 ボタンが表示されない場合は権限が不足していますので，
 GGKeyboardLayout を 「管理者として実行」 で起動して下さい．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2104/KGTN2015011601-1.jpg">KGTN2015011601-1.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2104/KGTN2015011601-1.jpg" title="表示">表示</a>
- [(17.5 KB)] [kitasp 技術センター, 2015/07/08
+[(17.5 KB)] [kitasp 技術センター, 2015/07/08
 17:24]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2105/KGTN2015011601-21.jpg">KGTN2015011601-21.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2105/KGTN2015011601-21.jpg" title="表示">表示</a>
- [(12.4 KB)] [kitasp 技術センター, 2015/07/08
+[(12.4 KB)] [kitasp 技術センター, 2015/07/08
 17:24]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2107/KGTN2015011601-22.jpg">KGTN2015011601-22.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2107/KGTN2015011601-22.jpg" title="表示">表示</a>
- [(11.3 KB)] [kitasp 技術センター, 2015/07/08
+[(11.3 KB)] [kitasp 技術センター, 2015/07/08
 17:25]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2278/KGTN2015011601.pdf">KGTN2015011601.pdf</a>
- [(127 KB)] [kitasp 技術センター, 2015/11/04
+[(127 KB)] [kitasp 技術センター, 2015/11/04
 14:54]</p>
 
                         </div>

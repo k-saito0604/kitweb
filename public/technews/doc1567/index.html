@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,20 +285,13 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2010/11/01*</p>
-
 <p>[番号]
 技術ノート KGTN 2009091501</p>
-
 <p>[現象]
 クライアントドライブ機能を使い，サーバからクライアントへファイルをコピーするとセッションが切れることがある．また，セッションが切れない場合でも，クライアント側でファイルがロックされ削除が出来ない等の現象が発生することもある．</p>
-
 <p>[説明]
 ファイルサイズが19MBを越えると 「セッションが切れる」
 「０バイトのファイルが作成される」 「ファイルがロックされる」
@@ -306,19 +299,15 @@
 という現象が発生します．この問題は，回線速度やファイルの内容
 （テキスト・バイナリ）
 に依存せず，ファイルサイズのみに依存して発生します．ファイルがロックされた場合は，ActiveXクライアントではIEを閉じることで，Windowsクライアントはggw.exeを終了させることでロックが解除されます．本件はGraphOn社も障害として認識しており，将来のバージョンで修正する予定です．</p>
-
 <p>補足１
 クライアントドライブ機能でファイルをコピーする場合，FTPのような専用のファイル転送プロトコルでコピーが行われる訳ではなく，Windows内部の低レベルのファイルコピー処理をフックして，サーバとクライアント間でファイルのコピー処理が行われます．このような仕組みにより，
 Windowsの遅延書き込み機能等の極めて低レベルな処理もGGのセッションの中で行われ，サーバとクライアント間でエラー等のイベントが正常に伝わらず，それぞれが相手方からのイベントを待ち続けて，タイムアウトによるセッション断や継続的なファイルのロックが発生したものと推測します．なお，本補足事項は弊社の独自調査による結果
 （GraphOn社にも報告済） を元に記載しています．</p>
-
 <p>補足２
 セッション断については，Windowsがプログレスダイアログを表示するケースで発生することが分かっております．DOS窓を開きcopyコマンドでコピーを行った場合は，セッション断やファイルのロックは発生しません．なお，本補足事項は弊社の独自調査による結果
 （GraphOn社にも報告済） を元に記載しています．</p>
-
 <p>補足3
 なぜ発生したのか&hellip;　クライアントドライブ機能のサーバ側とクライアント側で，それぞれが相手からのイベントを待っている状態にあり，処理が完結しないためセッション断やファイルロック等が発生していると推測されます．</p>
-
 <p>補足4
 どうすれば発生しないのか&hellip;　「ファイルの大きさで対応する」
 ことが妥当だと考えますが，しかし明確な根拠を持ったファイルの大きさを示すことは困難です．恐らく
@@ -328,11 +317,9 @@ Windows 内部のキャッシュの空き等に依存しているため，
 GraphOn社のコメント&hellip; We have done some more testing and the issue with
 the filelock did not occur with a filesize of 20,001KB. It did occur
 with a filesize of 20,041KB.</p>
-
 <p>20MB （= 20,480KＢ）
 は20,041KBを越えますので，運用回避を行う場合のファイルサイズは
 「19MB以下」 となります．</p>
-
 <p>補足6
 GraphOn社のコメント&hellip;There is a problem on the client that is
 preventing all of the requests associated with the file copy operation
@@ -342,39 +329,32 @@ if this is the case. &mdash; The CopyFile function in GGW3.2 is a very
 complicated function. As a result, it will be difficult and risky to to
 fix this bug in GGW 3.2. The target milestone for this issue to be
 resolved is version 4.0 since it will be fixed by design.</p>
-
 <p>本件の原因は，ファイルコピー時にサーバ側から送信されるメッセージが，クライアント側のメッセージキュー上でオーバーフローしているのが原因だと推測します．Ver3.2系の
 CopyFile
 機能は非常に複雑な処理を行っており，この問題をVer3.2系で修正することは容易ではなくリスクも伴います．従って，CopyFile
 機能を設計レベルから見直して，Ver4.0系で対応する予定です． （注：
 GraphOn社はVer3.2系で修正しようと約1ヶ月に及ぶ調査および試行錯誤を行いましたが，最終的にこの結論に至りました）</p>
-
 <p>補足7
 Ver4.0系の内部評価版 （ビルド7757） で検証を行ったところ， 1)
 約64MBのファイルがクライアント側に同じ内容でコピーされ， 2)
 コピー中のダイアログが正常に終了し， 3)
 ロック状態も発生しませんでした．従って，Ver4.0の製品版では，クライアントドライブの機能が改善すると期待できます．</p>
-
 <p>補足8
 Ver4.0.0 Patch 1 でFASTER CLIENT DRIVE ACCESS
 機能が実装されました．Ver4.0.0
 と互換性がありませんので，サーバ側だけでなくクライアント側のバージョンアップも必要です．以下は，本件に関するGraphOn社の技術ノートです．</p>
-
 <p>Optimizations to the Client Drives feature require upgrading both the
 client and the host. If an older version of the client accesses the
 4.0.0.8304 host, Client Drives will be disabled.</p>
-
 <p>補足9
 上記で述べた障害が発生した時は，プロトコル上での不整合が発生しておりますので，続けてファイルコピーを行った場合，以下のような現象が発生することがあります．
 ・クライアント側にファイルが作成されない．
 ・クライアント側に0バイトのファイルが作成される．
 （複数回のコピー処理を繰り返した時）後続のファイルコピー時に先行してコピーしたファイルがクライアント側に作成される．
 このようなことから，ファイルコピーでエラー状態に陥った後，さらにGGの使用を継続しても，その結果については保証することが出来ません．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/28/KGTN2009091501.pdf">KGTN2009091501.pdf</a>
- [(145 KB)] [kitasp 技術センター, 2010/11/01
+[(145 KB)] [kitasp 技術センター, 2010/11/01
 12:40]</p>
 
                         </div>

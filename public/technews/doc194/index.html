@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,21 +285,14 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2014/09/19*</p>
-
 <p>[番号]
 技術ノート KGTN 2014091901</p>
-
 <p>[現象]
 [GGH4.X] リモートデスクトップ接続 （クライアント）
 を特定ユーザーにのみ公開したい．</p>
-
 <p>[説明]
 基本的には，リモートデスクトップ接続 （クライアント） のプログラム
 mstsc.exe
@@ -308,43 +301,41 @@ mstsc.exe は C:WindowsSystem32mstsc.exe
 にあるため，そのままセキュリティ設定を行うことは出来ません．下記の例では，
 C:GraphOnmstsc
 というフォルダを作成し，そこにコピーしセキュリティ設定を行います．</p>
-
-<p>1) フォルダ C:GraphOnmstsc を作成する．
-2) フォルダ C:GraphOnmstscja-JP を作成する．
-3) プログラム C:WindowsSystem32mstsc.exe を C:GraphOnmstsc
-にコピーする．
-4) ファイル C:WindowsSystem32ja-JPmstsc.exe.mui を
-C:GraphOnmstscja-JP にコピーする．
-5) コピーした mstsc.exe のプロパティを開く．
-6) [セキュリティ] タブをクリックする.
-7) [詳細設定] ボタンをクリックする.
-8) [アクセス許可の変更] ボタンをクリックする．
-9) [このオブジェクトの親から継承可能なアクセス許可を含める]
-ボックスのチェックを外す.
-10) アクセス許可エントリ中の Users の行をクリックする．
-11) [削除] ボタンをクリックする.
-12) [追加] ボタンをクリックする.
-13) [詳細設定] ボタンをクリックする．
-14) [検索] ボタンをクリックする．
-15) ユーザーまたはグループを選択する.
-16) [OK] ボタンをクリックする.
-17) ユーザーまたはグループの選択・ダイアログの [OK]
-ボタンをクリックする.
-18) [オブジェクト] タブで必要な [許可] を選択する．
-19) [OK] ボタンをクリックする.
-20) mstsc.exe のセキュリティの詳細設定・ダイアログ中の [OK]
-ボタンをクリックする.
-21) mstsc.exe のセキュリティの詳細設定・ダイアログ中の [OK]
-ボタンをクリックする.
-22) mstsc.exe のプロパティ・ダイアログ中の [OK] ボタンをクリックする.</p>
-
+<ol>
+<li>フォルダ C:GraphOnmstsc を作成する．</li>
+<li>フォルダ C:GraphOnmstscja-JP を作成する．</li>
+<li>プログラム C:WindowsSystem32mstsc.exe を C:GraphOnmstsc
+にコピーする．</li>
+<li>ファイル C:WindowsSystem32ja-JPmstsc.exe.mui を
+C:GraphOnmstscja-JP にコピーする．</li>
+<li>コピーした mstsc.exe のプロパティを開く．</li>
+<li>[セキュリティ] タブをクリックする.</li>
+<li>[詳細設定] ボタンをクリックする.</li>
+<li>[アクセス許可の変更] ボタンをクリックする．</li>
+<li>[このオブジェクトの親から継承可能なアクセス許可を含める]
+ボックスのチェックを外す.</li>
+<li>アクセス許可エントリ中の Users の行をクリックする．</li>
+<li>[削除] ボタンをクリックする.</li>
+<li>[追加] ボタンをクリックする.</li>
+<li>[詳細設定] ボタンをクリックする．</li>
+<li>[検索] ボタンをクリックする．</li>
+<li>ユーザーまたはグループを選択する.</li>
+<li>[OK] ボタンをクリックする.</li>
+<li>ユーザーまたはグループの選択・ダイアログの [OK]
+ボタンをクリックする.</li>
+<li>[オブジェクト] タブで必要な [許可] を選択する．</li>
+<li>[OK] ボタンをクリックする.</li>
+<li>mstsc.exe のセキュリティの詳細設定・ダイアログ中の [OK]
+ボタンをクリックする.</li>
+<li>mstsc.exe のセキュリティの詳細設定・ダイアログ中の [OK]
+ボタンをクリックする.</li>
+<li>mstsc.exe のプロパティ・ダイアログ中の [OK] ボタンをクリックする.</li>
+</ol>
 <p>なお，上記手順は WS2008R2 の環境に準拠したものです．他のOS
 （WS2012R2等） では，内容や表記等が異なる可能性があります．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1737/KGTN2014091901.pdf">KGTN2014091901.pdf</a>
- [(68.1 KB)] [kitasp 技術センター, 2014/09/19
+[(68.1 KB)] [kitasp 技術センター, 2014/09/19
 16:05]</p>
 
                         </div>

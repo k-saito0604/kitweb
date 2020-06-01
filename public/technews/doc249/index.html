@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,38 +285,27 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p><em>技術ノート
 2014/06/14</em></p>
-
 <p>[番号]
 技術ノート KGTN 2014052801</p>
-
 <p>[現象]
 [GGW3.2.1] BSODのダンプファイルに &ldquo;ga+0x73c3, ga+0x72ab, ga+0xc071&rdquo;
 の記録があったが，BSOD発生のメカニズムを知りたい．</p>
-
 <p>[説明]
 技術ノート KGTN#2014050701の説明にありますように，先ず csrss.exe
 で何らかのエラーが発生し，このことによりハードエラーのポップアップが表示されました*1．ハードエラーのポップアップはサーバ側の画面に表示されるため，ユーザがポップアップのボタンをクリックして消すことは出来ず，その結果トップレベル・ウインドウとして残り続けます．</p>
-
 <p>ユーザがログオフ操作を行った時，GGはセッション中に存在するトップレベル・ウインドウを数え上げ，そのウインドウを生成したプロセスを強制終了させます．上記ハードエラーのポップアップもこの処理の対象となるため，それを生成したプロセス
 csrss.exe も強制終了されてしまいます． csrss.exe
 はシステムの重要なプロセスであるため，Windows
 の仕様によりBSODが発生します．</p>
-
 <p>なお，ハードエラーのポップアップが表示された状況とBSODが発生した状況は直接関係が無いため，メモリダンプの中にはハードエラーのポップアップが表示された原因を探る情報は含まれておりません．</p>
-
 <p>*1: In the crash you reported, the &ldquo;csrss.exe&rdquo; was displaying a hard
 error dialog.</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1678/KGTN2014052801.pdf">KGTN2014052801.pdf</a>
- [(80.2 KB)] [kitasp 技術センター, 2014/06/14
+[(80.2 KB)] [kitasp 技術センター, 2014/06/14
 19:04]</p>
 
                         </div>

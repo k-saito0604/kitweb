@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,26 +285,18 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2012/03/14*</p>
-
 <p>[番号]
 技術ノート KGTN 2012030601</p>
-
 <p>[現象]
 [GGW3.2.1] クライアント印刷機能でUniversal Driver
 のみを指定し，かつ全てのクライアントプリンタを構成する設定
 （autoconfigprinters = all）
 の場合，クライアントのデフォルトプリンタが変更される可能性はあるか？</p>
-
 <p>[説明]
 はい，次のようなシナリオでクライアントのデフォルトプリンタが変更されます．</p>
-
 <p>PrinterA と PrinterB （デフォルトプリンタ）
 が接続されたクライアントでGGサーバへ接続．
 GGサーバからログアウト．
@@ -312,11 +304,9 @@ PrinterB を撤去．
 PrinterC を接続．
 PrinterA と PrinterC （デフォルトプリンタ）
 が接続されたクライアントでGGサーバへ接続．</p>
-
 <p>GGの仕様では，先ず print.ini
 の情報に基づきクライアントプリンタを構成し，その次にクライアント上のデフォルトプリンタを構成します
 （成功した場合はこのプリンタをGG上のデフォルトプリンタとします） ．</p>
-
 <p>上記５のログオン直前の状態では， print.ini には PrinterB
 がデフォルトプリンタと記録されていますが，撤去されていますのでGGは
 PrinterA
@@ -325,7 +315,6 @@ PrinterA に変更されます．次にログオン直前のデフォルトプ�
 が構成され，GG上のデフォルトプリンタになります．この結果，クライアント上のデフォルトプリンタが
 PrinterA で，GG上のデフォルトプリンタが PrinterC になります
 （それぞれがデフォルトプリンタとして print.ini に記録されます） ．</p>
-
 <p>このような動作は，
 「クライアント上のデフォルトプリンタとGG上のデフォルトプリンタを別々に管理する」
 というGraphOn社のオリジナル仕様から，
@@ -334,11 +323,9 @@ PrinterA で，GG上のデフォルトプリンタが PrinterC になります
 へ変更された時の制限事項 （例外事項）
 となります．プリンタの交換が必要になった場合は，技術ノート
 KGTN#2012030801 の手順で作業を行うようにして下さいD</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/863/KGTN2012030601.pdf">KGTN2012030601.pdf</a>
- [(70.4 KB)] [kitasp 技術センター, 2012/03/14
+[(70.4 KB)] [kitasp 技術センター, 2012/03/14
 12:06]</p>
 
                         </div>

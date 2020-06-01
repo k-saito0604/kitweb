@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,27 +285,19 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2010/06/03*</p>
-
 <p>[番号]
 技術ノート KGTN 2010060302</p>
-
 <p>[現象]
 エンタープライズオプションの GMCheck （GMCheckRaw）
 を使ってセッション情報をDBに取り込むが，二重ログオンを禁止するにはどのような処理にすれば良いか？</p>
-
 <p>[説明]
 GMCheck
 によるセッション情報のDBへの取り込みとGGサーバへのログオンはその仕組み上同期していないため，アプリケーションの初期画面等で以下のチェックを行い，他に同一ユーザが存在する時は
 「既に同じユーザでログオンされています」
 等のエラーメッセージを表示し，アプリケーションを終了させて下さい．</p>
-
 <p>GMCheck でセッション情報をDBへ取り込む （例えば10秒間隔） ．
 アプリケーションの初期画面で環境変数 COMPUTERNAME と USERSESSION
 を参照する．
@@ -320,11 +312,9 @@ DB中に同一の COMPUTERNAME と USERSESSION
 チェックを繰り返しても存在しない場合は，障害と考えられるので
 「障害が発生しました．エラーコード:xxxを管理者へ連絡して下さい」
 等のエラーメッセージを表示して終了する．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/181/KGTN2010060302.pdf">KGTN2010060302.pdf</a>
- [(66.6 KB)] [kitasp 技術センター, 2010/06/03
+[(66.6 KB)] [kitasp 技術センター, 2010/06/03
 09:24]</p>
 
                         </div>

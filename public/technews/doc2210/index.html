@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,33 +285,24 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2016/12/15*</p>
-
 <p>[番号]
 技術ノート KGTN 2016120603</p>
-
 <p>[現象]
 [Windows/PowerShell/ExPack]
 ワークグループ環境＆複数のGGサーバーでNAS上にマイドキュメントやお気に入りを配置した運用環境の構築手順は？</p>
-
 <p>[説明]
 ここで記述する内容は，他の情報
 （技術ノート，PowerShell，Batch，NAS，etc&hellip;）
 を前提としており，閉じた内容でないことをご理解下さい．また， PowerShell
 をリモート実行出来る環境が構築されていることも前提としています．</p>
-
 <p>[STEP#0]
 ・管理サーバー・GGサーバー・NASのホスト名およびIPアドレスを決める
 （採取する） ．
 ・スクリプト genProfileFolderList.ps1 に設定情報をセットする．
 ・スクリプト genProfileSymbolicLinkList.ps1 に設定情報をセットする．</p>
-
 <pre><code># 設定情報
 $FilePrefix = &quot;GenMakeProfileFolder&quot; # 生成するファイルのプリフィックス
 $HomeFolder = &quot;C:HOME&quot; # プロファイルのホームフォルダー
@@ -322,9 +313,7 @@ $FolderList = # 生成するフォルダーのリスト
 &quot;Downloads&quot; 
 )
 </code></pre>
-
 <p>スクリプト genProfileFolderList.ps1 の設定情報</p>
-
 <pre><code># 設定情報
 $FilePrefix = &quot;GenMakeProfileSymbolicLink&quot; # 生成するファイルのプリフィックス
 $HomeFolder = &quot;C:Users&quot; # プロファイルのホームフォルダー
@@ -336,9 +325,7 @@ $FolderList = # 生成するフォルダーのリスト
 &quot;Downloads&quot; 
 )
 </code></pre>
-
 <p>スクリプト genProfileSymbolicLinkList.ps1 の設定情報</p>
-
 <p>[STEP#1] NAS
 ・登録するアカウントの情報 「ユーザーIDとパスワードなど」 を決める．
 ・NASのツールを使用し，NAS上にユーザーおよびユーザー単位の共有フォルダーを作成する．
@@ -346,19 +333,14 @@ $FolderList = # 生成するフォルダーのリスト
 etc&hellip;
 ・共有フォルダーのアクセス権は，共有アクセス許可およびNTFSアクセス許可ともに各ユーザーに
 &ldquo;フル コントロール&rdquo; のアクセス許可を付与する．さらに，管理のため
-Administrator および Administrators にも&rdquo;フル コントロール&rdquo;
+Administrator および Administrators にも&quot;フル コントロール&rdquo;
 のアクセス許可を付与する．
 参考：
 <a href="https://technet.microsoft.com/ja-jp/library/cc754178(v=ws.11).aspx">https://technet.microsoft.com/ja-jp/library/cc754178(v=ws.11).aspx</a></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3193/KGTN2016120603-1.jpg" alt="" /></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3194/KGTN2016120603-2.jpg" alt="" /></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3195/KGTN2016120603-3.jpg" alt="" /></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3196/KGTN2016120603-4.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3193/KGTN2016120603-1.jpg" alt=""></p>
+<p><img src="http://techreport.kitasp.net/attachments/download/3194/KGTN2016120603-2.jpg" alt=""></p>
+<p><img src="http://techreport.kitasp.net/attachments/download/3195/KGTN2016120603-3.jpg" alt=""></p>
+<p><img src="http://techreport.kitasp.net/attachments/download/3196/KGTN2016120603-4.jpg" alt=""></p>
 <p>[STEP#2] 管理サーバー
 ・GGサーバーの情報を構成ファイル ConfconfHostList.ps1 に記述する．
 ・アカウント情報を構成ファイル ConfconfUserList.ps1 に記述する．
@@ -371,188 +353,125 @@ Administrator および Administrators にも&rdquo;フル コントロール&rd
 ・スクリプト genProfileSymbolicLinkList.ps1 を実行する．
 　　→ 生成された MakeProfileSymbolicLink.bat
 を各GGサーバーへコピーする．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3197/KGTN2016120603-5.jpg" alt="" /></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3198/KGTN2016120603-6.jpg" alt="" /></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3199/KGTN2016120603-7.jpg" alt="" /></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3200/KGTN2016120603-8.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3197/KGTN2016120603-5.jpg" alt=""></p>
+<p><img src="http://techreport.kitasp.net/attachments/download/3198/KGTN2016120603-6.jpg" alt=""></p>
+<p><img src="http://techreport.kitasp.net/attachments/download/3199/KGTN2016120603-7.jpg" alt=""></p>
+<p><img src="http://techreport.kitasp.net/attachments/download/3200/KGTN2016120603-8.jpg" alt=""></p>
 <p>[STEP#3] 管理サーバー
 ・バッチ GenRDSrdsLogon-xxx.xxx.xxx.xxx.bat （各GGサーバー）
 を実行する．
 　　→ 各サーバー＆各ユーザーでログオンしログアウトする
 （プロファイルのフォルダーが作成される） ．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3201/KGTN2016120603-9.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3201/KGTN2016120603-9.jpg" alt=""></p>
 <p>[STEP#4] NAS
 ・管理者権限でバッチ MakeProfileFolder.bat を実行する．
 　　→ ユーザー単位の共有フォルダーにマイドキュメント等が作られる．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3224/KGTN2016120603-10.jpg" alt="" /></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3225/KGTN2016120603-11.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3224/KGTN2016120603-10.jpg" alt=""></p>
+<p><img src="http://techreport.kitasp.net/attachments/download/3225/KGTN2016120603-11.jpg" alt=""></p>
 <p>[STEP#5] 各GGサーバー
 ・管理者権限でバッチ MakeProfileSymbolicLink.bat を実行する．
 　　→
 ローカルプロファイル中のフォルダーが削除され，NAS上のユーザー単位の共有フォルダーへの
 シンボリック・リンクが作成される．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3204/KGTN2016120603-12.jpg" alt="" /></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3205/KGTN2016120603-13.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3204/KGTN2016120603-12.jpg" alt=""></p>
+<p><img src="http://techreport.kitasp.net/attachments/download/3205/KGTN2016120603-13.jpg" alt=""></p>
 <p>[STEP#6] 管理サーバーおよびNAS
 ・GGサーバーへログオンしメモ帳でマイドキュメントにファイルを保存する．
 　　→NAS上のユーザー単位の共有フォルダーの中にファイルが作成されていることを確認する．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3206/KGTN2016120603-14.jpg" alt="" /></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3207/KGTN2016120603-15.jpg" alt="" /></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3208/KGTN2016120603-16.jpg" alt="" /></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3209/KGTN2016120603-17.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3206/KGTN2016120603-14.jpg" alt=""></p>
+<p><img src="http://techreport.kitasp.net/attachments/download/3207/KGTN2016120603-15.jpg" alt=""></p>
+<p><img src="http://techreport.kitasp.net/attachments/download/3208/KGTN2016120603-16.jpg" alt=""></p>
+<p><img src="http://techreport.kitasp.net/attachments/download/3209/KGTN2016120603-17.jpg" alt=""></p>
 <p>[STEP#7] 管理サーバーおよびNAS
 ・GGサーバー上のIEを起動しウエッブページを表示し 「お気に入りに追加」
 を実行する．
 　　→NAS上のユーザー単位の共有フォルダーの中にショートカットが作成されていることを確認する．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3210/KGTN2016120603-18.jpg" alt="" /></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3211/KGTN2016120603-19.jpg" alt="" /></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3212/KGTN2016120603-20.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3210/KGTN2016120603-18.jpg" alt=""></p>
+<p><img src="http://techreport.kitasp.net/attachments/download/3211/KGTN2016120603-19.jpg" alt=""></p>
+<p><img src="http://techreport.kitasp.net/attachments/download/3212/KGTN2016120603-20.jpg" alt=""></p>
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3192/KGTN2016120603.pdf">KGTN2016120603.pdf</a>
- [(1.37 MB)] [kitasp 技術センター, 2016/12/15
+[(1.37 MB)] [kitasp 技術センター, 2016/12/15
 11:08]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3193/KGTN2016120603-1.jpg">KGTN2016120603-1.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3193/KGTN2016120603-1.jpg" title="表示">表示</a>
- [(27.9 KB)] [kitasp 技術センター, 2016/12/15
+[(27.9 KB)] [kitasp 技術センター, 2016/12/15
 11:08]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3194/KGTN2016120603-2.jpg">KGTN2016120603-2.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3194/KGTN2016120603-2.jpg" title="表示">表示</a>
- [(35.6 KB)] [kitasp 技術センター, 2016/12/15
+[(35.6 KB)] [kitasp 技術センター, 2016/12/15
 11:08]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3195/KGTN2016120603-3.jpg">KGTN2016120603-3.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3195/KGTN2016120603-3.jpg" title="表示">表示</a>
- [(10.9 KB)] [kitasp 技術センター, 2016/12/15
+[(10.9 KB)] [kitasp 技術センター, 2016/12/15
 11:08]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3196/KGTN2016120603-4.jpg">KGTN2016120603-4.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3196/KGTN2016120603-4.jpg" title="表示">表示</a>
- [(14.6 KB)] [kitasp 技術センター, 2016/12/15
+[(14.6 KB)] [kitasp 技術センター, 2016/12/15
 11:08]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3197/KGTN2016120603-5.jpg">KGTN2016120603-5.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3197/KGTN2016120603-5.jpg" title="表示">表示</a>
- [(38.5 KB)] [kitasp 技術センター, 2016/12/15
+[(38.5 KB)] [kitasp 技術センター, 2016/12/15
 11:08]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3198/KGTN2016120603-6.jpg">KGTN2016120603-6.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3198/KGTN2016120603-6.jpg" title="表示">表示</a>
- [(9.91 KB)] [kitasp 技術センター, 2016/12/15
+[(9.91 KB)] [kitasp 技術センター, 2016/12/15
 11:08]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3199/KGTN2016120603-7.jpg">KGTN2016120603-7.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3199/KGTN2016120603-7.jpg" title="表示">表示</a>
- [(9.57 KB)] [kitasp 技術センター, 2016/12/15
+[(9.57 KB)] [kitasp 技術センター, 2016/12/15
 11:08]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3200/KGTN2016120603-8.jpg">KGTN2016120603-8.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3200/KGTN2016120603-8.jpg" title="表示">表示</a>
- [(9.82 KB)] [kitasp 技術センター, 2016/12/15
+[(9.82 KB)] [kitasp 技術センター, 2016/12/15
 11:08]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3201/KGTN2016120603-9.jpg">KGTN2016120603-9.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3201/KGTN2016120603-9.jpg" title="表示">表示</a>
- [(28.9 KB)] [kitasp 技術センター, 2016/12/15
+[(28.9 KB)] [kitasp 技術センター, 2016/12/15
 11:08]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3204/KGTN2016120603-12.jpg">KGTN2016120603-12.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3204/KGTN2016120603-12.jpg" title="表示">表示</a>
- [(41.5 KB)] [kitasp 技術センター, 2016/12/15
+[(41.5 KB)] [kitasp 技術センター, 2016/12/15
 11:09]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3205/KGTN2016120603-13.jpg">KGTN2016120603-13.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3205/KGTN2016120603-13.jpg" title="表示">表示</a>
- [(33.3 KB)] [kitasp 技術センター, 2016/12/15
+[(33.3 KB)] [kitasp 技術センター, 2016/12/15
 11:09]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3206/KGTN2016120603-14.jpg">KGTN2016120603-14.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3206/KGTN2016120603-14.jpg" title="表示">表示</a>
- [(6.01 KB)] [kitasp 技術センター, 2016/12/15
+[(6.01 KB)] [kitasp 技術センター, 2016/12/15
 11:09]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3207/KGTN2016120603-15.jpg">KGTN2016120603-15.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3207/KGTN2016120603-15.jpg" title="表示">表示</a>
- [(4.35 KB)] [kitasp 技術センター, 2016/12/15
+[(4.35 KB)] [kitasp 技術センター, 2016/12/15
 11:09]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3208/KGTN2016120603-16.jpg">KGTN2016120603-16.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3208/KGTN2016120603-16.jpg" title="表示">表示</a>
- [(21.4 KB)] [kitasp 技術センター, 2016/12/15
+[(21.4 KB)] [kitasp 技術センター, 2016/12/15
 11:09]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3209/KGTN2016120603-17.jpg">KGTN2016120603-17.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3209/KGTN2016120603-17.jpg" title="表示">表示</a>
- [(26.1 KB)] [kitasp 技術センター, 2016/12/15
+[(26.1 KB)] [kitasp 技術センター, 2016/12/15
 11:09]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3210/KGTN2016120603-18.jpg">KGTN2016120603-18.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3210/KGTN2016120603-18.jpg" title="表示">表示</a>
- [(54.1 KB)] [kitasp 技術センター, 2016/12/15
+[(54.1 KB)] [kitasp 技術センター, 2016/12/15
 11:09]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3211/KGTN2016120603-19.jpg">KGTN2016120603-19.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3211/KGTN2016120603-19.jpg" title="表示">表示</a>
- [(8.43 KB)] [kitasp 技術センター, 2016/12/15
+[(8.43 KB)] [kitasp 技術センター, 2016/12/15
 11:09]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3212/KGTN2016120603-20.jpg">KGTN2016120603-20.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3212/KGTN2016120603-20.jpg" title="表示">表示</a>
- [(26.7 KB)] [kitasp 技術センター, 2016/12/15
+[(26.7 KB)] [kitasp 技術センター, 2016/12/15
 11:10]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3224/KGTN2016120603-10.jpg">KGTN2016120603-10.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3224/KGTN2016120603-10.jpg" title="表示">表示</a>
- [(33.1 KB)] [kitasp 技術センター, 2016/12/15
+[(33.1 KB)] [kitasp 技術センター, 2016/12/15
 11:36]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3225/KGTN2016120603-11.jpg">KGTN2016120603-11.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3225/KGTN2016120603-11.jpg" title="表示">表示</a>
- [(28.6 KB)] [kitasp 技術センター, 2016/12/15
+[(28.6 KB)] [kitasp 技術センター, 2016/12/15
 11:38]</p>
 
                         </div>

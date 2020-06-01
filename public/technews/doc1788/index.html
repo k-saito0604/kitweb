@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,41 +285,28 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2010/04/15*</p>
-
 <p>[番号]
 技術ノート KGTN 2010041501</p>
-
 <p>[現象]
 GGサーバ上でLMTOOLSを使用してライセンスサーバのステータスを問い合わせると，
 FLEXnet Licensing error:-96,491 が表示される．</p>
-
 <p>[説明]
 ポート番号やIPアドレスの間違いやネットワークの問題等でライセンスサーバへ接続出来ないは，FLEXnet
 Licensing error:-1,71 が表示されます． FLEXnet Licensing error:-96,491
 は，ライセンスサーバへ接続出来たものの，そのライセンスサーバのコンピュータ名とGGサーバ上で指定されたライセンスサーバのIPアドレスの逆引き
 （IPアドレスに対応するコンピュータ名）
 が一致していないことを意味します．従って，ライセンスサーバの正引きと逆引きが一致するようにネームサーバの設定を変更して下さい．もし，ネットワークの管理上の都合で逆引きを変更することが困難な場合は，GGサーバの</p>
-
 <p>C:¥Windows¥System32¥drivers¥etc¥hosts</p>
-
 <p>というファイルをメモ帳で開き，</p>
-
 <p>　</p>
-
 <p>を最終行に追加して下さい．下記の例は，IPアドレスが124.39.xx.xxx
 ，コンピュータ名がGGFW-SSLの場合です．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/137/KGTN2010041501.pdf">KGTN2010041501.pdf</a>
- [(133 KB)] [kitasp 技術センター, 2010/04/15
+[(133 KB)] [kitasp 技術センター, 2010/04/15
 10:44]</p>
 
                         </div>
