@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,17 +285,25 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/01/05*</p>
+
 <p>[番号]
 技術ノート KGTN 2011010501</p>
+
 <p>[現象]
 サーバを再起動する時，セッションが有無に関係なく無条件に行って良いか？</p>
+
 <p>[説明]
 GGの仕様上は，サーバが再起動される時に全てのセッションを終了させますので，特に問題はありません．但し，サーバが高負荷な時や不安定な時に予期せぬ事象が発生する可能性もゼロとは言えませんので，再起動の前にエンタープライズオプションの
 GMCheckRaw でセッションを強制終了 （GMCheckRaw ?kn ALL）
 させることをお勧めします．</p>
+
 <p>補　足
 サーバが高負荷な時に， GMCheckRaw によるセッションを強制終了
 （GMCheckRaw ?kn ALL）
@@ -304,9 +312,11 @@ GMCheckRaw で sessionCount
 がゼロかどうか確認し，ゼロでない場合は再度セッションの強制終了を行って下さい
 （これが面倒な場合は，10秒間隔で2〜3回セッションの強制終了を行って下さい）
 ．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/446/KGTN2011010501.pdf">KGTN2011010501.pdf</a>
-[(61.6 KB)] [kitasp 技術センター, 2011/01/05
+ [(61.6 KB)] [kitasp 技術センター, 2011/01/05
 11:01]</p>
 
                         </div>

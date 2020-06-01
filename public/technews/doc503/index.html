@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,14 +285,21 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2016/11/02*</p>
+
 <p>[番号]
 技術ノート KGTN 2016101402</p>
+
 <p>[現象]
 [GGH5.X/ExPack] 拡張パックの GGEasyMonitor
 の振分け機能を利用しているが，特定のユーザーを特定のサーバーへ振り分けたい．</p>
+
 <p>[説明]
 バージョン 2.2.3
 より，特定のユーザーを特定のサーバーに振り分けるプライマリーサーバー設定機能が実装されました．設定ファイル
@@ -304,6 +311,7 @@ GGEasyMonitorUserInfo.ini で，下記のようにユーザーIDと接続先の�
 （代替サーバー）
 が選択されます．この場合は，代替サーバーへ振り分けるというメッセージが表示されます
 （次ページのスクリーンショットを参照） ．</p>
+
 <pre><code>[administrator]　　　  ← ユーザーID
 hostName = GG-SERVER0  ← 接続先のサーバー名
 [wguser1*] 　　　　　　← wguser1???
@@ -313,11 +321,14 @@ hostName = GG-SERVER2
 [wguser3*] 　　　　　　← wguser3???
 hostName = GG-SERVER3
 </code></pre>
+
 <p>複数の振分け規則が合致する場合は，先に合致する規則
 （より上に書かれた規則） が優先します．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4212/KGTN2016101402.pdf">KGTN2016101402.pdf</a>
-[(127 KB)] [kitasp 技術センター, 2019/01/22
+ [(127 KB)] [kitasp 技術センター, 2019/01/22
 10:01]</p>
 
                         </div>

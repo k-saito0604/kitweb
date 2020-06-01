@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,30 +285,41 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/02/03*</p>
+
 <p>[番号]
 技術ノート KGTN 2011020304</p>
+
 <p>[現象]
 [GGW3.2.1] Universal Printer Driver （UPD）
 を使ってページ数の多い印刷を行った時，サーバ側でスプールファイルが生成され，それが消えたがプリンタへ印刷されない．</p>
+
 <p>[説明]
 Universal Printer Driver （UPD）
 を使ったクライアント印刷では，以下のような順序で処理が進みます．</p>
+
 <p>サーバ側でのスプールファイルの生成
 PDFエンジンによるPDFファイルの生成
 PDFファイルのクライアント側への転送
 PDFビュアー （Acrobat Reader） の起動および表示
 PDFドキュメントの出力 （クライアント側でのスプールファイルの生成）
 物理プリンタへの出力</p>
+
 <p>サーバ側でスプールファイルが生成されそれが消えた後は，上記２のPDFファイルの生成処理が行われており，印刷ジョブが消えた訳ではありません．なお，このPDFファイルの生成には，大きなドキュメントでは数分〜数十分かかります
 （注： タスクマネージャで pdfServer3.EXE
 を見ると，CPUの使用率や使用メモリの増加で処理が進行していることが分かります）
 ．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/468/KGTN2011020304.pdf">KGTN2011020304.pdf</a>
-[(59.2 KB)] [kitasp 技術センター, 2011/02/03
+ [(59.2 KB)] [kitasp 技術センター, 2011/02/03
 15:56]</p>
 
                         </div>

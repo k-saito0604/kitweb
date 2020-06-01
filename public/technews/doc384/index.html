@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,29 +285,43 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/12/19*</p>
+
 <p>[番号]
 技術ノート KGTN 2011121901</p>
+
 <p>[現象]
 [Windows] Windows Server 2008 の DEP
 （データ実行防止）　機能を無効化したい．</p>
+
 <p>[説明]
 Windows Server 2008 の DEP
 （データ実行防止）　機能を無効化するには，下記のコマンドを実行し，サーバを再起動して下さい．</p>
+
 <p>bcdedit /set nx Alwaysoff</p>
+
 <p>DEP機能を戻す （有効化する）
 時は，下記のコマンドを実行し，サーバを再起動して下さい．</p>
+
 <p>bcdedit /set nx OptIn</p>
+
 <p>上記の変更を行った場合は，GGの再インストールを行って下さい．</p>
+
 <p>補　足
 GGW3.2.1 + WS2008 + &ldquo;bcdedit /set nx alwaysoff&rdquo;
-の環境で，セッションが正常に終了しないという報告がありました．そのような現象が見られた場合は，&ldquo;bcdedit
+の環境で，セッションが正常に終了しないという報告がありました．そのような現象が見られた場合は，&rdquo;bcdedit
 /set nx OptIn&rdquo; を設定して下さい．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1517/KGTN2011121901.pdf">KGTN2011121901.pdf</a>
-[(55.7 KB)] [kitasp 技術センター, 2014/01/29
+ [(55.7 KB)] [kitasp 技術センター, 2014/01/29
 17:29]</p>
 
                         </div>

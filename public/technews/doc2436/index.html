@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,26 +285,38 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2016/08/01*</p>
+
 <p>[番号]
 技術ノート KGTN 2016070701</p>
+
 <p>[現象]
 [GGH4.X-5.X] 2台のGGサーバーに GGEasyMonitor
 をインストールし，それぞれが振分け処理を行うようにすることが可能か？</p>
+
 <p>[説明]
 2台のGGサーバーを Server1 (192.168.102.98) / Server2 (192.168.102.148)
 とすると， Server1 に GGEasyMonitor
 のエージェントとサーバー機能を設定し，さらに Server2 にも GGEasyMonitor
 のエージェントとサーバー機能を設定します．各サーバーの設定内容
 （サンプル） は，次のようになります，</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/2801/KGTN2016070701-1.jpg" alt=""></p>
-<p><img src="http://techreport.kitasp.net/attachments/download/2802/KGTN2016070701-2.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/2801/KGTN2016070701-1.jpg" alt="" /></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/2802/KGTN2016070701-2.jpg" alt="" /></p>
+
 <p>SERVER1</p>
+
 <p>[default]
 ; ★あり - 構成によって変更等が必要な項目
 ; ★なし - 必要がない限り変更等が不要な項目</p>
+
 <p>; ＊ログ関連＊
 ; logd : ログの出力フォルダ
 ; logLevel : 一般のログ出力レベル
@@ -316,6 +328,7 @@ logLevel = 4
 logLevelNet = 4
 logLevelWeb = 4
 logLevelCbk = 4</p>
+
 <p>; ＊通信関連＊
 ; hostName : ★コンピューター名
 ; hostAddr : ★IPアドレス
@@ -339,6 +352,7 @@ updateInterval = 3
 updateTimeout = 10
 bufferSize = 10
 maxTempError = 10</p>
+
 <p>; ＊APS関連＊
 ; apsPort : APSのポート番号（GGサーバーの待受けポート）
 ; sessionInfo : セッション・リストの採取の有無（YES/NO）
@@ -348,6 +362,7 @@ apsPort = 491
 sessionInfo = YES
 rxpAddr = 192.168.102.98
 rxpPort = 491</p>
+
 <p>; ＊ウエッブ機能関連＊
 ; webPort : ★監視画面のポート番号
 ; webAutoRefresh : 監視画面の更新間隔（秒）
@@ -362,14 +377,16 @@ webNumSessions = 25
 webRefURL = <a href="http://192.168.102.98:8080/">http://192.168.102.98:8080/</a>
 webRxpURL = <a href="http://192.168.102.98/goglobal/logon.html">http://192.168.102.98/goglobal/logon.html</a>
 webAuth = admin:password
-webCss = <!-- raw HTML omitted --></p>
+webCss = <link rel=stylesheet type="text/css"
+href="/GGEasyMonitor.css"></p>
+
 <p>; ＊振分け機能関連＊
 ; cbkDisable : 振分け機能「停止中」 (YES/NO)
 ; cbkPort : ★振分け機能のポート番号
 ; cbkMaxHost : ★接続候補のGGサーバーの数
 ; cbkRefTime : 振分けまでの遅延時間
 ; cbkRxpURL : GGサーバーのログオンページ
-; : この値に &ldquo;?host=&lt;GGサーバー&gt;&rdquo; が付加される。
+; : この値に &ldquo;?host=<GGサーバー>&rdquo; が付加される。
 ; : 省略時は webRxpURL の値が使用される。
 ; cbksingleLogon : 多重ログオンの禁止の有無 (YES/NO)
 ; cbkLogonPage : ユーザーID未指定時にログオンページを表示 (YES/NO)
@@ -380,6 +397,7 @@ cbkRefTime = 3
 cbkRxpURL =
 cbkSingleLogon = YES
 cbkLogonPage = YES</p>
+
 <p>; ＊サーバー機能関連＊
 ; [セクション名] : SA_コンピューター名 or SP_コンピューター名
 ; mode : ★SA = アクティブサーバー, SP = パッシブサーバー
@@ -392,11 +410,13 @@ mode = SP
 name = SERVER1
 addr = 192.168.102.98
 port =</p>
+
 <p>[SP_SERVER2]
 mode = SP
 name = SERVER1
 addr = 192.168.102.148
 port =</p>
+
 <p>; ＊エージェント機能関連＊
 ; [セクション名] : AA_コンピューター名 or AP_コンピューター名
 ; mode : ★AA = アクティブエージェント, AP = パッシブエージェント
@@ -408,17 +428,23 @@ mode = AA
 addr = 192.168.102.98
 port = 8491
 sessionList = YES</p>
+
 <p>[AA_SERVER2]
 mode = AA
 addr = 192.168.102.148
 port = 8491
 sessionList = YES</p>
+
 <p>; [EOF]</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/2803/KGTN2016070701-3.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/2803/KGTN2016070701-3.jpg" alt="" /></p>
+
 <p>SERVER2</p>
+
 <p>[default]
 ; ★あり - 構成によって変更等が必要な項目
 ; ★なし - 必要がない限り変更等が不要な項目</p>
+
 <p>; ＊ログ関連＊
 ; logd : ログの出力フォルダ
 ; logLevel : 一般のログ出力レベル
@@ -430,6 +456,7 @@ logLevel = 4
 logLevelNet = 4
 logLevelWeb = 4
 logLevelCbk = 4</p>
+
 <p>; ＊通信関連＊
 ; hostName : ★コンピューター名
 ; hostAddr : ★IPアドレス
@@ -453,6 +480,7 @@ updateInterval = 3
 updateTimeout = 10
 bufferSize = 10
 maxTempError = 10</p>
+
 <p>; ＊APS関連＊
 ; apsPort : APSのポート番号（GGサーバーの待受けポート）
 ; sessionInfo : セッション・リストの採取の有無（YES/NO）
@@ -462,6 +490,7 @@ apsPort = 491
 sessionInfo = YES
 rxpAddr = 192.168.102.148
 rxpPort = 491</p>
+
 <p>; ＊ウエッブ機能関連＊
 ; webPort : ★監視画面のポート番号
 ; webAutoRefresh : 監視画面の更新間隔（秒）
@@ -476,14 +505,16 @@ webNumSessions = 25
 webRefURL = <a href="http://192.168.102.148:8080/">http://192.168.102.148:8080/</a>
 webRxpURL = <a href="http://192.168.102.148/goglobal/logon.html">http://192.168.102.148/goglobal/logon.html</a>
 webAuth = admin:password
-webCss = <!-- raw HTML omitted --></p>
+webCss = <link rel=stylesheet type="text/css"
+href="/GGEasyMonitor.css"></p>
+
 <p>; ＊振分け機能関連＊
 ; cbkDisable : 振分け機能「停止中」 (YES/NO)
 ; cbkPort : ★振分け機能のポート番号
 ; cbkMaxHost : ★接続候補のGGサーバーの数
 ; cbkRefTime : 振分けまでの遅延時間
 ; cbkRxpURL : GGサーバーのログオンページ
-; : この値に &ldquo;?host=&lt;GGサーバー&gt;&rdquo; が付加される。
+; : この値に &ldquo;?host=<GGサーバー>&rdquo; が付加される。
 ; : 省略時は webRxpURL の値が使用される。
 ; cbksingleLogon : 多重ログオンの禁止の有無 (YES/NO)
 ; cbkLogonPage : ユーザーID未指定時にログオンページを表示 (YES/NO)
@@ -494,6 +525,7 @@ cbkRefTime = 3
 cbkRxpURL =
 cbkSingleLogon = YES
 cbkLogonPage = YES</p>
+
 <p>; ＊サーバー機能関連＊
 ; [セクション名] : SA_コンピューター名 or SP_コンピューター名
 ; mode : ★SA = アクティブサーバー, SP = パッシブサーバー
@@ -506,11 +538,13 @@ mode = SP
 name = SERVER2
 addr = 192.168.102.98
 port =</p>
+
 <p>[SP_SERVER2]
 mode = SP
 name = SERVER2
 addr = 192.168.102.148
 port =</p>
+
 <p>; ＊エージェント機能関連＊
 ; [セクション名] : AA_コンピューター名 or AP_コンピューター名
 ; mode : ★AA = アクティブエージェント, AP = パッシブエージェント
@@ -522,27 +556,37 @@ mode = AA
 addr = 192.168.102.98
 port = 8491
 sessionList = YES</p>
+
 <p>[SERVER2]
 mode = AA
 addr = 192.168.102.148
 port = 8491
 sessionList = YES</p>
+
 <p>; [EOF]</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2800/KGTN2016070701.pdf">KGTN2016070701.pdf</a>
-[(325 KB)] [kitasp 技術センター, 2016/08/01
+ [(325 KB)] [kitasp 技術センター, 2016/08/01
 12:05]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2801/KGTN2016070701-1.jpg">KGTN2016070701-1.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/2801/KGTN2016070701-1.jpg" title="表示">表示</a>
-[(21.6 KB)] [kitasp 技術センター, 2016/08/01
+ [(21.6 KB)] [kitasp 技術センター, 2016/08/01
 12:05]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2802/KGTN2016070701-2.jpg">KGTN2016070701-2.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/2802/KGTN2016070701-2.jpg" title="表示">表示</a>
-[(28.9 KB)] [kitasp 技術センター, 2016/08/01
+ [(28.9 KB)] [kitasp 技術センター, 2016/08/01
 12:05]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2803/KGTN2016070701-3.jpg">KGTN2016070701-3.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/2803/KGTN2016070701-3.jpg" title="表示">表示</a>
-[(28.8 KB)] [kitasp 技術センター, 2016/08/01
+ [(28.8 KB)] [kitasp 技術センター, 2016/08/01
 12:05]</p>
 
                         </div>

@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,61 +285,80 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/12/01*</p>
+
 <p>[番号]
 技術ノート KGTN 2010120101</p>
+
 <p>[現象]
 ライセンスサーバの 3台冗長構成 （Three-Server Redundancy）
 で発生した問題とは，どのような現象なのか？</p>
+
 <p>[説明]
 ライセンスファイル （= ライセンスサーバの構成）
 が以下の条件で，発生した現象を時系列で説明します．</p>
+
 <p>SERVER server1 17003456 27001
 SERVER server2 17004355 27001
 SERVER server3 17007ea8 27001</p>
+
 <p>１．正常な状態 （マスタサーバはserver1）
 server1: license server UP (MASTER) v10.8
 server2: license server UP v10.8
 server3: license server UP v10.8</p>
+
 <p>２．server1 で障害が発生した直後の状態 （マスタサーバ不在の状態）
 server1: License server machine is down or not responding.
 server2: license server UP v10.8
 server3: license server UP v10.8</p>
+
 <p>３．server1 で障害が発生して暫く経った状態
 （マスタサーバがserver2へ移った状態）
 server1: License server machine is down or not responding.
 server2: license server UP (MASTER) v10.8
 server3: license server UP v10.8</p>
+
 <p>４．server1 が復帰した直後の状態
 （過渡期でマスタサーバが2台存在する状態）
 server1: License server UP (MASTER) v10.8
 server2: license server UP (MASTER) v10.8
 server3: license server UP v10.8</p>
+
 <p>５．server1 が復帰して暫く経った状態
 （マスタサーバがserver2になった状態）
 server1: License server UP v10.8
 server2: license server UP (MASTER) v10.8
 server3: license server UP v10.8</p>
+
 <p>６．server2 で障害が発生した直後の状態 （マスタサーバ不在の状態）
 server1: License server UP v10.8
 server2: license server machine is down or not responding.
 server3: license server UP v10.8</p>
+
 <p>７．server2 で障害が発生して暫く経った状態
 （マスタサーバがserver1へ移った状態）
 server1: License server UP (MASTER) v10.8
 server2: license server machine is down or not responding.
 server3: license server UP v10.8</p>
+
 <p>８．server2 が復帰した状態 （不具合でserver2が正常に復帰出来ない状態）
 server1: License server UP (MASTER) v10.8
 server2: license server Cannot read data from license server system.
 server3: license server UP v10.8</p>
+
 <p>server2では，lmgrd.exeとbm.exeの２つのプロセスがCPUを100%近く消費する状況が発生し，3台冗長構成のサーバの１台として役割を果たさない状態になります．この問題を解決する方法については，技術ノート
 KGTN#2010112602 をご覧下さい．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/406/KGTN2010120101.pdf">KGTN2010120101.pdf</a>
-[(209 KB)] [kitasp 技術センター, 2010/12/01
+ [(209 KB)] [kitasp 技術センター, 2010/12/01
 14:51]</p>
 
                         </div>

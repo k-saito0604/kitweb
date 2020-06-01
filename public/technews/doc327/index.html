@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,27 +285,35 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2013/03/13*</p>
+
 <p>[番号]
 技術ノート KGTN 2013031302</p>
+
 <p>[現象]
 [GGH4.X] GG 環境で画像を表示すると色深度が浅く （低く） 表示される．</p>
+
 <p>[説明]
 GGH4.X では，既定の色深度が16 ビットに設定されており，色深度が深い
 （高い） 画像は減色されて表示
 されます．オリジナル通りの画像を表示させたい場合は，以下のようにログオンのパラメタを追加して下さい
 （色深度を32ビットに設定） ．</p>
-<ol>
-<li>Windowsクライアント
-&hellip;ggw.exe -h <!-- raw HTML omitted --> -mx 32</li>
-<li>ActiveXクライアント
-http://<!-- raw HTML omitted -->/logon.html?maxbpp=32</li>
-</ol>
+
+<p>1) Windowsクライアント
+&hellip;ggw.exe -h <host> -mx 32
+2) ActiveXクライアント
+http://<host>/logon.html?maxbpp=32</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1585/KGTN2013031302.pdf">KGTN2013031302.pdf</a>
-[(51.1 KB)] [kitasp 技術センター, 2014/02/21
+ [(51.1 KB)] [kitasp 技術センター, 2014/02/21
 20:56]</p>
 
                         </div>

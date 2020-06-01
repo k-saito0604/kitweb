@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,46 +285,68 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2015/11/04*</p>
+
 <p>[番号]
 技術ノート KGTN 2015101404</p>
+
 <p>[現象]
 [GGH4.X-5.X/ExPack] 拡張パックに含まれるソフトウエア GGEasyMonitor
 とはどんなツールなのか？</p>
+
 <p>[説明]
 GGEasyMonitor
 は，下記の機能を持ったインストールや運用が容易なツールです．</p>
+
 <ol>
 <li>GGのサービス APS を監視する監視機能</li>
 <li>監視情報をサーバーへ通知するエージェント機能</li>
 <li>エージェントからの監視情報を収集し管理するサーバー機能</li>
-<li>収集した情報をブラウザ上に整理して表示するウエッブ機能 （監視画面）</li>
-<li></li>
+<li>収集した情報をブラウザ上に整理して表示するウエッブ機能 （監視画面）
+5.
+収集した情報をもとに空きセッション数が多いGGサーバーへ誘導する振分け機能
+（振分け画面）</li>
+<li>障害が検出されたGGサーバーを振分けの対象から自動的に除外する機能</li>
+<li>GGサーバーのセッション数の推移や振分け結果などを記録するログ機能</li>
 </ol>
-<p>収集した情報をもとに空きセッション数が多いGGサーバーへ誘導する振分け機能
-（振分け画面）
-6. 障害が検出されたGGサーバーを振分けの対象から自動的に除外する機能
-7. GGサーバーのセッション数の推移や振分け結果などを記録するログ機能</p>
+
 <p>設定ファイルで，エージェント機能・サーバー機能・振分け機能などを並行して動作させることが出来ますので，GGサーバー上で自己監視を行いながら，他のGGサーバーの監視情報を受信し，それらの情報をブラウザで参照することも可能です．また，エージェント機能とサーバー機能は，それぞれアクティブ動作とパッシブ動作が出来ますので，ファイアウォール内でも動作することが出来ます．</p>
+
 <p>[監視画面]</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/3003/KGTN2015101404-1.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3003/KGTN2015101404-1.jpg" alt="" /></p>
+
 <p>※ testuser001 と administrator はローカルアカウント． aduser001
 はドメインアカウント．</p>
+
 <p>[振分け画面 - Windows]</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/3004/KGTN2015101404-2.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3004/KGTN2015101404-2.jpg" alt="" /></p>
+
 <p>[振分け画面 - iPad/iPhone]</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/3005/KGTN2015101404-3.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3005/KGTN2015101404-3.jpg" alt="" /></p>
+
 <p>GGEasyMnitor の基本的な構成は，以下の通りです．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/3006/KGTN2015101404-4.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3006/KGTN2015101404-4.jpg" alt="" /></p>
+
 <p>APS ： GGのアプリケーション配信機能
 GEM ： GGEasyMonitor
 xxxPort ： 待受けポートの番号</p>
+
 <p>設定ファイル
 設定ファイル GGEasyMonitor.ini の default
 セクションで，以下のパラメタを設定して下さい．</p>
-<hr>
+
+<hr />
+
 <pre><code>           設定項目                                                    説明
 
            logLevel                             ログの出力レベル，通常は1を指定し，障害時は4を指定
@@ -401,9 +423,13 @@ xxxPort ： 待受けポートの番号</p>
          cbkPluginLink                       POSTメソッド時にプラグインのダウンロードサイトへのリンク
                                                  ※未指定時は cbkRxpURL の値へのリンクが表示される
 </code></pre>
-<hr>
+
+<hr />
+
 <p>個別セクション （機能単位） で，以下のパラメタを設定して下さい．</p>
-<hr>
+
+<hr />
+
 <pre><code>           設定項目                                 説明
 
              mode                    AA - アクティブ動作のエージェント
@@ -423,11 +449,15 @@ xxxPort ： 待受けポートの番号</p>
 
          updateTimeout                   更新タイムアウト時間（秒）
 </code></pre>
-<hr>
+
+<hr />
+
 <p>設定ファイルのサンプルを以下に示します．</p>
+
 <p>[default]
 ; ★あり - 構成によって変更等が必要な項目
 ; ★なし - 必要がない限り変更等が不要な項目</p>
+
 <p>; ＊ログ関連＊
 ; logLevel : 一般のログ出力レベル
 ; logLevelNet : 通信関連のログ出力レベル
@@ -437,6 +467,7 @@ logLevel = 4
 logLevelNet = 4
 logLevelWeb = 4
 logLevelCbk = 4</p>
+
 <p>; ＊通信関連＊
 ; hostName : ★コンピューター名
 ; hostAddr : ★IPアドレス
@@ -460,6 +491,7 @@ updateInterval = 3
 updateTimeout = 10
 bufferSize = 10
 maxTempError = 10</p>
+
 <p>; ＊APS関連＊
 ; apsPort : APSのポート番号（GGサーバーの待受けポート）
 ; sessionInfo : セッション・リストの採取の有無（YES/NO）
@@ -469,6 +501,7 @@ apsPort = 491
 sessionInfo = YES
 rxpAddr = 192.168.102.1
 rxpPort = 491</p>
+
 <p>; ＊ウエッブ機能関連＊
 ; webPort : ★監視画面のポート番号
 ; webAutoRefresh : 監視画面の更新間隔（秒）
@@ -483,14 +516,15 @@ webNumSessions = 25
 webRefURL = <a href="http://192.168.102.1:8080/">http://192.168.102.1:8080/</a>
 webRxpURL = <a href="http://192.168.102.1/goglobal/logon.html">http://192.168.102.1/goglobal/logon.html</a>
 webAuth = admin:password
-webCss = <!-- raw HTML omitted -->
+webCss = <link rel=stylesheet type="text/css"
+href="/GGEasyMonitor.css">
 ; ＊振分け機能関連＊
 ; cbkDisable : 振分け機能「停止中」 (YES/NO)
 ; cbkPort : ★振分け機能のポート番号
 ; cbkMaxHost : ★接続候補のGGサーバーの数
 ; cbkRefTime : 振分けまでの遅延時間
 ; cbkRxpURL : GGサーバーのログオンページ
-; : この値に &ldquo;?host=&lt;GGサーバー&gt;&rdquo; が付加される。
+; : この値に &ldquo;?host=<GGサーバー>&rdquo; が付加される。
 ; : 省略時は webRxpURL の値が使用される。
 ; cbksingleLogon : 多重ログオンの禁止の有無 (YES/NO)
 ; cbkLogonPage : ユーザーID未指定時にログオンページを表示 (YES/NO)
@@ -509,6 +543,7 @@ cbkLogonPage = YES
 cbkIgnoreDomain = YES
 cbkDefaultDomain =
 cbkPluginLink =</p>
+
 <p>; ＊サーバー機能関連＊
 ; [セクション名] : SA_コンピューター名 or SP_コンピューター名
 ; mode : ★SA = アクティブサーバー, SP = パッシブサーバー
@@ -520,16 +555,19 @@ mode = SP
 name = SERVER
 addr = 192.168.102.1
 port =</p>
+
 <p>[SP_AGENT1]
 mode = SP
 name = AGENT1
 addr = 192.168.102.2
 port =</p>
+
 <p>[SP_AGENT2]
 mode = SP
 name = AGENT2
 addr = 192.168.102.3
 port =</p>
+
 <p>; ＊エージェント機能関連＊
 ; [セクション名] : AA_コンピューター名 or AP_コンピューター名
 ; mode : ★AA = アクティブエージェント, AP = パッシブエージェント
@@ -541,25 +579,35 @@ mode = AA
 addr = 192.168.102.1
 port = 8491
 sessionList = YES</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3002/KGTN2015101404.pdf">KGTN2015101404.pdf</a>
-[(386 KB)] [kitasp 技術センター, 2016/10/04
+ [(386 KB)] [kitasp 技術センター, 2016/10/04
 17:01]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3003/KGTN2015101404-1.jpg">KGTN2015101404-1.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3003/KGTN2015101404-1.jpg" title="表示">表示</a>
-[(51.6 KB)] [kitasp 技術センター, 2016/10/04
+ [(51.6 KB)] [kitasp 技術センター, 2016/10/04
 17:01]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3004/KGTN2015101404-2.jpg">KGTN2015101404-2.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3004/KGTN2015101404-2.jpg" title="表示">表示</a>
-[(9.01 KB)] [kitasp 技術センター, 2016/10/04
+ [(9.01 KB)] [kitasp 技術センター, 2016/10/04
 17:01]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3005/KGTN2015101404-3.jpg">KGTN2015101404-3.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3005/KGTN2015101404-3.jpg" title="表示">表示</a>
-[(4.24 KB)] [kitasp 技術センター, 2016/10/04
+ [(4.24 KB)] [kitasp 技術センター, 2016/10/04
 17:01]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3006/KGTN2015101404-4.jpg">KGTN2015101404-4.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3006/KGTN2015101404-4.jpg" title="表示">表示</a>
-[(34.5 KB)] [kitasp 技術センター, 2016/10/04
+ [(34.5 KB)] [kitasp 技術センター, 2016/10/04
 17:01]</p>
 
                         </div>

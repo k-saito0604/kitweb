@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,21 +285,27 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2009/11/12*</p>
+
 <p>[番号]
 技術ノート KGTN 2009110501</p>
+
 <p>[現象]
 クライアントプリンタ機能の処理手順の詳細について知りたい．</p>
-<p>[説明]</p>
-<ol>
-<li>用語 「クライアントプリンタが構成される」
+
+<p>[説明]
+1. 用語 「クライアントプリンタが構成される」
 GO-Global for Windowsサーバ （以下GGサーバと略します）
 がクライアント側にあるプリンタを認識して，GGサーバ上にそのプリンタに対応するオートクリエイトプリンタが作成されること．この処理が正常に行われると，クライアント側の
 &ldquo;print.ini&rdquo;
-ファイルにそのプリンタに対応するセクションが作成され，設定情報等が記録されます．</li>
-</ol>
+ファイルにそのプリンタに対応するセクションが作成され，設定情報等が記録されます．</p>
+
 <p>セクションの例
 [EPSON LP-900]
 PrinterName=EPSON LP-900
@@ -321,49 +327,46 @@ Duplex=010001
 YResolution=2C012D
 TTOption=000000
 Collate=000000</p>
-<ol start="2">
-<li>
-<p>構成されるプリンタ
+
+<ol>
+<li><p>構成されるプリンタ
 autoconfigprinters = &ldquo;all&rdquo;
 の場合は，クライアント側の全てのプリンタが構成されます．
 autoconfigprinters = &ldquo;default&rdquo;
 の場合は，クライアント側のデフォルトプリンタおよび &ldquo;print.ini&rdquo;
 ファイル中に構成されたことがあるプリンタが構成されます．これに加え，PW
 (Program Window)
-の画面で手動操作で指定したプリンタを構成することが出来ます．なお，GGサーバ上にプリンタドライバが無い等の理由でオートクリエイトプリンタを作成出来ない場合は，そのプリンタは構成されません．</p>
-</li>
-<li>
-<p>構成されるタイミング
-ログオン時のPWの初期化処理の中で各クライアントプリンタが構成されます．これに加え，PWの画面で手動操作でクライアントプリンタが設定された時もクライアントプリンタが構成されます．</p>
-</li>
-<li>
-<p>ドライバの選択
+の画面で手動操作で指定したプリンタを構成することが出来ます．なお，GGサーバ上にプリンタドライバが無い等の理由でオートクリエイトプリンタを作成出来ない場合は，そのプリンタは構成されません．</p></li>
+
+<li><p>構成されるタイミング
+ログオン時のPWの初期化処理の中で各クライアントプリンタが構成されます．これに加え，PWの画面で手動操作でクライアントプリンタが設定された時もクライアントプリンタが構成されます．</p></li>
+
+<li><p>ドライバの選択
 CM (Cluster Manager) の画面で &ldquo;Windows folder&rdquo;
 が選択された設定では，プリンタの基本ドライバである &ldquo;Native Printer
 Driver&rdquo; が選択されます．CMの画面で &ldquo;Universal Driver&rdquo;
 が選択された設定では，プリンタの種類に依存しない &ldquo;Universal Printer
-Driver&rdquo; が選択されます．</p>
-</li>
-<li>
-<p>ドライバの自動変更
+Driver&rdquo; が選択されます．</p></li>
+
+<li><p>ドライバの自動変更
 &ldquo;print.ini&rdquo; ファイル中に既に構成情報があり，
 かつログオン先GGサーバにそのドライバが無い場合は，その状態ではプリンタが利用できないため，GGは新規の場合と同様の手順でそのプリンタを構成します．
 従って，現在の構成情報が &ldquo;Native Printer Driver&rdquo;
-で，GGサーバにそのドライバが無い場合は，&ldquo;Universal Printer Driver&rdquo;
+で，GGサーバにそのドライバが無い場合は，&rdquo;Universal Printer Driver&rdquo;
 を選択します．逆に，現在の構成情報が &ldquo;Universal Printer Driver&rdquo;
 で，GGサーバにその設が行われていない場合は， &ldquo;Native Printer Driver&rdquo;
-を選択します（注：それぞれのドライバが利用出来る場合）．</p>
-</li>
-<li>
-<p>注意事項
+を選択します（注：それぞれのドライバが利用出来る場合）．</p></li>
+
+<li><p>注意事項
 上記5の仕様に関連して，１つのクライアントが複数のGGサーバに接続する状況に於いて，GGサーバのクライアントプリンタ機能の設定が異なる場合，構成情報中のプリンタのドライバが
 &ldquo;Native Printer Driver&rdquo; から &ldquo;Universal Printer Driver&rdquo;
-（またはその逆）に切り替わる可能性があります．１つのクライアントが複数のGGサーバに接続する場合は，各GGサーバのクライアントプリンタ機能の設定を同一にして下さい．</p>
-</li>
+（またはその逆）に切り替わる可能性があります．１つのクライアントが複数のGGサーバに接続する場合は，各GGサーバのクライアントプリンタ機能の設定を同一にして下さい．</p></li>
 </ol>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/33/KGTN2009110501.pdf">KGTN2009110501.pdf</a>
-[(97.7 KB)] [kitasp 技術センター, 2009/11/12
+ [(97.7 KB)] [kitasp 技術センター, 2009/11/12
 12:49]</p>
 
                         </div>

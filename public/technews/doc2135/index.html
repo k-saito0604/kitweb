@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,29 +285,42 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2020/01/24*</p>
+
 <p>[番号]
 技術ノート KGTN 2019110801</p>
+
 <p>[現象]
 [GGH6.X]
 バージョン6.0の環境でログオンスクリプトを指定すると、そのスクリプトの起動までに約10秒を要する。</p>
+
 <p>[説明]
 この現象は、ログオンダイアログを介さずにログオンする時
 （クライアントのパラメタでユーザーIDとパスワードの両方を指定した時）
 に発生し、ログオンダイアログでユーザーIDやパスワードを入力した時は発生しません。GraphOn社もこの問題を認識しており、将来のビルドで修正される見込みです。当面の対症療法として、GGサーバーのレジストリに下記設定を行うことで、現象が発生しないようになります。</p>
+
 <pre><code>HKLMSOFTWAREGraphOnGO-GlobalLoaderProcessesconhost.exe = 2
 HKLMSOFTWAREGraphOnGO-GlobalLoaderProcessescmd.exe = 2
 </code></pre>
-<p><img src="http://techreport.kitasp.net/attachments/download/4419/KGTN2019110801.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4419/KGTN2019110801.jpg" alt="" /></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4418/KGTN2019110801.pdf">KGTN2019110801.pdf</a>
-[(83.9 KB)] [kitasp 技術センター, 2020/01/24
+ [(83.9 KB)] [kitasp 技術センター, 2020/01/24
 12:15]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4419/KGTN2019110801.jpg">KGTN2019110801.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4419/KGTN2019110801.jpg" title="表示">表示</a>
-[(50.8 KB)] [kitasp 技術センター, 2020/01/24
+ [(50.8 KB)] [kitasp 技術センター, 2020/01/24
 12:15]</p>
 
                         </div>

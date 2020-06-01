@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,26 +285,35 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p><em>技術ノート
 2015/09/02</em></p>
+
 <p>[番号]
 技術ノート KGTN 2015080701</p>
+
 <p>[現象]
 [GGH5.X] APS が開始しない．ログを見ると &ldquo;A Bug Check (BSOD) was
 detected &hellip;&rdquo; という記録がある．</p>
+
 <p>[説明]
 非互換性等によりバグチェック （BSOD）
 が発生し，GGが無効化されたのが原因だと思われます．ファイル
 C:Windowssystem32DRIVERSDBCM.bin
 を削除し，サーバーを再起動して下さい．</p>
+
 <pre><code>aps (1088) A Bug Check (BSOD) was detected from a previous system start and GO-Global has been
 disabled. To re-enable GO-Global, delete the C:Windowssystem32DRIVERSDBCM.bin file and restart the
 computer. To prevent a Bug Check from disabling GO-Global, create the DWORD registry value
 [HKEY_LOCAL_MACHINESYSTEMCurrentControlSetServicesggseDBCM_Disabled] and set it to
 0x00000001. (Diagnostic DBCM bits 0x01ff0000)
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2204/KGTN2015080701.pdf">KGTN2015080701.pdf</a>[(59.3 KB)] [kitasp 技術センター, 2015/09/02
 16:32]</p>
 

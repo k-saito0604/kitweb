@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,51 +285,71 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2013/07/12*</p>
+
 <p>[番号]
 技術ノート KGTN 2013071201</p>
+
 <p>[現象]
 [ExPack] GGTerminalRoaming のサンプル版のインストール方法は？</p>
+
 <p>[説明]
 以下の手順でインストールして下さい．</p>
+
 <p>GGサーバにフォルダ C:¥GraphOn を作成し，そこに配布フォルダ
 GGTerminalRoaming をコピーして下さい．</p>
+
 <p>フォルダ C:¥GrapOn¥GGTerminalRoaming¥GSM にあるファイル
 GGSessionMonitor.ini をテキストエディタやメモ帳で開き，キー host
 の値にGGサーバのIPアドレスを記入し，ファイルを上書き保存して下さい．</p>
+
 <p>コマンドプロンプトを開き，DOS窓で GGSessionMonitor -sec gsm
 を実行して下さい．次に．画面に Debug: &hellip; availability = &lsquo;YES&rsquo;
 という行が表示されたことを確認して下さい．もし表示されない場合は，IPアドレスに誤りがあるか，または指定したGGサーバ上で
 APS が開始していない可能性が高いと考えられます．</p>
+
 <p>DOS窓で GMService -i を実行し，続けて GMService ?s
 を実行して下さい．この操作で，GGサーバを監視するサービスが登録され，さらにそのサービスが開始します．</p>
+
 <p>タスクマネージャで GMService.exe と GGSessionMonitor.exe
 が存在することを確認して下さい．この時点で，GGサーバを常時監視する環境が整いました．</p>
+
 <p>プログラム C:¥GrapOn¥GGTerminalRoaming¥GGTerminalRoaming.exe
 をクラスタマネージャで登録して下さい．以上で，環境設定は完了しました．</p>
+
 <p>最初のクライアントPC （移動前の端末）
 からGGサーバにログオンし，メモ帳等のアプリケーションを起動して下さい．</p>
+
 <p>アプリケーション GGTerminalRoaming
 を起動して下さい．スプラッシュ画面が表示され，最小化状態で動作します
 （サンプル版の仕様です） ．</p>
+
 <p>プログラム・ウインドウを使用してセッションを Discoonect
 して下さい．または，クライアントPC上で gg-client.exe
 のプロセスを強制終了しても構いません．</p>
+
 <p>2台目のクライアントPC （移動後の端末）
 からGGサーバにログオンし，前のステップで切断したセッションに再接続して下さい．正常であれば，プログラム・ウインドウがプライマリ・モニタの左上の位置に表示されます
 （サンプル版の仕様です）
 ．他のアプリケーションのウインドウは，移動後のモニタの解像度に合わせて，位置が調整されます．なお，アプリケーションの作りによっては移動しないことがありますが，この場合は，アプリケーションの動作
 （ウインドウ管理） に合わせて GGTerminalRoaming
 をカスタマイズする必要があります．</p>
+
 <p>ウインドウの再配置に関する情報は，サーバ側のフォルダC:¥GrapOn¥GGTerminalRoaming
 中のファイル gtr-yyyymmdd.log
 に記録されます．なお，サンプル版では障害発生時の状況が分かるように，やや多めに
 （頻繁に） 情報を記録しております．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1352/KGTN2013071201.pdf">KGTN2013071201.pdf</a>
-[(1.09 MB)] [kitasp 技術センター, 2013/07/12
+ [(1.09 MB)] [kitasp 技術センター, 2013/07/12
 10:03]</p>
 
                         </div>

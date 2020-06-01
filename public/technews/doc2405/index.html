@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,31 +285,42 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2016/08/01*</p>
+
 <p>[番号]
 技術ノート KGTN 2016072601</p>
+
 <p>[現象]
 [GGSpoolPdf] イベントログに &ldquo;doPrint2: Step#2&rdquo;
 の記録があった直後に， Symantec Endpoint Protection が 「改変対策
 スキャン」
 のイベントログが記録されている．このタイミングでどんな処理が行われるのか？</p>
+
 <p>[説明]
 GGSpoolPDF (doPrint2) は，以下の処理を行います．</p>
+
 <p>1.　Acrobat Reader の起動を待つ (STEP#1)
 2.　終了を要求 = Acrobat Reader はバックグラウンドへ (STEP#2)
 3.　ワークファイルが削除できるまで待つ = 印刷終了を待つ (STEP#3)
 4.　空な Acrobat Reader を終了させる (STEP#4, STEP#5)
 5.　ファイルの削除処理</p>
+
 <p>STEP#2 では， EnumWindows()
 で画面上のすべてのトップレベルウィンドウを列挙し，クラスの名前が
 &ldquo;AcrobatSDIWindow&rdquo;
 で，かつウインドウのタイトルが印刷しているファイル名を含むウインドウに対して，ウインドウの最小化
 （CloseWindow） と終了要求 （PostMessage, WM_CLOSE） の送信を行います．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2846/KGTN2016072601.pdf">KGTN2016072601.pdf</a>
-[(67.7 KB)] [kitasp 技術センター, 2016/08/01
+ [(67.7 KB)] [kitasp 技術センター, 2016/08/01
 14:30]</p>
 
                         </div>

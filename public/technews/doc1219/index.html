@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,32 +285,44 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/11/22*</p>
+
 <p>[番号]
 技術ノート KGTN 2011112202</p>
+
 <p>[現象]
 [Windows2003]
 GGサーバにユーザがログオンを行った時，下記のエラーが発生した．</p>
+
 <p>aps (3468) AS: Function APS_IndependentSession::loadUserProfile () ¥
 in file APS_IndependentSession.cpp failed at line 3916 (WLE1450).</p>
+
 <p>[説明]
 このメッセージの内容から， 1) ユーザがGGサーバへのログオンを試みて， 2)
 GGがそのユーザのプロファイルをロードしようとしたが， 3)
 プロファイルのロードに失敗した ことを意味しています． WLE1450
 は，その時に発生したエラー （System Error Code）
 で，その意味は以下の通りです．</p>
+
 <p>ERROR_NO_SYSTEM_RESOURCES
 Insufficient system resources exist to complete the requested service.</p>
+
 <p>このエラーは （大きな） ファイルの読み込み等でリソース （PTE）
 が不足した場合や，読み込みに失敗して所定の回数試行しても失敗した場合などに返されます．従って，プロファイル全体のサイズが異常に大きい，またはプロファイルの読み込みに失敗した等が考えられます．なお，コンソールやリモートデスクトップ接続でのログオンでも同じ現象が確認される場合は，
 Windows Server 自体の問題 または Active Directory の問題
 （プロファイルを管理しているファイルサーバ周辺の問題も含みます）
 の可能性が高いと考えられます．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/710/KGTN2011112202.pdf">KGTN2011112202.pdf</a>
-[(62.9 KB)] [kitasp 技術センター, 2011/11/22
+ [(62.9 KB)] [kitasp 技術センター, 2011/11/22
 14:07]</p>
 
                         </div>

@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,17 +285,25 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2017/02/22*</p>
+
 <p>[番号]
 技術ノート KGTN 2016121901</p>
+
 <p>[現象]
 [Windows]
 NAS上にローカルアカウントの共有フォルダーをバッチで作成したい．</p>
+
 <p>[説明]
 上位フォルダーに必要なアクセス許可 （および継承）
 が設定されているという前提で，以下コマンドによってローカルアカウントの共有フォルダーを作成することが出来ます．</p>
+
 <pre><code>:: ホームフォルダーを作成する
 mkdir C:HOMElocalUser901
 :: ユーザーにフルコントロールを与える
@@ -304,9 +312,11 @@ cacls C:HOMElocalUser901 /T /E /G localUser901:F
 net share localUser901=C:HOMElocalUser901 /grant:Administrator,full
 /grant:Administrators,full /grant:localUser901,full
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3238/KGTN2016121901.pdf">KGTN2016121901.pdf</a>
-[(58.5 KB)] [kitasp 技術センター, 2017/02/22
+ [(58.5 KB)] [kitasp 技術センター, 2017/02/22
 17:06]</p>
 
                         </div>

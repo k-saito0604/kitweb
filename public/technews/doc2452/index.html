@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,14 +285,21 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2012/01/19*</p>
+
 <p>[番号]
 技術ノート KGTN 2012011901</p>
+
 <p>[現象]
 [GGH4.X-5.X] ActiveXクライアントで，GGサーバに接続時に自動的にブラウザ
 （IE） を閉じたい．</p>
+
 <p>[説明]
 下記のようにlogon.html にパラメタ （下線部分）
 を与えることで，GGサーバに接続時に自動的にブラウザ （IE）
@@ -300,9 +307,12 @@
 の環境では， UAC （ユーザーアカウント制御）
 を無効にするか，またはブラウザ （IE） を 「管理者として実行」
 する必要があります．</p>
+
 <p><a href="http://myServer/logon.html?user=User&amp;password=Pass&amp;bInBrowser=false&amp;autoclose=true">http://myServer/logon.html?user=User&amp;password=Pass&amp;bInBrowser=false&amp;autoclose=true</a></p>
+
 <p>補　足
 パラメタに関する仕様は以下の通りです．</p>
+
 <pre><code>The correct functionality (when fixed) will be as follows:
 When &quot;autoclose&quot; = &quot;true,&quot; the browser will close at different times depending on the &quot;bInBrowser&quot; 
 setting. If &quot;bInBrowser&quot; is set to &quot;false,&quot; the browser will close as soon as the session starts.
@@ -312,9 +322,11 @@ window when it finishes executing. Alternatively, when &quot;autoclose&quot; = &
 will close when the browser window when it finishes executing.
 The bug is scheduled for 4.0.1 Patch 5
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2780/KGTN2012011901.pdf">KGTN2012011901.pdf</a>
-[(70.9 KB)] [kitasp 技術センター, 2016/08/01
+ [(70.9 KB)] [kitasp 技術センター, 2016/08/01
 11:29]</p>
 
                         </div>

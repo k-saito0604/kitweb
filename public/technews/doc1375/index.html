@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,27 +285,38 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/05/19*</p>
+
 <p>[番号]
 技術ノート KGTN 2011051901</p>
+
 <p>[現象]
-GGクライアントとGGサーバ間にロードバランサを配置しているが，ロードバランサを介して接続しようとすると&quot;Failed
+GGクライアントとGGサーバ間にロードバランサを配置しているが，ロードバランサを介して接続しようとすると&rdquo;Failed
 to connect to XXXXX on port #491&rdquo; というエラーが表示される．</p>
+
 <p>[説明]
 このエラーは，GGクライアントから見て接続先の XXXXX （ポート番号491）
 に接続出来なかったことを意味します．従って，以下のようなケースが考えられます．</p>
+
 <p>接続先 XXXXX が正しくない．
 XXXXX
 がロードバランサの場合，ロードバランサがGGクライアントからの接続を受け付けていない．
 ロードバランサがGGサーバの監視を正しく行っていない
 （正しく認識していない） ．
 その他</p>
+
 <p>何れにしても，ロードバランサのログ等を調べて，どのような事象が発生しているのか確認することが必要です．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/560/KGTN2011051901.pdf">KGTN2011051901.pdf</a>
-[(52 KB)] [kitasp 技術センター, 2011/05/19
+ [(52 KB)] [kitasp 技術センター, 2011/05/19
 09:41]</p>
 
                         </div>

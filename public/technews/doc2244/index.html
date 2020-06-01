@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,31 +285,44 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2016/11/02*</p>
+
 <p>[番号]
 技術ノート KGTN 2016101804</p>
+
 <p>[現象]
 [Windows/PowerShell] PowerShell でIPアドレスを得る方法は？</p>
+
 <p>[説明]
 現実的には，以下のように PowerShell のコマンド Get-NetIPAddress
 を使う方法と Net.DNS で GetHostAddresses()
 メソッドを利用する方法があります．速度重視の場合は， .NET
 の利用をお勧めします．</p>
+
 <pre><code>(Get-NetIPAddress | Where-Object -FilterScript { ($_.InterfaceAlias -Eq &quot;イーサネット&quot;) -And
 ($_.AddressFamily -Eq &quot;IPv4&quot;) } | select -ExpandProperty IPAddress)
 ([Net.Dns]::GetHostAddresses('') | Where-Object -FilterScript { ($_.AddressFamily -Eq
 &quot;InterNetwork&quot;) } | select -ExpandProperty IPAddressToString)
 </code></pre>
-<p><img src="http://techreport.kitasp.net/attachments/download/3152/KGTN2016101804.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3152/KGTN2016101804.jpg" alt="" /></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3151/KGTN2016101804.pdf">KGTN2016101804.pdf</a>
-[(79 KB)] [kitasp 技術センター, 2016/11/02
+ [(79 KB)] [kitasp 技術センター, 2016/11/02
 14:38]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3152/KGTN2016101804.jpg">KGTN2016101804.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3152/KGTN2016101804.jpg" title="表示">表示</a>
-[(30.8 KB)] [kitasp 技術センター, 2016/11/02
+ [(30.8 KB)] [kitasp 技術センター, 2016/11/02
 14:38]</p>
 
                         </div>

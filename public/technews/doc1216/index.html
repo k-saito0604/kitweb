@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,32 +285,55 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/11/30*</p>
+
 <p>[番号]
 技術ノート KGTN 2010072705</p>
+
 <p>[現象]
 Ver4.0系で特定のプリンタだけ Windows Printer Driver
 を使用したいが可能か？</p>
+
 <p>[説明]
 プリンタ情報 MappedPrinterDrivers.xml を編集して，サービス &ldquo;GO-Global
 Application Publishing Service&rdquo;
 を再起動することで対応可能です．具体的な手順は，以下の通りです．</p>
+
 <p>MappedPrinterDrivers.xml をTeraPad等のテキストエディタへ開く．
 該当するプリンタの項目 Value から &ldquo;;Universal Remote Printer&rdquo; を削除する
 （下の例では下線の部分） ．
 MappedPrinterDrivers.xml を上書き保存する．
 サービス &ldquo;GO-Global Application Publishing Service&rdquo; を再起動する．</p>
-<!-- raw HTML omitted -->
+
+<p><mappedprinterdrivers version="1.0">
+<property id="FX DocuCentre-II C4300" type="STRING">
+<value>FX DocuCentre-II C4300;Universal Remote Printer</value>
+</property>
+<property id="EPSON LP-900" type="STRING">
+<value>EPSON LP-900;Universal Remote Printer</value>
+</property>
+<property id="Microsoft XPS Document Writer" type="STRING">
+<value>Microsoft XPS Document Writer;Universal Remote
+Printer</value>
+</property>
+</mappedprinterdrivers></p>
+
 <p>補　足
 ユーザが個別に操作するという前提であれば， [Program Window] → [File]
 → [Printers] → [変更したいプリンタを選択] → [Driver&hellip;]
 を選択し，表示されるダイアログで下側のラジオボタンをクリックし，その右側のコンボボックスでドライバを選択することで，
 Windows Printer Driver を使用することが出来ます．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/245/KGTN2010072705.pdf">KGTN2010072705.pdf</a>
-[(79.3 KB)] [kitasp 技術センター, 2011/11/30
+ [(79.3 KB)] [kitasp 技術センター, 2011/11/30
 12:38]</p>
 
                         </div>

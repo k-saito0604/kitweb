@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,13 +285,20 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2014/12/12*</p>
+
 <p>[番号]
 技術ノート KGTN 2014120401</p>
+
 <p>[現象]
 [GGH4.X] GGRxpConnect とは，どのようなソフトウエアなのか？</p>
+
 <p>[説明]
 GGRxpConnect は弊社開発のソフトウエアで，本ソフトウエアを Windows PC
 にインストールすることにより Internet Explorer
@@ -301,13 +308,16 @@ rxp://?h=192.168.102.81&amp;hp=491&amp;u=Administrator&amp;p=Password&amp;a=Note
 というURLにアクセスすると，GGのWindowsクライアントが起動し，192.168.102.81のGGサーバーにログオンし，そしてメモ帳
 （Notepad） が立ち上がります．GGRxpConnect
 のインストール手順は，次の通りです．</p>
+
 <ol>
 <li>Windowsクライアントをインストールする
 （既にインストールされている場合は不要） ．</li>
 <li>GGRxpConnect の配布フォルダにある install.bat
 を管理者として実行する．</li>
 </ol>
+
 <p>このURLスキームで指定可能なパラメタは以下の通りです．</p>
+
 <pre><code>Host....................: h= ; GG サーバーのアドレス
 Port....................: hp= ; GG サーバーのポート番号
 User....................: u= ; ユーザー名
@@ -318,9 +328,11 @@ Image Compression.......: qt= ; 画像圧縮（0/1）
 Printer Configuration...: ac= ; クライアントプリンタの構成（none/default/all）
 Maximum Color Depth.....: mx= ; 最大色深度（8/16/24/32）
 </code></pre>
+
 <p>補　足
 logon.html を修正して GGRxpConnect
 に対応するには，ActiveXクライアントの部分を以下のように書き換えて下さい．</p>
+
 <pre><code>else if (browser.msie)
 {
     //--- URL Schele (rxp) ---
@@ -360,9 +372,11 @@ logon.html を修正して GGRxpConnect
     location.replace(sRxp);
 }
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1804/KGTN2014120401.pdf">KGTN2014120401.pdf</a>
-[(80.3 KB)] [kitasp 技術センター, 2014/12/12
+ [(80.3 KB)] [kitasp 技術センター, 2014/12/12
 16:58]</p>
 
                         </div>

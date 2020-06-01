@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,61 +285,94 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2014/11/09*</p>
+
 <p>[番号]
 技術ノート KGTN 2014103101</p>
+
 <p>[現象]
 [GGH4.X] 拡張パックの pdfprint.exe (GGPdfPrint)
 とはどんなツールなのか？</p>
+
 <p>[説明]
 UPDで生成されたPDFファイルは，クライアント側の pdfprint.exe
 でプリンターへ出力 （印刷） されます．GGに添付される pdfprint.exe
 はVeryPDF社の製品で，プリンターへ出力するという標準的な機能のみを提供します．弊社開発の
 pdfprint.exe (GGPdfPrint) は Adobe Reader
 を印刷エンジンとして使用し，GGの利用環境を意識した柔軟な機能を提供します．また，カラー/白黒・両面印刷等の設定は，クライアント側のプリンターの設定値がそのまま適用されます．</p>
+
 <p>pdfprint.exe (GGPdfPrint) の動作は設定ファイル pdfprint.ini
-の内容によって決まりますが，この設定ファイルを各ユーザーの　&ldquo;マイ
+の内容によって決まりますが，この設定ファイルを各ユーザーの　&rdquo;マイ
 ドキュメント&rdquo;　にコピーし修正することで，ユーザー毎に異なる動作をさせることが可能です
 （注：マイドキュメントに設定ファイルが無い場合は， pdfprint.exe
 と同じフォルダーにある設定ファイルが使用されます）
 ．設定ファイルの内容は，以下の通りです．</p>
+
 <p>2014年11月現在，標準の設定 （viewerPath とviewerArg2）
 で動作を確認しているプログラムは Adobe Reader XI です． Adobe Reader
 の動作状況 （起動・印刷・終了）
 の認識は，プログラムの動作に強く依存しておりますので，他バージョンでの動作は保証することが出来ません．</p>
+
 <p>設定ファイル
 設定ファイル pdfprint.ini の default
 セクションで，以下のパラメーターを設定して下さい．</p>
+
 <p>設定項目</p>
+
 <p>説明</p>
+
 <p>logLevel</p>
+
 <p>ログの出力レベル （通常は0で，障害の調査時は4を指定）</p>
+
 <p>workTime</p>
+
 <p>印刷処理のタイムアウト時間 （既定値は60秒）
 ※タイムアウト発生時に延長確認のダイアログが表示されます．</p>
+
 <p>viewerPath</p>
+
 <p>Adobe Reader の本体のフルパス （既定値は &ldquo;.PDF&rdquo;
 に関連付けされたプログラムのフルパス）</p>
+
 <p>viewerArg2</p>
+
 <p>Adobe Reader に渡すパラメーター （通常は &ldquo;/n /h /t&rdquo; を指定）</p>
+
 <p>viewerPRT</p>
+
 <p>出力方法の選択</p>
+
 <p>server ： 印刷ダイアログで指定したプリンターに印刷</p>
+
 <p>client ： クライアント側でプリンターを選択して印刷</p>
+
 <p>default ： クライアント側の既定のプリンターに印刷</p>
+
 <p>save ： 保存フォルダーにコピー （印刷しない）</p>
+
 <p>プリンター名 ： 指定したプリンターに印刷</p>
+
 <p>saveDir</p>
+
 <p>印刷せずにPDFファイルを保存する時のフォルダー （既定値は &ldquo;マイ
 ドキュメント&rdquo;）</p>
+
 <p>workDir</p>
+
 <p>作業フォルダーのパス （既定値はPDFファイルが置かれたフォルダー）</p>
+
 <p>インストール手順
 インストールは，WindowsクライアントおよびActiveXクライアントのインストールフォルダに
 pdfprint.exe と pdfprint.ini
 をコピーして下さい．標準的な環境では，それぞれのフォルダは次の通りです．</p>
+
 <ol>
 <li>Windowsクライアント
 　　C:Program Files (x86)GraphOnGO-GlobalClient
@@ -348,9 +381,11 @@ pdfprint.exe と pdfprint.ini
 <li>ActiveXクライアント
 　　C:WindowsDownloaded Program Files</li>
 </ol>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1809/KGTN2014103101.pdf">KGTN2014103101.pdf</a>
-[(90.8 KB)] [kitasp 技術センター, 2015/01/16
+ [(90.8 KB)] [kitasp 技術センター, 2015/01/16
 16:40]</p>
 
                         </div>

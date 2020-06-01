@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,28 +285,39 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/09/09*</p>
+
 <p>[番号]
 技術ノート KGTN 2010090901</p>
+
 <p>[現象]
 GG標準のログオン画面で，認証に3回失敗すると &ldquo;The user had as many failed
 logon attempts as are allowed&rdquo;
 というメッセージが表示されるが，この回数やメッセージを変更することは可能か？</p>
+
 <p>[説明]
 変更することは出来ません．しかし， Active Directory
 でユーザ認証を行うケースでは，ASPやPHPでログオン画面を作成することで，これらをカスタマイズすることが可能です．処理の概要は，以下の通りです．</p>
+
 <p>GGにログオンするための専用ログオン画面を表示
 専用ログオン画面でユーザが UserID/Password を入力
 入力された UserID/Password をLDAPサーバ （ADサーバ）
 に問い合わせてチェック
 成功した場合は，その情報をActiveXクライアントへ渡してGGへログオン
 失敗した場合は，スクリプトでエラー画面を表示</p>
+
 <p>なお，エンタープライズオプションには，ASPで記述した専用ログオン画面のサンプルが含まれています．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/311/KGTN2010090901.pdf">KGTN2010090901.pdf</a>
-[(55.8 KB)] [kitasp 技術センター, 2010/09/09
+ [(55.8 KB)] [kitasp 技術センター, 2010/09/09
 12:22]</p>
 
                         </div>

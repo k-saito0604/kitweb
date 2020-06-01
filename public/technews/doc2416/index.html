@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,27 +285,68 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2016/08/01*</p>
+
 <p>[番号]
 技術ノート KGTN 2016071702</p>
+
 <p>[現象]
 [GGH4.X-5.X] XMLHttpRequest の同期実行のサンプルを見たい．</p>
+
 <p>[説明]
 以下に XMLHttpRequest の同期実行のサンプルを示します．なお，
 XMLHttpRequest
 のリクエスト先は，セキュリティ上の理由により，同一ドメイン
 （正確には同じサイト） に制限されます．</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<p>　　&lt;!&mdash; ソースコードを読むスクリプト &mdash;&gt;</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+<p>&lt;!DOCTYPE html&gt;</p>
+
+<p><html>
+<head>
+<meta content="text/html;shift_jis" http-equiv="Content-Type">
+<title>showSource</title>
+</head>
+<body>
+<br>
+<textarea id="status" style="width: 95%; height:
+480px;"></textarea></p>
+
+<p>　　<!--- ソースコードを読むスクリプト --->
+<script language=javascript>
+var objMsg = document.getElementById(&ldquo;status&rdquo;);
+showSource();</p>
+
+<p>　　 // メッセージ表示
+function showMessage(msg) {
+objMsg.innerText = msg;
+}</p>
+
+<p>　　 // ソースコードの取得
+function showSource() {
+var xhr = new XMLHttpRequest();
+xhr.open(&lsquo;GET&rsquo;, &ldquo;<a href="http://192.168.102.89/goglobal/logon.html&quot;">http://192.168.102.89/goglobal/logon.html&quot;</a>,
+false);
+xhr.onreadystatechange = function() {
+if((xhr.readyState === 4)&amp;&amp;(xhr.status === 200)) {
+showMessage(xhr.responseText);
+}
+};
+xhr.send(null);
+}
+</script>
+</body>
+</html></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2826/KGTN2016071702.pdf">KGTN2016071702.pdf</a>
-[(62.3 KB)] [kitasp 技術センター, 2016/08/01
+ [(62.3 KB)] [kitasp 技術センター, 2016/08/01
 13:37]</p>
 
                         </div>

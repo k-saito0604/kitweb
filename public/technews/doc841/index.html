@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,17 +285,25 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2012/10/30*</p>
+
 <p>[番号]
 技術ノート KGTN 2012103104</p>
+
 <p>[現象]
 [GGH4.X] ある日時の特定のユーザのログオンに数分を要した．</p>
+
 <p>[説明]
 GGのログオン処理は，GG内部で多くの処理を行っているのではなく，その大半の処理を
 Windows に依頼しております．従って原因の調査は，主に Windows
 やサーバの状態を調べる必要があります．</p>
+
 <p>ログオンスクリプトの処理に時間を要していなかったか？
 →　ログオンスクリプトに経過時間を記録するコードを追加する．
 サーバが高負荷ではなかったか？
@@ -306,9 +314,11 @@ Windows に依頼しております．従って原因の調査は，主に Windo
 → GGNetworkCheck で正常に動作しているかどうか記録を採る
 （再発時に記録確認） ．
 その他，気になる事象を全て調べる （ユーザからの聞き取り調査を含む） ．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1068/KGTN2012103104.pdf">KGTN2012103104.pdf</a>
-[(61.7 KB)] [kitasp 技術センター, 2012/10/31
+ [(61.7 KB)] [kitasp 技術センター, 2012/10/31
 08:03]</p>
 
                         </div>

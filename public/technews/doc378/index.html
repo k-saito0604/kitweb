@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,18 +285,26 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2013/11/06*</p>
+
 <p>[番号]
 技術ノート KGTN 2013110601</p>
+
 <p>[現象]
 [GGW3.2.1] GGの ga.dll
 でBSODが発生したが，このメモリダンプから何が読み取れるか？</p>
+
 <p>[説明]
 先ずBSODが発生した ga.dll の機能はログオン時の認証処理を行っており，この
 ga.dll
 でBSODが発生した事例は過去に１件もありません．以下，ご提供頂いたメモリダンプを解析して読み取れたことをご説明します．</p>
+
 <p>このBSOD発生の直接の引き金となったのは，プロセス logon.exe (89789d88)
 がプロセス csrss.exe (89889d88)
 を強制終了しようとした事です．問題となった csrss.exe
@@ -304,6 +312,7 @@ ga.dll
 システム由来のプロセスではなく，GGのサービス aps.exe
 の配下のプロセスです．BSOD 発生時， csrss.exe と logon.exe
 についてそれぞれ下記のプロセスが存在しました．</p>
+
 <pre><code>Image: csrss.exe
   PROCESS 8b0e3d88  SessionId: 0  Cid: 018c    Peb: 7ffda000  ParentCid: 0150 (X)
   PROCESS 89889d88  SessionId: 0  Cid: 1fbc    Peb: 7ffde000  ParentCid: 0d50 (A)
@@ -317,44 +326,54 @@ Image: logon.exe
   PROCESS 89309650  SessionId: 0  Cid: 147c    Peb: 7ffde000  ParentCid: 0d50
   PROCESS 895ae5e0  SessionId: 0  Cid: 0dc8    Peb: 7ffde000  ParentCid: 0d50
 </code></pre>
+
 <p>上記のプロセス (X) 以外は，親プロセスID (ParentCid) は 0d50
 となっていました．また， 0d50 はプロセス aps.exeを指していました．</p>
+
 <pre><code>PROCESS 89be7d88  SessionId: 0  Cid: 0d50  Peb: 7ffdf000  ParentCid: 01d4
       DirBase: bfff2800  ObjectTable: e438a848  HandleCount: 1165.
       Image: aps.exe
 </code></pre>
+
 <p>つまり，プロセス(X) は Windows システム由来のプロセス csrss.exe
 で，その他はGGの配下のプロセスということです．そして，GG配下のプロセス
 (B) がプロセス (A)
 を強制終了しようとしたという状況でBSODが発生しました．</p>
+
 <p>ところで，GGサーバーの通常動作として，GG経由でサーバーにログインする場合，セッション毎に２つのプロセス
 logon.exe と csrss.exe
 が生成されます．そしてGGサーバーからログアウトする際に，この２つのプロセス
 logon.exe と csrss.exe は終了します．つまり 「GG環境では csrss.exe
 の生成と終了は日常的に問題なく正常に行われている処理である」
 ということです．</p>
+
 <p>csrss.exe
 はGG配下のものであっても強制終了させようとするとBSODが発生します （注：
 マイクロソフト社のツール Process Explorer 等で aps.exe 配下の csrss.exe
 を強制終了させてもBSODが発生します）．このことから，GGは通常 csrss.exe
 を強制終了するのではなく csrss.exe に終了を依頼しており， csrss.exe
 が終了要求に応じなかった場合に備え，例外処理として強制終了処理を行うようになっております．</p>
+
 <p>今回のBSODは，何らかの理由
 （例えばアンチウイルスソフト等の影響による処理遅延など） で csrss.exe
 への終了要求が正常に処理されず，その結果としてこの例外処理が行われ，
 csrss.exe
 の強制終了になったと考えられます．なお，元々の原因の発生はBSOD発生時点よりも過去の事象と推測されますので，メモリーダンプ
 （だけ） から見つけられる可能性は低いと思われます．</p>
+
 <p>GraphOn社に詳細な解析を依頼したところ，推測の通りアンチウイルスソフトがcsrss.exe
 を終了させたという回答がありました．詳細は以下の通りです．</p>
+
 <pre><code>The customer have some Symantec product that terminated our session CSRSS (and since
 CSRSS is a critical process the system BSOD). The faulting driver name is: SYMEVENT.
 Not sure what it is... but it decided to terminate our CSRSS.
 Maybe try uninstall/disable their (Symantec's) drivers/services.
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1525/KGTN2013110601.pdf">KGTN2013110601.pdf</a>
-[(94.6 KB)] [kitasp 技術センター, 2014/01/29
+ [(94.6 KB)] [kitasp 技術センター, 2014/01/29
 17:49]</p>
 
                         </div>

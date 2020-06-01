@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,13 +285,20 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2012/03/15*</p>
+
 <p>[番号]
 技術ノート KGTN 2010081903</p>
+
 <p>[現象]
 サーバ当りの同時利用ユーザ数は20〜25が目安だと聞いているが，それはハードウエアがネックなのか？　それともGGの仕様がネックなのか？</p>
+
 <p>[説明]
 様々な条件が絡みますが，最大のネックはハードウエアでもGGでもなく，
 Windows Server (32bit) のアーキテクチャに起因します．Windows Server
@@ -301,12 +308,15 @@ Windows Server (32bit) のアーキテクチャに起因します．Windows Serv
 が発生します．従って，これらが枯渇しないようにメモリのチューング等を行いますが，全体のメモリ
 （カーネル空間）
 は限られておりますので，同時利用ユーザ数が目立って増えることがありません．</p>
+
 <p>補　足
 Windows Server 2008 R2 (64bit)
 の環境では，上記のようなメモリ絡みの制約は解消しますが，しかしながらメモリを増やせばユーザ数が増えるというシナリオにはなりません．アプリケーションが動作すればプロセッサを消費しますので，ユーザ数が増えるどこかでプロセッサが過負荷となり，アプリケーションが実用的な速度で動作しなくなります．従って，プロセッサの性能，アプリケーションの負荷，ユーザの利用シナリオなどを十分考慮し，搭載するメモリの量を決定して下さい．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/280/KGTN2010081903.pdf">KGTN2010081903.pdf</a>
-[(65 KB)] [kitasp 技術センター, 2012/03/15
+ [(65 KB)] [kitasp 技術センター, 2012/03/15
 11:19]</p>
 
                         </div>

@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,27 +285,38 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2019/07/12*</p>
+
 <p>[番号]
 技術ノート KGTN 2019062601</p>
+
 <p>[現象]
 [GGH5.X-6.X] APSログに A Bug Check (BSOD) was detected
 とあり，サービスAPSが開始しない．この原因と対応方法を知りたい．</p>
+
 <p>[説明]
 GGのホスト機能には，起動時にサービスAPSの処理で問題が発生する可能性があると判断した場合，予防措置としてクライアントからの接続を受け付けない機能があります．本件ではこの機能が有効になったと考えられます．具体的に問題を検出しているわけではなく，あくまで可能性があるため，対処を行う猶予を与えるというものです．考えられる対処を行った上でファイル
 DBCM.bin を削除し，サーバーを再起動して下さい．</p>
+
 <p>これまでの報告では
 「システムは正常にシャットダウンする前に再起動しました」
 との記録がイベントログに残っており，予期しない電源断が発生していたケースがほとんどです．電源断の原因がハードウェア障害等の再現性が高いものであれば対処が必要です．そうでなければ，特に対処を行わなくとも具体的に問題があったとの報告はこれまで受けておりません．なお，APSログに記載されている通り，下記レジストリを変更することによりこの
 「予防措置」 をスキップする方法もあります
 （これにより管理者の判断で本機能を抑止することができます） ．</p>
+
 <pre><code>HKLMSYSTEMCurrentControlSetServicesggseDBCM_Disabled に DWORD:0x00000001 を設定
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4318/KGTN2019062601.pdf">KGTN2019062601.pdf</a>
-[(58.8 KB)] [kitasp 技術センター, 2019/07/12
+ [(58.8 KB)] [kitasp 技術センター, 2019/07/12
 10:14]</p>
 
                         </div>

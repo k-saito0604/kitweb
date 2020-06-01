@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,17 +285,25 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2016/06/22*</p>
+
 <p>[番号]
 技術ノート KGTN 2016061506</p>
+
 <p>[現象]
 [GGH4.X-5.X] Ver4.8およびVer5.0の logon.html
 でパラメタを事前に埋め込む方法は？</p>
+
 <p>[説明]
 Ver4.8では，26行目～55行目でパラメタの変数が定義されておりますので，代入の右辺に埋め込む値
 （文字列） を指定して下さい．</p>
+
 <pre><code>var user = GetVarDecoded(&quot;user&quot;);
 var password = GetVarDecoded(&quot;password&quot;);
 var host = GetVarDecoded(&quot;host&quot;);
@@ -327,9 +335,11 @@ var repeat = GetVar(&quot;repeat&quot;);
 var maxbpp = GetVar(&quot;maxbpp&quot;);
 var keyboard = GetVar(&quot;keyboard&quot;);
 </code></pre>
+
 <p>Ver5.0では，20行目～43行目でパラメタを定義する関数が定義されておりますので，行頭にある
 &ldquo;//&rdquo; （コメント行の指定） を削除し，第２引数に埋め込む値 （文字列）
 を指定して下さい．</p>
+
 <pre><code>// controlArgs.set([ &quot;user&quot;, &quot;testuser1&quot; ]);
 // controlArgs.set([ &quot;password&quot;, &quot;testpassword1&quot; ]);
 // controlArgs.set([ &quot;embed&quot;, &quot;false&quot; ]);
@@ -355,9 +365,11 @@ var keyboard = GetVar(&quot;keyboard&quot;);
 // controlArgs.set([ &quot;keyboard&quot;, &quot;00000409&quot; ]);
 // controlArgs.set([ &quot;args&quot;, &quot;testargs1&quot; ]);
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2703/KGTN2016061506.pdf">KGTN2016061506.pdf</a>
-[(61.9 KB)] [kitasp 技術センター, 2016/06/22
+ [(61.9 KB)] [kitasp 技術センター, 2016/06/22
 11:50]</p>
 
                         </div>

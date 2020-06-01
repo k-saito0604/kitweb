@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,25 +285,35 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2016/10/05*</p>
+
 <p>[番号]
 技術ノート KGTN 2016090801</p>
+
 <p>[現象]
 [GGH4.X-5.X] 接続関連のパラメタ SessionTimeoutBrokenConnection
 は，どこで指定するのか？</p>
+
 <p>[説明]
 設定ファイル ProgramDataGraphOnHostProperties.xml
 の下記の箇所で指定します．この値を変更する場合は，必ずサービス GGAPS
 を停止した状態で行って下さい．</p>
+
 <pre><code>&lt;property id=&quot;SessionTimeoutBrokenConnection&quot; group=&quot;Miscellaneous&quot; type=&quot;UINT32&quot;&gt;
 &lt;value&gt;0&lt;/value&gt;
 &lt;/property&gt;
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3051/KGTN2016090801.pdf">KGTN2016090801.pdf</a>
-[(59.6 KB)] [kitasp 技術センター, 2016/10/05
+ [(59.6 KB)] [kitasp 技術センター, 2016/10/05
 14:46]</p>
 
                         </div>

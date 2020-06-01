@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,15 +285,22 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/05/12*</p>
+
 <p>[番号]
 技術ノート KGTN 2010051001</p>
+
 <p>[現象]
 3.2.1 Patch2 (4420) までは Cache client printers
 が正常に動作していたが， 3.2.1 Patch3 (4446) および 3.2.1 Patch4 (4466)
 では正常に動作しない．</p>
+
 <p>[説明]
 3.2.1 Patch2 (4420) までは Cache client printers
 が有効な場合，ログアウト時にオートクリエイトプリンタが削除されず，かつ次回ログオン時も
@@ -302,6 +309,7 @@
 (4446) および 3.2.1 Patch4 (4466)
 ではログアウト時にオートクリエイトプリンタは削除されないものの，次回ログオン時にそのオートクリエイトプリンタ削除され再構成されます．GraphOn社も現象を確認しており，現時点では
 3.2.1 Patch5 で対応する予定です （注：確定ではありません） ．</p>
+
 <p>補足１
 自己責任という条件が付きますが&hellip; 3.2.1 Patch4 (4466) の環境に 3.2.1
 Patch2 (4420) のggprints.dll をコピーすることで，Cache client printers
@@ -311,16 +319,21 @@ Patch2 (4420) のggprints.dll をコピーすることで，Cache client printer
 「テストは行っていないが，古いビルドの ggprints.dll
 を使用しても，他の問題を引き起こす可能性はない」
 というコメントを得ています （コメントの原文は以下の通りです） ．</p>
+
 <p>If using a lower version of ggprints.dll does not cause any other
 problems, then they could use it. However, it has not been tested.</p>
+
 <p>補足２
 本問題は， 3.2.1 Patch5 (4482)
 で修正されました．リリースノートは以下の通りです．</p>
+
 <p>Bug 9870
 Cache client printers does not work correctly in Patch 3 and 4.</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/162/KGTN2010051001.pdf">KGTN2010051001.pdf</a>
-[(69.6 KB)] [kitasp 技術センター, 2011/05/13
+ [(69.6 KB)] [kitasp 技術センター, 2011/05/13
 07:17]</p>
 
                         </div>

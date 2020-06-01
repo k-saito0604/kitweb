@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,35 +285,50 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/04/28*</p>
+
 <p>[番号]
 技術ノート KGTN 2010092803</p>
+
 <p>[現象]
 [GGW3.2.1/GGH4.X-5.X]
 あるアプリケーションを起動すると常駐プロセスが生成され，アプリケーション終了後もそのプロセスが存在するため，セッションがいつまでも終了しない．</p>
+
 <p>[説明]
 常駐プロセスをGGのシステムプロセスとして登録することで，そのプロセスをセッション終了の条件から除外することが出来ます
 （つまりそのプロセスが存在していても，他の条件が満たされればセッションが終了する）
 ．設定方法は，以下のレジストリにプロセスのファイル名 （.EXE）
 を指定します．</p>
+
 <p>[GGW3.2.1の場合]
 HKLMSOFTWAREGraphOnBridges1.0.0SystemProcesses
 REG_DWORD 0</p>
+
 <p>[GGH4.X-5.Xの場合]
 HKLMSOFTWAREGraphOnGO-GlobalSystemProcesses
 REG_DWORD 0</p>
+
 <p>下記の例では JpnIME.exe が常駐してセッションが終了しないため，この
 JpnIME.exe を登録します．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/2558/KGTN2010092803.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/2558/KGTN2010092803.jpg" alt="" /></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2557/KGTN2010092803.pdf">KGTN2010092803.pdf</a>
-[(98.5 KB)] [kitasp 技術センター, 2016/05/27
+ [(98.5 KB)] [kitasp 技術センター, 2016/05/27
 12:02]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2558/KGTN2010092803.jpg">KGTN2010092803.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/2558/KGTN2010092803.jpg" title="表示">表示</a>
-[(23.9 KB)] [kitasp 技術センター, 2016/05/27
+ [(23.9 KB)] [kitasp 技術センター, 2016/05/27
 12:02]</p>
 
                         </div>

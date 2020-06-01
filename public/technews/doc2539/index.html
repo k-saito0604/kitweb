@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,33 +285,49 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/01/28*</p>
+
 <p>[番号]
 技術ノート KGTN 2011012802</p>
+
 <p>[現象]
 [GGW3.2.1,GGH4.X-5.X]
 GG上で動作するアプリケーションを全て終了させるプログラムを作りたい．終了しないアプリケーションは，タイムアウト時間経過後に強制終了させたい．</p>
+
 <p>[説明]
 以下のテストプログラムで，GG上で動作するアプリケーションが終了し，かつ自分人身が最後に終了することを確認しました．なお，プログラム名は
 GGLogout.exe とし，自分自身に WM_CLOSE を送信しないようにしています．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/2641/KGTN2011012802-1.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/2641/KGTN2011012802-1.jpg" alt="" /></p>
+
 <p>タイムアウト時間経過後は，下記の関数により
 「ウインドウハンドルに対応付く」
 プロセスを強制終了させます．なお，TerminateProcess関数によりプロセスが強制終了された場合は，メモリリーク等が発生する可能性があります．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/2642/KGTN2011012802-2.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/2642/KGTN2011012802-2.jpg" alt="" /></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2640/KGTN2011012802.pdf">KGTN2011012802.pdf</a>
-[(74.7 KB)] [kitasp 技術センター, 2016/06/17
+ [(74.7 KB)] [kitasp 技術センター, 2016/06/17
 16:14]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2641/KGTN2011012802-1.jpg">KGTN2011012802-1.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/2641/KGTN2011012802-1.jpg" title="表示">表示</a>
-[(16.1 KB)] [kitasp 技術センター, 2016/06/17
+ [(16.1 KB)] [kitasp 技術センター, 2016/06/17
 16:14]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2642/KGTN2011012802-2.jpg">KGTN2011012802-2.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/2642/KGTN2011012802-2.jpg" title="表示">表示</a>
-[(12.5 KB)] [kitasp 技術センター, 2016/06/17
+ [(12.5 KB)] [kitasp 技術センター, 2016/06/17
 16:14]</p>
 
                         </div>

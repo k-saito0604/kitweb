@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,26 +285,36 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/01/21*</p>
+
 <p>[番号]
 技術ノート KGTN 2011012102</p>
+
 <p>[現象]
 クライアント側でGGのウインドウを操作したいが，注意すべき点は？</p>
+
 <p>[説明]
 GGがクライアント上に表示するウインドウは，GGサーバで実行されるアプリケーションのウインドウです．クライアント側で
 「WindowsのAPIを使用して」
 そのウインドウを操作した場合，GGサーバ上で動作するアプリケーションは操作内容を知りませんので，操作後に画面が崩れる等の現象が発生します．従って，原則としてクライアント側で
 「WindowsのAPIを使用して」 ウインドウ操作を行うことは出来ません．</p>
+
 <p>参　考1
 ウインドウを最小化する・ウインドウを隠す等の単純な操作を行う場合，技術ノート
 KGTN#2010031501，KGTN#2010090205，KGTN#2009080501
 を参考に，Zオーダーが狂わないような処理を行って下さい．幾つかのユーザ様から，このような方法で
 「期待した通りの動作を実現できた」 という報告があります．</p>
+
 <p>参　考2
 以下のようなコードで，GGが表示するウインドウの 「非表示・表示」
 が動作しているようです．</p>
+
 <p>void CGGTest_SendMessageDlg::OnBnClickedOk() {
 //&mdash;
 ::MessageBox(NULL,_T(&ldquo;STEP1&rdquo;),_T(&ldquo;GGTest_SendMessage&rdquo;),MB_OK);
@@ -313,13 +323,14 @@ EnumWindows(EnumWindowsProc1,0);
 EnumWindows(EnumWindowsProc2,0);
 //&mdash;
 }</p>
+
 <p>BOOL CALLBACK EnumWindowsProc1(HWND hwnd,LPARAM lParam) {
 TCHAR
-tBufC^<a href="#fn1024">1024</a>^,tBufT^<a href="#fn1024">1024</a>^,tBufX^<a href="#fn1024">1024</a>^;
+tBufC<sup class="footnote-ref" id="fnref:fn1024"><a href="#fn:fn1024">0</a></sup>^,tBufT<sup class="footnote-ref" id="fnref:fn1024"><a href="#fn:fn1024">0</a></sup>^,tBufX<sup class="footnote-ref" id="fnref:fn1024"><a href="#fn:fn1024">0</a></sup>^;
 //&mdash;
-::GetClassName(hwnd,tBufC,(sizeof(tBufC)/sizeof(tBufC^<a href="#fn0">0</a>^)));
-::GetWindowText(hwnd,tBufT,(sizeof(tBufT)/sizeof(tBufT^<a href="#fn0">0</a>^)));
-_stprintf_s(tBufX,_T(&quot;'%s&rsquo; - &lsquo;%s&rsquo;&quot;),tBufC,tBufT);
+::GetClassName(hwnd,tBufC,(sizeof(tBufC)/sizeof(tBufC<sup class="footnote-ref" id="fnref:fn0"><a href="#fn:fn0">0</a></sup>^)));
+::GetWindowText(hwnd,tBufT,(sizeof(tBufT)/sizeof(tBufT<sup class="footnote-ref" id="fnref:fn0"><a href="#fn:fn0">0</a></sup>^)));
+_stprintf_s(tBufX,_T(&ldquo;&lsquo;%s&rsquo; - &lsquo;%s&rsquo;&rdquo;),tBufC,tBufT);
 if(_tcslen(tBufT) &gt; 0) {
 if(_tcsicmp(tBufC,_T(&ldquo;DisplayClientWindowClass&rdquo;)) 0) {
 ::MessageBox(NULL,tBufX,_T(&ldquo;GGTest_SendMessage#11&rdquo;),MB_OK);
@@ -329,12 +340,13 @@ if(_tcsicmp(tBufC,_T(&ldquo;DisplayClientWindowClass&rdquo;)) 0) {
 //&mdash;
 return(TRUE);
 }</p>
+
 <p>BOOL CALLBACK EnumWindowsProc2(HWND hwnd,LPARAM lParam) {
 TCHAR tBufC[1024],tBufT[1024],tBufX[1024];
 //&mdash;
 ::GetClassName(hwnd,tBufC,(sizeof(tBufC)/sizeof(tBufC[0])));
 ::GetWindowText(hwnd,tBufT,(sizeof(tBufT)/sizeof(tBufT[0])));
-_stprintf_s(tBufX,_T(&quot;'%s&rsquo; - &lsquo;%s&rsquo;&quot;),tBufC,tBufT);
+_stprintf_s(tBufX,_T(&ldquo;&lsquo;%s&rsquo; - &lsquo;%s&rsquo;&rdquo;),tBufC,tBufT);
 if(_tcslen(tBufT) &gt; 0) {
 if(_tcsicmp(tBufC,_T(&ldquo;DisplayClientWindowClass&rdquo;)) 0) {
 ::MessageBox(NULL,tBufX,_T(&ldquo;GGTest_SendMessage#21&rdquo;),MB_OK);
@@ -346,9 +358,11 @@ if(_tcsicmp(tBufC,_T(&ldquo;DisplayClientWindowClass&rdquo;)) 0) {
 //&mdash;
 return(TRUE);
 }</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/454/KGTN2011012102.pdf">KGTN2011012102.pdf</a>
-[(73.8 KB)] [kitasp 技術センター, 2011/01/21
+ [(73.8 KB)] [kitasp 技術センター, 2011/01/21
 14:10]</p>
 
                         </div>

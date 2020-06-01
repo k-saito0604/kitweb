@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,97 +285,146 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2017/05/08*</p>
+
 <p>[番号]
 技術ノート KGTN 2017042601</p>
+
 <p>[現象]
 [GGH4.X-5.X/Windows] ADPlus
 のクラッシュダンプを採取したいが，ツールの入手方法は？ (Windows Server
 2012 R2)</p>
+
 <p>[説明]
 2017年4月26日時点では，次の手順で &ldquo;Debugging Tools for Windows&rdquo;
 を入手することが出来ます．</p>
-<p>&lt;STEP#1&gt;
+
+<p><STEP#1>
 <a href="https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit">https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit</a>
 へアクセスし，画面下方の &ldquo;Download the debugging Tools for Windows
 (WinDbg)&rdquo; をクリックします．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/3620/KGTN2017042601-1.jpg" alt=""></p>
-<p>&lt;STEP#2&gt;
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3620/KGTN2017042601-1.jpg" alt="" /></p>
+
+<p><STEP#2>
 &ldquo;Get Debugging Tools for Windows (WinDbg) (from the SDK)&rdquo;
 をクリックします．日本語のページが表示された場合は， &ldquo;Windows
 向けデバッグ ツール (WinDbg) を SDK から入手する&rdquo; をクリックします．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/3621/KGTN2017042601-2.jpg" alt=""></p>
-<p>&lt;STEP#3&gt;
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3621/KGTN2017042601-2.jpg" alt="" /></p>
+
+<p><STEP#3>
 &ldquo;保存&rdquo; をクリックします．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/3622/KGTN2017042601-3.jpg" alt=""></p>
-<p>&lt;STEP#4&gt;
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3622/KGTN2017042601-3.jpg" alt="" /></p>
+
+<p><STEP#4>
 &ldquo;実行&rdquo; をクリックします．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/3623/KGTN2017042601-4.jpg" alt=""></p>
-<p>&lt;STEP#5&gt;
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3623/KGTN2017042601-4.jpg" alt="" /></p>
+
+<p><STEP#5>
 &ldquo;Next&rdquo; をクリックします．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/3624/KGTN2017042601-5.jpg" alt=""></p>
-<p>&lt;STEP#6&gt;
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3624/KGTN2017042601-5.jpg" alt="" /></p>
+
+<p><STEP#6>
 &ldquo;Next&rdquo; をクリックします．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/3625/KGTN2017042601-6.jpg" alt=""></p>
-<p>&lt;STEP#7&gt;
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3625/KGTN2017042601-6.jpg" alt="" /></p>
+
+<p><STEP#7>
 &ldquo;Accept&rdquo; をクリックします．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/3626/KGTN2017042601-7.jpg" alt=""></p>
-<p>&lt;STEP#8&gt;
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3626/KGTN2017042601-7.jpg" alt="" /></p>
+
+<p><STEP#8>
 &ldquo;Debugging Tools for Windows&rdquo; のみにチェックを入れ，次に &ldquo;Install&rdquo;
 をクリックします．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/3627/KGTN2017042601-8.jpg" alt=""></p>
-<p>&lt;STEP#9&gt;
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3627/KGTN2017042601-8.jpg" alt="" /></p>
+
+<p><STEP#9>
 &ldquo;Close&rdquo; をクリックします．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/3628/KGTN2017042601-9.jpg" alt=""></p>
-<p>&lt;STEP#10&gt;
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3628/KGTN2017042601-9.jpg" alt="" /></p>
+
+<p><STEP#10>
 &ldquo;C:Program Files (x86)Windows Kits10Debuggersx64&rdquo; に
 adplus.exe があります．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/3629/KGTN2017042601-10.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3629/KGTN2017042601-10.jpg" alt="" /></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3619/KGTN2017042601.pdf">KGTN2017042601.pdf</a>
-[(2.26 MB)] [kitasp 技術センター, 2017/05/08
+ [(2.26 MB)] [kitasp 技術センター, 2017/05/08
 17:30]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3620/KGTN2017042601-1.jpg">KGTN2017042601-1.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3620/KGTN2017042601-1.jpg" title="表示">表示</a>
-[(15.2 KB)] [kitasp 技術センター, 2017/05/08
+ [(15.2 KB)] [kitasp 技術センター, 2017/05/08
 17:31]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3621/KGTN2017042601-2.jpg">KGTN2017042601-2.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3621/KGTN2017042601-2.jpg" title="表示">表示</a>
-[(15.5 KB)] [kitasp 技術センター, 2017/05/08
+ [(15.5 KB)] [kitasp 技術センター, 2017/05/08
 17:31]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3622/KGTN2017042601-3.jpg">KGTN2017042601-3.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3622/KGTN2017042601-3.jpg" title="表示">表示</a>
-[(16.4 KB)] [kitasp 技術センター, 2017/05/08
+ [(16.4 KB)] [kitasp 技術センター, 2017/05/08
 17:31]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3623/KGTN2017042601-4.jpg">KGTN2017042601-4.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3623/KGTN2017042601-4.jpg" title="表示">表示</a>
-[(16.3 KB)] [kitasp 技術センター, 2017/05/08
+ [(16.3 KB)] [kitasp 技術センター, 2017/05/08
 17:31]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3624/KGTN2017042601-5.jpg">KGTN2017042601-5.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3624/KGTN2017042601-5.jpg" title="表示">表示</a>
-[(11.5 KB)] [kitasp 技術センター, 2017/05/08
+ [(11.5 KB)] [kitasp 技術センター, 2017/05/08
 17:31]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3625/KGTN2017042601-6.jpg">KGTN2017042601-6.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3625/KGTN2017042601-6.jpg" title="表示">表示</a>
-[(12.3 KB)] [kitasp 技術センター, 2017/05/08
+ [(12.3 KB)] [kitasp 技術センター, 2017/05/08
 17:31]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3626/KGTN2017042601-7.jpg">KGTN2017042601-7.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3626/KGTN2017042601-7.jpg" title="表示">表示</a>
-[(15.5 KB)] [kitasp 技術センター, 2017/05/08
+ [(15.5 KB)] [kitasp 技術センター, 2017/05/08
 17:32]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3627/KGTN2017042601-8.jpg">KGTN2017042601-8.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3627/KGTN2017042601-8.jpg" title="表示">表示</a>
-[(14.1 KB)] [kitasp 技術センター, 2017/05/08
+ [(14.1 KB)] [kitasp 技術センター, 2017/05/08
 17:32]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3628/KGTN2017042601-9.jpg">KGTN2017042601-9.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3628/KGTN2017042601-9.jpg" title="表示">表示</a>
-[(6.93 KB)] [kitasp 技術センター, 2017/05/08
+ [(6.93 KB)] [kitasp 技術センター, 2017/05/08
 17:32]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3629/KGTN2017042601-10.jpg">KGTN2017042601-10.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3629/KGTN2017042601-10.jpg" title="表示">表示</a>
-[(17.6 KB)] [kitasp 技術センター, 2017/05/08
+ [(17.6 KB)] [kitasp 技術センター, 2017/05/08
 17:32]</p>
 
                         </div>

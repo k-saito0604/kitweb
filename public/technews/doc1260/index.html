@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,23 +285,33 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/10/20*</p>
+
 <p>[番号]
 技術ノート KGTN 2011101901</p>
+
 <p>[現象]
 [GGW3.2.1/WS2003] ctfmon.exe
 の自動起動のエントリを削除した場合，どうなるのか？</p>
+
 <p>[説明]
 ctfmon.exe はMicrosoft Text Services
 で，GGの設定から自動起動のエントリを削除した場合，コントロールパネルの
 [テキストサービスと入力言語] の [高度なテキストサービスをオフにする]
 の設定に依存して動作が異なります．</p>
+
 <p>・ [高度なテキストサービスをオフにする]　が無効な場合
 かな漢字変換は可能ですが，IMEツールバー （言語バー） が表示されません．</p>
+
 <p>・ [高度なテキストサービスをオフにする]　が有効な場合
 かな漢字変換は可能で，かつIMEツールバー （言語バー） も表示されます．</p>
+
 <p>補足１
 [高度なテキストサービスをオフにする]　が有効な場合でも，手動で
 ctfmon.exe を起動すると ctfmon.exe
@@ -311,22 +321,29 @@ ctfmon.exe を起動すると ctfmon.exe
 （注意：スタートアップ項目に複数の ctfmon
 が存在することがあります．その場合は，全ての ctfmon を無効にして下さい）
 ．</p>
+
 <p>補足２
 msconfig コマンドでスタートアップ項目の ctfmon
 を有効にした場合は，次のレジストリが登録されます．</p>
+
 <p>HKCU¥Software¥Microsoft¥Windows¥CurrentVersion¥Run
 ctfmon.exe REG_SZ C:¥WINDOWS¥system32¥ctfmon.exe</p>
+
 <p>逆に ctfmon を無効にした場合は，このレジストリが削除されます．</p>
+
 <p>補足３
 GraphOn社に照会していますが，以下のレジストリは機能していないと考えられます．もし機能していれば，[高度なテキストサービスをオフにする]
 を有効しても ctfmon.exe
 は起動すると考えられますが，実際には起動しませんので， （恐らく）
 上記補足２のレジストリで起動されているものと推測されます．</p>
+
 <p>HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Run¥CurrentUser
 ctfmon.exe REG_DWORD 0</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/665/KGTN2011101901.pdf">KGTN2011101901.pdf</a>
-[(71.8 KB)] [kitasp 技術センター, 2011/10/20
+ [(71.8 KB)] [kitasp 技術センター, 2011/10/20
 12:21]</p>
 
                         </div>

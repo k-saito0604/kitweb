@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,16 +285,23 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2013/08/15*</p>
+
 <p>[番号]
 技術ノート KGTN 2013080602</p>
+
 <p>[現象]
 [ExPack] 技術ノート KGTN#2013080601 の説明に
 「親のウインドウに対しても WM_CLOSE を送信する」
 とあるが，ローカルで起動された Adobe Reader XI
 のウインドウを閉じる可能性はないのか？</p>
+
 <p>[説明]
 WM_CLOSE を送信する候補のウインドウのプロセスIDを調べ
 （GetWindowThreadProcessId関数） ，その親のプロセスを順に辿り
@@ -302,9 +309,11 @@ WM_CLOSE を送信する候補のウインドウのプロセスIDを調べ
 を起動した GGSpoolPDF のプロセスIDが現れた場合に限り WM_CLOSE
 を送信します．従って，ローカルで起動されたAdobe Reader XI
 のウインドウを閉じる可能性はありません．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1360/KGTN2013080602.pdf">KGTN2013080602.pdf</a>
-[(57.9 KB)] [kitasp 技術センター, 2013/08/15
+ [(57.9 KB)] [kitasp 技術センター, 2013/08/15
 11:40]</p>
 
                         </div>

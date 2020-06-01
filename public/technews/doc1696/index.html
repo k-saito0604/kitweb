@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,13 +285,20 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/07/21*</p>
+
 <p>[番号]
 技術ノート KGTN 2010072103</p>
+
 <p>[現象]
 GGのプラグイン LaunchBrowser の目的は？</p>
+
 <p>[説明]
 GO-Global for Windows Ver3.X
 にはサーバ側のドライブだけでなくクライアント側のドライブにアクセスできる機能
@@ -300,11 +307,10 @@ GO-Global for Windows Ver3.X
 （参考 KGTN#2009091501）
 ．そこで，19MBを越える大きなファイルをダウンロードする方法として，ブラウザのファイルダウンロード機能を利用する方法が考えられますが，利用者にダウンロードの度にブラウザを起動して，ダウンロードサイトのURLを入力させるのは現実的ではありません．この問題を解決するために，プラグイン
 LaunchBrowser
-を作成しました．サーバ側で動作するアプリケーションが下記のようなコードを呼び出すことで，利用者の介在無しに</p>
-<ol>
-<li>クライアント側のブラウザが自動的に起動され， 2)
-引数で指定したURLへ自動的にアクセスします．</li>
-</ol>
+を作成しました．サーバ側で動作するアプリケーションが下記のようなコードを呼び出すことで，利用者の介在無しに
+1) クライアント側のブラウザが自動的に起動され， 2)
+引数で指定したURLへ自動的にアクセスします．</p>
+
 <p>Private Declare Function LaunchBrowser Lib _
 &ldquo;C:¥GraphOn¥DLL¥LaunchBrowserI.dll&rdquo; _
 (ByVal lpBuffer As String, nSize As Long) As Long
@@ -312,10 +318,13 @@ LaunchBrowser
 sUrl =
 lLen = Len(sUrl)
 Ret = LaunchBrowser(sUrl, lLen)</p>
+
 <p>プラグイン LaunchBrowser
 とウエッブサーバを利用することで，例えば100MBを越える大きなファイルも効率的にダウンロードすることが可能になります．</p>
+
 <p>参　考
 本技術ノートに関連する情報として，以下の技術ノートがあります．</p>
+
 <p>KGTN#2010061403
 GGのプラグイン LaunchBrowser
 で，クライアント側のブラウザを起動する時のインタフェースは？
@@ -332,9 +341,11 @@ cs.dllが見つからないため、このアプリケーションを開始で�
 というエラーメッセージが表示される．
 KGTN#2010070603
 プラグイン LaunchBrowser のインストール手順は？</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/233/KGTN2010072103.pdf">KGTN2010072103.pdf</a>
-[(86 KB)] [kitasp 技術センター, 2010/07/21
+ [(86 KB)] [kitasp 技術センター, 2010/07/21
 13:28]</p>
 
                         </div>

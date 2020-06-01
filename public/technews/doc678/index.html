@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,20 +285,29 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2013/02/21*</p>
+
 <p>[番号]
 技術ノート KGTN 2012120301</p>
+
 <p>[現象]
 [GGH4.5] 拡張パックのプラグイン GGCSlib が32ビットの Windows 7
 では動作するが，64ビットの Windows 7 では動作しない．</p>
+
 <p>[説明]
 64ビットの Windows 7
 では，プラグインを指定するレジストリが異なります．以下のように設定して下さい
 （注意： フォルダのパスの末尾に必ず ¥ を付けて下さい） ．</p>
+
 <p>HKEY_LOCAL_MACHINE¥SOFTWARE¥Wow6432Node¥Graphon¥GO-Global
 ClientPluginsPath REG_SZ</p>
+
 <p>補　足
 32ビットで動作するアプリケーションは，WOW64 レジストリ
 リダイレクタによって，64 ビット バージョンのレジストリ
@@ -306,10 +315,13 @@ ClientPluginsPath REG_SZ</p>
 キーへアクセスします．より詳細な情報については，マイクロソフト社の知識ベース
 KB305097 &ldquo;64 ビット バージョンの Windows でシステム
 レジストリを表示する方法&rdquo; をご覧下さい．</p>
+
 <p>HKEY_LOCAL_MACHINE¥Software¥WOW6432Node</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1131/KGTN2012120301.pdf">KGTN2012120301.pdf</a>
-[(60 KB)] [kitasp 技術センター, 2013/02/22
+ [(60 KB)] [kitasp 技術センター, 2013/02/22
 07:17]</p>
 
                         </div>

@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,26 +285,38 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/08/23*</p>
+
 <p>[番号]
 技術ノート KGTN 2010082301</p>
+
 <p>[現象]
 Microsoft Authenticode のPFXファイルをSPCとPVKファイルに分離する方法は？</p>
+
 <p>[説明]
 以下の手順 （バッチ）
 でPFXファイルをSPCとPVKファイルに分離することが出来ます．</p>
+
 <p>C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nocerts -nodes -out
 Cert.pem
 .¥pvk -in Cert.pem -topvk -out Cert.pvk</p>
+
 <p>C:¥OpenSSL¥bin¥openssl pkcs12 -in Cert.pfx -nokeys -out Cert_Certs.pem
 C:¥OpenSSL¥bin¥openssl crl2pkcs7 -nocrl -certfile Cert_Certs.pem
 -outform DER -out Cert.spc</p>
+
 <p>この情報はコードサイニングに関する内容ですので，通常のGGサーバ利用では必要ありません．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/286/KGTN2010082301.pdf">KGTN2010082301.pdf</a>
-[(49.6 KB)] [kitasp 技術センター, 2010/08/23
+ [(49.6 KB)] [kitasp 技術センター, 2010/08/23
 10:53]</p>
 
                         </div>

@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,15 +285,23 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/05/17*</p>
+
 <p>[番号]
 技術ノート KGTN 2010051701</p>
+
 <p>[現象]
 GGがプロセスを終了させる条件を知りたい．</p>
+
 <p>[説明]
 以下の何れかの条件に合致した時，GGはプロセスを強制終了させます．</p>
+
 <p>クラスタマネージャの Session Shutdown → Timeouts の条件が合致した場合
 ネットワーク障害等が発生しコネクションが切断された場合
 クラスタマネージャでプロセスまたはセッションを指定して Terminate
@@ -302,10 +310,13 @@ GGがプロセスを終了させる条件を知りたい．</p>
 でプロセスまたはセッションが強制終了された場合
 プロセスがGGのシステムプロセスとして登録されており，かつセッション中のプロセスが全てシステムプロセスになった場合
 （つまり一般プロセスが全て終了した場合）</p>
+
 <p>これ以外の状況で予期せぬプロセスの終了が発生した場合は，アプリケーションまたはWindowsに起因して終了したものと考えられます．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/171/KGTN2010051701.pdf">KGTN2010051701.pdf</a>
-[(59.7 KB)] [kitasp 技術センター, 2010/05/17
+ [(59.7 KB)] [kitasp 技術センター, 2010/05/17
 09:15]</p>
 
                         </div>

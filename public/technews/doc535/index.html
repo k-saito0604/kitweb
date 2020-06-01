@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,13 +285,20 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2013/08/16*</p>
+
 <p>[番号]
 技術ノート KGTN 2013081601</p>
+
 <p>[現象]
 [ExPack] 拡張パックの GGAPSManager とはどんなツールなのか？</p>
+
 <p>[説明]
 GMSessionMonitor と共に GGサーバ上で動作させるプログラム （サービス）
 で， APS (GO-Global Application Publishing Service)
@@ -301,10 +308,13 @@ GMSessionMonitor と共に GGサーバ上で動作させるプログラム （�
 「接続出来ない」 や 「情報が更新されない」
 等の異常な状況が検出された場合， APS
 を自動的に再起動します．以上のように，GGサーバの高可用性に役立つツールです．</p>
+
 <p>設定ファイルと起動パラメタ
 設定ファイルGGAPSManager.ini の default
 セクションで，以下のパラメタを設定して下さい．</p>
-<hr>
+
+<hr />
+
 <pre><code>  設定項目                                  説明
 serviceName           サービスの名称で &quot;GO-Global APS Manager&quot; を指定
   loglevel           ログの出力レベル，通常は1を指定し，障害時は4を指定
@@ -314,20 +324,28 @@ delayedStart           サーバ再起動からAPSを開始するまでの時間
 maxStartTime                  APSの開始に要する最大時間（秒）
 maxStopTime                   APSの停止に要する最大時間（秒）
 </code></pre>
+
 <p>stopGraceTime    APSの自動再起動までの猶予時間（秒），-1 は自動再起動機能オフ
-showStatusTime                  APSの状態を記録する間隔（秒）</p>
-<hr>
+   showStatusTime                  APSの状態を記録する間隔（秒）</p>
+
+<hr />
+
 <p>サービスの登録・開始・停止・削除は，コマンドラインで次の起動パラメタを指定して下さい．</p>
-<hr>
+
+<hr />
+
 <p>起動パラメタ          説明
--i        サービスを登録する
--s        サービスを開始する
--k        サービスを停止する
--u        サービスを削除する</p>
-<hr>
+        -i        サービスを登録する
+        -s        サービスを開始する
+        -k        サービスを停止する
+        -u        サービスを削除する</p>
+
+<hr />
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1363/KGTN2013081601.pdf">KGTN2013081601.pdf</a>
-[(88.1 KB)] [kitasp 技術センター, 2013/08/16
+ [(88.1 KB)] [kitasp 技術センター, 2013/08/16
 12:30]</p>
 
                         </div>

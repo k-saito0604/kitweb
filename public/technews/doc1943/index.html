@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,34 +285,46 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2017/12/19*</p>
+
 <p>[番号]
 技術ノート KGTN 2017120801</p>
+
 <p>[現象]
 [GGH5.X] GGのセッションは TLS 1.2 をサポートしているのか？</p>
+
 <p>[説明]
 はい， TLS 1.2
 をサポートしております．詳細については，次のGraphOn社のコメントを参照してください．</p>
+
 <pre><code>GO-Global does not support SSLv2 or SSLv3; they are &quot;physically&quot; removed from the library, not just
 disabled. GO-Global does include TLSv1.0, TLSv1.1, and TLSv1.2, but GO-Global negotiates the most
 secure shared protocol. Therefore, TLSv1.2 is used for connections between all supported versions of the
 GO-Global client and host when the the “SSL” Transport selected in the Cluster Manager on the host. The
 SSL Protocol which you can select in Cluster Manager, will use the TLS algorithm.
 </code></pre>
+
 <p>バージョン5では，ライブラリ （OpenSSL） から　SSLv2 と SSLv3
 のコードを削除 （無効化ではありません）
 したため，これらが使用されることはありません．バージョン5は TLSv1.0,
 TLSv1.1, TLSv1.2 のコードを含んでいるため， 「クラスターマネージャーで
 Transport で SSL が選択された場合」
 GGクライアントとの通信は，ネゴシエーションの結果 TLSv1.2 で行われます．</p>
+
 <p>注： RFCにおける最新バージョンはTLS1.2であっても SSL や SSL/TLS
 と表記することが多いため，クラスターマネージャーの表記も SSL
 となっております．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3899/KGTN2017120801.pdf">KGTN2017120801.pdf</a>
-[(44.1 KB)] [kitasp 技術センター, 2017/12/19
+ [(44.1 KB)] [kitasp 技術センター, 2017/12/19
 16:58]</p>
 
                         </div>

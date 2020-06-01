@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,52 +285,59 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2017/05/24*</p>
+
 <p>[番号]
 技術ノート KGTN 2017051103</p>
+
 <p>[現象]
 [GGH5.X] ログオン時にVBSで書かれたスクリプトを走らせたい．</p>
+
 <p>[説明]
 logon-gem-ci.vbs
 というVBSで書かれたスクリプトを，ログオン時に走らせる手順 （設定）
 は次の通りです
 （このファイル名は，走らせたいファイル名で読み替えてください） ．</p>
+
 <ol>
-<li>
-<p>VBSと同じファイル名で拡張子がBATのファイル （logon-gem-ci.bat）
-を同じフォルダーに作成します．</p>
-</li>
-<li>
-<p>作成したBATのファイルに以下のコマンドを記述します．</p>
+<li>VBSと同じファイル名で拡張子がBATのファイル （logon-gem-ci.bat）
+を同じフォルダーに作成します．</li>
+
+<li><p>作成したBATのファイルに以下のコマンドを記述します．</p>
+
 <p>@echo off
 pushd %~dp0
-start /b &quot;&rdquo; cscript logon-gem-ci.vbs ← 実際のファイル名で置き換えてください</p>
-</li>
-<li>
-<p>クラスターマネージャーで [Tool] → [Host Options] → [Session
-Startup] を開きます．</p>
-</li>
-<li>
-<p>[Logon scripts] → [Global] にチェックを入れます．</p>
-</li>
-<li>
-<p>右の &ldquo;&hellip;&rdquo; をクリックしBATのファイル （logon-gem-ci.bat）
-を選択します．</p>
-</li>
-<li>
-<p>最下段の 「OK」 をクリックします．</p>
-</li>
+start /b &ldquo;&rdquo; cscript logon-gem-ci.vbs ← 実際のファイル名で置き換えてください</p></li>
+
+<li><p>クラスターマネージャーで [Tool] → [Host Options] → [Session
+Startup] を開きます．</p></li>
+
+<li><p>[Logon scripts] → [Global] にチェックを入れます．</p></li>
+
+<li><p>右の &ldquo;&hellip;&rdquo; をクリックしBATのファイル （logon-gem-ci.bat）
+を選択します．</p></li>
+
+<li><p>最下段の 「OK」 をクリックします．</p></li>
 </ol>
-<p><img src="http://techreport.kitasp.net/attachments/download/3666/KGTN2017051103.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3666/KGTN2017051103.jpg" alt="" /></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3665/KGTN2017051103.pdf">KGTN2017051103.pdf</a>
-[(106 KB)] [kitasp 技術センター, 2017/05/24
+ [(106 KB)] [kitasp 技術センター, 2017/05/24
 17:35]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3666/KGTN2017051103.jpg">KGTN2017051103.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3666/KGTN2017051103.jpg" title="表示">表示</a>
-[(12.5 KB)] [kitasp 技術センター, 2017/05/24
+ [(12.5 KB)] [kitasp 技術センター, 2017/05/24
 17:35]</p>
 
                         </div>

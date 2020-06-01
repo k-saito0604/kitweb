@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,19 +285,27 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2016/08/01*</p>
+
 <p>[番号]
 技術ノート KGTN 2016072803</p>
+
 <p>[現象]
 [GGSpoolPdf] イベントログに GGSpoolPDF の &ldquo;doPrint2: Step#2&rdquo;
 の記録があった時刻に， Symantec Endpoint Protection が 「改変対策
 スキャン」 のイベントログが記録 （SPOOLSV.EXE が SEP の ccSvcHst.exe と
 Smc.exe にアクセス） されているが，何か考えられることはあるか？</p>
+
 <p>[説明]
 GGSpoolPDF および SkyPDF for GO-Global （SkyPDF と省略）
 周辺の処理の流れは，技術ノート KGTN#2016072802 の通りです．</p>
+
 <p>SPOOLSV.EXE
 はプリントスプーラーのサービスですが，このプリントスプーラーおよびプリントスプーラー上で実行されるプリンタードライバー
 （SkyPDF および出力先のプリンタードライバー） が，アンチウイルスソフトの
@@ -313,13 +321,15 @@ SEP のプログラムに具体的にどのようなアクセスがあったの�
 （レジストリであればその範囲，ファイルであればパス名）
 ，ご確認なさることをお勧めいたします （下記の 「参考」
 の情報もご覧下さい） ．</p>
+
 <p>次に，シマンテック社の情報 （TECH101173） に，
 「改変対策で検出される攻撃は，必ずしも悪意のあるものばかりではありません．たとえば，システムの監視を行うようなアプリケーションによっては，そのアプリケーションの正常な動作としてシマンテック製品へのアクセスを行う場合があります．改変対策はこのような動作を攻撃として検出する場合があります」
 とありますので， SkyPDF 周辺の一連の （正しい）
 印刷処理を攻撃として検出した可能性も考えられます．</p>
+
 <dl>
-<dt>これについては，シマンテック社の情報 （TECH133618） に 「&ldquo;Actor Process</dt>
-<dd>&quot;
+<dt>これについては，シマンテック社の情報 （TECH133618） に 「&rdquo;Actor Process</dt>
+<dd>&ldquo;
 に記録されたプロセスが安全なものであると確認ができている場合には，以下の技術文書をご参照いただき，改変対策の対象から除外することができます」
 とありますので，Windowsのシステムファイル SPOOLSV.EXE
 がウイルス等に感染していないことが明らかであれば，改変対策の対象から
@@ -328,29 +338,39 @@ SPOOLSV.EXE
 （HOWTO80927） にある &ldquo;Windows クライアントの改変対策例外の作成&rdquo;
 や下記のサイトをご覧下さい．</dd>
 </dl>
+
 <p>How to Create Exceptions or Exclusions for Tamper Protection Alerts that
 have already been logged
 <a href="https://support.symantec.com/en_US/article.TECH92553.html">https://support.symantec.com/en_US/article.TECH92553.html</a></p>
+
 <p>参　考
 シマンテック社のフォーラムには，エクスプローラーで 「改変対策 スキャン」
 のログが記録された事例があり，詳しい情報
 （アクセスしたレジストリの情報など） が示されております
 （スクリーンショットを参照）
 ．恐らく，これと同じレベルの情報が記録されているのではないかと思われます．</p>
+
 <p><a href="http://www.symantec.com/connect/forums/endpoint-protection-12-tamper-protection-alert-explorerexe">http://www.symantec.com/connect/forums/endpoint-protection-12-tamper-protection-alert-explorerexe</a></p>
-<p><img src="http://techreport.kitasp.net/attachments/download/2894/KGTN2016072803-1.jpg" alt="">
-<img src="http://techreport.kitasp.net/attachments/download/2895/KGTN2016072803-2.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/2894/KGTN2016072803-1.jpg" alt="" />
+<img src="http://techreport.kitasp.net/attachments/download/2895/KGTN2016072803-2.jpg" alt="" /></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2893/KGTN2016072803.pdf">KGTN2016072803.pdf</a>
-[(148 KB)] [kitasp 技術センター, 2016/08/08
+ [(148 KB)] [kitasp 技術センター, 2016/08/08
 14:09]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2894/KGTN2016072803-1.jpg">KGTN2016072803-1.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/2894/KGTN2016072803-1.jpg" title="表示">表示</a>
-[(14.6 KB)] [kitasp 技術センター, 2016/08/08
+ [(14.6 KB)] [kitasp 技術センター, 2016/08/08
 14:09]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2895/KGTN2016072803-2.jpg">KGTN2016072803-2.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/2895/KGTN2016072803-2.jpg" title="表示">表示</a>
-[(21.6 KB)] [kitasp 技術センター, 2016/08/08
+ [(21.6 KB)] [kitasp 技術センター, 2016/08/08
 14:09]</p>
 
                         </div>

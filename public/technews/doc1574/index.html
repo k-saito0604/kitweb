@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,25 +285,35 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/10/26*</p>
+
 <p>[番号]
 技術ノート KGTN 2010102701</p>
+
 <p>[現象]
 ハードウエアロードバランサで接続先のGGサーバを動的に振り分けているが，このような環境でクライアントプリンタ機能の
 Cache clinet printers を使用して構わないか？</p>
+
 <p>[説明]
 トータルのユーザ数 （クライアント数）
 にも依存しますが，一般にはハードウエアロードバランサで接続先のGGサーバを散らす環境では，クライアントプリンタ機能の
 Cache clinet printers を使用することは極めて危険です．</p>
+
 <p>例えば，2,000人のユーザがいた場合，各GGサーバには2,000人のユーザがログオンする可能性があり，各ユーザが異なるクライアントから接続すると，少なくとも2,000台のプリンタがGGサーバ上に作成され保持されます．各プリンタはCPUやメモリを消費しますので，過度にプリンタの数が多いと
 Print Spooler や Windows
 自体が不安定になります．このようなことから，ハードウエアロードバランサで接続先のGGサーバを散らす環境では，クライアントプリンタ機能の
 Cache clinet printers を使用しないようにして下さい．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/366/KGTN2010102701.pdf">KGTN2010102701.pdf</a>
-[(57.5 KB)] [kitasp 技術センター, 2010/10/27
+ [(57.5 KB)] [kitasp 技術センター, 2010/10/27
 08:58]</p>
 
                         </div>

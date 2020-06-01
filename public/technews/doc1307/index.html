@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,25 +285,35 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/09/07*</p>
+
 <p>[番号]
 技術ノート KGTN 2011090701</p>
+
 <p>[現象]
 外部のプログラムが認証情報を持っているが，それに合致しないユーザ
 （セッション） を排除したい．</p>
+
 <p>[説明]
 以下のようなアプリケーションを作成し，最初に起動するアプリケーションとして登録することで実現が可能です．</p>
+
 <p>環境変数 USERNAME からユーザ名を得る．
 このユーザ名をキーとして，外部のプログラムが持っている認証情報と照合する．
 合致すればCreateProcess関数等で業務のメインプログラムを起動する．
 合致しなければ 「認証されていません．強制終了します」
 と言った文言のダイアログを表示し，プログラムを終了する
 （セッションも自動的に終了します） ．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/625/KGTN2011090701.pdf">KGTN2011090701.pdf</a>
-[(57.5 KB)] [kitasp 技術センター, 2011/09/07
+ [(57.5 KB)] [kitasp 技術センター, 2011/09/07
 13:45]</p>
 
                         </div>

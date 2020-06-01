@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,16 +285,23 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p><em>技術ノート
 2014/06/14</em></p>
+
 <p>[番号]
 技術ノート KGTN 2014061103</p>
+
 <p>[現象]
 [GGW3.2.1]
 STOPコード0x50のBSODが発生したが，そのBSODの原因を知りたい．</p>
+
 <p>[説明]
 GraphOn社でメモリダンプファイルを解析したところ，下記の内容が分かりました．</p>
+
 <pre><code>A developer analyzed the memory dump. The crash occurred in logon.exe while the session was running
 (not during session shutdown). The computer had plenty of available memory at the time of the crash. The
 crash occurred when the GO-Global display driver tried to access one of its data structures. The data
@@ -304,12 +311,15 @@ K&gt; Which API (program) gave the corrupted data structures to the GG display d
 
 The data structure that was corrupted is created and managed by the GO-Global Display Driver.
 </code></pre>
+
 <p>つまり， GO-Global Display Driver
 が管理するデータ構造が何者かによって壊されたため，GGがそのデータ構造を使おうとした時に正常な処理が行われずBSODが発生したということです．データ構造の破壊とBSODの発生は直接的に関係が無いため，データ構造が破壊されたタイミングや原因が分かる情報を
 （このメモリダンプから） 得ることは出来ませんでした．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1682/KGTN2014061103.pdf">KGTN2014061103.pdf</a>
-[(62.6 KB)] [kitasp 技術センター, 2014/06/14
+ [(62.6 KB)] [kitasp 技術センター, 2014/06/14
 19:15]</p>
 
                         </div>

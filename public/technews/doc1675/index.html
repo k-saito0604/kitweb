@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,22 +285,31 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/08/04*</p>
+
 <p>[番号]
 技術ノート KGTN 2010080402</p>
+
 <p>[現象]
 エンタープライズオプションのサーバ監視機能では，各サーバで採取した情報を共有フォルダにコピーせずに，HTTP/POSTでDB登録サーバへ送っているが，なぜそのような仕様なのか？</p>
+
 <p>[説明]
 共有フォルダを使用する方式も考えましたが，ドメインのセキュリティ等
 （認証など）
 の問題が絡むため，インストールや障害時の対応等が難しく，総合的に判断してHTTP/POST
 方式に変更しました．この方式であれば，クライアント〜サーバ間はTCP/IP
 の接続性のみをチェックすれば良く，障害発生時の切り分けも容易になります．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/258/KGTN2010080402.pdf">KGTN2010080402.pdf</a>
-[(56.9 KB)] [kitasp 技術センター, 2010/08/04
+ [(56.9 KB)] [kitasp 技術センター, 2010/08/04
 12:43]</p>
 
                         </div>

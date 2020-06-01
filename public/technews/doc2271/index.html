@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,16 +285,23 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2016/10/05*</p>
+
 <p>[番号]
 技術ノート KGTN 2016092102</p>
+
 <p>[現象]
 [GGW3.2.1] クライアントドライブ機能で GGW3.2.0.4203
 ではプロトコルエラー （Connection broken）
 が発生しなかったが，GGW3.2.1.4510
 へアップグレードしたところプロトコルエラーが発生するようになった．どのような原因が考えられるか？</p>
+
 <p>[説明]
 GGのサーバーとクライアント間の通信は全て Component SDK
 を使用して行われ，通信はコンポーネント （API）
@@ -307,28 +314,34 @@ CopyFile の処理には，比較的大きなファイルをコピーした場�
 を検出できないという不具合があるため，ファイルの内容のデータ転送が終わった後もファイルのロックが解除されません．しかし，数分～10分ほど経過すると
 Component SDK
 が異常を検知しコンポーネントの処理を強制終了させるため，ファイルのロックが解除されます．</p>
+
 <p>GGW3.2.0.4226
 では，クライアントドライブ機能の修正は行われておりませんが，新たに通信異常時に自動的にセッションを再接続する機能
 （セッション再接続機能）
 が実装されました．この機能を実現するためにプロトコルの異常を検知する処理が加わったため，輻輳の発生がプロトコルエラーとして認識されるようになりました．後継の
 GGW3.2.1.4510
 にもセッション再接続機能がありますので，同じ原因でプロトコルエラーとなります．</p>
+
 <pre><code>[Automatic Reconnect]
 GO-Global for Windows version 3.2.0.4226 allows users to automatically reconnect to their session after the
 client's connection to the server has been broken. When the client's connection to the server is broken, the
 user is presented with the following dialog:
 &lt;&lt;Your connection to server [server name] has been broken. Would you like to reconnect?&gt;&gt;
 </code></pre>
+
 <p>なお，クライアントドライブ機能の不具合は，GraphOn社の調査でアーキテクチャーに起因しているという結論となり，バージョン4.0で全く新しいアーキテクチャーでクライアントドライブ機能が再実装
 （修正） されております．</p>
+
 <pre><code>[CASE#8252]
 Development did some investigation into this issue today. They have said that the CopyFile function in
 GGW3.2 is a very complicated function. As a result, it will be difficult and risky to fix this bug in GGW 3.2.
 The target milestone for this issue to be resolved is version 4.0 since it will be fixed by design.
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3088/KGTN2016092102.pdf">KGTN2016092102.pdf</a>
-[(98.4 KB)] [kitasp 技術センター, 2016/10/05
+ [(98.4 KB)] [kitasp 技術センター, 2016/10/05
 16:41]</p>
 
                         </div>

@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,17 +285,25 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2017/04/07*</p>
+
 <p>[番号]
 技術ノート KGTN 2017040501</p>
+
 <p>[現象]
 [GGH5.X] クライアント印刷機能で UPD （Universal Printer Driver）
 を使用した時，印刷されない画像がある．</p>
+
 <p>[説明]
 次の手順で UPD の印刷エンジン （pdfprint.exe）
 にパラメタを追加してください．</p>
+
 <ol>
 <li>サービス Application Publishing Service を停止する．</li>
 <li>テキストエディタで C:ProgramDataGraphOnHostProperties.xml
@@ -306,16 +314,22 @@
 <li>上書き保存する．</li>
 <li>サービス Application Publishing Service を開始する．</li>
 </ol>
-<p><img src="http://techreport.kitasp.net/attachments/download/3428/KGTN2017040501.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3428/KGTN2017040501.jpg" alt="" /></p>
+
 <p>この設定を加えると，印刷内容が 「印刷前に」
 画像データーへ変換され，その画像がプリンターへ出力されます．なお，印刷内容の再現性は高まりますが，画像データーへ変換するため，印刷に要する時間が長くなります．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3426/KGTN2017040501.pdf">KGTN2017040501.pdf</a>
-[(45.5 KB)] [kitasp 技術センター, 2017/04/07
+ [(45.5 KB)] [kitasp 技術センター, 2017/04/07
 18:00]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3428/KGTN2017040501.jpg">KGTN2017040501.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3428/KGTN2017040501.jpg" title="表示">表示</a>
-[(26.7 KB)] [kitasp 技術センター, 2017/04/07
+ [(26.7 KB)] [kitasp 技術センター, 2017/04/07
 18:01]</p>
 
                         </div>

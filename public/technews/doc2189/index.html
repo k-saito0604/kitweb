@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,14 +285,21 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/10/05*</p>
+
 <p>[番号]
 技術ノート KGTN 2009051501</p>
+
 <p>[現象]
 [GGW3.2/GGH4.X-5.X]
 セッションがたまに切れるが，何か簡単に試せることはないか？</p>
+
 <p>[説明]
 GO-Global for Windows はデフォルトの設定で，
 （クライアント～サーバ間に張られる GO-Global for Windows
@@ -300,9 +307,12 @@ GO-Global for Windows はデフォルトの設定で，
 クライアントからサーバへ30秒毎にPINGを送信しています（以降，ICMPのPINGと区別するためにGG-PINGと表記します）．30秒以内にサーバから応答があればコネクションが正常と判断し，それを越えて応答がなければコネクションが失われたと判断します
 （注：応答を受信した直後にコネクションが切れた場合は，それから29秒後にGG-PINGが送信されますので，59秒後にコネクションが切れたと判断します）
 ．このGG-PINGの機能を以下の設定で無効にすることができます．</p>
+
 <p>[HKEY_LOCAL_MACHINESOFTWAREGraphOnBridges1.0.0AppServer]
 SessionVerification REG_DWORD 0</p>
+
 <p>設定を変更した場合は，必ずサーバを再起動して下さい．GG-PINGの機能を無効にしてもセッションが切れる場合は，TCP/IPレベルで実際にコネクションが切れているものと推測されます．</p>
+
 <p>補　足
 TCP/IPレベルでセッションが切断されているかどうかを確認するには，弊社開発の
 GGNetworkCheck をご利用下さい．このツールは，GG
@@ -315,9 +325,11 @@ GGNetworkCheck をご利用下さい．このツールは，GG
 （クライアント側とサーバ側）
 を付き合わせることで，ネットワークの状況を確認することが出来ます．GGのプロトコルを使用せずにチェックを行いますので，万一GG上で問題が発生したとしても，ネットワークの状況を確実に把握することが可能です．詳細は，技術ノート
 KGTN#2011030201 をご覧下さい．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3269/KGTN2009051501.pdf">KGTN2009051501.pdf</a>
-[(84 KB)] [kitasp 技術センター, 2017/04/06
+ [(84 KB)] [kitasp 技術センター, 2017/04/06
 17:22]</p>
 
                         </div>

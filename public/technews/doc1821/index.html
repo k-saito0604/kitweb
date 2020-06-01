@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,16 +285,24 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/03/24*</p>
+
 <p>[番号]
 技術ノート KGTN 2010032404</p>
+
 <p>[現象]
 クライアントプリンタを Universal Driver （ユニバーサルプリンタドライバ）
 から Native Driver （通常のプリンタドライバ） に戻したい．</p>
+
 <p>[説明]
 サーバ側で以下の設定を行います．</p>
+
 <p>クラスタマネージャを開きます．
 Tools → Server Options → Client Access を開きます．
 Printers にチェックを入れます （通常はチェックが入っています） ．
@@ -302,7 +310,9 @@ Driver sources の中の Windows folder と Clients にチェックを入れま�
 上記4以外のチェック （Universal Driver, Driver server, Custom）
 をすべて外します．
 &ldquo;OK&rdquo; ボタンをクリックします．</p>
+
 <p>クライアント側で以下の設定を行います．</p>
+
 <p>エクスプローラーでC:¥Documents and Settings¥Administrator¥Local
 Settings¥Application Data を開きます．Administrator
 以外のユーザの場合はC:¥Documents and Settings¥¥Local
@@ -311,9 +321,11 @@ Settings¥Application Data を開いて下さい．
 印刷に使用するプリンタを通常に使うプリンタ （つまりデフォルトプリンタ）
 に設定します．
 GGサーバにログオンし，印刷が正常に行われることを確認します．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/104/KGTN2010032403.pdf">KGTN2010032403.pdf</a>
-[(305 KB)] [kitasp 技術センター, 2010/03/24
+ [(305 KB)] [kitasp 技術センター, 2010/03/24
 15:32]</p>
 
                         </div>

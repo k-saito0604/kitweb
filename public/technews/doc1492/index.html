@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,35 +285,49 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/01/26*</p>
+
 <p>[番号]
 技術ノート KGTN 2011011201</p>
+
 <p>[現象]
 [GGW3.2] ggw-3.2.1.4389を使用しているが， &ldquo;VISIBLE = FALSE&rdquo;
 の状態で最小化，もしくは最小化の解除を行うと，その後の表示で画面が乱れる
 （例： ウインドウが透明な状態になる） ．</p>
+
 <p>[説明]
 この現象は CASE#27283　としてGraphOn社が確認しており， ggw-3.2.1.4420
 で修正されております．なお，クライアント側の修正を伴っているため，サーバ側だけでなくクライアント側のアップデートも必要です．</p>
+
 <p>参考１
 本事象に関するリリースノートは以下の通りです．</p>
-<h2 id="3214420-6192009">3.2.1.4420 (6/19/2009)</h2>
+
+<h2 id="3-2-1-4420-6-19-2009">3.2.1.4420 (6/19/2009)</h2>
+
 <ol>
-<li>Issues fixed since 3.2.1.4389</li>
-</ol>
-<hr>
-<p>Ticket 27283 / Bug 7002
+<li>Issues fixed since 3.2.1.4389
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-
+Ticket 27283 / Bug 7002
 Painting issues in a custom application when opened in a maximized
-state.</p>
+state.</li>
+</ol>
+
 <p>NOTE: The Windows Client, the ActiveX Control, and the Netscape Plug-in
 for Windows must be updated for this fix.</p>
+
 <p>この修正に関する詳細情報は以下の通りです．</p>
+
 <p>The bug 7002 was not related to painting issues. It involved changes to
 the dc.dll (Display Client) for the Win32 client. This issue was related
 to windows created using the styles we use for the Win client, Windows
 does not let the WS_MINIMIZE style be removed using SetWindowLong.</p>
+
 <p>In this case the server was telling the client to minimize then maximize
 a hidden window. Since the WS_MINIMIZE style remained, and moving a
 minimized window puts it in a large neg location, the window was not
@@ -321,12 +335,15 @@ properly placed after it was maximized. This fix delays the minimizing
 of a hidden window until it is visible. We also need to unminimize a
 visible window before it is hidden. This will allow the windows to be
 moved correctly.</p>
+
 <p>There are no known side effects to this client, however there a change
 in the build, related to dual monitors, dual monitor support is not
 longer enabled be default. The client must use the mm-1 argument.</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/448/KGTN2011011201.pdf">KGTN2011011201.pdf</a>
-[(69 KB)] [kitasp 技術センター, 2011/01/26
+ [(69 KB)] [kitasp 技術センター, 2011/01/26
 13:26]</p>
 
                         </div>

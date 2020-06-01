@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,25 +285,35 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2016/10/05*</p>
+
 <p>[番号]
 技術ノート KGTN 2016091001</p>
+
 <p>[現象]
 [GGH4.X-5.X] ADサーバーにGG （ホスト機能）
 をインストールすべきでない理由を知りたい．</p>
+
 <p>[説明]
 ADサーバーにGG （ホスト機能）
 をインストールし，ユーザーがそのサーバー上でアプリケーションを利用した場合，アプリケーションの利用状況によりサーバーの負荷
 （CPUやメモリなど） が大きく変動します．例えば， Excel
 のマクロで巨大なワークシートの処理を行った場合，長時間サーバーが高負荷となり，ユーザーの認証やプロファイル管理の処理速度低下等の問題を引き起こします．</p>
+
 <p>ADサーバーは，そのドメインに参加するサーバー群のユーザーの認証やプロファイル管理を行いますので，安定して動作することが非常に重要ですが，GG
 （ホスト機能）
 の同居により，多数のユーザーによるアプリケーション利用等によって，そのことが満たされなくなる危険性をあるためです．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3058/KGTN2016091001.pdf">KGTN2016091001.pdf</a>
-[(61.3 KB)] [kitasp 技術センター, 2016/10/05
+ [(61.3 KB)] [kitasp 技術センター, 2016/10/05
 14:59]</p>
 
                         </div>

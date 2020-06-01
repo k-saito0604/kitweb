@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,16 +285,24 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/04/13*</p>
+
 <p>[番号]
 技術ノート KGTN 2010041301</p>
+
 <p>[現象]
 GG用にOpenSSLで作成されたSSL証明書 server.crt
 をIISで使用する場合の手順は？</p>
+
 <p>[説明]
 以下の手順でGG用のSSL証明書 server.crt をIISで使用することが出来ました．</p>
+
 <p>bin¥openssl pkcs12 ?export ?in server.crt ?inkey server.key ?out
 server.p12 を実行する．
 Enter Export Password: で適当なパスワードを入力する．
@@ -315,16 +323,20 @@ Verifying ? Enter Export Password: で上記2と同じパスワードを入力�
 「次へ」 ボタンをクリックする．
 「完了」 ボタンをクリックする．
 「OK」 ボタンをクリックする．</p>
+
 <p>注　意１
 上記の手順は， 「GGの管理者ガイドに基づいて」
 OpenSSLでGG用のSSL証明書を生成したことを前提としております．これ以外の方法または示された手順以外で生成されたSSL証明書については，如何なる結果になろうとも責任を負うことはできません．</p>
+
 <p>注　意２
 上記の手順は，Windows Server 2003 SP2 に2010年4月13日時点での Windows
 Update
 を全て適用した環境で確認出来た手順です．この手順で上手く機能しない場合は，IISまたはWindowsの問題ですので，それらの製品のサポートへお問い合せ下さい．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/133/KGTN2010041301.pdf">KGTN2010041301.pdf</a>
-[(72.8 KB)] [kitasp 技術センター, 2010/04/13
+ [(72.8 KB)] [kitasp 技術センター, 2010/04/13
 12:20]</p>
 
                         </div>

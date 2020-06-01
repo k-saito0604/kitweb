@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,17 +285,25 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2016/08/25*</p>
+
 <p>[番号]
 技術ノート KGTN 2016081901</p>
+
 <p>[現象]
 [GGH5.X/ExPack] 拡張パックの GGEasyMonitor
 のバージョン2.2.0は，インストールのどのような部分に変更があるのか？</p>
+
 <p>[説明]
 GGEasyMonitor
 のバージョン2.2.0のインストール関連の主な変更点は以下の通りです．</p>
+
 <p>[ファイルの追加]
 クライアント情報を採取するため次のファイルが追加されました．
 ・GGEasyMonitorClientInfo.exe クライアント情報を収集するプログラム
@@ -306,26 +314,34 @@ GGEasyMonitor
 ・GGEasyMonitor-Files.bat 作業ファイルのアクセス権を設定するバッチ
 ・logon-gem-ci.bat ログオンスクリプト
 ・logon-gem-ci.vbs ログオンスクリプトから起動されるスクリプト</p>
+
 <p>[必要な設定作業：GGの設定ファイル]
 サーバー側から見たクライアントのIPアドレスを得るため，
 HostProperties.xml　の下記の項目に true を設定して下さい．</p>
+
 <pre><code>&lt;property id=&quot;NetworkAddressEnvVarEnabled&quot; group=&quot;ClientAccess&quot; type=&quot;BOOL&quot;&gt;
 &lt;value&gt;true&lt;/value&gt;
 &lt;/property&gt;
 </code></pre>
+
 <p>[必要な設定作業：クラスターマネージャー]
 クライアントの情報を取得し作業ファイルに記録するため， logon-gem-ci.bat
 をグローバル・ログオンスクリプトとして登録して下さい．また，管理者権限で
 GGEasyMonitor-Files.bat
 を実行し，作業ファイルに必要なアクセス権を設定して下さい．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/2962/KGTN2016081901.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/2962/KGTN2016081901.jpg" alt="" /></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2961/KGTN2016081901.pdf">KGTN2016081901.pdf</a>
-[(77.8 KB)] [kitasp 技術センター, 2016/08/25
+ [(77.8 KB)] [kitasp 技術センター, 2016/08/25
 17:46]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2962/KGTN2016081901.jpg">KGTN2016081901.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/2962/KGTN2016081901.jpg" title="表示">表示</a>
-[(11 KB)] [kitasp 技術センター, 2016/08/25
+ [(11 KB)] [kitasp 技術センター, 2016/08/25
 17:46]</p>
 
                         </div>

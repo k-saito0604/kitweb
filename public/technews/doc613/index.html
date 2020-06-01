@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,25 +285,36 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2013/03/19*</p>
+
 <p>[番号]
 技術ノート KGTN 2013031903</p>
+
 <p>[現象]
 [GGH4.5]
 他のGGサーバ上で動作するライセンスサーバを参照するように設定したが，APSログにライセンス・エラーが記録されてクライアントから接続出来ない．</p>
+
 <p>[説明]
 ライセンスサーバとライセンス・エラーが記録されるGGサーバが同じLAN上にあれば，ライセンスサーバが動作するWindowsのファイアウォールに起因する問題です．セキュリティ上の心配が要らない環境であれば，ファイアウォールを無効化することで問題が解消します．</p>
+
 <p>ファイアウォールを無効化出来ない場合は，以下のようにライセンスファイルに使用するポート番号を指定して下さい．次にこの２つのポート番号で受信出来るように，ライセンスサーバのファイアウォールの設定を変更して下さい．これで問題が解消します．</p>
+
 <p>SERVER caspian 000476BA8F74 27000 ← FlexLMが使用するポート
 DAEMON BLM port=5678 ← デーモンが使用するポート
 INCREMENT session blm 4.0 31-dec-2012 5 99E82D1B9A64 HOSTID=ANY
 INCREMENT any_app blm 4.0 31-dec-2012 uncounted D1D222D031C4
 HOSTID=ANY</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1288/KGTN2013031903.pdf">KGTN2013031903.pdf</a>
-[(59.4 KB)] [kitasp 技術センター, 2013/03/19
+ [(59.4 KB)] [kitasp 技術センター, 2013/03/19
 13:41]</p>
 
                         </div>

@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,26 +285,39 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2012/10/30*</p>
+
 <p>[番号]
 技術ノート KGTN 2012103105</p>
+
 <p>[現象]
 [GGH4.X] クライアント印刷機能のプリンタ管理の方式は同じか？</p>
+
 <p>[説明]
 いいえ，下記の表のように GGW3.2.1 と GGH4.5 では大きく異なります．</p>
-<hr>
+
+<hr />
+
 <pre><code>                   GGW3.2.1                     GGH4.5
 </code></pre>
+
 <p>設定情報の管理       クライアント側               サーバ側
-設定情報の範囲       ユーザ＋クライアント単位     ユーザ＋クライアント単位
-ファイル名           print.ini                    <!-- raw HTML omitted -->{<!-- raw HTML omitted -->}<!-- raw HTML omitted -->.xml
-デフォルトプリンタ   クライアント側のみ設定可能   クライアント側とサーバ側どちらも設定可能</p>
-<hr>
+  設定情報の範囲       ユーザ＋クライアント単位     ユーザ＋クライアント単位
+  ファイル名           print.ini                    <ClientName>{<ClientID>}<PrinterName>.xml
+  デフォルトプリンタ   クライアント側のみ設定可能   クライアント側とサーバ側どちらも設定可能</p>
+
+<hr />
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1069/KGTN2012103105.pdf">KGTN2012103105.pdf</a>
-[(55.3 KB)] [kitasp 技術センター, 2012/10/31
+ [(55.3 KB)] [kitasp 技術センター, 2012/10/31
 08:53]</p>
 
                         </div>

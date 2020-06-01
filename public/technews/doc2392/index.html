@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,14 +285,21 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2016/08/08*</p>
+
 <p>[番号]
 技術ノート KGTN 2016080202</p>
+
 <p>[現象]
 [GGH4.X-5.X] 拡張パックの GGEasyMonitor
 で振り分けを行うが，GGサーバーが３台の場合，グローバルIPアドレスは幾つ必要か？</p>
+
 <p>[説明]
 GGEasyMonitor
 の振り分け機能を何れかのGGサーバーに配置する場合，GGサーバーの台数分のグローバルIPアドレスが必要です
@@ -302,15 +309,20 @@ GGEasyMonitor
 （振り分け機能）のポート番号で運用する方法が考えられます．Windowsサーバーのポートフォワード機能を利用する場合は，3台のGGサーバーのうち１台をポートフォワード兼用とすることで，グローバルIPアドレス１個で3台のGGサーバーを運用することも
 （技術的には） 可能です．他には，クライアントからVPNでGGサーバーの
 （ローカル） ネットワークへアクセスする方法も考えられます．</p>
+
 <p>Windowsサーバーのポートフォワード機能 （Portproxy）
 は，以下のコマンドで設定することが出来ます．この設定に加え，Windowsファイアウォールに待受けポートへの接続を許可する受信の規則を追加して下さい．</p>
+
 <pre><code>netsh interface portproxy add v4tov4 listenport=8491 listenaddress=0.0.0.0 connectport=491
 connectaddress=192.168.102.89
 </code></pre>
+
 <p><a href="https://msdn.microsoft.com/ja-jp/library/cc776297(v=ws.10).aspx#BKMK_1">https://msdn.microsoft.com/ja-jp/library/cc776297(v=ws.10).aspx#BKMK_1</a></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2901/KGTN2016080202.pdf">KGTN2016080202.pdf</a>
-[(73.8 KB)] [kitasp 技術センター, 2016/08/08
+ [(73.8 KB)] [kitasp 技術センター, 2016/08/08
 15:19]</p>
 
                         </div>

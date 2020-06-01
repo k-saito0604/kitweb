@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,22 +285,32 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/03/03*</p>
+
 <p>[番号]
 技術ノート KGTN 2010030302</p>
+
 <p>[現象]
 GGのウエッブサーバとしてApacheを利用する場合の注意点は？</p>
+
 <p>[説明]
 Apacheの設定ファイル httpd.conf の中のDocumentRoot とDirectoryIndex
 を設定すれば，GG標準のログオン画面が表示されるようになります．設定の内容は以下の通りで，DocumentRoot
 でGGのWebフォルダを指定し，DirectoryIndex
 でデフォルトのドキュメントをlogon.html にします．</p>
-<p>DocumentRoot &ldquo;&lt;GGがインストールされたフォルダ&gt;/GO-Global Server/Web&rdquo;
+
+<p>DocumentRoot &ldquo;<GGがインストールされたフォルダ>/GO-Global Server/Web&rdquo;
 DirectoryIndex &ldquo;logon.html&rdquo;</p>
+
 <p>その他については，Apache の一般的な設定ですので，Apache
 のドキュメント等をご覧下さい．</p>
+
 <p>参　考
 Apache （Apache HTTP Server）
 は実績もあり非常に良いウエッブサーバですが，脆弱性が発見された場合，それを修正するには
@@ -309,9 +319,11 @@ Apache （Apache HTTP Server）
 Information Server） の場合は Windows Update
 を適用するだけで自動的に修正されますので，メンテナンスの観点からは IIS
 の方が手間がかからず便利です．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/78/KGTN2010030302.pdf">KGTN2010030302.pdf</a>
-[(65.7 KB)] [kitasp 技術センター, 2010/03/03
+ [(65.7 KB)] [kitasp 技術センター, 2010/03/03
 12:17]</p>
 
                         </div>

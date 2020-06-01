@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,15 +285,22 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/06/20*</p>
+
 <p>[番号]
 技術ノート KGTN 2011062101</p>
+
 <p>[現象]
 GGNetworkCheck
 でネットワークのチェックを行ったところ，下記のようなエラー （切断）
 が発生した．</p>
+
 <p>[2011-06-17 08:25:29] Test#1 CL@08:25:29 -&gt;
 [2011-06-17 08:25:29] Test#1 CL@08:25:29 -&gt; SV@08:25:29 -&gt;
 [2011-06-17 08:25:29] Test#1 CL@08:25:29 -&gt; SV@08:25:29 -&gt;
@@ -312,15 +319,18 @@ Connected
 [2011-06-17 08:27:53] Test#1 CL@08:27:53 -&gt; SV@08:27:53 -&gt;
 CL@08:27:53 (32ms)
 [2011-06-17 08:27:58] Test#1 CL@08:27:58 -&gt;</p>
+
 <p>[説明]
 コネクションの切断が発生したことは間違いありませんが，下線の行前後に約2分間ログが記録されていない空白の時間があります．
 GGNetworkCheck は， 「正常なWindows環境であれば」
 標準設定で5秒毎にログに状況を記録しますので，それが記録されていないということは，Windows
 やディスク，あるいは仮想マシンが過負荷で GGNetworkCheck
 にCPUが割り当てられなかったと考えられます．従って，コネクションの切断はこの問題が引き起こした二次的な事象ですので，先ずCPUが割り当てられなかった事象の原因を調査して下さい．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/576/KGTN2011062101.pdf">KGTN2011062101.pdf</a>
-[(64.4 KB)] [kitasp 技術センター, 2011/06/21
+ [(64.4 KB)] [kitasp 技術センター, 2011/06/21
 08:54]</p>
 
                         </div>

@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,18 +285,27 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/12/02*</p>
+
 <p>[番号]
 技術ノート KGTN 2010120104</p>
+
 <p>[現象]
 ライセンスサーバが 3台冗長構成 （Three-Server Redundancy）
 の場合，GGサーバ側のライセンス関連の設定はどうするのか？</p>
+
 <p>[説明]
 ライセンスファイルを編集する方法と環境変数を編集する方法の2つがあります．</p>
+
 <p>ライセンスファイルを編集する方法
 SERVER行以外を削除し，サーバ行の直後にUSE_SERVER行を追加します．</p>
+
 <p>【編集前】
 SERVER server1 0016E6D253C0 27001 PRIMARY_IS_MASTER
 SERVER server2 0016E6D25430 27001
@@ -304,18 +313,23 @@ SERVER server3 0016E6D25CF8 27001
 DAEMON blm
 INCREMENT session blm 3.2 permanent
 &hellip;</p>
+
 <p>【編集後】
 SERVER server1 0016E6D253C0 27001 PRIMARY_IS_MASTER
 SERVER server2 0016E6D25430 27001
 SERVER server3 0016E6D25CF8 27001
 USE_SERVER</p>
+
 <p>環境変数を編集する方法
 環境変数 LM_LICENSE_FILE に3台のサーバの情報を ポート番号@サーバ名
 の形式でセミコロンで区切って並べます．上記の例を環境変数に設定する場合は，以下のようになります．</p>
+
 <p>27001@server1;27001@server2;27001@server3;</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/409/KGTN2010120104.pdf">KGTN2010120104.pdf</a>
-[(60 KB)] [kitasp 技術センター, 2010/12/02
+ [(60 KB)] [kitasp 技術センター, 2010/12/02
 09:13]</p>
 
                         </div>

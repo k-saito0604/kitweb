@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,29 +285,44 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2012/11/29*</p>
+
 <p>[番号]
 技術ノート KGTN 2012112902</p>
+
 <p>[現象]
 [GGH4.X]
 クライアント印刷機能で，プリンタドライバを変更した時の内部情報の実例を知りたい．</p>
+
 <p>[説明]
 クライアントのコンピュータ名がSATELLITE-B450 ，クライアントIDが
 2f0d55dc-134c-11e2-81e3-e89d87262d24 ，ログオン時のアカウントが
 Administrator ，デフォルトプリンタが DocuCentre-IV C4475
 の場合，プリンタドライバの設定 （変更） の情報はサーバ側の以下のパス
 （ファイル） に保持されます．</p>
+
 <p>%APPDATA%GraphOnPrintersSATELLITE-B450{2f0d55dc-134c-11e2-81e3-e89d87262d24}DocuCentre-IV
 C4475.xml</p>
+
 <p>このファイルの内容は以下の通りで， driver
 がプリンタドライバの名称を指します．</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+<p>&lt;?xml version=&ldquo;1.0&rdquo; encoding=&ldquo;utf-8&rdquo;?&gt;
+<printersettings version="1.0">
+<driver>Universal Remote Printer</driver>
+<configstate>2</configstate>
+</printersettings></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1554/KGTN2012112902.pdf">KGTN2012112902.pdf</a>
-[(72.8 KB)] [kitasp 技術センター, 2014/02/07
+ [(72.8 KB)] [kitasp 技術センター, 2014/02/07
 16:19]</p>
 
                         </div>

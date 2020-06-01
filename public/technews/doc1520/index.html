@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,26 +285,37 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/12/06*</p>
+
 <p>[番号]
 技術ノート KGTN 2010120602</p>
+
 <p>[現象]
 物理メモリが2GBを超えるサーバで Windows Server 2003
 の完全メモリダンプを採取出来ないが，その制限は何に由来するのか？</p>
+
 <p>[説明]
 色々と調査しましたが，そのことに関する情報は見つかりませんでした．恐らく，以下のクラッシュダンプファイル作成の処理に絡む制限だと思われます．</p>
+
 <p>KeBugCheckEx 関数がダンプ情報を
 「ページファイルが占有しているディスクセクタ」 へ直接書き出す．
 次回ブート時にページファイル中にダンプ情報が存在するかどうかチェックする．
 存在した場合 Savedump
 プロセスにより，その情報を所定のパスにダンプファイルとして書き出す．</p>
+
 <p>なお，上記１で 「ページファイルが占有しているディスクセクタ」
 へ直接書き出す理由は，ファイルシステムやドライバが破損している可能性があるためです．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/419/KGTN2010120602.pdf">KGTN2010120602.pdf</a>
-[(61.5 KB)] [kitasp 技術センター, 2010/12/06
+ [(61.5 KB)] [kitasp 技術センター, 2010/12/06
 10:24]</p>
 
                         </div>

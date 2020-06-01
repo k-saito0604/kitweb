@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,24 +285,33 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2013/02/22*</p>
+
 <p>[番号]
 技術ノート KGTN 2013022203</p>
+
 <p>[現象]
 [GGH4.5] APSログに &ldquo;Detected preexistent conduit mutex named
 ConduitMutex1 during desktop initialization (WLE183).&rdquo;
 という記録があり，ログオンに失敗する．</p>
+
 <p>[説明]
 WLE183 はGGが検出したエラーで，その内容は &ldquo;ERROR_ALREADY_EXISTS:
 Cannot create a file when that file already exists.&rdquo;
 です．GGがセッションを生成しようとした時，確保しようとしたリソースが既に存在しており，正常に確保出来なかったことを意味します．サーバの再起動直後でもこの現象が発生すれば，
 Windows 環境の異常の可能性が高いと推測されます．対応としては，Windows
 の再インストール，または可能であればGGサーバを構築した直後のイメージをリストアをお勧めします．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1228/KGTN2013022203.pdf">KGTN2013022203.pdf</a>
-[(64.2 KB)] [kitasp 技術センター, 2013/02/22
+ [(64.2 KB)] [kitasp 技術センター, 2013/02/22
 12:02]</p>
 
                         </div>

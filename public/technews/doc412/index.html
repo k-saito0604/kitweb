@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,30 +285,42 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2014/01/29*</p>
+
 <p>[番号]
 技術ノート KGTN 2014011702</p>
+
 <p>[現象]
 [Windows] ワークグループの環境で Windows Server 2012
 のサーバー群を管理したいが，サーバー
 マネージャで管理するサーバーを追加したところ 「WinRM
 のネゴシエート認証エラー」 が発生する．</p>
+
 <p>[説明]
 この問題を解決するには幾つかの方法がありますが，管理するサーバーをWinRM
 のローカル
 コンピューターで信頼されたホストの一覧に追加するのが一番簡単です．
 Windows PowerShell で以下のコマンドを実行して下さい
 （この例で管理するサーバーは 192.168.102.101 と 192.168.102.102） ．</p>
+
 <pre><code>winrm s winrm/config/client '@{TrustedHosts=&quot;192.168.102.101,192.168.102.102&quot;}'
 </code></pre>
+
 <p>より詳しい情報については，下記ページをご覧下さい．</p>
+
 <p><a href="http://technet.microsoft.com/ja-jp/windows/ps_tips11.aspx">http://technet.microsoft.com/ja-jp/windows/ps_tips11.aspx</a>
 ヒント: Windows PowerShell でリモート コマンドを有効にして使用する</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1489/KGTN2014011702.pdf">KGTN2014011702.pdf</a>
-[(62.4 KB)] [kitasp 技術センター, 2014/01/29
+ [(62.4 KB)] [kitasp 技術センター, 2014/01/29
 16:31]</p>
 
                         </div>

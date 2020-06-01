@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,21 +285,29 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2012/05/22*</p>
+
 <p>[番号]
 技術ノート KGTN 2010081802</p>
+
 <p>[現象]
 GraphOn社の Release Notes にある BUG#8700 （CASE#3875）
 の機能は，どの処理について FlexLM
 のライセンス・チェックアウトを再試行するのか？</p>
+
 <p>[説明]
 ログオンが過度に集中した時，この &ldquo;FlexLM - Bad encryption handshake with
 vendor daemon. (Error code: -33)&rdquo;
 というエラーが発生しましたので，ログオン処理に関して FlexLM
 のライセンス・チェックアウトを再試行します （注：
 PWでのアプリケーション起動処理では，再試行は行われません） ．</p>
+
 <p>補足１
 [Tickets 5677 and 3875 / Bug 8400]
 Intermittent license error: FlexLM - Bad encryption handshake with
@@ -309,11 +317,13 @@ interval. The interval and the number of tries are configurable in the
 Registry. The default values are 1 second and 3 tries. To change this,
 add or modify the following Registry settings under
 HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer:</p>
+
 <p>LicenseCheckoutAttempts
 (This is a DWORD value indicating the maximum number of attempts.)
 LicenseCheckoutRetryInterval
 (This is a DWORD value indicating the interval in seconds between
 attempts.)</p>
+
 <p>補足２
 [Tackets 30487 / Bug 8400 / GGW3.2.1.4482 or later]
 This is fixed for logon and for launching applications from the Program
@@ -322,13 +332,16 @@ after an interval. The default is to wait 1 second to check, and to
 attempt to check a maximum of 3 times. Users can change the wait
 interval or the maximum number of times to check by adding the registry
 keys provided earlier.</p>
+
 <p>補足３
 [Tackets 30487 / Bug 8400 / GGW3.2.1.4482 or later]
 We don&rsquo;t log anything about the retry to the APS log. We&rsquo;re not sure
 if FlexLM logs anything about the handshake error in license.log.</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/273/KGTN2010081802.pdf">KGTN2010081802.pdf</a>
-[(76 KB)] [kitasp 技術センター, 2012/05/23
+ [(76 KB)] [kitasp 技術センター, 2012/05/23
 05:46]</p>
 
                         </div>

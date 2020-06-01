@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,26 +285,35 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/05/25*</p>
+
 <p>[番号]
 技術ノート KGTN 2010052502</p>
+
 <p>[現象]
 Windows Server 2003 + ggw-3.1.1系の環境で，Windows Update のKB969947
 とKB977165 が非互換だと聞いたが，KB969947
 がインストールされており正常にAPSが開始している．また，
 IEを使用して全ての Windows Update を適用したが，KB977165
 は存在しない．なぜ，このようなことが起きるのか？</p>
+
 <p>[説明]
 Windows Server 2003 の Windows Update の仕組みでは，１つの Windows
 Update
 が複数のバージョンのファイルを含むことがあり，環境に応じて何れかが選択されてインストールされます．異なるバージョンの中に，GG互換なファイルとGG非互換なファイルが存在すると，あるGGサーバではAPSが開始し，別のサーバではAPSが開始しない状況が発生します．また，Windows
 Update は現在の Windows
 の環境に応じて選択されますので，あるGGサーバには適用されて，別のGGサーバには適用されないことがあります</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/178/KGTN2010052502.pdf">KGTN2010052502.pdf</a>
-[(52.4 KB)] [kitasp 技術センター, 2010/05/25
+ [(52.4 KB)] [kitasp 技術センター, 2010/05/25
 13:38]</p>
 
                         </div>

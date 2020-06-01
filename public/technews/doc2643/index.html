@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,38 +285,53 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2012/05/23*</p>
+
 <p>[番号]
 技術ノート KGTN 2011120505</p>
+
 <p>[現象]
 [GGH4.X-5.X]
 GGクライアントは，一般にプロキシサーバーを利用できると考えて良いか？</p>
+
 <p>[説明]
 GGクライアントが対応するプロキシサーバーは， 1) ベーシック認証， 2)
 通信内容を素通しする （つまり通信内容のチェック等を一切行わない）
 製品のみに限られます．GGクライアントは，インターネットオプションの
 「プロキシサーバー」
 で設定されたプロキシ情報を使用します．推奨する設定は，以下の通りです．</p>
+
 <p>１．GGのポート番号の変更
 GGが利用するポート番号は491ですが，プロキシサーバーは通常491に対応しておりません．このため，クラスタマネージャーでGGのポート番号を443
 （HTTPS）
 に変更します．この変更に伴い，クライアント起動時に以下のパラメタを設定する必要があります．</p>
+
 <p>デスクトップクライアント&hellip;：-hp 443
 ブラウザ系クライアント&hellip;..：&amp;port=443</p>
-<ol start="2">
+
+<ol>
 <li>インターネットオプションの設定
 ポート番号80だけでなく，上記１で変更したポート番号443も設定します．</li>
 </ol>
-<p><img src="http://techreport.kitasp.net/attachments/download/2422/KGTN2011120505.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/2422/KGTN2011120505.jpg" alt="" /></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2421/KGTN2011120505.pdf">KGTN2011120505.pdf</a>
-[(80.4 KB)] [kitasp 技術センター, 2016/02/05
+ [(80.4 KB)] [kitasp 技術センター, 2016/02/05
 11:39]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2422/KGTN2011120505.jpg">KGTN2011120505.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/2422/KGTN2011120505.jpg" title="表示">表示</a>
-[(10.2 KB)] [kitasp 技術センター, 2016/02/05
+ [(10.2 KB)] [kitasp 技術センター, 2016/02/05
 11:39]</p>
 
                         </div>

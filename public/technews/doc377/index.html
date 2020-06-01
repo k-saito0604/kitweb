@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,14 +285,21 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2013/11/08*</p>
+
 <p>[番号]
 技術ノート KGTN 2013110801</p>
+
 <p>[現象]
 [GGW3.2.1] 下記のソースコードをGG上のIE8
 で実行すると，空なポップアップウインドウが表示され，そこに表示されるべき内容が別のウインドウに表示される．</p>
+
 <pre><code>[File: 1.html]
 &lt;html&gt;
   &lt;head&gt;
@@ -318,9 +325,11 @@
   &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
+
 <p>[説明]
 この現象は，最新の更新プログラム （Windows Update）
 を全て適用することで解消します．更新プログラムを適用できる場合はこの方法を，更新プログラムを適用出来ない場合は補足２のソースコードの修正を行って下さい．</p>
+
 <p>補足１
 更新プログラムを適用していない WS2008SP2
 の環境で，デフォルトでインストールされている IE7
@@ -334,6 +343,7 @@ IE8
 にはデスクトップ上では顕在化しない不具合があり，それがデスクトップを持たないGG環境上で顕在化したと思われます．そして
 IE8
 の更新プログラムでこの不具合が修正されたため，GG環境上でも正常に動作するようになったと考えられます．</p>
+
 <p>補足２
 この現象はターゲットのウインドウ （サンプルではNewWin）
 が正しく認識されない （認識出来ない）
@@ -342,6 +352,7 @@ IE8
 （注：ターゲットのウインドウが存在しない場合と同じ表示結果です）
 ．ソースコードをターゲットウインドウを指定しない方式に修正することで問題が解消します．以下は，サンプルの
 1.html の修正例です．</p>
+
 <pre><code>&lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;main&lt;/title&gt;
@@ -360,9 +371,11 @@ function openwin(url, w, h) {
   &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1526/KGTN2013110801.pdf">KGTN2013110801.pdf</a>
-[(112 KB)] [kitasp 技術センター, 2014/01/29
+ [(112 KB)] [kitasp 技術センター, 2014/01/29
 17:52]</p>
 
                         </div>

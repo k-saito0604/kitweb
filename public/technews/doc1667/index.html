@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,28 +285,40 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/08/09*</p>
+
 <p>[番号]
 技術ノート KGTN 2010080903</p>
+
 <p>[現象]
 Windows Server のイメージは，GGサーバとDBサーバで共通にして良いか？</p>
+
 <p>[説明]
 GGサーバとDBサーバはその機能の差異により，プロセッサやメモリの割り当ての戦略が異なりますので，全く同じイメージ共通して使用することは出来ません．Windows
 Server 2003 では，以下のように異なります．</p>
+
 <p>[GGサーバ]
 プロセッサのスケジュール = 「プログラム」 のパフォーマンスを優先
 システムメモリの割り当て = 「プログラム」 のパフォーマンスを優先</p>
+
 <p>[DBサーバ]
 プロセッサのスケジュール = 「バックグラウンド サービス」
 のパフォーマンスを優先
 システムメモリの割り当て = 「システム キャッシュ」
 のパフォーマンスを優先</p>
+
 <p>その他，レジストリ中のパフォーマンスチューニング項目もGGサーバとDBサーバでは異なります．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/263/KGTN2010080903.pdf">KGTN2010080903.pdf</a>
-[(49.4 KB)] [kitasp 技術センター, 2010/08/09
+ [(49.4 KB)] [kitasp 技術センター, 2010/08/09
 10:44]</p>
 
                         </div>

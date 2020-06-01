@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,26 +285,37 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2018/11/29*</p>
+
 <p>[番号]
 技術ノート KGTN 2018100504</p>
+
 <p>[現象]
 [GGH6.X] Limited Support for Session Reconnect with Third-Party Load
 Balancers とは何か？</p>
+
 <p>[説明]
 「サードパーティーのロードバランサー　（以後LBと略します）　環境に於けるセッション再接続機能限定サポート」
 は，次のような機能を提供します．</p>
+
 <p>ユーザーがLB経由でGGサーバーに接続し，その後何らかの理由でセッションが切断された時，
 （ユーザーが再接続要求を）
 LBがユーザーのセッションが実行されているGGサーバー以外に接続した場合であっても，この機能の働きによりユーザーは元のセッションに再接続することが出来ます．</p>
+
 <p>例えば，GGサーバーAでセッションを実行しているユーザーでセッションの切断が発生すると，そのユーザーのGGクライアントは自動的にLB経由でGGサーバーAへ再接続を試みます．LBが異なるGGサーバーBへ接続した場合，GGサーバーBはGGサーバーAへの接続を開き，GGクライアントとGGサーバーAの間でデータの中継を行います．これにより，ユーザーは
 （サーバーBを介して）
 サーバーAで実行されている元のセッションを再接続することが出来ます．なお，この機能は，GGクライアントが実行中の場合に限り有効で，ユーザーがGGクライアントを閉じた場合，明示的にセッションを切断した場合は機能しません．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4194/KGTN2018100504.pdf">KGTN2018100504.pdf</a>
-[(43.6 KB)] [kitasp 技術センター, 2018/11/29
+ [(43.6 KB)] [kitasp 技術センター, 2018/11/29
 17:02]</p>
 
                         </div>

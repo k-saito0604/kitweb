@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,28 +285,38 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/08/25*</p>
+
 <p>[番号]
 技術ノート KGTN 2010082504</p>
+
 <p>[現象]
 エンタープライズオプションのGMCheckRaw
 で，クライアントのコンピュータ名を得る方法はないのか？</p>
+
 <p>[説明]
 Rel#1.07.05
 またはこれ以降で，セッション情報の中にクライアントのコンピュータ名が設定されます．従来との互換性を維持するため，以下の設定項目
 sessionInfoNew
 が指定されている時にのみ，この機能が有効になり，IPアドレスの後にクライアントのコンピュータ名が加わります．</p>
-<p>sessionInfoNew = GG_Servers(gms_ii).Add_sessionInfo(&quot;%08d, %s, %s,
-%s, %d, %s, %s, &lsquo;%s&rsquo;&quot;)
+
+<p>sessionInfoNew = GG_Servers(gms_ii).Add_sessionInfo(&ldquo;%08d, %s, %s,
+%s, %d, %s, %s, &lsquo;%s&rsquo;&ldquo;)
 　→ （実行結果）
 GG_Servers(gms_ii).Add_sessionInfo(&ldquo;00000002, Administrator on
 Pe800a, Administrator,
-Running, 1, 2010-08-25 09:44:54, 192.168.102.176, &lsquo;GG-MNGR.2F&rsquo;&quot;)</p>
+Running, 1, 2010-08-25 09:44:54, 192.168.102.176, &lsquo;GG-MNGR.2F&rsquo;&ldquo;)</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/292/KGTN2010082504.pdf">KGTN2010082504.pdf</a>
-[(58.9 KB)] [kitasp 技術センター, 2010/08/25
+ [(58.9 KB)] [kitasp 技術センター, 2010/08/25
 13:02]</p>
 
                         </div>

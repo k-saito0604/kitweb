@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,32 +285,46 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/07/26*</p>
+
 <p>[番号]
 技術ノート KGTN 2010072701</p>
+
 <p>[現象]
 Ver4.0系のアドオン GO‐Global Portal
 は，どのような方式でロードバランス機能を実装しているのか？</p>
+
 <p>[説明]
 GO‐Global Portal
 は未だリリースされておりませんので詳細は分かりませんが，GGサーバの設定項目にサーバ・セッション・メモリ・プロセッサの重み付けの項目が追加されていますので，Ver3.2系までのリレーサーバとは異なり柔軟なサーバ選択が可能だと思われます．</p>
-<p><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->100<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->100<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->100<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->100<!-- raw HTML omitted -->
-<!-- raw HTML omitted --></p>
+
+<p><property id="LoadBalHostWeight" group="Miscellaneous"
+type="UINT32">
+<value>100</value>
+</property>
+<property id="LoadBalSessionWeight" group="Miscellaneous"
+type="UINT32">
+<value>100</value>
+</property>
+<property id="LoadBalMemWeight" group="Miscellaneous"
+type="UINT32">
+<value>100</value>
+</property>
+<property id="LoadBalCpuWeight" group="Miscellaneous"
+type="UINT32">
+<value>100</value>
+</property></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/241/KGTN2010072701.pdf">KGTN2010072701.pdf</a>
-[(57.4 KB)] [kitasp 技術センター, 2010/07/27
+ [(57.4 KB)] [kitasp 技術センター, 2010/07/27
 08:19]</p>
 
                         </div>

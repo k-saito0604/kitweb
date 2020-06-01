@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,32 +285,44 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/07/06*</p>
+
 <p>[番号]
 技術ノート KGTN 2010061402</p>
+
 <p>[現象]
 GGのプラグイン （機能拡張） のファイルの中に， ServerPluginsPath.reg と
 ClientPluginsPath.reg というファイルがあるが，これは何か？</p>
+
 <p>[説明]
 GGのプラグインを実行するには，GGサーバおよびGGクライアントにプラグインが配置されたフォルダを教える必要があります．
 ServerPluginsPath.reg
 はGGサーバにこのフォルダを教えるレジストリファイルで，ClientPluginsPath.reg
 はGGクライアントにこのフォルダを教えるレジストリファイルです．それぞれの環境で，ダブルクリックして実行して下さい．下記の設定とは異なるパスにプラグインを配置する場合は，メモ帳等でパス情報を修正して下さい．</p>
+
 <p>[ServerPluginsPath.reg]
 [HKEY_LOCAL_MACHINE¥SOFTWARE¥GraphOn¥Bridges¥1.0.0]
-&ldquo;ServerPluginsPath&quot;=&quot;C:¥¥GraphOn¥¥GO-Global
+&ldquo;ServerPluginsPath&rdquo;=&ldquo;C:¥¥GraphOn¥¥GO-Global
 Server¥¥Programs¥¥plugins&rdquo;</p>
+
 <p>[ClientPluginsPath.reg]
 [HKEY_LOCAL_MACHINE¥SOFTWARE¥GraphOn¥Bridges¥1.0.0]
-&ldquo;ClientPluginsPath&quot;=&quot;C:¥¥GraphOn¥¥plugins&rdquo;</p>
+&ldquo;ClientPluginsPath&rdquo;=&ldquo;C:¥¥GraphOn¥¥plugins&rdquo;</p>
+
 <p>補　足
 プラグインのインストールバッチ Install.bat
 を走らせると自動的に設定されます．従って，通常はこれらのregファイルをインポートする必要はありません．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/191/KGTN2010061402.pdf">KGTN2010061402.pdf</a>
-[(62.6 KB)] [kitasp 技術センター, 2010/07/06
+ [(62.6 KB)] [kitasp 技術センター, 2010/07/06
 14:51]</p>
 
                         </div>

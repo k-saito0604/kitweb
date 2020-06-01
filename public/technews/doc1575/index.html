@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,25 +285,35 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/10/22*</p>
+
 <p>[番号]
 技術ノート KGTN 2010102203</p>
+
 <p>[現象]
 複数のライセンスサーバを配置した環境で，１台目のライセンスサーバが停止した時，他のライセンスサーバからライセンスをチェックアウト
 （獲得） するように設定できないか？</p>
+
 <p>[説明]
 GGサーバの環境変数 LM_LICENSE_FILE
 に複数のライセンスサーバをセミコロンで並べると，最初のサーバからライセンスをチェックアウト出来ない場合，後続するサーバからライセンスをチェックアウトするようになります．下記の設定例では，
 192.47.214.1 → 192.47.214.2 → 192.47.214.3
 という順序でチェックアウトを試みます．</p>
+
 <p>変数　　　　　　　値
 LM_LICENSE_FILE
 <a href="mailto:27001@192.47.214.1">27001@192.47.214.1</a>;<a href="mailto:27001@192.47.214.2">27001@192.47.214.2</a>;<a href="mailto:27001@192.47.214.3">27001@192.47.214.3</a></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/365/KGTN2010102203.pdf">KGTN2010102203.pdf</a>
-[(53.7 KB)] [kitasp 技術センター, 2010/10/22
+ [(53.7 KB)] [kitasp 技術センター, 2010/10/22
 13:27]</p>
 
                         </div>

@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,24 +285,53 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2012/01/19*</p>
+
 <p>[番号]
 技術ノート KGTN 2012011904</p>
+
 <p>[現象]
 [GGW3.2.1] マルチモニタ機能を有効/無効にする方法は？</p>
+
 <p>[説明]
 以下の設定で，マルチモニタ機能を有効/無効にすることが出来ます．</p>
+
 <p>Windows Client の場合 （ショートカット）
 ggw.exe -h server1 -mm 0 （無効にする場合）
 ggw.exe -h server1 -mm 1 （有効にする場合）</p>
+
 <p>ActiveX Client の場合 （looseactivexlogon.htmlを修正）</p>
-<p><!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+
+<p><OBJECT ID="Control1" WIDTH=0 HEIGHT=0
+CLASSID="CLSID:76850F2A-FCAA-454F-82D3-BD46CB186EF5"
+CODEBASE="ggw-activex.cab#Version=3,2,1,4510" >
+<PARAM NAME="user" VALUE="">
+<PARAM NAME="password" VALUE="">
+<PARAM NAME="host" VALUE="">
+<PARAM NAME="application" VALUE="">
+<PARAM NAME="args" VALUE="">
+<PARAM NAME="isembeddedwin" VALUE="false">
+<PARAM NAME="compression" VALUE="false">
+<PARAM NAME="multimonitor" VALUE="true"> ←
+この行を追加（有効にする場合）
+<PARAM NAME="multimonitor" VALUE="false"> ←
+この行を追加（無効にする場合）
+<PARAM NAME="hostport" VALUE="">
+<PARAM NAME="inbrowserprocess" VALUE="true">
+<PARAM NAME="autoclosebrowser" VALUE="false">
+<PARAM NAME="autoconfigprinters" VALUE="default">
+</OBJECT></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/804/KGTN2012011904.pdf">KGTN2012011904.pdf</a>
-[(59.1 KB)] [kitasp 技術センター, 2012/01/19
+ [(59.1 KB)] [kitasp 技術センター, 2012/01/19
 10:26]</p>
 
                         </div>

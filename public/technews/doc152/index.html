@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,41 +285,57 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2014/12/12*</p>
+
 <p>[番号]
 技術ノート KGTN 2014120101</p>
+
 <p>[現象]
 [GGH4.X] アプリケーションの起動パラメタ （引数）
 をユーザーによって異なる値にしたい．</p>
+
 <p>[説明]
 アプリケーションを起動するバッチファイルを作成し，その処理の中でユーザーに応じたパラメタを指定して下さい
 （バッチの書き方についてはWindowsの資料等をご覧下さい）
 ．このバッチファイルをGGに登録する方法とサンプルは，以下の通りです．なお，
 VBScript を介してバッチを起動する理由は，DOS窓を表示させない
 （残さない） ためです．</p>
+
 <ol>
 <li>バッチファイルを起動する VBScript のファイルを作成する．</li>
 <li>VBScript をクラスタマネージャに登録する．</li>
 </ol>
+
 <p>[File: Test.bat]
 echo off
 notepad %USERNAME%.TXT
 exit</p>
+
 <p>[File: Test.vbs]
 Set WshShell = WScript.CreateObject(&ldquo;WScript.Shell&rdquo;)
 Call WshShell.Run( &ldquo;cmd.exe /c C:GraphOnTest.bat&rdquo;, 0, False )　←
 バッチファイルを指定</p>
+
 <p>[クラスタマネージャへの登録]</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/1803/KGTN2014120101.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/1803/KGTN2014120101.jpg" alt="" /></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1802/KGTN2014120101.pdf">KGTN2014120101.pdf</a>
-[(88.6 KB)] [kitasp 技術センター, 2014/12/12
+ [(88.6 KB)] [kitasp 技術センター, 2014/12/12
 16:52]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1803/KGTN2014120101.jpg">KGTN2014120101.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/1803/KGTN2014120101.jpg" title="表示">表示</a>
-[(55.8 KB)] [kitasp 技術センター, 2014/12/12
+ [(55.8 KB)] [kitasp 技術センター, 2014/12/12
 16:55]</p>
 
                         </div>

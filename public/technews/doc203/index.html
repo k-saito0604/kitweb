@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,24 +285,35 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2019/06/10*</p>
+
 <p>[番号]
 技術ノート KGTN 2019051702</p>
+
 <p>[現象]
 [GGH5.X-6.X] HTTPS用のポート番号443にRXPS
 （SSLで暗号化したGGのプロトコル）
 を通した場合，セキュリティは低下しないのか？</p>
+
 <p>[説明]
 HTTPSもRXPSもSSL/TLSという暗号化された通信路を使用し，その上でそれぞれのプロトコル
 （HTTPとRXP） で通信を行うものです．</p>
+
 <p>HTTPS : SSL/TLSで暗号化された通信路上のHTTPプロトコル
 RXPS : SSL/TLSで暗号化された通信路上のRXPプロトコル</p>
+
 <p>つまり，HTTPSもRXPSも同じSSL/TLSという暗号化された通信路を使用しますので，セキュリティ的には同等です．なお，HTTPプロトコルはその仕様が公開されておりますので，SSL/TLSの通信路が解読された場合，HTTPプロトコル上の情報も容易に解読することが可能です．他方，GGのRXPプロトコルは仕様が公開されておりませんので，SSL/TLSの通信路が解読された場合でもRXPプロトコル上の情報を解読することは至難です．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4280/KGTN2019051702.pdf">KGTN2019051702.pdf</a>
-[(37 KB)] [kitasp 技術センター, 2019/06/10
+ [(37 KB)] [kitasp 技術センター, 2019/06/10
 18:19]</p>
 
                         </div>

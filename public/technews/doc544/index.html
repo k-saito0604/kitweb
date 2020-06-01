@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,70 +285,99 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2013/07/26*</p>
+
 <p>[番号]
 技術ノート KGTN 2013072401</p>
+
 <p>[現象]
 [ExPack] GGCSLib2 のサンプル版のインストール方法は？</p>
+
 <p>[説明]
 以下の手順でインストールして下さい．</p>
+
 <p>[はじめに]
 配布フォルダ GGCSLib2 には，以下の４つのサブフォルダが含まれています．</p>
+
 <p>各サブフォルダの内容は，次の通りです．</p>
+
 <p>Client &hellip; クライアント側のプラグイン
 Sample &hellip; サンプルプログラムのソースコード （プロジェクト）
 Server_x64 &hellip; サーバ側のプラグイン （64ビット版）
 Server_x86 &hellip; サーバ側のプラグイン （32ビット版）</p>
+
 <p>[サーバ側の設定]
 配布フォルダ GGCSLib2 を C:¥TEMP
 へコピーして下さい．OSが64ビットの場合は，フォルダ
 C:¥TEMP¥GGCSLib2¥Server_x64
 を開いて下さい．OSが32ビットの場合は，フォルダ
 C:¥TEMP¥GGCSLib2¥Server_x86 を開いて下さい．</p>
+
 <p>フォルダの中にある Copy.bat をダブルクリックして実行して下さい．</p>
+
 <p>フォルダ C:¥GraphOn¥DLL を開いて下さい．</p>
+
 <p>フォルダの中にある ServerPluginsPath.reg
 をダブルクリックして実行して下さい．レジストリエディタが表示する確認ダイアログは，以下のスクリーンショットの赤枠の方を選択して下さい．</p>
+
 <p>サンプルプログラム C:¥GrapOn¥DLL¥GGCSLib2T.exe
 をクラスタマネージャで登録して下さい．以上で，サーバ側の環境設定は完了しました．</p>
+
 <p>[クライアント側の設定]
 配布フォルダ GGCSLib2 を C:¥TEMP へコピーして下さい．フォルダ
 C:¥TEMP¥GGCSLib2¥Client を開いて下さい．</p>
+
 <p>フォルダの中にある Copy.bat をダブルクリックして実行して下さい．</p>
+
 <p>フォルダ C:¥GraphOn¥DLL を開いて下さい．</p>
+
 <p>フォルダの中にあるClientPluginsPath(WOW6432Node).reg
 をダブルクリックして実行して下さい．レジストリエディタが表示する確認ダイアログは，以下のスクリーンショットの赤枠の方を選択して下さい．以上で，クライアント側の環境設定は完了しました．</p>
+
 <p>[動作試験]
 GGサーバにログオンし，登録したアプリケーションGGCSLib2T
 を起動して下さい．</p>
+
 <p>ボタン GetComputerName
 をクリックし，クライアントのコンピュータ名が表示されることを確認して下さい．</p>
+
 <p>ボタン LaunchBrowser をクリックし，ブラウザ （IE）
 が表示されることを確認して下さい．</p>
+
 <p>ボタン LaunchApplication
 をクリックし，メモ帳が表示されることを確認して下さい．</p>
+
 <p>[その他]
 サンプルプログラムのソーズコード （プロジェクト） は，フォルダ Sample
 の下にあります． VC++ 2010 で作成しておりますので， Visual Studio 2010
 の環境であれば，そのままビルドが可能です．</p>
+
 <p>GGCSLib2 が提供するAPI GG_LaunchBrowserC( URL )
 で起動されるブラウザは，クライアント側の設定ファイルGGCSLib2C.ini のキー
 browserPath の値で決まります．デフォルトの設定は &ldquo;C:¥Program
 Files¥Internet Explorer¥iexplore.exe&rdquo; です．</p>
+
 <p>設定ファイル GGCSLib2S.ini と GGCSLib2C.ini 中のキー logLevel に 4
 を設定することで，API
 の引数がログファイルに記録されます．ログファイルはキー logFile
 で設定して下さい．通常の環境変数に加え， 年月日に展開される特殊変数
 YYYYMMDD も使用することが出来ます．</p>
+
 <p>GGCSLib2 が提供するAPI GG_LaunchApplicationC( Path, Args )
 は，クライアント側のパス Path にあるアプリケーションを引数 Args
 を付けて起動 （非同期で実行）
 します．起動に成功した場合は0が返り，失敗した場合は0以外の値が返ります．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1355/KGTN2013072401.pdf">KGTN2013072401.pdf</a>
-[(935 KB)] [kitasp 技術センター, 2013/07/26
+ [(935 KB)] [kitasp 技術センター, 2013/07/26
 09:17]</p>
 
                         </div>

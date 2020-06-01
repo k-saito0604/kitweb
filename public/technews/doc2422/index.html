@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,29 +285,123 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2016/08/01*</p>
+
 <p>[番号]
 技術ノート KGTN 2016071301</p>
+
 <p>[現象]
 [GGH4.X-5.X] 数台の GGEasyMonitor
 を設置するが，順番にチェックを行い生きているサーバーで振分けるようにしたい．</p>
+
 <p>[説明]
 GGEasyMonitor のバージョン 2.0.11 から画像 （ロゴ）
 を表示する機能が追加されましたので，順番にこの画像の読み込みを行い，その成否で死活チェックを行います．生きている
 GGEasyMonitor が見つかった段階で，その GGEasyMonitor
 に振り分け処理を任せます．このサンプルコードを以下に示します．なお，このファイル
 （logon.html） は，他のウエッブサーバー上に配置して下さい．</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<p>　　&lt;!&mdash; 接続処理を行うスクリプト &mdash;&gt;</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+<p>&lt;!DOCTYPE html&gt;</p>
+
+<p><html>
+<head>
+<meta content="text/html;shift_jis" http-equiv="Content-Type">
+<title>Logon</title>
+</head>
+<body>
+　　<!--- ステータス表示用 --->
+<br><br><br>
+<font size="+2">
+<div id="status" align="center"></div>
+</font></p>
+
+<p>　　<!--- 接続処理を行うスクリプト --->
+<script language=javascript>
+var iDebug = 0;
+var iServer = 0;
+var serverTab = new Array();
+var objMsg = document.getElementById(&ldquo;status&rdquo;);</p>
+
+<p>　　 serverTab[iServer++] = new serverInfo(&lsquo;192.168.102.99&rsquo;,491);
+　　 serverTab[iServer++] = new serverInfo(&lsquo;192.168.102.88&rsquo;,491);
+　　 serverTab[iServer++] = new serverInfo(&lsquo;192.168.102.89&rsquo;,491);
+　　 findServer(0);</p>
+
+<p>　　 // サーバー情報のクラス
+　　 function serverInfo(addr,port) {
+this.addr = addr;
+this.port = port;
+}</p>
+
+<p>　　 // サーバー選択処理
+　　 function findServer(iNext) {
+var image;
+var src;</p>
+
+<p>　　 // 全てチェック済か？
+if(iNext &gt;= iServer) {
+showMessage(&lsquo;アクセス可能なサーバーがありません！&rsquo;);
+return;
+}</p>
+
+<p>　　 // イメージの読込みで死活チェック
+image = new Image(0,0);</p>
+
+<p>　　 // 成功時の処理
+image.onload = function myOnLoad() {
+var params = location.search;
+var target = &ldquo;;</p>
+
+<p>　　 params = params.substring(1);
+if(params.length == 0) {
+params = &lsquo;dummy=dummy&rsquo;;
+}
+　　 target = &lsquo;http://&rsquo; + serverTab[iNext].addr +
+&lsquo;/goglobal/logon.html&rsquo;
++ &lsquo;?host=&rsquo; + serverTab[iNext].addr
++ &lsquo;&amp;port=&rsquo; + serverTab[iNext].port
++ &lsquo;&amp;&rsquo; + params;
+　showMessage(&lsquo;振分けサーバー &rsquo; + serverTab[iNext].addr + &lsquo;
+にアクセス中です&hellip;&lsquo;);
+　　 if(iDebug &gt; 0) {
+alert(&lsquo;Connect[&rsquo; + (iNext+1) + &lsquo;]: &lsquo; + target)
+}
+else {
+　location.href = target;
+}
+};</p>
+
+<p>　　 // 失敗時の処理
+image.onerror = function myOnError() {
+objMsg.textContent = &ldquo;;
+findServer(++iNext);
+};</p>
+
+<p>　　 // 画像の読込み
+src = &lsquo;http://&rsquo; + serverTab[iNext].addr + &lsquo;:8089/logo.jpg&rsquo;;
+showMessage(&lsquo;振分けサーバー &rsquo; + serverTab[iNext].addr + &lsquo;
+を確認中です&hellip;&lsquo;);
+image.src = src;
+}</p>
+
+<p>　　 // メッセージ表示
+function showMessage(msg) {
+objMsg.innerHTML = msg;
+}
+</script>
+</body>
+</html></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2817/KGTN2016071301.pdf">KGTN2016071301.pdf</a>
-[(107 KB)] [kitasp 技術センター, 2016/08/01
+ [(107 KB)] [kitasp 技術センター, 2016/08/01
 13:27]</p>
 
                         </div>

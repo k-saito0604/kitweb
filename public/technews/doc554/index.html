@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,43 +285,56 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2013/06/19*</p>
+
 <p>[番号]
 技術ノート KGTN 2013011703</p>
+
 <p>[現象]
 [GGH4.5] GGH4.5で， ログオン時に &ldquo;Connection failed. Access to the
 host was denied&rdquo; というメッセージが表示され，ログオン出来ない．</p>
+
 <p>[説明]
 メッセージの内容は
 「GGサーバへ接続出来たものの，GGサーバがログオンを拒否した」
 ことを意味します．当該時刻のAPSログを確認して，以下のような記録があれば
 Windows 側の問題だと考えられます．</p>
+
 <p>Logon1 on GGSV, aps (10640) Failed to create logon session process
 during session startup for client at address 192.168.101.34
 (NTSTATUS-1073741800, WLE0).</p>
+
 <p>この例の &ldquo;NTSTATUS-1073741800&rdquo; はGGが検出したエラー内容
 （Windowsのカーネル モード API 関数が返した値） で， -1073741800
 はアドレス範囲の矛盾 （STATUS_CONFLICTING_ADDRESSES）
 を意味します．対応としては，先ず以下の手順を行って状況が改善するかどうか確認して下さい．もし改善しない場合は，
 Windows
 を再インストールするか，または過去に保存したシステムディスクのイメージを復元して下さい．</p>
+
 <p>GGをアンインストールする．
 サーバを再起動する．
 Windows Update を適用する．
 サーバを再起動する．
 GGをインストールする．
 サーバを再起動する．</p>
+
 <p>補　足
 このメッセージは，更新プログラム KB2813170
 が適用された環境でも発生します．この更新プログラムを適用されるとWindwos内部のAPI
 RtlCreateUserProcess
 のパラメタが変更され，従来仕様のパラメタを使用するGGへエラーコードが返り，この結果としてエラーダイアログが表示されます．対応は，当面
 KB2813170 をアンインストールして下さい．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1182/KGTN2013011703.pdf">KGTN2013011703.pdf</a>
-[(72.7 KB)] [kitasp 技術センター, 2013/06/19
+ [(72.7 KB)] [kitasp 技術センター, 2013/06/19
 11:04]</p>
 
                         </div>

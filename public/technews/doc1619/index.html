@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,21 +285,30 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/09/10*</p>
+
 <p>[番号]
 技術ノート KGTN 2010091001</p>
+
 <p>[現象]
 VBScriptで以下のコードを実行すると， &ldquo;ActiveX component can&rsquo;t create
 object&rdquo; というエラーが発生する．</p>
+
 <p>Set objShell = WScript.CreateObject(&ldquo;Shell.Application&rdquo;)
 &hellip;
 For Each objWindow in objShell.Windows</p>
+
 <p>[説明]
 デスクトップ （Windows Shell）
 の機能を使用しているため，このエラーが発生します．以下の方法で，セッションの開始時に
 explorer.exe を起動することで，このエラーを回避することが出来ます．</p>
+
 <p>レジストリエディタを起動する．
 HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Processes へ位置付ける．
 DWORD値を作成する．
@@ -309,14 +318,17 @@ HKLM¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Run¥LocalMachine
 DWORD値を作成する．
 名前を explorer.exe ，値を 0 にする．
 レジストリエディタを終了する．</p>
+
 <p>注　意
 この方法によってエラーは発生しなくなりますが，各セッションで
 explorer.exe を起動するため，パフォーマンス （メモリや速度）
 が低下します．また， HKLM¥SOFTWARE¥Microsoft¥Windows¥CurrentVersion¥Run
 に登録されたプログラムが自動的に起動されるようになりますので，不要なプロセスを削除して下さい．適用に当たっては，事前に十分な検証を行うようにして下さい．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/313/KGTN2010091001.pdf">KGTN2010091001.pdf</a>
-[(64.4 KB)] [kitasp 技術センター, 2010/09/10
+ [(64.4 KB)] [kitasp 技術センター, 2010/09/10
 09:32]</p>
 
                         </div>

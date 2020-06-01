@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,23 +285,33 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2012/02/09*</p>
+
 <p>[番号]
 技術ノート KGTN 2012012702</p>
+
 <p>[現象]
 [GGW3.2.1] GGの設定情報を多数のサーバへ反映するにはどうすれば良いか？</p>
+
 <p>[説明]
 GGW3.2.1の主な設定情報はレジストリ
 ¥HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer
 の下に保持されておりますので，最も簡単な方法としては以下の手順が考えられます．</p>
+
 <p>雛形のサーバを作成する．
 レジストリ
 ¥HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServerをエクスポートする．
 各サーバでエクスポートしたファイルをインポートする．</p>
+
 <p>他の方法としては， （例えば）
 以下のような設定情報を書き換えるスクリプトを作成し，サーバ毎に設定を変更する手順が考えられます．</p>
+
 <p>[スクリプト]
 for /F &ldquo;token=1,2,3,4&rdquo; %%i in (servers.txt) do (
 　　reg add &ldquo;¥¥%i¥HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer&rdquo; /v
@@ -309,19 +319,23 @@ for /F &ldquo;token=1,2,3,4&rdquo; %%i in (servers.txt) do (
 　　reg query &ldquo;¥¥%i¥¥HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer&rdquo; /v
 &ldquo;LicenseCheckoutAttempts&rdquo;
 )</p>
+
 <p>[servers.txt]
 server1.domain.local
 server2.domain.local
 server3.domain.local
 &hellip;
 server100.domain.local</p>
+
 <p>補　足
 GGW3.2.1に関しては，管理情報の中にサーバ固有の情報
 （コンピュータ名など）
 を保持しておりません．従って，上記のような方法で全てのサーバへ展開することが可能です．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/814/KGTN2012012702.pdf">KGTN2012012702.pdf</a>
-[(70.3 KB)] [kitasp 技術センター, 2012/02/09
+ [(70.3 KB)] [kitasp 技術センター, 2012/02/09
 14:04]</p>
 
                         </div>

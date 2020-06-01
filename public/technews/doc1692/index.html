@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,22 +285,31 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/07/23*</p>
+
 <p>[番号]
 技術ノート KGTN 2010072301</p>
+
 <p>[現象]
 GGサーバのC:ドライブのディスク容量は，どれくらいにすべきか？</p>
+
 <p>[説明]
 弊社の標準環境では Windows Server 2003
 のC:ドライブに24GB割り当てております．大規模案件の事例では，コストの問題
 （FCディスクを使用） 等から24GBより若干少ない容量を割り当てています
 （ログレベルは4を設定）
 ．従って，標準的な利用では24GB〜32GBあれば十分だと思われますが，しかし安定運用を考えるならば，この容量の1.5〜2倍の容量を割り当てて下さい．大規模案件の事例では，アンチウイルスソフトの頻繁なアップデートファイルのダウンロード＆インストール等でディスクの断片化が進み，パフォーマンスに影響を与えるようになりました．想定される容量の1.5〜2倍を割り当てておけば，デフラグ処理等も含めパフォーマンスの低下を低く抑えることが出来ます．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/237/KGTN2010072301.pdf">KGTN2010072301.pdf</a>
-[(58.3 KB)] [kitasp 技術センター, 2010/07/23
+ [(58.3 KB)] [kitasp 技術センター, 2010/07/23
 14:02]</p>
 
                         </div>

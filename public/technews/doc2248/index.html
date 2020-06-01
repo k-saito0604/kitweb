@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,27 +285,37 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2016/11/02*</p>
+
 <p>[番号]
 技術ノート KGTN 2016101801</p>
+
 <p>[現象]
 [GGH5.X] Windowsクライアントのパラメタ -dfw 0
 はActiveXクライアントではどのように指定するのか？</p>
+
 <p>[説明]
 ActiveXクライアントのログオン用ページ logon.html は，パラメタ -dfw
 に対応する機能を持っておりません． logon.html を修正して，以下のパラメタ
 （dragfullwindows） を追加して下さい．</p>
+
 <pre><code>// controlArgs.set([ &quot;autoclose&quot;, &quot;false&quot; ]);
 //---
 controlArgs.set([ &quot;dragfullwindows&quot;, &quot;0&quot;]); ← 追加
 //---
 // controlArgs.set([ &quot;printerconfig&quot;, &quot;default&quot; ]);
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3146/KGTN2016101801.pdf">KGTN2016101801.pdf</a>
-[(59.6 KB)] [kitasp 技術センター, 2016/11/02
+ [(59.6 KB)] [kitasp 技術センター, 2016/11/02
 14:32]</p>
 
                         </div>

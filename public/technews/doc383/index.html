@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,33 +285,43 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/12/22*</p>
+
 <p>[番号]
 技術ノート KGTN 2011122301</p>
+
 <p>[現象]
 [GGW3.2.1/GGH4.X]
 GGH4.Xをインストールしたサーバを，GGW3.2.1へ戻す時の手順は？</p>
+
 <p>[説明]
 必ず以下の手順でGGH4.XのアンインストールとGGW3.2.1の再インストールを行って下さい．これ以外の手順でGGW3.2.1の再インストールを行った場合，GG上でアプリケーションが正常に動作しない等の問題が発生します．</p>
-<ol>
-<li>GGH4.Xをアンインストールする．</li>
-<li>次の２つのファイルが存在すれは，それらを削除する．
+
+<p>1) GGH4.Xをアンインストールする．
+2) 次の２つのファイルが存在すれは，それらを削除する．
 　C:WindowsSystem32redirector.dll
-　C:WindowsSystem32snds.dl</li>
-<li>サーバを再起動する．</li>
-<li>GGW3.2.1をインストールする．</li>
-<li>サーバを再起動する．</li>
-</ol>
+　C:WindowsSystem32snds.dl
+3) サーバを再起動する．
+4) GGW3.2.1をインストールする．
+5) サーバを再起動する．</p>
+
 <p>なお，上記１でライセンスファイルも削除されますので，事前にライセンスファイルを待避
 （コピー） して下さい．</p>
+
 <pre><code>There are two files from 4.0.1 that do not get cleaned up and need to be removed.
 Go to C:WindowsSystem32 and remove redirector.dll and snds.dll. Then reboot the system.
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1518/KGTN2011122301.pdf">KGTN2011122301.pdf</a>
-[(60.1 KB)] [kitasp 技術センター, 2014/01/29
+ [(60.1 KB)] [kitasp 技術センター, 2014/01/29
 17:31]</p>
 
                         </div>

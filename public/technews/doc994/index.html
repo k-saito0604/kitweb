@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,20 +285,28 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2012/06/27*</p>
+
 <p>[番号]
 技術ノート KGTN 2012062801</p>
+
 <p>[現象]
 [Android Client] Android
 上で動作するアプリケーションから，GGのクライアントを起動しログオンすることは可能か？</p>
+
 <p>[説明]
 以下のようなコードで実験しましたが， Android Client
 が起動するだけでログオンは出来ませんでした．GraphOn社に確認したところ，
 「現行のAndroid Client
 では不可能だが，リリース２では可能となる見込みだ」
 との回答があｆりました．</p>
+
 <p>PackageManager packageManager = getPackageManager();
 Intent intent =
 packageManager.getLaunchIntentForPackage(&ldquo;com.graphon.goglobal&rdquo;);
@@ -309,9 +317,11 @@ intent.putExtra(&ldquo;user&rdquo;,&ldquo;Administrator&rdquo;);
 intent.putExtra(&ldquo;password&rdquo;,&ldquo;Password&rdquo;);
 startActivity(intent);
 //&mdash;</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/929/KGTN2012062801.pdf">KGTN2012062801.pdf</a>
-[(53.4 KB)] [kitasp 技術センター, 2012/06/28
+ [(53.4 KB)] [kitasp 技術センター, 2012/06/28
 07:35]</p>
 
                         </div>

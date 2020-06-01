@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,18 +285,26 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2016/06/22*</p>
+
 <p>[番号]
 技術ノート KGTN 2016061702</p>
+
 <p>[現象]
 [GGH5.X] Ver4.8 の logon.html では OBJECT タグを document.write
 で出力しているが，Ver5.0 の logon.html (logon.js)
 ではそのような箇所が見つからない．</p>
+
 <p>[説明]
 基本的な処理方式が変更されており，Ver5.0 の logon.js
 の下記の箇所で等価な処理が行われております．</p>
+
 <pre><code>// OBJECT タグを作成
 var newControl = document.createElement(&quot;object&quot;);
 newControl.id = RAPIDX_CONTROL_NAME;
@@ -310,15 +318,21 @@ writeURLVars(newControl, &quot;object&quot;);
 var frame = document.getElementById('controlFrame');
 frame.appendChild(newControl);
 </code></pre>
+
 <p>frame.innerHTML の内容例 （window.alert で出力）</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/2720/KGTN2016061702.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/2720/KGTN2016061702.jpg" alt="" /></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2719/KGTN2016061702.pdf">KGTN2016061702.pdf</a>
-[(139 KB)] [kitasp 技術センター, 2016/06/22
+ [(139 KB)] [kitasp 技術センター, 2016/06/22
 13:27]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2720/KGTN2016061702.jpg">KGTN2016061702.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/2720/KGTN2016061702.jpg" title="表示">表示</a>
-[(21.2 KB)] [kitasp 技術センター, 2016/06/22
+ [(21.2 KB)] [kitasp 技術センター, 2016/06/22
 13:27]</p>
 
                         </div>

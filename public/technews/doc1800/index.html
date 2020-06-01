@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,26 +285,50 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/04/05*</p>
+
 <p>[番号]
 技術ノート KGTN 2010040503</p>
+
 <p>[現象]
 ログオン後に，Program Window
 を表示することなく，特定のアプリケーションを直接起動したい．</p>
+
 <p>[説明]
 【ActiveXクライアントの場合】
 ログオン用HTMLのOBJECTタグで，application
 パラメタで起動したいアプリケーション名を指定します．</p>
-<p><!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+
+<p><OBJECT ID="Control1" WIDTH=0 HEIGHT=0
+CLASSID="CLSID:76850F2A-FCAA-454F-82D3-BD46CB186EF5"
+CODEBASE="ggw-activex.cab#Version=3,2,1,4446" >
+<PARAM NAME="user" VALUE="">
+<PARAM NAME="password" VALUE="">
+<PARAM NAME="host" VALUE="">
+<PARAM NAME="application" VALUE="Notepad">
+<PARAM NAME="args" VALUE="">
+<PARAM NAME="isembeddedwin" VALUE="false">
+<PARAM NAME="compression" VALUE="true">
+<PARAM NAME="hostport" VALUE="">
+<PARAM NAME="inbrowserprocess" VALUE="true">
+<PARAM NAME="autoclosebrowser" VALUE="false">
+<PARAM NAME="autoconfigprinters" VALUE="default"></p>
+
 <p>【Windowsクライアントの場合】
 ggw.exe のパラメタとして ?a を指定します．</p>
+
 <p>ggw.exe -h server -p password -a Notepad -c</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/125/KGTN2010040503.pdf">KGTN2010040503.pdf</a>
-[(74.9 KB)] [kitasp 技術センター, 2010/04/05
+ [(74.9 KB)] [kitasp 技術センター, 2010/04/05
 13:52]</p>
 
                         </div>

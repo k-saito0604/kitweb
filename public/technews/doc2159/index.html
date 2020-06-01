@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,20 +285,26 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2017/04/07*</p>
+
 <p>[番号]
 技術ノート KGTN 2017031002</p>
+
 <p>[現象]
 [GGH5.X/Windows] エクスプローラーを起動した時， [ドキュメント] と
 [ダウンロード] のみが表示されるようにしたい．</p>
+
 <p>[説明]
-管理者権限で，次のレジストリを読み込んでください．なお，レジストリを削除しますので，</p>
-<ul>
-<li>
-<p>（ハイフン） が付いている点にご注意ください．</p>
-<p>Windows Registry Editor Version 5.00
+管理者権限で，次のレジストリを読み込んでください．なお，レジストリを削除しますので，
+- （ハイフン） が付いている点にご注意ください．</p>
+
+<pre><code>Windows Registry Editor Version 5.00
 ; デスクトップ
 [-
 HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionExplorerMyComputerNameSpace{B4BF
@@ -326,24 +332,33 @@ HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionExplorerMyComputerNameSp
 260C-4DD0-4ebb-811F-33C572699FDE}]
 [-
 HKEY_LOCAL_MACHINESOFTWAREWow6432NodeMicrosoftWindowsCurrentVersionExplorerMyComputerNam
-eSpace{1CF1260C-4DD0-4ebb-811F-33C572699FDE}]</p>
-</li>
-</ul>
+eSpace{1CF1260C-4DD0-4ebb-811F-33C572699FDE}]
+</code></pre>
+
 <p>適用前</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/3331/KGTN2017031002-1.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3331/KGTN2017031002-1.jpg" alt="" /></p>
+
 <p>適用後</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/3332/KGTN2017031002-2.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3332/KGTN2017031002-2.jpg" alt="" /></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3330/KGTN2017031002.pdf">KGTN2017031002.pdf</a>
-[(197 KB)] [kitasp 技術センター, 2017/04/07
+ [(197 KB)] [kitasp 技術センター, 2017/04/07
 14:29]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3331/KGTN2017031002-1.jpg">KGTN2017031002-1.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3331/KGTN2017031002-1.jpg" title="表示">表示</a>
-[(32.8 KB)] [kitasp 技術センター, 2017/04/07
+ [(32.8 KB)] [kitasp 技術センター, 2017/04/07
 14:29]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3332/KGTN2017031002-2.jpg">KGTN2017031002-2.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3332/KGTN2017031002-2.jpg" title="表示">表示</a>
-[(22.8 KB)] [kitasp 技術センター, 2017/04/07
+ [(22.8 KB)] [kitasp 技術センター, 2017/04/07
 14:29]</p>
 
                         </div>

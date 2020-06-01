@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,49 +285,55 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/03/24*</p>
+
 <p>[番号]
 技術ノート KGTN 2010032404</p>
+
 <p>[現象]
 クライアントプリンタが Universal Driver （ユニバーサルプリンタドライバ）
 ・ Native Driver （通常のプリンタドライバ）
 のどちらで構成されているか確認したい．</p>
+
 <p>[説明]
 確認の方法は，PW （プログラムウインドウ） ・ 印刷ダイアログ
 ・クライアント情報 （print.ini） の３つで調べることが出来ます．</p>
-<p>PW （プログラムウインドウ）で調べる方法</p>
-<ol>
-<li>PW （プログラムウインドウ） の File メニューを開く．</li>
-<li>Printers → → Driver を開く．</li>
-<li>リスト Models の中の選択されているドライバがUniversal Printer Driver
-なら，ユニバーサルプリンタドライバです．</li>
-<li>Universal Printer Driver 以外なら，通常のプリンタドライバです．</li>
-</ol>
-<p>印刷ダイアログで調べる方法</p>
-<ol>
-<li>詳細設定 （メモ帳の場合） またはプロパティ （オフィスの場合）
-をクリックする．</li>
-<li>下記のダイアログが表示されれば，ユニバーサルプリンタドライバです．</li>
-<li>それ以外なら，以外なら，通常のプリンタドライバです．</li>
-</ol>
-<p>クライアント情報 （クライアント側の print.ini） で調べる方法</p>
-<ol>
-<li>エクスプローラーでC:¥Documents and Settings¥Administrator¥Local
+
+<p>PW （プログラムウインドウ）で調べる方法
+1) PW （プログラムウインドウ） の File メニューを開く．
+2) Printers → → Driver を開く．
+3) リスト Models の中の選択されているドライバがUniversal Printer Driver
+なら，ユニバーサルプリンタドライバです．
+4) Universal Printer Driver 以外なら，通常のプリンタドライバです．</p>
+
+<p>印刷ダイアログで調べる方法
+1) 詳細設定 （メモ帳の場合） またはプロパティ （オフィスの場合）
+をクリックする．
+2) 下記のダイアログが表示されれば，ユニバーサルプリンタドライバです．
+3) それ以外なら，以外なら，通常のプリンタドライバです．</p>
+
+<p>クライアント情報 （クライアント側の print.ini） で調べる方法
+1) エクスプローラーでC:¥Documents and Settings¥Administrator¥Local
 Settings¥Application Data を開く．Administrator
 以外のユーザの場合はC:¥Documents and Settings¥¥Local
-Settings¥Application Data を開いて下さい．</li>
-<li>ファイル print.ini を開く．</li>
-<li>[] を見つける．</li>
-<li>その数行下にある DriverName の値が Universal Printer Driver
+Settings¥Application Data を開いて下さい．
+2) ファイル print.ini を開く．
+3) [] を見つける．
+4) その数行下にある DriverName の値が Universal Printer Driver
 なら，ユニバーサルプリンタドライバです
-（下記の例はユニバーサルプリンタドライバです） ．</li>
-<li>それ以外の値なら，通常のプリンタドライバです．</li>
-</ol>
+（下記の例はユニバーサルプリンタドライバです） ．
+5) それ以外の値なら，通常のプリンタドライバです．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/105/KGTN2010032404.pdf">KGTN2010032404.pdf</a>
-[(354 KB)] [kitasp 技術センター, 2010/03/24
+ [(354 KB)] [kitasp 技術センター, 2010/03/24
 15:38]</p>
 
                         </div>

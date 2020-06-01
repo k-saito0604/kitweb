@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,26 +285,37 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2017/04/28*</p>
+
 <p>[番号]
 技術ノート KGTN 2017042401</p>
+
 <p>[現象]
 [GGH5.X]
 クライアント側のIMEを使用した場合，アプリケーションによるIMEの制御処理は機能するか？</p>
+
 <p>[説明]
 サーバー側のIMEを使用する場合は，クライアントから送信される情報は物理的なキーのコード
 （スキャンコードと仮想キーコード）
 で，サーバー側のIMEはそのキーのコードを解釈して文字コードへ変換し出力します．</p>
+
 <p>他方，クライアント側のIMEを使用する場合は，クライアントから送信される情報は
 「キーのコードではなく」
 文字コードで，サーバー側のIMEはその文字コードをそのまま出力します．</p>
+
 <p>このような仕組みであるため，サーバー上のアプリケーションでIMEの制御を行っても，それが出力される文字コードへ反映されることはありません
 （つまり，結果的にアプリケーションによるIMEの制御処理は機能しません） ．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3514/KGTN2017042401.pdf">KGTN2017042401.pdf</a>
-[(37.6 KB)] [kitasp 技術センター, 2017/05/08
+ [(37.6 KB)] [kitasp 技術センター, 2017/05/08
 11:56]</p>
 
                         </div>

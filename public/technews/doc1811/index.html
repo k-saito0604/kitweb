@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,30 +285,41 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/03/25*</p>
+
 <p>[番号]
 技術ノート KGTN 2010032508</p>
+
 <p>[現象]
 ログオン時のクライアントプリンタの構成の時にセッションがフリーズする．プリンタドライバは統一しており問題は無く，サービス
 Print Spooler を再起動すると問題は解消する．</p>
+
 <p>[説明]
 サービス Print Spooler
 が過負荷になり，クライアントプリンタの構成処理に失敗していると考えられます．タスクマネージャ等でCPU負荷や
 spoolsv.exe
 のCPU使用率を監視し，高い使用率が続くようであれば，クライアントプリンタの数を減らすか，またはGGサーバに収容するユーザ数を減らすようにして下さい．クライアントプリンタの数を減らす場合は，以下の手順でクライアントのプリンタ情報を保持するファイル
 print.ini を削除して下さい．</p>
+
 <p>エクスプローラーでC:¥Documents and Settings¥Administrator¥Local
 Settings¥Application Data を開く．Administrator
 以外のユーザの場合はC:¥Documents and Settings¥¥Local
 Settings¥Application Data を開く．
 ファイル print.ini を削除する．</p>
+
 <p>この操作が困難な場合は，弊社ツール GGMInfo.exe でprint.ini
 を削除して下さい．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/113/KGTN2010032508.pdf">KGTN2010032508.pdf</a>
-[(64.3 KB)] [kitasp 技術センター, 2010/03/25
+ [(64.3 KB)] [kitasp 技術センター, 2010/03/25
 16:06]</p>
 
                         </div>

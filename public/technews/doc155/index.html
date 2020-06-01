@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,30 +285,39 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2014/11/28*</p>
+
 <p>[番号]
 技術ノート KGTN 2014112802</p>
+
 <p>[現象]
 [GGH4.X]
 透かしのあるPDFファイルをGG上で表示し，それをクライアント側のプリンターへ出力すると透かしが正常に印刷されない．</p>
+
 <p>[説明]
 この現象は，GGのクライアントに組み込まれたPDFファイルの印刷エンジン
 pdfprint.exe
 の仕様に起因する制限事項になります．この問題を解消するには，以下の方法があります．</p>
-<ol>
-<li>Windows Printer Drivers （専用のプリンタードライバー） を使用する．</li>
-<li>Preview PDF で表示させて印刷する （クライアント側のAdobe Reader
-で印刷する） ．</li>
-<li>PDFファイルをクライアント側へコピーして印刷する．</li>
-</ol>
+
+<p>1) Windows Printer Drivers （専用のプリンタードライバー） を使用する．
+2) Preview PDF で表示させて印刷する （クライアント側のAdobe Reader
+で印刷する） ．
+3) PDFファイルをクライアント側へコピーして印刷する．</p>
+
 <p>出荷時期は未定ですが，GGのクライアントに組み込まれたPDFファイルの印刷エンジンではなく，クライアント側の
 Adobe Reader
 で自動的に印刷するツールを拡張パックの機能として提供する予定です．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1797/KGTN2014112802.pdf">KGTN2014112802.pdf</a>
-[(56 KB)] [kitasp 技術センター, 2014/11/28
+ [(56 KB)] [kitasp 技術センター, 2014/11/28
 20:01]</p>
 
                         </div>

@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,17 +285,25 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/07/15*</p>
+
 <p>[番号]
 技術ノート KGTN 2010071501</p>
+
 <p>[現象]
 プラグイン LaunchBrowser
 を使ってファイルをダウンロードさせたいが，ウエッブサーバのドキュメント外に置かれたファイルをダウンロードさせることは可能か？</p>
+
 <p>[説明]
 CGI （スクリプト）
 を利用することで可能です．PHPのサンプルを以下に示します．</p>
+
 <p>//
 // Example:
 // 1) <a href="http://localhost/gm_download.php?file=gg-explorer.exe">http://localhost/gm_download.php?file=gg-explorer.exe</a>
@@ -311,7 +319,7 @@ $fileNameA = &ldquo;XXX.EXE&rdquo;; // $fileName;
 $filePath = $fileDir . $fileName;
 if((file_exists($filePath) != TRUE)||(is_dir($filePath) == TRUE))
 {
-exit(&ldquo;File not found! - ¥&rdquo;&rdquo; . $fileName . &ldquo;¥&rdquo;&quot;);
+exit(&ldquo;File not found! - ¥&rdquo;&rdquo; . $fileName . &ldquo;¥&rdquo;&ldquo;);
 }
 $fileLength = filesize($filePath);
 header(&ldquo;Content-Disposition: attachment; filename=$fileNameA&rdquo;);
@@ -319,11 +327,14 @@ header(&ldquo;Content-Length:$fileLength&rdquo;);
 header(&ldquo;Content-Type: application/octet-stream&rdquo;);
 readfile($filePath);
 ?&gt;</p>
+
 <p>このサンプルでは，実体のファイル名とは異なるファイル名 （XXX.EXE）
 でダウンロードさせることも可能です．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/228/KGTN2010071501.pdf">KGTN2010071501.pdf</a>
-[(54.5 KB)] [kitasp 技術センター, 2010/07/15
+ [(54.5 KB)] [kitasp 技術センター, 2010/07/15
 13:07]</p>
 
                         </div>

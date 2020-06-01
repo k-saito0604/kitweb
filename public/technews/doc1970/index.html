@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,25 +285,35 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2020/01/24*</p>
+
 <p>[番号]
 技術ノート KGTN 2019120401</p>
+
 <p>[現象]
 [GGH5.X-6.X] Adobe Acrobat Reader DC の保護モード
 （サンドボックスによる保護） をバッチで無効にする方法は？</p>
+
 <p>[説明]
 次のバッチファイルの内容をログオンスクリプトとして実行することで、 Adobe
 Acrobat Reader DC の保護モードを無効にすることが出来ます。</p>
+
 <pre><code>echo off
 reg add &quot;HKEY_CURRENT_USERSOFTWAREAdobeAcrobat ReaderDCPrivileged&quot; /v &quot;bProtectedMode&quot; /t
 REG_DWORD /d &quot;0&quot; /f
 exit
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4438/KGTN2019120401.pdf">KGTN2019120401.pdf</a>
-[(37.7 KB)] [kitasp 技術センター, 2020/01/24
+ [(37.7 KB)] [kitasp 技術センター, 2020/01/24
 12:48]</p>
 
                         </div>

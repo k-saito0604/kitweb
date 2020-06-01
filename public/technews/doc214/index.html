@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,181 +285,262 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2019/06/10*</p>
+
 <p>[番号]
 技術ノート KGTN 2019051701</p>
+
 <p>[現象]
 [GGH5.X-6.X/SSL] Let&rsquo;s Encrypt のSSL証明書をGGサーバーで利用したい．</p>
-<p>[説明]</p>
-<ol>
-<li>下記ページ （win-acme のGitHubのWebサイト） で最新の win-acme
+
+<p>[説明]
+1. 下記ページ （win-acme のGitHubのWebサイト） で最新の win-acme
 をダウンロードします．この技術ノート作成時点では，バージョン2.0.6.284
-が最新です．</li>
-</ol>
+が最新です．</p>
+
 <p><a href="https://github.com/PKISharp/win-acme/releases">https://github.com/PKISharp/win-acme/releases</a></p>
-<p><img src="http://techreport.kitasp.net/attachments/download/4261/KGTN2019051701-01.jpg" alt=""></p>
-<ol start="2">
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4261/KGTN2019051701-01.jpg" alt="" /></p>
+
+<ol>
 <li>ダウンロードしたファイルを適当なフォルダーに展開します．</li>
 </ol>
-<p><img src="http://techreport.kitasp.net/attachments/download/4262/KGTN2019051701-02.jpg" alt=""></p>
-<ol start="3">
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4262/KGTN2019051701-02.jpg" alt="" /></p>
+
+<ol>
 <li>プログラム wacs.exe を &ldquo;管理者として実行&rdquo; します．</li>
 </ol>
-<p><img src="http://techreport.kitasp.net/attachments/download/4263/KGTN2019051701-03.jpg" alt=""></p>
-<ol start="4">
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4263/KGTN2019051701-03.jpg" alt="" /></p>
+
+<ol>
 <li>メニューで M
 を選択し，アドバンスオプション付きで証明書を生成します．</li>
 </ol>
-<p><img src="http://techreport.kitasp.net/attachments/download/4264/KGTN2019051701-04.jpg" alt=""></p>
-<ol start="5">
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4264/KGTN2019051701-04.jpg" alt="" /></p>
+
+<ol>
 <li>メニューで 4 を選択し，手入力でホスト名を指定します．</li>
 </ol>
-<p><img src="http://techreport.kitasp.net/attachments/download/4265/KGTN2019051701-05.jpg" alt=""></p>
-<ol start="6">
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4265/KGTN2019051701-05.jpg" alt="" /></p>
+
+<ol>
 <li>GGサーバーのホスト名を入力します
 （ホスト名がネームサーバーに登録されている必要があります） ．</li>
 </ol>
-<p><img src="http://techreport.kitasp.net/attachments/download/4266/KGTN2019051701-06.jpg" alt=""></p>
-<ol start="7">
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4266/KGTN2019051701-06.jpg" alt="" /></p>
+
+<ol>
 <li>ホスト名が正しいことを確認し，エンターキーを押します．</li>
 </ol>
-<p><img src="http://techreport.kitasp.net/attachments/download/4267/KGTN2019051701-07.jpg" alt=""></p>
-<ol start="8">
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4267/KGTN2019051701-07.jpg" alt="" /></p>
+
+<ol>
 <li>メニューで 4 を選択します．</li>
 </ol>
-<p><img src="http://techreport.kitasp.net/attachments/download/4268/KGTN2019051701-08.jpg" alt=""></p>
-<ol start="9">
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4268/KGTN2019051701-08.jpg" alt="" /></p>
+
+<ol>
 <li>メニューで 2 を選択します．</li>
 </ol>
-<p><img src="http://techreport.kitasp.net/attachments/download/4269/KGTN2019051701-09.jpg" alt=""></p>
-<ol start="10">
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4269/KGTN2019051701-09.jpg" alt="" /></p>
+
+<ol>
 <li>メニューで 3 （OpenSSL向けの証明書） を選択します．</li>
 </ol>
-<p><img src="http://techreport.kitasp.net/attachments/download/4270/KGTN2019051701-10.jpg" alt=""></p>
-<ol start="11">
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4270/KGTN2019051701-10.jpg" alt="" /></p>
+
+<ol>
 <li>証明書を配置するフォルダーを指定します．</li>
 </ol>
-<p><img src="http://techreport.kitasp.net/attachments/download/4271/KGTN2019051701-11.jpg" alt=""></p>
-<ol start="12">
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4271/KGTN2019051701-11.jpg" alt="" /></p>
+
+<ol>
 <li>メニューで 1 を選択します．</li>
 </ol>
-<p><img src="http://techreport.kitasp.net/attachments/download/4272/KGTN2019051701-12.jpg" alt=""></p>
-<ol start="13">
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4272/KGTN2019051701-12.jpg" alt="" /></p>
+
+<ol>
 <li>内容を確認し，エンターキーを押します．</li>
 </ol>
-<p><img src="http://techreport.kitasp.net/attachments/download/4273/KGTN2019051701-13.jpg" alt=""></p>
-<ol start="14">
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4273/KGTN2019051701-13.jpg" alt="" /></p>
+
+<ol>
 <li>メニューで Q を選択します．</li>
 </ol>
-<p><img src="http://techreport.kitasp.net/attachments/download/4274/KGTN2019051701-14.jpg" alt=""></p>
-<ol start="15">
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4274/KGTN2019051701-14.jpg" alt="" /></p>
+
+<ol>
 <li>証明書を配置したフォルダーを開き，ファイル -chain.pem と -key.pem
 があることを確認します．</li>
 </ol>
-<p><img src="http://techreport.kitasp.net/attachments/download/4275/KGTN2019051701-15.jpg" alt=""></p>
-<ol start="16">
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4275/KGTN2019051701-15.jpg" alt="" /></p>
+
+<ol>
 <li>これらのファイルをコピーし，コピーした -chain.pem の方を ssl.crt
 に，コピーした -key.pem の方を ssl.key
 にそれぞれファイル名を変更します．</li>
 </ol>
-<p><img src="http://techreport.kitasp.net/attachments/download/4276/KGTN2019051701-16.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4276/KGTN2019051701-16.jpg" alt="" /></p>
+
 <p>ssl.crt をダブルクリックすると，証明書の内容を確認することが出来ます．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/4277/KGTN2019051701-17.jpg" alt=""></p>
-<ol start="17">
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4277/KGTN2019051701-17.jpg" alt="" /></p>
+
+<ol>
 <li>アドミンコンソール（クラスターマネージャー）の [Host Options] →
 [Security] → [Connections] で， [Transport] を SSL に変更，[SSL
 Certificate] で前ステップのファイル ssl.crt を指定，最後に [Notify
 users when connections are secure] にチェックを入れます．</li>
 </ol>
-<p><img src="http://techreport.kitasp.net/attachments/download/4278/KGTN2019051701-18.jpg" alt=""></p>
-<ol start="18">
-<li></li>
-</ol>
-<p>操作や設定に誤りがなければ，GGクライアントからGGサーバーにアクセスすると，次のダイアログ
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4278/KGTN2019051701-18.jpg" alt="" /></p>
+
+<p>18.
+操作や設定に誤りがなければ，GGクライアントからGGサーバーにアクセスすると，次のダイアログ
 （通信がセキュアという情報） が表示されます． [OK]
 をクリックすると，SSL通信でGGを利用することができます．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/4279/KGTN2019051701-19.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4279/KGTN2019051701-19.jpg" alt="" /></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4260/KGTN2019051701.pdf">KGTN2019051701.pdf</a>
-[(509 KB)] [kitasp 技術センター, 2019/06/10
+ [(509 KB)] [kitasp 技術センター, 2019/06/10
 18:13]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4261/KGTN2019051701-01.jpg">KGTN2019051701-01.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4261/KGTN2019051701-01.jpg" title="表示">表示</a>
-[(31.8 KB)] [kitasp 技術センター, 2019/06/10
+ [(31.8 KB)] [kitasp 技術センター, 2019/06/10
 18:14]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4262/KGTN2019051701-02.jpg">KGTN2019051701-02.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4262/KGTN2019051701-02.jpg" title="表示">表示</a>
-[(29.5 KB)] [kitasp 技術センター, 2019/06/10
+ [(29.5 KB)] [kitasp 技術センター, 2019/06/10
 18:14]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4263/KGTN2019051701-03.jpg">KGTN2019051701-03.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4263/KGTN2019051701-03.jpg" title="表示">表示</a>
-[(41.7 KB)] [kitasp 技術センター, 2019/06/10
+ [(41.7 KB)] [kitasp 技術センター, 2019/06/10
 18:14]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4264/KGTN2019051701-04.jpg">KGTN2019051701-04.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4264/KGTN2019051701-04.jpg" title="表示">表示</a>
-[(22.2 KB)] [kitasp 技術センター, 2019/06/10
+ [(22.2 KB)] [kitasp 技術センター, 2019/06/10
 18:14]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4265/KGTN2019051701-05.jpg">KGTN2019051701-05.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4265/KGTN2019051701-05.jpg" title="表示">表示</a>
-[(29.8 KB)] [kitasp 技術センター, 2019/06/10
+ [(29.8 KB)] [kitasp 技術センター, 2019/06/10
 18:14]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4266/KGTN2019051701-06.jpg">KGTN2019051701-06.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4266/KGTN2019051701-06.jpg" title="表示">表示</a>
-[(28.5 KB)] [kitasp 技術センター, 2019/06/10
+ [(28.5 KB)] [kitasp 技術センター, 2019/06/10
 18:14]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4267/KGTN2019051701-07.jpg">KGTN2019051701-07.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4267/KGTN2019051701-07.jpg" title="表示">表示</a>
-[(31.3 KB)] [kitasp 技術センター, 2019/06/10
+ [(31.3 KB)] [kitasp 技術センター, 2019/06/10
 18:15]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4268/KGTN2019051701-08.jpg">KGTN2019051701-08.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4268/KGTN2019051701-08.jpg" title="表示">表示</a>
-[(37.4 KB)] [kitasp 技術センター, 2019/06/10
+ [(37.4 KB)] [kitasp 技術センター, 2019/06/10
 18:15]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4269/KGTN2019051701-09.jpg">KGTN2019051701-09.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4269/KGTN2019051701-09.jpg" title="表示">表示</a>
-[(37 KB)] [kitasp 技術センター, 2019/06/10
+ [(37 KB)] [kitasp 技術センター, 2019/06/10
 18:15]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4270/KGTN2019051701-10.jpg">KGTN2019051701-10.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4270/KGTN2019051701-10.jpg" title="表示">表示</a>
-[(35.7 KB)] [kitasp 技術センター, 2019/06/10
+ [(35.7 KB)] [kitasp 技術センター, 2019/06/10
 18:16]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4271/KGTN2019051701-11.jpg">KGTN2019051701-11.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4271/KGTN2019051701-11.jpg" title="表示">表示</a>
-[(35 KB)] [kitasp 技術センター, 2019/06/10
+ [(35 KB)] [kitasp 技術センター, 2019/06/10
 18:16]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4272/KGTN2019051701-12.jpg">KGTN2019051701-12.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4272/KGTN2019051701-12.jpg" title="表示">表示</a>
-[(31.8 KB)] [kitasp 技術センター, 2019/06/10
+ [(31.8 KB)] [kitasp 技術センター, 2019/06/10
 18:16]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4273/KGTN2019051701-13.jpg">KGTN2019051701-13.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4273/KGTN2019051701-13.jpg" title="表示">表示</a>
-[(34 KB)] [kitasp 技術センター, 2019/06/10
+ [(34 KB)] [kitasp 技術センター, 2019/06/10
 18:16]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4274/KGTN2019051701-14.jpg">KGTN2019051701-14.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4274/KGTN2019051701-14.jpg" title="表示">表示</a>
-[(33.4 KB)] [kitasp 技術センター, 2019/06/10
+ [(33.4 KB)] [kitasp 技術センター, 2019/06/10
 18:16]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4275/KGTN2019051701-15.jpg">KGTN2019051701-15.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4275/KGTN2019051701-15.jpg" title="表示">表示</a>
-[(32.2 KB)] [kitasp 技術センター, 2019/06/10
+ [(32.2 KB)] [kitasp 技術センター, 2019/06/10
 18:16]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4276/KGTN2019051701-16.jpg">KGTN2019051701-16.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4276/KGTN2019051701-16.jpg" title="表示">表示</a>
-[(37.1 KB)] [kitasp 技術センター, 2019/06/10
+ [(37.1 KB)] [kitasp 技術センター, 2019/06/10
 18:16]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4277/KGTN2019051701-17.jpg">KGTN2019051701-17.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4277/KGTN2019051701-17.jpg" title="表示">表示</a>
-[(13.9 KB)] [kitasp 技術センター, 2019/06/10
+ [(13.9 KB)] [kitasp 技術センター, 2019/06/10
 18:16]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4278/KGTN2019051701-18.jpg">KGTN2019051701-18.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4278/KGTN2019051701-18.jpg" title="表示">表示</a>
-[(19.6 KB)] [kitasp 技術センター, 2019/06/10
+ [(19.6 KB)] [kitasp 技術センター, 2019/06/10
 18:17]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4279/KGTN2019051701-19.jpg">KGTN2019051701-19.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4279/KGTN2019051701-19.jpg" title="表示">表示</a>
-[(12.7 KB)] [kitasp 技術センター, 2019/06/10
+ [(12.7 KB)] [kitasp 技術センター, 2019/06/10
 18:17]</p>
 
                         </div>

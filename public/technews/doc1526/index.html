@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,29 +285,40 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/12/02*</p>
+
 <p>[番号]
 技術ノート KGTN 2010120202</p>
+
 <p>[現象]
 エンタープライズオプションの GMCheckRaw で 「GMCheckRaw.exe -h server1
 -m &ldquo;ログオフしてください&rdquo; -mi aaaa」
 を実行すると，全てのセッションにメッセージが送信される．</p>
+
 <p>[説明]
 GMCheckRaw の引数 ?mi は， GmcheckRaw
 のセッション一覧で表示される最初の項目 （つまりセッションID）
 を参照し，その中の値 （10進数）
 を指定して下さい．本件では，不正なセッションIDが指定されたため，暗黙のセッション
 （全てのセッション） にメッセージが送信されました．</p>
+
 <p>参　考
 メッセージを送信するセッションの指定方法には，以下の3つのバリエーションがあります．</p>
+
 <p>-mi セッションID
 -mn セッション名
 -mu ユーザID</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/411/KGTN2010120202.pdf">KGTN2010120202.pdf</a>
-[(56.8 KB)] [kitasp 技術センター, 2010/12/02
+ [(56.8 KB)] [kitasp 技術センター, 2010/12/02
 14:24]</p>
 
                         </div>

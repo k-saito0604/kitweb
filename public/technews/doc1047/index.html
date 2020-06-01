@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,23 +285,33 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2018/08/09*</p>
+
 <p>[番号]
 技術ノート KGTN 2018080901</p>
+
 <p>[現象]
 [GGH6.0LA] APSが開始しているにもかかわらず， Admin Console
 がAPSと通信出来ない．</p>
+
 <p>[説明]
 原因は調査中ですが，設定ファイル hostproperties.xml
 を次のように修正することで，この問題の発生を回避することが出来ます．</p>
+
 <pre><code>&lt;property id=&quot;UpdateServer&quot; group=&quot;HostCompatibility&quot; type=&quot;STRING&quot;&gt;
 &lt;value&gt;127.0.0.1&lt;/value&gt;
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4110/KGTN2018080901.pdf">KGTN2018080901.pdf</a>
-[(36.6 KB)] [kitasp 技術センター, 2018/08/09
+ [(36.6 KB)] [kitasp 技術センター, 2018/08/09
 16:28]</p>
 
                         </div>

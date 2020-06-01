@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,57 +285,78 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/02/21*</p>
+
 <p>[番号]
 技術ノート KGTN 2010021702</p>
+
 <p>[現象]
 [GGW3.2.1/GGH4.X-5.X] GGのログ
 （ログレベル4設定時のAPSログとイベントログ）
 にはどのような情報が記録されるのか？</p>
+
 <p>[説明]
 ログレベル4設定時のAPSログとイベントログ （アプリケーション）
 には，以下の情報が記録されます．主な内容は，セッションの開始と終了，アプリケーション
 （プロセス）
 の開始と終了に関する情報で，アプリケーションの利用に関する監査情報等は記録されません．このような監査情報が必要な場合は，情報セキュリティ対策ソフトウェア等の併用をお願いします．</p>
+
 <p>The GO-Global Application Publishing Service began successfully.
 GGのアプリケーション配信機能が正常に起動したことを示します．</p>
+
 <p>Session &ldquo;Logon1 on Server1&rdquo; started.
 何れかのクライアントが接続して来たことを示します．</p>
+
 <p>Process #nnnn (Logon.exe) started in session &ldquo;Logon1 on Server1&rdquo;.
 接続して来たクライアントのログオン処理が開始されたことを示します．</p>
+
 <p>User Administrator logged on to session &ldquo;Logon1 on Server1&rdquo;, and the
 session was renamed to &ldquo;Administrator on Server1&rdquo;.
 接続して来たクライアントのログオン処理が完了したことを示します．この例では，ユーザ名が
 Administrator で，一意的なセッション名が Administrator on Server1 です．</p>
+
 <p>Process #nnnn (pw.exe) started in session &ldquo;Administrator on
 Server1&rdquo;.
 PW (Program Window) が起動したことを示します．</p>
+
 <p>Process #nnnn (ctfmon.exe) started in session &ldquo;Administrator on
 Server1&rdquo;.
 IME が起動したことを示します．</p>
+
 <p>Process #nnnn (notepad.exe) started in session &ldquo;Administrator on
 Server1&rdquo;.
 ユーザがプログラムを起動したことを示します．この例ではメモ帳
 （notepad.exe） が起動されています．</p>
+
 <p>Process #nnnn (notepad.exe) stopped in session &ldquo;Administrator on
 Server1&rdquo;.
 プロセス （プログラム） が終了したことを示します．</p>
+
 <p>Process #nnnn (pw.exe) stopped in session &ldquo;Administrator on Server1&rdquo;
 PW (Program Window) が終了したことを示します．</p>
+
 <p>Process #nnnn (ctfmon.exe) stopped in session &ldquo;Administrator on
 Server1&rdquo;
 IME が終了したことを示します．</p>
+
 <p>Process #nnnn (Logon.exe) stopped in session &ldquo;Administrator on
 Server1&rdquo;.
 セッションを管理する Logon.exe が終了したことを示します．</p>
+
 <p>Session &ldquo;Administrator on Server1&rdquo; stopped.
 セッション（セッション名 Administrator on
 Server1）が終了したことを示します．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2775/KGTN2010021702.pdf">KGTN2010021702.pdf</a>
-[(77.6 KB)] [kitasp 技術センター, 2016/08/01
+ [(77.6 KB)] [kitasp 技術センター, 2016/08/01
 11:20]</p>
 
                         </div>

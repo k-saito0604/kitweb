@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,14 +285,21 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/10/12*</p>
+
 <p>[番号]
 技術ノート KGTN 2011101202</p>
+
 <p>[現象]
 [GGW3.2.1] HTMLの img
 タグで画像のサイズが指定されている場合，ページ内の画像が多いと表示が極めて遅い．さらにページをスクロールしても，再描画に時間がかかる．</p>
+
 <p>[説明]
 この現象は，IE （Internet Explorer）
 とGGW3.2.1の描画処理の相互作用によって発生する問題で， Firefox 7.0.1
@@ -302,12 +309,15 @@ CPU
 負荷が高まり，結果的に描画に非常に多くの時間を要することになります．この問題を解決するには，GGW3.2.1のアーキテクチャをそのものを変更する必要があり，
 GGH4.0
 で対応しております．なお，GGW3.2.1の環境では，対症療法になりますが，以下の方法が考えられます．</p>
+
 <p>ブラウザに FireFox 7.0.1 等を使用する．
 ASP等で動的に縮小 （拡大） 画像を生成し，その画像を （サイズ指定せずに）
 表示する．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/655/KGTN2011101202.pdf">KGTN2011101202.pdf</a>
-[(63.2 KB)] [kitasp 技術センター, 2011/10/12
+ [(63.2 KB)] [kitasp 技術センター, 2011/10/12
 12:02]</p>
 
                         </div>

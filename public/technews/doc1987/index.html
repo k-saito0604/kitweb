@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,29 +285,39 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2017/10/10*</p>
+
 <p>[番号]
 技術ノート KGTN 2017091401</p>
+
 <p>[現象]
 [GGH5.X/ExPack] GGEasyMonitor
 のバージョン2.2.8とバージョン2.3.0の変更点を知りたい．</p>
+
 <p>[説明]
 主な変更点は，エラー時に表示するメッセージのテンプレートファイルに関するものです．バージョン2.2.8までは，テンプレートファイル
 SorryPage.html, SorryPage2.html, SorryPage3.html が存在しない場合，
 GGEasyMonitor
 に予め組込まれたテンプレートが使用されましたが，バージョン2.3.0からはテンプレートファイルが必須となりました
 （これらのファイルが存在しない場合はエラーとなります） ．</p>
+
 <p>テンプレートファイル SorryPage2.html のパラメタ （%s）
 は，バージョン2.2.8までは１個で，ユーザーが存在するGGサーバーのコンピューター名で置き換えられました．バージョン2.3.0からは，このパラメタが２個となり
 （ウエッブページ用と GGEasyLogon 用の２個）
 ，それぞれGGサーバーのIPアドレスで置き換えられます．</p>
+
 <p>テンプレートファイル SorryPage2-ForceLogon.html
 が追加されました．このテンプレートファイルが存在する場合，多重ログオン発生時に強制ログオンを許容するメッセージとして使用されます
 （強制ログオン機能は GGEasyLogon
 バージョン5.5.0またはそれ以降を使用する場合に有効）
 ．サンプルの設定内容は，次の通りです．</p>
+
 <pre><code>&lt;html lang=&quot;ja&quot;&gt;
 &lt;head&gt;
 &lt;title&gt;GGEasyMonitor&lt;/title&gt;
@@ -331,14 +341,19 @@ GGEasyMonitor
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<p><img src="http://techreport.kitasp.net/attachments/download/3828/KGTN2017091401.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3828/KGTN2017091401.jpg" alt="" /></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3827/KGTN2017091401.pdf">KGTN2017091401.pdf</a>
-[(66.8 KB)] [kitasp 技術センター, 2017/10/10
+ [(66.8 KB)] [kitasp 技術センター, 2017/10/10
 11:13]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3828/KGTN2017091401.jpg">KGTN2017091401.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3828/KGTN2017091401.jpg" title="表示">表示</a>
-[(9.54 KB)] [kitasp 技術センター, 2017/10/10
+ [(9.54 KB)] [kitasp 技術センター, 2017/10/10
 11:13]</p>
 
                         </div>

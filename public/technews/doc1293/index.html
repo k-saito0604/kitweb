@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,14 +285,21 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/09/27*</p>
+
 <p>[番号]
 技術ノート KGTN 2011091602</p>
+
 <p>[現象]
 [CASE#23867]
 特定のAjaxを使用するアプリケーションで，時々ウインドウ描画等で反応が遅くなる．</p>
+
 <p>[説明]
 GraphOn社の技術者がこの問題の発生する環境で調査したところ，技術ノート
 KGTN#2011042101 の説明の通り，アプリケーションが 「少し動いて停止する」
@@ -300,22 +307,26 @@ KGTN#2011042101 の説明の通り，アプリケーションが 「少し動い
 のシステムファイル &ldquo;jscript.dll&rdquo;
 の中でこの状況が発生していることが分かりました． &ldquo;jscript.dll&rdquo;
 は，以下のように Microsoft JavaScript の処理を行うプログラムの一部です．</p>
+
 <p>GraphOn社の技術者は，さらに &ldquo;jscript.dll&rdquo;
 のどの部分で問題が発生しているのか解析を試みましたが，（Windows
 のシステムファイルということで）
 解析に必要なシンボルテーブルが提供されていないため，問題箇所を特定することが困難という結論に至りました．</p>
+
 <p>そこで， GO-Global Ver4.0 では本件の現象が発生しないことから，
 &ldquo;jscript.dll&rdquo; の調査結果をもとにVer3.2
 とVer4.0のアーキテクチャの差異のうち関連がありそうな部分を詳細に検討しました．その結果，以下の描画処理の差異が影響している可能性が高いことが分かりました．</p>
+
 <p>Ver4.0ではログオン・プロセスの１つのスレッドがクライアントへ描画命令を送信しますが，
 Ver3.2　ではセッション上で動作する全てプロセスの全てのスレッドが
 「並行して」
 クライアントへ描画命令を送信することが可能です．このアーキテクチャの差異が，問題の発生に絡んでいると推測されます
-（例： Ver3.2 の環境では，&ldquo;jscript.dll&rdquo;
+（例： Ver3.2 の環境では，&rdquo;jscript.dll&rdquo;
 が並列的な描画を行うと，タイミングにより描画命令の相互干渉が発生し，処理が遅延する．
-Ver4.0 の環境では，　&ldquo;jscript.dll&rdquo;
+Ver4.0 の環境では，　&rdquo;jscript.dll&rdquo;
 が並列的な描画を行っても，ログオン・プロセスが描画命令をシリアル化するため相互干渉が発生ぜず，処理が遅延しない）
 ．</p>
+
 <p>Ver3.2
 でプロセッサ・アフィニティがどのように作用するのか明確ではありませんが，しかし弊社作成のプログラム
 GGAffinify.exe を使ってIEを実行するCPUを１個に限定することで，
@@ -323,9 +334,11 @@ GGAffinify.exe を使ってIEを実行するCPUを１個に限定することで
 と同じように１つのスレッドがクライアントへ描画命令を送信する状況になったと考えられます．従って，本件は
 Ver3.2 の環境で GGAffinify.exe
 を利用することが，最善の対応策となります．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/633/KGTN2011091602.pdf">KGTN2011091602.pdf</a>
-[(92.2 KB)] [kitasp 技術センター, 2011/09/27
+ [(92.2 KB)] [kitasp 技術センター, 2011/09/27
 09:43]</p>
 
                         </div>

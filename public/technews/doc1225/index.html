@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,17 +285,24 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2018/06/20*</p>
+
 <p>[番号]
 技術ノート KGTN 2018060７01</p>
+
 <p>[現象]
 [TechNotes]
 技術ノートのインデックスを作成するEXCELファイル　index_full.xls
 の「ファイル検索」ボタンをクリックすると，　「実行時エラー &lsquo;53&rsquo;:
 ファイルが見つかりません」　というエラーダイアログが表示される．デバッグ情報を見ると，エラーの発生個所は
 &ldquo;shtFile.Cells(ii, 5) = FileDateTime(pDoc)&rdquo; であった．</p>
+
 <p>[説明]
 技術ノートのインデックス作成処理では，ファイル情報を収集するためにMicrosoft
 Wordで作成したDOCファイルのファイル名を利用しますが，表示されたエラーメッセージは正しいファイル名が取得できなかったことを意味します．この原因は，コントロールパネルのフォルダーオプションの設定
@@ -304,14 +311,19 @@ Wordで作成したDOCファイルのファイル名を利用しますが，表�
 でファイルの拡張子が省略された値が戻ります）
 ．この問題を解決するには，次のようにコントロールパネルのフォルダーオプションの設定
 「登録されている拡張子は表示しない」 のチェックを外して下さい．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/4070/KGTN2018060701.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/4070/KGTN2018060701.jpg" alt="" /></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4055/KGTN2018060701.pdf">KGTN2018060701.pdf</a>
-[(75.6 KB)] [kitasp 技術センター, 2018/06/20
+ [(75.6 KB)] [kitasp 技術センター, 2018/06/20
 14:32]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4070/KGTN2018060701.jpg">KGTN2018060701.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/4070/KGTN2018060701.jpg" title="表示">表示</a>
-[(17.2 KB)] [kitasp 技術センター, 2018/06/20
+ [(17.2 KB)] [kitasp 技術センター, 2018/06/20
 15:33]</p>
 
                         </div>

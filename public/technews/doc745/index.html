@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,26 +285,36 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2012/12/27*</p>
+
 <p>[番号]
 技術ノート KGTN 2012122702</p>
+
 <p>[現象]
 [GGH4.5]
 セッション上のプログラムを終了させたが，クラスタマネージャで確認するとアプリケーションのプロセスが残っている．</p>
+
 <p>[説明]
 クラスタマネージャで残っているプロセス （仮に myProgram.exe とします）
 が，常駐プロセスかどうか確認してください．常駐プロセスであれば，下記の設定を行うことでセッションを終了させることが出来ます．常駐プロセスでない場合は，そのプログラムの処理に原因があると考えられますので，そのプログラムがどのような状況にあるのか
 （特定のイベントを待っているとか）
 調査してください．諸事情で調査が困難な場合は， 「対症療法として」
 当該プログラムを常駐プロセスと同様に設定して下さい．</p>
+
 <p>[レジストリに以下の設定を追加する]
 HKEY_LOCAL_MACHINE¥SOFTWARE¥GraphOn¥GO-Global¥System¥Processes
 myProgram.exe REG_DWORD 0</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1162/KGTN2012122702.pdf">KGTN2012122702.pdf</a>
-[(56.3 KB)] [kitasp 技術センター, 2012/12/27
+ [(56.3 KB)] [kitasp 技術センター, 2012/12/27
 11:46]</p>
 
                         </div>

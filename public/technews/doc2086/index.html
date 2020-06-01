@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,13 +285,20 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2014/02/07*</p>
+
 <p>[番号]
 技術ノート KGTN 2014020703</p>
+
 <p>[現象]
 [GGH4.X-5.X] GGサーバ側から見たクライアントのIPアドレスを知りたい．</p>
+
 <p>[説明]
 従来はGGクライアント側から見た自分のIPアドレスのみが環境変数
 CLIENTIPADDRESS に保持されていましたが， GGH4.8.1.20079
@@ -301,13 +308,16 @@ CLIENTNETWORKADDRESS
 C:ProgramDataGraphOnHostProperties.xml に，下記の項目 （設定値）
 を追加して下さい．なお，作業はGGのサービス GGAPS
 を停止した状態で行って下さい．</p>
+
 <pre><code>&lt;property id=&quot;NetworkAddressEnvVarEnabled&quot; group=&quot;ClientAccess&quot; type=&quot;BOOL&quot;&gt;
 &lt;value&gt;true&lt;/value&gt;
 &lt;/property&gt;
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3633/KGTN2014020703.pdf">KGTN2014020703.pdf</a>
-[(42.9 KB)] [kitasp 技術センター, 2017/05/24
+ [(42.9 KB)] [kitasp 技術センター, 2017/05/24
 16:15]</p>
 
                         </div>

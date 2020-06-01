@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,35 +285,46 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/06/30*</p>
+
 <p>[番号]
 技術ノート KGTN 2010063003</p>
+
 <p>[現象]
 GGServiceMonitor
 でサービスの監視を行おうとしたところ，GGのライセンスサーバで Service not
 Found が表示される．</p>
+
 <p>[説明]
 ライセンスサーバのサービスの 「サービス名」
 が異なっているのが原因です．当該サービスのプロパティを開き， 「表示名」
 の文字列をコピーし，設定ファイル GGServiceMonitor.ini
 の項目にペーストして下さい．</p>
+
 <p>注　意
 ggw-3.2.1 Patch4
 の場合，サービス名の末尾に空白がありますので，GGServiceMonitor.ini
 には以下のように設定して下さい．</p>
+
 <p>[GO-Global License Manager]
 check = YES
-serviceName = &ldquo;GO-Global License Manager &quot;
+serviceName = &ldquo;GO-Global License Manager &ldquo;
 maxStartTime = 30
 restartInterval = 10
 forceRestartInterval = 0
 forceRestartSleep = 0
 beep = 0</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/215/KGTN2010063003.pdf">KGTN2010063003.pdf</a>
-[(56.4 KB)] [kitasp 技術センター, 2010/06/30
+ [(56.4 KB)] [kitasp 技術センター, 2010/06/30
 13:36]</p>
 
                         </div>

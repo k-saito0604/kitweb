@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,41 +285,58 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/06/24*</p>
+
 <p>[番号]
 技術ノート KGTN 2009122401</p>
+
 <p>[現象]
 Windows Server 2008 環境で動作するGGサーバで &ldquo;@&rdquo; 等の入力が出来ない
 （異なる文字がエコーバックされる） ．</p>
+
 <p>[説明]
 これは Windows Server 2008
 でキーボードの処理が変更されたために発生する問題で，下記のレジストリを登録することで問題が解消します．</p>
+
 <p>[HKEY_LOCAL_MACHINE¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard
 Layout]
-&ldquo;Fallback Layout Text&quot;=&quot;Japanese&rdquo;</p>
+&ldquo;Fallback Layout Text&rdquo;=&ldquo;Japanese&rdquo;</p>
+
 <p>この件はGraphOn社でも確認しており，今後のリリースで修正される予定です．</p>
+
 <p>補足１
 3.2.1 Patch4 (4466) およびそれ以降では，本問題は解消されております．</p>
+
 <p>Bug 8997
 On Japanese Windows Server 2008, users are unable to logon to an
 account
-with a password including &ldquo;@,=,‾,etc&hellip;&quot;.</p>
+with a password including &ldquo;@,=,‾,etc&hellip;&rdquo;.</p>
+
 <p>補足２
 Windows Server 2008
 のインストール時に，標準的な106キーボードが接続されていることが前提となります．それ以外の環境では，下記のレジストリの
 Layout Text の値を上記Fallback Layout Text へセットして下さい．</p>
+
 <p>[HKEY_LOCAL_MACHINE¥SYSTEM¥CurrentControlSet¥Control¥Keyboard
 Layouts¥00000411]
-&ldquo;Layout Display Name&quot;=&rdquo;@C:¥¥Windows¥¥system32¥¥input.dll,-5061&rdquo;
-&ldquo;Layout File&quot;=&quot;KBDJPN.DLL&rdquo;
-&ldquo;Layout Text&quot;=&quot;Japanese&rdquo;</p>
+&ldquo;Layout Display Name&rdquo;=&ldquo;@C:¥¥Windows¥¥system32¥¥input.dll,-5061&rdquo;
+&ldquo;Layout File&rdquo;=&ldquo;KBDJPN.DLL&rdquo;
+&ldquo;Layout Text&rdquo;=&ldquo;Japanese&rdquo;</p>
+
 <p>本件に関連する技術情報としては，下記のマイクロソフト社のページがあります．</p>
+
 <p><a href="http://support.microsoft.com/kb/880629/ja">http://support.microsoft.com/kb/880629/ja</a></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/40/KGTN2009122401.pdf">KGTN2009122401.pdf</a>
-[(75.7 KB)] [kitasp 技術センター, 2010/06/24
+ [(75.7 KB)] [kitasp 技術センター, 2010/06/24
 13:42]</p>
 
                         </div>

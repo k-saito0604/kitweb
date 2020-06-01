@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,14 +285,21 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/11/18*</p>
+
 <p>[番号]
 技術ノート KGTN 2010111804</p>
+
 <p>[現象]
 業務開始前のサーバ再起動時に GO-Global Application Publishing Service
 の開始でタイムアウトが発生することがある．</p>
+
 <p>[説明]
 これまでの事例では，サーバ再起動時にサーバ自体およびネットワークの過負荷が原因で，このような現象が発生しました．例えば，多数のサーバを同時に再起動するような運用になっており，それらのサーバが一斉にSANディスクにアクセスするためネットワークやディスクが過負荷になり，その結果
 Windows の初期化処理が遅くなり， GO-Global Application Publishing
@@ -300,11 +307,14 @@ Service
 の開始に30秒以上かかりました．また，別の事例では，アンチウイルスソフトウエアのアップデート処理が最初に高負荷で開始し，
 GO-Global Application Publishing Service
 にCPUが殆ど割り当てられずタイムアウトが発生しました．</p>
+
 <p>対応としては，サーバ再起動時に何が起きているのか見極めて，それに応じた適切なタイミングでGO-Global
 Application Publishing Service を開始するようにして下さい．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/392/KGTN2010111804.pdf">KGTN2010111804.pdf</a>
-[(61.2 KB)] [kitasp 技術センター, 2010/11/18
+ [(61.2 KB)] [kitasp 技術センター, 2010/11/18
 14:33]</p>
 
                         </div>

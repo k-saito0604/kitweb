@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,17 +285,25 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2016/06/22*</p>
+
 <p>[番号]
 技術ノート KGTN 2016061504</p>
+
 <p>[現象]
 [GGH5.X] logon.html
 でサーバーのIPアドレスおよびポート番号を指定する方法は？</p>
+
 <p>[説明]
 logon.html の27行目と31行目のコメントを外して （//を削除する）
 ，下記のように controlArgs.set の第２引数で値を指定して下さい．</p>
+
 <pre><code>&lt;script language=javascript&gt;
 // To specify startup parameters, add controlArgs.set() for each parameter.
 …
@@ -303,9 +311,11 @@ controlArgs.set([ &quot;port&quot;, &quot;443&quot; ]); ← ポート番号
 …
 controlArgs.set([ &quot;host&quot;, &quot;192.168.102.89&quot; ]); ← IP アドレス
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2699/KGTN2016061504.pdf">KGTN2016061504.pdf</a>
-[(57.8 KB)] [kitasp 技術センター, 2016/06/22
+ [(57.8 KB)] [kitasp 技術センター, 2016/06/22
 11:35]</p>
 
                         </div>

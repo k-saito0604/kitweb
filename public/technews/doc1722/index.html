@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,32 +285,46 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/06/22*</p>
+
 <p>[番号]
 技術ノート KGTN 2010062201</p>
+
 <p>[現象]
 GMCheckRaw のトレース機能はどんな時に使うのか？</p>
+
 <p>[説明]
 Rel#1.07.01 で実装されたGMCheckRaw のトレース機能は，同プログラムとGG
 （APS） の通信のタイムスタンプを記録することで，
 「どの処理の周辺に問題があるのか」
 を突き止める時に役立ちます．例えば，GMCheckRaw
 コマンドを入力してから，ログファイルに</p>
+
 <p>2010-06-22 13:49:02.656 -&gt; checkServer</p>
+
 <p>が出力されるまでに5秒かかったとすれば，プロセスの生成に約5秒かかったことになりますので，Windows
 やハードウエアに問題があると推測されます．</p>
+
 <p>また，
 SMI_Initializeの呼出し前後の時間をチェックすることで，GGサーバへの接続に要する時間を確認することが出来ます．30秒かかったとすれば，CPUの過負荷，プロセス間通信の一時的障害，ネットワーク障害や設定ミス，Windowsの異常等が考えられます．</p>
+
 <p>2010-06-22 13:49:02.656 <del>&gt; SMI_Initialize SMI_Initializeの呼出し前
 2010-06-22 13:49:04.312 SMI_Initialize SMI_Initializeの呼出し後</del></p>
+
 <p>これ以外にもローレベルな情報を採取することが出来ますので，
 「正常値と比較することで」
 問題解析の手掛かりとして役立てることが出来ます．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/207/KGTN2010062201.pdf">KGTN2010062201.pdf</a>
-[(69.6 KB)] [kitasp 技術センター, 2010/06/22
+ [(69.6 KB)] [kitasp 技術センター, 2010/06/22
 14:05]</p>
 
                         </div>

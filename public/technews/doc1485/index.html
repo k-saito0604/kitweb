@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,14 +285,21 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/01/31*</p>
+
 <p>[番号]
 技術ノート KGTN 2011013103</p>
+
 <p>[現象]
 サービス GO-Global License Manager
 を停止させて，すぐに開始したが何か問題はあるか？</p>
+
 <p>[説明]
 サービス GO-Global License Manager （ライセンスサーバ）
 が停止すると，新たなユーザはログオン出来ませんが，ログオン中のユーザは
@@ -300,12 +307,15 @@
 そのまま利用することが出来ます．その間にライセンスサーバを開始すると，新たなユーザがログオン出来るようになります．但し，数分間はライセンスの利用状況の回復処理が行われますので，
 それが完了するまでは lmtools
 等で表示されるライセンスの利用状況と，実際の状況と整合しないことがあります．</p>
+
 <p>注　意
 ライセンスの利用状況の回復処理が行われている間に，ライセンス数を超えるユーザがログオン出来ないように，クラスタマネージャで適切なユーザ数を設定するようにして下さい
 （Maximum sessions on this server） ．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/462/KGTN2011013103.pdf">KGTN2011013103.pdf</a>
-[(56.7 KB)] [kitasp 技術センター, 2011/01/31
+ [(56.7 KB)] [kitasp 技術センター, 2011/01/31
 10:52]</p>
 
                         </div>

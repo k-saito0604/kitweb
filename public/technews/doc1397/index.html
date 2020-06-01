@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,27 +285,37 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/04/12*</p>
+
 <p>[番号]
 技術ノート KGTN 2010052101</p>
+
 <p>[現象]
 ggw-3.1.1 (ggw-3.2.1) のサーバに誤って Windows Update
 を適用してしまい，APSが開始しなくなった．復旧するための手順を知りたい．</p>
+
 <p>[説明]
 復旧するための方法は，次の３つが考えられます．</p>
+
 <p>過去に保存したドライブのイメージをリストアする．
 Windows
 を再インストールし，その後アプリケーションおよびGGをインストールする．
 問題を引き起こしているファイルを含むWindows Update
 を最新のものからアンインストールする．</p>
+
 <p>正常に動作していた時のドライブのイメージが保存されているのであれば，それをリストアするのが最善の方法です．ドライブのイメージが保存されていない場合は，Windows
 の再インストールおよびアプリケーションおよびGGの再インストールが
 「時間はかかりますが」
 次善の方法です．このどちらも困難な場合は，確実に復旧する保証はありませんが，問題を引き起こしている可能性が高い
 Windows Update
 を最新のものからアンインストールする方法があります．手順は以下の通りです．</p>
+
 <p>問題を引き起こしているファイルをAPSログで確認する． &ldquo;FATAL ERROR: The
 version of Ntoskrnl.exe on this installation of Windows is not supported
 by GO-Global.&rdquo; というエラーが記録されている場合は， Ntoskrnl.exe
@@ -319,10 +329,13 @@ C:¥Windows の $NtUninstall???$
 最新の互換アップデートを適用し，サーバを再起動する．
 APSが 「開始」 したかどうか確認する．
 「開始」 していない場合は，残りのフォルダについて 2〜6 を繰り返す．</p>
+
 <p>この手順は，GraphOn社および弊社が保証するものではなく，実施する場合は自己責任でお願いします．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/175/KGTN2010052101.pdf">KGTN2010052101.pdf</a>
-[(234 KB)] [kitasp 技術センター, 2011/04/12
+ [(234 KB)] [kitasp 技術センター, 2011/04/12
 09:39]</p>
 
                         </div>

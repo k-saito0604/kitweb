@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,32 +285,45 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/03/30*</p>
+
 <p>[番号]
 技術ノート KGTN 2010033002</p>
+
 <p>[現象]
 ユーザがGG上のアプリケーションを利用中にPCの電源を切ったり，LANケーブルを抜いたりした場合，利用中のGGのセッションはどうなるのか？</p>
+
 <p>[説明]
 クラスタマネージャ → Server Options → Session Shutdown → Disconnected
 sessions terminate の設定により動作が異なります．</p>
+
 <p>Immediately の場合 &hellip; セッションは直ちに終了します．
 Never の場合 &hellip; セッションは保持されます．
 After N minutes の場合 &hellip;セッションはN
 分だけ保持され，その間に再接続が行われないとセッションは終了します．</p>
+
 <p>注　意
 3.2.1系では，この設定に加えレジストリ</p>
+
 <p>HKLM¥Software¥GraphOn¥Bridges¥1.0.0¥AppServer¥SessionTimeoutBrokenConnection</p>
+
 <p>の値が影響します．この値が0でない場合，予期せぬ切断が発生した時
 Disconnected sessions terminate の設定に関わりなく
 SessionTimeoutBrokenConnection に設定された値 （分）
 だけセッションが保持されます．どのような状況でも直ちにセッションを終了させたい場合は，SessionTimeoutBrokenConnection
 に0を設定して下さい．詳細は，GraphOn社の技術資料Article C00062
 をご覧下さい．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/118/KGTN2010033002.pdf">KGTN2010033002.pdf</a>
-[(67 KB)] [kitasp 技術センター, 2010/03/30
+ [(67 KB)] [kitasp 技術センター, 2010/03/30
 12:54]</p>
 
                         </div>

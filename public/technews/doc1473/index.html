@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,28 +285,38 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/02/07*</p>
+
 <p>[番号]
 技術ノート KGTN 2011020701</p>
+
 <p>[現象]
 [GGW3.2.1] Idle Timeout
 のカウントダウンが停止する問題があったが，解決されたのか？</p>
+
 <p>[説明]
 3.2.1.4446または，それ以降で Idle Timeout
 のカウントダウンが停止する問題は解消されております．これは，環境によって
 WM_TIMER
 イベントが通知されない現象が発生するためで，別スレッドを生成し経過時間をチェックする方式に処理が変更されました．以下は，GraphOn社のコメントです．</p>
+
 <p>When there is no mouse cursor on the window of the GO-Global client, the
 &ldquo;session timeout&rdquo; countdown stops. On some systems, logon&rsquo;s session
 event processor does not get the WM_TIMER message, so the dialog is not
 updated with the correct time. Instead of using the WM_TIMER message,
 we now create a thread that will sleep for the necessary tick count and
 then post our own message to the dialog.</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/471/KGTN2011020701.pdf">KGTN2011020701.pdf</a>
-[(58.5 KB)] [kitasp 技術センター, 2011/02/07
+ [(58.5 KB)] [kitasp 技術センター, 2011/02/07
 10:18]</p>
 
                         </div>

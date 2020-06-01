@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,23 +285,32 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/02/01*</p>
+
 <p>[番号]
 技術ノート KGTN 2011013104</p>
+
 <p>[現象]
 APSログに &ldquo;AS: Failed to complete license heartbeat.&rdquo;
 という記録があった．</p>
+
 <p>[説明]
 APSがライセンスサーバと通信出来なくなった時に，この情報が記録されます．一般的な原因としては，APS〜ライセンスサーバ間の通信障害
 （同一サーバの場合はWindowsの異常） ，サービス &ldquo;GO-Global License
 Manager&rdquo;
 の停止等が考えられます．この記録は障害発生から2分毎に検出され，5回検出された時点
 （つまり10分経過した時点） でAPSが停止します．</p>
+
 <p>参　考
 下記の事例は，1回目の記録と2回目が2分を遙かに超えており，従って通信障害は08:41:56
 よりも前に発生したことしか分かりません．</p>
+
 <p>2011-01-28 08:41:56.478 AS: Failed to complete license heartbeat. (1)
 2011-01-28 08:43:29.608 AS: Failed to complete license heartbeat. (1)
 2011-01-28 08:44:31.861 AS: Failed to complete license heartbeat. (1)
@@ -318,17 +327,22 @@ Manager&rdquo;
 2011-01-28 08:49:06.837 AS: Failed to complete license heartbeat. (2)
 2011-01-28 08:49:08.150 AS: Failed to complete license heartbeat. (2)
 2011-01-28 08:51:09.539 AS: Failed to complete license heartbeat. (2)</p>
+
 <p>そこで license.log を参照すると下記のように 08:32:22
 にコネクションが切断されていましたので，この時点で通信障害が
 「検出された」 ことが分かります．</p>
+
 <p>8:38:22 (blm) Lost connection to lmgrd, exiting. 8:38:22 (blm) IN:
 &ldquo;session&rdquo; SYSTEM@xxx (SHUTDOWN)</p>
+
 <p>しかしながら，ログの記録に遅れが発生していたことから，通信障害が
 「検出された」
 時刻と根本原因の障害発生時刻が大きく異なる可能性もありますので，障害発生時刻を特定するにはさらに他のログ等を詳細に解析する必要があります．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/463/KGTN2011013104.pdf">KGTN2011013104.pdf</a>
-[(71.2 KB)] [kitasp 技術センター, 2011/02/01
+ [(71.2 KB)] [kitasp 技術センター, 2011/02/01
 10:15]</p>
 
                         </div>

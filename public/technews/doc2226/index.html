@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,17 +285,26 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2016/11/02*</p>
+
 <p>[番号]
 技術ノート KGTN 2016102501</p>
+
 <p>[現象]
 [Windows/PowerShell] 複数のGGサーバー （ワークグループ）
 に複数のアカウントを一括登録したい．</p>
+
 <p>[説明]
 以下にスクリプトのサンプルを示します．</p>
+
 <p>ファイル： hostList.ps1</p>
+
 <pre><code># 処理の対象とするサーバー
 $hostList =
 @(
@@ -304,7 +313,9 @@ $hostList =
 &quot;192.168.102.110&quot; 
 )
 </code></pre>
+
 <p>ファイル： userList.ps1</p>
+
 <pre><code># 追加するアカウント
 $userList =
 @(
@@ -313,7 +324,9 @@ $userList =
 @(&quot;wguser9027&quot;,&quot;Pass.Word&quot;)
 )
 </code></pre>
+
 <p>ファイル： addUserList.ps1</p>
+
 <pre><code># ホスト情報およびユーザー情報の設定
 Try
 {
@@ -397,9 +410,11 @@ $targetU[0],$targetU[1]
 }
 }
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3179/KGTN2016102501.pdf">KGTN2016102501.pdf</a>
-[(65.4 KB)] [kitasp 技術センター, 2016/11/02
+ [(65.4 KB)] [kitasp 技術センター, 2016/11/02
 15:44]</p>
 
                         </div>

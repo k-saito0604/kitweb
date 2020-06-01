@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,28 +285,40 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2012/11/12*</p>
+
 <p>[番号]
 技術ノート KGTN 2012111201</p>
+
 <p>[現象]
 [GGH4.X] クラスタマネージャで Session Shutdown の Timeouts -&gt; Session
 を指定した場合の動作を知りたい．</p>
+
 <p>[説明]
 以下の設定を前提に，動作の説明をします．</p>
+
 <p>Session 5 minutes
 Warning period 2 minutes
 Grace period 1 minutes</p>
+
 <p>セッションは最大5分に制限され，セッション終了時刻の2分前に警告ダイアログが表示されます．セッション終了時刻になると，下記のダイアログが表示され，その時点で動作しているアプリケーションに終了要求が送信されます
 （アプリケーションの仕様に従って保存ダイアログ等が表示されます）
 ，さらに猶予時間1分を経過した時点で，全てのアプリケーションが強制終了になります．</p>
+
 <p>補　足
 GGH4.5.0.13767
 での検証では，警告ダイアログは正しい時刻に表示されますが，終了時刻が設定よりも１分遅くなります．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1108/KGTN2012111201.pdf">KGTN2012111201.pdf</a>
-[(62.9 KB)] [kitasp 技術センター, 2012/11/12
+ [(62.9 KB)] [kitasp 技術センター, 2012/11/12
 11:06]</p>
 
                         </div>

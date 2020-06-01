@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,23 +285,33 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/09/17*</p>
+
 <p>[番号]
 技術ノート KGTN 2010091701</p>
+
 <p>[現象]
 クライアント側でZオーダー （ウインドウの上下関係）
 に関する処理を行うプログラムを作成するが，何か注意すべき点はあるか？</p>
+
 <p>[説明]
 クライアント側でZオーダーに関する処理が行われた場合，それに絡んでサーバ側でもZオーダーに関する処理が行われます．つまり，クライアント側およびサーバ側それぞれでZオーダーに関する処理が行われますので，そのタイミングや処理時間によっては稀に画面が乱れる可能性があります．このような場合は，下記のようにウインドウの処理の後に
 Sleep(1000) 等を挿入して，タイミングの調整を行って下さい．</p>
+
 <pre><code>m_subWindow-&gt;DestroyWindow();
     ::Sleep(1000);
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/322/KGTN2010091701.pdf">KGTN2010091701.pdf</a>
-[(54.7 KB)] [kitasp 技術センター, 2010/09/17
+ [(54.7 KB)] [kitasp 技術センター, 2010/09/17
 09:04]</p>
 
                         </div>

@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,19 +285,27 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2013/10/09*</p>
+
 <p>[番号]
 技術ノート KGTN 2013101001</p>
+
 <p>[現象]
 [GGH4.X] Microsoft Office 2013 / 2016 が動作しない．</p>
+
 <p>[説明]
 Microsoft Office 2013 / 2016 が動作しないという現象は， Microsoft Office
 2013 / 2016 の描画レベルでの仕様変更に基づいており，GGH4.8.2により
 Windows Server 2012 (R2) の環境でサポートします． Windows Server 2008 R2
 の環境については，プラットフォーム更新プログラム KB2670838
 をアンインストールすることで動作します．詳細については，以下のGraphOn社のコメントをご覧下さい．</p>
+
 <pre><code>Applications such as Office 2013 that use DirectX will not run in GO-Global sessions on Windows Server
 2008 R2 when Windows Update KB2670838 is installed. To work around this issue, uninstall KB2670838.
 Background: Windows Update KB2670838 replaces the user-mode DirectX runtime with a version that
@@ -307,9 +315,11 @@ only on Windows Server 2012 and Windows Server 2012 R2. The GO-Global driver onl
 these versions of Windows because it relies on a Windows component that is not available in earlier versions
 of Windows.
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3809/KGTN2013101001.pdf">KGTN2013101001.pdf</a>
-[(35.1 KB)] [kitasp 技術センター, 2017/10/10
+ [(35.1 KB)] [kitasp 技術センター, 2017/10/10
 10:25]</p>
 
                         </div>

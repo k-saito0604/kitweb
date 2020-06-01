@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,24 +285,33 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2018/10/04*</p>
+
 <p>[番号]
 技術ノート KGTN 2018081302</p>
+
 <p>[現象]
 [GGH5.X] JavaScriptで
-window.open(&quot;&quot;,&ldquo;test1&rdquo;,&lsquo;width=640,height=480&rsquo;);
+window.open(&ldquo;&rdquo;,&ldquo;test1&rdquo;,&lsquo;width=640,height=480&rsquo;);
 を実行すると，同じ名前のウインドウ test1
 が存在する時，そのウインドウのリファレンスが値として戻る．ドキュメントには書かれていないが，これが事実上の仕様ではないのか？</p>
+
 <p>[説明]
 弊社の3台のサーバーで検証を行ったところ，1台の Windows Server 2012 R2
 ではそのように動作しましたが，もう1台の Windows Server 2012 R2 および
 Windows Server 2016 では空なウインドウ （about:blank）
 のリファレンスが値として戻りました．従って，既存のウインドウのリファレンスが値として戻るという事象は，事実上の仕様とは言えないと思います．もし，必ずそのような動作をするような設定があれば，お知らせ下さい．空なウインドウのリファレンスが値として戻る2台のサーバーに設定して，動作を確認したいと思います．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/4118/KGTN2018081302.pdf">KGTN2018081302.pdf</a>
-[(43.3 KB)] [kitasp 技術センター, 2018/10/04
+ [(43.3 KB)] [kitasp 技術センター, 2018/10/04
 09:40]</p>
 
                         </div>

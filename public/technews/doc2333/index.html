@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,24 +285,35 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2015/01/30*</p>
+
 <p>[番号]
 技術ノート KGTN 2015012901</p>
+
 <p>[現象]
 [GGW3.2.1/GGH4.X-5.X]
 ライセンス数を増やしたライセンスファイルのインストール手順は？</p>
+
 <p>[説明]
 以下の手順で，新しいライセンスファイルのインストールおよびサーバーの確認および再設定を行って下さい．</p>
+
 <p>１．ライセンスファイルの置き換え
 ライセンスサーバーにあるライセンスファイル license.lic
 を新しいライセンスファイルで置き換えて，サーバーを再起動して下さい．</p>
+
 <p>２．ライセンス数の確認
 ライセンスサーバーにある lmtools.exe を起動し， Server Status → Perform
 Status Enquiry
 を実行して，下記赤枠の部分のライセンス数が増えているかどうか確認して下さい．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/3000/KGTN2015012901-1.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3000/KGTN2015012901-1.jpg" alt="" /></p>
+
 <p>３．セッションの上限数の確認および再設定
 ライセンスサーバーを使用する 「すべての」
 GGサーバーのクラスタマネージャーを起動し， Tools → Host Options (Server
@@ -311,20 +322,28 @@ host の値 （そのGGサーバーのセッションの上限数）
 を確認して下さい．それらの値の合計が新しいライセンス数を下回る場合は，何れかのGGサーバーのMaximum
 sessions on this host
 の値を増やして，その合計がライセンス数と同じかまたはそれ以上になるようにして下さい．</p>
-<p><img src="http://techreport.kitasp.net/attachments/download/3001/KGTN2015012901-2.jpg" alt=""></p>
+
+<p><img src="http://techreport.kitasp.net/attachments/download/3001/KGTN2015012901-2.jpg" alt="" /></p>
+
 <p>注意：上記のスクリーンショットは WS2012R2 + GGH4.8.2
 の環境で撮ったものです．サーバーOSやGGのバージョンが異なる場合，画面のレイアウト等が若干異なる場合があります．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2999/KGTN2015012901.pdf">KGTN2015012901.pdf</a>
-[(101 KB)] [kitasp 技術センター, 2016/10/04
+ [(101 KB)] [kitasp 技術センター, 2016/10/04
 16:37]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3000/KGTN2015012901-1.jpg">KGTN2015012901-1.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3000/KGTN2015012901-1.jpg" title="表示">表示</a>
-[(10.9 KB)] [kitasp 技術センター, 2016/10/04
+ [(10.9 KB)] [kitasp 技術センター, 2016/10/04
 16:37]</p>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3001/KGTN2015012901-2.jpg">KGTN2015012901-2.jpg</a></p>
+
 <p><a href="http://techreport.kitasp.net/attachments/3001/KGTN2015012901-2.jpg" title="表示">表示</a>
-[(7.32 KB)] [kitasp 技術センター, 2016/10/04
+ [(7.32 KB)] [kitasp 技術センター, 2016/10/04
 16:37]</p>
 
                         </div>

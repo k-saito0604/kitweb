@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,36 +285,51 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2014/01/29*</p>
+
 <p>[番号]
 技術ノート KGTN 2013112101</p>
+
 <p>[現象]
 [Network] GGサーバに接続出来ないため調査で &ldquo;telnet
-&lt;GGサーバのIPアドレス&gt; 491&rdquo;
+<GGサーバのIPアドレス> 491&rdquo;
 を試すように言われたが，GGサーバにTelnetサービスをインストールしたくない．</p>
+
 <p>[説明]
 GGサーバにTelnetサービスをインストールする必要はありません．telnetクライアントは，Telnetプロトコル
 （RFC854で規定） で端末間で通信を行うため 「だけ」
 のツールと理解されているようですが， telnet コマンドは ping
 コマンドとともに，ネットワークの調査に使用する最も基本的なツールです．</p>
-<p>コマンド &ldquo;telnet &lt;GGサーバのIPアドレス&gt; 491&rdquo;
+
+<p>コマンド &ldquo;telnet <GGサーバのIPアドレス> 491&rdquo;
 を実行することで，TCP/IPレベルでGGサーバへの接続性の確認を行うことが出来ます．この方法はGGに限らず，他のプロトコルでも広く使用されています．マイクロソフト社の知識ベースにも
 telnet コマンドを使用した技術情報が多数あります．</p>
+
 <p><a href="http://support.microsoft.com/kb/187628/ja">http://support.microsoft.com/kb/187628/ja</a>
 Telnet を使用してポート 3389 の機能を確認する</p>
+
 <p><a href="http://support.microsoft.com/kb/189326/ja">http://support.microsoft.com/kb/189326/ja</a>
 Telnet を使用して IMAP の基本的な接続性を確認する方法</p>
+
 <p><a href="http://support.microsoft.com/kb/165186/JA">http://support.microsoft.com/kb/165186/JA</a>
 Telnet を使用して基本的な POP3 接続を確認する</p>
+
 <p><a href="http://support.microsoft.com/kb/196748/ja">http://support.microsoft.com/kb/196748/ja</a>
 Telnet を使用してインターネット メールの接続をテストする方法</p>
+
 <p><a href="http://support.microsoft.com/kb/153119/ja">http://support.microsoft.com/kb/153119/ja</a>
 SMTP 通信のテストのためにポート25にTelnet</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1413/KGTN2013112101.pdf">KGTN2013112101.pdf</a>
-[(61.1 KB)] [kitasp 技術センター, 2014/01/29
+ [(61.1 KB)] [kitasp 技術センター, 2014/01/29
 11:15]</p>
 
                         </div>

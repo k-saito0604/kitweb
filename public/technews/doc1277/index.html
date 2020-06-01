@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,27 +285,37 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2011/10/06*</p>
+
 <p>[番号]
 技術ノート KGTN 2011100601</p>
+
 <p>[現象]
 [GGH4.0]
 システム環境変数に新たな変数を追加したが，GGのセッション上にその変数が存在しない．</p>
+
 <p>[説明]
 システム環境変数の新規・編集・削除を行った場合は，サービス GO-Global
 Application Publishing Service
 を再起動するか，またはサーバの再起動を行ってください．この再起動の後に，新規・編集・削除の内容がGGの環境に反映されます．</p>
+
 <p>補　足
 GGW3.2.1では，サービス GO-Global Application Publishing Service
 の再起動やサーバの再起動は不要でした．しかし，このような処理を行うと
 logon.exe は変更前の環境変数を保持し，変更後に起動された pw.exe
 は変更後の環境変数を保持するという特殊な状況が発生します． GGH4.0
 では，システム環境変数の変更に当たって，一貫性やパフォーマンスの観点から，サービスやサーバの再起動を前提としました．</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/651/KGTN2011100601.pdf">KGTN2011100601.pdf</a>
-[(60.5 KB)] [kitasp 技術センター, 2011/10/06
+ [(60.5 KB)] [kitasp 技術センター, 2011/10/06
 11:42]</p>
 
                         </div>

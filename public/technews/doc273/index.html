@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,19 +285,26 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p><em>技術ノート
 2014/04/04</em></p>
+
 <p>[番号]
 技術ノート KGTN 2014032404</p>
+
 <p>[現象]
 [GGH4.X] UPD
 を使って印刷すると，ドキュメントの内容が用紙に収まらず切れてしまう．</p>
+
 <p>[説明]
 GGH4.8.1Patch1
 から，用紙印刷時のスケーリングを指定するオプションが追加されました．GGの設定ファイル
 HostProperties.xml を下記のようにプロパティを追加 （編集）
 することで，用紙に収まるようにスケーリングすることが出来ます．もしこの設定でも収まらない場合は，オフセットの値を調整して下さい．</p>
+
 <pre><code>　&lt;property id=&quot;EnablePrintOptions&quot; group=&quot;Miscellaneous&quot; type=&quot;BOOL&quot;&gt;
 　　&lt;value&gt;true&lt;/value&gt;
 　&lt;/property&gt;
@@ -305,9 +312,11 @@ HostProperties.xml を下記のようにプロパティを追加 （編集）
 　　&lt;value&gt;-printermargins -xoffset 50 -yoffset 30&lt;/value&gt;
 　&lt;/property&gt;
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/1645/KGTN2014032404.pdf">KGTN2014032404.pdf</a>
-[(135 KB)] [kitasp 技術センター, 2014/04/04
+ [(135 KB)] [kitasp 技術センター, 2014/04/04
 15:42]</p>
 
                         </div>

@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,23 +285,33 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2016/10/05*</p>
+
 <p>[番号]
 技術ノート KGTN 2016090501</p>
+
 <p>[現象]
 [GGH5.X/ExPack] 拡張パックの GGEasyMonitor の振分け機能で，
 の形式でユーザーIDを指定すると，多重ログオンの禁止機能が働かない．</p>
+
 <p>[説明]
 現在の GGEasyMonitor
 では，多重ログオンのチェックをユーザーIDのみをキーとして行っているため，</p>
+
 <p>の形式でユーザーIDが指定された場合，多重ログオンの禁止機能が働きません．GraphOn社が提供するAPIではセッションのドメイン名を得ることが出来ないため，多重ログオンのチェック時にドメイン名を無視する機能
 （ユーザーIDのみでチェックする機能） をバージョン 2.2.1
 で追加しました．この機能の設定項目は下記の通りで，既定値は YES です．</p>
+
 <pre><code>; cbkIgnoreDomain: 多重ログオンのチェック時にドメイン名を無視する (YES/NO)
 cbkIgnoreDomain = YES
 </code></pre>
+
 <p>補　足
 GraphOn社が提供するAPIではドメイン名を取得することは出来ませんが，別の方法としてセッション上で動作する
 GGEasyMonitorClientInfo.exe でドメイン名を取得し，その情報を
@@ -310,14 +320,19 @@ GGEasyMonitor
 GGEasyMonitorClientInfo.exe
 の設定ファイルで下記項目を指定して下さい．なお，この機能を指定した場合は，
 必ず cbkIgnoreDomain = NO を指定して下さい．</p>
+
 <pre><code>includeDomain = YES
 </code></pre>
+
 <p>この機能を有効にした場合，振分け機能ではドメイン指定が必須となりますので，ドメイン未指定時にドメインを自動的に付加する機能も併せて追加しました．この機能の設定項目は下記の通りです．</p>
+
 <pre><code>cbkDefaultDomain = &lt;ドメイン名&gt;
 </code></pre>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/3047/KGTN2016090501.pdf">KGTN2016090501.pdf</a>
-[(79.6 KB)] [kitasp 技術センター, 2016/10/05
+ [(79.6 KB)] [kitasp 技術センター, 2016/10/05
 11:06]</p>
 
                         </div>

@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,34 +285,55 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2016/08/01*</p>
+
 <p>[番号]
 技術ノート KGTN 2016071203</p>
+
 <p>[現象]
 [GGH4.X-5.X] メインとサブの２台の GGEasyMonitor
 を設置するが，メインで障害が発生した時に自動的にサブに切り替える方法は？</p>
+
 <p>[説明]
 GGEasyMonitor のバージョン 2.0.11 から画像 （ロゴ）
 を表示する機能が追加されましたので，この画像の読み込みの成否で死活チェックを行い，生きている
 GGEasyMonitor
 に振り分け処理を任せる方法で実現可能です．そのサンプルコードを以下に示します．なお，このファイル
 （logon.html） は，他のウエッブサーバー上に配置して下さい．</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+<p>&lt;!DOCTYPE html&gt;</p>
+
+<p><html>
+<head>
+<meta content="text/html;shift_jis" http-equiv="Content-Type">
+<title>Logon</title>
+<script language=javascript>
+var addrServer1 = &lsquo;192.168.102.89&rsquo;;
+var addrServer2 = &lsquo;192.168.102.98&rsquo;;
+var statusServer1 = false;
+var statusServer2 = false;</p>
+
 <p>　　 function updateServer(n,s) {
-var target = &lsquo;';
+var target = &ldquo;;
 var params = location.search;</p>
+
 <p>　　 params = params.substring(1);
 if(params.length == 0) {
 params = &lsquo;dummy=dummy&rsquo;;
 }</p>
+
 <p>　　 // 死活情報を更新
 switch(n) {
 　　 case 1:
 statusServer1 = s;
 break;</p>
+
 <p>　　 case 2:
 statusServer2 = s;
 break;
@@ -323,21 +344,22 @@ if((statusServer1 != false)&amp;&amp;(statusServer2 != false)) {
 if(statusServer1 == &lsquo;OK&rsquo;) {
 target = &lsquo;http://&rsquo; + addrServer1 + &lsquo;/goglobal/logon.html?host=&rsquo; +
 addrServer1 + &lsquo;&amp;&rsquo; + params;
-alert(&lsquo;Server1: ' + target)
+alert(&lsquo;Server1: &lsquo; + target)
 // location.href = target;
 }
 // サブサーバーへ接続可能？
 else if(statusServer2 == &lsquo;OK&rsquo;) {
 target = &lsquo;http://&rsquo; + addrServer2 + &lsquo;/goglobal/logon.html?host=&rsquo; +
 addrServer2 + &lsquo;&amp;&rsquo; + params;
-alert(&lsquo;Server2: ' + target)
+alert(&lsquo;Server2: &lsquo; + target)
 // location.href = target;
 }
 else {
-alert(&ldquo;アクセス可能なサーバーがありません。&quot;)
+alert(&ldquo;アクセス可能なサーバーがありません。&rdquo;)
 }
 }
 }</p>
+
 <p>　　 // サーバー１のイメージをロード
 var image1 = new Image(0,0);
 image1.onload = function myOnLoad() {
@@ -347,6 +369,7 @@ image1.onerror = function myOnError() {
 updateServer(1,&lsquo;NG&rsquo;);
 };
 image1.src = &lsquo;http://&rsquo; + addrServer1 + &lsquo;:8089/logo.jpg&rsquo;;</p>
+
 <p>　　 // サーバー２のイメージをロード
 var image2 = new Image(0,0);
 image2.onload = function myOnLoad() {
@@ -356,11 +379,16 @@ image2.onerror = function myOnError() {
 updateServer(2,&lsquo;NG&rsquo;);
 };
 image2.src = &lsquo;http://&rsquo; + addrServer2 + &lsquo;:8089/logo.jpg&rsquo;;
-<!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+</script>
+</head>
+<body>
+</body>
+</html></p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/2816/KGTN2016071203.pdf">KGTN2016071203.pdf</a>
-[(75 KB)] [kitasp 技術センター, 2016/08/01
+ [(75 KB)] [kitasp 技術センター, 2016/08/01
 13:26]</p>
 
                         </div>

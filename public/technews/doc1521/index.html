@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.69.0" />
+  <meta name="generator" content="Hugo 0.59.1" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,14 +285,21 @@
                         
                       
                         <div id="post-content">
-                          <hr>
+                          
+
+<hr />
+
 <p>*技術ノート</p>
+
 <p>2010/12/03*</p>
+
 <p>[番号]
 技術ノート KGTN 2010120304</p>
+
 <p>[現象]
 Windows Server 2003 の環境で 「カーネル メモリ ダンプ」
 を選択しているにも関わらず， 「完全メモリ ダンプ」が生成される．</p>
+
 <p>[説明]
 物理メモリを増設した場合， 「起動と回復のためのレジストリ値」
 CrashDumpEnabled
@@ -300,14 +307,17 @@ CrashDumpEnabled
 [デバッグ情報の書き込み]
 のダンプファイルの種類を再設定するだけでなく，下記の CrashDumpEnabled
 のレジストリ値も変更する必要があります．</p>
+
 <p>HKLM¥System¥CurrentControlSet¥Control¥CrashControl
 CrashDumpEnabled REG_DWORD 0x0 = 無し
 0x1 = 完全メモリ ダンプ
 0x2 = カーネル メモリ ダンプ
 0x3 = 最小目折り ダンプ (64 KB)</p>
+
 <h3 id="ファイル">ファイル</h3>
+
 <p><a href="http://techreport.kitasp.net/attachments/download/417/KGTN2010120304.pdf">KGTN2010120304.pdf</a>
-[(63.8 KB)] [kitasp 技術センター, 2010/12/03
+ [(63.8 KB)] [kitasp 技術センター, 2010/12/03
 14:52]</p>
 
                         </div>
