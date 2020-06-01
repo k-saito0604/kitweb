@@ -1,0 +1,52 @@
+{{ if isset .Site.Params "recent_posts" }}
+{{ if .Site.Params.recent_posts.enable }}
+<section class="bar background-white no-mb">
+    <div class="container">
+
+        <div class="col-md-12">
+            <div class="heading text-center">
+                <h4>{{ .Site.Params.recent_posts.title | markdownify }}</h4>
+            </div>
+            <p class="lead">
+              {{ .Site.Params.recent_posts.subtitle | markdownify }}
+            </p>
+            <!-- *** BLOG HOMEPAGE *** -->
+            <div class="row">
+                {{ $pposts := .Paginate (.Site.Taxonomies.categories.news) }}
+                {{ range first 5 $pposts.Pages }}
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="content">
+                        <div class="col-xl-2 col-md-2 col-sm-3">
+                            <p>{{ .Date.Format .Site.Params.date_format }}</p>
+                        </div>
+                        <div class="col-xl-2 col-md-2 col-sm-2">
+                            <div class="recent-posts-tag">
+                                <p>{{ index .Params.tags 0 }}</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-md-8 col-sm-10">
+                            <div class="recent-posts-title">
+                            <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+                        </div>
+                    </div>
+                    </div>
+                
+                    
+            </div>    
+                {{ end }}           
+            </div>
+                    <!-- /.box-image-text -->
+
+                
+                
+
+        </div>
+            <!-- /.row -->
+            <!-- *** BLOG HOMEPAGE END *** -->
+    </div>
+</div>
+    <!-- /.container -->
+</section>
+<!-- /.bar -->
+{{ end }}
+{{ end }}
