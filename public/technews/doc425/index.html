@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,24 +285,16 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2019/01/22*</p>
-
 <p>[番号]
 技術ノート KGTN 2018121301</p>
-
 <p>[現象]
 [GGH4.8-6.X]
 ソフトバンクで発生した通信障害は，エリクソン社の機器の証明書の期限切れだと言われているが，GGで同様の現象が発生する可能性はないのか？</p>
-
 <p>[説明]
 この件に関するGraphOn社の開発責任者のコメントは次の通りです：</p>
-
 <pre><code>The press release mentioned software with an expired certificate, but it’s not clear about what type of certificate
 expired and what led to the problem. I did not read anything that suggested GO-Global might have the same
 problem. GO-Global’s binaries are signed with a code-signing certificate that is valid at the time the product is built.
@@ -316,33 +308,23 @@ GO-Global のバイナリ （ソフトウエア） は，製品を作成した�
 コードサイニング証明書が後に期限切れになった時も，（タイムスタンプを設定して署名していますので） 証明書が有効な時
 と同様に機能します．つまり，コードサイニング証明書はバイナリの署名に使用する時点でのみ有効でなければなりません．
 </code></pre>
-
 <p>タイムスタンプについては，下記ページをご覧下さい．
 <a href="https://comodo.jp/support/codesign/dtl_49">https://comodo.jp/support/codesign/dtl_49</a></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/4231/KGTN2018121301-1.jpg" alt="" /></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/4232/KGTN2018121301-2.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/4231/KGTN2018121301-1.jpg" alt=""></p>
+<p><img src="http://techreport.kitasp.net/attachments/download/4232/KGTN2018121301-2.jpg" alt=""></p>
 <p>GO-Global
 のバイナリにはタイムスタンプ（副署名）が設定されているため，署名に使用したコードサイニング証明書が期限切れになった後も機能します．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4230/KGTN2018121301.pdf">KGTN2018121301.pdf</a>
- [(162 KB)] [kitasp 技術センター, 2019/01/22
+[(162 KB)] [kitasp 技術センター, 2019/01/22
 10:56]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4231/KGTN2018121301-1.jpg">KGTN2018121301-1.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/4231/KGTN2018121301-1.jpg" title="表示">表示</a>
- [(30.9 KB)] [kitasp 技術センター, 2019/01/22
+[(30.9 KB)] [kitasp 技術センター, 2019/01/22
 10:56]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4232/KGTN2018121301-2.jpg">KGTN2018121301-2.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/4232/KGTN2018121301-2.jpg" title="表示">表示</a>
- [(13.9 KB)] [kitasp 技術センター, 2019/01/22
+[(13.9 KB)] [kitasp 技術センター, 2019/01/22
 10:56]</p>
 
                         </div>

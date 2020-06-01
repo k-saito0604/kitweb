@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,26 +285,18 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2017/10/10*</p>
-
 <p>[番号]
 技術ノート KGTN 2017090601</p>
-
 <p>[現象]
 [GGH5.1] HTML5クライアントの通信のプロトコルは？</p>
-
 <p>[説明]
 HTML5クライアントの通信プロトコルは RXP over HTTP で，より正確に言えば，
 RXP over WebSocket protocol (ws://) です．暗号化は，この RXP
 プロトコル上で 56-bit DES または SSL
 で行われます．詳細については，下記説明をご覧ください．</p>
-
 <pre><code>The default protocol for the HTML5 client is RXP over HTTP. This is true, but it's a bit more accurate to say
 it’s RXP over WebSocket protocol (ws://). By default, GO-Global hosts are configured to use the TCP
 Transport with 56-bit DES encryption. In this default configuration, the WebSocket packets transmitted
@@ -318,11 +310,9 @@ When the Secure WebSocket (wss://) protocol is specified, the client then opens 
 connection to the specified port on the GO-Global host. In this case both the WebSocket packets and the
 RXP payloads are encrypted using OpenSSL and the cipher that is selected in the Cluster Manager.
 </code></pre>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3822/KGTN2017090601.pdf">KGTN2017090601.pdf</a>
- [(32.6 KB)] [kitasp 技術センター, 2017/10/10
+[(32.6 KB)] [kitasp 技術センター, 2017/10/10
 10:51]</p>
 
                         </div>

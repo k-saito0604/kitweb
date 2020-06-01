@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,48 +285,33 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2013/02/22*</p>
-
 <p>[番号]
 技術ノート KGTN 2013022202</p>
-
 <p>[現象]
 [GGW3.2.1/GGH4.X-5.X] 64bit版Windows
 の環境でGGクライアントのレジストリの値を変更したい．</p>
-
 <p>[説明]
 GGクライアントは32bitアプリケーションで，64bit版Windows
 の環境で実行される場合は， 「WOW64 レジストリ リダイレクタの働きで」
 次のレジストリの下に対応付けられます．</p>
-
 <p>HKEY_LOCAL_MACHINESoftwareWOW6432Node</p>
-
 <p>例えば，32bitアプリケーションのGGクライアントが</p>
-
 <p>HKEY_LOCAL_MACHINESoftwareGraphOnGO-Global
 ClientPluginsPath REG_SZ &hellip;</p>
-
 <p>へアクセスした場合は，WOW64レジストリ リダイレクタの働きで，</p>
-
 <p>HKEY_LOCAL_MACHINESOFTWAREWow6432NodeGraphonGO-Global
 ClientPluginsPath REG_SZ &hellip;</p>
-
 <p>をアクセスすることになります．従って，レジストリエディタ
 （デフォルトの64bitバージョンのレジストリエディタ）
 を使用する場合は，この実際にアクセスするキーを操作して下さい．なお，32bitバージョンのレジストリエディタ
 systemrootsyswow64regedit.exe
 を使用する場合は，32bit版Windowsの環境の場合と同様です．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2491/KGTN2013022202.pdf">KGTN2013022202.pdf</a>
- [(61 KB)] [kitasp 技術センター, 2016/03/11
+[(61 KB)] [kitasp 技術センター, 2016/03/11
 15:20]</p>
 
                         </div>

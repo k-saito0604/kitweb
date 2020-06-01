@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,69 +285,52 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2016/08/26*</p>
-
 <p>[番号]
 技術ノート KGTN 2016081903</p>
-
 <p>[現象]
 [GGH5.X/ExPack] 拡張パックの GGEasyMonitor
 をバージョン2.1.Xから2.2.Xへアップグレードする手順は？</p>
-
 <p>[説明]
 GGEasyMonitor
 バージョン2.1.Xから2.2.Xへのアップグレードの手順は，次の通りです．</p>
-
 <ol>
 <li>設定ファイル GGEasyMonitor.ini のバックアップ</li>
-<li>スタートメニューの &ldquo;2) サービスを停止&rdquo;の実行</li>
-<li>スタートメニューの &ldquo;6) アンインストール&rdquo;の実行</li>
+<li>スタートメニューの &ldquo;2) サービスを停止&quot;の実行</li>
+<li>スタートメニューの &ldquo;6) アンインストール&quot;の実行</li>
 <li>バージョン2.2.X のインストール</li>
 <li>バックアップした設定ファイル GGEasyMonitor.ini のコピー （復元）</li>
 <li>下記の設定作業 （クライアント情報の採取関連の設定） の実行</li>
-<li>スタートメニューの &ldquo;1) サービスを開始&rdquo;の実行</li>
+<li>スタートメニューの &ldquo;1) サービスを開始&quot;の実行</li>
 </ol>
-
 <p>[設定作業：GGの設定ファイルの修正]
 サーバー側から見たクライアントのIPアドレスを得るため，
 HostProperties.xml　の下記の項目に true
 を設定して下さい．なお，この作業はサービス GGAPS
 を停止した状態で行って下さい．</p>
-
 <pre><code>&lt;property id=&quot;NetworkAddressEnvVarEnabled&quot; group=&quot;ClientAccess&quot; type=&quot;BOOL&quot;&gt;
 &lt;value&gt;true&lt;/value&gt;
 &lt;/property&gt;
 </code></pre>
-
 <p>[設定作業：グローバル・ログオンスクリプトの登録]
 クライアントの情報を取得し，それらの情報を作業ファイル
 （GGEasyMonitorClientInfo-Data.ini） に記録するため， logon-gem-ci.bat
 をグローバル・ログオンスクリプトとして登録して下さい．次に，管理者権限で
 GGEasyMonitor-Files.bat
 を実行し，作業ファイルに必要なアクセス権を設定して下さい．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3010/KGTN2016081903.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3010/KGTN2016081903.jpg" alt=""></p>
 <p>補　足
 GGEasyMonitor
 バージョン2.2.Xで追加された主なファイルおよびリリースノートは次の通りです．</p>
-
-<hr />
-
+<hr>
 <p>GGEasyMonitorClientInfo.exe        クライアントの情報を採取するプログラム
-  GGEasyMonitorClientInfo.ini        クライアントの情報を採取するプログラムの設定ファイル
-  GGEasyMonitorClientInfo-Data.ini   クライアントの情報を保持する作業ファイル
-  logon-gem-ci.bat                   GGEasyMonitorClient.exe を起動するログオンスクリプト
-  logon-gem-ci.vbs                   GGEasyMonitorClient.exe を起動するログオンスクリプトの本体</p>
-
-<hr />
-
+GGEasyMonitorClientInfo.ini        クライアントの情報を採取するプログラムの設定ファイル
+GGEasyMonitorClientInfo-Data.ini   クライアントの情報を保持する作業ファイル
+logon-gem-ci.bat                   GGEasyMonitorClient.exe を起動するログオンスクリプト
+logon-gem-ci.vbs                   GGEasyMonitorClient.exe を起動するログオンスクリプトの本体</p>
+<hr>
 <pre><code>[2016-09-08: 2.2.2]
 * ドメイン名付のユーザーID を管理する機能を追加しました．
 ファイル GGEasyMonitorClientInfo.ini で &quot;includeDomain = YES&quot; を指
@@ -383,17 +366,13 @@ cbkIgnoreDomain = YES
 らの情報が非表示で構わない場合は，ログオン時の&quot;logon-gem-ci.bat&quot;の
 起動は不要です．(技術ノート KGTN#2016081903 を参照）
 </code></pre>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3009/KGTN2016081903.pdf">KGTN2016081903.pdf</a>
- [(123 KB)] [kitasp 技術センター, 2016/10/04
+[(123 KB)] [kitasp 技術センター, 2016/10/04
 17:29]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3010/KGTN2016081903.jpg">KGTN2016081903.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3010/KGTN2016081903.jpg" title="表示">表示</a>
- [(11 KB)] [kitasp 技術センター, 2016/10/04
+[(11 KB)] [kitasp 技術センター, 2016/10/04
 17:29]</p>
 
                         </div>

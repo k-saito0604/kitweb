@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,23 +285,15 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2014/01/29*</p>
-
 <p>[番号]
 技術ノート KGTN 2013120901</p>
-
 <p>[現象]
 [DEV] MFCの環境でダイアログを非表示で起動する方法は？</p>
-
 <p>[説明]
 下記のコードを参考にして下さい．</p>
-
 <pre><code>// WM_WINDOWPOSCHANGING イベントハンドラを追加する。
 void CXXXDlg::OnWindowPosChanging(WINDOWPOS* lpwndpos)
 {
@@ -309,14 +301,11 @@ void CXXXDlg::OnWindowPosChanging(WINDOWPOS* lpwndpos)
     lpwndpos-&gt;flags &amp;= ~SWP_SHOWWINDOW;
 }
 </code></pre>
-
 <p><a href="http://www.rakuchinn.jp/programming/mfc_0023.html">http://www.rakuchinn.jp/programming/mfc_0023.html</a>
 <a href="http://hpcgi1.nifty.com/MADIA/Vcbbs/wwwlng.cgi?print+200210/02100008.txt">http://hpcgi1.nifty.com/MADIA/Vcbbs/wwwlng.cgi?print+200210/02100008.txt</a></p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1449/KGTN2013120901.pdf">KGTN2013120901.pdf</a>
- [(58.4 KB)] [kitasp 技術センター, 2014/01/29
+[(58.4 KB)] [kitasp 技術センター, 2014/01/29
 14:11]</p>
 
                         </div>

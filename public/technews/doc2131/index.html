@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,122 +285,83 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2017/04/07*</p>
-
 <p>[番号]
 技術ノート KGTN 2017033101</p>
-
 <p>[現象]
 [GGH5.X/SSL] Let&rsquo;s Encrypt のSSL証明書をGGサーバーで利用したい．</p>
-
 <p>[説明]
 先ず，下記ページを参考にして， IIS で Let&rsquo;s Encrypt
 のSSL証明書が動作することを確認してください．</p>
-
 <p>IIS で Let&rsquo;s Encrypt を利用してSSLサイトを構築する
 (letsencrypt-win-simple クライアントを利用)
 <a href="https://www.ipentec.com/document/document.aspx?page=software-iis-ssl-certificate-using-lets-encrypt&amp;culture=ja-jp">https://www.ipentec.com/document/document.aspx?page=software-iis-ssl-certificate-using-lets-encrypt&amp;culture=ja-jp</a></p>
-
 <p>証明書のフォルダーを開きます．この例では，GGサーバーのホスト名を
 isumi-aps.gray-cloud.com としています．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3480/KGTN2017033101-1.jpg" alt="" /></p>
-
-<p><STEP#1>
+<p><img src="http://techreport.kitasp.net/attachments/download/3480/KGTN2017033101-1.jpg" alt=""></p>
+<p>&lt;STEP#1&gt;
 C:kitASP というフォルダー （他のフォルダー名でも構いません）
 を作成し，次のファイルをコピーします．</p>
-
 <p>ca-???-crt.pem
 isumi-aps.gray-cloud.com-crt.pem
 isumi-aps.gray-cloud.com-key.pem</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3481/KGTN2017033101-2.jpg" alt="" /></p>
-
-<p><STEP#2>
+<p><img src="http://techreport.kitasp.net/attachments/download/3481/KGTN2017033101-2.jpg" alt=""></p>
+<p>&lt;STEP#2&gt;
 管理者権限のコマンドプロンプトで次のコマンド （crtファイルの結合）
 を実行します．
 copy isumi-aps.gray-cloud.com-crt.pem+ca-???-crt.pem server.crt</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3482/KGTN2017033101-3.jpg" alt="" /></p>
-
-<p><STEP#3>
+<p><img src="http://techreport.kitasp.net/attachments/download/3482/KGTN2017033101-3.jpg" alt=""></p>
+<p>&lt;STEP#3&gt;
 ファイル isumi-aps.gray-cloud.com-key.pem をコピーし， server.key
 へリネームします．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3483/KGTN2017033101-4.jpg" alt="" /></p>
-
-<p><STEP#4>
+<p><img src="http://techreport.kitasp.net/attachments/download/3483/KGTN2017033101-4.jpg" alt=""></p>
+<p>&lt;STEP#4&gt;
 クラスターマネージャー → [Security] → [Connections] で，
 [Transport] を SSL に設定， [SSL Certificate] で証明書ファイル
 server.crt を指定，最後に [Notify users when connections are secure]
 にチェックを入れます．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3484/KGTN2017033101-5.jpg" alt="" /></p>
-
-<p><STEP#5>
+<p><img src="http://techreport.kitasp.net/attachments/download/3484/KGTN2017033101-5.jpg" alt=""></p>
+<p>&lt;STEP#5&gt;
 サービス GGAPS を再起動します．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3485/KGTN2017033101-6.jpg" alt="" /></p>
-
-<p><STEP#6>
+<p><img src="http://techreport.kitasp.net/attachments/download/3485/KGTN2017033101-6.jpg" alt=""></p>
+<p>&lt;STEP#6&gt;
 操作や設定に誤りがなければ，GGクライアントからGGサーバーにアクセスすると，次のダイアログ
 （通信がセキュアという情報） が表示されます． [OK]
 をクリックすると，SSL通信でGGを利用することができます．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3486/KGTN2017033101-7.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3486/KGTN2017033101-7.jpg" alt=""></p>
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3479/KGTN2017033101.pdf">KGTN2017033101.pdf</a>
- [(1.23 MB)] [kitasp 技術センター, 2017/04/27
+[(1.23 MB)] [kitasp 技術センター, 2017/04/27
 17:45]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3480/KGTN2017033101-1.jpg">KGTN2017033101-1.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3480/KGTN2017033101-1.jpg" title="表示">表示</a>
- [(14.9 KB)] [kitasp 技術センター, 2017/04/27
+[(14.9 KB)] [kitasp 技術センター, 2017/04/27
 17:45]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3481/KGTN2017033101-2.jpg">KGTN2017033101-2.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3481/KGTN2017033101-2.jpg" title="表示">表示</a>
- [(10.4 KB)] [kitasp 技術センター, 2017/04/27
+[(10.4 KB)] [kitasp 技術センター, 2017/04/27
 17:45]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3482/KGTN2017033101-3.jpg">KGTN2017033101-3.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3482/KGTN2017033101-3.jpg" title="表示">表示</a>
- [(7.59 KB)] [kitasp 技術センター, 2017/04/27
+[(7.59 KB)] [kitasp 技術センター, 2017/04/27
 17:46]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3483/KGTN2017033101-4.jpg">KGTN2017033101-4.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3483/KGTN2017033101-4.jpg" title="表示">表示</a>
- [(11.4 KB)] [kitasp 技術センター, 2017/04/27
+[(11.4 KB)] [kitasp 技術センター, 2017/04/27
 17:46]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3484/KGTN2017033101-5.jpg">KGTN2017033101-5.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3484/KGTN2017033101-5.jpg" title="表示">表示</a>
- [(12.2 KB)] [kitasp 技術センター, 2017/04/27
+[(12.2 KB)] [kitasp 技術センター, 2017/04/27
 17:46]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3485/KGTN2017033101-6.jpg">KGTN2017033101-6.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3485/KGTN2017033101-6.jpg" title="表示">表示</a>
- [(17.6 KB)] [kitasp 技術センター, 2017/04/27
+[(17.6 KB)] [kitasp 技術センター, 2017/04/27
 17:46]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3486/KGTN2017033101-7.jpg">KGTN2017033101-7.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3486/KGTN2017033101-7.jpg" title="表示">表示</a>
- [(5.16 KB)] [kitasp 技術センター, 2017/04/27
+[(5.16 KB)] [kitasp 技術センター, 2017/04/27
 17:46]</p>
 
                         </div>

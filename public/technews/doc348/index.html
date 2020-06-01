@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,31 +285,23 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2010/10/14*</p>
-
 <p>[番号]
 技術ノート KGTN 2010101402</p>
-
 <p>[現象]
 [GGW3.2.1/GGH4.X-6.X]
 プログラム・ウインドウの背景色・文字色・ウインドウの状態をログオン時に設定したい．</p>
-
 <p>[説明]
 ログオンスクリプトで，レジストリを直接編集することでプログラム・ウインドウの背景色・文字色・ウインドウの状態を設定することが出来ますが，拡張パックに含まれるプログラム
 GGPwTool でも簡単に設定することが出来ます．GGPwTool
 の設定情報は，下記のように全体設定と個別設定の２つの設定情報があり，個別の設定情報の値が優先します．</p>
-
-<p>1) ALLUSERSPROFILEGraphOnGGPwTool.ini （全体設定）
-2) USERPROFILEApplication DataGGPwTool.ini （個別設定）</p>
-
+<ol>
+<li>ALLUSERSPROFILEGraphOnGGPwTool.ini （全体設定）</li>
+<li>USERPROFILEApplication DataGGPwTool.ini （個別設定）</li>
+</ol>
 <p>GGPwTool.ini 中で設定できる項目は，以下の通りです．</p>
-
 <p>[default]
 LV_ColorBackground=#804000　　← 背景色
 LV_ColorForeground=#FFFFFF　　← 文字色
@@ -319,17 +311,13 @@ LV_StylesBasic=#50000101　　　← アイコンの状態（#50000100 = Large,
 #50000102 = Small,
 　　　　　　　　　　　　　　　　　　　#50000101 = Details, #50000104 =
 List）</p>
-
 <p>GGPwTool は，以下のようにログオンスクリプトから起動して下さい．</p>
-
 <p>echo off
 C:GraphOnBINGGPwTool.exe
 exit</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4244/KGTN2010101402.pdf">KGTN2010101402.pdf</a>
- [(47.8 KB)] [kitasp 技術センター, 2019/04/25
+[(47.8 KB)] [kitasp 技術センター, 2019/04/25
 18:02]</p>
 
                         </div>

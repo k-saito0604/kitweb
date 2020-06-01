@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,79 +285,57 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2017/06/28*</p>
-
 <p>[番号]
 技術ノート KGTN 2017061301</p>
-
 <p>[現象]
 [GGH4.X-5.X] GGEasyUDPCheck とはどんなツールなのか？</p>
-
 <p>[説明]
 クラスターマネージャーの左側に表示されるサーバー一覧 （GO-Global Hosts）
 は，各GGサーバーが送信する UDP:491
 のメッセージをクラスターマネージャーが受信した時に表示されます．この一覧にGGサーバーが表示されない場合は，Windowsファイアウォール等で
 UDP:491 がブロックされていることが考えられますので，このツールを利用して
 UDP:491 の受信状況 （到達状況） を確認してください．</p>
-
 <p>通常はコマンドプロンプトで &ldquo;GGEasyUDPCheck&rdquo;
 と入力することで利用できますが，必要に応じて設定ファイル
 GGEasyUDPCheck.ini の default
 セクションで，以下のパラメタを設定して下さい．</p>
-
-<hr />
-
+<hr>
 <p>設定項目                      説　明
-     logd                  ログの出力フォルダ
-   logLevel             ログ出力レベル （1～9）
-   rxpPort       GGサーバーのポート番号 （既定値：491）
-   interval            計測時間 （既定値：30秒）
-   pvSleep    受信処理のスリープ時間 （既定値：500ミリ秒）</p>
-
-<hr />
-
+logd                  ログの出力フォルダ
+logLevel             ログ出力レベル （1～9）
+rxpPort       GGサーバーのポート番号 （既定値：491）
+interval            計測時間 （既定値：30秒）
+pvSleep    受信処理のスリープ時間 （既定値：500ミリ秒）</p>
+<hr>
 <p>さらに設定項目は，下記の引数で上書きすることも出来ます．</p>
-
-<hr />
-
+<hr>
 <pre><code>引　数             説　明
 </code></pre>
-
 <p>-logLevel       ログ出力レベル
-   -rxpPort    GGサーバーのポート番号
-   -interval          計測時間</p>
-
-<hr />
-
+-rxpPort    GGサーバーのポート番号
+-interval          計測時間</p>
+<hr>
 <p>画面およびログファイルには，次のような受信情報が記録されます．</p>
-
 <pre><code>[2017-06-13 12:45:08] Name = DESKTOP-P7UNP59, Addr = 192.168.1.160
 [2017-06-13 12:45:09] Name = WS2012R2-Isumi1, Addr = 192.168.1.63
 …
 ※ Name = &lt;受信したGG サーバーの名前&gt;
 ※ Addr = &lt;受信したGG サーバーのIP アドレス&gt;
 </code></pre>
-
 <p>計測時間を経過すると受信処理は終了し，次のようなサマリー情報
 （重複を排除しGGサーバーの名前でソート） が表示されます．</p>
-
 <pre><code>[2017-06-13 12:45:23] --- Summary ---
 [2017-06-13 12:45:23] [1] Name = DESKTOP-P7UNP59, Addr = 192.168.1.160 (10)
 [2017-06-13 12:45:23] [2] Name = WS2012R2-Isumi1, Addr = 192.168.1.63 (10)
 [2017-06-13 12:45:23] --- End ---
 ※ 括弧内の数値は受信した回数
 </code></pre>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3723/KGTN2017061301.pdf">KGTN2017061301.pdf</a>
- [(59.9 KB)] [kitasp 技術センター, 2017/06/28
+[(59.9 KB)] [kitasp 技術センター, 2017/06/28
 15:28]</p>
 
                         </div>

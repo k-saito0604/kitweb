@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,35 +285,25 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2016/08/25*</p>
-
 <p>[番号]
 技術ノート KGTN 2016081702</p>
-
 <p>[現象]
 [GGH5.X/ExPack] 拡張パックの GGEasyMonitor
 が設定したポート番号で待ち受けているかどうか確認する方法は？</p>
-
 <p>[説明]
 次の内容のバッチファイルを作成し，管理者のコマンドプロンプトで実行して下さい．</p>
-
 <pre><code>netstat -oan &gt; result.txt
 tasklist &gt;&gt; result.txt
 </code></pre>
-
 <p>実行結果は result.txt に記録されますので，その内容で GGEasyMonitor.exe
 の待受けポートを知ることが出来ます．下記の例では， GGEasyMonitor.exe
 のPIDが 1972 で，アクティブな接続のうち状態がLISTENING （待受け） かつ
 PID = 1972 のポート番号は 8080, 8089, 8491
 であることを示しています．このことから， GGEasyMonitor がポート番号
 8080, 8089, 8491 で接続を待っていることが分かります．</p>
-
 <pre><code>アクティブな接続
 プロトコル ローカル アドレス 外部アドレス 　　状態 　　　　PID
 TCP 　　　0.0.0.0:80 　　　0.0.0.0:0 　　LISTENING 　4
@@ -335,11 +325,9 @@ System Idle Process 　　　　　　　0 　Services 　　　　　　　　�
 （途中省略）
 GGEasyMonitor.exe 　　　　　　 1972 　Services 　　　　　　　　　　0 　46,760 K
 </code></pre>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2954/KGTN2016081702.pdf">KGTN2016081702.pdf</a>
- [(72.7 KB)] [kitasp 技術センター, 2016/08/25
+[(72.7 KB)] [kitasp 技術センター, 2016/08/25
 17:31]</p>
 
                         </div>

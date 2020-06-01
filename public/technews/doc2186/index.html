@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,20 +285,13 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2016/06/17*</p>
-
 <p>[番号]
 技術ノート KGTN 2016060902</p>
-
 <p>[現象]
 [GGH5.X] ブラウザで YouTube 等の動画を見たい．</p>
-
 <p>[説明]
 GGの通信プロトコル Rapid-X
 は，サーバーとクライアント間の送受信データを高い効率で圧縮/伸張するようになっております．通常のアプリケーションでは，この圧縮/伸張機能が上手く働き，多くのユーザー
@@ -306,17 +299,13 @@ GGの通信プロトコル Rapid-X
 が十分なパフォーマンスで動作することが出来ます．動画を表示するアプリケーションでは，大量のデータが遅延なく送受信される必要がありますが，
 Rapid-X
 の下ではその大量のデータに対しても圧縮/伸張機能が働くため，CPU負荷が高まるとともに，処理時間による遅延も発生します．</p>
-
 <p>このような技術的な背景により，現時点で最新のGGH5.0では，ビデオストリーミング機能はサポートしておりません．GraphOn社にこの機能の要望が既に届いており，将来のバージョンでのサポートを検討している状況です
 （Rapid-X のプロトコルを拡張することになると思われます） ．</p>
-
 <pre><code>We have a feature request (ECR 16059) to fully support video streaming to be considered for a future
 release of the product.
 </code></pre>
-
 <p>参　考
 GraphOn社より，下記の設定を現行製品に適用することでビデオ表示のパフォーマンスが向上するという情報が入りました．この設定に加え，色深度を16ビットにすることでパフォーマンスが向上したという報告があります．</p>
-
 <pre><code>With the current product, the following configuration changes will provide the best performance for video:
 Add the following registry values:
 HKLMSOFTWAREGraphOnGO-GlobalAppServerClientOffscreenSurfaces = 0
@@ -326,11 +315,9 @@ Make the following changes in the HostProperties.xml file:
 ClientProcessingBatch = 1
 ClientProcessingThrottleV2 = 1
 </code></pre>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3279/KGTN2016060902.pdf">KGTN2016060902.pdf</a>
- [(87.5 KB)] [kitasp 技術センター, 2017/04/07
+[(87.5 KB)] [kitasp 技術センター, 2017/04/07
 11:25]</p>
 
                         </div>

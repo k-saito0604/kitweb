@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,27 +285,19 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2010/10/05*</p>
-
 <p>[番号]
 技術ノート KGTN 2010093001</p>
-
 <p>[現象]
 Windows Server 2008 をインストールして Windows Update
 を適用しようとすると，エラーメッセージ「0x80070003」　が表示される．</p>
-
 <p>[説明]
 マイクロソフト社の知識ベース KB956705によると，原因は
 「この問題は、コンピュータの Windows Update
 データベースが更新プログラムのデータベース命令と矛盾する場合に発生することがあります」
 とのことです．この情報および関連する情報によると，以下のコマンドを実行することでこの問題は解消するようです．</p>
-
 <p>net stop wuauserv
 cd %systemroot%¥SoftwareDistribution
 ren Download Download.old
@@ -313,22 +305,18 @@ cd DataStore
 ren Logs Logs.old
 del DataStore.edb
 net start wuauserv</p>
-
 <p>備考１
 上記のコマンドを実行してもエラーが発生した場合は，
 「サーバを再起動して」 改めて Windows Update を適用して下さい．</p>
-
 <p>備考２
 この現象が発生するパターンは， Windows Update を適用している最中に，
 「時間がかかる」 「Windows Update の画面が消えた」
 等の理由で，繰り返して Windows Update を適用したケースが多いようです．
 「時間がかかる」 「Windows Update の画面が消えた」
 という状況でも，しばらく待つことを強くお勧めします．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/342/KGTN2010093001.pdf">KGTN2010093001.pdf</a>
- [(64.4 KB)] [kitasp 技術センター, 2010/10/06
+[(64.4 KB)] [kitasp 技術センター, 2010/10/06
 08:58]</p>
 
                         </div>

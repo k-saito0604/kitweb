@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,39 +285,30 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2012/03/01*</p>
-
 <p>[番号]
 技術ノート KGTN 2012030101</p>
-
 <p>[現象]
 [GGW3.2.1] クライアント印刷機能利用時に，サーバが 「印刷完了」
 と認識するタイミングはいつなのか？</p>
-
 <p>[説明]
 GGW3.2.1のクライアント印刷機能は同期方式で実装されていますので，以下の処理が完了した時点で，
 「サーバ上での印刷完了」 となります．</p>
-
-<p>1) サーバ側での印刷ジョブの生成 （スプールファイルの作成）
-2) スプールファイルをメモリ上で圧縮
-3) 圧縮されたスプールファイルをクライアント側へ転送
-4) 圧縮されたスプールファイルをメモリ上で伸張
-5) スプールファイルを印刷ジョブ （クライアント側） として投入</p>
-
+<ol>
+<li>サーバ側での印刷ジョブの生成 （スプールファイルの作成）</li>
+<li>スプールファイルをメモリ上で圧縮</li>
+<li>圧縮されたスプールファイルをクライアント側へ転送</li>
+<li>圧縮されたスプールファイルをメモリ上で伸張</li>
+<li>スプールファイルを印刷ジョブ （クライアント側） として投入</li>
+</ol>
 <p>なおGGH4.X-5.X の場合は， Windows Printer Driver については非同期方式，
 Universal Printer Driver についてはGGW3.2.1
 と同様の同期方式でクライアント印刷処理が行われます．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2514/KGTN2012030101.pdf">KGTN2012030101.pdf</a>
- [(59.6 KB)] [kitasp 技術センター, 2016/04/08
+[(59.6 KB)] [kitasp 技術センター, 2016/04/08
 17:15]</p>
 
                         </div>

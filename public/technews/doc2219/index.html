@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,25 +285,17 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2016/12/14*</p>
-
 <p>[番号]
 技術ノート KGTN 2016113002</p>
-
 <p>[現象]
 [Windows/PowerShell] PowerShell
 でパスワード入力のダイアログの表示無しに，リモートコンピューターに接続
 （Enter-PSSession） する方法を知りたい．</p>
-
 <p>[説明]
 以下のスクリプトでパスワード入力のダイアログの表示無しに，リモートコンピューターに接続することが出来ます．</p>
-
 <pre><code># 引数のチェック
 if($Args.Length -ne 3)
 {
@@ -317,11 +309,9 @@ $password = ConvertTo-SecureString $argPass -AsPlainText -Force
 $cred= New-Object System.Management.Automation.PSCredential($argUser,$password)
 Enter-PSSession $argHost -Credential $cred
 </code></pre>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3186/KGTN2016113002.pdf">KGTN2016113002.pdf</a>
- [(58.7 KB)] [kitasp 技術センター, 2016/12/14
+[(58.7 KB)] [kitasp 技術センター, 2016/12/14
 17:52]</p>
 
                         </div>

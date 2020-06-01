@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,52 +285,39 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2012/02/14*</p>
-
 <p>[番号]
 技術ノート KGTN 2012021501</p>
-
 <p>[現象]
 [GGH4.X-5.X] 設定ファイルHostProperties.xml 中のQuantizeSwitch
 の機能と値を知りたい．</p>
-
 <p>[説明]
 この項目は，イメージ圧縮機能を 「サーバ単位に」
 設定したい時に使用します．サーバ側の設定とクライアント側の設定に依存してイメージ圧縮機能が設定され，その詳細は以下の通りです．</p>
-
-<hr />
-
+<hr>
 <pre><code>     サーバ側の設定          クライアント側の設定   イメージ圧縮機能
    QuantizeSwitch = 0            -mx 32 -qt 0             無効
    QuantizeSwitch = 0               -mx 32                無効
    QuantizeSwitch = 1            -mx 32 -qt 0             有効
    QuantizeSwitch = 1               -mx 32                有効
 </code></pre>
-
 <p>QuantizeSwitch = 4294967295       -mx 32 -qt 0             無効
-   QuantizeSwitch = 4294967295          -mx 32                有効</p>
-
-<hr />
-
+QuantizeSwitch = 4294967295          -mx 32                有効</p>
+<hr>
 <p>この内容をまとめると，以下のようになります．</p>
-
-<p>1) QuantizeSwitch = 0
-の時，クライアントのイメージ圧縮の設定によらず無効．
-2) QuantizeSwitch = 1
-の時，クライアントのイメージ圧縮の設定によらず有効．
-3) QuantizeSwitch = 4294967295
-の時，クライアントのイメージ圧縮の設定に従う．</p>
-
+<ol>
+<li>QuantizeSwitch = 0
+の時，クライアントのイメージ圧縮の設定によらず無効．</li>
+<li>QuantizeSwitch = 1
+の時，クライアントのイメージ圧縮の設定によらず有効．</li>
+<li>QuantizeSwitch = 4294967295
+の時，クライアントのイメージ圧縮の設定に従う．</li>
+</ol>
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2918/KGTN2012021501.pdf">KGTN2012021501.pdf</a>
- [(62.9 KB)] [kitasp 技術センター, 2016/08/25
+[(62.9 KB)] [kitasp 技術センター, 2016/08/25
 15:13]</p>
 
                         </div>

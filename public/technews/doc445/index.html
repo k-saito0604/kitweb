@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,41 +285,29 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2014/01/29*</p>
-
 <p>[番号]
 技術ノート KGTN 2013121104</p>
-
 <p>[現象]
 [GGW3.2.1]
 GGW3.2.1の環境で，アプリケーションの起動と終了でどのような記録がAPSログに残るのか？</p>
-
 <p>[説明]
 以下に，メモ帳の起動と終了で記録されるログのサンプルを示します．</p>
-
 <pre><code>14:12:30.098 Administrator on server, aps (3876) Process #2916 (notepad.exe) started in session &quot;Administrator on server&quot;.
 14:12:32.223 Administrator on server, pw (1112) Launched &quot;Notepad.&quot; 
 
 14:13:13.973 Administrator on server, notepad (3876) CS: Application disconnected.
 14:13:24.239 Administrator on server, aps (3876) Process #2916 (notepad.exe) stopped in session &quot;Administrator on server&quot;.
 </code></pre>
-
 <p>メモ帳を起動した時に，以下のように失敗の記録が残る場合は，環境等に問題があります．</p>
-
 <pre><code>09:41:49.281 Administrator on server, pw (5108) Launched &quot;Notepad.&quot; 
 09:42:36.328 Administrator on server, pw (5108) Failed to assess if launch request for &quot;Notepad,&quot; process handle 0x00000360, is pending (code 3/WLE0).
 </code></pre>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1455/KGTN2013121104.pdf">KGTN2013121104.pdf</a>
- [(53.9 KB)] [kitasp 技術センター, 2014/01/29
+[(53.9 KB)] [kitasp 技術センター, 2014/01/29
 14:25]</p>
 
                         </div>

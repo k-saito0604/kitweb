@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,24 +285,16 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2011/09/30*</p>
-
 <p>[番号]
 技術ノート KGTN 2010061403</p>
-
 <p>[現象]
 GGのプラグイン LaunchBrowser
 で，クライアント側のブラウザを起動する時のインタフェースは？</p>
-
 <p>[説明]
 LaunchBrowser のインタフェースは下記のようになっています （VBの例） ．</p>
-
 <p>Private Declare Function LaunchBrowser Lib _
 &ldquo;C:¥GraphOn¥DLL¥LaunchBrowserI.dll&rdquo; _
 (ByVal lpBuffer As String, nSize As Long) As Long
@@ -310,25 +302,20 @@ LaunchBrowser のインタフェースは下記のようになっています �
 sUrl = Text1.Text
 lLen = Len(sUrl)
 Ret = LaunchBrowser(sUrl, lLen)</p>
-
 <p>関数LaunchBrowser
 の最初の引数はURLを含む文字列で，２番目の引数はその文字列の長さです．ブラウザのパスが標準以外の場合は，クライアント側の
 LaunchBrowser.ini の設定項目 browserPath
 を修正して，ブラウザのパスを変更して下さい</p>
-
 <p>[default]
 logLevel=1
 browserPath=C:¥Program Files¥Internet Explorer¥iexplore.exe</p>
-
 <p>注　意
 LaunchBrowser は， Ver3.2.1の環境で
 「エンタープライズオプションをご利用のユーザ様に限り」
 ご提供可能な，非サポートのプログラムです．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/192/KGTN2010061403.pdf">KGTN2010061403.pdf</a>
- [(65.9 KB)] [kitasp 技術センター, 2011/09/30
+[(65.9 KB)] [kitasp 技術センター, 2011/09/30
 11:10]</p>
 
                         </div>

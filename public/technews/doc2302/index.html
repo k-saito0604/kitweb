@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,40 +285,28 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2019/11/05*</p>
-
 <p>[番号]
 技術ノート KGTN 2019092701</p>
-
 <p>[現象]
 [GGH6.X] GG上で動作するアプリケーションで外字が表示されない。</p>
-
 <p>[説明]
 GGの設定ファイル C:ProgramDataGraphOnGO-GlobalHostProperties.xml
 の中のプロパティ RemoteFonts の値を2から1へ変更してください。</p>
-
 <pre><code>&lt;property id=&quot;RemoteFonts&quot; group=&quot;Miscellaneous&quot; type=&quot;UINT32&quot;&gt;
 &lt;value&gt;1&lt;/value&gt;
 &lt;/property&gt;
 </code></pre>
-
 <p>設定ファイルの編集に当たっては、サービス GO-Global Application
 Publishing Service (GGAPS) を停止した状態で行ってください。</p>
-
 <p>過去の説明
 バージョン6での外字対応が遅れているようで、残念ながら現在のビルドでは外字が表示されません。現在GraphOn社に状況を確認中です。</p>
-
 <p>対症療法として、外字リンカー
 EUDCLink.exeをログオンスクリプトで起動することで外字を表示することが出来ます。なお、この外字リンカーは
-株式会社 武蔵システム（<a href="https://opentype.jp/）">https://opentype.jp/）</a> の製品です （注：
+株式会社 武蔵システム（https://opentype.jp/） の製品です （注：
 左記の文言があれば再配布が許可されます） 。</p>
-
 <ol>
 <li>サイト <a href="https://opentype.jp/eudclinker.htm">https://opentype.jp/eudclinker.htm</a> をブラウザで開きます。</li>
 <li>画面中ほどの 「ダウンロード」 をクリックします。</li>
@@ -328,38 +316,27 @@ EUDCLink.exeをログオンスクリプトで起動することで外字を表�
 をコピーします。</li>
 <li>グローバル・ログオンスクリプトで EUDCLink.exe を実行します。</li>
 </ol>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/4395/KGTN2019092701-1.jpg" alt="" />
+<p><img src="http://techreport.kitasp.net/attachments/download/4395/KGTN2019092701-1.jpg" alt="">
 グローバル・ログオンスクリプトの例</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/4396/KGTN2019092701-2.jpg" alt="" />
+<p><img src="http://techreport.kitasp.net/attachments/download/4396/KGTN2019092701-2.jpg" alt="">
 グローバル・ログオンスクリプトの登録</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/4397/KGTN2019092701-3.jpg" alt="" />
+<p><img src="http://techreport.kitasp.net/attachments/download/4397/KGTN2019092701-3.jpg" alt="">
 実行結果 （メモ帳中に登録した棒と丸の外字が表示されています）</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4394/KGTN2019092701.pdf">KGTN2019092701.pdf</a>
- [(117 KB)] [kitasp 技術センター, 2019/11/05
+[(117 KB)] [kitasp 技術センター, 2019/11/05
 13:46]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4395/KGTN2019092701-1.jpg">KGTN2019092701-1.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/4395/KGTN2019092701-1.jpg" title="表示">表示</a>
- [(17.1 KB)] [kitasp 技術センター, 2019/11/05
+[(17.1 KB)] [kitasp 技術センター, 2019/11/05
 13:46]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4396/KGTN2019092701-2.jpg">KGTN2019092701-2.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/4396/KGTN2019092701-2.jpg" title="表示">表示</a>
- [(22.1 KB)] [kitasp 技術センター, 2019/11/05
+[(22.1 KB)] [kitasp 技術センター, 2019/11/05
 13:46]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4397/KGTN2019092701-3.jpg">KGTN2019092701-3.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/4397/KGTN2019092701-3.jpg" title="表示">表示</a>
- [(25.7 KB)] [kitasp 技術センター, 2019/11/05
+[(25.7 KB)] [kitasp 技術センター, 2019/11/05
 13:46]</p>
 
                         </div>

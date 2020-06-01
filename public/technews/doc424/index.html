@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,36 +285,26 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2014/01/29*</p>
-
 <p>[番号]
 技術ノート KGTN 2014010805</p>
-
 <p>[現象]
 [GGH4.X] イベントログを見ると 「ソース &ldquo;Application Publishing
 Service&rdquo; からのイベントID ??? の説明が見つかりません」
 という記録があるが，問題はないのか？</p>
-
 <p>[説明]
 イベントログの情報を表示するための書式を保持したDLLが指定されたパスに見つからないことを示すメッセージで，
 「イベントログの情報が正しい書式で表示されない点を除き」
 特に問題はありません．正しい書式で表示させるためには，以下のレジストリの内容を修正して下さい．</p>
-
 <pre><code>HKLMSYSTEMCurrentControlSetserviceseventlogApplicationApplication Publishing Service
 EventMessageFile REG_SZ &quot;&lt;GG のインストールフォルダ&gt;GO-GlobalProgramspmu.dll&quot;
 CategoryMessageFile REG_SZ &quot;&lt;GG のインストールフォルダ&gt;GO-GlobalProgramspmu.dll&quot;
 </code></pre>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1476/KGTN2014010805.pdf">KGTN2014010805.pdf</a>
- [(57 KB)] [kitasp 技術センター, 2014/01/29
+[(57 KB)] [kitasp 技術センター, 2014/01/29
 15:43]</p>
 
                         </div>

@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,26 +285,17 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2016/11/02*</p>
-
 <p>[番号]
 技術ノート KGTN 2016102502</p>
-
 <p>[現象]
 [Windows/PowerShell] 複数のGGサーバー （ワークグループ）
 にアカウントが存在するいかどうか調べたい．</p>
-
 <p>[説明]
 以下にスクリプトのサンプルを示します．</p>
-
 <p>ファイル： ConfconfHostList.ps1</p>
-
 <pre><code># 処理の対象とするサーバー
 $hostList =
 @(
@@ -313,9 +304,7 @@ $hostList =
 &quot;192.168.102.110&quot; 
 )
 </code></pre>
-
 <p>ファイル： checkUser.ps1</p>
-
 <pre><code># ホスト情報の設定
 Try
 {
@@ -369,11 +358,9 @@ $ret = Invoke-Command $target -ScriptBlock ${function:checkUser} -ArgumentList $
 &quot;[{0}] {1}&quot; -f $ii,$ret
 }
 </code></pre>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3180/KGTN2016102502.pdf">KGTN2016102502.pdf</a>
- [(62.4 KB)] [kitasp 技術センター, 2016/11/02
+[(62.4 KB)] [kitasp 技術センター, 2016/11/02
 15:45]</p>
 
                         </div>

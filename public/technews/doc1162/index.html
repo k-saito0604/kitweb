@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,54 +285,39 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2011/12/22*</p>
-
 <p>[番号]
 技術ノート KGTN 2011122003</p>
-
 <p>[現象]
 [GGW3.2.1] Windows Server 2008 (32bit) + GGW3.2.1
 の環境で，クライアント印刷が出来ない．</p>
-
 <p>[説明]
 弊社でも２つの試験環境でクライアント印刷が出来ない
 （サーバー側のプリンタにジョブが生成されるがクライアント側へ転送されない，しかしテスト印刷は正しくクライアント側へ印刷出来る）
 問題を確認しております．既にGraphOn社へ報告済みで，新たな情報が届き次第，この技術ノートを更新します．
 このような場合は， （通常） 印刷出来ないアカウントの print.ini
 を消すことで問題が解消します．</p>
-
 <p>[Windows 7 または Windows Vista]
 %USERPROFILE%¥AppData¥Local¥print.ini を消す．</p>
-
 <p>[Windows XP など]
 %USERPROFILE%¥Local Settings¥Application Data¥print.ini を消す．</p>
-
 <p>なお，この現象および解消方法はWindows Server 2008 (32bit) だけでなく
 Windows Server 2003 の環境でも適用されます．</p>
-
 <p>補　足
 上記の方法で問題が解消せず，かつ現象が発生するGGサーバで 「過去に GGH4.0
 をインストールしたことがある場合」 は，以下の作業を行って下さい．</p>
-
 <p>GGW3.2.1 をアンインストールし再起動する．
 次の２つのファイル （過去のGGH4.0のファイル） を削除する．
 C:¥Windows¥System32¥redirector.dll
 C:¥Windows¥System32¥snds.dl
 GGW3.2.1 をインストールする．</p>
-
 <p>なお，上記１でライセンスファイルも削除されますので，事前にライセンスファイルを待避
 （コピー） して下さい．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/766/KGTN2011122003.pdf">KGTN2011122003.pdf</a>
- [(73.3 KB)] [kitasp 技術センター, 2011/12/23
+[(73.3 KB)] [kitasp 技術センター, 2011/12/23
 01:47]</p>
 
                         </div>

@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,34 +285,25 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2011/10/06*</p>
-
 <p>[番号]
 技術ノート KGTN 2011072902</p>
-
 <p>[現象]
 [GGH4.0]
 セッション再接続機能を利用し，クライアントAからクライアントBへセッションを引き継いだ場合，環境変数
 CLIENTCOMPUTERNAME と CLIENTCOMPUTERADDRESS
 の値は引き継いだ方の値になるのか？</p>
-
 <p>[説明]
 GGH-4.0.1.10357 の仕様では，セッションを引き継ぐ前のクライアント
 （つまりクライアントA） の環境変数 CLIENTCOMPUTERNAME と
 CLIENTCOMPUTERADDRESS
 の値が引き継がれます．現在，GraphOn社にクライアントBの各値が設定される動作になるよう，機能要求を行っている状況です．</p>
-
 <p>補足１
 GGH-4.0.1.10784 (Patch 3) で環境変数 CLIENTCOMPUTERNAME と
 CLIENTCOMPUTERADDRESS の値が，再接続したクライアント
 （つまりクライアントB） の値になるように仕様が変更されました．</p>
-
 <p>補足２
 コマンドプロンプト （DOS窓）
 等を引き継いだ場合は，そのプロセス固有の環境変数の中に引き継ぐ前のCLIENTCOMPUTERNAME
@@ -320,7 +311,6 @@ CLIENTCOMPUTERADDRESS の値が，再接続したクライアント
 の値が保持されていますので，引き継ぐ前の値になります．GGの互換性機能を使用し
 GetClientComputerName関数
 でクライアントのコンピュータ名を得る場合についても同様です．</p>
-
 <p>補足３
 コマンドプロンプト （DOS窓） 等から新たなプロセスを生成した場合，
 GGH-4.0.1.10784 (Patch 3) では引き継ぐ前の値が CLIENTCOMPUTERNAME と
@@ -328,11 +318,9 @@ CLIENTCOMPUTERADDRESS に設定されますが， 次期リリースより
 2011年12月またはそれ以降のリリースで引き継いだ後の値が設定されるように仕様が変更されます
 （GraphOn社の内部ビルド 11051 で動作を確認しました） ．これは， Ver3.2.1
 の仕様に合わせるための仕様変更です．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/586/KGTN2011072902.pdf">KGTN2011072902.pdf</a>
- [(69.1 KB)] [kitasp 技術センター, 2011/10/06
+[(69.1 KB)] [kitasp 技術センター, 2011/10/06
 09:42]</p>
 
                         </div>

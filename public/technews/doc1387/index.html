@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,30 +285,21 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2011/05/09*</p>
-
 <p>[番号]
 技術ノート KGTN 2011050901</p>
-
 <p>[現象]
 PAE （Physical Address Extension） を使用するとセッション数
 （同時利用ユーザ数） は増えるのか？</p>
-
 <p>[説明]
 PAE
 はメモリが素直に増える仕組みではなく，従来のバンクセレクトのように4GBを超える部分のメモリをページ管理し，要求に応じて切り替える仕組みです．これに加え，システムのメモリ空間は2GBままですので
 （PAEはユーザのメモリ空間のみ機能します）
 ，セッション数が増えることは残念ながら期待できません．</p>
-
 <p>参　考
 この件に関するGraphOn社のコメントを以下に引用します．</p>
-
 <p>I reviewed the Capacity Planning Guide and spoke with developer so I
 would be sure to give you accurate information. You are right that
 enabling the PAE option will not increase the number of concurrent
@@ -318,11 +309,9 @@ or virtual (committed) memory (e.g., if the applications being hosted on
 a server consume a large amount of memory), enabling the PAE option and
 installing more memory will make it possible for more users to log onto
 a server.</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/550/KGTN2011050901.pdf">KGTN2011050901.pdf</a>
- [(61.7 KB)] [kitasp 技術センター, 2011/05/09
+[(61.7 KB)] [kitasp 技術センター, 2011/05/09
 15:23]</p>
 
                         </div>

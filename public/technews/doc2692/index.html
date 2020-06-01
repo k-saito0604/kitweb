@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,44 +285,32 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2014/05/02*</p>
-
 <p>[番号]
 技術ノート KGTN 2014050201</p>
-
 <p>[現象]
 [GGH4.X] クライアント印刷機能で，プリンタ名が日本語を含みかつUPD
 (Universal Printer Driver)
 を使用して印刷すると，プリンタにドキュメントが出力されない．</p>
-
 <p>[説明]
 この問題は弊社でも現象を確認しており，GraphOn社にも報告しております．この問題が解決されるまで，以下の方法で対応をお願いします．</p>
-
 <p>日本語を含まないプリンタ名に変更する．
 Preview PDF
 へ印刷し，クライアント側に表示されたPDFファイルを改めてプリンタへ印刷する．
 プリンタドライバとして WPD (Windows Printer Driver) を使用する．</p>
-
 <p>補足１
 この問題は，クライアント側のプリンタへ出力するプログラム pdfprint.exe
 へのパラメタの文字列 （プリンタ名と中間ファイル名）
 が短いことに起因しております．
 <del>GraphOn社もこの原因を認識しており，GGH4.Xの将来のビルドで修正される見込みです．</del></p>
-
 <p>補足２
 この問題は GGH4.8.2 Patch1 (4.8.2.22090)
 で修正されました．なお，この修正はサーバー側およびクライアント側で行われておりますので，それぞれのプログラムをアップグレードする必要があります．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2277/KGTN2014050201.pdf">KGTN2014050201.pdf</a>
- [(68.6 KB)] [kitasp 技術センター, 2015/11/04
+[(68.6 KB)] [kitasp 技術センター, 2015/11/04
 14:47]</p>
 
                         </div>

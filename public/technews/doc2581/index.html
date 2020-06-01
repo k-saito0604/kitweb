@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,46 +285,38 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2013/03/26*</p>
-
 <p>[番号]
 技術ノート KGTN 2013032701</p>
-
 <p>[現象]
 [GGW3.2.1/GGH4.X-5.X] GGサーバのセッション構成 （生成） の詳細は？</p>
-
 <p>[説明]
 弊社が得ている情報および弊社の実験等から，以下の手順でセッションが構成
 （生成） されます．</p>
-
-<p>1) APS (Application Publishing Service) がクライアントとの TCP/IP
-のコネクションを確立．
-2) 圧縮の有無および暗号化のレベルを調整．
-3) APSがクライアント向けにセッションを生成．
-4) APSが ggse.sys （システム拡張ドライバ） にセッションの生成を通知．
-5) ggse.sys がセッションのためのセッション空間 （マルチユーザ環境）
-を配置．
-6) ggse.sys
-がセッション空間上でWin32サブシステムのインスタンスを初期化．
-7) Win32サブシステムが ggdd.dll
-を呼び出し，仮想ディスプレイ・ディバイスを生成．
-8)
-クライアントのディスプレイの解像度と色深度を仮想ディスプレイ・ディバイスに設定．
+<ol>
+<li>APS (Application Publishing Service) がクライアントとの TCP/IP
+のコネクションを確立．</li>
+<li>圧縮の有無および暗号化のレベルを調整．</li>
+<li>APSがクライアント向けにセッションを生成．</li>
+<li>APSが ggse.sys （システム拡張ドライバ） にセッションの生成を通知．</li>
+<li>ggse.sys がセッションのためのセッション空間 （マルチユーザ環境）
+を配置．</li>
+<li>ggse.sys
+がセッション空間上でWin32サブシステムのインスタンスを初期化．</li>
+<li>Win32サブシステムが ggdd.dll
+を呼び出し，仮想ディスプレイ・ディバイスを生成．</li>
+<li></li>
+</ol>
+<p>クライアントのディスプレイの解像度と色深度を仮想ディスプレイ・ディバイスに設定．
 9) APSが logon.exe を起動．
 10) logon.exe がユーザ名とパスワードを受け取り （通常の）
 認証処理を実行．
 11) 認証後のセキュリティ コンテキストの下でアプリケーションを実行．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2568/KGTN2013032701.pdf">KGTN2013032701.pdf</a>
- [(70.5 KB)] [kitasp 技術センター, 2016/05/27
+[(70.5 KB)] [kitasp 技術センター, 2016/05/27
 14:05]</p>
 
                         </div>

@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,40 +285,29 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2011/04/15*</p>
-
 <p>[番号]
 技術ノート KGTN 2011041501</p>
-
 <p>[現象]
 [GGW3.2]
 無操作時間経過に伴うアイドル時間のカウントが働かないことがある．</p>
-
 <p>[説明]
 これは，ある案件の特定のデータセンターに設置されているGGサーバで発生した問題です．ユーザ様からは
 「これはGGのバグだ」
 という連絡でしたが，弊社での再現試験および多くのユーザ様の環境で現象が発生しなことから，特定環境に依存した現象だと考えました．GGのパラメタ等を調整しましたが，現象は改善しないため，GraphOn社にレポートを送りました．</p>
-
 <p>GraphOn社からは
 「常識的には考えられない現象なので，診断情報を採取するプログラムを作成するので，その環境で情報を採取して欲しい」
 という提案があり，そのプログラムの完成を待って試験を行いました．採取した情報をGraphOn社で分析したところ，
 Windows のイベント WM_TIMER
 がGG側へ通知されていないことが分かり，GGの問題でないことが判明しました．</p>
-
 <p>ユーザ様はGGの問題でないことをご理解なさった上で，
 「GG側で何か対策をとることはできないか？」
 というご依頼がありましたので，弊社ではGraphOn社に WM_TIMER
 を使用しないカウントダウンの方法を提案し，GraphOn社では試験等を含めすべてユーザ様責任で弊社が提案した処理を実装しました．仕様変更されたプログラムの完成を待ってユーザ様の環境で試験したところ，カウントダウンは想定通り正常に動作しました．</p>
-
 <p>この仕様変更は，最終的に ggw-3.2.1.4446
 に取り込まれております．以下は，この件に関するリリースノートの情報です．</p>
-
 <p>When there is no mouse cursor on the window of the GO-Global client, the
 &ldquo;session timeout&rdquo; countdown stops. On some systems, logon&rsquo;s session
 event processor does not get the WM_TIMER message, so the dialog is not
@@ -326,11 +315,9 @@ updated with the correct time. Instead of using the WM_TIMER message,
 we now create a thread that will sleep for the necessary tick count and
 then post our own
 message to the dialog.</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/544/KGTN2011041501.pdf">KGTN2011041501.pdf</a>
- [(77.5 KB)] [kitasp 技術センター, 2011/04/15
+[(77.5 KB)] [kitasp 技術センター, 2011/04/15
 09:09]</p>
 
                         </div>

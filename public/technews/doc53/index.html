@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,52 +285,36 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2015/06/12*</p>
-
 <p>[番号]
 技術ノート KGTN 2015052601</p>
-
 <p>[現象]
 [GGH5.X] パラメタ -desktop (&amp;desktop=true)
 を指定したが，サーバーのデスクトップが表示されない．</p>
-
 <p>[説明]
 GGの既定の設定では，サーバーのデスクトップ表示機能は無効です．以下の手順でサーバーのデスクトップ表示機能を有効にして下さい．</p>
-
 <p>1.サービス GO-Global Application Publishing Service を停止する．
 2.テキストエディタで ALLUSERSPROFILEGraphOnHostProperties.xml
 を開く．
 3.プロパティ AllowDesktop の値に true を設定する．</p>
-
 <pre><code>&lt;property id=&quot;AllowDesktop&quot; group=&quot;Miscellaneous&quot; type=&quot;BOOL&quot;&gt;
 &lt;value&gt;true&lt;/value&gt;
 &lt;/property&gt;
 </code></pre>
-
 <p>4.%ALLUSERSPROFILE%GraphOnHostProperties.xml を保存する．
 5.サービス GO-Global Application Publishing Service を開始する．</p>
-
 <p>上記3でプロパティ AllowDesktop が見つからない場合は，枠内の情報 （行）
 を追加して下さい．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2086/KGTN2015052601.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/2086/KGTN2015052601.jpg" alt=""></p>
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1911/KGTN2015052601.pdf">KGTN2015052601.pdf</a>
- [(134 KB)] [kitasp 技術センター, 2015/06/12
+[(134 KB)] [kitasp 技術センター, 2015/06/12
 16:26]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2086/KGTN2015052601.jpg">KGTN2015052601.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2086/KGTN2015052601.jpg" title="表示">表示</a>
- [(25.8 KB)] [kitasp 技術センター, 2015/06/23
+[(25.8 KB)] [kitasp 技術センター, 2015/06/23
 14:43]</p>
 
                         </div>

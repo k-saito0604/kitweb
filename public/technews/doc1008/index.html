@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,21 +285,14 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2012/06/22*</p>
-
 <p>[番号]
 技術ノート KGTN 2012062201</p>
-
 <p>[現象]
 [APP]
 CTRL-C押下時やサーバ再起動時にコンソールアプリケーションを正常終了させたい．</p>
-
 <p>[説明]
 内容的にはGGと全く関係がありませんが，アプリケーション開発の参考情報としてお答えすると，
 SEH (Structured Exception Handling) の __try &amp; __finally やPOSIXの
@@ -307,11 +300,9 @@ signal() 関数ではなく， Windows のAPI SetConsoleCtrlHandler()
 関数を使用して処理を行って下さい．弊社エンタープライズオプションの
 GGSessionMonitor.exe
 は，この関数を使用して実装しており，再起動時等にも情報が正常に記録されます．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/916/KGTN2012062201.pdf">KGTN2012062201.pdf</a>
- [(59.2 KB)] [kitasp 技術センター, 2012/06/22
+[(59.2 KB)] [kitasp 技術センター, 2012/06/22
 09:10]</p>
 
                         </div>

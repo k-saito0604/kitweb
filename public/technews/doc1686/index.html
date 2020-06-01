@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,50 +285,37 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2010/07/27*</p>
-
 <p>[番号]
 技術ノート KGTN 2010072704</p>
-
 <p>[現象]
 Ver4.0系でのクライアントプリンタの処理 （UPD/WPDのドライバ選択）
 について知りたい．</p>
-
 <p>[説明]
 Ver3.2系では，クライアント側にプリンタ情報 print.ini
 を配置し，この情報に従って 「クライアント （ユーザ） 単位に」
 クライアントプリンタが構成されていました．Ver4.0系では，サーバ側にプリンタ情報
 MappedPrinterDrivers.xml を配置し，この情報に従って 「サーバ単位に」
 クライアントプリンタが構成されるようになりました．</p>
-
 <p>Universal Printer Driver と Windows Printer Drivers
 の選択は，次のアルゴリズムで行われます．</p>
-
 <p>MappedPrinterDrivers.xml に構成情報があれば，それに従う．
 Driver sources でUniversal Printer Driver が選択されていれば， UPD
 で構成する．
 Driver sources でWindows Printer Driver のみが選択されていれば， WPD
 で構成する．
 どちらも選択されていない場合は，WPD で構成する．</p>
-
 <p>つまり，簡単にまとめると，以下のようになります．</p>
-
 <p>MappedPrinterDrivers.xml に構成情報があれば，それに従う．
 Driver sources でUniversal Printer Driver が選択されていれば， UPD
 で構成する．
 Driver sources でUniversal Printer Driver が選択されていなければ， WPD
 で構成する．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/244/KGTN2010072704.pdf">KGTN2010072704.pdf</a>
- [(54.6 KB)] [kitasp 技術センター, 2010/07/27
+[(54.6 KB)] [kitasp 技術センター, 2010/07/27
 13:59]</p>
 
                         </div>

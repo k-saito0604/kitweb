@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,113 +285,79 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2015/06/11*</p>
-
 <p>[番号]
 技術ノート KGTN 2015040301</p>
-
 <p>[現象]
 [GGH5.X] IE向けクライアント （ActiveXクライアント）
 のインストール手順は？</p>
-
 <p>[説明]
 先ず，GGH4.XのIE向けクライアントは，そのマシン （パソコン）
 に対してインストールされるため，インストール時に管理者権限が必要でした．GGH5.XのIE向けクライアントは，そのユーザー
 （クライアント・マシンのログオンアカウント）
 に対してインストールされるため，インストール時に管理者権限が不要となりました．この変更に伴い，クライアントのインストールフォルダも
 &ldquo;%WINDIR%Downloaded Program Files&rdquo;
-から，&rdquo;%LOCALAPPDATA%GraphOnGO-GlobalClient&rdquo; へ変更されました．</p>
-
+から，&quot;%LOCALAPPDATA%GraphOnGO-GlobalClient&rdquo; へ変更されました．</p>
 <p>以下，GGサーバーにウエッブサーバーが同居している環境でのIE向けクライアント
 （ActiveXクライアント） のインストール手順を示します．</p>
-
 <p>１．IEを立ち上げ
-<a href="http://&amp;lt;GG%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9&amp;gt;/logon.html">http://&lt;GGサーバーのアドレス&gt;/logon.html</a>{.external}
-へアクセスし，&rdquo;Download&rdquo; をクリックする．
-<img src="http://techreport.kitasp.net/attachments/download/1989/KGTN2015040301-1.jpg" alt="" /></p>
-
-<p>２．&rdquo;実行&rdquo; をクリックする．
-<img src="http://techreport.kitasp.net/attachments/download/1990/KGTN2015040301-21.jpg" alt="" /></p>
-
-<p>３．&rdquo;Next&rdquo; をクリックする．
-<img src="http://techreport.kitasp.net/attachments/download/1991/KGTN2015040301-22.jpg" alt="" /></p>
-
-<p>４．&rdquo;I accept &hellip;&rdquo; を選択し &ldquo;Next&rdquo; をクリックする．
-<img src="http://techreport.kitasp.net/attachments/download/1992/KGTN2015040301-31.jpg" alt="" /></p>
-
-<p>５．&rdquo;Install&rdquo; をクリックする．
-<img src="http://techreport.kitasp.net/attachments/download/1993/KGTN2015040301-32.jpg" alt="" /></p>
-
-<p>６．&rdquo;Finish&rdquo; をクリックする．
-<img src="http://techreport.kitasp.net/attachments/download/1994/KGTN2015040301-41.jpg" alt="" /></p>
-
+<a href="http://%3CGG%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%3E/logon.html">http://&lt;GGサーバーのアドレス&gt;/logon.html</a>{.external}
+へアクセスし，&ldquo;Download&rdquo; をクリックする．
+<img src="http://techreport.kitasp.net/attachments/download/1989/KGTN2015040301-1.jpg" alt=""></p>
+<p>２．&ldquo;実行&rdquo; をクリックする．
+<img src="http://techreport.kitasp.net/attachments/download/1990/KGTN2015040301-21.jpg" alt=""></p>
+<p>３．&ldquo;Next&rdquo; をクリックする．
+<img src="http://techreport.kitasp.net/attachments/download/1991/KGTN2015040301-22.jpg" alt=""></p>
+<p>４．&ldquo;I accept &hellip;&rdquo; を選択し &ldquo;Next&rdquo; をクリックする．
+<img src="http://techreport.kitasp.net/attachments/download/1992/KGTN2015040301-31.jpg" alt=""></p>
+<p>５．&ldquo;Install&rdquo; をクリックする．
+<img src="http://techreport.kitasp.net/attachments/download/1993/KGTN2015040301-32.jpg" alt=""></p>
+<p>６．&ldquo;Finish&rdquo; をクリックする．
+<img src="http://techreport.kitasp.net/attachments/download/1994/KGTN2015040301-41.jpg" alt=""></p>
 <p>７．IE を閉じて，改めてIEを立ち上げ
-<a href="http://&amp;lt;GG%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9&amp;gt;/logon.html">http://&lt;GGサーバーのアドレス&gt;/logon.html</a>{.external}
+<a href="http://%3CGG%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%3E/logon.html">http://&lt;GGサーバーのアドレス&gt;/logon.html</a>{.external}
 へアクセスするとログオン画面が表示される．
-<img src="http://techreport.kitasp.net/attachments/download/1995/KGTN2015040301-42.jpg" alt="" /></p>
-
+<img src="http://techreport.kitasp.net/attachments/download/1995/KGTN2015040301-42.jpg" alt=""></p>
 <p>なお，上記７で下記の警告が表示された場合は， &ldquo;許可する&rdquo;
 をクリックして下さい．
-<img src="http://techreport.kitasp.net/attachments/download/1996/KGTN2015040301-5.jpg" alt="" /></p>
-
+<img src="http://techreport.kitasp.net/attachments/download/1996/KGTN2015040301-5.jpg" alt=""></p>
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1883/KGTN2015040301.pdf">KGTN2015040301.pdf</a>
- [(541 KB)] [kitasp 技術センター, 2015/06/11
+[(541 KB)] [kitasp 技術センター, 2015/06/11
 17:44]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1989/KGTN2015040301-1.jpg">KGTN2015040301-1.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/1989/KGTN2015040301-1.jpg" title="表示">表示</a>
- [(18 KB)] [kitasp 技術センター, 2015/06/18
+[(18 KB)] [kitasp 技術センター, 2015/06/18
 14:21]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1990/KGTN2015040301-21.jpg">KGTN2015040301-21.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/1990/KGTN2015040301-21.jpg" title="表示">表示</a>
- [(22.5 KB)] [kitasp 技術センター, 2015/06/18
+[(22.5 KB)] [kitasp 技術センター, 2015/06/18
 14:21]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1991/KGTN2015040301-22.jpg">KGTN2015040301-22.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/1991/KGTN2015040301-22.jpg" title="表示">表示</a>
- [(26.5 KB)] [kitasp 技術センター, 2015/06/18
+[(26.5 KB)] [kitasp 技術センター, 2015/06/18
 14:21]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1992/KGTN2015040301-31.jpg">KGTN2015040301-31.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/1992/KGTN2015040301-31.jpg" title="表示">表示</a>
- [(43.8 KB)] [kitasp 技術センター, 2015/06/18
+[(43.8 KB)] [kitasp 技術センター, 2015/06/18
 14:21]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1993/KGTN2015040301-32.jpg">KGTN2015040301-32.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/1993/KGTN2015040301-32.jpg" title="表示">表示</a>
- [(19.7 KB)] [kitasp 技術センター, 2015/06/18
+[(19.7 KB)] [kitasp 技術センター, 2015/06/18
 14:21]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1994/KGTN2015040301-41.jpg">KGTN2015040301-41.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/1994/KGTN2015040301-41.jpg" title="表示">表示</a>
- [(23.5 KB)] [kitasp 技術センター, 2015/06/18
+[(23.5 KB)] [kitasp 技術センター, 2015/06/18
 14:21]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1995/KGTN2015040301-42.jpg">KGTN2015040301-42.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/1995/KGTN2015040301-42.jpg" title="表示">表示</a>
- [(16.3 KB)] [kitasp 技術センター, 2015/06/18
+[(16.3 KB)] [kitasp 技術センター, 2015/06/18
 14:21]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1996/KGTN2015040301-5.jpg">KGTN2015040301-5.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/1996/KGTN2015040301-5.jpg" title="表示">表示</a>
- [(17.5 KB)] [kitasp 技術センター, 2015/06/18
+[(17.5 KB)] [kitasp 技術センター, 2015/06/18
 14:21]</p>
 
                         </div>

@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,48 +285,36 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2011/12/28*</p>
-
 <p>[番号]
 技術ノート KGTN 2011122801</p>
-
 <p>[現象]
 [Windows7] 不可解な挙動がある場合， SNP (Scalable Networking Pack)
 を無効にして切り分けると聞いたが，無効かどうかの確認方法は？</p>
-
 <p>[説明]
 コマンドプロンプトを起動し，コマンド netsh int tcp show global
 を実行して下さい．表示される情報のうち，下記の３つの項目の値が disabled
 でない場合は，問題となる SNP の機能が有効になっています
 （有効の可能性があります） ．</p>
-
 <p>これらの項目を無効にする時は，
 「管理者権限で実行したコマンドプロンプト中で」
 以下のコマンドを実行して下さい．</p>
-
 <p>Receive-Side Scaling 状態
 netsh int tcp set global rss=disabled
 Chimney オフロード状態
 netsh int tcp set global chimney=disabled
 NetDMA 状態
 netsh int tcp set global netdma=disabled</p>
-
 <p>補　足
 上記の情報は，マイクロソフト社の Network &amp; AD サポートチーム公式ブログ
 &ldquo;Ask the Network &amp; AD Support Team&rdquo; に投稿された記事
 「予期せぬ挙動が!?　新機能 Scalable Networking Pack をご存知ですか?」
 に基づいています．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/775/KGTN2011122801.pdf">KGTN2011122801.pdf</a>
- [(68.4 KB)] [kitasp 技術センター, 2011/12/28
+[(68.4 KB)] [kitasp 技術センター, 2011/12/28
 09:44]</p>
 
                         </div>

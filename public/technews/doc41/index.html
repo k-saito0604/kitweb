@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,72 +285,47 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2015/07/09*</p>
-
 <p>[番号]
 技術ノート KGTN 2015061903</p>
-
 <p>[現象]
 [Windows]
 WS2012R2やWS2008R2の環境で，ユーザーがファイル共有機能を利用してクライアントPCへファイルをダウンロード
 （コピー） 出来ないようにしたい．</p>
-
 <p>[説明]
 エクスプローラーや共通ファイル・ダイアログから 「ネットワーク」
 アイコンを消す方法もありますが，ユーザーがUNC （例：
 192.168.102.60MyDrive）
 で直接クライアントPCへアクセスした場合は，残念ながらファイルのダウンロードが出来てしまいます．この問題を解決するには，Windowsファイアウォールの設定で，ファイル共有機能を利用出来ないようにする必要があります．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2131/KGTN2015061903-1.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/2131/KGTN2015061903-1.jpg" alt=""></p>
 <p>「送信の規則」 を追加</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2132/KGTN2015061903-2.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/2132/KGTN2015061903-2.jpg" alt=""></p>
 <p>「接続をブロックする」 送信規則</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2133/KGTN2015061903-3.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/2133/KGTN2015061903-3.jpg" alt=""></p>
 <p>「接続をブロックする」 ポートは TCP の 445,137-139</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2134/KGTN2015061903-4.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/2134/KGTN2015061903-4.jpg" alt=""></p>
 <p>「接続をブロックする」 相手はクライアントPCのアドレス （ネットワーク）</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2131/KGTN2015061903-1.jpg">KGTN2015061903-1.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2131/KGTN2015061903-1.jpg" title="表示">表示</a>
- [(33.8 KB)] [kitasp 技術センター, 2015/07/09
+[(33.8 KB)] [kitasp 技術センター, 2015/07/09
 13:59]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2132/KGTN2015061903-2.jpg">KGTN2015061903-2.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2132/KGTN2015061903-2.jpg" title="表示">表示</a>
- [(20.4 KB)] [kitasp 技術センター, 2015/07/09
+[(20.4 KB)] [kitasp 技術センター, 2015/07/09
 13:59]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2133/KGTN2015061903-3.jpg">KGTN2015061903-3.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2133/KGTN2015061903-3.jpg" title="表示">表示</a>
- [(21 KB)] [kitasp 技術センター, 2015/07/09
+[(21 KB)] [kitasp 技術センター, 2015/07/09
 13:59]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2134/KGTN2015061903-4.jpg">KGTN2015061903-4.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2134/KGTN2015061903-4.jpg" title="表示">表示</a>
- [(19.9 KB)] [kitasp 技術センター, 2015/07/09
+[(19.9 KB)] [kitasp 技術センター, 2015/07/09
 14:00]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2144/KGTN2015061903.pdf">KGTN2015061903.pdf</a>
- [(222 KB)] [kitasp 技術センター, 2015/07/09
+[(222 KB)] [kitasp 技術センター, 2015/07/09
 16:05]</p>
 
                         </div>

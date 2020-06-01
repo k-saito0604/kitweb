@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,77 +285,55 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2013/08/19*</p>
-
 <p>[番号]
 技術ノート KGTN 2012071901</p>
-
 <p>[現象]
 [GGH6.X/ExPack] 拡張パックの GGSessionManager とはどんなツールなのか？</p>
-
 <p>[説明]
 原則的にはGGサーバー上で動作させるプログラムで、GGのプロトコルを介してGGサーバーのセッション情報を収集し、その情報をもとにコマンドラインで指定された動作
 「セッションの強制終了」、 「セッションの強制切断」、
 「アプリケーションの起動」 を行います。</p>
-
 <p>設定ファイルと起動パラメタ
 設定ファイル GGSessionManager.ini の default
 セクションで、以下のパラメタを設定して下さい。</p>
-
 <p>設定項目   説明</p>
-
-<hr />
-
+<hr>
 <p>loglevel   ログの出力レベル，通常は1を指定し，障害時は4を指定
-  port       GGサーバーのポート番号（各セクションで未指定時に適用）
-  logFile    ログファイルのパス
-  app        アプリケーション名（PW上の名称），コマンドラインが優先される
-  arg        アプリケーションの起動パラメタ</p>
-
+port       GGサーバーのポート番号（各セクションで未指定時に適用）
+logFile    ログファイルのパス
+app        アプリケーション名（PW上の名称），コマンドラインが優先される
+arg        アプリケーションの起動パラメタ</p>
 <p>個別セクション （GGサーバー単位） で、以下のパラメタを設定して下さい。</p>
-
 <p>設定項目   説明</p>
-
-<hr />
-
+<hr>
 <p>host       GGサーバーのIPアドレス</p>
-
 <p>「セッションの強制終了」、 「セッションの強制切断」、
 「アプリケーションの起動」 は以下の起動パラメタ
 （コマンドライン・パラメタ） で指定して下さい。</p>
-
 <p>設定項目            説明</p>
-
-<hr />
-
-<p>-sec <server>     設定ファイルのセクション名（GGサーバーの指定）
-  -host <address>   GGサーバーのIPアドレス（設定ファイルより優先する）
-  -port <port>      GGサーバーのポート番号（設定ファイルより優先する）
-  -app <appname>    アプリケーション名（PW上の名称）
-  -arg <args>       アプリケーションの起動パラメタ
-  -soi <id>         セッションID id を強制終了する
-  -dci <id>         セッションID id を強制切断する
-  -lai <id>         セッションID id でアプリケーションを起動する
-  -son <name>       セッション名 name を強制終了する
-  -dcn <name>       セッション名 name を強制切断する
-  -lan <name>       セッション名 name でアプリケーションを起動する
-  -sou <name>       ユーザー名 name を強制終了する
-  -dcu <name>       ユーザー名 name を強制切断する
-  -lau <name>       ユーザー名 name でアプリケーションを起動する</p>
-
+<hr>
+<p>-sec <!-- raw HTML omitted -->     設定ファイルのセクション名（GGサーバーの指定）
+-host <!-- raw HTML omitted -->   GGサーバーのIPアドレス（設定ファイルより優先する）
+-port <!-- raw HTML omitted -->      GGサーバーのポート番号（設定ファイルより優先する）
+-app <!-- raw HTML omitted -->    アプリケーション名（PW上の名称）
+-arg <!-- raw HTML omitted -->       アプリケーションの起動パラメタ
+-soi <!-- raw HTML omitted -->         セッションID id を強制終了する
+-dci <!-- raw HTML omitted -->         セッションID id を強制切断する
+-lai <!-- raw HTML omitted -->         セッションID id でアプリケーションを起動する
+-son <!-- raw HTML omitted -->       セッション名 name を強制終了する
+-dcn <!-- raw HTML omitted -->       セッション名 name を強制切断する
+-lan <!-- raw HTML omitted -->       セッション名 name でアプリケーションを起動する
+-sou <!-- raw HTML omitted -->       ユーザー名 name を強制終了する
+-dcu <!-- raw HTML omitted -->       ユーザー名 name を強制切断する
+-lau <!-- raw HTML omitted -->       ユーザー名 name でアプリケーションを起動する</p>
 <p>＊上記の id および name が all
 の場合は、全てのセッションで処理が行われます。</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4327/KGTN2012071901.pdf">KGTN2012071901.pdf</a>
- [(54.8 KB)] [kitasp 技術センター, 2019/09/13
+[(54.8 KB)] [kitasp 技術センター, 2019/09/13
 14:36]</p>
 
                         </div>

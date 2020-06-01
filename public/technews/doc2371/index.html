@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,35 +285,25 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2016/08/25*</p>
-
 <p>[番号]
 技術ノート KGTN 2016080802</p>
-
 <p>[現象]
 [GGH4.X-5.X]
 ログオン時に，ユーザー名・セッション名・クライアントのコンピューター名・クライアントのIPアドレスを得る方法を知りたい．</p>
-
 <p>[説明]
 以下のようなグローバル・ログオンスクリプトを作成＆登録することで，ユーザー名・セッション名・クライアントのコンピューター名・クライアントのIPアドレスを得ることが出来ます．なお，セッション名を保持する環境変数
 USERSESSION
 はログオンスクリプトの中では機能しないため，環境変数を組み合わせて生成しています．</p>
-
 <pre><code>@echo off
 echo '%USERNAME%','%USERNAME% on %COMPUTERNAME%',
 '%CLIENTCOMPUTERNAME%','%CLIENTCOMPUTERIPADDRESS%' &gt;&gt; C:TEMPLOGON.TXT
 </code></pre>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2932/KGTN2016080802.pdf">KGTN2016080802.pdf</a>
- [(60.9 KB)] [kitasp 技術センター, 2016/08/25
+[(60.9 KB)] [kitasp 技術センター, 2016/08/25
 16:48]</p>
 
                         </div>

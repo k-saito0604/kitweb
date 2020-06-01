@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,52 +285,35 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2015/07/30*</p>
-
 <p>[番号]
 技術ノート KGTN 2015072803</p>
-
 <p>[現象]
 [Microsoft Azure] Microsoft Azure
 の仮想マシンに，仮想ネットワークの静的な （プライベート）
 IPアドレスを割り当てる方法は？</p>
-
 <p>[説明]
 Azure PowerShell で，下記のコマンドを実行して下さい．</p>
-
 <p>　&gt; $VM = Get-AzureVM -ServiceName -Name
-　&gt; Set-AzureStaticVNetIP -VM $VM -IPAddress <IPアドレス> |
+　&gt; Set-AzureStaticVNetIP -VM $VM -IPAddress &lt;IPアドレス&gt; |
 Update-AzureVM</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2165/KGTN2015072803-1.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/2165/KGTN2015072803-1.jpg" alt=""></p>
 <p>なお，新しいポータルでは，下記のように画面から設定
 （プライベートIPアドレス） することが出来ます．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2166/KGTN2015072803-2.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/2166/KGTN2015072803-2.jpg" alt=""></p>
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2164/KGTN2015072803.pdf">KGTN2015072803.pdf</a>
- [(108 KB)] [kitasp 技術センター, 2015/07/30
+[(108 KB)] [kitasp 技術センター, 2015/07/30
 17:10]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2165/KGTN2015072803-1.jpg">KGTN2015072803-1.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2165/KGTN2015072803-1.jpg" title="表示">表示</a>
- [(20.1 KB)] [kitasp 技術センター, 2015/07/30
+[(20.1 KB)] [kitasp 技術センター, 2015/07/30
 17:10]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2166/KGTN2015072803-2.jpg">KGTN2015072803-2.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2166/KGTN2015072803-2.jpg" title="表示">表示</a>
- [(16.2 KB)] [kitasp 技術センター, 2015/07/30
+[(16.2 KB)] [kitasp 技術センター, 2015/07/30
 17:10]</p>
 
                         </div>

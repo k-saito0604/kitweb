@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,33 +285,23 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2011/09/14*</p>
-
 <p>[番号]
 技術ノート KGTN 2011091401</p>
-
 <p>[現象]
 [GGW3.2.1] Win32 API の MoveWindow
 で表示中のウインドウを移動すると画面上にゴミが残ることがある．</p>
-
 <p>[説明]
 この現象は GGW3.2.1 の既知の問題 （制限事項）
 で，以下のように移動の直前で非表示にして，移動の直後に表示して下さい．</p>
-
 <p>ShowWindow(hWnd,SW_HIDE);
 MoveWindow(hWnd, &hellip; );
 ShowWindow(hWnd,SW_SHOW);</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/630/KGTN2011091401.pdf">KGTN2011091401.pdf</a>
- [(49.7 KB)] [kitasp 技術センター, 2011/09/14
+[(49.7 KB)] [kitasp 技術センター, 2011/09/14
 10:38]</p>
 
                         </div>

@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,68 +285,49 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2010/09/22*</p>
-
 <p>[番号]
 技術ノート KGTN 2010092203</p>
-
 <p>[現象]
 プリンタドライバを多数のGGサーバにインストールしたい．</p>
-
 <p>[説明]
 このようなケースでは， 「プリンタドライバを含む」
 マスタとなるGGサーバのイメージを作成し，それを展開するのが最善の方法です．プリンタドライバが追加された場合は，各GGサーバ上で標準的な手順でインストールするか，または
 「新しいプリンタドライバを含む」
 マスタとなるGGサーバのイメージを作成し，それを展開します．</p>
-
 <p>「自己責任でも構わないので，簡単にプリンタドライバを一括コピーしたい」
 ということであれば，下記のスクリプトを利用する方法があります．マスタとなるサーバにプリンタドライバをインストールし，</p>
-
 <p>cscript pdr_server.vbs</p>
-
 <p>を実行し，その後各GGサーバで</p>
-
 <p>cscript pdr_clinet.vbs -server</p>
-
 <p>を実行することで，マスタとなるサーバのプリンタドライバが一括コピーされます．なお，このスクリプトはあくまでもサンプルであり，その内容や動作について如何なる保証もサポートも行いません．FILE:
 pdr_server.vbs</p>
-
 <p>option explicit</p>
-
-<p>&rsquo;-
+<p>&lsquo;-
 &lsquo;- 定数
 &lsquo;-
 const L_DriverRegistry =
 &ldquo;HKLM¥SYSTEM¥CurrentControlSet¥Control¥Print¥Environments¥Windows NT
 x86&rdquo;
 const L_DriverFolder = &ldquo;C:¥WINDOWS¥system32¥spool¥drivers¥w32x86&rdquo;</p>
-
-<p>&rsquo;-
+<p>&lsquo;-
 &lsquo;- Usage: cscript pdr_server.vbs
 &lsquo;-
 main</p>
-
-<p>&rsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
+<p>&lsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
 &lsquo;&mdash; メインルーチン &mdash;
 &lsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</p>
-
 <p>sub main
 dim iRetval
 iRetval = gg_ExportRegistry(L_DriverRegistry,L_DriverFolder &amp;
 &ldquo;¥printer_registry.reg&rdquo;)
-wscript.echo &ldquo;iRetval = &rdquo; &amp; iRetval
+wscript.echo &ldquo;iRetval = &quot; &amp; iRetval
 end sub</p>
-
-<p>&rsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
+<p>&lsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
 &lsquo;&mdash; ローカルコンピュータの指定レジストリのエクスポート &mdash;
 &lsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</p>
-
 <p>function gg_ExportRegistry(strKey, strFile)
 on error resume next
 dim iResult
@@ -354,20 +335,17 @@ dim strCommand
 dim objShell
 &lsquo;&mdash;
 iResult = <del>999
-strCommand = &ldquo;reg export &ldquo;&rdquo;&rdquo; &amp; strKey &amp; &ldquo;&rdquo;&rdquo; &ldquo;&rdquo;&rdquo; &amp; strFile &amp;
-&ldquo;&rdquo;&rdquo; /y&rdquo;
+strCommand = &ldquo;reg export &quot;&rdquo;&rdquo; &amp; strKey &amp; &quot;&rdquo;&rdquo; &quot;&rdquo;&rdquo; &amp; strFile &amp;
+&quot;&rdquo;&rdquo; /y&rdquo;
 set objShell = WScript.CreateObject(&ldquo;WScript.Shell&rdquo;)
 objShell.Run strCommand, 7, true
 &lsquo;&ndash;</del>
 iResult = 0
 gg_ExportRegistry = iResult
 end function</p>
-
 <p>FILE: pdr_client.vbs</p>
-
 <p>option explicit</p>
-
-<p>&rsquo;-
+<p>&lsquo;-
 &lsquo;- 定数
 &lsquo;-
 const kErrorSuccess = 0
@@ -381,8 +359,8 @@ const kImportRegistry = &ldquo;registry/import&rdquo;
 const kExportPrinterRegistry = &ldquo;registry/export/printer&rdquo;
 const kExcecuteBatch = &ldquo;batch/execute&rdquo;
 &lsquo;&mdash;
-const L_Empty_Text = &ldquo;&rdquo;
-const L_Space_Text = &ldquo; &ldquo;
+const L_Empty_Text = &quot;&rdquo;
+const L_Space_Text = &quot; &quot;
 const L_Error_Text = &ldquo;エラー&rdquo;
 const L_Success_Text = &ldquo;成功&rdquo;
 const L_Failed_Text = &ldquo;失敗&rdquo;
@@ -400,13 +378,11 @@ const ADS_SERVICE_CONTINUE_PENDING = 5
 const ADS_SERVICE_PAUSE_PENDING = 6
 const ADS_SERVICE_PAUSED = 7
 const ADS_SERVICE_ERROR = 8</p>
-
-<p>&rsquo;-
-&lsquo;- Usage: cscript pdr_clinet.vbs <del>server <pdr_server>
+<p>&lsquo;-
+&lsquo;- Usage: cscript pdr_clinet.vbs <del>server &lt;pdr_server&gt;
 &lsquo;</del>
 main</p>
-
-<p>&rsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
+<p>&lsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
 &lsquo;&mdash; メインルーチン &mdash;
 &lsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
 sub main
@@ -419,11 +395,11 @@ dim strDst
 dim strCommand
 &lsquo;&mdash;
 iRetval = ParseCommandLine(strServer)
-MsgBox &ldquo;0) Parse Command : iRetval = &ldquo; &amp; iRetval &amp; &ldquo; , strServer = &ldquo;
+MsgBox &ldquo;0) Parse Command : iRetval = &quot; &amp; iRetval &amp; &quot; , strServer = &quot;
 &amp; strServer
 &lsquo;&mdash;
-iRetval = gg_ManageSpooler(&ldquo;.&rdquo;, kStopSpooler)
-MsgBox &ldquo;1) Stop Spooler : iRetval = &ldquo; &amp; iRetval
+iRetval = gg_ManageSpooler(&quot;.&quot;, kStopSpooler)
+MsgBox &ldquo;1) Stop Spooler : iRetval = &quot; &amp; iRetval
 if iRetval 0 and iRetval 1 then
 wscript.echo &ldquo;Print Spooler を停止できません&rdquo;
 end if
@@ -431,22 +407,20 @@ end if
 strSrc = &ldquo;¥¥&rdquo; &amp; strServer &amp; &ldquo;¥print$¥w32x86&rdquo;
 strDst = &ldquo;C:¥WINDOWS¥system32¥spool¥drivers¥w32x86&rdquo;
 iRetval = gg_CopyFolder(strSrc,strDst)
-MsgBox &ldquo;3) Copy Files : iRetval = &ldquo; &amp; iRetval
+MsgBox &ldquo;3) Copy Files : iRetval = &quot; &amp; iRetval
 &lsquo;&mdash;
 iRetval = gg_ImportRegistry(strDst &amp; &ldquo;¥printer_registry.reg&rdquo;)
-MsgBox &ldquo;4) Import Registry : iRetval = &ldquo; &amp; iRetval
+MsgBox &ldquo;4) Import Registry : iRetval = &quot; &amp; iRetval
 &lsquo;&mdash;
-iRetval = gg_ManageSpooler(&ldquo;.&rdquo;, kStartSpooler)
-MsgBox &ldquo;5) Start Spooler : iRetval = &ldquo; &amp; iRetval
+iRetval = gg_ManageSpooler(&quot;.&quot;, kStartSpooler)
+MsgBox &ldquo;5) Start Spooler : iRetval = &quot; &amp; iRetval
 if iRetval 0 and iRetval 1 then
 wscript.echo &ldquo;Print Spooler を開始できません&rdquo;
 end if
 end sub</p>
-
-<p>&rsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
+<p>&lsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
 &lsquo;&mdash; Print Spooler の開始と停止 &mdash;
 &lsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</p>
-
 <p>function gg_ManageSpooler(strComputer,strOperation)
 dim iResult
 dim objService
@@ -478,11 +452,9 @@ end select
 end select
 gg_ManageSpooler = iResult
 end function</p>
-
-<p>&rsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
+<p>&lsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
 &lsquo;&mdash; フォルダのコピー &mdash;
 &lsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</p>
-
 <p>function gg_CopyFolder(strSrc, strDst)
 on error resume next
 dim iResult
@@ -497,17 +469,15 @@ objFSO.CopyFolder objFolder.path, strDst, true
 if Err = kErrorSuccess then
 iResult = 0
 else
-wscript.echo &ldquo;gg_CopyFolder : Err = &ldquo; &amp; Err.Description
+wscript.echo &ldquo;gg_CopyFolder : Err = &quot; &amp; Err.Description
 iResult = -1
 end if
 Err.Clear
 gg_CopyFolder = iResult
 end function</p>
-
-<p>&rsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
+<p>&lsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
 &lsquo;&mdash; ローカルコンピュータの指定レジストリのインポート &mdash;
 &lsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</p>
-
 <p>function gg_ImportRegistry(strFile)
 on error resume next
 dim iResult
@@ -515,18 +485,16 @@ dim strCommand
 dim objShell
 &lsquo;&mdash;
 iResult = <del>999
-strCommand = &ldquo;reg import &ldquo;&rdquo;&rdquo; &amp; strFile &amp; &ldquo;&rdquo;&ldquo;&rdquo;
+strCommand = &ldquo;reg import &quot;&rdquo;&rdquo; &amp; strFile &amp; &quot;&rdquo;&rdquo;&rdquo;
 set objShell = WScript.CreateObject(&ldquo;WScript.Shell&rdquo;)
 objShell.Run strCommand, 7, true
 &lsquo;&ndash;</del>
 iResult = 0
 gg_ImportRegistry = iResult
 end function</p>
-
-<p>&rsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
+<p>&lsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
 &lsquo;&mdash; コマンドラインのパーザー &mdash;
 &lsquo;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;</p>
-
 <p>function ParseCommandLine(strServer)
 on error resume next
 dim oArgs
@@ -555,9 +523,7 @@ iIndex = iIndex + 1
 wend
 ParseCommandLine = 0
 end function</p>
-
-<p>&rsquo;&mdash;</p>
-
+<p>&lsquo;&mdash;</p>
 <p>function RemoveBackslashes(strServer)
 dim strRet
 strRet = strServer
@@ -566,11 +532,9 @@ strRet = Mid(strServer, 3)
 end if
 RemoveBackslashes = strRet
 end function</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/327/KGTN2010092203.pdf">KGTN2010092203.pdf</a>
- [(105 KB)] [kitasp 技術センター, 2010/09/22
+[(105 KB)] [kitasp 技術センター, 2010/09/22
 12:00]</p>
 
                         </div>

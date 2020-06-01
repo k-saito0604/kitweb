@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,35 +285,25 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2012/07/24*</p>
-
 <p>[番号]
 技術ノート KGTN 2012072301</p>
-
 <p>[現象]
 [Win32/Clipboard]
 GGとは関係がないが，クリップボードの操作を行う場合，どのような情報を管理すれば良いのか？</p>
-
 <p>[説明]
 クリップボードには複数の形式のデータが保持されますので，以下のような情報を管理
 （保持） する必要があります．</p>
-
 <p>UINT formatID; // データ形式
-TCHAR formatName<sup class="footnote-ref" id="fnref:fn256"><a href="#fn:fn256">0</a></sup>^; //
+TCHAR formatName^<a href="#fn256">256</a>^; //
 データ形式の名前（システム定義のデータ形式の場合は空）
 UINT dataSize; // データの大きさ
 LPVOID pData; // データへのポインタ</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/950/KGTN2012072301.pdf">KGTN2012072301.pdf</a>
- [(53.9 KB)] [kitasp 技術センター, 2012/07/25
+[(53.9 KB)] [kitasp 技術センター, 2012/07/25
 06:16]</p>
 
                         </div>

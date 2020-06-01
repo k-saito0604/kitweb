@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,235 +285,160 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2017/04/07*</p>
-
 <p>[番号]
 技術ノート KGTN 2017031701</p>
-
 <p>[現象]
 [GGH5.X] クライアント印刷が出来ない端末があるが， GGPDFPrint
 を使用して調査する手順を知りたい．</p>
-
 <p>[説明]
 以下の手順で確認を行ってください．</p>
-
-<p><STEP#1>
+<p>&lt;STEP#1&gt;
 印刷するプリンターを 「通常使うプリンターに設定」
 し，そのプリンターを開き， [プリンター] → [一時停止]
 を選択します．一時停止することで，印刷ジョブが登録されたかどうかを，確実にチェックすることができます．印刷ジョブが登録されたにも関わらず，実際にプリンターに出力されない場合は，プリンタードライバーやプリンターの問題です．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3364/KGTN2017031701-1.jpg" alt="" /></p>
-
-<p><STEP#2>
+<p><img src="http://techreport.kitasp.net/attachments/download/3364/KGTN2017031701-1.jpg" alt=""></p>
+<p>&lt;STEP#2&gt;
 GGにログオンします．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3365/KGTN2017031701-2.jpg" alt="" /></p>
-
-<p><STEP#3>
+<p><img src="http://techreport.kitasp.net/attachments/download/3365/KGTN2017031701-2.jpg" alt=""></p>
+<p>&lt;STEP#3&gt;
 プログラムウインドウ → [File] → [Printers]
 を選択します．印刷するプリンターがリスト中に存在し，かつチェックが入っている
 （通常使うプリンターになっている） ことを確認してください．確認後，
 [Close] をクリックします．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3366/KGTN2017031701-3.jpg" alt="" /></p>
-
-<p><STEP#4>
+<p><img src="http://techreport.kitasp.net/attachments/download/3366/KGTN2017031701-3.jpg" alt=""></p>
+<p>&lt;STEP#4&gt;
 プログラムウインドウからメモ帳等を起動し，適当に文字を入力します．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3367/KGTN2017031701-4.jpg" alt="" /></p>
-
-<p><STEP#5>
+<p><img src="http://techreport.kitasp.net/attachments/download/3367/KGTN2017031701-4.jpg" alt=""></p>
+<p>&lt;STEP#5&gt;
 [ファイル] → [印刷]
 を選択します．印刷するプリンターが選択されていることを確認後， [印刷]
 をクリックします．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3368/KGTN2017031701-5.jpg" alt="" /></p>
-
-<p><STEP#6>
+<p><img src="http://techreport.kitasp.net/attachments/download/3368/KGTN2017031701-5.jpg" alt=""></p>
+<p>&lt;STEP#6&gt;
 プリンターのフォルダーに，印刷ジョブが登録されたかどうかを確認します．正常な環境では，下記のスクリーンショットの赤枠の部分に印刷したジョブが登録されます．この印刷ジョブが登録されない場合は，クライアント印刷機能の部分に何らかの問題があると考えられます．
 次のステップより GGPDFPrint を使用し，さらに調査を進めます．</p>
-
 <p>印刷ジョブが登録された場合は， [プリンター] → [一時停止]
 を選択し，一時停止を解除します．これで，実際にプリンターへ印刷される場合は，正常に動作しています．プリンターへ印刷されない場合は，プリンタードライバーまたはプリンターの不具合です．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3369/KGTN2017031701-6.jpg" alt="" /></p>
-
-<p><STEP#7>
+<p><img src="http://techreport.kitasp.net/attachments/download/3369/KGTN2017031701-6.jpg" alt=""></p>
+<p>&lt;STEP#7&gt;
 GGPDFPrint-Setup.exe を入手し，ダブルクリックして起動します．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3370/KGTN2017031701-7.jpg" alt="" /></p>
-
-<p><STEP#8>
+<p><img src="http://techreport.kitasp.net/attachments/download/3370/KGTN2017031701-7.jpg" alt=""></p>
+<p>&lt;STEP#8&gt;
 GGのデスクトップクライアント （シングルユーザー）
 版のインストーラー以外の方法でGGのクライアントがインストールされている場合は，
 [参照]
 ボタンをクリックして，そのインストール先のフォルダーを選択します．その後，
 [次へ] をクリックします．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3371/KGTN2017031701-8.jpg" alt="" /></p>
-
-<p><STEP#9>
+<p><img src="http://techreport.kitasp.net/attachments/download/3371/KGTN2017031701-8.jpg" alt=""></p>
+<p>&lt;STEP#9&gt;
 [インストール] をクリックします．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3372/KGTN2017031701-9.jpg" alt="" /></p>
-
-<p><STEP#10>
+<p><img src="http://techreport.kitasp.net/attachments/download/3372/KGTN2017031701-9.jpg" alt=""></p>
+<p>&lt;STEP#10&gt;
 [完了] をクリックします．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3373/KGTN2017031701-10.jpg" alt="" /></p>
-
-<p><STEP#11>
+<p><img src="http://techreport.kitasp.net/attachments/download/3373/KGTN2017031701-10.jpg" alt=""></p>
+<p>&lt;STEP#11&gt;
 [スタート] → [すべてのプログラム] → [GGPDFPrint]
 を選択してください．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3374/KGTN2017031701-11.jpg" alt="" /></p>
-
-<p><STEP#12>
+<p><img src="http://techreport.kitasp.net/attachments/download/3374/KGTN2017031701-11.jpg" alt=""></p>
+<p>&lt;STEP#12&gt;
 [1. 設定ファイルを編集する] を選択し， viewerPath に Adobe Reader
 のパスを指定してください．そして， [ファイル] → [上書き保存]
 を選択してください．なお， Adobe Reader のバージョンが 11 (XI)
 の場合は，この編集作業は不要です．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3375/KGTN2017031701-12.jpg" alt="" /></p>
-
-<p><STEP#13>
+<p><img src="http://techreport.kitasp.net/attachments/download/3375/KGTN2017031701-12.jpg" alt=""></p>
+<p>&lt;STEP#13&gt;
 GG上のメモ帳に戻ります．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3376/KGTN2017031701-13.jpg" alt="" /></p>
-
-<p><STEP#14>
+<p><img src="http://techreport.kitasp.net/attachments/download/3376/KGTN2017031701-13.jpg" alt=""></p>
+<p>&lt;STEP#14&gt;
 [ファイル] → [印刷]
 を選択します．印刷するプリンターが選択されていることを確認後， [印刷]
 をクリックします．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3377/KGTN2017031701-14.jpg" alt="" /></p>
-
-<p><STEP#15>
+<p><img src="http://techreport.kitasp.net/attachments/download/3377/KGTN2017031701-14.jpg" alt=""></p>
+<p>&lt;STEP#15&gt;
 正常であれば， Adobe Reader
 の画面が一時的に表示されます．表示されない場合は，設定ファイルで指定した
 Adobe Reader のパスに誤りがあるか，またはメモリ不足等で Adobe Reader
 が起動出来ない可能性があります．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3378/KGTN2017031701-15.jpg" alt="" /></p>
-
-<p><STEP#16>
+<p><img src="http://techreport.kitasp.net/attachments/download/3378/KGTN2017031701-15.jpg" alt=""></p>
+<p>&lt;STEP#16&gt;
 プリンターのフォルダーに，印刷ジョブが登録されたかどうかを確認します．正常な環境では，下記のスクリーンショットの赤枠の部分に印刷したジョブが登録されます．印刷ジョブが登録された場合は，
 [プリンター] → [一時停止]
 を選択し，一時停止を解除します．これで，実際にプリンターへ印刷される場合は，正常に動作しています．プリンターへ印刷されない場合は，プリンタードライバーまたはプリンターの不具合です．</p>
-
 <p>GG標準の環境で印刷ジョブが登録されず， GGPDFPrint
 の環境で印刷ジョブが登録される場合は，GGのクライアントが正常にインストールされていないか，または壊れた可能性が考えられます．
 GGPDFPrint
 をアンインストールし，次にGGのクライアントをアンインストールしてください．そして，改めてGGをインストールしてください．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3379/KGTN2017031701-16.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3379/KGTN2017031701-16.jpg" alt=""></p>
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3363/KGTN2017031701.pdf">KGTN2017031701.pdf</a>
- [(1.68 MB)] [kitasp 技術センター, 2017/04/07
+[(1.68 MB)] [kitasp 技術センター, 2017/04/07
 15:40]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3364/KGTN2017031701-1.jpg">KGTN2017031701-1.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3364/KGTN2017031701-1.jpg" title="表示">表示</a>
- [(39.1 KB)] [kitasp 技術センター, 2017/04/07
+[(39.1 KB)] [kitasp 技術センター, 2017/04/07
 15:41]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3365/KGTN2017031701-2.jpg">KGTN2017031701-2.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3365/KGTN2017031701-2.jpg" title="表示">表示</a>
- [(49.3 KB)] [kitasp 技術センター, 2017/04/07
+[(49.3 KB)] [kitasp 技術センター, 2017/04/07
 15:41]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3366/KGTN2017031701-3.jpg">KGTN2017031701-3.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3366/KGTN2017031701-3.jpg" title="表示">表示</a>
- [(9.92 KB)] [kitasp 技術センター, 2017/04/07
+[(9.92 KB)] [kitasp 技術センター, 2017/04/07
 15:41]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3367/KGTN2017031701-4.jpg">KGTN2017031701-4.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3367/KGTN2017031701-4.jpg" title="表示">表示</a>
- [(41.1 KB)] [kitasp 技術センター, 2017/04/07
+[(41.1 KB)] [kitasp 技術センター, 2017/04/07
 15:41]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3368/KGTN2017031701-5.jpg">KGTN2017031701-5.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3368/KGTN2017031701-5.jpg" title="表示">表示</a>
- [(53.7 KB)] [kitasp 技術センター, 2017/04/07
+[(53.7 KB)] [kitasp 技術センター, 2017/04/07
 15:41]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3369/KGTN2017031701-6.jpg">KGTN2017031701-6.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3369/KGTN2017031701-6.jpg" title="表示">表示</a>
- [(43.4 KB)] [kitasp 技術センター, 2017/04/07
+[(43.4 KB)] [kitasp 技術センター, 2017/04/07
 15:41]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3370/KGTN2017031701-7.jpg">KGTN2017031701-7.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3370/KGTN2017031701-7.jpg" title="表示">表示</a>
- [(36.4 KB)] [kitasp 技術センター, 2017/04/07
+[(36.4 KB)] [kitasp 技術センター, 2017/04/07
 15:41]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3371/KGTN2017031701-8.jpg">KGTN2017031701-8.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3371/KGTN2017031701-8.jpg" title="表示">表示</a>
- [(13.8 KB)] [kitasp 技術センター, 2017/04/07
+[(13.8 KB)] [kitasp 技術センター, 2017/04/07
 15:41]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3372/KGTN2017031701-9.jpg">KGTN2017031701-9.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3372/KGTN2017031701-9.jpg" title="表示">表示</a>
- [(10.5 KB)] [kitasp 技術センター, 2017/04/07
+[(10.5 KB)] [kitasp 技術センター, 2017/04/07
 15:41]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3373/KGTN2017031701-10.jpg">KGTN2017031701-10.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3373/KGTN2017031701-10.jpg" title="表示">表示</a>
- [(10.2 KB)] [kitasp 技術センター, 2017/04/07
+[(10.2 KB)] [kitasp 技術センター, 2017/04/07
 15:42]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3374/KGTN2017031701-11.jpg">KGTN2017031701-11.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3374/KGTN2017031701-11.jpg" title="表示">表示</a>
- [(59.9 KB)] [kitasp 技術センター, 2017/04/07
+[(59.9 KB)] [kitasp 技術センター, 2017/04/07
 15:42]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3375/KGTN2017031701-12.jpg">KGTN2017031701-12.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3375/KGTN2017031701-12.jpg" title="表示">表示</a>
- [(64.5 KB)] [kitasp 技術センター, 2017/04/07
+[(64.5 KB)] [kitasp 技術センター, 2017/04/07
 15:42]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3376/KGTN2017031701-13.jpg">KGTN2017031701-13.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3376/KGTN2017031701-13.jpg" title="表示">表示</a>
- [(42.4 KB)] [kitasp 技術センター, 2017/04/07
+[(42.4 KB)] [kitasp 技術センター, 2017/04/07
 15:42]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3377/KGTN2017031701-14.jpg">KGTN2017031701-14.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3377/KGTN2017031701-14.jpg" title="表示">表示</a>
- [(55.1 KB)] [kitasp 技術センター, 2017/04/07
+[(55.1 KB)] [kitasp 技術センター, 2017/04/07
 15:42]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3378/KGTN2017031701-15.jpg">KGTN2017031701-15.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3378/KGTN2017031701-15.jpg" title="表示">表示</a>
- [(35.6 KB)] [kitasp 技術センター, 2017/04/07
+[(35.6 KB)] [kitasp 技術センター, 2017/04/07
 15:42]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3379/KGTN2017031701-16.jpg">KGTN2017031701-16.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3379/KGTN2017031701-16.jpg" title="表示">表示</a>
- [(44.5 KB)] [kitasp 技術センター, 2017/04/07
+[(44.5 KB)] [kitasp 技術センター, 2017/04/07
 15:43]</p>
 
                         </div>

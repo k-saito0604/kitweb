@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,28 +285,20 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2015/01/23*</p>
-
 <p>[番号]
 技術ノート KGTN 2015012101</p>
-
 <p>[現象]
 [GGH4.X] 自己責任で構わないので IE7
 でActiveXクライアントを利用する方法はないのか？</p>
-
 <p>[説明]
 logon.html が置かれたフォルダにある logon_PluginFunctions.js
 を以下のように修正 （IE7の認識処理の追加）
 することで，IE7でActiveXクライアントを利用出来るようになります．なお，このコードは
 GGH4.8.2
 の環境で動作を確認しておりますので，他のバージョンでは修正が必要な場合があります．</p>
-
 <pre><code>function GetPlatform()
 {
 　　　　// Browser name string, major version, and agent string
@@ -341,11 +333,9 @@ if (userAgent.indexOf(&quot;msie&quot;) != -1)
 　　　　this.ns = (name.indexOf(&quot;Netscape&quot;) != -1);
 　　　　this.ns4up = (this.ns &amp;&amp; (ver &gt;= 4));
 </code></pre>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/1835/KGTN2015012101.pdf">KGTN2015012101.pdf</a>
- [(59.3 KB)] [kitasp 技術センター, 2015/01/23
+[(59.3 KB)] [kitasp 技術センター, 2015/01/23
 16:52]</p>
 
                         </div>

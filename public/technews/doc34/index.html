@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,20 +285,13 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2015/06/12*</p>
-
 <p>[番号]
 技術ノート KGTN 2015050701</p>
-
 <p>[現象]
 [GGH5.X] GGH4.X と比較して GGH5.X はどのような点が違うのか？</p>
-
 <p>[説明]
 GGW3.X → GGH4.X
 では，アプリケーション配信のアーキテクチャ等が全面的に変更されたため，全く互換性がありませんでした．今回の
@@ -307,156 +300,110 @@ GGH4.X → GGH5.X
 （注意： Windows Server 2008 (32bit/64bit)
 はサポート対象外となりました．なお， Windows Server 2008 R2 (64bit)
 については従来通りサポート対象です） ．GGH5.0 の新機能は以下の通りです．</p>
-
 <p>１．一般ユーザー向けクライアント
 GGH5.Xのクライアント （Windowsクライアントとアドオン）
 は，管理者権限を持たない一般ユーザーでもインストール出来るようになりました．新しいインストーラーは，ウエッブサーバー上の
 WebClients ディレクトリに配置されています．</p>
-
 <ul>
 <li>gg-client.desktop.exe: 従来のWindowsクライアントに相当</li>
 <li>gg-client.chrome.exe: Chrome用のアドオン</li>
 <li>gg-client.firefox.exe: Firefox用のアドオン</li>
 <li>gg-client.ie.exe: 従来のActiveXクライアントに相当</li>
 </ul>
-
 <p>これらのインストーラーは LOCALAPPDATAGraphOnGO-GlobalClient
 ディレクトリにクライアントの実行ファイルをインストールします．アドオンのインストール完了後にブラウザを再起動すると，
 以下のようなURL （サンプル）
 を介してGGサーバーへアクセス出来るようになります．</p>
-
 <p><a href="http://???/logon.html?host=192.168.102.30&amp;user=Administrator&amp;password=myPass">http://???/logon.html?host=192.168.102.30&amp;user=Administrator&amp;password=myPass</a></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2112/KGTN2015050701-1.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/2112/KGTN2015050701-1.jpg" alt=""></p>
 <p>２．Windowsテーマ対応
 Windows 7
 またはそれ以降のクライアント環境で，サーバー側で指定されたテーマでアプリケーションが表示されるようになりました．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2108/KGTN2015050701-211.jpg" alt="" /></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2109/KGTN2015050701-212.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/2108/KGTN2015050701-211.jpg" alt=""></p>
+<p><img src="http://techreport.kitasp.net/attachments/download/2109/KGTN2015050701-212.jpg" alt=""></p>
 <p>３．高解像度ディスプレイ対応
 クライアント側の文字等のサイズ設定が，GG上で動作するアプリケーションにも反映されるようになりました（DPIスケーリング）．下記の例では，拡大表示
 （テキスト等） の設定が，バージョン5.0のみに反映されています．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2110/KGTN2015050701-221.jpg" alt="" /></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2111/KGTN2015050701-222.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/2110/KGTN2015050701-221.jpg" alt=""></p>
+<p><img src="http://techreport.kitasp.net/attachments/download/2111/KGTN2015050701-222.jpg" alt=""></p>
 <p>４．Windowsデスクトップのサポート
 Windows デスクトップ （スタートメニューやタスクバーなど）
 にアクセス出来るようになりました．Windows
 デスクトップにアクセスするには，以下のパラメタを追加して下さい．</p>
-
 <ul>
 <li>コマンドライン： -desktop</li>
 <li>アドオン： &amp;desktop=true</li>
 </ul>
-
 <p>セッションの切断は，セッションのウインドウ（デスクトップの枠）を閉じて下さい．セッションの終了は，デスクトップで
 「ログオフ」 または 「サインアウト」 処理を行って下さい．</p>
-
 <p>管理者は，設定ファイル HostProperties.xml 中の AllowDesktop プロパティに
 false を指定することで，この Windows
 デスクトップ機能を無効にすることが出来ます （既定値は false です） ．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2113/KGTN2015050701-3.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/2113/KGTN2015050701-3.jpg" alt=""></p>
 <p>５．オーディオ機能の改良
 WS2012R2の環境で，セッション毎に仮想オーディオディバイスがサポートされました．これにより，メールに添付されたmp3形式の音声ファイル等を再生することが可能になりました．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2115/KGTN2015050701-41.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/2115/KGTN2015050701-41.jpg" alt=""></p>
 <p>６．自動セッション再接続機能
 クライアントのパラメタに自動セッション再接続機能が追加されました．下記のパラメタを指定することで，ネットワーク障害等によりサーバー～クライアント間でセッションが切断された時に，自動的にサスペンド状態にあるセッションに所定回数だけ
 （x で回数を指定）
 再接続を試みます．再接続の試行時に，下記の再接続ダイアログは表示されません．</p>
-
 <ul>
 <li>コマンドライン： -autoreconnect x</li>
 <li>アドオン： &amp;autoreconnect=x</li>
 </ul>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2080/KGTN2015050701-42.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/2080/KGTN2015050701-42.jpg" alt=""></p>
 <p>７．通信品質監視機能
 サーバー～クライアント間の通信 「品質」
 を監視する機能が追加されました．この機能により一時的なネットワークの遅延やサーバーやクライアントの過負荷による遅延等に関する情報もAPSログに記録されますので，障害解析等を効率的に行えるようになります．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/2081/KGTN2015050701-51.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/2081/KGTN2015050701-51.jpg" alt=""></p>
 <p>８．クライアント側ログファイル
 従来のクライアントではクライアントのログをサーバー側に保存していましたが，接続障害等が発生した場合に情報が記録されないという問題がありました．GGH5.Xのクライアントでは，
 APPDATAGraphOnLogs
 ディレクトリにログファイルを作成するようになりました．
-<img src="http://techreport.kitasp.net/attachments/download/2082/KGTN2015050701-52.jpg" alt="" /></p>
-
+<img src="http://techreport.kitasp.net/attachments/download/2082/KGTN2015050701-52.jpg" alt=""></p>
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2080/KGTN2015050701-42.jpg">KGTN2015050701-42.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2080/KGTN2015050701-42.jpg" title="表示">表示</a>
- [(8.97 KB)] [kitasp 技術センター, 2015/06/23
+[(8.97 KB)] [kitasp 技術センター, 2015/06/23
 14:34]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2081/KGTN2015050701-51.jpg">KGTN2015050701-51.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2081/KGTN2015050701-51.jpg" title="表示">表示</a>
- [(25.6 KB)] [kitasp 技術センター, 2015/06/23
+[(25.6 KB)] [kitasp 技術センター, 2015/06/23
 14:34]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2082/KGTN2015050701-52.jpg">KGTN2015050701-52.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2082/KGTN2015050701-52.jpg" title="表示">表示</a>
- [(25.3 KB)] [kitasp 技術センター, 2015/06/23
+[(25.3 KB)] [kitasp 技術センター, 2015/06/23
 14:34]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2108/KGTN2015050701-211.jpg">KGTN2015050701-211.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2108/KGTN2015050701-211.jpg" title="表示">表示</a>
- [(18.5 KB)] [kitasp 技術センター, 2015/07/09
+[(18.5 KB)] [kitasp 技術センター, 2015/07/09
 11:28]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2109/KGTN2015050701-212.jpg">KGTN2015050701-212.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2109/KGTN2015050701-212.jpg" title="表示">表示</a>
- [(15.4 KB)] [kitasp 技術センター, 2015/07/09
+[(15.4 KB)] [kitasp 技術センター, 2015/07/09
 11:28]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2110/KGTN2015050701-221.jpg">KGTN2015050701-221.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2110/KGTN2015050701-221.jpg" title="表示">表示</a>
- [(62.1 KB)] [kitasp 技術センター, 2015/07/09
+[(62.1 KB)] [kitasp 技術センター, 2015/07/09
 11:28]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2111/KGTN2015050701-222.jpg">KGTN2015050701-222.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2111/KGTN2015050701-222.jpg" title="表示">表示</a>
- [(16.5 KB)] [kitasp 技術センター, 2015/07/09
+[(16.5 KB)] [kitasp 技術センター, 2015/07/09
 11:28]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2112/KGTN2015050701-1.jpg">KGTN2015050701-1.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2112/KGTN2015050701-1.jpg" title="表示">表示</a>
- [(18 KB)] [kitasp 技術センター, 2015/07/09
+[(18 KB)] [kitasp 技術センター, 2015/07/09
 11:32]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2113/KGTN2015050701-3.jpg">KGTN2015050701-3.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2113/KGTN2015050701-3.jpg" title="表示">表示</a>
- [(18.7 KB)] [kitasp 技術センター, 2015/07/09
+[(18.7 KB)] [kitasp 技術センター, 2015/07/09
 11:32]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2115/KGTN2015050701-41.jpg">KGTN2015050701-41.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/2115/KGTN2015050701-41.jpg" title="表示">表示</a>
- [(28.8 KB)] [kitasp 技術センター, 2015/07/09
+[(28.8 KB)] [kitasp 技術センター, 2015/07/09
 11:33]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/2153/KGTN2015050701.pdf">KGTN2015050701.pdf</a>
- [(720 KB)] [kitasp 技術センター, 2015/07/09
+[(720 KB)] [kitasp 技術センター, 2015/07/09
 16:08]</p>
 
                         </div>

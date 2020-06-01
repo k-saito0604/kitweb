@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,44 +285,29 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2019/09/13*</p>
-
 <p>[番号]
 技術ノート KGTN 2019071602</p>
-
 <p>[現象]
 [GGH6.X] GO-Global for Windows Ver6.X のパラメータ情報を知りたい．</p>
-
 <p>[説明]
 GO-Global for Windows Ver6.X
 の暗号関連のパラメータ情報は下記の通りです．</p>
-
 <p>１．暗号機能 / Cryptographic Capabilities</p>
-
 <p>暗号機能は認証，デジタル署名又は複製することを防止されたプログラムの実行以外の目的を有するか．
 The cryptographic capabilities are for purposes other than
 certification, digital signature, or execution of a copy-protected
 program.</p>
-
 <p>[X] YES [ ] NO</p>
-
 <p>暗号機能は本製品に搭載されているものか．1*
 The cryptographic capabilities are self-contained in the product</p>
-
 <p>[ ] YES [X] No</p>
-
 <p>暗号機能は次のいずれかに該当するものか．
 The cryptographic strength exceeds the following:</p>
-
 <p>　Ａ．対称アルゴリズムを用いたものであって，アルゴリズムの鍵の長さが56ビットを超えるもの
 　　　Symmetric algorithms with key length exceeding 56 bit</p>
-
 <p>　Ｂ．非対称アルゴリズムを用いたものであって，
 　　　(a) 512ビットを超える整数の素因数分解（RSA等）に基づくもの，
 　　　Asymmetric algorithms based on factorization of integers in excess
@@ -331,20 +316,15 @@ of 512 bits (e.g. RSA), or
 有限体の乗法群における512ビットを超える離散対数の計算（Diffie-Hellman等）に基づくもの，
 　　　Computation of discrete logarithms in a multiplicative group of a
 finite field of size greater than 512 bits (e.g. Diffie-Hellman), or
-　　　&copy;
+　　　(c)
 上記に規定するもの以外の群における112ビットを超える離散対数の計算（楕円曲線上のDiffie-Hellman等）に基づくもの
 　　　Discrete logarithms in a group other than (B.b) in excess of 112
 bits (Diffie-Hellman over Elliptic Curve).</p>
-
 <p>[X] YES [ ] NO</p>
-
 <p>1* APIを通じてOSから提供される場合は除く。
 　　As opposed to that provided by the Operating System through API.</p>
-
 <p>２．アルゴリズム及び鍵長 / Algorithms and Key Lengths</p>
-
-<hr />
-
+<hr>
 <pre><code>   アルゴリズム               鍵長           プロトコル/アプリケーション/コメント
     Algorithm              Key Length            Protocol/Application/Comment
 
@@ -353,51 +333,43 @@ bits (Diffie-Hellman over Elliptic Curve).</p>
        3DES                   168           
        AES                    256           
 </code></pre>
-
-<hr />
-
+<hr>
 <p>３．市販暗号プログラム該当性 / Mass Market Consideration</p>
-
 <p>製品が以下の要件を満たすものかどうか．
 The product satisfies the following requirements:</p>
-
-<p>1) 購入に際して何らの制限を受けず，(i) 店頭において(ii)
+<ol>
+<li>購入に際して何らの制限を受けず，(i) 店頭において(ii)
 又は郵便，信書便(iii) 若しくは電気通信の送信
 　　による注文により，販売店の在庫から販売されるもの又は使用者に対し何ら制限なく無償で提供されるもの
 　　Generally available to the public by being sold, without
 restriction, from stock at retail selling points
 　　by means of (i) over-the-counter transactions, (ii) mail order
 transactions, (iii) telecommunication
-　　transactions, or available free without restriction;</p>
-
+　　transactions, or available free without restriction;</li>
+</ol>
 <p>[X] YES [ ] NO</p>
-
-<p>2) 暗号機能が使用者によって変更できないもの
+<ol start="2">
+<li>暗号機能が使用者によって変更できないもの
 　　The cryptographic functionality cannot easily be changed by the user
-;</p>
-
+;</li>
+</ol>
 <p>[X] YES [ ] NO</p>
-
-<p>3)
-使用に際して供給者又は販売店の技術支援が不要であるように設計されているもの
+<ol start="3">
+<li></li>
+</ol>
+<p>使用に際して供給者又は販売店の技術支援が不要であるように設計されているもの
 　　Designed for use without technical support by the supplier or the
 distributor</p>
-
 <p>[X] YES [ ] NO</p>
-
 <p>４．該非判定 / Conclusion</p>
-
 <p>上記3.
 に照らして，市販暗号プログラムと判断される結果，適用法上，規制非該当となるプログラムか．
 In light of 3 above, is the software a mass-market crypt program that is
 not controlled under applicable law?</p>
-
 <p>[X] 非該当 / YES [ ] 該当 / NO</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4334/KGTN2019071602.pdf">KGTN2019071602.pdf</a>
- [(70.9 KB)] [kitasp 技術センター, 2019/09/13
+[(70.9 KB)] [kitasp 技術センター, 2019/09/13
 16:03]</p>
 
                         </div>

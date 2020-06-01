@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,44 +285,31 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2020/01/24*</p>
-
 <p>[番号]
 技術ノート KGTN 2019111202</p>
-
 <p>[現象]
 [GGH5.X-6.X]
 IEを立ち上げると２つのプロセスが生成されるが、１つのプロセスだけにならないのか？</p>
-
 <p>[説明]
 下記のレジストリを設定することで、IE
 が１つのプロセスで動作するようになります。なお、この設定を行うとLCIE
 (Loosely-Coupled IE) 機能が無効となり、64ビットの iexplore.exe
 単体で動作するようになります。このため、32ビッドで動作する BHO (Browser
 Helper Object) やActiveXなどのアドオンは動作しません。</p>
-
 <pre><code>HKLMSoftwareMicrosoftInternet ExplorerMain
 TabProcGrowth REG_DWORD 0 (LCIE を無効にし、iexplore.exe を1 つに制限)
 </code></pre>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/4423/KGTN2019111202.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/4423/KGTN2019111202.jpg" alt=""></p>
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4422/KGTN2019111202.pdf">KGTN2019111202.pdf</a>
- [(85.7 KB)] [kitasp 技術センター, 2020/01/24
+[(85.7 KB)] [kitasp 技術センター, 2020/01/24
 12:21]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4423/KGTN2019111202.jpg">KGTN2019111202.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/4423/KGTN2019111202.jpg" title="表示">表示</a>
- [(34.3 KB)] [kitasp 技術センター, 2020/01/24
+[(34.3 KB)] [kitasp 技術センター, 2020/01/24
 12:21]</p>
 
                         </div>

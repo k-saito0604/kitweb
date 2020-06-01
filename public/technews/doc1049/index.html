@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,25 +285,17 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2012/04/09*</p>
-
 <p>[番号]
 技術ノート KGTN 2012011201</p>
-
 <p>[現象]
 [GGH4.0] クライアント印刷機能が有効な時，印刷画面の表示に時間がかかる
 （VB6 Printers コレクション） ．</p>
-
 <p>[説明]
 状況を確認するために弊社ツール GGPrinterCheck.exe
 を実行して下さい．このプログラムは，セッション上で利用できるプリンタを数え上げ，その時に要した時間を画面に表示します．下記の例では，20台のプリンタが存在し，最初は１台当り約1.2秒，最後は１台当り約1.9秒，全体で34秒要していることを示しています．</p>
-
 <p>弊社でさまざまな検証や実験を行った結果，この問題は &ldquo;VB6 のPrinters
 コレクション&rdquo;
 を利用した場合に発生することが判明しました．ソースコードがある場合は，Printers
@@ -311,23 +303,20 @@
 を使用してプリンタリストを作成することで問題が解消します．上記説明と同じ条件で　EnumPrinters
 関数
 を使用して実行したところ，次頁の画面の通り1秒未満で全てのプリンタがリストされました．</p>
-
 <p>&ldquo;VB6 のPrinters コレクション&rdquo;
 を利用した場合の現象については，現在GraphOn社へ問い合わせを行っており，回答が届き次第この技術ノートに反映します．場合によっては，
 VB6 と GGH4.0
 それぞれのアーキテクチャに起因する制限事項という可能性があります．</p>
-
 <p>補足１
 &ldquo;VB6 のPrinters コレクション&rdquo; を利用した場合に遅くなる原因は，Windows
 のサービス &ldquo;Spooler&rdquo; のプロセス （spoolersv.exe）
-がCPUを非常に多く消費していることに起因しています．恐らく，　&rdquo;VB6
+がCPUを非常に多く消費していることに起因しています．恐らく，　&ldquo;VB6
 のPrinters コレクション&rdquo;
 が効率の良くない処理を行っており，GGのクライアント印刷機能が有効な場合，その処理
 （APIをフックしてクライアント側のプリンタも含めてプリンタを数え上げる処理）
 が加わり，プリント・スプーラーの負荷が高まったのではないかと推測されます．なお，
 EnumPrinters 関数を使用した場合は，プリント・スプーラーのCPU使用率は0%
 （またはほぼ0%） です．</p>
-
 <p>補足２
 マイクロソフト社の Process Monitor というツールで spoolersv.exe
 の挙動を確認したところ，レジストリ &ldquo;HKCU¥Printers¥Connections&rdquo; について
@@ -336,7 +325,6 @@ RegOpenKey ? RegQueryKey ? RegEnumKey ? RegCloseKey
 Windows Server 2008 および Windows Server 2003
 の両方の環境で確認することが出来ました．また， Performance Auto-Tuning
 (ClientProcessingBatch = 1) を有効にしても，状況に変化はありません．</p>
-
 <p>補足３
 補足２について，プリンタ数を5台，10台，20台
 と増やして問題のレジストリのアクセス回数を確認しました．5台で400回，10台で1400回，20台で5000回で，プリンタ数が2倍になると，アクセス回数が約3.5倍になります．このようなことから，
@@ -347,21 +335,16 @@ Windows Server 2008 および Windows Server 2003
 コレクションの処理とGGH4.0のクライアント印刷機能の相性に起因する問題だと認識し，
 GGH4.0.1 Patch 5 で VB6 のPrinters コレクションの処理 （問題）
 に対応するとのことです</p>
-
 <p>(2012-02-23) GraphOn社より， 「技術検証用のビルドを準備中」
 との連絡がありました．弊社へ提供され次第，そのビルドで問題が解消するかどうか検証を行います．</p>
-
 <p>(2012-02-24) 技術検証用のビルドで試験したところ，１台当り 0ms 〜 16ms
 で処理されました （22台のプリンタで約1秒） ．従って， GGH4.0.1 Patch 5
 でこの問題が解消されることは確実だと思われます．</p>
-
 <p>(2012-04-04) GGH4.0.1 Patch 5 (4.0.1.12187)
 で，この問題が修正されました．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/792/KGTN2012011201.pdf">KGTN2012011201.pdf</a>
- [(251 KB)] [kitasp 技術センター, 2012/04/09
+[(251 KB)] [kitasp 技術センター, 2012/04/09
 09:26]</p>
 
                         </div>

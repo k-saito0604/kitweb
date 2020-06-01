@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,52 +285,38 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2016/10/05*</p>
-
 <p>[番号]
 技術ノート KGTN 2016091302</p>
-
 <p>[現象]
 [GGH4.X-5.X/ExPack] 拡張パックの GGEasyPassword
 とはどんなツールなのか？</p>
-
 <p>[説明]
 プログラム・ウインドウから起動するツールで，ログオン中のドメインアカウントのパスワードを変更します．処理の内容は，次の通りです．</p>
-
 <ol>
 <li>「現在のパスワード」の確認</li>
 <li>「新しいパスワード」への変更</li>
 <li>「新しいパスワード」の反映の確認</li>
 </ol>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3070/KGTN2016091302-1.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3070/KGTN2016091302-1.jpg" alt=""></p>
 <p>[ボタン]
 実行 ： 現在のパスワードを新しいパスワードに変更します．
 中止 ： プログラムを終了します．</p>
-
 <p>パスワードを変更するコマンドは，設定ファイル GGEasyPassword.ini 中の項目
 command
 で指定します．特に必要がなければ，以下のサンプル設定をご利用下さい．
-<domainadmin> はドメイン管理者のアカウント， <password>
+<!-- raw HTML omitted --> はドメイン管理者のアカウント， <!-- raw HTML omitted -->
 はドメイン管理者のパスワードで置き換えて下さい．この項目は
 GGEasyPassword
 が起動されると，自動的に暗号化されますので，パスワードを指定してもセキュリティ的に特に問題はありません．念のため，設定後に
 GGEasyPassword を起動して，この項目 （値）
 が暗号化されたことを確認して下さい．</p>
-
 <pre><code>command = psexec64 -u &lt;domainadmin&gt; -p &lt;password&gt; net user %s %s /domain
 </code></pre>
-
 <p>補　足
 設定ファイル GGEasyPassword.ini の内容は，次の通りです．</p>
-
 <pre><code>[default]
 logLevel = 1 ← ログレベル（9 を指定するとログが記録されます）
 logd = %USERPROFILE%Documents ← ログの出力先（フォルダ）
@@ -339,28 +325,20 @@ command = psexec64 -u gg-ad0Administrator -p xxx net user %s %s /domain ← パ�
 マンド，最初の%s がユーザーID，次の%s が新しいパスワードで置き換えられます．なお，設定後の最初の
 起動でこのコマンド（文字列）が自動的に暗号化されます．
 </code></pre>
-
 <p>「実行」 によって下記エラーメッセージが表示された場合は，項目 command
 で指定したコマンドに誤りがあります．サンプル設定をお使いの場合は，ドメイン管理者のユーザーIDおよびパスワードをご確認下さい．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3071/KGTN2016091302-2.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3071/KGTN2016091302-2.jpg" alt=""></p>
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3069/KGTN2016091302.pdf">KGTN2016091302.pdf</a>
- [(157 KB)] [kitasp 技術センター, 2016/10/05
+[(157 KB)] [kitasp 技術センター, 2016/10/05
 15:31]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3070/KGTN2016091302-1.jpg">KGTN2016091302-1.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3070/KGTN2016091302-1.jpg" title="表示">表示</a>
- [(17.2 KB)] [kitasp 技術センター, 2016/10/05
+[(17.2 KB)] [kitasp 技術センター, 2016/10/05
 15:31]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3071/KGTN2016091302-2.jpg">KGTN2016091302-2.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3071/KGTN2016091302-2.jpg" title="表示">表示</a>
- [(10.4 KB)] [kitasp 技術センター, 2016/10/05
+[(10.4 KB)] [kitasp 技術センター, 2016/10/05
 15:31]</p>
 
                         </div>

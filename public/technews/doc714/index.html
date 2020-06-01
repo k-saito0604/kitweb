@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,83 +285,66 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2010/07/08*</p>
-
 <p>[番号]
 技術ノート KGTN 2010070701</p>
-
 <p>[現象]
 負荷試験用ツール GMLogonTest の使い方は？</p>
-
 <p>[説明]
 以下の手順で，サーバ側 （試験用アプリケーションの登録） とクライアント側
 （試験用ログオンバッチの設定と実行） のインストール作業を行って下さい．</p>
-
-<p>【サーバ側】
-1) GMLogonTest (Server Side) 中の Install.bat を実行します．
-2) &ldquo;ユーザー アカウント制御&rdquo; のダイアログで 「はい」 を選択します．
-3) &ldquo;レジストリ エディター&rdquo; のダイアログでは 「はい」 （続行）
-を選択します．
-4) 実行完了後サービス GGAPS を再起動します．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/4182/KGTN2010070701-1.jpg" alt="" /></p>
-
-<p>【クライアント側】
-1) Windowsクライアントをインストールします．
-2) GMLogonTest (Client Side) をデスクトップにコピーします．
-3) GMLogonTest_wait_sub.bat をメモ帳で開き下記の項目を設定 （変更）
+<p>【サーバ側】</p>
+<ol>
+<li>GMLogonTest (Server Side) 中の Install.bat を実行します．</li>
+<li>&ldquo;ユーザー アカウント制御&rdquo; のダイアログで 「はい」 を選択します．</li>
+<li>&ldquo;レジストリ エディター&rdquo; のダイアログでは 「はい」 （続行）
+を選択します．</li>
+<li>実行完了後サービス GGAPS を再起動します．</li>
+</ol>
+<p><img src="http://techreport.kitasp.net/attachments/download/4182/KGTN2010070701-1.jpg" alt=""></p>
+<p>【クライアント側】</p>
+<ol>
+<li>Windowsクライアントをインストールします．</li>
+<li>GMLogonTest (Client Side) をデスクトップにコピーします．</li>
+<li>GMLogonTest_wait_sub.bat をメモ帳で開き下記の項目を設定 （変更）
 します．
 　　set host=GGサーバのIPアドレスまたはホスト名
 　　set user=試験に使用するアカウントのID
 　　set pass=試験に使用するアカウントのパスワード
 　　set app=GMLogonTest
-　　set GGDIR=Windows Client がインストールされたフォルダ
-4) GMLogonTest_sub.bat をダブルクリックして実行します．
-　　正常にログオン出来て，かつ画像が表示され，数秒後に全て終了することを確認して下さい．
-5) GMLogonTest.bat をメモ帳で開き下記の項目を設定 （変更） します．
+　　set GGDIR=Windows Client がインストールされたフォルダ</li>
+<li>GMLogonTest_sub.bat をダブルクリックして実行します．
+　　正常にログオン出来て，かつ画像が表示され，数秒後に全て終了することを確認して下さい．</li>
+<li>GMLogonTest.bat をメモ帳で開き下記の項目を設定 （変更） します．
 　　set loop=ログオンの回数
-　　set wait=ログオンの間隔 （秒）
-6) GMLogonTest.bat をダブルクリックして実行します．</p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/4183/KGTN2010070701-2.jpg" alt="" /></p>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/4184/KGTN2010070701-3.jpg" alt="" /></p>
-
+　　set wait=ログオンの間隔 （秒）</li>
+<li>GMLogonTest.bat をダブルクリックして実行します．</li>
+</ol>
+<p><img src="http://techreport.kitasp.net/attachments/download/4183/KGTN2010070701-2.jpg" alt=""></p>
+<p><img src="http://techreport.kitasp.net/attachments/download/4184/KGTN2010070701-3.jpg" alt=""></p>
 <p>補　足
 GMLogonTest.bat は GMLogonTest_sub.bat を繰り返し起動します．
 GMLogonTest_sub.bat は，非同期に gg-client.exe
 を起動しますので，ログオンの間隔の設定により，複数 （多数）
 のセッションが同時に走ることになります．また，サーバ側のクラスタマネージャでGMLogonTest
 に数値の引数を与えると，その秒数後に終了するようになります．従って，クライアント側のログオンの間隔と，サーバ側のアプリケーション名の実行時間を調整することで，様々なシナリオを擬似的に試験することが出来ます．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4181/KGTN2010070701.pdf">KGTN2010070701.pdf</a>
- [(185 KB)] [kitasp 技術センター, 2018/11/29
+[(185 KB)] [kitasp 技術センター, 2018/11/29
 15:16]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4182/KGTN2010070701-1.jpg">KGTN2010070701-1.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/4182/KGTN2010070701-1.jpg" title="表示">表示</a>
- [(24.1 KB)] [kitasp 技術センター, 2018/11/29
+[(24.1 KB)] [kitasp 技術センター, 2018/11/29
 15:16]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4183/KGTN2010070701-2.jpg">KGTN2010070701-2.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/4183/KGTN2010070701-2.jpg" title="表示">表示</a>
- [(23.3 KB)] [kitasp 技術センター, 2018/11/29
+[(23.3 KB)] [kitasp 技術センター, 2018/11/29
 15:16]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/4184/KGTN2010070701-3.jpg">KGTN2010070701-3.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/4184/KGTN2010070701-3.jpg" title="表示">表示</a>
- [(19.1 KB)] [kitasp 技術センター, 2018/11/29
+[(19.1 KB)] [kitasp 技術センター, 2018/11/29
 15:16]</p>
 
                         </div>

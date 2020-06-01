@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,21 +285,14 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2016/10/05*</p>
-
 <p>[番号]
 技術ノート KGTN 2016091301</p>
-
 <p>[現象]
 [GGH4.X-5.X]
 どんな方法でも構わないので，プログラムウインドウからユーザーのパスワードを変更する方法を教えて欲しい．</p>
-
 <p>[説明]
 マイクロソフト社が提供する Sysinternals の PsExec.exe / PsExec64.exe
 を利用する方法があります
@@ -311,34 +304,24 @@ gg-ad0Administrator と password
 です．処理内容やパスワードが分からないようにするには， VC++
 等でアプリケーションを作成し，その中で下記の &ldquo;psexec64 &hellip;&rdquo;
 のコマンドラインを実行することをお勧めします．</p>
-
 <p>chaangePassword.bat</p>
-
 <pre><code>cd C:kitASP
 psexec64 -u gg-ad0Administrator -p password net user %username% * /domain
 exit
 </code></pre>
-
 <p>changePassword.vbs</p>
-
 <pre><code>Set WshShell = WScript.CreateObject(&quot;WScript.Shell&quot;)
 Call WshShell.Run( &quot;cmd.exe /c C:kitASPchaangePassword&quot;, 0, True )
 </code></pre>
-
-<p><img src="http://techreport.kitasp.net/attachments/download/3068/KGTN2016091301.jpg" alt="" /></p>
-
+<p><img src="http://techreport.kitasp.net/attachments/download/3068/KGTN2016091301.jpg" alt=""></p>
 <p>*1 <a href="https://technet.microsoft.com/ja-jp/sysinternals/pxexec">https://technet.microsoft.com/ja-jp/sysinternals/pxexec</a></p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3067/KGTN2016091301.pdf">KGTN2016091301.pdf</a>
- [(214 KB)] [kitasp 技術センター, 2016/10/05
+[(214 KB)] [kitasp 技術センター, 2016/10/05
 15:26]</p>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/3068/KGTN2016091301.jpg">KGTN2016091301.jpg</a></p>
-
 <p><a href="http://techreport.kitasp.net/attachments/3068/KGTN2016091301.jpg" title="表示">表示</a>
- [(41.2 KB)] [kitasp 技術センター, 2016/10/05
+[(41.2 KB)] [kitasp 技術センター, 2016/10/05
 15:26]</p>
 
                         </div>

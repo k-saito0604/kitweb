@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,44 +285,34 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2010/05/07*</p>
-
 <p>[番号]
 技術ノート KGTN 2010050701</p>
-
 <p>[現象]
 3.2.1 Patch2 (4420) から 3.2.1 Patch3 (4446)
 でレジストリの内容が変わっているが，どのような点が変更されたのか？</p>
-
 <p>[説明]
 [変更点その１]
 下記の変更によって，RPCおよびDCOMのサービスが session private
 になりました．各値については，設定変更を行うようなパラメタではありませんので，詳細情報はありません．</p>
-
-<p>[HKEY_LOCAL_MACHINE¥Software¥GraphOn¥Bridges¥1.0.0¥Loader¥Processes]
-1) DefaultValuesSet : dword:00003000 &ndash;&gt; dword:00004000
-2) svchost : NONE &ndash;&gt; dword:00000080 (CREATED)
-3) svchost -k rpcss : NONE &ndash;&gt; dword:00020070 (CREATED)
-4) svchost -k DcomLaunch : NONE &ndash;&gt; dword:00040070 (CREATED)</p>
-
+<p>[HKEY_LOCAL_MACHINE¥Software¥GraphOn¥Bridges¥1.0.0¥Loader¥Processes]</p>
+<ol>
+<li>DefaultValuesSet : dword:00003000 &ndash;&gt; dword:00004000</li>
+<li>svchost : NONE &ndash;&gt; dword:00000080 (CREATED)</li>
+<li>svchost -k rpcss : NONE &ndash;&gt; dword:00020070 (CREATED)</li>
+<li>svchost -k DcomLaunch : NONE &ndash;&gt; dword:00040070 (CREATED)</li>
+</ol>
 <p>[変更点その2]
 機能的な変更ではなく，表面上の変更（形式上の変更）です．</p>
-
 <pre><code>[HKEY_LOCAL_MACHINE¥Software¥GraphOn¥GO-Global Server]
 1) [HKEY_LOCAL_MACHINE¥Software¥GraphOn¥GO-Global Server¥3.2.0] (DELETED)
 2) [HKEY_LOCAL_MACHINE¥Software¥GraphOn¥GO-Global Server¥3.2.1] (CREATED)
 </code></pre>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/160/KGTN2010050701.pdf">KGTN2010050701.pdf</a>
- [(62.4 KB)] [kitasp 技術センター, 2010/05/07
+[(62.4 KB)] [kitasp 技術センター, 2010/05/07
 10:35]</p>
 
                         </div>

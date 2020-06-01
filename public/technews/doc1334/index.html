@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,49 +285,35 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2011/08/19*</p>
-
 <p>[番号]
 技術ノート KGTN 2010031801</p>
-
 <p>[現象]
 クラスタマネージャで Transport = SSL を設定すると， Windows Vista および
 Windows 7 のクライアントからGGサーバへ接続出来ない．</p>
-
 <p>[説明]
 この問題は</p>
-
 <p>Transport = SSL が設定され，
 クライアントの環境が Windows Vista または Windows 7 で，
 ActiveX クライアントを利用し，
 ログオン用HTMLの設定が inbrowserprocess = true</p>
-
 <p>の場合に限り発生することを確認しております．当面の対応としては，以下の2つの方法があります．</p>
-
 <p>ログオン用HTML でinbrowserprocess = false に設定を変更する．
 ActiveX クライアントでなく Windows クライアント （Native Client）
 を使用する．</p>
-
 <p>補足１
 Ver4.0.0 Patch 1 かつIEを 「管理者として実行」
 で起動した場合，ログオン用HTMLの設定が inbrowserprocess = true
 であってもGGサーバへ接続出来ることを確認しました．</p>
-
 <p>補足２
 ggw-3.2.1.4466 の環境でも，クライアント上のログオンユーザが
 Administrator であれば， inbrowserprocess = true
 であってもGGサーバへ接続出来ることを確認しました．</p>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/101/KGTN2010031801.pdf">KGTN2010031801.pdf</a>
- [(62 KB)] [kitasp 技術センター, 2011/08/19
+[(62 KB)] [kitasp 技術センター, 2011/08/19
 09:38]</p>
 
                         </div>

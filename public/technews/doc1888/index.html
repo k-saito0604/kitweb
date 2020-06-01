@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -285,47 +285,41 @@
                         
                       
                         <div id="post-content">
-                          
-
-<hr />
-
+                          <hr>
 <p>*技術ノート</p>
-
 <p>2009/12/08*</p>
-
 <p>[番号]
 技術ノート KGTN 2009111201</p>
-
 <p>[現象]
 NIC交換時の print.ini の取り扱いについて知りたい．</p>
-
-<p>[説明]
-1. 背景
+<p>[説明]</p>
+<ol>
+<li>背景
 print.ini 中の ClientID は，クライアント印刷機能に於いて
 「クライアントおよびユーザ」 を一意に識別するための情報です．ClientID
 は５つのパートから構成され，最後の項目にはクライアントのMACアドレス
-(Physical Address) が設定されます．</p>
-
+(Physical Address) が設定されます．</li>
+</ol>
 <p>ClientIDの例
 [Client Data]
 PreviewState=0900000009
 ClientID=0fa2d4ea-ee84-11dd-9015-0012f07d7b3f</p>
-
-<ol>
-<li><p>NIC交換時の対応 〜 再生成
+<ol start="2">
+<li>
+<p>NIC交換時の対応 〜 再生成
 ClientIDを積極的に管理していない場合は，print.ini
-を削除して下さい．これにより，新しいNICのMACアドレスが設定されたClientIDが生成されます．</p></li>
-
-<li><p>NIC交換時の対応 〜 引継ぎ
+を削除して下さい．これにより，新しいNICのMACアドレスが設定されたClientIDが生成されます．</p>
+</li>
+<li>
+<p>NIC交換時の対応 〜 引継ぎ
 ClientIDを積極的に管理している （あるいは利用している）
 場合は，print.ini
-を削除することなくそのまま使用しても構いません．これにより，クライアント印刷機能はNIC交換後も従来のClientIDを使用します．但し，新しいNICのMACアドレスとClientID中のMACアドレスが不整合な状態になりますので，障害発生時の調査等で注意が必要です．</p></li>
+を削除することなくそのまま使用しても構いません．これにより，クライアント印刷機能はNIC交換後も従来のClientIDを使用します．但し，新しいNICのMACアドレスとClientID中のMACアドレスが不整合な状態になりますので，障害発生時の調査等で注意が必要です．</p>
+</li>
 </ol>
-
 <h3 id="ファイル">ファイル</h3>
-
 <p><a href="http://techreport.kitasp.net/attachments/download/34/KGTN2009111201.pdf">KGTN2009111201.pdf</a>
- [(62.3 KB)] [kitasp 技術センター, 2009/12/08
+[(62.3 KB)] [kitasp 技術センター, 2009/12/08
 14:01]</p>
 
                         </div>
