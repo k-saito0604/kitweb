@@ -3,7 +3,7 @@ title = "既存パッケージをクラウド化し、サブスプリクショ�
 date = "2020-06-02"
 tags = ["news"]
 categories = ["news"]
-banner = "img/Windowsupdate.jpg"
+banner = "img/top-new-lift.jpg"
 type = "news"
 layout = "lift-shift"
 +++

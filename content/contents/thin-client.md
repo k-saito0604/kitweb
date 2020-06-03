@@ -3,8 +3,8 @@ title = "シンクライアントとは？業界歴20年のプロわかりやす
 date = "2020-05-04"
 tags = ["news"]
 categories = ["news"]
-banner = "img/Windowsupdate.jpg"
+banner = "img/top-new-thin-client.jpg"
 type = "news"
 layout = "thin-client"
 +++
-わかりそうでわからないシンクライアントについてご説明します
+今話題の「シンクライアント」わかりそうでわからない、シンクライアントについてご説明します
