@@ -2837,7 +2837,7 @@ KGTN2018090601-2.jpg
       <description>*技術ノート
 2018/10/04*
 [番号] 技術ノート KGTN 2018081302
-[現象] [GGH5.X] JavaScriptで window.open(&amp;quot;&amp;quot;,&amp;ldquo;test1&amp;rdquo;,&amp;lsquo;width=640,height=480&amp;rsquo;); を実行すると，同じ名前のウインドウ test1 が存在する時，そのウインドウのリファレンスが値として戻る．ドキュメントには書かれていないが，これが事実上の仕様ではないのか？
+[現象] [GGH5.X] JavaScriptで window.open(&amp;quot;&amp;rdquo;,&amp;ldquo;test1&amp;rdquo;,&amp;lsquo;width=640,height=480&amp;rsquo;); を実行すると，同じ名前のウインドウ test1 が存在する時，そのウインドウのリファレンスが値として戻る．ドキュメントには書かれていないが，これが事実上の仕様ではないのか？
 [説明] 弊社の3台のサーバーで検証を行ったところ，1台の Windows Server 2012 R2 ではそのように動作しましたが，もう1台の Windows Server 2012 R2 および Windows Server 2016 では空なウインドウ （about:blank） のリファレンスが値として戻りました．従って，既存のウインドウのリファレンスが値として戻るという事象は，事実上の仕様とは言えないと思います．もし，必ずそのような動作をするような設定があれば，お知らせ下さい．空なウインドウのリファレンスが値として戻る2台のサーバーに設定して，動作を確認したいと思います．
 ファイル KGTN2018081302.pdf [(43.3 KB)] [kitasp 技術センター, 2018/10/04 09:40]</description>
     </item>
@@ -2851,7 +2851,7 @@ KGTN2018090601-2.jpg
       <description>*技術ノート
 2018/10/04*
 [番号] 技術ノート KGTN 2018081301
-[現象] [GGH5.X] JavaScriptでウインドウ名test1を持つウインドウが存在する時，次のメソッドを実行すると，そのウインドウのリファレンスが値として戻らず，空なウインドウ （about:blank） のリファレンスが値として戻る．　window.open(&amp;quot;&amp;quot;,&amp;ldquo;test1&amp;rdquo;,&amp;lsquo;width=640,height=480&amp;rsquo;);
+[現象] [GGH5.X] JavaScriptでウインドウ名test1を持つウインドウが存在する時，次のメソッドを実行すると，そのウインドウのリファレンスが値として戻らず，空なウインドウ （about:blank） のリファレンスが値として戻る．　window.open(&amp;quot;&amp;rdquo;,&amp;ldquo;test1&amp;rdquo;,&amp;lsquo;width=640,height=480&amp;rsquo;);
 [説明] インターネット上の会議室等で，同じウインドウ名を持つウインドウが既に存在する時， open　メソッドの第１引数で &amp;quot;&amp;rdquo; ，第2引数で同じウインドウ名を指定すると，既存のウインドウのリファレンスが値として戻るようなことが書かれていますが，マイクロソフト社等のドキュメントを見ますと，次の通り about:blank の新しいウインドウが値として戻ると記述されております．このことから，空なウインドウ （about:blank） のリファレンスが値として戻るのは，正しい動作ということになります．
 https://msdn.microsoft.com/ja-jp/library/cc428117.aspx
 ファイル KGTN2018081301.pdf [(54.3 KB)] [kitasp 技術センター, 2018/10/04 09:38]
@@ -8897,7 +8897,7 @@ SMI_SERVER_INFO smi_serverInfo; SMI_SERVER_METRICS smi_serverMetrics; … SMI_Ge
       <description>*技術ノート
 2016/10/05*
 [番号] 技術ノート KGTN 2016082903
-[現象] [GGH4.X-5.X] ブラウザ用クライアントをインストールしようとしたところ，&amp;quot;&amp;hellip;{A47FAE4B-EFD0-4544-AB85-0EDBA 指定されたパスが見つかりません。&amp;rdquo; と表示された．
+[現象] [GGH4.X-5.X] ブラウザ用クライアントをインストールしようとしたところ，&amp;rdquo;&amp;hellip;{A47FAE4B-EFD0-4544-AB85-0EDBA 指定されたパスが見つかりません。&amp;rdquo; と表示された．
 [説明] メッセージのコピペのミスでなければ，Windows自体の問題等で不完全なパスへのインストールが行われたことを示しています．正しいパスは，次の通りです．
 C:UsersAppDataLocalDownloaded Installations{A47FAE4B-EFD0-4544-AB85-0EDBA17375E7}
 クライアントのマシンを再起動して，状況が改善するかどうか確認して下さい．改善しない場合は，正常にインストール出来たマシンの上記フォルダを開き，そこにある ???.msi というファイルを問題のマシンへコピーし，そのファイルを実行してインストールを試みて下さい．
@@ -15766,7 +15766,7 @@ Opened log for gg-client.exe process ID 3516 Local date and time: Thu Apr 02 14:
 [番号] 技術ノート KGTN 2015040302
 [現象] [GGH5.X] Google Chrome用のクライアント （Chromeクライアント） のインストール手順は？
 [説明] 以下，GGサーバーにウエッブサーバーが同居している環境でのGoogle Chrome用のクライアント （Chromeクライアント） のインストール手順を示します．
-１．Chromeを立ち上げ http://&amp;lt;GGサーバーのアドレス&amp;gt;/logon.html{.external} へアクセスし，&amp;ldquo;Download&amp;rdquo; をクリックする． ２．&amp;ldquo;gg-client.chrome.exe&amp;rdquo; をクリックする． ３．&amp;ldquo;実行&amp;rdquo; をクリックする． ４．&amp;ldquo;Next&amp;rdquo; をクリックする． ５．&amp;ldquo;Finish&amp;rdquo; をクリックする． ６．&amp;ldquo;Install&amp;rdquo; をクリックする． ７．GO-Global と書かれた画面が表示されたのを確認し，スクロールバーで画面の右上を表示する． ８．&amp;ldquo;+ CHROME に追加&amp;rdquo; をクリックする． ９．&amp;ldquo;追加&amp;rdquo; をクリックする． １０．&amp;ldquo;GO-Global - Chrome&amp;rdquo; と書かれたタブを閉じる． １１．&amp;ldquo;GO-Global&amp;rdquo; と書かれたタブをリロードする． １２．&amp;ldquo;ポップアップがブロックされました&amp;rdquo; と表示された場合は，その部分をクリックする． １３．&amp;quot;??? のポップアップを常に許可する&amp;rdquo; を選択し，&amp;ldquo;完了&amp;rdquo; をクリックする． １４．ログオン画面が表示される． ファイル KGTN2015040302.pdf [(764 KB)] [kitasp 技術センター, 2015/06/11 17:52]
+１．Chromeを立ち上げ http://&amp;lt;GGサーバーのアドレス&amp;gt;/logon.html{.external} へアクセスし，&amp;ldquo;Download&amp;rdquo; をクリックする． ２．&amp;ldquo;gg-client.chrome.exe&amp;rdquo; をクリックする． ３．&amp;ldquo;実行&amp;rdquo; をクリックする． ４．&amp;ldquo;Next&amp;rdquo; をクリックする． ５．&amp;ldquo;Finish&amp;rdquo; をクリックする． ６．&amp;ldquo;Install&amp;rdquo; をクリックする． ７．GO-Global と書かれた画面が表示されたのを確認し，スクロールバーで画面の右上を表示する． ８．&amp;ldquo;+ CHROME に追加&amp;rdquo; をクリックする． ９．&amp;ldquo;追加&amp;rdquo; をクリックする． １０．&amp;ldquo;GO-Global - Chrome&amp;rdquo; と書かれたタブを閉じる． １１．&amp;ldquo;GO-Global&amp;rdquo; と書かれたタブをリロードする． １２．&amp;ldquo;ポップアップがブロックされました&amp;rdquo; と表示された場合は，その部分をクリックする． １３．&amp;rdquo;??? のポップアップを常に許可する&amp;rdquo; を選択し，&amp;ldquo;完了&amp;rdquo; をクリックする． １４．ログオン画面が表示される． ファイル KGTN2015040302.pdf [(764 KB)] [kitasp 技術センター, 2015/06/11 17:52]
 KGTN2015040302-11.jpg
 表示 [(16.6 KB)] [kitasp 技術センター, 2015/06/18 15:48]
 KGTN2015040302-12.jpg</description>
@@ -24279,7 +24279,7 @@ http://www.microsoft.com/ja-jp/download/details.aspx?id=6676 User Profile Hive C
 [番号] 技術ノート KGTN 2013020601
 [現象] [GGH4.X-5.X] GGサーバのパラメタ ClientProcessingBatch の詳細について知りたい．
 [説明] ClientProcessingBatch = 0 の場合は，サーバはクライアントに対して描画命令を送信します．ClientProcessingBatch = 1 の場合は，サーバ側で 「クライアント画面の描画効率を判断し」 描画命令または画像データ （スクリーンスクレーピング） の何れかを送信します．描画命令を送信するケースでは，さまざまな描画上の最適化が行われるため，アプリケーションによってはこの最適化に馴染まず画面の乱れ等を引き起こすことがあります（主に一般的でない画面上の動作） ．このような場合は， ClientProcessingBatch = 1 を適用することで，この画面の乱れを回避出来る可能性があります．より詳しい内容については，以下のGraphOn社の説明をご覧下さい．
-[ClientProcessingBatch] When ClientProcessingBatch is set to 0, the host updates the client&amp;rsquo;s display by sending primitive drawing commands such as &amp;ldquo;draw rectangle&amp;rdquo;, &amp;ldquo;draw line&amp;rdquo;, &amp;ldquo;draw text,&amp;quot;, etc&amp;hellip; to the client. Alternatively, the host could simply wait and send an image with the final result of the drawing operations to the client.</description>
+[ClientProcessingBatch] When ClientProcessingBatch is set to 0, the host updates the client&amp;rsquo;s display by sending primitive drawing commands such as &amp;ldquo;draw rectangle&amp;rdquo;, &amp;ldquo;draw line&amp;rdquo;, &amp;ldquo;draw text,&amp;rdquo;, etc&amp;hellip; to the client. Alternatively, the host could simply wait and send an image with the final result of the drawing operations to the client.</description>
     </item>
     
     <item>
@@ -39204,7 +39204,7 @@ header footer dateTime hostName ipAddress serverID maxSessions sessionCount avai
 [HKEY_LOCAL_MACHINE¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout] &amp;ldquo;Fallback Layout Text&amp;quot;=&amp;quot;Japanese&amp;rdquo;
 この件はGraphOn社でも確認しており，今後のリリースで修正される予定です．
 補足１ 3.2.1 Patch4 (4466) およびそれ以降では，本問題は解消されております．
-Bug 8997 On Japanese Windows Server 2008, users are unable to logon to an account with a password including &amp;ldquo;@,=,‾,etc&amp;hellip;&amp;quot;.
+Bug 8997 On Japanese Windows Server 2008, users are unable to logon to an account with a password including &amp;ldquo;@,=,‾,etc&amp;hellip;&amp;rdquo;.
 補足２ Windows Server 2008 のインストール時に，標準的な106キーボードが接続されていることが前提となります．それ以外の環境では，下記のレジストリの Layout Text の値を上記Fallback Layout Text へセットして下さい．
 [HKEY_LOCAL_MACHINE¥SYSTEM¥CurrentControlSet¥Control¥Keyboard Layouts¥00000411] &amp;ldquo;Layout Display Name&amp;quot;=&amp;rdquo;@C:¥¥Windows¥¥system32¥¥input.dll,-5061&amp;rdquo; &amp;ldquo;Layout File&amp;quot;=&amp;quot;KBDJPN.</description>
     </item>
@@ -40229,7 +40229,7 @@ bin¥openssl pkcs12 ?export ?in server.crt ?inkey server.key ?out server.p12 を
 [番号] 技術ノート KGTN 2010040703
 [現象] 起動したいアプリケーション名に空白がある場合，Javaクライアント （Signed） ではどのように指定すれば良いのか？
 [説明] SignedのJava クライアントの場合は，空白を含むアプリケーション名をそのまま指定して下さい．
-var debug = false; var applet = new Object(); applet.code = &amp;ldquo;com.graphon.ggw.Logon&amp;rdquo;; applet.archive = &amp;ldquo;ggw.sunsigned.jar,ggw.res.jar&amp;rdquo;; applet.nos = &amp;ldquo;ggw.netscapesigned.jar,ggw.res.jar&amp;rdquo;; applet.cabcount = 2; applet.cab = &amp;ldquo;ggw.mssigned.cab,ggw.res.cab&amp;rdquo;; applet.name = &amp;ldquo;GO-Global for Windows Applet&amp;rdquo;; applet.title = &amp;ldquo;GO-Global for Windows Applet&amp;rdquo;; applet.alt = &amp;ldquo;GO-Global for Windows Applet&amp;rdquo;; applet.vspace = &amp;ldquo;0&amp;rdquo;; applet.hspace = &amp;ldquo;0&amp;rdquo;; applet.width = &amp;ldquo;1000&amp;rdquo;; applet.height = &amp;ldquo;630&amp;rdquo;; createAppletTag( applet, [&amp;ldquo;host&amp;rdquo;, &amp;ldquo;&amp;quot;, &amp;ldquo;user&amp;rdquo;, &amp;ldquo;&amp;quot;, &amp;ldquo;password&amp;rdquo;, &amp;ldquo;&amp;quot;, &amp;ldquo;application&amp;rdquo;, &amp;ldquo;Notepad 001&amp;rdquo;, &amp;ldquo;args&amp;rdquo;, &amp;ldquo;&amp;quot;, &amp;ldquo;desktopcolor&amp;rdquo;, &amp;ldquo;&amp;quot;, &amp;ldquo;compression&amp;rdquo;, &amp;ldquo;true&amp;rdquo;, &amp;ldquo;hostport&amp;rdquo;, &amp;ldquo;&amp;quot;] );</description>
+var debug = false; var applet = new Object(); applet.code = &amp;ldquo;com.graphon.ggw.Logon&amp;rdquo;; applet.archive = &amp;ldquo;ggw.sunsigned.jar,ggw.res.jar&amp;rdquo;; applet.nos = &amp;ldquo;ggw.netscapesigned.jar,ggw.res.jar&amp;rdquo;; applet.cabcount = 2; applet.cab = &amp;ldquo;ggw.mssigned.cab,ggw.res.cab&amp;rdquo;; applet.name = &amp;ldquo;GO-Global for Windows Applet&amp;rdquo;; applet.title = &amp;ldquo;GO-Global for Windows Applet&amp;rdquo;; applet.alt = &amp;ldquo;GO-Global for Windows Applet&amp;rdquo;; applet.vspace = &amp;ldquo;0&amp;rdquo;; applet.hspace = &amp;ldquo;0&amp;rdquo;; applet.width = &amp;ldquo;1000&amp;rdquo;; applet.height = &amp;ldquo;630&amp;rdquo;; createAppletTag( applet, [&amp;ldquo;host&amp;rdquo;, &amp;ldquo;&amp;rdquo;, &amp;ldquo;user&amp;rdquo;, &amp;ldquo;&amp;rdquo;, &amp;ldquo;password&amp;rdquo;, &amp;ldquo;&amp;rdquo;, &amp;ldquo;application&amp;rdquo;, &amp;ldquo;Notepad 001&amp;rdquo;, &amp;ldquo;args&amp;rdquo;, &amp;ldquo;&amp;rdquo;, &amp;ldquo;desktopcolor&amp;rdquo;, &amp;ldquo;&amp;rdquo;, &amp;ldquo;compression&amp;rdquo;, &amp;ldquo;true&amp;rdquo;, &amp;ldquo;hostport&amp;rdquo;, &amp;ldquo;&amp;quot;] );</description>
     </item>
     
     <item>

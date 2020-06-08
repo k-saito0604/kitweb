@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.68.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -413,7 +413,7 @@ iRetval = ParseCommandLine(strServer)
 MsgBox &ldquo;0) Parse Command : iRetval = &quot; &amp; iRetval &amp; &quot; , strServer = &quot;
 &amp; strServer
 &lsquo;&mdash;
-iRetval = gg_ManageSpooler(&quot;.&quot;, kStopSpooler)
+iRetval = gg_ManageSpooler(&rdquo;.&rdquo;, kStopSpooler)
 MsgBox &ldquo;1) Stop Spooler : iRetval = &quot; &amp; iRetval
 if iRetval 0 and iRetval 1 then
 wscript.echo &ldquo;Print Spooler を停止できません&rdquo;
@@ -427,7 +427,7 @@ MsgBox &ldquo;3) Copy Files : iRetval = &quot; &amp; iRetval
 iRetval = gg_ImportRegistry(strDst &amp; &ldquo;¥printer_registry.reg&rdquo;)
 MsgBox &ldquo;4) Import Registry : iRetval = &quot; &amp; iRetval
 &lsquo;&mdash;
-iRetval = gg_ManageSpooler(&quot;.&quot;, kStartSpooler)
+iRetval = gg_ManageSpooler(&rdquo;.&rdquo;, kStartSpooler)
 MsgBox &ldquo;5) Start Spooler : iRetval = &quot; &amp; iRetval
 if iRetval 0 and iRetval 1 then
 wscript.echo &ldquo;Print Spooler を開始できません&rdquo;
