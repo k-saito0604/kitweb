@@ -7,17 +7,15 @@
             <div class="heading text-center">
                 <h2>{{ .Site.Params.recent_posts.title | markdownify }}</h2>
             </div>
-
             <p class="lead">
               {{ .Site.Params.recent_posts.subtitle | markdownify }}
             </p>
 
             <!-- *** BLOG HOMEPAGE *** -->
-
             <div class="row">
-                {{ $posts2 := .Paginate (.Site.Taxonomies.categories.news) }}
-                {{ range first 2 $posts2.Pages }}
-                <div class="col-md-6 col-sm-6">
+                {{ $pposts := .Paginate (.Site.Taxonomies.categories.news) }}
+                {{ range first 4 $pposts.Pages }}
+                <div class="col-md-3 col-sm-6">
                     <div class="box-image-text blog">
                         <div class="top">
                             <div class="image" style="overflow:hidden">

@@ -3,8 +3,8 @@
 
   <head>
   <meta charset="utf-8">
-  <meta name="robots" content="all,follow">
-  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="robots" content="noindex">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <title>中小企業のオフィスで使用しているレガシーアプリケーション導入事例</title>
@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.68.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -97,6 +97,7 @@
   <meta name="twitter:description" content="きっとエイエスピーのホームページ">
   
 
+
   <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-app.js"></script>
   <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-storage.js"></script>
   <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-auth.js"></script>
@@ -113,6 +114,21 @@
     <div id="all">
 
         <header>
+          
+<div id="top">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-5">
+        <a href="https://www.kitasp.com/"><img src="/img/logo_s.png/" alt="中小企業のオフィスで使用しているレガシーアプリケーション導入事例 logo" class=""></a>
+      </div>
+      <div class="col-xs-7">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
           <div class="navbar-affixed-top" data-spy="affix" data-offset-top="500">
 
@@ -121,8 +137,8 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="/">
-                    <img src="/img/logo.png" alt="中小企業のオフィスで使用しているレガシーアプリケーション導入事例 logo" class="hidden-xs hidden-sm">
-                    <img src="/img/logo-small.png" alt="中小企業のオフィスで使用しているレガシーアプリケーション導入事例 logo" class="visible-xs visible-sm">
+                    <img src="/img/logo-go-small.png" alt="中小企業のオフィスで使用しているレガシーアプリケーション導入事例 logo" class="hidden-xs hidden-sm">
+                    <img src="/img/logo-go-small.png" alt="中小企業のオフィスで使用しているレガシーアプリケーション導入事例 logo" class="visible-xs visible-sm">
                     <span class="sr-only">中小企業のオフィスで使用しているレガシーアプリケーション導入事例 - ホームへ戻る</span>
                 </a>
                 <div class="navbar-buttons">
@@ -138,32 +154,44 @@
                 <ul class="nav navbar-nav navbar-right">
                   
                   <div class = "topbotton">
-                    <a class="fas fa-search" href="/search">ページを検索する</a>
                     <a href="/contact" class="btn-square-shadow-ora">問い合わせ</a>
                     <a href="https://gitbook.kitasp.com/" class="btn-square-shadow">技術サイト</a>
+                    <a href="https://www.kitasp.com/" class="btn-square-shadow-old">会社概要</a><br>
+                    <a class="fas fa-search" href="/search">ページ検索</a>
                   </div>
                   
                   
                   
                   <li class="dropdown">
                     
-                    <a class="dropdown-toggle" href="/function-introduction/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">機能説明</span><span class="caret"></span></a>
+                    <a href="/go-global/">GO-Globalとは</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a class="dropdown-toggle" href="/function-introduction/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">GO-Global活用</span><span class="caret"></span></a>
                     <ul class="dropdown-menu">
                       
                         <li>
-                          <a href="/web-separation">web分離</a>
+                          <a href="/contents/web-separation/">インターネット分離</a>
                         </li>
                       
                         <li>
-                          <a href="/work-style-reform">働き方改革</a>
+                          <a href="/contents/work-style-reform/">働き方改革</a>
                         </li>
                       
                         <li>
-                          <a href="/thin-client">シンクライアント</a>
+                          <a href="/contents/thin-client/">シンクライアント</a>
                         </li>
                       
                         <li>
-                          <a href="/lift-shift">アプリクラウド化</a>
+                          <a href="/contents/lift-shift/">アプリクラウド化</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/telework">テレワーク導入</a>
                         </li>
                       
                     </ul>
@@ -203,37 +231,7 @@
                   
                   <li class="dropdown">
                     
-                    <a class="dropdown-toggle" href="/posts/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">お知らせ</span><span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      
-                        <li>
-                          <a href="/support-schedule/">対応スケジュール</a>
-                        </li>
-                      
-                        <li>
-                          <a href="https://portal.kitasp.com/downloads/">Download</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/posts/">News</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/docs/">Tech news</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/blog/">blog</a>
-                        </li>
-                      
-                    </ul>
-                    
-                  </li>
-                  
-                  
-                  <li class="dropdown">
-                    
-                    <a href="/faq/">FAQ</a>
+                    <a href="/faq/">よくある質問</a>
                     
                   </li>
                   
@@ -241,32 +239,6 @@
                   <li class="dropdown">
                     
                     <a href="/partners-list/">代理店一覧</a>
-                    
-                  </li>
-                  
-                  
-                  <li class="dropdown">
-                    
-                    <a class="dropdown-toggle" href="/company-infomation/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">会社概要</span><span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      
-                        <li>
-                          <a href="/representative-greetings/">代表挨拶</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/philosophy/">理念</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/history/">沿革</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/privacy-policy/">プライバシーポリシー</a>
-                        </li>
-                      
-                    </ul>
                     
                   </li>
                   
@@ -307,9 +279,9 @@
       <div class="row">
           <div class="col-md-12">
               
-              <h1 class="text-uppercase">コストを抑えてレガシーアプリケーションを延命</h1>
+              <h1 class="text">コストを抑えてレガシーアプリケーションを延命</h1>
               <br>
-              <h2 class="text-uppercase">中小企業のレガシーアプリケーションの悩みをGO-Globalが解決</h2>
+              <h2 class="text">中小企業のレガシーアプリケーションの悩みをGO-Globalが解決</h2>
           </div>
       </div>
   </div>
@@ -361,7 +333,7 @@
                     社内ではいろいろな議論がありましたが、
                     「クライアント環境全体の仮想化ではなく特定のアプリケーション(レガシーアプリケーション)を仮想化する」という初めの課題に立ち戻り
                     SBCタイプに決定しました。
-                    結果的には、SBCタイプにすることにより、余計なコストをかけることなく、アプリケーションが維持できるようになりました。
+                    結果的には、SBCタイプにすることにより、余計なコストをかけることなく、アプリケーションを維持できるようになりました。
                 </p>
                 </div>
               </div>
@@ -379,7 +351,7 @@
                 GO-Globalで仮想化されたアプリケーションをクライアント端末から直接起動する仕組みを導入したことにより社員は仮想化を意識することなく業務を行う事ができました。
                 この事は社員の業務効率をあげ、
                 導入の敷居を下げるのに大変役に立ちました。                
-                そんな中、客先訪問のたびに、重たいノートPCを持ち運び、社内のシステムへVPNアクセスでレガシーアプリケーションに接続をして業務を行う事が多かった営業から、社内からはレガシーアプリケーションをクラウド化してモバイル対応したい。といった要望があり、
+                そんな中、客先訪問のたびに、重たいノートPCを持ち運び、社内のシステムへVPNアクセスでレガシーアプリケーションに接続をして業務を行う事が多かった営業から、社内からはレガシーアプリケーションをクラウド化してモバイル対応したい。といった要望があり、
             </p>
               </div>
               <div class = "col-md-12">
@@ -389,7 +361,7 @@
                   </p>
                 <p>                   
                     プリケーションをモバイルに無改修で配信、外回りの社員は重たいノートPCを持ち運ぶ苦労から
-                    GO-GLOBALのおかげで、解放されることになりました。
+                    GO-Globalのおかげで、解放されることになりました。
                     現在は次のステップとしてリモートワークを一部社員に解禁しようと考えています。
                     社内の仕組みを整備することと並行して、育児を行っている女性社員を中心に自宅で数時間会社業務を行える環境を整備できないか検討しています。
                     
@@ -400,7 +372,7 @@
                 <div class ="fadein">
                 <div class="boxmatome">
                 <div class="box-title">中小オフィスのGO-Global導入ポイント</div>
-                <p><img class="icon1" src="/img/check.png" width="20" height="20">レガシーアプリケーションの改修なしでOSの移行が完了</p>
+                <p><img class="icon1" src="/img/check.png" width="10" height="10">レガシーアプリケーションの改修なしでOSの移行が完了</p>
                 <p><img class="icon1" src="/img/check.png" width="20" height="20">当初よりコストを大幅に抑えて仮想化が実現</p>
                 <p><img class="icon1" src="/img/check.png" width="20" height="20">今後の働き方改革の指針になった</p>
                </div>
@@ -449,9 +421,119 @@
   </div>
 </div>
         
-
-
-
+        <footer id="footer">
+        <div class="footer-nav-wrapper">        
+        <div class="container">
+            
+    <div class="col-md-12">
+            <div class="col-md-3 col-sm-3">
+                <div class="footer-nav-column">
+                    <div class="footer-nav-column-title"></div>
+                    <div class="footer-nav-column-content">
+                    <a href="/go-global/">GO-Globalとは</a>
+                    <ul>
+                        <li>
+                            <a href="/web-separation/">インターネット分離</a>
+                        </li>
+                        <li>
+                            <a href="/work-style-reform/">働き方改革</a>
+                        </li>
+                        <li>
+                            <a href="/thin-client/">シンクライアント</a>
+                        </li>
+                        <li>
+                            <a href="/lift-shift/">アプリクラウド化</a>
+                        </li>
+                        <li>
+                            <a href="/telework/">テレワーク導入</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="hidden-md hidden-lg hidden-sm">
+        <div class="col-md-3 col-sm-3">
+            <div class="footer-nav-column">
+                <div class="footer-nav-column-title"></div>
+               <div class="footer-nav-column-content">
+                <a href="/case-study/">導入事例</a>
+                <ul>
+                    <li>
+                        <a href="/adaptation-facility-1/">医療現場</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-2/">ISV</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-3/">中小企業</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-4/">BCP対策</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-5/">教育現場</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <hr class="hidden-md hidden-lg hidden-sm">
+                <div class="col-md-3 col-sm-3">
+                    <div class="footer-nav-column">
+                        <div class="footer-nav-column-title"></div>
+                        <div class="footer-nav-column-content">
+                            <a href="/post/">お知らせ</a>
+                            <ul>
+                                <li>
+                                    <a href="/support-schedule/">対応スケジュール</a>
+                                </li>
+                                <li>
+                                    <a href="/news/">Download</a>
+                                </li>
+                                <li>
+                                    <a href="/categories/news/">サイトニュース</a>
+                                </li>
+                                <li>
+                                    <a href="/categories/tech-news/">技術ニュース</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <hr class="hidden-md hidden-lg hidden-sm">
+        
+                </div>
+        <div class="col-md-3 col-sm-3">
+            <div class="footer-nav-column">
+                <div class="footer-nav-column-content">
+                <div class="footer-nav-column-a">
+                <a href="/faq/">FAQ</a><br>
+                <a href="/partners-list/">代理店一覧</a><br>
+                <a href="/contact/">問合せフォーム</a><br>
+                <a href="/technical-site/">技術サイト</a><br>
+                <a href="/company-information/">企業概要</a>
+                <ul>
+                <li>
+                    <a href="/representative-greetings/">代表あいさつ</a>
+                </li>
+                <li>
+                    <a href="/philosophy/">理念</a>
+                </li>
+                <li>
+                    <a href="/history/">沿革</a>
+                </li>
+                <li>
+                    <a href="/privacy-policy/">個人情報保護方針</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+    </div>
+    </div>
+        </div>
+    
 </footer>
 
 
@@ -463,15 +545,26 @@
 <div id="copyright">
     <div class="container">
         <div class="col-md-12">
+            <div class="col-xs-5">
             
-            <p style="text-align:center;">Copyright © 2020 KitASP Corp. All Rights Reserved</p>
-            
-
-
-            </p><br>
-            <br>
+           <p style="text-align:center;">Copyright © 2020 KitASP Corp. All Rights Reserved</p>
             
         </div>
+                
+                    <div class="col-xs-7">
+                        <div class="social">
+                          
+                        <a href="https://www.facebook.com/kitasp2000/" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-facebook'></i></a>
+                        
+                        <a href="https://twitter.com/KitASP_Corp" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-twitter'></i></a>
+                        
+                        <a href="https://www.instagram.com/kitasp_corp/" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-instagram'></i></a>
+                        
+                </div>
+                </div>
+                
+        </div>
+        <br><br><br>
     </div>
 </div>
 

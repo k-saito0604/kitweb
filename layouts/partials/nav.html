@@ -5,7 +5,7 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="{{ "/" | relURL }}">
-                    <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Title }} logo" class="hidden-xs hidden-sm">
+                    <img src="{{ .Site.Params.logo_small | relURL }}" alt="{{ .Title }} logo" class="hidden-xs hidden-sm">
                     <img src="{{ .Site.Params.logo_small | relURL }}" alt="{{ .Title }} logo" class="visible-xs visible-sm">
                     <span class="sr-only">{{ .Title }} - {{ i18n "navHome" }}</span>
                 </a>
@@ -22,9 +22,10 @@
                 <ul class="nav navbar-nav navbar-right">
                   
                   <div class = "topbotton">
-                    <a class="fas fa-search" href="/search">ページを検索する</a>
                     <a href="/contact" class="btn-square-shadow-ora">問い合わせ</a>
                     <a href="https://gitbook.kitasp.com/" class="btn-square-shadow">技術サイト</a>
+                    <a href="https://www.kitasp.com/" class="btn-square-shadow-old">会社概要</a><br>
+                    <a class="fas fa-search" href="/search">ページ検索</a>
                   </div>
                   {{ $current := . }}
                   {{ range .Site.Menus.main }}

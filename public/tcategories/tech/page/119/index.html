@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja-jp">
-
   <head>
   <meta charset="utf-8">
-  <meta name="robots" content="all,follow">
-  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="robots" content="noindex">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <title>tech</title>
@@ -18,7 +17,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.68.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -97,6 +96,7 @@
   <meta name="twitter:description" content="きっとエイエスピーのホームページ">
   
 
+
   <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-app.js"></script>
   <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-storage.js"></script>
   <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-auth.js"></script>
@@ -113,6 +113,20 @@
     <div id="all">
 
         <header>
+            
+<div id="top">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-5">
+        <a href="https://www.kitasp.com/"><img src="/img/logo_s.png/" alt="tech logo" class=""></a>
+      </div>
+      <div class="col-xs-7">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
           <div class="navbar-affixed-top" data-spy="affix" data-offset-top="500">
 
@@ -121,8 +135,8 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="/">
-                    <img src="/img/logo.png" alt="tech logo" class="hidden-xs hidden-sm">
-                    <img src="/img/logo-small.png" alt="tech logo" class="visible-xs visible-sm">
+                    <img src="/img/logo-go-small.png" alt="tech logo" class="hidden-xs hidden-sm">
+                    <img src="/img/logo-go-small.png" alt="tech logo" class="visible-xs visible-sm">
                     <span class="sr-only">tech - ホームへ戻る</span>
                 </a>
                 <div class="navbar-buttons">
@@ -138,32 +152,44 @@
                 <ul class="nav navbar-nav navbar-right">
                   
                   <div class = "topbotton">
-                    <a class="fas fa-search" href="/search">ページを検索する</a>
                     <a href="/contact" class="btn-square-shadow-ora">問い合わせ</a>
                     <a href="https://gitbook.kitasp.com/" class="btn-square-shadow">技術サイト</a>
+                    <a href="https://www.kitasp.com/" class="btn-square-shadow-old">会社概要</a><br>
+                    <a class="fas fa-search" href="/search">ページ検索</a>
                   </div>
                   
                   
                   
                   <li class="dropdown">
                     
-                    <a class="dropdown-toggle" href="/function-introduction/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">機能説明</span><span class="caret"></span></a>
+                    <a href="/go-global/">GO-Globalとは</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a class="dropdown-toggle" href="/function-introduction/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">GO-Global活用</span><span class="caret"></span></a>
                     <ul class="dropdown-menu">
                       
                         <li>
-                          <a href="/web-separation">web分離</a>
+                          <a href="/contents/web-separation/">インターネット分離</a>
                         </li>
                       
                         <li>
-                          <a href="/work-style-reform">働き方改革</a>
+                          <a href="/contents/work-style-reform/">働き方改革</a>
                         </li>
                       
                         <li>
-                          <a href="/thin-client">シンクライアント</a>
+                          <a href="/contents/thin-client/">シンクライアント</a>
                         </li>
                       
                         <li>
-                          <a href="/lift-shift">アプリクラウド化</a>
+                          <a href="/contents/lift-shift/">アプリクラウド化</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/telework">テレワーク導入</a>
                         </li>
                       
                     </ul>
@@ -203,37 +229,7 @@
                   
                   <li class="dropdown">
                     
-                    <a class="dropdown-toggle" href="/posts/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">お知らせ</span><span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      
-                        <li>
-                          <a href="/support-schedule/">対応スケジュール</a>
-                        </li>
-                      
-                        <li>
-                          <a href="https://portal.kitasp.com/downloads/">Download</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/posts/">News</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/docs/">Tech news</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/blog/">blog</a>
-                        </li>
-                      
-                    </ul>
-                    
-                  </li>
-                  
-                  
-                  <li class="dropdown">
-                    
-                    <a href="/faq/">FAQ</a>
+                    <a href="/faq/">よくある質問</a>
                     
                   </li>
                   
@@ -241,32 +237,6 @@
                   <li class="dropdown">
                     
                     <a href="/partners-list/">代理店一覧</a>
-                    
-                  </li>
-                  
-                  
-                  <li class="dropdown">
-                    
-                    <a class="dropdown-toggle" href="/company-infomation/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">会社概要</span><span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      
-                        <li>
-                          <a href="/representative-greetings/">代表挨拶</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/philosophy/">理念</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/history/">沿革</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/privacy-policy/">プライバシーポリシー</a>
-                        </li>
-                      
-                    </ul>
                     
                   </li>
                   
@@ -325,7 +295,7 @@
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h5><a href="/docs/doc322/">[GGH4.X] 拡張パックの振分けサーバを使用する場合，GGサーバ群を外部のネットワークに直接公開せねばならないのか？</a></h5>
+                                    <h5><a href="/technews/doc322/">[GGH4.X] 拡張パックの振分けサーバを使用する場合，GGサーバ群を外部のネットワークに直接公開せねばならないのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -334,7 +304,7 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/docs/doc322/"><i class="far fa-calendar"></i> 2014-02-21</a>
+                                            <a href="/technews/doc322/"><i class="far fa-calendar"></i> 2014-02-21</a>
                                         </p>
                                         
                                     </div>
@@ -350,7 +320,7 @@
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h5><a href="/docs/doc324/">[GGH4.X] 拡張パックの監視コンソールや振分けサーバは， https でも動作するのか？</a></h5>
+                                    <h5><a href="/technews/doc324/">[GGH4.X] 拡張パックの監視コンソールや振分けサーバは， https でも動作するのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -359,7 +329,7 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/docs/doc324/"><i class="far fa-calendar"></i> 2014-02-21</a>
+                                            <a href="/technews/doc324/"><i class="far fa-calendar"></i> 2014-02-21</a>
                                         </p>
                                         
                                     </div>
@@ -375,7 +345,7 @@
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h5><a href="/docs/doc323/">[GGH4.X] 拡張パックの監視コンソールや振分けサーバは，冗長構成が可能か？</a></h5>
+                                    <h5><a href="/technews/doc323/">[GGH4.X] 拡張パックの監視コンソールや振分けサーバは，冗長構成が可能か？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -384,7 +354,7 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/docs/doc323/"><i class="far fa-calendar"></i> 2014-02-21</a>
+                                            <a href="/technews/doc323/"><i class="far fa-calendar"></i> 2014-02-21</a>
                                         </p>
                                         
                                     </div>
@@ -400,7 +370,7 @@
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h5><a href="/docs/doc318/">[GGW3.2.1/GGH4.X] ライセンスサーバを国内に配置し，GGサーバを国内外の拠点に配置しているが，国外のGGサーバのアプリケーションの起動が遅い．</a></h5>
+                                    <h5><a href="/technews/doc318/">[GGW3.2.1/GGH4.X] ライセンスサーバを国内に配置し，GGサーバを国内外の拠点に配置しているが，国外のGGサーバのアプリケーションの起動が遅い．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -409,7 +379,7 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/docs/doc318/"><i class="far fa-calendar"></i> 2014-02-21</a>
+                                            <a href="/technews/doc318/"><i class="far fa-calendar"></i> 2014-02-21</a>
                                         </p>
                                         
                                     </div>
@@ -425,7 +395,7 @@
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h5><a href="/docs/doc2677/">[GGH4.X-5X] Active Directory と連携したユーザー管理は可能か？</a></h5>
+                                    <h5><a href="/technews/doc2677/">[GGH4.X-5X] Active Directory と連携したユーザー管理は可能か？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -434,7 +404,7 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/docs/doc2677/"><i class="far fa-calendar"></i> 2014-02-14</a>
+                                            <a href="/technews/doc2677/"><i class="far fa-calendar"></i> 2014-02-14</a>
                                         </p>
                                         
                                     </div>
@@ -450,7 +420,7 @@
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h5><a href="/docs/doc345/">[GGH4.X] GGH4.6が EOL になったが，そのことによってGGH4.6の利用に関して 「具体的に」 どのような技術的な影響があるのか？</a></h5>
+                                    <h5><a href="/technews/doc345/">[GGH4.X] GGH4.6が EOL になったが，そのことによってGGH4.6の利用に関して 「具体的に」 どのような技術的な影響があるのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -459,7 +429,7 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/docs/doc345/"><i class="far fa-calendar"></i> 2014-02-14</a>
+                                            <a href="/technews/doc345/"><i class="far fa-calendar"></i> 2014-02-14</a>
                                         </p>
                                         
                                     </div>
@@ -475,7 +445,7 @@
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h5><a href="/docs/doc347/">[GGH4.X] GGH4.8.1の動作環境に The following browsers are supported with Adobe Flash Player 9: Internet Explorer 10.0 and 11.0 とあるが， IE8 や IE9 では動作しないということか？</a></h5>
+                                    <h5><a href="/technews/doc347/">[GGH4.X] GGH4.8.1の動作環境に The following browsers are supported with Adobe Flash Player 9: Internet Explorer 10.0 and 11.0 とあるが， IE8 や IE9 では動作しないということか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -484,7 +454,7 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/docs/doc347/"><i class="far fa-calendar"></i> 2014-02-14</a>
+                                            <a href="/technews/doc347/"><i class="far fa-calendar"></i> 2014-02-14</a>
                                         </p>
                                         
                                     </div>
@@ -500,7 +470,7 @@
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h5><a href="/docs/doc250/">[GGH4.X] GGH4.8を Windows Server 2012 および Windows Server 2012 R2 にインストールしたところ，IMEの動作がおかしい．</a></h5>
+                                    <h5><a href="/technews/doc250/">[GGH4.X] GGH4.8を Windows Server 2012 および Windows Server 2012 R2 にインストールしたところ，IMEの動作がおかしい．</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -509,7 +479,7 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/docs/doc250/"><i class="far fa-calendar"></i> 2014-02-14</a>
+                                            <a href="/technews/doc250/"><i class="far fa-calendar"></i> 2014-02-14</a>
                                         </p>
                                         
                                     </div>
@@ -525,7 +495,7 @@
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h5><a href="/docs/doc346/">[GGH4.X] GGW3.2.1からGGH4.Xへのアップグレードを考えているが， Windows Server 2003 の利用実績はあるのか？</a></h5>
+                                    <h5><a href="/technews/doc346/">[GGH4.X] GGW3.2.1からGGH4.Xへのアップグレードを考えているが， Windows Server 2003 の利用実績はあるのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -534,7 +504,7 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/docs/doc346/"><i class="far fa-calendar"></i> 2014-02-14</a>
+                                            <a href="/technews/doc346/"><i class="far fa-calendar"></i> 2014-02-14</a>
                                         </p>
                                         
                                     </div>
@@ -550,7 +520,7 @@
                         <section class="post">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h5><a href="/docs/doc328/">[GGH4.X] GGはモバイルクライアントをサポートしているのか？</a></h5>
+                                    <h5><a href="/technews/doc328/">[GGH4.X] GGはモバイルクライアントをサポートしているのか？</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
@@ -559,7 +529,7 @@
                                         </p>
                                         
                                         <p class="date-comments">
-                                            <a href="/docs/doc328/"><i class="far fa-calendar"></i> 2014-02-14</a>
+                                            <a href="/technews/doc328/"><i class="far fa-calendar"></i> 2014-02-14</a>
                                         </p>
                                         
                                     </div>
@@ -674,9 +644,7 @@
         
 
     </div>
-
                     
-
                 </div>
                 
             </div>
@@ -684,18 +652,19 @@
         </div>
         
         
-    <div class="col-md-12">
         <footer id="footer">
         <div class="footer-nav-wrapper">        
         <div class="container">
+            
+    <div class="col-md-12">
             <div class="col-md-3 col-sm-3">
                 <div class="footer-nav-column">
                     <div class="footer-nav-column-title"></div>
                     <div class="footer-nav-column-content">
                     <a href="/go-global/">GO-Globalとは</a>
-                    <ul class="footer-nav-list">
+                    <ul>
                         <li>
-                            <a href="/web-separation/">WEB分離</a>
+                            <a href="/web-separation/">インターネット分離</a>
                         </li>
                         <li>
                             <a href="/work-style-reform/">働き方改革</a>
@@ -704,7 +673,10 @@
                             <a href="/thin-client/">シンクライアント</a>
                         </li>
                         <li>
-                            <a href="/security/">セキュリティ</a>
+                            <a href="/lift-shift/">アプリクラウド化</a>
+                        </li>
+                        <li>
+                            <a href="/telework/">テレワーク導入</a>
                         </li>
                     </ul>
                 </div>
@@ -713,23 +685,24 @@
         <hr class="hidden-md hidden-lg hidden-sm">
         <div class="col-md-3 col-sm-3">
             <div class="footer-nav-column">
-            <div class="footer-nav-column-content">
+                <div class="footer-nav-column-title"></div>
+               <div class="footer-nav-column-content">
                 <a href="/case-study/">導入事例</a>
-                <ul class="footer-nav-list">
+                <ul>
                     <li>
-                        <a href="/adaptation-facility-1/">適応施設(医療機関)</a>
+                        <a href="/adaptation-facility-1/">医療現場</a>
                     </li>
                     <li>
-                        <a href="/adaptation-facility-2/">適応施設(教育機関)</a>
+                        <a href="/adaptation-facility-2/">ISV</a>
                     </li>
                     <li>
-                        <a href="/adaptation-facility-3/">適応施設(ISV)</a>
+                        <a href="/adaptation-facility-3/">中小企業</a>
                     </li>
                     <li>
-                        <a href="/adaptation-facility-4/">適応施設(一般オフィス)</a>
+                        <a href="/adaptation-facility-4/">BCP対策</a>
                     </li>
                     <li>
-                        <a href="/adaptation-facility-5/">適応施設(BCP対策) </a>
+                        <a href="/adaptation-facility-5/">教育現場</a>
                     </li>
                 </ul>
             </div>
@@ -741,7 +714,7 @@
                         <div class="footer-nav-column-title"></div>
                         <div class="footer-nav-column-content">
                             <a href="/post/">お知らせ</a>
-                            <ul class="footer-nav-list">
+                            <ul>
                                 <li>
                                     <a href="/support-schedule/">対応スケジュール</a>
                                 </li>
@@ -756,30 +729,21 @@
                                 </li>
                             </ul>
                         </div>
+                        
                     </div>
                     <hr class="hidden-md hidden-lg hidden-sm">
         
                 </div>
-
-        
-        
-                
-
-
-        
-
-
         <div class="col-md-3 col-sm-3">
             <div class="footer-nav-column">
-        <div class="footer-nav-column-content">
-            <a href="/faq/">FAQ</a><br>
-            <a href="/partners-list/">代理店一覧</a><br>
-            <a href="/contact/">問合せフォーム</a><br>
-            <a href="/technical-site/">技術サイト</a><br>
-            <br>
-            <hr class="hidden-md hidden-lg hidden-sm">
-            <a href="/company-information/">企業概要</a>
-            <ul class="footer-nav-list">
+                <div class="footer-nav-column-content">
+                <div class="footer-nav-column-a">
+                <a href="/faq/">FAQ</a><br>
+                <a href="/partners-list/">代理店一覧</a><br>
+                <a href="/contact/">問合せフォーム</a><br>
+                <a href="/technical-site/">技術サイト</a><br>
+                <a href="/company-information/">企業概要</a>
+                <ul>
                 <li>
                     <a href="/representative-greetings/">代表あいさつ</a>
                 </li>
@@ -797,10 +761,9 @@
     </div>
 </div>
         
-       
-
     </div>
     </div>
+        </div>
     
 </footer>
 
@@ -813,10 +776,23 @@
 <div id="copyright">
     <div class="container">
         <div class="col-md-12">
+            <div class="col-xs-5">
             
-           <h4 class="pull-left">Copyright © 2020 KitASP Corp. All Rights Reserved</h4>
+           <p style="text-align:center;">Copyright © 2020 KitASP Corp. All Rights Reserved</p>
             
-           
+        </div>
+                
+                    <div class="col-xs-7">
+                        <div class="social">
+                          
+                        <a href="https://www.facebook.com/kitasp2000/" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-facebook'></i></a>
+                        
+                        <a href="https://twitter.com/KitASP_Corp" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-twitter'></i></a>
+                        
+                        <a href="https://www.instagram.com/kitasp_corp/" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-instagram'></i></a>
+                        
+                </div>
+                </div>
         </div>
     </div>
 </div>

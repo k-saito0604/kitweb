@@ -26,7 +26,68 @@
   display: none;
   margin: 0;
 }
-
+.q-and-a *, .q-and-a *:after, .q-and-a *:before {
+	font-family: sans-serif;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.q-and-a {
+	margin: 0 0 2em 10px;
+	padding: 1em 1em 0.5em 1em;
+	background: #e1f5fe;
+}
+.q-and-a h1 {
+	font-size: 1.2em;
+	position: relative;
+	margin-right: 1em;
+	margin-left: -26px;
+	padding: 0.3em;
+	color: #ffffff;
+	background-color: #42a5f5;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+.q-and-a h1::after {
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	content: '';
+	border-width: 0 10px 10px 0;
+	border-style: solid;
+	border-color: transparent #1976d2 transparent transparent;
+}
+.q-and-a dl {
+	margin: 0;
+}
+.q-and-a dt {
+	margin-bottom: 0.5em;
+	padding: 0.2em 0.5em 0.5em 2em;
+	border-radius: 0.2em;
+	background: #ddd;
+}
+.q-and-a dd {
+	margin-bottom: 1em;
+	margin-left: 0;
+	padding: 0.5em 1em 1.5em 3em;
+}
+/* QAアイコン */
+.q-and-a dt::before,.q-and-a dd::before{
+	font-size: 1.5em;
+	color: #ffffff;
+}
+.q-and-a dt::before {
+	margin: 0.3em 0.3em 0 -1em;
+	content: 'Q';
+}
+.q-and-a dd::before {
+	margin: 0 0.5em 0 -2em;
+	padding: 0.2em 0.4em;
+	content: 'A';
+	border-radius: 0.2em;
+	background: #00bcd4;
+}
 /**/
  
 /*.side-fixed-bar {
@@ -66,7 +127,6 @@
     padding: 12px;
     background-color: #fff;
     font-size: 14.4px;
-    font-size: .9rem;
     text-align: center;
     line-height: 1.6;
 }
@@ -322,7 +382,7 @@
 .general-content img {
     width: auto;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
 }
 .general-content .websep img {
   width: 100%;
@@ -462,7 +522,7 @@ div.section {
     margin-bottom: 30px;
   }
 .general-content {
-  max-width: 820px;
+  max-width: 1170px;
   width: calc(100% - 30px);
   margin: auto;
   margin-bottom: 60px;
@@ -2185,8 +2245,8 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .bar.background-image-fixed-2 {
   background: url('../img/fixed-background-2.jpg') center top no-repeat;
-  background-attachment: fixed;
   background-size: cover;
+  background-position-y: 50%;
 }
 .bar.color-white h1,
 .bar.color-white h2,
@@ -3002,6 +3062,10 @@ fieldset[disabled] .btn-template-primary.active {
   border-bottom: none;
   margin-bottom: 0;
 }
+.social{
+  float: right;
+  text-align: right;
+}
 #footer .social a {
   color: #555555;
   font-size: 25px;
@@ -3328,11 +3392,7 @@ fieldset[disabled] .btn-template-primary.active {
   line-height: 20px;
   height: 62px;
 }
-.navbar-brand img{
-position: absolute;
-margin-top: 11px;
-    margin-bottom: 11px
-}
+
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
@@ -3438,6 +3498,7 @@ margin-top: 11px;
 }
 .navbar-nav > li > .dropdown-menu {
   margin-top: 0;
+  width: 100%;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -3575,8 +3636,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 /* scaffolding */
 body {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 16px;
-  line-height: 1.42857143;
+  font-size: 18px;
+  line-height: 2;
   color: #555555;
 }
 a {
@@ -3628,6 +3689,7 @@ hr {
 .dropdown-menu {
   z-index: 1000;
   font-size: 25px;
+  min-width: 50px;
   background-color: #FFFFFF;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -3978,10 +4040,10 @@ a.list-group-item.active > .badge,
   left: auto;
 }
 /*ドロップダウンの位置*/
-.yamm .nav.navbar-right .dropdown-menu {
+/*.yamm .nav.navbar-right .dropdown-menu {
   left: -25px;
   right: -25px;
-}
+}*/
 .yamm .yamm-content {
   padding: 20px 30px;
 }

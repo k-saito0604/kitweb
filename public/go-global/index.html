@@ -3,8 +3,8 @@
 
   <head>
   <meta charset="utf-8">
-  <meta name="robots" content="all,follow">
-  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="robots" content="noindex">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <title>GO-Globalは低コストでセキュアなシンクライアントです</title>
@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.68.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -97,6 +97,7 @@
   <meta name="twitter:description" content="きっとエイエスピーのホームページ">
   
 
+
   <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-app.js"></script>
   <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-storage.js"></script>
   <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-auth.js"></script>
@@ -113,6 +114,21 @@
     <div id="all">
 
         <header>
+          
+<div id="top">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-5">
+        <a href="https://www.kitasp.com/"><img src="/img/logo_s.png/" alt="GO-Globalは低コストでセキュアなシンクライアントです logo" class=""></a>
+      </div>
+      <div class="col-xs-7">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
           <div class="navbar-affixed-top" data-spy="affix" data-offset-top="500">
 
@@ -121,8 +137,8 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="/">
-                    <img src="/img/logo.png" alt="GO-Globalは低コストでセキュアなシンクライアントです logo" class="hidden-xs hidden-sm">
-                    <img src="/img/logo-small.png" alt="GO-Globalは低コストでセキュアなシンクライアントです logo" class="visible-xs visible-sm">
+                    <img src="/img/logo-go-small.png" alt="GO-Globalは低コストでセキュアなシンクライアントです logo" class="hidden-xs hidden-sm">
+                    <img src="/img/logo-go-small.png" alt="GO-Globalは低コストでセキュアなシンクライアントです logo" class="visible-xs visible-sm">
                     <span class="sr-only">GO-Globalは低コストでセキュアなシンクライアントです - ホームへ戻る</span>
                 </a>
                 <div class="navbar-buttons">
@@ -138,32 +154,44 @@
                 <ul class="nav navbar-nav navbar-right">
                   
                   <div class = "topbotton">
-                    <a class="fas fa-search" href="/search">ページを検索する</a>
                     <a href="/contact" class="btn-square-shadow-ora">問い合わせ</a>
                     <a href="https://gitbook.kitasp.com/" class="btn-square-shadow">技術サイト</a>
+                    <a href="https://www.kitasp.com/" class="btn-square-shadow-old">会社概要</a><br>
+                    <a class="fas fa-search" href="/search">ページ検索</a>
                   </div>
                   
                   
                   
+                  <li class="dropdown active">
+                    
+                    <a href="/go-global/">GO-Globalとは</a>
+                    
+                  </li>
+                  
+                  
                   <li class="dropdown">
                     
-                    <a class="dropdown-toggle" href="/function-introduction/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">機能説明</span><span class="caret"></span></a>
+                    <a class="dropdown-toggle" href="/function-introduction/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">GO-Global活用</span><span class="caret"></span></a>
                     <ul class="dropdown-menu">
                       
                         <li>
-                          <a href="/web-separation">web分離</a>
+                          <a href="/contents/web-separation/">インターネット分離</a>
                         </li>
                       
                         <li>
-                          <a href="/work-style-reform">働き方改革</a>
+                          <a href="/contents/work-style-reform/">働き方改革</a>
                         </li>
                       
                         <li>
-                          <a href="/thin-client">シンクライアント</a>
+                          <a href="/contents/thin-client/">シンクライアント</a>
                         </li>
                       
                         <li>
-                          <a href="/lift-shift">アプリクラウド化</a>
+                          <a href="/contents/lift-shift/">アプリクラウド化</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/telework">テレワーク導入</a>
                         </li>
                       
                     </ul>
@@ -203,37 +231,7 @@
                   
                   <li class="dropdown">
                     
-                    <a class="dropdown-toggle" href="/posts/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">お知らせ</span><span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      
-                        <li>
-                          <a href="/support-schedule/">対応スケジュール</a>
-                        </li>
-                      
-                        <li>
-                          <a href="https://portal.kitasp.com/downloads/">Download</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/posts/">News</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/docs/">Tech news</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/blog/">blog</a>
-                        </li>
-                      
-                    </ul>
-                    
-                  </li>
-                  
-                  
-                  <li class="dropdown">
-                    
-                    <a href="/faq/">FAQ</a>
+                    <a href="/faq/">よくある質問</a>
                     
                   </li>
                   
@@ -241,32 +239,6 @@
                   <li class="dropdown">
                     
                     <a href="/partners-list/">代理店一覧</a>
-                    
-                  </li>
-                  
-                  
-                  <li class="dropdown">
-                    
-                    <a class="dropdown-toggle" href="/company-infomation/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">会社概要</span><span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      
-                        <li>
-                          <a href="/representative-greetings/">代表挨拶</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/philosophy/">理念</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/history/">沿革</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/privacy-policy/">プライバシーポリシー</a>
-                        </li>
-                      
-                    </ul>
                     
                   </li>
                   
@@ -308,8 +280,8 @@
           <div class="col-md-12">
               
               <br>
-              <br> 
-              <h1 class="text">GO-Globalは低コストでセキュアなシンクライアントです</h1>
+              <br>
+              <h1 class="text">GO-Globalは低コストで導入可能。<br>セキュアなシンクライアントです</h1>
               <br>
                 <h2></h2>
             </div>
@@ -317,54 +289,49 @@
   </div>
 </section>
 <div class="container" id="contact">
-
-
             <section>
-
-                
-
                 
 
                 <div class="heading">
-                  <main>                    
+                  <main>
                     <div class="general-content-wrapper max-width  function-introduction">
                     <div class="general-content">
                         <br>
                         <p class="list">
-                            <br>
-                            <a href="#1">1　GO-Globalとは</a><br>
-                            <a href="#1-1">&emsp;1-1　GO-Globalの仕組み</a><br>
-                            <a href="#2">2　GO-Globalの歴史</a><br>
-                            <a href="#3">3　GO-Globalが注目される理由</a><br>
-                            <a href="#4">4　WEB分離（インターネット分離）に最適なGO-Global</a><br>
-                            <a href="#4-1">&emsp;特徴1　全てがスピーディ</a><br>
-                            <a href="#4-2">&emsp;特徴2　デバイスを選ばない</a><br>
-                            <a href="#4-3">&emsp;特徴3　システムコストが低い</a><br>
-                            <a href="#4-4">&emsp;特徴4　セキュリティが高い</a><br>
-                            <a href="#5">5　GO-Globalはこんなお悩みを解決します</a><br>
+                        もくじ<br>
+                            1&emsp;<a href="#1">GO-Globalとは</a><br>
+                            1-1&emsp;<a href="#1-1">GO-Globalの仕組み</a><br>
+                            2&emsp;<a href="#2">GO-Globalの歴史</a><br>
+                            3&emsp;<a href="#3">GO-Globalが注目される理由</a><br>
+                            4&emsp;<a href="#4">GO-Globalが他社とは違う4つの大きな特徴</a><br>
+                            &emsp;特徴1&emsp;<a href="#4-1">全てがスピーディ</a><br>
+                            &emsp;特徴2&emsp;<a href="#4-2">デバイスを選ばない</a><br>
+                            &emsp;特徴3&emsp;<a href="#4-3">システムコストが低い</a><br>
+                            &emsp;特徴4&emsp;<a href="#4-4">セキュリティーが高い</a><br>
+                            5&emsp;<a href="#5">GO-Globalはこんなお悩みを解決します</a><br>
                         </p>
                         <br>
                         <div id = '1'>
-                          <h3>1.GO-Globalとは</h3>
+                          <h3>1 GO-Globalとは</h3>
                           <div class="fadein">
-                          <img class="img2" src="/img/goglobal01.jpg">
+                          <img class="img2" src="/img/goglobal.jpg">
 
                           </div>
 
                           <p>
                             GO-Globalとはプレゼンテーション層（およびセッション層）の仮想化技術で、一般に「シンクライアント」として分類される技術製品です。
-                            サーバ側でアプリケーションを実行し、クライアント端末側で操作を行う。シンプルな概念のミドルウェアです。そのシンプルな構造から多くの、ユーザからの高い支持を得ております。
-                            １度導入するとそのシンプル且つ、コストパフォーマンスの高さに何年にもわたり使い続けていただけるユーザ様が多いのが特徴です。
+                            サーバー側でアプリケーションを実行し、クライアント端末側で操作を行う。シンプルな概念のミドルウェアです。そのシンプルな構造から多くの、ユーザからの高い支持を得ております。
+                            1度導入するとそのシンプル且つ、コストパフォーマンスの高さに何年にもわたり使い続けていただけるユーザ様が多いのが特徴です。
                           </p>
                         </div>
                         <div id = '1-1'>
-                          <h4>1-1.GO-Globalの仕組み</h4>
+                          <h3>1-1 GO-Globalの仕組み</h3>
                           <p>
                           <br>
                           GO-Globalは上記でも記した通りアプリケーション配信技術です。
                           アプリケーションを利用する場合には通常パソコンにアプリケーションをインストールする必要があります。
                           しかし、アプリケーション配信サービスでは、
-                          クライアント側にインストールせずに利用者がサーバにアクセスし認証を行うことで、サーバに登録されているアプリケーションを利用することができます
+                          クライアント側にインストールせずに利用者がサーバーにアクセスし認証を行うことで、サーバーに登録されているアプリケーションを利用することができます
                           <br>
                           </p>
                           <div class="fadein">
@@ -372,23 +339,31 @@
                           </div>
                         </div>
                         <div id = '2'>
-                          <h3>2.GO-Globalの歴史</h3>
+                          <h3>2 GO-Globalの歴史</h3>
                           <p>
-                            GO-Global for Windowsは、米国GraphOn社が約２０年前に独自に開発しました。
-                            きっとエイエスピーでは、この米国GraphOn（グラフォン）社が独自に開発したシンクライアント技術を、十数年の年月をかけていくつもの大規模導入実績を積み重ねてきました。
-                            技術的安定性と性能という品質に信頼があり、導入業界は、政府、自治体、銀行、生保、病院、教育（校務や学校）、通信、製造、建設、生協、消防、介護、人材、コールセンター等々、多岐に渡ります。
-                            ２０年前からある仕組みではありますが、このシンプルな仕組みがいま、
+                            GO-Global for Windowsは、米国GraphOn社が約20年前に独自に開発しました。<br>
+                            きっとエイエスピーでは、この米国GraphOn（グラフォン）社が独自に開発したシンクライアント技術を、十数年の年月をかけていくつもの大規模導入実績を積み重ねてきました。<br>
+                            技術的安定性と性能という品質に信頼があり、導入業界は、政府、自治体、銀行、生保、病院、教育（校務や学校）、通信、製造、建設、生協、消防、介護、人材、コールセンター等々、多岐に渡ります。<br>
+                            20年前からある仕組みではありますが、このシンプルな仕組みがいま、
                             以下の理由でさらに、注目を集めています。
                           </p>
+
+
+<div class="fadein">
+                            <img class="img2" src="/img/concord.png">
+                          </div>
+
+
+
                         </div>
                         <div id = '3'>
-                          <h3>3.GO-Globalが注目される理由</h3>
+                          <h3>3 GO-Globalが注目される理由</h3>
                           <br>
                           <div class="fadein">
                             <div class="col-xs-12 col-sm-6 col-md-3">
                               <div class="box30">
                                 <div class="box-title"><img src="/img/remote.png"></div>
-                                <p><b>リモートワーク</b>ができる<br>　</p>
+                                <p><b>リモートワーク</b>ができる<br><br></p>
                               </div>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-3">
@@ -400,204 +375,182 @@
                             <div class="col-xs-12 col-sm-6 col-md-3">
                               <div class="box30">
                                 <div class="box-title"><img src="/img/security.png"></div>
-                                <p><b>セキュリティを強化</b>できる<br>　</p>
+                                <p><b>セキュリティーを強化</b>できる<br>　</p>
                               </div>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-3">
                               <div class="box30">
                                 <div class="box-title"><img src="/img/cloud.png"></div>
-                                <p>スタンドアローンのソフトを<b>クラウド化</b>できる</p>
+                                <p>スタンドアローンのアプリケーションを<b>クラウド化</b>できる</p>
                               </div>
                             </div>
-                          
+
                           </div>
                           <p>
                             などその他にも沢山の活用事例があります。
-                            企業や、組織が直面する課題にGO-Globalはシンプル且つ迅速に解決へ導けます。
+                            企業や、組織が直面する課題にGO-Globalは迅速に解決へ導けます。
                           </p>
                         </div>
                         <div id = '4'>
-                          <h3>4.GO-Globalの他社とは違う４つの大きな特徴</h3>
+                          <h3>4 GO-Globalが他社とは違う4つの大きな特徴</h3>
                           <p>
-                            アプリケーション配信システムの技術は多岐に渡りますが
-                            GO-Globalは他社と大きく違う４つの特徴があります。
+                           「シンクライアント」として分類される技術製品は多岐に渡りますが、GO-Globalは他社と大きく違う4つの特徴があります。
                           </p>
                         </div>
                         <div id = '4-1'>
                           <div class="adapta">
-                          <h3>特徴1.スピーディに開始でき動作も早い！</h3>
-                          </div>                
+                          <h3>特徴1 スピーディに開始でき動作も早い！</h3>
+                          </div>
                           <br>
                           <div class = "col-md-12">
                             <div class="col-md-3">
                               <img class="img2" src="/img/fastinstall.jpg"width="100"></a>
-                            </div>                            
-                            <div class = "col-md-9">
-                            <p>サーバーに5分でインストール完了！</p>
+                            </div>
+                           
+ <div class = "col-md-9">
+                            <h4>サーバーに5分でインストール完了です！</h4>
                           <p>
-                            GO-Globalはインストールが５分程度で完了。
+                            GO-Globalはインストールが5分程度で完了。
                             面倒な設定などは一切ありません。<br>
-                            ※他社は１時間～２時間かかり、細かい設定があります。<br>
+                            ※他社製品はインストールに1時間～2時間かかり、細かい設定が必要です。<br><br><br><br>
                           </p>
                           </div>
-                          
+<P> 
+<h4>GO-Globalのインストール動画</h4></P> 
+
+   <div> <P> <iframe width="560" height="315" src="https://www.youtube.com/embed/mPmcYCCd7Rc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>　</P></div>
+
+
+
                         </div>
-                        
-                          <div class = "col-md-12">
-                            <br>
-                            <div class = "col-md-9">
-                              <div class="fadein">
-                                  <a href="/img/function-introduction01.png" data-lightbox="group1">
-                                  <img class="img2" src="/img/function-introduction01.png"width="300"></a>
-                              </div>
-                            </div>
-                            <div class = col-md-3>
-                              <p>
-                                <br>
-                                GO-GlobalはAPIラッピング方式を利用しています。
-                                APIラッピング方式とは、サーバとクライアント間で画面情報をビットマップで送受信するのではなく、画面の描画命令をクライアントへ送信する技術です。
-                              </p>
-                            </div>
-                            <div class = "col-xs-12 col-md-12">
-                              <div class="col-xs-12 col-md-9 col-md-push-3">
-                                <div class="fadein">
-                                  <a href="/img/function-introduction02.png" data-lightbox="group1">
-                                  <img class="img2" src="/img/function-introduction02.png"width="300"></a>
-                                </div>
-                              </div>
-                              <div class="col-xs-12 col-md-3 col-md-pull-9">
-                              <p>
-                                一般のシンクライアントシステムは、アプリケーションの実行などはサーバ上で行い、クライアントには画面情報のみを送り、サーバにはクライアント上でのマウスとキーボードの操作情報を送ります。これを画像転送型と言います。
-                                上記は、高い情報保護能力をもちます。
-                                しかし、画面情報量が多いアプリケーションではネットワーク帯域を圧迫し、
-                                レスポンスの低下の原因となり、使用感にストレスを感じます。<br>
-                              </p>
-                            </div>
-                          </div>
-                          <div class = "col-md-12">
-                              <p>
-                                <br>
-                                GO-Globalでは独自のプロトコル「Rapid-X」を採用し、
-                                ネットワーク帯域を圧迫せず、操作の高いレスポンスを実現しストレスなく使用できます。GO-Globalを使用する、エンドユーザは一般的なPC操作と変わらず、モバイルなどの環境でも高いレスポンスを実現できるのです。
-                                こういったAPIトラップ方式を採用しているのは<b>GO-Globalだけの独自の技術です。</b><br>
-                              </p>
-                            </div>
+
+
+                     <br><br>  <h4>配信方法が独自</h4>
+                          <p>
+                            他社製品は、アプリケーションの実行などはサーバー上で行い、
+                            クライアントには画面情報のみを送り、サーバーにはクライアント上でのマウスとキーボードの操作情報を送ります。これを画像転送型と言います。
+                            上記は、高い情報保護能力をもちます。
+                            しかし、画面情報量が多いアプリケーションではネットワーク帯域を圧迫し、
+                            レスポンスの低下の原因となり、使用感にストレスを感じます。<br>
+                          </p>
+                          <img class="img2" src="/img/function-introduction02.png" width="300">
+                          <h4>GO-GlobalのAPIラッピング方式とは</h4>
+                          <p>
+                            GO-GlobalはAPIラッピング方式を利用しています。 APIラッピング方式とは、サーバーとクライアント間で画面情報をビットマップで送受信するのではなく、画面の描画命令をクライアントへ送信する技術です。
+                          </p>
+                          <img class="img2" src="/img/function-introduction01.png" width="300">
+
                         </div>
+                              <h4>GO-Globalでは独自のプロトコル「Rapid-X」を採用している</h4>
+
+                                <p>GO-Globalでは独自のプロトコル「Rapid-X」を採用しているので、ネットワーク帯域を圧迫せず、操作の高いレスポンスを実現しストレスなく使用できます。GO-Globalを使用する、エンドユーザは一般的なPC操作と変わらず、モバイルなどの環境でも高いレスポンスを実現できるのです。
+                                こういったAPIラッピング方式を採用しているのは<b>GO-Globalだけの独自の技術です。</b><br>
+                              </p>
                         <div id = '4-2'>
                           <div class="adapta">
-                          <h3>特徴2.デバイスを選ばない</h3>
+                          <h3>特徴2 デバイスを選ばない</h3>
                           </div>
                             <a href="/img/function01.jpg" data-lightbox="group1">
                             <img class="img2" src="/img/function01.jpg"width="300"></a>
                             <p>
-                              iPadでエクセルを使いたい。外出先からモバイルで入力作業をしたい。
+                              iPadでエクセルを使いたい。外出先からモバイルで入力作業をしたい。<br>
                               といった場合にデバイスを選ばずGO-Globalなら使用することができます。
-                              １台のサーバにのみに利用したいデータやアプリをインストールで使用可能です。
-                              iPad/iPhone/Androidからは専用アプリでログインし、スムースに操作ができます。<br>
+                              1台のサーバーにのみに利用したいデーターやアプリをインストールで使用可能です。
+                              iPad/iPhone/Androidからは専用アプリでログインし、スムーズに操作ができます。<br>
                             </p>
                         </div>
                         <div id = '4-3'>
-
-                          <div class = "col-md-12">
-
                           <div class="adapta">
-                          <h3>特徴3.システムコストが低い</h3>
+                          <h3>特徴3 システムコストが低い</h3>
                         </div>
-                        <h3>低コストにできる5つの理由</h3>
+                        <h3>低コストにできる4つの理由</h3>
                         <br>
-                        <h4>1.作業時間が短い</h4>
-                        <p>アプリケーションのインストールやバージョンアップもサーバ側の作業で行うので時間が短縮できます。</p>    
+                        <h4>1.アプリケーションを端末に入れる必要が無いので作業時間が短くて済む！</h4>
+                        <p>アプリケーションのインストールやバージョンアップもサーバー側の作業で行うので時間が短縮できます。</p>
                         <a href="/img/function02.jpg" data-lightbox="group1">
                           <img class="img2" src="/img/function02.jpg"width="300">
                         </a>
-                        <br>
-                        <h4>2.開発の必要がない</h4>
-                        
-                        <div class="col-xs-3 col-md-3">
-                          <a href="/img/function05.jpg" data-lightbox="group1">
-                          <img class="img2" src="/img/function05.jpg"width="300">
-                          </a>
-                          </div>  
-                        <p>GO-Globalを入れるだけで、新しくアプリケーションの開発や改修する必要がありません。そのため開発コストが不要です。</p>
-                        </div>
+                              <br>
+                        <h4>2.アプリケーションの開発や改修のコストが必要がない</h4>
 
-                            <div class = "col-md-12">  
-                              <br>                            <br>
-                              <br> 
-  
-                          <h4>3.ライセンスが柔軟</h4>
+                        <p>GO-Globalを入れるだけで、新しくアプリケーションの開発や改修する必要がありません。そのためのコストが不要になります。</p>
+                              <br>
+                          <h4>3.ライセンスが柔軟なため余計なコストが抑えられる</h4>
                           <p>
                             GO-Global独自技術で構築している簡潔なシステム構成です。
                             よって他社製品に比べてユーザ数やアカウント数の調整が柔軟に対応できます。
                           </p>
-                          </div>
-                          <div class = "col-md-12">
-                          <h4>4.名前付きユーザー100、同時アクセスユーザー50の場合の構築例</h4>
+                           <br>
+
+                          <P>■名前付きユーザー100、同時アクセスユーザー50の場合の構築例</P>
                           <a href="/img/function04.jpg" data-lightbox="group1">
                             <img class="img2" src="/img/function04.jpg"width="300"></a>
-                         
-                              <div class="col-md-7">
-                                <h4>5.教育費用と時間の短縮</h4>
+
+                                <h4>4.教育費用と時間の短縮</h4>
                                 <p>アプリケーションは見た目や操作性が従来通りで変わりません。エンドユーザへの指導や教育は不要です。</p>
-                              </div>
-                              <div class="col-md-5">
-                                <a href="/img/function06.jpg" data-lightbox="group1">
-                                  <img class="img2" src="/img/function06.jpg"width="300"></a>    
-                              </div>
+
                             </div>
+
                           
-                          </div>
-                        </div>
+                        <br>
                         <div id = '4-4'>
-                          <div class = "col-md-12">
+
                             <div class = "adapta">
-                            <h3>特徴4.セキュリティが高い</h3>
+                               <h3>特徴4 セキュリティーが高い</h3>
                           </div>
                             <p>
-                              サーバ上でデータを一元管理、端末にデータを残しません。 重要な、ドキュメントや個人情報は、サーバで管理するので、端末に情報を残しません。 PCはディスクレスまたは書き込み不可も可能なので紛失や盗難、サイバー攻撃の心配がありません。 もちろん、重要なアプリケーション、保存すべきドキュメントは全てサーバに保存できます。
+                              <h4>サーバー上でデーターを一元管理、端末にデーターを残しません。</h4>
+                              <br>
+                            <p>
+                              端末がウィルスの攻撃にあってもサーバー上のファイルを直接参照することは出来ないため、
+                              大事なデーターを盗まれたり破壊されるリスクを下げることが可能です。
+                            </p>
+                            <p>
+                              GO-Globalの通信プロトコルRapid-XはGraphOn社の独自の技術となり仕様は公開されていません。
+                              さらにGO-Globalはサーバー画面ではなく描画処理のデーターを通信しているため第三者に覗かれた場合でも解読することは困難です。
+                            </p>
+                            <p>
+                              他社製品ではMicrosoftのリモートデスクトップの機能を利用して端末に配信しています。
+                              機能の通信プロトコルは公開されているので、リモートデスクトップの仕様を解読し攻撃を受ける場合があります。
                             </p>
                             <a href="/img/function03.jpg" data-lightbox="group1">
                               <img class="img2" src="/img/function03.jpg"width="300"></a>
-                            <br>   
-                          </div>                   
-                      
+                            <br>
+                          </div>
+
                         <div id = '5'>
                           <div class = "col-md-12">
                           <div class = "adapta">
-                            <h3>GO-Globalはこんなお悩みを解決します</h3>
+                            <h3>5 GO-Globalはこんなお悩みを解決します</h3>
                           </div>
                           <a href="/img/function07.jpg" data-lightbox="group1">
-                            <img class="img2" src="/img/function07.jpg"width="300"></a>  
+                            <img class="img2" src="/img/function07.jpg"width="300"></a>
                             <p>以下のようなお悩みを抱えている企業様には、特におすすめです。</p>
                             <li>働き方改革の一環としてテレワークやサテライトオフィスをご検討の中小企業様</li>
-                            <li>クラウド化を検討しているISV系ソフトウエア企業様</li>
-                            <li>レガシイーアプリケーションで基幹システムを動かしている中小企業様</li>
-                            <li>病院や教育機関で、WEB分離（インターネット分離・WEB分離ブラウザ）でセキュリティ強化を検討中の方。</li>
-                            <li>事業継続計画（BCP対策）で、データのバックアップや復旧でお困りの中小企業様</li>
+                            <li>クラウド化を検討しているISV（独立系ソフトウェアベンダー）企業様</li>
+                            <li>レガシィーアプリケーションで基幹システムを動かしている中小企業様</li>
+                            <li>Web分離（インターネット分離・Web分離ブラウザ）でセキュリティー強化を検討中の病院や教育機関様</li>
+                            <li>事業継続計画（BCP対策）を検討中の中小企業様</li>
                             <br>
-                            <p>その他にも中小企業様や自治体、教育機関が抱える課題を、シンクライアントの技術を利用して解決してきました。</p>
+                            <p>その他にも中小企業様や自治体、教育機関が抱える課題をシンクライアントの技術を利用して解決致します。</p>
                         </div>
                         </div>
                           <br>
 
                           <h3 class="system-requirements-title">動作環境(GO-Global for Windows 6.0.1)</h3>
                           <table class="system-requirements">
-                            <caption>サーバ</caption>
+                            <caption>サーバー</caption>
                             <tbody>
                               <tr>
                                 <td width="100px">OS</td>
                                 <td>
                                   1.  Windows Server 2019 Standard Edition (64-bit)<br />
-                                  　Datacenter Edition (64-bit)<span class="red">※1</span><br />  
+                                  　Datacenter Edition (64-bit)<br />
                                   2.  Windows Server 2016 Standard Edition (64-bit)<br />
-                                　Datacenter Edition (64-bit)<span class="red">※1</span><br />
+                                　Datacenter Edition (64-bit)<br />
                                   3.  Windows Server 2012 R2 Standard Edition (64-bit)<br />
                                 　Datacenter Edition (64-bit)<br />
-                                  4.  Windows Server 2012 Standard Edition (64-bit)<br />
-                                  5.  Windows Server 2008 R2 with SP1 Standard Edition (64-bit)<br />
-                                  Enterprise Edition (64-bit)<br />
-                                  <span class="red">※1 一部機能に制限がございます</span>
-                                </td>
+                                 </td>
                               </tr>
                               <tr>
                                 <td width="100px">メモリ</td>
@@ -611,29 +564,26 @@
                               <tr>
                                 <td width="100px">OS</td>
                                 <td>
-                                  1.  Windows 10 Pro and Enterprise (32/64-bit)<br />
-                                  2.  Windows 8.1 Standard and Pro (32/64-bit)<br />
-                                  3.  Windows 8 Standard and Pro (32/64-bit)<br />
-                                  4.  Windows 7 with SP1 (32/64-bit)<br />
-                                  5.  Windows XP with SP3 (32-bit)<span class="red">※1</span><br />
-                                  6.  Mac OS X 10.6 and later<br />
-                                  7.  Red Hat Enterprise Linux 5 and 6（64-bit）<br />
-                                  8.  CentOS 5 and 6（64-bit）<br />
-                                  9.  SUSE Linux Enterprise Desktop 11（64-bit）<br />
-                                  10. Ubuntu 12.04 LTS and 16.04 LTS（64-bit）<br />
-                                  11. iOS (8.0 or later) (3G、WiFi)<br />
-                                  12. Android (4.0 or later) (3G、WiFi) (ARMプロセッサのみ)<br />
-                                  <span class="red">※1　Microsoftのサポートは切れていますのでご注意ください</span>
+                                  1.  Windows 10 Professional and Enterprise (32/64-bit)<br />
+                                  2.  Windows 8.1 Professional and Enterprise (32/64-bit)<br />
+                                  3.  Windows 7 Professional, Ultimate and Enterprise (32/64-bit)<br />
+                                  4.  Mac OS X 10.10 and later<br />
+                                  5.  Red Hat Enterprise Linux 6 and 7（64-bit）<br />
+                                  6.  CentOS 6 and 7（64-bit）<br />
+                                  7.  SUSE Linux Enterprise Desktop 12（64-bit）<br />
+                                  8.  Ubuntu 16.04 and 18.04 LTS（64-bit）<br />
+                                  9.  iOS (9.0 and later)<br />
+                                  10. Android (5.0 and later)(ARMプロセッサのみ)<br />
                                 </td>
                               </tr>
                               <tr>
                                 <td width="100px">ブラウザ</td>
                                 <td>
-                                  1.  Internet Explorer 10.0, 11.0<span class="red">※2</span><br />
+                                  1.  Internet Explorer 11<br />
                                   2.  Mozilla Firefox 52 (ESR) on Windows and Linux(32bit)<br />
-                                  3.  Apple Safari 5.0.6 or later on Mac OS X<br />
-                                  4.  Google Chrome with Windows XP, 7, 8, 8.1,10<br />
-                                  <span class="red">※2　Microsoft Edgeには対応はしていません</span>
+                                  3.  Apple Safari 9 or later on Mac OS X<br />
+                                  4.  Google Chrome with Windows 7, 8, 8.1,10<br />
+                                  5.  Microsoft Edge
                                 </td>
                               </tr>
                             </tbody>
@@ -680,9 +630,119 @@
   </div>
 </div>
         
-
-
-
+        <footer id="footer">
+        <div class="footer-nav-wrapper">        
+        <div class="container">
+            
+    <div class="col-md-12">
+            <div class="col-md-3 col-sm-3">
+                <div class="footer-nav-column">
+                    <div class="footer-nav-column-title"></div>
+                    <div class="footer-nav-column-content">
+                    <a href="/go-global/">GO-Globalとは</a>
+                    <ul>
+                        <li>
+                            <a href="/web-separation/">インターネット分離</a>
+                        </li>
+                        <li>
+                            <a href="/work-style-reform/">働き方改革</a>
+                        </li>
+                        <li>
+                            <a href="/thin-client/">シンクライアント</a>
+                        </li>
+                        <li>
+                            <a href="/lift-shift/">アプリクラウド化</a>
+                        </li>
+                        <li>
+                            <a href="/telework/">テレワーク導入</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="hidden-md hidden-lg hidden-sm">
+        <div class="col-md-3 col-sm-3">
+            <div class="footer-nav-column">
+                <div class="footer-nav-column-title"></div>
+               <div class="footer-nav-column-content">
+                <a href="/case-study/">導入事例</a>
+                <ul>
+                    <li>
+                        <a href="/adaptation-facility-1/">医療現場</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-2/">ISV</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-3/">中小企業</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-4/">BCP対策</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-5/">教育現場</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <hr class="hidden-md hidden-lg hidden-sm">
+                <div class="col-md-3 col-sm-3">
+                    <div class="footer-nav-column">
+                        <div class="footer-nav-column-title"></div>
+                        <div class="footer-nav-column-content">
+                            <a href="/post/">お知らせ</a>
+                            <ul>
+                                <li>
+                                    <a href="/support-schedule/">対応スケジュール</a>
+                                </li>
+                                <li>
+                                    <a href="/news/">Download</a>
+                                </li>
+                                <li>
+                                    <a href="/categories/news/">サイトニュース</a>
+                                </li>
+                                <li>
+                                    <a href="/categories/tech-news/">技術ニュース</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <hr class="hidden-md hidden-lg hidden-sm">
+        
+                </div>
+        <div class="col-md-3 col-sm-3">
+            <div class="footer-nav-column">
+                <div class="footer-nav-column-content">
+                <div class="footer-nav-column-a">
+                <a href="/faq/">FAQ</a><br>
+                <a href="/partners-list/">代理店一覧</a><br>
+                <a href="/contact/">問合せフォーム</a><br>
+                <a href="/technical-site/">技術サイト</a><br>
+                <a href="/company-information/">企業概要</a>
+                <ul>
+                <li>
+                    <a href="/representative-greetings/">代表あいさつ</a>
+                </li>
+                <li>
+                    <a href="/philosophy/">理念</a>
+                </li>
+                <li>
+                    <a href="/history/">沿革</a>
+                </li>
+                <li>
+                    <a href="/privacy-policy/">個人情報保護方針</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+    </div>
+    </div>
+        </div>
+    
 </footer>
 
 
@@ -694,15 +754,26 @@
 <div id="copyright">
     <div class="container">
         <div class="col-md-12">
+            <div class="col-xs-5">
             
-            <p style="text-align:center;">Copyright © 2020 KitASP Corp. All Rights Reserved</p>
-            
-
-
-            </p><br>
-            <br>
+           <p style="text-align:center;">Copyright © 2020 KitASP Corp. All Rights Reserved</p>
             
         </div>
+                
+                    <div class="col-xs-7">
+                        <div class="social">
+                          
+                        <a href="https://www.facebook.com/kitasp2000/" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-facebook'></i></a>
+                        
+                        <a href="https://twitter.com/KitASP_Corp" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-twitter'></i></a>
+                        
+                        <a href="https://www.instagram.com/kitasp_corp/" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-instagram'></i></a>
+                        
+                </div>
+                </div>
+                
+        </div>
+        <br><br><br>
     </div>
 </div>
 

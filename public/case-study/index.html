@@ -3,8 +3,8 @@
 
   <head>
   <meta charset="utf-8">
-  <meta name="robots" content="all,follow">
-  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="robots" content="noindex">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <title>シンクライアント導入事例、医療、教育、BCP、ISV等に広く導入</title>
@@ -18,7 +18,7 @@
   
   <meta name="description" content="きっとエイエスピーのホームページ">
 
-  <meta name="generator" content="Hugo 0.68.1" />
+  <meta name="generator" content="Hugo 0.69.0" />
 
   
   <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
@@ -97,6 +97,7 @@
   <meta name="twitter:description" content="きっとエイエスピーのホームページ">
   
 
+
   <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-app.js"></script>
   <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-storage.js"></script>
   <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-auth.js"></script>
@@ -113,6 +114,21 @@
     <div id="all">
 
         <header>
+          
+<div id="top">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-5">
+        <a href="https://www.kitasp.com/"><img src="/img/logo_s.png/" alt="シンクライアント導入事例、医療、教育、BCP、ISV等に広く導入 logo" class=""></a>
+      </div>
+      <div class="col-xs-7">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
           <div class="navbar-affixed-top" data-spy="affix" data-offset-top="500">
 
@@ -121,8 +137,8 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand home" href="/">
-                    <img src="/img/logo.png" alt="シンクライアント導入事例、医療、教育、BCP、ISV等に広く導入 logo" class="hidden-xs hidden-sm">
-                    <img src="/img/logo-small.png" alt="シンクライアント導入事例、医療、教育、BCP、ISV等に広く導入 logo" class="visible-xs visible-sm">
+                    <img src="/img/logo-go-small.png" alt="シンクライアント導入事例、医療、教育、BCP、ISV等に広く導入 logo" class="hidden-xs hidden-sm">
+                    <img src="/img/logo-go-small.png" alt="シンクライアント導入事例、医療、教育、BCP、ISV等に広く導入 logo" class="visible-xs visible-sm">
                     <span class="sr-only">シンクライアント導入事例、医療、教育、BCP、ISV等に広く導入 - ホームへ戻る</span>
                 </a>
                 <div class="navbar-buttons">
@@ -138,32 +154,44 @@
                 <ul class="nav navbar-nav navbar-right">
                   
                   <div class = "topbotton">
-                    <a class="fas fa-search" href="/search">ページを検索する</a>
                     <a href="/contact" class="btn-square-shadow-ora">問い合わせ</a>
                     <a href="https://gitbook.kitasp.com/" class="btn-square-shadow">技術サイト</a>
+                    <a href="https://www.kitasp.com/" class="btn-square-shadow-old">会社概要</a><br>
+                    <a class="fas fa-search" href="/search">ページ検索</a>
                   </div>
                   
                   
                   
                   <li class="dropdown">
                     
-                    <a class="dropdown-toggle" href="/function-introduction/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">機能説明</span><span class="caret"></span></a>
+                    <a href="/go-global/">GO-Globalとは</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a class="dropdown-toggle" href="/function-introduction/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">GO-Global活用</span><span class="caret"></span></a>
                     <ul class="dropdown-menu">
                       
                         <li>
-                          <a href="/web-separation">web分離</a>
+                          <a href="/contents/web-separation/">インターネット分離</a>
                         </li>
                       
                         <li>
-                          <a href="/work-style-reform">働き方改革</a>
+                          <a href="/contents/work-style-reform/">働き方改革</a>
                         </li>
                       
                         <li>
-                          <a href="/thin-client">シンクライアント</a>
+                          <a href="/contents/thin-client/">シンクライアント</a>
                         </li>
                       
                         <li>
-                          <a href="/lift-shift">アプリクラウド化</a>
+                          <a href="/contents/lift-shift/">アプリクラウド化</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/telework">テレワーク導入</a>
                         </li>
                       
                     </ul>
@@ -203,37 +231,7 @@
                   
                   <li class="dropdown">
                     
-                    <a class="dropdown-toggle" href="/posts/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">お知らせ</span><span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      
-                        <li>
-                          <a href="/support-schedule/">対応スケジュール</a>
-                        </li>
-                      
-                        <li>
-                          <a href="https://portal.kitasp.com/downloads/">Download</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/posts/">News</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/docs/">Tech news</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/blog/">blog</a>
-                        </li>
-                      
-                    </ul>
-                    
-                  </li>
-                  
-                  
-                  <li class="dropdown">
-                    
-                    <a href="/faq/">FAQ</a>
+                    <a href="/faq/">よくある質問</a>
                     
                   </li>
                   
@@ -241,32 +239,6 @@
                   <li class="dropdown">
                     
                     <a href="/partners-list/">代理店一覧</a>
-                    
-                  </li>
-                  
-                  
-                  <li class="dropdown">
-                    
-                    <a class="dropdown-toggle" href="/company-infomation/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">会社概要</span><span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      
-                        <li>
-                          <a href="/representative-greetings/">代表挨拶</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/philosophy/">理念</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/history/">沿革</a>
-                        </li>
-                      
-                        <li>
-                          <a href="/privacy-policy/">プライバシーポリシー</a>
-                        </li>
-                      
-                    </ul>
                     
                   </li>
                   
@@ -307,7 +279,7 @@
       <div class="row">
           <div class="col-md-12">
               
-              <h1 class="text-uppercase">様々な業種で活用されるGO-Globalの導入事例を紹介します</h1>
+              <h1 class="text">様々な業種で活用されるGO-Globalの導入事例を紹介します</h1>
               <br>
               <p>GO-Globalは、シンプルな構造なので、様々な分野で活用できます。シンプルで、
                 スピーディーそして、コストパフォーマンスに優れているので、
@@ -336,7 +308,7 @@
                     <br>
                 </div>
                 <div class="col-md-9">
-                <h4>病院などの医療機関でのGO-Globl導入事例</h4>
+                <h4>病院などの医療機関でのGO-Global導入事例</h4>
                 <p><font size="2">
                     GO-Globalで生産性がアップ！患者さんへのサービス向上につながりました。<hr>
                     医療アプリケーションは専門性が高く運用もとても複雑です。 
@@ -381,7 +353,7 @@
                     <img class="img2" src="/img/case/004.png"width="300"></a><br>
                 </div>
                 <div class="col-md-9">
-                <h4>災害に備えBCP（事業継続計画）対策をGO-GLOBALで実装</h4>
+                <h4>災害に備えBCP（事業継続計画）対策をGO-Globalで実装</h4>
                 <p>
                     <font size="2">
                     某中堅企業様の事例　：　万が一の災害が起きても事業を続けるためにGO-GLOBALを導入<hr>
@@ -551,9 +523,119 @@
   </div>
 </div>
         
-
-
-
+        <footer id="footer">
+        <div class="footer-nav-wrapper">        
+        <div class="container">
+            
+    <div class="col-md-12">
+            <div class="col-md-3 col-sm-3">
+                <div class="footer-nav-column">
+                    <div class="footer-nav-column-title"></div>
+                    <div class="footer-nav-column-content">
+                    <a href="/go-global/">GO-Globalとは</a>
+                    <ul>
+                        <li>
+                            <a href="/web-separation/">インターネット分離</a>
+                        </li>
+                        <li>
+                            <a href="/work-style-reform/">働き方改革</a>
+                        </li>
+                        <li>
+                            <a href="/thin-client/">シンクライアント</a>
+                        </li>
+                        <li>
+                            <a href="/lift-shift/">アプリクラウド化</a>
+                        </li>
+                        <li>
+                            <a href="/telework/">テレワーク導入</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="hidden-md hidden-lg hidden-sm">
+        <div class="col-md-3 col-sm-3">
+            <div class="footer-nav-column">
+                <div class="footer-nav-column-title"></div>
+               <div class="footer-nav-column-content">
+                <a href="/case-study/">導入事例</a>
+                <ul>
+                    <li>
+                        <a href="/adaptation-facility-1/">医療現場</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-2/">ISV</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-3/">中小企業</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-4/">BCP対策</a>
+                    </li>
+                    <li>
+                        <a href="/adaptation-facility-5/">教育現場</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <hr class="hidden-md hidden-lg hidden-sm">
+                <div class="col-md-3 col-sm-3">
+                    <div class="footer-nav-column">
+                        <div class="footer-nav-column-title"></div>
+                        <div class="footer-nav-column-content">
+                            <a href="/post/">お知らせ</a>
+                            <ul>
+                                <li>
+                                    <a href="/support-schedule/">対応スケジュール</a>
+                                </li>
+                                <li>
+                                    <a href="/news/">Download</a>
+                                </li>
+                                <li>
+                                    <a href="/categories/news/">サイトニュース</a>
+                                </li>
+                                <li>
+                                    <a href="/categories/tech-news/">技術ニュース</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <hr class="hidden-md hidden-lg hidden-sm">
+        
+                </div>
+        <div class="col-md-3 col-sm-3">
+            <div class="footer-nav-column">
+                <div class="footer-nav-column-content">
+                <div class="footer-nav-column-a">
+                <a href="/faq/">FAQ</a><br>
+                <a href="/partners-list/">代理店一覧</a><br>
+                <a href="/contact/">問合せフォーム</a><br>
+                <a href="/technical-site/">技術サイト</a><br>
+                <a href="/company-information/">企業概要</a>
+                <ul>
+                <li>
+                    <a href="/representative-greetings/">代表あいさつ</a>
+                </li>
+                <li>
+                    <a href="/philosophy/">理念</a>
+                </li>
+                <li>
+                    <a href="/history/">沿革</a>
+                </li>
+                <li>
+                    <a href="/privacy-policy/">個人情報保護方針</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        
+    </div>
+    </div>
+        </div>
+    
 </footer>
 
 
@@ -565,15 +647,26 @@
 <div id="copyright">
     <div class="container">
         <div class="col-md-12">
+            <div class="col-xs-5">
             
-            <p style="text-align:center;">Copyright © 2020 KitASP Corp. All Rights Reserved</p>
-            
-
-
-            </p><br>
-            <br>
+           <p style="text-align:center;">Copyright © 2020 KitASP Corp. All Rights Reserved</p>
             
         </div>
+                
+                    <div class="col-xs-7">
+                        <div class="social">
+                          
+                        <a href="https://www.facebook.com/kitasp2000/" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-facebook'></i></a>
+                        
+                        <a href="https://twitter.com/KitASP_Corp" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-twitter'></i></a>
+                        
+                        <a href="https://www.instagram.com/kitasp_corp/" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-instagram'></i></a>
+                        
+                </div>
+                </div>
+                
+        </div>
+        <br><br><br>
     </div>
 </div>
 

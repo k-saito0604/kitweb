@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-
   {{ partial "head.html" . }}
 
   <body>
@@ -8,6 +7,7 @@
     <div id="all">
 
         <header>
+          {{ partial "top.html" . }}
 
           {{ partial "nav.html" . }}
 
@@ -16,7 +16,6 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ .Page.Title }} | {{ .Site.Title }}</title>
-  <script src="data.js"></script>
   <style>
     body {
       background: #fafafa;
@@ -153,5 +152,6 @@
       el.innerHTML = '<b>' + count + '</b> 件見つかりました（' + total + '件中）';
     }
     </script>
+      <script src="data.js"></script>
 </body>
 </html>
