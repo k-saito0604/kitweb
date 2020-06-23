@@ -1765,7 +1765,7 @@ HTTPS : SSL/TLSで暗号化された通信路上のHTTPプロトコル RXPS : SS
 [番号] 技術ノート KGTN 2019032801
 [現象] [GGH5.X-6.X] ライセンスのアップグレードやリホストを行った場合，古いライセンスは使えるのか？
 [説明] いいえ，古いライセンスを使用することは出来ません．新しいライセンスが発行されると，古いライセンスは約30日で無効となります．ライセンス （サーバー） の移行は，この期間内に行うようにして下さい．
-PLEASE NOTE THIS POLICY: From the date your request is processed, any existing license files that wererehosted or upgraded will remain valid for 30 days, after which time they will become non-functional. Pleaseensure that your newly upgraded and/or rehosted license files are installed and active on your system(s)within 30 days. ファイル KGTN2019032801.pdf [(33.</description>
+PLEASE NOTE THIS POLICY: From the date your request is processed, any existing license files that were rehosted or upgraded will remain valid for 30 days, after which time they will become non-functional. Please ensure that your newly upgraded and/or rehosted license files are installed and active on your system(s) within 30 days.  ファイル KGTN2019032801.pdf [(33.</description>
     </item>
     
     <item>
@@ -1778,7 +1778,7 @@ PLEASE NOTE THIS POLICY: From the date your request is processed, any existing l
 [番号] 技術ノート KGTN 2019041501
 [現象] [GGH6.X] バージョン 5 でパソコンのブラウザ毎にプラグイン （アドオン） が用意されていたが，バージョン 6 でそれらが存在しない．技術的にどのような仕様の変更が行われたのか？
 [説明] バージョン 5 でブラウザ毎のプラグイン （アドオン） という形でクライアントを提供しておりましたが，バージョ ン 6 で URL スキームで従来のデスクトップ （Windows） クライアントを起動する形に仕様が変更されました．
-go-global://?-h &amp;lt;host&amp;gt; -u &amp;lt;user&amp;gt; -p &amp;lt;password&amp;gt; この仕様変更により，バージョン 5 でカスタマイズされた logon.html 等機能しませんので，バージョン 6 の logon.html 等で再度カスタマイズをお願いします （注：内部動作についてのお問合せご遠慮ください） ．
+go-global://?-h &amp;lt;host&amp;gt; -u &amp;lt;user&amp;gt; -p &amp;lt;password&amp;gt;  この仕様変更により，バージョン 5 でカスタマイズされた logon.html 等機能しませんので，バージョン 6 の logon.html 等で再度カスタマイズをお願いします （注：内部動作についてのお問合せご遠慮ください） ．
 ファイル KGTN2019041501.pdf [(42.8 KB)] [kitasp 技術センター, 2019/06/10 17:23]</description>
     </item>
     
@@ -2685,7 +2685,7 @@ KGTN2018090601-2.jpg
       <description>*技術ノート
 2018/10/04*
 [番号] 技術ノート KGTN 2018081302
-[現象] [GGH5.X] JavaScriptで window.open(&amp;quot;&amp;quot;,&amp;ldquo;test1&amp;rdquo;,&amp;lsquo;width=640,height=480&amp;rsquo;); を実行すると，同じ名前のウインドウ test1 が存在する時，そのウインドウのリファレンスが値として戻る．ドキュメントには書かれていないが，これが事実上の仕様ではないのか？
+[現象] [GGH5.X] JavaScriptで window.open(&amp;quot;&amp;rdquo;,&amp;ldquo;test1&amp;rdquo;,&amp;lsquo;width=640,height=480&amp;rsquo;); を実行すると，同じ名前のウインドウ test1 が存在する時，そのウインドウのリファレンスが値として戻る．ドキュメントには書かれていないが，これが事実上の仕様ではないのか？
 [説明] 弊社の3台のサーバーで検証を行ったところ，1台の Windows Server 2012 R2 ではそのように動作しましたが，もう1台の Windows Server 2012 R2 および Windows Server 2016 では空なウインドウ （about:blank） のリファレンスが値として戻りました．従って，既存のウインドウのリファレンスが値として戻るという事象は，事実上の仕様とは言えないと思います．もし，必ずそのような動作をするような設定があれば，お知らせ下さい．空なウインドウのリファレンスが値として戻る2台のサーバーに設定して，動作を確認したいと思います．
 ファイル KGTN2018081302.pdf [(43.3 KB)] [kitasp 技術センター, 2018/10/04 09:40]</description>
     </item>
@@ -2699,7 +2699,7 @@ KGTN2018090601-2.jpg
       <description>*技術ノート
 2018/10/04*
 [番号] 技術ノート KGTN 2018081301
-[現象] [GGH5.X] JavaScriptでウインドウ名test1を持つウインドウが存在する時，次のメソッドを実行すると，そのウインドウのリファレンスが値として戻らず，空なウインドウ （about:blank） のリファレンスが値として戻る．　window.open(&amp;quot;&amp;quot;,&amp;ldquo;test1&amp;rdquo;,&amp;lsquo;width=640,height=480&amp;rsquo;);
+[現象] [GGH5.X] JavaScriptでウインドウ名test1を持つウインドウが存在する時，次のメソッドを実行すると，そのウインドウのリファレンスが値として戻らず，空なウインドウ （about:blank） のリファレンスが値として戻る．　window.open(&amp;quot;&amp;rdquo;,&amp;ldquo;test1&amp;rdquo;,&amp;lsquo;width=640,height=480&amp;rsquo;);
 [説明] インターネット上の会議室等で，同じウインドウ名を持つウインドウが既に存在する時， open　メソッドの第１引数で &amp;quot;&amp;rdquo; ，第2引数で同じウインドウ名を指定すると，既存のウインドウのリファレンスが値として戻るようなことが書かれていますが，マイクロソフト社等のドキュメントを見ますと，次の通り about:blank の新しいウインドウが値として戻ると記述されております．このことから，空なウインドウ （about:blank） のリファレンスが値として戻るのは，正しい動作ということになります．
 https://msdn.microsoft.com/ja-jp/library/cc428117.aspx
 ファイル KGTN2018081301.pdf [(54.3 KB)] [kitasp 技術センター, 2018/10/04 09:38]
@@ -8745,7 +8745,7 @@ SMI_SERVER_INFO smi_serverInfo; SMI_SERVER_METRICS smi_serverMetrics; … SMI_Ge
       <description>*技術ノート
 2016/10/05*
 [番号] 技術ノート KGTN 2016082903
-[現象] [GGH4.X-5.X] ブラウザ用クライアントをインストールしようとしたところ，&amp;quot;&amp;hellip;{A47FAE4B-EFD0-4544-AB85-0EDBA 指定されたパスが見つかりません。&amp;rdquo; と表示された．
+[現象] [GGH4.X-5.X] ブラウザ用クライアントをインストールしようとしたところ，&amp;rdquo;&amp;hellip;{A47FAE4B-EFD0-4544-AB85-0EDBA 指定されたパスが見つかりません。&amp;rdquo; と表示された．
 [説明] メッセージのコピペのミスでなければ，Windows自体の問題等で不完全なパスへのインストールが行われたことを示しています．正しいパスは，次の通りです．
 C:UsersAppDataLocalDownloaded Installations{A47FAE4B-EFD0-4544-AB85-0EDBA17375E7}
 クライアントのマシンを再起動して，状況が改善するかどうか確認して下さい．改善しない場合は，正常にインストール出来たマシンの上記フォルダを開き，そこにある ???.msi というファイルを問題のマシンへコピーし，そのファイルを実行してインストールを試みて下さい．
@@ -9449,7 +9449,7 @@ KGTN2016091602.jpg
 [現象] [GGH5.X/ExPack] 拡張パックの GGEasyMonitor のバージョン2.2.0をインストールしたが，クライアントの名前やアドレスに &amp;ldquo;*&amp;rdquo; が表示される．
 [説明] クライアント情報を取得するため，以下の設定作業を行って下さい．
 [GGの設定ファイルの修正] サーバー側から見たクライアントのIPアドレスを得るため， HostProperties.xml　の下記の項目に true を設定して下さい．なお，この作業はサービス GGAPS を停止した状態で行って下さい．
-&amp;lt;property id=&amp;quot;NetworkAddressEnvVarEnabled&amp;quot; group=&amp;quot;ClientAccess&amp;quot; type=&amp;quot;BOOL&amp;quot;&amp;gt;&amp;lt;value&amp;gt;true&amp;lt;/value&amp;gt;&amp;lt;/property&amp;gt; [グローバル・ログオンスクリプトの登録] クライアントの情報を取得し，それらの情報を作業ファイル （GGEasyMonitorClientInfo-Data.ini） に記録するため， logon-gem-ci.bat をグローバル・ログオンスクリプトとして登録して下さい．次に，管理者権限で GGEasyMonitor-Files.bat を実行し，作業ファイルに必要なアクセス権を設定して下さい．
+&amp;lt;property id=&amp;quot;NetworkAddressEnvVarEnabled&amp;quot; group=&amp;quot;ClientAccess&amp;quot; type=&amp;quot;BOOL&amp;quot;&amp;gt; &amp;lt;value&amp;gt;true&amp;lt;/value&amp;gt; &amp;lt;/property&amp;gt;  [グローバル・ログオンスクリプトの登録] クライアントの情報を取得し，それらの情報を作業ファイル （GGEasyMonitorClientInfo-Data.ini） に記録するため， logon-gem-ci.bat をグローバル・ログオンスクリプトとして登録して下さい．次に，管理者権限で GGEasyMonitor-Files.bat を実行し，作業ファイルに必要なアクセス権を設定して下さい．
 ファイル KGTN2016081902.pdf [(75.5 KB)] [kitasp 技術センター, 2016/08/26 13:23]
 KGTN2016081902.jpg
 表示 [(11 KB)] [kitasp 技術センター, 2016/08/26 13:23]</description>
@@ -14332,7 +14332,7 @@ KGTN2015083101-2.jpg
 [番号] 技術ノート KGTN 2015080701
 [現象] [GGH5.X] APS が開始しない．ログを見ると &amp;ldquo;A Bug Check (BSOD) was detected &amp;hellip;&amp;rdquo; という記録がある．
 [説明] 非互換性等によりバグチェック （BSOD） が発生し，GGが無効化されたのが原因だと思われます．ファイル C:Windowssystem32DRIVERSDBCM.bin を削除し，サーバーを再起動して下さい．
-aps (1088) A Bug Check (BSOD) was detected from a previous system start and GO-Global has beendisabled. To re-enable GO-Global, delete the C:Windowssystem32DRIVERSDBCM.bin file and restart thecomputer. To prevent a Bug Check from disabling GO-Global, create the DWORD registry value[HKEY_LOCAL_MACHINESYSTEMCurrentControlSetServicesggseDBCM_Disabled] and set it to0x00000001.</description>
+aps (1088) A Bug Check (BSOD) was detected from a previous system start and GO-Global has been disabled. To re-enable GO-Global, delete the C:Windowssystem32DRIVERSDBCM.bin file and restart the computer. To prevent a Bug Check from disabling GO-Global, create the DWORD registry value [HKEY_LOCAL_MACHINESYSTEMCurrentControlSetServicesggseDBCM_Disabled] and set it to 0x00000001.</description>
     </item>
     
     <item>
@@ -15614,7 +15614,7 @@ Opened log for gg-client.exe process ID 3516 Local date and time: Thu Apr 02 14:
 [番号] 技術ノート KGTN 2015040302
 [現象] [GGH5.X] Google Chrome用のクライアント （Chromeクライアント） のインストール手順は？
 [説明] 以下，GGサーバーにウエッブサーバーが同居している環境でのGoogle Chrome用のクライアント （Chromeクライアント） のインストール手順を示します．
-１．Chromeを立ち上げ http://&amp;lt;GGサーバーのアドレス&amp;gt;/logon.html{.external} へアクセスし，&amp;ldquo;Download&amp;rdquo; をクリックする． ２．&amp;ldquo;gg-client.chrome.exe&amp;rdquo; をクリックする． ３．&amp;ldquo;実行&amp;rdquo; をクリックする． ４．&amp;ldquo;Next&amp;rdquo; をクリックする． ５．&amp;ldquo;Finish&amp;rdquo; をクリックする． ６．&amp;ldquo;Install&amp;rdquo; をクリックする． ７．GO-Global と書かれた画面が表示されたのを確認し，スクロールバーで画面の右上を表示する． ８．&amp;ldquo;+ CHROME に追加&amp;rdquo; をクリックする． ９．&amp;ldquo;追加&amp;rdquo; をクリックする． １０．&amp;ldquo;GO-Global - Chrome&amp;rdquo; と書かれたタブを閉じる． １１．&amp;ldquo;GO-Global&amp;rdquo; と書かれたタブをリロードする． １２．&amp;ldquo;ポップアップがブロックされました&amp;rdquo; と表示された場合は，その部分をクリックする． １３．&amp;quot;??? のポップアップを常に許可する&amp;rdquo; を選択し，&amp;ldquo;完了&amp;rdquo; をクリックする． １４．ログオン画面が表示される． ファイル KGTN2015040302.pdf [(764 KB)] [kitasp 技術センター, 2015/06/11 17:52]
+１．Chromeを立ち上げ http://&amp;lt;GGサーバーのアドレス&amp;gt;/logon.html{.external} へアクセスし，&amp;ldquo;Download&amp;rdquo; をクリックする． ２．&amp;ldquo;gg-client.chrome.exe&amp;rdquo; をクリックする． ３．&amp;ldquo;実行&amp;rdquo; をクリックする． ４．&amp;ldquo;Next&amp;rdquo; をクリックする． ５．&amp;ldquo;Finish&amp;rdquo; をクリックする． ６．&amp;ldquo;Install&amp;rdquo; をクリックする． ７．GO-Global と書かれた画面が表示されたのを確認し，スクロールバーで画面の右上を表示する． ８．&amp;ldquo;+ CHROME に追加&amp;rdquo; をクリックする． ９．&amp;ldquo;追加&amp;rdquo; をクリックする． １０．&amp;ldquo;GO-Global - Chrome&amp;rdquo; と書かれたタブを閉じる． １１．&amp;ldquo;GO-Global&amp;rdquo; と書かれたタブをリロードする． １２．&amp;ldquo;ポップアップがブロックされました&amp;rdquo; と表示された場合は，その部分をクリックする． １３．&amp;rdquo;??? のポップアップを常に許可する&amp;rdquo; を選択し，&amp;ldquo;完了&amp;rdquo; をクリックする． １４．ログオン画面が表示される． ファイル KGTN2015040302.pdf [(764 KB)] [kitasp 技術センター, 2015/06/11 17:52]
 KGTN2015040302-11.jpg
 表示 [(16.6 KB)] [kitasp 技術センター, 2015/06/18 15:48]
 KGTN2015040302-12.jpg</description>
@@ -17323,7 +17323,7 @@ Tools → Host Options &amp;hellip; → Security → Authentication → Smart ca
 [番号] 技術ノート KGTN 2014081901
 [現象] [GGH4.X] WS2012 (R2) 上で動作するGGサーバでマルチモニタ機能を使用すると画面が正常に表示されない．
 [説明] WS2012 (R2) の環境では，GGのマルチモニタ機能は正常に動作しません．これは現時点での制限事項となります．なお， WS2008R2 の環境ではGGのマルチモニタ機能は正常に動作します．
-When using multi-monitors and connecting to hosts running Windows 8, 8.1 or Windows Server 2012 and2012 R2, display issues might occur when moving windows across the monitors and off-screen. 補　足 WS2012 (R2) + GGH4.X の環境では上記の制限事項が適用されますが， WS2012 (R2) + GGH5.X の環境ではマルチモニタ機能が正常に動作しております （GGH5.0.021965で確認しました） ．なお，GGH4.8.2 Patch 1 およびそれ以降の GGH4.8 についても，この制限事項が適用されると考えられます．
+When using multi-monitors and connecting to hosts running Windows 8, 8.1 or Windows Server 2012 and 2012 R2, display issues might occur when moving windows across the monitors and off-screen.  補　足 WS2012 (R2) + GGH4.X の環境では上記の制限事項が適用されますが， WS2012 (R2) + GGH5.X の環境ではマルチモニタ機能が正常に動作しております （GGH5.0.021965で確認しました） ．なお，GGH4.8.2 Patch 1 およびそれ以降の GGH4.8 についても，この制限事項が適用されると考えられます．
 ファイル KGTN2014081901.pdf [(56.</description>
     </item>
     
@@ -17661,7 +17661,7 @@ Windowsプリンタドライバが選択された場合は　（注：下記ダ�
 [番号] 技術ノート KGTN 2014061601
 [現象] [GGW3.2.1/GGH4.X] GGはログオフスクリプトをサポートしているのか？
 [説明] GGの仕様 （アーキテクチャ） により，グループポリシーのログオンスクリプトおよびログオフスクリプトはサポートしておりません．
-GO-Global does not support Group Policy logon or logoff scripts. ファイル KGTN2014061601.pdf [(44.2 KB)] [kitasp 技術センター, 2014/06/20 17:04]</description>
+GO-Global does not support Group Policy logon or logoff scripts.  ファイル KGTN2014061601.pdf [(44.2 KB)] [kitasp 技術センター, 2014/06/20 17:04]</description>
     </item>
     
     <item>
@@ -17756,7 +17756,7 @@ GO-Global does not support Group Policy logon or logoff scripts. ファイル K
 [番号] 技術ノート KGTN 2014061301
 [現象] [GGH4.X] Chrome Extension 4.6 が，Chrome Extension 4.8 のリリースによって使えなくなった．
 [説明] GraphOn社に確認したところ， 「Chrome Extension 4.8 は 4.6 に対して互換性があるので，4.8を使用して構わない．しかしながら，Chrome Extension が利用しているNPAPI プラグインのサポートが，Google社によって2014年末で打ち切られるため， Chrome 以外のブラウザの利用を勧める」 という回答がありました．詳細な内容については，以下の通りです．
-There is no reason why the customer cannot use the 4.8 Chrome Extension with a 4.6 host. They arebackwards compatible. However, we would recommend using a browser other than Chrome. The reason isoutlined below.Google has decided to phase out NPAPI plugins.</description>
+There is no reason why the customer cannot use the 4.8 Chrome Extension with a 4.6 host. They are backwards compatible. However, we would recommend using a browser other than Chrome. The reason is outlined below. Google has decided to phase out NPAPI plugins.</description>
     </item>
     
     <item>
@@ -17812,7 +17812,7 @@ There is no reason why the customer cannot use the 4.8 Chrome Extension with a 4
 [番号] 技術ノート KGTN 2014061103
 [現象] [GGW3.2.1] STOPコード0x50のBSODが発生したが，そのBSODの原因を知りたい．
 [説明] GraphOn社でメモリダンプファイルを解析したところ，下記の内容が分かりました．
-A developer analyzed the memory dump. The crash occurred in logon.exe while the session was running(not during session shutdown). The computer had plenty of available memory at the time of the crash. Thecrash occurred when the GO-Global display driver tried to access one of its data structures. The datastructure had been corrupted. We cannot tell what caused the corruption.</description>
+A developer analyzed the memory dump. The crash occurred in logon.exe while the session was running (not during session shutdown). The computer had plenty of available memory at the time of the crash. The crash occurred when the GO-Global display driver tried to access one of its data structures. The data structure had been corrupted. We cannot tell what caused the corruption.</description>
     </item>
     
     <item>
@@ -17825,7 +17825,7 @@ A developer analyzed the memory dump. The crash occurred in logon.exe while the 
 [番号] 技術ノート KGTN 2014050701
 [現象] [GGW3.2.1] 技術ノート KGTN#2013110601 の SYMEVENT 関連の情報を得たが，この情報からBSODの原因は分かるか？
 [説明] SYMEVENT 関連の情報をもとにGraphOn社で調査を行ったところ，BSODを引き起こしたと思われる原因が分かりました．
-The issue occurs in version 3.2 when a session closes while the &amp;quot;csrss.exe&amp;quot; process is displayinga dialog box. It is uncommon for &amp;quot;csrss.exe&amp;quot; to display a dialog box, but it does display a dialogbox when a hard error (e.g., unhandled access violation) occurs in a process. In the crash youreported, the &amp;quot;csrss.</description>
+The issue occurs in version 3.2 when a session closes while the &amp;quot;csrss.exe&amp;quot; process is displaying a dialog box. It is uncommon for &amp;quot;csrss.exe&amp;quot; to display a dialog box, but it does display a dialog box when a hard error (e.g., unhandled access violation) occurs in a process. In the crash you reported, the &amp;quot;csrss.</description>
     </item>
     
     <item>
@@ -17855,7 +17855,7 @@ The issue occurs in version 3.2 when a session closes while the &amp;quot;csrss.
 [番号] 技術ノート KGTN 2014043001
 [現象] [GGW3.2.1/GGH4.X] Internet Explorer の脆弱性 （2963983） への当面の対応方法は？
 [説明] マイクロソフト社から幾つかの回避策が提案されておりますが，適用条件や副作用もあり，残念ながら十分とは言えません．実際，GraphOn社に回避策 「VGX.DLL の登録解除」 の適用の可否を確認したところ，下記の回答がありました．
-Unregistering the dll has not been tested by GraphOn. We test for compatibility of MS Windowsupdates regularly and would provide patches for any incompatibilities and/or securityvulnerabilities found in the product. We would recommend that your customer test this. VGX.DLL の登録解除による副作用が正確には分からないこと等から，このような回答 （自己責任での適用） をせざるを得ない状況です．従って，マイクロソフト社が対応するまでの 「暫定」 対策としては，次の運用回避方法が妥当な対策だと考えます．
+Unregistering the dll has not been tested by GraphOn. We test for compatibility of MS Windows updates regularly and would provide patches for any incompatibilities and/or security vulnerabilities found in the product. We would recommend that your customer test this.  VGX.DLL の登録解除による副作用が正確には分からないこと等から，このような回答 （自己責任での適用） をせざるを得ない状況です．従って，マイクロソフト社が対応するまでの 「暫定」 対策としては，次の運用回避方法が妥当な対策だと考えます．
  GGのログオンページに限り IE を使用する． 他のページについては IE 以外のブラウザ （例： Google Chrome） を使用する．  補　足 大手新聞社のニュースによればマイクロソフト社は月次の更新プログラムで修正したい意向で，その通りであれば5月14日に本件の更新プログラムがリリースされます．</description>
     </item>
     
@@ -17934,7 +17934,7 @@ Unregistering the dll has not been tested by GraphOn. We test for compatibility 
 [番号] 技術ノート KGTN 2014041502
 [現象] [GGFU] OpenSSL の脆弱性 （CVE-2014-0160, Heartbeat overflow issue） に関して， GO-Global for Unix についてはどうか？
 [説明] 2.2.15またはそれ以前のバージョンについては，影響を受けません．2.2.16 またはそれ以降のバージョンについては，Linux版以外については影響を受けません．Linux版については，ディストリビューションに含まれる OpenSSL を使用するため，そのディストリビューションの影響に従います．
-GO-Global for UNIX version 2.2.15 and earlier are not vulnerable on all supported platforms. GOGlobalfor UNIX version 2.2.16 and later are not vulnerable on all non-Linux platforms. On Linux,GO-Global for UNIX version 2.2.16 and later use the operating system&#39;s version of OpenSSL.Some supported Linux distributions may be vulnerable.</description>
+GO-Global for UNIX version 2.2.15 and earlier are not vulnerable on all supported platforms. GOGlobal for UNIX version 2.2.16 and later are not vulnerable on all non-Linux platforms. On Linux, GO-Global for UNIX version 2.2.16 and later use the operating system&#39;s version of OpenSSL. Some supported Linux distributions may be vulnerable.</description>
     </item>
     
     <item>
@@ -18028,7 +18028,7 @@ GO-Global for UNIX version 2.2.15 and earlier are not vulnerable on all supporte
 [番号] 技術ノート KGTN 2014041501
 [現象] [GGW3.2.1/GGH4.X] OpenSSL の脆弱性 （CVE-2014-0160, Heartbeat overflow issue） に関して， GO-Global for Windows は影響を受けないのか？
 [説明] GraphOn社より，影響を受けないとの回答がありました．
-All supported versions of GO-Global for Windows are not vulnerable. ファイル KGTN2014041501.pdf [(49.2 KB)] [kitasp 技術センター, 2014/04/25 16:15]</description>
+All supported versions of GO-Global for Windows are not vulnerable.  ファイル KGTN2014041501.pdf [(49.2 KB)] [kitasp 技術センター, 2014/04/25 16:15]</description>
     </item>
     
     <item>
@@ -18089,7 +18089,7 @@ KGTN2014032702-2.jpg
 [番号] 技術ノート KGTN 2014032404
 [現象] [GGH4.X] UPD を使って印刷すると，ドキュメントの内容が用紙に収まらず切れてしまう．
 [説明] GGH4.8.1Patch1 から，用紙印刷時のスケーリングを指定するオプションが追加されました．GGの設定ファイル HostProperties.xml を下記のようにプロパティを追加 （編集） することで，用紙に収まるようにスケーリングすることが出来ます．もしこの設定でも収まらない場合は，オフセットの値を調整して下さい．
-　&amp;lt;property id=&amp;quot;EnablePrintOptions&amp;quot; group=&amp;quot;Miscellaneous&amp;quot; type=&amp;quot;BOOL&amp;quot;&amp;gt;&amp;lt;value&amp;gt;true&amp;lt;/value&amp;gt;&amp;lt;/property&amp;gt;&amp;lt;property id=&amp;quot;PrintOptions&amp;quot; group=&amp;quot;Miscellaneous&amp;quot; type=&amp;quot;STRING&amp;quot;&amp;gt;&amp;lt;value&amp;gt;-printermargins -xoffset 50 -yoffset 30&amp;lt;/value&amp;gt;&amp;lt;/property&amp;gt; ファイル KGTN2014032404.pdf [(135 KB)] [kitasp 技術センター, 2014/04/04 15:42]</description>
+　&amp;lt;property id=&amp;quot;EnablePrintOptions&amp;quot; group=&amp;quot;Miscellaneous&amp;quot; type=&amp;quot;BOOL&amp;quot;&amp;gt; &amp;lt;value&amp;gt;true&amp;lt;/value&amp;gt; &amp;lt;/property&amp;gt; &amp;lt;property id=&amp;quot;PrintOptions&amp;quot; group=&amp;quot;Miscellaneous&amp;quot; type=&amp;quot;STRING&amp;quot;&amp;gt; &amp;lt;value&amp;gt;-printermargins -xoffset 50 -yoffset 30&amp;lt;/value&amp;gt; &amp;lt;/property&amp;gt;  ファイル KGTN2014032404.pdf [(135 KB)] [kitasp 技術センター, 2014/04/04 15:42]</description>
     </item>
     
     <item>
@@ -18241,7 +18241,7 @@ KGTN2014031901.jpg
 [番号] 技術ノート KGTN 2014031402
 [現象] [GGH4.X] 2台のライセンスサーバを使用する場合，GGサーバの設定はどのようにするのか？
 [説明] GGサーバのライセンスサーバは使用しないため，サービス GO-Global License Manager を停止し，かつスタートアップを 「手動」 にします．次にシステム環境変数 LM_LICENSE_FILE に &amp;lt;LicenseServer1のポート番号&amp;gt;&amp;lt;LicenseServer1のIPアドレス&amp;gt;;&amp;lt;LicenseServer1のポート番号&amp;gt;&amp;lt;LicenseServer1のIPアドレス&amp;gt; を設定し，サーバを再起動して下さい （注：設定変更時に必ずサーバの再起動を行って下さい） ．以下に，設定のサンプルと lmtools の結果を示します．
-LM_LICENSE_FILE = 27000@192.168.102.61;27000@192.168.102.86-------- 6 ユーザがログオンした状態Status--------Flexible License Manager status on Fri 3/14/2014 12:08[Detecting lmgrd processes...]License server status: 27000@WS2012R2 (=192.168.102.61)License file(s) on WS2012R2: C:GraphOnGO-GlobalProgramslicense.lic:WS2012R2: license server UP (MASTER) v11.10Vendor daemon status (on WS2012R2):blm: UP v11.10Feature usage info:Users of session: (Total of 5 licenses issued; Total of 5 licenses in use)&amp;quot;session&amp;quot; v4.</description>
+LM_LICENSE_FILE = 27000@192.168.102.61;27000@192.168.102.86 -------- 6 ユーザがログオンした状態 Status -------- Flexible License Manager status on Fri 3/14/2014 12:08 [Detecting lmgrd processes...] License server status: 27000@WS2012R2 (=192.168.102.61) License file(s) on WS2012R2: C:GraphOnGO-GlobalProgramslicense.lic: WS2012R2: license server UP (MASTER) v11.10 Vendor daemon status (on WS2012R2): blm: UP v11.10 Feature usage info: Users of session: (Total of 5 licenses issued; Total of 5 licenses in use) &amp;quot;session&amp;quot; v4.</description>
     </item>
     
     <item>
@@ -18372,7 +18372,7 @@ C:&amp;gt; lmutil lmstat -a
 [番号] 技術ノート KGTN 2014032001
 [現象] [GGH4.X] アイドルタイムアウト （無操作タイムアウト） が，クラスタマネージャで設定した時間通りに機能しない．
 [説明] これは GGH4.8.1.20079 （GGH4.8.1） の不具合で， GGH4.8.1.20215 （GGH4.8.1Patch1） で修正されます．
-CASE#40520 - The idle timeout elapses regardless of user activity. ファイル KGTN2014032001.pdf [(50.4 KB)] [kitasp 技術センター, 2014/03/20 19:45]</description>
+CASE#40520 - The idle timeout elapses regardless of user activity.  ファイル KGTN2014032001.pdf [(50.4 KB)] [kitasp 技術センター, 2014/03/20 19:45]</description>
     </item>
     
     <item>
@@ -18861,7 +18861,7 @@ I have just connected to my 4.8.1 host from an XP machine running IE8.0 and it w
 [現象] [GGH4.X] GGH4.8を Windows Server 2012 および Windows Server 2012 R2 にインストールしたところ，IMEの動作がおかしい．
 [説明] iPad (iOS) や Surface (Windows8) まで含めて考えると，クライアント側のIMEを利用するのがこれからの流れだと思われます．このような技術的な流れおよび Windows Server 2012 (R2) 環境でのサーバ側のIMEサポートの技術的難易度の高さ等から，Windows Server 2012 (R2) 環境ではクライアント側のIMEのみをサポートします．このため，未確定の文字は画面左上にエコーバックされます （エコーバックの位置は将来改良される予定です） ．
 補　足 本件に関するGraphOn社のコメントは以下の通りです．
-We don&#39;t plan to support server-side IMEs on Windows Server 2012, but we will change the clientsideIME window so it opens near the caret. ファイル KGTN2014021203.pdf [(91.4 KB)] [kitasp 技術センター, 2014/06/14 18:56]</description>
+We don&#39;t plan to support server-side IMEs on Windows Server 2012, but we will change the clientside IME window so it opens near the caret.  ファイル KGTN2014021203.pdf [(91.4 KB)] [kitasp 技術センター, 2014/06/14 18:56]</description>
     </item>
     
     <item>
@@ -24127,7 +24127,7 @@ http://www.microsoft.com/ja-jp/download/details.aspx?id=6676 User Profile Hive C
 [番号] 技術ノート KGTN 2013020601
 [現象] [GGH4.X-5.X] GGサーバのパラメタ ClientProcessingBatch の詳細について知りたい．
 [説明] ClientProcessingBatch = 0 の場合は，サーバはクライアントに対して描画命令を送信します．ClientProcessingBatch = 1 の場合は，サーバ側で 「クライアント画面の描画効率を判断し」 描画命令または画像データ （スクリーンスクレーピング） の何れかを送信します．描画命令を送信するケースでは，さまざまな描画上の最適化が行われるため，アプリケーションによってはこの最適化に馴染まず画面の乱れ等を引き起こすことがあります（主に一般的でない画面上の動作） ．このような場合は， ClientProcessingBatch = 1 を適用することで，この画面の乱れを回避出来る可能性があります．より詳しい内容については，以下のGraphOn社の説明をご覧下さい．
-[ClientProcessingBatch] When ClientProcessingBatch is set to 0, the host updates the client&amp;rsquo;s display by sending primitive drawing commands such as &amp;ldquo;draw rectangle&amp;rdquo;, &amp;ldquo;draw line&amp;rdquo;, &amp;ldquo;draw text,&amp;quot;, etc&amp;hellip; to the client. Alternatively, the host could simply wait and send an image with the final result of the drawing operations to the client.</description>
+[ClientProcessingBatch] When ClientProcessingBatch is set to 0, the host updates the client&amp;rsquo;s display by sending primitive drawing commands such as &amp;ldquo;draw rectangle&amp;rdquo;, &amp;ldquo;draw line&amp;rdquo;, &amp;ldquo;draw text,&amp;rdquo;, etc&amp;hellip; to the client. Alternatively, the host could simply wait and send an image with the final result of the drawing operations to the client.</description>
     </item>
     
     <item>
@@ -35942,7 +35942,8 @@ blm: UP v10.8 Feature usage info:  Users of session: (Total of 50 licenses issue
 [番号] 技術ノート KGTN 2010121602
 [現象] [GGW3.2.1/GGH4.X/GGH5.X] アプリケーションを利用できるユーザーを限定したい．
 [説明] 以下の手順で，アプリケーションを起動出来る （PW上にアイコンが表示される） ユーザーを限定することが出来ます．
- アプリケーションのプロパティを開く． [セキュリティ] タブをクリックする． [詳細設定] ボタンをクリックする． [親から継承されている&amp;hellip;] ボックスのチェックを外す． セキュリティ・ダイアログ中の [コピー] ボタンをクリックする． [アクセス許可] タブの [OK] ボタンをクリックする． [セキュリティ] タブの [グループ名またはユーザー名] のリストから Users クリックする． [削除] ボタンをクリックする． [追加] ボタンをクリックする． 10) ユーザーまたはグループの選択・ダイアログで，起動を許すユーザーを選択する． ユーザーまたはグループの選択・ダイアログの [OK] ボタンをクリックする． [セキュリティ] タブの [OK] ボタンをクリックする．  つまり，アプリケーションに起動を許すユーザーにアクセス権 （読み取りと実行） を与えることで，ユーザー単位に起動出来るアプリケーションを設定することが可能になります （上記7～8で他ユーザーのアクセス権を削除しています） ．
+ アプリケーションのプロパティを開く． [セキュリティ] タブをクリックする． [詳細設定] ボタンをクリックする． [親から継承されている&amp;hellip;] ボックスのチェックを外す． セキュリティ・ダイアログ中の [コピー] ボタンをクリックする． [アクセス許可] タブの [OK] ボタンをクリックする． [セキュリティ] タブの [グループ名またはユーザー名] のリストから Users クリックする． [削除] ボタンをクリックする． [追加] ボタンをクリックする．   ユーザーまたはグループの選択・ダイアログで，起動を許すユーザーを選択する． 11) ユーザーまたはグループの選択・ダイアログの [OK] ボタンをクリックする． 12) [セキュリティ] タブの [OK] ボタンをクリックする．
+つまり，アプリケーションに起動を許すユーザーにアクセス権 （読み取りと実行） を与えることで，ユーザー単位に起動出来るアプリケーションを設定することが可能になります （上記7～8で他ユーザーのアクセス権を削除しています） ．
 ファイル KGTN2010121602.pdf [(54.2 KB)][kitasp 技術センター, 2015/09/02 16:17]</description>
     </item>
     
@@ -39051,7 +39052,7 @@ header footer dateTime hostName ipAddress serverID maxSessions sessionCount avai
 [HKEY_LOCAL_MACHINE¥SOFTWARE¥GraphOn¥Bridges¥1.0.0¥System¥Keyboard Layout] &amp;ldquo;Fallback Layout Text&amp;quot;=&amp;quot;Japanese&amp;rdquo;
 この件はGraphOn社でも確認しており，今後のリリースで修正される予定です．
 補足１ 3.2.1 Patch4 (4466) およびそれ以降では，本問題は解消されております．
-Bug 8997 On Japanese Windows Server 2008, users are unable to logon to an account with a password including &amp;ldquo;@,=,‾,etc&amp;hellip;&amp;quot;.
+Bug 8997 On Japanese Windows Server 2008, users are unable to logon to an account with a password including &amp;ldquo;@,=,‾,etc&amp;hellip;&amp;rdquo;.
 補足２ Windows Server 2008 のインストール時に，標準的な106キーボードが接続されていることが前提となります．それ以外の環境では，下記のレジストリの Layout Text の値を上記Fallback Layout Text へセットして下さい．
 [HKEY_LOCAL_MACHINE¥SYSTEM¥CurrentControlSet¥Control¥Keyboard Layouts¥00000411] &amp;ldquo;Layout Display Name&amp;quot;=&amp;rdquo;@C:¥¥Windows¥¥system32¥¥input.dll,-5061&amp;rdquo; &amp;ldquo;Layout File&amp;quot;=&amp;quot;KBDJPN.</description>
     </item>
@@ -40076,7 +40077,7 @@ bin¥openssl pkcs12 ?export ?in server.crt ?inkey server.key ?out server.p12 を
 [番号] 技術ノート KGTN 2010040703
 [現象] 起動したいアプリケーション名に空白がある場合，Javaクライアント （Signed） ではどのように指定すれば良いのか？
 [説明] SignedのJava クライアントの場合は，空白を含むアプリケーション名をそのまま指定して下さい．
-var debug = false; var applet = new Object(); applet.code = &amp;ldquo;com.graphon.ggw.Logon&amp;rdquo;; applet.archive = &amp;ldquo;ggw.sunsigned.jar,ggw.res.jar&amp;rdquo;; applet.nos = &amp;ldquo;ggw.netscapesigned.jar,ggw.res.jar&amp;rdquo;; applet.cabcount = 2; applet.cab = &amp;ldquo;ggw.mssigned.cab,ggw.res.cab&amp;rdquo;; applet.name = &amp;ldquo;GO-Global for Windows Applet&amp;rdquo;; applet.title = &amp;ldquo;GO-Global for Windows Applet&amp;rdquo;; applet.alt = &amp;ldquo;GO-Global for Windows Applet&amp;rdquo;; applet.vspace = &amp;ldquo;0&amp;rdquo;; applet.hspace = &amp;ldquo;0&amp;rdquo;; applet.width = &amp;ldquo;1000&amp;rdquo;; applet.height = &amp;ldquo;630&amp;rdquo;; createAppletTag( applet, [&amp;ldquo;host&amp;rdquo;, &amp;ldquo;&amp;quot;, &amp;ldquo;user&amp;rdquo;, &amp;ldquo;&amp;quot;, &amp;ldquo;password&amp;rdquo;, &amp;ldquo;&amp;quot;, &amp;ldquo;application&amp;rdquo;, &amp;ldquo;Notepad 001&amp;rdquo;, &amp;ldquo;args&amp;rdquo;, &amp;ldquo;&amp;quot;, &amp;ldquo;desktopcolor&amp;rdquo;, &amp;ldquo;&amp;quot;, &amp;ldquo;compression&amp;rdquo;, &amp;ldquo;true&amp;rdquo;, &amp;ldquo;hostport&amp;rdquo;, &amp;ldquo;&amp;quot;] );</description>
+var debug = false; var applet = new Object(); applet.code = &amp;ldquo;com.graphon.ggw.Logon&amp;rdquo;; applet.archive = &amp;ldquo;ggw.sunsigned.jar,ggw.res.jar&amp;rdquo;; applet.nos = &amp;ldquo;ggw.netscapesigned.jar,ggw.res.jar&amp;rdquo;; applet.cabcount = 2; applet.cab = &amp;ldquo;ggw.mssigned.cab,ggw.res.cab&amp;rdquo;; applet.name = &amp;ldquo;GO-Global for Windows Applet&amp;rdquo;; applet.title = &amp;ldquo;GO-Global for Windows Applet&amp;rdquo;; applet.alt = &amp;ldquo;GO-Global for Windows Applet&amp;rdquo;; applet.vspace = &amp;ldquo;0&amp;rdquo;; applet.hspace = &amp;ldquo;0&amp;rdquo;; applet.width = &amp;ldquo;1000&amp;rdquo;; applet.height = &amp;ldquo;630&amp;rdquo;; createAppletTag( applet, [&amp;ldquo;host&amp;rdquo;, &amp;ldquo;&amp;rdquo;, &amp;ldquo;user&amp;rdquo;, &amp;ldquo;&amp;rdquo;, &amp;ldquo;password&amp;rdquo;, &amp;ldquo;&amp;rdquo;, &amp;ldquo;application&amp;rdquo;, &amp;ldquo;Notepad 001&amp;rdquo;, &amp;ldquo;args&amp;rdquo;, &amp;ldquo;&amp;rdquo;, &amp;ldquo;desktopcolor&amp;rdquo;, &amp;ldquo;&amp;rdquo;, &amp;ldquo;compression&amp;rdquo;, &amp;ldquo;true&amp;rdquo;, &amp;ldquo;hostport&amp;rdquo;, &amp;ldquo;&amp;quot;] );</description>
     </item>
     
     <item>
