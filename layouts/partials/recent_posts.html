@@ -13,7 +13,7 @@
 
             <!-- *** BLOG HOMEPAGE *** -->
             <div class="row">
-                {{ $pposts := .Paginate (.Site.Taxonomies.categories.news) }}
+                {{ $pposts := index .Site.Taxonomies.categories.news }}
                 {{ range first 4 $pposts.Pages }}
                 <div class="col-md-3 col-sm-6">
                     <div class="box-image-text blog">
