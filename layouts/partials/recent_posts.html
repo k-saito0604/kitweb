@@ -14,7 +14,7 @@
             <!-- *** BLOG HOMEPAGE *** -->
             <div class="row">
                 {{ $pposts := index .Site.Taxonomies.categories.news }}
-                {{ range first 4 $pposts.Pages }}
+                {{ range first 8 $pposts.Pages }}
                 <div class="col-md-3 col-sm-6">
                     <div class="box-image-text blog">
                         <div class="top">
