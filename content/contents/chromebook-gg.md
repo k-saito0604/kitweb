@@ -1,9 +1,9 @@
 +++
-title = "ChromebookとGO-Globalで安全・簡単にテレワークが実現"
+title = "ChromebookとGO-Globalでテレワークが実現"
 date = "2020-06-30"
 tags = ["news"]
 categories = ["news"]
-banner = "img/top-new-web.jpg"
+banner = "img/top-new-ccgg.jpg"
 type = "news"
 layout = "chromebook-gg"
 +++

@@ -1,10 +1,10 @@
 +++
-title = "GIGAスクール構想とは？"
+title = "生産性をあげる校務分離をお探しならGO-Globalがおすすめ"
 date = "2020-06-30"
 tags = ["news"]
 categories = ["news"]
-banner = "img/top-new-web.jpg"
+banner = "img/top-new-gigash.jpg"
 type = "news"
 layout = "giga-school"
 +++
-教育ICTの学校導入に向けて文部科学省が進めている「GIGAスクール構想」とは？
+GO-Globalなら校務システムと公務外部接続を同じ端末で操作できます。
