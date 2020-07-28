@@ -1,5 +1,5 @@
 +++
-title = "ChromebookとGO-Globalでテレワークが実現"
+title = "【テレワーク】ChromebookとGO-Globalでテレワークが実現"
 date = "2020-06-30"
 tags = ["news"]
 categories = ["news"]

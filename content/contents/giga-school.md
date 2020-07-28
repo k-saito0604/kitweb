@@ -1,5 +1,5 @@
 +++
-title = "生産性をあげる校務分離をお探しならGO-Globalがおすすめ"
+title = "【教育機関】生産性をあげる校務分離をお探しならGO-Globalがおすすめ"
 date = "2020-06-30"
 tags = ["news"]
 categories = ["news"]
