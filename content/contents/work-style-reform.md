@@ -1,5 +1,5 @@
 +++
-title = "GO-Globalで実現できる働き方改革"
+title = "【生産性】GO-Globalで実現できる働き方改革"
 date = "2020-06-02"
 tags = ["news"]
 categories = ["news"]
