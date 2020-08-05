@@ -14,14 +14,15 @@
 
         </header>
 
-<!--        {{ partial "breadcrumbs.html" . }}
--->
+
         <div id="content">
+
             {{ if isset .Params "id" }}
 
               {{ partial .Params.id . }}
 
             {{ else }}
+            {{ partial "breadcrumbs.html" . }}
 
                           {{ partial "chromebook-gg.html" . }}
                 <!-- /.row -->
