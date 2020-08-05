@@ -552,3 +552,15 @@ display: inline-block;
 .youtube{
   text-align: center;
 }
+.breadcrumb {
+  padding: 0;
+}
+.breadcrumb li {
+  display: inline;
+  list-style: none;
+  font-size: 9px;
+}
+.breadcrumb li:not(:last-child)::after {
+  content: '>';
+  padding: 0 0.5em;
+}
