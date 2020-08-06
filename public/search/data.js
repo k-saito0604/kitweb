@@ -268,18 +268,30 @@
 
         </header>
 
-        <div id="heading-breadcrumbs">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-
-            
-                <h1>　</h1>
-            </div>
-        </div>
-    </div>
-</div>
-
+        
+<ol  class="breadcrumb">
+    
+  
+  
+  
+  
+  
+  <li>
+    <a href="/">きっとエイエスピーはGlaphOn社GO-Globalの総代理店</a>
+  </li>
+  
+  
+  <li>
+    <a href="/technews/">technews</a>
+  </li>
+  
+  
+  <li class="active">
+    <a href="/search/data.js"></a>
+  </li>
+  
+  </ol>
+  
 
         <div id="content">
             <div class="container">
@@ -419,7 +431,7 @@
                     <div class="footer-nav-column-title"></div>
                     <div class="footer-nav-column-content">
                     <a href="/go-global/">GO-Globalとは</a><br>
-                    <a href="/gg-use/">GO-Globalの活用方法</a>
+                    <a href="/go-use/">GO-Globalの活用方法</a>
                 </div>
             </div>
         </div>
