@@ -1,14 +1,20 @@
+{{- define "breadcrumbs" }}
+  {{- if .node.Parent }}
+    {{- template "breadcrumbs" (dict "node" .node.Parent "start" .start) }}
+  {{- else if not .node.IsHome }}
+    {{- template "breadcrumbs" (dict "node" .node.Site.Home "start" .start) }}
+  {{- end }}
 
-<ol  class="breadcrumb">
-    {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
-  </ol>
-  {{ define "breadcrumbnav" }}
-  {{ if .p1.Parent }}
-  {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
-  {{ else if not .p1.IsHome }}
-  {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
-  {{ end }}
-  <li{{ if eq .p1 .p2 }} class="active"{{ end }}>
-    <a href="{{ .p1.Permalink }}">{{ .p1.Title }}</a>
-  </li>
-  {{ end }}
+  {{- if eq .node .start }}
+    <li>{{ .node.LinkTitle }}
+      {{- else if .node.IsHome }}
+      <li><a href="{{ .node.Permalink }}">HOME</a>
+    
+      {{- else }}
+    <li><a href="{{ .node.Permalink }}">{{ .node.LinkTitle }}</a>
+  {{- end }}
+
+{{- end }}
+<ol class="breadcrumb">
+  {{- template "breadcrumbs" (dict "node" . "start" .) }}
+</ol>
