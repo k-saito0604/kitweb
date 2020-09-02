@@ -15,9 +15,8 @@
         </header>
 
         <div id="content">
-          {{ partial "breadcrumbs.html" . }}
-
-          {{ if isset .Params "id" }}
+ <!--          {{ partial "breadcrumbs.html" . }}
+-->         {{ if isset .Params "id" }}
 
               {{ partial .Params.id . }}
 
