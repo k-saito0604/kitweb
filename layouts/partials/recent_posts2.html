@@ -12,7 +12,7 @@
             </p>
             <!-- *** BLOG HOMEPAGE *** -->
             <div class="row">
-                {{ $cposts := index .Site.Taxonomies.tcategories.contents}}
+                {{ $cposts := index .Site.Taxonomies.tcategories.tech }}
                 {{ range first 5 $cposts.Pages }}
                 <div class="col-lg-12 col-md-12 col-sm-12">
                      
