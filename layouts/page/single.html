@@ -11,12 +11,12 @@
           {{ partial "top.html" . }}
 
           {{ partial "nav.html" . }}
-
+          {{ partial "breadcrumbs.html" . }}
         </header>
 
         <div id="content">
- <!--          {{ partial "breadcrumbs.html" . }}
--->         {{ if isset .Params "id" }}
+
+         {{ if isset .Params "id" }}
 
               {{ partial .Params.id . }}
 
