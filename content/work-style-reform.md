@@ -1,6 +1,6 @@
 +++
-title = "働き方改革 | GO-Globalで柔軟な働き方が実現できます"
-id = "work-style-reform"
+title = "東京しごと財団テレワーク助成金申請はいつまで？結果はいつでるの？"
+id = "telework-moushikomi"
 +++
 働き方改革
 働き方改革とは
