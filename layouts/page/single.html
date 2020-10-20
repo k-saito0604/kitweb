@@ -8,15 +8,15 @@
     <div id="all">
 
         <header>
-          {{ partial "top.html" . }}
 
           {{ partial "nav.html" . }}
-          {{ partial "breadcrumbs.html" . }}
+
         </header>
 
-        <div id="content">
+        {{ partial "breadcrumbs.html" . }}
 
-         {{ if isset .Params "id" }}
+        <div id="content">
+            {{ if isset .Params "id" }}
 
               {{ partial .Params.id . }}
 
@@ -31,6 +31,7 @@
                         <div>
                           {{ .Content }}
                         </div>
+
                     </div>
 
                 </div>
@@ -40,14 +41,10 @@
             <!-- /.container -->
 
             {{ end }}
-            <div id="page_top"><a href="#"></a></div>
-
         </div>
         <!-- /#content -->
 
-        {{ partial "bottom-nav.html" . }}
-        {{ partial "footer2.html" . }}
-        
+        {{ partial "footer.html" . }}
 
     </div>
     <!-- /#all -->
