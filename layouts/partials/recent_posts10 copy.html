@@ -5,29 +5,28 @@
 
         <div class="col-md-12">
             <div class="heading text-center">
-                <h2>{{ .Site.Params.recent_posts.title | markdownify }}</h2>
+                <h2>{{ .Site.Params.recent_posts10.title | markdownify }}</h2>
             </div>
-            <p class="lead">
+ <!--           <p class="lead">
               {{ .Site.Params.recent_posts.subtitle | markdownify }}
             </p>
-
+-->
             <!-- *** BLOG HOMEPAGE *** -->
             <div class="row">
-                {{ $pposts := index .Site.Taxonomies.categories.news }}
+                {{ $pposts := index .Site.Taxonomies.tags.news }}
                 {{ range first 8 $pposts.Pages }}
                 <div class="col-md-3 col-sm-6">
                     <div class="box-image-text blog">
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 <p class="date-text author-category">
-                                {{ .Date.Format .Site.Params.date_format }}
-                                </p>
+                                    {{ .Date.Format .Site.Params.date_format }}
+                                    </p>
                                 {{ if isset .Params "banner" }}
                                 <img src="{{ .Params.banner | relURL }}" class="img-responsive" alt="" >
                                 {{ else }}
                                 <img src="{{ "img/placeholder.png" | relURL }}" class="img-responsive" alt="">
                                 {{ end }}
-
                             </div>
                             <div class="bg"></div>
                             <div class="text">
@@ -36,11 +35,10 @@
                                 </p>
                             </div>
                         </div>
-
                         <div class="content">
                             <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                            <p class="intro">{{ .Summary }}</p>
-                        </div>
+<!--                            <p class="intro">{{ .Summary }}</p>
+-->                     </div>
                     </div>
                     <!-- /.box-image-text -->
 
