@@ -20,7 +20,7 @@
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 <p class="date-text author-category">
-                                {{ .Date.Format .Site.Params.date_format }}
+                                {{ .Date.Format .Site.Params.date_format }} 
                                 </p>
                                 {{ if isset .Params "banner" }}
                                 <img src="{{ .Params.banner | relURL }}" class="img-responsive" alt="" >
