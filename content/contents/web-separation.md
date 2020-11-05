@@ -1,7 +1,7 @@
 +++
 title = "【インターネット分離】インターネット分離を導入する3つのポイント"
 date = "2020-06-02"
-tags = ["news"]
+tags = ["contents"]
 categories = ["news"]
 banner = "img/top-new-web.jpg"
 type = "news"

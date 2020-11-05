@@ -1,7 +1,7 @@
 +++
 title = "【インターネット分離】実際のWEB分離にはいくら？"
 date = "2020-10-02"
-tags = ["news"]
+tags = ["contents"]
 categories = ["news"]
 banner = "img/separationmd.jpg"
 type = "news"
