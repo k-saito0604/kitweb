@@ -19,10 +19,10 @@
                     <div class="box-image-text blog">
                         <div class="top">
                             <div class="image" style="overflow:hidden">
-                                <p class="date-text author-category">
+                                <p class="date-text">
                                 {{ .Date.Format .Site.Params.date_format }} 
                                 </p>
-                                <p class ="tag-text author-category">
+                                <p class ="tag-text">
                                 {{ range .Params.tags }}
                                 <a href="tags/{{ . | urlize }}"></a>{{ . }}
                                 {{ end }}
