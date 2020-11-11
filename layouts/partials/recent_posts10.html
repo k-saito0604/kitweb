@@ -13,13 +13,13 @@
 -->
             <!-- *** BLOG HOMEPAGE *** -->
             <div class="row">
-                {{ $pposts := index .Site.Taxonomies.tags.news }}
+                {{ $pposts := index .Site.Taxonomies.tags.contents }}
                 {{ range first 8 $pposts.Pages }}
                 <div class="col-md-3 col-sm-6 blog">
                     <div class="box-image-text blog">
                         <div class="top">
                             <div class="image" style="overflow:hidden">
-                                <p class="date-text author-category">
+                                <p class="date-text">
                                 {{ .Date.Format .Site.Params.date_format }} 
                                 </p>
                                 {{ if isset .Params "banner" }}

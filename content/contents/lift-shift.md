@@ -1,10 +1,9 @@
 +++
 title = "【APクラウド化】既存パッケージをクラウド化し、サブスプリクションにする効果的方法"
 date = "2020-06-02"
-tags = ["news"]
+tags = ["contents"]
 categories = ["news"]
 banner = "img/top-new-lift.jpg"
-type = "news"
 layout = "lift-shift"
 +++
 GO-Globalは、

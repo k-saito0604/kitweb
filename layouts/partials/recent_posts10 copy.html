@@ -13,7 +13,7 @@
 -->
             <!-- *** BLOG HOMEPAGE *** -->
             <div class="row">
-                {{ $pposts := index .Site.Taxonomies.tags.news }}
+                {{ $pposts := index .Site.Taxonomies.tags.contents }}
                 {{ range first 8 $pposts.Pages }}
                 <div class="col-md-3 col-sm-6">
                     <div class="box-image-text blog">
