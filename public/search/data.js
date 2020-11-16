@@ -5,50 +5,74 @@ var data = [
   {
     url: "/categories/",
     title: "Categories",
-    date: "2020-10-02T00:00:00Z",
+    date: "2021-01-01T00:00:00Z",
     body: "Categories"
+  },
+  {
+    url: "/categories/contents/",
+    title: "contents",
+    date: "2021-01-01T00:00:00Z",
+    body: "contents"
   },
   {
     url: "/tags/news/",
     title: "news",
-    date: "2020-10-02T00:00:00Z",
-    body: "news"
-  },
-  {
-    url: "/categories/news/",
-    title: "news",
-    date: "2020-10-02T00:00:00Z",
+    date: "2021-01-01T00:00:00Z",
     body: "news"
   },
   {
     url: "/contents/",
     title: "news",
-    date: "2020-10-02T00:00:00Z",
+    date: "2021-01-01T00:00:00Z",
     body: "news"
   },
   {
     url: "/tags/",
     title: "Tags",
-    date: "2020-10-02T00:00:00Z",
+    date: "2021-01-01T00:00:00Z",
     body: "Tags"
+  },
+  {
+    url: "/",
+    title: "きっとエイエスピーはGlaphOn社GO-Globalの総代理店",
+    date: "2021-01-01T00:00:00Z",
+    body: "きっとエイエスピーはGlaphOn社GO-Globalの総代理店"
+  },
+  {
+    url: "/contents/dammy/",
+    title: "サポートセンターお休みのご連絡",
+    date: "2021-01-01T00:00:00Z",
+    body: "サポートセンターお休みのご連絡 誠に勝手ではございますが、2020年12月〇日（　）冬期休暇のため サポート業務をお休みとさせていただきます。 尚、メールによるお問い合わせは、休業中も通常通り受付をいたしますが、 ご連絡は、1月〇日（〇）の営業開始後順次ご対応させていただきます。 何卒、ご理解の程宜しくお願い致します。"
+  },
+  {
+    url: "/categories/news/",
+    title: "news",
+    date: "2020-11-21T00:00:00Z",
+    body: "news"
+  },
+  {
+    url: "/tags/windowsupdate/",
+    title: "windowsupdate",
+    date: "2020-11-21T00:00:00Z",
+    body: "windowsupdate"
+  },
+  {
+    url: "/contents/test1/",
+    title: "代理店向け2020年8月のWindows Update互換性情報に関して",
+    date: "2020-11-21T00:00:00Z",
+    body: "代理店向け2020年8月のWindows Update互換性情報に関して 正規販売代理店技術担当者様へ技術支援センターからのお知らせ。 2020年7月のWindows Update互換性情報についてのお知らせをお送りいたします。 ダウンロードページの「2020年8月のWindows Update互換性情報についてのお知らせ.pdf」をご覧ください。 ご不明な点がございましたらお問い合わせくださいませ。よろしくお願いいたします。"
+  },
+  {
+    url: "/tags/contents/",
+    title: "contents",
+    date: "2020-10-02T00:00:00Z",
+    body: "contents"
   },
   {
     url: "/contents/separation/",
     title: "【インターネット分離】実際のWEB分離にはいくら？",
     date: "2020-10-02T00:00:00Z",
     body: "【インターネット分離】実際のWEB分離にはいくら？ 同時ユーザー最大で20人～30名を想定して価格を出してみました。"
-  },
-  {
-    url: "/",
-    title: "きっとエイエスピーはGlaphOn社GO-Globalの総代理店",
-    date: "2020-10-02T00:00:00Z",
-    body: "きっとエイエスピーはGlaphOn社GO-Globalの総代理店"
-  },
-  {
-    url: "/tags/windowsupdate/",
-    title: "windowsupdate",
-    date: "2020-08-29T00:00:00Z",
-    body: "windowsupdate"
   },
   {
     url: "/contents/202008windowsupdate/",
