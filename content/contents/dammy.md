@@ -2,7 +2,7 @@
 title = "サポートセンターお休みのご連絡"
 date = "2021-01-01"
 tags = ["news"]
-categories="news"
+categories=["news"]
 banner = "img/news.jpg"
 +++
 
