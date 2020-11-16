@@ -2,7 +2,7 @@
 title = "サポートセンターお休みのご連絡"
 date = "2021-01-01"
 tags = ["news"]
-categories=["news"]
+categories=["contents"]
 banner = "img/news.jpg"
 +++
 
@@ -13,4 +13,3 @@ banner = "img/news.jpg"
 ご連絡は、1月〇日（〇）の営業開始後順次ご対応させていただきます。
  
 何卒、ご理解の程宜しくお願い致します。
- 
