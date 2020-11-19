@@ -1,14 +1,14 @@
 +++
-title = "2020年2月のWindows Update互換性情報に関して"
-date = "2020-03-04"
-tags = ["WindowsUpdate"]
+title = "代理店向け2020年2月のWindows Update互換性情報に関して"
+date = "2020-02-29"
+tags = ["Windowsupdate"]
 categories=["news"]
-banner = "img/Windowsupdate.jpg"
+banner = "img/Windowsupdate2.jpg"
 +++
-正規販売代理店技術担当者様 各位いつもお世話になっております。  
-きっとエイエスピー 技術支援センターでございます。  
-  <!--more-->
-2020年2月のWindows Update互換性情報についてのお知らせをお送りいたします。  
+正規販売代理店技術担当者様へ技術支援センターからのお知らせ。  
+<!--more-->
 
-ダウンロードページの「2020年2月のWindows Update互換性情報についてのお知らせ.pdf」をご覧ください。  
-ご不明な点がございましたらお問い合わせくださいませ。よろしくお願いいたします。
+
+[ダウンロードページの「2020年2月のWindows Update互換性情報についてのお知らせ.pdf」](https://www.kitasp.com/downloads/)をご覧ください。  
+ご不明な点がございましたらお問い合わせくださいませ。
+
