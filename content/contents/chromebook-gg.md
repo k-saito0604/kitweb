@@ -1,7 +1,7 @@
 +++
 title = "【テレワーク】ChromebookとGO-Globalでテレワークが実現"
 date = "2020-06-30"
-tags = ["contents"]
+tags = ["Contents"]
 categories = ["news"]
 banner = "img/top-new-ccgg.jpg"
 type = "news"
