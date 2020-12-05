@@ -9,40 +9,25 @@
 
         <header>
           {{ partial "top.html" . }}
-
           {{ partial "nav.html" . }}
-
         </header>
-
-
+        
         <div id="content">
-
             {{ if isset .Params "id" }}
-
               {{ partial .Params.id . }}
-
             {{ else }}
-
-                          {{ partial "telework-moushikomi.html" . }}
-                <!-- /.row -->
-
+              {{ partial "telework-moushikomi.html" . }}
+            <!-- /.row -->
             </div>
             <!-- /.container -->
-
             {{ end }}
             <div id="page_top"><a href="#"></a></div>
-
         </div>
         <!-- /#content -->
-
         {{ partial "bottom-nav.html" . }}
         {{ partial "footer2.html" . }}
-
-
     </div>
     <!-- /#all -->
-
     {{ partial "scripts.html" . }}
-
   </body>
 </html>

@@ -16,32 +16,17 @@
 
 
         <div id="content">
-<!--          {{ partial "breadcrumbs.html" . }}
--->
+<!--    {{ partial "breadcrumbs.html" . }}-->
             <div class="container">
                 <div class="row">
                     <!-- *** LEFT COLUMN *** -->
-
                     {{ partial "terems.html" . }}
                     <div class="col-md-9" id="blog-listing-medium">
-
                         {{ $paginator := .Paginate (where .Data.Pages "Type" "in" .Site.Params.categories ) }}
                         {{ range $paginator.Pages }}
-
                         <section class="post">
                             <div class="row">
-<!--                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="{{ .Permalink }}">
-                                          {{ if .Params.banner }}
-                                          <img src="{{ .Params.banner | relURL }}" class="img-responsive" alt="">
-                                          {{ else }}
-                                          <img src="{{ "img/placeholder.png" | relURL }}" class="img-responsive" alt="">
-                                          {{ end }}
-                                      </a>
-                                  </div>
-                                </div>
--->                                <div class="col-md-12">
+                                <div class="col-md-12">
                                     <h5><a href="{{ .Permalink }}">{{ .Title }}1</a></h5>
                                     <div class="clearfix">
                                         <p class="author-category">
@@ -53,7 +38,6 @@
                                           in <a href="{{ "categories/" | relURL }}{{ index .Params.categories 0 | urlize | lower }}">{{ index .Params.categories 0 }}</a>
                                           {{ end }}
                                           {{ end }}
-
                                         </p>
                                         {{ if isset .Params "date" }}
                                         <p class="date-comments">
@@ -61,17 +45,11 @@
                                         </p>
                                         {{ end }}
                                     </div>
-<!--                                    <p class="intro">{{ .Summary }}</p>
-                                    <p class="read-more"><a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
-                                    </p>-->
                                 </div>
-
                     <!-- /.col-md-3 -->
                             </div>
-
                         </section>
                         {{ end }}
-
 
                         <ul class="pager">
                             {{ if .Paginator.HasPrev }}
@@ -79,15 +57,12 @@
                             {{ else }}
                             <li class="previous disabled"><a href="#">&larr; {{ i18n "newer" }}</a></li>
                             {{ end }}
-
                             {{ if .Paginator.HasNext }}
                             <li class="next"><a href="{{ .Paginator.Next.URL | relURL }}">{{ i18n "older" }} &rarr;</a></li>
                             {{ else }}
                             <li class="next disabled"><a href="#">{{ i18n "older" }} &rarr;</a></li>
                             {{ end }}
                         </ul>
-
-
                     </div>
                     <!-- /.col-md-9 -->
 
@@ -95,16 +70,11 @@
 
                     <!-- *** RIGHT COLUMN ***
        _________________________________________________________ -->
-       <div class="col-md-3">
-
-        <!-- *** MENUS AND WIDGETS *** -->
-
-        {{ partial "sidebar.html" . }}
-
-        <!-- *** MENUS AND FILTERS END *** -->
-
-    </div>
-
+                    <div class="col-md-3">
+                    <!-- *** MENUS AND WIDGETS *** -->
+                    {{ partial "sidebar.html" . }}
+                    <!-- *** MENUS AND FILTERS END *** -->
+                    </div>
                     <!-- *** RIGHT COLUMN END *** -->
 
                 </div>
@@ -114,11 +84,8 @@
         </div>
         <!-- /#content -->
         {{ partial "footer.html" . }}
-
     </div>
     <!-- /#all -->
-
     {{ partial "scripts.html" . }}
-
   </body>
 </html>

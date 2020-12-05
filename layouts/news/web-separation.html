@@ -18,31 +18,20 @@
 
         <div id="content">
             {{ if isset .Params "id" }}
-
               {{ partial .Params.id . }}
-
             {{ else }}
-
-                          {{ partial "web-separation.html" . }}
-                <!-- /.row -->
-
+              {{ partial "web-separation.html" . }}
+            <!-- /.row -->
             </div>
             <!-- /.container -->
-
             {{ end }}
             <div id="page_top"><a href="#"></a></div>
-
         </div>
         <!-- /#content -->
-
         {{ partial "bottom-nav.html" . }}
         {{ partial "footer2.html" . }}
-
-
     </div>
     <!-- /#all -->
-
     {{ partial "scripts.html" . }}
-
   </body>
 </html>
