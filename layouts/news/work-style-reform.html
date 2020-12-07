@@ -9,37 +9,24 @@
 
         <header>
           {{ partial "top.html" . }}
-
           {{ partial "nav.html" . }}
-
         </header>
 
-
         <div id="content">
-<!--          {{ partial "breadcrumbs.html" . }}
--->
+          {{ partial "breadcrumbs.html" . }}
             {{ if isset .Params "id" }}
-
               {{ partial .Params.id . }}
-
             {{ else }}
-
-                          {{ partial "work-style-reform.html" . }}
+              {{ partial "work-style-reform.html" . }}
                 <!-- /.row -->
-
             </div>
             <!-- /.container -->
-
             {{ end }}
             <div id="page_top"><a href="#"></a></div>
-
         </div>
         <!-- /#content -->
-
         {{ partial "bottom-nav.html" . }}
         {{ partial "footer2.html" . }}
-
-
     </div>
     <!-- /#all -->
 

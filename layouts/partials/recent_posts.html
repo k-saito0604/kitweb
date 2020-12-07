@@ -2,15 +2,10 @@
 {{ if .Site.Params.recent_posts.enable }}
 <section class="bar background-white no-mb">
     <div class="container">
-
         <div class="col-md-12">
             <div class="heading text-center">
                 <h2>{{ .Site.Params.recent_posts.title | markdownify }}</h2>
             </div>
- <!--           <p class="lead">
-              {{ .Site.Params.recent_posts.subtitle | markdownify }}
-            </p>
--->
             <!-- *** BLOG HOMEPAGE *** -->
             <div class="row">
                 {{ $pposts := index .Site.Taxonomies.categories.news }}
@@ -26,7 +21,7 @@
                                 {{ range .Params.tags }}
                                 <a href="tags/{{ . | urlize }}"></a>{{ . }}
                                 {{ end }}
-                            </p>
+                                </p>
                                 {{ if isset .Params "banner" }}
                                 <img src="{{ .Params.banner | relURL }}" class="img-responsive" alt="" >
                                 {{ else }}
@@ -41,11 +36,11 @@
                             </div>
                         </div>
                         <div class="content" style="text-align: left;">
-                            <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                            <p class="">{{ .Summary }}</p>
+                        <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                        <p class="">{{ .Summary }}</p>
                         </div>
                     </div>
-                    <!-- /.box-image-text -->
+                <!-- /.box-image-text -->
                 </div>
                 {{ end }}
             </div>

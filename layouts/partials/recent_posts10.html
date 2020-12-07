@@ -7,10 +7,6 @@
             <div class="heading text-center">
                 <h2>{{ .Site.Params.recent_posts10.title | markdownify }}</h2>
             </div>
- <!--           <p class="lead">
-              {{ .Site.Params.recent_posts.subtitle | markdownify }}
-            </p>
--->
             <!-- *** BLOG HOMEPAGE *** -->
             <div class="row">
                 {{ $pposts := index .Site.Taxonomies.tags.contents }}

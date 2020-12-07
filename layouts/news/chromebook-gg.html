@@ -6,43 +6,27 @@
   <body>
 
     <div id="all">
-
         <header>
           {{ partial "top.html" . }}
-
           {{ partial "nav.html" . }}
-
         </header>
-
-
         <div id="content">
-
             {{ if isset .Params "id" }}
-
               {{ partial .Params.id . }}
-
             {{ else }}
-
-                          {{ partial "chromebook-gg.html" . }}
+              {{ partial "chromebook-gg.html" . }}
                 <!-- /.row -->
-
             </div>
             <!-- /.container -->
-
             {{ end }}
             <div id="page_top"><a href="#"></a></div>
-
         </div>
         <!-- /#content -->
-
         {{ partial "bottom-nav.html" . }}
         {{ partial "footer2.html" . }}
-
-
+        <!-- /#footer -->
     </div>
     <!-- /#all -->
-
     {{ partial "scripts.html" . }}
-
   </body>
 </html>

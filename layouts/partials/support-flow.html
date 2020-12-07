@@ -10,53 +10,25 @@
         </div>
     </div>
   </section>
-<div class="container" id="contact">
-
-
-            <section>
-
-                
-
+    <div class="container" id="contact">
+            <section>        
                 {{ if isset .Site.Params "email" }}
                 <div class="general-content-wrapper max-width support-schedule">
                     <div class="general-content">
-		
-
-
-<div class="center">
-<img src="/img/support-f.png" alt="サポートの流れ" style="width:100%;" />
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+                        <div class="center">
+                        <img src="/img/support-f.png" alt="サポートの流れ" style="width:100%;" />
+                        </div>
+                    </div>
+                </div>
                 {{ end }}
-
             </section>
 
- </div>
- 
-    
-
-            {{ if isset .Site.Params "address" }}
-            <section>
-
-
-
-            </section>
-
+    </div>
+    {{ if isset .Site.Params "address" }}
+    <section>
+    </section>
             {{ end }}
-
-        </div>
+    </div>
 
     <!-- /.row -->
 </div>
