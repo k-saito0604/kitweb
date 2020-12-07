@@ -4,29 +4,47 @@
   {{ partial "head.html" . }}
 
   <body>
+
     <div id="all">
+
         <header>
-          {{ partial "top.html" . })
+          {{ partial "top.html" . }}
+
           {{ partial "nav.html" . }}
+
         </header>
-          {{ partial "breadcrumbs.html" . }}
+
+<!--          {{ partial "breadcrumbs.html" . }}
+-->
         <div id="content">
             {{ if isset .Params "id" }}
+
               {{ partial .Params.id . }}
-            {{ else }}          
-             {{ partial "lift-shift.html" . }}
-            <!-- /.row -->
+
+            {{ else }}
+
+            
+            {{ partial "lift-shift.html" . }}
+
+                <!-- /.row -->
+
             </div>
             <!-- /.container -->
+
             {{ end }}
             <div id="page_top"><a href="#"></a></div>
+
         </div>
         <!-- /#content -->
+
         {{ partial "bottom-nav.html" . }}
         {{ partial "footer2.html" . }}
-        <!-- /#footer -->
+
+
     </div>
     <!-- /#all -->
+
     {{ partial "scripts.html" . }}
+
   </body>
 </html>

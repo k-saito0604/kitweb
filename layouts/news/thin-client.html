@@ -14,18 +14,15 @@
 
         </header>
 
-<!--          {{ partial "breadcrumbs.html" . }}
--->        <div id="content">
+       <div id="content">
+        {{ partial "breadcrumbs.html" . }}
             {{ if isset .Params "id" }}
-
               {{ partial .Params.id . }}
-
             {{ else }}
-
-                          {{ partial "thin-client.html" . }}
+              {{ partial "thin-client.html" . }}
                 <!-- /.row -->
 
-            </div>
+              </div>
             <!-- /.container -->
 
             {{ end }}
