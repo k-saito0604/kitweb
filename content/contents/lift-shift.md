@@ -4,6 +4,7 @@ date = "2020-10-10"
 tags = ["Contents"]
 categories = ["news"]
 banner = "img/top-new-lift.jpg"
+type = "news"
 layout = "lift-shift"
 +++
 GO-Globalは、
