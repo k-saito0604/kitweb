@@ -1,14 +1,14 @@
-{{ if isset .Site.Params "recent_posts" }}
+{{ if isset .Site.Params "recent_posts2" }}
 {{ if .Site.Params.recent_posts.enable }}
 <section class="bar background-white no-mb">
     <div class="container">
         <div class="col-md-12">
             <div class="heading text-center">
-                <h2>{{ .Site.Params.recent_posts.title | markdownify }}</h2>
+                <h2>{{ .Site.Params.recent_posts2.title | markdownify }}</h2>
             </div>
             <!-- *** BLOG HOMEPAGE *** -->
             <div class="row">
-                {{ $pposts := index .Site.Taxonomies.tags.contents }}
+                {{ $pposts := index .Site.Taxonomies.tags.windowsupdate }}
                 {{ range first 4 $pposts.Pages }}
                 <div class="col-md-3 col-sm-6 blog">
                     <div class="box-image-text blog">
@@ -41,10 +41,11 @@
                         </div>
                     </div>
                 <!-- /.box-image-text -->
+                
                 </div>
                 {{ end }}
                 <div class="backnumber">
-                    <a href="/tags/contents/">backnumber</a>
+                    <a href="/tags/windowsupdate/">backnumber</a>
                 </div>
             </div>
             <!-- /.row -->

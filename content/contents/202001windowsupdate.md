@@ -1,7 +1,7 @@
 +++
 title = "代理店向け2020年1月のWindows Update互換性情報に関して"
 date = "2020-01-29"
-tags = ["Windows Update"]
+tags = ["windowsupdate"]
 categories=["news"]
 banner = "img/Windowsupdate1.jpg"
 +++
