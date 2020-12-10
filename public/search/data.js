@@ -27,10 +27,10 @@ var data = [
     body: "Tags"
   },
   {
-    url: "/tags/windowsupdate/",
-    title: "Windowsupdate",
+    url: "/tags/windows-update/",
+    title: "Windows Update",
     date: "2020-10-29T00:00:00Z",
-    body: "Windowsupdate"
+    body: "Windows Update"
   },
   {
     url: "/",
@@ -46,9 +46,9 @@ var data = [
   },
   {
     url: "/tags/contents/",
-    title: "contents",
+    title: "Contents",
     date: "2020-10-10T00:00:00Z",
-    body: "contents"
+    body: "Contents"
   },
   {
     url: "/contents/lift-shift/",
@@ -115,6 +115,12 @@ var data = [
     title: "【テレワーク】ChromebookとGO-Globalでテレワークが実現",
     date: "2020-06-30T00:00:00Z",
     body: "【テレワーク】ChromebookとGO-Globalでテレワークが実現 chromebookとGO-Globalを使ったテレワークのメリットをご説明いたします。"
+  },
+  {
+    url: "/tags/windowsupdate/",
+    title: "windowsupdate",
+    date: "2020-06-29T00:00:00Z",
+    body: "windowsupdate"
   },
   {
     url: "/contents/202006windowsupdate/",
