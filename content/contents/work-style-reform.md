@@ -1,6 +1,6 @@
 +++
-title = "【生産性】GO-Globalで実現できる働き方改革"
-date = "2020-08-02"
+title = "GO-Globalで実現できる働き方改革"
+date = "2020-06-02"
 tags = ["Contents"]
 categories = ["news"]
 banner = "img/top-new-style-reform.jpg"
