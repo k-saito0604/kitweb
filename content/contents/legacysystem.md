@@ -1,9 +1,10 @@
 +++
-title = "legacysystem"
+title = "レガシーシステムをクラウド化し組織のDX（デジタルフォーメーション）を進める方法"
 date = "2020-12-13"
 tags = ["Contents"]
+banner = "img/top-legacy.jpg"
 categories = ["news"]
 type = "news"
 layout = "legacysystem"
 +++
-GO-Globalなら校務システムと公務外部接続を同じ端末で操作できます。
+大問題！レガシーシステムを早急に脱却しなければいけない理由を解説します。
