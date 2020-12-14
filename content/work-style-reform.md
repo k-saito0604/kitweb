@@ -1,6 +1,6 @@
 +++
 title = "東京しごと財団テレワーク助成金申請はいつまで？結果はいつでるの？"
-id = "telework-moushikomi"
+id = "work-style-reform"
 +++
 働き方改革
 働き方改革とは
