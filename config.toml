@@ -17,7 +17,6 @@ paginate = 10
 [menu]
 
 # Main menu
-
 [[menu.main]]
     identifier="home"
     name = "GO-Globalとは"
@@ -31,34 +30,39 @@ paginate = 10
 #メニュー1
 [[menu.main]]
     identifier="input"
-    name = "導入事例"
+    name = "導入事例一覧"
     url  = "/case-study"
     weight = 3
 [[menu.main]]
     parent="input"
-    name = "医療現場"
+    name = "医療現場(国内)"
     url  = "/adaptation-facility-1"
     weight = 1
+    [[menu.main]]
+    parent="input"
+    name = "医療現場(海外)"
+    url  = "/adaptation-facility-1-1"
+    weight = 2
 [[menu.main]]
     parent="input"
     name = "ISV"
     url  = "/adaptation-facility-2"
-    weight = 2
+    weight = 3
 [[menu.main]]
     parent="input"
     name = "中小企業"
     url  = "/adaptation-facility-3"
-    weight = 3
+    weight = 4
 [[menu.main]]
     parent="input"
     name = "BCP対策"
     url  = "/adaptation-facility-4"
-    weight = 4
+    weight = 5
 [[menu.main]]
     parent="input"
     name = "教育現場"
     url  = "/adaptation-facility-5"
-    weight = 5
+    weight = 6
 
 #メニュー2
 # [[menu.main]]
