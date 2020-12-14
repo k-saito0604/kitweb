@@ -2,6 +2,7 @@
 title = "冬に備えBCP感染症対策を計画し在宅勤務システム構築の用意もしよう。"
 date = "2020-12-13"
 tags = ["Contents"]
+banner = "img/top-bcp.jpg"
 categories = ["news"]
 type = "news"
 layout = "bcp"
