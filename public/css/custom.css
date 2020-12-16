@@ -1,5 +1,21 @@
 /* your styles go here */
-
+.iframe-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow:auto; 
+  -webkit-overflow-scrolling:touch;
+  border:2px solid #ccc; 
+}
+.iframe-wrap iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border:none;
+    display:block;
+}
 .box-image-text .image {
   min-height: 50px;
   max-height: 190px;
@@ -566,6 +582,19 @@ cursor: pointer;
   background-attachment: fixed;
   background-size: cover;
 }
+
+.bar.background-image-fixed-25 {
+  background: url('../img/businesscontinuity.jpg') center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.bar.background-image-fixed-26 {
+  background: url('../img/oldcomputer.jpg') center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
 /*サポートスケジュール*/
 .bar.background-image-fixed-21 {
   background: url('../img/supportschedule.jpg') center top no-repeat;
@@ -595,6 +624,10 @@ cursor: pointer;
   background-attachment: fixed;
   background-size: cover;
 }
+
+
+
+
 
 
 .recent-posts-tag p{
@@ -816,4 +849,25 @@ display: inline-block;
   }
  .backnumber{
   text-align: right;
+ }
+ .client_out{
+  position: relative;
+  padding-bottom: 0.25em;
+ }
+ .clients li{
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+ }
+ .clients > li {
+  display: inline-block;
+}
+    .clients{
+  font-size: 12px;
+  line-height: 2em;
+  text-align: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
  }

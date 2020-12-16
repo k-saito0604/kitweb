@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+
+  <head>
+  <meta charset="utf-8">
+
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>bcp</title>
+  
+  <meta name="author" content="kitasp" />
+  
+  
+  
+  
+  <meta name="keywords" content="devows, hugo, go">
+  
+  
+  <meta name="description" content="きっとエイエスピーのホームページ">
+
+  <meta name="generator" content="Hugo 0.69.0" />
+
+  
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+
+  
+  <link href="/js/slick.css" rel="stylesheet">
+  <link href="/js/slick-theme.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+  
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="きっとエイエスピーはGraphOn社GO-Globalの総代理店">
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:locale" content="ja_jp">
+  <meta property="og:site_name" content="きっとエイエスピーはGraphOn社GO-Globalの総代理店">
+  <meta property="og:title" content="bcp">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/bcp/" />
+  <meta property="og:description" content="きっとエイエスピーのホームページ">
+  <meta property="og:image" content="img/front.png">
+  <meta property="og:image:type" content="image/png">
+  
+  
+  
+    <meta property="og:image:width" content="1151">
+    <meta property="og:image:height" content="634">
+  
+  
+  
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:title" content="bcp">
+  
+  <meta name="twitter:image" content="img/front.png">
+  
+  <meta name="twitter:description" content="きっとエイエスピーのホームページ">
+  
+
+
+  <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-storage.js"></script>
+  <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-auth.js"></script>
+  <script defer src="https://www.gstatic.com/firebase/init.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+  <script src="/js/config.js"></script>
+  <script src="https://kit.fontawesome.com/e3270a3e22.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="500">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/logo-go-small.png" alt="bcp logo" class="hidden-xs hidden-sm">
+                    <img src="/img/logo-go-small.png" alt="bcp logo" class="visible-xs visible-sm">
+                    <span class="sr-only">bcp - ホームへ戻る</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">ナビゲーションの切り替え</span>
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  <div class = "topbotton">
+                    <a href="https://www.kitasp.com/contact/"target="_blank" class="btn-square-shadow-ora">各種問い合わせ<i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://www.kitasp.com/downloads/"target="_blank" class="btn-square-shadow-old">代理店様向けコンテンツ<i class="fas fa-external-link-alt"></i></a><br>
+                    <a class="fas fa-search" href="/search">ページ検索</a>
+                  </div>
+                  
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/go-global/">GO-Globalとは</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/go-use/">GO-Global活用事例</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a class="dropdown-toggle" href="/case-study" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">導入事例一覧</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a href="/adaptation-facility-1">医療現場(国内)</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-1-1">医療現場(海外)</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-2">ISV</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-3">中小企業</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-4">BCP対策</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-5">教育現場</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/work-style-reform/">働き方改革</a>
+                        </li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/faq/">FAQ</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/partners-list/">代理店一覧</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a class="dropdown-toggle" href="/support-schedule/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">サポートスケジュール</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a href="/support-flow/">サポートの流れ</a>
+                        </li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                </span>
+                    </div>
+                </form>
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        
+<ol class="breadcrumb">
+      <li><a href="/">HOME</a>
+    <li>bcp
+</ol>
+
+        <div id="content">
+            
+
+              
+  <section class="bar background-image-fixed-25 no-mb color-white text-center">
+
+  <div class="dark-mask"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+         <h1 class="text-uppercase">
+           冬に備えBCP感染症対策を計画し<br>在宅勤務システム構築の用意もしよう。
+        </h1>
+      </div>
+    </div>
+  </div>
+  </section>
+  <div class="container" id="contact">
+  <section>
+    
+    <div class="heading">
+      <main>
+        <div class="general-content-wrapper max-width web-separation">
+        <div class="general-content">
+         <p>
+              2020年新型コロナウイルス対策の特別措置法に基づき「緊急事態宣言」が出されました。生活や社会活動は一変。<br>
+              企業はテレワークや時差出勤による対応を余儀なくされました。<br>
+              多くの企業や組織が感染対策用のマニュアルなどが無いまま、急きょ対応したのが現状だったのではないでしょうか？
+              また、BCP災害対策はしていたが感染症に関しては対策をしていなかった。といった企業さんの話も見受けられました。<br>
+              いつまた感染症が広がるかわかりません。<br>
+              その際にスムーズに事業継続を行うためにも、BCP感染症対策をより強固に策定し、実際のまん延時にスムーズに事業を継続できる環境を用意する必要があるでしょう。
+          </p>
+            <p class="list">
+              <a href="#1">1.BCP（事業継続計画）とは？</a><br>
+              <a href="#2">2.BCPを策定していないとこんなリスクが発生</a><br>
+              <a href="#3">3.災害対策と感染症対策の大きな違い</a><br>
+              <a href="#4">4.BCP感染症対策を作成する時の流れ</a><br>
+              <a href="#4-1">&emsp;4-1.BCPの基本方針の作成、感染症想定レベルの設定</a><br>
+              <a href="#4-2">&emsp;4-2.重要な業務の書き出し</a><br>
+              <a href="#4-3">&emsp;4-3.感染症状況の指標と自社の対応表の作成</a><br>
+              <a href="#4-4">&emsp;4-4.従業員への備品配布や、感染予防や感染した従業員への対応</a><br>
+              <a href="#4-5">&emsp;4-5.従業員へ感染症対策の内容を周知させる</a><br>
+              <a href="#4-6">&emsp;4-6.様々な感染症流行した場合を想定し更新やチェックを定期的に行う</a><br>
+              <a href="#5">5.BCP対策をしつつ、通常時でも在宅勤務が上手くいく方法</a><br>
+            </p>
+            <img class="img2" src="/img/M10_Moment-e1599022347879.jpg" alt="" width="100%" />
+            
+            <p>
+              実際に災害対策と感染症対策はどういった事が違うのでしょうか？<br>
+              その前にBCP（事業継続計画）のついて簡単に説明します。
+            </p>
+              <div id = '1'>	
+                <h2>1.BCP（事業継続計画）とは</h2>
+                <p>
+                  BCPとは「Business Continuity Plan」の頭文字を取ったもので、
+                  企業のリスク管理のひとつです。
+                </p>
+                <p>
+                  具体的な内容としては、自然災害や事件、感染症のまん延などで、
+                  業務が停止するような状況において、被害を最小限に食い止め、核となる事業を継続し、
+                  いち早く全体を復旧するため運営方針や対応体制をまとめた計画のことをBCP（事業継続計画）言います。
+                </p>
+              </div>
+              <div id = '2'>
+              <h2>2.BCPを策定していないとこんなリスクが発生</h2> 
+
+                <img class="img2" src="/img/risk03.png" alt="" width="100%" />
+
+                <h3>機会損失</h3>
+                <p>
+                  災害からの復旧に時間がかかると、企業活動が停止。
+                  停止期間が長ければ長いほど多大な損失が発生します。
+                  機会損失による売上や利益の減少を、最小限におさえる必要があります。
+                </p>
+                <h3>■企業の信頼低下</h3>
+                <p>
+                  災害や、感染症、事故などがあった際に、供給できない状態が続くと、
+                  取引先にも多大な損害が出てしまいます。
+                  また、そのような事態に備えているかどうかも契約前に重要な指標になる場合もあります。
+                  お客様が、安心して取引できるように事前にBCP対策を策定しておきましょう。
+                </p>
+                <h3>■従業員の安全が損なわれる</h3>
+                <p>
+                  企業は従業員を「安全に働ける」環境を整え、対策を行う責任があります。
+                  それを、安全配慮義務といい労働契約法に定められています。
+                </p>
+              </div>
+
+              <div id = '3'>
+                <h2>3.災害対策と感染症対策との大きな違い</h2>
+                <img class="img2" src="/img/kansai.png" alt="災害感染症の違い" width="100%" />
+                <p>
+                  地震の場合、従業員が出勤困難となるため、
+                  「人」の確保がとても難しくなります。<br>
+                  感染症の場合、建 物、設備などの物的資源における被害はありません。 
+                  また、電気、水道、ガス、通信などのインフラは、維持されていると想定されます。
+                </p>
+                <p>
+                  しかし、感染症の場合は、被害が広域に及びます。
+                  海外との取引、帰国、出張、外国人従業員などの一時帰国滞留などの対応を協議してく必要があります。
+                  被害想定も併せて考えていく必要があります。
+                </p>
+              <div>
+              <img class="img2" src="/img/hyou01.png" alt="災害感染症の違い表" width="100%" />
+                新型インフルエンザと地震との違い（厚生労働省「事業者・職場における新型インフルエンザ等
+                対策ガイドライン」にインターリスク総研が加筆）<br>
+                <p style="padding-left: 40px;">
+                  <a href="https://www.mhlw.go.jp/file/06-Seisakujouhou-10900000-Kenkoukyoku/0000108618.pdf">出典：社会福祉施設・事業所における新型インフルエンザ等発生時の業務継続ガイドライン</a>
+                  <a href="https://www.shigotozaidan.or.jp/koyo-kankyo/boshu/kinkyutaisaku.html"><img class="size-full wp-image-1762 alignnone" src="https://www.kitasp.com/wp-content/uploads/2020/05/link.png" alt="" width="20" height="20" /></a>
+                </p>
+              </div>
+              <p>また、災害と感染症の違いを踏まえると、業務へ影響する推移も異なってきます。</p>
+              <p>以下の図をご覧ください。</p>
+              <img class="img2" src="/img/bcp-sai-kan.jpg" alt="災害と感染症の違い" width="100%" />
+              <p style="padding-left: 40px;"><a href="https://www.mhlw.go.jp/file/06-Seisakujouhou-10900000-Kenkoukyoku/0000108618.pdf">出典：株式会社インターリスク総研</a>	
+              <img class="img2" src="/img/link.png" alt="" width="20" height="20" />
+              </p>
+              <br>
+              <p>
+                災害の場合、インフラの停止や休止、安否確認、物理的な被害により通常の業務量が急減します。
+                その後の業務回復も急激に平常値に戻るのが特徴です。
+              </p>
+              <p>
+                感染症の場合、感染が拡大し始めると出勤停止、自身が感染、家族が感染した際の看病。
+                などで、出勤できなくなる人がジワジワと出てきます。
+              </p>
+              <p>
+                そのため、通常業務がまったく出来なくなるわけではなく、対応可能な業務量が徐々に限られてくる状態になります。
+              </p>
+              <p>
+                そこで、BCP感染症対策では「不要不急の業務から順次休止・縮小し、
+                感染のピーク時でも優先業務は最低限継続させる」ことが目的となるので、対策も変わってきます。
+              </p>
+            </div>
+            <div id = '4'>         
+              <h2>4.BCP感染症対策を作成する流れ</h2>
+              <img class="img2" src="/img/nagare.png" alt="BCP感染症対策を作成する流れ" width="100%" />
+            <div id = '4-1'>
+            <h3>4-1.BCPの基本方針の作成、感染症想定レベルの設定</h3>
+            <p>「なぜ、BCP感染症対策を作成するのか」をしっかり提言して作成しましょう。</p>
+            <p>
+              基本方針が無いと策定内容が、ブレたり優先順位が付けづらくなってしまいます。<br> 
+              「どれくらいの規模の感染症なのか？」を設定しておきましょう。規模によって、対策が変わってきますので、
+              イメージを数値や状況をリアルに設定しておきましょう。
+            </p>
+            <p><b>例</b></p>
+            <p class="list" style="color:black; background-color:#d5e9ed; padding: 15px">	
+              ＜政府想定（重度のケース）＞ 　発症者数：3,200 万人（全人口の 25%）、受診患者数：1,300 万人～ 2,500 万人、 　
+              入院患者数：～ 200 万人、死傷者数：約 64 万人（致死率 2%）、欠勤率：最大 40% <br><br>
+              など、上記のように想定ケースを設定しておきましょう。
+            </p>
+            </div>
+            <div id = '4-2'>
+              <h3>4-2.重要な業務の書き出し</h3>
+            <img class="img2" src="/img/araidashi.jpg" alt="" width="250" height="167" />
+            <p>感染症を想定したBCP対策は、「どの業務を休止するか」がポイントになってきます。</p>
+            <P>また、1人の従業員が、いくつかの業務をこなせるようにクロストレーニング（従業員が複数の重要な業務を実施できるようにし 欠勤者が出た場合に代替要員として業務ができるようにしておくこと）を行っておくと良いでしょう</p>
+            <p>BCP感染症対策の策定を通して自社にとって本当に必要な事業、力を入れるべき事業が明らかになります。経営戦略の再考にも繋がりますのでこの機会にしっかりと検討しましょう。
+            </p>
+
+            </div>
+            <div id = '4-3'>
+            <h3>4-3.感染症レベルに指標に沿った対応を作成</h3>
+
+            <p>感染症が広がった際どのレベルで自社がどんな対応をしていくのか。といった指標は大変重要になってきます。<br>
+            判断を間違うと、事業継続どころか、従業員が感染のリスクにさらされることとなります。</p>
+
+
+
+
+            <div>
+            <h4>例：新型コロナの感染症状況の指標</h4>
+
+            <p>以下は、新型コロナの場合の感染状況の指標です。</p>
+            <p>4つのステージでまとまられています。</p>
+            <p>また、地方では違う基準なども設けられていますので自社にあったステージをあらかじめ想定しておく必要があります。</p>
+
+
+            <img class="img2" src="/img/bunka.jpg" alt="新型コロナ4つのステージ" width="100%" />
+
+            <p style="padding-left: 40px;"><a href="https://www.cas.go.jp/jp/seisaku/ful/kongo_soutei_taisaku.pdf">出典：新型コロナウイルス感染症対策分科会提言</a>	
+            <a href="https://www.cas.go.jp/jp/seisaku/ful/kongo_soutei_taisaku.pdf"><img class="img2" src="/img/link.png" alt="" width="20" height="20" /></a></p>
+
+
+
+            </div>
+
+            <div>
+            <br>
+            <h4>例：インフルエンザの感染状況の指標</h4>
+
+            <img class="img2" src="/img/stage-in.gif" alt="インフルエンザの感染状況の指標" width="100%" />
+
+            <p style="padding-left: 40px;"><a href="https://www.mhlw.go.jp/file/06-Seisakujouhou-10900000-Kenkoukyoku/0000108618.pdf">出典：業務継続ガイドライン</a>	
+            <a href="https://www.mhlw.go.jp/file/06-Seisakujouhou-10900000-Kenkoukyoku/0000108618.pdf"><img class="img2" src="/img/link.png" alt="" width="20" height="20" /></a></p>
+
+            <p>今後どのような感染症が、まん延するかわかりません。</p>
+            <p>社内でインフルエンザのステージや今回のコロナを参考に、会社独自で発令するステージと項目、詳細を取り決めておきましょう。</p>
+
+            </div>
+
+            <div>
+
+            <h4>例：感染症状況の指標と自社の対応表の作成</h4>
+            <br>
+            <img class="img2" src="/img/stage.png" alt="感染症状況の指標と自社の対応表の作成" width="100%" />
+
+            <p>感染症に合せどのステージで、会社がどのような対応をとっていくのか。を事前に定めておくことにより、社内の混乱や、取引先への影響を最小限に抑えることができます。</p>
+
+
+            </div>
+
+
+
+            <div id = '4-4'>
+            <h3>4-4.従業員への備品配布や、感染予防や感染した従業員への対応</h3>
+            <br>
+            <p>種類や備品の目安の書き方</p>
+            <img class="img2" src="/img/list.png" alt="従業員へのマスクや手洗い備品などのチェック感染した従業員への対応" width="100%" />
+            <p>どういった備品をどの部署に何種類用意する。など具体的に記載します。</p>
+            <p>第二波の到来や、長期的な確保を予定して計画的に備品などを用意しましょう。</p>
+
+
+            <p style="padding-left: 40px;">
+            <a href="https://www.chusho.meti.go.jp/bcp/influenza/download/bcpshingatainful_all.pdf">
+            出典：新型インフルエンザ対策のための中小企業 BCP(事業継続計画)策定指針</a><img class="size-full wp-image-1762 alignnone" src="https://www.kitasp.com/wp-content/uploads/2020/05/link.png" alt="" width="20" height="20" /><br>上記リンク先P28【参考３】 企業における備蓄品リストを参照ください。
+            </p>
+
+
+
+            <p>&nbsp;</p>
+
+            <h4>感染拡大を防ぐ社内チェックリスト</h4>
+            <p>従業員への感染防止策の徹底や、取引先、お客様へのルールなどを定めたチェックリストを作成しておきましょう。</p>
+
+
+            <img class="img2" src="/img/check2.png" alt="感染拡大を防ぐ社内チェックリスト" width="489" height="429" class="size-full wp-image-1790 alignleft" />
+
+
+            <p style="padding-left: 40px;">
+            <a href="https://www.mhlw.go.jp/content/11302000/000630736.pdf">出典：新型インフルエンザ対策のための中小職場における新型コロナウイルス感染症の拡大を防止するためのチェックリスト</a>	
+            <img class="" src="/img/link.png" alt="" width="20" height="20" /></p>
+
+
+
+            </div>
+
+
+
+            <div id = '4-5'>
+            <h3>4-5.従業員へ感染症対策の内容を周知させる</h3>
+            <br>
+
+            <img class="img2" src="/img/colleagues-1-e1599117399467.jpg" alt="" width="250" height="167" />
+            <p>BCPを策定していても、従業員に周知していなければ、実際のパンデミックの際に機能することができません。
+            事前の周知と、訓練や教育も行いましょう。
+
+
+            </p>
+
+
+
+
+
+            </div>
+
+
+
+            <div id = '4-6'>
+            <h3>4-6.様々な感染症流行した場合を想定し更新やチェックを定期的に行う</h3>
+            <br>
+
+            <img class="img2" src="/img/businessmen-are-signing-the-contract-documents-in-BYTU2NP-e1599117707832.jpg" alt="" width="250" height="167" />
+            <p>策定した、BCP対策は、定期的に見直しましょう。</p>
+            <p>感染症の流行はいろいろな種類が想定されます。
+            感染症によっては、回復期まで時間がかかる、感染率が高い。など、
+            感染症によって状況は様々です。その都度しっかり見直して従業員へ周知しておくのをお勧めします。</p>
+
+
+
+            </p>
+
+
+
+            </div>
+
+
+
+            <div class="boxmatome">
+
+            <h2>コラム</h2>
+            <h3>企業は、実際テレワークや在宅勤務を実行し継続をしている状態なのだろうか？</h3>
+
+            <p>約70%の企業が在宅、リモートを未実施</p>
+            <p>2020年の7月に行った調査によると、実施したが取りやめた。1度も実施しなかった。といった企業を合せると約70%の企業がいまでは在宅、リモートを行っていないことになります。<p>
+
+            <img class="alignnone size-full wp-image-1774" src="https://www.kitasp.com/wp-content/uploads/2020/09/tokyo-5.png" alt="" width="100%" />
+
+            <p style="padding-left: 40px;">
+            <a href="https://img03.en25.com/Web/TSR/%7B87991d73-6466-4cbd-8071-07b5a5428ce4%7D_20200714_TSRsurvey_CoronaVirus.pdf">出典：東京商工リサーチ調べ2020年7月14日発表　</a>	
+            <img class="img2" src="/img/link.png" alt="" width="20" height="20" /></p>
+
+            <p>緊急事態宣言を受け一時的に対応したが、テレワークや在宅勤務の仕組みを活かしている組織は少ないようです。</p>
+
+            </div>
+
+
+
+            <p>では、策定書が完成したものの、実際に感染症がまん延した際、対策通り業務ができるのかは心配かと思います。<br>
+            感染症がまん延した際にスムーズにテレワークができる体制を作り業務を止めない組織体制を作ることがと得策と言えます。
+
+
+
+
+
+
+
+
+
+
+
+            <div id = '5'><h3>5.BCP対策をしつつ、通常時でも在宅勤務が上手くいく方法</h3>
+            <br>
+            <h4>GO-Globalを活用すればBCP対策と在宅勤務両方を賢く運用できます</h4>
+
+
+            <img class="img2" src="img/goglobal02.png" alt="テレワークや在宅勤務の仕組みを活かしている組織" width="100%" />
+            </p>GO-Globalサーバ側でアプリケーションを実行し、クライアント端末側で操作を行うシンプルな概念のミドルウェアです。一般に「シンクライアント」として分類されています。
+
+            このGO-Global活用することで、データーをサーバーで一元管理し、業務用のアプリを操作、ファイルの共有なども
+            行える。</p>
+            <br>
+
+            <p>そんなGO-Globalの仕組み</p>
+
+            <p>&#10004; シンプル</p>
+            <p>&#10004; 低コスト</p>
+            <p>&#10004; スピィーディー</p>
+
+
+
+            <p>GO-Globalは社内の専用業務システムやアプリケーションを、セキュリティ高く遠隔で操作できます。
+            デバイスを選ばないので、緊急の際つながる端末で対応可能なのも心強いポイントです。
+
+            <img class="img2" src="/img/function01.jpg" alt="デバイスを選ばない" width="100%" />
+
+
+            <p>GO-Globalなら普段から、在宅ワーク、テレワークなどに利用し緊急の際は、そのまま業務を止めることなくスムーズ対応することが可能です。</p>
+            <p>社内にサーバーを立ててオンプレミスで運用。また、BCP災害対策として、クラウド事業社と協力し、東日本で環境を構築。西日本へのミラーリング処理を行う構成も実現できました。</p>
+            <p>また、災害を想定した切り替え試験も実施し、問題がないことも証明されました</p>
+            GO-Globalはシンプルな構成なので、試験実施までは2週間もせずに検証が完了しています。</p>
+
+            <img class="img2" src="/img/adaptation-facility-5.3.png" alt="" width="100%" />
+
+
+            </div>
+            <div class="boxmatome">
+                                      <div class="box-title">まとめ</div>
+                                      <p>いざと言うときの為だけに、高額なシステムやソリューションを用意するのは現実的ではありません。しかし、普段から使っているシステムがいざと言うときに本領を発揮できる状態になっていればコストをかけてでも導入する価値があると言えるでしょう。<br>
+            GO-Globalについては、 <a href="https://www.kitasp.com/contact/"target="_blank"rel="noopener">コンタクトフォーム</a>よりお気軽にお問い合わせてください。
+                                        <br>担当のエンジニアが対応させていただきます。
+                                      </p>
+            </div>
+            <div>
+            <p>参考資料</p>
+            <p>33ページからBCP 業務別作成事例が掲載されています。<p>
+            <a href="https://www.mhlw.go.jp/file/06-Seisakujouhou-10900000-Kenkoukyoku/0000108618.pdf">出典：業務継続ガイドライン</a><img class="size-full wp-image-1762 alignnone" src="https://www.kitasp.com/wp-content/uploads/2020/05/link.png" alt="" width="20" height="20" />
+
+            <p>策定のアウトプットイメージは以下をご参考ください。</p>
+
+            <p>
+            <a href="https://www.chusho.meti.go.jp/bcp/download/bcppdf/bcpguide_sample1.pdf">サンプル（入門コース、製造業）</a><img class="size-full wp-image-1762 alignnone" src="https://www.kitasp.com/wp-content/uploads/2020/05/link.png" alt="" width="20" height="20" /></p>
+
+            <p>
+            <a href="https://www.chusho.meti.go.jp/bcp/download/bcppdf/bcpguide_sample2.pdf">サンプル（入門コース、サービス・小売業）</a><img class="size-full wp-image-1762 alignnone" src="https://www.kitasp.com/wp-content/uploads/2020/05/link.png" alt="" width="20" height="20" />
+            </p>
+            <p>
+            <a href="https://www.chusho.meti.go.jp/bcp/download/bcppdf/bcpguide_sample3.pdf">サンプル（入門コース、運送業）</a><img class="size-full wp-image-1762 alignnone" src="https://www.kitasp.com/wp-content/uploads/2020/05/link.png" alt="" width="20" height="20" /></p>
+
+            <p>
+            <a href="https://www.chusho.meti.go.jp/bcp/download/bcppdf/bcpguide_sample4.pdf">サンプル（入門コース、飲食・宿泊業）</a><img class="size-full wp-image-1762 alignnone" src="https://www.kitasp.com/wp-content/uploads/2020/05/link.png" alt="" width="20" height="20" /></p>
+
+            <p>
+            <a href="https://www.chusho.meti.go.jp/bcp/download/bcppdf/bcpsample_a.pdf">サンプル（基本コース）</a><img class="size-full wp-image-1762 alignnone" src="https://www.kitasp.com/wp-content/uploads/2020/05/link.png" alt="" width="20" height="20" /></p>
+
+
+            <p>
+            <a href="https://www.chusho.meti.go.jp/bcp/download/bcppdf/bcpsample_b.pdf">サンプル（中級コース）</a><img class="size-full wp-image-1762 alignnone" src="https://www.kitasp.com/wp-content/uploads/2020/05/link.png" alt="" width="20" height="20" /></p>
+
+
+
+            <p>出典：中小企業庁</p>
+            </div>
+                  </div>
+        </div>
+        </main>
+        </div>
+        
+
+  </section>
+        <div class="col-md-4">
+
+            
+            <section>
+
+
+
+            </section>
+
+            
+        </div>
+    
+  </div>
+
+
+            
+        </div>
+        
+
+                <footer id="footer">
+        <div class="footer-nav-wrapper">        
+        <div class="container">
+            
+    <div class="col-md-12">
+        <div class="footer-nav-line">
+            <div class="col-md-3 col-sm-3">
+                <div class="footer-nav-column">
+                    <div class="footer-nav-column-title"></div>
+                    <div class="footer-nav-column-content">
+
+                        <ul>
+                            <li>
+                                <a href="/go-global/">GO-Globalとは</a>
+                            </li>        
+                        <li>
+<ul>
+                            <li>
+                                <a href="/go-use/">コンテンツ</a>
+                            </li>        
+                        <li>
+
+                                    </div>
+                    </div>
+                </div>
+                <hr class="hidden-md hidden-lg hidden-sm">
+                <div class="col-md-3 col-sm-3">
+                    <div class="footer-nav-column">
+                        <div class="footer-nav-column-title"></div>
+                       <div class="footer-nav-column-content">
+                  
+                        <ul>
+ <li>
+                              <a href="/case-study/">導入事例</a>
+ </li>
+                            <li>
+                                <a href="/adaptation-facility-1/">医療現場</a>
+                            </li>
+                            <li>
+                                <a href="/adaptation-facility-2/">ISV</a>
+                            </li>
+                            <li>
+                                <a href="/adaptation-facility-3/">中小企業</a>
+                            </li>
+                            <li>
+                                <a href="/adaptation-facility-4/">BCP対策</a>
+                            </li>
+                            <li>
+                                <a href="/adaptation-facility-5/">教育現場</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <hr class="hidden-md hidden-lg hidden-sm">
+                        <div class="col-md-3 col-sm-3">
+                            <div class="footer-nav-column">
+                                <div class="footer-nav-column-title"></div>
+                                <div class="footer-nav-column-content">
+
+
+                        <ul>
+ <li>
+                             <a href="/faq/">FAQ</a>
+ </li>
+
+
+                                 
+                                    <a href="/partners-list/">代理店一覧</a><br>
+                                    <a href="https://www.kitasp.com/contact/">問い合せ<i class="fas fa-external-link-alt"></i></a><br>
+                                    <a href="https://gitbook.kitasp.com/">技術サイト<i class="fas fa-external-link-alt"></i></a><br>            
+                                    <a href="https://www.kitasp.com/downloads/">ダウンロード<i class="fas fa-external-link-alt"></i></a><br>            
+                                </div>
+                                
+                            </div>
+                            <hr class="hidden-md hidden-lg hidden-sm">
+                
+                        </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="footer-nav-column">
+                        <div class="footer-nav-column-content">
+                        <div class="footer-nav-column-a">
+                        <ul>
+                            <li>
+                                <a href="/support-schedule/">サポートスケジュール</a>
+                            </li>        
+                            <li>
+                                <a href="/support-flow/">サポートの流れ</a>
+                            </li>
+                   
+                    </ul>
+                    
+                
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+    </div>
+        </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="col-xs-5">
+            
+           <p style="text-align:center;">Copyright © 2020 KitASP Corp. All Rights Reserved</p>
+            
+        </div>
+                
+                    <div class="col-xs-7">
+                        <div class="social">
+                          
+                        <a href="https://www.kitasp.com/contact/" target="_blank" style="opacity: 1;"><i class='fas fa-2x fa-envelope'></i></a>
+                        
+                        <a href="https://www.facebook.com/kitasp2000/" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-facebook'></i></a>
+                        
+                        <a href="https://twitter.com/KitASP_Corp" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-twitter'></i></a>
+                        
+                        <a href="https://www.instagram.com/kitasp_corp/" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-instagram'></i></a>
+                        
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    </div>
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-167125195-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/js/jquery.zoom.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+<script src="/js/hpneo.gmaps.js"></script>
+<script src="/js/gmaps.init.js"></script>
+<script src="/js/front.js"></script>
+<script type="text/javascript">
+ (function(w,d,s){
+  var f=d.getElementsByTagName(s)[0],j=d.createElement(s);
+  j.async=true;j.src='//dmp.im-apps.net/js/1006343/0001/itm.js';
+  f.parentNode.insertBefore(j, f);
+ })(window,document,'script');
+</script>
+
+<script src="//kitchen.juicer.cc/?color=4Fk/uQVpavE=" async></script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<script src="/js/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
+<script src="/js/slick.min.js"></script>
+
+
+
+  </body>
+</html>
