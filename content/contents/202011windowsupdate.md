@@ -1,5 +1,5 @@
 +++
-title = "代理店向け2020年10月のWindows Update互換性情報に関して"
+title = "代理店向け2020年11月のWindows Update互換性情報に関して"
 date = "2020-11-29"
 tags = ["windowsupdate"]
 categories=["news"]
