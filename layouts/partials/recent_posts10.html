@@ -10,7 +10,7 @@
             <!-- *** BLOG HOMEPAGE *** -->
             <div class="row">
                 {{ $pposts := index .Site.Taxonomies.tags.contents }}
-                {{ range first 8 $pposts.Pages }}
+                {{ range first 12 $pposts.Pages }}
                 <div class="col-md-3 col-sm-6 blog">
                     <div class="box-image-text blog">
                         <div class="top">
@@ -39,6 +39,10 @@
                     <!-- /.box-image-text -->
                 </div>
                 {{ end }}
+            </div>
+                <div class="backnumber">
+                    <a href="/tags/contents/">全てののGO-Global活用事例を見る</a>
+                </div>
             </div>
             <!-- /.row -->
             <!-- *** BLOG HOMEPAGE END *** -->
