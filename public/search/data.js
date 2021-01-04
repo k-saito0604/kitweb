@@ -5,38 +5,50 @@ var data = [
   {
     url: "/categories/",
     title: "Categories",
-    date: "2020-12-15T00:00:00Z",
+    date: "2020-12-24T00:00:00Z",
     body: "Categories"
+  },
+  {
+    url: "/categories/news/",
+    title: "news",
+    date: "2020-12-24T00:00:00Z",
+    body: "news"
+  },
+  {
+    url: "/contents/",
+    title: "news",
+    date: "2020-12-24T00:00:00Z",
+    body: "news"
+  },
+  {
+    url: "/tags/",
+    title: "Tags",
+    date: "2020-12-24T00:00:00Z",
+    body: "Tags"
+  },
+  {
+    url: "/tags/windowsupdate/",
+    title: "windowsupdate",
+    date: "2020-12-24T00:00:00Z",
+    body: "windowsupdate"
+  },
+  {
+    url: "/",
+    title: "きっとエイエスピーはGraphOn社GO-Globalの総代理店",
+    date: "2020-12-24T00:00:00Z",
+    body: "きっとエイエスピーはGraphOn社GO-Globalの総代理店"
+  },
+  {
+    url: "/contents/202012windowsupdate/",
+    title: "代理店向け2020年12月のWindows Update互換性情報に関して",
+    date: "2020-12-24T00:00:00Z",
+    body: "代理店向け2020年12月のWindows Update互換性情報に関して 正規販売代理店技術担当者様へ技術支援センターからのお知らせ。 ダウンロードページの「2020年12月のWindows Update互換性情報についてのお知らせ.pdf」をご覧ください。 ご不明な点がございましたらお問い合わせくださいませ。"
   },
   {
     url: "/tags/news/",
     title: "news",
     date: "2020-12-15T00:00:00Z",
     body: "news"
-  },
-  {
-    url: "/categories/news/",
-    title: "news",
-    date: "2020-12-15T00:00:00Z",
-    body: "news"
-  },
-  {
-    url: "/contents/",
-    title: "news",
-    date: "2020-12-15T00:00:00Z",
-    body: "news"
-  },
-  {
-    url: "/tags/",
-    title: "Tags",
-    date: "2020-12-15T00:00:00Z",
-    body: "Tags"
-  },
-  {
-    url: "/",
-    title: "きっとエイエスピーはGraphOn社GO-Globalの総代理店",
-    date: "2020-12-15T00:00:00Z",
-    body: "きっとエイエスピーはGraphOn社GO-Globalの総代理店"
   },
   {
     url: "/contents/support/",
@@ -61,12 +73,6 @@ var data = [
     title: "冬に備えBCP感染症対策を計画し在宅勤務システム構築の用意もしよう。",
     date: "2020-12-13T00:00:00Z",
     body: "冬に備えBCP感染症対策を計画し在宅勤務システム構築の用意もしよう。 BCP感染症対策をより強固に策定し、実際に感染症がまん延した時にスムーズに事業を継続できる環境をしっかり用意。"
-  },
-  {
-    url: "/tags/windowsupdate/",
-    title: "windowsupdate",
-    date: "2020-11-29T00:00:00Z",
-    body: "windowsupdate"
   },
   {
     url: "/contents/202011windowsupdate/",
