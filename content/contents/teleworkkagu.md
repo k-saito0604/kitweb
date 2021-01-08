@@ -3,7 +3,7 @@ title = "テレワークの家具"
 date = "2021-01-08"
 tags = ["Contents"]
 categories=["news"]
-banner = "img/Windowsupdate12.jpg"
+banner = "img/teleworkkagu.jpg"
 toc = true
 +++
 
