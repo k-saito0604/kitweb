@@ -1,11 +1,12 @@
 +++
 title = "テレワークの家具"
 date = "2021-01-08"
-tags = ["windowsupdate"]
+tags = ["Contents"]
 categories=["news"]
 banner = "img/Windowsupdate12.jpg"
 toc = true
 +++
+
 またテレワークが始まるけど、まだ椅子とか用意してなかったや！
 そんなあなたの為に。  
 <!--more-->
