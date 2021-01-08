@@ -1,5 +1,5 @@
 +++
-title = "テレワーク用の中古オフィス家具特集"
+title = "東京神奈川千葉埼玉のテレワーク用の中古オフィス家具特集"
 date = "2021-01-08"
 tags = ["Contents"]
 categories=["news"]
@@ -12,8 +12,9 @@ toc = true
 <!--more-->
 
 ## TOKYORECYCLEimption（インプション）
-https://tokyo-recycle.net/?mode=grp&gid=2428863&sort=n
-{{<figure src="/img/content/01.JPG" width="50%">}}
+
+<a href="https://tokyo-recycle.net/?mode=grp&gid=2428863&sort=n" target="_blank">LINK
+{{<figure src="/img/content/01.JPG" width="100%">}}</a>
 
 >東京の世田谷区を中心に店舗を展開しています。オフィス中古をはじめお洒落な家具が多数揃っているので、自分好みのお部屋にアレンジできます。
 
@@ -63,9 +64,8 @@ TEL:03-6303-2880
 
 ## リスタ神田店 
 
-
-https://www.koyou-resta.co.jp/shop03/
-{{<figure src="/img/content/tere002.jpg" width="50%">}}
+<a href="https://www.koyou-resta.co.jp/shop03/" target="_blank">LINK
+{{<figure src="/img/content/tere002.jpg" width="100%">}}</a>
 
 
 >レンタルもしているので、オフィス家具などの商品が豊富です。月の限定商品はとてもお安くなっています。
@@ -81,9 +81,8 @@ TEL：03-5209-6822
 
 ## オフィスレスキュー119 
 
-
-https://www.koyou-resta.co.jp/shop03/
-{{<figure src="/img/content/tere003.jpg" width="50%">}}
+<a href="https://www.koyou-resta.co.jp/shop03/" target="_blank">LINK
+{{<figure src="/img/content/tere003.jpg" width="100%">}}</a>
 
 
 >中古オフィス家具を中心に販売しているので品ぞろえが豊富　アウトレット品や新品も大特価で販売中です。
@@ -115,23 +114,22 @@ https://www.koyou-resta.co.jp/shop03/
 ```
 ## オフィスバスターズ 
 
-https://www.officebusters.com/
-{{<figure src="/img/content/tere004.jpg" width="50%">}}
+<a href="https://www.officebusters.com/" target="_blank">LINK
+{{<figure src="/img/content/tere004.jpg" width="100%">}}</a>
 
 
 >国内33店舗をそろえ、規模も大きくしっかりとした体制で大型のものも数多く取り揃えています。
 
 店舗総合案内
-https://www.officebusters.com/shop/
-```
-{{<figure src="/img/content/tere004-01.jpg" width="50%">}}
 
+<a href="https://www.officebusters.com/shop/" target="_blank">LINK</a>
 
-```
+{{<figure src="/img/content/tere004-01.jpg" width="100%">}}
+
 ## ありがとう屋 
 
-https://www.arigatouya.net/
-{{<figure src="/img/content/tere005.jpg" width="50%">}}
+<a href="https://www.arigatouya.net/" target="_blank">LINK
+{{<figure src="/img/content/tere005.jpg" width="100%">}}</a>
 
 
 >神田、新橋、日本橋、新宿とオフィス街にあるので店舗にも立ち寄れます。
@@ -183,8 +181,10 @@ https://www.arigatouya.net/
 
 ## 有限会社今井家具店
 
-https://www.imaikaguten.com/
-{{<figure src="/img/content/tere006.jpg" width="50%">}}
+<a href="https://www.imaikaguten.com/" target="_blank">LINK
+{{<figure src="/img/content/tere006.jpg" width="100%">}}</a>
+
+
 
 
 >中古オフィス家具販売の実績も長く、クリニーングやメンテナンスもばっちり。オフィスチェアなど数多く取り揃えています。
@@ -200,8 +200,8 @@ https://www.imaikaguten.com/
 
 ## パワーオフィス
 
-https://www.poweroffice.co.jp/?mode=f5
-{{<figure src="/img/content/tere007.jpg" width="50%">}}
+<a href="https://www.poweroffice.co.jp/?mode=f5" target="_blank">LINK
+{{<figure src="/img/content/tere007.jpg" width="100%">}}</a>
 
 
 >広い実店舗でディスプレイ展示してあります。たくさん見たい人試したい人にはお勧め。
@@ -213,9 +213,8 @@ https://www.poweroffice.co.jp/?mode=f5
 ```
 ## トレジャーホール
 
-https://www.treasurehall.co.jp/
-{{<figure src="/img/content/tere008.jpg" width="50%">}}
-
+<a href="https://www.treasurehall.co.jp/" target="_blank">LINK
+{{<figure src="/img/content/tere008.jpg" width="100%">}}</a>
 
 >東京・埼玉を中心に中古オフィス家具・中古オフィスチェアを販売。傷や塗装の剥がれも丁寧に補修、手作業による細部まで妥協しない徹底したクリーニングを行っています。テレワークしやすい椅子が見つかりそうです。
 
@@ -226,3 +225,6 @@ https://www.treasurehall.co.jp/
 定休日：日曜・祝日
 ```
 
+いかがでしたでしょうか？
+気に入った椅子や机はありそうでしたか？
+お近くにお店がある方はぜひ伺ってみてはいかがでしょうか。
