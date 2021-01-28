@@ -1,5 +1,5 @@
 +++
-title = "冬に備えBCP感染症対策を計画し在宅勤務システム構築の用意もしよう。"
+title = "BCP感染症対策と在宅（テレワーク）勤務はセットで考えると効率的"
 date = "2020-12-13"
 tags = ["Contents"]
 banner = "img/top-bcp.jpg"
