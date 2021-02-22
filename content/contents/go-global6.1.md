@@ -106,7 +106,7 @@ GO-Global6.1は、最新の暗号化であるTLS1.3 に対応。256-bit AES暗�
 </tr>
 <tr>
   <td>GO-GlobalVirtualDisplayDriverは、WindowsグラフィックコマンドをGraphOnのRapidXプロトコル（RXP）に変換します。</td>
-  <td>Microsoftのディスプレイドライバとプロトコルを使用します。</td>
+  <td>リモートデスクトッププロトコルディスプレイドライバは、WindowsグラフィックコマンドをMicrosoftのリモートデスクトッププロトコルに変換します。</td>
   <td>Microsoftのディスプレイドライバとプロトコルを使用します。</td>
 
 </tr>
