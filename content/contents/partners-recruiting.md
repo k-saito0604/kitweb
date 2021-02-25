@@ -1,6 +1,6 @@
 +++
 title = "【代理店募集】低コストでセキュアなシンクライアントソリューション"
-date = "2021-02-22"
+date = "2021-03-22"
 tags = ["news"]
 categories=["news"]
 banner = "img/recruiting.jpg"
