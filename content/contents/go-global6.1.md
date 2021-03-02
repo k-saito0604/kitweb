@@ -8,12 +8,11 @@ toc = true
 +++
 
 <b>ニューノーマル時代に合わせて進化したGO-Global6.1を活用することで、多様化する働き方の課題を解決することができます。</b>
-<br>
 
 外部から安心して接続できるセキュリティ環境。動画配信による学習。ブランディング機能で、使い慣れたアプリケーションをいつでもどこでも、使いやすく。GO-Global6.1は、テレワークやモバイルワークが当たり前になった時代に対応しました。
 
 
-<center><b><font color="red"><i class="fas fa-arrow-circle-right"></i></font> GO-Globalについては<a href="https://go-global.kitasp.com/go-global/" target="_blank">コチラ</A>をご覧ください<b></center>
+<center><b><font color="red"><i class="fas fa-arrow-circle-right"></i></font> GO-Globalについては<a href="https://go-global.kitasp.com/go-global/" target="_blank">コチラ</A>をご覧ください</b></center>
 
 
 
@@ -24,12 +23,12 @@ toc = true
 
 
 
-## 二要素認証でログイン管理を強化
+### 二要素認証でログイン管理を強化
 
 
 
 
-{{<figure src="/img/content/6-02.jpg" width="100%">}}</a>
+{{<figure src="/img/content/6-02.jpg" width="100%">}}
 
 
 
