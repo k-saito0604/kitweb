@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+
+  <head>
+  <meta charset="utf-8">
+
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>【わかりやすい！】クラウドとオンプレミスについてサービスの仕組みと違いがわかる</title>
+  
+  <meta name="author" content="kitasp" />
+  
+  
+  
+  
+  <meta name="keywords" content="devows, hugo, go, Contents">
+  
+  
+  <meta name="description" content="きっとエイエスピーのホームページ">
+
+  <meta name="generator" content="Hugo 0.69.0" />
+
+  
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+
+  
+  <link href="/js/slick.css" rel="stylesheet">
+  <link href="/js/slick-theme.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favgg.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/favgg.png" />
+
+  
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="きっとエイエスピーはGraphOn社GO-Globalの総代理店">
+
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:locale" content="ja_jp">
+  <meta property="og:site_name" content="きっとエイエスピーはGraphOn社GO-Globalの総代理店">
+  <meta property="og:title" content="【わかりやすい！】クラウドとオンプレミスについてサービスの仕組みと違いがわかる">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/contents/cloud-onpremises/" />
+  <meta property="og:description" content="きっとエイエスピーのホームページ">
+  <meta property="og:image" content="img/cl-on01.jpg">
+  <meta property="og:image:type" content="image/jpg">
+  
+  
+  
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="750">
+  
+  
+  <meta property="og:updated_time" content="2021-03-03T00:00:00Z">
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:title" content="【わかりやすい！】クラウドとオンプレミスについてサービスの仕組みと違いがわかる">
+  
+  <meta name="twitter:image" content="img/cl-on01.jpg">
+  
+  <meta name="twitter:description" content="きっとエイエスピーのホームページ">
+  
+
+
+  <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-storage.js"></script>
+  <script defer src="https://www.gstatic.com/firebase/5.3.1/firebase-auth.js"></script>
+  <script defer src="https://www.gstatic.com/firebase/init.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+  <script src="/js/config.js"></script>
+  <script src="https://kit.fontawesome.com/e3270a3e22.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="500">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/logo-go-small.png" alt="【わかりやすい！】クラウドとオンプレミスについてサービスの仕組みと違いがわかる logo" class="hidden-xs hidden-sm">
+                    <img src="/img/logo-go-small.png" alt="【わかりやすい！】クラウドとオンプレミスについてサービスの仕組みと違いがわかる logo" class="visible-xs visible-sm">
+                    <span class="sr-only">【わかりやすい！】クラウドとオンプレミスについてサービスの仕組みと違いがわかる - ホームへ戻る</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">ナビゲーションの切り替え</span>
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  <div class = "topbotton">
+                    <a href="https://www.kitasp.com/contact/"target="_blank" class="btn-square-shadow-ora">各種問い合わせ<i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://www.kitasp.com/downloads/"target="_blank" class="btn-square-shadow">代理店様向けコンテンツ<i class="fas fa-external-link-alt"></i></a><br>
+                    <a class="fas fa-search" href="/search">ページ検索</a>
+                  </div>
+                  
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/go-global/">GO-Globalとは</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/go-use/">記事一覧</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a class="dropdown-toggle" href="/case-study" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">導入事例一覧</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a href="/adaptation-facility-1">医療現場(国内)</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-1-1">医療現場(海外)</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-2">ISV</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-3">中小企業</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-4">BCP対策</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/adaptation-facility-5">教育現場</a>
+                        </li>
+                      
+                        <li>
+                          <a href="/work-style-reform/">働き方改革</a>
+                        </li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/faq/">FAQ</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/partners-list/">代理店一覧</a>
+                    
+                  </li>
+                  
+                  
+                  <li class="dropdown">
+                    
+                    <a class="dropdown-toggle" href="/support-schedule/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="linkmenu">サポートスケジュール</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a href="/support-flow/">サポートの流れ</a>
+                        </li>
+                      
+                    </ul>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                </span>
+                    </div>
+                </form>
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        
+<ol class="breadcrumb">
+      <li><a href="/">HOME</a>
+    <li><a href="/contents/">news</a>
+    <li>【わかりやすい！】クラウドとオンプレミスについてサービスの仕組みと違いがわかる
+</ol>
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-12" id="blog-post">
+                      <div class="image" style="overflow:hidden">
+                        
+                        <img src="/img/cl-on01.jpg" class="img-responsive" alt="" >
+                        
+                    </div>
+                        
+                        <h2>【わかりやすい！】クラウドとオンプレミスについてサービスの仕組みと違いがわかる</h2>
+
+                          <p class="text-muted text-uppercase mb-small text-right">
+
+                            
+                            
+                            2021-03-03
+                          </p>
+                        
+
+                        <div id="post-content">
+                          
+                            
+                            
+                              
+                              <p>オンプレミスとクラウドの違いについて、皆さんは把握していますか？サーバー運用形態はもちろん、利用時の特徴にも違いがあります。ここでは、オンプレミスとクラウドの違い、メリット・デメリットについてお伝えします。是非、自社に適したサーバー運用形態を知る参考にして下さい。</p>
+<section class="toc">
+  <aside class="xToc">
+    <div class="xToc_title">目次</div>
+  <nav id="TableOfContents">
+  <ol>
+    <li><a href="#クラウドとオンプレミスの違いについて">クラウドとオンプレミスの違いについて</a>
+      <ol>
+        <li><a href="#クラウドとは">クラウドとは？</a></li>
+        <li><a href="#オンプレミスとは">オンプレミスとは？</a></li>
+      </ol>
+    </li>
+    <li><a href="#クラウドとオンプレミスのメリットデメリットについて">クラウドとオンプレミスのメリット・デメリットについて</a>
+      <ol>
+        <li><a href="#クラウドのメリットデメリットとは">クラウドのメリット・デメリットとは？</a></li>
+        <li><a href="#オンプレミスのメリットデメリットとは">オンプレミスのメリット・デメリットとは？</a></li>
+      </ol>
+    </li>
+    <li><a href="#クラウドとオンプレミスの選定のポイントについて">クラウドとオンプレミスの選定のポイントについて</a>
+      <ol>
+        <li><a href="#クラウドに適している場合">クラウドに適している場合</a></li>
+        <li><a href="#オンプレミスの方が良い場合">オンプレミスの方が良い場合</a></li>
+        <li><a href="#クラウドとオンプレミスの費用比較について">クラウドとオンプレミスの費用比較について</a></li>
+        <li><a href="#まとめ">まとめ</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+</aside>
+</section>
+<h2 id="クラウドとオンプレミスの違いについて">クラウドとオンプレミスの違いについて</h2>
+<h3 id="クラウドとは">クラウドとは？</h3>
+<p><figure>
+    <img src="/img/content/cl-on03.jpg" width="100%"/> 
+</figure>
+</a></p>
+<p>クラウドと言うのは、クラウドサービスプラットフォームからインターネット経由で、コンピューティング、データベース、ストレージ、アプリケーションなど、 IT リソースをオンデマンド利用出来るサービスの総称になります。必要に応じて必要量のリソースへアクセス可能で、ハードウェア導入に伴う初期投資、リソース調達、メンテナンス、容量使用計画など、色々な作業を簡単にします。コスト軽減により新しいアイデア実現に充てることが出来るので、IT 運営に必要な適切な種類とスペックのコンピューティングリソースも提供することが出来ます。今まで、自社サーバーでは難しかった、インフラ調達期間、拡張・縮小の迅速さ、セキュリティ、既存データセンター環境との連携など、多くのケースをクラウドで解決することが可能です。</p>
+<p>クライアント側がGO-Globalを使用する際には、ユーザー名とパスワードを要求し、
+さらに、デバイスのアプリを使い二要素認証を行えます。
+セキュリティを強化しテレワークや他端末からのアクセスを安心して行うことができ
+ます。</p>
+<p>※デバイスに別途ワンタイムパスワードの認証に必要なアプリのインストールが必要です。</p>
+<h3 id="オンプレミスとは">オンプレミスとは？</h3>
+<p><figure>
+    <img src="/img/content/cl-on02.jpg" width="100%"/> 
+</figure>
+</a></p>
+<p>オンプレミスと言うのは、プレミス（premises）は英語で建物・店舗などを意味しており「on the premises」は「店内で」と言う意味になるのですが、IT関連用語のオンプレミスは、ハードウェア、及び、ソフトウェアを、使用者の管理施設内に設置して運用することです。昔は、業務用に情報システム運用する為には、自社施設内にサーバーや通信回線などの環境を備え、システム構築や運用を行うしかなかったのですが、クラウドコンピューティングが浸透したことで、クラウド型運用するケースが多くなり、クラウド運用と自社運用の区別として、自社運用を指す言葉にオンプレミスが使用されています。すなわち、情報システム運用でのクラウドの対義語に用いられる言葉と言えます。</p>
+<h2 id="クラウドとオンプレミスのメリットデメリットについて">クラウドとオンプレミスのメリット・デメリットについて</h2>
+<h3 id="クラウドのメリットデメリットとは">クラウドのメリット・デメリットとは？</h3>
+<h4 id="i-classfar-fa-griniメリット"><i class="far fa-grin"></i>メリット</h4>
+<h4 id="サーバー構築の初期費用削減保守運用不要">サーバー構築の初期費用削減・保守運用不要</h4>
+<p>サーバー構築を行う際、機器調達費用はもちろん、それを使用出来る状態にする為の稼働費も必要で、サーバー環境構築には数ヶ月の期間を要し、稼働費も大きな金額になってしまいます。クラウドは、既にサーバーは使用出来る状態で自社に必要な環境設定を組み立てていくので、短期間稼働で作業を終えることが可能です。なので、稼働費削減や機器調達が不要になり、初期費用を大きく節約出来ます。自社のサーバー環境構築には、少なくとも約６ヶ月程度期間を要するので、運用開始までには時間が必要です。しかし、クラウドの場合は既に環境があるので、必要な環境も早ければ1時間以内にサービス利用することが出来ます。また、サーバーの保守運用も不要になります。自社でサーバー構築すると、運用保守は自社対応する必要があり、監視やセキュリティ対応はもちろん、24時間体制で保守メンバーを準備するなど、運用保守費用もかなりの金額になります。
+しかし、クラウドサービスでは運用保守を業社に任せることができるので、業務に専念することも可能になります</p>
+<h4 id="バックアップ体制と復元対策が可能">バックアップ体制と復元対策が可能</h4>
+<p>自然災害などが起こっても、事業継続リスクの回避や災害対策に対ずる環境構築を行うことは、コストや時間の観点からも難しいものです。また、災害想定を考慮した場合、地理的側面なども考えると、同じような環境を幾つも用意することは容易ではありません。殆どのクラウドはデータセンター管理されているので、災害時にシステム停止しないように自動電源を切り替える、片方がダウンした場合はもう片方でデータ復元するなど、運用する必要環境が用意されているので、自社運用に比べて災害対策が出来ると言えます。</p>
+<h4 id="i-classfar-fa-frowniデメリット"><i class="far fa-frown"></i>デメリット</h4>
+<h4 id="情報セキュリティリスク">情報セキュリティリスク</h4>
+<p>クラウドは、ネットに繋がれているので、常に外部攻撃に晒されていると言えます。例えば、大量アクセスでサーバー稼働率が急上昇してパフォーマンスが下がったり、SQL文が挿入され不正に個人情報を抜き取られたり、様々な情報漏洩のリスクがあります。また、人為的操作ミスでの情報漏洩リスクもあります。クラウドは、社内サーバー操作に厳密なルールが無いこと、教育不足での個人情報漏洩やセキュリティホールを作るなど、外部アタックを受ける温床になってしまうことが挙げられ、セキュリティ対策に十分注意が必要です。</p>
+<h4 id="カスタマイズの柔軟性">カスタマイズの柔軟性</h4>
+<p>クラウドは、自社で必要環境を簡単に構築することが出来ますが、できる半面、業社が定めるルールに基づいた運用になり、細かなカスタマイズを加えられません。なので、自社に適した環境構築を考えている場合、大きなハードルになってきます。</p>
+<h4 id="トータルコストが高くなる場合もある">トータルコストが高くなる場合もある</h4>
+<p>クラウドは、初期費用が安い一方、月額費用で設備投資費用などを回収していく為、自社構築の方が安くなる場合もあります。もちろん、クラウドを利用し続ける方が、オンプレミス構築よりも安く仕上がることが多いですが、違う場合もあることも覚えておきましょう。</p>
+<h3 id="オンプレミスのメリットデメリットとは">オンプレミスのメリット・デメリットとは？</h3>
+<h4 id="i-classfar-fa-griniメリット-1"><i class="far fa-grin"></i>メリット</h4>
+<h4 id="カスタマイズの自由度">カスタマイズの自由度</h4>
+<p>オンプレミスは、カスタマイズの自由度が高いことが大きな魅力です。クラウドでのシステム運用では、外部サーバー作業なのでシステムをいじることは難しいですが、オンプレミスは、技術者が自社にいればいつでも必要機能を自由に追加していくことが出来ます。なので、専門技術や機能が要求される企業程、オンプレミス運用の採用にはメリットがあります。</p>
+<h4 id="既存システムとの連携が容易">既存システムとの連携が容易</h4>
+<p>オンプレミスは、自社専用システムの運用なので、今まで使用してきた既存システムとの連携も容易です。業務が多岐に分かれている部門のある大企業、業界歴が長く多くの自社ノウハウを蓄えている企業などにとって、従来のシステムとの連携と言うのは重要です。</p>
+<h4 id="セキュリティ面の安全性">セキュリティ面の安全性</h4>
+<p>セキュリティ面において、オンプレミスとクラウドでどちらが優れているかと言うのは、一概には言えません。しかし、セキュリティ対策が運営元に任せるクラウドとは異なり、オンプレミスは、自社内のセキュリティ技術者が、システム改善や運用を賄うことも可能なので、外部委託での不安を払拭出来ます。外部に一切ネット接続すること無く、社内のローカル通信でシステム運営を行っている場合、その機密保持制は確固たるものになります。</p>
+<h4 id="i-classfar-fa-frowniデメリット-1"><i class="far fa-frown"></i>デメリット</h4>
+<h4 id="大きくコストがかかる">大きくコストがかかる</h4>
+<p>オンプレミスは、先ずコストの高さが挙げられます。自社システムを設けるので、サーバー、ソフトウェア、ライセンス、システム運営の技術者、カスタマイズ、セキュリティ対策など色々行うとなると、初期費用も相当な額になります。また、ランニングコストも相当な金額がかかってくるので、多くの中小企業は経済的なクラウドでのシステム運用を目指したいと考えています。しかし、オンプレミスからの切り替え時に膨大な時間と費用がかかるので、クラウド化になかなか移行できないのも現状です。</p>
+<h4 id="長期の準備期間が必要">長期の準備期間が必要</h4>
+<p>オンプレミスは、システム構築するにあたり長期的な準備期間が必要です。クラウドの場合は、既に既存のものを利用してサービスログインするのみですが、オンプレミスの場合は、システム運用準備に優秀な技術者選定、利用システム選定、サービス先との協議や交渉と言うように、運営開始までには数週間〜数ヶ月の期間が必要になります。また、自社で全ての運用を行うには、セキュリティ対策、サーバールームの家賃や光熱費、機器故障や交換など、トラブル時の費用も自社負担しなければならずコストがかかってきます。</p>
+<h2 id="クラウドとオンプレミスの選定のポイントについて">クラウドとオンプレミスの選定のポイントについて</h2>
+<h3 id="クラウドに適している場合">クラウドに適している場合</h3>
+<p>クラウドは、仮想環境上に構築されているものなので、CPUのコア数、メインメモリの容量、記憶容量、通信帯域など、リソース割当の簡単変更が可能です。こうした物理的要素の増減が簡単であることが一つのクラウドの利点です。なので、スケーラビリティが必要なシステムと言うのは、クラウドと相性が良くなっています。 また、アクセスはどこに居ても出来るので、複数拠点、外出先、本社外からも使用機会が多いシステムも、クラウドとの相性は良いです。さらに、情報系システムの環境を整えることが出来るのも大きな利点です。サーバー機器購入～設置、セットアップ、OS導入や設定、アプリのインストールなど、サーバー環境を整えるにも労力が必要ですが、クラウドはこの部分はオミットすることが出来ます。外部公開すれば、オンプレミスもどこからでもアクセス可能ですが、セキュリティの万全対策は自己責任です。しかし、クラウであれば公開前提なので、セキュリティに長けているところが魅力ですが、欠点は、保持情報をクラウドに預けるので、個人情報などの大事な情報は社内で厳重管理して、重要情報を扱わないシステムはクラウドを利用するのもお勧めです。</p>
+<h3 id="オンプレミスの方が良い場合">オンプレミスの方が良い場合</h3>
+<p>オンプレミスは、クラウドの欠点が利点になり、個人情報流出が許されないデータを扱うには、オンプレミスの方が向いています。また、サービス停止の復旧時間が短い程良い、高いMTTRが求められる、そんな場合はオンプレミス向きです。また、社内のコアコンピタンス関連のシステムなど、社外秘的要素が詰まったシステムもオンプレミスを選択すべきと言えます。</p>
+<h3 id="クラウドとオンプレミスの費用比較について">クラウドとオンプレミスの費用比較について</h3>
+<h4 id="初期費用">初期費用</h4>
+<p>オンプレミスは、サーバーをはじめ、その他ハードウェア・ソフトウェア機器など、自社用意が必須です。また、システム構築では専門的知識を要し、ITに詳しい人材や運用・保守専門社員などが必要になってきます。なので、初期費用に大きくお金がかかってしまうのが欠点です。一方、クラウドは、諸々の費用は不要でサーバー利用料金のみなので、初期費用コストを抑えたい場合には、クラウドは嬉しいサービスと言えます。</p>
+<h4 id="運用費用">運用費用</h4>
+<p>オンプレミスは、導入した後も定期的にメンテナンスなどを行う為の保守費用も必要です。社員自らメンテナンスを行っていかなくてはいけない為、人件費や労力も割かれることになります。また、ソフトのバージョンアップ、ハードウェアの入れ替えなど、コストも少額と言う訳ではありません。一方、クラウドは、保守運用は全て業者が行うので、オンプレミスに比べて費用を抑えることが出来、労力を割くこともありません。しかし、クラウドはそれぞれに費用が異なるので、利用サービス内容で運用費用が高くなる場合もあることも覚えておきましょう。</p>
+<h3 id="まとめ">まとめ</h3>
+<p>ここでは、オンプレミスとクラウドの違い、メリット・デメリットについてお伝えしてきましたが、いかがでしたか？オンプレミスとクラウドには、コスト、セキュリティ、導入期間など、様々な違いがそれぞれに表れています。メリットやデメリットが異なるので、色々比較しながら自社に適したシステム導入を行いましょう。</p>
+<hr>
+<center><b><font color="red"><i class="fas fa-arrow-circle-right"></i></font> GO-Globalについては<a href="https://go-global.kitasp.com/go-global/" target="_blank">コチラ</A>をご覧ください</b></center>
+                            
+                                                  </div>
+                        
+
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-12">
+
+                        
+
+                        
+
+
+
+
+<div class="panel sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Category</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            
+            <li>
+                <a href="/tags/contents"><i class="fas fa-tags"></i> contents</a>
+            </li>
+            
+            <li>
+                <a href="/tags/news"><i class="fas fa-tags"></i> news</a>
+            </li>
+            
+            <li>
+                <a href="/tags/windowsupdate"><i class="fas fa-tags"></i> windowsupdate</a>
+            </li>
+            
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+                <footer id="footer">
+        <div class="footer-nav-wrapper">        
+        <div class="container">
+            
+    <div class="col-md-12">
+        <div class="footer-nav-line">
+            <div class="col-md-3 col-sm-3">
+                <div class="footer-nav-column">
+                    <div class="footer-nav-column-title"></div>
+                    <div class="footer-nav-column-content">
+
+                        <ul>
+                            <li>
+                                <a href="/go-global/">GO-Globalとは</a>
+                            </li>        
+                        <li>
+<ul>
+                            <li>
+                                <a href="/go-use/">コンテンツ</a>
+                            </li>        
+                        <li>
+
+                                    </div>
+                    </div>
+                </div>
+                <hr class="hidden-md hidden-lg hidden-sm">
+                <div class="col-md-3 col-sm-3">
+                    <div class="footer-nav-column">
+                        <div class="footer-nav-column-title"></div>
+                       <div class="footer-nav-column-content">
+                  
+                        <ul>
+ <li>
+                              <a href="/case-study/">導入事例</a>
+ </li>
+                            <li>
+                                <a href="/adaptation-facility-1/">医療現場</a>
+                            </li>
+                            <li>
+                                <a href="/adaptation-facility-2/">ISV</a>
+                            </li>
+                            <li>
+                                <a href="/adaptation-facility-3/">中小企業</a>
+                            </li>
+                            <li>
+                                <a href="/adaptation-facility-4/">BCP対策</a>
+                            </li>
+                            <li>
+                                <a href="/adaptation-facility-5/">教育現場</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <hr class="hidden-md hidden-lg hidden-sm">
+                        <div class="col-md-3 col-sm-3">
+                            <div class="footer-nav-column">
+                                <div class="footer-nav-column-title"></div>
+                                <div class="footer-nav-column-content">
+
+
+                        <ul>
+ <li>
+                             <a href="/faq/">FAQ</a>
+ </li>
+
+
+                                 
+                                    <a href="/partners-list/">代理店一覧</a><br>
+                                    <a href="https://www.kitasp.com/contact/">問い合せ<i class="fas fa-external-link-alt"></i></a><br>
+                                    <a href="https://gitbook.kitasp.com/">技術サイト<i class="fas fa-external-link-alt"></i></a><br>            
+                                    <a href="https://www.kitasp.com/downloads/">ダウンロード<i class="fas fa-external-link-alt"></i></a><br>            
+                                </div>
+                                
+                            </div>
+                            <hr class="hidden-md hidden-lg hidden-sm">
+                
+                        </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="footer-nav-column">
+                        <div class="footer-nav-column-content">
+                        <div class="footer-nav-column-a">
+                        <ul>
+                            <li>
+                                <a href="/support-schedule/">サポートスケジュール</a>
+                            </li>        
+                            <li>
+                                <a href="/support-flow/">サポートの流れ</a>
+                            </li>
+                   
+                    </ul>
+                    
+                
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+    </div>
+        </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="col-xs-5">
+            
+           <p style="text-align:center;">Copyright © 2020 KitASP Corp. All Rights Reserved</p>
+            
+        </div>
+                
+                    <div class="col-xs-7">
+                        <div class="social">
+                          
+                        <a href="https://www.kitasp.com/contact/" target="_blank" style="opacity: 1;"><i class='fas fa-2x fa-envelope'></i></a>
+                        
+                        <a href="https://www.facebook.com/kitasp2000/" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-facebook'></i></a>
+                        
+                        <a href="https://twitter.com/KitASP_Corp" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-twitter'></i></a>
+                        
+                        <a href="https://www.instagram.com/kitasp_corp/" target="_blank" style="opacity: 1;"><i class='fab fa-2x fa-instagram'></i></a>
+                        
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    </div>
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-167125195-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/js/jquery.zoom.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+<script src="/js/hpneo.gmaps.js"></script>
+<script src="/js/gmaps.init.js"></script>
+<script src="/js/front.js"></script>
+<script type="text/javascript">
+ (function(w,d,s){
+  var f=d.getElementsByTagName(s)[0],j=d.createElement(s);
+  j.async=true;j.src='//dmp.im-apps.net/js/1006343/0001/itm.js';
+  f.parentNode.insertBefore(j, f);
+ })(window,document,'script');
+</script>
+
+<script src="//kitchen.juicer.cc/?color=4Fk/uQVpavE=" async></script>
+
+
+<script id="_bownow_ts">
+var _bownow_ts = document.createElement('script');
+_bownow_ts.charset = 'utf-8';
+_bownow_ts.src = 'https://contents.bownow.jp/js/UTC_17c8f7922b8bd3c0dfda/trace.js';
+document.getElementsByTagName('head')[0].appendChild(_bownow_ts);
+</script>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<script src="/js/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
+<script src="/js/slick.min.js"></script>
+
+
+
+  </body>
+</html>
