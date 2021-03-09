@@ -1,0 +1,37 @@
+<div class="container" id="success">
+
+    <div class="row">
+        <div class="col-sm-6 col-sm-push-3 col-xs-10 col-xs-push-1">
+
+            <section>
+
+                {{ if isset .Site.Params "email" }}
+
+                <div class="heading">
+                  <h3>ご連絡ありがとうございます。</h3>
+                </div>
+                            <div class="col-sm-12">
+                              このたびはGO-Globalへお問合せいただきましてありがとうございます。
+                              問合せ内容を確認いたしまして、後ほど担当者よりご連絡いたします。
+                              ２、３日経ちましても連絡がない場合お手数ですが、
+                              再度ご連絡いただけますようよろしくお願い致します。
+                          </div>                        
+                        <div class="col-sm-12 text-center">
+                          <div class="form-group">
+                           </div>
+                          <button onclick="location.href='/index.html'"type="submit" class="btn btn-template-main">ホームに戻る</button>
+                          <br>
+                        </div>
+                        
+                    </div>
+                    <!-- /.row -->
+                </form>
+                {{ end }}
+
+            </section>
+
+        </div>
+
+    </div>
+    <!-- /.row -->
+</div>
