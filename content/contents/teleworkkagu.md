@@ -11,7 +11,7 @@ toc = true
 
 <!--more-->
 
-## TOKYORECYCLEimption（インプション）
+## 【東京】TOKYORECYCLEimption（インプション）
 
 <a href="https://tokyo-recycle.net/?mode=grp&gid=2428863&sort=n" target="_blank">LINK
 {{<figure src="/img/content/01.JPG" width="100%">}}</a>
@@ -62,7 +62,7 @@ TEL:03-6421-1294
 TEL:03-6303-2880
 ```
 
-## リスタ神田店 
+## 【東京】リスタ神田店 
 
 <a href="https://www.koyou-resta.co.jp/shop03/" target="_blank">LINK
 {{<figure src="/img/content/tere002.jpg" width="100%">}}</a>
@@ -79,7 +79,7 @@ TEL：03-5209-6822
 ```
 
 
-## オフィスレスキュー119 
+## 【東京・埼玉・千葉・神奈川】オフィスレスキュー119 
 
 <a href="https://www.koyou-resta.co.jp/shop03/" target="_blank">LINK
 {{<figure src="/img/content/tere003.jpg" width="100%">}}</a>
@@ -112,7 +112,7 @@ TEL：03-5209-6822
 営業時間 10：00～19：00（日・祝　定休日） 
 電話 043-464-7090
 ```
-## オフィスバスターズ 
+## 【国内33店舗】オフィスバスターズ 
 
 <a href="https://www.officebusters.com/" target="_blank">LINK
 {{<figure src="/img/content/tere004.jpg" width="100%">}}</a>
@@ -126,7 +126,7 @@ TEL：03-5209-6822
 
 {{<figure src="/img/content/tere004-01.jpg" width="100%">}}
 
-## ありがとう屋 
+## 【東京・埼玉・大阪・福岡】ありがとう屋 
 
 <a href="https://www.arigatouya.net/" target="_blank">LINK
 {{<figure src="/img/content/tere005.jpg" width="100%">}}</a>
@@ -179,7 +179,7 @@ TEL：03-5209-6822
 電話 048-430-2811
 ```
 
-## 有限会社今井家具店
+## 【神奈川】有限会社今井家具店
 
 <a href="https://www.imaikaguten.com/" target="_blank">LINK
 {{<figure src="/img/content/tere006.jpg" width="100%">}}</a>
@@ -198,7 +198,7 @@ TEL：03-5209-6822
 ```
 
 
-## パワーオフィス
+## 【埼玉】パワーオフィス
 
 <a href="https://www.poweroffice.co.jp/?mode=f5" target="_blank">LINK
 {{<figure src="/img/content/tere007.jpg" width="100%">}}</a>
@@ -211,7 +211,7 @@ TEL：03-5209-6822
 電話番号 048-948-2180
 営業時間：9:30am - 6:30pm (平日、月-金)　9:30am - 3:00pm(土)
 ```
-## トレジャーホール
+## 【埼玉】トレジャーホール
 
 <a href="https://www.treasurehall.co.jp/" target="_blank">LINK
 {{<figure src="/img/content/tere008.jpg" width="100%">}}</a>
@@ -225,6 +225,6 @@ TEL：03-5209-6822
 定休日：日曜・祝日
 ```
 
-いかがでしたでしょうか？
-気に入った椅子や机はありそうでしたか？
-お近くにお店がある方はぜひ伺ってみてはいかがでしょうか。
+いかがでしたでしたか？
+お近くのお店は見つかりましたか？
+テレワークやフリーランスの方は中古オフィス家具ぜひ検討してみてくださいね。
