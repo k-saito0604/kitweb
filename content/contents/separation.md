@@ -2,7 +2,7 @@
 title = "インターネット分離の価格と構成をお教えします：～50人程度の事例"
 date = "2020-9-30"
 tags = ["Contents"]
-categories = ["news"]
+categories = ["Contents"]
 banner = "img/separationmd.jpg"
 type = "news"
 layout = "separation"

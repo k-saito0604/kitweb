@@ -2,7 +2,7 @@
 title = "自社ソフトウェアのクラウド化は、低コストに時間をかけずできます。"
 date = "2020-10-10"
 tags = ["Contents"]
-categories = ["news"]
+categories = ["Contents"]
 banner = "img/top-new-lift.jpg"
 type = "news"
 layout = "lift-shift"

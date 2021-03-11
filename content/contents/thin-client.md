@@ -2,7 +2,7 @@
 title = "シンクライアントとは？業界歴20年のプロわかりやすく解説致します。"
 date = "2020-10-04"
 tags = ["Contents"]
-categories = ["news"]
+categories = ["Contents"]
 banner = "img/top-new-thin-client.jpg"
 type = "news"
 layout = "thin-client"

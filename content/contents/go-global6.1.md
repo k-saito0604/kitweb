@@ -2,7 +2,7 @@
 title = "GO-Global6.1追加機能をご紹介。Windowsアプリケーションが更にどこでも安全に使いやすくなりました。"
 date = "2021-01-25"
 tags = ["Contents"]
-categories=["news"]
+categories=["Contents"]
 banner = "img/6.1.jpg"
 toc = true
 +++

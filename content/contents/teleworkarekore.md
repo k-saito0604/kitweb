@@ -2,7 +2,7 @@
 title = "【経営者・導入担当者必見】失敗しない、テレワーク導入までの流れ"
 date = "2021-01-20"
 tags = ["Contents"]
-categories=["news"]
+categories=["Contents"]
 banner = "img/teleworarekore.jpg"
 toc = true
 +++

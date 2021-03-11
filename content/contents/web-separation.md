@@ -2,7 +2,7 @@
 title = "インターネット分離を導入する3つのポイント"
 date = "2020-10-02"
 tags = ["Contents"]
-categories = ["news"]
+categories = ["Contents"]
 banner = "img/top-new-web.jpg"
 type = "news"
 layout = "web-separation"

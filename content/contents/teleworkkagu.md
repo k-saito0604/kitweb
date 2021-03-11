@@ -2,7 +2,7 @@
 title = "東京、神奈川、千葉、埼玉のテレワーク用の中古オフィス家具特集"
 date = "2021-01-08"
 tags = ["Contents"]
-categories=["news"]
+categories=["Contents"]
 banner = "img/teleworkkagu.jpg"
 toc = true
 +++

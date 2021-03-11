@@ -2,7 +2,7 @@
 title = "東京しごと財団テレワーク助成金申請はいつまで？結果はいつでるの？"
 date = "2020-08-30"
 tags = ["Contents"]
-categories = ["news"]
+categories = ["Contents"]
 banner = "img/top-tle.jpg"
 type = "news"
 layout = "telework-moushikomi"

@@ -15,10 +15,10 @@ var data = [
     body: "Contents"
   },
   {
-    url: "/categories/news/",
-    title: "news",
+    url: "/categories/contents/",
+    title: "Contents",
     date: "2021-03-03T00:00:00Z",
-    body: "news"
+    body: "Contents"
   },
   {
     url: "/contents/",
@@ -43,6 +43,12 @@ var data = [
     title: "きっとエイエスピーはGraphOn社GO-Globalの総代理店",
     date: "2021-03-03T00:00:00Z",
     body: "きっとエイエスピーはGraphOn社GO-Globalの総代理店"
+  },
+  {
+    url: "/categories/news/",
+    title: "news",
+    date: "2021-02-25T00:00:00Z",
+    body: "news"
   },
   {
     url: "/tags/windowsupdate/",

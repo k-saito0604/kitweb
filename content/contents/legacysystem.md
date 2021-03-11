@@ -3,7 +3,7 @@ title = "すぐにレガシーシステムを改修しよう！低コストで�
 date = "2020-12-13"
 tags = ["Contents"]
 banner = "img/top-legacy.jpg"
-categories = ["news"]
+categories = ["Contents"]
 type = "news"
 layout = "legacysystem"
 +++
