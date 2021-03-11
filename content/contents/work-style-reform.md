@@ -2,7 +2,7 @@
 title = "GO-Globalで実現できる働き方改革"
 date = "2020-06-02"
 tags = ["Contents"]
-categories = ["news"]
+categories = ["Contents"]
 banner = "img/top-new-style-reform.jpg"
 type = "news"
 layout = "work-style-reform"

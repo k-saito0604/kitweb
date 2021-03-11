@@ -2,7 +2,7 @@
 title = "GIGAスクール構想とは？生産性をあげる校務分離をお探しならGO-Globalがおすすめ"
 date = "2020-09-30"
 tags = ["Contents"]
-categories = ["news"]
+categories = ["Contents"]
 banner = "img/top-new-gigash.jpg"
 type = "news"
 layout = "giga-school"

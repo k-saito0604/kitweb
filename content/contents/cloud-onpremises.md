@@ -2,7 +2,7 @@
 title = "【わかる！】クラウドとオンプレミスについてサービスの仕組みの違い"
 date = "2021-03-03"
 tags = ["Contents"]
-categories=["news"]
+categories=["Contents"]
 banner = "img/cl-on01.jpg"
 toc = true
 +++

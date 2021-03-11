@@ -3,7 +3,7 @@ title = "BCP感染症対策と在宅（テレワーク）勤務はセットで�
 date = "2020-12-13"
 tags = ["Contents"]
 banner = "img/top-bcp.jpg"
-categories = ["news"]
+categories = ["Contents"]
 type = "news"
 layout = "bcp"
 +++
