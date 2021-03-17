@@ -137,7 +137,8 @@ GO-Global6.1は、最新の暗号化であるTLS1.3 に対応。256-bit AES暗�
 
 
 
-### お問合せ{{<figure src="/img/content/b_simple_114_2L.png" width="100%">}}</a>
+### お問合せ
+{{<figure src="/img/content/b_simple_114_2L.png" width="100%">}}</a>
 
 
 新バージョンのGO-Globalについて、
