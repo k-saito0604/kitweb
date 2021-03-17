@@ -3,7 +3,7 @@ title = "インターネット分離の価格と構成をお教えします：�
 date = "2019-09-11"
 tags = ["Contents"]
 categories = ["Contents"]
-banner = "img/separationmd.jpg"
+banner = "img/onpremises_merideme.png"
 type = "news"
 layout = "separation"
 +++
