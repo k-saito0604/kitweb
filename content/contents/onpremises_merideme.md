@@ -157,7 +157,8 @@ toc = true
 
 
 
-### まとめ{{<figure src="/img/content/b_simple_114_2L.png" width="100%">}}</a>
+### まとめ
+{{<figure src="/img/content/b_simple_114_2L.png" width="100%">}}</a>
 
 
 ここでは、クラウド移行の方法とメリット・デメリットについてお伝えしてきましたが、いかがでしたか？<br>
