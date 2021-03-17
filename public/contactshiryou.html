@@ -1,0 +1,139 @@
+<div class="container" id="contactshiryou">
+
+
+
+
+
+            <div class="heading">
+<h2>GO-Globalとは</h2>
+
+<p>テストテストテストテストテスト</p>
+
+
+
+
+
+<script id="_bownow_ts">
+var _bownow_ts = document.createElement('script');
+_bownow_ts.charset = 'utf-8';
+_bownow_ts.src = 'https://contents.bownow.jp/js/UTC_17c8f7922b8bd3c0dfda/trace.js';
+document.getElementsByTagName('head')[0].appendChild(_bownow_ts);
+</script>
+
+
+
+
+</div>
+------------------
+
+    <div class="row">
+        <div class="col-sm-6 col-sm-push-3 col-xs-10 col-xs-push-1">
+
+
+
+            <section>
+
+
+
+
+                {{ if isset .Site.Params "email" }}
+
+
+
+
+
+                <div class="heading">
+                  <h3>{{ i18n "contactForm" }}</h3>
+                </div>
+
+
+                <div id="contact-message"></div>
+
+
+                  <form name="kitform" method="post" action="/success.html" data-netlify="true">
+                    <div class="row">
+                            <div class="form-group">
+                              <label for="name">{{ i18n "contactName" }}*</label>
+                              <span class="form-error" id="form-name_error"></span>
+                                <input  type="text" class="form-control" name="name" id="name" required>
+                              <label for="furigana">{{ i18n "contactFuri" }}</label>
+                                <input  type="furigana" class="form-control" name="firigana" id="firigana">
+                              <label for="company">{{ i18n "company" }}*</label>
+                                <input  type="company" class="form-control" name="company" id="company" required>
+                               <label for="email">{{ i18n "contactMail" }}*</label>
+                                <input type="email" class="form-control" name="email" id="email" required>
+                            
+                              <!--<label for="telephone">{{ i18n "contactTEL" }}</label>
+                              <input type="telephone" class="form-control" name="telephone" id="telephone" -->
+                          
+                         <!--<label class="type" for="form-type">お問い合わせ種類</label>
+                          <select class="form-control" id="form-type" name="form-type">
+                            <option value="null" disabled selected>お選びください</option>
+                            <option value="営業関連" >営業関連問い合わせ</option>
+                            <option value="技術関連" >技術関連問い合わせ</option>
+                            <option value="その他" >その他のお問い合わせ</option>
+                          </select--> 
+                        </div>
+
+                            <div class="form-group">
+
+                              <label for="message">{{ i18n "contactMessage" }}</label>
+                                <textarea id="message" class="form-control" name="message" required></textarea>
+
+
+
+
+                            </div>
+                        </div>
+                        <span class="form-error" id="form-type_error"></span><br />
+                        <center><div data-netlify-recaptcha="true"></div></center>
+                        <div class="col-sm-12">
+                          {{ .Content }}
+                          </div> 
+                            <div class="col-sm-12">
+                            <h4>株式会社きっとエイエスピー<br>個人情報問合せ窓口</h4>
+                            〒102-0083 東京都千代田区麹町5-3-3<br>
+                            麹町ＫＳスクエア6階<br>
+                            TEL：03-3350-9300<br>
+                            FAX：03-3263-3088<br>
+                            privacy@kitasp.com<br>
+                            9:00～18:00<br>
+                            土・日曜日、祝日、年末年始<br>
+                          </div>
+                          
+                        <div class="col-sm-12 text-center">
+                          <div class="form-group">
+                            <br>
+                            <p>
+                             <input type="checkbox" name="check" id="check" required>個人情報の取り扱いについて了承する*
+                             </p>
+                           </div>
+                          <button type="submit" class="btn btn-template-main"><i class="far fa-envelope"></i>{{ i18n "contactSend" }}</button>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </form>
+                {{ end }}
+
+            </section>
+
+        </div>
+
+<!--        <div class="col-md-4">
+
+            {{ if isset .Site.Params "address" }}
+            <section>
+
+              <h3 class="text-uppercase"> {{ i18n "contactAddrTitle" }}</h3>
+
+                {{ .Site.Params.address | safeHTML }}
+
+            </section>
+
+            {{ end }}
+
+        </div> -->
+
+    </div>
+    <!-- /.row -->
+</div>
