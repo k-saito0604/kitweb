@@ -7,4 +7,4 @@ categories = ["Contents"]
 type = "news"
 layout = "legacysystem"
 +++
-大問題！2025年までに老朽化したシステムを早急に脱却しなければ大変なことに！？
+レガシーシステムから脱却して社内のＤＸを進めなければいけない理由
