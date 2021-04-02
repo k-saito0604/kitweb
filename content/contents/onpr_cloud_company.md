@@ -1,6 +1,6 @@
 +++
 title = "企業のクラウド化が進む！企業がクラウドを導入するメリットとは？"
-date = "2021-04-01"
+date = "2021-05-01"
 tags = ["Contents"]
 categories=["Contents"]
 banner = "img/content/onpr_cloud_co01.jpg"
@@ -40,7 +40,6 @@ toc = true
 
 
 ### 導入・運用コストの削減に繫がる
-
 
 
 
