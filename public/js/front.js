@@ -132,6 +132,7 @@ jQuery(function() {
     });
 });
 //clickすると飛ぶ
+
 $(function(){
   $('a[href^="#"]').click(function(){
     var adjust = -210;
