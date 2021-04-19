@@ -4139,3 +4139,124 @@ a.list-group-item.active > .badge,
     font-size: 24px;
 
 }
+
+/* 
+
+お問合せコチラの囲み関連
+*/
+
+.inquiries001 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #332200;/*文字色*/
+    background: #fffaf0;/*背景色*/
+    font-size: 20px;
+    border-top: solid 6px #ffaa00;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
+}
+.inquiries001 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.inquiries002 {
+    padding: 0.5em 1em;
+    background: -moz-linear-gradient(#ffb03c, #ff708d);
+    background: -webkit-linear-gradient(#ffb03c, #ff708d);
+    background: linear-gradient(to right, #ffb03c, #ff708d);
+    color: #FFF;
+}
+.inquiries002 p {
+    margin: 0; 
+    padding: 0;
+
+}
+
+.inquiries003 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #232323;
+    background: #ffe4b5;
+    font-size: 22px;
+    border-left: solid 10px #ffc06e;
+}
+.box8 p {
+    margin: 0; 
+    padding: 0;
+}
+
+
+
+ul {
+  list-style: none;   /*項目の点を消す*/
+}
+
+   /*ここからステップフロー*/
+.cp_stepflow01 {
+	font-size: 80%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 0 1em;
+	padding: 0;
+}
+.cp_stepflow01 > li {
+	position: relative;
+	display: block;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	text-overflow: ellipsis;
+	color: #b0bec5;
+	 -ms-flex: 1;
+	-moz-flex: 1;
+	-webkit-box-flex: 1;
+	     flex: 1;
+}
+.cp_stepflow01 > li .bubble {
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 0 auto 0.5em;
+	border-radius: 1000px;
+	background-color: #b0bec5;
+}
+.cp_stepflow01 > li .bubble::after,
+.cp_stepflow01 > li .bubble::before {
+	position: absolute;
+	top: 9px;
+	display: block;
+	width: 100%;
+	height: 3px;
+	content: '';
+	background-color: #b0bec5;
+}
+.cp_stepflow01 > li.completed,
+.cp_stepflow01 > li.completed .bubble {
+	color: #00acc1;
+}
+.cp_stepflow01 > li.completed .bubble,
+.cp_stepflow01 > li.completed .bubble::after,
+.cp_stepflow01 > li.completed .bubble::before {
+	background-color: #4dd0e1;
+}
+.cp_stepflow01 > li:last-child .bubble::after,
+.cp_stepflow01 > li:last-child .bubble::before {
+	width: 0%;
+	margin-right: 50%;
+}
+.cp_stepflow01 > li.active,
+.cp_stepflow01 > li.active .bubble {
+	font-weight: bold;
+	color: #f57c00;
+}
+.cp_stepflow01 > li.active .bubble,
+.cp_stepflow01 > li.active .bubble::after,
+.cp_stepflow01 > li.active .bubble::before {
+	background-color: #fb8c00;
+}
+
+
+   /*　　　*/
