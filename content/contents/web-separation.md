@@ -1,5 +1,5 @@
 +++
-title = "インターネット分離を導入する3つのポイント"
+title = "Web分離/インターネット分離とは？導入の際に参考になる3つのポイント"
 date = "2020-10-02"
 tags = ["Contents"]
 categories = ["Contents"]
