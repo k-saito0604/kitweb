@@ -140,8 +140,9 @@ GO-Global6.1は、最新の暗号化であるTLS1.3 に対応。256-bit AES暗�
 {{<figure src="/img/content/b_simple_114_2L.png" width="100%">}}</a>
 
 
-新バージョンのGO-Globalについて、
-お問合せは<a href="https://www.kitasp.com/contact/" target="_blank">コチラ</A>。
+新バージョンのGO-Globalについての資料やお問合せは<a href="https://www.kitasp.com/contact/" target="_blank">コチラ</A>にご連絡ください。
+
+
 
 
 
