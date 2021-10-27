@@ -2,7 +2,7 @@
 
 +++
 
-新バージョンのGO-Globalはこちら<a href="/contents/go-global6.2/">コチラ</A>
+新バージョンのGO-Globalはこちら<a href="/contents/go-global-latest/">コチラ</A>
 
 
 
