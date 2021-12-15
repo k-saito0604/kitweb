@@ -5,38 +5,44 @@ var data = [
   {
     url: "/categories/",
     title: "Categories",
-    date: "2021-12-01T00:00:00Z",
+    date: "2021-12-15T00:00:00Z",
     body: "Categories"
   },
   {
     url: "/tags/news/",
     title: "news",
-    date: "2021-12-01T00:00:00Z",
+    date: "2021-12-15T00:00:00Z",
     body: "news"
   },
   {
     url: "/categories/news/",
     title: "news",
-    date: "2021-12-01T00:00:00Z",
+    date: "2021-12-15T00:00:00Z",
     body: "news"
   },
   {
     url: "/contents/",
     title: "news",
-    date: "2021-12-01T00:00:00Z",
+    date: "2021-12-15T00:00:00Z",
     body: "news"
   },
   {
     url: "/tags/",
     title: "Tags",
-    date: "2021-12-01T00:00:00Z",
+    date: "2021-12-15T00:00:00Z",
     body: "Tags"
   },
   {
     url: "/",
     title: "きっとエイエスピーは米国GraphOn社の国内販売代理店を務めて21年の実績があります",
-    date: "2021-12-01T00:00:00Z",
+    date: "2021-12-15T00:00:00Z",
     body: "きっとエイエスピーは米国GraphOn社の国内販売代理店を務めて21年の実績があります"
+  },
+  {
+    url: "/contents/20211215/",
+    title: "弊社製品GO-Globalにおける Apache Log4j の脆弱性 CVE-2021-44228 について",
+    date: "2021-12-15T00:00:00Z",
+    body: "弊社製品GO-Globalにおける Apache Log4j の脆弱性 CVE-2021-44228 について 弊社製品の Apache Log4j の脆弱性（CVE-2021-44228）については以下の通りです。 GO-Global および拡張パッケージにつきましては当該ソフトウエアを使用していないため、特に対策を行う必要はありません。 ご利用システムの 「GO-Global 以外のソフトウエア」 が当該ソフトウエア使用している場合は そのソフトウエアのベンダーの指示に従って下さい。"
   },
   {
     url: "/contents/2022sg/",
