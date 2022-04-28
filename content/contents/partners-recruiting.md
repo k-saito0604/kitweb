@@ -6,7 +6,6 @@ categories=["news"]
 banner = "img/recruiting.jpg"
 toc = true
 +++
-<meta http-equiv="refresh"content="0;URL=https://kitasp.com/go-global/blog/partners-recruiting/">
 
 
 GO-Globalを通じて事業や収益の拡大を一緒に目指しませんか？GO-Globalをお客様にご案内し導入までのサポートをお願いします。
@@ -15,6 +14,7 @@ GO-Globalを通じて事業や収益の拡大を一緒に目指しませんか�
 <br>
 
 
+<meta http-equiv="refresh"content="0;URL=https://kitasp.com/go-global/blog/partners-recruiting/">
 
 <center><b><font color="red"><i class="fas fa-arrow-circle-right"></i></font> GO-Globalについては<a href="https://go-global.kitasp.com/go-global/" target="_blank">コチラ</A>をご覧ください</b></center>
 
