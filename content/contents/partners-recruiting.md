@@ -6,7 +6,6 @@ categories=["news"]
 banner = "img/recruiting.jpg"
 toc = true
 +++
-<meta http-equiv="refresh"content="0;URL=https://kitasp.com/go-global/blog/partners-recruiting/">
 
 
 GO-Globalを通じて事業や収益の拡大を一緒に目指しませんか？GO-Globalをお客様にご案内し導入までのサポートをお願いします。
@@ -21,6 +20,9 @@ GO-Globalを通じて事業や収益の拡大を一緒に目指しませんか�
 
 
 <!--more-->
+
+<meta http-equiv="refresh"content="0;URL=https://kitasp.com/go-global/blog/partners-recruiting/">
+
 
 ## 代理店加入のメリット
 
